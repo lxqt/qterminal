@@ -1,0 +1,30 @@
+Index: qtermwidget.pro
+===================================================================
+RCS file: /cvsroot/qtermwidget/qtermwidget/qtermwidget.pro,v
+retrieving revision 1.1.1.1
+diff -u -r1.1.1.1 qtermwidget.pro
+--- qtermwidget.pro	10 May 2008 21:27:49 -0000	1.1.1.1
++++ qtermwidget.pro	9 Feb 2009 19:21:03 -0000
+@@ -1,4 +1,4 @@
+ TEMPLATE 	= subdirs
+-SUBDIRS 	= lib src
++SUBDIRS 	= lib
+ 
+ OPTIONS 	+= ordered
+\ No newline at end of file
+Index: lib/lib.pro
+===================================================================
+RCS file: /cvsroot/qtermwidget/qtermwidget/lib/lib.pro,v
+retrieving revision 1.3
+diff -u -r1.3 lib.pro
+--- lib/lib.pro	29 Nov 2008 23:17:11 -0000	1.3
++++ lib/lib.pro	9 Feb 2009 19:21:03 -0000
+@@ -4,7 +4,7 @@
+ 
+ TARGET		= qtermwidget
+ 
+-CONFIG		+= qt debug_and_release warn_on build_all dll staticlib #dll
++CONFIG		+= qt release warn_on build_all staticlib #dll
+ 
+ QT += core gui
+ 

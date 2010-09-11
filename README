@@ -1,0 +1,32 @@
+===================================
+QT based multitab terminal emulator
+===================================
+
+Based on QTermWidget by <e_k@users.sourceforge.net>
+
+Installation:
+
+1. Unpack source
+
+2. cd qterminal
+
+3. You will need qtermwidget sources to successfully build this application.
+   Please download them from http://sourceforge.net/projects/qtermwidget and 
+   put unpacked `qtermwidget` directory in one hierarchy level with `qterminal` directory.
+   Actually get_qtermwidget.sh script will do this for you :)
+  
+4. Run ./build.sh script. It will apply some patches(probably:) to qtermwidget and compile 
+   entire project. Note that QMAKE variable in build.sh script should point to Qt4 qmake executable.
+   Alternatively you may directly use qmake build system.
+
+5. Run sudo make install as root.
+
+6. Type qterminal and enjoy :)
+
+NOTE: /qterm/src/config.h contains several options for application shortcut configuration.
+      Change them and recompile to override default settings.
+
+TODO: complete configfile-based configuration functionality.
+
+
+Vladimir Kuznetsov			<vovanec@gmail.com>

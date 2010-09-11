@@ -1,0 +1,54 @@
+<ui version="4.0" >
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>638</width>
+    <height>1007</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground" >
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" >
+    <property name="margin" >
+     <number>1</number>
+    </property>
+    <property name="spacing" >
+     <number>6</number>
+    </property>
+    <item row="0" column="0" >
+     <widget class="TabWidget" name="consoleTabulator" >
+      <property name="tabPosition" >
+       <enum>QTabWidget::South</enum>
+      </property>
+      <property name="tabShape" >
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex" >
+       <number>-1</number>
+      </property>
+      <property name="elideMode" >
+       <enum>Qt::ElideNone</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>tabwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
