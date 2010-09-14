@@ -7,6 +7,7 @@ set( QTERM_SRC
 	tabwidget.cpp
     termwidget.cpp
     properties.cpp
+    propertiesdialog.cpp
 )
 
 set( QTERM_MOC_SRC
@@ -14,11 +15,13 @@ set( QTERM_MOC_SRC
 	mainwindow.h
 	tabwidget.h
     termwidget.h
+    propertiesdialog.h
 )
 
 set( QTERM_UI_SRC
 	forms/colorschemadialog.ui
 	forms/qterminal.ui
+    forms/propertiesdialog.ui
 )
 
 set( QTERM_RCC_SRC

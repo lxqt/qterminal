@@ -34,6 +34,10 @@ public:
 protected slots:
     void on_consoleTabulator_currentChanged(int);
     void quit();
+    void propertiesChanged();
+    void actAbout_triggered();
+    void actProperties_triggered();
+
 private:
     void addActions();
     void closeEvent(QCloseEvent*);

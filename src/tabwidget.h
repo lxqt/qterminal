@@ -45,10 +45,10 @@ public slots:
     void moveRight();
     void renameSession();
     void refreshWindow();
-    void changeFont();
-    void changeColorSchema();
-    void changeStyle(QAction*);
     void setWorkDirectory(const QString&);
+
+    void propertiesChanged();
+    
 signals:
     void quit_notification();
 
@@ -61,7 +61,6 @@ protected:
     void recountIndexes();
     void move(Direction);
 private:
-    QActionGroup* styleAct;
     int tabNumerator;
     QString work_dir;
 };

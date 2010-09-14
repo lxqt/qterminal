@@ -21,6 +21,7 @@ class Properties
         QString shell;    
         QFont font;
         int colorScheme;  
+        QString guiStyle;
    
     private:
 

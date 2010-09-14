@@ -25,11 +25,17 @@
 #include "config.h"
 #include "version.h"
 #include "properties.h"
+#include "propertiesdialog.h"
 
 
 MainWindow::MainWindow(const QString& work_dir, const QString& command, QWidget * parent, Qt::WindowFlags f) : QMainWindow(parent,f)
 {
     setupUi(this);
+    connect(actAbout, SIGNAL(triggered()), SLOT(actAbout_triggered()));
+    connect(actAboutQt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
+    connect(actQuit, SIGNAL(triggered()), SLOT(close()));
+    connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
+
     restoreGeometry(Properties::Instance()->mainWindowGeometry);
     restoreState(Properties::Instance()->mainWindowState);
 
@@ -109,5 +115,23 @@ void MainWindow::quit()
     Properties::Instance()->mainWindowState = saveState();
     Properties::Instance()->saveSettings();
     QApplication::exit(0);
+}
+
+void MainWindow::actAbout_triggered()
+{
+    QMessageBox::about(this, STR_VERSION, tr("A lightweight multiplatform terminal emulator")); 
+}
+
+void MainWindow::actProperties_triggered()
+{
+    PropertiesDialog * p = new PropertiesDialog(this);
+    connect(p, SIGNAL(propertiesChanged()), this, SLOT(propertiesChanged()));
+    p->exec();
+}
+
+void MainWindow::propertiesChanged()
+{
+    QApplication::setStyle(Properties::Instance()->guiStyle);
+    consoleTabulator->propertiesChanged();
 }
 

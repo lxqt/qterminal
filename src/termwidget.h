@@ -11,6 +11,7 @@ class TermWidget : public QTermWidget
     public:
 
         TermWidget(const QString & wdir, QWidget * parent=0);
+        void propertiesChanged();
 
     signals:
         void renameSession();

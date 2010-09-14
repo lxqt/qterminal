@@ -9,9 +9,9 @@ TermWidget::TermWidget(const QString & wdir, QWidget * parent)
 
     setFlowControlEnabled(FLOW_CONTROL_ENABLED);
     setFlowControlWarningEnabled(FLOW_CONTROL_WARNING_ENABLED);
+    
+    propertiesChanged();
 
-    setColorScheme(Properties::Instance()->colorScheme);
-    setTerminalFont(Properties::Instance()->font);
     setHistorySize(5000);
     setScrollBarPosition(QTermWidget::ScrollBarRight);
     
@@ -45,6 +45,13 @@ TermWidget::TermWidget(const QString & wdir, QWidget * parent)
             this, SLOT(customContextMenuCall(const QPoint &)));
 
     startShellProgram();
+}
+
+void TermWidget::propertiesChanged()
+{
+    setColorScheme(Properties::Instance()->colorScheme);
+    setTerminalFont(Properties::Instance()->font);
+    update();
 }
 
 void TermWidget::customContextMenuCall(const QPoint & pos)

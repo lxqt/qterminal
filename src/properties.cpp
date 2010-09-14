@@ -33,6 +33,11 @@ void Properties::loadSettings()
         qDebug("Properties::loadSettings");
         
     QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
+
+    guiStyle = settings.value("guiStyle", QString()).toString();
+    if (!guiStyle.isNull())
+        QApplication::setStyle(guiStyle);
+        
     colorScheme = settings.value("color_scheme", QVariant(COLOR_SCHEME_GREEN_ON_BLACK)).toInt();
 
     QFont default_font = QApplication::font();
@@ -63,6 +68,8 @@ void Properties::saveSettings()
 {
         qDebug("Properties::saveSettings");
     QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
+
+    settings.setValue("guiStyle", guiStyle);
     settings.setValue("color_scheme", colorScheme);
     settings.setValue("font", font);
     

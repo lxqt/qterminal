@@ -42,16 +42,6 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
     tb->setIcon(QIcon(":/icons/add.png"));
     setCornerWidget(tb, Qt::BottomLeftCorner);
     connect(tb, SIGNAL(clicked()), SLOT(addTerminal()));
-
-    // Setting windows style actions
-    styleAct = new QActionGroup(this);
-    foreach (QString s, QStyleFactory::keys())
-    {
-        QAction * act = new QAction(s, this);
-        act->setData(s);
-        styleAct->addAction(act);
-    }
-	connect(styleAct, SIGNAL(triggered(QAction*)), this, SLOT(changeStyle(QAction*)));
 }
 
 void TabWidget::setWorkDirectory(const QString& dir)
@@ -120,20 +110,6 @@ void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
 
     menu.addAction(QIcon(":/icons/close.png"), tr("Close session"), this, SLOT(removeCurrentTerminal()));
     menu.addAction(tr("Rename session"), this, SLOT(renameSession()), tr(RENAME_SESSION_SHORTCUT));
-
-    menu.addSeparator();
-
-// TODO/FIXME: a bug in the Qt library: http://bugreports.qt.nokia.com/browse/QTBUG-7769
-#ifndef Q_WS_MAC || QT_VERSION >= 0x040603
-    menu.addAction(QIcon(":/icons/font.png"), tr("Change Font"), this, SLOT(changeFont()));
-#endif
-
-    menu.addAction(QIcon(":/icons/theme.png"), tr("Change Color Scheme"), this, SLOT(changeColorSchema()));
-
-    QMenu styleMenu("Change Style", this);
-    foreach(act, styleAct->actions())
-        styleMenu.addAction(act);
-    menu.addMenu(&styleMenu);
 
     menu.exec(event->globalPos());
 }
@@ -244,44 +220,12 @@ void TabWidget::moveRight()
     move(Right);
 }
 
-void TabWidget::changeFont()
+void TabWidget::propertiesChanged()
 {
-    bool ok;
-    QFont font = QFontDialog::getFont(&ok, Properties::Instance()->font, this);
-    if(ok)
+    for(int i = 0; i < count(); ++i)
     {
-        for(int i = 0; i < count(); ++i)
-        {
-            TermWidget *console = static_cast<TermWidget*>(widget(i));
-            console->setTerminalFont(font);
-            Properties::Instance()->font = font;
-            console->update();
-        }
+        TermWidget *console = static_cast<TermWidget*>(widget(i));
+        console->propertiesChanged();
     }
-}
-
-void TabWidget::changeColorSchema()
-{
-    ColorSchemaDialog dlg(this);
-    dlg.setColorScheme(Properties::Instance()->colorScheme);
-
-    if (dlg.exec() == QDialog::Accepted)
-    {
-        int scheme = dlg.colorScheme();
-        for(int i = 0; i < count(); ++i)
-        {
-            TermWidget *console = static_cast<TermWidget*>(widget(i));
-            console->setColorScheme(scheme);
-            Properties::Instance()->colorScheme = scheme;
-            console->update();
-        }
-    }
-
-}
-
-void TabWidget::changeStyle(QAction* act)
-{
-    QString style = act->data().toString();
-    QApplication::setStyle(style);
 }
 
