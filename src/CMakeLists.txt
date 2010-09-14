@@ -5,14 +5,15 @@ set( QTERM_SRC
 	main.cpp
 	mainwindow.cpp
 	tabwidget.cpp
+    termwidget.cpp
+    properties.cpp
 )
 
 set( QTERM_MOC_SRC
 	colorschemadialog.h
-#	config.h
 	mainwindow.h
 	tabwidget.h
-#	version.h
+    termwidget.h
 )
 
 set( QTERM_UI_SRC

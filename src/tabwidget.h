@@ -24,7 +24,7 @@
 #include <QTabWidget>
 #include <QMap>
 
-class QTermWidget;
+class TermWidget;
 class QAction;
 class QActionGroup;
 
@@ -48,8 +48,6 @@ public slots:
     void changeFont();
     void changeColorSchema();
     void changeStyle(QAction*);
-    void loadSettings();
-    void saveSettings();
     void setWorkDirectory(const QString&);
 signals:
     void quit_notification();
@@ -58,21 +56,14 @@ public:
     void removeTab(int);
 protected:
     enum Direction{Left = 1, Right};
-    bool eventFilter(QObject* watched, QEvent* event);
     void mouseDoubleClickEvent ( QMouseEvent * event );
     void contextMenuEvent ( QContextMenuEvent * event );
-    QTermWidget* createNewTerminal(const QString&);
     void recountIndexes();
     void move(Direction);
 private:
-    void createActions(QWidget*);
-    int currentColorScheme;
-    QFont currentFont;
     QActionGroup* styleAct;
     int tabNumerator;
     QString work_dir;
-    QString shell_program;
-    QMap<QString, QString> shortcuts;
 };
 
 #endif

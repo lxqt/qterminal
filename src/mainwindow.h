@@ -37,9 +37,5 @@ protected slots:
 private:
     void addActions();
     void closeEvent(QCloseEvent*);
-    void loadSettings();
-    void saveSettings();
-    
-    QMap<QString, QString> shortcuts;
 };
 #endif //MAINWINDOW_H

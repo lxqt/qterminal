@@ -24,12 +24,14 @@
 #include "tabwidget.h"
 #include "config.h"
 #include "version.h"
+#include "properties.h"
 
 
 MainWindow::MainWindow(const QString& work_dir, const QString& command, QWidget * parent, Qt::WindowFlags f) : QMainWindow(parent,f)
 {
     setupUi(this);
-    loadSettings();
+    restoreGeometry(Properties::Instance()->mainWindowGeometry);
+    restoreState(Properties::Instance()->mainWindowState);
 
     connect(consoleTabulator, SIGNAL(quit_notification()), SLOT(quit()));
     consoleTabulator->setWorkDirectory(work_dir);
@@ -48,27 +50,27 @@ void MainWindow::addActions()
 
     QAction* act = new QAction(this);
 
-    act->setShortcut(shortcuts[ADD_TAB]);
+    act->setShortcut(Properties::Instance()->shortcuts[ADD_TAB]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(addTerminal()));
     addAction(act);
 
     act = new QAction(this);
-    act->setShortcut(shortcuts[TAB_RIGHT]);
+    act->setShortcut(Properties::Instance()->shortcuts[TAB_RIGHT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(traverseRight()));
     addAction(act);
 
     act = new QAction(this);
-    act->setShortcut(shortcuts[TAB_LEFT]);
+    act->setShortcut(Properties::Instance()->shortcuts[TAB_LEFT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(traverseLeft()));
     addAction(act);
 
     act = new QAction(this);
-    act->setShortcut(shortcuts[MOVE_LEFT]);
+    act->setShortcut(Properties::Instance()->shortcuts[MOVE_LEFT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(moveLeft()));
     addAction(act);
 
     act = new QAction(this);
-    act->setShortcut(shortcuts[MOVE_RIGHT]);
+    act->setShortcut(Properties::Instance()->shortcuts[MOVE_RIGHT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(moveRight()));
     addAction(act);
 
@@ -90,7 +92,9 @@ void MainWindow::closeEvent(QCloseEvent* ev)
                                 tr("Are you sure you want to exit?"),
                                 QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
     {
-        saveSettings();
+        Properties::Instance()->mainWindowGeometry = saveGeometry();
+        Properties::Instance()->mainWindowState = saveState();
+        Properties::Instance()->saveSettings();
         ev->accept();
     }
     else
@@ -101,44 +105,9 @@ void MainWindow::closeEvent(QCloseEvent* ev)
 
 void MainWindow::quit()
 {
-    saveSettings();
+    Properties::Instance()->mainWindowGeometry = saveGeometry();
+    Properties::Instance()->mainWindowState = saveState();
+    Properties::Instance()->saveSettings();
     QApplication::exit(0);
 }
 
-void MainWindow::loadSettings()
-{
-    QSettings settings(QDir::homePath() + "/.qterminal", QSettings::IniFormat);
-    int width = settings.value("width", QVariant(DEFAULT_WIDTH)).toInt();
-    int height = settings.value("height", QVariant(DEFAULT_HEIGHT)).toInt();
-    int x = settings.value("x", QVariant(0)).toInt();
-    int y = settings.value("y", QVariant(0)).toInt();
-    this->setGeometry(QRect(x, y, width, height));
-    
-    consoleTabulator->loadSettings();
-
-    settings.beginGroup("Shortcuts");
-    shortcuts[ADD_TAB] = settings.value(ADD_TAB, ADD_TAB_SHORTCUT).toString();
-    shortcuts[TAB_RIGHT] = settings.value(TAB_RIGHT, TAB_RIGHT_SHORTCUT).toString();
-    shortcuts[TAB_LEFT] = settings.value(TAB_LEFT, TAB_LEFT_SHORTCUT).toString();
-    shortcuts[MOVE_LEFT] = settings.value(MOVE_LEFT, MOVE_LEFT_SHORTCUT).toString();
-    shortcuts[MOVE_RIGHT] = settings.value(MOVE_RIGHT, MOVE_RIGHT_SHORTCUT).toString();
-    settings.endGroup();
-}
-
-void MainWindow::saveSettings()
-{
-    QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
-    settings.setValue("width", this->width());
-    settings.setValue("height", this->height());
-    settings.setValue("x", this->pos().x());
-    settings.setValue("y", this->pos().y());
-
-    consoleTabulator->saveSettings();
-
-    settings.beginGroup("Shortcuts");
-    QMapIterator<QString, QString> it(shortcuts);
-    while (it.hasNext()) {
-        it.next();
-        settings.setValue(it.key(), it.value());
-    }
-}
