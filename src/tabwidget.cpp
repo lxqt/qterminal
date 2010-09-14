@@ -102,12 +102,12 @@ QTermWidget* TabWidget::createNewTerminal(const QString& shell_program)
 
 void TabWidget::createActions(QWidget* console)
 {
-    QAction* act = new QAction(QIcon(":/icons/editcopy.png"), tr("Copy selection"), this);
+    QAction* act = new QAction(QIcon(":/icons/editcopy.png"), tr("&Copy selection"), this);
     act->setShortcuts(QList<QKeySequence>() << shortcuts[COPY_SELECTION]);
     connect(act, SIGNAL(triggered()), console, SLOT(copyClipboard()));
     console->addAction(act);
 
-    act = new QAction(QIcon(":/icons/editpaste.png"), tr("Paste Selection"), this);
+    act = new QAction(QIcon(":/icons/editpaste.png"), tr("&Paste Selection"), this);
     act->setShortcuts(QList<QKeySequence>() << shortcuts[PASTE_SELECTION]);
     connect(act, SIGNAL(triggered()), console, SLOT(pasteClipboard()));
     console->addAction(act);
@@ -116,34 +116,19 @@ void TabWidget::createActions(QWidget* console)
     act->setSeparator(true);
     console->addAction(act);
 
-    act = new QAction(tr("Rename session"), this);
+    act = new QAction(tr("&Rename session..."), this);
     act->setShortcut(shortcuts[RENAME_SESSION]);
     connect(act, SIGNAL(triggered()), this, SLOT(renameSession()));
     console->addAction(act);
 
     // Setting windows style actions
     styleAct = new QActionGroup(this);
-    act = new QAction(tr("Windows"), this);
-    act->setData("windows");
-
-	styleAct->addAction(act);
-    act = new QAction(tr("Cleanlooks"), this);
-    act->setData("cleanlooks");
-	styleAct->addAction(act);
-
-    act = new QAction(tr("Motif"), this);
-    act->setData("motif");
-	styleAct->addAction(act);
-
-    act = new QAction(tr("CDE"), this);
-    act->setData("cde");
-	styleAct->addAction(act);
-
-
-    act = new QAction(tr("Plastique"), this);
-    act->setData("plastique");
-	styleAct->addAction(act);
-
+    foreach (QString s, QStyleFactory::keys())
+    {
+        act = new QAction(s, this);
+        act->setData(s);
+        styleAct->addAction(act);
+    }
 	connect(styleAct, SIGNAL(triggered(QAction*)), this, SLOT(changeStyle(QAction*)));
 
 }
