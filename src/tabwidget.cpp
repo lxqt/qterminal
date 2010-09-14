@@ -213,10 +213,14 @@ void TabWidget::mouseDoubleClickEvent ( QMouseEvent * event )
 void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
 {
     QMenu menu(this);
+    QAction * act;
 
-    QAction* act = new QAction(QIcon(":/icons/font.png"), tr("Change Font"), this);
+// TODO/FIXME: a bug in the Qt library: http://bugreports.qt.nokia.com/browse/QTBUG-7769
+#ifndef Q_WS_MAC || QT_VERSION >= 0x040603
+    act = new QAction(QIcon(":/icons/font.png"), tr("Change Font"), this);
     connect(act, SIGNAL(triggered()), this, SLOT(changeFont()));
     menu.addAction(act);
+#endif
 
     act = new QAction(this);
     act->setSeparator(true);
@@ -340,11 +344,10 @@ void TabWidget::moveRight()
     move(Right);
 }
 
-
 void TabWidget::changeFont()
 {
     bool ok;
-    QFont font = QFontDialog::getFont(&ok, QFont("Monospace", 12), this);
+    QFont font = QFontDialog::getFont(&ok, currentFont, this);
     if(ok)
     {
         for(int i = 0; i < count(); ++i)

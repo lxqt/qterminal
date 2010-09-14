@@ -26,6 +26,8 @@
 
 class ColorSchemaDialog : public QDialog , private Ui::ColorSchemaDialog
 {
+    Q_OBJECT
+
 public:
     ColorSchemaDialog( QWidget * parent = 0, Qt::WindowFlags f = 0 );
     ~ColorSchemaDialog();
