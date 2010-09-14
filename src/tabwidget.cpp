@@ -24,7 +24,6 @@
 #include "termwidget.h"
 #include "tabwidget.h"
 #include "config.h"
-#include "colorschemadialog.h"
 #include "properties.h"
 
 #define TAB_INDEX_PROPERTY "tab_index"

@@ -1,7 +1,6 @@
 set( EXE_NAME qterminal )
 
 set( QTERM_SRC
-	colorschemadialog.cpp
 	main.cpp
 	mainwindow.cpp
 	tabwidget.cpp
@@ -11,7 +10,6 @@ set( QTERM_SRC
 )
 
 set( QTERM_MOC_SRC
-	colorschemadialog.h
 	mainwindow.h
 	tabwidget.h
     termwidget.h
@@ -19,7 +17,6 @@ set( QTERM_MOC_SRC
 )
 
 set( QTERM_UI_SRC
-	forms/colorschemadialog.ui
 	forms/qterminal.ui
     forms/propertiesdialog.ui
 )
