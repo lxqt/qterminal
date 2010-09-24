@@ -34,6 +34,8 @@ Q_OBJECT
 public:
     TabWidget(QWidget* parent = 0);
 
+    TermWidget * terminal(int tabIndex = 0);
+
 public slots:
     int addTerminal(const QString& shell_program = QString());
     void removeTerminal(int);

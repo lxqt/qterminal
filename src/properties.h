@@ -22,6 +22,8 @@ class Properties
         QFont font;
         int colorScheme;  
         QString guiStyle;
+
+        QString emulation;
    
     private:
 

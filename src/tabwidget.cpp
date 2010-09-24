@@ -43,6 +43,13 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
     connect(tb, SIGNAL(clicked()), SLOT(addTerminal()));
 }
 
+TermWidget * TabWidget::terminal(int tabIndex)
+{
+    if (count() < tabIndex+1)
+        return 0;
+    return reinterpret_cast<TermWidget*>(widget(tabIndex));
+}
+
 void TabWidget::setWorkDirectory(const QString& dir)
 {
     this->work_dir = dir;

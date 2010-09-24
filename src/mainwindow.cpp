@@ -22,6 +22,7 @@
 
 #include "mainwindow.h"
 #include "tabwidget.h"
+#include "termwidget.h"
 #include "config.h"
 #include "version.h"
 #include "properties.h"
@@ -124,7 +125,9 @@ void MainWindow::actAbout_triggered()
 
 void MainWindow::actProperties_triggered()
 {
-    PropertiesDialog * p = new PropertiesDialog(this);
+    QStringList emulations = consoleTabulator->terminal()->availableKeyBindings();
+    emulations.sort();    
+    PropertiesDialog * p = new PropertiesDialog(emulations, this);
     connect(p, SIGNAL(propertiesChanged()), this, SLOT(propertiesChanged()));
     p->exec();
 }

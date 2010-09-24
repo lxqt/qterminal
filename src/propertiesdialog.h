@@ -9,7 +9,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
     Q_OBJECT
 
     public:
-        PropertiesDialog(QWidget * parent = 0);
+        PropertiesDialog(const QStringList & emulations, QWidget * parent = 0);
         ~PropertiesDialog();
 
     signals:

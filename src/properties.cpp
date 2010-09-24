@@ -61,6 +61,8 @@ void Properties::loadSettings()
 
     mainWindowGeometry = settings.value("MainWindow/geometry").toByteArray();
     mainWindowState = settings.value("MainWindow/state").toByteArray();
+
+    emulation = settings.value("emulation", "default").toString();
     
 }
 
@@ -83,5 +85,7 @@ void Properties::saveSettings()
 
     settings.setValue("MainWindow/geometry", mainWindowGeometry);
     settings.setValue("MainWindow/state", mainWindowState);
+
+    settings.setValue("emulation", emulation);
 }
 

@@ -44,6 +44,7 @@ TermWidget::TermWidget(const QString & wdir, QWidget * parent)
     connect(this, SIGNAL(customContextMenuRequested(const QPoint &)),
             this, SLOT(customContextMenuCall(const QPoint &)));
 
+    //setKeyBindings("linux");
     startShellProgram();
 }
 
@@ -51,6 +52,8 @@ void TermWidget::propertiesChanged()
 {
     setColorScheme(Properties::Instance()->colorScheme);
     setTerminalFont(Properties::Instance()->font);
+    qDebug() << "TermWidget::propertiesChanged" << this << "emulation:" << Properties::Instance()->emulation;
+    setKeyBindings(Properties::Instance()->emulation);
     update();
 }
 
