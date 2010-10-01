@@ -1,4 +1,4 @@
-#include <QTermWidget.h>
+#include <qtermwidget.h>
 
 #include "properties.h"
 #include "config.h"

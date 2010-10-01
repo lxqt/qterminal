@@ -1,7 +1,7 @@
 #ifndef TERMWIDGET_H
 #define TERMWIDGET_H
 
-#include <QTermWidget.h>
+#include <qtermwidget.h>
 
 
 class TermWidget : public QTermWidget
