@@ -1,6 +1,7 @@
 #include "termwidgetholder.h"
 #include "termwidget.h"
 #include "properties.h"
+#include <assert.h>
 
 
 TermWidgetHolder::TermWidgetHolder(const QString & wdir, QWidget * parent)

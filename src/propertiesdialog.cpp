@@ -29,7 +29,7 @@ PropertiesDialog::PropertiesDialog(const QStringList & emulations, QWidget * par
     int ix = styleComboBox->findText(Properties::Instance()->guiStyle);
     if (ix != -1)
         styleComboBox->setCurrentIndex(ix);
-
+    
     fontComboBox->setCurrentFont(Properties::Instance()->font);
     sizeSpinBox->setValue(Properties::Instance()->font.pointSize());
 

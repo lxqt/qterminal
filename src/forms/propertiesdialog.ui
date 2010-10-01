@@ -56,7 +56,7 @@
       <enum>QFrame::Box</enum>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="lookAndFeelPage">
       <layout class="QGridLayout" name="gridLayout_4">
@@ -68,6 +68,9 @@
          <layout class="QGridLayout" name="gridLayout">
           <item row="0" column="0">
            <widget class="QFontComboBox" name="fontComboBox">
+            <property name="editable">
+             <bool>false</bool>
+            </property>
             <property name="fontFilters">
              <set>QFontComboBox::MonospacedFonts</set>
             </property>
