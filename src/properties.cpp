@@ -64,6 +64,17 @@ void Properties::loadSettings()
 
     emulation = settings.value("emulation", "default").toString();
     
+    // sessions
+    int size = settings.beginReadArray("Sessions");
+    for (int i = 0; i < size; ++i)
+    {
+        settings.setArrayIndex(i);
+        QString name(settings.value("name").toString());
+        if (name.isEmpty())
+            continue;
+        sessions[name] = settings.value("state").toByteArray();
+    }
+    settings.endArray();
 }
 
 void Properties::saveSettings()
@@ -87,5 +98,19 @@ void Properties::saveSettings()
     settings.setValue("MainWindow/state", mainWindowState);
 
     settings.setValue("emulation", emulation);
+
+    // sessions
+    settings.beginWriteArray("Sessions");
+    int i = 0;
+    Sessions::iterator sit = sessions.begin();
+    while (sit != sessions.end())
+    {
+        settings.setArrayIndex(i);
+        settings.setValue("name", sit.key());
+        settings.setValue("state", sit.value());
+        ++sit;
+        ++i;
+    }
+   settings.endArray();
 }
 

@@ -43,7 +43,7 @@ MainWindow::MainWindow(const QString& work_dir, const QString& command, QWidget 
     connect(consoleTabulator, SIGNAL(quit_notification()), SLOT(quit()));
     consoleTabulator->setWorkDirectory(work_dir);
     //consoleTabulator->setShellProgram(command);
-    consoleTabulator->addTerminal(command);
+    consoleTabulator->addNewTab(command);
     setWindowTitle(STR_VERSION);
     setWindowIcon(QIcon(":/icons/main.png"));
     this->addActions();
@@ -55,33 +55,52 @@ void MainWindow::addActions()
     QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
     settings.beginGroup("Shortcuts");
 
-    QAction* act = new QAction(this);
-
+    QAction* act = new QAction(tr("Add New Session"), this);
     act->setShortcut(Properties::Instance()->shortcuts[ADD_TAB]);
-    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(addTerminal()));
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
     addAction(act);
 
-    act = new QAction(this);
+    act = new QAction(tr("Switch To Right"), this);
     act->setShortcut(Properties::Instance()->shortcuts[TAB_RIGHT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(traverseRight()));
     addAction(act);
 
-    act = new QAction(this);
+    act = new QAction(tr("Switch To Left"), this);
     act->setShortcut(Properties::Instance()->shortcuts[TAB_LEFT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(traverseLeft()));
     addAction(act);
 
-    act = new QAction(this);
+    act = new QAction(tr("Move Tab To Left"), this);
     act->setShortcut(Properties::Instance()->shortcuts[MOVE_LEFT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(moveLeft()));
     addAction(act);
 
-    act = new QAction(this);
+    act = new QAction(tr("Move Tab To Right"), this);
     act->setShortcut(Properties::Instance()->shortcuts[MOVE_RIGHT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(moveRight()));
     addAction(act);
 
+    act = new QAction(this);
+    act->setSeparator(true);
+    addAction(act);
+
+    act = new QAction(tr("Save Session"), this);
+    act->setShortcut(QKeySequence::Save);
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(saveSession()));
+    addAction(act);
+
+    act = new QAction(tr("Load Session"), this);
+    act->setShortcut(QKeySequence::Open);
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(loadSession()));
+    addAction(act);
+
+    act = new QAction(this);
+    act->setSeparator(true);
+    addAction(act);
+
     settings.endGroup();
+
+    menu_File->insertActions(actQuit, actions());
 }
 
 MainWindow::~MainWindow()
@@ -126,7 +145,6 @@ void MainWindow::actAbout_triggered()
 void MainWindow::actProperties_triggered()
 {
     QStringList emulations = consoleTabulator->terminal()->availableKeyBindings();
-    emulations.sort();    
     PropertiesDialog * p = new PropertiesDialog(emulations, this);
     connect(p, SIGNAL(propertiesChanged()), this, SLOT(propertiesChanged()));
     p->exec();

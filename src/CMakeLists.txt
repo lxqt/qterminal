@@ -5,6 +5,7 @@ set( QTERM_SRC
 	mainwindow.cpp
 	tabwidget.cpp
     termwidget.cpp
+    termwidgetholder.cpp
     properties.cpp
     propertiesdialog.cpp
 )
@@ -13,6 +14,7 @@ set( QTERM_MOC_SRC
 	mainwindow.h
 	tabwidget.h
     termwidget.h
+    termwidgetholder.h
     propertiesdialog.h
 )
 

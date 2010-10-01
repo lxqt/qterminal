@@ -42,8 +42,8 @@
 
 #ifdef Q_WS_MAC
 // macosx shortcuts
-#define ADD_TAB_SHORTCUT	       "QKeySequence::AddTab"
-#define CLOSE_TAB_SHORTCUT         "QKeySequence::Close"
+#define ADD_TAB_SHORTCUT	       "Ctrl+N"
+#define CLOSE_TAB_SHORTCUT         "Ctrl+W"
 #define TAB_LEFT_SHORTCUT	       "Shift+Left"
 #define TAB_RIGHT_SHORTCUT	       "Shift+Right"
 

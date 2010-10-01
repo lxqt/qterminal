@@ -26,6 +26,9 @@ class TermWidgetHolder : public QWidget
         void propertiesChanged();
         TermWidget * terminal();
 
+        void loadSession();
+        void saveSession(const QString & name);
+
     public slots:
         void splitHorizontal(TermWidget * term);
         void splitVertical(TermWidget * term);

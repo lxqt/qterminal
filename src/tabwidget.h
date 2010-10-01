@@ -28,18 +28,18 @@ class TermWidget;
 class QAction;
 class QActionGroup;
 
+
 class TabWidget : public QTabWidget
 {
 Q_OBJECT
 public:
     TabWidget(QWidget* parent = 0);
 
-    TermWidget * terminal(int tabIndex = 0);
+    TermWidget * terminal();
 
 public slots:
-    int addTerminal(const QString& shell_program = QString());
-    void removeTerminal(int);
-    void removeCurrentTerminal();
+    int addNewTab(const QString& shell_program = QString());
+    void removeCurrentTab();
     int traverseRight();
     int traverseLeft();
     void removeFinished();
@@ -50,6 +50,9 @@ public slots:
     void setWorkDirectory(const QString&);
 
     void propertiesChanged();
+
+    void saveSession();
+    void loadSession();
     
 signals:
     void quit_notification();

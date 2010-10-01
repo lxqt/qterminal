@@ -25,6 +25,8 @@
 #include "tabwidget.h"
 #include "config.h"
 #include "properties.h"
+#include "termwidgetholder.h"
+
 
 #define TAB_INDEX_PROPERTY "tab_index"
 
@@ -35,19 +37,17 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
     QToolButton* tb = new QToolButton(this);
     tb->setIcon(QIcon(":/icons/remove.png"));
     setCornerWidget(tb, Qt::BottomRightCorner);
-    connect(tb, SIGNAL(clicked()), SLOT(removeCurrentTerminal()));
+    connect(tb, SIGNAL(clicked()), SLOT(removeCurrentTab()));
 
     tb = new QToolButton(this);
     tb->setIcon(QIcon(":/icons/add.png"));
     setCornerWidget(tb, Qt::BottomLeftCorner);
-    connect(tb, SIGNAL(clicked()), SLOT(addTerminal()));
+    connect(tb, SIGNAL(clicked()), SLOT(addNewTab()));
 }
 
-TermWidget * TabWidget::terminal(int tabIndex)
+TermWidget * TabWidget::terminal()
 {
-    if (count() < tabIndex+1)
-        return 0;
-    return reinterpret_cast<TermWidget*>(widget(tabIndex));
+   return reinterpret_cast<TermWidgetHolder*>(widget(0))->terminal();
 }
 
 void TabWidget::setWorkDirectory(const QString& dir)
@@ -60,14 +60,15 @@ void TabWidget::setWorkDirectory(const QString& dir)
 //    this->shell_program = program;
 //}
 
-int TabWidget::addTerminal(const QString& shell_program)
+int TabWidget::addNewTab(const QString& shell_program)
 {
     tabNumerator ++;
     QString label = QString(tr("Shell No. %1")).arg(tabNumerator);
 
-    TermWidget * console = new TermWidget(work_dir);
+    TermWidgetHolder * console = new TermWidgetHolder(work_dir, this);
     connect(console, SIGNAL(finished()), SLOT(removeFinished()));
-    connect(console, SIGNAL(removeCurrentTerminal()), this, SLOT(removeCurrentTerminal()));    
+    //connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeCurrentTab()));
+    connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));    
     connect(console, SIGNAL(renameSession()), this, SLOT(renameSession()));
 
     int index = addTab(console, label);
@@ -106,7 +107,7 @@ void TabWidget::refreshWindow()
 void TabWidget::mouseDoubleClickEvent ( QMouseEvent * event )
 {
     if(event->button() == Qt::LeftButton)
-        addTerminal();
+        addNewTab();
 }
 
 void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
@@ -127,7 +128,7 @@ void TabWidget::removeFinished()
     if(prop.isValid() && prop.canConvert(QVariant::Int))
     {
         int index = prop.toInt();
-	removeTerminal(index);
+	    removeTab(index);
         if(count() == 0)
 	    emit quit_notification();
     }
@@ -144,14 +145,9 @@ void TabWidget::removeTab(int index)
     setUpdatesEnabled(true);
 }
 
-void TabWidget::removeTerminal(int index)
-{    
-    removeTab(index);
-}
-
-void TabWidget::removeCurrentTerminal()
+void TabWidget::removeCurrentTab()
 {
-    if(QMessageBox::question(this,
+    if (QMessageBox::question(this,
                     tr("Close current session"),
                     tr("Are you sure you want to close current sesstion?"),
                     QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
@@ -228,10 +224,21 @@ void TabWidget::moveRight()
 
 void TabWidget::propertiesChanged()
 {
-    for(int i = 0; i < count(); ++i)
+    for (int i = 0; i < count(); ++i)
     {
-        TermWidget *console = static_cast<TermWidget*>(widget(i));
+        TermWidgetHolder *console = static_cast<TermWidgetHolder*>(widget(i));
         console->propertiesChanged();
     }
+}
+
+void TabWidget::saveSession()
+{
+   int ix = currentIndex();
+   reinterpret_cast<TermWidgetHolder*>(widget(ix))->saveSession(tabText(ix));
+}
+
+void TabWidget::loadSession()
+{
+   reinterpret_cast<TermWidgetHolder*>(widget(currentIndex()))->loadSession();
 }
 

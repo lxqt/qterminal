@@ -5,7 +5,12 @@
 #include <QFont>
 
 
-typedef QMap<QString, QString> ShortcutMap;
+
+typedef QString Session;
+
+typedef QMap<QString,Session> Sessions;
+
+typedef QMap<QString,QString> ShortcutMap;
 
 
 class Properties
@@ -24,6 +29,8 @@ class Properties
         QString guiStyle;
 
         QString emulation;
+
+        Sessions sessions;
    
     private:
 
