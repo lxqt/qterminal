@@ -120,8 +120,16 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
         delete parent;
     }
     
-    emit enableCollapse( findChildren<TermWidget*>().count() > 1 );
-    update();
+    int localCnt = findChildren<TermWidget*>().count();
+    emit enableCollapse(localCnt>1);
+    if (localCnt > 0)
+    {
+        update();
+        if (parent)
+            parent->update();
+    }
+    else
+        emit finished();
 }
 
 void TermWidgetHolder::split(TermWidget * term, Qt::Orientation orientation)
@@ -150,6 +158,8 @@ TermWidget * TermWidgetHolder::newTerm()
      // proxy signals
      connect(w, SIGNAL(renameSession()), this, SIGNAL(renameSession()));
      connect(w, SIGNAL(removeCurrentSession()), this, SIGNAL(lastTerminalClosed()));
+     connect(w, SIGNAL(finished()), this, SLOT(handle_finished()));
+
      // consume signals
      connect(w, SIGNAL(splitHorizontal(TermWidget *)),
              this, SLOT(splitHorizontal(TermWidget *)));
@@ -165,5 +175,13 @@ TermWidget * TermWidgetHolder::newTerm()
      return w;
 }
 
-
-
+void TermWidgetHolder::handle_finished()
+{
+    TermWidget * w = qobject_cast<TermWidget*>(sender());
+    if (!w)
+    {
+        qDebug() << "TermWidgetHolder::handle_finished: Unknown object to handle" << w;
+        assert(0);
+    }
+    splitCollapse(w);
+}
