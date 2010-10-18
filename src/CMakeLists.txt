@@ -51,6 +51,7 @@ add_executable( ${EXE_NAME} ${GUI_TYPE}
 target_link_libraries( ${EXE_NAME}
 	${QT_LIBRARIES}
 	${QTERMWIDGET_LIBRARIES}
+	util
 )
 
 
