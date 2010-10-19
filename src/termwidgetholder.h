@@ -25,6 +25,7 @@ class TermWidgetHolder : public QWidget
 
         void propertiesChanged();
         TermWidget * terminal();
+        void setInitialFocus();
 
         void loadSession();
         void saveSession(const QString & name);

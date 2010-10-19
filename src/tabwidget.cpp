@@ -74,7 +74,7 @@ int TabWidget::addNewTab(const QString& shell_program)
     int index = addTab(console, label);
     recountIndexes();
     setCurrentIndex(index);
-    console->setFocus();
+    console->setInitialFocus();
     return index;
 }
 

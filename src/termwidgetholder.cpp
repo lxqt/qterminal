@@ -13,7 +13,8 @@ TermWidgetHolder::TermWidgetHolder(const QString & wdir, QWidget * parent)
     lay->setContentsMargins(0, 0, 0, 0);
 
     QSplitter * s = new QSplitter(this);
-    s->addWidget(newTerm());
+    TermWidget * w = newTerm();
+    s->addWidget(w);
     lay->addWidget(s);
 
     setLayout(lay);
@@ -27,6 +28,13 @@ TermWidget * TermWidgetHolder::terminal()
 {
     QList<TermWidget*> list = findChildren<TermWidget*>();
     return list.count() == 0 ? 0 : list.at(0);
+}
+
+void TermWidgetHolder::setInitialFocus()
+{
+    TermWidget * w = terminal();
+    if (w)
+        w->setFocus(Qt::OtherFocusReason);
 }
 
 void TermWidgetHolder::loadSession()
@@ -145,34 +153,36 @@ void TermWidgetHolder::split(TermWidget * term, Qt::Orientation orientation)
 
     QSplitter * s = new QSplitter(orientation, this);
     s->insertWidget(0, term);
-    s->insertWidget(1, newTerm());
+    TermWidget * w = newTerm();
+    s->insertWidget(1, w);
     s->setSizes(sizes);
 
     parent->insertWidget(ix, s);
     parent->setSizes(parentSizes);
+
+    w->setFocus(Qt::OtherFocusReason);    
 }
 
 TermWidget * TermWidgetHolder::newTerm()
 {
-     TermWidget * w = new TermWidget(m_wdir, this);
-     // proxy signals
-     connect(w, SIGNAL(renameSession()), this, SIGNAL(renameSession()));
-     connect(w, SIGNAL(removeCurrentSession()), this, SIGNAL(lastTerminalClosed()));
-     connect(w, SIGNAL(finished()), this, SLOT(handle_finished()));
+    TermWidget * w = new TermWidget(m_wdir, this);
+    // proxy signals
+    connect(w, SIGNAL(renameSession()), this, SIGNAL(renameSession()));
+    connect(w, SIGNAL(removeCurrentSession()), this, SIGNAL(lastTerminalClosed()));
+    connect(w, SIGNAL(finished()), this, SLOT(handle_finished()));
+    // consume signals
+    connect(w, SIGNAL(splitHorizontal(TermWidget *)),
+            this, SLOT(splitHorizontal(TermWidget *)));
+    connect(w, SIGNAL(splitVertical(TermWidget *)),
+            this, SLOT(splitVertical(TermWidget *)));
+    connect(w, SIGNAL(splitCollapse(TermWidget *)),
+            this, SLOT(splitCollapse(TermWidget *)));
+    // backward signals
+    connect(this, SIGNAL(enableCollapse(bool)), w, SLOT(enableCollapse(bool)));
 
-     // consume signals
-     connect(w, SIGNAL(splitHorizontal(TermWidget *)),
-             this, SLOT(splitHorizontal(TermWidget *)));
-     connect(w, SIGNAL(splitVertical(TermWidget *)),
-             this, SLOT(splitVertical(TermWidget *)));
-     connect(w, SIGNAL(splitCollapse(TermWidget *)),
-             this, SLOT(splitCollapse(TermWidget *)));
-     // backward signals
-     connect(this, SIGNAL(enableCollapse(bool)), w, SLOT(enableCollapse(bool)));
+    emit enableCollapse( findChildren<TermWidget*>().count() > 1 ); 
 
-     emit enableCollapse( findChildren<TermWidget*>().count() > 1 ); 
-
-     return w;
+    return w;
 }
 
 void TermWidgetHolder::handle_finished()
