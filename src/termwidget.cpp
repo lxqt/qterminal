@@ -5,7 +5,7 @@
 static int TermWidgetCount = 0;
 
 
-TermWidget::TermWidget(const QString & wdir, QWidget * parent)
+TermWidgetImpl::TermWidgetImpl(const QString & wdir, QWidget * parent)
     : QTermWidget(0, parent)
 {
     TermWidgetCount++;
@@ -67,16 +67,16 @@ TermWidget::TermWidget(const QString & wdir, QWidget * parent)
     startShellProgram();
 }
 
-void TermWidget::propertiesChanged()
+void TermWidgetImpl::propertiesChanged()
 {
     setColorScheme(Properties::Instance()->colorScheme);
     setTerminalFont(Properties::Instance()->font);
-    qDebug() << "TermWidget::propertiesChanged" << this << "emulation:" << Properties::Instance()->emulation;
+    qDebug() << "TermWidgetImpl::propertiesChanged" << this << "emulation:" << Properties::Instance()->emulation;
     setKeyBindings(Properties::Instance()->emulation);
     update();
 }
 
-void TermWidget::customContextMenuCall(const QPoint & pos)
+void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
 {
     QMenu menu;
     menu.addActions(actions());
@@ -86,23 +86,90 @@ void TermWidget::customContextMenuCall(const QPoint & pos)
     menu.exec(mapToGlobal(pos));
 }
 
-void TermWidget::act_splitVertical()
+void TermWidgetImpl::act_splitVertical()
 {
-    emit splitVertical(this);
+    emit splitVertical();
 }
 
-void TermWidget::act_splitHorizontal()
+void TermWidgetImpl::act_splitHorizontal()
 {
-    emit splitHorizontal(this);
+    emit splitHorizontal();
 }
 
-void TermWidget::act_splitCollapse()
+void TermWidgetImpl::act_splitCollapse()
 {
-    emit splitCollapse(this);
+    emit splitCollapse();
 }
 
-void TermWidget::enableCollapse(bool enable)
+void TermWidgetImpl::enableCollapse(bool enable)
 {
     actCollapse->setEnabled(enable);
 }
 
+
+
+TermWidget::TermWidget(const QString & wdir, QWidget * parent)
+    : QWidget(parent)
+{
+    m_border = palette().color(QPalette::Window);
+    m_term = new TermWidgetImpl(wdir, this);
+    m_layout = new QVBoxLayout;
+    m_layout->setContentsMargins(3, 3, 3, 3);
+    setLayout(m_layout);
+    
+    m_layout->addWidget(m_term);
+    
+    connect(m_term, SIGNAL(finished()), this, SIGNAL(finished()));
+    connect(m_term, SIGNAL(splitHorizontal()),
+            this, SLOT(term_splitHorizontal()));
+    connect(m_term, SIGNAL(splitVertical()),
+            this, SLOT(term_splitVertical()));
+    connect(m_term, SIGNAL(splitCollapse()),
+            this, SLOT(term_splitCollapse()));
+    connect(m_term, SIGNAL(termGetFocus()), this, SLOT(term_termGetFocus()));
+    connect(m_term, SIGNAL(termLostFocus()), this, SLOT(term_termLostFocus()));
+}
+
+void TermWidget::enableCollapse(bool enable)
+{
+    m_term->enableCollapse(enable);
+}
+
+void TermWidget::term_splitHorizontal()
+{
+    emit splitHorizontal(this);
+}
+
+void TermWidget::term_splitVertical()
+{
+    emit splitVertical(this);
+}
+
+void TermWidget::term_splitCollapse()
+{
+    emit splitCollapse(this);
+}
+
+void TermWidget::term_termGetFocus()
+{
+    qDebug() << "get focus" << this << this->size();
+    m_border = palette().color(QPalette::Highlight);
+    update();
+}
+
+void TermWidget::term_termLostFocus()
+{
+    qDebug() << "lost focus" << this;
+    m_border = palette().color(QPalette::Window);
+    update();
+}
+
+void TermWidget::paintEvent (QPaintEvent * event)
+{
+    qDebug() << "paintEvent";
+    QPainter p(this);
+    QPen pen(m_border);
+    pen.setBrush(m_border);
+    p.setPen(pen);
+    p.drawRect(0, 0, width()-1, height()-1);
+}

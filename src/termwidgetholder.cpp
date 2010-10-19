@@ -8,11 +8,13 @@ TermWidgetHolder::TermWidgetHolder(const QString & wdir, QWidget * parent)
     : QWidget(parent),
       m_wdir(wdir)
 {
+    setFocusPolicy(Qt::NoFocus);
     QGridLayout * lay = new QGridLayout(this);
     lay->setSpacing(0);
     lay->setContentsMargins(0, 0, 0, 0);
 
     QSplitter * s = new QSplitter(this);
+    s->setFocusPolicy(Qt::NoFocus);
     TermWidget * w = newTerm();
     s->addWidget(w);
     lay->addWidget(s);
@@ -152,6 +154,7 @@ void TermWidgetHolder::split(TermWidget * term, Qt::Orientation orientation)
     sizes << 1 << 1;
 
     QSplitter * s = new QSplitter(orientation, this);
+    s->setFocusPolicy(Qt::NoFocus);
     s->insertWidget(0, term);
     TermWidget * w = newTerm();
     s->insertWidget(1, w);
