@@ -100,6 +100,57 @@ void TermWidgetHolder::setWDir(const QString & wdir)
     m_wdir = wdir;
 }
 
+void TermWidgetHolder::switchNextSubterminal()
+{
+    // TODO/FIXME: merge switchPrevSubterminal with switchNextSubterminal
+    QList<TermWidget*> l = findChildren<TermWidget*>();
+    int ix = -1;
+    foreach (TermWidget * w, l)
+    {
+        ++ix;
+        //qDebug() << ix << w << w->impl() << w->impl()->hasFocus() << QApplication::focusWidget();
+        if (w->impl()->hasFocus())
+        {
+            break;
+        }
+    }
+
+    if (ix < l.count()-1)
+    {
+        l.at(ix+1)->impl()->setFocus(Qt::OtherFocusReason);
+    }
+    else if (ix = l.count()-1)
+    {
+        l.at(0)->impl()->setFocus(Qt::OtherFocusReason);
+    }
+}
+
+void TermWidgetHolder::switchPrevSubterminal()
+{
+    // TODO/FIXME: merge switchPrevSubterminal with switchNextSubterminal
+    QList<TermWidget*> l = findChildren<TermWidget*>();
+    int ix = -1;
+    foreach (TermWidget * w, l)
+    {
+        ++ix;
+        //qDebug() << ix << w << w->impl() << w->impl()->hasFocus() << QApplication::focusWidget();
+        if (w->impl()->hasFocus())
+        {
+            break;
+        }
+    }
+    //qDebug() << ix << l.at(ix)->impl() << QApplication::focusWidget() << l;
+
+    if (ix > 0)
+    {
+        l.at(ix-1)->impl()->setFocus(Qt::OtherFocusReason);
+    }
+    else if (ix == 0)
+    {
+        l.at(l.count()-1)->impl()->setFocus(Qt::OtherFocusReason);
+    }
+}
+
 void TermWidgetHolder::propertiesChanged()
 {
     foreach(TermWidget *w, findChildren<TermWidget*>())

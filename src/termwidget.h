@@ -47,6 +47,8 @@ class TermWidget : public QWidget
         void propertiesChanged() { m_term->propertiesChanged(); }
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }
         
+        TermWidgetImpl * impl() { return m_term; }
+        
     signals:
         void finished();
         void renameSession();

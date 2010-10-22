@@ -22,7 +22,7 @@
 
 #include "mainwindow.h"
 #include "tabwidget.h"
-#include "termwidget.h"
+#include "termwidgetholder.h"
 #include "config.h"
 #include "version.h"
 #include "properties.h"
@@ -59,15 +59,25 @@ void MainWindow::addActions()
     act->setShortcut(Properties::Instance()->shortcuts[ADD_TAB]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
     addAction(act);
+    
+    act = new QAction(tr("Switch to the Next Sub-terminal"), this);
+    act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
+    connect(act, SIGNAL(triggered()), consoleTabulator->terminalHolder(), SLOT(switchNextSubterminal()));
+    addAction(act);
+
+    act = new QAction(tr("Switch to the Previous Sub-terminal"), this);
+    act->setShortcut(Properties::Instance()->shortcuts[SUB_PREV]);
+    connect(act, SIGNAL(triggered()), consoleTabulator->terminalHolder(), SLOT(switchPrevSubterminal()));
+    addAction(act);
 
     act = new QAction(tr("Switch To Right"), this);
     act->setShortcut(Properties::Instance()->shortcuts[TAB_RIGHT]);
-    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(traverseRight()));
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchToRight()));
     addAction(act);
 
     act = new QAction(tr("Switch To Left"), this);
     act->setShortcut(Properties::Instance()->shortcuts[TAB_LEFT]);
-    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(traverseLeft()));
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchToLeft()));
     addAction(act);
 
     act = new QAction(tr("Move Tab To Left"), this);

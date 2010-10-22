@@ -22,10 +22,10 @@
 #include <QtCore>
 
 #include "termwidget.h"
+#include "termwidgetholder.h"
 #include "tabwidget.h"
 #include "config.h"
 #include "properties.h"
-#include "termwidgetholder.h"
 
 
 #define TAB_INDEX_PROPERTY "tab_index"
@@ -48,6 +48,11 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
 TermWidget * TabWidget::terminal()
 {
    return reinterpret_cast<TermWidgetHolder*>(widget(0))->terminal();
+}
+
+TermWidgetHolder * TabWidget::terminalHolder()
+{
+    return reinterpret_cast<TermWidgetHolder*>(widget(0));
 }
 
 void TabWidget::setWorkDirectory(const QString& dir)
@@ -157,7 +162,7 @@ void TabWidget::removeCurrentTab()
     }
 }
 
-int TabWidget::traverseRight()
+int TabWidget::switchToRight()
 {
     int next_pos = currentIndex() + 1;
     if (next_pos < count())
@@ -167,7 +172,7 @@ int TabWidget::traverseRight()
     return currentIndex();
 }
 
-int TabWidget::traverseLeft()
+int TabWidget::switchToLeft()
 {
     int previous_pos = currentIndex() - 1;
     if (previous_pos < 0)

@@ -2,9 +2,9 @@
 #define TERMWIDGETHOLDER_H
 
 #include <QWidget>
-
+#include "termwidget.h"
 class QSplitter;
-class TermWidget;
+
 
 
 /*! \brief TermWidget group/session manager.
@@ -35,6 +35,8 @@ class TermWidgetHolder : public QWidget
         void splitVertical(TermWidget * term);
         void splitCollapse(TermWidget * term);
         void setWDir(const QString & wdir);
+        void switchNextSubterminal();
+        void switchPrevSubterminal();
 
     signals:
         void finished();

@@ -55,6 +55,8 @@ void Properties::loadSettings()
     shortcuts[CLOSE_TAB] = settings.value(CLOSE_TAB, CLOSE_TAB_SHORTCUT).toString();
     shortcuts[TAB_RIGHT] = settings.value(TAB_RIGHT, TAB_RIGHT_SHORTCUT).toString();
     shortcuts[TAB_LEFT] = settings.value(TAB_LEFT, TAB_LEFT_SHORTCUT).toString();
+    shortcuts[SUB_NEXT] = settings.value(SUB_NEXT, SUB_NEXT_SHORTCUT).toString();
+    shortcuts[SUB_PREV] = settings.value(SUB_PREV, SUB_PREV_SHORTCUT).toString();
     shortcuts[MOVE_LEFT] = settings.value(MOVE_LEFT, MOVE_LEFT_SHORTCUT).toString();
     shortcuts[MOVE_RIGHT] = settings.value(MOVE_RIGHT, MOVE_RIGHT_SHORTCUT).toString();
     settings.endGroup();
@@ -79,7 +81,7 @@ void Properties::loadSettings()
 
 void Properties::saveSettings()
 {
-        qDebug("Properties::saveSettings");
+    qDebug("Properties::saveSettings");
     QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
 
     settings.setValue("guiStyle", guiStyle);
@@ -111,6 +113,6 @@ void Properties::saveSettings()
         ++sit;
         ++i;
     }
-   settings.endArray();
+    settings.endArray();
 }
 

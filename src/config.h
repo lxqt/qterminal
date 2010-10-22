@@ -26,6 +26,8 @@
 #define CLOSE_TAB "CloseTab"
 #define TAB_RIGHT "TabRight"
 #define TAB_LEFT "TabLeft"
+#define SUB_NEXT "SubterminalNext"
+#define SUB_PREV "SubterminalPrev"
 #define MOVE_LEFT "MoveLeft"
 #define MOVE_RIGHT "MoveRight"
 #define COPY_SELECTION "CopySelection"
@@ -46,6 +48,8 @@
 #define CLOSE_TAB_SHORTCUT         "Ctrl+W"
 #define TAB_LEFT_SHORTCUT	       "Shift+Left"
 #define TAB_RIGHT_SHORTCUT	       "Shift+Right"
+#define SUB_NEXT_SHORTCUT	       "Shift+Up"
+#define SUB_PREV_SHORTCUT	       "Shift+Down"
 
 #define COPY_SELECTION_SHORTCUT      "Ctrl+Insert"
 #define PASTE_SELECTION_SHORTCUT      "Shift+Insert"
@@ -62,6 +66,9 @@
 #define CLOSE_TAB_SHORTCUT         "QKeySequence::Close"
 #define TAB_LEFT_SHORTCUT	       "Shift+Left"
 #define TAB_RIGHT_SHORTCUT	       "Shift+Right"
+#define SUB_NEXT_SHORTCUT	       "Shift+Up"
+#define SUB_PREV_SHORTCUT	       "Shift+Down"
+
 
 #define COPY_SELECTION_SHORTCUT      "Ctrl+Insert"
 #define PASTE_SELECTION_SHORTCUT      "Shift+Insert"

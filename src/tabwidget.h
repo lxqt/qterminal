@@ -25,6 +25,7 @@
 #include <QMap>
 
 class TermWidget;
+class TermWidgetHolder;
 class QAction;
 class QActionGroup;
 
@@ -36,12 +37,13 @@ public:
     TabWidget(QWidget* parent = 0);
 
     TermWidget * terminal();
+    TermWidgetHolder * terminalHolder();
 
 public slots:
     int addNewTab(const QString& shell_program = QString());
     void removeCurrentTab();
-    int traverseRight();
-    int traverseLeft();
+    int switchToRight();
+    int switchToLeft();
     void removeFinished();
     void moveLeft();
     void moveRight();
