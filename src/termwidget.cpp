@@ -113,6 +113,7 @@ TermWidget::TermWidget(const QString & wdir, QWidget * parent)
 {
     m_border = palette().color(QPalette::Window);
     m_term = new TermWidgetImpl(wdir, this);
+    setFocusProxy(m_term);
     m_layout = new QVBoxLayout;
     m_layout->setContentsMargins(3, 3, 3, 3);
     setLayout(m_layout);
