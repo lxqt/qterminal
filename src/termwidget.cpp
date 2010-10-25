@@ -170,6 +170,7 @@ void TermWidget::paintEvent (QPaintEvent * event)
     qDebug() << "paintEvent";
     QPainter p(this);
     QPen pen(m_border);
+    pen.setWidth(30);
     pen.setBrush(m_border);
     p.setPen(pen);
     p.drawRect(0, 0, width()-1, height()-1);
