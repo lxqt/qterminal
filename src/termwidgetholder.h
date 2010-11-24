@@ -24,7 +24,6 @@ class TermWidgetHolder : public QWidget
         ~TermWidgetHolder();
 
         void propertiesChanged();
-        TermWidget * terminal();
         void setInitialFocus();
 
         void loadSession();
@@ -50,7 +49,7 @@ class TermWidgetHolder : public QWidget
 
         void split(TermWidget * term, Qt::Orientation orientation);
         TermWidget * newTerm();
-    
+
     private slots:
         void handle_finished();
 };

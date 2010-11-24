@@ -24,7 +24,6 @@
 #include <QTabWidget>
 #include <QMap>
 
-class TermWidget;
 class TermWidgetHolder;
 class QAction;
 class QActionGroup;
@@ -36,7 +35,6 @@ Q_OBJECT
 public:
     TabWidget(QWidget* parent = 0);
 
-    TermWidget * terminal();
     TermWidgetHolder * terminalHolder();
 
 public slots:
@@ -55,7 +53,7 @@ public slots:
 
     void saveSession();
     void loadSession();
-    
+
 signals:
     void quit_notification();
 

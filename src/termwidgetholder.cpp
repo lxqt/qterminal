@@ -26,15 +26,10 @@ TermWidgetHolder::~TermWidgetHolder()
 {
 }
 
-TermWidget * TermWidgetHolder::terminal()
-{
-    QList<TermWidget*> list = findChildren<TermWidget*>();
-    return list.count() == 0 ? 0 : list.at(0);
-}
-
 void TermWidgetHolder::setInitialFocus()
 {
-    TermWidget * w = terminal();
+    QList<TermWidget*> list = findChildren<TermWidget*>();
+    TermWidget * w = list.count() == 0 ? 0 : list.at(0);
     if (w)
         w->setFocus(Qt::OtherFocusReason);
 }
@@ -180,7 +175,7 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
         parent->setParent(0);
         delete parent;
     }
-    
+
     int localCnt = findChildren<TermWidget*>().count();
     emit enableCollapse(localCnt>1);
     if (localCnt > 0)
@@ -214,7 +209,7 @@ void TermWidgetHolder::split(TermWidget * term, Qt::Orientation orientation)
     parent->insertWidget(ix, s);
     parent->setSizes(parentSizes);
 
-    w->setFocus(Qt::OtherFocusReason);    
+    w->setFocus(Qt::OtherFocusReason);
 }
 
 TermWidget * TermWidgetHolder::newTerm()
@@ -234,7 +229,7 @@ TermWidget * TermWidgetHolder::newTerm()
     // backward signals
     connect(this, SIGNAL(enableCollapse(bool)), w, SLOT(enableCollapse(bool)));
 
-    emit enableCollapse( findChildren<TermWidget*>().count() > 1 ); 
+    emit enableCollapse( findChildren<TermWidget*>().count() > 1 );
 
     return w;
 }

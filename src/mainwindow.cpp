@@ -59,7 +59,7 @@ void MainWindow::addActions()
     act->setShortcut(Properties::Instance()->shortcuts[ADD_TAB]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
     addAction(act);
-    
+
     act = new QAction(tr("Switch to the Next Sub-terminal"), this);
     act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
     connect(act, SIGNAL(triggered()), consoleTabulator->terminalHolder(), SLOT(switchNextSubterminal()));
@@ -149,12 +149,12 @@ void MainWindow::quit()
 
 void MainWindow::actAbout_triggered()
 {
-    QMessageBox::about(this, STR_VERSION, tr("A lightweight multiplatform terminal emulator")); 
+    QMessageBox::about(this, STR_VERSION, tr("A lightweight multiplatform terminal emulator"));
 }
 
 void MainWindow::actProperties_triggered()
 {
-    QStringList emulations = consoleTabulator->terminal()->availableKeyBindings();
+    QStringList emulations = QTermWidget::availableKeyBindings();
     PropertiesDialog * p = new PropertiesDialog(emulations, this);
     connect(p, SIGNAL(propertiesChanged()), this, SLOT(propertiesChanged()));
     p->exec();

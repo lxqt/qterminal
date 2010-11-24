@@ -21,7 +21,6 @@
 #include <QtGui>
 #include <QtCore>
 
-#include "termwidget.h"
 #include "termwidgetholder.h"
 #include "tabwidget.h"
 #include "config.h"
@@ -45,14 +44,9 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
     connect(tb, SIGNAL(clicked()), SLOT(addNewTab()));
 }
 
-TermWidget * TabWidget::terminal()
-{
-   return reinterpret_cast<TermWidgetHolder*>(widget(0))->terminal();
-}
-
 TermWidgetHolder * TabWidget::terminalHolder()
 {
-    return reinterpret_cast<TermWidgetHolder*>(widget(0));
+    return reinterpret_cast<TermWidgetHolder*>(widget(currentIndex()));
 }
 
 void TabWidget::setWorkDirectory(const QString& dir)
@@ -73,7 +67,7 @@ int TabWidget::addNewTab(const QString& shell_program)
     TermWidgetHolder * console = new TermWidgetHolder(work_dir, this);
     connect(console, SIGNAL(finished()), SLOT(removeFinished()));
     //connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeCurrentTab()));
-    connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));    
+    connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));
     connect(console, SIGNAL(renameSession()), this, SLOT(renameSession()));
 
     int index = addTab(console, label);
