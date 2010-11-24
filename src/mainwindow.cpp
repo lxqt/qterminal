@@ -111,6 +111,9 @@ void MainWindow::addActions()
     settings.endGroup();
 
     menu_File->insertActions(actQuit, actions());
+    
+    // apply props
+    propertiesChanged();
 }
 
 MainWindow::~MainWindow()
@@ -163,6 +166,7 @@ void MainWindow::actProperties_triggered()
 void MainWindow::propertiesChanged()
 {
     QApplication::setStyle(Properties::Instance()->guiStyle);
+    setWindowOpacity(Properties::Instance()->appOpacity/100.0);
     consoleTabulator->propertiesChanged();
 }
 

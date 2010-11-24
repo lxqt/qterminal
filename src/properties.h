@@ -31,6 +31,9 @@ class Properties
         QString emulation;
 
         Sessions sessions;
+    
+        int appOpacity;
+        int termOpacity;
    
     private:
 
