@@ -73,6 +73,7 @@ void TermWidgetImpl::propertiesChanged()
     setTerminalFont(Properties::Instance()->font);
     qDebug() << "TermWidgetImpl::propertiesChanged" << this << "emulation:" << Properties::Instance()->emulation;
     setKeyBindings(Properties::Instance()->emulation);
+    setTerminalOpacity(Properties::Instance()->termOpacity/100.0);
     update();
 }
 

@@ -77,6 +77,9 @@ void Properties::loadSettings()
         sessions[name] = settings.value("state").toByteArray();
     }
     settings.endArray();
+    
+    appOpacity = settings.value("MainWindow/appOpacity", 100).toInt();
+    termOpacity = settings.value("termOpacity", 100).toInt();
 }
 
 void Properties::saveSettings()
@@ -114,5 +117,8 @@ void Properties::saveSettings()
         ++i;
     }
     settings.endArray();
+    
+    settings.setValue("MainWindow/appOpacity", appOpacity);
+    settings.setValue("termOpacity", termOpacity);
 }
 

@@ -33,7 +33,8 @@ PropertiesDialog::PropertiesDialog(const QStringList & emulations, QWidget * par
     fontComboBox->setCurrentFont(Properties::Instance()->font);
     sizeSpinBox->setValue(Properties::Instance()->font.pointSize());
 
-
+    appOpacityBox->setValue(Properties::Instance()->appOpacity);
+    termOpacityBox->setValue(Properties::Instance()->termOpacity);
 }
 
 
@@ -54,6 +55,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->font.setPointSize(sizeSpinBox->value());
     Properties::Instance()->guiStyle = styleComboBox->currentText() == tr("System Default") ? QString() : styleComboBox->currentText();
     Properties::Instance()->emulation = emulationComboBox->currentText();
+    Properties::Instance()->appOpacity = appOpacityBox->value();
+    Properties::Instance()->termOpacity = termOpacityBox->value();
     emit propertiesChanged();
 }
-

@@ -18,7 +18,6 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
     private slots:
         void apply();
         void accept();
-
 };
 
 
