@@ -124,7 +124,8 @@ void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
     QMenu menu(this);
     QAction * act;
 
-    menu.addAction(QIcon(":/icons/close.png"), tr("Close session"), this, SLOT(removeCurrentTerminal()));
+    menu.addAction(QIcon(":/icons/close.png"), tr("Close session"),
+                   this, SLOT(removeCurrentTab()));
     menu.addAction(tr("Rename session"), this, SLOT(renameSession()), tr(RENAME_SESSION_SHORTCUT));
 
     menu.exec(event->globalPos());
@@ -139,18 +140,22 @@ void TabWidget::removeFinished()
         int index = prop.toInt();
 	    removeTab(index);
         if(count() == 0)
-	    emit quit_notification();
+            emit quit_notification();
     }
 }
 
 void TabWidget::removeTab(int index)
 {
     setUpdatesEnabled(false);
-    delete widget(index);
+
+    QWidget * w = widget(index);
     QTabWidget::removeTab(index);
+    w->deleteLater();
+
     recountIndexes();
     int current = currentIndex();
-    if(current >= 0 ) widget(current)->setFocus();
+    if (current >= 0 )
+        widget(current)->setFocus();
     setUpdatesEnabled(true);
 }
 
@@ -161,8 +166,10 @@ void TabWidget::removeCurrentTab()
                     tr("Are you sure you want to close current sesstion?"),
                     QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
     {
-        if(count() > 1) removeTab(currentIndex());
-        else QApplication::exit(0);
+        if (count() > 1)
+            removeTab(currentIndex());
+        else
+            QApplication::exit(0);
     }
 }
 
