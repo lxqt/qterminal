@@ -41,9 +41,6 @@
 #define DEFAULT_HEIGHT                 600
 
 // ACTIONS
-
-#ifdef Q_WS_MAC
-// macosx shortcuts
 #define ADD_TAB_SHORTCUT	       "Ctrl+N"
 #define CLOSE_TAB_SHORTCUT         "Ctrl+W"
 #define TAB_LEFT_SHORTCUT	       "Shift+Left"
@@ -58,27 +55,6 @@
 #define MOVE_RIGHT_SHORTCUT            "Shift+Alt+Right"
 
 #define RENAME_SESSION_SHORTCUT        "Shift+Alt+S"
-
-#else
-
-// X11/unix/linux shortcuts
-#define ADD_TAB_SHORTCUT	       "Alt+Ctrl+N"
-#define CLOSE_TAB_SHORTCUT         "QKeySequence::Close"
-#define TAB_LEFT_SHORTCUT	       "Shift+Left"
-#define TAB_RIGHT_SHORTCUT	       "Shift+Right"
-#define SUB_NEXT_SHORTCUT	       "Shift+Up"
-#define SUB_PREV_SHORTCUT	       "Shift+Down"
-
-
-#define COPY_SELECTION_SHORTCUT      "Ctrl+Insert"
-#define PASTE_SELECTION_SHORTCUT      "Shift+Insert"
-
-#define MOVE_LEFT_SHORTCUT             "Shift+Alt+Left"
-#define MOVE_RIGHT_SHORTCUT            "Shift+Alt+Right"
-
-#define RENAME_SESSION_SHORTCUT        "Shift+Alt+S"
-
-#endif
 
 // XON/XOFF features:
 

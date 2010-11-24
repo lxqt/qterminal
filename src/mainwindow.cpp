@@ -61,7 +61,7 @@ void MainWindow::addActions()
     addAction(act);
 
     act = new QAction(tr("Close Active Session"), this);
-    //act->setShortcut(Properties::Instance()->shortcuts[ADD_TAB]);
+    act->setShortcut(Properties::Instance()->shortcuts[CLOSE_TAB]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
     addAction(act);
 
