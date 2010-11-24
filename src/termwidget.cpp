@@ -50,14 +50,14 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, QWidget * parent)
     connect(actCollapse, SIGNAL(triggered()), this, SLOT(act_splitCollapse()));
     addAction(actCollapse);
 
-    act = new QAction(this);
-    act->setSeparator(true);
-    addAction(act);
-
-    act = new QAction(tr("&Rename session..."), this);
-    act->setShortcut(Properties::Instance()->shortcuts[RENAME_SESSION]);
-    connect(act, SIGNAL(triggered()), this, SIGNAL(renameSession()));
-    addAction(act);
+    //act = new QAction(this);
+    //act->setSeparator(true);
+    //addAction(act);
+    //
+    //act = new QAction(tr("&Rename session..."), this);
+    //act->setShortcut(Properties::Instance()->shortcuts[RENAME_SESSION]);
+    //connect(act, SIGNAL(triggered()), this, SIGNAL(renameSession()));
+    //addAction(act);
 
     setContextMenuPolicy(Qt::CustomContextMenu);
     connect(this, SIGNAL(customContextMenuRequested(const QPoint &)),
@@ -81,8 +81,8 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
 {
     QMenu menu;
     menu.addActions(actions());
-    menu.addSeparator();
-    menu.addAction(QIcon(":/icons/close.png"), tr("Close session"), this, SIGNAL(removeCurrentSession()), Properties::Instance()->shortcuts[CLOSE_TAB]);
+//    menu.addSeparator();
+//    menu.addAction(QIcon(":/icons/close.png"), tr("Close session"), this, SIGNAL(removeCurrentSession()), Properties::Instance()->shortcuts[CLOSE_TAB]);
 
     menu.exec(mapToGlobal(pos));
 }

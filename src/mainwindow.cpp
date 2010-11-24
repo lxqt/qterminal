@@ -60,6 +60,15 @@ void MainWindow::addActions()
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
     addAction(act);
 
+    act = new QAction(tr("Close Active Session"), this);
+    //act->setShortcut(Properties::Instance()->shortcuts[ADD_TAB]);
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
+    addAction(act);
+
+    act = new QAction(this);
+    act->setSeparator(true);
+    addAction(act);
+
     act = new QAction(tr("Switch to the Next Sub-terminal"), this);
     act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchNextSubterminal()));
@@ -68,6 +77,10 @@ void MainWindow::addActions()
     act = new QAction(tr("Switch to the Previous Sub-terminal"), this);
     act->setShortcut(Properties::Instance()->shortcuts[SUB_PREV]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchPrevSubterminal()));
+    addAction(act);
+
+    act = new QAction(this);
+    act->setSeparator(true);
     addAction(act);
 
     act = new QAction(tr("Switch To Right"), this);
@@ -90,11 +103,11 @@ void MainWindow::addActions()
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(moveRight()));
     addAction(act);
 
+#if 0
     act = new QAction(this);
     act->setSeparator(true);
     addAction(act);
 
-#if 0
     // TODO/FIXME: unimplemented for now
     act = new QAction(tr("Save Session"), this);
     // do not use sequences for this task - it collides with eg. mc shorcuts

@@ -139,7 +139,7 @@ void TabWidget::removeFinished()
     {
         int index = prop.toInt();
 	    removeTab(index);
-        if(count() == 0)
+        if (count() == 0)
             emit quit_notification();
     }
 }
@@ -157,6 +157,9 @@ void TabWidget::removeTab(int index)
     if (current >= 0 )
         widget(current)->setFocus();
     setUpdatesEnabled(true);
+
+    if (count() == 0)
+        emit quit_notification();
 }
 
 void TabWidget::removeCurrentTab()
