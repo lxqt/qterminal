@@ -14,15 +14,15 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, QWidget * parent)
 
     setFlowControlEnabled(FLOW_CONTROL_ENABLED);
     setFlowControlWarningEnabled(FLOW_CONTROL_WARNING_ENABLED);
-    
+
     propertiesChanged();
 
     setHistorySize(5000);
     setScrollBarPosition(QTermWidget::ScrollBarRight);
-    
+
     if (!wdir.isNull())
         setWorkingDirectory(wdir);
-	
+
     if (!Properties::Instance()->shell.isNull())
         setShellProgram(Properties::Instance()->shell);
 
@@ -83,7 +83,7 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
     menu.addActions(actions());
     menu.addSeparator();
     menu.addAction(QIcon(":/icons/close.png"), tr("Close session"), this, SIGNAL(removeCurrentSession()), Properties::Instance()->shortcuts[CLOSE_TAB]);
-    
+
     menu.exec(mapToGlobal(pos));
 }
 
@@ -118,9 +118,9 @@ TermWidget::TermWidget(const QString & wdir, QWidget * parent)
     m_layout = new QVBoxLayout;
     m_layout->setContentsMargins(3, 3, 3, 3);
     setLayout(m_layout);
-    
+
     m_layout->addWidget(m_term);
-    
+
     connect(m_term, SIGNAL(finished()), this, SIGNAL(finished()));
     connect(m_term, SIGNAL(splitHorizontal()),
             this, SLOT(term_splitHorizontal()));
@@ -168,7 +168,7 @@ void TermWidget::term_termLostFocus()
 
 void TermWidget::paintEvent (QPaintEvent * event)
 {
-    qDebug() << "paintEvent";
+    //qDebug() << "paintEvent";
     QPainter p(this);
     QPen pen(m_border);
     pen.setWidth(30);

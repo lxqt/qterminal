@@ -77,6 +77,16 @@ int TabWidget::addNewTab(const QString& shell_program)
     return index;
 }
 
+void TabWidget::switchNextSubterminal()
+{
+    terminalHolder()->switchNextSubterminal();
+}
+
+void TabWidget::switchPrevSubterminal()
+{
+    terminalHolder()->switchPrevSubterminal();
+}
+
 void TabWidget::recountIndexes()
 {
     for(int i = 0; i < count(); i++)

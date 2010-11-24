@@ -49,6 +49,9 @@ public slots:
     void refreshWindow();
     void setWorkDirectory(const QString&);
 
+    void switchNextSubterminal();
+    void switchPrevSubterminal();
+
     void propertiesChanged();
 
     void saveSession();

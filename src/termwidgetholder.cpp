@@ -103,7 +103,8 @@ void TermWidgetHolder::switchNextSubterminal()
     foreach (TermWidget * w, l)
     {
         ++ix;
-        //qDebug() << ix << w << w->impl() << w->impl()->hasFocus() << QApplication::focusWidget();
+//        qDebug() << ix << w << w->impl() << w->impl()->hasFocus() << QApplication::focusWidget();
+//        qDebug() << "parent: " << w->parent();
         if (w->impl()->hasFocus())
         {
             break;
@@ -128,7 +129,8 @@ void TermWidgetHolder::switchPrevSubterminal()
     foreach (TermWidget * w, l)
     {
         ++ix;
-        //qDebug() << ix << w << w->impl() << w->impl()->hasFocus() << QApplication::focusWidget();
+//        qDebug() << ix << w << w->impl() << w->impl()->hasFocus() << QApplication::focusWidget();
+//        qDebug() << "parent: " << w->parent();
         if (w->impl()->hasFocus())
         {
             break;

@@ -62,12 +62,12 @@ void MainWindow::addActions()
 
     act = new QAction(tr("Switch to the Next Sub-terminal"), this);
     act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
-    connect(act, SIGNAL(triggered()), consoleTabulator->terminalHolder(), SLOT(switchNextSubterminal()));
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchNextSubterminal()));
     addAction(act);
 
     act = new QAction(tr("Switch to the Previous Sub-terminal"), this);
     act->setShortcut(Properties::Instance()->shortcuts[SUB_PREV]);
-    connect(act, SIGNAL(triggered()), consoleTabulator->terminalHolder(), SLOT(switchPrevSubterminal()));
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchPrevSubterminal()));
     addAction(act);
 
     act = new QAction(tr("Switch To Right"), this);
@@ -94,16 +94,22 @@ void MainWindow::addActions()
     act->setSeparator(true);
     addAction(act);
 
+#if 0
+    // TODO/FIXME: unimplemented for now
     act = new QAction(tr("Save Session"), this);
-    act->setShortcut(QKeySequence::Save);
+    // do not use sequences for this task - it collides with eg. mc shorcuts
+    // and mainly - it's not used too often
+    //act->setShortcut(QKeySequence::Save);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(saveSession()));
     addAction(act);
 
     act = new QAction(tr("Load Session"), this);
-    act->setShortcut(QKeySequence::Open);
+    // do not use sequences for this task - it collides with eg. mc shorcuts
+    // and mainly - it's not used too often
+    //act->setShortcut(QKeySequence::Open);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(loadSession()));
     addAction(act);
-
+#endif
     act = new QAction(this);
     act->setSeparator(true);
     addAction(act);
@@ -111,7 +117,7 @@ void MainWindow::addActions()
     settings.endGroup();
 
     menu_File->insertActions(actQuit, actions());
-    
+
     // apply props
     propertiesChanged();
 }
