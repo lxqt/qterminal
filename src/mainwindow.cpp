@@ -24,7 +24,6 @@
 #include "tabwidget.h"
 #include "termwidgetholder.h"
 #include "config.h"
-#include "version.h"
 #include "properties.h"
 #include "propertiesdialog.h"
 
@@ -44,7 +43,7 @@ MainWindow::MainWindow(const QString& work_dir, const QString& command, QWidget 
     consoleTabulator->setWorkDirectory(work_dir);
     //consoleTabulator->setShellProgram(command);
     consoleTabulator->addNewTab(command);
-    setWindowTitle(STR_VERSION);
+    setWindowTitle(QString("QTerminal ") + STR_VERSION);
     setWindowIcon(QIcon(":/icons/main.png"));
     this->addActions();
 }
@@ -171,7 +170,7 @@ void MainWindow::quit()
 
 void MainWindow::actAbout_triggered()
 {
-    QMessageBox::about(this, STR_VERSION, tr("A lightweight multiplatform terminal emulator"));
+    QMessageBox::about(this, QString("QTerminal ") + STR_VERSION, tr("A lightweight multiplatform terminal emulator"));
 }
 
 void MainWindow::actProperties_triggered()

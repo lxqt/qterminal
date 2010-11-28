@@ -25,7 +25,6 @@
 #include <getopt.h>
 #include <stdlib.h>
 
-#include "version.h"
 #include  "mainwindow.h"
 
 #define out
@@ -41,7 +40,7 @@ const struct option long_options[] = {
 
 void print_usage_and_exit(int code)
 {
-    printf("This is %s\n", STR_VERSION);
+    printf("This is QTerminal %s\n", STR_VERSION);
     puts("Usage: qterminal [options]");
     puts("Options:");
     puts("--help                  Print this help");

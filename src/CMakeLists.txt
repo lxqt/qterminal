@@ -40,12 +40,33 @@ include_directories (
 
 # TODO/FIXME: apple bundle
 set(GUI_TYPE "")
+set(APPLE_BUNDLE_SOURCES "")
+if (APPLEBUNDLE)
+    set(GUI_TYPE MACOSX_BUNDLE)
+    
+	# create Info.plist file
+	set(MACOSX_BUNDLE_ICON_FILE qterminal.icns)
+	set(MACOSX_BUNDLE_INFO_STRING "QTerminal ${STR_VERSION}")
+	set(MACOSX_BUNDLE_GUI_IDENTIFIER "com.qterminal")
+	set(MACOSX_BUNDLE_LONG_VERSION_STRING "${STR_VERSION}")
+	set(MACOSX_BUNDLE_BUNDLE_NAME "$EXE_NAME}")
+	set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${STR_VERSION}")
+	set(MACOSX_BUNDLE_BUNDLE_VERSION "${STR_VERSION}")
+	set(MACOSX_BUNDLE_COPYRIGHT "(c) Petr Vanek <petr@scribus.info>")
+
+	set_source_files_properties(${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns
+                                PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
+	# use icon for app bundle to be visible in finder
+	set(APPLE_BUNDLE_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns)
+
+endif (APPLEBUNDLE)
 
 add_executable( ${EXE_NAME} ${GUI_TYPE}
 	${QTERM_SRC}
 	${QTERM_UI}
 	${QTERM_MOC}
 	${QTERM_RCC}
+    ${APPLE_BUNDLE_SOURCES}
 )
 
 target_link_libraries( ${EXE_NAME}
@@ -55,5 +76,21 @@ target_link_libraries( ${EXE_NAME}
 )
 
 
-INSTALL(TARGETS ${EXE_NAME} RUNTIME DESTINATION bin)
+if (NOT APPLEBUNDLE)
+
+    INSTALL(TARGETS ${EXE_NAME} RUNTIME DESTINATION bin)
+    
+else (NOT APPLEBUNDLE)
+    message(STATUS "APPLEBUNDLE")
+
+	install(CODE "message(STATUS \"Cleaning previously installed bundle (rm -r)\")")
+	install(CODE "execute_process(COMMAND rm -r ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app)")
+
+	install( TARGETS ${EXE_NAME} DESTINATION "${CMAKE_INSTALL_PREFIX}" )
+
+	# helper stuff to create real apple bundle.
+	# Black magic is summoned here...
+	add_subdirectory( macosx )
+    
+endif (NOT APPLEBUNDLE)
 
