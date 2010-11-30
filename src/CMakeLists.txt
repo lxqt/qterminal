@@ -91,6 +91,11 @@ else (NOT APPLEBUNDLE)
 	# helper stuff to create real apple bundle.
 	# Black magic is summoned here...
 	add_subdirectory( macosx )
+
+    # bundle required keytabs from the qtermwidget package as well
+    install(CODE "message(STATUS \"Bundling (cp) keytab files from ${QTERMWIDGET_SHARE}/qtermwidget/\")")    
+    install(CODE "execute_process(COMMAND cp -r ${QTERMWIDGET_SHARE}/qtermwidget/ ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/Resources)")
+    #install(CODE "execute_process(COMMAND ls -l ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/Resources/kb-layouts/)")
     
 endif (NOT APPLEBUNDLE)
 
