@@ -49,10 +49,10 @@ if (APPLEBUNDLE)
 	set(MACOSX_BUNDLE_INFO_STRING "QTerminal ${STR_VERSION}")
 	set(MACOSX_BUNDLE_GUI_IDENTIFIER "com.qterminal")
 	set(MACOSX_BUNDLE_LONG_VERSION_STRING "${STR_VERSION}")
-	set(MACOSX_BUNDLE_BUNDLE_NAME "$EXE_NAME}")
+	set(MACOSX_BUNDLE_BUNDLE_NAME "${EXE_NAME}")
 	set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${STR_VERSION}")
 	set(MACOSX_BUNDLE_BUNDLE_VERSION "${STR_VERSION}")
-	set(MACOSX_BUNDLE_COPYRIGHT "(c) Petr Vanek <petr@scribus.info>")
+	set(MACOSX_BUNDLE_COPYRIGHT "(c) Petr Vanek &lt;petr@scribus.info&gt;")
 
 	set_source_files_properties(${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns
                                 PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
