@@ -41,8 +41,8 @@
 #define DEFAULT_HEIGHT                 600
 
 // ACTIONS
-#define ADD_TAB_SHORTCUT	       "Ctrl+N"
-#define CLOSE_TAB_SHORTCUT         "Ctrl+W"
+//#define ADD_TAB_SHORTCUT	       "Ctrl+N"
+//#define CLOSE_TAB_SHORTCUT         "Ctrl+W"
 #define TAB_LEFT_SHORTCUT	       "Shift+Left"
 #define TAB_RIGHT_SHORTCUT	       "Shift+Right"
 #define SUB_NEXT_SHORTCUT	       "Shift+Up"

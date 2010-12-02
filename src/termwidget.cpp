@@ -26,12 +26,12 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, QWidget * parent)
     if (!Properties::Instance()->shell.isNull())
         setShellProgram(Properties::Instance()->shell);
 
-    QAction* act = new QAction(QIcon(":/icons/editcopy.png"), tr("&Copy selection"), this);
+    QAction* act = new QAction(QIcon(":/icons/edit-copy.png"), tr("&Copy selection"), this);
     act->setShortcuts(QList<QKeySequence>() << Properties::Instance()->shortcuts[COPY_SELECTION]);
     connect(act, SIGNAL(triggered()), this, SLOT(copyClipboard()));
     addAction(act);
 
-    act = new QAction(QIcon(":/icons/editpaste.png"), tr("&Paste Selection"), this);
+    act = new QAction(QIcon(":/icons/edit-paste.png"), tr("&Paste Selection"), this);
     act->setShortcuts(QList<QKeySequence>() << Properties::Instance()->shortcuts[PASTE_SELECTION]);
     connect(act, SIGNAL(triggered()), this, SLOT(pasteClipboard()));
     addAction(act);

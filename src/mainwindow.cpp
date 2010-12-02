@@ -44,7 +44,7 @@ MainWindow::MainWindow(const QString& work_dir, const QString& command, QWidget 
     //consoleTabulator->setShellProgram(command);
     consoleTabulator->addNewTab(command);
     setWindowTitle(QString("QTerminal ") + STR_VERSION);
-    setWindowIcon(QIcon(":/icons/main.png"));
+    setWindowIcon(QIcon(":/icons/qterminal.png"));
     this->addActions();
 }
 
@@ -54,13 +54,13 @@ void MainWindow::addActions()
     QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
     settings.beginGroup("Shortcuts");
 
-    QAction* act = new QAction(tr("Add New Session"), this);
-    act->setShortcut(Properties::Instance()->shortcuts[ADD_TAB]);
+    QAction* act = new QAction(QIcon(":/icons/list-add.png"), tr("Add New Session"), this);
+    act->setShortcut(QKeySequence::AddTab);//Properties::Instance()->shortcuts[ADD_TAB]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
     addAction(act);
 
-    act = new QAction(tr("Close Active Session"), this);
-    act->setShortcut(Properties::Instance()->shortcuts[CLOSE_TAB]);
+    act = new QAction(QIcon(":/icons/list-remove.png"), tr("Close Active Session"), this);
+    act->setShortcut(QKeySequence::Close);//Properties::Instance()->shortcuts[CLOSE_TAB]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
     addAction(act);
 

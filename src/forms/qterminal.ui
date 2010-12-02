@@ -88,6 +88,10 @@
    </property>
   </action>
   <action name="actQuit">
+   <property name="icon">
+    <iconset resource="../icons.qrc">
+     <normaloff>:/icons/application-exit.png</normaloff>:/icons/application-exit.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Quit...</string>
    </property>
@@ -101,6 +105,8 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources/>
+ <resources>
+  <include location="../icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

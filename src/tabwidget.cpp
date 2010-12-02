@@ -34,12 +34,12 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
 {
     setFocusPolicy(Qt::NoFocus);
     QToolButton* tb = new QToolButton(this);
-    tb->setIcon(QIcon(":/icons/remove.png"));
+    tb->setIcon(QIcon(":/icons/list-remove.png"));
     setCornerWidget(tb, Qt::BottomRightCorner);
     connect(tb, SIGNAL(clicked()), SLOT(removeCurrentTab()));
 
     tb = new QToolButton(this);
-    tb->setIcon(QIcon(":/icons/add.png"));
+    tb->setIcon(QIcon(":/icons/list-add.png"));
     setCornerWidget(tb, Qt::BottomLeftCorner);
     connect(tb, SIGNAL(clicked()), SLOT(addNewTab()));
 }
@@ -139,7 +139,7 @@ void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
     QMenu menu(this);
     QAction * act;
 
-    menu.addAction(QIcon(":/icons/close.png"), tr("Close session"),
+    menu.addAction(QIcon(":/icons/document-close.png"), tr("Close session"),
                    this, SLOT(removeCurrentTab()));
     menu.addAction(tr("Rename session"), this, SLOT(renameSession()), tr(RENAME_SESSION_SHORTCUT));
 

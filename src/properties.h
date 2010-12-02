@@ -23,18 +23,18 @@ class Properties
         QByteArray mainWindowGeometry;
         QByteArray mainWindowState;
         ShortcutMap shortcuts;
-        QString shell;    
+        QString shell;
         QFont font;
-        int colorScheme;  
+        int colorScheme;
         QString guiStyle;
 
         QString emulation;
 
         Sessions sessions;
-    
+
         int appOpacity;
         int termOpacity;
-   
+
     private:
 
         // Singleton handling
@@ -44,7 +44,7 @@ class Properties
 
         Properties();
         Properties(const Properties &) {};
-        ~Properties(); 
+        ~Properties();
 
 };
 

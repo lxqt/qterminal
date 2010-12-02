@@ -1,13 +1,12 @@
 <!DOCTYPE RCC>
 <RCC version="1.0">
   <qresource>
-    <file>icons/add.png</file>
-    <file>icons/remove.png</file>
-    <file>icons/editcopy.png</file>
-    <file>icons/editpaste.png</file>
-    <file>icons/close.png</file>
-    <file>icons/font.png</file>
-    <file>icons/main.png</file>
-    <file>icons/theme.png</file>
+    <file>icons/list-add.png</file>
+    <file>icons/list-remove.png</file>
+    <file>icons/edit-copy.png</file>
+    <file>icons/edit-paste.png</file>
+    <file>icons/document-close.png</file>
+    <file>icons/application-exit.png</file>
+    <file>icons/qterminal.png</file>
   </qresource>
 </RCC>
