@@ -179,16 +179,17 @@ void TabWidget::removeTab(int index)
 
 void TabWidget::removeCurrentTab()
 {
-    if (QMessageBox::question(this,
-                    tr("Close current session"),
-                    tr("Are you sure you want to close current sesstion?"),
-                    QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
-    {
+    // question disabled due user requests. Yes I agree it was anoying.
+//    if (QMessageBox::question(this,
+//                    tr("Close current session"),
+//                    tr("Are you sure you want to close current sesstion?"),
+//                    QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
+//    {
         if (count() > 1)
             removeTab(currentIndex());
         else
             QApplication::exit(0);
-    }
+//    }
 }
 
 int TabWidget::switchToRight()
