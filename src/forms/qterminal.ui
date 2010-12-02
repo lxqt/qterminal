@@ -48,9 +48,9 @@
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menu_File">
+   <widget class="QMenu" name="menu_Actions">
     <property name="title">
-     <string>&amp;File</string>
+     <string>&amp;Actions</string>
     </property>
     <addaction name="actProperties"/>
     <addaction name="separator"/>
@@ -63,7 +63,7 @@
     <addaction name="actAbout"/>
     <addaction name="actAboutQt"/>
    </widget>
-   <addaction name="menu_File"/>
+   <addaction name="menu_Actions"/>
    <addaction name="menu_Help"/>
   </widget>
   <action name="actAbout">

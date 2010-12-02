@@ -87,6 +87,21 @@ void TabWidget::switchPrevSubterminal()
     terminalHolder()->switchPrevSubterminal();
 }
 
+void TabWidget::splitHorizontally()
+{
+    terminalHolder()->splitHorizontal(terminalHolder()->currentTerminal());
+}
+
+void TabWidget::splitVertically()
+{
+    terminalHolder()->splitVertical(terminalHolder()->currentTerminal());
+}
+
+void TabWidget::splitCollapse()
+{
+    terminalHolder()->splitCollapse(terminalHolder()->currentTerminal());
+}
+
 void TabWidget::recountIndexes()
 {
     for(int i = 0; i < count(); i++)

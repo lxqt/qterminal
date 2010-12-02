@@ -68,6 +68,21 @@ void MainWindow::addActions()
     act->setSeparator(true);
     addAction(act);
 
+    act = new QAction(tr("Split Terminal Horizontally"), this);
+//    act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(splitHorizontally()));
+    addAction(act);
+
+    act = new QAction(tr("Split Terminal Vertically"), this);
+//    act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(splitVertically()));
+    addAction(act);
+
+    act = new QAction(tr("Collapse Sub-Terminal"), this);
+//    act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
+    connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(splitCollapse()));
+    addAction(act);
+
     act = new QAction(tr("Switch to the Next Sub-terminal"), this);
     act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchNextSubterminal()));
@@ -128,7 +143,7 @@ void MainWindow::addActions()
 
     settings.endGroup();
 
-    menu_File->insertActions(actQuit, actions());
+    menu_Actions->insertActions(actQuit, actions());
 
     // apply props
     propertiesChanged();

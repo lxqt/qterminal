@@ -36,19 +36,19 @@ class TermWidgetImpl : public QTermWidget
 class TermWidget : public QWidget
 {
     Q_OBJECT
-    
+
     TermWidgetImpl * m_term;
     QVBoxLayout * m_layout;
     QColor m_border;
-    
+
     public:
         TermWidget(const QString & wdir, QWidget * parent);
-    
+
         void propertiesChanged() { m_term->propertiesChanged(); }
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }
-        
+
         TermWidgetImpl * impl() { return m_term; }
-        
+
     signals:
         void finished();
         void renameSession();
@@ -56,13 +56,14 @@ class TermWidget : public QWidget
         void splitHorizontal(TermWidget * self);
         void splitVertical(TermWidget * self);
         void splitCollapse(TermWidget * self);
-        
+        void termGetFocus(TermWidget * self);
+
     public slots:
         void enableCollapse(bool enable);
-            
+
     protected:
         void paintEvent (QPaintEvent * event);
-            
+
     private slots:
         void term_splitHorizontal();
         void term_splitVertical();

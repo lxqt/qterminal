@@ -51,6 +51,9 @@ public slots:
 
     void switchNextSubterminal();
     void switchPrevSubterminal();
+    void splitHorizontally();
+    void splitVertically();
+    void splitCollapse();
 
     void propertiesChanged();
 

@@ -156,6 +156,7 @@ void TermWidget::term_termGetFocus()
 {
     qDebug() << "get focus" << this << this->size();
     m_border = palette().color(QPalette::Highlight);
+    emit termGetFocus(this);
     update();
 }
 

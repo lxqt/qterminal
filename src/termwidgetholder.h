@@ -29,6 +29,8 @@ class TermWidgetHolder : public QWidget
         void loadSession();
         void saveSession(const QString & name);
 
+        TermWidget* currentTerminal();
+
     public slots:
         void splitHorizontal(TermWidget * term);
         void splitVertical(TermWidget * term);
@@ -46,11 +48,13 @@ class TermWidgetHolder : public QWidget
 
     private:
         QString m_wdir;
+        TermWidget * m_currentTerm;
 
         void split(TermWidget * term, Qt::Orientation orientation);
         TermWidget * newTerm();
 
     private slots:
+        void setCurrentTerminal(TermWidget* term);
         void handle_finished();
 };
 

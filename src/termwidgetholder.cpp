@@ -90,6 +90,13 @@ void TermWidgetHolder::saveSession(const QString & name)
     qDebug() << "dump" << dump;
 }
 
+TermWidget* TermWidgetHolder::currentTerminal()
+{
+    qDebug() << m_currentTerm;
+    Q_ASSERT(m_currentTerm);
+    return m_currentTerm;
+}
+
 void TermWidgetHolder::setWDir(const QString & wdir)
 {
     m_wdir = wdir;
@@ -178,10 +185,12 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
         delete parent;
     }
 
-    int localCnt = findChildren<TermWidget*>().count();
+    QList<TermWidget*> tlist = findChildren<TermWidget*>();
+    int localCnt = tlist.count();
     emit enableCollapse(localCnt>1);
     if (localCnt > 0)
     {
+        tlist.at(0)->setFocus(Qt::OtherFocusReason);
         update();
         if (parent)
             parent->update();
@@ -228,12 +237,20 @@ TermWidget * TermWidgetHolder::newTerm()
             this, SLOT(splitVertical(TermWidget *)));
     connect(w, SIGNAL(splitCollapse(TermWidget *)),
             this, SLOT(splitCollapse(TermWidget *)));
+    connect(w, SIGNAL(termGetFocus(TermWidget *)),
+            this, SLOT(setCurrentTerminal(TermWidget *)));
     // backward signals
     connect(this, SIGNAL(enableCollapse(bool)), w, SLOT(enableCollapse(bool)));
 
     emit enableCollapse( findChildren<TermWidget*>().count() > 1 );
 
     return w;
+}
+
+void TermWidgetHolder::setCurrentTerminal(TermWidget* term)
+{
+    qDebug() << "set current term:" << term;
+    m_currentTerm = term;
 }
 
 void TermWidgetHolder::handle_finished()
