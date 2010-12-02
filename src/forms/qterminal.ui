@@ -23,6 +23,12 @@
     </property>
     <item row="0" column="0">
      <widget class="TabWidget" name="consoleTabulator">
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>200</height>
+       </size>
+      </property>
       <property name="tabPosition">
        <enum>QTabWidget::South</enum>
       </property>
@@ -45,7 +51,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>22</height>
+     <height>23</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_Actions">
