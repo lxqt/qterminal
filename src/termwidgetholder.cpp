@@ -13,9 +13,9 @@ TermWidgetHolder::TermWidgetHolder(const QString & wdir, QWidget * parent)
     lay->setSpacing(0);
     lay->setContentsMargins(0, 0, 0, 0);
 
-    QSplitter * s = new QSplitter(this);
+    QSplitter *s = new QSplitter(this);
     s->setFocusPolicy(Qt::NoFocus);
-    TermWidget * w = newTerm();
+    TermWidget *w = newTerm();
     s->addWidget(w);
     lay->addWidget(s);
 
@@ -122,7 +122,7 @@ void TermWidgetHolder::switchNextSubterminal()
     {
         l.at(ix+1)->impl()->setFocus(Qt::OtherFocusReason);
     }
-    else if (ix = l.count()-1)
+    else if (ix == l.count()-1)
     {
         l.at(0)->impl()->setFocus(Qt::OtherFocusReason);
     }
@@ -185,7 +185,7 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
         delete parent;
     }
 
-    QList<TermWidget*> tlist = findChildren<TermWidget*>();
+    QList<TermWidget*> tlist = findChildren<TermWidget *>();
     int localCnt = tlist.count();
     emit enableCollapse(localCnt>1);
     if (localCnt > 0)
@@ -199,9 +199,9 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
         emit finished();
 }
 
-void TermWidgetHolder::split(TermWidget * term, Qt::Orientation orientation)
+void TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientation)
 {
-    QSplitter * parent = qobject_cast<QSplitter*>(term->parent());
+    QSplitter *parent = qobject_cast<QSplitter *>(term->parent());
     assert(parent);
 
     int ix = parent->indexOf(term);
@@ -210,7 +210,7 @@ void TermWidgetHolder::split(TermWidget * term, Qt::Orientation orientation)
     QList<int> sizes;
     sizes << 1 << 1;
 
-    QSplitter * s = new QSplitter(orientation, this);
+    QSplitter *s = new QSplitter(orientation, this);
     s->setFocusPolicy(Qt::NoFocus);
     s->insertWidget(0, term);
     TermWidget * w = newTerm();
@@ -223,9 +223,9 @@ void TermWidgetHolder::split(TermWidget * term, Qt::Orientation orientation)
     w->setFocus(Qt::OtherFocusReason);
 }
 
-TermWidget * TermWidgetHolder::newTerm()
+TermWidget *TermWidgetHolder::newTerm()
 {
-    TermWidget * w = new TermWidget(m_wdir, this);
+    TermWidget *w = new TermWidget(m_wdir, this);
     // proxy signals
     connect(w, SIGNAL(renameSession()), this, SIGNAL(renameSession()));
     connect(w, SIGNAL(removeCurrentSession()), this, SIGNAL(lastTerminalClosed()));

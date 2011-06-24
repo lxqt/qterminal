@@ -16,7 +16,7 @@ typedef QMap<QString,QString> ShortcutMap;
 class Properties
 {
     public:
-        static Properties * Instance();
+        static Properties *Instance();
 
         void saveSettings();
 
@@ -25,7 +25,7 @@ class Properties
         ShortcutMap shortcuts;
         QString shell;
         QFont font;
-        int colorScheme;
+        QString colorScheme;
         QString guiStyle;
 
         QString emulation;
@@ -35,10 +35,18 @@ class Properties
         int appOpacity;
         int termOpacity;
 
+        int scrollBarPos;
+        int tabsPos;
+
+        bool borderless;
+        bool tabBarless;
+
+        bool askOnExit;
+
     private:
 
         // Singleton handling
-        static Properties * m_instance;
+        static Properties *m_instance;
 
         void loadSettings();
 

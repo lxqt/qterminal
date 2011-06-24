@@ -24,6 +24,8 @@
 #include <QTabWidget>
 #include <QMap>
 
+#include "properties.h"
+
 class TermWidgetHolder;
 class QAction;
 class QActionGroup;
@@ -37,8 +39,13 @@ public:
 
     TermWidgetHolder * terminalHolder();
 
+    /* re-implemented */
+    void setTabBar(QTabBar *tabBar) { QTabWidget::setTabBar(tabBar); }
+    QTabBar *tabBar() const { return QTabWidget::tabBar(); }
+
 public slots:
     int addNewTab(const QString& shell_program = QString());
+    void removeTab(int);
     void removeCurrentTab();
     int switchToRight();
     int switchToLeft();
@@ -55,6 +62,8 @@ public slots:
     void splitVertically();
     void splitCollapse();
 
+    void changeTabPosition(QAction *);
+    void changeScrollPosition(QAction *);
     void propertiesChanged();
 
     void saveSession();
@@ -63,17 +72,18 @@ public slots:
 signals:
     void quit_notification();
 
-public:
-    void removeTab(int);
 protected:
     enum Direction{Left = 1, Right};
     void mouseDoubleClickEvent ( QMouseEvent * event );
     void contextMenuEvent ( QContextMenuEvent * event );
     void recountIndexes();
     void move(Direction);
+
 private:
     int tabNumerator;
     QString work_dir;
+    /* re-order naming of the tabs then removeCurrentTab() */
+    void renameTabsAfterRemove();
 };
 
 #endif

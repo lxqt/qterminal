@@ -14,7 +14,7 @@ MESSAGE(STATUS "Qt4 libs: ${QT_LIBRARIES}")
 
 find_package ( QTermWidget REQUIRED )
 
-set(STR_VERSION "0.2.0")
+set(STR_VERSION "0.4.0")
 add_definitions(-DSTR_VERSION=\"${STR_VERSION}\")
 
 # a helper for macosx to build 32/64 bit universals
@@ -24,3 +24,16 @@ IF (WANT_UNIVERSAL)
 ENDIF (WANT_UNIVERSAL)
 
 subdirs( src )
+
+
+# make dist custom target
+SET(CPACK_PACKAGE_NAME "qterminal")
+SET(CPACK_PACKAGE_VERSION ${STR_VERSION})
+SET(CPACK_SOURCE_GENERATOR "TGZ;TBZ2")
+SET(CPACK_SOURCE_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}")
+SET(CPACK_IGNORE_FILES "/CVS/;/\\\\.svn/;/\\\\.git/;\\\\.swp$;\\\\.#;/#;\\\\.tar.gz$;/CMakeFiles/;CMakeCache.txt;\\\\.qm$;/build/;\\\\.diff$;.DS_Store'")
+SET(CPACK_SOURCE_IGNORE_FILES ${CPACK_IGNORE_FILES})
+INCLUDE(CPack)
+# simulate autotools' "make dist"
+add_custom_target(dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
+

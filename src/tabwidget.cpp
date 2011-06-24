@@ -33,6 +33,18 @@
 TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
 {
     setFocusPolicy(Qt::NoFocus);
+
+    /* On Mac OS X this will look similar to
+     * the tabs in Safari or Leopard's Terminal.app .
+     * I love this!
+     */
+    setDocumentMode(true);
+
+    tabBar()->setUsesScrollButtons(true);
+
+    setTabsClosable(true);
+    connect(this, SIGNAL(tabCloseRequested(int)), this, SLOT(removeTab(int)));
+    /*
     QToolButton* tb = new QToolButton(this);
     tb->setIcon(QIcon(":/icons/list-remove.png"));
     setCornerWidget(tb, Qt::BottomRightCorner);
@@ -42,6 +54,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
     tb->setIcon(QIcon(":/icons/list-add.png"));
     setCornerWidget(tb, Qt::BottomLeftCorner);
     connect(tb, SIGNAL(clicked()), SLOT(addNewTab()));
+    */
 }
 
 TermWidgetHolder * TabWidget::terminalHolder()
@@ -59,12 +72,12 @@ void TabWidget::setWorkDirectory(const QString& dir)
 //    this->shell_program = program;
 //}
 
-int TabWidget::addNewTab(const QString& shell_program)
+int TabWidget::addNewTab(const QString & /*shell_program*/)
 {
-    tabNumerator ++;
+    tabNumerator++;
     QString label = QString(tr("Shell No. %1")).arg(tabNumerator);
 
-    TermWidgetHolder * console = new TermWidgetHolder(work_dir, this);
+    TermWidgetHolder *console = new TermWidgetHolder(work_dir, this);
     connect(console, SIGNAL(finished()), SLOT(removeFinished()));
     //connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeCurrentTab()));
     connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));
@@ -120,6 +133,13 @@ void TabWidget::renameSession()
     }
 }
 
+void TabWidget::renameTabsAfterRemove()
+{
+    for(int i = 0; i < count(); i++) {
+        setTabText(i, QString(tr("Shell No. %1")).arg(i+1));
+    }
+}
+
 void TabWidget::refreshWindow()
 {
     QWidget* prevFocused = currentWidget();
@@ -137,7 +157,6 @@ void TabWidget::mouseDoubleClickEvent ( QMouseEvent * event )
 void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
 {
     QMenu menu(this);
-    QAction * act;
 
     menu.addAction(QIcon(":/icons/document-close.png"), tr("Close session"),
                    this, SLOT(removeCurrentTab()));
@@ -171,10 +190,14 @@ void TabWidget::removeTab(int index)
     int current = currentIndex();
     if (current >= 0 )
         widget(current)->setFocus();
+
+    tabNumerator--;
     setUpdatesEnabled(true);
 
     if (count() == 0)
         emit quit_notification();
+
+    renameTabsAfterRemove();
 }
 
 void TabWidget::removeCurrentTab()
@@ -185,11 +208,11 @@ void TabWidget::removeCurrentTab()
 //                    tr("Are you sure you want to close current sesstion?"),
 //                    QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
 //    {
-        if (count() > 1)
-            removeTab(currentIndex());
-        else
-            QApplication::exit(0);
-//    }
+    if (count() > 1) {
+        removeTab(currentIndex());
+    } else {
+        QApplication::exit(0);
+    }
 }
 
 int TabWidget::switchToRight()
@@ -255,6 +278,55 @@ void TabWidget::moveLeft()
 void TabWidget::moveRight()
 {
     move(Right);
+}
+
+void TabWidget::changeScrollPosition(QAction *triggered)
+{
+    QActionGroup *scrollPosition = static_cast<QActionGroup *>(sender());
+    if(!scrollPosition)
+        qFatal("scrollPosition is NULL");
+
+
+    Properties::Instance()->scrollBarPos =
+            scrollPosition->actions().indexOf(triggered);
+
+    Properties::Instance()->saveSettings();
+    propertiesChanged();
+
+}
+
+void TabWidget::changeTabPosition(QAction *triggered)
+{
+    QActionGroup *tabPosition = static_cast<QActionGroup *>(sender());
+    if(!tabPosition)
+        qFatal("tabPosition is NULL");
+
+    Properties *prop = Properties::Instance();
+
+    switch(tabPosition->actions().indexOf(triggered) )
+    {
+        /* order is dictated from mainwindow.cpp */
+        case 0:
+            setTabPosition(QTabWidget::North);
+            prop->tabsPos = 0;
+            break;
+        case 1:
+            setTabPosition(QTabWidget::South);
+            prop->tabsPos = 1;
+            break;
+        case 2:
+            setTabPosition(QTabWidget::West);
+            prop->tabsPos = 2;
+            break;
+        case 3:
+        default:
+            setTabPosition(QTabWidget::East);
+            prop->tabsPos = 3;
+            break;
+    }
+
+    prop->saveSettings();
+    return;
 }
 
 void TabWidget::propertiesChanged()

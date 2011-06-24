@@ -18,7 +18,7 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, QWidget * parent)
     propertiesChanged();
 
     setHistorySize(5000);
-    setScrollBarPosition(QTermWidget::ScrollBarRight);
+
 
     if (!wdir.isNull())
         setWorkingDirectory(wdir);
@@ -74,6 +74,21 @@ void TermWidgetImpl::propertiesChanged()
     qDebug() << "TermWidgetImpl::propertiesChanged" << this << "emulation:" << Properties::Instance()->emulation;
     setKeyBindings(Properties::Instance()->emulation);
     setTerminalOpacity(Properties::Instance()->termOpacity/100.0);
+
+    /* be consequent with qtermwidget.h here */
+    switch(Properties::Instance()->scrollBarPos) {
+    case 0:
+        setScrollBarPosition(QTermWidget::NoScrollBar);
+        break;
+    case 1:
+        setScrollBarPosition(QTermWidget::ScrollBarLeft);
+        break;
+    case 2:
+    default:
+        setScrollBarPosition(QTermWidget::ScrollBarRight);
+        break;
+    }
+
     update();
 }
 
@@ -81,9 +96,13 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
 {
     QMenu menu;
     menu.addActions(actions());
-//    menu.addSeparator();
-//    menu.addAction(QIcon(":/icons/close.png"), tr("Close session"), this, SIGNAL(removeCurrentSession()), Properties::Instance()->shortcuts[CLOSE_TAB]);
-
+/*
+    menu.addSeparator();
+    menu.addAction(QIcon(":/icons/close.png"),
+        tr("Close session"), this,
+        SIGNAL(removeCurrentSession()),
+        Properties::Instance()->shortcuts[CLOSE_TAB]);
+*/
     menu.exec(mapToGlobal(pos));
 }
 
@@ -167,7 +186,7 @@ void TermWidget::term_termLostFocus()
     update();
 }
 
-void TermWidget::paintEvent (QPaintEvent * event)
+void TermWidget::paintEvent (QPaintEvent *)
 {
     //qDebug() << "paintEvent";
     QPainter p(this);

@@ -28,9 +28,14 @@
 #include "propertiesdialog.h"
 
 
-MainWindow::MainWindow(const QString& work_dir, const QString& command, QWidget * parent, Qt::WindowFlags f) : QMainWindow(parent,f)
+MainWindow::MainWindow(const QString& work_dir,
+                       const QString& command,
+                       QWidget * parent,
+                       Qt::WindowFlags f) :
+QMainWindow(parent,f)
 {
     setupUi(this);
+
     connect(actAbout, SIGNAL(triggered()), SLOT(actAbout_triggered()));
     connect(actAboutQt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
     connect(actQuit, SIGNAL(triggered()), SLOT(close()));
@@ -41,15 +46,34 @@ MainWindow::MainWindow(const QString& work_dir, const QString& command, QWidget 
 
     connect(consoleTabulator, SIGNAL(quit_notification()), SLOT(quit()));
     consoleTabulator->setWorkDirectory(work_dir);
+    consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
     consoleTabulator->addNewTab(command);
+
     setWindowTitle(QString("QTerminal ") + STR_VERSION);
     setWindowIcon(QIcon(":/icons/qterminal.png"));
-    this->addActions();
+
+    setup_ActionsMenu_Actions();
+    setup_WindowMenu_Actions();
+
+
+    if(Properties::Instance()->borderless) {
+        toggleBorder->setChecked(true);
+        toggleBorderless();
+    }
+
+    if(Properties::Instance()->tabBarless) {
+        toggleTabbar->setChecked(true);
+        toggleTabBar();
+    }
+
 }
 
+MainWindow::~MainWindow()
+{
+}
 
-void MainWindow::addActions()
+void MainWindow::setup_ActionsMenu_Actions()
 {
     QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
     settings.beginGroup("Shortcuts");
@@ -57,65 +81,64 @@ void MainWindow::addActions()
     QAction* act = new QAction(QIcon(":/icons/list-add.png"), tr("Add New Session"), this);
     act->setShortcut(QKeySequence::AddTab);//Properties::Instance()->shortcuts[ADD_TAB]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
-    addAction(act);
+    menu_Actions->addAction(act);
 
     act = new QAction(QIcon(":/icons/list-remove.png"), tr("Close Active Session"), this);
     act->setShortcut(QKeySequence::Close);//Properties::Instance()->shortcuts[CLOSE_TAB]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
-    addAction(act);
+    menu_Actions->addAction(act);
 
-    act = new QAction(this);
-    act->setSeparator(true);
-    addAction(act);
+    menu_Actions->addSeparator();
 
     act = new QAction(tr("Split Terminal Horizontally"), this);
 //    act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(splitHorizontally()));
-    addAction(act);
+    menu_Actions->addAction(act);
 
     act = new QAction(tr("Split Terminal Vertically"), this);
 //    act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(splitVertically()));
-    addAction(act);
+    menu_Actions->addAction(act);
 
     act = new QAction(tr("Collapse Sub-Terminal"), this);
 //    act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(splitCollapse()));
-    addAction(act);
+    menu_Actions->addAction(act);
 
     act = new QAction(tr("Switch to the Next Sub-terminal"), this);
     act->setShortcut(Properties::Instance()->shortcuts[SUB_NEXT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchNextSubterminal()));
-    addAction(act);
+    menu_Actions->addAction(act);
 
     act = new QAction(tr("Switch to the Previous Sub-terminal"), this);
     act->setShortcut(Properties::Instance()->shortcuts[SUB_PREV]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchPrevSubterminal()));
-    addAction(act);
+    menu_Actions->addAction(act);
 
-    act = new QAction(this);
-    act->setSeparator(true);
-    addAction(act);
+    menu_Actions->addSeparator();
 
     act = new QAction(tr("Switch To Right"), this);
     act->setShortcut(Properties::Instance()->shortcuts[TAB_RIGHT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchToRight()));
-    addAction(act);
+    menu_Actions->addAction(act);
 
     act = new QAction(tr("Switch To Left"), this);
     act->setShortcut(Properties::Instance()->shortcuts[TAB_LEFT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(switchToLeft()));
-    addAction(act);
+    menu_Actions->addAction(act);
 
     act = new QAction(tr("Move Tab To Left"), this);
     act->setShortcut(Properties::Instance()->shortcuts[MOVE_LEFT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(moveLeft()));
-    addAction(act);
+    menu_Actions->addAction(act);
 
     act = new QAction(tr("Move Tab To Right"), this);
     act->setShortcut(Properties::Instance()->shortcuts[MOVE_RIGHT]);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(moveRight()));
-    addAction(act);
+    menu_Actions->addAction(act);
+
+    menu_Actions->addSeparator();
+
 
 #if 0
     act = new QAction(this);
@@ -137,42 +160,151 @@ void MainWindow::addActions()
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(loadSession()));
     addAction(act);
 #endif
-    act = new QAction(this);
-    act->setSeparator(true);
-    addAction(act);
+
+    //menu_Actions->addSeparator();
 
     settings.endGroup();
 
-    menu_Actions->insertActions(actQuit, actions());
+    //menu_Actions->insertActions(actQuit, actions());
 
     // apply props
     propertiesChanged();
 }
 
-MainWindow::~MainWindow()
+void MainWindow::setup_WindowMenu_Actions()
 {
+    toggleBorder = new QAction(tr("Toggle Borderless"), this);
+    //toggleBorder->setObjectName("toggle_Borderless");
+    toggleBorder->setCheckable(true);
+    connect(toggleBorder, SIGNAL(triggered()), this, SLOT(toggleBorderless()));
+    menu_Window->addAction(toggleBorder);
+
+    toggleTabbar = new QAction(tr("Toggle TabBar"), this);
+    //toggleTabbar->setObjectName("toggle_TabBar");
+    toggleTabbar->setCheckable(true);
+    connect(toggleTabbar, SIGNAL(triggered()), this, SLOT(toggleTabBar()));
+    menu_Window->addAction(toggleTabbar);
+
+    menu_Window->addSeparator();
+
+    /* tabs position */
+    tabPosition = new QActionGroup(this);
+    QAction *tabBottom = new QAction(tr("Bottom"), this);
+    QAction *tabTop = new QAction(tr("Top"), this);
+    QAction *tabRight = new QAction(tr("Right"), this);
+    QAction *tabLeft = new QAction(tr("Left"), this);
+    tabPosition->addAction(tabTop);
+    tabPosition->addAction(tabBottom);
+    tabPosition->addAction(tabLeft);
+    tabPosition->addAction(tabRight);
+
+    for(int i = 0; i < tabPosition->actions().size(); ++i)
+        tabPosition->actions().at(i)->setCheckable(true);
+
+    tabPosition->actions().at(Properties::Instance()->tabsPos)->setChecked(true);
+
+    connect(tabPosition, SIGNAL(triggered(QAction *)),
+             consoleTabulator, SLOT(changeTabPosition(QAction *)) );
+
+    tabPosMenu = new QMenu(tr("Tabs Layout"), menu_Window);
+    tabPosMenu->setObjectName("tabPosMenu");
+
+    for(int i=0; i < tabPosition->actions().size(); ++i) {
+        tabPosMenu->addAction(tabPosition->actions().at(i));
+    }
+
+    connect(menu_Window, SIGNAL(hovered(QAction *)),
+            this, SLOT(updateActionGroup(QAction *)));
+    menu_Window->addMenu(tabPosMenu);
+    /* */
+
+    /* Scrollbar */
+    scrollBarPosition = new QActionGroup(this);
+    QAction *scrollNone = new QAction(tr("None"), this);
+    QAction *scrollRight = new QAction(tr("Right"), this);
+    QAction *scrollLeft = new QAction(tr("Left"), this);
+
+    /* order of insertion is dep. on QTermWidget::ScrollBarPosition enum */
+    scrollBarPosition->addAction(scrollNone);
+    scrollBarPosition->addAction(scrollLeft);
+    scrollBarPosition->addAction(scrollRight);
+
+    for(int i = 0; i < scrollBarPosition->actions().size(); ++i)
+        scrollBarPosition->actions().at(i)->setCheckable(true);
+
+    scrollBarPosition->actions().at(Properties::Instance()->scrollBarPos)->setChecked(true);
+
+    connect(scrollBarPosition, SIGNAL(triggered(QAction *)),
+             consoleTabulator, SLOT(changeScrollPosition(QAction *)) );
+
+    scrollPosMenu = new QMenu(tr("Scrollbar Layout"), menu_Window);
+    scrollPosMenu->setObjectName("scrollPosMenu");
+
+    for(int i=0; i < scrollBarPosition->actions().size(); ++i) {
+        scrollPosMenu->addAction(scrollBarPosition->actions().at(i));
+    }
+
+    menu_Window->addMenu(scrollPosMenu);
+    /* */
 }
 
 void MainWindow::on_consoleTabulator_currentChanged(int)
 {
 }
 
-void MainWindow::closeEvent(QCloseEvent* ev)
+void MainWindow::toggleTabBar()
 {
-    if(QMessageBox::question(this,
-                                tr("Close qterminal"),
-                                tr("Are you sure you want to exit?"),
-                                QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
+    if(toggleTabbar->isChecked())
+        consoleTabulator->tabBar()->hide();
+    else
+        consoleTabulator->tabBar()->show();
+
+    Properties::Instance()->tabBarless = toggleTabbar->isChecked();
+}
+
+void MainWindow::toggleBorderless()
+{
+    setWindowFlags(windowFlags() ^ Qt::FramelessWindowHint);
+    show();
+    setWindowState(Qt::WindowActive); /* don't loose focus on the window */
+    Properties::Instance()->borderless = toggleBorder->isChecked();
+}
+
+void MainWindow::closeEvent(QCloseEvent *ev)
+{
+    if (!Properties::Instance()->askOnExit)
     {
+        ev->accept();
+        return;
+    }
+
+    QDialog * dia = new QDialog(this);
+    dia->setObjectName("exitDialog");
+    dia->setWindowTitle(tr("Exit QTerminal"));
+
+    QCheckBox * dontAskCheck = new QCheckBox(tr("Do not ask again"), dia);
+    QDialogButtonBox * buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes | QDialogButtonBox::No, Qt::Horizontal, dia);
+
+    connect(buttonBox, SIGNAL(accepted()), dia, SLOT(accept()));
+    connect(buttonBox, SIGNAL(rejected()), dia, SLOT(reject()));
+    
+    QVBoxLayout * lay = new QVBoxLayout();
+    lay->addWidget(new QLabel(tr("Are you sure you want to exit?")));
+    lay->addWidget(dontAskCheck);
+    lay->addWidget(buttonBox);
+    dia->setLayout(lay);
+
+    if (dia->exec() == QDialog::Accepted) {
         Properties::Instance()->mainWindowGeometry = saveGeometry();
         Properties::Instance()->mainWindowState = saveState();
+        Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
         Properties::Instance()->saveSettings();
         ev->accept();
-    }
-    else
-    {
+    } else {
         ev->ignore();
     }
+
+    dia->deleteLater();
 }
 
 void MainWindow::quit()
@@ -191,7 +323,8 @@ void MainWindow::actAbout_triggered()
 void MainWindow::actProperties_triggered()
 {
     QStringList emulations = QTermWidget::availableKeyBindings();
-    PropertiesDialog * p = new PropertiesDialog(emulations, this);
+    QStringList colorSchemes = QTermWidget::availableColorSchemes();
+    PropertiesDialog *p = new PropertiesDialog(emulations, colorSchemes, this);
     connect(p, SIGNAL(propertiesChanged()), this, SLOT(propertiesChanged()));
     p->exec();
 }
@@ -200,6 +333,13 @@ void MainWindow::propertiesChanged()
 {
     QApplication::setStyle(Properties::Instance()->guiStyle);
     setWindowOpacity(Properties::Instance()->appOpacity/100.0);
+    consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     consoleTabulator->propertiesChanged();
 }
 
+void MainWindow::updateActionGroup(QAction *a)
+{
+    if (a->parent()->objectName() == tabPosMenu->objectName()) {
+        tabPosition->actions().at(Properties::Instance()->tabsPos)->setChecked(true);
+    }
+}

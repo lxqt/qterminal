@@ -52,7 +52,7 @@ void print_usage_and_exit(int code)
     exit(code);
 }
 
-void parse_args(int argc, char* argv[], out QString& workdir, out QString& shell_command)
+void parse_args(int argc, char* argv[], out QString& workdir, out QString & /*shell_command*/)
 {
     int next_option;
     do{
@@ -80,6 +80,9 @@ int main(int argc, char *argv[])
     QApplication app(argc, argv);
     QString workdir, shell_command;
     parse_args(argc, argv, workdir, shell_command);
+
+    if (workdir.isEmpty())
+            workdir = QDir::homePath();
 
     MainWindow widget(workdir, shell_command);
     widget.show();

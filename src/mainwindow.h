@@ -27,19 +27,35 @@
 
 class MainWindow : public QMainWindow , private Ui::mainWindow
 {
-Q_OBJECT
+    Q_OBJECT
+
 public:
-    MainWindow(const QString& work_dir, const QString& command, QWidget * parent = 0, Qt::WindowFlags f = 0);
+    MainWindow(const QString& work_dir, const QString& command,
+               QWidget * parent = 0, Qt::WindowFlags f = 0);
     ~MainWindow();
+
 protected slots:
     void on_consoleTabulator_currentChanged(int);
     void quit();
     void propertiesChanged();
     void actAbout_triggered();
     void actProperties_triggered();
+    void updateActionGroup(QAction *);
+
+    void toggleBorderless();
+    void toggleTabBar();
 
 private:
-    void addActions();
+    QActionGroup *tabPosition, *scrollBarPosition;
+    QMenu *tabPosMenu, *scrollPosMenu;
+
+    QAction *toggleBorder, *toggleTabbar;
+
+    void setup_ActionsMenu_Actions();
+    void setup_WindowMenu_Actions();
     void closeEvent(QCloseEvent*);
+
+
+
 };
 #endif //MAINWINDOW_H

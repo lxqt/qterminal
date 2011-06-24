@@ -30,7 +30,7 @@ Properties::~Properties()
 
 void Properties::loadSettings()
 {
-        qDebug("Properties::loadSettings");
+    //qDebug("Properties::loadSettings");
 
     QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
 
@@ -38,7 +38,7 @@ void Properties::loadSettings()
     if (!guiStyle.isNull())
         QApplication::setStyle(guiStyle);
 
-    colorScheme = settings.value("color_scheme", QVariant(COLOR_SCHEME_GREEN_ON_BLACK)).toInt();
+    colorScheme = settings.value("colorScheme", "Linux").toString();
 
     QFont default_font = QApplication::font();
     default_font.setFamily("Monospace");
@@ -80,6 +80,16 @@ void Properties::loadSettings()
 
     appOpacity = settings.value("MainWindow/appOpacity", 100).toInt();
     termOpacity = settings.value("termOpacity", 100).toInt();
+
+    /* default to Right. see qtermwidget.h */
+    scrollBarPos = settings.value("ScrollbarPosition", 2).toInt();
+    /* default to South */
+    tabsPos = settings.value("TabsPosition", 1).toInt();
+
+    /* toggles */
+    borderless = settings.value("Borderless", false).toBool();
+    tabBarless = settings.value("TabBarless", false).toBool();
+    askOnExit = settings.value("AskOnExit", true).toBool();
 }
 
 void Properties::saveSettings()
@@ -88,7 +98,7 @@ void Properties::saveSettings()
     QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
 
     settings.setValue("guiStyle", guiStyle);
-    settings.setValue("color_scheme", colorScheme);
+    settings.setValue("colorScheme", colorScheme);
     settings.setValue("font", font);
 
     settings.beginGroup("Shortcuts");
@@ -120,5 +130,10 @@ void Properties::saveSettings()
 
     settings.setValue("MainWindow/appOpacity", appOpacity);
     settings.setValue("termOpacity", termOpacity);
+    settings.setValue("ScrollbarPosition", scrollBarPos);
+    settings.setValue("TabsPosition", tabsPos);
+    settings.setValue("Borderless", borderless);
+    settings.setValue("TabBarless", tabBarless);
+    settings.setValue("AskOnExit", askOnExit);
 }
 

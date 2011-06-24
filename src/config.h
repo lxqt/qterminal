@@ -48,8 +48,14 @@
 #define SUB_NEXT_SHORTCUT	       "Shift+Up"
 #define SUB_PREV_SHORTCUT	       "Shift+Down"
 
+#ifdef Q_WS_MAC
+// It's tricky - Ctrl is "command" key on mac's keyboards
+#define COPY_SELECTION_SHORTCUT      "Ctrl+C"
+#define PASTE_SELECTION_SHORTCUT      "Ctrl+V"
+#else
 #define COPY_SELECTION_SHORTCUT      "Ctrl+Insert"
 #define PASTE_SELECTION_SHORTCUT      "Shift+Insert"
+#endif
 
 #define MOVE_LEFT_SHORTCUT             "Shift+Alt+Left"
 #define MOVE_RIGHT_SHORTCUT            "Shift+Alt+Right"
