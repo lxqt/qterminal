@@ -31,8 +31,8 @@
 MainWindow::MainWindow(const QString& work_dir,
                        const QString& command,
                        QWidget * parent,
-                       Qt::WindowFlags f) :
-QMainWindow(parent,f)
+                       Qt::WindowFlags f)
+    : QMainWindow(parent,f)
 {
     setupUi(this);
 

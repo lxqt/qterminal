@@ -20,7 +20,7 @@ class TermWidgetHolder : public QWidget
     Q_OBJECT
 
     public:
-        TermWidgetHolder(const QString & wdir, QWidget * parent);
+        TermWidgetHolder(const QString & wdir, const QString & shell=QString(), QWidget * parent=0);
         ~TermWidgetHolder();
 
         void propertiesChanged();
@@ -51,7 +51,7 @@ class TermWidgetHolder : public QWidget
         TermWidget * m_currentTerm;
 
         void split(TermWidget * term, Qt::Orientation orientation);
-        TermWidget * newTerm();
+        TermWidget * newTerm(const QString & shell=QString());
 
     private slots:
         void setCurrentTerminal(TermWidget* term);

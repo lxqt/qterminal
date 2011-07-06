@@ -5,7 +5,7 @@
 static int TermWidgetCount = 0;
 
 
-TermWidgetImpl::TermWidgetImpl(const QString & wdir, QWidget * parent)
+TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWidget * parent)
     : QTermWidget(0, parent)
 {
     TermWidgetCount++;
@@ -19,12 +19,24 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, QWidget * parent)
 
     setHistorySize(5000);
 
-
     if (!wdir.isNull())
         setWorkingDirectory(wdir);
 
-    if (!Properties::Instance()->shell.isNull())
-        setShellProgram(Properties::Instance()->shell);
+    if (shell.isNull())
+    {
+        if (!Properties::Instance()->shell.isNull())
+            setShellProgram(Properties::Instance()->shell);
+    }
+    else
+    {
+        qDebug() << "Settings custom shell program:" << shell;
+        QStringList parts = shell.split(QRegExp("\\s+"), QString::SkipEmptyParts);
+        qDebug() << parts;
+        setShellProgram(parts.at(0));
+        parts.removeAt(0);
+        if (parts.count())
+            setArgs(parts);
+    }
 
     QAction* act = new QAction(QIcon(":/icons/edit-copy.png"), tr("&Copy selection"), this);
     act->setShortcuts(QList<QKeySequence>() << Properties::Instance()->shortcuts[COPY_SELECTION]);
@@ -128,11 +140,11 @@ void TermWidgetImpl::enableCollapse(bool enable)
 
 
 
-TermWidget::TermWidget(const QString & wdir, QWidget * parent)
+TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * parent)
     : QWidget(parent)
 {
     m_border = palette().color(QPalette::Window);
-    m_term = new TermWidgetImpl(wdir, this);
+    m_term = new TermWidgetImpl(wdir, shell, this);
     setFocusProxy(m_term);
     m_layout = new QVBoxLayout;
     m_layout->setContentsMargins(3, 3, 3, 3);

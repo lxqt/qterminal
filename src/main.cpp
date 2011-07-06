@@ -29,12 +29,13 @@
 
 #define out
 
-const char* const short_options = "hw:";//e:";
+const char* const short_options = "vhw:e:";
 
 const struct option long_options[] = {
+    {"version", 0, NULL, 'v'},
     {"help",    0, NULL, 'h'},
     {"workdir", 1, NULL, 'w'},
-    //{"execute", 1, NULL, 'e'},
+    {"execute", 1, NULL, 'e'},
     {NULL,      0, NULL,  0}
 };
 
@@ -43,16 +44,22 @@ void print_usage_and_exit(int code)
     printf("This is QTerminal %s\n", STR_VERSION);
     puts("Usage: qterminal [options]");
     puts("Options:");
-    puts("--help                  Print this help");
-    puts("--workdir <dir>         Start session with specified work directory");
-    //puts("--execute <command>     Execute command instead of shell");
-    puts("\nThis application based on QTermWidget by e_k@users.sourceforge.net");
-    puts("Homepage: http://qterminal.sourceforge.net/");
-    puts("Feature requests, bug reports etc please send to: <vovanec@gmail.com>\n");
+    puts("-h|--help               Print this help");
+    puts("-v|--version            Prints application version and exits");
+    puts("-w|--workdir <dir>      Start session with specified work directory");
+    puts("-e|--execute <command>  Execute command instead of shell");
+    puts("\nHomepage: http://qterminal.sourceforge.net/");
+    puts("Feature requests, bug reports etc please send to: <petr@scribus.info>\n");
     exit(code);
 }
 
-void parse_args(int argc, char* argv[], out QString& workdir, out QString & /*shell_command*/)
+void print_version_and_exit(int code=0)
+{
+    printf("%s\n", STR_VERSION);
+    exit(code);
+}
+
+void parse_args(int argc, char* argv[], QString& workdir, QString & shell_command)
 {
     int next_option;
     do{
@@ -64,11 +71,13 @@ void parse_args(int argc, char* argv[], out QString& workdir, out QString & /*sh
             case 'w':
                 workdir = QString(optarg);
                 break;
-            //case 'e':
-            //    shell_command = QString(optarg);
-            //    break;
+            case 'e':
+                shell_command = QString(optarg);
+                break;
             case '?':
                 print_usage_and_exit(1);
+            case 'v':
+                print_version_and_exit();
         }
     }
     while(next_option != -1);
@@ -82,7 +91,7 @@ int main(int argc, char *argv[])
     parse_args(argc, argv, workdir, shell_command);
 
     if (workdir.isEmpty())
-            workdir = QDir::homePath();
+        workdir = QDir::homePath();
 
     MainWindow widget(workdir, shell_command);
     widget.show();

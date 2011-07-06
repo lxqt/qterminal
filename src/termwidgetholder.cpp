@@ -4,7 +4,7 @@
 #include <assert.h>
 
 
-TermWidgetHolder::TermWidgetHolder(const QString & wdir, QWidget * parent)
+TermWidgetHolder::TermWidgetHolder(const QString & wdir, const QString & shell, QWidget * parent)
     : QWidget(parent),
       m_wdir(wdir)
 {
@@ -15,7 +15,7 @@ TermWidgetHolder::TermWidgetHolder(const QString & wdir, QWidget * parent)
 
     QSplitter *s = new QSplitter(this);
     s->setFocusPolicy(Qt::NoFocus);
-    TermWidget *w = newTerm();
+    TermWidget *w = newTerm(shell);
     s->addWidget(w);
     lay->addWidget(s);
 
@@ -223,9 +223,9 @@ void TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientation)
     w->setFocus(Qt::OtherFocusReason);
 }
 
-TermWidget *TermWidgetHolder::newTerm()
+TermWidget *TermWidgetHolder::newTerm(const QString & shell)
 {
-    TermWidget *w = new TermWidget(m_wdir, this);
+    TermWidget *w = new TermWidget(m_wdir, shell, this);
     // proxy signals
     connect(w, SIGNAL(renameSession()), this, SIGNAL(renameSession()));
     connect(w, SIGNAL(removeCurrentSession()), this, SIGNAL(lastTerminalClosed()));

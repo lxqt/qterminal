@@ -12,7 +12,7 @@ class TermWidgetImpl : public QTermWidget
 
     public:
 
-        TermWidgetImpl(const QString & wdir, QWidget * parent=0);
+        TermWidgetImpl(const QString & wdir, const QString & shell=QString(), QWidget * parent=0);
         void propertiesChanged();
 
     signals:
@@ -42,7 +42,7 @@ class TermWidget : public QWidget
     QColor m_border;
 
     public:
-        TermWidget(const QString & wdir, QWidget * parent);
+        TermWidget(const QString & wdir, const QString & shell=QString(), QWidget * parent=0);
 
         void propertiesChanged() { m_term->propertiesChanged(); }
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }
