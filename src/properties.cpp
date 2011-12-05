@@ -17,7 +17,6 @@ Properties * Properties::Instance()
 Properties::Properties()
 {
     qDebug("Properties constructor called");
-    loadSettings();
 }
 
 Properties::~Properties()
@@ -48,17 +47,13 @@ void Properties::loadSettings()
     font = qvariant_cast<QFont>(settings.value("font", default_font));
 
     settings.beginGroup("Shortcuts");
-    shortcuts[COPY_SELECTION] = settings.value(COPY_SELECTION, COPY_SELECTION_SHORTCUT).toString();
-    shortcuts[PASTE_SELECTION] = settings.value(PASTE_SELECTION, PASTE_SELECTION_SHORTCUT).toString();
-    shortcuts[RENAME_SESSION] = settings.value(RENAME_SESSION, RENAME_SESSION_SHORTCUT).toString();
-//    shortcuts[ADD_TAB] = settings.value(ADD_TAB, ADD_TAB_SHORTCUT).toString();
-//    shortcuts[CLOSE_TAB] = settings.value(CLOSE_TAB, CLOSE_TAB_SHORTCUT).toString();
-    shortcuts[TAB_RIGHT] = settings.value(TAB_RIGHT, TAB_RIGHT_SHORTCUT).toString();
-    shortcuts[TAB_LEFT] = settings.value(TAB_LEFT, TAB_LEFT_SHORTCUT).toString();
-    shortcuts[SUB_NEXT] = settings.value(SUB_NEXT, SUB_NEXT_SHORTCUT).toString();
-    shortcuts[SUB_PREV] = settings.value(SUB_PREV, SUB_PREV_SHORTCUT).toString();
-    shortcuts[MOVE_LEFT] = settings.value(MOVE_LEFT, MOVE_LEFT_SHORTCUT).toString();
-    shortcuts[MOVE_RIGHT] = settings.value(MOVE_RIGHT, MOVE_RIGHT_SHORTCUT).toString();
+    QStringList keys = settings.childKeys();
+    foreach( QString key, keys )
+    {
+        QKeySequence sequence = QKeySequence( settings.value( key ).toString() );
+        if( Properties::Instance()->actions.contains( key ) )
+            Properties::Instance()->actions[ key ]->setShortcut( sequence );
+    }
     settings.endGroup();
 
     mainWindowGeometry = settings.value("MainWindow/geometry").toByteArray();
@@ -102,10 +97,12 @@ void Properties::saveSettings()
     settings.setValue("font", font);
 
     settings.beginGroup("Shortcuts");
-    QMapIterator<QString, QString> it(shortcuts);
-    while (it.hasNext()) {
-	    it.next();
-	    settings.setValue(it.key(), it.value());
+    QMapIterator< QString, QAction * > it(actions);
+    while( it.hasNext() )
+    {
+        it.next();
+        QKeySequence shortcut = it.value()->shortcut();
+        settings.setValue( it.key(), shortcut.toString() );
     }
     settings.endGroup();
 

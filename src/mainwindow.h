@@ -56,6 +56,5 @@ private:
     void closeEvent(QCloseEvent*);
 
 
-
 };
 #endif //MAINWINDOW_H

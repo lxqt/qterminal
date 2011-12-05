@@ -3,8 +3,7 @@
 
 #include <QtCore>
 #include <QFont>
-
-
+#include <QAction>
 
 typedef QString Session;
 
@@ -22,7 +21,7 @@ class Properties
 
         QByteArray mainWindowGeometry;
         QByteArray mainWindowState;
-        ShortcutMap shortcuts;
+        //ShortcutMap shortcuts;
         QString shell;
         QFont font;
         QString colorScheme;
@@ -43,12 +42,14 @@ class Properties
 
         bool askOnExit;
 
+        QMap< QString, QAction * > actions;
+
+        void loadSettings();
+
     private:
 
         // Singleton handling
         static Properties *m_instance;
-
-        void loadSettings();
 
         Properties();
         Properties(const Properties &) {};

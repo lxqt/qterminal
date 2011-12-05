@@ -8,7 +8,7 @@ class TermWidgetImpl : public QTermWidget
 {
     Q_OBJECT
 
-        QAction * actCollapse;
+        QMap< QString, QAction * > actionMap;
 
     public:
 
@@ -24,6 +24,7 @@ class TermWidgetImpl : public QTermWidget
 
     public slots:
         void enableCollapse(bool enable);
+        void updateShortcuts();
 
     private slots:
         void customContextMenuCall(const QPoint & pos);

@@ -3,15 +3,14 @@
 
 #include "ui_propertiesdialog.h"
 
-
 class PropertiesDialog : public QDialog, Ui::PropertiesDialog
 {
     Q_OBJECT
 
+    QString oldAccelText; // Placeholder when editing shortcut
+
     public:
-        PropertiesDialog(const QStringList & emulations,
-                         const QStringList & colorSchemes,
-                         QWidget * parent = 0);
+        PropertiesDialog(QWidget *parent=NULL);
         ~PropertiesDialog();
 
     signals:
@@ -25,6 +24,12 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
         void accept();
         
         void changeFontButton_clicked();
+
+    protected:
+        void setupShortcuts();
+        void saveShortcuts();
+        void recordAction(int row, int column);
+        void validateAction(int row, int column);
 };
 
 

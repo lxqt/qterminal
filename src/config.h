@@ -22,18 +22,25 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#define ADD_TAB "AddTab"
-#define CLOSE_TAB "CloseTab"
-#define TAB_RIGHT "TabRight"
-#define TAB_LEFT "TabLeft"
-#define SUB_NEXT "SubterminalNext"
-#define SUB_PREV "SubterminalPrev"
-#define MOVE_LEFT "MoveLeft"
-#define MOVE_RIGHT "MoveRight"
-#define COPY_SELECTION "CopySelection"
-#define PASTE_SELECTION "PasteSelection"
-#define RENAME_SESSION  "RenameSession"
+#define ADD_TAB "Add Tab"
+#define RENAME_TAB  "Rename Tab"
+#define CLOSE_TAB "Close Tab"
 
+#define TAB_NEXT "Next Tab"
+#define TAB_PREV "Previous Tab"
+
+#define SPLIT_HORIZONTAL "Split Terminal Horizontally"
+#define SPLIT_VERTICAL "Split Terminal Vertically"
+
+#define SUB_COLLAPSE "Collapse Sub-Terminal"
+#define SUB_NEXT "Next Subterminal"
+#define SUB_PREV "Previous Subterminal"
+
+#define MOVE_LEFT "Move Tab Left"
+#define MOVE_RIGHT "Move Tab Right"
+
+#define COPY_SELECTION "Copy Selection"
+#define PASTE_SELECTION "Paste Selection"
 
 /* Some defaults for QTerminal application */
 
@@ -41,12 +48,10 @@
 #define DEFAULT_HEIGHT                 600
 
 // ACTIONS
-//#define ADD_TAB_SHORTCUT	       "Ctrl+N"
-//#define CLOSE_TAB_SHORTCUT         "Ctrl+W"
-#define TAB_LEFT_SHORTCUT	       "Shift+Left"
-#define TAB_RIGHT_SHORTCUT	       "Shift+Right"
-#define SUB_NEXT_SHORTCUT	       "Shift+Up"
+#define TAB_PREV_SHORTCUT	       "Shift+Left"
+#define TAB_NEXT_SHORTCUT	       "Shift+Right"
 #define SUB_PREV_SHORTCUT	       "Shift+Down"
+#define SUB_NEXT_SHORTCUT	       "Shift+Up"
 
 #ifdef Q_WS_MAC
 // It's tricky - Ctrl is "command" key on mac's keyboards
