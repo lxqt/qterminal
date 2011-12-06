@@ -156,6 +156,8 @@ void PropertiesDialog::setupShortcuts()
         shortcutsWidget->setItem(x, 0, itemName);
         shortcutsWidget->setItem(x, 1, itemShortcut);
     }
+
+    shortcutsWidget->resizeColumnsToContents();
 /*
     connect(shortcutsWidget, SIGNAL(currentChanged(int, int)),
             this, SLOT(recordAction(int, int)));

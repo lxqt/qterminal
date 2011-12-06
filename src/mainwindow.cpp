@@ -52,7 +52,7 @@ MainWindow::MainWindow(const QString& work_dir,
     //consoleTabulator->setShellProgram(command);
     consoleTabulator->addNewTab(command);
 
-    setWindowTitle(QString("QTerminal ") + STR_VERSION);
+    setWindowTitle("QTerminal");
     setWindowIcon(QIcon(":/icons/qterminal.png"));
 
     setup_ActionsMenu_Actions();
@@ -144,7 +144,7 @@ void MainWindow::setup_ActionsMenu_Actions()
     connect(Properties::Instance()->actions[MOVE_LEFT], SIGNAL(triggered()), consoleTabulator, SLOT(moveLeft()));
     menu_Actions->addAction(Properties::Instance()->actions[MOVE_LEFT]);
 
-    Properties::Instance()->actions[MOVE_RIGHT] = new QAction(tr("Move Tab To Right"), this);
+    Properties::Instance()->actions[MOVE_RIGHT] = new QAction(tr(MOVE_RIGHT), this);
     seq = QKeySequence::fromString( settings.value(MOVE_RIGHT, MOVE_RIGHT_SHORTCUT).toString() );
     Properties::Instance()->actions[MOVE_RIGHT]->setShortcut(seq);
     connect(Properties::Instance()->actions[MOVE_RIGHT], SIGNAL(triggered()), consoleTabulator, SLOT(moveRight()));
@@ -152,6 +152,14 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     menu_Actions->addSeparator();
 
+    // Copy and Paste are only added to the table for the sake of bindings at the moment; there is no Edit menu, only a context menu.
+    Properties::Instance()->actions[COPY_SELECTION] = new QAction(tr(COPY_SELECTION), this);
+    seq = QKeySequence::fromString( settings.value(COPY_SELECTION, QKeySequence::Copy).toString() );
+    Properties::Instance()->actions[COPY_SELECTION]->setShortcut(seq);
+
+    Properties::Instance()->actions[PASTE_SELECTION] = new QAction(tr(PASTE_SELECTION), this);
+    seq = QKeySequence::fromString( settings.value(PASTE_SELECTION, QKeySequence::Paste).toString() );
+    Properties::Instance()->actions[PASTE_SELECTION]->setShortcut(seq);
 
 #if 0
     act = new QAction(this);

@@ -287,6 +287,9 @@
          <attribute name="horizontalHeaderDefaultSectionSize">
           <number>105</number>
          </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
          <column>
           <property name="text">
            <string>Shortcut</string>
