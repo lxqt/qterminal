@@ -81,13 +81,13 @@ void MainWindow::setup_ActionsMenu_Actions()
     QKeySequence seq;
 
     Properties::Instance()->actions[ADD_TAB] = new QAction(QIcon(":/icons/list-add.png"), tr(ADD_TAB), this);
-    seq = QKeySequence::fromString( settings.value(ADD_TAB, QKeySequence::AddTab).toString() );
+    seq = QKeySequence::fromString( settings.value(ADD_TAB, QKeySequence(QKeySequence::AddTab).toString()).toString() );
     Properties::Instance()->actions[ADD_TAB]->setShortcut(seq);
     connect(Properties::Instance()->actions[ADD_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
     menu_Actions->addAction(Properties::Instance()->actions[ADD_TAB]);
 
     Properties::Instance()->actions[CLOSE_TAB] = new QAction(QIcon(":/icons/list-remove.png"), tr(CLOSE_TAB), this);
-    seq = QKeySequence::fromString( settings.value(CLOSE_TAB, QKeySequence::Close).toString() );
+    seq = QKeySequence::fromString( settings.value(CLOSE_TAB, QKeySequence(QKeySequence::Close).toString()).toString() );
     Properties::Instance()->actions[CLOSE_TAB]->setShortcut(seq);
     connect(Properties::Instance()->actions[CLOSE_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
     menu_Actions->addAction(Properties::Instance()->actions[CLOSE_TAB]);
@@ -154,11 +154,11 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     // Copy and Paste are only added to the table for the sake of bindings at the moment; there is no Edit menu, only a context menu.
     Properties::Instance()->actions[COPY_SELECTION] = new QAction(tr(COPY_SELECTION), this);
-    seq = QKeySequence::fromString( settings.value(COPY_SELECTION, QKeySequence::Copy).toString() );
+    seq = QKeySequence::fromString( settings.value(COPY_SELECTION, COPY_SELECTION_SHORTCUT).toString() );
     Properties::Instance()->actions[COPY_SELECTION]->setShortcut(seq);
 
     Properties::Instance()->actions[PASTE_SELECTION] = new QAction(tr(PASTE_SELECTION), this);
-    seq = QKeySequence::fromString( settings.value(PASTE_SELECTION, QKeySequence::Paste).toString() );
+    seq = QKeySequence::fromString( settings.value(PASTE_SELECTION, PASTE_SELECTION_SHORTCUT).toString() );
     Properties::Instance()->actions[PASTE_SELECTION]->setShortcut(seq);
 
 #if 0
