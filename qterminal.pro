@@ -33,8 +33,12 @@ unix {
 	}
 	BINDIR = $$PREFIX/bin
 
-	INSTALLS += target
+	INSTALLS += target shortcut
 	target.path = $$BINDIR
 
 	DATADIR = $$PREFIX/share
+	shortcut.path = $$DATADIR/applications
+	shortcut.files = qterminal.desktop
+
 }
+

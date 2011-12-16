@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=qterminal
+Terminal=false
+Categories=Accessories;System Tools;Utilities;System
+Icon=terminal
+
+Name=QTerminal
+Comment=A terminal emulator
+GenericName=Terminal Emulator
+

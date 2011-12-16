@@ -53,6 +53,9 @@ ENDIF (WANT_UNIVERSAL)
 subdirs( src )
 
 
+install(FILES qterminal.desktop DESTINATION share/applications)
+
+
 # make dist custom target
 SET(CPACK_PACKAGE_NAME "qterminal")
 SET(CPACK_PACKAGE_VERSION ${STR_VERSION})
