@@ -22,25 +22,25 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#define ADD_TAB "Add Tab"
-#define RENAME_TAB  "Rename Tab"
-#define CLOSE_TAB "Close Tab"
+#define ADD_TAB "AddTab"
+#define RENAME_TAB "RenameTab"
+#define CLOSE_TAB "CloseTab"
 
-#define TAB_NEXT "Next Tab"
-#define TAB_PREV "Previous Tab"
+#define TAB_NEXT "NextTab"
+#define TAB_PREV "PreviousTab"
 
-#define SPLIT_HORIZONTAL "Split Terminal Horizontally"
-#define SPLIT_VERTICAL "Split Terminal Vertically"
+#define SPLIT_HORIZONTAL "SplitTerminalHorizontally"
+#define SPLIT_VERTICAL "SplitTerminalVertically"
 
-#define SUB_COLLAPSE "Collapse Sub-Terminal"
-#define SUB_NEXT "Next Subterminal"
-#define SUB_PREV "Previous Subterminal"
+#define SUB_COLLAPSE "CollapseSubterminal"
+#define SUB_NEXT "NextSubterminal"
+#define SUB_PREV "PreviousSubterminal"
 
-#define MOVE_LEFT "Move Tab Left"
-#define MOVE_RIGHT "Move Tab Right"
+#define MOVE_LEFT "MoveTabLeft"
+#define MOVE_RIGHT "MoveTabRight"
 
-#define COPY_SELECTION "Copy Selection"
-#define PASTE_SELECTION "Paste Selection"
+#define COPY_SELECTION "CopySelection"
+#define PASTE_SELECTION "PasteSelection"
 
 /* Some defaults for QTerminal application */
 
