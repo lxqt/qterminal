@@ -22,25 +22,25 @@
 #ifndef CONFIG_H
 #define CONFIG_H
 
-#define ADD_TAB "AddTab"
-#define RENAME_TAB "RenameTab"
-#define CLOSE_TAB "CloseTab"
+#define ADD_TAB "Add Tab"
+#define RENAME_TAB "Rename Tab"
+#define CLOSE_TAB "Close Tab"
 
-#define TAB_NEXT "NextTab"
-#define TAB_PREV "PreviousTab"
+#define TAB_NEXT "Next Tab"
+#define TAB_PREV "Previous Tab"
 
-#define SPLIT_HORIZONTAL "SplitTerminalHorizontally"
-#define SPLIT_VERTICAL "SplitTerminalVertically"
+#define SPLIT_HORIZONTAL "Split Terminal Horizontally"
+#define SPLIT_VERTICAL "Split Terminal Vertically"
 
-#define SUB_COLLAPSE "CollapseSubterminal"
-#define SUB_NEXT "NextSubterminal"
-#define SUB_PREV "PreviousSubterminal"
+#define SUB_COLLAPSE "Collapse Subterminal"
+#define SUB_NEXT "Next Subterminal"
+#define SUB_PREV "Previous Subterminal"
 
-#define MOVE_LEFT "MoveTabLeft"
-#define MOVE_RIGHT "MoveTabRight"
+#define MOVE_LEFT "Move Tab Left"
+#define MOVE_RIGHT "Move Tab Right"
 
-#define COPY_SELECTION "CopySelection"
-#define PASTE_SELECTION "PasteSelection"
+#define COPY_SELECTION "Copy Selection"
+#define PASTE_SELECTION "Paste Selection"
 
 /* Some defaults for QTerminal application */
 
@@ -58,8 +58,8 @@
 #define COPY_SELECTION_SHORTCUT      "Ctrl+C"
 #define PASTE_SELECTION_SHORTCUT      "Ctrl+V"
 #else
-#define COPY_SELECTION_SHORTCUT      "Ctrl+Insert"
-#define PASTE_SELECTION_SHORTCUT      "Shift+Insert"
+#define COPY_SELECTION_SHORTCUT      "Ctrl+Shift+C"
+#define PASTE_SELECTION_SHORTCUT      "Ctrl+Shift+V"
 #endif
 
 #define MOVE_LEFT_SHORTCUT             "Shift+Alt+Left"
