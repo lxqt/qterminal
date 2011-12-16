@@ -38,29 +38,29 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
             setArgs(parts);
     }
 
-    QAction* act = new QAction(QIcon(":/icons/edit-copy.png"), tr("&Copy selection"), this);
-    act->setShortcuts(QList<QKeySequence>() << Properties::Instance()->shortcuts[COPY_SELECTION]);
-    connect(act, SIGNAL(triggered()), this, SLOT(copyClipboard()));
-    addAction(act);
+    actionMap[COPY_SELECTION] = new QAction(QIcon(":/icons/edit-copy.png"), tr(COPY_SELECTION), this);
+    connect(actionMap[COPY_SELECTION], SIGNAL(triggered()), this, SLOT(copyClipboard()));
+    addAction(actionMap[COPY_SELECTION]);
 
-    act = new QAction(QIcon(":/icons/edit-paste.png"), tr("&Paste Selection"), this);
-    act->setShortcuts(QList<QKeySequence>() << Properties::Instance()->shortcuts[PASTE_SELECTION]);
-    connect(act, SIGNAL(triggered()), this, SLOT(pasteClipboard()));
-    addAction(act);
+    actionMap[PASTE_SELECTION] = new QAction(QIcon(":/icons/edit-paste.png"), tr(PASTE_SELECTION), this);
+    connect(actionMap[PASTE_SELECTION], SIGNAL(triggered()), this, SLOT(pasteClipboard()));
+    addAction(actionMap[PASTE_SELECTION]);
 
-    act = new QAction(this);
+    QAction *act = new QAction(this);
     act->setSeparator(true);
     addAction(act);
 
-    act = new QAction(tr("Split &Horizontally"), this);
-    connect(act, SIGNAL(triggered()), this, SLOT(act_splitHorizontal()));
-    addAction(act);
-    act = new QAction(tr("Split &Vertically"), this);
-    connect(act, SIGNAL(triggered()), this, SLOT(act_splitVertical()));
-    addAction(act);
-    actCollapse = new QAction(tr("Close Terminal Sub-Window"), this);
-    connect(actCollapse, SIGNAL(triggered()), this, SLOT(act_splitCollapse()));
-    addAction(actCollapse);
+    actionMap[SPLIT_HORIZONTAL] = new QAction(tr(SPLIT_HORIZONTAL), this);
+    connect(actionMap[SPLIT_HORIZONTAL], SIGNAL(triggered()), this, SLOT(act_splitHorizontal()));
+    addAction(actionMap[SPLIT_HORIZONTAL]);
+
+    actionMap[SPLIT_VERTICAL] = new QAction(tr(SPLIT_VERTICAL), this);
+    connect(actionMap[SPLIT_VERTICAL], SIGNAL(triggered()), this, SLOT(act_splitVertical()));
+    addAction(actionMap[SPLIT_VERTICAL]);
+
+    actionMap[SUB_COLLAPSE] = new QAction(tr(SUB_COLLAPSE), this);
+    connect(actionMap[SUB_COLLAPSE], SIGNAL(triggered()), this, SLOT(act_splitCollapse()));
+    addAction(actionMap[SUB_COLLAPSE]);
 
     //act = new QAction(this);
     //act->setSeparator(true);
@@ -75,8 +75,47 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
     connect(this, SIGNAL(customContextMenuRequested(const QPoint &)),
             this, SLOT(customContextMenuCall(const QPoint &)));
 
+    updateShortcuts();
+
     //setKeyBindings("linux");
     startShellProgram();
+}
+
+void TermWidgetImpl::updateShortcuts()
+{
+    QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
+    settings.beginGroup("Shortcuts");
+
+    QKeySequence seq;
+
+    if( actionMap.contains(COPY_SELECTION) && settings.contains(COPY_SELECTION) )
+    {
+        seq = QKeySequence::fromString( settings.value(COPY_SELECTION, QKeySequence::Copy).toString() );
+        actionMap[COPY_SELECTION]->setShortcut(seq);
+    }
+    if( actionMap.contains(PASTE_SELECTION) && settings.contains(PASTE_SELECTION) )
+    {
+        seq = QKeySequence::fromString( settings.value(PASTE_SELECTION, QKeySequence::Paste).toString() );
+        actionMap[PASTE_SELECTION]->setShortcut(seq);
+    }
+
+    if( actionMap.contains(SPLIT_HORIZONTAL) && settings.contains(SPLIT_HORIZONTAL) )
+    {
+        seq = QKeySequence::fromString( settings.value(SPLIT_HORIZONTAL).toString() );
+        actionMap[SPLIT_HORIZONTAL]->setShortcut(seq);
+    }
+    if( actionMap.contains(SPLIT_VERTICAL) && settings.contains(SPLIT_VERTICAL) )
+    {
+        seq = QKeySequence::fromString( settings.value(SPLIT_VERTICAL).toString() );
+        actionMap[SPLIT_VERTICAL]->setShortcut(seq);
+    }
+    if( actionMap.contains(SUB_COLLAPSE) && settings.contains(SUB_COLLAPSE) )
+    {
+        seq = QKeySequence::fromString( settings.value(SUB_COLLAPSE).toString() );
+        actionMap[SUB_COLLAPSE]->setShortcut(seq);
+    }
+
+    settings.endGroup();
 }
 
 void TermWidgetImpl::propertiesChanged()
@@ -100,6 +139,8 @@ void TermWidgetImpl::propertiesChanged()
         setScrollBarPosition(QTermWidget::ScrollBarRight);
         break;
     }
+
+    updateShortcuts();
 
     update();
 }
@@ -135,7 +176,7 @@ void TermWidgetImpl::act_splitCollapse()
 
 void TermWidgetImpl::enableCollapse(bool enable)
 {
-    actCollapse->setEnabled(enable);
+    actionMap[SUB_COLLAPSE]->setEnabled(enable);
 }
 
 
