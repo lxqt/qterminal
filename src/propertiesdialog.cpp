@@ -61,6 +61,10 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     termOpacityBox->setValue(Properties::Instance()->termOpacity);
     //connect(termOpacityBox, SIGNAL(valueChanged(int)), this, SLOT(apply()));
+
+    historyLimited->setChecked(Properties::Instance()->historyLimited);
+    historyUnlimited->setChecked(!Properties::Instance()->historyLimited);
+    historyLimitedTo->setValue(Properties::Instance()->historyLimitedTo);
 }
 
 
@@ -93,6 +97,9 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->scrollBarPos = scrollBarPos_comboBox->currentIndex();
     Properties::Instance()->tabsPos = tabsPos_comboBox->currentIndex();
+
+    Properties::Instance()->historyLimited = historyLimited->isChecked();
+    Properties::Instance()->historyLimitedTo = historyLimitedTo->value();
 
     saveShortcuts();
 

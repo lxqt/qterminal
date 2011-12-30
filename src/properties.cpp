@@ -59,6 +59,10 @@ void Properties::loadSettings()
     mainWindowGeometry = settings.value("MainWindow/geometry").toByteArray();
     mainWindowState = settings.value("MainWindow/state").toByteArray();
 
+
+    historyLimited = settings.value("HistoryLimited", true).toBool();
+    historyLimitedTo = settings.value("HistoryLimitedTo", 1000).toUInt();
+
     emulation = settings.value("emulation", "default").toString();
 
     // sessions
@@ -108,6 +112,9 @@ void Properties::saveSettings()
 
     settings.setValue("MainWindow/geometry", mainWindowGeometry);
     settings.setValue("MainWindow/state", mainWindowState);
+
+    settings.setValue("HistoryLimited", historyLimited);
+    settings.setValue("HistoryLimitedTo", historyLimitedTo);
 
     settings.setValue("emulation", emulation);
 

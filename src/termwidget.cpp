@@ -122,6 +122,17 @@ void TermWidgetImpl::propertiesChanged()
 {
     setColorScheme(Properties::Instance()->colorScheme);
     setTerminalFont(Properties::Instance()->font);
+
+    if (Properties::Instance()->historyLimited)
+    {
+        setHistorySize(Properties::Instance()->historyLimitedTo);
+    }
+    else
+    {
+        // Unlimited history
+        setHistorySize(-1);
+    }
+
     qDebug() << "TermWidgetImpl::propertiesChanged" << this << "emulation:" << Properties::Instance()->emulation;
     setKeyBindings(Properties::Instance()->emulation);
     setTerminalOpacity(Properties::Instance()->termOpacity/100.0);

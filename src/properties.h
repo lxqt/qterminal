@@ -27,6 +27,9 @@ class Properties
         QString colorScheme;
         QString guiStyle;
 
+        bool historyLimited;
+        unsigned historyLimitedTo;
+
         QString emulation;
 
         Sessions sessions;
