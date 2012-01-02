@@ -43,6 +43,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
     tabBar()->setUsesScrollButtons(true);
 
     setTabsClosable(true);
+    setMovable(true);
     connect(this, SIGNAL(tabCloseRequested(int)), this, SLOT(removeTab(int)));
     /*
     QToolButton* tb = new QToolButton(this);
