@@ -1,9 +1,9 @@
 set( EXE_NAME qterminal )
 
 set( QTERM_SRC
-	main.cpp
-	mainwindow.cpp
-	tabwidget.cpp
+    main.cpp
+    mainwindow.cpp
+    tabwidget.cpp
     termwidget.cpp
     termwidgetholder.cpp
     properties.cpp
@@ -11,20 +11,20 @@ set( QTERM_SRC
 )
 
 set( QTERM_MOC_SRC
-	mainwindow.h
-	tabwidget.h
+    mainwindow.h
+    tabwidget.h
     termwidget.h
     termwidgetholder.h
     propertiesdialog.h
 )
 
 set( QTERM_UI_SRC
-	forms/qterminal.ui
+    forms/qterminal.ui
     forms/propertiesdialog.ui
 )
 
 set( QTERM_RCC_SRC
-	icons.qrc
+    icons.qrc
 )
 
 
@@ -33,9 +33,9 @@ QT4_WRAP_CPP( QTERM_MOC ${QTERM_MOC_SRC} )
 QT4_ADD_RESOURCES( QTERM_RCC ${QTERM_RCC_SRC} )
 
 include_directories (
-	${CMAKE_CURRENT_SOURCE_DIR}
-	${CMAKE_CURRENT_BINARY_DIR}
-	${QTERMWIDGET_INCLUDE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_BINARY_DIR}
+    ${QTERMWIDGET_INCLUDE_DIR}
 )
 
 # TODO/FIXME: apple bundle
@@ -44,35 +44,35 @@ set(APPLE_BUNDLE_SOURCES "")
 if (APPLEBUNDLE)
     set(GUI_TYPE MACOSX_BUNDLE)
     
-	# create Info.plist file
-	set(MACOSX_BUNDLE_ICON_FILE qterminal.icns)
-	set(MACOSX_BUNDLE_INFO_STRING "QTerminal ${STR_VERSION}")
-	set(MACOSX_BUNDLE_GUI_IDENTIFIER "com.qterminal")
-	set(MACOSX_BUNDLE_LONG_VERSION_STRING "${STR_VERSION}")
-	set(MACOSX_BUNDLE_BUNDLE_NAME "${EXE_NAME}")
-	set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${STR_VERSION}")
-	set(MACOSX_BUNDLE_BUNDLE_VERSION "${STR_VERSION}")
-	set(MACOSX_BUNDLE_COPYRIGHT "(c) Petr Vanek &lt;petr@scribus.info&gt;")
+    # create Info.plist file
+    set(MACOSX_BUNDLE_ICON_FILE qterminal.icns)
+    set(MACOSX_BUNDLE_INFO_STRING "QTerminal ${STR_VERSION}")
+    set(MACOSX_BUNDLE_GUI_IDENTIFIER "com.qterminal")
+    set(MACOSX_BUNDLE_LONG_VERSION_STRING "${STR_VERSION}")
+    set(MACOSX_BUNDLE_BUNDLE_NAME "${EXE_NAME}")
+    set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${STR_VERSION}")
+    set(MACOSX_BUNDLE_BUNDLE_VERSION "${STR_VERSION}")
+    set(MACOSX_BUNDLE_COPYRIGHT "(c) Petr Vanek &lt;petr@scribus.info&gt;")
 
-	set_source_files_properties(${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns
+    set_source_files_properties(${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns
                                 PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
-	# use icon for app bundle to be visible in finder
-	set(APPLE_BUNDLE_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns)
+    # use icon for app bundle to be visible in finder
+    set(APPLE_BUNDLE_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns)
 
 endif (APPLEBUNDLE)
 
 add_executable( ${EXE_NAME} ${GUI_TYPE}
-	${QTERM_SRC}
-	${QTERM_UI}
-	${QTERM_MOC}
-	${QTERM_RCC}
+    ${QTERM_SRC}
+    ${QTERM_UI}
+    ${QTERM_MOC}
+    ${QTERM_RCC}
     ${APPLE_BUNDLE_SOURCES}
 )
 
 target_link_libraries( ${EXE_NAME}
-	${QT_LIBRARIES}
-	${QTERMWIDGET_LIBRARIES}
-	util
+    ${QT_LIBRARIES}
+    ${QTERMWIDGET_LIBRARIES}
+    util
 )
 
 
@@ -83,14 +83,14 @@ if (NOT APPLEBUNDLE)
 else (NOT APPLEBUNDLE)
     message(STATUS "APPLEBUNDLE")
 
-	install(CODE "message(STATUS \"Cleaning previously installed bundle (rm -r)\")")
-	install(CODE "execute_process(COMMAND rm -r ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app)")
+    install(CODE "message(STATUS \"Cleaning previously installed bundle (rm -r)\")")
+    install(CODE "execute_process(COMMAND rm -r ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app)")
 
-	install( TARGETS ${EXE_NAME} DESTINATION "${CMAKE_INSTALL_PREFIX}" )
+    install( TARGETS ${EXE_NAME} DESTINATION "${CMAKE_INSTALL_PREFIX}" )
 
-	# helper stuff to create real apple bundle.
-	# Black magic is summoned here...
-	add_subdirectory( macosx )
+    # helper stuff to create real apple bundle.
+    # Black magic is summoned here...
+    add_subdirectory( macosx )
 
     # bundle required keytabs from the qtermwidget package as well
     install(CODE "message(STATUS \"Bundling (cp) keytab files from ${QTERMWIDGET_SHARE}/qtermwidget/\")")    
