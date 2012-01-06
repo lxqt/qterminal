@@ -85,13 +85,26 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
 
 int main(int argc, char *argv[])
 {
-    setenv("TERM", "xterm", 1);
+    setenv("TERM", "xterm", 1); // TODO/FIXME: why?
     QApplication app(argc, argv);
     QString workdir, shell_command;
     parse_args(argc, argv, workdir, shell_command);
 
     if (workdir.isEmpty())
         workdir = QDir::homePath();
+
+    // translations
+    QString fname = QString("qtranslator_%1.qm").arg(QLocale::system().name().left(2));
+    QTranslator translator;
+#ifdef TRANSLATIONS_DIR
+    qDebug() << "Loading translation file" << fname << "from dir" << TRANSLATIONS_DIR;
+    translator.load(fname, TRANSLATIONS_DIR);
+#endif
+#ifdef APPLE_BUNDLE
+    qDebug() << "Loading translator file" << fname << "from dir" << QApplication::applicationDirPath()+"../translations";
+    translator.load(fname, QApplication::applicationDirPath()+"../translations");
+#endif
+    app.installTranslator(&translator);
 
     MainWindow widget(workdir, shell_command);
     widget.show();

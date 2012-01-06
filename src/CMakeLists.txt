@@ -27,16 +27,29 @@ set( QTERM_RCC_SRC
     icons.qrc
 )
 
+set( QTERM_TS
+    translations/qterminal_cs.ts
+)
+
 
 QT4_WRAP_UI( QTERM_UI ${QTERM_UI_SRC} )
 QT4_WRAP_CPP( QTERM_MOC ${QTERM_MOC_SRC} )
 QT4_ADD_RESOURCES( QTERM_RCC ${QTERM_RCC_SRC} )
+QT4_ADD_TRANSLATION( QTERM_QM ${QTERM_TS} )
 
 include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}
     ${QTERMWIDGET_INCLUDE_DIR}
 )
+
+
+if (APPLEBUNDLE)
+    add_definitions(-DAPPLE_BUNDLE)
+else()
+    set(TRANSLATIONS_DIR "${CMAKE_INSTALL_PREFIX}/share/qterminal/translations")
+    add_definitions(-DTRANSLATIONS_DIR=\"${TRANSLATIONS_DIR}\")
+endif()
 
 # TODO/FIXME: apple bundle
 set(GUI_TYPE "")
@@ -67,6 +80,7 @@ add_executable( ${EXE_NAME} ${GUI_TYPE}
     ${QTERM_MOC}
     ${QTERM_RCC}
     ${APPLE_BUNDLE_SOURCES}
+    ${QTERM_QM}
 )
 
 target_link_libraries( ${EXE_NAME}
@@ -79,6 +93,7 @@ target_link_libraries( ${EXE_NAME}
 if (NOT APPLEBUNDLE)
 
     INSTALL(TARGETS ${EXE_NAME} RUNTIME DESTINATION bin)
+    INSTALL(FILES ${QTERM_QM} DESTINATION ${TRANSLATIONS_DIR})
     
 else (NOT APPLEBUNDLE)
     message(STATUS "APPLEBUNDLE")
@@ -96,6 +111,13 @@ else (NOT APPLEBUNDLE)
     install(CODE "message(STATUS \"Bundling (cp) keytab files from ${QTERMWIDGET_SHARE}/qtermwidget/\")")    
     install(CODE "execute_process(COMMAND cp -r ${QTERMWIDGET_SHARE}/qtermwidget/ ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/Resources)")
     #install(CODE "execute_process(COMMAND ls -l ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/Resources/kb-layouts/)")
+
+    INSTALL(FILES ${QTERM_QM} DESTINATION ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/translations)
     
 endif (NOT APPLEBUNDLE)
+
+
+# translation generator
+set (FILES_TO_TRANSLATE ${QTERM_SRC} ${QTERM_MOC_SRC})
+qt4_create_translation(QM_FILES ${FILES_TO_TRANSLATE} ${QTERM_TS})
 
