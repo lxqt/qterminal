@@ -24,6 +24,7 @@
 #include "ui_qterminal.h"
 
 #include <QMainWindow>
+class QToolButton;
 
 class MainWindow : public QMainWindow , private Ui::mainWindow
 {
@@ -31,8 +32,11 @@ class MainWindow : public QMainWindow , private Ui::mainWindow
 
 public:
     MainWindow(const QString& work_dir, const QString& command,
+               bool dropMode,
                QWidget * parent = 0, Qt::WindowFlags f = 0);
     ~MainWindow();
+
+    bool dropMode() { return m_dropMode; }
 
 protected slots:
     void on_consoleTabulator_currentChanged(int);
@@ -45,6 +49,12 @@ protected slots:
     void toggleBorderless();
     void toggleTabBar();
 
+    void showHide();
+    void setKeepOpen(bool value);
+
+protected:
+     bool event(QEvent* event);
+
 private:
     QActionGroup *tabPosition, *scrollBarPosition;
     QMenu *tabPosMenu, *scrollPosMenu;
@@ -55,6 +65,10 @@ private:
     void setup_WindowMenu_Actions();
     void closeEvent(QCloseEvent*);
 
-
+    void enableDropMode();
+    QToolButton *m_dropLockButton;
+    bool m_dropMode;
+    void realign();
+    void setDropShortcut(QKeySequence dropShortCut);
 };
 #endif //MAINWINDOW_H

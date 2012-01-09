@@ -8,7 +8,25 @@ set( QTERM_SRC
     termwidgetholder.cpp
     properties.cpp
     propertiesdialog.cpp
+    third-party/globalshortcutmanager.cpp
 )
+
+if(WIN32)
+    set(QTERM_SRC
+        ${QTERM_SRC}
+        third-party/globalshortcutmanager_win.cpp
+    )
+elseif(APPLE)
+    set(QTERM_SRC
+        ${QTERM_SRC}
+        third-party/globalshortcutmanager_mac.cpp
+    )
+else()
+    set(QTERM_SRC
+        ${QTERM_SRC}
+        third-party/globalshortcutmanager_x11.cpp
+    )
+endif()
 
 set( QTERM_MOC_SRC
 	mainwindow.h
@@ -16,6 +34,7 @@ set( QTERM_MOC_SRC
     termwidget.h
     termwidgetholder.h
     propertiesdialog.h
+    third-party/globalshortcuttrigger.h
 )
 
 set( QTERM_UI_SRC

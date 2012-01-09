@@ -89,6 +89,14 @@ void Properties::loadSettings()
     borderless = settings.value("Borderless", false).toBool();
     tabBarless = settings.value("TabBarless", false).toBool();
     askOnExit = settings.value("AskOnExit", true).toBool();
+
+    settings.beginGroup("DropMode");
+    dropShortCut = QKeySequence(settings.value("ShortCut", "F12").toString());
+    dropKeepOpen = settings.value("KeepOpen", false).toBool();
+    dropShowOnStart = settings.value("ShowOnStart", true).toBool();
+    dropWidht = settings.value("Width", 70).toInt();
+    dropHeight = settings.value("Height", 45).toInt();
+    settings.endGroup();
 }
 
 void Properties::saveSettings()
@@ -139,5 +147,14 @@ void Properties::saveSettings()
     settings.setValue("Borderless", borderless);
     settings.setValue("TabBarless", tabBarless);
     settings.setValue("AskOnExit", askOnExit);
+
+    settings.beginGroup("DropMode");
+    settings.setValue("ShortCut", dropShortCut.toString());
+    settings.setValue("KeepOpen", dropKeepOpen);
+    settings.setValue("ShowOnStart", dropShowOnStart);
+    settings.setValue("Width", dropWidht);
+    settings.setValue("Height", dropHeight);
+    settings.endGroup();
+
 }
 

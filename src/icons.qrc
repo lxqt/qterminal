@@ -8,5 +8,7 @@
     <file>icons/document-close.png</file>
     <file>icons/application-exit.png</file>
     <file>icons/qterminal.png</file>
+    <file>icons/locked.png</file>
+    <file>icons/notlocked.png</file>
   </qresource>
 </RCC>

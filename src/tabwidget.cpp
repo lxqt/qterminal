@@ -38,7 +38,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
      * the tabs in Safari or Leopard's Terminal.app .
      * I love this!
      */
-    setDocumentMode(true);
+    //setDocumentMode(true);
 
     tabBar()->setUsesScrollButtons(true);
 

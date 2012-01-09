@@ -199,7 +199,8 @@ TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * pa
     m_term = new TermWidgetImpl(wdir, shell, this);
     setFocusProxy(m_term);
     m_layout = new QVBoxLayout;
-    m_layout->setContentsMargins(3, 3, 3, 3);
+    //m_layout->setContentsMargins(3, 3, 3, 3);
+    m_layout->setContentsMargins(0, 0, 0, 0);
     setLayout(m_layout);
 
     m_layout->addWidget(m_term);
@@ -238,7 +239,7 @@ void TermWidget::term_splitCollapse()
 void TermWidget::term_termGetFocus()
 {
     qDebug() << "get focus" << this << this->size();
-    m_border = palette().color(QPalette::Highlight);
+    //m_border = palette().color(QPalette::Highlight);
     emit termGetFocus(this);
     update();
 }
@@ -246,7 +247,7 @@ void TermWidget::term_termGetFocus()
 void TermWidget::term_termLostFocus()
 {
     qDebug() << "lost focus" << this;
-    m_border = palette().color(QPalette::Window);
+    //m_border = palette().color(QPalette::Window);
     update();
 }
 

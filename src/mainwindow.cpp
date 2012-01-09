@@ -26,13 +26,20 @@
 #include "config.h"
 #include "properties.h"
 #include "propertiesdialog.h"
+#include "third-party/globalshortcutmanager.h"
 
+#define QSS_COMMON  "QTabWidget::pane {border: none;}\n"
+#define QSS_DROP    "MainWindow {border: 1px solid rgba(0, 0, 0, 50%);}\n"
+#define QSS_WINDOW  ""
 
 MainWindow::MainWindow(const QString& work_dir,
                        const QString& command,
+                       bool dropMode,
                        QWidget * parent,
                        Qt::WindowFlags f)
-    : QMainWindow(parent,f)
+    : QMainWindow(parent,f),
+      m_dropLockButton(0),
+      m_dropMode(dropMode)
 {
     setupUi(this);
 
@@ -43,8 +50,16 @@ MainWindow::MainWindow(const QString& work_dir,
     connect(actQuit, SIGNAL(triggered()), SLOT(close()));
     connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
 
-    restoreGeometry(Properties::Instance()->mainWindowGeometry);
-    restoreState(Properties::Instance()->mainWindowState);
+    //setContentsMargins(0, 0, 0, 0);
+    if (m_dropMode) {
+        this->enableDropMode();
+        setStyleSheet(QSS_COMMON QSS_DROP);
+    }
+    else {
+        restoreGeometry(Properties::Instance()->mainWindowGeometry);
+        restoreState(Properties::Instance()->mainWindowState);
+        setStyleSheet(QSS_COMMON QSS_WINDOW);
+    }
 
     connect(consoleTabulator, SIGNAL(quit_notification()), SLOT(quit()));
     consoleTabulator->setWorkDirectory(work_dir);
@@ -71,6 +86,33 @@ MainWindow::MainWindow(const QString& work_dir,
 
 MainWindow::~MainWindow()
 {
+}
+
+void MainWindow::enableDropMode()
+{
+    setWindowFlags(Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint);
+
+    m_dropLockButton = new QToolButton(this);
+    consoleTabulator->setCornerWidget(m_dropLockButton, Qt::BottomRightCorner);
+    m_dropLockButton->setCheckable(true);
+    m_dropLockButton->connect(m_dropLockButton, SIGNAL(clicked(bool)), this, SLOT(setKeepOpen(bool)));
+    setKeepOpen(Properties::Instance()->dropKeepOpen);
+    m_dropLockButton->setAutoRaise(true);
+
+    setDropShortcut(Properties::Instance()->dropShortCut);
+    realign();
+}
+
+void MainWindow::setDropShortcut(QKeySequence dropShortCut)
+{
+    static QKeySequence oldShortCut;
+    GlobalShortcutManager* shortcutManager =GlobalShortcutManager::instance();
+
+    if (!oldShortCut.isEmpty())
+        shortcutManager->disconnect(oldShortCut, this, SLOT(showHide()));
+
+    shortcutManager->connect(dropShortCut, this, SLOT(showHide()));
+    oldShortCut = dropShortCut;
 }
 
 void MainWindow::setup_ActionsMenu_Actions()
@@ -199,6 +241,7 @@ void MainWindow::setup_WindowMenu_Actions()
     toggleBorder->setCheckable(true);
     connect(toggleBorder, SIGNAL(triggered()), this, SLOT(toggleBorderless()));
     menu_Window->addAction(toggleBorder);
+    toggleBorder->setVisible(!m_dropMode);
 
     toggleTabbar = new QAction(tr("Toggle TabBar"), this);
     //toggleTabbar->setObjectName("toggle_TabBar");
@@ -291,6 +334,7 @@ void MainWindow::toggleBorderless()
     show();
     setWindowState(Qt::WindowActive); /* don't loose focus on the window */
     Properties::Instance()->borderless = toggleBorder->isChecked();
+    realign();
 }
 
 void MainWindow::closeEvent(QCloseEvent *ev)
@@ -356,7 +400,67 @@ void MainWindow::propertiesChanged()
     setWindowOpacity(Properties::Instance()->appOpacity/100.0);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     consoleTabulator->propertiesChanged();
+    setDropShortcut(Properties::Instance()->dropShortCut);
     Properties::Instance()->saveSettings();
+    realign();
+}
+
+void MainWindow::realign()
+{
+    if (m_dropMode)
+    {
+        QRect desktop = QApplication::desktop()->availableGeometry();
+        QRect geometry = QRect(0, 0,
+                               desktop.width()  * Properties::Instance()->dropWidht  / 100,
+                               desktop.height() * Properties::Instance()->dropHeight / 100
+                              );
+        geometry.moveCenter(desktop.center());
+        geometry.setTop(0);
+
+        setGeometry(geometry);
+    }
+
+    int l=0, t=0, r=0, b=0;
+
+    switch (consoleTabulator->tabPosition())
+    {
+    case QTabWidget::North:
+        if (!Properties::Instance()->tabBarless)
+        {
+            t = 4;
+            b = 3;
+        }
+        setStyleSheet(QSS_COMMON QSS_DROP "QTabWidget::tab-bar { left: 5px; } QTabWidget::right-corner { right: 3px; bottom: 2px; }");
+        break;
+
+    case QTabWidget::South:
+        if (!Properties::Instance()->tabBarless)
+        {
+            b = 4;
+        }
+        setStyleSheet(QSS_COMMON QSS_DROP "QTabWidget::tab-bar { left: 5px; } QTabWidget::right-corner { right: 3px; top: 2px; }");
+        break;
+
+    case QTabWidget::West:
+        if (!Properties::Instance()->tabBarless)
+        {
+            l = 4;
+            b = 3;
+        }
+        setStyleSheet(QSS_COMMON QSS_DROP);
+        break;
+
+    case QTabWidget::East:
+        if (!Properties::Instance()->tabBarless)
+        {
+            r = 4;
+            b = 3;
+        }
+        setStyleSheet(QSS_COMMON QSS_DROP);
+        break;
+
+    }
+    setContentsMargins(l, t, r, b);
 }
 
 void MainWindow::updateActionGroup(QAction *a)
@@ -364,4 +468,42 @@ void MainWindow::updateActionGroup(QAction *a)
     if (a->parent()->objectName() == tabPosMenu->objectName()) {
         tabPosition->actions().at(Properties::Instance()->tabsPos)->setChecked(true);
     }
+}
+
+void MainWindow::showHide()
+{
+    if (isVisible())
+        hide();
+    else
+    {
+       show();
+       activateWindow();
+    }
+}
+
+void MainWindow::setKeepOpen(bool value)
+{
+    Properties::Instance()->dropKeepOpen = value;
+    if (!m_dropLockButton)
+        return;
+
+    if (value)
+        m_dropLockButton->setIcon(QIcon(":/icons/locked.png"));
+    else
+        m_dropLockButton->setIcon(QIcon(":/icons/notlocked.png"));
+
+    m_dropLockButton->setChecked(value);
+}
+
+bool MainWindow::event(QEvent *event)
+{
+    if (event->type() == QEvent::WindowDeactivate)
+    {
+        if (m_dropMode &&
+            !Properties::Instance()->dropKeepOpen &&
+            qApp->activeWindow() == 0
+           )
+           hide();
+    }
+    return QMainWindow::event(event);
 }

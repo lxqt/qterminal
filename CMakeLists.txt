@@ -54,6 +54,7 @@ subdirs( src )
 
 
 install(FILES qterminal.desktop DESTINATION share/applications)
+install(FILES qterminal_drop.desktop DESTINATION share/applications)
 
 
 # make dist custom target

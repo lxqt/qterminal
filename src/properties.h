@@ -45,6 +45,12 @@ class Properties
 
         bool askOnExit;
 
+        QKeySequence dropShortCut;
+        bool dropKeepOpen;
+        bool dropShowOnStart;
+        int dropWidht;
+        int dropHeight;
+
         QMap< QString, QAction * > actions;
 
         void loadSettings();

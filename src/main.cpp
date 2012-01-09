@@ -29,13 +29,14 @@
 
 #define out
 
-const char* const short_options = "vhw:e:";
+const char* const short_options = "vhw:e:d";
 
 const struct option long_options[] = {
     {"version", 0, NULL, 'v'},
     {"help",    0, NULL, 'h'},
     {"workdir", 1, NULL, 'w'},
     {"execute", 1, NULL, 'e'},
+    {"drop",    0, NULL, 'd'},
     {NULL,      0, NULL,  0}
 };
 
@@ -48,6 +49,7 @@ void print_usage_and_exit(int code)
     puts("-v|--version            Prints application version and exits");
     puts("-w|--workdir <dir>      Start session with specified work directory");
     puts("-e|--execute <command>  Execute command instead of shell");
+    puts("-d|--drop               Start in Drop Mode, like Yakuake or Tilda");
     puts("\nHomepage: http://qterminal.sourceforge.net/");
     puts("Feature requests, bug reports etc please send to: <petr@scribus.info>\n");
     exit(code);
@@ -59,9 +61,10 @@ void print_version_and_exit(int code=0)
     exit(code);
 }
 
-void parse_args(int argc, char* argv[], QString& workdir, QString & shell_command)
+void parse_args(int argc, char* argv[], QString& workdir, QString & shell_command, out bool& dropMode)
 {
     int next_option;
+    dropMode = false;
     do{
         next_option = getopt_long(argc, argv, short_options, long_options, NULL);
         switch(next_option)
@@ -73,6 +76,9 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
                 break;
             case 'e':
                 shell_command = QString(optarg);
+                break;
+            case 'd':
+                dropMode = true;
                 break;
             case '?':
                 print_usage_and_exit(1);
@@ -88,13 +94,20 @@ int main(int argc, char *argv[])
     setenv("TERM", "xterm", 1);
     QApplication app(argc, argv);
     QString workdir, shell_command;
-    parse_args(argc, argv, workdir, shell_command);
+    bool dropMode;
+    parse_args(argc, argv, workdir, shell_command, dropMode);
 
     if (workdir.isEmpty())
         workdir = QDir::homePath();
 
-    MainWindow widget(workdir, shell_command);
-    widget.show();
+    MainWindow widget(workdir, shell_command, dropMode);
+    if (!widget.dropMode() ||
+        Properties::Instance()->dropShowOnStart
+       )
+    {
+        widget.show();
+    }
 
     return app.exec();
+    qDebug() << Q_FUNC_INFO;
 }
