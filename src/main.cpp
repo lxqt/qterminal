@@ -94,15 +94,15 @@ int main(int argc, char *argv[])
         workdir = QDir::homePath();
 
     // translations
-    QString fname = QString("qtranslator_%1.qm").arg(QLocale::system().name().left(2));
+    QString fname = QString("qterminal_%1.qm").arg(QLocale::system().name().left(2));
     QTranslator translator;
 #ifdef TRANSLATIONS_DIR
-    qDebug() << "Loading translation file" << fname << "from dir" << TRANSLATIONS_DIR;
-    translator.load(fname, TRANSLATIONS_DIR);
+    qDebug() << "TRANSLATIONS_DIR: Loading translation file" << fname << "from dir" << TRANSLATIONS_DIR;
+    qDebug() << "load success:" << translator.load(fname, TRANSLATIONS_DIR, "_");
 #endif
 #ifdef APPLE_BUNDLE
-    qDebug() << "Loading translator file" << fname << "from dir" << QApplication::applicationDirPath()+"../translations";
-    translator.load(fname, QApplication::applicationDirPath()+"../translations");
+    qDebug() << "APPLE_BUNDLE: Loading translator file" << fname << "from dir" << QApplication::applicationDirPath()+"../translations";
+    qDebug() << "load success:" << translator.load(fname, QApplication::applicationDirPath()+"../translations", "_");
 #endif
     app.installTranslator(&translator);
 

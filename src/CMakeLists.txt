@@ -117,7 +117,11 @@ else (NOT APPLEBUNDLE)
 endif (NOT APPLEBUNDLE)
 
 
-# translation generator
-set (FILES_TO_TRANSLATE ${QTERM_SRC} ${QTERM_MOC_SRC})
-qt4_create_translation(QM_FILES ${FILES_TO_TRANSLATE} ${QTERM_TS})
+# make lupdate
+# it generates new translation files
+add_custom_target(lupdate
+    ${QT_QMAKE_EXECUTABLE} -project -o ${CMAKE_CURRENT_BINARY_DIR}/qterminal.pro
+    COMMAND ${QT_LUPDATE_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/qterminal.pro
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+)
 
