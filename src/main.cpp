@@ -91,7 +91,7 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
 
 int main(int argc, char *argv[])
 {
-    setenv("TERM", "xterm", 1);
+    setenv("TERM", "xterm", 1); // TODO/FIXME: why?
     QApplication app(argc, argv);
     QString workdir, shell_command;
     bool dropMode;
@@ -99,6 +99,19 @@ int main(int argc, char *argv[])
 
     if (workdir.isEmpty())
         workdir = QDir::homePath();
+
+    // translations
+    QString fname = QString("qterminal_%1.qm").arg(QLocale::system().name().left(2));
+    QTranslator translator;
+#ifdef TRANSLATIONS_DIR
+    qDebug() << "TRANSLATIONS_DIR: Loading translation file" << fname << "from dir" << TRANSLATIONS_DIR;
+    qDebug() << "load success:" << translator.load(fname, TRANSLATIONS_DIR, "_");
+#endif
+#ifdef APPLE_BUNDLE
+    qDebug() << "APPLE_BUNDLE: Loading translator file" << fname << "from dir" << QApplication::applicationDirPath()+"../translations";
+    qDebug() << "load success:" << translator.load(fname, QApplication::applicationDirPath()+"../translations", "_");
+#endif
+    app.installTranslator(&translator);
 
     MainWindow widget(workdir, shell_command, dropMode);
     if (!widget.dropMode() ||
@@ -109,5 +122,4 @@ int main(int argc, char *argv[])
     }
 
     return app.exec();
-    qDebug() << Q_FUNC_INFO;
 }
