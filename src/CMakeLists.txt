@@ -8,23 +8,23 @@ set( QTERM_SRC
     termwidgetholder.cpp
     properties.cpp
     propertiesdialog.cpp
-    third-party/globalshortcutmanager.cpp
+    third-party/qxtglobalshortcut.cpp
 )
 
 if(WIN32)
     set(QTERM_SRC
         ${QTERM_SRC}
-        third-party/globalshortcutmanager_win.cpp
+        third-party/qxtglobalshortcut_win.cpp
     )
 elseif(APPLE)
     set(QTERM_SRC
         ${QTERM_SRC}
-        third-party/globalshortcutmanager_mac.cpp
+        third-party/qxtglobalshortcut_mac.cpp
     )
 else()
     set(QTERM_SRC
         ${QTERM_SRC}
-        third-party/globalshortcutmanager_x11.cpp
+        third-party/qxtglobalshortcut_x11.cpp
     )
 endif()
 
@@ -34,7 +34,7 @@ set( QTERM_MOC_SRC
     termwidget.h
     termwidgetholder.h
     propertiesdialog.h
-    third-party/globalshortcuttrigger.h
+    third-party/qxtglobalshortcut.h
 )
 
 set( QTERM_UI_SRC
@@ -75,7 +75,7 @@ set(GUI_TYPE "")
 set(APPLE_BUNDLE_SOURCES "")
 if (APPLEBUNDLE)
     set(GUI_TYPE MACOSX_BUNDLE)
-    
+
     # create Info.plist file
     set(MACOSX_BUNDLE_ICON_FILE qterminal.icns)
     set(MACOSX_BUNDLE_INFO_STRING "QTerminal ${STR_VERSION}")
@@ -113,7 +113,7 @@ if (NOT APPLEBUNDLE)
 
     INSTALL(TARGETS ${EXE_NAME} RUNTIME DESTINATION bin)
     INSTALL(FILES ${QTERM_QM} DESTINATION ${TRANSLATIONS_DIR})
-    
+
 else (NOT APPLEBUNDLE)
     message(STATUS "APPLEBUNDLE")
 
@@ -127,12 +127,12 @@ else (NOT APPLEBUNDLE)
     add_subdirectory( macosx )
 
     # bundle required keytabs from the qtermwidget package as well
-    install(CODE "message(STATUS \"Bundling (cp) keytab files from ${QTERMWIDGET_SHARE}/qtermwidget/\")")    
+    install(CODE "message(STATUS \"Bundling (cp) keytab files from ${QTERMWIDGET_SHARE}/qtermwidget/\")")
     install(CODE "execute_process(COMMAND cp -r ${QTERMWIDGET_SHARE}/qtermwidget/ ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/Resources)")
     #install(CODE "execute_process(COMMAND ls -l ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/Resources/kb-layouts/)")
 
     INSTALL(FILES ${QTERM_QM} DESTINATION ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/translations)
-    
+
 endif (NOT APPLEBUNDLE)
 
 

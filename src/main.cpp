@@ -113,12 +113,18 @@ int main(int argc, char *argv[])
 #endif
     app.installTranslator(&translator);
 
-    MainWindow widget(workdir, shell_command, dropMode);
-    if (!widget.dropMode() ||
-        Properties::Instance()->dropShowOnStart
-       )
+    MainWindow *window;
+    if (dropMode)
     {
-        widget.show();
+        QWidget *hiddenPreviewParent = new QWidget(0, Qt::Tool);
+        window = new MainWindow(workdir, shell_command, dropMode, hiddenPreviewParent);
+        if (Properties::Instance()->dropShowOnStart)
+            window->show();
+    }
+    else
+    {
+        window = new MainWindow(workdir, shell_command, dropMode);
+        window->show();
     }
 
     return app.exec();

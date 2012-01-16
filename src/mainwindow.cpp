@@ -26,7 +26,6 @@
 #include "config.h"
 #include "properties.h"
 #include "propertiesdialog.h"
-#include "third-party/globalshortcutmanager.h"
 
 #define QSS_COMMON  "QTabWidget::pane {border: none;}\n"
 #define QSS_DROP    "MainWindow {border: 1px solid rgba(0, 0, 0, 50%);}\n"
@@ -49,6 +48,7 @@ MainWindow::MainWindow(const QString& work_dir,
     connect(actAboutQt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
     connect(actQuit, SIGNAL(triggered()), SLOT(close()));
     connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
+    connect(&m_dropShortcut, SIGNAL(activated()), SLOT(showHide()));
 
     //setContentsMargins(0, 0, 0, 0);
     if (m_dropMode) {
@@ -99,6 +99,7 @@ void MainWindow::enableDropMode()
     setKeepOpen(Properties::Instance()->dropKeepOpen);
     m_dropLockButton->setAutoRaise(true);
 
+
     setDropShortcut(Properties::Instance()->dropShortCut);
     realign();
 }
@@ -108,14 +109,11 @@ void MainWindow::setDropShortcut(QKeySequence dropShortCut)
     if (!m_dropMode)
         return;
 
-    static QKeySequence oldShortCut;
-    GlobalShortcutManager* shortcutManager =GlobalShortcutManager::instance();
-
-    if (!oldShortCut.isEmpty())
-        shortcutManager->disconnect(oldShortCut, this, SLOT(showHide()));
-
-    shortcutManager->connect(dropShortCut, this, SLOT(showHide()));
-    oldShortCut = dropShortCut;
+    if (m_dropShortcut.shortcut() != dropShortCut)
+    {
+        m_dropShortcut.setShortcut(dropShortCut);
+        qWarning() << tr("Press \"%1\" to see the terminal.").arg(dropShortCut.toString());
+    }
 }
 
 void MainWindow::setup_ActionsMenu_Actions()
