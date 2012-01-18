@@ -107,6 +107,9 @@ target_link_libraries( ${EXE_NAME}
     ${QTERMWIDGET_LIBRARIES}
     util
 )
+if (APPLE)
+    target_link_libraries(${EXE_NAME} ${CARBON_LIBRARY})
+endif (APPLE)
 
 
 if (NOT APPLEBUNDLE)
