@@ -61,6 +61,9 @@ include_directories (
     ${CMAKE_CURRENT_BINARY_DIR}
     ${QTERMWIDGET_INCLUDE_DIR}
 )
+if (X11_FOUND)
+    include_directories(${X11_INCLUDE_DIR})
+endif (X11_FOUND)
 
 
 if (APPLEBUNDLE)
@@ -110,6 +113,9 @@ target_link_libraries( ${EXE_NAME}
 if (APPLE)
     target_link_libraries(${EXE_NAME} ${CARBON_LIBRARY})
 endif (APPLE)
+if (X11_FOUND)
+    target_link_libraries(${EXE_NAME} ${X11_X11_LIB})
+endif (X11_FOUND)
 
 
 if (NOT APPLEBUNDLE)

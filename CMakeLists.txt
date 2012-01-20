@@ -39,12 +39,16 @@ add_definitions ( ${QT_DEFINITIONS} )
 include_directories( ${QT_INCLUDES} )
 MESSAGE(STATUS "Qt4 libs: ${QT_LIBRARIES}")
 
+
 find_package ( QTermWidget REQUIRED )
 
 if (APPLE)
    FIND_LIBRARY(CARBON_LIBRARY Carbon REQUIRED)
    MESSAGE(STATUS "CARBON_LIBRARY: ${CARBON_LIBRARY}")
-endif (APPLE)
+elseif (UNIX)
+   FIND_PACKAGE(X11 REQUIRED)
+   MESSAGE(STATUS "X11_X11_LIB: ${X11_X11_LIB}")
+endif ()
 
 set(STR_VERSION "0.4.0")
 add_definitions(-DSTR_VERSION=\"${STR_VERSION}\")
