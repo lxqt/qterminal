@@ -1,11 +1,13 @@
 [Desktop Entry]
 Type=Application
+Name=QTerminal
+GenericName=Qt terminal programm
+
+Comment=Qt4 based terminal
+Comment[ru_RU]=Эмулятор терминала на базе Qt4
+
+Icon=qterminal
 Exec=qterminal
 Terminal=false
-Categories=Accessories;System Tools;Utilities;System
-Icon=terminal
-
-Name=QTerminal
-Comment=A terminal emulator
-GenericName=Terminal Emulator
+Categories=Qt;System;TerminalEmulator;
 

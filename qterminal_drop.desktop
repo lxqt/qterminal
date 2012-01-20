@@ -2,8 +2,8 @@
 Type=Application
 Exec=qterminal --drop
 Terminal=false
-Categories=Accessories;System Tools;Utilities;System
-Icon=terminal
+Categories=Qt;System;TerminalEmulator;
+Icon=qterminal
 
 Name=QTerminal drop down
 GenericName=Drop-down Terminal
