@@ -27,9 +27,8 @@
 #include "properties.h"
 #include "propertiesdialog.h"
 
-#define QSS_COMMON  "QTabWidget::pane {border: none;}\n"
+// TODO/FXIME: probably remove. QSS makes it unusable on mac...
 #define QSS_DROP    "MainWindow {border: 1px solid rgba(0, 0, 0, 50%);}\n"
-#define QSS_WINDOW  ""
 
 MainWindow::MainWindow(const QString& work_dir,
                        const QString& command,
@@ -50,15 +49,14 @@ MainWindow::MainWindow(const QString& work_dir,
     connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
     connect(&m_dropShortcut, SIGNAL(activated()), SLOT(showHide()));
 
-    //setContentsMargins(0, 0, 0, 0);
+    setContentsMargins(0, 0, 0, 0);
     if (m_dropMode) {
         this->enableDropMode();
-        setStyleSheet(QSS_COMMON QSS_DROP);
+        setStyleSheet(QSS_DROP);
     }
     else {
         restoreGeometry(Properties::Instance()->mainWindowGeometry);
         restoreState(Properties::Instance()->mainWindowState);
-        setStyleSheet(QSS_COMMON QSS_WINDOW);
     }
 
     connect(consoleTabulator, SIGNAL(quit_notification()), SLOT(quit()));
@@ -420,48 +418,6 @@ void MainWindow::realign()
 
         setGeometry(geometry);
     }
-
-    int l=0, t=0, r=0, b=0;
-
-    switch (consoleTabulator->tabPosition())
-    {
-    case QTabWidget::North:
-        if (!Properties::Instance()->tabBarless)
-        {
-            t = 4;
-            b = 3;
-        }
-        setStyleSheet(QSS_COMMON QSS_DROP "QTabWidget::tab-bar { left: 5px; } QTabWidget::right-corner { right: 3px; bottom: 2px; }");
-        break;
-
-    case QTabWidget::South:
-        if (!Properties::Instance()->tabBarless)
-        {
-            b = 4;
-        }
-        setStyleSheet(QSS_COMMON QSS_DROP "QTabWidget::tab-bar { left: 5px; } QTabWidget::right-corner { right: 3px; top: 2px; }");
-        break;
-
-    case QTabWidget::West:
-        if (!Properties::Instance()->tabBarless)
-        {
-            l = 4;
-            b = 3;
-        }
-        setStyleSheet(QSS_COMMON QSS_DROP);
-        break;
-
-    case QTabWidget::East:
-        if (!Properties::Instance()->tabBarless)
-        {
-            r = 4;
-            b = 3;
-        }
-        setStyleSheet(QSS_COMMON QSS_DROP);
-        break;
-
-    }
-    setContentsMargins(l, t, r, b);
 }
 
 void MainWindow::updateActionGroup(QAction *a)

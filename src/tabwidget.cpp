@@ -38,24 +38,14 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
      * the tabs in Safari or Leopard's Terminal.app .
      * I love this!
      */
-    //setDocumentMode(true);
+    setDocumentMode(true);
 
     tabBar()->setUsesScrollButtons(true);
 
     setTabsClosable(true);
     setMovable(true);
+    setUsesScrollButtons(true);
     connect(this, SIGNAL(tabCloseRequested(int)), this, SLOT(removeTab(int)));
-    /*
-    QToolButton* tb = new QToolButton(this);
-    tb->setIcon(QIcon(":/icons/list-remove.png"));
-    setCornerWidget(tb, Qt::BottomRightCorner);
-    connect(tb, SIGNAL(clicked()), SLOT(removeCurrentTab()));
-
-    tb = new QToolButton(this);
-    tb->setIcon(QIcon(":/icons/list-add.png"));
-    setCornerWidget(tb, Qt::BottomLeftCorner);
-    connect(tb, SIGNAL(clicked()), SLOT(addNewTab()));
-    */
 }
 
 TermWidgetHolder * TabWidget::terminalHolder()
