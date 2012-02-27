@@ -26,6 +26,7 @@ class Properties
         QFont font;
         QString colorScheme;
         QString guiStyle;
+        bool highlightCurrentTerminal;
 
         bool historyLimited;
         unsigned historyLimitedTo;

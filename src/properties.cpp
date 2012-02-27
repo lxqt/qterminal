@@ -39,6 +39,8 @@ void Properties::loadSettings()
 
     colorScheme = settings.value("colorScheme", "Linux").toString();
 
+    highlightCurrentTerminal = settings.value("highlightCurrentTerminal", true).toBool();
+
     QFont default_font = QApplication::font();
     default_font.setFamily("Monospace");
     default_font.setPointSize(10);

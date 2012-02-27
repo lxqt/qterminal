@@ -62,6 +62,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     termOpacityBox->setValue(Properties::Instance()->termOpacity);
     //connect(termOpacityBox, SIGNAL(valueChanged(int)), this, SLOT(apply()));
 
+    highlightCurrentCheckBox->setChecked(Properties::Instance()->highlightCurrentTerminal);
+
     historyLimited->setChecked(Properties::Instance()->historyLimited);
     historyUnlimited->setChecked(!Properties::Instance()->historyLimited);
     historyLimitedTo->setValue(Properties::Instance()->historyLimitedTo);
@@ -99,6 +101,7 @@ void PropertiesDialog::apply()
             Properties::Instance()->appOpacity = appOpacityBox->value();
 
     Properties::Instance()->termOpacity = termOpacityBox->value();
+    Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
 
     Properties::Instance()->scrollBarPos = scrollBarPos_comboBox->currentIndex();
     Properties::Instance()->tabsPos = tabsPos_comboBox->currentIndex();

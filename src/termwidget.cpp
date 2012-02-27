@@ -198,13 +198,13 @@ TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * pa
     m_border = palette().color(QPalette::Window);
     m_term = new TermWidgetImpl(wdir, shell, this);
     setFocusProxy(m_term);
+
     m_layout = new QVBoxLayout;
-    // TODO/FIXME: configurable "use highlighting"
-    m_layout->setContentsMargins(3, 3, 3, 3);
-    //m_layout->setContentsMargins(0, 0, 0, 0);
     setLayout(m_layout);
 
     m_layout->addWidget(m_term);
+
+    propertiesChanged();
 
     connect(m_term, SIGNAL(finished()), this, SIGNAL(finished()));
     connect(m_term, SIGNAL(splitHorizontal()),
@@ -215,6 +215,16 @@ TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * pa
             this, SLOT(term_splitCollapse()));
     connect(m_term, SIGNAL(termGetFocus()), this, SLOT(term_termGetFocus()));
     connect(m_term, SIGNAL(termLostFocus()), this, SLOT(term_termLostFocus()));
+}
+
+void TermWidget::propertiesChanged()
+{
+    if (Properties::Instance()->highlightCurrentTerminal)
+        m_layout->setContentsMargins(3, 3, 3, 3);
+    else
+        m_layout->setContentsMargins(0, 0, 0, 0);
+
+    m_term->propertiesChanged();
 }
 
 void TermWidget::enableCollapse(bool enable)
@@ -239,7 +249,6 @@ void TermWidget::term_splitCollapse()
 
 void TermWidget::term_termGetFocus()
 {
-    //qDebug() << "get focus" << this << this->size();
     m_border = palette().color(QPalette::Highlight);
     emit termGetFocus(this);
     update();
@@ -247,14 +256,12 @@ void TermWidget::term_termGetFocus()
 
 void TermWidget::term_termLostFocus()
 {
-    //qDebug() << "lost focus" << this;
     m_border = palette().color(QPalette::Window);
     update();
 }
 
 void TermWidget::paintEvent (QPaintEvent *)
 {
-    //qDebug() << "paintEvent";
     QPainter p(this);
     QPen pen(m_border);
     pen.setWidth(30);

@@ -45,7 +45,7 @@ class TermWidget : public QWidget
     public:
         TermWidget(const QString & wdir, const QString & shell=QString(), QWidget * parent=0);
 
-        void propertiesChanged() { m_term->propertiesChanged(); }
+        void propertiesChanged(); 
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }
 
         TermWidgetImpl * impl() { return m_term; }
