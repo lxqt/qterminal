@@ -118,7 +118,7 @@ void MainWindow::setDropShortcut(QKeySequence dropShortCut)
 
 void MainWindow::setup_ActionsMenu_Actions()
 {
-    QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
+    QSettings settings;
     settings.beginGroup("Shortcuts");
 
     QKeySequence seq;

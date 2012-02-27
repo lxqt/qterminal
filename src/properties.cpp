@@ -31,7 +31,7 @@ void Properties::loadSettings()
 {
     //qDebug("Properties::loadSettings");
 
-    QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
+    QSettings settings;
 
     guiStyle = settings.value("guiStyle", QString()).toString();
     if (!guiStyle.isNull())
@@ -102,7 +102,7 @@ void Properties::loadSettings()
 void Properties::saveSettings()
 {
     qDebug("Properties::saveSettings");
-    QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
+    QSettings settings;
 
     settings.setValue("guiStyle", guiStyle);
     settings.setValue("colorScheme", colorScheme);

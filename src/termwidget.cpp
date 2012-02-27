@@ -83,7 +83,7 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
 
 void TermWidgetImpl::updateShortcuts()
 {
-    QSettings settings(QDir::homePath()+"/.qterminal", QSettings::IniFormat);
+    QSettings settings;
     settings.beginGroup("Shortcuts");
 
     QKeySequence seq;
