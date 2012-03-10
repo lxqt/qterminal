@@ -95,7 +95,7 @@ int main(int argc, char *argv[])
 
     QApplication::setApplicationName("qterminal");
     QApplication::setApplicationVersion(STR_VERSION);
-    QApplication::setOrganizationDomain("org.qterminal");
+    QApplication::setOrganizationDomain("qterminal.org");
     QSettings::setDefaultFormat(QSettings::IniFormat);
 
     QApplication app(argc, argv);
