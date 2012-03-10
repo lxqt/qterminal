@@ -29,6 +29,8 @@
 #define TAB_NEXT "Next Tab"
 #define TAB_PREV "Previous Tab"
 
+#define CLEAR_TERMINAL "Clear Active Terminal"
+
 #define SPLIT_HORIZONTAL "Split Terminal Horizontally"
 #define SPLIT_VERTICAL "Split Terminal Vertically"
 
@@ -48,6 +50,7 @@
 #define DEFAULT_HEIGHT                 600
 
 // ACTIONS
+#define CLEAR_TERMINAL_SHORTCUT        "Ctrl+Shift+X"
 #define TAB_PREV_SHORTCUT	       "Shift+Left"
 #define TAB_NEXT_SHORTCUT	       "Shift+Right"
 #define SUB_PREV_SHORTCUT	       "Shift+Down"

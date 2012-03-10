@@ -50,6 +50,10 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
     act->setSeparator(true);
     addAction(act);
 
+    actionMap[CLEAR_TERMINAL] = new QAction(tr(CLEAR_TERMINAL), this);
+    connect(actionMap[CLEAR_TERMINAL], SIGNAL(triggered()), this, SLOT(clear()));
+    addAction(actionMap[CLEAR_TERMINAL]);
+
     actionMap[SPLIT_HORIZONTAL] = new QAction(tr(SPLIT_HORIZONTAL), this);
     connect(actionMap[SPLIT_HORIZONTAL], SIGNAL(triggered()), this, SLOT(act_splitHorizontal()));
     addAction(actionMap[SPLIT_HORIZONTAL]);

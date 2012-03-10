@@ -38,6 +38,7 @@ class TermWidgetHolder : public QWidget
         void setWDir(const QString & wdir);
         void switchNextSubterminal();
         void switchPrevSubterminal();
+        void clearActiveTerminal();
 
     signals:
         void finished();

@@ -135,6 +135,12 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     menu_Actions->addSeparator();
 
+    Properties::Instance()->actions[CLEAR_TERMINAL] = new QAction(tr("Clear Active Terminal"), this);
+    seq = QKeySequence::fromString(settings.value(CLEAR_TERMINAL, CLEAR_TERMINAL_SHORTCUT).toString());
+    Properties::Instance()->actions[CLEAR_TERMINAL]->setShortcut(seq);
+    connect(Properties::Instance()->actions[CLEAR_TERMINAL], SIGNAL(triggered()), consoleTabulator, SLOT(clearActiveTerminal()));
+    menu_Actions->addAction(Properties::Instance()->actions[CLEAR_TERMINAL]);
+
     Properties::Instance()->actions[SPLIT_HORIZONTAL] = new QAction(tr("Split Terminal Horizontally"), this);
     seq = QKeySequence::fromString( settings.value(SPLIT_HORIZONTAL).toString() );
     Properties::Instance()->actions[SPLIT_HORIZONTAL]->setShortcut(seq);

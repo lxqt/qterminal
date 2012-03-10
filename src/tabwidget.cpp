@@ -324,14 +324,19 @@ void TabWidget::propertiesChanged()
     }
 }
 
+void TabWidget::clearActiveTerminal()
+{
+    reinterpret_cast<TermWidgetHolder*>(widget(currentIndex()))->clearActiveTerminal();
+}
+
 void TabWidget::saveSession()
 {
-   int ix = currentIndex();
-   reinterpret_cast<TermWidgetHolder*>(widget(ix))->saveSession(tabText(ix));
+    int ix = currentIndex();
+    reinterpret_cast<TermWidgetHolder*>(widget(ix))->saveSession(tabText(ix));
 }
 
 void TabWidget::loadSession()
 {
-   reinterpret_cast<TermWidgetHolder*>(widget(currentIndex()))->loadSession();
+    reinterpret_cast<TermWidgetHolder*>(widget(currentIndex()))->loadSession();
 }
 

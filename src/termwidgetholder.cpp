@@ -155,6 +155,11 @@ void TermWidgetHolder::switchPrevSubterminal()
     }
 }
 
+void TermWidgetHolder::clearActiveTerminal()
+{
+    currentTerminal()->impl()->clear();
+}
+
 void TermWidgetHolder::propertiesChanged()
 {
     foreach(TermWidget *w, findChildren<TermWidget*>())

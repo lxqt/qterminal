@@ -66,6 +66,8 @@ public slots:
     void changeScrollPosition(QAction *);
     void propertiesChanged();
 
+    void clearActiveTerminal();
+
     void saveSession();
     void loadSession();
 
