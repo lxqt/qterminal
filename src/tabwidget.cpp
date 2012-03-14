@@ -121,9 +121,12 @@ void TabWidget::renameSession()
 
 void TabWidget::renameTabsAfterRemove()
 {
+// it breaks custom names - it replaces original/custom title with shell no #
+#if 0
     for(int i = 0; i < count(); i++) {
         setTabText(i, QString(tr("Shell No. %1")).arg(i+1));
     }
+#endif
 }
 
 void TabWidget::refreshWindow()
@@ -177,7 +180,8 @@ void TabWidget::removeTab(int index)
     if (current >= 0 )
         widget(current)->setFocus();
 
-    tabNumerator--;
+// do not decrease it as renaming is disabled in renameTabsAfterRemove
+//    tabNumerator--;
     setUpdatesEnabled(true);
 
     if (count() == 0)
