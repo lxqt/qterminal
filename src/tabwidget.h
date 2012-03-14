@@ -53,7 +53,6 @@ public slots:
     void moveLeft();
     void moveRight();
     void renameSession();
-    void refreshWindow();
     void setWorkDirectory(const QString&);
 
     void switchNextSubterminal();

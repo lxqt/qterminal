@@ -129,14 +129,6 @@ void TabWidget::renameTabsAfterRemove()
 #endif
 }
 
-void TabWidget::refreshWindow()
-{
-    QWidget* prevFocused = currentWidget();
-    this->setFocus();
-    prevFocused->setFocus();
-}
-
-
 void TabWidget::mouseDoubleClickEvent ( QMouseEvent * event )
 {
     if(event->button() == Qt::LeftButton)
@@ -178,8 +170,9 @@ void TabWidget::removeTab(int index)
     recountIndexes();
     int current = currentIndex();
     if (current >= 0 )
-        widget(current)->setFocus();
-
+    {
+        qobject_cast<TermWidgetHolder*>(widget(current))->setInitialFocus();
+    }
 // do not decrease it as renaming is disabled in renameTabsAfterRemove
 //    tabNumerator--;
     setUpdatesEnabled(true);
