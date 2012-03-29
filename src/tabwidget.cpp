@@ -45,6 +45,9 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
     setTabsClosable(true);
     setMovable(true);
     setUsesScrollButtons(true);
+
+    tabBar()->installEventFilter(this);
+
     connect(this, SIGNAL(tabCloseRequested(int)), this, SLOT(removeTab(int)));
 }
 
@@ -129,12 +132,6 @@ void TabWidget::renameTabsAfterRemove()
 #endif
 }
 
-void TabWidget::mouseDoubleClickEvent ( QMouseEvent * event )
-{
-    if(event->button() == Qt::LeftButton)
-        addNewTab();
-}
-
 void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
 {
     QMenu menu(this);
@@ -144,6 +141,22 @@ void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
     menu.addAction(tr("Rename session"), this, SLOT(renameSession()), tr(RENAME_SESSION_SHORTCUT));
 
     menu.exec(event->globalPos());
+}
+
+bool TabWidget::eventFilter(QObject *obj, QEvent *event)
+{
+    if (event->type() == QEvent::MouseButtonDblClick)
+    {
+        QMouseEvent *e = reinterpret_cast<QMouseEvent*>(event);
+        // if user doubleclicks on tab button - rename it. If user
+        // clicks on free space - open new tab
+        if (tabBar()->tabAt(e->pos()) == -1)
+            addNewTab();
+        else
+            renameSession();
+        return true;
+    }
+    return QTabWidget::eventFilter(obj, event);
 }
 
 void TabWidget::removeFinished()

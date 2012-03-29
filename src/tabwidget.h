@@ -75,10 +75,15 @@ signals:
 
 protected:
     enum Direction{Left = 1, Right};
-    void mouseDoubleClickEvent ( QMouseEvent * event );
-    void contextMenuEvent ( QContextMenuEvent * event );
+    void contextMenuEvent(QContextMenuEvent * event);
     void recountIndexes();
     void move(Direction);
+    /*! Event filter for TabWidget's QTabBar. It's installed on tabBar()
+        in the constructor.
+        It's purpose is to handle doubleclicks on QTabBar for session
+        renaming or new tab opening
+     */
+    bool eventFilter(QObject *obj, QEvent *event);
 
 private:
     int tabNumerator;
