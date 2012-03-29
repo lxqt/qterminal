@@ -298,29 +298,10 @@ void TabWidget::changeTabPosition(QAction *triggered)
         qFatal("tabPosition is NULL");
 
     Properties *prop = Properties::Instance();
-
-    switch(tabPosition->actions().indexOf(triggered) )
-    {
-        /* order is dictated from mainwindow.cpp */
-        case 0:
-            setTabPosition(QTabWidget::North);
-            prop->tabsPos = 0;
-            break;
-        case 1:
-            setTabPosition(QTabWidget::South);
-            prop->tabsPos = 1;
-            break;
-        case 2:
-            setTabPosition(QTabWidget::West);
-            prop->tabsPos = 2;
-            break;
-        case 3:
-        default:
-            setTabPosition(QTabWidget::East);
-            prop->tabsPos = 3;
-            break;
-    }
-
+    /* order is dictated from mainwindow.cpp */
+    QTabWidget::TabPosition position = (QTabWidget::TabPosition)tabPosition->actions().indexOf(triggered);
+    setTabPosition(position);
+    prop->tabsPos = position;
     prop->saveSettings();
     return;
 }

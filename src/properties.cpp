@@ -84,8 +84,8 @@ void Properties::loadSettings()
 
     /* default to Right. see qtermwidget.h */
     scrollBarPos = settings.value("ScrollbarPosition", 2).toInt();
-    /* default to South */
-    tabsPos = settings.value("TabsPosition", 1).toInt();
+    /* default to North. I'd prefer South but North is standard (they say) */
+    tabsPos = settings.value("TabsPosition", 0).toInt();
 
     /* toggles */
     borderless = settings.value("Borderless", false).toBool();
