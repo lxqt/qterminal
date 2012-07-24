@@ -1,13 +1,52 @@
 [Desktop Entry]
-Type=Application
 Name=QTerminal
-GenericName=Qt terminal programm
+Type=Application
+GenericName=Terminal emulator
 
-Comment=Qt4 based terminal
-Comment[ru_RU]=Эмулятор терминала на базе Qt4
+Comment=Terminal emulator
+Comment[ru_RU]=Эмулятор терминала
+Comment[fr]=Terminal
 
 Icon=qterminal
 Exec=qterminal
 Terminal=false
 Categories=Qt;System;TerminalEmulator;
+Actions=Dropdown;
 
+[Desktop Action Dropdown]
+Name=Drop-down terminal
+Icon=qterminal
+Exec=qterminal --drop
+
+Name[en_GB]=Drop-down Terminal
+Name[bg]=Падащ терминал
+Name[ca]=Terminal desplegable
+Name[ca@valencia]=Terminal desplegable
+Name[cs]=Vysouvací terminál
+Name[da]=Terminal der ruller ned
+Name[de]=Aufklapp-Terminal
+Name[es]=Terminal de menú desplegable
+Name[et]=Lahtikeriv terminal
+Name[fr]=Terminal déroulant
+Name[hr]=Spuštajući terminal
+Name[hu]=Legördülő terminál
+Name[it]=Terminale a discesa
+Name[ja]=ドロップダウン式ターミナル
+Name[km]=ស្ថានីយ​ទម្លាក់​ចុះ
+Name[ko]=위에서 내려오는 터미널
+Name[nb]=Nedtrekksterminal
+Name[nds]=Utklapp-Konsool
+Name[nl]=Uitvouwbare terminalemulator
+Name[pa]=ਲਟਕਦਾ ਟਰਮੀਨਲ
+Name[pt]=Terminal Deslizante
+Name[pt_BR]=Terminal suspenso
+Name[ro]=Terminal derulant
+Name[ru]=Выпадающий терминал
+Name[sk]=Rozbaľovací terminál
+Name[sv]=Rullgardinsterminal
+Name[th]=เทอร์มินัลแบบหย่อนลง
+Name[tr]=Yukarıdan Açılan Uçbirim
+Name[uk]=Спадний термінал
+Name[x-test]=xxDrop-down Terminalxx
+Name[zh_CN]=拉幕式终端
+Name[zh_TW]=下拉式終端機
