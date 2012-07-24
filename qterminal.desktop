@@ -7,7 +7,7 @@ Comment=Terminal emulator
 Comment[ru_RU]=Эмулятор терминала
 Comment[fr]=Terminal
 
-Icon=qterminal
+Icon=utilities-terminal
 Exec=qterminal
 Terminal=false
 Categories=Qt;System;TerminalEmulator;
