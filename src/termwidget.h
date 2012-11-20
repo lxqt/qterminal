@@ -31,6 +31,9 @@ class TermWidgetImpl : public QTermWidget
         void act_splitVertical();
         void act_splitHorizontal();
         void act_splitCollapse();
+        void zoomIn();
+        void zoomOut();
+        void zoomReset();
 };
 
 

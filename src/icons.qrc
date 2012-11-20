@@ -1,6 +1,5 @@
-<!DOCTYPE RCC>
-<RCC version="1.0">
-  <qresource>
+<RCC>
+    <qresource prefix="/">
     <file>icons/list-add.png</file>
     <file>icons/list-remove.png</file>
     <file>icons/edit-copy.png</file>
@@ -10,5 +9,7 @@
     <file>icons/qterminal.png</file>
     <file>icons/locked.png</file>
     <file>icons/notlocked.png</file>
+        <file>icons/zoom-in.png</file>
+        <file>icons/zoom-out.png</file>
   </qresource>
 </RCC>
