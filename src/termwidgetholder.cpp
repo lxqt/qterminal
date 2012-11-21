@@ -92,7 +92,7 @@ void TermWidgetHolder::saveSession(const QString & name)
 
 TermWidget* TermWidgetHolder::currentTerminal()
 {
-    qDebug() << m_currentTerm;
+    qDebug() << m_currentTerm << "current terminal";
     Q_ASSERT(m_currentTerm);
     return m_currentTerm;
 }

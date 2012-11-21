@@ -38,6 +38,8 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
             setArgs(parts);
     }
 
+    setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
+    
     actionMap[COPY_SELECTION] = new QAction(QIcon(":/icons/edit-copy.png"), tr(COPY_SELECTION), this);
     connect(actionMap[COPY_SELECTION], SIGNAL(triggered()), this, SLOT(copyClipboard()));
     addAction(actionMap[COPY_SELECTION]);
@@ -45,6 +47,18 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
     actionMap[PASTE_SELECTION] = new QAction(QIcon(":/icons/edit-paste.png"), tr(PASTE_SELECTION), this);
     connect(actionMap[PASTE_SELECTION], SIGNAL(triggered()), this, SLOT(pasteClipboard()));
     addAction(actionMap[PASTE_SELECTION]);
+
+    actionMap[ZOOM_IN] = new QAction(QIcon(":/icons/zoom-in.png"), tr(ZOOM_IN), this);
+    connect(actionMap[ZOOM_IN], SIGNAL(triggered()), this, SLOT(zoomIn()));
+    addAction(actionMap[ZOOM_IN]);
+
+    actionMap[ZOOM_OUT] = new QAction(QIcon(":/icons/zoom-out.png"), tr(ZOOM_OUT), this);
+    connect(actionMap[ZOOM_OUT], SIGNAL(triggered()), this, SLOT(zoomOut()));
+    addAction(actionMap[ZOOM_OUT]);
+
+    actionMap[ZOOM_RESET] = new QAction(QIcon(":/icons/zoom-out.png"), tr(ZOOM_RESET), this);
+    connect(actionMap[ZOOM_RESET], SIGNAL(triggered()), this, SLOT(zoomReset()));
+    addAction(actionMap[ZOOM_RESET]);
 
     QAction *act = new QAction(this);
     act->setSeparator(true);
@@ -103,6 +117,22 @@ void TermWidgetImpl::updateShortcuts()
         actionMap[PASTE_SELECTION]->setShortcut(seq);
     }
 
+    if( actionMap.contains(ZOOM_IN) && settings.contains(ZOOM_IN) )
+    {
+        seq = QKeySequence::fromString( settings.value(ZOOM_IN, QKeySequence::ZoomIn).toString() );
+        actionMap[ZOOM_IN]->setShortcut(seq);
+    }
+    if( actionMap.contains(ZOOM_OUT) && settings.contains(ZOOM_OUT) )
+    {
+        seq = QKeySequence::fromString( settings.value(ZOOM_OUT, QKeySequence::ZoomOut).toString() );
+        actionMap[ZOOM_OUT]->setShortcut(seq);
+    }
+    if( actionMap.contains(ZOOM_RESET) && settings.contains(ZOOM_RESET) )
+    {
+        seq = QKeySequence::fromString( settings.value(ZOOM_RESET).toString() );
+        actionMap[ZOOM_RESET]->setShortcut(seq);
+    }
+    
     if( actionMap.contains(SPLIT_HORIZONTAL) && settings.contains(SPLIT_HORIZONTAL) )
     {
         seq = QKeySequence::fromString( settings.value(SPLIT_HORIZONTAL).toString() );
@@ -126,6 +156,7 @@ void TermWidgetImpl::propertiesChanged()
 {
     setColorScheme(Properties::Instance()->colorScheme);
     setTerminalFont(Properties::Instance()->font);
+    setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
 
     if (Properties::Instance()->historyLimited)
     {
@@ -189,12 +220,31 @@ void TermWidgetImpl::act_splitCollapse()
     emit splitCollapse();
 }
 
+void TermWidgetImpl::zoomIn()
+{
+    emit QTermWidget::zoomIn();
+    Properties::Instance()->font = getTerminalFont();
+    Properties::Instance()->saveSettings();
+}
+
+void TermWidgetImpl::zoomOut()
+{
+    emit QTermWidget::zoomOut();
+    Properties::Instance()->font = getTerminalFont();
+    Properties::Instance()->saveSettings();
+}
+
+void TermWidgetImpl::zoomReset()
+{
+    Properties::Instance()->font = Properties::Instance()->defaultFont();
+    setTerminalFont(Properties::Instance()->font);
+    Properties::Instance()->saveSettings();
+}
+
 void TermWidgetImpl::enableCollapse(bool enable)
 {
     actionMap[SUB_COLLAPSE]->setEnabled(enable);
 }
-
-
 
 TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * parent)
     : QWidget(parent)

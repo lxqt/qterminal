@@ -208,6 +208,18 @@ void MainWindow::setup_ActionsMenu_Actions()
     seq = QKeySequence::fromString( settings.value(PASTE_SELECTION, PASTE_SELECTION_SHORTCUT).toString() );
     Properties::Instance()->actions[PASTE_SELECTION]->setShortcut(seq);
 
+    Properties::Instance()->actions[ZOOM_IN] = new QAction(tr("Zoom in"), this);
+    seq = QKeySequence::fromString( settings.value(ZOOM_IN, ZOOM_IN_SHORTCUT).toString() );
+    Properties::Instance()->actions[ZOOM_IN]->setShortcut(seq);
+
+    Properties::Instance()->actions[ZOOM_OUT] = new QAction(tr("Zoom out"), this);
+    seq = QKeySequence::fromString( settings.value(ZOOM_OUT, ZOOM_OUT_SHORTCUT).toString() );
+    Properties::Instance()->actions[ZOOM_OUT]->setShortcut(seq);
+    
+    Properties::Instance()->actions[ZOOM_RESET] = new QAction(tr("Zoom reset"), this);
+    seq = QKeySequence::fromString( settings.value(ZOOM_RESET, ZOOM_RESET_SHORTCUT).toString() );
+    Properties::Instance()->actions[ZOOM_RESET]->setShortcut(seq);
+
 #if 0
     act = new QAction(this);
     act->setSeparator(true);
