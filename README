@@ -1,0 +1,13 @@
+Howto Build
+
+standard cmake based build
+
+cmake; make; make install
+
+
+
+New translation: just edit src/CMakeLists.txt to add a new ts file.
+
+make lupdate updates ts files to be translated. lrelease is called automatically in make
+
+
