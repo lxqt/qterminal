@@ -45,8 +45,8 @@ MainWindow::MainWindow(const QString& work_dir,
 
     connect(actAbout, SIGNAL(triggered()), SLOT(actAbout_triggered()));
     connect(actAboutQt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
-    connect(actQuit, SIGNAL(triggered()), SLOT(close()));
-    connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
+    //connect(actQuit, SIGNAL(triggered()), SLOT(close()));
+    //connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
     connect(&m_dropShortcut, SIGNAL(activated()), SLOT(showHide()));
 
     setContentsMargins(0, 0, 0, 0);
@@ -67,9 +67,10 @@ MainWindow::MainWindow(const QString& work_dir,
 
     setWindowTitle("QTerminal");
     setWindowIcon(QIcon(":/icons/qterminal.png"));
-
+    
+    setup_FileMenu_Actions();
     setup_ActionsMenu_Actions();
-    setup_WindowMenu_Actions();
+    setup_ViewMenu_Actions();
 
     if(Properties::Instance()->borderless) {
         toggleBorder->setChecked(true);
@@ -121,25 +122,40 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     QKeySequence seq;
 
-    Properties::Instance()->actions[ADD_TAB] = new QAction(QIcon(":/icons/list-add.png"), tr("Add Tab"), this);
-    seq = QKeySequence::fromString( settings.value(ADD_TAB, QKeySequence(QKeySequence::AddTab).toString()).toString() );
-    Properties::Instance()->actions[ADD_TAB]->setShortcut(seq);
-    connect(Properties::Instance()->actions[ADD_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
-    menu_Actions->addAction(Properties::Instance()->actions[ADD_TAB]);
-
-    Properties::Instance()->actions[CLOSE_TAB] = new QAction(QIcon(":/icons/list-remove.png"), tr("Close Tab"), this);
-    seq = QKeySequence::fromString( settings.value(CLOSE_TAB, QKeySequence(QKeySequence::Close).toString()).toString() );
-    Properties::Instance()->actions[CLOSE_TAB]->setShortcut(seq);
-    connect(Properties::Instance()->actions[CLOSE_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
-    menu_Actions->addAction(Properties::Instance()->actions[CLOSE_TAB]);
-
-    menu_Actions->addSeparator();
-
-    Properties::Instance()->actions[CLEAR_TERMINAL] = new QAction(tr("Clear Active Terminal"), this);
+    Properties::Instance()->actions[CLEAR_TERMINAL] = new QAction(tr("Clear Current Tab"), this);
     seq = QKeySequence::fromString(settings.value(CLEAR_TERMINAL, CLEAR_TERMINAL_SHORTCUT).toString());
     Properties::Instance()->actions[CLEAR_TERMINAL]->setShortcut(seq);
     connect(Properties::Instance()->actions[CLEAR_TERMINAL], SIGNAL(triggered()), consoleTabulator, SLOT(clearActiveTerminal()));
     menu_Actions->addAction(Properties::Instance()->actions[CLEAR_TERMINAL]);
+
+    menu_Actions->addSeparator();
+
+    Properties::Instance()->actions[TAB_NEXT] = new QAction(tr("Next Tab"), this);
+    seq = QKeySequence::fromString( settings.value(TAB_NEXT, TAB_NEXT_SHORTCUT).toString() );
+    Properties::Instance()->actions[TAB_NEXT]->setShortcut(seq);
+    connect(Properties::Instance()->actions[TAB_NEXT], SIGNAL(triggered()), consoleTabulator, SLOT(switchToRight()));
+    menu_Actions->addAction(Properties::Instance()->actions[TAB_NEXT]);
+
+    Properties::Instance()->actions[TAB_PREV] = new QAction(tr("Previous Tab"), this);
+    seq = QKeySequence::fromString( settings.value(TAB_PREV, TAB_PREV_SHORTCUT).toString() );
+    Properties::Instance()->actions[TAB_PREV]->setShortcut(seq);
+    connect(Properties::Instance()->actions[TAB_PREV], SIGNAL(triggered()), consoleTabulator, SLOT(switchToLeft()));
+    menu_Actions->addAction(Properties::Instance()->actions[TAB_PREV]);
+
+    Properties::Instance()->actions[MOVE_LEFT] = new QAction(tr("Move Tab Left"), this);
+    seq = QKeySequence::fromString( settings.value(MOVE_LEFT, MOVE_LEFT_SHORTCUT).toString() );
+    Properties::Instance()->actions[MOVE_LEFT]->setShortcut(seq);
+    connect(Properties::Instance()->actions[MOVE_LEFT], SIGNAL(triggered()), consoleTabulator, SLOT(moveLeft()));
+    menu_Actions->addAction(Properties::Instance()->actions[MOVE_LEFT]);
+
+    Properties::Instance()->actions[MOVE_RIGHT] = new QAction(tr("Move Tab Right"), this);
+    seq = QKeySequence::fromString( settings.value(MOVE_RIGHT, MOVE_RIGHT_SHORTCUT).toString() );
+    Properties::Instance()->actions[MOVE_RIGHT]->setShortcut(seq);
+    connect(Properties::Instance()->actions[MOVE_RIGHT], SIGNAL(triggered()), consoleTabulator, SLOT(moveRight()));
+    menu_Actions->addAction(Properties::Instance()->actions[MOVE_RIGHT]);
+
+    menu_Actions->addSeparator();
+
 
     Properties::Instance()->actions[SPLIT_HORIZONTAL] = new QAction(tr("Split Terminal Horizontally"), this);
     seq = QKeySequence::fromString( settings.value(SPLIT_HORIZONTAL).toString() );
@@ -170,32 +186,6 @@ void MainWindow::setup_ActionsMenu_Actions()
     Properties::Instance()->actions[SUB_PREV]->setShortcut(seq);
     connect(Properties::Instance()->actions[SUB_PREV], SIGNAL(triggered()), consoleTabulator, SLOT(switchPrevSubterminal()));
     menu_Actions->addAction(Properties::Instance()->actions[SUB_PREV]);
-
-    menu_Actions->addSeparator();
-
-    Properties::Instance()->actions[TAB_NEXT] = new QAction(tr("Next Tab"), this);
-    seq = QKeySequence::fromString( settings.value(TAB_NEXT, TAB_NEXT_SHORTCUT).toString() );
-    Properties::Instance()->actions[TAB_NEXT]->setShortcut(seq);
-    connect(Properties::Instance()->actions[TAB_NEXT], SIGNAL(triggered()), consoleTabulator, SLOT(switchToRight()));
-    menu_Actions->addAction(Properties::Instance()->actions[TAB_NEXT]);
-
-    Properties::Instance()->actions[TAB_PREV] = new QAction(tr("Previous Tab"), this);
-    seq = QKeySequence::fromString( settings.value(TAB_PREV, TAB_PREV_SHORTCUT).toString() );
-    Properties::Instance()->actions[TAB_PREV]->setShortcut(seq);
-    connect(Properties::Instance()->actions[TAB_PREV], SIGNAL(triggered()), consoleTabulator, SLOT(switchToLeft()));
-    menu_Actions->addAction(Properties::Instance()->actions[TAB_PREV]);
-
-    Properties::Instance()->actions[MOVE_LEFT] = new QAction(tr("Move Tab Left"), this);
-    seq = QKeySequence::fromString( settings.value(MOVE_LEFT, MOVE_LEFT_SHORTCUT).toString() );
-    Properties::Instance()->actions[MOVE_LEFT]->setShortcut(seq);
-    connect(Properties::Instance()->actions[MOVE_LEFT], SIGNAL(triggered()), consoleTabulator, SLOT(moveLeft()));
-    menu_Actions->addAction(Properties::Instance()->actions[MOVE_LEFT]);
-
-    Properties::Instance()->actions[MOVE_RIGHT] = new QAction(tr("Move Tab Right"), this);
-    seq = QKeySequence::fromString( settings.value(MOVE_RIGHT, MOVE_RIGHT_SHORTCUT).toString() );
-    Properties::Instance()->actions[MOVE_RIGHT]->setShortcut(seq);
-    connect(Properties::Instance()->actions[MOVE_RIGHT], SIGNAL(triggered()), consoleTabulator, SLOT(moveRight()));
-    menu_Actions->addAction(Properties::Instance()->actions[MOVE_RIGHT]);
 
     menu_Actions->addSeparator();
 
@@ -238,8 +228,41 @@ void MainWindow::setup_ActionsMenu_Actions()
     // apply props
     propertiesChanged();
 }
+void MainWindow::setup_FileMenu_Actions()
+{
+    QSettings settings;
+    settings.beginGroup("Shortcuts");
 
-void MainWindow::setup_WindowMenu_Actions()
+    QKeySequence seq;
+
+    Properties::Instance()->actions[ADD_TAB] = new QAction(QIcon(":/icons/list-add.png"), tr("New Tab"), this);
+    seq = QKeySequence::fromString( settings.value(ADD_TAB, QKeySequence(QKeySequence::AddTab).toString()).toString() );
+    Properties::Instance()->actions[ADD_TAB]->setShortcut(seq);
+    connect(Properties::Instance()->actions[ADD_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
+    menu_File->addAction(Properties::Instance()->actions[ADD_TAB]);
+
+    Properties::Instance()->actions[CLOSE_TAB] = new QAction(QIcon(":/icons/list-remove.png"), tr("Close Tab"), this);
+    seq = QKeySequence::fromString( settings.value(CLOSE_TAB, QKeySequence(QKeySequence::Close).toString()).toString() );
+    Properties::Instance()->actions[CLOSE_TAB]->setShortcut(seq);
+    connect(Properties::Instance()->actions[CLOSE_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
+    menu_File->addAction(Properties::Instance()->actions[CLOSE_TAB]);
+    
+    menu_File->addSeparator();
+ 
+    Properties::Instance()->actions[PREFERENCES] = actProperties;
+    connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
+    menu_File->addAction(Properties::Instance()->actions[PREFERENCES]);
+
+    Properties::Instance()->actions[QUIT] = actQuit;
+    connect(actQuit, SIGNAL(triggered()), SLOT(close()));
+    menu_File->addAction(Properties::Instance()->actions[QUIT]);
+
+    
+
+     settings.endGroup();
+} 
+
+void MainWindow::setup_ViewMenu_Actions()
 {
     toggleBorder = new QAction(tr("Toggle Borderless"), this);
     //toggleBorder->setObjectName("toggle_Borderless");

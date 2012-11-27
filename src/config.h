@@ -26,6 +26,9 @@
 #define RENAME_TAB "Rename Tab"
 #define CLOSE_TAB "Close Tab"
 
+#define QUIT "Quit"
+#define PREFERENCES "Configure QTerminal"
+
 #define TAB_NEXT "Next Tab"
 #define TAB_PREV "Previous Tab"
 
