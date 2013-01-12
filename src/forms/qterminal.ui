@@ -51,7 +51,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>22</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_Actions">
@@ -106,6 +106,9 @@
   <action name="actNewTerm">
    <property name="text">
     <string>New QTerminal</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
    </property>
   </action>
  </widget>
