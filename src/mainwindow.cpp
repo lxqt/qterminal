@@ -48,6 +48,7 @@ MainWindow::MainWindow(const QString& work_dir,
     connect(actQuit, SIGNAL(triggered()), SLOT(close()));
     connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
     connect(&m_dropShortcut, SIGNAL(activated()), SLOT(showHide()));
+    connect(actNewTerm, SIGNAL(triggered()), SLOT(newTerminal()));
 
     setContentsMargins(0, 0, 0, 0);
     if (m_dropMode) {
@@ -469,4 +470,9 @@ bool MainWindow::event(QEvent *event)
            hide();
     }
     return QMainWindow::event(event);
+}
+
+void MainWindow::newTerminal()
+{
+    QProcess::startDetached("qterminal");
 }
