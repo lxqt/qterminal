@@ -54,6 +54,8 @@ protected slots:
     void showHide();
     void setKeepOpen(bool value);
 
+    void newTerminal();
+
 protected:
      bool event(QEvent* event);
 

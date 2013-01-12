@@ -51,13 +51,14 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>23</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_Actions">
     <property name="title">
      <string>&amp;Actions</string>
     </property>
+    <addaction name="actNewTerm"/>
     <addaction name="actProperties"/>
     <addaction name="separator"/>
     <addaction name="actQuit"/>
@@ -100,6 +101,11 @@
    </property>
    <property name="text">
     <string>&amp;Quit...</string>
+   </property>
+  </action>
+  <action name="actNewTerm">
+   <property name="text">
+    <string>New QTerminal</string>
    </property>
   </action>
  </widget>
