@@ -208,6 +208,14 @@ void MainWindow::setup_ActionsMenu_Actions()
     seq = QKeySequence::fromString( settings.value(PASTE_SELECTION, PASTE_SELECTION_SHORTCUT).toString() );
     Properties::Instance()->actions[PASTE_SELECTION]->setShortcut(seq);
 
+    menu_Actions->addSeparator();
+
+    Properties::Instance()->actions[FIND] = new QAction(tr("Find..."), this);
+    seq = QKeySequence::fromString( settings.value(FIND, FIND_SHORTCUT).toString() );
+    Properties::Instance()->actions[FIND]->setShortcut(seq);
+    connect(Properties::Instance()->actions[FIND], SIGNAL(triggered()), this, SLOT(find()));
+    menu_Actions->addAction(Properties::Instance()->actions[FIND]);
+
 #if 0
     act = new QAction(this);
     act->setSeparator(true);
@@ -457,6 +465,13 @@ void MainWindow::setKeepOpen(bool value)
 
     m_dropLockButton->setChecked(value);
 }
+
+void MainWindow::find()
+{
+    // A bit ugly perhaps with 4 levels of indirection... 
+    consoleTabulator->terminalHolder()->currentTerminal()->impl()->toggleShowSearchBar();
+}
+
 
 bool MainWindow::event(QEvent *event)
 {

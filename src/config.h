@@ -44,6 +44,8 @@
 #define COPY_SELECTION "Copy Selection"
 #define PASTE_SELECTION "Paste Selection"
 
+#define FIND "Find"
+
 /* Some defaults for QTerminal application */
 
 #define DEFAULT_WIDTH                  800
@@ -63,6 +65,7 @@
 #else
 #define COPY_SELECTION_SHORTCUT      "Ctrl+Shift+C"
 #define PASTE_SELECTION_SHORTCUT      "Ctrl+Shift+V"
+#define FIND_SHORTCUT                 "Ctrl+Shift+F"
 #endif
 
 #define MOVE_LEFT_SHORTCUT             "Shift+Alt+Left"

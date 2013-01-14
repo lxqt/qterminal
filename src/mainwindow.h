@@ -53,6 +53,7 @@ protected slots:
 
     void showHide();
     void setKeepOpen(bool value);
+    void find();
 
 protected:
      bool event(QEvent* event);
