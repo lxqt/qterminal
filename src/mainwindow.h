@@ -53,6 +53,7 @@ protected slots:
 
     void showHide();
     void setKeepOpen(bool value);
+    void find();
 
     void newTerminalWindow();
 

@@ -52,6 +52,8 @@
 #define ZOOM_OUT "Zoom out"
 #define ZOOM_RESET "Zoom reset"
 
+#define FIND "Find"
+
 /* Some defaults for QTerminal application */
 
 #define DEFAULT_WIDTH                  800
@@ -68,9 +70,11 @@
 // It's tricky - Ctrl is "command" key on mac's keyboards
 #define COPY_SELECTION_SHORTCUT      "Ctrl+C"
 #define PASTE_SELECTION_SHORTCUT      "Ctrl+V"
+#define FIND_SHORTCUT                "Ctrl+F"
 #else
 #define COPY_SELECTION_SHORTCUT      "Ctrl+Shift+C"
 #define PASTE_SELECTION_SHORTCUT      "Ctrl+Shift+V"
+#define FIND_SHORTCUT                 "Ctrl+Shift+F"
 #endif
 
 #define ZOOM_IN_SHORTCUT               "Ctrl++"
