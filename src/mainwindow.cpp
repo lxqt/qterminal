@@ -36,6 +36,8 @@ MainWindow::MainWindow(const QString& work_dir,
                        QWidget * parent,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
+      m_initShell(command),
+      m_initWorkDir(work_dir),
       m_dropLockButton(0),
       m_dropMode(dropMode)
 {
@@ -45,8 +47,6 @@ MainWindow::MainWindow(const QString& work_dir,
 
     connect(actAbout, SIGNAL(triggered()), SLOT(actAbout_triggered()));
     connect(actAboutQt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
-    //connect(actQuit, SIGNAL(triggered()), SLOT(close()));
-    //connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
     connect(&m_dropShortcut, SIGNAL(activated()), SLOT(showHide()));
 
     setContentsMargins(0, 0, 0, 0);
@@ -258,6 +258,12 @@ void MainWindow::setup_FileMenu_Actions()
     Properties::Instance()->actions[CLOSE_TAB]->setShortcut(seq);
     connect(Properties::Instance()->actions[CLOSE_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
     menu_File->addAction(Properties::Instance()->actions[CLOSE_TAB]);
+
+    Properties::Instance()->actions[NEW_WINDOW] = new QAction(tr("New Window"), this);
+    seq = QKeySequence::fromString( settings.value(NEW_WINDOW, QKeySequence(QKeySequence::New).toString()).toString() );
+    Properties::Instance()->actions[NEW_WINDOW]->setShortcut(seq);
+    connect(Properties::Instance()->actions[NEW_WINDOW], SIGNAL(triggered()), this, SLOT(newTerminalWindow()));
+    menu_File->addAction(Properties::Instance()->actions[NEW_WINDOW]);
     
     menu_File->addSeparator();
  
@@ -269,9 +275,7 @@ void MainWindow::setup_FileMenu_Actions()
     connect(actQuit, SIGNAL(triggered()), SLOT(close()));
     menu_File->addAction(Properties::Instance()->actions[QUIT]);
 
-    
-
-     settings.endGroup();
+    settings.endGroup();
 } 
 
 void MainWindow::setup_ViewMenu_Actions()
@@ -381,6 +385,9 @@ void MainWindow::closeEvent(QCloseEvent *ev)
 {
     if (!Properties::Instance()->askOnExit)
     {
+        Properties::Instance()->mainWindowGeometry = saveGeometry();
+        Properties::Instance()->mainWindowState = saveState();
+        Properties::Instance()->saveSettings();
         ev->accept();
         return;
     }
@@ -505,3 +512,11 @@ bool MainWindow::event(QEvent *event)
     }
     return QMainWindow::event(event);
 }
+
+void MainWindow::newTerminalWindow()
+{
+#warning "TODO/FIXME: proper window handling/closing on ctrl+w"
+    MainWindow *w = new MainWindow(m_initWorkDir, m_initShell, false);
+    w->show();
+}
+

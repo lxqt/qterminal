@@ -54,6 +54,8 @@ protected slots:
     void showHide();
     void setKeepOpen(bool value);
 
+    void newTerminalWindow();
+
 protected:
      bool event(QEvent* event);
 
@@ -62,6 +64,9 @@ private:
     QMenu *tabPosMenu, *scrollPosMenu;
 
     QAction *toggleBorder, *toggleTabbar;
+
+    QString m_initWorkDir;
+    QString m_initShell;
     
     void setup_FileMenu_Actions();
     void setup_ActionsMenu_Actions();

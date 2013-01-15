@@ -25,6 +25,7 @@
 #define ADD_TAB "Add Tab"
 #define RENAME_TAB "Rename Tab"
 #define CLOSE_TAB "Close Tab"
+#define NEW_WINDOW "New Window"
 
 #define QUIT "Quit"
 #define PREFERENCES "Configure QTerminal"
