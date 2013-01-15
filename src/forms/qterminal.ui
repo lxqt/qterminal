@@ -54,13 +54,19 @@
      <height>20</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="Title">
+     <string>&amp;File</string>
+    </property>
+    <!--<addaction name="separator"/>
+    <addaction name="actProperties"/>
+    <addaction name="separator"/>
+    <addaction name="actQuit"/>-->
+   </widget>
    <widget class="QMenu" name="menu_Actions">
     <property name="title">
      <string>&amp;Actions</string>
     </property>
-    <addaction name="actProperties"/>
-    <addaction name="separator"/>
-    <addaction name="actQuit"/>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
@@ -71,9 +77,10 @@
    </widget>
    <widget class="QMenu" name="menu_Window">
     <property name="title">
-     <string>&amp;Window</string>
+     <string>&amp;View</string>
     </property>
    </widget>
+   <addaction name="menu_File"/>
    <addaction name="menu_Actions"/>
    <addaction name="menu_Window"/>
    <addaction name="menu_Help"/>
@@ -90,7 +97,7 @@
   </action>
   <action name="actProperties">
    <property name="text">
-    <string>&amp;Preferences...</string>
+    <string>&amp;Configure QTerminal</string>
    </property>
   </action>
   <action name="actQuit">
@@ -99,7 +106,7 @@
      <normaloff>:/icons/application-exit.png</normaloff>:/icons/application-exit.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;Quit...</string>
+    <string>&amp;Quit</string>
    </property>
   </action>
  </widget>

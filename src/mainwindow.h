@@ -62,9 +62,11 @@ private:
     QMenu *tabPosMenu, *scrollPosMenu;
 
     QAction *toggleBorder, *toggleTabbar;
-
+    
+    void setup_FileMenu_Actions();
     void setup_ActionsMenu_Actions();
-    void setup_WindowMenu_Actions();
+    void setup_ViewMenu_Actions();
+
     void closeEvent(QCloseEvent*);
 
     void enableDropMode();
