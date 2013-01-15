@@ -27,10 +27,17 @@ Properties::~Properties()
     m_instance = 0;
 }
 
+QFont Properties::defaultFont()
+{
+    QFont default_font = QApplication::font();
+    default_font.setFamily("Monospace");
+    default_font.setPointSize(12);
+    default_font.setStyleHint(QFont::TypeWriter);
+    return default_font;
+}
+
 void Properties::loadSettings()
 {
-    //qDebug("Properties::loadSettings");
-
     QSettings settings;
 
     guiStyle = settings.value("guiStyle", QString()).toString();
@@ -41,12 +48,7 @@ void Properties::loadSettings()
 
     highlightCurrentTerminal = settings.value("highlightCurrentTerminal", true).toBool();
 
-    QFont default_font = QApplication::font();
-    default_font.setFamily("Monospace");
-    default_font.setPointSize(10);
-    default_font.setStyleHint(QFont::TypeWriter);
-
-    font = qvariant_cast<QFont>(settings.value("font", default_font));
+    font = qvariant_cast<QFont>(settings.value("font", defaultFont()));
 
     settings.beginGroup("Shortcuts");
     QStringList keys = settings.childKeys();
@@ -86,6 +88,7 @@ void Properties::loadSettings()
     scrollBarPos = settings.value("ScrollbarPosition", 2).toInt();
     /* default to North. I'd prefer South but North is standard (they say) */
     tabsPos = settings.value("TabsPosition", 0).toInt();
+    m_motionAfterPaste = settings.value("MotionAfterPaste", 0).toInt();
 
     /* toggles */
     borderless = settings.value("Borderless", false).toBool();
@@ -103,7 +106,6 @@ void Properties::loadSettings()
 
 void Properties::saveSettings()
 {
-    qDebug("Properties::saveSettings");
     QSettings settings;
 
     settings.setValue("guiStyle", guiStyle);
@@ -146,6 +148,7 @@ void Properties::saveSettings()
     settings.setValue("termOpacity", termOpacity);
     settings.setValue("ScrollbarPosition", scrollBarPos);
     settings.setValue("TabsPosition", tabsPos);
+    settings.setValue("MotionAfterPaste", m_motionAfterPaste);
     settings.setValue("Borderless", borderless);
     settings.setValue("TabBarless", tabBarless);
     settings.setValue("AskOnExit", askOnExit);

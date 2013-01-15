@@ -44,6 +44,10 @@
 #define COPY_SELECTION "Copy Selection"
 #define PASTE_SELECTION "Paste Selection"
 
+#define ZOOM_IN "Zoom in"
+#define ZOOM_OUT "Zoom out"
+#define ZOOM_RESET "Zoom reset"
+
 /* Some defaults for QTerminal application */
 
 #define DEFAULT_WIDTH                  800
@@ -64,6 +68,10 @@
 #define COPY_SELECTION_SHORTCUT      "Ctrl+Shift+C"
 #define PASTE_SELECTION_SHORTCUT      "Ctrl+Shift+V"
 #endif
+
+#define ZOOM_IN_SHORTCUT               "Ctrl++"
+#define ZOOM_OUT_SHORTCUT              "Ctrl+-"
+#define ZOOM_RESET_SHORTCUT              "Ctrl+0"
 
 #define MOVE_LEFT_SHORTCUT             "Shift+Alt+Left"
 #define MOVE_RIGHT_SHORTCUT            "Shift+Alt+Right"

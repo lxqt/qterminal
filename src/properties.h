@@ -17,6 +17,7 @@ class Properties
     public:
         static Properties *Instance();
 
+        QFont defaultFont();
         void saveSettings();
 
         QByteArray mainWindowGeometry;
@@ -40,6 +41,7 @@ class Properties
 
         int scrollBarPos;
         int tabsPos;
+        int m_motionAfterPaste;
 
         bool borderless;
         bool tabBarless;

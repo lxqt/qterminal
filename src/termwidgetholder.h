@@ -28,6 +28,8 @@ class TermWidgetHolder : public QWidget
 
         void loadSession();
         void saveSession(const QString & name);
+        void zoomIn(uint step);
+        void zoomOut(uint step);
 
         TermWidget* currentTerminal();
 

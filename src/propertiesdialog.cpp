@@ -46,6 +46,13 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     tabsPos_comboBox->addItems(tabsPosList);
     tabsPos_comboBox->setCurrentIndex(Properties::Instance()->tabsPos);
 
+    /* actions by motion after paste */
+    
+    QStringList motionAfter;
+    motionAfter << "No move" << "Move start" << "Move end";
+    motionAfterPasting_comboBox->addItems(motionAfter);
+    motionAfterPasting_comboBox->setCurrentIndex(Properties::Instance()->m_motionAfterPaste);
+    
     // Setting windows style actions
     styleComboBox->addItem(tr("System Default"));
     styleComboBox->addItems(QStyleFactory::keys());
@@ -105,6 +112,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->scrollBarPos = scrollBarPos_comboBox->currentIndex();
     Properties::Instance()->tabsPos = tabsPos_comboBox->currentIndex();
+    Properties::Instance()->m_motionAfterPaste = motionAfterPasting_comboBox->currentIndex();
 
     Properties::Instance()->historyLimited = historyLimited->isChecked();
     Properties::Instance()->historyLimitedTo = historyLimitedTo->value();

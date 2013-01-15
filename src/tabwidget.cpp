@@ -330,4 +330,3 @@ void TabWidget::loadSession()
 {
     reinterpret_cast<TermWidgetHolder*>(widget(currentIndex()))->loadSession();
 }
-
