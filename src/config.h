@@ -46,7 +46,7 @@
 #define MOVE_RIGHT "Move Tab Right"
 
 #define COPY_SELECTION "Copy Selection"
-#define PASTE_SELECTION "Paste Selection"
+#define PASTE_CLIPBOARD "Paste Clipboard"
 
 #define ZOOM_IN "Zoom in"
 #define ZOOM_OUT "Zoom out"
@@ -69,11 +69,11 @@
 #ifdef Q_WS_MAC
 // It's tricky - Ctrl is "command" key on mac's keyboards
 #define COPY_SELECTION_SHORTCUT      "Ctrl+C"
-#define PASTE_SELECTION_SHORTCUT      "Ctrl+V"
+#define PASTE_CLIPBOARD_SHORTCUT      "Ctrl+V"
 #define FIND_SHORTCUT                "Ctrl+F"
 #else
 #define COPY_SELECTION_SHORTCUT      "Ctrl+Shift+C"
-#define PASTE_SELECTION_SHORTCUT      "Ctrl+Shift+V"
+#define PASTE_CLIPBOARD_SHORTCUT      "Ctrl+Shift+V"
 #define FIND_SHORTCUT                 "Ctrl+Shift+F"
 #endif
 
