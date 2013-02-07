@@ -46,7 +46,8 @@
 #define MOVE_RIGHT "Move Tab Right"
 
 #define COPY_SELECTION "Copy Selection"
-#define PASTE_CLIPBOARD "Paste Clipboard"
+#define PASTE_CLIPBOARD "Paste Clipboard"  
+#define PASTE_SELECTION "Paste Selection"
 
 #define ZOOM_IN "Zoom in"
 #define ZOOM_OUT "Zoom out"
@@ -74,6 +75,7 @@
 #else
 #define COPY_SELECTION_SHORTCUT      "Ctrl+Shift+C"
 #define PASTE_CLIPBOARD_SHORTCUT      "Ctrl+Shift+V"
+#define PASTE_SELECTION_SHORTCUT      "Shift+Ins"
 #define FIND_SHORTCUT                 "Ctrl+Shift+F"
 #endif
 

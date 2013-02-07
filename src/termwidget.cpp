@@ -48,6 +48,10 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
     connect(actionMap[PASTE_CLIPBOARD], SIGNAL(triggered()), this, SLOT(pasteClipboard()));
     addAction(actionMap[PASTE_CLIPBOARD]);
 
+    actionMap[PASTE_SELECTION] = new QAction(QIcon(":/icons/edit-paste.png"), tr(PASTE_SELECTION), this);
+    connect(actionMap[PASTE_SELECTION], SIGNAL(triggered()), this, SLOT(pasteSelection()));
+    addAction(actionMap[PASTE_SELECTION]);
+
     actionMap[ZOOM_IN] = new QAction(QIcon(":/icons/zoom-in.png"), tr(ZOOM_IN), this);
     connect(actionMap[ZOOM_IN], SIGNAL(triggered()), this, SLOT(zoomIn()));
     addAction(actionMap[ZOOM_IN]);
@@ -115,8 +119,13 @@ void TermWidgetImpl::updateShortcuts()
     {
         seq = QKeySequence::fromString( settings.value(PASTE_CLIPBOARD, QKeySequence::Paste).toString() );
         actionMap[PASTE_CLIPBOARD]->setShortcut(seq);
+    } 
+    if( actionMap.contains(PASTE_SELECTION) && settings.contains(PASTE_SELECTION) )
+    {
+        seq = QKeySequence::fromString( settings.value(PASTE_SELECTION, QKeySequence::Paste).toString() );
+        actionMap[PASTE_SELECTION]->setShortcut(seq);
     }
-
+    
     if( actionMap.contains(ZOOM_IN) && settings.contains(ZOOM_IN) )
     {
         seq = QKeySequence::fromString( settings.value(ZOOM_IN, QKeySequence::ZoomIn).toString() );

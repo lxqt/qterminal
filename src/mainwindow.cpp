@@ -222,6 +222,10 @@ void MainWindow::setup_ActionsMenu_Actions()
     seq = QKeySequence::fromString( settings.value(PASTE_CLIPBOARD, PASTE_CLIPBOARD_SHORTCUT).toString() );
     Properties::Instance()->actions[PASTE_CLIPBOARD]->setShortcut(seq);
 
+    Properties::Instance()->actions[PASTE_SELECTION] = new QAction(tr("Paste Selection"), this);
+    seq = QKeySequence::fromString( settings.value(PASTE_SELECTION, PASTE_SELECTION_SHORTCUT).toString() );
+    Properties::Instance()->actions[PASTE_SELECTION]->setShortcut(seq);
+
     Properties::Instance()->actions[ZOOM_IN] = new QAction(tr("Zoom in"), this);
     seq = QKeySequence::fromString( settings.value(ZOOM_IN, ZOOM_IN_SHORTCUT).toString() );
     Properties::Instance()->actions[ZOOM_IN]->setShortcut(seq);
