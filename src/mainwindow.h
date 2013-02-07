@@ -68,7 +68,9 @@ private:
 
     QString m_initWorkDir;
     QString m_initShell;
-    
+
+    void migrate_settings();
+
     void setup_FileMenu_Actions();
     void setup_ActionsMenu_Actions();
     void setup_ViewMenu_Actions();

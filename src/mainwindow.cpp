@@ -42,6 +42,8 @@ MainWindow::MainWindow(const QString& work_dir,
       m_dropMode(dropMode)
 {
     setupUi(this);
+   
+    migrate_settings();
 
     Properties::Instance()->loadSettings();
 
@@ -86,6 +88,28 @@ MainWindow::MainWindow(const QString& work_dir,
 MainWindow::~MainWindow()
 {
 }
+
+void MainWindow::migrate_settings()
+{
+    // Deal with rearrangements of settings. 
+    // If this method becomes unbearably huge we should look at the config-update
+    // system used by kde and razor.
+    QSettings settings;
+    QString last_version = settings.value("version", "0.0.0").toString();
+    // Handle configchanges in 0.4.0 (renaming 'Paste Selection' -> 'Paste Clipboard') 
+    if (last_version < "0.4.0") 
+    {
+        qDebug() << "Migrating settings from" << last_version << "to 0.4.0";
+        settings.beginGroup("Shortcuts");
+        QString tmp = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
+        settings.setValue(PASTE_CLIPBOARD, tmp);
+        settings.remove("Paste Selection");
+        settings.endGroup();
+
+        settings.setValue("version", "0.4.0");
+    }
+}
+
 
 void MainWindow::enableDropMode()
 {
