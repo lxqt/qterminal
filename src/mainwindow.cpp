@@ -284,13 +284,13 @@ void MainWindow::setup_FileMenu_Actions()
     QKeySequence seq;
 
     Properties::Instance()->actions[ADD_TAB] = new QAction(QIcon(":/icons/list-add.png"), tr("New Tab"), this);
-    seq = QKeySequence::fromString( settings.value(ADD_TAB, QKeySequence(QKeySequence::AddTab).toString()).toString() );
+    seq = QKeySequence::fromString( settings.value(ADD_TAB, ADD_TAB_SHORTCUT).toString() );
     Properties::Instance()->actions[ADD_TAB]->setShortcut(seq);
     connect(Properties::Instance()->actions[ADD_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
     menu_File->addAction(Properties::Instance()->actions[ADD_TAB]);
 
     Properties::Instance()->actions[CLOSE_TAB] = new QAction(QIcon(":/icons/list-remove.png"), tr("Close Tab"), this);
-    seq = QKeySequence::fromString( settings.value(CLOSE_TAB, QKeySequence(QKeySequence::Close).toString()).toString() );
+    seq = QKeySequence::fromString( settings.value(CLOSE_TAB, CLOSE_TAB_SHORTCUT).toString() );
     Properties::Instance()->actions[CLOSE_TAB]->setShortcut(seq);
     connect(Properties::Instance()->actions[CLOSE_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
     menu_File->addAction(Properties::Instance()->actions[CLOSE_TAB]);

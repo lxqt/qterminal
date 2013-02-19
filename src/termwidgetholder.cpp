@@ -168,12 +168,12 @@ void TermWidgetHolder::propertiesChanged()
 
 void TermWidgetHolder::splitHorizontal(TermWidget * term)
 {
-    split(term, Qt::Horizontal);
+    split(term, Qt::Vertical);
 }
 
 void TermWidgetHolder::splitVertical(TermWidget * term)
 {
-    split(term, Qt::Vertical);
+    split(term, Qt::Horizontal);
 }
 
 void TermWidgetHolder::splitCollapse(TermWidget * term)
