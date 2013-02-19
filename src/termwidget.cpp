@@ -283,7 +283,7 @@ TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * pa
 void TermWidget::propertiesChanged()
 {
     if (Properties::Instance()->highlightCurrentTerminal)
-        m_layout->setContentsMargins(3, 3, 3, 3);
+        m_layout->setContentsMargins(2, 2, 2, 2);
     else
         m_layout->setContentsMargins(0, 0, 0, 0);
 
