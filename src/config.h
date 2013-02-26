@@ -61,6 +61,8 @@
 #define DEFAULT_HEIGHT                 600
 
 // ACTIONS
+#define ADD_TAB_SHORTCUT               "Ctrl+Shift+T"
+#define CLOSE_TAB_SHORTCUT             "Ctrl+Shift+W"
 #define CLEAR_TERMINAL_SHORTCUT        "Ctrl+Shift+X"
 #define TAB_PREV_SHORTCUT	       "Shift+Left"
 #define TAB_NEXT_SHORTCUT	       "Shift+Right"
