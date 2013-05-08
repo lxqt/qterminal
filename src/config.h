@@ -28,7 +28,7 @@
 #define NEW_WINDOW "New Window"
 
 #define QUIT "Quit"
-#define PREFERENCES "Configure QTerminal"
+#define PREFERENCES "Preferences..."
 
 #define TAB_NEXT "Next Tab"
 #define TAB_PREV "Previous Tab"

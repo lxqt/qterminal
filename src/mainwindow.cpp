@@ -307,6 +307,8 @@ void MainWindow::setup_FileMenu_Actions()
     connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
     menu_File->addAction(Properties::Instance()->actions[PREFERENCES]);
 
+    menu_File->addSeparator();
+
     Properties::Instance()->actions[QUIT] = actQuit;
     connect(actQuit, SIGNAL(triggered()), SLOT(close()));
     menu_File->addAction(Properties::Instance()->actions[QUIT]);

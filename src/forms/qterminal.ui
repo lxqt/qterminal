@@ -51,17 +51,16 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
-    <property name="Title">
+    <property name="title">
      <string>&amp;File</string>
     </property>
-    <!--<addaction name="separator"/>
-    <addaction name="actProperties"/>
-    <addaction name="separator"/>
-    <addaction name="actQuit"/>-->
+    <property name="Title" stdset="0">
+     <string/>
+    </property>
    </widget>
    <widget class="QMenu" name="menu_Actions">
     <property name="title">
@@ -97,7 +96,7 @@
   </action>
   <action name="actProperties">
    <property name="text">
-    <string>&amp;Configure QTerminal</string>
+    <string>&amp;Preferences...</string>
    </property>
   </action>
   <action name="actQuit">
