@@ -11,11 +11,6 @@
 # For details see the accompanying COPYING-CMAKE-SCRIPTS file.
 
 
-if (QTERMWIDGET_INCLUDE_DIR AND QTERMWIDGET_LIBRARIES)
-  # Already in cache, be silent
-  set(PostgreSQL_FIND_QUIETLY TRUE)
-endif (QTERMWIDGET_INCLUDE_DIR AND QTERMWIDGET_LIBRARIES)
-
 
 message(STATUS "QTermWidget: searching for includes...")
 find_path(QTERMWIDGET_INCLUDE_DIR qtermwidget.h
