@@ -140,7 +140,7 @@ void PropertiesDialog::changeFontButton_clicked()
 {
     bool ok;
     QFont f = QFontDialog::getFont(&ok, fontSampleLabel->font(), this, tr("Select Terminal Font"));
-    if (ok)
+    if (ok && QFontInfo(f).fixedPitch())
         setFontSample(f);
 }
 
