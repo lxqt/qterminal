@@ -64,7 +64,7 @@ private:
     QActionGroup *tabPosition, *scrollBarPosition;
     QMenu *tabPosMenu, *scrollPosMenu;
 
-    QAction *toggleBorder, *toggleTabbar;
+    QAction *toggleBorder, *toggleTabbar, *renameSession;
 
     QString m_initWorkDir;
     QString m_initShell;
