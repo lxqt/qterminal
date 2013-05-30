@@ -61,8 +61,6 @@
 #define DEFAULT_HEIGHT                 600
 
 // ACTIONS
-#define ADD_TAB_SHORTCUT               "Ctrl+Shift+T"
-#define CLOSE_TAB_SHORTCUT             "Ctrl+Shift+W"
 #define CLEAR_TERMINAL_SHORTCUT        "Ctrl+Shift+X"
 #define TAB_PREV_SHORTCUT	       "Shift+Left"
 #define TAB_NEXT_SHORTCUT	       "Shift+Right"
@@ -74,11 +72,17 @@
 #define COPY_SELECTION_SHORTCUT      "Ctrl+C"
 #define PASTE_CLIPBOARD_SHORTCUT      "Ctrl+V"
 #define FIND_SHORTCUT                "Ctrl+F"
+#define NEW_WINDOW_SHORTCUT          "Ctrl+N"
+#define ADD_TAB_SHORTCUT               "Ctrl+T"
+#define CLOSE_TAB_SHORTCUT             "Ctrl+W"
 #else
 #define COPY_SELECTION_SHORTCUT      "Ctrl+Shift+C"
 #define PASTE_CLIPBOARD_SHORTCUT      "Ctrl+Shift+V"
 #define PASTE_SELECTION_SHORTCUT      "Shift+Ins"
 #define FIND_SHORTCUT                 "Ctrl+Shift+F"
+#define NEW_WINDOW_SHORTCUT           "Ctrl+Shift+N"
+#define ADD_TAB_SHORTCUT               "Ctrl+Shift+T"
+#define CLOSE_TAB_SHORTCUT             "Ctrl+Shift+W"
 #endif
 
 #define ZOOM_IN_SHORTCUT               "Ctrl++"

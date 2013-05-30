@@ -302,7 +302,7 @@ void MainWindow::setup_FileMenu_Actions()
     menu_File->addAction(Properties::Instance()->actions[CLOSE_TAB]);
 
     Properties::Instance()->actions[NEW_WINDOW] = new QAction(tr("New Window"), this);
-    seq = QKeySequence::fromString( settings.value(NEW_WINDOW, QKeySequence(QKeySequence::New).toString()).toString() );
+    seq = QKeySequence::fromString( settings.value(NEW_WINDOW, NEW_WINDOW_SHORTCUT).toString() );
     Properties::Instance()->actions[NEW_WINDOW]->setShortcut(seq);
     connect(Properties::Instance()->actions[NEW_WINDOW], SIGNAL(triggered()), this, SLOT(newTerminalWindow()));
     menu_File->addAction(Properties::Instance()->actions[NEW_WINDOW]);
