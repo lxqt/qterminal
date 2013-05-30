@@ -79,16 +79,6 @@ MainWindow::MainWindow(const QString& work_dir,
     renameSession->setShortcut(QKeySequence(tr(RENAME_SESSION_SHORTCUT)));
     connect(renameSession, SIGNAL(triggered()), consoleTabulator, SLOT(renameSession()));
     addAction(renameSession);
-
-    if(Properties::Instance()->borderless) {
-        toggleBorder->setChecked(true);
-        toggleBorderless();
-    }
-
-    if(Properties::Instance()->tabBarless) {
-        toggleTabbar->setChecked(true);
-        toggleTabBar();
-    }
 }
 
 MainWindow::~MainWindow()
@@ -324,16 +314,22 @@ void MainWindow::setup_FileMenu_Actions()
 
 void MainWindow::setup_ViewMenu_Actions()
 {
-    toggleBorder = new QAction(tr("Toggle Borderless"), this);
+    toggleBorder = new QAction(tr("Hide Window Borders"), this);
     //toggleBorder->setObjectName("toggle_Borderless");
     toggleBorder->setCheckable(true);
+// TODO/FIXME: it's broken somehow. When I call toggleBorderless() here the non-responsive window appear
+//    toggleBorder->setChecked(Properties::Instance()->borderless);
+//    if (Properties::Instance()->borderless)
+//        toggleBorderless();
     connect(toggleBorder, SIGNAL(triggered()), this, SLOT(toggleBorderless()));
     menu_Window->addAction(toggleBorder);
     toggleBorder->setVisible(!m_dropMode);
 
-    toggleTabbar = new QAction(tr("Toggle TabBar"), this);
+    toggleTabbar = new QAction(tr("Show Tab Bar"), this);
     //toggleTabbar->setObjectName("toggle_TabBar");
     toggleTabbar->setCheckable(true);
+    toggleTabbar->setChecked(!Properties::Instance()->tabBarless);
+    toggleTabBar();
     connect(toggleTabbar, SIGNAL(triggered()), this, SLOT(toggleTabBar()));
     menu_Window->addAction(toggleTabbar);
 
@@ -408,12 +404,8 @@ void MainWindow::on_consoleTabulator_currentChanged(int)
 
 void MainWindow::toggleTabBar()
 {
-    if(toggleTabbar->isChecked())
-        consoleTabulator->tabBar()->hide();
-    else
-        consoleTabulator->tabBar()->show();
-
-    Properties::Instance()->tabBarless = toggleTabbar->isChecked();
+    consoleTabulator->tabBar()->setVisible(toggleTabbar->isChecked());
+    Properties::Instance()->tabBarless = !toggleTabbar->isChecked();
 }
 
 void MainWindow::toggleBorderless()
