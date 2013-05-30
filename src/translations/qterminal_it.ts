@@ -318,13 +318,13 @@
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
-        <source>&amp;Actions</source>
-        <translation>&amp;Azioni</translation>
+        <source>Actions</source>
+        <translation>Azioni</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
-        <source>&amp;Help</source>
-        <translation>&amp;Aiuto</translation>
+        <source>Help</source>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="74"/>

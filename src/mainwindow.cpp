@@ -74,6 +74,12 @@ MainWindow::MainWindow(const QString& work_dir,
     setup_ActionsMenu_Actions();
     setup_ViewMenu_Actions();
 
+    // Add global rename Session shortcut
+    renameSession = new QAction(tr("Rename Session"), this);
+    renameSession->setShortcut(QKeySequence(tr(RENAME_SESSION_SHORTCUT)));
+    connect(renameSession, SIGNAL(triggered()), consoleTabulator, SLOT(renameSession()));
+    addAction(renameSession);
+
     if(Properties::Instance()->borderless) {
         toggleBorder->setChecked(true);
         toggleBorderless();
