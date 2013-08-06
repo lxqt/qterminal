@@ -61,7 +61,7 @@ MainWindow::MainWindow(const QString& work_dir,
         restoreState(Properties::Instance()->mainWindowState);
     }
 
-    connect(consoleTabulator, SIGNAL(quit_notification()), SLOT(quit()));
+    connect(consoleTabulator, SIGNAL(closeTabNotification()), SLOT(close()));
     consoleTabulator->setWorkDirectory(work_dir);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
@@ -428,6 +428,13 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         return;
     }
 
+    // ask user for cancel only when there is at least one terminal active in this window
+    if (!consoleTabulator->count())
+    {
+        ev->accept();
+        return;
+    }
+
     QDialog * dia = new QDialog(this);
     dia->setObjectName("exitDialog");
     dia->setWindowTitle(tr("Exit QTerminal"));
@@ -455,14 +462,6 @@ void MainWindow::closeEvent(QCloseEvent *ev)
     }
 
     dia->deleteLater();
-}
-
-void MainWindow::quit()
-{
-    Properties::Instance()->mainWindowGeometry = saveGeometry();
-    Properties::Instance()->mainWindowState = saveState();
-    //Properties::Instance()->saveSettings(); // ver: What if I have two windows, change settings in one, close, then close the other?
-    QApplication::exit(0);
 }
 
 void MainWindow::actAbout_triggered()
@@ -558,7 +557,6 @@ bool MainWindow::event(QEvent *event)
 
 void MainWindow::newTerminalWindow()
 {
-#warning "TODO/FIXME: proper window handling/closing on ctrl+w"
     MainWindow *w = new MainWindow(m_initWorkDir, m_initShell, false);
     w->show();
 }

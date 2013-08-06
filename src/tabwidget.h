@@ -71,7 +71,7 @@ public slots:
     void loadSession();
 
 signals:
-    void quit_notification();
+    void closeTabNotification();
 
 protected:
     enum Direction{Left = 1, Right};
