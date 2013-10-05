@@ -110,6 +110,7 @@ void Properties::saveSettings()
 
     settings.setValue("guiStyle", guiStyle);
     settings.setValue("colorScheme", colorScheme);
+    settings.setValue("highlightCurrentTerminal", highlightCurrentTerminal);
     settings.setValue("font", font);
 
     settings.beginGroup("Shortcuts");
