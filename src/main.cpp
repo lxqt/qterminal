@@ -42,16 +42,15 @@ const struct option long_options[] = {
 
 void print_usage_and_exit(int code)
 {
-    printf("This is QTerminal %s\n", STR_VERSION);
-    puts("Usage: qterminal [options]");
-    puts("Options:");
-    puts("-h|--help               Print this help");
-    puts("-v|--version            Prints application version and exits");
-    puts("-w|--workdir <dir>      Start session with specified work directory");
-    puts("-e|--execute <command>  Execute command instead of shell");
-    puts("-d|--drop               Start in Drop Mode, like Yakuake or Tilda");
-    puts("\nHomepage: http://qterminal.sourceforge.net/");
-    puts("Feature requests, bug reports etc please send to: <petr@scribus.info>\n");
+    printf("QTerminal %s\n", STR_VERSION);
+    puts("Usage: qterminal [OPTION]...\n");
+    puts("  -d,  --drop               Start in \"dropdown mode\" (like Yakuake or Tilda)");
+    puts("  -e,  --execute <command>  Execute command instead of shell");
+    puts("  -h,  --help               Print this help");
+    puts("  -v,  --version            Prints application version and exits");
+    puts("  -w,  --workdir <dir>      Start session with specified work directory");
+    puts("\nHomepage: <https://github.com/qterminal>");
+    puts("Report bugs to <https://github.com/qterminal/qterminal>");
     exit(code);
 }
 
