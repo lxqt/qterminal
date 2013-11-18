@@ -49,6 +49,7 @@ set( QTERM_RCC_SRC
 set( QTERM_TS
     translations/qterminal_cs.ts
     translations/qterminal_it.ts
+    translations/qterminal_ru.ts
 )
 
 
