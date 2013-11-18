@@ -75,6 +75,13 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
                 break;
             case 'e':
                 shell_command = QString(optarg);
+                // #15 "Raw" -e params
+                // Passing "raw" params (like konsole -e mcedit /tmp/tmp.txt") is more preferable - then I can call QString("qterminal -e ") + cmd_line in other programs
+                while (optind < argc)
+                {
+                    //printf("arg: %d - %s\n", optind, argv[optind]);
+                    shell_command += ' ' + QString(argv[optind++]);
+                }
                 break;
             case 'd':
                 dropMode = true;
