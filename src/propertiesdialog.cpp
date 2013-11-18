@@ -71,6 +71,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     highlightCurrentCheckBox->setChecked(Properties::Instance()->highlightCurrentTerminal);
 
+    askOnExitCheckBox->setChecked(Properties::Instance()->askOnExit);
+
     historyLimited->setChecked(Properties::Instance()->historyLimited);
     historyUnlimited->setChecked(!Properties::Instance()->historyLimited);
     historyLimitedTo->setValue(Properties::Instance()->historyLimitedTo);
@@ -109,6 +111,8 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->termOpacity = termOpacityBox->value();
     Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
+
+    Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();
 
     Properties::Instance()->scrollBarPos = scrollBarPos_comboBox->currentIndex();
     Properties::Instance()->tabsPos = tabsPos_comboBox->currentIndex();
