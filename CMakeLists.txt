@@ -2,6 +2,9 @@ cmake_minimum_required( VERSION 2.6 )
 
 project( qterminal )
 
+option(USE_SYSTEM_QXT "Use system Qxt Library for global shortcuts" ON)
+
+
 # where to look first for cmake modules, before ${CMAKE_ROOT}/Modules/ is checked
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules )
 
@@ -33,14 +36,25 @@ ENDIF (NOT LIB_SUFFIX)
 
 
 find_package( Qt4 COMPONENTS QtCore QtGui REQUIRED)
-INCLUDE( ${QT_USE_FILE} )
 MESSAGE(STATUS "Qt4 version: ${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}")
 add_definitions ( ${QT_DEFINITIONS} )
 include_directories( ${QT_INCLUDES} )
+INCLUDE( ${QT_USE_FILE} )
 MESSAGE(STATUS "Qt4 libs: ${QT_LIBRARIES}")
 
 
+if (USE_SYSTEM_QXT)
+    find_package(Qxt)
+    if (NOT QXT_FOUND)
+        message(FATAL_ERROR "System Qxt not found. Install Qxt devel package or use -DUSE_SYSTEM_QXT=0 to build with internal copy of this library")
+    endif (NOT QXT_FOUND)
+
+    include_directories(${QXT_INCLUDE_PATH})
+endif (USE_SYSTEM_QXT)
+
+
 find_package ( QTermWidget REQUIRED )
+
 
 if (APPLE)
    FIND_LIBRARY(CARBON_LIBRARY Carbon REQUIRED)

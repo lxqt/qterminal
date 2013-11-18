@@ -8,25 +8,7 @@ set( QTERM_SRC
     termwidgetholder.cpp
     properties.cpp
     propertiesdialog.cpp
-    third-party/qxtglobalshortcut.cpp
 )
-
-if(WIN32)
-    set(QTERM_SRC
-        ${QTERM_SRC}
-        third-party/qxtglobalshortcut_win.cpp
-    )
-elseif(APPLE)
-    set(QTERM_SRC
-        ${QTERM_SRC}
-        third-party/qxtglobalshortcut_mac.cpp
-    )
-else()
-    set(QTERM_SRC
-        ${QTERM_SRC}
-        third-party/qxtglobalshortcut_x11.cpp
-    )
-endif()
 
 set( QTERM_MOC_SRC
     mainwindow.h
@@ -34,8 +16,20 @@ set( QTERM_MOC_SRC
     termwidget.h
     termwidgetholder.h
     propertiesdialog.h
-    third-party/qxtglobalshortcut.h
 )
+
+if (NOT QXT_FOUND)
+    set (QTERM_SRC ${QTERM_SRC} third-party/qxtglobalshortcut.cpp )
+    set (QTERM_MOC_SRC ${QTERM_MOC_SRC} third-party/qxtglobalshortcut.h )
+
+    if(WIN32)
+        set(QTERM_SRC ${QTERM_SRC} third-party/qxtglobalshortcut_win.cpp )
+    elseif(APPLE)
+        set(QTERM_SRC ${QTERM_SRC} third-party/qxtglobalshortcut_mac.cpp )
+    else()
+        set(QTERM_SRC ${QTERM_SRC} third-party/qxtglobalshortcut_x11.cpp )
+    endif()
+endif (NOT QXT_FOUND)
 
 set( QTERM_UI_SRC
     forms/qterminal.ui
@@ -112,6 +106,10 @@ target_link_libraries( ${EXE_NAME}
     ${QTERMWIDGET_LIBRARIES}
     util
 )
+if (QXT_FOUND)
+    target_link_libraries(${EXE_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
+endif (QXT_FOUND)
+
 if (APPLE)
     target_link_libraries(${EXE_NAME} ${CARBON_LIBRARY})
 endif (APPLE)
