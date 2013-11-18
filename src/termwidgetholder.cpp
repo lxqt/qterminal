@@ -6,7 +6,9 @@
 
 TermWidgetHolder::TermWidgetHolder(const QString & wdir, const QString & shell, QWidget * parent)
     : QWidget(parent),
-      m_wdir(wdir)
+      m_wdir(wdir),
+      m_shell(shell),
+      m_currentTerm(0)
 {
     setFocusPolicy(Qt::NoFocus);
     QGridLayout * lay = new QGridLayout(this);
@@ -15,7 +17,7 @@ TermWidgetHolder::TermWidgetHolder(const QString & wdir, const QString & shell, 
 
     QSplitter *s = new QSplitter(this);
     s->setFocusPolicy(Qt::NoFocus);
-    TermWidget *w = newTerm(shell);
+    TermWidget *w = newTerm();
     s->addWidget(w);
     lay->addWidget(s);
 
@@ -93,7 +95,6 @@ void TermWidgetHolder::saveSession(const QString & name)
 TermWidget* TermWidgetHolder::currentTerminal()
 {
     qDebug() << m_currentTerm << "current terminal";
-    Q_ASSERT(m_currentTerm);
     return m_currentTerm;
 }
 
@@ -218,7 +219,17 @@ void TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientation)
     QSplitter *s = new QSplitter(orientation, this);
     s->setFocusPolicy(Qt::NoFocus);
     s->insertWidget(0, term);
-    TermWidget * w = newTerm();
+
+    // wdir settings
+    QString wd(m_wdir);
+    if (Properties::Instance()->useCWD)
+    {
+        wd = term->impl()->workingDirectory();
+        if (wd.isEmpty())
+            wd = m_wdir;
+    }
+
+    TermWidget * w = newTerm(wd);
     s->insertWidget(1, w);
     s->setSizes(sizes);
 
@@ -228,9 +239,17 @@ void TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientation)
     w->setFocus(Qt::OtherFocusReason);
 }
 
-TermWidget *TermWidgetHolder::newTerm(const QString & shell)
+TermWidget *TermWidgetHolder::newTerm(const QString & wdir, const QString & shell)
 {
-    TermWidget *w = new TermWidget(m_wdir, shell, this);
+    QString wd(wdir);
+    if (wd.isEmpty())
+        wd = m_wdir;
+
+    QString sh(shell);
+    if (shell.isEmpty())
+        sh = m_shell;
+
+    TermWidget *w = new TermWidget(wd, sh, this);
     // proxy signals
     connect(w, SIGNAL(renameSession()), this, SIGNAL(renameSession()));
     connect(w, SIGNAL(removeCurrentSession()), this, SIGNAL(lastTerminalClosed()));

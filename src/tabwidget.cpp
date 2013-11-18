@@ -66,7 +66,16 @@ int TabWidget::addNewTab(const QString & shell_program)
     tabNumerator++;
     QString label = QString(tr("Shell No. %1")).arg(tabNumerator);
 
-    TermWidgetHolder *console = new TermWidgetHolder(work_dir, shell_program, this);
+    TermWidgetHolder *ch = terminalHolder();
+    QString cwd(work_dir);
+    if (Properties::Instance()->useCWD && ch)
+    {
+        cwd = ch->currentTerminal()->impl()->workingDirectory();
+        if (cwd.isEmpty())
+            cwd = work_dir;
+    }
+
+    TermWidgetHolder *console = new TermWidgetHolder(cwd, shell_program, this);
     connect(console, SIGNAL(finished()), SLOT(removeFinished()));
     //connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeCurrentTab()));
     connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));

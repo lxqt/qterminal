@@ -51,10 +51,11 @@ class TermWidgetHolder : public QWidget
 
     private:
         QString m_wdir;
+        QString m_shell;
         TermWidget * m_currentTerm;
 
         void split(TermWidget * term, Qt::Orientation orientation);
-        TermWidget * newTerm(const QString & shell=QString());
+        TermWidget * newTerm(const QString & wdir=QString(), const QString & shell=QString());
 
     private slots:
         void setCurrentTerminal(TermWidget* term);

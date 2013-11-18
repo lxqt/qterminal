@@ -94,6 +94,7 @@ void Properties::loadSettings()
     borderless = settings.value("Borderless", false).toBool();
     tabBarless = settings.value("TabBarless", false).toBool();
     askOnExit = settings.value("AskOnExit", true).toBool();
+    useCWD = settings.value("UseCWD", false).toBool();
 
     settings.beginGroup("DropMode");
     dropShortCut = QKeySequence(settings.value("ShortCut", "F12").toString());
@@ -153,6 +154,7 @@ void Properties::saveSettings()
     settings.setValue("Borderless", borderless);
     settings.setValue("TabBarless", tabBarless);
     settings.setValue("AskOnExit", askOnExit);
+    settings.setValue("UseCWD", useCWD);
 
     settings.beginGroup("DropMode");
     settings.setValue("ShortCut", dropShortCut.toString());

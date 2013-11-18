@@ -48,6 +48,8 @@ class Properties
 
         bool askOnExit;
 
+        bool useCWD;
+
         QKeySequence dropShortCut;
         bool dropKeepOpen;
         bool dropShowOnStart;
