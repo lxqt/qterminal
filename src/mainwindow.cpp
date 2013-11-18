@@ -491,7 +491,7 @@ void MainWindow::realign()
 {
     if (m_dropMode)
     {
-        QRect desktop = QApplication::desktop()->availableGeometry();
+        QRect desktop = QApplication::desktop()->availableGeometry(this);
         QRect geometry = QRect(0, 0,
                                desktop.width()  * Properties::Instance()->dropWidht  / 100,
                                desktop.height() * Properties::Instance()->dropHeight / 100
