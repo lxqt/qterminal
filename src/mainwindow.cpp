@@ -516,6 +516,8 @@ void MainWindow::showHide()
         hide();
     else
     {
+       if (m_dropMode)
+           realign();
        show();
        activateWindow();
     }
