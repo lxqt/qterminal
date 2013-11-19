@@ -44,12 +44,16 @@ MESSAGE(STATUS "Qt4 libs: ${QT_LIBRARIES}")
 
 
 if (USE_SYSTEM_QXT)
-    find_package(Qxt)
+    message(STATUS "Using system Qxt...")
+    find_package(Qxt REQUIRED COMPONENTS QxtCore QxtGui)
     if (NOT QXT_FOUND)
         message(FATAL_ERROR "System Qxt not found. Install Qxt devel package or use -DUSE_SYSTEM_QXT=0 to build with internal copy of this library")
     endif (NOT QXT_FOUND)
 
-    include_directories(${QXT_INCLUDE_PATH})
+    set(QXT_INCLUDE_DIRS ${QXT_INCLUDE_PATH}/QxtCore ${QXT_INCLUDE_PATH}/QxtGui)
+else (USE_SYSTEM_QXT)
+    message(STATUS "Using bundled Qxt...")
+    set(QXT_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/src/third-party)
 endif (USE_SYSTEM_QXT)
 
 

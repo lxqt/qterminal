@@ -24,7 +24,7 @@
 #include "ui_qterminal.h"
 
 #include <QMainWindow>
-#include "third-party/qxtglobalshortcut.h"
+#include "qxtglobalshortcut.h"
 
 class QToolButton;
 

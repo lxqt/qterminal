@@ -56,6 +56,7 @@ include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}
     ${QTERMWIDGET_INCLUDE_DIR}
+    ${QXT_INCLUDE_DIRS}
 )
 if (X11_FOUND)
     include_directories(${X11_INCLUDE_DIR})
