@@ -216,7 +216,7 @@ void TabWidget::removeCurrentTab()
     if (count() > 1) {
         removeTab(currentIndex());
     } else {
-        QApplication::exit(0);
+        emit closeTabNotification();
     }
 }
 

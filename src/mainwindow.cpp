@@ -419,7 +419,8 @@ void MainWindow::toggleBorderless()
 
 void MainWindow::closeEvent(QCloseEvent *ev)
 {
-    if (!Properties::Instance()->askOnExit)
+    if (!Properties::Instance()->askOnExit
+            || !consoleTabulator->count())
     {
         Properties::Instance()->mainWindowGeometry = saveGeometry();
         Properties::Instance()->mainWindowState = saveState();
@@ -429,12 +430,6 @@ void MainWindow::closeEvent(QCloseEvent *ev)
     }
 
     // ask user for cancel only when there is at least one terminal active in this window
-    if (!consoleTabulator->count())
-    {
-        ev->accept();
-        return;
-    }
-
     QDialog * dia = new QDialog(this);
     dia->setObjectName("exitDialog");
     dia->setWindowTitle(tr("Exit QTerminal"));
