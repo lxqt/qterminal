@@ -55,6 +55,8 @@
 
 #define FIND "Find"
 
+#define TOGGLE_MENU "Toggle Menu"
+
 /* Some defaults for QTerminal application */
 
 #define DEFAULT_WIDTH                  800
@@ -75,6 +77,7 @@
 #define NEW_WINDOW_SHORTCUT          "Ctrl+N"
 #define ADD_TAB_SHORTCUT               "Ctrl+T"
 #define CLOSE_TAB_SHORTCUT             "Ctrl+W"
+#define TOGGLE_MENU_SHORTCUT            "Ctrl+M"
 #else
 #define COPY_SELECTION_SHORTCUT      "Ctrl+Shift+C"
 #define PASTE_CLIPBOARD_SHORTCUT      "Ctrl+Shift+V"
@@ -83,6 +86,7 @@
 #define NEW_WINDOW_SHORTCUT           "Ctrl+Shift+N"
 #define ADD_TAB_SHORTCUT               "Ctrl+Shift+T"
 #define CLOSE_TAB_SHORTCUT             "Ctrl+Shift+W"
+#define TOGGLE_MENU_SHORTCUT            "Ctrl+Shift+M"
 #endif
 
 #define ZOOM_IN_SHORTCUT               "Ctrl++"

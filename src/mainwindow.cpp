@@ -263,11 +263,14 @@ void MainWindow::setup_ActionsMenu_Actions()
     addAction(act);
 #endif
 
-    //menu_Actions->addSeparator();
+    Properties::Instance()->actions[TOGGLE_MENU] = new QAction(tr("Toggle Menu"), this);
+    seq = QKeySequence::fromString( settings.value(TOGGLE_MENU, TOGGLE_MENU_SHORTCUT).toString() );
+    Properties::Instance()->actions[TOGGLE_MENU]->setShortcut(seq);
+    connect(Properties::Instance()->actions[TOGGLE_MENU], SIGNAL(triggered()), this, SLOT(toggleMenu()));
+    // tis is correct - add action to main window - not to menu to keep toggle working
+    addAction(Properties::Instance()->actions[TOGGLE_MENU]);
 
     settings.endGroup();
-
-    //menu_Actions->insertActions(actQuit, actions());
 
     // apply props
     propertiesChanged();
@@ -395,7 +398,6 @@ void MainWindow::setup_ViewMenu_Actions()
     }
 
     menu_Window->addMenu(scrollPosMenu);
-    /* */
 }
 
 void MainWindow::on_consoleTabulator_currentChanged(int)
@@ -415,6 +417,12 @@ void MainWindow::toggleBorderless()
     setWindowState(Qt::WindowActive); /* don't loose focus on the window */
     Properties::Instance()->borderless = toggleBorder->isChecked();
     realign();
+}
+
+void MainWindow::toggleMenu()
+{
+    m_menuBar->setVisible(!m_menuBar->isVisible());
+    Properties::Instance()->menuVisible = m_menuBar->isVisible();
 }
 
 void MainWindow::closeEvent(QCloseEvent *ev)
@@ -478,6 +486,9 @@ void MainWindow::propertiesChanged()
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     consoleTabulator->propertiesChanged();
     setDropShortcut(Properties::Instance()->dropShortCut);
+
+    m_menuBar->setVisible(Properties::Instance()->menuVisible);
+
     Properties::Instance()->saveSettings();
     realign();
 }

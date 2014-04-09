@@ -49,6 +49,7 @@ protected slots:
 
     void toggleBorderless();
     void toggleTabBar();
+    void toggleMenu();
 
     void showHide();
     void setKeepOpen(bool value);

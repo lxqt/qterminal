@@ -93,6 +93,7 @@ void Properties::loadSettings()
     /* toggles */
     borderless = settings.value("Borderless", false).toBool();
     tabBarless = settings.value("TabBarless", false).toBool();
+    menuVisible = settings.value("MenuVisible", true).toBool();
     askOnExit = settings.value("AskOnExit", true).toBool();
     useCWD = settings.value("UseCWD", false).toBool();
 
@@ -153,6 +154,7 @@ void Properties::saveSettings()
     settings.setValue("MotionAfterPaste", m_motionAfterPaste);
     settings.setValue("Borderless", borderless);
     settings.setValue("TabBarless", tabBarless);
+    settings.setValue("MenuVisible", menuVisible);
     settings.setValue("AskOnExit", askOnExit);
     settings.setValue("UseCWD", useCWD);
 

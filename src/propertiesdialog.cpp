@@ -46,6 +46,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     tabsPos_comboBox->addItems(tabsPosList);
     tabsPos_comboBox->setCurrentIndex(Properties::Instance()->tabsPos);
 
+    // show main menu bar
+    showMenuCheckBox->setChecked(Properties::Instance()->menuVisible);
+
     /* actions by motion after paste */
     
     QStringList motionAfter;
@@ -120,6 +123,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->scrollBarPos = scrollBarPos_comboBox->currentIndex();
     Properties::Instance()->tabsPos = tabsPos_comboBox->currentIndex();
+    Properties::Instance()->menuVisible = showMenuCheckBox->isChecked();
     Properties::Instance()->m_motionAfterPaste = motionAfterPasting_comboBox->currentIndex();
 
     Properties::Instance()->historyLimited = historyLimited->isChecked();
