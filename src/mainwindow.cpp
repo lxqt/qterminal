@@ -26,6 +26,8 @@
 #include "config.h"
 #include "properties.h"
 #include "propertiesdialog.h"
+#include "bookmarkswidget.h"
+
 
 // TODO/FXIME: probably remove. QSS makes it unusable on mac...
 #define QSS_DROP    "MainWindow {border: 1px solid rgba(0, 0, 0, 50%);}\n"
@@ -39,7 +41,8 @@ MainWindow::MainWindow(const QString& work_dir,
       m_initShell(command),
       m_initWorkDir(work_dir),
       m_dropLockButton(0),
-      m_dropMode(dropMode)
+      m_dropMode(dropMode),
+      m_bookmarksDock(0)
 {
     setupUi(this);
    
@@ -489,6 +492,18 @@ void MainWindow::propertiesChanged()
 
     m_menuBar->setVisible(Properties::Instance()->menuVisible);
 
+    if (Properties::Instance()->useBookmarks && !m_bookmarksDock)
+    {
+        m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
+        BookmarksWidget *bookmarksWidget = new BookmarksWidget(m_bookmarksDock);
+        m_bookmarksDock->setWidget(bookmarksWidget);
+        addDockWidget(Qt::LeftDockWidgetArea, m_bookmarksDock);
+        connect(bookmarksWidget, SIGNAL(callCommand(QString)),
+                this, SLOT(bookmarksWidget_callCommand(QString)));
+    }
+    if (m_bookmarksDock)
+        m_bookmarksDock->setVisible(Properties::Instance()->useBookmarks);
+
     Properties::Instance()->saveSettings();
     realign();
 }
@@ -569,3 +584,8 @@ void MainWindow::newTerminalWindow()
     w->show();
 }
 
+void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
+{
+    qDebug() << "SENDING" << cmd;
+    consoleTabulator->terminalHolder()->currentTerminal()->impl()->sendText(cmd);
+}

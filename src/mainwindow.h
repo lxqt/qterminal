@@ -56,6 +56,7 @@ protected slots:
     void find();
 
     void newTerminalWindow();
+    void bookmarksWidget_callCommand(const QString&);
 
 protected:
      bool event(QEvent* event);
@@ -68,6 +69,8 @@ private:
 
     QString m_initWorkDir;
     QString m_initShell;
+
+    QDockWidget *m_bookmarksDock;
 
     void migrate_settings();
 

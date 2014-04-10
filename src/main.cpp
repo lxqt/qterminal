@@ -102,6 +102,7 @@ int main(int argc, char *argv[])
     QApplication::setApplicationName("qterminal");
     QApplication::setApplicationVersion(STR_VERSION);
     QApplication::setOrganizationDomain("qterminal.org");
+    // Warning: do not change settings format. It can screw bookmarks later.
     QSettings::setDefaultFormat(QSettings::IniFormat);
 
     QApplication app(argc, argv);

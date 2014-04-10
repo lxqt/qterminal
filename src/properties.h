@@ -51,6 +51,9 @@ class Properties
 
         bool useCWD;
 
+        bool useBookmarks;
+        QString bookmarksFile;
+
         QKeySequence dropShortCut;
         bool dropKeepOpen;
         bool dropShowOnStart;
@@ -60,6 +63,7 @@ class Properties
         QMap< QString, QAction * > actions;
 
         void loadSettings();
+
 
     private:
 

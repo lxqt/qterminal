@@ -97,6 +97,10 @@ void Properties::loadSettings()
     askOnExit = settings.value("AskOnExit", true).toBool();
     useCWD = settings.value("UseCWD", false).toBool();
 
+    // bookmarks
+    useBookmarks = settings.value("UseBookmarks", false).toBool();
+    bookmarksFile = settings.value("BookmarksFile", QFileInfo(settings.fileName()).canonicalPath()+"/qterminal_bookmarks.xml").toString();
+
     settings.beginGroup("DropMode");
     dropShortCut = QKeySequence(settings.value("ShortCut", "F12").toString());
     dropKeepOpen = settings.value("KeepOpen", false).toBool();
@@ -157,6 +161,10 @@ void Properties::saveSettings()
     settings.setValue("MenuVisible", menuVisible);
     settings.setValue("AskOnExit", askOnExit);
     settings.setValue("UseCWD", useCWD);
+
+    // bookmarks
+    settings.setValue("UseBookmarks", useBookmarks);
+    settings.setValue("BookmarksFile", bookmarksFile);
 
     settings.beginGroup("DropMode");
     settings.setValue("ShortCut", dropShortCut.toString());

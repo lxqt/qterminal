@@ -86,6 +86,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     dropHeightSpinBox->setValue(Properties::Instance()->dropHeight);
     dropWidthSpinBox->setValue(Properties::Instance()->dropWidht);
     dropShortCutEdit->setText(Properties::Instance()->dropShortCut.toString());
+
+    useBookmarksCheckBox->setChecked(Properties::Instance()->useBookmarks);
+    bookmarksLineEdit->setText(Properties::Instance()->bookmarksFile);
 }
 
 
@@ -137,6 +140,9 @@ void PropertiesDialog::apply()
     Properties::Instance()->dropHeight = dropHeightSpinBox->value();
     Properties::Instance()->dropWidht = dropWidthSpinBox->value();
     Properties::Instance()->dropShortCut = QKeySequence(dropShortCutEdit->text());
+
+    Properties::Instance()->useBookmarks = useBookmarksCheckBox->isChecked();
+    Properties::Instance()->bookmarksFile = bookmarksLineEdit->text();
 
     emit propertiesChanged();
 }
