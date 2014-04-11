@@ -15,6 +15,8 @@ public:
     BookmarksWidget(QWidget *parent=NULL);
     ~BookmarksWidget();
 
+    void setup();
+
 signals:
     void callCommand(const QString &cmd);
 
@@ -33,6 +35,8 @@ class BookmarksModel : public QAbstractItemModel
 public:
     BookmarksModel(QObject *parent = 0);
     ~BookmarksModel();
+
+    void setup();
 
     QVariant data(const QModelIndex &index, int role) const;
     QVariant headerData(int section, Qt::Orientation orientation,

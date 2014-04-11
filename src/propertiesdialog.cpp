@@ -89,6 +89,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     useBookmarksCheckBox->setChecked(Properties::Instance()->useBookmarks);
     bookmarksLineEdit->setText(Properties::Instance()->bookmarksFile);
+    openBookmarksFile(Properties::Instance()->bookmarksFile);
+    connect(bookmarksButton, SIGNAL(clicked()),
+            this, SLOT(bookmarksButton_clicked()));
 }
 
 
@@ -143,6 +146,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->useBookmarks = useBookmarksCheckBox->isChecked();
     Properties::Instance()->bookmarksFile = bookmarksLineEdit->text();
+    saveBookmarksFile(Properties::Instance()->bookmarksFile);
 
     emit propertiesChanged();
 }
@@ -226,6 +230,47 @@ void PropertiesDialog::validateAction(int row, int column)
         item->setText(oldAccelText);
     else
         item->setText(accelText);
+}
+
+void PropertiesDialog::bookmarksButton_clicked()
+{
+    QFileDialog dia(this, tr("Open or create bookmarks file"));
+    dia.setConfirmOverwrite(false);
+    dia.setFileMode(QFileDialog::AnyFile);
+    if (!dia.exec())
+        return;
+
+    QString fname = dia.selectedFiles().count() ? dia.selectedFiles().at(0) : QString();
+    if (fname.isNull())
+        return;
+
+    bookmarksLineEdit->setText(fname);
+    openBookmarksFile(bookmarksLineEdit->text());
+}
+
+void PropertiesDialog::openBookmarksFile(const QString &fname)
+{
+    QFile f(fname);
+    QString content;
+    if (!f.open(QFile::ReadOnly))
+        content = "<qterminal>\n  <group name\"group1\">\n    <command name=\"cmd1\" value=\"cd $HOME\"/>\n  </group>\n</qterminal>";
+    else
+        content = f.readAll();
+
+    bookmarkPlainEdit->setPlainText(content);
+    bookmarkPlainEdit->document()->setModified(false);
+}
+
+void PropertiesDialog::saveBookmarksFile(const QString &fname)
+{
+    if (!bookmarkPlainEdit->document()->isModified())
+        return;
+
+    QFile f(fname);
+    if (!f.open(QFile::WriteOnly|QFile::Truncate))
+        qDebug() << "Cannot write to file" << f.fileName();
+    else
+        f.write(bookmarkPlainEdit->toPlainText().toUtf8());
 }
 
 /*

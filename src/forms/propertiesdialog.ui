@@ -503,13 +503,32 @@
      </widget>
      <widget class="QWidget" name="page_2">
       <layout class="QGridLayout" name="gridLayout_9">
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_11">
-         <property name="text">
-          <string>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</string>
+       <item row="3" column="0">
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="title">
+          <string>Edit File Content</string>
          </property>
-         <property name="wordWrap">
-          <bool>true</bool>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <item row="0" column="0">
+           <widget class="QPlainTextEdit" name="bookmarkPlainEdit">
+            <property name="font">
+             <font>
+              <family>Bera Sans Mono [bitstream]</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="lineWrapMode">
+             <enum>QPlainTextEdit::NoWrap</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="useBookmarksCheckBox">
+         <property name="text">
+          <string>Use Bookmarks</string>
          </property>
         </widget>
        </item>
@@ -526,7 +545,7 @@
           <widget class="QLineEdit" name="bookmarksLineEdit"/>
          </item>
          <item>
-          <widget class="QPushButton" name="openBookmarksButton">
+          <widget class="QPushButton" name="bookmarksButton">
            <property name="text">
             <string>Find...</string>
            </property>
@@ -534,25 +553,15 @@
          </item>
         </layout>
        </item>
-       <item row="0" column="0">
-        <widget class="QCheckBox" name="useBookmarksCheckBox">
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_11">
          <property name="text">
-          <string>Use Bookmarks</string>
+          <string>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</string>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
          </property>
         </widget>
-       </item>
-       <item row="3" column="0">
-        <spacer name="verticalSpacer_6">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
        </item>
       </layout>
      </widget>

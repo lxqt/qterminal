@@ -18,12 +18,15 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
 
     private:
         void setFontSample(const QFont & f);
+        void openBookmarksFile(const QString &fname);
+        void saveBookmarksFile(const QString &fname);
 
     private slots:
         void apply();
         void accept();
         
         void changeFontButton_clicked();
+        void bookmarksButton_clicked();
 
     protected:
         void setupShortcuts();

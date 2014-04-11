@@ -502,7 +502,10 @@ void MainWindow::propertiesChanged()
                 this, SLOT(bookmarksWidget_callCommand(QString)));
     }
     if (m_bookmarksDock)
+    {
         m_bookmarksDock->setVisible(Properties::Instance()->useBookmarks);
+        qobject_cast<BookmarksWidget*>(m_bookmarksDock->widget())->setup();
+    }
 
     Properties::Instance()->saveSettings();
     realign();

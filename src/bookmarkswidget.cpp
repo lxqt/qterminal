@@ -225,16 +225,26 @@ public:
 
 
 BookmarksModel::BookmarksModel(QObject *parent)
-    : QAbstractItemModel(parent)
+    : QAbstractItemModel(parent),
+      m_root(0)
 {
+    setup();
+}
+
+void BookmarksModel::setup()
+{
+    if (m_root)
+        delete m_root;
     m_root = new BookmarkRootItem();
     m_root->addChild(new BookmarkLocalGroupItem(m_root));
     m_root->addChild(new BookmarkFileGroupItem(m_root, Properties::Instance()->bookmarksFile));
+    reset();
 }
 
 BookmarksModel::~BookmarksModel()
 {
-    delete m_root;
+    if (m_root)
+        delete m_root;
 }
 
 int BookmarksModel::columnCount(const QModelIndex & /* parent */) const
@@ -343,9 +353,6 @@ BookmarksWidget::BookmarksWidget(QWidget *parent)
 
     m_model = new BookmarksModel(this);
     treeView->setModel(m_model);
-    treeView->expandAll();
-    treeView->resizeColumnToContents(0);
-    treeView->resizeColumnToContents(1);
     treeView->header()->hide();
 
     connect(treeView, SIGNAL(doubleClicked(QModelIndex)),
@@ -354,6 +361,15 @@ BookmarksWidget::BookmarksWidget(QWidget *parent)
 
 BookmarksWidget::~BookmarksWidget()
 {
+}
+
+void BookmarksWidget::setup()
+{
+    m_model->setup();
+
+    treeView->expandAll();
+    treeView->resizeColumnToContents(0);
+    treeView->resizeColumnToContents(1);
 }
 
 void BookmarksWidget::handleCommand(const QModelIndex& index)
