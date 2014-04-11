@@ -1,3 +1,7 @@
+#include <QGridLayout>
+#include <QSplitter>
+#include <QInputDialog>
+
 #include "termwidgetholder.h"
 #include "termwidget.h"
 #include "properties.h"

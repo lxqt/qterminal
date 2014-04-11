@@ -1,3 +1,7 @@
+#include <QMenu>
+#include <QVBoxLayout>
+#include <QPainter>
+
 #include "termwidget.h"
 #include "config.h"
 #include "properties.h"

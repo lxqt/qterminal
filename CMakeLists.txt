@@ -57,7 +57,8 @@ else (USE_SYSTEM_QXT)
 endif (USE_SYSTEM_QXT)
 
 
-find_package ( QTermWidget REQUIRED )
+find_package ( QTermWidget4 REQUIRED )
+include(${QTERMWIDGET_USE_FILE})
 
 
 if (APPLE)

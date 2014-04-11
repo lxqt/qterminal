@@ -58,7 +58,7 @@ QT4_ADD_TRANSLATION( QTERM_QM ${QTERM_TS} )
 include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${CMAKE_CURRENT_BINARY_DIR}
-    ${QTERMWIDGET_INCLUDE_DIR}
+    ${QTERMWIDGET_INCLUDE_DIRS}
     ${QXT_INCLUDE_DIRS}
 )
 if (X11_FOUND)
@@ -104,9 +104,8 @@ add_executable( ${EXE_NAME} ${GUI_TYPE}
     ${APPLE_BUNDLE_SOURCES}
     ${QTERM_QM}
 )
-
 target_link_libraries( ${EXE_NAME}
-    ${QT_LIBRARIES}
+    ${QTERMWIDGET_QT_LIBRARIES}
     ${QTERMWIDGET_LIBRARIES}
     util
 )

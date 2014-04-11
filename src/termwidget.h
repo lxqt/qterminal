@@ -3,6 +3,8 @@
 
 #include <qtermwidget.h>
 
+#include <QAction>
+
 
 class TermWidgetImpl : public QTermWidget
 {
