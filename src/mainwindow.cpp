@@ -339,6 +339,15 @@ void MainWindow::setup_ViewMenu_Actions()
     connect(toggleTabbar, SIGNAL(triggered()), this, SLOT(toggleTabBar()));
     menu_Window->addAction(toggleTabbar);
 
+    QSettings settings;
+    settings.beginGroup("Shortcuts");
+    Properties::Instance()->actions[TOGGLE_BOOKMARKS] = m_bookmarksDock->toggleViewAction();
+    QKeySequence seq = QKeySequence::fromString( settings.value(TOGGLE_BOOKMARKS, TOGGLE_BOOKMARKS_SHORTCUT).toString() );
+    Properties::Instance()->actions[TOGGLE_BOOKMARKS]->setShortcut(seq);
+    menu_Window->addAction(Properties::Instance()->actions[TOGGLE_BOOKMARKS]);
+    addAction(Properties::Instance()->actions[TOGGLE_BOOKMARKS]);
+    settings.endGroup();
+
     menu_Window->addSeparator();
 
     /* tabs position */
