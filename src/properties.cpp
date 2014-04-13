@@ -30,7 +30,7 @@ Properties::~Properties()
 QFont Properties::defaultFont()
 {
     QFont default_font = QApplication::font();
-    default_font.setFamily("Monospace");
+    default_font.setFamily(DEFAULT_FONT);
     default_font.setPointSize(12);
     default_font.setStyleHint(QFont::TypeWriter);
     return default_font;

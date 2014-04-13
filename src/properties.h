@@ -1,6 +1,7 @@
 #ifndef PROPERTIES_H
 #define PROPERTIES_H
 
+#include <QApplication>
 #include <QtCore>
 #include <QFont>
 #include <QAction>
