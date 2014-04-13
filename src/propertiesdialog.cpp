@@ -5,7 +5,9 @@
 
 #include "propertiesdialog.h"
 #include "properties.h"
+#include "fontdialog.h"
 #include "config.h"
+
 
 PropertiesDialog::PropertiesDialog(QWidget *parent)
     : QDialog(parent)
@@ -160,9 +162,11 @@ void PropertiesDialog::setFontSample(const QFont & f)
 
 void PropertiesDialog::changeFontButton_clicked()
 {
-    bool ok;
-    QFont f = QFontDialog::getFont(&ok, fontSampleLabel->font(), this, tr("Select Terminal Font"));
-    if (ok && QFontInfo(f).fixedPitch())
+    FontDialog dia(fontSampleLabel->font());
+    if (!dia.exec())
+        return;
+    QFont f = dia.getFont();
+    if (QFontInfo(f).fixedPitch())
         setFontSample(f);
 }
 

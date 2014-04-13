@@ -9,6 +9,7 @@ set( QTERM_SRC
     properties.cpp
     propertiesdialog.cpp
     bookmarkswidget.cpp
+    fontdialog.cpp
 )
 
 set( QTERM_MOC_SRC
@@ -18,6 +19,7 @@ set( QTERM_MOC_SRC
     termwidgetholder.h
     propertiesdialog.h
     bookmarkswidget.h
+    fontdialog.h
 )
 
 if (NOT QXT_FOUND)
@@ -37,6 +39,7 @@ set( QTERM_UI_SRC
     forms/qterminal.ui
     forms/propertiesdialog.ui
     forms/bookmarkswidget.ui
+    forms/fontdialog.ui
 )
 
 set( QTERM_RCC_SRC
