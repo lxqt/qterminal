@@ -41,14 +41,21 @@ MainWindow::MainWindow(const QString& work_dir,
       m_initShell(command),
       m_initWorkDir(work_dir),
       m_dropLockButton(0),
-      m_dropMode(dropMode),
-      m_bookmarksDock(0)
+      m_dropMode(dropMode)
 {
     setupUi(this);
+    m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
+    BookmarksWidget *bookmarksWidget = new BookmarksWidget(m_bookmarksDock);
+    m_bookmarksDock->setWidget(bookmarksWidget);
+    addDockWidget(Qt::LeftDockWidgetArea, m_bookmarksDock);
+    connect(bookmarksWidget, SIGNAL(callCommand(QString)),
+            this, SLOT(bookmarksWidget_callCommand(QString)));
    
     migrate_settings();
 
     Properties::Instance()->loadSettings();
+    connect(m_bookmarksDock, SIGNAL(visibilityChanged(bool)),
+            this, SLOT(bookmarksDock_visibilityChanged(bool)));
 
     connect(actAbout, SIGNAL(triggered()), SLOT(actAbout_triggered()));
     connect(actAboutQt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
@@ -501,18 +508,10 @@ void MainWindow::propertiesChanged()
 
     m_menuBar->setVisible(Properties::Instance()->menuVisible);
 
-    if (Properties::Instance()->useBookmarks && !m_bookmarksDock)
+    if (Properties::Instance()->useBookmarks)
     {
-        m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
-        BookmarksWidget *bookmarksWidget = new BookmarksWidget(m_bookmarksDock);
-        m_bookmarksDock->setWidget(bookmarksWidget);
-        addDockWidget(Qt::LeftDockWidgetArea, m_bookmarksDock);
-        connect(bookmarksWidget, SIGNAL(callCommand(QString)),
-                this, SLOT(bookmarksWidget_callCommand(QString)));
-    }
-    if (m_bookmarksDock)
-    {
-        m_bookmarksDock->setVisible(Properties::Instance()->useBookmarks);
+        m_bookmarksDock->setVisible(Properties::Instance()->useBookmarks
+                                    && Properties::Instance()->bookmarksVisible);
         qobject_cast<BookmarksWidget*>(m_bookmarksDock->widget())->setup();
     }
 
@@ -598,6 +597,10 @@ void MainWindow::newTerminalWindow()
 
 void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
 {
-    qDebug() << "SENDING" << cmd;
     consoleTabulator->terminalHolder()->currentTerminal()->impl()->sendText(cmd);
+}
+
+void MainWindow::bookmarksDock_visibilityChanged(bool visible)
+{
+    Properties::Instance()->bookmarksVisible = visible;
 }

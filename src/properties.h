@@ -53,6 +53,7 @@ class Properties
         bool useCWD;
 
         bool useBookmarks;
+        bool bookmarksVisible;
         QString bookmarksFile;
 
         QKeySequence dropShortCut;

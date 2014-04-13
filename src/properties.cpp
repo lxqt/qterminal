@@ -99,6 +99,7 @@ void Properties::loadSettings()
 
     // bookmarks
     useBookmarks = settings.value("UseBookmarks", false).toBool();
+    bookmarksVisible = settings.value("BookmarksVisible", true).toBool();
     bookmarksFile = settings.value("BookmarksFile", QFileInfo(settings.fileName()).canonicalPath()+"/qterminal_bookmarks.xml").toString();
 
     settings.beginGroup("DropMode");
@@ -164,6 +165,7 @@ void Properties::saveSettings()
 
     // bookmarks
     settings.setValue("UseBookmarks", useBookmarks);
+    settings.setValue("BookmarksVisible", bookmarksVisible);
     settings.setValue("BookmarksFile", bookmarksFile);
 
     settings.beginGroup("DropMode");

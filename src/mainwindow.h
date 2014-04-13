@@ -57,6 +57,7 @@ protected slots:
 
     void newTerminalWindow();
     void bookmarksWidget_callCommand(const QString&);
+    void bookmarksDock_visibilityChanged(bool visible);
 
 protected:
      bool event(QEvent* event);
