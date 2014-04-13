@@ -46,7 +46,7 @@
 #define MOVE_RIGHT "Move Tab Right"
 
 #define COPY_SELECTION "Copy Selection"
-#define PASTE_CLIPBOARD "Paste Clipboard"  
+#define PASTE_CLIPBOARD "Paste Clipboard"
 #define PASTE_SELECTION "Paste Selection"
 
 #define ZOOM_IN "Zoom in"
@@ -62,6 +62,7 @@
 
 #define DEFAULT_WIDTH                  800
 #define DEFAULT_HEIGHT                 600
+#define DEFAULT_FONT                   "Monospace"
 
 // ACTIONS
 #define CLEAR_TERMINAL_SHORTCUT        "Ctrl+Shift+X"
