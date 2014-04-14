@@ -44,16 +44,16 @@ MainWindow::MainWindow(const QString& work_dir,
       m_dropMode(dropMode)
 {
     setupUi(this);
+    Properties::Instance()->loadSettings();
+    migrate_settings();
+
     m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
     BookmarksWidget *bookmarksWidget = new BookmarksWidget(m_bookmarksDock);
     m_bookmarksDock->setWidget(bookmarksWidget);
     addDockWidget(Qt::LeftDockWidgetArea, m_bookmarksDock);
     connect(bookmarksWidget, SIGNAL(callCommand(QString)),
             this, SLOT(bookmarksWidget_callCommand(QString)));
-   
-    migrate_settings();
 
-    Properties::Instance()->loadSettings();
     connect(m_bookmarksDock, SIGNAL(visibilityChanged(bool)),
             this, SLOT(bookmarksDock_visibilityChanged(bool)));
 
@@ -508,10 +508,12 @@ void MainWindow::propertiesChanged()
 
     m_menuBar->setVisible(Properties::Instance()->menuVisible);
 
+    m_bookmarksDock->setVisible(Properties::Instance()->useBookmarks
+                                && Properties::Instance()->bookmarksVisible);
+    m_bookmarksDock->toggleViewAction()->setVisible(Properties::Instance()->useBookmarks);
+
     if (Properties::Instance()->useBookmarks)
     {
-        m_bookmarksDock->setVisible(Properties::Instance()->useBookmarks
-                                    && Properties::Instance()->bookmarksVisible);
         qobject_cast<BookmarksWidget*>(m_bookmarksDock->widget())->setup();
     }
 
