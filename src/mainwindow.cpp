@@ -157,6 +157,7 @@ void MainWindow::setup_ActionsMenu_Actions()
     Properties::Instance()->actions[CLEAR_TERMINAL]->setShortcut(seq);
     connect(Properties::Instance()->actions[CLEAR_TERMINAL], SIGNAL(triggered()), consoleTabulator, SLOT(clearActiveTerminal()));
     menu_Actions->addAction(Properties::Instance()->actions[CLEAR_TERMINAL]);
+    addAction(Properties::Instance()->actions[CLEAR_TERMINAL]);
 
     menu_Actions->addSeparator();
 
@@ -165,57 +166,65 @@ void MainWindow::setup_ActionsMenu_Actions()
     Properties::Instance()->actions[TAB_NEXT]->setShortcut(seq);
     connect(Properties::Instance()->actions[TAB_NEXT], SIGNAL(triggered()), consoleTabulator, SLOT(switchToRight()));
     menu_Actions->addAction(Properties::Instance()->actions[TAB_NEXT]);
+    addAction(Properties::Instance()->actions[TAB_NEXT]);
 
     Properties::Instance()->actions[TAB_PREV] = new QAction(tr("Previous Tab"), this);
     seq = QKeySequence::fromString( settings.value(TAB_PREV, TAB_PREV_SHORTCUT).toString() );
     Properties::Instance()->actions[TAB_PREV]->setShortcut(seq);
     connect(Properties::Instance()->actions[TAB_PREV], SIGNAL(triggered()), consoleTabulator, SLOT(switchToLeft()));
     menu_Actions->addAction(Properties::Instance()->actions[TAB_PREV]);
+    addAction(Properties::Instance()->actions[TAB_PREV]);
 
     Properties::Instance()->actions[MOVE_LEFT] = new QAction(tr("Move Tab Left"), this);
     seq = QKeySequence::fromString( settings.value(MOVE_LEFT, MOVE_LEFT_SHORTCUT).toString() );
     Properties::Instance()->actions[MOVE_LEFT]->setShortcut(seq);
     connect(Properties::Instance()->actions[MOVE_LEFT], SIGNAL(triggered()), consoleTabulator, SLOT(moveLeft()));
     menu_Actions->addAction(Properties::Instance()->actions[MOVE_LEFT]);
+    addAction(Properties::Instance()->actions[MOVE_LEFT]);
 
     Properties::Instance()->actions[MOVE_RIGHT] = new QAction(tr("Move Tab Right"), this);
     seq = QKeySequence::fromString( settings.value(MOVE_RIGHT, MOVE_RIGHT_SHORTCUT).toString() );
     Properties::Instance()->actions[MOVE_RIGHT]->setShortcut(seq);
     connect(Properties::Instance()->actions[MOVE_RIGHT], SIGNAL(triggered()), consoleTabulator, SLOT(moveRight()));
     menu_Actions->addAction(Properties::Instance()->actions[MOVE_RIGHT]);
+    addAction(Properties::Instance()->actions[MOVE_RIGHT]);
 
     menu_Actions->addSeparator();
-
 
     Properties::Instance()->actions[SPLIT_HORIZONTAL] = new QAction(tr("Split Terminal Horizontally"), this);
     seq = QKeySequence::fromString( settings.value(SPLIT_HORIZONTAL).toString() );
     Properties::Instance()->actions[SPLIT_HORIZONTAL]->setShortcut(seq);
     connect(Properties::Instance()->actions[SPLIT_HORIZONTAL], SIGNAL(triggered()), consoleTabulator, SLOT(splitHorizontally()));
     menu_Actions->addAction(Properties::Instance()->actions[SPLIT_HORIZONTAL]);
+    addAction(Properties::Instance()->actions[SPLIT_HORIZONTAL]);
 
     Properties::Instance()->actions[SPLIT_VERTICAL] = new QAction(tr("Split Terminal Vertically"), this);
     seq = QKeySequence::fromString( settings.value(SPLIT_VERTICAL).toString() );
     Properties::Instance()->actions[SPLIT_VERTICAL]->setShortcut(seq);
     connect(Properties::Instance()->actions[SPLIT_VERTICAL], SIGNAL(triggered()), consoleTabulator, SLOT(splitVertically()));
     menu_Actions->addAction(Properties::Instance()->actions[SPLIT_VERTICAL]);
+    addAction(Properties::Instance()->actions[SPLIT_VERTICAL]);
 
     Properties::Instance()->actions[SUB_COLLAPSE] = new QAction(tr("Collapse Subterminal"), this);
     seq = QKeySequence::fromString( settings.value(SUB_COLLAPSE).toString() );
     Properties::Instance()->actions[SUB_COLLAPSE]->setShortcut(seq);
     connect(Properties::Instance()->actions[SUB_COLLAPSE], SIGNAL(triggered()), consoleTabulator, SLOT(splitCollapse()));
     menu_Actions->addAction(Properties::Instance()->actions[SUB_COLLAPSE]);
+    addAction(Properties::Instance()->actions[SUB_COLLAPSE]);
 
     Properties::Instance()->actions[SUB_NEXT] = new QAction(tr("Next Subterminal"), this);
     seq = QKeySequence::fromString( settings.value(SUB_NEXT, SUB_NEXT_SHORTCUT).toString() );
     Properties::Instance()->actions[SUB_NEXT]->setShortcut(seq);
     connect(Properties::Instance()->actions[SUB_NEXT], SIGNAL(triggered()), consoleTabulator, SLOT(switchNextSubterminal()));
     menu_Actions->addAction(Properties::Instance()->actions[SUB_NEXT]);
+    addAction(Properties::Instance()->actions[SUB_NEXT]);
 
     Properties::Instance()->actions[SUB_PREV] = new QAction(tr("Previous Subterminal"), this);
     seq = QKeySequence::fromString( settings.value(SUB_PREV, SUB_PREV_SHORTCUT).toString() );
     Properties::Instance()->actions[SUB_PREV]->setShortcut(seq);
     connect(Properties::Instance()->actions[SUB_PREV], SIGNAL(triggered()), consoleTabulator, SLOT(switchPrevSubterminal()));
     menu_Actions->addAction(Properties::Instance()->actions[SUB_PREV]);
+    addAction(Properties::Instance()->actions[SUB_PREV]);
 
     menu_Actions->addSeparator();
 
@@ -251,6 +260,7 @@ void MainWindow::setup_ActionsMenu_Actions()
     Properties::Instance()->actions[FIND]->setShortcut(seq);
     connect(Properties::Instance()->actions[FIND], SIGNAL(triggered()), this, SLOT(find()));
     menu_Actions->addAction(Properties::Instance()->actions[FIND]);
+    addAction(Properties::Instance()->actions[FIND]);
 
 #if 0
     act = new QAction(this);
@@ -297,18 +307,21 @@ void MainWindow::setup_FileMenu_Actions()
     Properties::Instance()->actions[ADD_TAB]->setShortcut(seq);
     connect(Properties::Instance()->actions[ADD_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
     menu_File->addAction(Properties::Instance()->actions[ADD_TAB]);
+    addAction(Properties::Instance()->actions[ADD_TAB]);
 
     Properties::Instance()->actions[CLOSE_TAB] = new QAction(QIcon(":/icons/list-remove.png"), tr("Close Tab"), this);
     seq = QKeySequence::fromString( settings.value(CLOSE_TAB, CLOSE_TAB_SHORTCUT).toString() );
     Properties::Instance()->actions[CLOSE_TAB]->setShortcut(seq);
     connect(Properties::Instance()->actions[CLOSE_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
     menu_File->addAction(Properties::Instance()->actions[CLOSE_TAB]);
+    addAction(Properties::Instance()->actions[CLOSE_TAB]);
 
     Properties::Instance()->actions[NEW_WINDOW] = new QAction(tr("New Window"), this);
     seq = QKeySequence::fromString( settings.value(NEW_WINDOW, NEW_WINDOW_SHORTCUT).toString() );
     Properties::Instance()->actions[NEW_WINDOW]->setShortcut(seq);
     connect(Properties::Instance()->actions[NEW_WINDOW], SIGNAL(triggered()), this, SLOT(newTerminalWindow()));
     menu_File->addAction(Properties::Instance()->actions[NEW_WINDOW]);
+    addAction(Properties::Instance()->actions[NEW_WINDOW]);
     
     menu_File->addSeparator();
  
