@@ -613,6 +613,7 @@ void MainWindow::newTerminalWindow()
 void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
 {
     consoleTabulator->terminalHolder()->currentTerminal()->impl()->sendText(cmd);
+    consoleTabulator->terminalHolder()->currentTerminal()->setFocus();
 }
 
 void MainWindow::bookmarksDock_visibilityChanged(bool visible)
