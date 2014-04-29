@@ -42,6 +42,7 @@ class Properties
 
         int scrollBarPos;
         int tabsPos;
+        bool alwaysShowTabs;
         int m_motionAfterPaste;
 
         bool borderless;

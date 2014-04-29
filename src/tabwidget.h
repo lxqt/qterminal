@@ -90,6 +90,7 @@ private:
     QString work_dir;
     /* re-order naming of the tabs then removeCurrentTab() */
     void renameTabsAfterRemove();
+    void showHideTabBar();
 };
 
 #endif

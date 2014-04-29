@@ -85,6 +85,9 @@ int TabWidget::addNewTab(const QString & shell_program)
     recountIndexes();
     setCurrentIndex(index);
     console->setInitialFocus();
+
+    showHideTabBar();
+
     return index;
 }
 
@@ -203,6 +206,7 @@ void TabWidget::removeTab(int index)
         emit closeTabNotification();
 
     renameTabsAfterRemove();
+    showHideTabBar();
 }
 
 void TabWidget::removeCurrentTab()
@@ -322,6 +326,7 @@ void TabWidget::propertiesChanged()
         TermWidgetHolder *console = static_cast<TermWidgetHolder*>(widget(i));
         console->propertiesChanged();
     }
+    showHideTabBar();
 }
 
 void TabWidget::clearActiveTerminal()
@@ -338,4 +343,12 @@ void TabWidget::saveSession()
 void TabWidget::loadSession()
 {
     reinterpret_cast<TermWidgetHolder*>(widget(currentIndex()))->loadSession();
+}
+
+void TabWidget::showHideTabBar()
+{
+    if (!Properties::Instance()->alwaysShowTabs)
+        tabBar()->setVisible(count() > 1);
+    else
+        tabBar()->setVisible(true);
 }
