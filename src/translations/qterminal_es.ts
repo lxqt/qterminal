@@ -415,7 +415,7 @@
         <location filename="../forms/propertiesdialog.ui" line="236"/>
         <location filename="../ui_propertiesdialog.h" line="547"/>
         <source>&amp;Application Transparency:</source>
-        <translation>&amp;Прозрачность приложения:</translation>
+        <translation>&amp;Transparencia de aplicación:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="202"/>
