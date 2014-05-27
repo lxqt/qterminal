@@ -1,4 +1,8 @@
-#include <QtGui>
+#if QT_VERSION < 0x050000
+#include <QDesktopServices>
+#else
+#include <QStandardPaths>
+#endif
 
 #include <QDebug>
 
@@ -92,6 +96,7 @@ public:
     BookmarkLocalGroupItem(AbstractBookmarkItem *parent)
         : BookmarkGroupItem(QObject::tr("Local Bookmarks"), parent)
     {
+#if QT_VERSION < 0x050000
         QList<QDesktopServices::StandardLocation> locations;
         locations << QDesktopServices::DesktopLocation
                   << QDesktopServices::DocumentsLocation
@@ -123,6 +128,37 @@ public:
 
             addChild(new BookmarkCommandItem(name, cmd, this));
         }
+#else
+        QList<QStandardPaths::StandardLocation> locations;
+        locations << QStandardPaths::DesktopLocation
+                  << QStandardPaths::DocumentsLocation
+                  << QStandardPaths::TempLocation
+                  << QStandardPaths::HomeLocation
+                  << QStandardPaths::MusicLocation
+                  << QStandardPaths::PicturesLocation;
+
+        QString path;
+        QString name;
+        QString cmd;
+        QDir d;
+
+        // standard $HOME subdirs
+        foreach (QStandardPaths::StandardLocation i, locations)
+        {
+            path = QStandardPaths::writableLocation(i);
+            if (!d.exists(path))
+            {
+                //qDebug() << "Dir:" << path << "does not exist. Skipping.";
+                continue;
+            }
+            name = QStandardPaths::displayName(i);
+
+            path.replace(" ", "\\ ");
+            cmd = "cd " + path;
+
+            addChild(new BookmarkCommandItem(name, cmd, this));
+        }
+#endif
 
         // system env - include dirs in the tree
         QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
@@ -238,7 +274,8 @@ void BookmarksModel::setup()
     m_root = new BookmarkRootItem();
     m_root->addChild(new BookmarkLocalGroupItem(m_root));
     m_root->addChild(new BookmarkFileGroupItem(m_root, Properties::Instance()->bookmarksFile));
-    reset();
+    beginResetModel();
+    endResetModel();
 }
 
 BookmarksModel::~BookmarksModel()
@@ -374,7 +411,6 @@ void BookmarksWidget::setup()
 
 void BookmarksWidget::handleCommand(const QModelIndex& index)
 {
-    qDebug() << "HCMD";
     AbstractBookmarkItem *item = static_cast<AbstractBookmarkItem*>(index.internalPointer());
     if (!item && item->type() != AbstractBookmarkItem::Command)
         return;

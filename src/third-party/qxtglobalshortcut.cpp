@@ -33,27 +33,43 @@
 #include <QAbstractEventDispatcher>
 #include <QtDebug>
 
-bool QxtGlobalShortcutPrivate::error = false;
-#ifndef Q_WS_MAC
+#ifndef Q_OS_MAC
 int QxtGlobalShortcutPrivate::ref = 0;
+#   if QT_VERSION < QT_VERSION_CHECK(5,0,0)
 QAbstractEventDispatcher::EventFilter QxtGlobalShortcutPrivate::prevEventFilter = 0;
-#endif // Q_WS_MAC
+#   endif
+#endif // Q_OS_MAC
 QHash<QPair<quint32, quint32>, QxtGlobalShortcut*> QxtGlobalShortcutPrivate::shortcuts;
 
 QxtGlobalShortcutPrivate::QxtGlobalShortcutPrivate() : enabled(true), key(Qt::Key(0)), mods(Qt::NoModifier)
 {
-#ifndef Q_WS_MAC
-    if (!ref++)
+#ifndef Q_OS_MAC
+    if (ref == 0) {
+#   if QT_VERSION < QT_VERSION_CHECK(5,0,0)
         prevEventFilter = QAbstractEventDispatcher::instance()->setEventFilter(eventFilter);
-#endif // Q_WS_MAC
+#   else
+        QAbstractEventDispatcher::instance()->installNativeEventFilter(this);
+#endif
+    }
+    ++ref;
+#endif // Q_OS_MAC
 }
 
 QxtGlobalShortcutPrivate::~QxtGlobalShortcutPrivate()
 {
-#ifndef Q_WS_MAC
-    if (!--ref)
-        QAbstractEventDispatcher::instance()->setEventFilter(prevEventFilter);
-#endif // Q_WS_MAC
+#ifndef Q_OS_MAC
+    --ref;
+    if (ref == 0) {
+        QAbstractEventDispatcher *ed = QAbstractEventDispatcher::instance();
+        if (ed != 0) {
+#   if QT_VERSION < QT_VERSION_CHECK(5,0,0)
+            ed->setEventFilter(prevEventFilter);
+#   else
+            ed->removeNativeEventFilter(this);
+#   endif
+        }
+    }
+#endif // Q_OS_MAC
 }
 
 bool QxtGlobalShortcutPrivate::setShortcut(const QKeySequence& shortcut)
@@ -96,7 +112,7 @@ void QxtGlobalShortcutPrivate::activateShortcut(quint32 nativeKey, quint32 nativ
 
 /*!
     \class QxtGlobalShortcut
-    \inmodule QxtGui
+    \inmodule QxtWidgets
     \brief The QxtGlobalShortcut class provides a global shortcut aka "hotkey".
 
     A global shortcut triggers even if the application is not active. This

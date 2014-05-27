@@ -1,47 +1,39 @@
-cmake_minimum_required( VERSION 2.6 )
+cmake_minimum_required( VERSION 2.8 )
 
 project( qterminal )
 
 option(USE_SYSTEM_QXT "Use system Qxt Library for global shortcuts" ON)
+option(USE_QT5        "Build using Qt5. Default OFF." OFF)
 
+set(STR_VERSION "0.5.0")
 
-# where to look first for cmake modules, before ${CMAKE_ROOT}/Modules/ is checked
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake )
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/modules )
 
+if (USE_QT5 AND USE_SYSTEM_QXT)
+    message(FATAL_ERROR "Unable to use system qxt with qt5 now")
+endif (USE_QT5 AND USE_SYSTEM_QXT)
 
-IF (NOT LIB_SUFFIX)
-    MESSAGE(STATUS "")
-    MESSAGE(STATUS "LIB_SUFFIX variable is not defined. It will be autodetected now.")
-    MESSAGE(STATUS "You can set it manually with -DLIB_SUFFIX=<value> (64 for example)")
-    IF (NOT APPLE)
-        # check 64 bit
-        if (CMAKE_SIZEOF_VOID_P EQUAL 4)
-            SET (LIB_SUFFIX "")
-        else (CMAKE_SIZEOF_VOID_P EQUAL 4)
-            set (LIB_SUFFIX "64")
-            MESSAGE(STATUS "   LIB_SUFFIX is set to '${LIB_SUFFIX}'")
-        endif (CMAKE_SIZEOF_VOID_P EQUAL 4)
-    ELSE (NOT APPLE)
-        message(STATUS "LIB_SUFFIX is disabled for APPLE: ${CMAKE_SYSTEM_NAME}")
-        SET (LIB_SUFFIX "")
-    ENDIF (NOT APPLE)
-    # BSD does not use lib64 for 64bit libs
-    IF (${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD" OR ${CMAKE_SYSTEM_NAME} MATCHES "OpenBSD")
-        message(STATUS "LIB_SUFFIX is disabled for *BSD: ${CMAKE_SYSTEM_NAME}")
-        SET (LIB_SUFFIX "")
-    ENDIF()
-    #
-    MESSAGE(STATUS "")
-ENDIF (NOT LIB_SUFFIX)
+if (USE_QT5)
+    find_package(Qt5Widgets REQUIRED)
+    message(STATUS "Qt5 version: TODO/FIXME")
+    #include_directories(${Qt5Widgets_INCLUDE_DIRS})
+    #add_definitions(${Qt5Core_DEFINITIONS})
+    #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
+    #set(QTERMINAL_QT_LIBRARIES ${Qt5Widgets_LIBRARIES})
 
+    find_package ( QTermWidget5 REQUIRED )
+else (USE_QT5)
+    #find_package(Qt4 REQUIRED)
+    #message(STATUS "Qt4 version: ${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}")
+    #include(${QT_USE_FILE})
+    #add_definitions ( ${QT_DEFINITIONS} )
+    #set(QTERMINAL_QT_LIBRARIES ${QT_LIBRARIES})
 
-find_package( Qt4 COMPONENTS QtCore QtGui REQUIRED)
-MESSAGE(STATUS "Qt4 version: ${QT_VERSION_MAJOR}.${QT_VERSION_MINOR}.${QT_VERSION_PATCH}")
-add_definitions ( ${QT_DEFINITIONS} )
-include_directories( ${QT_INCLUDES} )
-INCLUDE( ${QT_USE_FILE} )
-MESSAGE(STATUS "Qt4 libs: ${QT_LIBRARIES}")
+    find_package ( QTermWidget4 REQUIRED )
+endif (USE_QT5)
 
+include(${QTERMWIDGET_USE_FILE})
 
 if (USE_SYSTEM_QXT)
     message(STATUS "Using system Qxt...")
@@ -57,42 +49,207 @@ else (USE_SYSTEM_QXT)
 endif (USE_SYSTEM_QXT)
 
 
-find_package ( QTermWidget4 REQUIRED )
-include(${QTERMWIDGET_USE_FILE})
-
-
 if (APPLE)
-   FIND_LIBRARY(CARBON_LIBRARY Carbon REQUIRED)
-   MESSAGE(STATUS "CARBON_LIBRARY: ${CARBON_LIBRARY}")
+   find_library(CARBON_LIBRARY Carbon REQUIRED)
+   message(STATUS "CARBON_LIBRARY: ${CARBON_LIBRARY}")
 elseif (UNIX)
-   FIND_PACKAGE(X11 REQUIRED)
-   MESSAGE(STATUS "X11_X11_LIB: ${X11_X11_LIB}")
+   find_package(X11 REQUIRED)
+   message(STATUS "X11_X11_LIB: ${X11_X11_LIB}")
 endif ()
 
-set(STR_VERSION "0.4.0")
 add_definitions(-DSTR_VERSION=\"${STR_VERSION}\")
 
-# a helper for macosx to build 32/64 bit universals
-IF (WANT_UNIVERSAL)
-    SET (CMAKE_OSX_ARCHITECTURES "i386;x86_64;")
-    MESSAGE(STATUS "Archs builds: ${CMAKE_OSX_ARCHITECTURES}")
-ENDIF (WANT_UNIVERSAL)
 
-subdirs( src )
+set( EXE_NAME qterminal )
+
+set( QTERM_SRC
+    src/main.cpp
+    src/mainwindow.cpp
+    src/tabwidget.cpp
+    src/termwidget.cpp
+    src/termwidgetholder.cpp
+    src/properties.cpp
+    src/propertiesdialog.cpp
+    src/bookmarkswidget.cpp
+    src/fontdialog.cpp
+)
+
+set( QTERM_MOC_SRC
+    src/mainwindow.h
+    src/tabwidget.h
+    src/termwidget.h
+    src/termwidgetholder.h
+    src/propertiesdialog.h
+    src/bookmarkswidget.h
+    src/fontdialog.h
+)
+
+if (NOT QXT_FOUND)
+    set (QTERM_SRC ${QTERM_SRC} src/third-party/qxtglobalshortcut.cpp )
+    set (QTERM_MOC_SRC ${QTERM_MOC_SRC} src/third-party/qxtglobalshortcut.h )
+
+    if(WIN32)
+        set(QTERM_SRC ${QTERM_SRC} src/third-party/qxtglobalshortcut_win.cpp )
+    elseif(APPLE)
+        set(QTERM_SRC ${QTERM_SRC} src/third-party/qxtglobalshortcut_mac.cpp )
+    else()
+        set(QTERM_SRC ${QTERM_SRC} src/third-party/qxtglobalshortcut_x11.cpp )
+    endif()
+endif (NOT QXT_FOUND)
+
+set( QTERM_UI_SRC
+    src/forms/qterminal.ui
+    src/forms/propertiesdialog.ui
+    src/forms/bookmarkswidget.ui
+    src/forms/fontdialog.ui
+)
+
+set( QTERM_RCC_SRC
+    src/icons.qrc
+)
+
+set( QTERM_TS
+    src/translations/qterminal_cs.ts
+    src/translations/qterminal_it.ts
+    src/translations/qterminal_ru.ts
+)
+
+if (USE_QT5)
+    qt5_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
+    qt5_wrap_cpp( QTERM_MOC ${QTERM_MOC_SRC} )
+    qt5_add_resources( QTERM_RCC ${QTERM_RCC_SRC} )
+    #qt5_add_translation( QTERM_QM ${QTERM_TS} )
+    # bundled qt5 version of libqxt requires private headers (as for 2014-05-27)
+    if (NOT USE_SYSTEM_QXT)
+        include_directories(${Qt5Gui_PRIVATE_INCLUDE_DIRS})
+    endif (NOT USE_SYSTEM_QXT)
+else (USE_QT5)
+    qt4_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
+    qt4_wrap_cpp( QTERM_MOC ${QTERM_MOC_SRC} )
+    qt4_add_resources( QTERM_RCC ${QTERM_RCC_SRC} )
+    qt4_add_translation( QTERM_QM ${QTERM_TS} )
+endif (USE_QT5)
+
+include_directories (
+    ${CMAKE_SOURCE_DIR}
+    ${CMAKE_SOURCE_DIR}/src
+    ${CMAKE_BINARY_DIR}
+    ${QTERMWIDGET_INCLUDE_DIRS}
+    ${QXT_INCLUDE_DIRS}
+)
+if (X11_FOUND)
+    include_directories(${X11_INCLUDE_DIR})
+endif (X11_FOUND)
+
+
+if (APPLEBUNDLE)
+    add_definitions(-DAPPLE_BUNDLE)
+else()
+    set(TRANSLATIONS_DIR "${CMAKE_INSTALL_PREFIX}/share/qterminal/translations")
+    add_definitions(-DTRANSLATIONS_DIR=\"${TRANSLATIONS_DIR}\")
+endif()
+
+# TODO/FIXME: apple bundle
+set(GUI_TYPE "")
+set(APPLE_BUNDLE_SOURCES "")
+if (APPLEBUNDLE)
+    set(GUI_TYPE MACOSX_BUNDLE)
+
+    # create Info.plist file
+    set(MACOSX_BUNDLE_ICON_FILE qterminal.icns)
+    set(MACOSX_BUNDLE_INFO_STRING "QTerminal ${STR_VERSION}")
+    set(MACOSX_BUNDLE_GUI_IDENTIFIER "com.qterminal")
+    set(MACOSX_BUNDLE_LONG_VERSION_STRING "${STR_VERSION}")
+    set(MACOSX_BUNDLE_BUNDLE_NAME "${EXE_NAME}")
+    set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${STR_VERSION}")
+    set(MACOSX_BUNDLE_BUNDLE_VERSION "${STR_VERSION}")
+    set(MACOSX_BUNDLE_COPYRIGHT "(c) Petr Vanek &lt;petr@yarpen.cz&gt;")
+
+    set_source_files_properties(${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns
+                                PROPERTIES MACOSX_PACKAGE_LOCATION Resources)
+    # use icon for app bundle to be visible in finder
+    set(APPLE_BUNDLE_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns)
+
+endif (APPLEBUNDLE)
+
+add_executable( ${EXE_NAME} ${GUI_TYPE}
+    ${QTERM_SRC}
+    ${QTERM_UI}
+    ${QTERM_MOC}
+    ${QTERM_RCC}
+    ${APPLE_BUNDLE_SOURCES}
+    ${QTERM_QM}
+)
+target_link_libraries( ${EXE_NAME}
+    ${QTERMWIDGET_QT_LIBRARIES}
+    ${QTERMWIDGET_LIBRARIES}
+    util
+)
+if (QXT_FOUND)
+    target_link_libraries(${EXE_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
+endif (QXT_FOUND)
+
+if (APPLE)
+    target_link_libraries(${EXE_NAME} ${CARBON_LIBRARY})
+endif (APPLE)
+if (X11_FOUND)
+    target_link_libraries(${EXE_NAME} ${X11_X11_LIB})
+endif (X11_FOUND)
 
 
 install(FILES qterminal.desktop DESTINATION share/applications)
 install(FILES qterminal_drop.desktop DESTINATION share/applications)
 
 
+if (NOT APPLEBUNDLE)
+
+    install(TARGETS ${EXE_NAME} RUNTIME DESTINATION bin)
+    install(FILES ${QTERM_QM} DESTINATION ${TRANSLATIONS_DIR})
+    install( FILES icons/qterminal.png DESTINATION share/pixmaps)
+
+else (NOT APPLEBUNDLE)
+    message(STATUS "APPLEBUNDLE")
+
+    install(CODE "message(STATUS \"Cleaning previously installed bundle (rm -r)\")")
+    install(CODE "execute_process(COMMAND rm -r ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app)")
+
+    install( TARGETS ${EXE_NAME} DESTINATION "${CMAKE_INSTALL_PREFIX}" )
+
+    # helper stuff to create real apple bundle.
+    # Black magic is summoned here...
+    if (APPLEBUNDLE_STANDALONE)
+        message(STATUS "APPLEBUNDLE_STANDALONE")
+        configure_file(${CMAKE_SOURCE_DIR}/bundle.cmake.in ${CMAKE_CURRENT_BINARY_DIR}/bundle.cmake @ONLY)
+        install(SCRIPT ${CMAKE_SOURCE_DIR}/bundle.cmake)
+    endif (APPLEBUNDLE_STANDALONE)
+
+    # bundle required keytabs from the qtermwidget package as well
+    install(CODE "message(STATUS \"Bundling (cp) keytab files from ${QTERMWIDGET_SHARE}/qtermwidget/\")")
+    install(CODE "execute_process(COMMAND cp -r ${QTERMWIDGET_SHARE}/qtermwidget/ ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/Resources)")
+    #install(CODE "execute_process(COMMAND ls -l ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/Resources/kb-layouts/)")
+
+    install(FILES ${QTERM_QM} DESTINATION ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/translations)
+
+endif (NOT APPLEBUNDLE)
+
+
+
+# make lupdate
+# it generates new translation files
+add_custom_target(lupdate
+    ${QT_QMAKE_EXECUTABLE} -project -o ${CMAKE_CURRENT_BINARY_DIR}/qterminal.pro
+    COMMAND ${QT_LUPDATE_EXECUTABLE} ${CMAKE_CURRENT_BINARY_DIR}/qterminal.pro
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+)
+
 # make dist custom target
-SET(CPACK_PACKAGE_NAME "qterminal")
-SET(CPACK_PACKAGE_VERSION ${STR_VERSION})
-SET(CPACK_SOURCE_GENERATOR "TGZ;TBZ2")
-SET(CPACK_SOURCE_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}")
-SET(CPACK_IGNORE_FILES "/CVS/;/\\\\.svn/;/\\\\.git/;\\\\.swp$;\\\\.#;/#;\\\\.tar.gz$;/CMakeFiles/;CMakeCache.txt;\\\\.qm$;/build/;\\\\.diff$;.DS_Store'")
-SET(CPACK_SOURCE_IGNORE_FILES ${CPACK_IGNORE_FILES})
-INCLUDE(CPack)
+set(CPACK_PACKAGE_NAME "qterminal")
+set(CPACK_PACKAGE_VERSION ${STR_VERSION})
+set(CPACK_SOURCE_GENERATOR "TGZ;TBZ2")
+set(CPACK_SOURCE_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}")
+set(CPACK_IGNORE_FILES "/CVS/;/\\\\.svn/;/\\\\.git/;\\\\.swp$;\\\\.#;/#;\\\\.tar.gz$;/CMakeFiles/;CMakeCache.txt;\\\\.qm$;/build/;\\\\.diff$;.DS_Store'")
+set(CPACK_SOURCE_IGNORE_FILES ${CPACK_IGNORE_FILES})
+include(CPack)
 # simulate autotools' "make dist"
 add_custom_target(dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
 

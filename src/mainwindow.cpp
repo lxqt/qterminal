@@ -18,7 +18,10 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-#include <QtGui>
+#include <QDockWidget>
+#include <QDesktopWidget>
+#include <QToolButton>
+#include <QMessageBox>
 
 #include "mainwindow.h"
 #include "tabwidget.h"

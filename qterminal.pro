@@ -1,44 +1,32 @@
 TARGET = qterminal
 TEMPLATE = app
+# qt5 only. Please use cmake - it's an official build tool for this software
+QT += widgets
 
-LIBS += -lqtermwidget
-DEFINES += STR_VERSION=\\\"1.0\\\"
+CONFIG += link_pkgconfig
+PKGCONFIG += qtermwidget5
 
-SOURCES=	src/main.cpp			\
-		src/mainwindow.cpp		\
-		src/properties.cpp		\
-		src/propertiesdialog.cpp	\
-		src/tabwidget.cpp		\
-		src/termwidget.cpp		\
-                src/termwidgetholder.cpp
+DEFINES += STR_VERSION=\\\"0.5.0\\\"
 
-HEADERS=	src/config.h		\
-		src/mainwindow.h	\
-		src/propertiesdialog.h	\
-		src/properties.h	\
-		src/tabwidget.h		\
-		src/termwidget.h	\
-                src/termwidgetholder.h
+SOURCES += $$files(src/*.cpp)
+HEADERS += $$files(src/*.h)
 
-INCLUDEPATH+=	src
+INCLUDEPATH += src
 
-RESOURCES=	src/icons.qrc
-
-FORMS=	src/forms/propertiesdialog.ui \
-        src/forms/qterminal.ui
+RESOURCES += src/icons.qrc
+FORMS += $$files(src/forms/*.ui)
 
 unix {
-	isEmpty(PREFIX) {
-		PREFIX = /usr/local
-	}
-	BINDIR = $$PREFIX/bin
+    isEmpty(PREFIX) {
+        PREFIX = /usr/local
+    }
+    BINDIR = $$PREFIX/bin
 
-	INSTALLS += target shortcut
-	target.path = $$BINDIR
+    INSTALLS += target shortcut
+    target.path = $$BINDIR
 
-	DATADIR = $$PREFIX/share
-	shortcut.path = $$DATADIR/applications
-	shortcut.files = qterminal.desktop
-
+    DATADIR = $$PREFIX/share
+    shortcut.path = $$DATADIR/applications
+    shortcut.files = qterminal.desktop
 }
 
