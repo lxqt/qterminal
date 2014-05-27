@@ -7,15 +7,19 @@
 Properties * Properties::m_instance = 0;
 
 
-Properties * Properties::Instance()
+Properties * Properties::Instance(const QString& filename)
 {
     if (!m_instance)
-        m_instance = new Properties();
+        m_instance = new Properties(filename);
     return m_instance;
 }
 
-Properties::Properties()
+Properties::Properties(const QString& filename) : filename(filename)
 {
+    if (filename.isEmpty()) {
+        QSettings settings;
+        this->filename = settings.fileName();
+    }
     qDebug("Properties constructor called");
 }
 
@@ -38,7 +42,7 @@ QFont Properties::defaultFont()
 
 void Properties::loadSettings()
 {
-    QSettings settings;
+    QSettings settings(filename, QSettings::IniFormat);
 
     guiStyle = settings.value("guiStyle", QString()).toString();
     if (!guiStyle.isNull())
@@ -114,7 +118,7 @@ void Properties::loadSettings()
 
 void Properties::saveSettings()
 {
-    QSettings settings;
+    QSettings settings(filename, QSettings::IniFormat);
 
     settings.setValue("guiStyle", guiStyle);
     settings.setValue("colorScheme", colorScheme);
