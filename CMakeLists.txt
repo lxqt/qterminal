@@ -205,7 +205,7 @@ if (NOT APPLEBUNDLE)
 
     install(TARGETS ${EXE_NAME} RUNTIME DESTINATION bin)
     install(FILES ${QTERM_QM} DESTINATION ${TRANSLATIONS_DIR})
-    install( FILES icons/qterminal.png DESTINATION share/pixmaps)
+    install(FILES src/icons/qterminal.png DESTINATION share/pixmaps)
 
 else (NOT APPLEBUNDLE)
     message(STATUS "APPLEBUNDLE")
