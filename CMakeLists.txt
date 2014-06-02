@@ -110,6 +110,7 @@ set( QTERM_RCC_SRC
 
 set( QTERM_TS
     src/translations/qterminal_cs.ts
+    src/translations/qterminal_es.ts
     src/translations/qterminal_it.ts
     src/translations/qterminal_ru.ts
 )
