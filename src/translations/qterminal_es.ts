@@ -18,7 +18,11 @@
         <location filename="../ui_fontdialog.h" line="111"/>
         <location filename="../ui_fontdialog.h" line="115"/>
         <source>Select Terminal Font</source>
+<<<<<<< HEAD
         <translation>Seleccione fuente de la terminal</translation>
+=======
+        <translation>Selecciona fuente del terminal</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
@@ -88,12 +92,20 @@
     <message>
         <location filename="../mainwindow.cpp" line="88"/>
         <source>Rename Session</source>
+<<<<<<< HEAD
         <translation>Renombrar Sesión</translation>
+=======
+        <translation>Renombrar Session</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="144"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
+<<<<<<< HEAD
         <translation>Presione &quot;%1&quot; para ver la terminal.</translation>
+=======
+        <translation>Presiona &quot;%1&quot; para ver la terminal.</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="155"/>
@@ -153,12 +165,20 @@
     <message>
         <location filename="../mainwindow.cpp" line="271"/>
         <source>Save Session</source>
+<<<<<<< HEAD
         <translation>Guardar sesión</translation>
+=======
+        <translation>Guardar session</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="278"/>
         <source>Load Session</source>
+<<<<<<< HEAD
         <translation>Cargar sesión</translation>
+=======
+        <translation>Cargar session</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
@@ -367,7 +387,11 @@
         <location filename="../forms/propertiesdialog.ui" line="463"/>
         <location filename="../ui_propertiesdialog.h" line="566"/>
         <source>Width %:</source>
+<<<<<<< HEAD
         <translation>Anchura %:</translation>
+=======
+        <translation>Ancho %:</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
@@ -453,7 +477,11 @@
         <location filename="../forms/propertiesdialog.ui" line="296"/>
         <location filename="../ui_propertiesdialog.h" line="553"/>
         <source>Show Main Menu</source>
+<<<<<<< HEAD
         <translation>Mostrar menú principal</translation>
+=======
+        <translation>Mostrar menu principal</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="313"/>
@@ -556,25 +584,42 @@
     <message>
         <location filename="../tabwidget.cpp" line="148"/>
         <source>Close session</source>
+<<<<<<< HEAD
         <translation>Cerrar sesión</translation>
+=======
+        <translation>Cerrar session</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Rename session</source>
+<<<<<<< HEAD
         <translation>Renombrar sesión</translation>
+=======
+        <translation>Renombrar session</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
 </context>
 <context>
     <name>TermWidgetHolder</name>
     <message>
         <location filename="../termwidgetholder.cpp" line="46"/>
+<<<<<<< HEAD
         <source>Load Sesión</source>
         <translation>Cargar sesión</translation>
+=======
+        <source>Load Session</source>
+        <translation>Cargar session</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="47"/>
         <source>List of saved sessions:</source>
+<<<<<<< HEAD
         <translation>Lista de sesiones guardadas:</translation>
+=======
+        <translation>Lista de sessiones guardadas:</translation>
+>>>>>>> 8d90e437280fb191a1cad9caeed07d224d347b9e
     </message>
 </context>
 <context>
