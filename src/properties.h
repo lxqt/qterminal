@@ -16,7 +16,7 @@ typedef QMap<QString,QString> ShortcutMap;
 class Properties
 {
     public:
-        static Properties *Instance();
+        static Properties *Instance(const QString& filename = QString(""));
 
         QFont defaultFont();
         void saveSettings();
@@ -72,8 +72,9 @@ class Properties
 
         // Singleton handling
         static Properties *m_instance;
+        QString filename;
 
-        Properties();
+        explicit Properties(const QString& filename);
         Properties(const Properties &) {};
         ~Properties();
 

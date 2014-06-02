@@ -29,7 +29,7 @@
 
 #define out
 
-const char* const short_options = "vhw:e:d";
+const char* const short_options = "vhw:e:dp:";
 
 const struct option long_options[] = {
     {"version", 0, NULL, 'v'},
@@ -37,6 +37,7 @@ const struct option long_options[] = {
     {"workdir", 1, NULL, 'w'},
     {"execute", 1, NULL, 'e'},
     {"drop",    0, NULL, 'd'},
+    {"profile", 1, NULL, 'p'},
     {NULL,      0, NULL,  0}
 };
 
@@ -47,6 +48,7 @@ void print_usage_and_exit(int code)
     puts("  -d,  --drop               Start in \"dropdown mode\" (like Yakuake or Tilda)");
     puts("  -e,  --execute <command>  Execute command instead of shell");
     puts("  -h,  --help               Print this help");
+    puts("  -p,  --profile            Load qterminal with specific options");
     puts("  -v,  --version            Prints application version and exits");
     puts("  -w,  --workdir <dir>      Start session with specified work directory");
     puts("\nHomepage: <https://github.com/qterminal>");
@@ -85,6 +87,9 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
                 break;
             case 'd':
                 dropMode = true;
+                break;
+            case 'p':
+                Properties::Instance(QString(optarg));
                 break;
             case '?':
                 print_usage_and_exit(1);
