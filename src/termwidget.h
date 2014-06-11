@@ -36,6 +36,7 @@ class TermWidgetImpl : public QTermWidget
         void zoomIn();
         void zoomOut();
         void zoomReset();
+        void activateUrl(const QUrl& url);
 };
 
 
