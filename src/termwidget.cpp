@@ -1,6 +1,7 @@
 #include <QMenu>
 #include <QVBoxLayout>
 #include <QPainter>
+#include <QDesktopServices>
 
 #include "termwidget.h"
 #include "config.h"
@@ -103,6 +104,7 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
 
     updateShortcuts();
 
+    connect(this, SIGNAL(urlActivated(QUrl)), this, SLOT(activateUrl(const QUrl&)));
     //setKeyBindings("linux");
     startShellProgram();
 }
@@ -257,6 +259,10 @@ void TermWidgetImpl::zoomReset()
 void TermWidgetImpl::enableCollapse(bool enable)
 {
     actionMap[SUB_COLLAPSE]->setEnabled(enable);
+}
+
+void TermWidgetImpl::activateUrl(const QUrl & url) {
+    QDesktopServices::openUrl(url);
 }
 
 TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * parent)
