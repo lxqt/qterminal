@@ -238,22 +238,25 @@ void TermWidgetImpl::act_splitCollapse()
 void TermWidgetImpl::zoomIn()
 {
     emit QTermWidget::zoomIn();
-    Properties::Instance()->font = getTerminalFont();
-    Properties::Instance()->saveSettings();
+// note: do not save zoom here due the #74 Zoom reset option resets font back to Monospace
+//    Properties::Instance()->font = getTerminalFont();
+//    Properties::Instance()->saveSettings();
 }
 
 void TermWidgetImpl::zoomOut()
 {
     emit QTermWidget::zoomOut();
-    Properties::Instance()->font = getTerminalFont();
-    Properties::Instance()->saveSettings();
+// note: do not save zoom here due the #74 Zoom reset option resets font back to Monospace
+//    Properties::Instance()->font = getTerminalFont();
+//    Properties::Instance()->saveSettings();
 }
 
 void TermWidgetImpl::zoomReset()
 {
-    Properties::Instance()->font = Properties::Instance()->defaultFont();
+// note: do not save zoom here due the #74 Zoom reset option resets font back to Monospace
+//    Properties::Instance()->font = Properties::Instance()->font;
     setTerminalFont(Properties::Instance()->font);
-    Properties::Instance()->saveSettings();
+//    Properties::Instance()->saveSettings();
 }
 
 void TermWidgetImpl::enableCollapse(bool enable)
