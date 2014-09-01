@@ -116,7 +116,7 @@ int main(int argc, char *argv[])
     parse_args(argc, argv, workdir, shell_command, dropMode);
 
     if (workdir.isEmpty())
-        workdir = QDir::homePath();
+        workdir = QDir::currentPath();
 
     // translations
     QString fname = QString("qterminal_%1.qm").arg(QLocale::system().name().left(2));
