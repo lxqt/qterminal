@@ -262,7 +262,9 @@ void TermWidgetImpl::enableCollapse(bool enable)
 }
 
 void TermWidgetImpl::activateUrl(const QUrl & url) {
-    QDesktopServices::openUrl(url);
+    if (QApplication::keyboardModifiers() & Qt::ControlModifier) {
+        QDesktopServices::openUrl(url);
+    }
 }
 
 TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * parent)
