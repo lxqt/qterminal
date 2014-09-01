@@ -269,7 +269,7 @@
        <item row="7" column="0" colspan="3">
         <widget class="QCheckBox" name="highlightCurrentCheckBox">
          <property name="text">
-          <string>&amp;Highligh Current Terminal With Border</string>
+          <string>&amp;Highlight Current Terminal With Border</string>
          </property>
         </widget>
        </item>

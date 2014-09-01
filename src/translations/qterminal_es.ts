@@ -434,7 +434,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="272"/>
         <location filename="../ui_propertiesdialog.h" line="550"/>
-        <source>&amp;Highligh Current Terminal With Border</source>
+        <source>&amp;Highlight Current Terminal With Border</source>
         <translation>&amp;Resaltar la terminal actual con borde</translation>
     </message>
     <message>
