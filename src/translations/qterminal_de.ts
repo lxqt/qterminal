@@ -505,6 +505,59 @@
     </message>
 </context>
 <context>
+    <name>TermWidgetImpl</name>
+    <message>
+        <location filename="../termwidget.cpp" line="48"/>
+        <source>Copy Selection</source>
+        <translation>Selektierten Text kopieren</translation>
+    </message>
+    <message>
+        <location filename="../termwidget.cpp" line="52"/>
+        <source>Paste Clipboard</source>
+        <translation>Zwischenablage einfügen</translation>
+    </message>
+    <message>
+        <location filename="../termwidget.cpp" line="56"/>
+        <source>Paste Selection</source>
+        <translation>Selektierten Text einfügen</translation>
+    </message>
+    <message>
+        <location filename="../termwidget.cpp" line="60"/>
+        <source>Zoom in</source>
+        <translation>Vergrössern</translation>
+    </message>
+    <message>
+        <location filename="../termwidget.cpp" line="64"/>
+        <source>Zoom out</source>
+        <translation>Verkleinern</translation>
+    </message>
+    <message>
+        <location filename="../termwidget.cpp" line="68"/>
+        <source>Zoom reset</source>
+        <translation>Zurücksetzen</translation>
+    </message>
+    <message>
+        <location filename="../termwidget.cpp" line="76"/>
+        <source>Clear Active Terminal</source>
+        <translation>Aktiven Terminal leeren</translation>
+    </message>
+    <message>
+        <location filename="../termwidget.cpp" line="80"/>
+        <source>Split Terminal Horizontally</source>
+        <translation>Terminal horizontal teilen</translation>
+    </message>
+    <message>
+        <location filename="../termwidget.cpp" line="84"/>
+        <source>Split Terminal Vertically</source>
+        <translation>Terminal vertikal teilen</translation>
+    </message>
+    <message>
+        <location filename="../termwidget.cpp" line="88"/>
+        <source>Collapse Subterminal</source>
+        <translation type="unfinished">Unterterminal schliessen</translation>
+    </message>
+</context>
+<context>
     <name>mainWindow</name>
     <message>
         <location filename="../forms/qterminal.ui" line="76"/>
