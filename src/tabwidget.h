@@ -39,9 +39,7 @@ public:
 
     TermWidgetHolder * terminalHolder();
 
-    /* re-implemented */
-    void setTabBar(QTabBar *tabBar) { QTabWidget::setTabBar(tabBar); }
-    QTabBar *tabBar() const { return QTabWidget::tabBar(); }
+    void showHideTabBar();
 
 public slots:
     int addNewTab(const QString& shell_program = QString());
@@ -90,7 +88,6 @@ private:
     QString work_dir;
     /* re-order naming of the tabs then removeCurrentTab() */
     void renameTabsAfterRemove();
-    void showHideTabBar();
 };
 
 #endif

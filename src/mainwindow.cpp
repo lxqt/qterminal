@@ -441,8 +441,8 @@ void MainWindow::on_consoleTabulator_currentChanged(int)
 
 void MainWindow::toggleTabBar()
 {
-    consoleTabulator->tabBar()->setVisible(toggleTabbar->isChecked());
     Properties::Instance()->tabBarless = !toggleTabbar->isChecked();
+    consoleTabulator->showHideTabBar();
 }
 
 void MainWindow::toggleBorderless()
@@ -465,8 +465,12 @@ void MainWindow::closeEvent(QCloseEvent *ev)
     if (!Properties::Instance()->askOnExit
             || !consoleTabulator->count())
     {
-        Properties::Instance()->mainWindowGeometry = saveGeometry();
-        Properties::Instance()->mainWindowState = saveState();
+        // #80 - do not save state and geometry in drop mode
+        if (!m_dropMode)
+        {
+            Properties::Instance()->mainWindowGeometry = saveGeometry();
+            Properties::Instance()->mainWindowState = saveState();
+        }
         Properties::Instance()->saveSettings();
         ev->accept();
         return;

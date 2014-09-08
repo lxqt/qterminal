@@ -349,8 +349,8 @@ void TabWidget::loadSession()
 
 void TabWidget::showHideTabBar()
 {
-    if (!Properties::Instance()->alwaysShowTabs)
-        tabBar()->setVisible(count() > 1);
+    if (Properties::Instance()->tabBarless)
+        tabBar()->setVisible(false);
     else
-        tabBar()->setVisible(true);
+        tabBar()->setVisible(Properties::Instance()->alwaysShowTabs || count() > 1);
 }
