@@ -111,6 +111,7 @@ set( QTERM_RCC_SRC
 
 set( QTERM_TS
     src/translations/qterminal_cs.ts
+    src/translations/qterminal_de.ts
     src/translations/qterminal_es.ts
     src/translations/qterminal_et.ts
     src/translations/qterminal_it.ts
@@ -121,7 +122,7 @@ if (USE_QT5)
     qt5_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
     qt5_wrap_cpp( QTERM_MOC ${QTERM_MOC_SRC} )
     qt5_add_resources( QTERM_RCC ${QTERM_RCC_SRC} )
-    #qt5_add_translation( QTERM_QM ${QTERM_TS} )
+    qt5_add_translation( QTERM_QM ${QTERM_TS} )
     # bundled qt5 version of libqxt requires private headers (as for 2014-05-27)
     if (NOT USE_SYSTEM_QXT)
         include_directories(${Qt5Gui_PRIVATE_INCLUDE_DIRS})

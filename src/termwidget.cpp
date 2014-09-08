@@ -45,27 +45,27 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
 
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
     
-    actionMap[COPY_SELECTION] = new QAction(QIcon(":/icons/edit-copy.png"), tr(COPY_SELECTION), this);
+    actionMap[COPY_SELECTION] = new QAction(QIcon(":/icons/edit-copy.png"), tr("Copy Selection"), this);
     connect(actionMap[COPY_SELECTION], SIGNAL(triggered()), this, SLOT(copyClipboard()));
     addAction(actionMap[COPY_SELECTION]);
 
-    actionMap[PASTE_CLIPBOARD] = new QAction(QIcon(":/icons/edit-paste.png"), tr(PASTE_CLIPBOARD), this);
+    actionMap[PASTE_CLIPBOARD] = new QAction(QIcon(":/icons/edit-paste.png"), tr("Paste Clipboard"), this);
     connect(actionMap[PASTE_CLIPBOARD], SIGNAL(triggered()), this, SLOT(pasteClipboard()));
     addAction(actionMap[PASTE_CLIPBOARD]);
 
-    actionMap[PASTE_SELECTION] = new QAction(QIcon(":/icons/edit-paste.png"), tr(PASTE_SELECTION), this);
+    actionMap[PASTE_SELECTION] = new QAction(QIcon(":/icons/edit-paste.png"), tr("Paste Selection"), this);
     connect(actionMap[PASTE_SELECTION], SIGNAL(triggered()), this, SLOT(pasteSelection()));
     addAction(actionMap[PASTE_SELECTION]);
 
-    actionMap[ZOOM_IN] = new QAction(QIcon(":/icons/zoom-in.png"), tr(ZOOM_IN), this);
+    actionMap[ZOOM_IN] = new QAction(QIcon(":/icons/zoom-in.png"), tr("Zoom in"), this);
     connect(actionMap[ZOOM_IN], SIGNAL(triggered()), this, SLOT(zoomIn()));
     addAction(actionMap[ZOOM_IN]);
 
-    actionMap[ZOOM_OUT] = new QAction(QIcon(":/icons/zoom-out.png"), tr(ZOOM_OUT), this);
+    actionMap[ZOOM_OUT] = new QAction(QIcon(":/icons/zoom-out.png"), tr("Zoom out"), this);
     connect(actionMap[ZOOM_OUT], SIGNAL(triggered()), this, SLOT(zoomOut()));
     addAction(actionMap[ZOOM_OUT]);
 
-    actionMap[ZOOM_RESET] = new QAction(QIcon(":/icons/zoom-out.png"), tr(ZOOM_RESET), this);
+    actionMap[ZOOM_RESET] = new QAction(QIcon(":/icons/zoom-out.png"), tr("Zoom reset"), this);
     connect(actionMap[ZOOM_RESET], SIGNAL(triggered()), this, SLOT(zoomReset()));
     addAction(actionMap[ZOOM_RESET]);
 
@@ -73,19 +73,19 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
     act->setSeparator(true);
     addAction(act);
 
-    actionMap[CLEAR_TERMINAL] = new QAction(tr(CLEAR_TERMINAL), this);
+    actionMap[CLEAR_TERMINAL] = new QAction(tr("Clear Active Terminal"), this);
     connect(actionMap[CLEAR_TERMINAL], SIGNAL(triggered()), this, SLOT(clear()));
     addAction(actionMap[CLEAR_TERMINAL]);
 
-    actionMap[SPLIT_HORIZONTAL] = new QAction(tr(SPLIT_HORIZONTAL), this);
+    actionMap[SPLIT_HORIZONTAL] = new QAction(tr("Split Terminal Horizontally"), this);
     connect(actionMap[SPLIT_HORIZONTAL], SIGNAL(triggered()), this, SLOT(act_splitHorizontal()));
     addAction(actionMap[SPLIT_HORIZONTAL]);
 
-    actionMap[SPLIT_VERTICAL] = new QAction(tr(SPLIT_VERTICAL), this);
+    actionMap[SPLIT_VERTICAL] = new QAction(tr("Split Terminal Vertically"), this);
     connect(actionMap[SPLIT_VERTICAL], SIGNAL(triggered()), this, SLOT(act_splitVertical()));
     addAction(actionMap[SPLIT_VERTICAL]);
 
-    actionMap[SUB_COLLAPSE] = new QAction(tr(SUB_COLLAPSE), this);
+    actionMap[SUB_COLLAPSE] = new QAction(tr("Collapse Subterminal"), this);
     connect(actionMap[SUB_COLLAPSE], SIGNAL(triggered()), this, SLOT(act_splitCollapse()));
     addAction(actionMap[SUB_COLLAPSE]);
 
