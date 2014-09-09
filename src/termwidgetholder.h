@@ -47,8 +47,6 @@ class TermWidgetHolder : public QWidget
         void lastTerminalClosed();
         void renameSession();
 
-        void enableCollapse(bool);
-
     private:
         QString m_wdir;
         QString m_shell;

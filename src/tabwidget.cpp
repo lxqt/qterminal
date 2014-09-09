@@ -118,6 +118,36 @@ void TabWidget::splitCollapse()
     terminalHolder()->splitCollapse(terminalHolder()->currentTerminal());
 }
 
+void TabWidget::copySelection()
+{
+    terminalHolder()->currentTerminal()->impl()->copyClipboard();
+}
+
+void TabWidget::pasteClipboard()
+{
+    terminalHolder()->currentTerminal()->impl()->pasteClipboard();
+}
+
+void TabWidget::pasteSelection()
+{
+    terminalHolder()->currentTerminal()->impl()->pasteSelection();
+}
+
+void TabWidget::zoomIn()
+{
+    terminalHolder()->currentTerminal()->impl()->zoomIn();
+}
+
+void TabWidget::zoomOut()
+{
+    terminalHolder()->currentTerminal()->impl()->zoomOut();
+}
+
+void TabWidget::zoomReset()
+{
+    terminalHolder()->currentTerminal()->impl()->zoomReset();
+}
+
 void TabWidget::recountIndexes()
 {
     for(int i = 0; i < count(); i++)

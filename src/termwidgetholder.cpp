@@ -197,7 +197,7 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
 
     QList<TermWidget*> tlist = findChildren<TermWidget *>();
     int localCnt = tlist.count();
-    emit enableCollapse(localCnt>1);
+
     if (localCnt > 0)
     {
         tlist.at(0)->setFocus(Qt::OtherFocusReason);
@@ -259,6 +259,7 @@ TermWidget *TermWidgetHolder::newTerm(const QString & wdir, const QString & shel
     connect(w, SIGNAL(removeCurrentSession()), this, SIGNAL(lastTerminalClosed()));
     connect(w, SIGNAL(finished()), this, SLOT(handle_finished()));
     // consume signals
+
     connect(w, SIGNAL(splitHorizontal(TermWidget *)),
             this, SLOT(splitHorizontal(TermWidget *)));
     connect(w, SIGNAL(splitVertical(TermWidget *)),
@@ -267,10 +268,6 @@ TermWidget *TermWidgetHolder::newTerm(const QString & wdir, const QString & shel
             this, SLOT(splitCollapse(TermWidget *)));
     connect(w, SIGNAL(termGetFocus(TermWidget *)),
             this, SLOT(setCurrentTerminal(TermWidget *)));
-    // backward signals
-    connect(this, SIGNAL(enableCollapse(bool)), w, SLOT(enableCollapse(bool)));
-
-    emit enableCollapse( findChildren<TermWidget*>().count() > 1 );
 
     return w;
 }

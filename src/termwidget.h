@@ -10,7 +10,7 @@ class TermWidgetImpl : public QTermWidget
 {
     Q_OBJECT
 
-        QMap< QString, QAction * > actionMap;
+//        QMap< QString, QAction * > actionMap;
 
     public:
 
@@ -20,22 +20,14 @@ class TermWidgetImpl : public QTermWidget
     signals:
         void renameSession();
         void removeCurrentSession();
-        void splitHorizontal();
-        void splitVertical();
-        void splitCollapse();
 
     public slots:
-        void enableCollapse(bool enable);
-        void updateShortcuts();
-
-    private slots:
-        void customContextMenuCall(const QPoint & pos);
-        void act_splitVertical();
-        void act_splitHorizontal();
-        void act_splitCollapse();
         void zoomIn();
         void zoomOut();
         void zoomReset();
+
+    private slots:
+        void customContextMenuCall(const QPoint & pos);
         void activateUrl(const QUrl& url);
 };
 
@@ -66,15 +58,11 @@ class TermWidget : public QWidget
         void termGetFocus(TermWidget * self);
 
     public slots:
-        void enableCollapse(bool enable);
 
     protected:
         void paintEvent (QPaintEvent * event);
 
     private slots:
-        void term_splitHorizontal();
-        void term_splitVertical();
-        void term_splitCollapse();
         void term_termGetFocus();
         void term_termLostFocus();
 };

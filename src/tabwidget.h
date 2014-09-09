@@ -59,6 +59,13 @@ public slots:
     void splitVertically();
     void splitCollapse();
 
+    void copySelection();
+    void pasteClipboard();
+    void pasteSelection();
+    void zoomIn();
+    void zoomOut();
+    void zoomReset();
+
     void changeTabPosition(QAction *);
     void changeScrollPosition(QAction *);
     void propertiesChanged();
