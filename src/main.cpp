@@ -118,6 +118,11 @@ int main(int argc, char *argv[])
     if (workdir.isEmpty())
         workdir = QDir::currentPath();
 
+    // icons
+    /* setup our custom icon theme if there is no system theme (OS X, Windows) */
+    if (QIcon::themeName().isEmpty())
+        QIcon::setThemeName("QTerminal");
+
     // translations
     QString fname = QString("qterminal_%1.qm").arg(QLocale::system().name().left(2));
     QTranslator translator;

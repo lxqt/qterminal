@@ -81,8 +81,8 @@ MainWindow::MainWindow(const QString& work_dir,
     consoleTabulator->addNewTab(command);
 
     setWindowTitle("QTerminal");
-    setWindowIcon(QIcon(":/icons/qterminal.png"));
-    
+    setWindowIcon(QIcon::fromTheme("utilities-terminal"));
+
     setup_FileMenu_Actions();
     setup_ActionsMenu_Actions();
     setup_ViewMenu_Actions();
@@ -99,13 +99,13 @@ MainWindow::~MainWindow()
 
 void MainWindow::migrate_settings()
 {
-    // Deal with rearrangements of settings. 
+    // Deal with rearrangements of settings.
     // If this method becomes unbearably huge we should look at the config-update
     // system used by kde and razor.
     QSettings settings;
     QString last_version = settings.value("version", "0.0.0").toString();
-    // Handle configchanges in 0.4.0 (renaming 'Paste Selection' -> 'Paste Clipboard') 
-    if (last_version < "0.4.0") 
+    // Handle configchanges in 0.4.0 (renaming 'Paste Selection' -> 'Paste Clipboard')
+    if (last_version < "0.4.0")
     {
         qDebug() << "Migrating settings from" << last_version << "to 0.4.0";
         settings.beginGroup("Shortcuts");
@@ -154,7 +154,7 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     QKeySequence seq;
 
-    Properties::Instance()->actions[CLEAR_TERMINAL] = new QAction(tr("Clear Current Tab"), this);
+    Properties::Instance()->actions[CLEAR_TERMINAL] = new QAction(QIcon::fromTheme("edit-clear"), tr("Clear Current Tab"), this);
     seq = QKeySequence::fromString(settings.value(CLEAR_TERMINAL, CLEAR_TERMINAL_SHORTCUT).toString());
     Properties::Instance()->actions[CLEAR_TERMINAL]->setShortcut(seq);
     connect(Properties::Instance()->actions[CLEAR_TERMINAL], SIGNAL(triggered()), consoleTabulator, SLOT(clearActiveTerminal()));
@@ -162,13 +162,13 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     menu_Actions->addSeparator();
 
-    Properties::Instance()->actions[TAB_NEXT] = new QAction(tr("Next Tab"), this);
+    Properties::Instance()->actions[TAB_NEXT] = new QAction(QIcon::fromTheme("go-next"), tr("Next Tab"), this);
     seq = QKeySequence::fromString( settings.value(TAB_NEXT, TAB_NEXT_SHORTCUT).toString() );
     Properties::Instance()->actions[TAB_NEXT]->setShortcut(seq);
     connect(Properties::Instance()->actions[TAB_NEXT], SIGNAL(triggered()), consoleTabulator, SLOT(switchToRight()));
     menu_Actions->addAction(Properties::Instance()->actions[TAB_NEXT]);
 
-    Properties::Instance()->actions[TAB_PREV] = new QAction(tr("Previous Tab"), this);
+    Properties::Instance()->actions[TAB_PREV] = new QAction(QIcon::fromTheme("go-previous"), tr("Previous Tab"), this);
     seq = QKeySequence::fromString( settings.value(TAB_PREV, TAB_PREV_SHORTCUT).toString() );
     Properties::Instance()->actions[TAB_PREV]->setShortcut(seq);
     connect(Properties::Instance()->actions[TAB_PREV], SIGNAL(triggered()), consoleTabulator, SLOT(switchToLeft()));
@@ -206,13 +206,13 @@ void MainWindow::setup_ActionsMenu_Actions()
     connect(Properties::Instance()->actions[SUB_COLLAPSE], SIGNAL(triggered()), consoleTabulator, SLOT(splitCollapse()));
     menu_Actions->addAction(Properties::Instance()->actions[SUB_COLLAPSE]);
 
-    Properties::Instance()->actions[SUB_NEXT] = new QAction(tr("Next Subterminal"), this);
+    Properties::Instance()->actions[SUB_NEXT] = new QAction(QIcon::fromTheme("go-up"), tr("Next Subterminal"), this);
     seq = QKeySequence::fromString( settings.value(SUB_NEXT, SUB_NEXT_SHORTCUT).toString() );
     Properties::Instance()->actions[SUB_NEXT]->setShortcut(seq);
     connect(Properties::Instance()->actions[SUB_NEXT], SIGNAL(triggered()), consoleTabulator, SLOT(switchNextSubterminal()));
     menu_Actions->addAction(Properties::Instance()->actions[SUB_NEXT]);
 
-    Properties::Instance()->actions[SUB_PREV] = new QAction(tr("Previous Subterminal"), this);
+    Properties::Instance()->actions[SUB_PREV] = new QAction(QIcon::fromTheme("go-down"), tr("Previous Subterminal"), this);
     seq = QKeySequence::fromString( settings.value(SUB_PREV, SUB_PREV_SHORTCUT).toString() );
     Properties::Instance()->actions[SUB_PREV]->setShortcut(seq);
     connect(Properties::Instance()->actions[SUB_PREV], SIGNAL(triggered()), consoleTabulator, SLOT(switchPrevSubterminal()));
@@ -221,37 +221,37 @@ void MainWindow::setup_ActionsMenu_Actions()
     menu_Actions->addSeparator();
 
     // Copy and Paste are only added to the table for the sake of bindings at the moment; there is no Edit menu, only a context menu.
-    Properties::Instance()->actions[COPY_SELECTION] = new QAction(tr("Copy Selection"), this);
+    Properties::Instance()->actions[COPY_SELECTION] = new QAction(QIcon::fromTheme("edit-copy"), tr("Copy Selection"), this);
     seq = QKeySequence::fromString( settings.value(COPY_SELECTION, COPY_SELECTION_SHORTCUT).toString() );
     Properties::Instance()->actions[COPY_SELECTION]->setShortcut(seq);
     connect(Properties::Instance()->actions[COPY_SELECTION], SIGNAL(triggered()), consoleTabulator, SLOT(copySelection()));
     menu_Edit->addAction(Properties::Instance()->actions[COPY_SELECTION]);
 
-    Properties::Instance()->actions[PASTE_CLIPBOARD] = new QAction(tr("Paste Clipboard"), this);
+    Properties::Instance()->actions[PASTE_CLIPBOARD] = new QAction(QIcon::fromTheme("edit-paste"), tr("Paste Clipboard"), this);
     seq = QKeySequence::fromString( settings.value(PASTE_CLIPBOARD, PASTE_CLIPBOARD_SHORTCUT).toString() );
     Properties::Instance()->actions[PASTE_CLIPBOARD]->setShortcut(seq);
     connect(Properties::Instance()->actions[PASTE_CLIPBOARD], SIGNAL(triggered()), consoleTabulator, SLOT(pasteClipboard()));
     menu_Edit->addAction(Properties::Instance()->actions[PASTE_CLIPBOARD]);
 
-    Properties::Instance()->actions[PASTE_SELECTION] = new QAction(tr("Paste Selection"), this);
+    Properties::Instance()->actions[PASTE_SELECTION] = new QAction(QIcon::fromTheme("edit-paste"), tr("Paste Selection"), this);
     seq = QKeySequence::fromString( settings.value(PASTE_SELECTION, PASTE_SELECTION_SHORTCUT).toString() );
     Properties::Instance()->actions[PASTE_SELECTION]->setShortcut(seq);
     connect(Properties::Instance()->actions[PASTE_SELECTION], SIGNAL(triggered()), consoleTabulator, SLOT(pasteSelection()));
     menu_Edit->addAction(Properties::Instance()->actions[PASTE_SELECTION]);
 
-    Properties::Instance()->actions[ZOOM_IN] = new QAction(tr("Zoom in"), this);
+    Properties::Instance()->actions[ZOOM_IN] = new QAction(QIcon::fromTheme("zoom-in"), tr("Zoom in"), this);
     seq = QKeySequence::fromString( settings.value(ZOOM_IN, ZOOM_IN_SHORTCUT).toString() );
     Properties::Instance()->actions[ZOOM_IN]->setShortcut(seq);
     connect(Properties::Instance()->actions[ZOOM_IN], SIGNAL(triggered()), consoleTabulator, SLOT(zoomIn()));
     menu_Edit->addAction(Properties::Instance()->actions[ZOOM_IN]);
 
-    Properties::Instance()->actions[ZOOM_OUT] = new QAction(tr("Zoom out"), this);
+    Properties::Instance()->actions[ZOOM_OUT] = new QAction(QIcon::fromTheme("zoom-out"), tr("Zoom out"), this);
     seq = QKeySequence::fromString( settings.value(ZOOM_OUT, ZOOM_OUT_SHORTCUT).toString() );
     Properties::Instance()->actions[ZOOM_OUT]->setShortcut(seq);
     connect(Properties::Instance()->actions[ZOOM_OUT], SIGNAL(triggered()), consoleTabulator, SLOT(zoomOut()));
     menu_Edit->addAction(Properties::Instance()->actions[ZOOM_OUT]);
-    
-    Properties::Instance()->actions[ZOOM_RESET] = new QAction(tr("Zoom reset"), this);
+
+    Properties::Instance()->actions[ZOOM_RESET] = new QAction(QIcon::fromTheme("zoom-original"), tr("Zoom reset"), this);
     seq = QKeySequence::fromString( settings.value(ZOOM_RESET, ZOOM_RESET_SHORTCUT).toString() );
     Properties::Instance()->actions[ZOOM_RESET]->setShortcut(seq);
     connect(Properties::Instance()->actions[ZOOM_RESET], SIGNAL(triggered()), consoleTabulator, SLOT(zoomReset()));
@@ -259,7 +259,7 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     menu_Actions->addSeparator();
 
-    Properties::Instance()->actions[FIND] = new QAction(tr("Find..."), this);
+    Properties::Instance()->actions[FIND] = new QAction(QIcon::fromTheme("edit-find"), tr("Find..."), this);
     seq = QKeySequence::fromString( settings.value(FIND, FIND_SHORTCUT).toString() );
     Properties::Instance()->actions[FIND]->setShortcut(seq);
     connect(Properties::Instance()->actions[FIND], SIGNAL(triggered()), this, SLOT(find()));
@@ -301,26 +301,26 @@ void MainWindow::setup_FileMenu_Actions()
 
     QKeySequence seq;
 
-    Properties::Instance()->actions[ADD_TAB] = new QAction(QIcon(":/icons/list-add.png"), tr("New Tab"), this);
+    Properties::Instance()->actions[ADD_TAB] = new QAction(QIcon::fromTheme("list-add"), tr("New Tab"), this);
     seq = QKeySequence::fromString( settings.value(ADD_TAB, ADD_TAB_SHORTCUT).toString() );
     Properties::Instance()->actions[ADD_TAB]->setShortcut(seq);
     connect(Properties::Instance()->actions[ADD_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
     menu_File->addAction(Properties::Instance()->actions[ADD_TAB]);
 
-    Properties::Instance()->actions[CLOSE_TAB] = new QAction(QIcon(":/icons/list-remove.png"), tr("Close Tab"), this);
+    Properties::Instance()->actions[CLOSE_TAB] = new QAction(QIcon::fromTheme("list-remove"), tr("Close Tab"), this);
     seq = QKeySequence::fromString( settings.value(CLOSE_TAB, CLOSE_TAB_SHORTCUT).toString() );
     Properties::Instance()->actions[CLOSE_TAB]->setShortcut(seq);
     connect(Properties::Instance()->actions[CLOSE_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(removeCurrentTab()));
     menu_File->addAction(Properties::Instance()->actions[CLOSE_TAB]);
 
-    Properties::Instance()->actions[NEW_WINDOW] = new QAction(tr("New Window"), this);
+    Properties::Instance()->actions[NEW_WINDOW] = new QAction(QIcon::fromTheme("window-new"), tr("New Window"), this);
     seq = QKeySequence::fromString( settings.value(NEW_WINDOW, NEW_WINDOW_SHORTCUT).toString() );
     Properties::Instance()->actions[NEW_WINDOW]->setShortcut(seq);
     connect(Properties::Instance()->actions[NEW_WINDOW], SIGNAL(triggered()), this, SLOT(newTerminalWindow()));
     menu_File->addAction(Properties::Instance()->actions[NEW_WINDOW]);
-    
+
     menu_File->addSeparator();
- 
+
     Properties::Instance()->actions[PREFERENCES] = actProperties;
     connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
     menu_File->addAction(Properties::Instance()->actions[PREFERENCES]);
@@ -332,7 +332,7 @@ void MainWindow::setup_FileMenu_Actions()
     menu_File->addAction(Properties::Instance()->actions[QUIT]);
 
     settings.endGroup();
-} 
+}
 
 void MainWindow::setup_ViewMenu_Actions()
 {
@@ -478,7 +478,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
 
     connect(buttonBox, SIGNAL(accepted()), dia, SLOT(accept()));
     connect(buttonBox, SIGNAL(rejected()), dia, SLOT(reject()));
-    
+
     QVBoxLayout * lay = new QVBoxLayout();
     lay->addWidget(new QLabel(tr("Are you sure you want to exit?")));
     lay->addWidget(dontAskCheck);
@@ -576,16 +576,16 @@ void MainWindow::setKeepOpen(bool value)
         return;
 
     if (value)
-        m_dropLockButton->setIcon(QIcon(":/icons/locked.png"));
+        m_dropLockButton->setIcon(QIcon::fromTheme("object-locked"));
     else
-        m_dropLockButton->setIcon(QIcon(":/icons/notlocked.png"));
+        m_dropLockButton->setIcon(QIcon::fromTheme("object-unlocked"));
 
     m_dropLockButton->setChecked(value);
 }
 
 void MainWindow::find()
 {
-    // A bit ugly perhaps with 4 levels of indirection... 
+    // A bit ugly perhaps with 4 levels of indirection...
     consoleTabulator->terminalHolder()->currentTerminal()->impl()->toggleShowSearchBar();
 }
 

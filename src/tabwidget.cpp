@@ -180,7 +180,7 @@ void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
 {
     QMenu menu(this);
 
-    menu.addAction(QIcon(":/icons/document-close.png"), tr("Close session"),
+    menu.addAction(QIcon::fromTheme("document-close"), tr("Close session"),
                    this, SLOT(removeCurrentTab()));
     menu.addAction(tr("Rename session"), this, SLOT(renameSession()), tr(RENAME_SESSION_SHORTCUT));
 

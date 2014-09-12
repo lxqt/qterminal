@@ -15,22 +15,22 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Zeichensatz des Terminal wählen</translation>
+        <translation>Terminal-Schriftart wählen</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation>Zeichensatz:</translation>
+        <translation>Schriftart:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
         <source>Size:</source>
-        <translation>Grösse:</translation>
+        <translation>Größe:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="59"/>
         <source>Preview</source>
-        <translation>Voransicht</translation>
+        <translation>Vorschau</translation>
     </message>
 </context>
 <context>
@@ -38,7 +38,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="315"/>
         <source>Close Tab</source>
-        <translation>Tab schliessen</translation>
+        <translation>Tab schließen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="197"/>
@@ -53,7 +53,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>Collapse Subterminal</source>
-        <translation>Unterterminal schliessen</translation>
+        <translation>Unterterminal schließen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
@@ -88,12 +88,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Copy Selection</source>
-        <translation>Selektierten Text kopieren</translation>
+        <translation>Textauswahl kopieren</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
         <source>Paste Selection</source>
-        <translation>Selektierten Text einfügen</translation>
+        <translation>Textauswahl einfügen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
@@ -130,7 +130,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="396"/>
         <source>Tabs Layout</source>
-        <translation>Tab Anzeige</translation>
+        <translation>Anzeige Tableiste</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="410"/>
@@ -155,12 +155,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="487"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Sind Sie sicher, das Sie QTerminal beenden wollen?</translation>
+        <translation>Sind Sie sicher, dass Sie QTerminal beenden wollen?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="507"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>Ein einfacher Multi-Platform Terminal Emulator</translation>
+        <translation>Ein schlanker plattformunabhängiger Terminalemulator</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="53"/>
@@ -175,7 +175,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="147"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Tippen Sie &quot;%1&quot; um den Terminal zu sehen</translation>
+        <translation>Tippen Sie &quot;%1&quot;, um den Terminal zu sehen.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="158"/>
@@ -190,7 +190,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>Zoom in</source>
-        <translation>Vergrössern</translation>
+        <translation>Vergrößern</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="251"/>
@@ -210,7 +210,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="289"/>
         <source>Toggle Menu</source>
-        <translation>Menü an/abschalten</translation>
+        <translation>Menü ein-/ausblenden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="308"/>
@@ -220,12 +220,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
         <source>New Window</source>
-        <translation>neues Fenster</translation>
+        <translation>Neues Fenster</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="346"/>
         <source>Hide Window Borders</source>
-        <translation>Fensterrahmen verstecken</translation>
+        <translation>Fensterrahmen ausblenden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
@@ -238,12 +238,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>QTerminal Properties</source>
-        <translation>QTerminal Eigenschaften</translation>
+        <translation>QTerminal-Einstellungen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="49"/>
         <source>Terminal Font</source>
-        <translation>Terminal Zeichensatz</translation>
+        <translation>Terminalschrift</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="54"/>
@@ -264,17 +264,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="69"/>
         <source>Shortcuts</source>
-        <translation>Tastaturkürzel</translation>
+        <translation>Tastenkürzel</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="97"/>
         <source>Font</source>
-        <translation>Zeichensatz</translation>
+        <translation>Schriftart</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="129"/>
         <source>&amp;Set Font...</source>
-        <translation>&amp;Zeichensatz wählen...</translation>
+        <translation>&amp;Schriftart wählen...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="176"/>
@@ -284,7 +284,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="209"/>
         <source>GUI Style:</source>
-        <translation>GUI Stil:</translation>
+        <translation>GUI-Stil:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="252"/>
@@ -330,12 +330,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="376"/>
         <source>Select emulation behaviour. It does not mean that for example &quot;linux&quot; has to be used only on Linux OS. Feel free to use it on Mac too etc.&lt;p&gt;Default is the failback type with minimal feature set.</source>
-        <translation>Verhalten des Emulators wählen. Das bedeutet nicht das z.B. &quot;linux&quot; nur unter Linux benutzt werden kann. Sie können ihn ohne Probleme auch auf einem Mac nutzen&lt;p&gt;Standard ist der &quot;default&quot; Typ mit minimalem Funktionsumfang</translation>
+        <translation>Verhalten des Emulators wählen. Hinweis: Emulationsarten können auch unter anderen Systemen genutzt werden (z.B. &quot;linux&quot; unter OS X).&lt;p&gt;Die Standardemulation ist &quot;default&quot; mit minimalem Funktionsumfang.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="428"/>
         <source>Shortcut</source>
-        <translation>Tastaturkürzel</translation>
+        <translation>Tastenkürzel</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="433"/>
@@ -345,7 +345,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="74"/>
         <source>DropDown</source>
-        <translation>Herunterklappen</translation>
+        <translation>Aufklappen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="79"/>
@@ -355,27 +355,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="152"/>
         <source>Note: only fixed width font are allowed to be used in terminal</source>
-        <translation>Anmerkung: nur Zeichensätze mit fester Breite können im Terminal verwendet werden</translation>
+        <translation>Anmerkung: nur Festbreit-Schriften können im Terminal verwendet werden.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="169"/>
         <source>Action after paste clipboard</source>
-        <translation>Aktion nach einfügen aus der Zwischenablage</translation>
+        <translation>Aktion nach Einfügen aus der Zwischenablage</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="272"/>
         <source>&amp;Highlight Current Terminal With Border</source>
-        <translation>Rahmen um aktuellen Terminal anzeigen</translation>
+        <translation>Aktuellen Terminal einrahmen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="279"/>
         <source>Ask for Window Closing Confirmation</source>
-        <translation>Nachfragen beim Schliessen eines Fensters</translation>
+        <translation>Beim Schließen eines Fensters nachfragen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="289"/>
         <source>Open New Sub-Terminals in Current Working Dir</source>
-        <translation>Neuen Unterterminal in aktuellem Ordner öffnen</translation>
+        <translation>Neuen Unterterminal im aktuellen Verzeichnis öffnen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="296"/>
@@ -395,22 +395,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="452"/>
         <source>Size</source>
-        <translation>Grösse</translation>
+        <translation>Größe</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="460"/>
         <source>Height %:</source>
-        <translation>Höhe %:</translation>
+        <translation>Höhe in %:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="470"/>
         <source>Width %:</source>
-        <translation>Breite %:</translation>
+        <translation>Breite in %:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="487"/>
         <source>Shortcut:</source>
-        <translation>Tastaturkürzel:</translation>
+        <translation>Tastenkürzel:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="516"/>
@@ -435,7 +435,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="566"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Sie können eine Datei für ihre eigenen Lesezeichen angeben. Das erlaubt einfachen Austausch mit Werkzeugen wie OwnCloud oder DropBox</translation>
+        <translation>Sie können eine Datei für eigene Lesezeichen angeben. Das erlaubt einfachen Austausch mit Werkzeugen wie OwnCloud oder DropBox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="65"/>
@@ -454,12 +454,12 @@
     <message>
         <location filename="../bookmarkswidget.cpp" line="97"/>
         <source>Local Bookmarks</source>
-        <translation>lokale Lesezeichen</translation>
+        <translation>Lokale Lesezeichen</translation>
     </message>
     <message>
         <location filename="../bookmarkswidget.cpp" line="190"/>
         <source>Synchronized Bookmarks</source>
-        <translation>synchronisierte Lesezeichen</translation>
+        <translation>Synchronisierte Lesezeichen</translation>
     </message>
 </context>
 <context>
@@ -473,17 +473,17 @@
     <message>
         <location filename="../tabwidget.cpp" line="130"/>
         <source>Tab name</source>
-        <translation>Tab Name</translation>
+        <translation>Tabbezeichnung</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="131"/>
         <source>New tab name:</source>
-        <translation>Neuer Tab Name:</translation>
+        <translation>Neue Tabbezeichnung:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="153"/>
         <source>Close session</source>
-        <translation>Sitzung schliessen</translation>
+        <translation>Sitzung schließen</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="155"/>
@@ -509,7 +509,7 @@
     <message>
         <location filename="../termwidget.cpp" line="48"/>
         <source>Copy Selection</source>
-        <translation>Selektierten Text kopieren</translation>
+        <translation>Textauswahl kopieren</translation>
     </message>
     <message>
         <location filename="../termwidget.cpp" line="52"/>
@@ -519,12 +519,12 @@
     <message>
         <location filename="../termwidget.cpp" line="56"/>
         <source>Paste Selection</source>
-        <translation>Selektierten Text einfügen</translation>
+        <translation>Textauswahl einfügen</translation>
     </message>
     <message>
         <location filename="../termwidget.cpp" line="60"/>
         <source>Zoom in</source>
-        <translation>Vergrössern</translation>
+        <translation>Vergrößern</translation>
     </message>
     <message>
         <location filename="../termwidget.cpp" line="64"/>
@@ -554,7 +554,7 @@
     <message>
         <location filename="../termwidget.cpp" line="88"/>
         <source>Collapse Subterminal</source>
-        <translation type="unfinished">Unterterminal schliessen</translation>
+        <translation type="unfinished">Unterterminal schließen</translation>
     </message>
 </context>
 <context>
