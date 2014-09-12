@@ -100,6 +100,9 @@
    <addaction name="menu_Help"/>
   </widget>
   <action name="actAbout">
+   <property name="icon">
+    <iconset theme="help-about"/>
+   </property>
    <property name="text">
     <string>About...</string>
    </property>
@@ -116,8 +119,7 @@
   </action>
   <action name="actQuit">
    <property name="icon">
-    <iconset resource="../icons.qrc">
-     <normaloff>:/icons/application-exit.png</normaloff>:/icons/application-exit.png</iconset>
+    <iconset theme="application-exit"/>
    </property>
    <property name="text">
     <string>&amp;Quit</string>
