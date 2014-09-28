@@ -32,7 +32,7 @@
         <source>Preview</source>
         <translation>Vorschau</translation>
     </message>
-/context>
+</context>
 <context>
     <name>MainWindow</name>
     <message>
