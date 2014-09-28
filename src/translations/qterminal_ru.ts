@@ -112,7 +112,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
         <source>Copy Selection</source>
-        <translation>Копировать выделение</translation>
+        <translation>Скопировать выделенное</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="230"/>
@@ -122,7 +122,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="236"/>
         <source>Paste Selection</source>
-        <translation>Вставить выделение</translation>
+        <translation>Вставить выделенное</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
@@ -326,7 +326,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="303"/>
         <source>Always Show Tabs</source>
-        <translation type="unfinished"></translation>
+        <translation>Всегда показывать вкладки</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="445"/>
@@ -589,7 +589,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="93"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Правка</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="125"/>
