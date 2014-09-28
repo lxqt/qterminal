@@ -37,40 +37,40 @@
     <name>MainWindow</name>
     <message>
         <source>Add Tab</source>
-        <translation type="vanished">Aggiungi Tab</translation>
+        <translation type="obsolete">Aggiungi Tab</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
+        <location filename="../mainwindow.cpp" line="310"/>
         <source>Close Tab</source>
         <translation>Chiudi Tab</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="191"/>
         <source>Split Terminal Horizontally</source>
         <translation>Dividi Terminale Orizzontalmente</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="204"/>
+        <location filename="../mainwindow.cpp" line="197"/>
         <source>Split Terminal Vertically</source>
         <translation>Dividi Terminale Verticalmente</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="211"/>
+        <location filename="../mainwindow.cpp" line="203"/>
         <source>Collapse Subterminal</source>
         <translation>Collassa Sottoterminale</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="218"/>
+        <location filename="../mainwindow.cpp" line="209"/>
         <source>Next Subterminal</source>
         <translation>Sottoterminale Successivo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="225"/>
+        <location filename="../mainwindow.cpp" line="215"/>
         <source>Previous Subterminal</source>
         <translation>Sottoterminale Precedente</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="167"/>
+        <location filename="../mainwindow.cpp" line="165"/>
         <source>Next Tab</source>
         <translation>Tab Successivo</translation>
     </message>
@@ -85,158 +85,158 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="147"/>
+        <location filename="../mainwindow.cpp" line="146"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="158"/>
+        <location filename="../mainwindow.cpp" line="157"/>
         <source>Clear Current Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
+        <location filename="../mainwindow.cpp" line="171"/>
         <source>Previous Tab</source>
         <translation>Tab Precedente</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="181"/>
+        <location filename="../mainwindow.cpp" line="177"/>
         <source>Move Tab Left</source>
         <translation>Sposta Tab a Sinistra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="188"/>
+        <location filename="../mainwindow.cpp" line="183"/>
         <source>Move Tab Right</source>
         <translation>Sposta Tab a Destra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="224"/>
         <source>Copy Selection</source>
         <translation>Copia Selezione</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="239"/>
+        <location filename="../mainwindow.cpp" line="230"/>
         <source>Paste Clipboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="243"/>
+        <location filename="../mainwindow.cpp" line="236"/>
         <source>Paste Selection</source>
         <translation>Incolla Selezione</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="247"/>
+        <location filename="../mainwindow.cpp" line="242"/>
         <source>Zoom in</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="248"/>
         <source>Zoom out</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="255"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Zoom reset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="261"/>
+        <location filename="../mainwindow.cpp" line="262"/>
         <source>Find...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="273"/>
         <source>Save Session</source>
         <translation>Salva Sessione</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Load Session</source>
         <translation>Carica Sessione</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="289"/>
+        <location filename="../mainwindow.cpp" line="286"/>
         <source>Toggle Menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="308"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>New Tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="316"/>
         <source>New Window</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="346"/>
+        <location filename="../mainwindow.cpp" line="339"/>
         <source>Hide Window Borders</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="357"/>
+        <location filename="../mainwindow.cpp" line="350"/>
         <source>Show Tab Bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Toggle Borderless</source>
-        <translation type="vanished">Toggle Senzabordi</translation>
+        <translation type="obsolete">Toggle Senzabordi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="378"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>Bottom</source>
         <translation>Basso</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="379"/>
+        <location filename="../mainwindow.cpp" line="371"/>
         <source>Top</source>
         <translation>Alto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="380"/>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="403"/>
         <source>Right</source>
         <translation>Destra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="381"/>
-        <location filename="../mainwindow.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="373"/>
+        <location filename="../mainwindow.cpp" line="404"/>
         <source>Left</source>
         <translation>Sinistra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>Tabs Layout</source>
         <translation>Layout Tabs</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="410"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>None</source>
         <translation>Nessuno</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Scrollbar Layout</source>
         <translation>Layout Barra di scorrimento</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="478"/>
+        <location filename="../mainwindow.cpp" line="474"/>
         <source>Exit QTerminal</source>
         <translation>Esci da QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="480"/>
+        <location filename="../mainwindow.cpp" line="476"/>
         <source>Do not ask again</source>
         <translation>Non chiedermelo più</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="487"/>
+        <location filename="../mainwindow.cpp" line="483"/>
         <source>Are you sure you want to exit?</source>
         <translation>Sei sicuro di voler uscire?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="507"/>
+        <location filename="../mainwindow.cpp" line="503"/>
         <source>A lightweight multiplatform terminal emulator</source>
         <translation>Un emulatore di terminale multipiattaforma e leggero</translation>
     </message>
@@ -458,7 +458,7 @@
     </message>
     <message>
         <source>Select Terminal Font</source>
-        <translation type="vanished">Seleziona Carattere Terminale</translation>
+        <translation type="obsolete">Seleziona Carattere Terminale</translation>
     </message>
 </context>
 <context>
@@ -478,27 +478,27 @@
     <name>TabWidget</name>
     <message>
         <location filename="../tabwidget.cpp" line="69"/>
-        <location filename="../tabwidget.cpp" line="144"/>
+        <location filename="../tabwidget.cpp" line="174"/>
         <source>Shell No. %1</source>
         <translation>Shell N° %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="130"/>
+        <location filename="../tabwidget.cpp" line="160"/>
         <source>Tab name</source>
         <translation>Nome tab</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="131"/>
+        <location filename="../tabwidget.cpp" line="161"/>
         <source>New tab name:</source>
         <translation>Nuovo nome tab:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="153"/>
+        <location filename="../tabwidget.cpp" line="183"/>
         <source>Close session</source>
         <translation>Chiudi sessione</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="155"/>
+        <location filename="../tabwidget.cpp" line="185"/>
         <source>Rename session</source>
         <translation>Rinomina sessione</translation>
     </message>
@@ -519,54 +519,24 @@
 <context>
     <name>TermWidgetImpl</name>
     <message>
-        <location filename="../termwidget.cpp" line="48"/>
         <source>Copy Selection</source>
-        <translation type="unfinished">Copia Selezione</translation>
+        <translation type="obsolete">Copia Selezione</translation>
     </message>
     <message>
-        <location filename="../termwidget.cpp" line="52"/>
-        <source>Paste Clipboard</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../termwidget.cpp" line="56"/>
         <source>Paste Selection</source>
-        <translation type="unfinished">Incolla Selezione</translation>
+        <translation type="obsolete">Incolla Selezione</translation>
     </message>
     <message>
-        <location filename="../termwidget.cpp" line="60"/>
-        <source>Zoom in</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../termwidget.cpp" line="64"/>
-        <source>Zoom out</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../termwidget.cpp" line="68"/>
-        <source>Zoom reset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../termwidget.cpp" line="76"/>
-        <source>Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../termwidget.cpp" line="80"/>
         <source>Split Terminal Horizontally</source>
-        <translation type="unfinished">Dividi Terminale Orizzontalmente</translation>
+        <translation type="obsolete">Dividi Terminale Orizzontalmente</translation>
     </message>
     <message>
-        <location filename="../termwidget.cpp" line="84"/>
         <source>Split Terminal Vertically</source>
-        <translation type="unfinished">Dividi Terminale Verticalmente</translation>
+        <translation type="obsolete">Dividi Terminale Verticalmente</translation>
     </message>
     <message>
-        <location filename="../termwidget.cpp" line="88"/>
         <source>Collapse Subterminal</source>
-        <translation type="unfinished">Collassa Sottoterminale</translation>
+        <translation type="obsolete">Collassa Sottoterminale</translation>
     </message>
 </context>
 <context>
@@ -597,32 +567,37 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="117"/>
+        <location filename="../forms/qterminal.ui" line="93"/>
+        <source>Edit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/qterminal.ui" line="125"/>
         <source>&amp;Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;Window</source>
-        <translation type="vanished">&amp;Finestra</translation>
+        <translation type="obsolete">&amp;Finestra</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="98"/>
+        <location filename="../forms/qterminal.ui" line="107"/>
         <source>About...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="103"/>
+        <location filename="../forms/qterminal.ui" line="112"/>
         <source>About Qt...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="108"/>
+        <location filename="../forms/qterminal.ui" line="117"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Preferenze...</translation>
     </message>
     <message>
         <source>&amp;Quit...</source>
-        <translation type="vanished">&amp;Chiudi...</translation>
+        <translation type="obsolete">&amp;Chiudi...</translation>
     </message>
 </context>
 </TS>
