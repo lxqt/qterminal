@@ -5,7 +5,7 @@ project(qterminal)
 option(USE_SYSTEM_QXT "Use system Qxt Library for global shortcuts" ON)
 option(USE_QT5 "Build using Qt5. Default OFF." OFF)
 
-set(STR_VERSION "0.5.0")
+set(STR_VERSION "0.6.0")
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
