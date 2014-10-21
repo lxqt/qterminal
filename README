@@ -1,13 +1,8 @@
-Howto Build
+qterminal
 
-standard cmake based build
+## Installation
+See the INSTALL file for details
 
-cmake; make; make install
-
-
-
-New translation: just edit src/CMakeLists.txt to add a new ts file.
-
-make lupdate updates ts files to be translated. lrelease is called automatically in make
-
-
+## Translations
+ - Edit src/CMakeLists.txt to add a new ts file.
+ - make lupdate updates ts files to be translated (lrelease is called automatically in make)
