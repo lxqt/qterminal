@@ -450,6 +450,48 @@
         <translation>Klahv</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <source>No scrollbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Left</source>
+        <translation type="unfinished">Vasakul</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Right</source>
+        <translation type="unfinished">Paremal</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Top</source>
+        <translation type="unfinished">Ülal</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Bottom</source>
+        <translation type="unfinished">All</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>No move</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>Move start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>Move end</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../propertiesdialog.cpp" line="65"/>
         <location filename="../propertiesdialog.cpp" line="117"/>
         <source>System Default</source>

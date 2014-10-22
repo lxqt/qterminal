@@ -442,16 +442,46 @@
         <translation>Acceso rápido</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <source>No scrollbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Left</source>
+        <translation type="unfinished">Izquierda</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Right</source>
+        <translation type="unfinished">Derecha</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Top</source>
+        <translation type="unfinished">Arriba</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Bottom</source>
+        <translation type="unfinished">Abajo</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
         <source>No move</source>
-        <translation type="obsolete">No mover</translation>
+        <translation type="unfinished">No mover</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
         <source>Move start</source>
-        <translation type="obsolete">Mover al inicio</translation>
+        <translation type="unfinished">Mover al inicio</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
         <source>Move end</source>
-        <translation type="obsolete">Mover al final</translation>
+        <translation type="unfinished">Mover al final</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="65"/>

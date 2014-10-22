@@ -446,6 +446,48 @@
         <translation>Chiave</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <source>No scrollbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Left</source>
+        <translation type="unfinished">Sinistra</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Right</source>
+        <translation type="unfinished">Destra</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Top</source>
+        <translation type="unfinished">Alto</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Bottom</source>
+        <translation type="unfinished">Basso</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>No move</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>Move start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>Move end</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../propertiesdialog.cpp" line="65"/>
         <location filename="../propertiesdialog.cpp" line="117"/>
         <source>System Default</source>
