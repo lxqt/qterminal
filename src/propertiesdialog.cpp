@@ -39,13 +39,13 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     /* scrollbar position */
     QStringList scrollBarPosList;
-    scrollBarPosList << "No scrollbar" << "Left" << "Right";
+    scrollBarPosList << tr("No scrollbar") << tr("Left") << tr("Right");
     scrollBarPos_comboBox->addItems(scrollBarPosList);
     scrollBarPos_comboBox->setCurrentIndex(Properties::Instance()->scrollBarPos);
 
     /* tabs position */
     QStringList tabsPosList;
-    tabsPosList << "Top" << "Bottom" << "Left" << "Right";
+    tabsPosList << tr("Top") << tr("Bottom") << tr("Left") << tr("Right");
     tabsPos_comboBox->addItems(tabsPosList);
     tabsPos_comboBox->setCurrentIndex(Properties::Instance()->tabsPos);
 
@@ -57,7 +57,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     /* actions by motion after paste */
     
     QStringList motionAfter;
-    motionAfter << "No move" << "Move start" << "Move end";
+    motionAfter << tr("No move") << tr("Move start") << tr("Move end");
     motionAfterPasting_comboBox->addItems(motionAfter);
     motionAfterPasting_comboBox->setCurrentIndex(Properties::Instance()->m_motionAfterPaste);
     

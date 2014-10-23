@@ -450,6 +450,48 @@
         <translation>Клавиши</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <source>No scrollbar</source>
+        <translation>Без полосы прокрутки</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Left</source>
+        <translation>Слева</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Right</source>
+        <translation>Справа</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Top</source>
+        <translation>Сверху</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Bottom</source>
+        <translation>Снизу</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>No move</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>Move start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>Move end</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../propertiesdialog.cpp" line="65"/>
         <location filename="../propertiesdialog.cpp" line="117"/>
         <source>System Default</source>

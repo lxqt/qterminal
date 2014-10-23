@@ -438,6 +438,48 @@
         <translation>Sie können eine Datei für eigene Lesezeichen angeben. Das erlaubt einfachen Austausch mit Werkzeugen wie OwnCloud oder DropBox.</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <source>No scrollbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Left</source>
+        <translation type="unfinished">Links</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Right</source>
+        <translation type="unfinished">Rechts</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Top</source>
+        <translation type="unfinished">Oben</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="48"/>
+        <source>Bottom</source>
+        <translation type="unfinished">Unten</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>No move</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>Move start</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="60"/>
+        <source>Move end</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../propertiesdialog.cpp" line="65"/>
         <location filename="../propertiesdialog.cpp" line="117"/>
         <source>System Default</source>
