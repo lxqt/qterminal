@@ -24,6 +24,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     QStringList colorSchemes = QTermWidget::availableColorSchemes();
 
     listWidget->setCurrentRow(0);
+#if QT_VERSION > 0x050200
+    listWidget->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContentsOnFirstShow);
+#endif
 
     colorSchemaCombo->addItems(colorSchemes);
     int csix = colorSchemaCombo->findText(Properties::Instance()->colorScheme);
