@@ -51,6 +51,7 @@ MainWindow::MainWindow(const QString& work_dir,
     migrate_settings();
 
     m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
+    m_bookmarksDock->setObjectName("BookmarksDockWidget");
     BookmarksWidget *bookmarksWidget = new BookmarksWidget(m_bookmarksDock);
     m_bookmarksDock->setWidget(bookmarksWidget);
     addDockWidget(Qt::LeftDockWidgetArea, m_bookmarksDock);
@@ -304,8 +305,19 @@ void MainWindow::setup_FileMenu_Actions()
     Properties::Instance()->actions[ADD_TAB] = new QAction(QIcon::fromTheme("list-add"), tr("New Tab"), this);
     seq = QKeySequence::fromString( settings.value(ADD_TAB, ADD_TAB_SHORTCUT).toString() );
     Properties::Instance()->actions[ADD_TAB]->setShortcut(seq);
-    connect(Properties::Instance()->actions[ADD_TAB], SIGNAL(triggered()), consoleTabulator, SLOT(addNewTab()));
+    connect(Properties::Instance()->actions[ADD_TAB], SIGNAL(triggered()), this, SLOT(addNewTab()));
     menu_File->addAction(Properties::Instance()->actions[ADD_TAB]);
+
+    QMenu *presetsMenu = new QMenu(tr("New Tab From Preset"), this);
+    presetsMenu->addAction(QIcon(), tr("1 Terminal"),
+                           consoleTabulator, SLOT(addNewTab()));
+    presetsMenu->addAction(QIcon(), tr("2 Horizontal Terminals"),
+                           consoleTabulator, SLOT(preset2Horizontal()));
+    presetsMenu->addAction(QIcon(), tr("2 Vertical Terminals"),
+                           consoleTabulator, SLOT(preset2Vertical()));
+    presetsMenu->addAction(QIcon(), tr("4 Terminals"),
+                           consoleTabulator, SLOT(preset4Terminals()));
+    menu_File->addMenu(presetsMenu);
 
     Properties::Instance()->actions[CLOSE_TAB] = new QAction(QIcon::fromTheme("list-remove"), tr("Close Tab"), this);
     seq = QKeySequence::fromString( settings.value(CLOSE_TAB, CLOSE_TAB_SHORTCUT).toString() );
@@ -618,4 +630,16 @@ void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
 void MainWindow::bookmarksDock_visibilityChanged(bool visible)
 {
     Properties::Instance()->bookmarksVisible = visible;
+}
+
+void MainWindow::addNewTab()
+{
+    if (Properties::Instance()->terminalsPreset == 3)
+        consoleTabulator->preset4Terminals();
+    else if (Properties::Instance()->terminalsPreset == 2)
+        consoleTabulator->preset2Vertical();
+    else if (Properties::Instance()->terminalsPreset == 1)
+        consoleTabulator->preset2Horizontal();
+    else
+        consoleTabulator->addNewTab();
 }

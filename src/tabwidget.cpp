@@ -377,6 +377,37 @@ void TabWidget::loadSession()
     reinterpret_cast<TermWidgetHolder*>(widget(currentIndex()))->loadSession();
 }
 
+void TabWidget::preset2Horizontal()
+{
+    int ix = TabWidget::addNewTab();
+    TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
+    term->splitHorizontal(term->currentTerminal());
+    // switch to the 1st terminal
+    term->switchNextSubterminal();
+}
+
+void TabWidget::preset2Vertical()
+{
+    int ix = TabWidget::addNewTab();
+    TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
+    term->splitVertical(term->currentTerminal());
+    // switch to the 1st terminal
+    term->switchNextSubterminal();
+}
+
+void TabWidget::preset4Terminals()
+{
+    int ix = TabWidget::addNewTab();
+    TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
+    term->splitVertical(term->currentTerminal());
+    term->splitHorizontal(term->currentTerminal());
+    term->switchNextSubterminal();
+    term->switchNextSubterminal();
+    term->splitHorizontal(term->currentTerminal());
+    // switch to the 1st terminal
+    term->switchNextSubterminal();
+}
+
 void TabWidget::showHideTabBar()
 {
     if (Properties::Instance()->tabBarless)

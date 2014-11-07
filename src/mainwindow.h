@@ -40,25 +40,6 @@ public:
 
     bool dropMode() { return m_dropMode; }
 
-protected slots:
-    void on_consoleTabulator_currentChanged(int);
-    void propertiesChanged();
-    void actAbout_triggered();
-    void actProperties_triggered();
-    void updateActionGroup(QAction *);
-
-    void toggleBorderless();
-    void toggleTabBar();
-    void toggleMenu();
-
-    void showHide();
-    void setKeepOpen(bool value);
-    void find();
-
-    void newTerminalWindow();
-    void bookmarksWidget_callCommand(const QString&);
-    void bookmarksDock_visibilityChanged(bool visible);
-
 protected:
      bool event(QEvent* event);
 
@@ -87,5 +68,26 @@ private:
     QxtGlobalShortcut m_dropShortcut;
     void realign();
     void setDropShortcut(QKeySequence dropShortCut);
+
+private slots:
+    void on_consoleTabulator_currentChanged(int);
+    void propertiesChanged();
+    void actAbout_triggered();
+    void actProperties_triggered();
+    void updateActionGroup(QAction *);
+
+    void toggleBorderless();
+    void toggleTabBar();
+    void toggleMenu();
+
+    void showHide();
+    void setKeepOpen(bool value);
+    void find();
+
+    void newTerminalWindow();
+    void bookmarksWidget_callCommand(const QString&);
+    void bookmarksDock_visibilityChanged(bool visible);
+
+    void addNewTab();
 };
 #endif //MAINWINDOW_H

@@ -100,6 +100,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     openBookmarksFile(Properties::Instance()->bookmarksFile);
     connect(bookmarksButton, SIGNAL(clicked()),
             this, SLOT(bookmarksButton_clicked()));
+
+    terminalPresetComboBox->setCurrentIndex(Properties::Instance()->terminalsPreset);
 }
 
 
@@ -156,6 +158,8 @@ void PropertiesDialog::apply()
     Properties::Instance()->useBookmarks = useBookmarksCheckBox->isChecked();
     Properties::Instance()->bookmarksFile = bookmarksLineEdit->text();
     saveBookmarksFile(Properties::Instance()->bookmarksFile);
+
+    Properties::Instance()->terminalsPreset = terminalPresetComboBox->currentIndex();
 
     emit propertiesChanged();
 }

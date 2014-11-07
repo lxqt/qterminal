@@ -75,6 +75,10 @@ public slots:
     void saveSession();
     void loadSession();
 
+    void preset2Horizontal();
+    void preset2Vertical();
+    void preset4Terminals();
+
 signals:
     void closeTabNotification();
 

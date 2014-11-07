@@ -67,7 +67,6 @@ void Properties::loadSettings()
     mainWindowGeometry = settings.value("MainWindow/geometry").toByteArray();
     mainWindowState = settings.value("MainWindow/state").toByteArray();
 
-
     historyLimited = settings.value("HistoryLimited", true).toBool();
     historyLimitedTo = settings.value("HistoryLimitedTo", 1000).toUInt();
 
@@ -106,6 +105,8 @@ void Properties::loadSettings()
     useBookmarks = settings.value("UseBookmarks", false).toBool();
     bookmarksVisible = settings.value("BookmarksVisible", true).toBool();
     bookmarksFile = settings.value("BookmarksFile", QFileInfo(settings.fileName()).canonicalPath()+"/qterminal_bookmarks.xml").toString();
+
+    terminalsPreset = settings.value("TerminalsPreset", 0).toInt();
 
     settings.beginGroup("DropMode");
     dropShortCut = QKeySequence(settings.value("ShortCut", "F12").toString());
@@ -173,6 +174,8 @@ void Properties::saveSettings()
     settings.setValue("UseBookmarks", useBookmarks);
     settings.setValue("BookmarksVisible", bookmarksVisible);
     settings.setValue("BookmarksFile", bookmarksFile);
+
+    settings.setValue("TerminalsPreset", terminalsPreset);
 
     settings.beginGroup("DropMode");
     settings.setValue("ShortCut", dropShortCut.toString());
