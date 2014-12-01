@@ -36,41 +36,37 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <source>Add Tab</source>
-        <translation type="obsolete">Новая вкладка</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="310"/>
+        <location filename="../mainwindow.cpp" line="322"/>
         <source>Close Tab</source>
         <translation>Закрыть вкладку</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="191"/>
+        <location filename="../mainwindow.cpp" line="192"/>
         <source>Split Terminal Horizontally</source>
         <translation>Разделить терминал по горизонтали </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="198"/>
         <source>Split Terminal Vertically</source>
         <translation>Разделить терминал по вертикали </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="203"/>
+        <location filename="../mainwindow.cpp" line="204"/>
         <source>Collapse Subterminal</source>
         <translation>Закрыть подтерминал</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="210"/>
         <source>Next Subterminal</source>
         <translation>Следующий подтерминал</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="215"/>
+        <location filename="../mainwindow.cpp" line="216"/>
         <source>Previous Subterminal</source>
         <translation>Предыдущий подтерминал</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="165"/>
+        <location filename="../mainwindow.cpp" line="166"/>
         <source>Next Tab</source>
         <translation>Следующая вкладка</translation>
     </message>
@@ -80,167 +76,184 @@
         <translation>Закладки</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="91"/>
+        <location filename="../mainwindow.cpp" line="92"/>
         <source>Rename Session</source>
         <translation>Переименовать сессию</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="146"/>
+        <location filename="../mainwindow.cpp" line="147"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>Нажмите &quot;%1&quot; чтобы увидеть терминал.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="157"/>
+        <location filename="../mainwindow.cpp" line="158"/>
         <source>Clear Current Tab</source>
         <translation>Очистить текущую вкладку</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="171"/>
+        <location filename="../mainwindow.cpp" line="172"/>
         <source>Previous Tab</source>
         <translation>Предыдущая вкладка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="177"/>
+        <location filename="../mainwindow.cpp" line="178"/>
         <source>Move Tab Left</source>
         <translation>Сдвинуть вкладку влево</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="183"/>
+        <location filename="../mainwindow.cpp" line="184"/>
         <source>Move Tab Right</source>
         <translation>Сдвинуть вкладку вправо</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="224"/>
+        <location filename="../mainwindow.cpp" line="225"/>
         <source>Copy Selection</source>
         <translation>Скопировать выделенное</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="230"/>
+        <location filename="../mainwindow.cpp" line="231"/>
         <source>Paste Clipboard</source>
         <translation>Вставить из буфера</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="236"/>
+        <location filename="../mainwindow.cpp" line="237"/>
         <source>Paste Selection</source>
         <translation>Вставить выделенное</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="243"/>
         <source>Zoom in</source>
         <translation>Увеличить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="249"/>
         <source>Zoom out</source>
         <translation>Уменьшить</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>Zoom reset</source>
         <translation>Сбросить увеличение</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <source>Find...</source>
         <translation>Найти...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="273"/>
+        <location filename="../mainwindow.cpp" line="274"/>
         <source>Save Session</source>
         <translation>Сохранить сессию</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="280"/>
         <source>Load Session</source>
         <translation>Загрузить сессию</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="286"/>
+        <location filename="../mainwindow.cpp" line="287"/>
         <source>Toggle Menu</source>
         <translation>Показать строку меню</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="305"/>
         <source>New Tab</source>
         <translation>Новая вкладка</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="311"/>
+        <source>New Tab From Preset</source>
+        <translation>Предустановленная новая вкладка</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="312"/>
+        <source>1 Terminal</source>
+        <translation>1 терминал</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="314"/>
+        <source>2 Horizontal Terminals</source>
+        <translation>2 горизонтальных терминала</translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="316"/>
+        <source>2 Vertical Terminals</source>
+        <translation>2 вертикальных терминала</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="318"/>
+        <source>4 Terminals</source>
+        <translation>4 терминала</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="328"/>
         <source>New Window</source>
         <translation>Новое окно</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="339"/>
+        <location filename="../mainwindow.cpp" line="351"/>
         <source>Hide Window Borders</source>
         <translation>Спрятать рамку окна</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="350"/>
+        <location filename="../mainwindow.cpp" line="362"/>
         <source>Show Tab Bar</source>
         <translation>Показать панель вкладок</translation>
     </message>
     <message>
-        <source>Toggle Borderless</source>
-        <translation type="obsolete">Без рамки</translation>
-    </message>
-    <message>
-        <source>Toggle TabBar</source>
-        <translation type="obsolete">Без панели вкладок</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="382"/>
         <source>Bottom</source>
         <translation>Снизу</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>Top</source>
         <translation>Сверху</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
-        <location filename="../mainwindow.cpp" line="403"/>
+        <location filename="../mainwindow.cpp" line="384"/>
+        <location filename="../mainwindow.cpp" line="415"/>
         <source>Right</source>
         <translation>Справа</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="373"/>
-        <location filename="../mainwindow.cpp" line="404"/>
+        <location filename="../mainwindow.cpp" line="385"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>Left</source>
         <translation>Слева</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="388"/>
+        <location filename="../mainwindow.cpp" line="400"/>
         <source>Tabs Layout</source>
         <translation>Расположение вкладок</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="402"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>None</source>
         <translation>Убрать</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="432"/>
         <source>Scrollbar Layout</source>
         <translation>Расположение полосы прокрутки</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="486"/>
         <source>Exit QTerminal</source>
         <translation>Выйти из QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="476"/>
+        <location filename="../mainwindow.cpp" line="488"/>
         <source>Do not ask again</source>
         <translation>Не справшивать снова</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="483"/>
+        <location filename="../mainwindow.cpp" line="495"/>
         <source>Are you sure you want to exit?</source>
         <translation>Вы уверены, что хотите выйти?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="515"/>
         <source>A lightweight multiplatform terminal emulator</source>
         <translation>Лёгкий мультиплатформенный эмулятор терминала </translation>
     </message>
@@ -248,263 +261,275 @@
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="14"/>
-        <source>QTerminal Properties</source>
-        <translation>Настройки QTerminal</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="49"/>
-        <source>Terminal Font</source>
-        <translation>Шрифт терминала</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="54"/>
-        <source>Look and Feel</source>
-        <translation>Внешний вид</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="59"/>
-        <location filename="../forms/propertiesdialog.ui" line="314"/>
-        <source>History</source>
-        <translation>История</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="64"/>
+        <location filename="../forms/propertiesdialog.ui" line="300"/>
         <source>Emulation</source>
         <translation>Эмуляция</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="69"/>
+        <location filename="../forms/propertiesdialog.ui" line="62"/>
         <source>Shortcuts</source>
         <translation>Сочетания клавиш</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="74"/>
-        <source>DropDown</source>
-        <translation>Выпадающий</translation>
+        <location filename="../forms/propertiesdialog.ui" line="14"/>
+        <source>Terminal settings</source>
+        <translation>Настройки терминала</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="79"/>
+        <location filename="../forms/propertiesdialog.ui" line="52"/>
+        <source>Appearance</source>
+        <translation>Внешний вид</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="57"/>
+        <location filename="../forms/propertiesdialog.ui" line="325"/>
+        <source>Behavior</source>
+        <translation>Поведение</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="67"/>
+        <source>Dropdown</source>
+        <translation>Выпадающий терминал</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="72"/>
         <source>Bookmarks</source>
         <translation>Закладки</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="97"/>
+        <location filename="../forms/propertiesdialog.ui" line="90"/>
+        <source>Color scheme</source>
+        <translation>Цветовая схема</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="100"/>
+        <source>Widget style</source>
+        <translation>Графический стиль</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="110"/>
+        <source>Scrollbar position</source>
+        <translation>Расположение полосы прокрутки</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="120"/>
+        <source>Tabs position</source>
+        <translation>Расположение вкладок</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="130"/>
+        <source>Show the menu bar</source>
+        <translation>Показать панель меню</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="137"/>
+        <source>Always show the tab bar</source>
+        <translation>Всегда показывать панель вкладок</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="144"/>
+        <source>Show a border around the current terminal</source>
+        <translation>Показывать границу вокруг текущего терминала</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="151"/>
+        <source>Application transparency</source>
+        <translation>Прозрачность приложения</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="177"/>
+        <source>Terminal transparency</source>
+        <translation>Прозрачность терминала</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="197"/>
+        <source>Start with preset:</source>
+        <translation>Начинать с предустановкой:</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="205"/>
+        <source>None (single terminal)</source>
+        <translation>Нет (один терминал)</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="210"/>
+        <source>2 terminals horizontally</source>
+        <translation>2 горизонтальных терминала</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="215"/>
+        <source>2 terminals vertically</source>
+        <translation>2 вертикальных терминала</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="220"/>
+        <source>4 terminals</source>
+        <translation>4 терминала</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="241"/>
         <source>Font</source>
         <translation>Шрифт</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="129"/>
+        <location filename="../forms/propertiesdialog.ui" line="273"/>
         <source>&amp;Set Font...</source>
         <translation>&amp;Выбрать шрифт...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="152"/>
-        <source>Note: only fixed width font are allowed to be used in terminal</source>
-        <translation>Заметка: для использования в терминале разрешены только шрифты фиксированной ширины</translation>
+        <location filename="../forms/propertiesdialog.ui" line="309"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Какое поведение эмулировать. Обратите внимание, что это не обязательно должн осоответствовать вашей операционной системе.&lt;/p&gt;&lt;p&gt;Эмуляция &lt;span style=&quot; font-weight:600;&quot;&gt;по умолчанию&lt;/span&gt; — это запасной режим с минимальным набором функций.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="169"/>
-        <source>Action after paste clipboard</source>
-        <translation>Действие после вставки из буфера</translation>
+        <location filename="../forms/propertiesdialog.ui" line="331"/>
+        <source>Action after paste</source>
+        <translation>Действие после вставки</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="176"/>
-        <source>Color Scheme:</source>
-        <translation>Цветовая схема:</translation>
+        <location filename="../forms/propertiesdialog.ui" line="364"/>
+        <source>Open new terminals in current working directory</source>
+        <translation>Открывать новые терминалы в текущей рабочей папке</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="209"/>
-        <source>GUI Style:</source>
-        <translation>Стиль GUI:</translation>
+        <location filename="../forms/propertiesdialog.ui" line="371"/>
+        <source>Ask for confirmation when closing</source>
+        <translation>Запрашивать подтверждение при закрытии</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="252"/>
-        <source>Scrollbar Position:</source>
-        <translation>Расположение полосы прокрутки:</translation>
+        <location filename="../forms/propertiesdialog.ui" line="381"/>
+        <source>Unlimited history</source>
+        <translation>Неограниченная история</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="303"/>
-        <source>Always Show Tabs</source>
-        <translation>Всегда показывать вкладки</translation>
+        <location filename="../forms/propertiesdialog.ui" line="388"/>
+        <source>History size (in lines)</source>
+        <translation>Размер истории (в строках)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="445"/>
+        <location filename="../forms/propertiesdialog.ui" line="456"/>
+        <source>Height</source>
+        <translation>Высота</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="463"/>
+        <location filename="../forms/propertiesdialog.ui" line="477"/>
+        <source>%</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="470"/>
+        <source>Width</source>
+        <translation>Ширина</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="520"/>
+        <source>Edit bookmark file contents</source>
+        <translation>Изменить содержимое файла закладок</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="542"/>
+        <source>Enable bookmarks</source>
+        <translation>Включить закладки</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="551"/>
+        <source>Bookmark file</source>
+        <translation>Файл закладок</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="438"/>
         <source>Show on start</source>
         <translation>Показать при запуске</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="452"/>
+        <location filename="../forms/propertiesdialog.ui" line="445"/>
         <source>Size</source>
         <translation>Размер</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="460"/>
-        <source>Height %:</source>
-        <translation>Высота %:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="470"/>
-        <source>Width %:</source>
-        <translation>Ширина %:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="487"/>
+        <location filename="../forms/propertiesdialog.ui" line="491"/>
         <source>Shortcut:</source>
         <translation>Сочетание клавиш:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="516"/>
-        <source>Edit File Content</source>
-        <translation>Изменить содержимое файла</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="538"/>
-        <source>Use Bookmarks</source>
-        <translation>Использовать закладки</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="547"/>
-        <source>Bookmark FIle:</source>
-        <translation>Файл закладок:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="557"/>
+        <location filename="../forms/propertiesdialog.ui" line="561"/>
         <source>Find...</source>
         <translation>Найти...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="566"/>
+        <location filename="../forms/propertiesdialog.ui" line="570"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Вы можете выбрать ваше собственное место для хранения закладок. Это позволит легко делиться закладками с помощью таких инструментов как OwnCloud или Dropbox.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="202"/>
-        <source>Tabs Position:</source>
-        <translation>Расположение вкладок:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="259"/>
-        <source>&amp;Application Transparency:</source>
-        <translation>&amp;Прозрачность приложения:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="216"/>
-        <location filename="../forms/propertiesdialog.ui" line="236"/>
+        <location filename="../forms/propertiesdialog.ui" line="161"/>
+        <location filename="../forms/propertiesdialog.ui" line="184"/>
         <source> %</source>
         <translation> %</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="229"/>
-        <source>Terminal Transparency:</source>
-        <translation>Прозрачность терминала:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="272"/>
-        <source>&amp;Highlight Current Terminal With Border</source>
-        <translation>&amp;Выделять текущий терминал границами</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="279"/>
-        <source>Ask for Window Closing Confirmation</source>
-        <translation>Подтверждать закрыте окна</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="289"/>
-        <source>Open New Sub-Terminals in Current Working Dir</source>
-        <translation>Открыть новый подтерминал в текущей папке</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="296"/>
-        <source>Show Main Menu</source>
-        <translation>Показать главное меню</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="320"/>
-        <source>Limited to: </source>
-        <translation>Ограничение: </translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="340"/>
-        <source>Unlimited</source>
-        <translation>Без ограничения</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="367"/>
-        <source>Emulation Type</source>
-        <translation>Тип эмуляции</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="376"/>
-        <source>Select emulation behaviour. It does not mean that for example &quot;linux&quot; has to be used only on Linux OS. Feel free to use it on Mac too etc.&lt;p&gt;Default is the failback type with minimal feature set.</source>
-        <translation>Выбрать вид эмуляции. Это не означает, что, например, «linux» должно быть использовано только в ОС Linux. Вы можете использовать его на Mac и др.&lt;p&gt;По умолчанию — это запасной режим с минимальным набором функций.</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="428"/>
+        <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Shortcut</source>
         <translation>Сочетание клавиш</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="433"/>
+        <location filename="../forms/propertiesdialog.ui" line="426"/>
         <source>Key</source>
         <translation>Клавиши</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="45"/>
         <source>No scrollbar</source>
         <translation>Без полосы прокрутки</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="42"/>
-        <location filename="../propertiesdialog.cpp" line="48"/>
+        <location filename="../propertiesdialog.cpp" line="45"/>
+        <location filename="../propertiesdialog.cpp" line="51"/>
         <source>Left</source>
         <translation>Слева</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="42"/>
-        <location filename="../propertiesdialog.cpp" line="48"/>
+        <location filename="../propertiesdialog.cpp" line="45"/>
+        <location filename="../propertiesdialog.cpp" line="51"/>
         <source>Right</source>
         <translation>Справа</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="48"/>
+        <location filename="../propertiesdialog.cpp" line="51"/>
         <source>Top</source>
         <translation>Сверху</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="48"/>
+        <location filename="../propertiesdialog.cpp" line="51"/>
         <source>Bottom</source>
         <translation>Снизу</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="60"/>
+        <location filename="../propertiesdialog.cpp" line="63"/>
         <source>No move</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="60"/>
+        <location filename="../propertiesdialog.cpp" line="63"/>
         <source>Move start</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="60"/>
+        <location filename="../propertiesdialog.cpp" line="63"/>
         <source>Move end</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="65"/>
-        <location filename="../propertiesdialog.cpp" line="117"/>
+        <location filename="../propertiesdialog.cpp" line="68"/>
+        <location filename="../propertiesdialog.cpp" line="122"/>
         <source>System Default</source>
         <translation>Системный</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="245"/>
+        <location filename="../propertiesdialog.cpp" line="252"/>
         <source>Open or create bookmarks file</source>
         <translation>Открыть или создать файл закладок</translation>
-    </message>
-    <message>
-        <source>Select Terminal Font</source>
-        <translation type="obsolete">Выбрать шрифт терминала</translation>
     </message>
 </context>
 <context>
@@ -563,45 +588,6 @@
     </message>
 </context>
 <context>
-    <name>TermWidgetImpl</name>
-    <message>
-        <source>Copy Selection</source>
-        <translation type="obsolete">Копировать выделение</translation>
-    </message>
-    <message>
-        <source>Paste Clipboard</source>
-        <translation type="obsolete">Вставить из буфера</translation>
-    </message>
-    <message>
-        <source>Paste Selection</source>
-        <translation type="obsolete">Вставить выделение</translation>
-    </message>
-    <message>
-        <source>Zoom in</source>
-        <translation type="obsolete">Увеличить</translation>
-    </message>
-    <message>
-        <source>Zoom out</source>
-        <translation type="obsolete">Уменьшить</translation>
-    </message>
-    <message>
-        <source>Zoom reset</source>
-        <translation type="obsolete">Сбросить увеличение</translation>
-    </message>
-    <message>
-        <source>Split Terminal Horizontally</source>
-        <translation type="obsolete">Разделить терминал по горизонтали </translation>
-    </message>
-    <message>
-        <source>Split Terminal Vertically</source>
-        <translation type="obsolete">Разделить терминал по вертикали </translation>
-    </message>
-    <message>
-        <source>Collapse Subterminal</source>
-        <translation type="obsolete">Закрыть подтерминал</translation>
-    </message>
-</context>
-<context>
     <name>mainWindow</name>
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
@@ -639,10 +625,6 @@
         <translation>&amp;Выход</translation>
     </message>
     <message>
-        <source>&amp;Window</source>
-        <translation type="obsolete">&amp;Окно</translation>
-    </message>
-    <message>
         <location filename="../forms/qterminal.ui" line="107"/>
         <source>About...</source>
         <translation>О программе...</translation>
@@ -656,10 +638,6 @@
         <location filename="../forms/qterminal.ui" line="117"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Настройки...</translation>
-    </message>
-    <message>
-        <source>&amp;Quit...</source>
-        <translation type="obsolete">&amp;Выйти...</translation>
     </message>
 </context>
 </TS>
