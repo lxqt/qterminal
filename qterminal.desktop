@@ -4,8 +4,9 @@ Type=Application
 GenericName=Terminal emulator
 
 Comment=Terminal emulator
-Comment[ru_RU]=Эмулятор терминала
 Comment[fr]=Terminal
+Comment[pt]=Emulador de terminal
+Comment[ru_RU]=Эмулятор терминала
 
 Icon=utilities-terminal
 Exec=qterminal
@@ -38,7 +39,7 @@ Name[nb]=Nedtrekksterminal
 Name[nds]=Utklapp-Konsool
 Name[nl]=Uitvouwbare terminalemulator
 Name[pa]=ਲਟਕਦਾ ਟਰਮੀਨਲ
-Name[pt]=Terminal Deslizante
+Name[pt]=Terminal suspenso
 Name[pt_BR]=Terminal suspenso
 Name[ro]=Terminal derulant
 Name[ru]=Выпадающий терминал
