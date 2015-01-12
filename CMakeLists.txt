@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 
 project(qterminal)
 
+include(GNUInstallDirs)
+
 option(USE_SYSTEM_QXT "Use system Qxt Library for global shortcuts" ON)
 option(USE_QT5 "Build using Qt5. Default OFF." OFF)
 
@@ -157,7 +159,7 @@ if(APPLEBUNDLE)
     # use icon for app bundle to be visible in finder
     set(APPLE_BUNDLE_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns")
 else()
-    set(TRANSLATIONS_DIR "${CMAKE_INSTALL_PREFIX}/share/qterminal/translations")
+    set(TRANSLATIONS_DIR "${CMAKE_INSTALL_FULL_DATADIR}/qterminal/translations")
     add_definitions(-DTRANSLATIONS_DIR=\"${TRANSLATIONS_DIR}\")
 endif()
 
@@ -187,14 +189,17 @@ if(X11_FOUND)
 endif()
 
 
-install(FILES qterminal.desktop DESTINATION share/applications)
-install(FILES qterminal_drop.desktop DESTINATION share/applications)
+install(FILES
+    qterminal.desktop
+    qterminal_drop.desktop
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
+)
 
 
 if(NOT APPLEBUNDLE)
-    install(TARGETS ${EXE_NAME} RUNTIME DESTINATION bin)
+    install(TARGETS ${EXE_NAME} RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")
     install(FILES ${QTERM_QM} DESTINATION ${TRANSLATIONS_DIR})
-    install(FILES src/icons/qterminal.png DESTINATION share/pixmaps)
+    install(FILES src/icons/qterminal.png DESTINATION "${CMAKE_INSTALL_DATADIR}/pixmaps")
 else()
     message(STATUS "APPLEBUNDLE")
 
