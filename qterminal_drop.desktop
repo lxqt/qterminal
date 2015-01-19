@@ -6,8 +6,9 @@ Categories=Qt;System;TerminalEmulator;
 Icon=qterminal
 
 Name=QTerminal drop down
-GenericName=Drop-down Terminal
+Name[pt]=QTerminal suspenso
 
+GenericName=Drop-down Terminal
 GenericName[bg]=Падащ терминал
 GenericName[ca]=Terminal desplegable
 GenericName[ca@valencia]=Terminal desplegable
@@ -28,13 +29,10 @@ GenericName[nb]=Nedtrekksterminal
 GenericName[nds]=Utklapp-Konsool
 GenericName[nl]=Uitvouwbare terminalemulator
 GenericName[pa]=ਲਟਕਦਾ ਟਰਮੀਨਲ
-GenericName[pt]=Terminal Deslizante
+GenericName[pt]=Terminal suspenso
 GenericName[pt_BR]=Terminal suspenso
 GenericName[ro]=Terminal derulant
-
 GenericName[ru]=Выпадающий терминал
-Comment[ru]=Вападающий эмулятор терминала.
-
 GenericName[sk]=Rozbaľovací terminál
 GenericName[sv]=Rullgardinsterminal
 GenericName[th]=เทอร์มินัลแบบหย่อนลง
@@ -45,5 +43,5 @@ GenericName[zh_CN]=拉幕式终端
 GenericName[zh_TW]=下拉式終端機
 
 Comment=A drop-down terminal emulator.
-
-
+Comment[pt]=Um emulador de terminal suspenso.
+Comment[ru]=Вападающий эмулятор терминала.

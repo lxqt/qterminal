@@ -225,7 +225,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="400"/>
         <source>Tabs Layout</source>
-        <translation>Esquema dos separadores</translation>
+        <translation>Posição dos separadores</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="414"/>
@@ -235,7 +235,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="432"/>
         <source>Scrollbar Layout</source>
-        <translation>Esquema da barra de deslocação</translation>
+        <translation>Posição da barra de deslocação</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="486"/>
@@ -513,7 +513,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="63"/>
         <source>Move start</source>
-        <translation>MOver para o inicio</translation>
+        <translation>Mover para o inicio</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="63"/>
