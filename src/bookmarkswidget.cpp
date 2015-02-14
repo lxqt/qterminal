@@ -116,7 +116,6 @@ public:
             path = QDesktopServices::storageLocation(i);
             if (!d.exists(path))
             {
-                //qDebug() << "Dir:" << path << "does not exist. Skipping.";
                 continue;
             }
             // it works in Qt5, not in Qt4
@@ -148,7 +147,6 @@ public:
             path = QStandardPaths::writableLocation(i);
             if (!d.exists(path))
             {
-                //qDebug() << "Dir:" << path << "does not exist. Skipping.";
                 continue;
             }
             name = QStandardPaths::displayName(i);
@@ -167,7 +165,6 @@ public:
             path = env.value(i);
             if (!d.exists(path) || !QFileInfo(path).isDir())
             {
-                //qDebug() << "Env Dir:" << path << "does not exist. Skipping.";
                 continue;
             }
             path.replace(" ", "\\ ");

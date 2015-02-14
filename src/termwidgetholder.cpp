@@ -98,7 +98,6 @@ void TermWidgetHolder::saveSession(const QString & name)
 
 TermWidget* TermWidgetHolder::currentTerminal()
 {
-    qDebug() << m_currentTerm << "current terminal";
     return m_currentTerm;
 }
 
@@ -115,8 +114,6 @@ void TermWidgetHolder::switchNextSubterminal()
     foreach (TermWidget * w, l)
     {
         ++ix;
-//        qDebug() << ix << w << w->impl() << w->impl()->hasFocus() << QApplication::focusWidget();
-//        qDebug() << "parent: " << w->parent();
         if (w->impl()->hasFocus())
         {
             break;
@@ -141,14 +138,11 @@ void TermWidgetHolder::switchPrevSubterminal()
     foreach (TermWidget * w, l)
     {
         ++ix;
-//        qDebug() << ix << w << w->impl() << w->impl()->hasFocus() << QApplication::focusWidget();
-//        qDebug() << "parent: " << w->parent();
         if (w->impl()->hasFocus())
         {
             break;
         }
     }
-    //qDebug() << ix << l.at(ix)->impl() << QApplication::focusWidget() << l;
 
     if (ix > 0)
     {
@@ -274,7 +268,6 @@ TermWidget *TermWidgetHolder::newTerm(const QString & wdir, const QString & shel
 
 void TermWidgetHolder::setCurrentTerminal(TermWidget* term)
 {
-    qDebug() << "set current term:" << term;
     m_currentTerm = term;
 }
 
