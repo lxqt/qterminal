@@ -6,6 +6,7 @@ Categories=Qt;System;TerminalEmulator;
 Icon=qterminal
 
 Name=QTerminal drop down
+Name[de]=QTerminal herabhängend
 Name[pt]=QTerminal suspenso
 
 GenericName=Drop-down Terminal
@@ -43,5 +44,6 @@ GenericName[zh_CN]=拉幕式终端
 GenericName[zh_TW]=下拉式終端機
 
 Comment=A drop-down terminal emulator.
+Comment[de]=Ein Ausklapp-Terminalemulator.
 Comment[pt]=Um emulador de terminal suspenso.
 Comment[ru]=Вападающий эмулятор терминала.

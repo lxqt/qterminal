@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de_DE">
+<TS version="2.1" language="de">
 <context>
     <name>BookmarksWidget</name>
     <message>
@@ -36,129 +36,154 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="310"/>
+        <location filename="../mainwindow.cpp" line="322"/>
         <source>Close Tab</source>
-        <translation>Tab schließen</translation>
+        <translation>Reiter schließen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="191"/>
+        <location filename="../mainwindow.cpp" line="192"/>
         <source>Split Terminal Horizontally</source>
         <translation>Terminal horizontal teilen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="198"/>
         <source>Split Terminal Vertically</source>
         <translation>Terminal vertikal teilen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="203"/>
+        <location filename="../mainwindow.cpp" line="204"/>
         <source>Collapse Subterminal</source>
         <translation>Unterterminal schließen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="209"/>
+        <location filename="../mainwindow.cpp" line="210"/>
         <source>Next Subterminal</source>
-        <translation>Nächster Unterterminal</translation>
+        <translation>Nächstes Unterterminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="215"/>
+        <location filename="../mainwindow.cpp" line="216"/>
         <source>Previous Subterminal</source>
-        <translation>Voriger Unterterminal</translation>
+        <translation>Voriges Unterterminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="165"/>
+        <location filename="../mainwindow.cpp" line="166"/>
         <source>Next Tab</source>
-        <translation>Nächster Tab</translation>
+        <translation>Nächster Reiter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="171"/>
+        <location filename="../mainwindow.cpp" line="172"/>
         <source>Previous Tab</source>
-        <translation>Voriger Tab</translation>
+        <translation>Voriger Reiter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="177"/>
+        <location filename="../mainwindow.cpp" line="178"/>
         <source>Move Tab Left</source>
-        <translation>Tab nach links verschieben</translation>
+        <translation>Reiter nach links verschieben</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="183"/>
+        <location filename="../mainwindow.cpp" line="184"/>
         <source>Move Tab Right</source>
-        <translation>Tab nach rechts verschieben</translation>
+        <translation>Reiter nach rechts verschieben</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="224"/>
+        <location filename="../mainwindow.cpp" line="225"/>
         <source>Copy Selection</source>
         <translation>Textauswahl kopieren</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="236"/>
+        <location filename="../mainwindow.cpp" line="237"/>
         <source>Paste Selection</source>
         <translation>Textauswahl einfügen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="273"/>
+        <location filename="../mainwindow.cpp" line="274"/>
         <source>Save Session</source>
         <translation>Sitzung speichern</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="280"/>
         <source>Load Session</source>
         <translation>Sitzung laden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="311"/>
+        <source>New Tab From Preset</source>
+        <translation>Neuer Reiter von Vorlage</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="312"/>
+        <source>1 Terminal</source>
+        <translation>1 Terminal</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="314"/>
+        <source>2 Horizontal Terminals</source>
+        <translation>2 horizontale Terminals</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="316"/>
+        <source>2 Vertical Terminals</source>
+        <translation>2 vertikale Terminals</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="318"/>
+        <source>4 Terminals</source>
+        <translation>4 Terminals</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="382"/>
         <source>Bottom</source>
         <translation>Unten</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>Top</source>
         <translation>Oben</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
-        <location filename="../mainwindow.cpp" line="403"/>
+        <location filename="../mainwindow.cpp" line="384"/>
+        <location filename="../mainwindow.cpp" line="415"/>
         <source>Right</source>
         <translation>Rechts</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="373"/>
-        <location filename="../mainwindow.cpp" line="404"/>
+        <location filename="../mainwindow.cpp" line="385"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>Left</source>
         <translation>Links</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="388"/>
+        <location filename="../mainwindow.cpp" line="400"/>
         <source>Tabs Layout</source>
-        <translation>Anzeige Tableiste</translation>
+        <translation>Anzeige Reiterleiste</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="402"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>None</source>
         <translation>Keine</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="432"/>
         <source>Scrollbar Layout</source>
         <translation>Anzeige Bildlaufleiste</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="486"/>
         <source>Exit QTerminal</source>
         <translation>QTerminal beenden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="476"/>
+        <location filename="../mainwindow.cpp" line="488"/>
         <source>Do not ask again</source>
         <translation>Nicht erneut nachfragen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="483"/>
+        <location filename="../mainwindow.cpp" line="495"/>
         <source>Are you sure you want to exit?</source>
         <translation>Sind Sie sicher, dass Sie QTerminal beenden wollen?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="515"/>
         <source>A lightweight multiplatform terminal emulator</source>
         <translation>Ein schlanker plattformunabhängiger Terminalemulator</translation>
     </message>
@@ -168,327 +193,343 @@
         <translation>Lesezeichen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="91"/>
+        <location filename="../mainwindow.cpp" line="92"/>
         <source>Rename Session</source>
         <translation>Sitzung umbenennen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="146"/>
+        <location filename="../mainwindow.cpp" line="147"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Tippen Sie &quot;%1&quot;, um den Terminal zu sehen.</translation>
+        <translation>Tippen Sie &quot;%1&quot;, um das Terminal zu sehen.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="157"/>
+        <location filename="../mainwindow.cpp" line="158"/>
         <source>Clear Current Tab</source>
-        <translation>Aktuellen Tab leeren</translation>
+        <translation>Aktuellen Reiter leeren</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="230"/>
+        <location filename="../mainwindow.cpp" line="231"/>
         <source>Paste Clipboard</source>
         <translation>Zwischenablage einfügen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="243"/>
         <source>Zoom in</source>
         <translation>Vergrößern</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="249"/>
         <source>Zoom out</source>
         <translation>Verkleinern</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>Zoom reset</source>
         <translation>Zurücksetzen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <source>Find...</source>
         <translation>Suchen...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="286"/>
+        <location filename="../mainwindow.cpp" line="287"/>
         <source>Toggle Menu</source>
         <translation>Menü ein-/ausblenden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="305"/>
         <source>New Tab</source>
-        <translation>Neuer Tab</translation>
+        <translation>Neuer Reiter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="316"/>
+        <location filename="../mainwindow.cpp" line="328"/>
         <source>New Window</source>
         <translation>Neues Fenster</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="339"/>
+        <location filename="../mainwindow.cpp" line="351"/>
         <source>Hide Window Borders</source>
         <translation>Fensterrahmen ausblenden</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="350"/>
+        <location filename="../mainwindow.cpp" line="362"/>
         <source>Show Tab Bar</source>
-        <translation>Tabzeile anzeigen</translation>
+        <translation>Reiterleiste anzeigen</translation>
     </message>
 </context>
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="14"/>
-        <source>QTerminal Properties</source>
-        <translation>QTerminal-Einstellungen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="49"/>
-        <source>Terminal Font</source>
-        <translation>Terminalschrift</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="54"/>
-        <source>Look and Feel</source>
-        <translation>Aussehen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="59"/>
-        <location filename="../forms/propertiesdialog.ui" line="314"/>
-        <source>History</source>
-        <translation>Historie</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="64"/>
+        <location filename="../forms/propertiesdialog.ui" line="300"/>
         <source>Emulation</source>
         <translation>Emulation</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="69"/>
+        <location filename="../forms/propertiesdialog.ui" line="62"/>
         <source>Shortcuts</source>
         <translation>Tastenkürzel</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="97"/>
+        <location filename="../forms/propertiesdialog.ui" line="14"/>
+        <source>Terminal settings</source>
+        <translation>Terminaleinstellungen</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="52"/>
+        <source>Appearance</source>
+        <translation>Erscheinungsbild</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="57"/>
+        <location filename="../forms/propertiesdialog.ui" line="325"/>
+        <source>Behavior</source>
+        <translation>Verhalten</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="67"/>
+        <source>Dropdown</source>
+        <translation>Aufklappen</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="90"/>
+        <source>Color scheme</source>
+        <translation>Farbschema</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="100"/>
+        <source>Widget style</source>
+        <translation>Stil der Bedienelemente</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="110"/>
+        <source>Scrollbar position</source>
+        <translation>Position der Bildlaufleiste</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="120"/>
+        <source>Tabs position</source>
+        <translation>Position der Reiter</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="130"/>
+        <source>Show the menu bar</source>
+        <translation>Menüleiste anzeigen</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="137"/>
+        <source>Always show the tab bar</source>
+        <translation>Reiterleiste immer anzeigen</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="144"/>
+        <source>Show a border around the current terminal</source>
+        <translation>Aktuelles Terminal einrahmen</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="151"/>
+        <source>Application transparency</source>
+        <translation>Transparenz der Anwendung</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="177"/>
+        <source>Terminal transparency</source>
+        <translation>Transparenz des Terminals</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="197"/>
+        <source>Start with preset:</source>
+        <translation>Start mit Vorlage:</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="205"/>
+        <source>None (single terminal)</source>
+        <translation>Keine (ein Terminal)</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="210"/>
+        <source>2 terminals horizontally</source>
+        <translation>2 horizontale Terminals</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="215"/>
+        <source>2 terminals vertically</source>
+        <translation>2 vertikale Terminals</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="220"/>
+        <source>4 terminals</source>
+        <translation>4 Terminals</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="241"/>
         <source>Font</source>
         <translation>Schriftart</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="129"/>
+        <location filename="../forms/propertiesdialog.ui" line="273"/>
         <source>&amp;Set Font...</source>
         <translation>&amp;Schriftart wählen...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="176"/>
-        <source>Color Scheme:</source>
-        <translation>Farbschema:</translation>
+        <location filename="../forms/propertiesdialog.ui" line="309"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Verhalten des Emulators wählen. Hinweis: Emulationsarten können auch unter anderen Systemen genutzt werden (z.B. &quot;linux&quot; unter OS X).&lt;/p&gt;&lt;p&gt;Die Standardemulation ist &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; mit minimalem Funktionsumfang.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="209"/>
-        <source>GUI Style:</source>
-        <translation>GUI-Stil:</translation>
+        <location filename="../forms/propertiesdialog.ui" line="331"/>
+        <source>Action after paste</source>
+        <translation>Aktion nach Einfügen aus der Zwischenablage</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="252"/>
-        <source>Scrollbar Position:</source>
-        <translation>Position der Bildlaufleiste:</translation>
+        <location filename="../forms/propertiesdialog.ui" line="364"/>
+        <source>Open new terminals in current working directory</source>
+        <translation>Neues Terminal im aktuellen Verzeichnis öffnen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="202"/>
-        <source>Tabs Position:</source>
-        <translation>Position der Tabs:</translation>
+        <location filename="../forms/propertiesdialog.ui" line="371"/>
+        <source>Ask for confirmation when closing</source>
+        <translation>Beim Schließen eines Fensters nachfragen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="259"/>
-        <source>&amp;Application Transparency:</source>
-        <translation>&amp;Transparenz der Anwendung:</translation>
+        <location filename="../forms/propertiesdialog.ui" line="381"/>
+        <source>Unlimited history</source>
+        <translation>Uneingeschränkte Historie</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="216"/>
-        <location filename="../forms/propertiesdialog.ui" line="236"/>
+        <location filename="../forms/propertiesdialog.ui" line="388"/>
+        <source>History size (in lines)</source>
+        <translation>Historie (Zeilen)</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="456"/>
+        <source>Height</source>
+        <translation>Höhe</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="463"/>
+        <location filename="../forms/propertiesdialog.ui" line="477"/>
+        <source>%</source>
+        <translation>%</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="470"/>
+        <source>Width</source>
+        <translation>Breite</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="520"/>
+        <source>Edit bookmark file contents</source>
+        <translation>Lesezeichendatei bearbeiten</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="542"/>
+        <source>Enable bookmarks</source>
+        <translation>Lesezeichen verwenden</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="551"/>
+        <source>Bookmark file</source>
+        <translation>Lesezeichendatei</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="161"/>
+        <location filename="../forms/propertiesdialog.ui" line="184"/>
         <source> %</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="229"/>
-        <source>Terminal Transparency:</source>
-        <translation>Transparenz des Terminals:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="320"/>
-        <source>Limited to: </source>
-        <translation>Eingeschränkt auf:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="340"/>
-        <source>Unlimited</source>
-        <translation>keine Einschränkung</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="367"/>
-        <source>Emulation Type</source>
-        <translation>Emulationsart</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="376"/>
-        <source>Select emulation behaviour. It does not mean that for example &quot;linux&quot; has to be used only on Linux OS. Feel free to use it on Mac too etc.&lt;p&gt;Default is the failback type with minimal feature set.</source>
-        <translation>Verhalten des Emulators wählen. Hinweis: Emulationsarten können auch unter anderen Systemen genutzt werden (z.B. &quot;linux&quot; unter OS X).&lt;p&gt;Die Standardemulation ist &quot;default&quot; mit minimalem Funktionsumfang.</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="428"/>
+        <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Shortcut</source>
         <translation>Tastenkürzel</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="433"/>
+        <location filename="../forms/propertiesdialog.ui" line="426"/>
         <source>Key</source>
         <translation>Taste</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="74"/>
-        <source>DropDown</source>
-        <translation>Aufklappen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="79"/>
+        <location filename="../forms/propertiesdialog.ui" line="72"/>
         <source>Bookmarks</source>
         <translation>Lesezeichen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="152"/>
-        <source>Note: only fixed width font are allowed to be used in terminal</source>
-        <translation>Anmerkung: nur Festbreit-Schriften können im Terminal verwendet werden.</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="169"/>
-        <source>Action after paste clipboard</source>
-        <translation>Aktion nach Einfügen aus der Zwischenablage</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="272"/>
-        <source>&amp;Highlight Current Terminal With Border</source>
-        <translation>Aktuellen Terminal einrahmen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="279"/>
-        <source>Ask for Window Closing Confirmation</source>
-        <translation>Beim Schließen eines Fensters nachfragen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="289"/>
-        <source>Open New Sub-Terminals in Current Working Dir</source>
-        <translation>Neuen Unterterminal im aktuellen Verzeichnis öffnen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="296"/>
-        <source>Show Main Menu</source>
-        <translation>Hauptmenü anzeigen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="303"/>
-        <source>Always Show Tabs</source>
-        <translation>Tabs immer anzeigen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="445"/>
+        <location filename="../forms/propertiesdialog.ui" line="438"/>
         <source>Show on start</source>
         <translation>Beim Start anzeigen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="452"/>
+        <location filename="../forms/propertiesdialog.ui" line="445"/>
         <source>Size</source>
         <translation>Größe</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="460"/>
-        <source>Height %:</source>
-        <translation>Höhe in %:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="470"/>
-        <source>Width %:</source>
-        <translation>Breite in %:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="487"/>
+        <location filename="../forms/propertiesdialog.ui" line="491"/>
         <source>Shortcut:</source>
         <translation>Tastenkürzel:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="516"/>
-        <source>Edit File Content</source>
-        <translation>Datei bearbeiten</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="538"/>
-        <source>Use Bookmarks</source>
-        <translation>Lesezeichen verwenden</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="547"/>
-        <source>Bookmark FIle:</source>
-        <translation>Lesezeichendatei:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="557"/>
+        <location filename="../forms/propertiesdialog.ui" line="561"/>
         <source>Find...</source>
         <translation>Suchen...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="566"/>
+        <location filename="../forms/propertiesdialog.ui" line="570"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Sie können eine Datei für eigene Lesezeichen angeben. Das erlaubt einfachen Austausch mit Werkzeugen wie OwnCloud oder DropBox.</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="42"/>
+        <location filename="../propertiesdialog.cpp" line="45"/>
         <source>No scrollbar</source>
-        <translation type="unfinished"></translation>
+        <translation>Keine Bildlaufleiste</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="42"/>
-        <location filename="../propertiesdialog.cpp" line="48"/>
+        <location filename="../propertiesdialog.cpp" line="45"/>
+        <location filename="../propertiesdialog.cpp" line="51"/>
         <source>Left</source>
-        <translation type="unfinished">Links</translation>
+        <translation>Links</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="42"/>
-        <location filename="../propertiesdialog.cpp" line="48"/>
+        <location filename="../propertiesdialog.cpp" line="45"/>
+        <location filename="../propertiesdialog.cpp" line="51"/>
         <source>Right</source>
-        <translation type="unfinished">Rechts</translation>
+        <translation>Rechts</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="48"/>
+        <location filename="../propertiesdialog.cpp" line="51"/>
         <source>Top</source>
-        <translation type="unfinished">Oben</translation>
+        <translation>Oben</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="48"/>
+        <location filename="../propertiesdialog.cpp" line="51"/>
         <source>Bottom</source>
-        <translation type="unfinished">Unten</translation>
+        <translation>Unten</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="60"/>
+        <location filename="../propertiesdialog.cpp" line="63"/>
         <source>No move</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicht bewegen</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="60"/>
+        <location filename="../propertiesdialog.cpp" line="63"/>
         <source>Move start</source>
-        <translation type="unfinished"></translation>
+        <translation>An den Anfang bewegen</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="60"/>
+        <location filename="../propertiesdialog.cpp" line="63"/>
         <source>Move end</source>
-        <translation type="unfinished"></translation>
+        <translation>An das Ende bewegen</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="65"/>
-        <location filename="../propertiesdialog.cpp" line="117"/>
+        <location filename="../propertiesdialog.cpp" line="68"/>
+        <location filename="../propertiesdialog.cpp" line="122"/>
         <source>System Default</source>
         <translation>Systemstandard</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="245"/>
+        <location filename="../propertiesdialog.cpp" line="252"/>
         <source>Open or create bookmarks file</source>
-        <translation>Lesezeichendatei öffnen</translation>
+        <translation>Lesezeichendatei öffnen oder erstellen</translation>
     </message>
 </context>
 <context>
@@ -499,7 +540,7 @@
         <translation>Lokale Lesezeichen</translation>
     </message>
     <message>
-        <location filename="../bookmarkswidget.cpp" line="190"/>
+        <location filename="../bookmarkswidget.cpp" line="187"/>
         <source>Synchronized Bookmarks</source>
         <translation>Synchronisierte Lesezeichen</translation>
     </message>
@@ -515,12 +556,12 @@
     <message>
         <location filename="../tabwidget.cpp" line="160"/>
         <source>Tab name</source>
-        <translation>Tabbezeichnung</translation>
+        <translation>Reiterbezeichnung</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="161"/>
         <source>New tab name:</source>
-        <translation>Neue Tabbezeichnung:</translation>
+        <translation>Neue Reiterbezeichnung:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="183"/>
@@ -604,7 +645,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="93"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Bearbeiten</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="107"/>
@@ -639,7 +680,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="125"/>
         <source>&amp;Quit</source>
-        <translation>Beenden</translation>
+        <translation>&amp;Beenden</translation>
     </message>
 </context>
 </TS>
