@@ -334,12 +334,16 @@ void MainWindow::setup_FileMenu_Actions()
     menu_File->addSeparator();
 
     Properties::Instance()->actions[PREFERENCES] = actProperties;
+    seq = QKeySequence::fromString( settings.value(PREFERENCES).toString() );
+    Properties::Instance()->actions[PREFERENCES]->setShortcut(seq);
     connect(actProperties, SIGNAL(triggered()), SLOT(actProperties_triggered()));
     menu_File->addAction(Properties::Instance()->actions[PREFERENCES]);
 
     menu_File->addSeparator();
 
     Properties::Instance()->actions[QUIT] = actQuit;
+    seq = QKeySequence::fromString( settings.value(QUIT).toString() );
+    Properties::Instance()->actions[QUIT]->setShortcut(seq);
     connect(actQuit, SIGNAL(triggered()), SLOT(close()));
     menu_File->addAction(Properties::Instance()->actions[QUIT]);
 
