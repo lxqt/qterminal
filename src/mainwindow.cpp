@@ -348,29 +348,37 @@ void MainWindow::setup_FileMenu_Actions()
 
 void MainWindow::setup_ViewMenu_Actions()
 {
-    toggleBorder = new QAction(tr("Hide Window Borders"), this);
-    //toggleBorder->setObjectName("toggle_Borderless");
-    toggleBorder->setCheckable(true);
-// TODO/FIXME: it's broken somehow. When I call toggleBorderless() here the non-responsive window appear
-//    toggleBorder->setChecked(Properties::Instance()->borderless);
-//    if (Properties::Instance()->borderless)
-//        toggleBorderless();
-    connect(toggleBorder, SIGNAL(triggered()), this, SLOT(toggleBorderless()));
-    menu_Window->addAction(toggleBorder);
-    toggleBorder->setVisible(!m_dropMode);
-
-    toggleTabbar = new QAction(tr("Show Tab Bar"), this);
-    //toggleTabbar->setObjectName("toggle_TabBar");
-    toggleTabbar->setCheckable(true);
-    toggleTabbar->setChecked(!Properties::Instance()->tabBarless);
-    toggleTabBar();
-    connect(toggleTabbar, SIGNAL(triggered()), this, SLOT(toggleTabBar()));
-    menu_Window->addAction(toggleTabbar);
-
+    QKeySequence seq;
     QSettings settings;
     settings.beginGroup("Shortcuts");
+
+    QAction *hideBordersAction = new QAction(tr("Hide Window Borders"), this);
+    hideBordersAction->setCheckable(true);
+    hideBordersAction->setVisible(!m_dropMode);
+    seq = QKeySequence::fromString( settings.value(HIDE_WINDOW_BORDERS).toString() );
+    hideBordersAction->setShortcut(seq);
+    connect(hideBordersAction, SIGNAL(triggered()), this, SLOT(toggleBorderless()));
+    menu_Window->addAction(hideBordersAction);
+    Properties::Instance()->actions[HIDE_WINDOW_BORDERS] = hideBordersAction;
+    //Properties::Instance()->actions[HIDE_WINDOW_BORDERS]->setObjectName("toggle_Borderless");
+// TODO/FIXME: it's broken somehow. When I call toggleBorderless() here the non-responsive window appear
+//    Properties::Instance()->actions[HIDE_WINDOW_BORDERS]->setChecked(Properties::Instance()->borderless);
+//    if (Properties::Instance()->borderless)
+//        toggleBorderless();
+
+    QAction *showTabBarAction = new QAction(tr("Show Tab Bar"), this);
+    //toggleTabbar->setObjectName("toggle_TabBar");
+    showTabBarAction->setCheckable(true);
+    showTabBarAction->setChecked(!Properties::Instance()->tabBarless);
+    seq = QKeySequence::fromString( settings.value(SHOW_TAB_BAR).toString() );
+    showTabBarAction->setShortcut(seq);
+    menu_Window->addAction(showTabBarAction);
+    Properties::Instance()->actions[SHOW_TAB_BAR] = showTabBarAction;
+    toggleTabBar();
+    connect(showTabBarAction, SIGNAL(triggered()), this, SLOT(toggleTabBar()));
+
     Properties::Instance()->actions[TOGGLE_BOOKMARKS] = m_bookmarksDock->toggleViewAction();
-    QKeySequence seq = QKeySequence::fromString( settings.value(TOGGLE_BOOKMARKS, TOGGLE_BOOKMARKS_SHORTCUT).toString() );
+    seq = QKeySequence::fromString( settings.value(TOGGLE_BOOKMARKS, TOGGLE_BOOKMARKS_SHORTCUT).toString() );
     Properties::Instance()->actions[TOGGLE_BOOKMARKS]->setShortcut(seq);
     menu_Window->addAction(Properties::Instance()->actions[TOGGLE_BOOKMARKS]);
     settings.endGroup();
@@ -445,7 +453,8 @@ void MainWindow::on_consoleTabulator_currentChanged(int)
 
 void MainWindow::toggleTabBar()
 {
-    Properties::Instance()->tabBarless = !toggleTabbar->isChecked();
+    Properties::Instance()->tabBarless
+            = !Properties::Instance()->actions[SHOW_TAB_BAR]->isChecked();
     consoleTabulator->showHideTabBar();
 }
 
@@ -454,8 +463,8 @@ void MainWindow::toggleBorderless()
     setWindowFlags(windowFlags() ^ Qt::FramelessWindowHint);
     show();
     setWindowState(Qt::WindowActive); /* don't loose focus on the window */
-    Properties::Instance()->borderless = toggleBorder->isChecked();
-    realign();
+    Properties::Instance()->borderless
+            = Properties::Instance()->actions[HIDE_WINDOW_BORDERS]->isChecked(); realign();
 }
 
 void MainWindow::toggleMenu()
