@@ -58,6 +58,9 @@
 #define TOGGLE_MENU "Toggle Menu"
 #define TOGGLE_BOOKMARKS "Toggle Bookmarks"
 
+#define HIDE_WINDOW_BORDERS "Hide Window Borders"
+#define SHOW_TAB_BAR "Show Tab Bar"
+
 /* Some defaults for QTerminal application */
 
 #define DEFAULT_WIDTH                  800
