@@ -271,13 +271,6 @@
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="changeFontButton">
-            <property name="text">
-             <string>&amp;Change...</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QLabel" name="fontSampleLabel">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -287,6 +280,13 @@
             </property>
             <property name="wordWrap">
              <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="changeFontButton">
+            <property name="text">
+             <string>&amp;Change...</string>
             </property>
            </widget>
           </item>
