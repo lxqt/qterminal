@@ -195,6 +195,10 @@ install(FILES
     DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
 )
 
+install(FILES
+    qterminal.appdata.xml
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/appdata"
+)
 
 if(NOT APPLEBUNDLE)
     install(TARGETS ${EXE_NAME} RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")
