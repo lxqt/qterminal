@@ -13,7 +13,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
 
 if(USE_QT5 AND USE_SYSTEM_QXT)
-    message(FATAL_ERROR "Unable to use system qxt with qt5 now")
+    message(FATAL_ERROR "Unable to use system qxt with qt5. Please use -DUSE_SYSTEM_QXT=false.")
 endif()
 
 if(USE_QT5)

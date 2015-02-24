@@ -8,7 +8,7 @@ Build:
     http://www.cmake.org/Wiki/CMake_FAQ#Out-of-source_build_trees
 
     1) mkdir -p build && cd build
-    2a) cmake path/to/source -DUSE_QT5=true  # Qt 5
+    2a) cmake path/to/source -DUSE_QT5=true  -DUSE_SYSTEM_QXT=false # Qt 5
     2b) cmake path/to/source  # Qt 4 only
     3) make
     4) optional: make install
