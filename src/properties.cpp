@@ -91,7 +91,7 @@ void Properties::loadSettings()
     scrollBarPos = settings.value("ScrollbarPosition", 2).toInt();
     /* default to North. I'd prefer South but North is standard (they say) */
     tabsPos = settings.value("TabsPosition", 0).toInt();
-    alwaysShowTabs = settings.value("AlwaysShowTabs", true).toBool();
+    hideTabBarWithOneTab = settings.value("HideTabBarWithOneTab", false).toBool();
     m_motionAfterPaste = settings.value("MotionAfterPaste", 0).toInt();
 
     /* toggles */
@@ -162,7 +162,7 @@ void Properties::saveSettings()
     settings.setValue("termOpacity", termOpacity);
     settings.setValue("ScrollbarPosition", scrollBarPos);
     settings.setValue("TabsPosition", tabsPos);
-    settings.setValue("AlwaysShowTabs", alwaysShowTabs);
+    settings.setValue("HideTabBarWithOneTab", hideTabBarWithOneTab);
     settings.setValue("MotionAfterPaste", m_motionAfterPaste);
     settings.setValue("Borderless", borderless);
     settings.setValue("TabBarless", tabBarless);

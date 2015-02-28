@@ -132,9 +132,9 @@
         </widget>
        </item>
        <item row="7" column="0">
-        <widget class="QCheckBox" name="alwaysShowTabsCheckBox">
+        <widget class="QCheckBox" name="hideTabBarCheckBox">
          <property name="text">
-          <string>Always show the tab bar</string>
+          <string>Hide tab bar with only one tab</string>
          </property>
         </widget>
        </item>
