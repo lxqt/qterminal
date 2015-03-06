@@ -200,15 +200,24 @@ void Properties::migrate_settings()
         qDebug() << "Warning: Configuration file was written by a newer version "
                  << "of QTerminal. Some settings might be incompatible";
     }
+
     // Handle renaming of 'Paste Selection' to 'Paste Clipboard' in 0.4.0
     if (lastVersion < "0.4.0")
     {
         settings.beginGroup("Shortcuts");
-        QString tmp = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
-        settings.setValue(PASTE_CLIPBOARD, tmp);
+        QString value = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
+        settings.setValue(PASTE_CLIPBOARD, value);
         settings.remove("Paste Selection");
         settings.endGroup();
     }
+    // Handle renaming of 'AlwaysShowTabs' to 'HideTabBarWithOneTab' after 0.6.0
+    if (lastVersion <= "0.6.0")
+    {
+        QString value = settings.value("AlwaysShowTabs", false).toString();
+        settings.setValue("HideTabBarWithOneTab", value);
+        settings.remove("AlwaysShowTabs");
+    }
+
     if (currentVersion > lastVersion)
         settings.setValue("version", currentVersion);
 }
