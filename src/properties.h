@@ -20,6 +20,8 @@ class Properties
 
         QFont defaultFont();
         void saveSettings();
+        void loadSettings();
+        void migrate_settings();
 
         QByteArray mainWindowGeometry;
         QByteArray mainWindowState;
@@ -67,7 +69,6 @@ class Properties
 
         QMap< QString, QAction * > actions;
 
-        void loadSettings();
 
 
     private:

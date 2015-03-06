@@ -47,8 +47,8 @@ MainWindow::MainWindow(const QString& work_dir,
       m_dropMode(dropMode)
 {
     setupUi(this);
+    Properties::Instance()->migrate_settings();
     Properties::Instance()->loadSettings();
-    migrate_settings();
 
     m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
     m_bookmarksDock->setObjectName("BookmarksDockWidget");
@@ -97,33 +97,6 @@ MainWindow::MainWindow(const QString& work_dir,
 MainWindow::~MainWindow()
 {
 }
-
-void MainWindow::migrate_settings()
-{
-    // Deal with rearrangements of settings.
-    // If this method becomes unbearably huge we should look at the config-update
-    // system used by kde and razor.
-    QSettings settings;
-    QString lastVersion = settings.value("version", "0.0.0").toString();
-    QString currentVersion = STR_VERSION;
-    if (currentVersion < lastVersion)
-    {
-        qDebug() << "Warning: Configuration file was written by a newer version "
-                 << "of QTerminal. Some settings might be incompatible";
-    }
-    // Handle renaming of 'Paste Selection' to 'Paste Clipboard' in 0.4.0
-    if (lastVersion < "0.4.0")
-    {
-        settings.beginGroup("Shortcuts");
-        QString tmp = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
-        settings.setValue(PASTE_CLIPBOARD, tmp);
-        settings.remove("Paste Selection");
-        settings.endGroup();
-    }
-    if (currentVersion > lastVersion)
-        settings.setValue("version", currentVersion);
-}
-
 
 void MainWindow::enableDropMode()
 {
