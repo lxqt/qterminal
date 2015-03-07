@@ -52,7 +52,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     tabsPos_comboBox->addItems(tabsPosList);
     tabsPos_comboBox->setCurrentIndex(Properties::Instance()->tabsPos);
 
-    alwaysShowTabsCheckBox->setChecked(Properties::Instance()->alwaysShowTabs);
+    hideTabBarCheckBox->setChecked(Properties::Instance()->hideTabBarWithOneTab);
 
     // show main menu bar
     showMenuCheckBox->setChecked(Properties::Instance()->menuVisible);
@@ -139,7 +139,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->scrollBarPos = scrollBarPos_comboBox->currentIndex();
     Properties::Instance()->tabsPos = tabsPos_comboBox->currentIndex();
-    Properties::Instance()->alwaysShowTabs = alwaysShowTabsCheckBox->isChecked();
+    Properties::Instance()->hideTabBarWithOneTab = hideTabBarCheckBox->isChecked();
     Properties::Instance()->menuVisible = showMenuCheckBox->isChecked();
     Properties::Instance()->m_motionAfterPaste = motionAfterPasting_comboBox->currentIndex();
 

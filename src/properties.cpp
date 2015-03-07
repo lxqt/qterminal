@@ -91,7 +91,7 @@ void Properties::loadSettings()
     scrollBarPos = settings.value("ScrollbarPosition", 2).toInt();
     /* default to North. I'd prefer South but North is standard (they say) */
     tabsPos = settings.value("TabsPosition", 0).toInt();
-    alwaysShowTabs = settings.value("AlwaysShowTabs", true).toBool();
+    hideTabBarWithOneTab = settings.value("HideTabBarWithOneTab", false).toBool();
     m_motionAfterPaste = settings.value("MotionAfterPaste", 0).toInt();
 
     /* toggles */
@@ -162,7 +162,7 @@ void Properties::saveSettings()
     settings.setValue("termOpacity", termOpacity);
     settings.setValue("ScrollbarPosition", scrollBarPos);
     settings.setValue("TabsPosition", tabsPos);
-    settings.setValue("AlwaysShowTabs", alwaysShowTabs);
+    settings.setValue("HideTabBarWithOneTab", hideTabBarWithOneTab);
     settings.setValue("MotionAfterPaste", m_motionAfterPaste);
     settings.setValue("Borderless", borderless);
     settings.setValue("TabBarless", tabBarless);
@@ -185,5 +185,40 @@ void Properties::saveSettings()
     settings.setValue("Height", dropHeight);
     settings.endGroup();
 
+}
+
+void Properties::migrate_settings()
+{
+    // Deal with rearrangements of settings.
+    // If this method becomes unbearably huge we should look at the config-update
+    // system used by kde and razor.
+    QSettings settings;
+    QString lastVersion = settings.value("version", "0.0.0").toString();
+    QString currentVersion = STR_VERSION;
+    if (currentVersion < lastVersion)
+    {
+        qDebug() << "Warning: Configuration file was written by a newer version "
+                 << "of QTerminal. Some settings might be incompatible";
+    }
+
+    // Handle renaming of 'Paste Selection' to 'Paste Clipboard' in 0.4.0
+    if (lastVersion < "0.4.0")
+    {
+        settings.beginGroup("Shortcuts");
+        QString value = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
+        settings.setValue(PASTE_CLIPBOARD, value);
+        settings.remove("Paste Selection");
+        settings.endGroup();
+    }
+    // Handle renaming of 'AlwaysShowTabs' to 'HideTabBarWithOneTab' after 0.6.0
+    if (lastVersion <= "0.6.0")
+    {
+        QString value = settings.value("AlwaysShowTabs", false).toString();
+        settings.setValue("HideTabBarWithOneTab", value);
+        settings.remove("AlwaysShowTabs");
+    }
+
+    if (currentVersion > lastVersion)
+        settings.setValue("version", currentVersion);
 }
 

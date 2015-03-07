@@ -20,6 +20,8 @@ class Properties
 
         QFont defaultFont();
         void saveSettings();
+        void loadSettings();
+        void migrate_settings();
 
         QByteArray mainWindowGeometry;
         QByteArray mainWindowState;
@@ -42,7 +44,7 @@ class Properties
 
         int scrollBarPos;
         int tabsPos;
-        bool alwaysShowTabs;
+        bool hideTabBarWithOneTab;
         int m_motionAfterPaste;
 
         bool borderless;
@@ -67,7 +69,6 @@ class Properties
 
         QMap< QString, QAction * > actions;
 
-        void loadSettings();
 
 
     private:
