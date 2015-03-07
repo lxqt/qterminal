@@ -58,7 +58,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="210"/>
         <source>Next Subterminal</source>
-        <translation>Próximo subtermminal</translation>
+        <translation>Próximo subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="216"/>
