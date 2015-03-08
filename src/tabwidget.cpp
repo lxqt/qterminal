@@ -51,6 +51,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
     tabBar()->installEventFilter(this);
 
     connect(this, SIGNAL(tabCloseRequested(int)), this, SLOT(removeTab(int)));
+    connect(tabBar(), SIGNAL(tabMoved(int,int)), this, SLOT(updateTabIndices()));
 }
 
 TermWidgetHolder * TabWidget::terminalHolder()
@@ -84,7 +85,7 @@ int TabWidget::addNewTab(const QString & shell_program)
     connect(console, SIGNAL(renameSession()), this, SLOT(renameSession()));
 
     int index = addTab(console, label);
-    recountIndexes();
+    updateTabIndices();
     setCurrentIndex(index);
     console->setInitialFocus();
 
@@ -148,7 +149,7 @@ void TabWidget::zoomReset()
     terminalHolder()->currentTerminal()->impl()->zoomReset();
 }
 
-void TabWidget::recountIndexes()
+void TabWidget::updateTabIndices()
 {
     for(int i = 0; i < count(); i++)
         widget(i)->setProperty(TAB_INDEX_PROPERTY, i);
@@ -210,7 +211,7 @@ void TabWidget::removeFinished()
     if(prop.isValid() && prop.canConvert(QVariant::Int))
     {
         int index = prop.toInt();
-	    removeTab(index);
+        removeTab(index);
 //        if (count() == 0)
 //            emit closeTabNotification();
     }
@@ -224,7 +225,7 @@ void TabWidget::removeTab(int index)
     QTabWidget::removeTab(index);
     w->deleteLater();
 
-    recountIndexes();
+    updateTabIndices();
     int current = currentIndex();
     if (current >= 0 )
     {
@@ -307,7 +308,7 @@ void TabWidget::move(Direction dir)
         setUpdatesEnabled(true);
         setCurrentIndex(newIndex);
         child->setFocus();
-        recountIndexes();
+        updateTabIndices();
     }
 }
 

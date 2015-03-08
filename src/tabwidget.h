@@ -85,7 +85,6 @@ signals:
 protected:
     enum Direction{Left = 1, Right};
     void contextMenuEvent(QContextMenuEvent * event);
-    void recountIndexes();
     void move(Direction);
     /*! Event filter for TabWidget's QTabBar. It's installed on tabBar()
         in the constructor.
@@ -93,6 +92,8 @@ protected:
         renaming or new tab opening
      */
     bool eventFilter(QObject *obj, QEvent *event);
+protected slots:
+    void updateTabIndices();
 
 private:
     int tabNumerator;
