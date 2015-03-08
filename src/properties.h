@@ -39,8 +39,8 @@ class Properties
 
         Sessions sessions;
 
-        int appOpacity;
-        int termOpacity;
+        int appTransparency;
+        int termTransparency;
 
         int scrollBarPos;
         int tabsPos;

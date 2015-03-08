@@ -539,7 +539,7 @@ void MainWindow::actProperties_triggered()
 void MainWindow::propertiesChanged()
 {
     QApplication::setStyle(Properties::Instance()->guiStyle);
-    setWindowOpacity(Properties::Instance()->appOpacity/100.0);
+    setWindowOpacity(1.0 - Properties::Instance()->appTransparency/100.0);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     consoleTabulator->propertiesChanged();
     setDropShortcut(Properties::Instance()->dropShortCut);

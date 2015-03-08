@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>713</width>
+    <width>715</width>
     <height>487</height>
    </rect>
   </property>
@@ -151,7 +151,7 @@
           <string>Application transparency</string>
          </property>
          <property name="buddy">
-          <cstring>appOpacityBox</cstring>
+          <cstring>appTransparencyBox</cstring>
          </property>
         </widget>
        </item>
@@ -163,18 +163,18 @@
         </widget>
        </item>
        <item row="9" column="1">
-        <widget class="QSpinBox" name="appOpacityBox">
+        <widget class="QSpinBox" name="appTransparencyBox">
          <property name="suffix">
           <string> %</string>
          </property>
          <property name="minimum">
-          <number>1</number>
+          <number>0</number>
          </property>
          <property name="maximum">
-          <number>100</number>
+          <number>99</number>
          </property>
          <property name="value">
-          <number>100</number>
+          <number>0</number>
          </property>
         </widget>
        </item>
@@ -186,15 +186,18 @@
         </widget>
        </item>
        <item row="10" column="1">
-        <widget class="QSpinBox" name="termOpacityBox">
+        <widget class="QSpinBox" name="termTransparencyBox">
          <property name="suffix">
           <string> %</string>
          </property>
          <property name="minimum">
-          <number>1</number>
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
          </property>
          <property name="value">
-          <number>99</number>
+          <number>0</number>
          </property>
         </widget>
        </item>

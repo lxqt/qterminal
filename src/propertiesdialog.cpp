@@ -74,11 +74,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     
     setFontSample(Properties::Instance()->font);
 
-    appOpacityBox->setValue(Properties::Instance()->appOpacity);
-    //connect(appOpacityBox, SIGNAL(valueChanged(int)), this, SLOT(apply()));
+    appTransparencyBox->setValue(Properties::Instance()->appTransparency);
 
-    termOpacityBox->setValue(Properties::Instance()->termOpacity);
-    //connect(termOpacityBox, SIGNAL(valueChanged(int)), this, SLOT(apply()));
+    termTransparencyBox->setValue(Properties::Instance()->termTransparency);
 
     highlightCurrentCheckBox->setChecked(Properties::Instance()->highlightCurrentTerminal);
 
@@ -125,12 +123,12 @@ void PropertiesDialog::apply()
     Properties::Instance()->emulation = emulationComboBox->currentText();
 
     /* do not allow to go above 99 or we lose transparency option */
-    (appOpacityBox->value() >= 100) ?
-            Properties::Instance()->appOpacity = 99
+    (appTransparencyBox->value() >= 100) ?
+            Properties::Instance()->appTransparency = 99
                 :
-            Properties::Instance()->appOpacity = appOpacityBox->value();
+            Properties::Instance()->appTransparency = appTransparencyBox->value();
 
-    Properties::Instance()->termOpacity = termOpacityBox->value();
+    Properties::Instance()->termTransparency = termTransparencyBox->value();
     Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
 
     Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();
