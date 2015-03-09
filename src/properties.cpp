@@ -84,8 +84,8 @@ void Properties::loadSettings()
     }
     settings.endArray();
 
-    appOpacity = settings.value("MainWindow/appOpacity", 100).toInt();
-    termOpacity = settings.value("termOpacity", 100).toInt();
+    appTransparency = settings.value("MainWindow/ApplicationTransparency", 0).toInt();
+    termTransparency = settings.value("TerminalTransparency", 0).toInt();
 
     /* default to Right. see qtermwidget.h */
     scrollBarPos = settings.value("ScrollbarPosition", 2).toInt();
@@ -158,8 +158,8 @@ void Properties::saveSettings()
     }
     settings.endArray();
 
-    settings.setValue("MainWindow/appOpacity", appOpacity);
-    settings.setValue("termOpacity", termOpacity);
+    settings.setValue("MainWindow/ApplicationTransparency", appTransparency);
+    settings.setValue("TerminalTransparency", termTransparency);
     settings.setValue("ScrollbarPosition", scrollBarPos);
     settings.setValue("TabsPosition", tabsPos);
     settings.setValue("HideTabBarWithOneTab", hideTabBarWithOneTab);
@@ -201,21 +201,38 @@ void Properties::migrate_settings()
                  << "of QTerminal. Some settings might be incompatible";
     }
 
-    // Handle renaming of 'Paste Selection' to 'Paste Clipboard' in 0.4.0
     if (lastVersion < "0.4.0")
     {
+        // Paste Selection -> Paste Clipboard
         settings.beginGroup("Shortcuts");
         QString value = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
         settings.setValue(PASTE_CLIPBOARD, value);
         settings.remove("Paste Selection");
         settings.endGroup();
     }
-    // Handle renaming of 'AlwaysShowTabs' to 'HideTabBarWithOneTab' after 0.6.0
     if (lastVersion <= "0.6.0")
     {
-        QString value = settings.value("AlwaysShowTabs", false).toString();
-        settings.setValue("HideTabBarWithOneTab", value);
+
+        // AlwaysShowTabs -> HideTabBarWithOneTab
+        QString hideValue = settings.value("AlwaysShowTabs", false).toString();
+        settings.setValue("HideTabBarWithOneTab", hideValue);
         settings.remove("AlwaysShowTabs");
+        // appOpacity -> ApplicationTransparency
+        /*
+         * Note: In 0.6.0 the opacity values had been erroneously
+         * restricted to [0,99] instead of [1,100]. We fix this here by
+         * setting the opacity to 100 if it was 99 and to 1 if it was 0.
+         */
+        int appOpacityValue = settings.value("MainWindow/appOpacity", 100).toInt();
+        appOpacityValue = appOpacityValue == 99 ? 100 : appOpacityValue;
+        appOpacityValue = appOpacityValue == 0 ? 1 : appOpacityValue;
+        settings.setValue("MainWindow/ApplicationTransparency", 100 - appOpacityValue);
+        settings.remove("MainWindow/appOpacity");
+        // termOpacity -> TerminalTransparency
+        int termOpacityValue = settings.value("termOpacity", 100).toInt();
+        termOpacityValue = termOpacityValue == 99  ? 100 : termOpacityValue;
+        settings.setValue("TerminalTransparency", 100 - termOpacityValue);
+        settings.remove("termOpacity");
     }
 
     if (currentVersion > lastVersion)
