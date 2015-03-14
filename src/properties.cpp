@@ -203,35 +203,49 @@ void Properties::migrate_settings()
 
     if (lastVersion < "0.4.0")
     {
-        // Paste Selection -> Paste Clipboard
+        // ===== Paste Selection -> Paste Clipboard =====
         settings.beginGroup("Shortcuts");
-        QString value = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
-        settings.setValue(PASTE_CLIPBOARD, value);
+        if(!settings.contains(PASTE_CLIPBOARD))
+        {
+            QString value = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
+            settings.setValue(PASTE_CLIPBOARD, value);
+        }
         settings.remove("Paste Selection");
         settings.endGroup();
     }
+
     if (lastVersion <= "0.6.0")
     {
-
-        // AlwaysShowTabs -> HideTabBarWithOneTab
-        QString hideValue = settings.value("AlwaysShowTabs", false).toString();
-        settings.setValue("HideTabBarWithOneTab", hideValue);
+        // ===== AlwaysShowTabs -> HideTabBarWithOneTab =====
+        if(!settings.contains("HideTabBarWithOneTab"))
+        {
+            QString hideValue = settings.value("AlwaysShowTabs", false).toString();
+            settings.setValue("HideTabBarWithOneTab", hideValue);
+        }
         settings.remove("AlwaysShowTabs");
-        // appOpacity -> ApplicationTransparency
-        /*
-         * Note: In 0.6.0 the opacity values had been erroneously
-         * restricted to [0,99] instead of [1,100]. We fix this here by
-         * setting the opacity to 100 if it was 99 and to 1 if it was 0.
-         */
-        int appOpacityValue = settings.value("MainWindow/appOpacity", 100).toInt();
-        appOpacityValue = appOpacityValue == 99 ? 100 : appOpacityValue;
-        appOpacityValue = appOpacityValue == 0 ? 1 : appOpacityValue;
-        settings.setValue("MainWindow/ApplicationTransparency", 100 - appOpacityValue);
+
+        // ===== appOpacity -> ApplicationTransparency =====
+        //
+        // Note: In 0.6.0 the opacity values had been erroneously
+        // restricted to [0,99] instead of [1,100]. We fix this here by
+        // setting the opacity to 100 if it was 99 and to 1 if it was 0.
+        //
+        if(!settings.contains("MainWindow/ApplicationTransparency"))
+        {
+            int appOpacityValue = settings.value("MainWindow/appOpacity", 100).toInt();
+            appOpacityValue = appOpacityValue == 99 ? 100 : appOpacityValue;
+            appOpacityValue = appOpacityValue == 0 ? 1 : appOpacityValue;
+            settings.setValue("MainWindow/ApplicationTransparency", 100 - appOpacityValue);
+        }
         settings.remove("MainWindow/appOpacity");
-        // termOpacity -> TerminalTransparency
-        int termOpacityValue = settings.value("termOpacity", 100).toInt();
-        termOpacityValue = termOpacityValue == 99  ? 100 : termOpacityValue;
-        settings.setValue("TerminalTransparency", 100 - termOpacityValue);
+
+        // ===== termOpacity -> TerminalTransparency =====
+        if(!settings.contains("TerminalTransparency"))
+        {
+            int termOpacityValue = settings.value("termOpacity", 100).toInt();
+            termOpacityValue = termOpacityValue == 99  ? 100 : termOpacityValue;
+            settings.setValue("TerminalTransparency", 100 - termOpacityValue);
+        }
         settings.remove("termOpacity");
     }
 
