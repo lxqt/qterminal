@@ -60,12 +60,12 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>19</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
     <property name="title">
-     <string>File</string>
+     <string>&amp;File</string>
     </property>
     <property name="Title" stdset="0">
      <string/>
@@ -73,24 +73,24 @@
    </widget>
    <widget class="QMenu" name="menu_Actions">
     <property name="title">
-     <string>Actions</string>
+     <string>&amp;Actions</string>
     </property>
    </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
-     <string>Help</string>
+     <string>&amp;Help</string>
     </property>
     <addaction name="actAbout"/>
     <addaction name="actAboutQt"/>
    </widget>
    <widget class="QMenu" name="menu_Window">
     <property name="title">
-     <string>View</string>
+     <string>&amp;View</string>
     </property>
    </widget>
    <widget class="QMenu" name="menu_Edit">
     <property name="title">
-     <string>Edit</string>
+     <string>&amp;Edit</string>
     </property>
    </widget>
    <addaction name="menu_File"/>
@@ -101,15 +101,17 @@
   </widget>
   <action name="actAbout">
    <property name="icon">
-    <iconset theme="help-about"/>
+    <iconset theme="help-about">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
-    <string>About...</string>
+    <string>&amp;About...</string>
    </property>
   </action>
   <action name="actAboutQt">
    <property name="text">
-    <string>About Qt...</string>
+    <string>About &amp;Qt...</string>
    </property>
   </action>
   <action name="actProperties">
@@ -119,7 +121,9 @@
   </action>
   <action name="actQuit">
    <property name="icon">
-    <iconset theme="application-exit"/>
+    <iconset theme="application-exit">
+     <normaloff/>
+    </iconset>
    </property>
    <property name="text">
     <string>&amp;Quit</string>
@@ -134,8 +138,6 @@
    <container>1</container>
   </customwidget>
  </customwidgets>
- <resources>
-  <include location="../icons.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
