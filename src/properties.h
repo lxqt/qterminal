@@ -53,6 +53,8 @@ class Properties
 
         bool askOnExit;
 
+        bool saveGeomOnExit;
+
         bool useCWD;
 
         bool useBookmarks;
