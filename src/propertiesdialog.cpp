@@ -82,6 +82,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     askOnExitCheckBox->setChecked(Properties::Instance()->askOnExit);
 
+    saveGeomOnExitCheckBox->setChecked(Properties::Instance()->saveGeomOnExit);
+
     useCwdCheckBox->setChecked(Properties::Instance()->useCWD);
 
     historyLimited->setChecked(Properties::Instance()->historyLimited);
@@ -132,6 +134,8 @@ void PropertiesDialog::apply()
     Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
 
     Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();
+
+    Properties::Instance()->saveGeomOnExit = saveGeomOnExitCheckBox->isChecked();
 
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
 

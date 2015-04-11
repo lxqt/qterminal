@@ -486,7 +486,10 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         // #80 - do not save state and geometry in drop mode
         if (!m_dropMode)
         {
-            Properties::Instance()->mainWindowGeometry = saveGeometry();
+	    if (Properties::Instance()->saveGeomOnExit)
+	    {
+            	Properties::Instance()->mainWindowGeometry = saveGeometry();
+	    }
             Properties::Instance()->mainWindowState = saveState();
         }
         Properties::Instance()->saveSettings();

@@ -99,6 +99,7 @@ void Properties::loadSettings()
     tabBarless = settings.value("TabBarless", false).toBool();
     menuVisible = settings.value("MenuVisible", true).toBool();
     askOnExit = settings.value("AskOnExit", true).toBool();
+    saveGeomOnExit = settings.value("SaveGeomOnExit", true).toBool();
     useCWD = settings.value("UseCWD", false).toBool();
 
     // bookmarks
@@ -168,6 +169,7 @@ void Properties::saveSettings()
     settings.setValue("TabBarless", tabBarless);
     settings.setValue("MenuVisible", menuVisible);
     settings.setValue("AskOnExit", askOnExit);
+    settings.setValue("SaveGeomOnExit", saveGeomOnExit);
     settings.setValue("UseCWD", useCWD);
 
     // bookmarks
