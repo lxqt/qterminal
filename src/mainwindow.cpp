@@ -71,7 +71,12 @@ MainWindow::MainWindow(const QString& work_dir,
         setStyleSheet(QSS_DROP);
     }
     else {
-        restoreGeometry(Properties::Instance()->mainWindowGeometry);
+	if (Properties::Instance()->saveSizeOnExit) {
+	    resize(Properties::Instance()->mainWindowSize);
+	}
+	if (Properties::Instance()->savePosOnExit) {
+	    move(Properties::Instance()->mainWindowPosition);
+	}
         restoreState(Properties::Instance()->mainWindowState);
     }
 
@@ -382,6 +387,16 @@ void MainWindow::setup_ViewMenu_Actions()
     toggleTabBar();
     connect(showTabBarAction, SIGNAL(triggered()), this, SLOT(toggleTabBar()));
 
+    QAction *toggleFullscreen = new QAction(tr("Fullscreen"), this);
+    toggleFullscreen->setCheckable(true);
+    toggleFullscreen->setChecked(false);
+    seq = QKeySequence::fromString(settings.value(FULLSCREEN, FULLSCREEN_SHORTCUT).toString());
+    toggleFullscreen->setShortcut(seq);
+    menu_Window->addAction(toggleFullscreen);
+    addAction(toggleFullscreen);
+    connect(toggleFullscreen, SIGNAL(triggered()), this, SLOT(showFullscreen()));
+    Properties::Instance()->actions[FULLSCREEN] = toggleFullscreen;
+
     Properties::Instance()->actions[TOGGLE_BOOKMARKS] = m_bookmarksDock->toggleViewAction();
     seq = QKeySequence::fromString( settings.value(TOGGLE_BOOKMARKS, TOGGLE_BOOKMARKS_SHORTCUT).toString() );
     Properties::Instance()->actions[TOGGLE_BOOKMARKS]->setShortcut(seq);
@@ -478,17 +493,27 @@ void MainWindow::toggleMenu()
     Properties::Instance()->menuVisible = m_menuBar->isVisible();
 }
 
+void MainWindow::showFullscreen()
+{
+	qDebug() << "show full srceen " << isFullScreen();
+    if(!isFullScreen())
+        setWindowState(windowState() | Qt::WindowFullScreen);
+    else
+        setWindowState(windowState() & ~Qt::WindowFullScreen);
+}
+
 void MainWindow::closeEvent(QCloseEvent *ev)
 {
     if (!Properties::Instance()->askOnExit
             || !consoleTabulator->count())
     {
         // #80 - do not save state and geometry in drop mode
-        if (!m_dropMode)
-        {
-	    if (Properties::Instance()->saveGeomOnExit)
-	    {
-            	Properties::Instance()->mainWindowGeometry = saveGeometry();
+        if (!m_dropMode) {
+	    if (Properties::Instance()->savePosOnExit) {
+            	Properties::Instance()->mainWindowPosition = pos();
+	    }
+	    if (Properties::Instance()->saveSizeOnExit) {
+            	Properties::Instance()->mainWindowSize = size();
 	    }
             Properties::Instance()->mainWindowState = saveState();
         }
@@ -515,7 +540,8 @@ void MainWindow::closeEvent(QCloseEvent *ev)
     dia->setLayout(lay);
 
     if (dia->exec() == QDialog::Accepted) {
-        Properties::Instance()->mainWindowGeometry = saveGeometry();
+        Properties::Instance()->mainWindowPosition = pos();
+        Properties::Instance()->mainWindowSize = size();
         Properties::Instance()->mainWindowState = saveState();
         Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
         Properties::Instance()->saveSettings();

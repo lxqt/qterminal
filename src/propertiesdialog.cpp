@@ -82,7 +82,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     askOnExitCheckBox->setChecked(Properties::Instance()->askOnExit);
 
-    saveGeomOnExitCheckBox->setChecked(Properties::Instance()->saveGeomOnExit);
+    savePosOnExitCheckBox->setChecked(Properties::Instance()->savePosOnExit);
+    saveSizeOnExitCheckBox->setChecked(Properties::Instance()->saveSizeOnExit);
 
     useCwdCheckBox->setChecked(Properties::Instance()->useCWD);
 
@@ -135,7 +136,8 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();
 
-    Properties::Instance()->saveGeomOnExit = saveGeomOnExitCheckBox->isChecked();
+    Properties::Instance()->savePosOnExit = savePosOnExitCheckBox->isChecked();
+    Properties::Instance()->saveSizeOnExit = saveSizeOnExitCheckBox->isChecked();
 
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
 
