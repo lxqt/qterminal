@@ -64,7 +64,7 @@
 
 /* Some defaults for QTerminal application */
 
-#define DEFAULT_WIDTH                  1000
+#define DEFAULT_WIDTH                  800
 #define DEFAULT_HEIGHT                 600
 #define DEFAULT_FONT                   "Monospace"
 
