@@ -78,6 +78,7 @@ private slots:
     void toggleTabBar();
     void toggleMenu();
 
+    void showFullscreen();
     void showHide();
     void setKeepOpen(bool value);
     void find();

@@ -64,7 +64,8 @@ void Properties::loadSettings()
     }
     settings.endGroup();
 
-    mainWindowGeometry = settings.value("MainWindow/geometry").toByteArray();
+    mainWindowSize = settings.value("MainWindow/size").toSize();
+    mainWindowPosition = settings.value("MainWindow/pos").toPoint();
     mainWindowState = settings.value("MainWindow/state").toByteArray();
 
     historyLimited = settings.value("HistoryLimited", true).toBool();
@@ -99,6 +100,8 @@ void Properties::loadSettings()
     tabBarless = settings.value("TabBarless", false).toBool();
     menuVisible = settings.value("MenuVisible", true).toBool();
     askOnExit = settings.value("AskOnExit", true).toBool();
+    saveSizeOnExit = settings.value("SaveSizeOnExit", true).toBool();
+    savePosOnExit = settings.value("SavePosOnExit", true).toBool();
     useCWD = settings.value("UseCWD", false).toBool();
 
     // bookmarks
@@ -136,7 +139,8 @@ void Properties::saveSettings()
     }
     settings.endGroup();
 
-    settings.setValue("MainWindow/geometry", mainWindowGeometry);
+    settings.setValue("MainWindow/size", mainWindowSize);
+    settings.setValue("MainWindow/pos", mainWindowPosition);
     settings.setValue("MainWindow/state", mainWindowState);
 
     settings.setValue("HistoryLimited", historyLimited);
@@ -168,6 +172,8 @@ void Properties::saveSettings()
     settings.setValue("TabBarless", tabBarless);
     settings.setValue("MenuVisible", menuVisible);
     settings.setValue("AskOnExit", askOnExit);
+    settings.setValue("SavePosOnExit", savePosOnExit);
+    settings.setValue("SaveSizeOnExit", saveSizeOnExit);
     settings.setValue("UseCWD", useCWD);
 
     // bookmarks

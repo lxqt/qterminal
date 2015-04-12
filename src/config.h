@@ -60,10 +60,11 @@
 
 #define HIDE_WINDOW_BORDERS "Hide Window Borders"
 #define SHOW_TAB_BAR "Show Tab Bar"
+#define FULLSCREEN "Fullscreen"
 
 /* Some defaults for QTerminal application */
 
-#define DEFAULT_WIDTH                  800
+#define DEFAULT_WIDTH                  1000
 #define DEFAULT_HEIGHT                 600
 #define DEFAULT_FONT                   "Monospace"
 
@@ -104,6 +105,8 @@
 #define MOVE_RIGHT_SHORTCUT            "Shift+Alt+Right"
 
 #define RENAME_SESSION_SHORTCUT        "Shift+Alt+S"
+
+#define FULLSCREEN_SHORTCUT "F11"
 
 // XON/XOFF features:
 
