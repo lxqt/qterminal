@@ -240,11 +240,14 @@ void Properties::migrate_settings()
         settings.setValue("TerminalTransparency", 100 - termOpacityValue);
         settings.remove("termOpacity");
 	// geometry -> size, pos
-	QWidget geom;
-	geom.restoreGeometry(settings.value("MainWindow/geometry").toByteArray());
-        settings.setValue("MainWindow/size", geom.size());
-        settings.setValue("MainWindow/pos", geom.pos());
-        settings.remove("MainWindow/geometry");
+	if (!isettings.contains("MainWindow/size"))
+	{
+	    QWidget geom;
+	    geom.restoreGeometry(settings.value("MainWindow/geometry").toByteArray());
+            settings.setValue("MainWindow/size", geom.size());
+            settings.setValue("MainWindow/pos", geom.pos());
+            settings.remove("MainWindow/geometry");
+	}
     }
 
     if (currentVersion > lastVersion)
