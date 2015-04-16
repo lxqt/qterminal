@@ -53,7 +53,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="203"/>
         <source>Collapse Subterminal</source>
-        <translation>Altterminal Çöktü</translation>
+        <translation>Altterminali Kapat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="209"/>
