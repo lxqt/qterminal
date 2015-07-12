@@ -203,7 +203,7 @@ install(FILES
 if(NOT APPLEBUNDLE)
     install(TARGETS ${EXE_NAME} RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")
     install(FILES ${QTERM_QM} DESTINATION ${TRANSLATIONS_DIR})
-    install(FILES src/icons/qterminal.png DESTINATION "${CMAKE_INSTALL_DATADIR}/pixmaps")
+    install(FILES src/icons/qterminal.png DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor/64x64/apps")
 else()
     message(STATUS "APPLEBUNDLE")
 
