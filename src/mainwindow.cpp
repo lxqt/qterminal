@@ -71,7 +71,12 @@ MainWindow::MainWindow(const QString& work_dir,
         setStyleSheet(QSS_DROP);
     }
     else {
-        restoreGeometry(Properties::Instance()->mainWindowGeometry);
+	if (Properties::Instance()->saveSizeOnExit) {
+	    resize(Properties::Instance()->mainWindowSize);
+	}
+	if (Properties::Instance()->savePosOnExit) {
+	    move(Properties::Instance()->mainWindowPosition);
+	}
         restoreState(Properties::Instance()->mainWindowState);
     }
 
@@ -484,9 +489,13 @@ void MainWindow::closeEvent(QCloseEvent *ev)
             || !consoleTabulator->count())
     {
         // #80 - do not save state and geometry in drop mode
-        if (!m_dropMode)
-        {
-            Properties::Instance()->mainWindowGeometry = saveGeometry();
+        if (!m_dropMode) {
+	    if (Properties::Instance()->savePosOnExit) {
+            	Properties::Instance()->mainWindowPosition = pos();
+	    }
+	    if (Properties::Instance()->saveSizeOnExit) {
+            	Properties::Instance()->mainWindowSize = size();
+	    }
             Properties::Instance()->mainWindowState = saveState();
         }
         Properties::Instance()->saveSettings();
@@ -512,7 +521,8 @@ void MainWindow::closeEvent(QCloseEvent *ev)
     dia->setLayout(lay);
 
     if (dia->exec() == QDialog::Accepted) {
-        Properties::Instance()->mainWindowGeometry = saveGeometry();
+        Properties::Instance()->mainWindowPosition = pos();
+        Properties::Instance()->mainWindowSize = size();
         Properties::Instance()->mainWindowState = saveState();
         Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
         Properties::Instance()->saveSettings();
