@@ -78,7 +78,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="92"/>
         <source>Rename Session</source>
-        <translation>Mudar nome da sessão</translation>
+        <translation>Renomear sessão</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="147"/>
@@ -143,7 +143,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
         <source>Save Session</source>
-        <translation>Gravar sessão</translation>
+        <translation>Guardar sessão</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="280"/>
@@ -250,7 +250,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="495"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Tem a certeza que quer sair?</translation>
+        <translation>Tem a certeza de que deseja sair?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="515"/>
@@ -379,7 +379,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="309"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;O comportamento a emular. Tenha em conta que esta opção não tem que ser igual à do sistema operativo.&lt;/p&gt;&lt;p&gt;A emulação &lt;span style=&quot; font-weight:600;&quot;&gt;pré-definida&lt;/span&gt; possui um conjunto mínimo de funcionalidades.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;O comportamento a emular. Tenha em atenção que esta opção não tem que ser igual à do sistema operativo.&lt;/p&gt;&lt;p&gt;A emulação &lt;span style=&quot; font-weight:600;&quot;&gt;pré-definida&lt;/span&gt; possui um conjunto mínimo de funcionalidades.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="331"/>
@@ -571,7 +571,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="185"/>
         <source>Rename session</source>
-        <translation>Mudar nome da sessão</translation>
+        <translation>Renomear sessão</translation>
     </message>
 </context>
 <context>
@@ -584,7 +584,7 @@
     <message>
         <location filename="../termwidgetholder.cpp" line="47"/>
         <source>List of saved sessions:</source>
-        <translation>Lista de sessões gravadas:</translation>
+        <translation>Lista de sessões guardadas:</translation>
     </message>
 </context>
 <context>
