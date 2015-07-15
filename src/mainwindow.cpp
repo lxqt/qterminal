@@ -369,6 +369,7 @@ void MainWindow::setup_ViewMenu_Actions()
     hideBordersAction->setShortcut(seq);
     connect(hideBordersAction, SIGNAL(triggered()), this, SLOT(toggleBorderless()));
     menu_Window->addAction(hideBordersAction);
+    addAction(hideBordersAction);
     Properties::Instance()->actions[HIDE_WINDOW_BORDERS] = hideBordersAction;
     //Properties::Instance()->actions[HIDE_WINDOW_BORDERS]->setObjectName("toggle_Borderless");
 // TODO/FIXME: it's broken somehow. When I call toggleBorderless() here the non-responsive window appear
@@ -383,9 +384,20 @@ void MainWindow::setup_ViewMenu_Actions()
     seq = QKeySequence::fromString( settings.value(SHOW_TAB_BAR).toString() );
     showTabBarAction->setShortcut(seq);
     menu_Window->addAction(showTabBarAction);
+    addAction(showTabBarAction);
     Properties::Instance()->actions[SHOW_TAB_BAR] = showTabBarAction;
     toggleTabBar();
     connect(showTabBarAction, SIGNAL(triggered()), this, SLOT(toggleTabBar()));
+
+    QAction *toggleFullscreen = new QAction(tr("Fullscreen"), this);
+    toggleFullscreen->setCheckable(true);
+    toggleFullscreen->setChecked(false);
+    seq = QKeySequence::fromString(settings.value(FULLSCREEN, FULLSCREEN_SHORTCUT).toString());
+    toggleFullscreen->setShortcut(seq);
+    menu_Window->addAction(toggleFullscreen);
+    addAction(toggleFullscreen);
+    connect(toggleFullscreen, SIGNAL(triggered(bool)), this, SLOT(showFullscreen(bool)));
+    Properties::Instance()->actions[FULLSCREEN] = toggleFullscreen;
 
     Properties::Instance()->actions[TOGGLE_BOOKMARKS] = m_bookmarksDock->toggleViewAction();
     seq = QKeySequence::fromString( settings.value(TOGGLE_BOOKMARKS, TOGGLE_BOOKMARKS_SHORTCUT).toString() );
@@ -481,6 +493,14 @@ void MainWindow::toggleMenu()
 {
     m_menuBar->setVisible(!m_menuBar->isVisible());
     Properties::Instance()->menuVisible = m_menuBar->isVisible();
+}
+
+void MainWindow::showFullscreen(bool fullscreen)
+{
+    if(fullscreen)
+        setWindowState(windowState() | Qt::WindowFullScreen);
+    else
+        setWindowState(windowState() & ~Qt::WindowFullScreen);
 }
 
 void MainWindow::closeEvent(QCloseEvent *ev)
