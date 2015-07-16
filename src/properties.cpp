@@ -254,7 +254,7 @@ void Properties::migrate_settings()
         }
         settings.remove("termOpacity");
 	// geometry -> size, pos
-	if (!isettings.contains("MainWindow/size"))
+	if (!settings.contains("MainWindow/size"))
 	{
 	    QWidget geom;
 	    geom.restoreGeometry(settings.value("MainWindow/geometry").toByteArray());
