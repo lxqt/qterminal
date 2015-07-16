@@ -82,6 +82,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     askOnExitCheckBox->setChecked(Properties::Instance()->askOnExit);
 
+    savePosOnExitCheckBox->setChecked(Properties::Instance()->savePosOnExit);
+    saveSizeOnExitCheckBox->setChecked(Properties::Instance()->saveSizeOnExit);
+
     useCwdCheckBox->setChecked(Properties::Instance()->useCWD);
 
     historyLimited->setChecked(Properties::Instance()->historyLimited);
@@ -132,6 +135,9 @@ void PropertiesDialog::apply()
     Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
 
     Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();
+
+    Properties::Instance()->savePosOnExit = savePosOnExitCheckBox->isChecked();
+    Properties::Instance()->saveSizeOnExit = saveSizeOnExitCheckBox->isChecked();
 
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
 

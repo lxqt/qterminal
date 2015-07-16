@@ -23,7 +23,8 @@ class Properties
         void loadSettings();
         void migrate_settings();
 
-        QByteArray mainWindowGeometry;
+        QSize mainWindowSize;
+        QPoint mainWindowPosition;
         QByteArray mainWindowState;
         //ShortcutMap shortcuts;
         QString shell;
@@ -52,6 +53,9 @@ class Properties
         bool menuVisible;
 
         bool askOnExit;
+
+        bool saveSizeOnExit;
+        bool savePosOnExit;
 
         bool useCWD;
 

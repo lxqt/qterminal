@@ -64,7 +64,8 @@ void Properties::loadSettings()
     }
     settings.endGroup();
 
-    mainWindowGeometry = settings.value("MainWindow/geometry").toByteArray();
+    mainWindowSize = settings.value("MainWindow/size").toSize();
+    mainWindowPosition = settings.value("MainWindow/pos").toPoint();
     mainWindowState = settings.value("MainWindow/state").toByteArray();
 
     historyLimited = settings.value("HistoryLimited", true).toBool();
@@ -99,6 +100,8 @@ void Properties::loadSettings()
     tabBarless = settings.value("TabBarless", false).toBool();
     menuVisible = settings.value("MenuVisible", true).toBool();
     askOnExit = settings.value("AskOnExit", true).toBool();
+    saveSizeOnExit = settings.value("SaveSizeOnExit", true).toBool();
+    savePosOnExit = settings.value("SavePosOnExit", true).toBool();
     useCWD = settings.value("UseCWD", false).toBool();
 
     // bookmarks
@@ -136,7 +139,8 @@ void Properties::saveSettings()
     }
     settings.endGroup();
 
-    settings.setValue("MainWindow/geometry", mainWindowGeometry);
+    settings.setValue("MainWindow/size", mainWindowSize);
+    settings.setValue("MainWindow/pos", mainWindowPosition);
     settings.setValue("MainWindow/state", mainWindowState);
 
     settings.setValue("HistoryLimited", historyLimited);
@@ -168,6 +172,8 @@ void Properties::saveSettings()
     settings.setValue("TabBarless", tabBarless);
     settings.setValue("MenuVisible", menuVisible);
     settings.setValue("AskOnExit", askOnExit);
+    settings.setValue("SavePosOnExit", savePosOnExit);
+    settings.setValue("SaveSizeOnExit", saveSizeOnExit);
     settings.setValue("UseCWD", useCWD);
 
     // bookmarks
@@ -203,36 +209,59 @@ void Properties::migrate_settings()
 
     if (lastVersion < "0.4.0")
     {
-        // Paste Selection -> Paste Clipboard
+        // ===== Paste Selection -> Paste Clipboard =====
         settings.beginGroup("Shortcuts");
-        QString value = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
-        settings.setValue(PASTE_CLIPBOARD, value);
+        if(!settings.contains(PASTE_CLIPBOARD))
+        {
+            QString value = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
+            settings.setValue(PASTE_CLIPBOARD, value);
+        }
         settings.remove("Paste Selection");
         settings.endGroup();
     }
+
     if (lastVersion <= "0.6.0")
     {
-
-        // AlwaysShowTabs -> HideTabBarWithOneTab
-        QString hideValue = settings.value("AlwaysShowTabs", false).toString();
-        settings.setValue("HideTabBarWithOneTab", hideValue);
+        // ===== AlwaysShowTabs -> HideTabBarWithOneTab =====
+        if(!settings.contains("HideTabBarWithOneTab"))
+        {
+            QString hideValue = settings.value("AlwaysShowTabs", false).toString();
+            settings.setValue("HideTabBarWithOneTab", hideValue);
+        }
         settings.remove("AlwaysShowTabs");
-        // appOpacity -> ApplicationTransparency
-        /*
-         * Note: In 0.6.0 the opacity values had been erroneously
-         * restricted to [0,99] instead of [1,100]. We fix this here by
-         * setting the opacity to 100 if it was 99 and to 1 if it was 0.
-         */
-        int appOpacityValue = settings.value("MainWindow/appOpacity", 100).toInt();
-        appOpacityValue = appOpacityValue == 99 ? 100 : appOpacityValue;
-        appOpacityValue = appOpacityValue == 0 ? 1 : appOpacityValue;
-        settings.setValue("MainWindow/ApplicationTransparency", 100 - appOpacityValue);
+
+        // ===== appOpacity -> ApplicationTransparency =====
+        //
+        // Note: In 0.6.0 the opacity values had been erroneously
+        // restricted to [0,99] instead of [1,100]. We fix this here by
+        // setting the opacity to 100 if it was 99 and to 1 if it was 0.
+        //
+        if(!settings.contains("MainWindow/ApplicationTransparency"))
+        {
+            int appOpacityValue = settings.value("MainWindow/appOpacity", 100).toInt();
+            appOpacityValue = appOpacityValue == 99 ? 100 : appOpacityValue;
+            appOpacityValue = appOpacityValue == 0 ? 1 : appOpacityValue;
+            settings.setValue("MainWindow/ApplicationTransparency", 100 - appOpacityValue);
+        }
         settings.remove("MainWindow/appOpacity");
-        // termOpacity -> TerminalTransparency
-        int termOpacityValue = settings.value("termOpacity", 100).toInt();
-        termOpacityValue = termOpacityValue == 99  ? 100 : termOpacityValue;
-        settings.setValue("TerminalTransparency", 100 - termOpacityValue);
+
+        // ===== termOpacity -> TerminalTransparency =====
+        if(!settings.contains("TerminalTransparency"))
+        {
+            int termOpacityValue = settings.value("termOpacity", 100).toInt();
+            termOpacityValue = termOpacityValue == 99  ? 100 : termOpacityValue;
+            settings.setValue("TerminalTransparency", 100 - termOpacityValue);
+        }
         settings.remove("termOpacity");
+	// geometry -> size, pos
+	if (!settings.contains("MainWindow/size"))
+	{
+	    QWidget geom;
+	    geom.restoreGeometry(settings.value("MainWindow/geometry").toByteArray());
+            settings.setValue("MainWindow/size", geom.size());
+            settings.setValue("MainWindow/pos", geom.pos());
+            settings.remove("MainWindow/geometry");
+	}
     }
 
     if (currentVersion > lastVersion)
