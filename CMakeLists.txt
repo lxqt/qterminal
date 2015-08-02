@@ -108,7 +108,8 @@ set(QTERM_TS
     src/translations/qterminal_it.ts
     src/translations/qterminal_pt.ts
     src/translations/qterminal_hu.ts
-	src/translations/qterminal_ru.ts
+    src/translations/qterminal_ru.ts
+    src/translations/qterminal_ja.ts
 )
 
 if(USE_QT5)
