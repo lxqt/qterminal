@@ -17,6 +17,8 @@ if(USE_QT5 AND USE_SYSTEM_QXT)
 endif()
 
 if(USE_QT5)
+    # we need qpa/qplatformnativeinterface.h for global shortcut
+    find_package(Qt5Gui REQUIRED Private)
     find_package(Qt5Widgets REQUIRED)
     find_package(Qt5LinguistTools REQUIRED)
     find_package(QTermWidget5 REQUIRED)
