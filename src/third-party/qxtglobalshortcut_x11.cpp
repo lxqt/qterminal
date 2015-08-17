@@ -29,16 +29,21 @@
 ** <http://libqxt.org>  <foundation@libqxt.org>
 *****************************************************************************/
 
-#include <QVector>
-#if QT_VERSION < QT_VERSION_CHECK(5,0,0)
-#   include <QX11Info>
-#else
-#   include <QApplication>
-#   include <qpa/qplatformnativeinterface.h>
-#   include <xcb/xcb.h>
-#endif
-#include <X11/Xlib.h>
 
+/****************************************************************************
+ *
+ * Note: This file is a modified version for QTerminal!
+ *
+ ****************************************************************************/
+
+#include <QVector>
+#include <QtX11Extras/QX11Info>
+
+#if QT_VERSION >= QT_VERSION_CHECK(5,0,0)
+#    include <xcb/xcb.h>
+#endif
+
+#include <X11/Xlib.h>
 
 namespace {
 
@@ -92,14 +97,7 @@ class QxtX11Data {
 public:
     QxtX11Data()
     {
-#if QT_VERSION < QT_VERSION_CHECK(5,0,0)
         m_display = QX11Info::display();
-#else
-        QPlatformNativeInterface *native = qApp->platformNativeInterface();
-        void *display = native->nativeResourceForScreen(QByteArray("display"),
-                                                        QGuiApplication::primaryScreen());
-        m_display = reinterpret_cast<Display *>(display);
-#endif
     }
 
     bool isValid()
