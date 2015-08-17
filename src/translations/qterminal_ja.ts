@@ -36,154 +36,154 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="319"/>
-        <source>Close Tab</source>
-        <translation>タブを閉じる</translation>
+        <location filename="../mainwindow.cpp" line="324"/>
+        <source>&amp;Close Tab</source>
+        <translation>タブを閉じる(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="175"/>
-        <source>Split Terminal Horizontally</source>
-        <translation>ターミナルの上下分割</translation>
+        <location filename="../mainwindow.cpp" line="180"/>
+        <source>Split Terminal &amp;Horizontally</source>
+        <translation>ターミナルの上下分割(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="182"/>
-        <source>Split Terminal Vertically</source>
-        <translation>ターミナルの左右分割</translation>
+        <location filename="../mainwindow.cpp" line="187"/>
+        <source>Split Terminal &amp;Vertically</source>
+        <translation>ターミナルの左右分割(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="189"/>
-        <source>Collapse Subterminal</source>
-        <translation>サブターミナルを折りたたむ</translation>
+        <location filename="../mainwindow.cpp" line="194"/>
+        <source>&amp;Collapse Subterminal</source>
+        <translation>サブターミナルを折りたたむ(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="196"/>
-        <source>Next Subterminal</source>
-        <translation>次のサブターミナル</translation>
+        <location filename="../mainwindow.cpp" line="201"/>
+        <source>N&amp;ext Subterminal</source>
+        <translation>次のサブターミナル(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="203"/>
-        <source>Previous Subterminal</source>
-        <translation>前のサブターミナル</translation>
+        <location filename="../mainwindow.cpp" line="208"/>
+        <source>P&amp;revious Subterminal</source>
+        <translation>前のサブターミナル(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="145"/>
-        <source>Next Tab</source>
-        <translation>次のタブ</translation>
+        <location filename="../mainwindow.cpp" line="150"/>
+        <source>&amp;Next Tab</source>
+        <translation>次のタブ(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="152"/>
-        <source>Previous Tab</source>
-        <translation>前のタブ</translation>
+        <location filename="../mainwindow.cpp" line="157"/>
+        <source>&amp;Previous Tab</source>
+        <translation>前のタブ(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="159"/>
-        <source>Move Tab Left</source>
-        <translation>タブを左へ移動</translation>
+        <location filename="../mainwindow.cpp" line="164"/>
+        <source>Move Tab &amp;Left</source>
+        <translation>タブを左へ移動(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="166"/>
-        <source>Move Tab Right</source>
-        <translation>タブを右へ移動</translation>
+        <location filename="../mainwindow.cpp" line="171"/>
+        <source>Move Tab &amp;Right</source>
+        <translation>タブを右へ移動(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="213"/>
-        <source>Copy Selection</source>
-        <translation>選択部分をコピー</translation>
+        <location filename="../mainwindow.cpp" line="218"/>
+        <source>Copy &amp;Selection</source>
+        <translation>選択部分をコピー(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="227"/>
-        <source>Paste Selection</source>
-        <translation>選択部分を貼り付け</translation>
+        <location filename="../mainwindow.cpp" line="232"/>
+        <source>Paste S&amp;election</source>
+        <translation>選択部分を貼り付け(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="269"/>
-        <source>Save Session</source>
-        <translation>セッションをセーブ</translation>
+        <location filename="../mainwindow.cpp" line="274"/>
+        <source>&amp;Save Session</source>
+        <translation>セッションを保存(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="275"/>
-        <source>Load Session</source>
-        <translation>セッションをロード</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="308"/>
-        <source>New Tab From Preset</source>
-        <translation>Neuer Reiter von Vorlage</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="309"/>
-        <source>1 Terminal</source>
-        <translation>1 Terminal</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="311"/>
-        <source>2 Horizontal Terminals</source>
-        <translation>2 horizontale Terminals</translation>
+        <location filename="../mainwindow.cpp" line="280"/>
+        <source>&amp;Load Session</source>
+        <translation>セッションを読出(&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
-        <source>2 Vertical Terminals</source>
-        <translation>2 vertikale Terminals</translation>
+        <source>New Tab From &amp;Preset</source>
+        <translation>新規タブをプリセットで開く(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
-        <source>4 Terminals</source>
-        <translation>4 Terminals</translation>
+        <location filename="../mainwindow.cpp" line="314"/>
+        <source>1 &amp;Terminal</source>
+        <translation>画面分割なし(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="395"/>
-        <source>Bottom</source>
-        <translation>下</translation>
+        <location filename="../mainwindow.cpp" line="316"/>
+        <source>2 &amp;Horizontal Terminals</source>
+        <translation>上下２分割(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
-        <source>Top</source>
-        <translation>上</translation>
+        <location filename="../mainwindow.cpp" line="318"/>
+        <source>2 &amp;Vertical Terminals</source>
+        <translation>左右２分割(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="397"/>
-        <location filename="../mainwindow.cpp" line="428"/>
-        <source>Right</source>
-        <translation>右</translation>
+        <location filename="../mainwindow.cpp" line="320"/>
+        <source>4 Terminal&amp;s</source>
+        <translation>４分割(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="398"/>
-        <location filename="../mainwindow.cpp" line="429"/>
-        <source>Left</source>
-        <translation>左</translation>
+        <location filename="../mainwindow.cpp" line="412"/>
+        <source>&amp;Bottom</source>
+        <translation>下(&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
-        <source>Tabs Layout</source>
-        <translation>タブの位置</translation>
+        <source>&amp;Top</source>
+        <translation>上(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="427"/>
-        <source>None</source>
-        <translation>なし</translation>
-    </message>
-    <message>
+        <location filename="../mainwindow.cpp" line="414"/>
         <location filename="../mainwindow.cpp" line="445"/>
-        <source>Scrollbar Layout</source>
-        <translation>スクロールバーの位置</translation>
+        <source>&amp;Right</source>
+        <translation>右(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="500"/>
+        <location filename="../mainwindow.cpp" line="415"/>
+        <location filename="../mainwindow.cpp" line="446"/>
+        <source>&amp;Left</source>
+        <translation>左(&amp;L)</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="430"/>
+        <source>&amp;Tabs Layout</source>
+        <translation>タブの位置(&amp;T)</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="444"/>
+        <source>&amp;None</source>
+        <translation>なし(&amp;N)</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="462"/>
+        <source>S&amp;crollbar Layout</source>
+        <translation>スクロールバーの位置(&amp;C)</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="529"/>
         <source>Exit QTerminal</source>
         <translation>QTerminal終了</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="502"/>
+        <location filename="../mainwindow.cpp" line="531"/>
         <source>Do not ask again</source>
         <translation>次から確認しない</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="509"/>
+        <location filename="../mainwindow.cpp" line="538"/>
         <source>Are you sure you want to exit?</source>
         <translation>終了してもよろしいですか?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="529"/>
+        <location filename="../mainwindow.cpp" line="559"/>
         <source>A lightweight multiplatform terminal emulator</source>
         <translation>軽量マルチプラットフォーム ターミナルエミュレータ</translation>
     </message>
@@ -193,75 +193,80 @@
         <translation>ブックマーク</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="92"/>
+        <location filename="../mainwindow.cpp" line="97"/>
         <source>Rename Session</source>
         <translation>タブ名の変更</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="125"/>
+        <location filename="../mainwindow.cpp" line="130"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Tippen Sie &quot;%1&quot;, um das Terminal zu sehen.</translation>
+        <translation>&quot;%1&quot;を押すとそのターミナルを見ることができます</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="136"/>
-        <source>Clear Current Tab</source>
-        <translation>現在のタブをクリア</translation>
+        <location filename="../mainwindow.cpp" line="141"/>
+        <source>&amp;Clear Current Tab</source>
+        <translation>現在のタブをクリア(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="220"/>
-        <source>Paste Clipboard</source>
-        <translation>クリップボードの貼り付け</translation>
+        <location filename="../mainwindow.cpp" line="225"/>
+        <source>Paste Clip&amp;board</source>
+        <translation>クリップボードの貼り付け(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
-        <source>Zoom in</source>
-        <translation>ズームイン</translation>
+        <location filename="../mainwindow.cpp" line="239"/>
+        <source>Zoom &amp;in</source>
+        <translation>ズームイン(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="241"/>
-        <source>Zoom out</source>
-        <translation>ズームアウト</translation>
+        <location filename="../mainwindow.cpp" line="246"/>
+        <source>Zoom &amp;out</source>
+        <translation>ズームアウト(&amp;O)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
-        <source>Zoom reset</source>
-        <translation>ズームリセット</translation>
+        <location filename="../mainwindow.cpp" line="253"/>
+        <source>Zoom rese&amp;t</source>
+        <translation>ズームリセット(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="257"/>
-        <source>Find...</source>
-        <translation>検索...</translation>
+        <location filename="../mainwindow.cpp" line="262"/>
+        <source>&amp;Find...</source>
+        <translation>検索(&amp;F)...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="282"/>
-        <source>Toggle Menu</source>
-        <translation>Menü ein-/ausblenden</translation>
+        <location filename="../mainwindow.cpp" line="287"/>
+        <source>&amp;Toggle Menu</source>
+        <translation>トグルメニュー(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="301"/>
-        <source>New Tab</source>
-        <translation>新規タブ</translation>
+        <location filename="../mainwindow.cpp" line="306"/>
+        <source>&amp;New Tab</source>
+        <translation>新規タブ(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="326"/>
-        <source>New Window</source>
-        <translation>新規ウィンドウ</translation>
+        <location filename="../mainwindow.cpp" line="331"/>
+        <source>&amp;New Window</source>
+        <translation>新規ウィンドウ(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="360"/>
-        <source>Hide Window Borders</source>
-        <translation>ウィンドウ枠を隠す</translation>
+        <location filename="../mainwindow.cpp" line="365"/>
+        <source>&amp;Hide Window Borders</source>
+        <translation>ウィンドウ枠を隠す(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="374"/>
-        <source>Show Tab Bar</source>
-        <translation>タブを表示</translation>
+        <location filename="../mainwindow.cpp" line="380"/>
+        <source>&amp;Show Tab Bar</source>
+        <translation>タブを表示(&amp;S)</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="392"/>
+        <source>Fullscreen</source>
+        <translation>フルスクリーン</translation>
     </message>
 </context>
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="316"/>
+        <location filename="../forms/propertiesdialog.ui" line="319"/>
         <source>Emulation</source>
         <translation>エミュレーション</translation>
     </message>
@@ -282,7 +287,7 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="57"/>
-        <location filename="../forms/propertiesdialog.ui" line="341"/>
+        <location filename="../forms/propertiesdialog.ui" line="344"/>
         <source>Behavior</source>
         <translation>挙動</translation>
     </message>
@@ -324,70 +329,80 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="151"/>
         <source>Application transparency</source>
-        <translation></translation>
+        <translation>アプリケーションの透過</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="161"/>
         <source>Terminal transparency</source>
-        <translation></translation>
+        <translation>ターミナルの透過</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
         <source>Start with preset:</source>
-        <translation type="unfinished">プリセット値でスタート:</translation>
+        <translation type="unfinished">プリセットでスタート</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="205"/>
+        <location filename="../forms/propertiesdialog.ui" line="208"/>
         <source>None (single terminal)</source>
-        <translation>Keine (ein Terminal)</translation>
+        <translation>画面分割なし</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="210"/>
+        <location filename="../forms/propertiesdialog.ui" line="212"/>
         <source>2 terminals horizontally</source>
-        <translation>2 horizontale Terminals</translation>
+        <translation>上下２分割</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="215"/>
+        <location filename="../forms/propertiesdialog.ui" line="217"/>
         <source>2 terminals vertically</source>
-        <translation>2 vertikale Terminals</translation>
+        <translation>左右２分割</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="220"/>
+        <location filename="../forms/propertiesdialog.ui" line="223"/>
         <source>4 terminals</source>
-        <translation>4 Terminals</translation>
+        <translation>４分割</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="256"/>
+        <location filename="../forms/propertiesdialog.ui" line="259"/>
         <source>Font</source>
         <translation>フォント</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="325"/>
+        <location filename="../forms/propertiesdialog.ui" line="328"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;エミュレータの挙動の選択。注意して頂きたいのは、この選択はオペレーティングシステムと適合する必要はありません。&lt;/p&gt;&lt;p&gt; &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt;エミュレーションは最小の機能にフォールバックしたものです。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="347"/>
+        <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Action after paste</source>
         <translation type="unfinished">貼り付け後の挙動</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="380"/>
+        <location filename="../forms/propertiesdialog.ui" line="383"/>
         <source>Open new terminals in current working directory</source>
         <translation type="unfinished">カレントディレクトリに新しいターミナルを開く</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="387"/>
+        <location filename="../forms/propertiesdialog.ui" line="390"/>
+        <source>Save Size when closing</source>
+        <translation type="unfinished">閉じるときにサイズを保存する</translation>
+    </message>
+        <message>
+        <location filename="../forms/propertiesdialog.ui" line="397"/>
+        <source>Save Position when closing</source>
+        <translation type="unfinished">閉じるときに位置を保存する</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="404"/>
         <source>Ask for confirmation when closing</source>
         <translation type="unfinished">閉じるときに確認する</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="397"/>
+        <location filename="../forms/propertiesdialog.ui" line="414"/>
         <source>Unlimited history</source>
         <translation type="unfinished">履歴を制限しない</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="404"/>
+        <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>History size (in lines)</source>
         <translation>履歴 (行数)</translation>
     </message>
@@ -410,7 +425,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="536"/>
         <source>Edit bookmark file contents</source>
-        <translation>Lesezeichendatei bearbeiten</translation>
+        <translation>ブックマークの内容を編集する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="558"/>
@@ -420,7 +435,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="567"/>
         <source>Bookmark file</source>
-        <translation>Lesezeichendatei</translation>
+        <translation>ブックマークファイル</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="168"/>
@@ -456,7 +471,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="454"/>
         <source>Show on start</source>
-        <translation>起動時の表示</translation>
+        <translation>起動時に表示します</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="461"/>
@@ -548,8 +563,8 @@
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="69"/>
-        <location filename="../tabwidget.cpp" line="174"/>
+        <location filename="../tabwidget.cpp" line="70"/>
+        <location filename="../tabwidget.cpp" line="175"/>
         <source>Shell No. %1</source>
         <translation>Shell No. %1</translation>
     </message>
@@ -591,31 +606,31 @@
     <name>mainWindow</name>
     <message>
         <location filename="../forms/qterminal.ui" line="76"/>
-        <source>Actions</source>
-        <translation>操作</translation>
+        <source>&amp;Actions</source>
+        <translation>操作(&amp;A)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="81"/>
-        <source>Help</source>
-        <translation>ヘルプ</translation>
+        <source>&amp;Help</source>
+        <translation>ヘルプ(&amp;H)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="93"/>
-        <source>Edit</source>
-        <translation>編集</translation>
+        <source>&amp;Edit</source>
+        <translation>編集(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="107"/>
-        <source>About...</source>
-        <translation>QTerminalについて...</translation>
+        <location filename="../forms/qterminal.ui" line="109"/>
+        <source>&amp;About...</source>
+        <translation>QTerminalについて(&amp;A)...</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="112"/>
-        <source>About Qt...</source>
-        <translation>Qtについて...</translation>
+        <location filename="../forms/qterminal.ui" line="114"/>
+        <source>About &amp;Qt...</source>
+        <translation>Qtについて(&amp;Q)...</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="117"/>
+        <location filename="../forms/qterminal.ui" line="119"/>
         <source>&amp;Preferences...</source>
         <translation type="unfinished">設定(&amp;P)...</translation>
     </message>
@@ -626,16 +641,16 @@
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="68"/>
-        <source>File</source>
-        <translation>ファイル</translation>
+        <source>&amp;File</source>
+        <translation>ファイル(&amp;F)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="88"/>
-        <source>View</source>
-        <translation>表示</translation>
+        <source>&amp;View</source>
+        <translation>表示(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="125"/>
+        <location filename="../forms/qterminal.ui" line="129"/>
         <source>&amp;Quit</source>
         <translation>終了(&amp;Q)</translation>
     </message>
