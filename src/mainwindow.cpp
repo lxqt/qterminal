@@ -46,6 +46,8 @@ MainWindow::MainWindow(const QString& work_dir,
       m_dropLockButton(0),
       m_dropMode(dropMode)
 {
+    setAttribute(Qt::WA_TranslucentBackground);
+
     setupUi(this);
     Properties::Instance()->migrate_settings();
     Properties::Instance()->loadSettings();
@@ -80,6 +82,7 @@ MainWindow::MainWindow(const QString& work_dir,
         restoreState(Properties::Instance()->mainWindowState);
     }
 
+    consoleTabulator->setAutoFillBackground(true);
     connect(consoleTabulator, SIGNAL(closeTabNotification()), SLOT(close()));
     consoleTabulator->setWorkDirectory(work_dir);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
