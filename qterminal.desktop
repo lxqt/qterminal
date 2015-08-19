@@ -8,6 +8,7 @@ Comment[de]=Befehlszeile verwenden
 Comment[fr]=Terminal
 Comment[pt]=Emulador de terminal
 Comment[ru_RU]=Эмулятор терминала
+Comment[ja]=ターミナル　エミュレータ
 
 Icon=utilities-terminal
 Exec=qterminal
