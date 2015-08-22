@@ -97,6 +97,7 @@ set(QTERM_TS
     src/translations/qterminal_hu.ts
     src/translations/qterminal_ru.ts
     src/translations/qterminal_ja.ts
+    src/translations/qterminal_zh_CN.ts
 )
 
 qt5_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
