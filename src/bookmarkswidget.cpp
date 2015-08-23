@@ -1,10 +1,5 @@
-#if QT_VERSION < 0x050000
-#include <QDesktopServices>
-#else
-#include <QStandardPaths>
-#endif
-
 #include <QDebug>
+#include <QStandardPaths>
 
 #include "bookmarkswidget.h"
 #include "properties.h"
@@ -96,38 +91,6 @@ public:
     BookmarkLocalGroupItem(AbstractBookmarkItem *parent)
         : BookmarkGroupItem(QObject::tr("Local Bookmarks"), parent)
     {
-#if QT_VERSION < 0x050000
-        QList<QDesktopServices::StandardLocation> locations;
-        locations << QDesktopServices::DesktopLocation
-                  << QDesktopServices::DocumentsLocation
-                  << QDesktopServices::TempLocation
-                  << QDesktopServices::HomeLocation
-                  << QDesktopServices::MusicLocation
-                  << QDesktopServices::PicturesLocation;
-
-        QString path;
-        QString name;
-        QString cmd;
-        QDir d;
-
-        // standard $HOME subdirs
-        foreach (QDesktopServices::StandardLocation i, locations)
-        {
-            path = QDesktopServices::storageLocation(i);
-            if (!d.exists(path))
-            {
-                continue;
-            }
-            // it works in Qt5, not in Qt4
-            // name = QDesktopServices::displayName(i);
-            name = path;
-
-            path.replace(" ", "\\ ");
-            cmd = "cd " + path;
-
-            addChild(new BookmarkCommandItem(name, cmd, this));
-        }
-#else
         QList<QStandardPaths::StandardLocation> locations;
         locations << QStandardPaths::DesktopLocation
                   << QStandardPaths::DocumentsLocation
@@ -156,7 +119,6 @@ public:
 
             addChild(new BookmarkCommandItem(name, cmd, this));
         }
-#endif
 
         // system env - include dirs in the tree
         QProcessEnvironment env = QProcessEnvironment::systemEnvironment();

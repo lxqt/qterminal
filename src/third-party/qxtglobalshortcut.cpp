@@ -35,24 +35,17 @@
 
 #ifndef Q_OS_MAC
 int QxtGlobalShortcutPrivate::ref = 0;
-#   if QT_VERSION < QT_VERSION_CHECK(5,0,0)
-QAbstractEventDispatcher::EventFilter QxtGlobalShortcutPrivate::prevEventFilter = 0;
-#   endif
-#endif // Q_OS_MAC
+#endif
 QHash<QPair<quint32, quint32>, QxtGlobalShortcut*> QxtGlobalShortcutPrivate::shortcuts;
 
 QxtGlobalShortcutPrivate::QxtGlobalShortcutPrivate() : enabled(true), key(Qt::Key(0)), mods(Qt::NoModifier)
 {
 #ifndef Q_OS_MAC
     if (ref == 0) {
-#   if QT_VERSION < QT_VERSION_CHECK(5,0,0)
-        prevEventFilter = QAbstractEventDispatcher::instance()->setEventFilter(eventFilter);
-#   else
         QAbstractEventDispatcher::instance()->installNativeEventFilter(this);
-#endif
     }
     ++ref;
-#endif // Q_OS_MAC
+#endif
 }
 
 QxtGlobalShortcutPrivate::~QxtGlobalShortcutPrivate()
@@ -62,14 +55,10 @@ QxtGlobalShortcutPrivate::~QxtGlobalShortcutPrivate()
     if (ref == 0) {
         QAbstractEventDispatcher *ed = QAbstractEventDispatcher::instance();
         if (ed != 0) {
-#   if QT_VERSION < QT_VERSION_CHECK(5,0,0)
-            ed->setEventFilter(prevEventFilter);
-#   else
             ed->removeNativeEventFilter(this);
-#   endif
         }
     }
-#endif // Q_OS_MAC
+#endif
 }
 
 bool QxtGlobalShortcutPrivate::setShortcut(const QKeySequence& shortcut)

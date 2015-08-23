@@ -24,9 +24,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     QStringList colorSchemes = QTermWidget::availableColorSchemes();
 
     listWidget->setCurrentRow(0);
-#if QT_VERSION > 0x050200
     listWidget->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContentsOnFirstShow);
-#endif
 
     colorSchemaCombo->addItems(colorSchemes);
     int csix = colorSchemaCombo->findText(Properties::Instance()->colorScheme);
@@ -36,7 +34,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     emulationComboBox->addItems(emulations);
     int eix = emulationComboBox->findText(Properties::Instance()->emulation);
     emulationComboBox->setCurrentIndex(eix != -1 ? eix : 0 );
-   
+
     /* shortcuts */
     setupShortcuts();
 
@@ -58,12 +56,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     showMenuCheckBox->setChecked(Properties::Instance()->menuVisible);
 
     /* actions by motion after paste */
-    
+
     QStringList motionAfter;
     motionAfter << tr("No move") << tr("Move start") << tr("Move end");
     motionAfterPasting_comboBox->addItems(motionAfter);
     motionAfterPasting_comboBox->setCurrentIndex(Properties::Instance()->m_motionAfterPaste);
-    
+
     // Setting windows style actions
     styleComboBox->addItem(tr("System Default"));
     styleComboBox->addItems(QStyleFactory::keys());
@@ -71,7 +69,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     int ix = styleComboBox->findText(Properties::Instance()->guiStyle);
     if (ix != -1)
         styleComboBox->setCurrentIndex(ix);
-    
+
     setFontSample(Properties::Instance()->font);
 
     appTransparencyBox->setValue(Properties::Instance()->appTransparency);

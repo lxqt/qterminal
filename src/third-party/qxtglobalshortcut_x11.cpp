@@ -39,10 +39,7 @@
 #include <QVector>
 #include <QtX11Extras/QX11Info>
 
-#if QT_VERSION >= QT_VERSION_CHECK(5,0,0)
-#    include <xcb/xcb.h>
-#endif
-
+#include <xcb/xcb.h>
 #include <X11/Xlib.h>
 
 namespace {
@@ -150,16 +147,6 @@ private:
 
 } // namespace
 
-#if QT_VERSION < QT_VERSION_CHECK(5,0,0)
-bool QxtGlobalShortcutPrivate::eventFilter(void *message)
-{
-    XEvent *event = static_cast<XEvent *>(message);
-    if (event->type == KeyPress)
-    {
-        XKeyEvent *key = reinterpret_cast<XKeyEvent *>(event);
-        unsigned int keycode = key->keycode;
-        unsigned int keystate = key->state;
-#else
 bool QxtGlobalShortcutPrivate::nativeEventFilter(const QByteArray & eventType,
     void *message, long *result)
 {
@@ -183,16 +170,12 @@ bool QxtGlobalShortcutPrivate::nativeEventFilter(const QByteArray & eventType,
             keystate |= Mod4Mask;
         if(kev->state & XCB_MOD_MASK_SHIFT)
             keystate |= ShiftMask;
-#endif
         activateShortcut(keycode,
             // Mod1Mask == Alt, Mod4Mask == Meta
             keystate & (ShiftMask | ControlMask | Mod1Mask | Mod4Mask));
     }
-#if QT_VERSION < QT_VERSION_CHECK(5,0,0)
-    return prevEventFilter ? prevEventFilter(message) : false;
-#else
-	return false;
-#endif
+
+    return false;
 }
 
 quint32 QxtGlobalShortcutPrivate::nativeModifiers(Qt::KeyboardModifiers modifiers)
