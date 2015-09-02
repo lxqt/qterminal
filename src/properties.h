@@ -34,7 +34,7 @@ typedef QMap<QString,QString> ShortcutMap;
 class Properties
 {
     public:
-        static Properties *Instance(const QString& filename = QString(""));
+        static Properties *Instance(const QString& filename = QString());
 
         QFont defaultFont();
         void saveSettings();
@@ -102,6 +102,8 @@ class Properties
         explicit Properties(const QString& filename);
         Properties(const Properties &) {};
         ~Properties();
+
+        QSettings *m_settings;
 
 };
 
