@@ -122,7 +122,7 @@ int main(int argc, char *argv[])
         QIcon::setThemeName("QTerminal");
 
     // translations
-    QString fname = QString("qterminal_%1.qm").arg(QLocale::system().name().left(2));
+    QString fname = QString("qterminal_%1.qm").arg(QLocale::system().name().left(5));
     QTranslator translator;
 #ifdef TRANSLATIONS_DIR
     qDebug() << "TRANSLATIONS_DIR: Loading translation file" << fname << "from dir" << TRANSLATIONS_DIR;
