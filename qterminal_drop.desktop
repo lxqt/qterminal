@@ -8,6 +8,7 @@ Icon=qterminal
 Name=QTerminal drop down
 Name[de]=QTerminal herabhängend
 Name[pt]=QTerminal suspenso
+Name[ja]=QTerminal ドロップダウン
 
 GenericName=Drop-down Terminal
 GenericName[bg]=Падащ терминал
@@ -47,3 +48,5 @@ Comment=A drop-down terminal emulator.
 Comment[de]=Ein Ausklapp-Terminalemulator.
 Comment[pt]=Um emulador de terminal suspenso.
 Comment[ru]=Вападающий эмулятор терминала.
+Comment[ja]=ドロップダウン式　ターミナルエミュレータ
+

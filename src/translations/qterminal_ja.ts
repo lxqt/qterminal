@@ -235,7 +235,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Toggle Menu</source>
-        <translation>トグルメニュー(&amp;T)</translation>
+        <translation>メニューの表示/非表示(&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="306"/>
@@ -324,7 +324,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="144"/>
         <source>Show a border around the current terminal</source>
-        <translation type="unfinished">カレントターミナルの境界を表示</translation>
+        <translation>カレントターミナルの境界を表示</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="151"/>
@@ -339,7 +339,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
         <source>Start with preset:</source>
-        <translation type="unfinished">プリセットでスタート</translation>
+        <translation>プリセットでスタート</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="208"/>
@@ -369,37 +369,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="328"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;エミュレータの挙動の選択。注意して頂きたいのは、この選択はオペレーティングシステムと適合する必要はありません。&lt;/p&gt;&lt;p&gt; &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt;エミュレーションは最小の機能にフォールバックしたものです。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;エミュレータの挙動の選択。注意して頂きたいのは、この選択はオペレーティングシステムと適合する必要はありません。&lt;/p&gt;&lt;p&gt; &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt;エミュレーションは最小の機能にフォールバックしたものです。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Action after paste</source>
-        <translation type="unfinished">貼り付け後の挙動</translation>
+        <translation>貼り付け後の挙動</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="383"/>
         <source>Open new terminals in current working directory</source>
-        <translation type="unfinished">カレントディレクトリに新しいターミナルを開く</translation>
+        <translation>カレントディレクトリに新しいターミナルを開く</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="390"/>
         <source>Save Size when closing</source>
-        <translation type="unfinished">閉じるときにサイズを保存する</translation>
+        <translation>閉じるときにサイズを保存する</translation>
     </message>
         <message>
         <location filename="../forms/propertiesdialog.ui" line="397"/>
         <source>Save Position when closing</source>
-        <translation type="unfinished">閉じるときに位置を保存する</translation>
+        <translation>閉じるときに位置を保存する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="404"/>
         <source>Ask for confirmation when closing</source>
-        <translation type="unfinished">閉じるときに確認する</translation>
+        <translation>閉じるときに確認する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="414"/>
         <source>Unlimited history</source>
-        <translation type="unfinished">履歴を制限しない</translation>
+        <translation>履歴を制限しない</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
@@ -420,7 +420,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="486"/>
         <source>Width</source>
-        <translation type="unfinished">幅</translation>
+        <translation>幅</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="536"/>
@@ -430,7 +430,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="558"/>
         <source>Enable bookmarks</source>
-        <translation type="unfinished">ブックマークを利用可能にする</translation>
+        <translation>ブックマークを利用可能にする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="567"/>
@@ -461,12 +461,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="137"/>
         <source>Hide tab bar with only one tab</source>
-        <translation type="unfinished">1つのタブしか使用していない場合、タブバーを隠す</translation>
+        <translation>1つのタブしか使用していない場合、タブバーを隠す</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="289"/>
         <source>&amp;Change...</source>
-        <translation type="unfinished">変更（&amp;C)...</translation>
+        <translation>変更（&amp;C)...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="454"/>
@@ -491,7 +491,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="586"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation type="unfinished">ブックマークファイルの場所を指定することができます。OwnCloudやDropboxのようなツールとブックマークを共有することが容易にできます。</translation>
+        <translation>ブックマークファイルの場所を指定することができます。OwnCloudやDropboxのようなツールとブックマークを共有することが容易にできます。</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="45"/>
@@ -523,17 +523,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="63"/>
         <source>No move</source>
-        <translation>無動作</translation>
+        <translation type="unfinished">無動作</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="63"/>
         <source>Move start</source>
-        <translation>動作開始</translation>
+        <translation type="unfinished">動作開始</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="63"/>
         <source>Move end</source>
-        <translation>動作終了</translation>
+        <translation type="unfinished">動作終了</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="68"/>
@@ -632,7 +632,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="119"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">設定(&amp;P)...</translation>
+        <translation>設定(&amp;P)...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
