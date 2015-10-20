@@ -531,6 +531,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
 
     QCheckBox * dontAskCheck = new QCheckBox(tr("Do not ask again"), dia);
     QDialogButtonBox * buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes | QDialogButtonBox::No, Qt::Horizontal, dia);
+    buttonBox->button(QDialogButtonBox::Yes)->setDefault(true);
 
     connect(buttonBox, SIGNAL(accepted()), dia, SLOT(accept()));
     connect(buttonBox, SIGNAL(rejected()), dia, SLOT(reject()));
