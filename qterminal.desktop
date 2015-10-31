@@ -18,8 +18,8 @@ Actions=Dropdown;
 
 [Desktop Action Dropdown]
 Name=Drop-down terminal
-Icon=qterminal
 Exec=qterminal --drop
+Icon=utilities-terminal
 
 Name[en_GB]=Drop-down Terminal
 Name[bg]=Падащ терминал

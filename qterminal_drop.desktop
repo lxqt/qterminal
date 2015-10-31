@@ -3,7 +3,7 @@ Type=Application
 Exec=qterminal --drop
 Terminal=false
 Categories=Qt;System;TerminalEmulator;
-Icon=qterminal
+Icon=utilities-terminal
 
 Name=QTerminal drop down
 Name[de]=QTerminal herabhängend
