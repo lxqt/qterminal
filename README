@@ -1,8 +1,0 @@
-qterminal
-
-## Installation
-See the INSTALL file for details
-
-## Translations
- - Edit src/CMakeLists.txt to add a new ts file.
- - make lupdate updates ts files to be translated (lrelease is called automatically in make)
