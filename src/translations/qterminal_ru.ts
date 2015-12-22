@@ -15,7 +15,7 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Выбрать шрифт терминала</translation>
+        <translation>Выберите шрифт терминала</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
@@ -68,12 +68,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="164"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Сдвинуть вкладку &amp;влево</translation>
+        <translation>Сдвинуть вкладку в&amp;лево</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Сдвинуть вкладку &amp;вправо</translation>
+        <translation>Сдвинуть вкладку в&amp;право</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="180"/>
@@ -250,7 +250,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="531"/>
         <source>Do not ask again</source>
-        <translation>Не справшивать снова</translation>
+        <translation>Не спрашивать снова</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="538"/>
@@ -260,7 +260,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="559"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>Лёгкий мультиплатформенный эмулятор терминала </translation>
+        <translation>Лёгкий мультиплатформенный эмулятор терминала</translation>
     </message>
 </context>
 <context>
@@ -324,7 +324,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="130"/>
         <source>Show the menu bar</source>
-        <translation>Показать панель меню</translation>
+        <translation>Показывать панель меню</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="144"/>
@@ -374,7 +374,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="328"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Какое поведение эмулировать. Обратите внимание, что это не обязательно должн осоответствовать вашей операционной системе.&lt;/p&gt;&lt;p&gt;Эмуляция &lt;span style=&quot; font-weight:600;&quot;&gt;по умолчанию&lt;/span&gt; — это запасной режим с минимальным набором функций.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Какое поведение эмулировать. Обратите внимание, что это не обязательно должно соответствовать вашей операционной системе.&lt;/p&gt;&lt;p&gt;Эмуляция &lt;span style=&quot; font-weight:600;&quot;&gt;по умолчанию&lt;/span&gt; - это запасной режим с минимальным набором функций.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
@@ -384,7 +384,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="383"/>
         <source>Open new terminals in current working directory</source>
-        <translation>Открывать новые терминалы в текущей рабочей папке</translation>
+        <translation>Открывать новые терминалы в текущем рабочем каталоге</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="390"/>
@@ -523,17 +523,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="63"/>
         <source>No move</source>
-        <translation type="unfinished"></translation>
+        <translation>Не двигаться</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="63"/>
         <source>Move start</source>
-        <translation type="unfinished"></translation>
+        <translation>Переместиться в начало</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="63"/>
         <source>Move end</source>
-        <translation type="unfinished"></translation>
+        <translation>Переместиться в конец</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="68"/>
