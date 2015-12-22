@@ -52,7 +52,9 @@ MainWindow::MainWindow(const QString& work_dir,
 
     m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
     m_bookmarksDock->setObjectName("BookmarksDockWidget");
+    m_bookmarksDock->setAutoFillBackground(true);
     BookmarksWidget *bookmarksWidget = new BookmarksWidget(m_bookmarksDock);
+    bookmarksWidget->setAutoFillBackground(true);
     m_bookmarksDock->setWidget(bookmarksWidget);
     addDockWidget(Qt::LeftDockWidgetArea, m_bookmarksDock);
     connect(bookmarksWidget, SIGNAL(callCommand(QString)),
