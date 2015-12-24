@@ -50,6 +50,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
 
     connect(this, SIGNAL(tabCloseRequested(int)), this, SLOT(removeTab(int)));
     connect(tabBar(), SIGNAL(tabMoved(int,int)), this, SLOT(updateTabIndices()));
+    connect(this, SIGNAL(tabRenameRequested(int)), this, SLOT(renameSession(int)));
 }
 
 TermWidgetHolder * TabWidget::terminalHolder()
@@ -78,9 +79,7 @@ int TabWidget::addNewTab(const QString & shell_program)
 
     TermWidgetHolder *console = new TermWidgetHolder(cwd, shell_program, this);
     connect(console, SIGNAL(finished()), SLOT(removeFinished()));
-    //connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeCurrentTab()));
     connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));
-    connect(console, SIGNAL(renameSession()), this, SLOT(renameSession()));
 
     int index = addTab(console, label);
     updateTabIndices();
@@ -153,7 +152,7 @@ void TabWidget::updateTabIndices()
         widget(i)->setProperty(TAB_INDEX_PROPERTY, i);
 }
 
-void TabWidget::renameSession()
+void TabWidget::renameSession(int index)
 {
     bool ok = false;
     QString text = QInputDialog::getText(this, tr("Tab name"),
@@ -161,7 +160,7 @@ void TabWidget::renameSession()
                                         QString(), &ok);
     if(ok && !text.isEmpty())
     {
-        setTabText(currentIndex(), text);
+        setTabText(index, text);
     }
 }
 
@@ -179,11 +178,17 @@ void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
 {
     QMenu menu(this);
 
-    menu.addAction(QIcon::fromTheme("document-close"), tr("Close session"),
-                   this, SLOT(removeCurrentTab()));
-    menu.addAction(tr("Rename session"), this, SLOT(renameSession()), tr(RENAME_SESSION_SHORTCUT));
+    QAction *close = menu.addAction(QIcon::fromTheme("document-close"), tr("Close session"));
+    QAction *rename = menu.addAction(tr("Rename session"));
+    rename->setShortcut(tr(RENAME_SESSION_SHORTCUT));
 
-    menu.exec(event->globalPos());
+    int tabIndex = tabBar()->tabAt(event->pos());
+    QAction *action = menu.exec(event->globalPos());
+    if (action == close) {
+        emit tabCloseRequested(tabIndex);
+    } else if (action == rename) {
+        emit tabRenameRequested(tabIndex);
+    }
 }
 
 bool TabWidget::eventFilter(QObject *obj, QEvent *event)
@@ -193,10 +198,11 @@ bool TabWidget::eventFilter(QObject *obj, QEvent *event)
         QMouseEvent *e = reinterpret_cast<QMouseEvent*>(event);
         // if user doubleclicks on tab button - rename it. If user
         // clicks on free space - open new tab
-        if (tabBar()->tabAt(e->pos()) == -1)
+        int index = tabBar()->tabAt(e->pos());
+        if (index == -1)
             addNewTab();
         else
-            renameSession();
+            renameSession(index);
         return true;
     }
     return QTabWidget::eventFilter(obj, event);
