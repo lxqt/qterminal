@@ -513,15 +513,18 @@ void MainWindow::closeEvent(QCloseEvent *ev)
     {
         // #80 - do not save state and geometry in drop mode
         if (!m_dropMode) {
-	    if (Properties::Instance()->savePosOnExit) {
+            if (Properties::Instance()->savePosOnExit) {
             	Properties::Instance()->mainWindowPosition = pos();
-	    }
-	    if (Properties::Instance()->saveSizeOnExit) {
+            }
+            if (Properties::Instance()->saveSizeOnExit) {
             	Properties::Instance()->mainWindowSize = size();
-	    }
+            }
             Properties::Instance()->mainWindowState = saveState();
         }
         Properties::Instance()->saveSettings();
+        for (int i = 1; i <= consoleTabulator->count(); ++i) {
+            consoleTabulator->removeTab(i - 1);
+        }
         ev->accept();
         return;
     }
@@ -550,6 +553,10 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         Properties::Instance()->mainWindowState = saveState();
         Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
         Properties::Instance()->saveSettings();
+        int c = consoleTabulator->count();
+        for (int i = c; i > 0; --i) {
+            consoleTabulator->removeTab(i - 1);
+        }
         ev->accept();
     } else {
         ev->ignore();
