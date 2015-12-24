@@ -48,7 +48,7 @@ public slots:
     void removeFinished();
     void moveLeft();
     void moveRight();
-    void renameSession();
+    void renameSession(int);
     void setWorkDirectory(const QString&);
 
     void switchNextSubterminal();
@@ -79,6 +79,7 @@ public slots:
 
 signals:
     void closeTabNotification();
+    void tabRenameRequested(int);
 
 protected:
     enum Direction{Left = 1, Right};
