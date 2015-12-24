@@ -522,7 +522,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
             Properties::Instance()->mainWindowState = saveState();
         }
         Properties::Instance()->saveSettings();
-        for (int i = 1; i <= consoleTabulator->count(); ++i) {
+        for (int i = consoleTabulator->count(); i > 0; --i) {
             consoleTabulator->removeTab(i - 1);
         }
         ev->accept();
@@ -553,8 +553,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         Properties::Instance()->mainWindowState = saveState();
         Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
         Properties::Instance()->saveSettings();
-        int c = consoleTabulator->count();
-        for (int i = c; i > 0; --i) {
+        for (int i = consoleTabulator->count(); i > 0; --i) {
             consoleTabulator->removeTab(i - 1);
         }
         ev->accept();
