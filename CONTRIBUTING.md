@@ -1,16 +1,16 @@
 # Bug reports
 
 Please file bugs on the qterminal github tracker:
-  https://github.com/qterminal/qterminal/
+  https://github.com/lxde/qterminal/issues
 
 Please file qtermwidget-related bugs on the qtermwidget github tracker:
-  https://github.com/qterminal/qtermwidget/
+  https://github.com/lxde/qtermwidget/issues
 
 
 # Code contributions
 
 For all code contributions, please open a pull request on Github:
-  https://github.com/qterminal/qterminal/
+  https://github.com/lxde/qterminal/
 
 Make sure your code is clean, devoid of debug statements and respects the style
 of the rest of the file (including line length and indentation).

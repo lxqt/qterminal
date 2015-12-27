@@ -8,7 +8,7 @@ The lightweight Qt terminal emulator
 
 * Qt >= 5.2
 * CMake >= 2.8
-* [qtermwidget](https://github.com/qterminal/qtermwidget)
+* [qtermwidget](https://github.com/lxde/qtermwidget)
 
 
 ### Building
