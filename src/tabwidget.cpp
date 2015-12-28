@@ -158,8 +158,7 @@ void TabWidget::renameSession(int index)
     QString text = QInputDialog::getText(this, tr("Tab name"),
                                         tr("New tab name:"), QLineEdit::Normal,
                                         QString(), &ok);
-    if(ok && !text.isEmpty())
-    {
+    if (ok && !text.isEmpty()) {
         setTabText(index, text);
     }
 }
@@ -174,16 +173,20 @@ void TabWidget::renameTabsAfterRemove()
 #endif
 }
 
-void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
+void TabWidget::contextMenuEvent(QContextMenuEvent * event)
 {
-    QMenu menu(this);
+    const int tabIndex = tabBar()->tabAt(event->pos());
+    if (tabIndex == -1) {
+        return;
+    }
+    setCurrentIndex(tabIndex);
 
+    QMenu menu(this);
     QAction *close = menu.addAction(QIcon::fromTheme("document-close"), tr("Close session"));
     QAction *rename = menu.addAction(tr("Rename session"));
     rename->setShortcut(tr(RENAME_SESSION_SHORTCUT));
 
-    int tabIndex = tabBar()->tabAt(event->pos());
-    QAction *action = menu.exec(event->globalPos());
+    const QAction *action = menu.exec(event->globalPos());
     if (action == close) {
         emit tabCloseRequested(tabIndex);
     } else if (action == rename) {
@@ -231,8 +234,7 @@ void TabWidget::removeTab(int index)
 
     updateTabIndices();
     int current = currentIndex();
-    if (current >= 0 )
-    {
+    if (current >= 0) {
         qobject_cast<TermWidgetHolder*>(widget(current))->setInitialFocus();
     }
 // do not decrease it as renaming is disabled in renameTabsAfterRemove
@@ -353,7 +355,6 @@ void TabWidget::changeTabPosition(QAction *triggered)
     setTabPosition(position);
     prop->tabsPos = position;
     prop->saveSettings();
-    return;
 }
 
 void TabWidget::propertiesChanged()
