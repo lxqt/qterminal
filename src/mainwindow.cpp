@@ -117,7 +117,6 @@ void MainWindow::enableDropMode()
     setKeepOpen(Properties::Instance()->dropKeepOpen);
     m_dropLockButton->setAutoRaise(true);
 
-
     setDropShortcut(Properties::Instance()->dropShortCut);
     realign();
 }
