@@ -5,6 +5,7 @@ GenericName=Terminal emulator
 
 Comment=Terminal emulator
 Comment[de]=Befehlszeile verwenden
+Comment[el]=Προσομοιωτής τερματικού
 Comment[fr]=Terminal
 Comment[pt]=Emulador de terminal
 Comment[ru_RU]=Эмулятор терминала
@@ -28,6 +29,7 @@ Name[ca@valencia]=Terminal desplegable
 Name[cs]=Vysouvací terminál
 Name[da]=Terminal der ruller ned
 Name[de]=Aufklapp-Terminal
+Name[el]=Αναπτυσσόμενο τερματικό
 Name[es]=Terminal de menú desplegable
 Name[et]=Lahtikeriv terminal
 Name[fr]=Terminal déroulant
