@@ -288,7 +288,7 @@ void PropertiesDialog::openBookmarksFile(const QString &fname)
     QFile f(fname);
     QString content;
     if (!f.open(QFile::ReadOnly))
-        content = "<qterminal>\n  <group name\"group1\">\n    <command name=\"cmd1\" value=\"cd $HOME\"/>\n  </group>\n</qterminal>";
+        content = "<qterminal>\n  <group name=\"group1\">\n    <command name=\"cmd1\" value=\"cd $HOME\"/>\n  </group>\n</qterminal>";
     else
         content = f.readAll();
 
