@@ -7,6 +7,7 @@ Icon=utilities-terminal
 
 Name=QTerminal drop down
 Name[de]=QTerminal herabhängend
+Name[el]=QTerminal αναπτυσσόμενο
 Name[pt]=QTerminal suspenso
 Name[ja]=QTerminal ドロップダウン
 
@@ -17,6 +18,7 @@ GenericName[ca@valencia]=Terminal desplegable
 GenericName[cs]=Vysouvací terminál
 GenericName[da]=Terminal der ruller ned
 GenericName[de]=Aufklapp-Terminal
+GenericName[el]=Αναπτυσσόμενο τερματικό
 GenericName[en_GB]=Drop-down Terminal
 GenericName[es]=Terminal de menú desplegable
 GenericName[et]=Lahtikeriv terminal
@@ -46,6 +48,7 @@ GenericName[zh_TW]=下拉式終端機
 
 Comment=A drop-down terminal emulator.
 Comment[de]=Ein Ausklapp-Terminalemulator.
+Comment[el]=Ένας αναπτυσσόμενος προσομοιωτής τερματικού.
 Comment[pt]=Um emulador de terminal suspenso.
 Comment[ru]=Вападающий эмулятор терминала.
 Comment[ja]=ドロップダウン式　ターミナルエミュレータ
