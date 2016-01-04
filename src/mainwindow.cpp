@@ -87,7 +87,6 @@ MainWindow::MainWindow(const QString& work_dir,
     consoleTabulator->setWorkDirectory(work_dir);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
-    consoleTabulator->addNewTab(command);
 
     setWindowTitle("QTerminal");
     setWindowIcon(QIcon::fromTheme("utilities-terminal"));
@@ -95,6 +94,11 @@ MainWindow::MainWindow(const QString& work_dir,
     setup_FileMenu_Actions();
     setup_ActionsMenu_Actions();
     setup_ViewMenu_Actions();
+
+    /* The tab should be added after all changes are made to
+       the main window; otherwise, the initial prompt might
+       get jumbled because of changes in internal geometry. */
+    consoleTabulator->addNewTab(command);
 
     // Add global rename Session shortcut
     renameSession = new QAction(tr("Rename Session"), this);
