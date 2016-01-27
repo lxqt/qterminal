@@ -99,11 +99,6 @@ MainWindow::MainWindow(const QString& work_dir,
        the main window; otherwise, the initial prompt might
        get jumbled because of changes in internal geometry. */
     consoleTabulator->addNewTab(command);
-
-    // Add global rename Session shortcut
-    renameSession = new QAction(tr("Rename Session"), this);
-    renameSession->setShortcut(QKeySequence(tr(RENAME_SESSION_SHORTCUT)));
-    connect(renameSession, SIGNAL(triggered()), consoleTabulator, SLOT(renameSession()));
 }
 
 MainWindow::~MainWindow()
@@ -295,7 +290,15 @@ void MainWindow::setup_ActionsMenu_Actions()
     Properties::Instance()->actions[TOGGLE_MENU]->setShortcut(seq);
     connect(Properties::Instance()->actions[TOGGLE_MENU], SIGNAL(triggered()), this, SLOT(toggleMenu()));
     addAction(Properties::Instance()->actions[TOGGLE_MENU]);
-    // tis is correct - add action to main window - not to menu to keep toggle working
+    // this is correct - add action to main window - not to menu to keep toggle working
+
+    // Add global rename current session shortcut
+    Properties::Instance()->actions[RENAME_SESSION] = new QAction(tr("Rename session"), this);
+    seq = QKeySequence::fromString(settings.value(RENAME_SESSION, RENAME_SESSION_SHORTCUT).toString());
+    Properties::Instance()->actions[RENAME_SESSION]->setShortcut(seq);
+    connect(Properties::Instance()->actions[RENAME_SESSION], SIGNAL(triggered()), consoleTabulator, SLOT(renameCurrentSession()));
+    addAction(Properties::Instance()->actions[RENAME_SESSION]);
+    // this is correct - add action to main window - not to menu
 
     settings.endGroup();
 
