@@ -58,6 +58,7 @@
 
 #define HIDE_WINDOW_BORDERS "Hide Window Borders"
 #define SHOW_TAB_BAR "Show Tab Bar"
+#define RENAME_SESSION "Rename Session"
 #define FULLSCREEN "Fullscreen"
 
 /* Some defaults for QTerminal application */

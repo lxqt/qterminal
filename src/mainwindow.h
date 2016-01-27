@@ -45,8 +45,6 @@ private:
     QActionGroup *tabPosition, *scrollBarPosition;
     QMenu *tabPosMenu, *scrollPosMenu;
 
-    QAction *renameSession;
-
     QString m_initWorkDir;
     QString m_initShell;
 
