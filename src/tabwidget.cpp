@@ -51,6 +51,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
     connect(this, SIGNAL(tabCloseRequested(int)), this, SLOT(removeTab(int)));
     connect(tabBar(), SIGNAL(tabMoved(int,int)), this, SLOT(updateTabIndices()));
     connect(this, SIGNAL(tabRenameRequested(int)), this, SLOT(renameSession(int)));
+    connect(this, SIGNAL(tabResetNameRequested(int)), this, SLOT(resetSessionName(int)));
 }
 
 TermWidgetHolder * TabWidget::terminalHolder()
@@ -164,6 +165,11 @@ void TabWidget::renameSession(int index)
     }
 }
 
+void TabWidget::resetSessionName(int index)
+{
+    setTabText(index, QString(tr("Shell No. %1")).arg(index+1));
+}
+
 void TabWidget::renameTabsAfterRemove()
 {
 // it breaks custom names - it replaces original/custom title with shell no #
@@ -181,6 +187,7 @@ void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
     QAction *close = menu.addAction(QIcon::fromTheme("document-close"), tr("Close session"));
     QAction *rename = menu.addAction(tr("Rename session"));
     rename->setShortcut(tr(RENAME_SESSION_SHORTCUT));
+    QAction *reset_name = menu.addAction(tr("Reset session name"));
 
     int tabIndex = tabBar()->tabAt(event->pos());
     QAction *action = menu.exec(event->globalPos());
@@ -188,6 +195,8 @@ void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
         emit tabCloseRequested(tabIndex);
     } else if (action == rename) {
         emit tabRenameRequested(tabIndex);
+    } else if (action == reset_name) {
+        emit tabResetNameRequested(tabIndex);
     }
 }
 
