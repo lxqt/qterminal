@@ -80,6 +80,7 @@ public slots:
 
 signals:
     void closeTabNotification();
+    void tabRenameRequested(int);
 
 protected:
     enum Direction{Left = 1, Right};

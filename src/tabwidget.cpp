@@ -50,6 +50,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
 
     connect(this, SIGNAL(tabCloseRequested(int)), this, SLOT(removeTab(int)));
     connect(tabBar(), SIGNAL(tabMoved(int,int)), this, SLOT(updateTabIndices()));
+    connect(this, SIGNAL(tabRenameRequested(int)), this, SLOT(renameSession(int)));
 }
 
 TermWidgetHolder * TabWidget::terminalHolder()
@@ -178,18 +179,21 @@ void TabWidget::renameTabsAfterRemove()
 #endif
 }
 
-void TabWidget::contextMenuEvent ( QContextMenuEvent * event )
+void TabWidget::contextMenuEvent(QContextMenuEvent *event)
 {
     QMenu menu(this);
 
     QAction *close = menu.addAction(QIcon::fromTheme("document-close"), tr("Close session"));
-    QAction *rename = Properties::Instance()->actions[RENAME_SESSION];
-    menu.addAction(rename);
+    QAction *rename = menu.addAction(Properties::Instance()->actions[RENAME_SESSION]->text());
+    rename->setShortcut(Properties::Instance()->actions[RENAME_SESSION]->shortcut());
+    rename->blockSignals(true);
 
     int tabIndex = tabBar()->tabAt(event->pos());
     QAction *action = menu.exec(event->globalPos());
     if (action == close) {
         emit tabCloseRequested(tabIndex);
+    } else if (action == rename) {
+        emit tabRenameRequested(tabIndex);
     }
 }
 
