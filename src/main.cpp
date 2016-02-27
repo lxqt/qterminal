@@ -100,8 +100,6 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
 
 int main(int argc, char *argv[])
 {
-    setenv("TERM", "xterm", 1); // TODO/FIXME: why?
-
     QApplication::setApplicationName("qterminal");
     QApplication::setApplicationVersion(STR_VERSION);
     QApplication::setOrganizationDomain("qterminal.org");

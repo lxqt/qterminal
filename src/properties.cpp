@@ -66,6 +66,16 @@ void Properties::loadSettings()
     if (!guiStyle.isNull())
         QApplication::setStyle(guiStyle);
 
+    //setenv "TERM". If setenvTERM is empty, set it to xterm.
+    setenvTERM = m_settings->value("setenvTERM", QString()).toString();
+    // Convert QString to const char* for setenvTERM.
+    QByteArray setenvTERMBA = setenvTERM.toUtf8();
+    const char *setenvTERMChar = setenvTERMBA.data();
+    if (setenvTERM.isEmpty())
+        setenv("TERM", "xterm", 1);
+    else
+        setenv("TERM", setenvTERMChar, 1);
+    
     colorScheme = m_settings->value("colorScheme", "Linux").toString();
 
     highlightCurrentTerminal = m_settings->value("highlightCurrentTerminal", true).toBool();
@@ -141,6 +151,7 @@ void Properties::loadSettings()
 void Properties::saveSettings()
 {
     m_settings->setValue("guiStyle", guiStyle);
+    m_settings->setValue("setenvTERM", setenvTERM);
     m_settings->setValue("colorScheme", colorScheme);
     m_settings->setValue("highlightCurrentTerminal", highlightCurrentTerminal);
     m_settings->setValue("font", font);
