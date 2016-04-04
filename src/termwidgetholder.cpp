@@ -205,6 +205,7 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
     {
         parent->setParent(0);
         delete parent;
+        parent = Q_NULLPTR;
     }
 
     QList<TermWidget*> tlist = findChildren<TermWidget *>();
