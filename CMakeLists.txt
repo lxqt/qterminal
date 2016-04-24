@@ -99,6 +99,7 @@ set(QTERM_TS
     src/translations/qterminal_ru.ts
     src/translations/qterminal_ja.ts
     src/translations/qterminal_zh_CN.ts
+    src/translations/qterminal_pt_BR.ts
 )
 
 qt5_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
