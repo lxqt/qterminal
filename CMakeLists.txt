@@ -6,6 +6,8 @@ include(GNUInstallDirs)
 
 set(STR_VERSION "0.6.0")
 
+option(PULL_TRANSLATIONS "Pull translations" OFF)
+
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
 
@@ -87,20 +89,22 @@ set(QTERM_RCC_SRC
     src/icons.qrc
 )
 
-set(QTERM_TS
-    src/translations/qterminal_cs.ts
-    src/translations/qterminal_de.ts
-    src/translations/qterminal_el.ts
-    src/translations/qterminal_es.ts
-    src/translations/qterminal_et.ts
-    src/translations/qterminal_it.ts
-    src/translations/qterminal_pt.ts
-    src/translations/qterminal_hu.ts
-    src/translations/qterminal_ru.ts
-    src/translations/qterminal_ja.ts
-    src/translations/qterminal_zh_CN.ts
-    src/translations/qterminal_pt_BR.ts
-)
+if(PULL_TRANSLATIONS)
+    set(QTERM_TS
+        src/translations/qterminal_cs.ts
+        src/translations/qterminal_de.ts
+        src/translations/qterminal_el.ts
+        src/translations/qterminal_es.ts
+        src/translations/qterminal_et.ts
+        src/translations/qterminal_it.ts
+        src/translations/qterminal_pt.ts
+        src/translations/qterminal_hu.ts
+        src/translations/qterminal_ru.ts
+        src/translations/qterminal_ja.ts
+        src/translations/qterminal_zh_CN.ts
+        src/translations/qterminal_pt_BR.ts
+    )
+endif(PULL_TRANSLATIONS)
 
 qt5_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
 qt5_wrap_cpp( QTERM_MOC ${QTERM_MOC_SRC} )
