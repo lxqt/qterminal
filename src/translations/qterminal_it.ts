@@ -52,153 +52,153 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="147"/>
-        <source>&amp;Clear Current Tab</source>
-        <translation>&amp;Pulisci scheda attuale</translation>
+        <source>Clear Current Tab</source>
+        <translation>Pulisci scheda attuale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="156"/>
-        <source>&amp;Next Tab</source>
-        <translation>&amp;Scheda prossima</translation>
+        <source>Next Tab</source>
+        <translation>Scheda prossima</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="163"/>
-        <source>&amp;Previous Tab</source>
-        <translation>&amp;Scheda precedente</translation>
+        <source>Previous Tab</source>
+        <translation>Scheda precedente</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="170"/>
-        <source>Move Tab &amp;Left</source>
-        <translation>Sposta scheda a &amp;sinistra</translation>
+        <source>Move Tab Left</source>
+        <translation>Sposta scheda a sinistra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="177"/>
-        <source>Move Tab &amp;Right</source>
-        <translation>Sposta scheda a &amp;destra</translation>
+        <source>Move Tab Right</source>
+        <translation>Sposta scheda a destra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="186"/>
-        <source>Split Terminal &amp;Horizontally</source>
-        <translation>Dividi terminale &amp;orizzontalmente</translation>
+        <source>Split Terminal Horizontally</source>
+        <translation>Dividi terminale orizzontalmente</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="193"/>
-        <source>Split Terminal &amp;Vertically</source>
-        <translation>Dividi terminale &amp;verticalmente</translation>
+        <source>Split Terminal Vertically</source>
+        <translation>Dividi terminale verticalmente</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="200"/>
-        <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Collassa sottoterminale</translation>
+        <source>Collapse Subterminal</source>
+        <translation>Collassa sottoterminale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="207"/>
-        <source>N&amp;ext Subterminal</source>
-        <translation>&amp;Prossimo sottoterminale</translation>
+        <source>Next Subterminal</source>
+        <translation>Prossimo sottoterminale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="214"/>
-        <source>P&amp;revious Subterminal</source>
-        <translation>&amp;Sottoterminale precente</translation>
+        <source>Previous Subterminal</source>
+        <translation>Sottoterminale precente</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
-        <source>Copy &amp;Selection</source>
-        <translation>Copia &amp;selezione</translation>
+        <source>Copy Selection</source>
+        <translation>Copia selezione</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
-        <source>Paste Clip&amp;board</source>
-        <translation>Incolla dagli &amp;appunti</translation>
+        <source>Paste Clipboard</source>
+        <translation>Incolla dagli appunti</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="238"/>
-        <source>Paste S&amp;election</source>
-        <translation>&amp;Incolla selezione</translation>
+        <source>Paste Selection</source>
+        <translation>Incolla selezione</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
-        <source>Zoom &amp;in</source>
-        <translation>&amp;Ingrandisci</translation>
+        <source>Zoom in</source>
+        <translation>Ingrandisci</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="252"/>
-        <source>Zoom &amp;out</source>
-        <translation>&amp;Diminuisci</translation>
+        <source>Zoom out</source>
+        <translation>Diminuisci</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
-        <source>Zoom rese&amp;t</source>
-        <translation>&amp;Ripristina zoom</translation>
+        <source>Zoom reset</source>
+        <translation>Ripristina zoom</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="268"/>
-        <source>&amp;Find...</source>
-        <translation>&amp;Cerca...</translation>
+        <source>Find...</source>
+        <translation>Cerca...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="280"/>
-        <source>&amp;Save Session</source>
-        <translation>&amp;Salva sessione</translation>
+        <source>Save Session</source>
+        <translation>Salva sessione</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
-        <source>&amp;Load Session</source>
-        <translation>&amp;Carica sessione</translation>
+        <source>Load Session</source>
+        <translation>Carica sessione</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="293"/>
-        <source>&amp;Toggle Menu</source>
-        <translation>&amp;Mostra/nascondi menu</translation>
+        <source>Toggle Menu</source>
+        <translation>Mostra/nascondi menu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
-        <source>&amp;New Tab</source>
-        <translation>&amp;Nuova scheda</translation>
+        <source>New Tab</source>
+        <translation>Nuova scheda</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="319"/>
-        <source>New Tab From &amp;Preset</source>
-        <translation>Nuova scheda &amp;preconfigurata</translation>
+        <source>New Tab From Preset</source>
+        <translation>Nuova scheda preconfigurata</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
-        <source>1 &amp;Terminal</source>
-        <translation>&amp;1 terminale</translation>
+        <source>1 Terminal</source>
+        <translation>1 terminale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
-        <source>2 &amp;Horizontal Terminals</source>
-        <translation>2 terminali per &amp;orizzontale</translation>
+        <source>2 Horizontal Terminals</source>
+        <translation>2 terminali per orizzontale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
-        <source>2 &amp;Vertical Terminals</source>
-        <translation>2 terminali per &amp;verticale</translation>
+        <source>2 Vertical Terminals</source>
+        <translation>2 terminali per verticale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="326"/>
-        <source>4 Terminal&amp;s</source>
-        <translation>&amp;4 terminali</translation>
+        <source>4 Terminals</source>
+        <translation>4 terminali</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="330"/>
-        <source>&amp;Close Tab</source>
-        <translation>&amp;Chiudi scheda</translation>
+        <source>Close Tab</source>
+        <translation>Chiudi scheda</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="337"/>
-        <source>&amp;New Window</source>
-        <translation>&amp;Nuova finestra</translation>
+        <source>New Window</source>
+        <translation>Nuova finestra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="371"/>
-        <source>&amp;Hide Window Borders</source>
-        <translation>&amp;Nascondi bordi della finestra</translation>
+        <source>Hide Window Borders</source>
+        <translation>Nascondi bordi della finestra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="386"/>
-        <source>&amp;Show Tab Bar</source>
-        <translation>&amp;Mostra barra delle schede</translation>
+        <source>Show Tab Bar</source>
+        <translation>Mostra barra delle schede</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="398"/>
@@ -207,40 +207,40 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="418"/>
-        <source>&amp;Bottom</source>
-        <translation>in &amp;fondo</translation>
+        <source>Bottom</source>
+        <translation>in fondo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="419"/>
-        <source>&amp;Top</source>
-        <translation>in &amp;cima</translation>
+        <source>Top</source>
+        <translation>in cima</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="420"/>
         <location filename="../mainwindow.cpp" line="451"/>
-        <source>&amp;Right</source>
-        <translation>a &amp;destra</translation>
+        <source>Right</source>
+        <translation>a destra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="421"/>
         <location filename="../mainwindow.cpp" line="452"/>
-        <source>&amp;Left</source>
-        <translation>a &amp;sinistra</translation>
+        <source>Left</source>
+        <translation>a sinistra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
-        <source>&amp;Tabs Layout</source>
-        <translation>&amp;Posizione delle schede</translation>
+        <source>Tabs Layout</source>
+        <translation>Posizione delle schede</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="450"/>
-        <source>&amp;None</source>
-        <translation>&amp;Nessuno</translation>
+        <source>None</source>
+        <translation>Nessuno</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
-        <source>S&amp;crollbar Layout</source>
-        <translation>Posizione &amp;barra di scorrimento</translation>
+        <source>Scrollbar Layout</source>
+        <translation>Posizione barra di scorrimento</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="538"/>
@@ -432,8 +432,8 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="292"/>
-        <source>&amp;Change...</source>
-        <translation>&amp;Modifica...</translation>
+        <source>Change...</source>
+        <translation>Modifica...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="319"/>
@@ -611,48 +611,48 @@
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="71"/>
-        <source>&amp;File</source>
+        <source>File</source>
         <translation></translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
-        <source>&amp;Actions</source>
-        <translation>&amp;Azioni</translation>
+        <source>Actions</source>
+        <translation>Azioni</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
-        <source>&amp;Help</source>
-        <translation>Ai&amp;uto</translation>
+        <source>Help</source>
+        <translation>Aiuto</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="91"/>
-        <source>&amp;View</source>
-        <translation>&amp;Visualizza</translation>
+        <source>View</source>
+        <translation>Visualizza</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="96"/>
-        <source>&amp;Edit</source>
-        <translation>&amp;Modifica</translation>
+        <source>Edit</source>
+        <translation>Modifica</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="112"/>
-        <source>&amp;About...</source>
-        <translation>&amp;A proposito...</translation>
+        <source>About...</source>
+        <translation>A proposito...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="117"/>
-        <source>About &amp;Qt...</source>
-        <translation>A proposito di &amp;Qt...</translation>
+        <source>About Qt...</source>
+        <translation>A proposito di Qt...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="122"/>
-        <source>&amp;Preferences...</source>
-        <translation>&amp;Preferenze...</translation>
+        <source>Preferences...</source>
+        <translation>Preferenze...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="132"/>
-        <source>&amp;Quit</source>
-        <translation>&amp;Esci</translation>
+        <source>Quit</source>
+        <translation>Esci</translation>
     </message>
 </context>
 </TS>
