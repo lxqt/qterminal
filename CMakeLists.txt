@@ -18,6 +18,9 @@ elseif(UNIX)
     find_package(Qt5X11Extras REQUIRED)
 endif()
 find_package(QTermWidget5 REQUIRED)
+#Note: no run-time dependency on liblxqt, just a build dependency for lxqt_translate_ts/desktop
+find_package(lxqt REQUIRED)
+include(LXQtTranslateTs)
 message(STATUS "Qt version: ${Qt5Core_VERSION_STRING}")
 
 include(${QTERMWIDGET_USE_FILE})
@@ -87,25 +90,20 @@ set(QTERM_RCC_SRC
     src/icons.qrc
 )
 
-set(QTERM_TS
-    src/translations/qterminal_cs.ts
-    src/translations/qterminal_de.ts
-    src/translations/qterminal_el.ts
-    src/translations/qterminal_es.ts
-    src/translations/qterminal_et.ts
-    src/translations/qterminal_it.ts
-    src/translations/qterminal_pt.ts
-    src/translations/qterminal_hu.ts
-    src/translations/qterminal_ru.ts
-    src/translations/qterminal_ja.ts
-    src/translations/qterminal_zh_CN.ts
-    src/translations/qterminal_pt_BR.ts
-)
-
 qt5_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
 qt5_wrap_cpp( QTERM_MOC ${QTERM_MOC_SRC} )
 qt5_add_resources( QTERM_RCC ${QTERM_RCC_SRC} )
-qt5_add_translation( QTERM_QM ${QTERM_TS} )
+lxqt_translate_ts(QTERM_QM
+    TRANSLATION_DIR "src/translations"
+    PULL_TRANSLATIONS
+        ${PULL_TRANSLATIONS}
+    CLEAN_TRANSLATIONS
+        ${CLEAN_TRANSLATIONS}
+    TRANSLATIONS_REPO
+        ${TRANSLATIONS_REPO}
+    TRANSLATIONS_REFSPEC
+        ${TRANSLATIONS_REFSPEC}
+)
 
 include_directories(
     "${CMAKE_SOURCE_DIR}"
