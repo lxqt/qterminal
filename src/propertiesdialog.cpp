@@ -68,6 +68,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     tabsPos_comboBox->addItems(tabsPosList);
     tabsPos_comboBox->setCurrentIndex(Properties::Instance()->tabsPos);
 
+    /* keyboard cursor shape */
+    QStringList keyboardCursorShapeList;
+    keyboardCursorShapeList << tr("BlockCursor") << tr("UnderlineCursor") << tr("IBeamCursor");
+    keybCursorShape_comboBox->addItems(keyboardCursorShapeList);
+    keybCursorShape_comboBox->setCurrentIndex(Properties::Instance()->keyboardCursorShape);
+
     hideTabBarCheckBox->setChecked(Properties::Instance()->hideTabBarWithOneTab);
 
     // show main menu bar
@@ -159,6 +165,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->scrollBarPos = scrollBarPos_comboBox->currentIndex();
     Properties::Instance()->tabsPos = tabsPos_comboBox->currentIndex();
+    Properties::Instance()->keyboardCursorShape = keybCursorShape_comboBox->currentIndex();
     Properties::Instance()->hideTabBarWithOneTab = hideTabBarCheckBox->isChecked();
     Properties::Instance()->menuVisible = showMenuCheckBox->isChecked();
     Properties::Instance()->m_motionAfterPaste = motionAfterPasting_comboBox->currentIndex();

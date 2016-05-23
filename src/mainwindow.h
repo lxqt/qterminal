@@ -42,8 +42,8 @@ protected:
      bool event(QEvent* event);
 
 private:
-    QActionGroup *tabPosition, *scrollBarPosition;
-    QMenu *tabPosMenu, *scrollPosMenu;
+    QActionGroup *tabPosition, *scrollBarPosition, *keyboardCursorShape;
+    QMenu *tabPosMenu, *scrollPosMenu, *keyboardCursorShapeMenu;
 
     QString m_initWorkDir;
     QString m_initShell;

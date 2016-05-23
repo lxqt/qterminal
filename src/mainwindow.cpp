@@ -476,6 +476,35 @@ void MainWindow::setup_ViewMenu_Actions()
     }
 
     menu_Window->addMenu(scrollPosMenu);
+
+    /* Keyboard cursor shape */
+    keyboardCursorShape = new QActionGroup(this);
+    QAction *block = new QAction(tr("&BlockCursor"), this);
+    QAction *underline = new QAction(tr("&UnderlineCursor"), this);
+    QAction *ibeam = new QAction(tr("&IBeamCursor"), this);
+
+    /* order of insertion is dep. on QTermWidget::KeyboardCursorShape enum */
+    keyboardCursorShape->addAction(block);
+    keyboardCursorShape->addAction(underline);
+    keyboardCursorShape->addAction(ibeam);
+
+    for(int i = 0; i < keyboardCursorShape->actions().size(); ++i)
+        keyboardCursorShape->actions().at(i)->setCheckable(true);
+
+    if( Properties::Instance()->keyboardCursorShape < keyboardCursorShape->actions().size() )
+        keyboardCursorShape->actions().at(Properties::Instance()->keyboardCursorShape)->setChecked(true);
+
+    connect(keyboardCursorShape, SIGNAL(triggered(QAction *)),
+             consoleTabulator, SLOT(changeKeyboardCursorShape(QAction *)) );
+
+    keyboardCursorShapeMenu = new QMenu(tr("&Keyboard Cursor Shape"), menu_Window);
+    keyboardCursorShapeMenu->setObjectName("keyboardCursorShapeMenu");
+
+    for(int i=0; i < keyboardCursorShape->actions().size(); ++i) {
+        keyboardCursorShapeMenu->addAction(keyboardCursorShape->actions().at(i));
+    }
+
+    menu_Window->addMenu(keyboardCursorShapeMenu);
 }
 
 void MainWindow::on_consoleTabulator_currentChanged(int)
