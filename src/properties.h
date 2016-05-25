@@ -63,6 +63,7 @@ class Properties
 
         int scrollBarPos;
         int tabsPos;
+        int keyboardCursorShape;
         bool hideTabBarWithOneTab;
         int m_motionAfterPaste;
 

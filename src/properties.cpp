@@ -110,6 +110,8 @@ void Properties::loadSettings()
     scrollBarPos = m_settings->value("ScrollbarPosition", 2).toInt();
     /* default to North. I'd prefer South but North is standard (they say) */
     tabsPos = m_settings->value("TabsPosition", 0).toInt();
+    /* default to BlockCursor */
+    keyboardCursorShape = m_settings->value("KeyboardCursorShape", 0).toInt();
     hideTabBarWithOneTab = m_settings->value("HideTabBarWithOneTab", false).toBool();
     m_motionAfterPaste = m_settings->value("MotionAfterPaste", 0).toInt();
 
@@ -182,6 +184,7 @@ void Properties::saveSettings()
     m_settings->setValue("TerminalTransparency", termTransparency);
     m_settings->setValue("ScrollbarPosition", scrollBarPos);
     m_settings->setValue("TabsPosition", tabsPos);
+    m_settings->setValue("KeyboardCursorShape", keyboardCursorShape);
     m_settings->setValue("HideTabBarWithOneTab", hideTabBarWithOneTab);
     m_settings->setValue("MotionAfterPaste", m_motionAfterPaste);
     m_settings->setValue("Borderless", borderless);

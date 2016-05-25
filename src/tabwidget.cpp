@@ -338,7 +338,6 @@ void TabWidget::changeScrollPosition(QAction *triggered)
     if(!scrollPosition)
         qFatal("scrollPosition is NULL");
 
-
     Properties::Instance()->scrollBarPos =
             scrollPosition->actions().indexOf(triggered);
 
@@ -359,7 +358,19 @@ void TabWidget::changeTabPosition(QAction *triggered)
     setTabPosition(position);
     prop->tabsPos = position;
     prop->saveSettings();
-    return;
+}
+
+void TabWidget::changeKeyboardCursorShape(QAction *triggered)
+{
+    QActionGroup *keyboardCursorShape = static_cast<QActionGroup *>(sender());
+    if(!keyboardCursorShape)
+        qFatal("keyboardCursorShape is NULL");
+
+    Properties::Instance()->keyboardCursorShape =
+            keyboardCursorShape->actions().indexOf(triggered);
+
+    Properties::Instance()->saveSettings();
+    propertiesChanged();
 }
 
 void TabWidget::propertiesChanged()
