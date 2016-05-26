@@ -53,6 +53,7 @@ private:
     void setup_FileMenu_Actions();
     void setup_ActionsMenu_Actions();
     void setup_ViewMenu_Actions();
+    void setupCustomDirs();
 
     void closeEvent(QCloseEvent*);
 
