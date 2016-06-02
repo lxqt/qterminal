@@ -94,6 +94,7 @@ MainWindow::MainWindow(const QString& work_dir,
     setup_FileMenu_Actions();
     setup_ActionsMenu_Actions();
     setup_ViewMenu_Actions();
+    setupCustomDirs();
 
     /* The tab should be added after all changes are made to
        the main window; otherwise, the initial prompt might
@@ -505,6 +506,13 @@ void MainWindow::setup_ViewMenu_Actions()
     }
 
     menu_Window->addMenu(keyboardCursorShapeMenu);
+}
+
+void MainWindow::setupCustomDirs()
+{
+    const QSettings settings;
+    const QString dir = QFileInfo(settings.fileName()).canonicalPath() + "/color-schemes/";
+    TermWidgetImpl::addCustomColorSchemeDir(dir);
 }
 
 void MainWindow::on_consoleTabulator_currentChanged(int)
