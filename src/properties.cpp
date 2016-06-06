@@ -46,8 +46,7 @@ Properties::~Properties()
 {
     qDebug("Properties destructor called");
     saveSettings();
-    m_settings->deleteLater();
-    delete m_instance;
+    delete m_settings;
     m_instance = 0;
 }
 
