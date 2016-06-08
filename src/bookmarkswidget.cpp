@@ -389,7 +389,7 @@ void BookmarksWidget::setup()
 void BookmarksWidget::handleCommand(const QModelIndex& index)
 {
     AbstractBookmarkItem *item = static_cast<AbstractBookmarkItem*>(index.internalPointer());
-    if (!item && item->type() != AbstractBookmarkItem::Command)
+    if (!item || item->type() != AbstractBookmarkItem::Command)
         return;
 
     emit callCommand(item->value() + "\n"); // TODO/FIXME: decide how to handle EOL
