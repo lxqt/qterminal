@@ -221,10 +221,10 @@ public:
                          << xml.lineNumber() << xml.columnNumber();
                 m_map.clear();
                 return;
-                break;
             case QXmlStreamReader::EndDocument:
                 m_map.clear();
                 return;
+            default:
                 break;
             } // switch
         } // while
