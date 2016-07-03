@@ -105,6 +105,9 @@ int main(int argc, char *argv[])
     QApplication::setApplicationName("qterminal");
     QApplication::setApplicationVersion(STR_VERSION);
     QApplication::setOrganizationDomain("qterminal.org");
+#if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
+    QApplication::setDesktopFileName(QLatin1String("qterminal.desktop"));
+#endif
     // Warning: do not change settings format. It can screw bookmarks later.
     QSettings::setDefaultFormat(QSettings::IniFormat);
 
