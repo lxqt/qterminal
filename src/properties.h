@@ -35,6 +35,7 @@ class Properties
 {
     public:
         static Properties *Instance(const QString& filename = QString());
+        ~Properties();
 
         QFont defaultFont();
         void saveSettings();
@@ -102,7 +103,6 @@ class Properties
 
         explicit Properties(const QString& filename);
         Properties(const Properties &) {};
-        ~Properties();
 
         QSettings *m_settings;
 

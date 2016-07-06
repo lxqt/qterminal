@@ -152,6 +152,7 @@ int main(int argc, char *argv[])
     }
 
     int ret = app.exec();
+    delete Properties::Instance();
     delete window;
 
     return ret;
