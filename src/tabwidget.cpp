@@ -217,7 +217,7 @@ bool TabWidget::eventFilter(QObject *obj, QEvent *event)
 }
 
 /* static */
-int TabWidget::tabIndex(QObject * term)
+int TabWidget::tabIndex(const QObject * term)
 {
     QVariant prop = term->property(TAB_INDEX_PROPERTY);
     if(prop.isValid() && prop.canConvert(QVariant::Int))
@@ -241,7 +241,7 @@ void TabWidget::removeFinished()
 
 void TabWidget::termTitleChanged(TermWidgetHolder * term)
 {
-    QString userTitle = term->title();
+    const QString& userTitle = term->title();
     if (!userTitle.isNull())
     {
         int index = tabIndex(term);

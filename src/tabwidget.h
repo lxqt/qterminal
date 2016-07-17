@@ -107,7 +107,7 @@ private:
     QString _customTitle;
     /* re-order naming of the tabs then removeCurrentTab() */
     void renameTabsAfterRemove();
-    static int tabIndex(QObject * term);
+    static int tabIndex(const QObject * term);
 };
 
 #endif

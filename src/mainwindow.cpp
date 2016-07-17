@@ -745,7 +745,7 @@ void MainWindow::addNewTab()
 
 void MainWindow::windowTitleChanged()
 {
-    QString userTitle = consoleTabulator->title();
+    const QString& userTitle = consoleTabulator->title();
     if (!userTitle.isNull())
     {
         setWindowTitle(userTitle);
@@ -754,7 +754,7 @@ void MainWindow::windowTitleChanged()
 
 void MainWindow::tabChanged()
 {
-    QString userTitle = consoleTabulator->title();
+    const QString& userTitle = consoleTabulator->title();
     if (!userTitle.isNull())
     {
         setWindowTitle(userTitle);
