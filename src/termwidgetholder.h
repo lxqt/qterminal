@@ -51,6 +51,8 @@ class TermWidgetHolder : public QWidget
 
         TermWidget* currentTerminal();
 
+        QString title() const;
+
     public slots:
         void splitHorizontal(TermWidget * term);
         void splitVertical(TermWidget * term);
@@ -64,11 +66,12 @@ class TermWidgetHolder : public QWidget
         void finished();
         void lastTerminalClosed();
         void renameSession();
-        void termTitleChanged(TermWidgetHolder * term, QString userTitle, QString iconText);
+        void termTitleChanged(TermWidgetHolder * term);
 
     private:
         QString m_wdir;
         QString m_shell;
+        QString m_title;
         TermWidget * m_currentTerm;
 
         void split(TermWidget * term, Qt::Orientation orientation);

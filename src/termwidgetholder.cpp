@@ -292,9 +292,15 @@ void TermWidgetHolder::setCurrentTerminal(TermWidget* term)
     m_currentTerm = term;
 }
 
+QString TermWidgetHolder::title() const
+{
+    return m_title;
+}
+
 void TermWidgetHolder::setTerminalTitle(TermWidget* term)
 {
-    emit termTitleChanged(this, term->impl()->userTitle(), term->impl()->iconText());
+    m_title = term->impl()->userTitle();
+    emit termTitleChanged(this);
 }
 
 void TermWidgetHolder::handle_finished()

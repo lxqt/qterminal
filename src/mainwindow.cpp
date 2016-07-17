@@ -84,8 +84,8 @@ MainWindow::MainWindow(const QString& work_dir,
 
     consoleTabulator->setAutoFillBackground(true);
     connect(consoleTabulator, SIGNAL(closeTabNotification()), SLOT(close()));
-    connect(consoleTabulator, SIGNAL(titleChanged(QString, QString)),
-            this, SLOT(windowTitleChanged(QString, QString)));
+    connect(consoleTabulator, SIGNAL(titleChanged()), this, SLOT(windowTitleChanged()));
+    connect(consoleTabulator, SIGNAL(tabChanged()), this, SLOT(tabChanged()));
     consoleTabulator->setWorkDirectory(work_dir);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
@@ -743,8 +743,18 @@ void MainWindow::addNewTab()
         consoleTabulator->addNewTab();
 }
 
-void MainWindow::windowTitleChanged(QString userTitle, QString iconText)
+void MainWindow::windowTitleChanged()
 {
+    QString userTitle = consoleTabulator->title();
+    if (!userTitle.isNull())
+    {
+        setWindowTitle(userTitle);
+    }
+}
+
+void MainWindow::tabChanged()
+{
+    QString userTitle = consoleTabulator->title();
     if (!userTitle.isNull())
     {
         setWindowTitle(userTitle);

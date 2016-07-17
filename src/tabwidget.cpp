@@ -53,7 +53,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
     connect(this, SIGNAL(tabRenameRequested(int)), this, SLOT(renameSession(int)));
 }
 
-TermWidgetHolder * TabWidget::terminalHolder()
+TermWidgetHolder * TabWidget::terminalHolder() const
 {
     return reinterpret_cast<TermWidgetHolder*>(widget(currentIndex()));
 }
@@ -80,8 +80,8 @@ int TabWidget::addNewTab(const QString & shell_program)
     TermWidgetHolder *console = new TermWidgetHolder(cwd, shell_program, this);
     connect(console, SIGNAL(finished()), SLOT(removeFinished()));
     connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));
-    connect(console, SIGNAL(termTitleChanged(TermWidgetHolder*, QString, QString)),
-            this, SLOT(termTitleChanged(TermWidgetHolder*, QString, QString)));
+    connect(console, SIGNAL(termTitleChanged(TermWidgetHolder*)),
+            this, SLOT(termTitleChanged(TermWidgetHolder*)));
 
     int index = addTab(console, label);
     updateTabIndices();
@@ -216,6 +216,7 @@ bool TabWidget::eventFilter(QObject *obj, QEvent *event)
     return QTabWidget::eventFilter(obj, event);
 }
 
+/* static */
 int TabWidget::tabIndex(QObject * term)
 {
     QVariant prop = term->property(TAB_INDEX_PROPERTY);
@@ -238,8 +239,9 @@ void TabWidget::removeFinished()
     }
 }
 
-void TabWidget::termTitleChanged(TermWidgetHolder * term, QString userTitle, QString iconText)
+void TabWidget::termTitleChanged(TermWidgetHolder * term)
 {
+    QString userTitle = term->title();
     if (!userTitle.isNull())
     {
         int index = tabIndex(term);
@@ -249,7 +251,12 @@ void TabWidget::termTitleChanged(TermWidgetHolder * term, QString userTitle, QSt
         }
     }
 
-    emit titleChanged(userTitle, iconText);
+    emit titleChanged();
+}
+
+QString TabWidget::title() const
+{
+    return terminalHolder()->title();
 }
 
 void TabWidget::removeTab(int index)
@@ -299,6 +306,7 @@ int TabWidget::switchToRight()
         setCurrentIndex(next_pos);
     else
         setCurrentIndex(0);
+    emit tabChanged();
     return currentIndex();
 }
 
@@ -309,6 +317,7 @@ int TabWidget::switchToLeft()
         setCurrentIndex(count() - 1);
     else
         setCurrentIndex(previous_pos);
+    emit tabChanged();
     return currentIndex();
 }
 
