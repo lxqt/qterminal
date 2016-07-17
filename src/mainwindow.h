@@ -85,5 +85,6 @@ private slots:
     void bookmarksDock_visibilityChanged(bool visible);
 
     void addNewTab();
+    void windowTitleChanged(QString userTitle, QString iconText);
 };
 #endif //MAINWINDOW_H

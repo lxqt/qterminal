@@ -79,9 +79,12 @@ public slots:
     void preset2Vertical();
     void preset4Terminals();
 
+    void termTitleChanged(TermWidgetHolder * term, QString userTitle, QString iconText);
+
 signals:
     void closeTabNotification();
     void tabRenameRequested(int);
+    void titleChanged(QString userTitle, QString iconText);
 
 protected:
     enum Direction{Left = 1, Right};
@@ -101,6 +104,7 @@ private:
     QString work_dir;
     /* re-order naming of the tabs then removeCurrentTab() */
     void renameTabsAfterRemove();
+    int tabIndex(QObject * term);
 };
 
 #endif

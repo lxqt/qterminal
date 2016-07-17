@@ -64,6 +64,7 @@ class TermWidgetHolder : public QWidget
         void finished();
         void lastTerminalClosed();
         void renameSession();
+        void termTitleChanged(TermWidgetHolder * term, QString userTitle, QString iconText);
 
     private:
         QString m_wdir;
@@ -75,6 +76,7 @@ class TermWidgetHolder : public QWidget
 
     private slots:
         void setCurrentTerminal(TermWidget* term);
+        void setTerminalTitle(TermWidget* term);
         void handle_finished();
 };
 

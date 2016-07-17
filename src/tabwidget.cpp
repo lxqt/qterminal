@@ -80,6 +80,8 @@ int TabWidget::addNewTab(const QString & shell_program)
     TermWidgetHolder *console = new TermWidgetHolder(cwd, shell_program, this);
     connect(console, SIGNAL(finished()), SLOT(removeFinished()));
     connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));
+    connect(console, SIGNAL(termTitleChanged(TermWidgetHolder*, QString, QString)),
+            this, SLOT(termTitleChanged(TermWidgetHolder*, QString, QString)));
 
     int index = addTab(console, label);
     updateTabIndices();
@@ -214,17 +216,40 @@ bool TabWidget::eventFilter(QObject *obj, QEvent *event)
     return QTabWidget::eventFilter(obj, event);
 }
 
-void TabWidget::removeFinished()
+int TabWidget::tabIndex(QObject * term)
 {
-    QObject* term = sender();
     QVariant prop = term->property(TAB_INDEX_PROPERTY);
     if(prop.isValid() && prop.canConvert(QVariant::Int))
     {
-        int index = prop.toInt();
+        return prop.toInt();
+    }
+    return -1;
+}
+
+void TabWidget::removeFinished()
+{
+    QObject* term = sender();
+    int index = tabIndex(term);
+    if (index >= 0)
+    {
         removeTab(index);
 //        if (count() == 0)
 //            emit closeTabNotification();
     }
+}
+
+void TabWidget::termTitleChanged(TermWidgetHolder * term, QString userTitle, QString iconText)
+{
+    if (!userTitle.isNull())
+    {
+        int index = tabIndex(term);
+        if (index >= 0)
+        {
+            setTabText(index, userTitle);
+        }
+    }
+
+    emit titleChanged(userTitle, iconText);
 }
 
 void TabWidget::removeTab(int index)

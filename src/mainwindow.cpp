@@ -84,6 +84,8 @@ MainWindow::MainWindow(const QString& work_dir,
 
     consoleTabulator->setAutoFillBackground(true);
     connect(consoleTabulator, SIGNAL(closeTabNotification()), SLOT(close()));
+    connect(consoleTabulator, SIGNAL(titleChanged(QString, QString)),
+            this, SLOT(windowTitleChanged(QString, QString)));
     consoleTabulator->setWorkDirectory(work_dir);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
@@ -739,4 +741,12 @@ void MainWindow::addNewTab()
         consoleTabulator->preset2Horizontal();
     else
         consoleTabulator->addNewTab();
+}
+
+void MainWindow::windowTitleChanged(QString userTitle, QString iconText)
+{
+    if (!userTitle.isNull())
+    {
+        setWindowTitle(userTitle);
+    }
 }
