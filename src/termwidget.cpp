@@ -189,6 +189,7 @@ TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * pa
     connect(m_term, SIGNAL(finished()), this, SIGNAL(finished()));
     connect(m_term, SIGNAL(termGetFocus()), this, SLOT(term_termGetFocus()));
     connect(m_term, SIGNAL(termLostFocus()), this, SLOT(term_termLostFocus()));
+    connect(m_term, SIGNAL(titleChanged()), this, SLOT(term_termTitleChanged()));
 }
 
 void TermWidget::propertiesChanged()
@@ -212,6 +213,11 @@ void TermWidget::term_termLostFocus()
 {
     m_border = palette().color(QPalette::Window);
     update();
+}
+
+void TermWidget::term_termTitleChanged()
+{
+    emit termTitleChanged(this);
 }
 
 void TermWidget::paintEvent (QPaintEvent *)

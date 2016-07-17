@@ -35,9 +35,10 @@ Q_OBJECT
 public:
     TabWidget(QWidget* parent = 0);
 
-    TermWidgetHolder * terminalHolder();
+    TermWidgetHolder * terminalHolder() const;
 
     void showHideTabBar();
+    QString title() const;
 
 public slots:
     int addNewTab(const QString& shell_program = QString());
@@ -79,9 +80,13 @@ public slots:
     void preset2Vertical();
     void preset4Terminals();
 
+    void termTitleChanged(TermWidgetHolder * term);
+
 signals:
     void closeTabNotification();
     void tabRenameRequested(int);
+    void titleChanged();
+    void tabChanged();
 
 protected:
     enum Direction{Left = 1, Right};
@@ -99,8 +104,10 @@ protected slots:
 private:
     int tabNumerator;
     QString work_dir;
+    QString _customTitle;
     /* re-order naming of the tabs then removeCurrentTab() */
     void renameTabsAfterRemove();
+    static int tabIndex(const QObject * term);
 };
 
 #endif

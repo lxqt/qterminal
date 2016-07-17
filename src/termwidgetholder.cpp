@@ -281,6 +281,8 @@ TermWidget *TermWidgetHolder::newTerm(const QString & wdir, const QString & shel
             this, SLOT(splitCollapse(TermWidget *)));
     connect(w, SIGNAL(termGetFocus(TermWidget *)),
             this, SLOT(setCurrentTerminal(TermWidget *)));
+    connect(w, SIGNAL(termTitleChanged(TermWidget *)),
+            this, SLOT(setTerminalTitle(TermWidget *)));
 
     return w;
 }
@@ -288,6 +290,17 @@ TermWidget *TermWidgetHolder::newTerm(const QString & wdir, const QString & shel
 void TermWidgetHolder::setCurrentTerminal(TermWidget* term)
 {
     m_currentTerm = term;
+}
+
+QString TermWidgetHolder::title() const
+{
+    return m_title;
+}
+
+void TermWidgetHolder::setTerminalTitle(TermWidget* term)
+{
+    m_title = term->impl()->userTitle();
+    emit termTitleChanged(this);
 }
 
 void TermWidgetHolder::handle_finished()

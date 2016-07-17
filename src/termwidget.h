@@ -74,6 +74,7 @@ class TermWidget : public QWidget
         void splitVertical(TermWidget * self);
         void splitCollapse(TermWidget * self);
         void termGetFocus(TermWidget * self);
+        void termTitleChanged(TermWidget * self);
 
     public slots:
 
@@ -83,6 +84,7 @@ class TermWidget : public QWidget
     private slots:
         void term_termGetFocus();
         void term_termLostFocus();
+        void term_termTitleChanged();
 };
 
 #endif
