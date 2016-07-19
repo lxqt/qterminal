@@ -74,6 +74,7 @@ class TermWidget : public QWidget
         void splitVertical(TermWidget * self);
         void splitCollapse(TermWidget * self);
         void termGetFocus(TermWidget * self);
+        void termTitleChanged(QString titleText, QString icon);
 
     public slots:
 

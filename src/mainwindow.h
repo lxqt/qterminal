@@ -85,5 +85,6 @@ private slots:
     void bookmarksDock_visibilityChanged(bool visible);
 
     void addNewTab();
+    void onCurrentTitleChanged(int index);
 };
 #endif //MAINWINDOW_H

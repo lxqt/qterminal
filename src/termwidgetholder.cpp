@@ -281,13 +281,25 @@ TermWidget *TermWidgetHolder::newTerm(const QString & wdir, const QString & shel
             this, SLOT(splitCollapse(TermWidget *)));
     connect(w, SIGNAL(termGetFocus(TermWidget *)),
             this, SLOT(setCurrentTerminal(TermWidget *)));
+    connect(w, &TermWidget::termTitleChanged, this, &TermWidgetHolder::onTermTitleChanged);
 
     return w;
 }
 
 void TermWidgetHolder::setCurrentTerminal(TermWidget* term)
 {
+    TermWidget * old_current = m_currentTerm;
     m_currentTerm = term;
+    if (old_current != m_currentTerm)
+    {
+        if (m_currentTerm->impl()->isTitleChanged())
+        {
+            emit termTitleChanged(m_currentTerm->impl()->title(), m_currentTerm->impl()->icon());
+        } else
+        {
+            emit termTitleChanged(windowTitle(), QString{});
+        }
+    }
 }
 
 void TermWidgetHolder::handle_finished()
@@ -299,4 +311,11 @@ void TermWidgetHolder::handle_finished()
         assert(0);
     }
     splitCollapse(w);
+}
+
+void TermWidgetHolder::onTermTitleChanged(QString title, QString icon) const
+{
+    TermWidget * term = qobject_cast<TermWidget *>(sender());
+    if (m_currentTerm == term)
+        emit termTitleChanged(title, icon);
 }

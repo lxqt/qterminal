@@ -59,11 +59,13 @@ class TermWidgetHolder : public QWidget
         void switchNextSubterminal();
         void switchPrevSubterminal();
         void clearActiveTerminal();
+        void onTermTitleChanged(QString title, QString icon) const;
 
     signals:
         void finished();
         void lastTerminalClosed();
         void renameSession();
+        void termTitleChanged(QString title, QString icon) const;
 
     private:
         QString m_wdir;

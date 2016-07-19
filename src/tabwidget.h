@@ -82,6 +82,7 @@ public slots:
 signals:
     void closeTabNotification();
     void tabRenameRequested(int);
+    void currentTitleChanged(int);
 
 protected:
     enum Direction{Left = 1, Right};
@@ -95,6 +96,7 @@ protected:
     bool eventFilter(QObject *obj, QEvent *event);
 protected slots:
     void updateTabIndices();
+    void onTermTitleChanged(QString title, QString icon);
 
 private:
     int tabNumerator;

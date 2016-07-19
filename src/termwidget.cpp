@@ -189,6 +189,7 @@ TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * pa
     connect(m_term, SIGNAL(finished()), this, SIGNAL(finished()));
     connect(m_term, SIGNAL(termGetFocus()), this, SLOT(term_termGetFocus()));
     connect(m_term, SIGNAL(termLostFocus()), this, SLOT(term_termLostFocus()));
+    connect(m_term, &QTermWidget::titleChanged, this, [this] { emit termTitleChanged(m_term->title(), m_term->icon()); });
 }
 
 void TermWidget::propertiesChanged()

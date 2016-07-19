@@ -88,14 +88,12 @@ MainWindow::MainWindow(const QString& work_dir,
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
 
-    setWindowTitle("QTerminal");
-    setWindowIcon(QIcon::fromTheme("utilities-terminal"));
-
     setup_FileMenu_Actions();
     setup_ActionsMenu_Actions();
     setup_ViewMenu_Actions();
     setupCustomDirs();
 
+    connect(consoleTabulator, &TabWidget::currentTitleChanged, this, &MainWindow::onCurrentTitleChanged);
     /* The tab should be added after all changes are made to
        the main window; otherwise, the initial prompt might
        get jumbled because of changes in internal geometry. */
@@ -739,4 +737,17 @@ void MainWindow::addNewTab()
         consoleTabulator->preset2Horizontal();
     else
         consoleTabulator->addNewTab();
+}
+
+void MainWindow::onCurrentTitleChanged(int index)
+{
+    QString title;
+    QIcon icon;
+    if (-1 != index)
+    {
+        title = consoleTabulator->tabText(index);
+        icon = consoleTabulator->tabIcon(index);
+    }
+    setWindowTitle(title.isEmpty() ? QStringLiteral("QTerminal") : title);
+    setWindowIcon(icon.isNull() ? QIcon::fromTheme("utilities-terminal") : icon);
 }

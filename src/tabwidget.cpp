@@ -28,6 +28,7 @@
 
 
 #define TAB_INDEX_PROPERTY "tab_index"
+#define TAB_CUSTOM_NAME_PROPERTY "custom_name"
 
 
 TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
@@ -78,10 +79,14 @@ int TabWidget::addNewTab(const QString & shell_program)
     }
 
     TermWidgetHolder *console = new TermWidgetHolder(cwd, shell_program, this);
+    console->setWindowTitle(label);
     connect(console, SIGNAL(finished()), SLOT(removeFinished()));
     connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));
+    connect(console, &TermWidgetHolder::termTitleChanged, this, &TabWidget::onTermTitleChanged);
+    connect(this, &QTabWidget::currentChanged, this, &TabWidget::currentTitleChanged);
 
     int index = addTab(console, label);
+    console->setProperty(TAB_CUSTOM_NAME_PROPERTY, false);
     updateTabIndices();
     setCurrentIndex(index);
     console->setInitialFocus();
@@ -152,6 +157,21 @@ void TabWidget::updateTabIndices()
         widget(i)->setProperty(TAB_INDEX_PROPERTY, i);
 }
 
+void TabWidget::onTermTitleChanged(QString title, QString icon)
+{
+    TermWidgetHolder * console = qobject_cast<TermWidgetHolder*>(sender());
+    const bool custom_name = console->property(TAB_CUSTOM_NAME_PROPERTY).toBool();
+    if (!custom_name)
+    {
+        const int index = console->property(TAB_INDEX_PROPERTY).toInt();
+
+        setTabIcon(index, QIcon::fromTheme(icon));
+        setTabText(index, title);
+        if (currentIndex() == index)
+            emit currentTitleChanged(index);
+    }
+}
+
 void TabWidget::renameSession(int index)
 {
     bool ok = false;
@@ -160,7 +180,11 @@ void TabWidget::renameSession(int index)
                                         QString(), &ok);
     if(ok && !text.isEmpty())
     {
+        setTabIcon(index, QIcon{});
         setTabText(index, text);
+        widget(index)->setProperty(TAB_CUSTOM_NAME_PROPERTY, true);
+        if (currentIndex() == index)
+            emit currentTitleChanged(index);
     }
 }
 
