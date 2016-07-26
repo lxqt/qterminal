@@ -636,6 +636,8 @@ void MainWindow::propertiesChanged()
         qobject_cast<BookmarksWidget*>(m_bookmarksDock->widget())->setup();
     }
 
+    onCurrentTitleChanged(consoleTabulator->currentIndex());
+
     Properties::Instance()->saveSettings();
     realign();
 }
@@ -748,6 +750,6 @@ void MainWindow::onCurrentTitleChanged(int index)
         title = consoleTabulator->tabText(index);
         icon = consoleTabulator->tabIcon(index);
     }
-    setWindowTitle(title.isEmpty() ? QStringLiteral("QTerminal") : title);
-    setWindowIcon(icon.isNull() ? QIcon::fromTheme("utilities-terminal") : icon);
+    setWindowTitle(title.isEmpty() || !Properties::Instance()->changeWindowTitle ? QStringLiteral("QTerminal") : title);
+    setWindowIcon(icon.isNull() || !Properties::Instance()->changeWindowIcon ? QIcon::fromTheme("utilities-terminal") : icon);
 }

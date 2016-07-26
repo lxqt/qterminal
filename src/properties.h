@@ -91,6 +91,9 @@ class Properties
         int dropWidht;
         int dropHeight;
 
+        bool changeWindowTitle;
+        bool changeWindowIcon;
+
         QMap< QString, QAction * > actions;
 
 

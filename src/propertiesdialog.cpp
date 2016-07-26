@@ -125,6 +125,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
             this, SLOT(bookmarksButton_clicked()));
 
     terminalPresetComboBox->setCurrentIndex(Properties::Instance()->terminalsPreset);
+
+    changeWindowTitleCheckBox->setChecked(Properties::Instance()->changeWindowTitle);
+    changeWindowIconCheckBox->setChecked(Properties::Instance()->changeWindowIcon);
 }
 
 
@@ -187,6 +190,9 @@ void PropertiesDialog::apply()
     saveBookmarksFile(Properties::Instance()->bookmarksFile);
 
     Properties::Instance()->terminalsPreset = terminalPresetComboBox->currentIndex();
+
+    Properties::Instance()->changeWindowTitle = changeWindowTitleCheckBox->isChecked();
+    Properties::Instance()->changeWindowIcon = changeWindowIconCheckBox->isChecked();
 
     emit propertiesChanged();
 }

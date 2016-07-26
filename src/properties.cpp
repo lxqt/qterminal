@@ -137,6 +137,9 @@ void Properties::loadSettings()
     dropWidht = m_settings->value("Width", 70).toInt();
     dropHeight = m_settings->value("Height", 45).toInt();
     m_settings->endGroup();
+
+    changeWindowTitle = m_settings->value("ChangeWindowTitle", true).toBool();
+    changeWindowIcon = m_settings->value("ChangeWindowIcon", true).toBool();
 }
 
 void Properties::saveSettings()
@@ -209,6 +212,8 @@ void Properties::saveSettings()
     m_settings->setValue("Height", dropHeight);
     m_settings->endGroup();
 
+    m_settings->setValue("ChangeWindowTitle", changeWindowTitle);
+    m_settings->setValue("ChangeWindowIcon", changeWindowIcon);
 }
 
 void Properties::migrate_settings()
