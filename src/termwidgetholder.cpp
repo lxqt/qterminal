@@ -200,12 +200,44 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
     term->setParent(0);
     delete term;
 
-    int cnt = parent->findChildren<TermWidget*>().count();
+    QList<TermWidget *> siblings = parent->findChildren<TermWidget*>();
+    int cnt = siblings.count();
     if (cnt == 0)
     {
         parent->setParent(0);
         delete parent;
         parent = Q_NULLPTR;
+    }
+    if (cnt == 1)
+    {
+        // We don't need a splitter to display a single element.
+        // Find the topmost useless splitter from the hierarchy...
+        QSplitter *uselessSplitter = parent;
+        do
+        {
+            QObject *maybeUselessObject = parent->parent();
+            QSplitter *maybeUselessSplitter = Q_NULLPTR;
+            if (maybeUselessSplitter = qobject_cast<QSplitter *>(maybeUselessObject))
+            {
+                if (maybeUselessSplitter->count() == 1)
+                {
+                    uselessSplitter = maybeUselessSplitter;
+                    continue;
+                }
+            }
+        } while (false);
+        // ... and replace it by a single terminal, if possible
+        QSplitter *uselessSplitterParent = qobject_cast<QSplitter *>(uselessSplitter->parent());
+        if (uselessSplitterParent)
+        {
+            int idx = uselessSplitterParent->indexOf(uselessSplitter);
+            assert(idx != -1);
+            uselessSplitterParent->insertWidget(idx, siblings.at(0));
+            uselessSplitter->setParent(0);
+            delete uselessSplitter;
+            // Make sure there's no access to removed parent
+            parent = uselessSplitterParent;
+        }
     }
 
     QList<TermWidget*> tlist = findChildren<TermWidget *>();
