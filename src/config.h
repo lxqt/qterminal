@@ -37,8 +37,10 @@
 #define SPLIT_VERTICAL "Split Terminal Vertically"
 
 #define SUB_COLLAPSE "Collapse Subterminal"
-#define SUB_NEXT "Next Subterminal"
-#define SUB_PREV "Previous Subterminal"
+#define SUB_LEFT "Left Subterminal"
+#define SUB_RIGHT "Right Subterminal"
+#define SUB_TOP "Top Subterminal"
+#define SUB_BOTTOM "Bottom Subterminal"
 
 #define MOVE_LEFT "Move Tab Left"
 #define MOVE_RIGHT "Move Tab Right"
@@ -69,10 +71,13 @@
 
 // ACTIONS
 #define CLEAR_TERMINAL_SHORTCUT        "Ctrl+Shift+X"
-#define TAB_PREV_SHORTCUT	       "Shift+Left|Ctrl+PgUp|Ctrl+Shift+Tab"
-#define TAB_NEXT_SHORTCUT	       "Shift+Right|Ctrl+PgDown|Ctrl+Tab"
-#define SUB_PREV_SHORTCUT	       "Shift+Down"
-#define SUB_NEXT_SHORTCUT	       "Shift+Up"
+
+#define TAB_PREV_SHORTCUT	       "Ctrl+PgUp|Ctrl+Shift+Tab"
+#define TAB_NEXT_SHORTCUT	       "Ctrl+PgDown|Ctrl+Tab"
+#define SUB_BOTTOM_SHORTCUT	       "Shift+Down"
+#define SUB_TOP_SHORTCUT	       "Shift+Up"
+#define SUB_LEFT_SHORTCUT	       "Shift+Left"
+#define SUB_RIGHT_SHORTCUT	       "Shift+Right"
 
 #ifdef Q_WS_MAC
 // It's tricky - Ctrl is "command" key on mac's keyboards

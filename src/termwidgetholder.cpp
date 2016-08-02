@@ -31,6 +31,8 @@
 #include "termwidget.h"
 #include "properties.h"
 #include <assert.h>
+#include <climits>
+#include <algorithm>
 
 
 TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, QWidget * parent)
@@ -131,33 +133,69 @@ TermWidget* TermWidgetHolder::currentTerminal()
     return m_currentTerm;
 }
 
-void TermWidgetHolder::switchNextSubterminal()
+void TermWidgetHolder::setWDir(const QString & wdir)
 {
-    // TODO/FIXME: merge switchPrevSubterminal with switchNextSubterminal
-    QList<TermWidget*> l = findChildren<TermWidget*>();
-    int ix = -1;
-    foreach (TermWidget * w, l)
-    {
-        ++ix;
-        if (w->impl()->hasFocus())
-        {
-            break;
-        }
-    }
+    m_wdir = wdir;
+}
 
-    if (ix < l.count()-1)
-    {
-        l.at(ix+1)->impl()->setFocus(Qt::OtherFocusReason);
-    }
-    else if (ix == l.count()-1)
-    {
-        l.at(0)->impl()->setFocus(Qt::OtherFocusReason);
+typedef struct  {
+    QPoint topLeft;
+    QPoint middle;
+    QPoint bottomRight;
+} NavigationData;
+
+static void transpose(QPoint *point) {
+    int x = point->x();
+    point->setX(point->y());
+    point->setY(x);
+}
+
+static void transposeTransform(NavigationData *point) {
+    transpose(&point->topLeft);
+    transpose(&point->middle);
+    transpose(&point->bottomRight);
+}
+
+static void flipTransform(NavigationData *point) {
+    QPoint oldTopLeft = point->topLeft;
+    point->topLeft = -(point->bottomRight);
+    point->bottomRight = -(oldTopLeft);
+    point->middle = -(point->middle);
+}
+
+static void normalizeToRight(NavigationData *point, NavigationDirection dir) {
+    switch (dir) {
+        case Left:
+            flipTransform(point);
+            break;
+        case Right:
+            // No-op
+            break;
+        case Top:
+            flipTransform(point);
+            transposeTransform(point);
+            break;
+        case Bottom:
+            transposeTransform(point);
+            break;
+        default:
+            assert("Invalid navigation");
+            return;
     }
 }
 
-void TermWidgetHolder::switchPrevSubterminal()
-{
-    // TODO/FIXME: merge switchPrevSubterminal with switchNextSubterminal
+static NavigationData getNormalizedDimensions(QWidget *w, NavigationDirection dir) {
+    NavigationData nd;
+    nd.topLeft = w->mapTo(w->window(), QPoint(0, 0));
+    nd.middle = w->mapTo(w->window(), QPoint(w->width() / 2, w->height() / 2));
+    nd.bottomRight = w->mapTo(w->window(), QPoint(w->width(), w->height()));
+    normalizeToRight(&nd, dir);
+    return nd;
+}
+
+
+void TermWidgetHolder::directionalNavigation(NavigationDirection dir) {
+    // Find an active widget
     QList<TermWidget*> l = findChildren<TermWidget*>();
     int ix = -1;
     foreach (TermWidget * w, l)
@@ -168,14 +206,50 @@ void TermWidgetHolder::switchPrevSubterminal()
             break;
         }
     }
-
-    if (ix > 0)
+    if (ix > l.count())
     {
-        l.at(ix-1)->impl()->setFocus(Qt::OtherFocusReason);
+        l.at(0)->impl()->setFocus(Qt::OtherFocusReason);
+        return;
     }
-    else if (ix == 0)
+
+    // Found an active widget
+    TermWidget *w = l.at(ix);
+    NavigationData from = getNormalizedDimensions(w, dir);
+
+    // Search parent that contains point of interest (right edge middlepoint)
+    QPoint poi = QPoint(from.bottomRight.x(), from.middle.y());
+
+    // Perform a search for a TermWidget, where x() is strictly higher than
+    // poi.x(), y() is strictly less than poi.y(), and prioritizing, in order,
+    // lower x(), and lower distance between poi.y() and corners.
+
+    // Only "Right navigation" implementation is necessary -- other cases
+    // are normalized to this one.
+
+    l = findChildren<TermWidget*>();
+    int lowestX = INT_MAX;
+    int lowestMidpointDistance = INT_MAX;
+    TermWidget *fittest = NULL;
+    foreach (TermWidget * w, l) 
     {
-        l.at(l.count()-1)->impl()->setFocus(Qt::OtherFocusReason);
+        NavigationData contenderDims = getNormalizedDimensions(w, dir);
+        int midpointDistance = std::min(
+            abs(poi.y() - contenderDims.topLeft.y()),
+            abs(poi.y() - contenderDims.bottomRight.y())
+        );
+        if (contenderDims.topLeft.x() > poi.x()) 
+        {
+            if (contenderDims.topLeft.x() > lowestX)
+                continue;
+            if (midpointDistance > lowestMidpointDistance)
+                continue;
+            lowestX = contenderDims.topLeft.x();
+            lowestMidpointDistance = midpointDistance;
+            fittest = w;
+        }
+    }
+    if (fittest != NULL) {
+        fittest->impl()->setFocus(Qt::OtherFocusReason);
     }
 }
 
