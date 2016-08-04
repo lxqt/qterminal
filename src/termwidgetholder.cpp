@@ -200,6 +200,8 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
     term->setParent(0);
     delete term;
 
+    QWidget *nextFocus = Q_NULLPTR;
+
     // Collapse splitters containing a single element, excluding the top one.
     if (parent->count() == 1)
     {
@@ -207,7 +209,16 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
         if (uselessSplitterParent != Q_NULLPTR) {
             int idx = uselessSplitterParent->indexOf(parent);
             assert(idx != -1);
-            uselessSplitterParent->insertWidget(idx, parent->widget(0));
+            QWidget *singleHeir = parent->widget(0);
+            uselessSplitterParent->insertWidget(idx, singleHeir);
+            if (qobject_cast<TermWidget*>(singleHeir))
+            {
+                nextFocus = singleHeir;
+            }
+            else
+            {
+                nextFocus = singleHeir->findChild<TermWidget*>();
+            }
             parent->setParent(0);
             delete parent;
             // Make sure there's no access to the removed parent
@@ -217,7 +228,14 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
 
     if (parent->count() > 0)
     {
-        parent->widget(0)->setFocus(Qt::OtherFocusReason);
+        if (nextFocus)
+        {
+            nextFocus->setFocus(Qt::OtherFocusReason);
+        }
+        else
+        {
+            parent->widget(0)->setFocus(Qt::OtherFocusReason);
+        }
         parent->update();
     }
     else
