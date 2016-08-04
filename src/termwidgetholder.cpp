@@ -200,55 +200,25 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
     term->setParent(0);
     delete term;
 
-    QList<TermWidget *> siblings = parent->findChildren<TermWidget*>();
-    int cnt = siblings.count();
-    if (cnt == 0)
+    // Collapse splitters containing a single element, excluding the top one.
+    if (parent->count() == 1)
     {
-        parent->setParent(0);
-        delete parent;
-        parent = Q_NULLPTR;
-    }
-    if (cnt == 1)
-    {
-        // We don't need a splitter to display a single element.
-        // Find the topmost useless splitter from the hierarchy...
-        QSplitter *uselessSplitter = parent;
-        do
-        {
-            QObject *maybeUselessObject = parent->parent();
-            QSplitter *maybeUselessSplitter = Q_NULLPTR;
-            if (maybeUselessSplitter = qobject_cast<QSplitter *>(maybeUselessObject))
-            {
-                if (maybeUselessSplitter->count() == 1)
-                {
-                    uselessSplitter = maybeUselessSplitter;
-                    continue;
-                }
-            }
-        } while (false);
-        // ... and replace it by a single terminal, if possible
-        QSplitter *uselessSplitterParent = qobject_cast<QSplitter *>(uselessSplitter->parent());
-        if (uselessSplitterParent)
-        {
-            int idx = uselessSplitterParent->indexOf(uselessSplitter);
+        QSplitter *uselessSplitterParent = qobject_cast<QSplitter*>(parent->parent());
+        if (uselessSplitterParent != Q_NULLPTR) {
+            int idx = uselessSplitterParent->indexOf(parent);
             assert(idx != -1);
-            uselessSplitterParent->insertWidget(idx, siblings.at(0));
-            uselessSplitter->setParent(0);
-            delete uselessSplitter;
-            // Make sure there's no access to removed parent
+            uselessSplitterParent->insertWidget(idx, parent->widget(0));
+            parent->setParent(0);
+            delete parent;
+            // Make sure there's no access to the removed parent
             parent = uselessSplitterParent;
         }
     }
 
-    QList<TermWidget*> tlist = findChildren<TermWidget *>();
-    int localCnt = tlist.count();
-
-    if (localCnt > 0)
+    if (parent->count() > 0)
     {
-        tlist.at(0)->setFocus(Qt::OtherFocusReason);
-        update();
-        if (parent)
-            parent->update();
+        parent->widget(0)->setFocus(Qt::OtherFocusReason);
+        parent->update();
     }
     else
         emit finished();
