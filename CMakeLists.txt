@@ -50,6 +50,7 @@ set(QTERM_SRC
     src/tabwidget.cpp
     src/termwidget.cpp
     src/termwidgetholder.cpp
+    src/terminalconfig.cpp
     src/properties.cpp
     src/propertiesdialog.cpp
     src/bookmarkswidget.cpp

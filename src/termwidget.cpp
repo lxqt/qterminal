@@ -31,7 +31,7 @@
 static int TermWidgetCount = 0;
 
 
-TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWidget * parent)
+TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     : QTermWidget(0, parent)
 {
     TermWidgetCount++;
@@ -45,17 +45,12 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
 
     setHistorySize(5000);
 
-    if (!wdir.isNull())
-        setWorkingDirectory(wdir);
+    setWorkingDirectory(cfg.getWorkingDirectory());
 
-    if (shell.isNull())
+    QString shell = cfg.getShell();
+    if (!shell.isEmpty())
     {
-        if (!Properties::Instance()->shell.isNull())
-            setShellProgram(Properties::Instance()->shell);
-    }
-    else
-    {
-        qDebug() << "Settings custom shell program:" << shell;
+        qDebug() << "Shell program:" << shell;
         QStringList parts = shell.split(QRegExp("\\s+"), QString::SkipEmptyParts);
         qDebug() << parts;
         setShellProgram(parts.at(0));
@@ -178,11 +173,11 @@ void TermWidgetImpl::activateUrl(const QUrl & url, bool fromContextMenu) {
     }
 }
 
-TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * parent)
+TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     : QWidget(parent)
 {
     m_border = palette().color(QPalette::Window);
-    m_term = new TermWidgetImpl(wdir, shell, this);
+    m_term = new TermWidgetImpl(cfg, this);
     setFocusProxy(m_term);
 
     m_layout = new QVBoxLayout;

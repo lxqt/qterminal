@@ -26,6 +26,7 @@
 
 #include "mainwindow.h"
 #include "qterminalapp.h"
+#include "terminalconfig.h"
 
 #define out
 
@@ -122,6 +123,7 @@ int main(int argc, char *argv[])
 
     if (workdir.isEmpty())
         workdir = QDir::currentPath();
+    app->setWorkingDirectory(workdir);
 
     // icons
     /* setup our custom icon theme if there is no system theme (OS X, Windows) */
@@ -141,7 +143,8 @@ int main(int argc, char *argv[])
 #endif
     app->installTranslator(&translator);
 
-    app->newWindow(dropMode, workdir, shell_command);
+    TerminalConfig initConfig = TerminalConfig(workdir, shell_command);
+    app->newWindow(dropMode, initConfig);
 
     int ret = app->exec();
     delete Properties::Instance();
@@ -149,19 +152,19 @@ int main(int argc, char *argv[])
     return ret;
 }
 
-MainWindow *QTerminalApp::newWindow(bool dropMode, const QString& workdir, const QString& shell_command)
+MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
 {
     MainWindow *window = NULL;
     if (dropMode)
     {
         QWidget *hiddenPreviewParent = new QWidget(0, Qt::Tool);
-        window = new MainWindow(workdir, shell_command, dropMode, hiddenPreviewParent);
+        window = new MainWindow(cfg, dropMode, hiddenPreviewParent);
         if (Properties::Instance()->dropShowOnStart)
             window->show();
     }
     else
     {
-        window = new MainWindow(workdir, shell_command, dropMode);
+        window = new MainWindow(cfg, dropMode);
         window->show();
     }
     return window;
@@ -183,6 +186,16 @@ QTerminalApp *QTerminalApp::Instance(int &argc, char **argv)
 QTerminalApp::QTerminalApp(int &argc, char **argv)
     :QApplication(argc, argv)
 {
+}
+
+QString &QTerminalApp::getWorkingDirectory()
+{
+    return m_workDir;
+}
+
+void QTerminalApp::setWorkingDirectory(const QString &wd)
+{
+    m_workDir = wd;
 }
 
 

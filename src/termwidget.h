@@ -20,6 +20,7 @@
 #define TERMWIDGET_H
 
 #include <qtermwidget.h>
+#include "terminalconfig.h"
 
 #include <QAction>
 
@@ -32,7 +33,7 @@ class TermWidgetImpl : public QTermWidget
 
     public:
 
-        TermWidgetImpl(const QString & wdir, const QString & shell=QString(), QWidget * parent=0);
+        TermWidgetImpl(TerminalConfig &cfg, QWidget * parent=0);
         void propertiesChanged();
 
     signals:
@@ -59,7 +60,7 @@ class TermWidget : public QWidget
     QColor m_border;
 
     public:
-        TermWidget(const QString & wdir, const QString & shell=QString(), QWidget * parent=0);
+        TermWidget(TerminalConfig &cfg, QWidget * parent=0);
 
         void propertiesChanged(); 
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }

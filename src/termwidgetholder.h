@@ -21,6 +21,7 @@
 
 #include <QWidget>
 #include "termwidget.h"
+#include "terminalconfig.h"
 class QSplitter;
 
 
@@ -38,7 +39,7 @@ class TermWidgetHolder : public QWidget
     Q_OBJECT
 
     public:
-        TermWidgetHolder(const QString & wdir, const QString & shell=QString(), QWidget * parent=0);
+        TermWidgetHolder(TerminalConfig &cfg, QWidget * parent=0);
         ~TermWidgetHolder();
 
         void propertiesChanged();
@@ -50,12 +51,13 @@ class TermWidgetHolder : public QWidget
         void zoomOut(uint step);
 
         TermWidget* currentTerminal();
+        TermWidget* split(TermWidget * term, Qt::Orientation orientation, TerminalConfig cfg);
+
 
     public slots:
         void splitHorizontal(TermWidget * term);
         void splitVertical(TermWidget * term);
         void splitCollapse(TermWidget * term);
-        void setWDir(const QString & wdir);
         void switchNextSubterminal();
         void switchPrevSubterminal();
         void clearActiveTerminal();
@@ -68,12 +70,9 @@ class TermWidgetHolder : public QWidget
         void termTitleChanged(QString title, QString icon) const;
 
     private:
-        QString m_wdir;
-        QString m_shell;
         TermWidget * m_currentTerm;
 
-        void split(TermWidget * term, Qt::Orientation orientation);
-        TermWidget * newTerm(const QString & wdir=QString(), const QString & shell=QString());
+        TermWidget * newTerm(TerminalConfig &cfg);
 
     private slots:
         void setCurrentTerminal(TermWidget* term);

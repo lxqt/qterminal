@@ -22,6 +22,7 @@
 #include <QMessageBox>
 #include <functional>
 
+#include "terminalconfig.h"
 #include "mainwindow.h"
 #include "tabwidget.h"
 #include "termwidgetholder.h"
@@ -38,14 +39,12 @@ Q_DECLARE_METATYPE(checkfn)
 // TODO/FXIME: probably remove. QSS makes it unusable on mac...
 #define QSS_DROP    "MainWindow {border: 1px solid rgba(0, 0, 0, 50%);}\n"
 
-MainWindow::MainWindow(const QString& work_dir,
-                       const QString& command,
+MainWindow::MainWindow(TerminalConfig &cfg,
                        bool dropMode,
                        QWidget * parent,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
-      m_initShell(command),
-      m_initWorkDir(work_dir),
+      m_config(cfg),
       m_dropLockButton(0),
       m_dropMode(dropMode)
 {
@@ -91,7 +90,6 @@ MainWindow::MainWindow(const QString& work_dir,
 
     consoleTabulator->setAutoFillBackground(true);
     connect(consoleTabulator, SIGNAL(closeTabNotification()), SLOT(close()));
-    consoleTabulator->setWorkDirectory(work_dir);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
 
@@ -106,7 +104,7 @@ MainWindow::MainWindow(const QString& work_dir,
     /* The tab should be added after all changes are made to
        the main window; otherwise, the initial prompt might
        get jumbled because of changes in internal geometry. */
-    consoleTabulator->addNewTab(command);
+    consoleTabulator->addNewTab(m_config);
 }
 
 void MainWindow::rebuildActions()
@@ -649,7 +647,12 @@ bool MainWindow::event(QEvent *event)
 
 void MainWindow::newTerminalWindow()
 {
-    MainWindow *w = new MainWindow(m_initWorkDir, m_initShell, false);
+    TerminalConfig cfg;
+    TermWidgetHolder *ch = consoleTabulator->terminalHolder();
+    if (ch)
+        cfg.provideCurrentDirectory(ch->currentTerminal()->impl()->workingDirectory());
+
+    MainWindow *w = new MainWindow(cfg, false);
     w->show();
 }
 
@@ -666,6 +669,7 @@ void MainWindow::bookmarksDock_visibilityChanged(bool visible)
 
 void MainWindow::addNewTab()
 {
+    TerminalConfig cfg;
     if (Properties::Instance()->terminalsPreset == 3)
         consoleTabulator->preset4Terminals();
     else if (Properties::Instance()->terminalsPreset == 2)
@@ -673,7 +677,7 @@ void MainWindow::addNewTab()
     else if (Properties::Instance()->terminalsPreset == 1)
         consoleTabulator->preset2Horizontal();
     else
-        consoleTabulator->addNewTab();
+        consoleTabulator->addNewTab(cfg);
 }
 
 void MainWindow::onCurrentTitleChanged(int index)
