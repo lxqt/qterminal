@@ -64,3 +64,42 @@ void TerminalConfig::provideCurrentDirectory(const QString &val)
 }
 
 
+
+#if HAVE_QDBUS
+
+#define DBUS_ARG_WORKDIR "workingDirectory"
+#define DBUS_ARG_SHELL "shell"
+
+TerminalConfig TerminalConfig::fromDbus(const QHash<QString,QVariant> &termArgsConst, TermWidget *toSplit)
+{
+    QHash<QString,QVariant> termArgs(termArgsConst);
+    if (toSplit != NULL && !termArgs.contains(DBUS_ARG_WORKDIR))
+    {
+        termArgs[DBUS_ARG_WORKDIR] = QVariant(toSplit->impl()->workingDirectory());
+    }
+    return TerminalConfig::fromDbus(termArgs);
+}
+
+static QString variantToString(QVariant variant, QString &defaultVal)
+{
+    if (variant.type() == QVariant::String)
+        return qvariant_cast<QString>(variant);
+    return defaultVal;
+}
+
+TerminalConfig TerminalConfig::fromDbus(const QHash<QString,QVariant> &termArgs)
+{
+    QString wdir("");
+    QString shell(Properties::Instance()->shell);
+    if (termArgs.contains(DBUS_ARG_WORKDIR))
+    {
+        wdir = variantToString(termArgs[DBUS_ARG_WORKDIR], wdir);
+    }
+    if (termArgs.contains(DBUS_ARG_SHELL)) {
+        shell = variantToString(termArgs[DBUS_ARG_SHELL], shell);
+    }
+    return TerminalConfig(wdir, shell);
+}
+
+#endif
+

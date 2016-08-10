@@ -22,6 +22,11 @@ class TerminalConfig
         void setShell(const QString &val);
         void provideCurrentDirectory(const QString &val);
 
+        #ifdef HAVE_QDBUS
+        static TerminalConfig fromDbus(const QHash<QString,QVariant> &termArgs);
+        static TerminalConfig fromDbus(const QHash<QString,QVariant> &termArgs, TermWidget *toSplit);
+        #endif
+
 
     private:
     	// True when 

@@ -2,6 +2,9 @@
 #define QTERMINALAPP_H
 
 #include <QApplication>
+#ifdef HAVE_QDBUS
+    #include <QtDBus/QtDBus>
+#endif
 
 
 #include "mainwindow.h"
@@ -21,6 +24,12 @@ public:
     QString &getWorkingDirectory();
     void setWorkingDirectory(const QString &wd);
 
+    #ifdef HAVE_QDBUS
+    void registerOnDbus();
+    QList<QDBusObjectPath> getWindows();
+    QDBusObjectPath newWindow(const QHash<QString,QVariant> &termArgs);
+    QDBusObjectPath getActiveWindow();
+    #endif
 
 private:
     QString m_workDir;

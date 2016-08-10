@@ -20,6 +20,7 @@ find_package(Qt5LinguistTools REQUIRED)
 if(APPLE)
 elseif(UNIX)
     find_package(Qt5X11Extras REQUIRED)
+    find_package(Qt5DBus)
 endif()
 find_package(QTermWidget5 REQUIRED)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
@@ -55,6 +56,7 @@ set(QTERM_SRC
     src/propertiesdialog.cpp
     src/bookmarkswidget.cpp
     src/fontdialog.cpp
+    src/dbusaddressable.cpp
 )
 
 set(QTERM_MOC_SRC
@@ -67,6 +69,17 @@ set(QTERM_MOC_SRC
     src/bookmarkswidget.h
     src/fontdialog.h
 )
+
+
+if (Qt5DBus_FOUND)
+    add_definitions(-DHAVE_QDBUS)
+    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Window.xml mainwindow.h MainWindow)
+    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Tab.xml termwidgetholder.h TermWidgetHolder)
+    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Terminal.xml termwidget.h TermWidget)
+    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Process.xml qterminalapp.h QTerminalApp)
+    set(QTERM_MOC_SRC ${QTERM_MOC_SRC} src/dbusaddressable.h)
+    message(STATUS "Building with Qt5DBus support")
+endif()
 
 if(NOT QXT_FOUND)
     set(QTERM_SRC ${QTERM_SRC} src/third-party/qxtglobalshortcut.cpp)
@@ -166,6 +179,10 @@ target_link_libraries(${EXE_NAME}
 )
 if(QXT_FOUND)
     target_link_libraries(${EXE_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
+endif()
+
+if (Qt5DBus_FOUND)
+    target_link_libraries(${EXE_NAME} ${Qt5DBus_LIBRARIES})
 endif()
 
 if(APPLE)

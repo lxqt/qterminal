@@ -23,6 +23,12 @@
 #include <stdio.h>
 #include <getopt.h>
 #include <stdlib.h>
+#ifdef HAVE_QDBUS
+    #include <QtDBus/QtDBus>
+    #include <unistd.h>
+    #include "processadaptor.h"
+#endif
+
 
 #include "mainwindow.h"
 #include "qterminalapp.h"
@@ -117,6 +123,10 @@ int main(int argc, char *argv[])
     QSettings::setDefaultFormat(QSettings::IniFormat);
 
     QTerminalApp *app = QTerminalApp::Instance(argc, argv);
+    #ifdef HAVE_QDBUS
+        app->registerOnDbus();
+    #endif
+
     QString workdir, shell_command;
     bool dropMode;
     parse_args(argc, argv, workdir, shell_command, dropMode);
@@ -213,3 +223,52 @@ QList<MainWindow *> QTerminalApp::getWindowList()
 {
     return m_windowList;
 }
+
+#ifdef HAVE_QDBUS
+void QTerminalApp::registerOnDbus()
+{
+    if (!QDBusConnection::sessionBus().isConnected())
+    {
+        fprintf(stderr, "Cannot connect to the D-Bus session bus.\n"
+                "To start it, run:\n"
+                "\teval `dbus-launch --auto-syntax`\n");
+        return;
+    }
+    QString serviceName = QStringLiteral("org.lxqt.QTerminal-%1").arg(getpid());
+    if (!QDBusConnection::sessionBus().registerService(serviceName))
+    {
+        fprintf(stderr, "%s\n", qPrintable(QDBusConnection::sessionBus().lastError().message()));
+        return;
+    }
+    new ProcessAdaptor(this);
+    QDBusConnection::sessionBus().registerObject("/", this);
+}
+
+QList<QDBusObjectPath> QTerminalApp::getWindows()
+{
+    QList<QDBusObjectPath> windows;
+    foreach (MainWindow *wnd, m_windowList)
+    {
+        windows.push_back(wnd->getDbusPath());
+    }
+    return windows;
+}
+
+QDBusObjectPath QTerminalApp::newWindow(const QHash<QString,QVariant> &termArgs)
+{
+    TerminalConfig cfg = TerminalConfig::fromDbus(termArgs);
+    MainWindow *wnd = newWindow(false, cfg);
+    assert(wnd != NULL);
+    return wnd->getDbusPath();
+}
+
+QDBusObjectPath QTerminalApp::getActiveWindow()
+{
+    QWidget *aw = activeWindow();
+    if (aw == NULL)
+        return QDBusObjectPath("/");
+    return qobject_cast<MainWindow*>(aw)->getDbusPath();
+}
+
+#endif
+

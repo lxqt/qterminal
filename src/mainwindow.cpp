@@ -22,6 +22,11 @@
 #include <QMessageBox>
 #include <functional>
 
+#ifdef HAVE_QDBUS
+    #include <QtDBus/QtDBus>
+    #include "windowadaptor.h"
+#endif
+
 #include "terminalconfig.h"
 #include "mainwindow.h"
 #include "tabwidget.h"
@@ -31,7 +36,7 @@
 #include "propertiesdialog.h"
 #include "bookmarkswidget.h"
 #include "qterminalapp.h"
-
+#include "dbusaddressable.h"
 
 typedef std::function<bool(MainWindow&)> checkfn;
 Q_DECLARE_METATYPE(checkfn)
@@ -44,10 +49,14 @@ MainWindow::MainWindow(TerminalConfig &cfg,
                        QWidget * parent,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
+      DBusAddressable("/windows"),
       m_config(cfg),
       m_dropLockButton(0),
       m_dropMode(dropMode)
 {
+#ifdef HAVE_QDBUS
+    registerAdapter<WindowAdaptor, MainWindow>(this);
+#endif
     QTerminalApp::Instance()->addWindow(this);
     setAttribute(Qt::WA_TranslucentBackground);
     setAttribute(Qt::WA_DeleteOnClose);
@@ -718,3 +727,34 @@ void MainWindow::aboutToShowActionsMenu()
 QMap< QString, QAction * >& MainWindow::leaseActions() {
         return actions;
 }
+#ifdef HAVE_QDBUS
+
+QDBusObjectPath MainWindow::getActiveTab()
+{
+    return qobject_cast<TermWidgetHolder*>(consoleTabulator->currentWidget())->getDbusPath();
+}
+
+QList<QDBusObjectPath> MainWindow::getTabs()
+{
+    QList<QDBusObjectPath> tabs;
+    for (int i = 0; i<consoleTabulator->count(); ++i)
+    {
+        tabs.push_back(qobject_cast<TermWidgetHolder*>(consoleTabulator->widget(i))->getDbusPath());
+    }
+    return tabs;
+    
+}
+
+QDBusObjectPath MainWindow::newTab(const QHash<QString,QVariant> &termArgs)
+{
+    TerminalConfig cfg = TerminalConfig::fromDbus(termArgs);
+    int idx = consoleTabulator->addNewTab(cfg);
+    return qobject_cast<TermWidgetHolder*>(consoleTabulator->widget(idx))->getDbusPath();
+}
+
+void MainWindow::closeWindow()
+{
+    close();
+}
+
+#endif

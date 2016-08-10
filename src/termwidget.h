@@ -23,7 +23,7 @@
 #include "terminalconfig.h"
 
 #include <QAction>
-
+#include "dbusaddressable.h"
 
 class TermWidgetImpl : public QTermWidget
 {
@@ -51,7 +51,7 @@ class TermWidgetImpl : public QTermWidget
 };
 
 
-class TermWidget : public QWidget
+class TermWidget : public QWidget, public DBusAddressable
 {
     Q_OBJECT
 
@@ -66,6 +66,14 @@ class TermWidget : public QWidget
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }
 
         TermWidgetImpl * impl() { return m_term; }
+
+        #ifdef HAVE_QDBUS
+        QDBusObjectPath splitHorizontal(const QHash<QString,QVariant> &termArgs);
+        QDBusObjectPath splitVertical(const QHash<QString,QVariant> &termArgs);
+        QDBusObjectPath getTab();
+        void sendText(const QString text);
+        void closeTerminal();
+        #endif
 
     signals:
         void finished();

@@ -20,6 +20,11 @@
 #include <QSplitter>
 #include <QInputDialog>
 
+#ifdef HAVE_QDBUS
+    #include <QtDBus/QtDBus>
+    #include "tabadaptor.h"
+#endif
+
 #include "qterminalapp.h"
 #include "mainwindow.h"
 #include "termwidgetholder.h"
@@ -29,9 +34,15 @@
 
 
 TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, QWidget * parent)
-    : QWidget(parent),
-      m_currentTerm(0)
+    : QWidget(parent)
+      #ifdef HAVE_QDBUS
+      , DBusAddressable("/tabs")
+      #endif
 {
+    #ifdef HAVE_QDBUS
+    new TabAdaptor(this);
+    QDBusConnection::sessionBus().registerObject(getDbusPathString(), this);
+    #endif
     setFocusPolicy(Qt::NoFocus);
     QGridLayout * lay = new QGridLayout(this);
     lay->setSpacing(0);
@@ -42,6 +53,7 @@ TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, QWidget * parent)
     TermWidget *w = newTerm(config);
     s->addWidget(w);
     lay->addWidget(s);
+    m_currentTerm = w;
 
     setLayout(lay);
 }
@@ -322,4 +334,40 @@ void TermWidgetHolder::onTermTitleChanged(QString title, QString icon) const
     if (m_currentTerm == term)
         emit termTitleChanged(title, icon);
 }
+
+#ifdef HAVE_QDBUS
+
+QDBusObjectPath TermWidgetHolder::getActiveTerminal()
+{
+    if (m_currentTerm != NULL)
+    {
+        return m_currentTerm->getDbusPath();
+    }
+    return QDBusObjectPath();
+}
+
+QList<QDBusObjectPath> TermWidgetHolder::getTerminals()
+{
+    QList<QDBusObjectPath> terminals;
+    foreach (TermWidget* w, findChildren<TermWidget*>())
+    {
+        terminals.push_back(w->getDbusPath());
+    }
+    return terminals;
+}
+
+QDBusObjectPath TermWidgetHolder::getWindow()
+{
+    return findParent<MainWindow>(this)->getDbusPath();
+}
+
+void TermWidgetHolder::closeTab()
+{
+    QTabWidget *parent = findParent<QTabWidget>(this);
+    int idx = parent->indexOf(this);
+    assert(idx != -1);
+    parent->tabCloseRequested(idx);
+}
+
+#endif
 

@@ -23,6 +23,11 @@
 #include <QMap>
 #include <QAction>
 
+#ifdef HAVE_QDBUS
+    #include <QtDBus/QtDBus>
+    #include "dbusaddressable.h"
+#endif
+
 #include "terminalconfig.h"
 #include "properties.h"
 

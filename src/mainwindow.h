@@ -26,11 +26,12 @@
 
 #include "qxtglobalshortcut.h"
 #include "terminalconfig.h"
+#include "dbusaddressable.h"
 
 
 class QToolButton;
 
-class MainWindow : public QMainWindow, private Ui::mainWindow
+class MainWindow : public QMainWindow, private Ui::mainWindow, public DBusAddressable
 {
     Q_OBJECT
 
@@ -42,6 +43,13 @@ public:
 
     bool dropMode() { return m_dropMode; }
     QMap<QString, QAction*> & leaseActions();
+
+    #ifdef HAVE_QDBUS
+    QDBusObjectPath getActiveTab();
+    QList<QDBusObjectPath> getTabs();
+    QDBusObjectPath newTab(const QHash<QString,QVariant> &termArgs);
+    void closeWindow();
+    #endif
 
 protected:
      bool event(QEvent* event);

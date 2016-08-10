@@ -22,6 +22,7 @@
 #include <QWidget>
 #include "termwidget.h"
 #include "terminalconfig.h"
+#include "dbusaddressable.h"
 class QSplitter;
 
 
@@ -35,6 +36,9 @@ for TabWidget - with its signals and slots.
 Splitting and collapsing of TermWidgets is done here.
 */
 class TermWidgetHolder : public QWidget
+#ifdef HAVE_QDBUS
+    , public DBusAddressable
+#endif
 {
     Q_OBJECT
 
@@ -52,6 +56,13 @@ class TermWidgetHolder : public QWidget
 
         TermWidget* currentTerminal();
         TermWidget* split(TermWidget * term, Qt::Orientation orientation, TerminalConfig cfg);
+
+        #ifdef HAVE_QDBUS
+        QDBusObjectPath getActiveTerminal();
+        QList<QDBusObjectPath> getTerminals();
+        QDBusObjectPath getWindow();
+        void closeTab();
+        #endif
 
 
     public slots:

@@ -22,6 +22,13 @@
 #include <QDesktopServices>
 #include <assert.h>
 
+#ifdef HAVE_QDBUS
+    #include <QtDBus/QtDBus>
+    #include "termwidgetholder.h"
+    #include "terminaladaptor.h"
+#endif
+
+
 #include "mainwindow.h"
 #include "termwidget.h"
 #include "config.h"
@@ -174,8 +181,13 @@ void TermWidgetImpl::activateUrl(const QUrl & url, bool fromContextMenu) {
 }
 
 TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
-    : QWidget(parent)
+    : QWidget(parent), 
+      DBusAddressable("/terminals")
 {
+
+    #ifdef HAVE_QDBUS
+    registerAdapter<TerminalAdaptor, TermWidget>(this);
+    #endif
     m_border = palette().color(QPalette::Window);
     m_term = new TermWidgetImpl(cfg, this);
     setFocusProxy(m_term);
@@ -225,3 +237,45 @@ void TermWidget::paintEvent (QPaintEvent *)
     p.setPen(pen);
     p.drawRect(0, 0, width()-1, height()-1);
 }
+
+#if HAVE_QDBUS
+
+QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termArgs)
+{
+    TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
+    assert(holder != NULL);
+    TerminalConfig cfg = TerminalConfig::fromDbus(termArgs, this);
+    return holder->split(this, Qt::Horizontal, cfg)->getDbusPath();
+}
+
+QDBusObjectPath TermWidget::splitVertical(const QHash<QString,QVariant> &termArgs)
+{
+    TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
+    assert(holder != NULL);
+    TerminalConfig cfg = TerminalConfig::fromDbus(termArgs, this);
+    return holder->split(this, Qt::Vertical, cfg)->getDbusPath();
+}
+
+QDBusObjectPath TermWidget::getTab()
+{
+    return findParent<TermWidgetHolder>(this)->getDbusPath();
+}
+
+void TermWidget::closeTerminal()
+{
+    TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
+    holder->splitCollapse(this);
+}
+
+void TermWidget::sendText(const QString text)
+{
+    if (impl())
+    {
+        impl()->sendText(text);
+    }
+}
+
+#endif
+
+
+
