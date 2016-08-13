@@ -14,6 +14,7 @@
       <arg name="newTerminal" type="o" direction="out"/>
     </method>
     <method name="closeWindow"/>
+    <method name="activateWindow"/>
   </interface>
 </node>
 
