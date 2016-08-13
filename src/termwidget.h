@@ -21,6 +21,7 @@
 
 #include <qtermwidget.h>
 
+#include <QClipboard>
 #include <QAction>
 
 
@@ -34,6 +35,7 @@ class TermWidgetImpl : public QTermWidget
 
         TermWidgetImpl(const QString & wdir, const QString & shell=QString(), QWidget * parent=0);
         void propertiesChanged();
+        void paste(QClipboard::Mode mode);
 
     signals:
         void renameSession();
@@ -43,6 +45,8 @@ class TermWidgetImpl : public QTermWidget
         void zoomIn();
         void zoomOut();
         void zoomReset();
+        void pasteSelection();
+        void pasteClipboard();
 
     private slots:
         void customContextMenuCall(const QPoint & pos);
@@ -80,6 +84,7 @@ class TermWidget : public QWidget
 
     protected:
         void paintEvent (QPaintEvent * event);
+        bool eventFilter(QObject * obj, QEvent * evt) override;
 
     private slots:
         void term_termGetFocus();
