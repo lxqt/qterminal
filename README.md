@@ -1,29 +1,25 @@
 # QTerminal
 
-The lightweight Qt terminal emulator
+## Overview
+
+QTerminal is a lightweight Qt terminal emulator based on [QTermWidget](https://github.com/lxde/qtermwidget).   
+
+It is maintained by the LXQt project but can be used independently from this desktop environment. The only bonds are [liblxqt](https://github.com/lxde/liblxqt) representing a build dependency and the localization files which were outsourced to LXQt repository [lxqt-l10n](https://github.com/lxde/lxqt-l10n).   
+
+This project is licensed under the terms of the [GPLv2](https://www.gnu.org/licenses/gpl-2.0.en.html) or any later version. See the LICENSE file for the full text of the license.   
 
 ## Installation
 
-### Requirements
+### Compiling sources
 
-* Qt >= 5.2
-* CMake >= 2.8
-* [qtermwidget](https://github.com/lxde/qtermwidget)
+Runtime dependencies are qtx11extras ≥ 5.2 and [QTermWidget](https://github.com/lxde/qtermwidget).   
+In order to build CMake ≥ 3.0.2 and [liblxqt](https://github.com/lxde/liblxqt) are needed as well as optionally Git to pull latest VCS checkouts. The localization files were outsourced to repository [lxqt-l10n](https://github.com/lxde/lxqt-l10n) so the corresponding dependencies are needed, too. Please refer to this repository's `README.md` for further information.   
 
+Code configuration is handled by CMake. Building out of source is strongly recommended. CMake variable `CMAKE_INSTALL_PREFIX` will normally have to be set to `/usr`.   
 
-### Building
+To build run `make`, to install `make install` which accepts variable `DESTDIR` as usual.   
 
-A shadow build (out of source) is strongly recommended
-http://www.cmake.org/Wiki/CMake_FAQ#Out-of-source_build_trees
+### Binary packages
 
-1. `mkdir -p build && cd build`
-2. `cmake <path/to/source>`
-3. `make`
-4. (to install) `make install`
-
-Read cmake docs to fine tune the build process (CMAKE_INSTALL_PREFIX, etc...)
-
-## Translations
-
-* Edit `src/CMakeLists.txt` to add a new ts file.
-* `make lupdate` updates ts files to be translated (lrelease is called automatically in make)
+QTerminal is provided by all major Linux distributions like Arch Linux ([AUR](https://aur.archlinux.org) only so far), Debian (as of Debian stretch), Fedora and openSUSE (Tumbleweed only so far).   
+Just use the distributions' package managers to search for string `qterminal`.
