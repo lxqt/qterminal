@@ -4,7 +4,7 @@ project(qterminal)
 
 include(GNUInstallDirs)
 
-set(STR_VERSION "0.6.0")
+set(STR_VERSION "0.7.0")
 
 
 # additional cmake files
