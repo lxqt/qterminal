@@ -235,14 +235,3 @@ add_custom_target(lupdate
     COMMAND ${QT_LUPDATE_EXECUTABLE} "${CMAKE_CURRENT_BINARY_DIR}/qterminal.pro"
     WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
 )
-
-# make dist custom target
-set(CPACK_PACKAGE_NAME "qterminal")
-set(CPACK_PACKAGE_VERSION ${STR_VERSION})
-set(CPACK_SOURCE_GENERATOR "TGZ;TBZ2")
-set(CPACK_SOURCE_PACKAGE_FILE_NAME "${CPACK_PACKAGE_NAME}-${CPACK_PACKAGE_VERSION}")
-set(CPACK_IGNORE_FILES "/CVS/;/\\\\.svn/;/\\\\.git/;\\\\.swp$;\\\\.#;/#;\\\\.tar.gz$;/CMakeFiles/;CMakeCache.txt;\\\\.qm$;/build/;\\\\.diff$;.DS_Store'")
-set(CPACK_SOURCE_IGNORE_FILES ${CPACK_IGNORE_FILES})
-include(CPack)
-# simulate autotools' "make dist"
-add_custom_target(dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
