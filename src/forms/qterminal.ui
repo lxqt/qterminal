@@ -32,12 +32,6 @@
     </property>
     <item row="0" column="0">
      <widget class="TabWidget" name="consoleTabulator">
-      <property name="minimumSize">
-       <size>
-        <width>320</width>
-        <height>200</height>
-       </size>
-      </property>
       <property name="tabPosition">
        <enum>QTabWidget::South</enum>
       </property>
