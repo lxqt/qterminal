@@ -217,10 +217,13 @@ void TermWidget::term_termLostFocus()
 
 void TermWidget::paintEvent (QPaintEvent *)
 {
-    QPainter p(this);
-    QPen pen(m_border);
-    pen.setWidth(30);
-    pen.setBrush(m_border);
-    p.setPen(pen);
-    p.drawRect(0, 0, width()-1, height()-1);
+  if (Properties::Instance()->highlightCurrentTerminal)
+    {
+      QPainter p(this);
+      QPen pen(m_border);
+      pen.setWidth(3);
+      pen.setBrush(m_border);
+      p.setPen(pen);
+      p.drawRect(0, 0, width()-1, height()-1);
+    }
 }
