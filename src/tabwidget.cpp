@@ -253,24 +253,25 @@ void TabWidget::removeFinished()
 
 void TabWidget::removeTab(int index)
 {
-    setUpdatesEnabled(false);
+    if (count() > 1) {
+        setUpdatesEnabled(false);
 
-    QWidget * w = widget(index);
-    QTabWidget::removeTab(index);
-    w->deleteLater();
+        QWidget * w = widget(index);
+        QTabWidget::removeTab(index);
+        w->deleteLater();
 
-    updateTabIndices();
-    int current = currentIndex();
-    if (current >= 0 )
-    {
-        qobject_cast<TermWidgetHolder*>(widget(current))->setInitialFocus();
-    }
-// do not decrease it as renaming is disabled in renameTabsAfterRemove
-//    tabNumerator--;
-    setUpdatesEnabled(true);
-
-    if (count() == 0)
+        updateTabIndices();
+        int current = currentIndex();
+        if (current >= 0 )
+        {
+            qobject_cast<TermWidgetHolder*>(widget(current))->setInitialFocus();
+        }
+    // do not decrease it as renaming is disabled in renameTabsAfterRemove
+    //    tabNumerator--;
+        setUpdatesEnabled(true);
+    } else {
         emit closeTabNotification();
+    }
 
     renameTabsAfterRemove();
     showHideTabBar();
