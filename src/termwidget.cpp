@@ -24,6 +24,7 @@
 #include "termwidget.h"
 #include "config.h"
 #include "properties.h"
+#include "mainwindow.h"
 
 static int TermWidgetCount = 0;
 
@@ -123,23 +124,8 @@ void TermWidgetImpl::propertiesChanged()
 
 void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
 {
-    QMenu menu;
-    menu.addAction(Properties::Instance()->actions[COPY_SELECTION]);
-    menu.addAction(Properties::Instance()->actions[PASTE_CLIPBOARD]);
-    menu.addAction(Properties::Instance()->actions[PASTE_SELECTION]);
-    menu.addAction(Properties::Instance()->actions[ZOOM_IN]);
-    menu.addAction(Properties::Instance()->actions[ZOOM_OUT]);
-    menu.addAction(Properties::Instance()->actions[ZOOM_RESET]);
-    menu.addSeparator();
-    menu.addAction(Properties::Instance()->actions[CLEAR_TERMINAL]);
-    menu.addAction(Properties::Instance()->actions[SPLIT_HORIZONTAL]);
-    menu.addAction(Properties::Instance()->actions[SPLIT_VERTICAL]);
-#warning TODO/FIXME: disable the action when there is only one terminal
-    menu.addAction(Properties::Instance()->actions[SUB_COLLAPSE]);
-    menu.addSeparator();
-    menu.addAction(Properties::Instance()->actions[TOGGLE_MENU]);
-    menu.addAction(Properties::Instance()->actions[PREFERENCES]);
-    menu.exec(mapToGlobal(pos));
+    const MainWindow *main = qobject_cast<MainWindow*>(window());
+    main->getContextMenu()->exec(mapToGlobal(pos));
 }
 
 void TermWidgetImpl::zoomIn()

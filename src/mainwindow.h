@@ -36,7 +36,8 @@ public:
                QWidget * parent = 0, Qt::WindowFlags f = 0);
     ~MainWindow();
 
-    bool dropMode() { return m_dropMode; }
+    bool dropMode() const { return m_dropMode; }
+    QMenu *getContextMenu() const { return m_contextMenu; }
 
 protected:
      bool event(QEvent* event);
@@ -49,10 +50,12 @@ private:
     QString m_initShell;
 
     QDockWidget *m_bookmarksDock;
+    QMenu * m_contextMenu;
 
     void setup_FileMenu_Actions();
     void setup_ActionsMenu_Actions();
     void setup_ViewMenu_Actions();
+    void setup_ContextMenu_Actions();
     void setupCustomDirs();
 
     void closeEvent(QCloseEvent*);
