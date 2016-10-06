@@ -757,7 +757,11 @@ void MainWindow::onCurrentTitleChanged(int index)
 void MainWindow::maybeClose()
 {
     if (m_dropMode)
+    {
+        int index = consoleTabulator->currentIndex();
         addNewTab();
+        consoleTabulator->removeTab(index);
+    }
     else
         close();
 }
