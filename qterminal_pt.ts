@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="pt">
+<TS version="2.1" language="pt">
 <context>
     <name>BookmarksWidget</name>
     <message>
@@ -379,7 +379,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="309"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;O comportamento a emular. Tenha em atenção que esta opção não tem que ser igual à do sistema operativo.&lt;/p&gt;&lt;p&gt;A emulação &lt;span style=&quot; font-weight:600;&quot;&gt;pré-definida&lt;/span&gt; possui um conjunto mínimo de funcionalidades.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;O comportamento a emular. Tenha em atenção que esta opção não tem que ser igual à do sistema operativo.&lt;/p&gt;&lt;p&gt;A emulação &lt;span style=&quot; font-weight:600;&quot;&gt;padrão&lt;/span&gt; possui um conjunto mínimo de funcionalidades.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="331"/>
@@ -460,7 +460,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="570"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Pode especificar a localização do ficheiro de marcadores. Permite a partilha de marcadores através  do Own Cloud, Dropbox e mais serviços.</translation>
+        <translation>Pode especificar a localização do ficheiro de marcadores. Permite a partilha de marcadores através do Own Cloud ou do Dropbox.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="161"/>
