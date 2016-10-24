@@ -114,8 +114,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     historyLimitedTo->setValue(Properties::Instance()->historyLimitedTo);
 
     dropShowOnStartCheckBox->setChecked(Properties::Instance()->dropShowOnStart);
+
     dropHeightSpinBox->setValue(Properties::Instance()->dropHeight);
+    dropHeightSpinBox->setMaximum(100);
     dropWidthSpinBox->setValue(Properties::Instance()->dropWidht);
+    dropWidthSpinBox->setMaximum(100);
+
     dropShortCutEdit->setText(Properties::Instance()->dropShortCut.toString());
 
     useBookmarksCheckBox->setChecked(Properties::Instance()->useBookmarks);
