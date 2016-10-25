@@ -91,6 +91,7 @@ void TermWidgetImpl::propertiesChanged()
 
     setKeyBindings(Properties::Instance()->emulation);
     setTerminalOpacity(1.0 - Properties::Instance()->termTransparency/100.0);
+    setTerminalBackgroundImage(Properties::Instance()->backgroundImage);
 
     /* be consequent with qtermwidget.h here */
     switch(Properties::Instance()->scrollBarPos) {

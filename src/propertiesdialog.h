@@ -44,6 +44,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
         void accept();
         
         void changeFontButton_clicked();
+        void chooseBackgroundImageButton_clicked();
         void bookmarksButton_clicked();
 
     protected:
