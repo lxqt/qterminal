@@ -91,7 +91,6 @@ MainWindow::MainWindow(const QString& work_dir,
     setup_FileMenu_Actions();
     setup_ActionsMenu_Actions();
     setup_ViewMenu_Actions();
-    setup_ContextMenu_Actions();
     setupCustomDirs();
 
     connect(consoleTabulator, &TabWidget::currentTitleChanged, this, &MainWindow::onCurrentTitleChanged);
@@ -507,24 +506,23 @@ void MainWindow::setup_ViewMenu_Actions()
     menu_Window->addMenu(keyboardCursorShapeMenu);
 }
 
-void MainWindow::setup_ContextMenu_Actions()
+void MainWindow::setup_ContextMenu_Actions(QMenu* contextMenu) const
 {
-    m_contextMenu = new QMenu(this);
-    m_contextMenu->addAction(Properties::Instance()->actions[COPY_SELECTION]);
-    m_contextMenu->addAction(Properties::Instance()->actions[PASTE_CLIPBOARD]);
-    m_contextMenu->addAction(Properties::Instance()->actions[PASTE_SELECTION]);
-    m_contextMenu->addAction(Properties::Instance()->actions[ZOOM_IN]);
-    m_contextMenu->addAction(Properties::Instance()->actions[ZOOM_OUT]);
-    m_contextMenu->addAction(Properties::Instance()->actions[ZOOM_RESET]);
-    m_contextMenu->addSeparator();
-    m_contextMenu->addAction(Properties::Instance()->actions[CLEAR_TERMINAL]);
-    m_contextMenu->addAction(Properties::Instance()->actions[SPLIT_HORIZONTAL]);
-    m_contextMenu->addAction(Properties::Instance()->actions[SPLIT_VERTICAL]);
+    contextMenu->addAction(Properties::Instance()->actions[COPY_SELECTION]);
+    contextMenu->addAction(Properties::Instance()->actions[PASTE_CLIPBOARD]);
+    contextMenu->addAction(Properties::Instance()->actions[PASTE_SELECTION]);
+    contextMenu->addAction(Properties::Instance()->actions[ZOOM_IN]);
+    contextMenu->addAction(Properties::Instance()->actions[ZOOM_OUT]);
+    contextMenu->addAction(Properties::Instance()->actions[ZOOM_RESET]);
+    contextMenu->addSeparator();
+    contextMenu->addAction(Properties::Instance()->actions[CLEAR_TERMINAL]);
+    contextMenu->addAction(Properties::Instance()->actions[SPLIT_HORIZONTAL]);
+    contextMenu->addAction(Properties::Instance()->actions[SPLIT_VERTICAL]);
     #warning TODO/FIXME: disable the action when there is only one terminal
-    m_contextMenu->addAction(Properties::Instance()->actions[SUB_COLLAPSE]);
-    m_contextMenu->addSeparator();
-    m_contextMenu->addAction(Properties::Instance()->actions[TOGGLE_MENU]);
-    m_contextMenu->addAction(Properties::Instance()->actions[PREFERENCES]);
+    contextMenu->addAction(Properties::Instance()->actions[SUB_COLLAPSE]);
+    contextMenu->addSeparator();
+    contextMenu->addAction(Properties::Instance()->actions[TOGGLE_MENU]);
+    contextMenu->addAction(Properties::Instance()->actions[PREFERENCES]);
 }
 
 void MainWindow::setupCustomDirs()

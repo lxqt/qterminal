@@ -68,7 +68,7 @@ TermWidgetImpl::TermWidgetImpl(const QString & wdir, const QString & shell, QWid
     connect(this, SIGNAL(customContextMenuRequested(const QPoint &)),
             this, SLOT(customContextMenuCall(const QPoint &)));
 
-    connect(this, SIGNAL(urlActivated(QUrl)), this, SLOT(activateUrl(const QUrl&)));
+    connect(this, &QTermWidget::urlActivated, this, &TermWidgetImpl::activateUrl);
 
     startShellProgram();
 }
@@ -124,8 +124,20 @@ void TermWidgetImpl::propertiesChanged()
 
 void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
 {
+    QMenu* contextMenu = new QMenu(this);
+
+    QList<QAction*> actions = filterActions(pos);
+    for (auto& action : actions)
+    {
+        contextMenu->addAction(action);
+    }
+
+    contextMenu->addSeparator();
+
     const MainWindow *main = qobject_cast<MainWindow*>(window());
-    main->getContextMenu()->exec(mapToGlobal(pos));
+    main->setup_ContextMenu_Actions(contextMenu);
+
+    contextMenu->exec(mapToGlobal(pos));
 }
 
 void TermWidgetImpl::zoomIn()
@@ -152,8 +164,8 @@ void TermWidgetImpl::zoomReset()
 //    Properties::Instance()->saveSettings();
 }
 
-void TermWidgetImpl::activateUrl(const QUrl & url) {
-    if (QApplication::keyboardModifiers() & Qt::ControlModifier) {
+void TermWidgetImpl::activateUrl(const QUrl & url, bool fromContextMenu) {
+    if (QApplication::keyboardModifiers() & Qt::ControlModifier || fromContextMenu) {
         QDesktopServices::openUrl(url);
     }
 }
