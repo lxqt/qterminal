@@ -20,6 +20,7 @@
 #include <QDesktopWidget>
 #include <QToolButton>
 #include <QMessageBox>
+#include <functional>
 
 #include "mainwindow.h"
 #include "tabwidget.h"
@@ -29,6 +30,9 @@
 #include "propertiesdialog.h"
 #include "bookmarkswidget.h"
 
+
+typedef std::function<bool(MainWindow&)> checkfn;
+Q_DECLARE_METATYPE(checkfn)
 
 // TODO/FXIME: probably remove. QSS makes it unusable on mac...
 #define QSS_DROP    "MainWindow {border: 1px solid rgba(0, 0, 0, 50%);}\n"
@@ -94,6 +98,8 @@ MainWindow::MainWindow(const QString& work_dir,
     setupCustomDirs();
 
     connect(consoleTabulator, &TabWidget::currentTitleChanged, this, &MainWindow::onCurrentTitleChanged);
+    connect(menu_Actions, SIGNAL(aboutToShow()), this, SLOT(aboutToShowActionsMenu()));
+
     /* The tab should be added after all changes are made to
        the main window; otherwise, the initial prompt might
        get jumbled because of changes in internal geometry. */
@@ -137,6 +143,10 @@ void MainWindow::setup_ActionsMenu_Actions()
     settings.beginGroup("Shortcuts");
 
     QKeySequence seq;
+    QVariant data;
+
+    const checkfn checkTabs = &MainWindow::hasMultipleTabs;
+    const checkfn checkSubterminals = &MainWindow::hasMultipleSubterminals;
 
     Properties::Instance()->actions[CLEAR_TERMINAL] = new QAction(QIcon::fromTheme("edit-clear"), tr("&Clear Current Tab"), this);
     seq = QKeySequence::fromString(settings.value(CLEAR_TERMINAL, CLEAR_TERMINAL_SHORTCUT).toString());
@@ -147,16 +157,20 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     menu_Actions->addSeparator();
 
+    data.setValue(checkTabs);
+
     Properties::Instance()->actions[TAB_NEXT] = new QAction(QIcon::fromTheme("go-next"), tr("&Next Tab"), this);
     seq = QKeySequence::fromString( settings.value(TAB_NEXT, TAB_NEXT_SHORTCUT).toString() );
     Properties::Instance()->actions[TAB_NEXT]->setShortcut(seq);
     connect(Properties::Instance()->actions[TAB_NEXT], SIGNAL(triggered()), consoleTabulator, SLOT(switchToRight()));
+    Properties::Instance()->actions[TAB_NEXT]->setData(data);
     menu_Actions->addAction(Properties::Instance()->actions[TAB_NEXT]);
     addAction(Properties::Instance()->actions[TAB_NEXT]);
 
     Properties::Instance()->actions[TAB_PREV] = new QAction(QIcon::fromTheme("go-previous"), tr("&Previous Tab"), this);
     seq = QKeySequence::fromString( settings.value(TAB_PREV, TAB_PREV_SHORTCUT).toString() );
     Properties::Instance()->actions[TAB_PREV]->setShortcut(seq);
+    Properties::Instance()->actions[TAB_PREV]->setData(data);
     connect(Properties::Instance()->actions[TAB_PREV], SIGNAL(triggered()), consoleTabulator, SLOT(switchToLeft()));
     menu_Actions->addAction(Properties::Instance()->actions[TAB_PREV]);
     addAction(Properties::Instance()->actions[TAB_PREV]);
@@ -164,6 +178,7 @@ void MainWindow::setup_ActionsMenu_Actions()
     Properties::Instance()->actions[MOVE_LEFT] = new QAction(tr("Move Tab &Left"), this);
     seq = QKeySequence::fromString( settings.value(MOVE_LEFT, MOVE_LEFT_SHORTCUT).toString() );
     Properties::Instance()->actions[MOVE_LEFT]->setShortcut(seq);
+    Properties::Instance()->actions[MOVE_LEFT]->setData(data);
     connect(Properties::Instance()->actions[MOVE_LEFT], SIGNAL(triggered()), consoleTabulator, SLOT(moveLeft()));
     menu_Actions->addAction(Properties::Instance()->actions[MOVE_LEFT]);
     addAction(Properties::Instance()->actions[MOVE_LEFT]);
@@ -171,6 +186,7 @@ void MainWindow::setup_ActionsMenu_Actions()
     Properties::Instance()->actions[MOVE_RIGHT] = new QAction(tr("Move Tab &Right"), this);
     seq = QKeySequence::fromString( settings.value(MOVE_RIGHT, MOVE_RIGHT_SHORTCUT).toString() );
     Properties::Instance()->actions[MOVE_RIGHT]->setShortcut(seq);
+    Properties::Instance()->actions[MOVE_RIGHT]->setData(data);
     connect(Properties::Instance()->actions[MOVE_RIGHT], SIGNAL(triggered()), consoleTabulator, SLOT(moveRight()));
     menu_Actions->addAction(Properties::Instance()->actions[MOVE_RIGHT]);
     addAction(Properties::Instance()->actions[MOVE_RIGHT]);
@@ -191,9 +207,12 @@ void MainWindow::setup_ActionsMenu_Actions()
     menu_Actions->addAction(Properties::Instance()->actions[SPLIT_VERTICAL]);
     addAction(Properties::Instance()->actions[SPLIT_VERTICAL]);
 
+    data.setValue(checkSubterminals);
+
     Properties::Instance()->actions[SUB_COLLAPSE] = new QAction(tr("&Collapse Subterminal"), this);
     seq = QKeySequence::fromString( settings.value(SUB_COLLAPSE).toString() );
     Properties::Instance()->actions[SUB_COLLAPSE]->setShortcut(seq);
+    Properties::Instance()->actions[SUB_COLLAPSE]->setData(data);
     connect(Properties::Instance()->actions[SUB_COLLAPSE], SIGNAL(triggered()), consoleTabulator, SLOT(splitCollapse()));
     menu_Actions->addAction(Properties::Instance()->actions[SUB_COLLAPSE]);
     addAction(Properties::Instance()->actions[SUB_COLLAPSE]);
@@ -201,6 +220,7 @@ void MainWindow::setup_ActionsMenu_Actions()
     Properties::Instance()->actions[SUB_NEXT] = new QAction(QIcon::fromTheme("go-up"), tr("N&ext Subterminal"), this);
     seq = QKeySequence::fromString( settings.value(SUB_NEXT, SUB_NEXT_SHORTCUT).toString() );
     Properties::Instance()->actions[SUB_NEXT]->setShortcut(seq);
+    Properties::Instance()->actions[SUB_NEXT]->setData(data);
     connect(Properties::Instance()->actions[SUB_NEXT], SIGNAL(triggered()), consoleTabulator, SLOT(switchNextSubterminal()));
     menu_Actions->addAction(Properties::Instance()->actions[SUB_NEXT]);
     addAction(Properties::Instance()->actions[SUB_NEXT]);
@@ -208,6 +228,7 @@ void MainWindow::setup_ActionsMenu_Actions()
     Properties::Instance()->actions[SUB_PREV] = new QAction(QIcon::fromTheme("go-down"), tr("P&revious Subterminal"), this);
     seq = QKeySequence::fromString( settings.value(SUB_PREV, SUB_PREV_SHORTCUT).toString() );
     Properties::Instance()->actions[SUB_PREV]->setShortcut(seq);
+    Properties::Instance()->actions[SUB_PREV]->setData(data);
     connect(Properties::Instance()->actions[SUB_PREV], SIGNAL(triggered()), consoleTabulator, SLOT(switchPrevSubterminal()));
     menu_Actions->addAction(Properties::Instance()->actions[SUB_PREV]);
     addAction(Properties::Instance()->actions[SUB_PREV]);
@@ -771,4 +792,25 @@ void MainWindow::onCurrentTitleChanged(int index)
     }
     setWindowTitle(title.isEmpty() || !Properties::Instance()->changeWindowTitle ? QStringLiteral("QTerminal") : title);
     setWindowIcon(icon.isNull() || !Properties::Instance()->changeWindowIcon ? QIcon::fromTheme("utilities-terminal") : icon);
+}
+
+bool MainWindow::hasMultipleTabs()
+{
+    return consoleTabulator->findChildren<TermWidgetHolder*>().count() > 1;
+}
+
+bool MainWindow::hasMultipleSubterminals()
+{
+    return consoleTabulator->terminalHolder()->findChildren<TermWidget*>().count() > 1;
+}
+
+void MainWindow::aboutToShowActionsMenu()
+{
+    const QList<QAction*> actions = menu_Actions->actions();
+    for (QAction *action : actions) {
+        if (!action->data().isNull()) {
+            const checkfn check = action->data().value<checkfn>();
+            action->setEnabled(check(*this));
+        }
+    }
 }

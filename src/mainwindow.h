@@ -65,6 +65,9 @@ private:
     void realign();
     void setDropShortcut(QKeySequence dropShortCut);
 
+    bool hasMultipleTabs();
+    bool hasMultipleSubterminals();
+
 private slots:
     void on_consoleTabulator_currentChanged(int);
     void propertiesChanged();
@@ -87,5 +90,7 @@ private slots:
 
     void addNewTab();
     void onCurrentTitleChanged(int index);
+
+    void aboutToShowActionsMenu();
 };
 #endif //MAINWINDOW_H
