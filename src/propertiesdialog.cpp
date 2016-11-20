@@ -37,6 +37,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
             this, SLOT(apply()));
     connect(changeFontButton, SIGNAL(clicked()),
             this, SLOT(changeFontButton_clicked()));
+    connect(chooseBackgroundImageButton, &QPushButton::clicked,
+            this, &PropertiesDialog::chooseBackgroundImageButton_clicked);
 
     QStringList emulations = QTermWidget::availableKeyBindings();
     QStringList colorSchemes = QTermWidget::availableColorSchemes();
@@ -48,6 +50,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     int csix = colorSchemaCombo->findText(Properties::Instance()->colorScheme);
     if (csix != -1)
         colorSchemaCombo->setCurrentIndex(csix);
+
+    backgroundImageLineEdit->setText(Properties::Instance()->backgroundImage);
 
     emulationComboBox->addItems(emulations);
     int eix = emulationComboBox->findText(Properties::Instance()->emulation);
@@ -162,6 +166,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->termTransparency = termTransparencyBox->value();
     Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
+    Properties::Instance()->backgroundImage = backgroundImageLineEdit->text();
 
     Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();
 
@@ -216,6 +221,15 @@ void PropertiesDialog::changeFontButton_clicked()
     QFont f = dia.getFont();
     if (QFontInfo(f).fixedPitch())
         setFontSample(f);
+}
+
+void PropertiesDialog::chooseBackgroundImageButton_clicked()
+{
+    QString filename = QFileDialog::getOpenFileName(
+                            this, tr("Open or create bookmarks file"),
+                            QString(), tr("Images (*.bmp *.png *.xpm *.jpg)"));
+    if (!filename.isNull())
+        backgroundImageLineEdit->setText(filename);
 }
 
 void PropertiesDialog::saveShortcuts()
