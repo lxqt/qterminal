@@ -83,7 +83,7 @@ MainWindow::MainWindow(const QString& work_dir,
     }
 
     consoleTabulator->setAutoFillBackground(true);
-    connect(consoleTabulator, SIGNAL(closeTabNotification()), SLOT(close()));
+    connect(consoleTabulator, SIGNAL(closeTabNotification()), SLOT(maybeClose()));
     consoleTabulator->setWorkDirectory(work_dir);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
@@ -771,4 +771,16 @@ void MainWindow::onCurrentTitleChanged(int index)
     }
     setWindowTitle(title.isEmpty() || !Properties::Instance()->changeWindowTitle ? QStringLiteral("QTerminal") : title);
     setWindowIcon(icon.isNull() || !Properties::Instance()->changeWindowIcon ? QIcon::fromTheme("utilities-terminal") : icon);
+}
+
+void MainWindow::maybeClose()
+{
+    if (m_dropMode)
+    {
+        int index = consoleTabulator->currentIndex();
+        addNewTab();
+        consoleTabulator->removeTab(index);
+    }
+    else
+        close();
 }
