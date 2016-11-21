@@ -20,11 +20,13 @@
 #include <QVBoxLayout>
 #include <QPainter>
 #include <QDesktopServices>
+#include <assert.h>
 
+#include "mainwindow.h"
 #include "termwidget.h"
 #include "config.h"
 #include "properties.h"
-#include "mainwindow.h"
+#include "qterminalapp.h"
 
 static int TermWidgetCount = 0;
 
@@ -125,20 +127,25 @@ void TermWidgetImpl::propertiesChanged()
 
 void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
 {
-    QMenu* contextMenu = new QMenu(this);
+    QMenu menu;
+    QMap<QString, QAction*> actions = findParent<MainWindow>(this)->leaseActions();
 
-    QList<QAction*> actions = filterActions(pos);
-    for (auto& action : actions)
-    {
-        contextMenu->addAction(action);
-    }
-
-    contextMenu->addSeparator();
-
-    const MainWindow *main = qobject_cast<MainWindow*>(window());
-    main->setup_ContextMenu_Actions(contextMenu);
-
-    contextMenu->exec(mapToGlobal(pos));
+    menu.addAction(actions[COPY_SELECTION]);
+    menu.addAction(actions[PASTE_CLIPBOARD]);
+    menu.addAction(actions[PASTE_SELECTION]);
+    menu.addAction(actions[ZOOM_IN]);
+    menu.addAction(actions[ZOOM_OUT]);
+    menu.addAction(actions[ZOOM_RESET]);
+    menu.addSeparator();
+    menu.addAction(actions[CLEAR_TERMINAL]);
+    menu.addAction(actions[SPLIT_HORIZONTAL]);
+    menu.addAction(actions[SPLIT_VERTICAL]);
+#warning TODO/FIXME: disable the action when there is only one terminal
+    menu.addAction(actions[SUB_COLLAPSE]);
+    menu.addSeparator();
+    menu.addAction(actions[TOGGLE_MENU]);
+    menu.addAction(actions[PREFERENCES]);
+    menu.exec(mapToGlobal(pos));
 }
 
 void TermWidgetImpl::zoomIn()

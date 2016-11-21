@@ -29,6 +29,7 @@
 #include "properties.h"
 #include "propertiesdialog.h"
 #include "bookmarkswidget.h"
+#include "qterminalapp.h"
 
 
 typedef std::function<bool(MainWindow&)> checkfn;
@@ -48,7 +49,9 @@ MainWindow::MainWindow(const QString& work_dir,
       m_dropLockButton(0),
       m_dropMode(dropMode)
 {
+    QTerminalApp::Instance()->addWindow(this);
     setAttribute(Qt::WA_TranslucentBackground);
+    setAttribute(Qt::WA_DeleteOnClose);
 
     setupUi(this);
     Properties::Instance()->migrate_settings();
@@ -92,9 +95,9 @@ MainWindow::MainWindow(const QString& work_dir,
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
 
-    setup_FileMenu_Actions();
-    setup_ActionsMenu_Actions();
-    setup_ViewMenu_Actions();
+    // apply props
+    propertiesChanged();
+    
     setupCustomDirs();
 
     connect(consoleTabulator, &TabWidget::currentTitleChanged, this, &MainWindow::onCurrentTitleChanged);
@@ -106,8 +109,23 @@ MainWindow::MainWindow(const QString& work_dir,
     consoleTabulator->addNewTab(command);
 }
 
+void MainWindow::rebuildActions()
+{
+    QMap< QString, QAction * > oldActions(actions);
+
+    setup_FileMenu_Actions();
+    setup_ActionsMenu_Actions();
+    setup_ViewMenu_Actions();
+
+    foreach (QAction *a, oldActions.values())
+    {
+        delete a;
+    }
+}
+
 MainWindow::~MainWindow()
 {
+    QTerminalApp::Instance()->removeWindow(this);
 }
 
 void MainWindow::enableDropMode()
@@ -145,22 +163,22 @@ void MainWindow::setup_Action(const char *name, QAction *action, const char *def
 
     QList<QKeySequence> shortcuts;
 
-    Properties::Instance()->actions[name] = action;
+    actions[name] = action;
     foreach (const QString &sequenceString, settings.value(name, defaultShortcut).toString().split('|'))
         shortcuts.append(QKeySequence::fromString(sequenceString));
-    Properties::Instance()->actions[name]->setShortcuts(shortcuts);
+    actions[name]->setShortcuts(shortcuts);
 
     if (receiver)
     {
-        connect(Properties::Instance()->actions[name], SIGNAL(triggered(bool)), receiver, slot);
-        addAction(Properties::Instance()->actions[name]);
+        connect(actions[name], SIGNAL(triggered(bool)), receiver, slot);
+        addAction(actions[name]);
     }
 
     if (menu)
-        menu->addAction(Properties::Instance()->actions[name]);
+        menu->addAction(actions[name]);
 
     if (!data.isNull())
-        Properties::Instance()->actions[name]->setData(data);
+        actions[name]->setData(data);
 }
 
 void MainWindow::setup_ActionsMenu_Actions()
@@ -261,8 +279,6 @@ void MainWindow::setup_ActionsMenu_Actions()
                  RENAME_SESSION_SHORTCUT, consoleTabulator, SLOT(renameCurrentSession()));
     // this is correct - add action to main window - not to menu
 
-    // apply props
-    propertiesChanged();
 }
 void MainWindow::setup_FileMenu_Actions()
 {
@@ -288,11 +304,11 @@ void MainWindow::setup_FileMenu_Actions()
 
     menu_File->addSeparator();
 
-    setup_Action(PREFERENCES, actProperties, "", this, SLOT(actProperties_triggered()), menu_File);
+    setup_Action(PREFERENCES, new QAction(tr("&Preferences..."), this), "", this, SLOT(actProperties_triggered()), menu_File);
 
     menu_File->addSeparator();
 
-    setup_Action(QUIT, actQuit, "", this, SLOT(close()), menu_File);
+    setup_Action(QUIT, new QAction(QIcon::fromTheme("application-exit"), tr("&Quit"), this), "", this, SLOT(close()), menu_File);
 }
 
 void MainWindow::setup_ViewMenu_Actions()
@@ -304,7 +320,7 @@ void MainWindow::setup_ViewMenu_Actions()
                  NULL, this, SLOT(toggleBorderless()), menu_Window);
     //Properties::Instance()->actions[HIDE_WINDOW_BORDERS]->setObjectName("toggle_Borderless");
 // TODO/FIXME: it's broken somehow. When I call toggleBorderless() here the non-responsive window appear
-//    Properties::Instance()->actions[HIDE_WINDOW_BORDERS]->setChecked(Properties::Instance()->borderless);
+//    actions[HIDE_WINDOW_BORDERS]->setChecked(Properties::Instance()->borderless);
 //    if (Properties::Instance()->borderless)
 //        toggleBorderless();
 
@@ -322,7 +338,7 @@ void MainWindow::setup_ViewMenu_Actions()
     setup_Action(FULLSCREEN, toggleFullscreen,
                  FULLSCREEN_SHORTCUT, this, SLOT(showFullscreen(bool)), menu_Window);
 
-    setup_Action(TOGGLE_BOOKMARKS, m_bookmarksDock->toggleViewAction(),
+    setup_Action(TOGGLE_BOOKMARKS, new QAction(tr("Toggle Bookmarks"), this),
                  TOGGLE_BOOKMARKS_SHORTCUT, NULL, NULL, menu_Window);
 
     menu_Window->addSeparator();
@@ -418,25 +434,6 @@ void MainWindow::setup_ViewMenu_Actions()
     menu_Window->addMenu(keyboardCursorShapeMenu);
 }
 
-void MainWindow::setup_ContextMenu_Actions(QMenu* contextMenu) const
-{
-    contextMenu->addAction(Properties::Instance()->actions[COPY_SELECTION]);
-    contextMenu->addAction(Properties::Instance()->actions[PASTE_CLIPBOARD]);
-    contextMenu->addAction(Properties::Instance()->actions[PASTE_SELECTION]);
-    contextMenu->addAction(Properties::Instance()->actions[ZOOM_IN]);
-    contextMenu->addAction(Properties::Instance()->actions[ZOOM_OUT]);
-    contextMenu->addAction(Properties::Instance()->actions[ZOOM_RESET]);
-    contextMenu->addSeparator();
-    contextMenu->addAction(Properties::Instance()->actions[CLEAR_TERMINAL]);
-    contextMenu->addAction(Properties::Instance()->actions[SPLIT_HORIZONTAL]);
-    contextMenu->addAction(Properties::Instance()->actions[SPLIT_VERTICAL]);
-    #warning TODO/FIXME: disable the action when there is only one terminal
-    contextMenu->addAction(Properties::Instance()->actions[SUB_COLLAPSE]);
-    contextMenu->addSeparator();
-    contextMenu->addAction(Properties::Instance()->actions[TOGGLE_MENU]);
-    contextMenu->addAction(Properties::Instance()->actions[PREFERENCES]);
-}
-
 void MainWindow::setupCustomDirs()
 {
     const QSettings settings;
@@ -451,7 +448,7 @@ void MainWindow::on_consoleTabulator_currentChanged(int)
 void MainWindow::toggleTabBar()
 {
     Properties::Instance()->tabBarless
-            = !Properties::Instance()->actions[SHOW_TAB_BAR]->isChecked();
+            = !actions[SHOW_TAB_BAR]->isChecked();
     consoleTabulator->showHideTabBar();
 }
 
@@ -461,7 +458,7 @@ void MainWindow::toggleBorderless()
     show();
     setWindowState(Qt::WindowActive); /* don't loose focus on the window */
     Properties::Instance()->borderless
-            = Properties::Instance()->actions[HIDE_WINDOW_BORDERS]->isChecked(); realign();
+            = actions[HIDE_WINDOW_BORDERS]->isChecked(); realign();
 }
 
 void MainWindow::toggleMenu()
@@ -477,6 +474,12 @@ void MainWindow::showFullscreen(bool fullscreen)
     else
         setWindowState(windowState() & ~Qt::WindowFullScreen);
 }
+
+void MainWindow::toggleBookmarks()
+{
+    m_bookmarksDock->toggleViewAction()->trigger();
+}
+
 
 void MainWindow::closeEvent(QCloseEvent *ev)
 {
@@ -550,6 +553,8 @@ void MainWindow::actProperties_triggered()
 
 void MainWindow::propertiesChanged()
 {
+    rebuildActions();
+
     QApplication::setStyle(Properties::Instance()->guiStyle);
     setWindowOpacity(1.0 - Properties::Instance()->appTransparency/100.0);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
@@ -560,7 +565,7 @@ void MainWindow::propertiesChanged()
 
     m_bookmarksDock->setVisible(Properties::Instance()->useBookmarks
                                 && Properties::Instance()->bookmarksVisible);
-    m_bookmarksDock->toggleViewAction()->setVisible(Properties::Instance()->useBookmarks);
+    actions[TOGGLE_BOOKMARKS]->setVisible(Properties::Instance()->useBookmarks);
 
     if (Properties::Instance()->useBookmarks)
     {
@@ -569,7 +574,6 @@ void MainWindow::propertiesChanged()
 
     onCurrentTitleChanged(consoleTabulator->currentIndex());
 
-    Properties::Instance()->saveSettings();
     realign();
 }
 
@@ -704,4 +708,9 @@ void MainWindow::aboutToShowActionsMenu()
             action->setEnabled(check(*this));
         }
     }
+}
+
+
+QMap< QString, QAction * >& MainWindow::leaseActions() {
+        return actions;
 }

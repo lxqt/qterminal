@@ -19,11 +19,13 @@
 #include <QApplication>
 #include <QtGlobal>
 
+#include <assert.h>
 #include <stdio.h>
 #include <getopt.h>
 #include <stdlib.h>
 
-#include  "mainwindow.h"
+#include "mainwindow.h"
+#include "qterminalapp.h"
 
 #define out
 
@@ -38,6 +40,8 @@ const struct option long_options[] = {
     {"profile", 1, NULL, 'p'},
     {NULL,      0, NULL,  0}
 };
+
+QTerminalApp * QTerminalApp::m_instance = NULL;
 
 void print_usage_and_exit(int code)
 {
@@ -111,7 +115,7 @@ int main(int argc, char *argv[])
     // Warning: do not change settings format. It can screw bookmarks later.
     QSettings::setDefaultFormat(QSettings::IniFormat);
 
-    QApplication app(argc, argv);
+    QTerminalApp *app = QTerminalApp::Instance(argc, argv);
     QString workdir, shell_command;
     bool dropMode;
     parse_args(argc, argv, workdir, shell_command, dropMode);
@@ -135,9 +139,19 @@ int main(int argc, char *argv[])
     qDebug() << "APPLE_BUNDLE: Loading translator file" << fname << "from dir" << QApplication::applicationDirPath()+"../translations";
     qDebug() << "load success:" << translator.load(fname, QApplication::applicationDirPath()+"../translations", "_");
 #endif
-    app.installTranslator(&translator);
+    app->installTranslator(&translator);
 
-    MainWindow *window;
+    app->newWindow(dropMode, workdir, shell_command);
+
+    int ret = app->exec();
+    delete Properties::Instance();
+
+    return ret;
+}
+
+MainWindow *QTerminalApp::newWindow(bool dropMode, const QString& workdir, const QString& shell_command)
+{
+    MainWindow *window = NULL;
     if (dropMode)
     {
         QWidget *hiddenPreviewParent = new QWidget(0, Qt::Tool);
@@ -150,10 +164,39 @@ int main(int argc, char *argv[])
         window = new MainWindow(workdir, shell_command, dropMode);
         window->show();
     }
+    return window;
+}
 
-    int ret = app.exec();
-    delete Properties::Instance();
-    delete window;
+QTerminalApp *QTerminalApp::Instance()
+{
+    assert(m_instance != NULL);
+    return m_instance;
+}
 
-    return ret;
+QTerminalApp *QTerminalApp::Instance(int &argc, char **argv)
+{
+    assert(m_instance == NULL);
+    m_instance = new QTerminalApp(argc, argv);
+    return m_instance;
+}
+
+QTerminalApp::QTerminalApp(int &argc, char **argv)
+    :QApplication(argc, argv)
+{
+}
+
+
+void QTerminalApp::addWindow(MainWindow *window)
+{
+    m_windowList.append(window);
+}
+
+void QTerminalApp::removeWindow(MainWindow *window)
+{
+    m_windowList.removeOne(window);
+}
+
+QList<MainWindow *> QTerminalApp::getWindowList()
+{
+    return m_windowList;
 }
