@@ -17,10 +17,12 @@
  ***************************************************************************/
 
 #include <qtermwidget.h>
+#include <assert.h>
 
 #include "properties.h"
 #include "config.h"
-
+#include "mainwindow.h"
+#include "qterminalapp.h"
 
 Properties * Properties::m_instance = 0;
 
@@ -45,7 +47,6 @@ Properties::Properties(const QString& filename)
 Properties::~Properties()
 {
     qDebug("Properties destructor called");
-    saveSettings();
     delete m_settings;
     m_instance = 0;
 }
@@ -70,16 +71,6 @@ void Properties::loadSettings()
     highlightCurrentTerminal = m_settings->value("highlightCurrentTerminal", true).toBool();
 
     font = qvariant_cast<QFont>(m_settings->value("font", defaultFont()));
-
-    m_settings->beginGroup("Shortcuts");
-    QStringList keys = m_settings->childKeys();
-    foreach( QString key, keys )
-    {
-        QKeySequence sequence = QKeySequence( m_settings->value( key ).toString() );
-        if( Properties::Instance()->actions.contains( key ) )
-            Properties::Instance()->actions[ key ]->setShortcut( sequence );
-    }
-    m_settings->endGroup();
 
     mainWindowSize = m_settings->value("MainWindow/size").toSize();
     mainWindowPosition = m_settings->value("MainWindow/pos").toPoint();
@@ -152,7 +143,10 @@ void Properties::saveSettings()
     m_settings->setValue("font", font);
 
     m_settings->beginGroup("Shortcuts");
-    QMapIterator< QString, QAction * > it(actions);
+    MainWindow *mainWindow = QTerminalApp::Instance()->getWindowList()[0];
+    assert(mainWindow != NULL);
+
+    QMapIterator< QString, QAction * > it(mainWindow->leaseActions());
     while( it.hasNext() )
     {
         it.next();

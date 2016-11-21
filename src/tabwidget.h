@@ -21,6 +21,8 @@
 
 #include <QTabWidget>
 #include <QMap>
+#include <QAction>
+
 
 #include "properties.h"
 

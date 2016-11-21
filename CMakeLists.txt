@@ -57,6 +57,7 @@ set(QTERM_SRC
 )
 
 set(QTERM_MOC_SRC
+    src/qterminalapp.h
     src/mainwindow.h
     src/tabwidget.h
     src/termwidget.h

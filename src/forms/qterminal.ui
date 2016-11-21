@@ -111,21 +111,6 @@
     <string>About &amp;Qt...</string>
    </property>
   </action>
-  <action name="actProperties">
-   <property name="text">
-    <string>&amp;Preferences...</string>
-   </property>
-  </action>
-  <action name="actQuit">
-   <property name="icon">
-    <iconset theme="application-exit">
-     <normaloff/>
-    </iconset>
-   </property>
-   <property name="text">
-    <string>&amp;Quit</string>
-   </property>
-  </action>
  </widget>
  <customwidgets>
   <customwidget>

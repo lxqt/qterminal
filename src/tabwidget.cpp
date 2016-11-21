@@ -21,10 +21,12 @@
 #include <QMouseEvent>
 #include <QMenu>
 
+#include "mainwindow.h"
 #include "termwidgetholder.h"
 #include "tabwidget.h"
 #include "config.h"
 #include "properties.h"
+#include "qterminalapp.h"
 
 
 #define TAB_INDEX_PROPERTY "tab_index"
@@ -206,10 +208,11 @@ void TabWidget::renameTabsAfterRemove()
 void TabWidget::contextMenuEvent(QContextMenuEvent *event)
 {
     QMenu menu(this);
+    QMap< QString, QAction * > actions = findParent<MainWindow>(this)->leaseActions();
 
     QAction *close = menu.addAction(QIcon::fromTheme("document-close"), tr("Close session"));
-    QAction *rename = menu.addAction(Properties::Instance()->actions[RENAME_SESSION]->text());
-    rename->setShortcut(Properties::Instance()->actions[RENAME_SESSION]->shortcut());
+    QAction *rename = menu.addAction(actions[RENAME_SESSION]->text());
+    rename->setShortcut(actions[RENAME_SESSION]->shortcut());
     rename->blockSignals(true);
 
     int tabIndex = tabBar()->tabAt(event->pos());
