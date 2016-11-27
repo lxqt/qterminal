@@ -248,7 +248,10 @@ void PropertiesDialog::saveShortcuts()
         QKeySequence sequence = QKeySequence(item->text());
         QString sequenceString = sequence.toString();
 
-        keyAction->setShortcut(sequenceString);
+        QList<QKeySequence> shortcuts;
+        foreach (sequenceString, item->text().split('|'))
+            shortcuts.append(QKeySequence(sequenceString));
+        keyAction->setShortcuts(shortcuts);
     }
 }
 
@@ -263,9 +266,13 @@ void PropertiesDialog::setupShortcuts()
     {
         QString keyValue = shortcutKeys.at(x);
         QAction *keyAction = Properties::Instance()->actions[keyValue];
+        QStringList sequenceStrings;
+
+        foreach (QKeySequence shortcut, keyAction->shortcuts())
+            sequenceStrings.append(shortcut.toString());
 
         QTableWidgetItem *itemName = new QTableWidgetItem( tr(keyValue.toStdString().c_str()) );
-        QTableWidgetItem *itemShortcut = new QTableWidgetItem( keyAction->shortcut().toString() );
+        QTableWidgetItem *itemShortcut = new QTableWidgetItem( sequenceStrings.join('|') );
 
         itemName->setFlags( Qt::ItemIsSelectable | Qt::ItemIsEnabled );
 

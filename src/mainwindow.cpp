@@ -143,11 +143,12 @@ void MainWindow::setup_Action(const char *name, QAction *action, const char *def
     QSettings settings;
     settings.beginGroup("Shortcuts");
 
-    QKeySequence seq;
+    QList<QKeySequence> shortcuts;
 
     Properties::Instance()->actions[name] = action;
-    seq = QKeySequence::fromString(settings.value(name, defaultShortcut).toString());
-    Properties::Instance()->actions[name]->setShortcut(seq);
+    foreach (const QString &sequenceString, settings.value(name, defaultShortcut).toString().split('|'))
+        shortcuts.append(QKeySequence::fromString(sequenceString));
+    Properties::Instance()->actions[name]->setShortcuts(shortcuts);
 
     if (receiver)
     {

@@ -155,8 +155,10 @@ void Properties::saveSettings()
     while( it.hasNext() )
     {
         it.next();
-        QKeySequence shortcut = it.value()->shortcut();
-        m_settings->setValue( it.key(), shortcut.toString() );
+        QStringList sequenceStrings;
+        foreach (QKeySequence shortcut, it.value()->shortcuts())
+            sequenceStrings.append(shortcut.toString());
+        m_settings->setValue(it.key(), sequenceStrings.join('|'));
     }
     m_settings->endGroup();
 
