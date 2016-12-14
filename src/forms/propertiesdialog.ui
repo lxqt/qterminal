@@ -518,6 +518,9 @@
          <attribute name="horizontalHeaderDefaultSectionSize">
           <number>105</number>
          </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
          <attribute name="verticalHeaderVisible">
           <bool>false</bool>
          </attribute>

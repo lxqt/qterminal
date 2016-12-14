@@ -51,6 +51,8 @@ private:
 
     QDockWidget *m_bookmarksDock;
 
+    void setup_Action(const char *name, QAction *action, const char *defaultShortcut, const QObject *receiver,
+                      const char *slot, QMenu *menu = NULL, const QVariant &data = QVariant());
     void setup_FileMenu_Actions();
     void setup_ActionsMenu_Actions();
     void setup_ViewMenu_Actions();

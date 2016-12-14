@@ -69,8 +69,8 @@
 
 // ACTIONS
 #define CLEAR_TERMINAL_SHORTCUT        "Ctrl+Shift+X"
-#define TAB_PREV_SHORTCUT	       "Shift+Left"
-#define TAB_NEXT_SHORTCUT	       "Shift+Right"
+#define TAB_PREV_SHORTCUT	       "Shift+Left|Ctrl+PgUp|Ctrl+Shift+Tab"
+#define TAB_NEXT_SHORTCUT	       "Shift+Right|Ctrl+PgDown|Ctrl+Tab"
 #define SUB_PREV_SHORTCUT	       "Shift+Down"
 #define SUB_NEXT_SHORTCUT	       "Shift+Up"
 
@@ -100,8 +100,8 @@
 #define ZOOM_OUT_SHORTCUT              "Ctrl+-"
 #define ZOOM_RESET_SHORTCUT              "Ctrl+0"
 
-#define MOVE_LEFT_SHORTCUT             "Shift+Alt+Left"
-#define MOVE_RIGHT_SHORTCUT            "Shift+Alt+Right"
+#define MOVE_LEFT_SHORTCUT             "Shift+Alt+Left|Ctrl+Shift+PgUp"
+#define MOVE_RIGHT_SHORTCUT            "Shift+Alt+Right|Ctrl+Shift+PgDown"
 
 #define RENAME_SESSION_SHORTCUT        "Shift+Alt+S"
 
