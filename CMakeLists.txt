@@ -4,8 +4,8 @@ project(qterminal)
 
 include(GNUInstallDirs)
 
-set(STR_VERSION "0.7.0")
-set(LXQTBT_MINIMUM_VERSION "0.1.0")
+set(STR_VERSION "0.7.1")
+set(LXQTBT_MINIMUM_VERSION "0.3.0")
 
 
 # additional cmake files
