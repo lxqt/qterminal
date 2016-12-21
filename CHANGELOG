@@ -1,7 +1,25 @@
 
-qterminal-0.7.0 / 2016-09-24
+qterminal-0.7.1 / 2016-12-21
 ============================
 
+  * Bump patch version (#294)
+  * Add common shortcuts for switching tabs (#275)
+  * Fix tabstop order in properties dialog & add buddy relations for labels. (#290)
+  * Add preferences for background images (#273)
+  * Disable menu actions that are not applicable currently (#244)
+  * DEFINES += STR_VERSION=\\\"0.7.0\\\"
+  * Add context menu actions for URLs and E-Mail addresses (#276)
+  * Removed minimum size (#265)
+  * Set maxval of dropdown spinboxen to 100, instead of 99
+  * Use the new lxqt-build-tools package
+  * Fix context menu actions being applied to the window opened last (#235)
+  * Show exit confirmation dialog when closing the last window tab (#242)
+  * remove "building with cpack" from CMakeLists.txt - not used anymore Added very basic .gitattributes
+
+0.7.0 / 2016-09-24
+==================
+
+  * Release 0.7.0: Add changelog
   * Bump version to 0.7.0 (#262)
   * Update README.md
   * Collapse splitter hierarchies containing a single terminal (#254)
