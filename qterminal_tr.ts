@@ -123,12 +123,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
         <source>Zoom in</source>
-        <translation type="unfinished">Büyüt</translation>
+        <translation>Büyüt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <source>Zoom out</source>
-        <translation type="unfinished">Küçült</translation>
+        <translation>Küçült</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="254"/>
