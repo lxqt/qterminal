@@ -226,7 +226,7 @@ void PropertiesDialog::changeFontButton_clicked()
 void PropertiesDialog::chooseBackgroundImageButton_clicked()
 {
     QString filename = QFileDialog::getOpenFileName(
-                            this, tr("Open or create bookmarks file"),
+                            this, tr("Choose a background image"),
                             QString(), tr("Images (*.bmp *.png *.xpm *.jpg)"));
     if (!filename.isNull())
         backgroundImageLineEdit->setText(filename);
