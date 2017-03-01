@@ -40,8 +40,6 @@ find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 include(LXQtTranslateTs)
 message(STATUS "Qt version: ${Qt5Core_VERSION_STRING}")
 
-include(${QTERMWIDGET_USE_FILE})
-
 # TODO remove Qxt
 message(STATUS "Using bundled Qxt...")
 set(QXT_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/src/third-party")
@@ -126,7 +124,6 @@ include_directories(
     "${CMAKE_SOURCE_DIR}"
     "${CMAKE_SOURCE_DIR}/src"
     "${CMAKE_BINARY_DIR}"
-    ${QTERMWIDGET_INCLUDE_DIRS}
     ${QXT_INCLUDE_DIRS}
 )
 if(X11_FOUND)
@@ -170,8 +167,8 @@ add_executable(${EXE_NAME} ${GUI_TYPE}
     ${QTERM_QM}
 )
 target_link_libraries(${EXE_NAME}
-    ${QTERMWIDGET_QT_LIBRARIES}
-    ${QTERMWIDGET_LIBRARIES}
+    Qt5::Gui
+    qtermwidget5
     util
 )
 if(QXT_FOUND)
