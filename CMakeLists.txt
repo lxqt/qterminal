@@ -7,11 +7,6 @@ include(GNUInstallDirs)
 set(STR_VERSION "0.7.1")
 set(LXQTBT_MINIMUM_VERSION "0.3.0")
 
-
-# additional cmake files
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
-set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/modules")
-
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
