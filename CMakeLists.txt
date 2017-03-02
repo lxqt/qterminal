@@ -39,8 +39,6 @@ elseif(UNIX)
 endif()
 
 add_definitions(-DSTR_VERSION=\"${STR_VERSION}\")
-add_definitions(${Qt5X11Extras_DEFINITIONS})
-
 
 set(EXE_NAME qterminal)
 
