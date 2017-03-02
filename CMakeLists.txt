@@ -7,6 +7,8 @@ include(GNUInstallDirs)
 set(STR_VERSION "0.7.1")
 set(LXQTBT_MINIMUM_VERSION "0.3.0")
 
+option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
+
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
@@ -92,6 +94,12 @@ qt5_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
 qt5_wrap_cpp( QTERM_MOC ${QTERM_MOC_SRC} )
 qt5_add_resources( QTERM_RCC ${QTERM_RCC_SRC} )
 lxqt_translate_ts(QTERM_QM
+    UPDATE_TRANSLATIONS
+        ${UPDATE_TRANSLATIONS}
+    SOURCES
+        ${QTERM_SRC}
+        ${QTERM_UI_SRC}
+        ${QTERM_MOC_SRC}
     TRANSLATION_DIR "src/translations"
     PULL_TRANSLATIONS
         ${PULL_TRANSLATIONS}
@@ -206,12 +214,3 @@ else()
 
     install(FILES ${QTERM_QM} DESTINATION ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/translations)
 endif()
-
-
-# make lupdate
-# it generates new translation files
-add_custom_target(lupdate
-    ${QT_QMAKE_EXECUTABLE} -project -o "${CMAKE_CURRENT_BINARY_DIR}/qterminal.pro"
-    COMMAND ${QT_LUPDATE_EXECUTABLE} "${CMAKE_CURRENT_BINARY_DIR}/qterminal.pro"
-    WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
-)
