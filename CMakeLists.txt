@@ -112,9 +112,9 @@ lxqt_translate_ts(QTERM_QM
 )
 
 include_directories(
-    "${CMAKE_SOURCE_DIR}"
-    "${CMAKE_SOURCE_DIR}/src"
-    "${CMAKE_BINARY_DIR}"
+    "${PROJECT_SOURCE_DIR}"
+    "${PROJECT_SOURCE_DIR}/src"
+    "${PROJECT_BINARY_DIR}"
     ${QXT_INCLUDE_DIRS}
 )
 if(X11_FOUND)
