@@ -17,6 +17,7 @@ public:
     void removeWindow(MainWindow *window);
 	static QTerminalApp *Instance(int &argc, char **argv);
 	static QTerminalApp *Instance();
+    static void cleanup();
 
 private:
 	QList<MainWindow *> m_windowList;
