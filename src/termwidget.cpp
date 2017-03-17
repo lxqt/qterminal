@@ -130,6 +130,17 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
     QMenu menu;
     QMap<QString, QAction*> actions = findParent<MainWindow>(this)->leaseActions();
 
+    QList<QAction*> extraActions = filterActions(pos);
+    for (auto& action : extraActions)
+    {
+        menu.addAction(action);
+    }
+
+    if (!actions.isEmpty())
+    {
+        menu.addSeparator();
+    }
+
     menu.addAction(actions[COPY_SELECTION]);
     menu.addAction(actions[PASTE_CLIPBOARD]);
     menu.addAction(actions[PASTE_SELECTION]);
