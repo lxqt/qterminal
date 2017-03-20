@@ -195,6 +195,8 @@ void MainWindow::setup_ActionsMenu_Actions()
     const checkfn checkTabs = &MainWindow::hasMultipleTabs;
     const checkfn checkSubterminals = &MainWindow::hasMultipleSubterminals;
 
+    menu_Actions->clear();
+
     setup_Action(CLEAR_TERMINAL, new QAction(QIcon::fromTheme("edit-clear"), tr("&Clear Current Tab"), this),
                  CLEAR_TERMINAL_SHORTCUT, consoleTabulator, SLOT(clearActiveTerminal()), menu_Actions);
 
@@ -289,6 +291,7 @@ void MainWindow::setup_ActionsMenu_Actions()
 }
 void MainWindow::setup_FileMenu_Actions()
 {
+    menu_File->clear();
     setup_Action(ADD_TAB, new QAction(QIcon::fromTheme("list-add"), tr("&New Tab"), this),
                  ADD_TAB_SHORTCUT, this, SLOT(addNewTab()), menu_File);
 
@@ -320,6 +323,7 @@ void MainWindow::setup_FileMenu_Actions()
 
 void MainWindow::setup_ViewMenu_Actions()
 {
+    menu_Window->clear();
     QAction *hideBordersAction = new QAction(tr("&Hide Window Borders"), this);
     hideBordersAction->setCheckable(true);
     hideBordersAction->setVisible(!m_dropMode);
