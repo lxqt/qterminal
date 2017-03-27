@@ -58,7 +58,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="156"/>
         <source>Next Tab</source>
-        <translation>Scheda prossima</translation>
+        <translation>Prossima scheda</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="163"/>
@@ -168,12 +168,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
         <source>2 Horizontal Terminals</source>
-        <translation>2 terminali per orizzontale</translation>
+        <translation>2 terminali orizzontali</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
         <source>2 Vertical Terminals</source>
-        <translation>2 terminali per verticale</translation>
+        <translation>2 terminali verticali</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="326"/>
@@ -250,12 +250,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="540"/>
         <source>Do not ask again</source>
-        <translation>Non chiedermelo più</translation>
+        <translation>Non chiedermelo di nuovo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="548"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Si è sicuro di voler uscire?</translation>
+        <translation>Sei sicuro di voler uscire?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="572"/>
@@ -413,12 +413,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="213"/>
         <source>2 terminals horizontally</source>
-        <translation>2 terminali  per orizzontale</translation>
+        <translation>2 terminali orizzontalmente</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="218"/>
         <source>2 terminals vertically</source>
-        <translation>2 terminali per verticale</translation>
+        <translation>2 terminali verticalmente</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="223"/>
@@ -514,7 +514,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="503"/>
         <source>Width</source>
-        <translation>Larhghezza</translation>
+        <translation>Larghezza</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="524"/>
@@ -544,7 +544,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Si può specificare una località personalizzata per i file di segnalibri. Permette una condivisione facile usando servizi tipo OwnCloud o Dropbox.</translation>
+        <translation>Si può specificare la posizione personalizzata per i segnalibri. Permette una condivisione facile usando servizi come OwnCloud o Dropbox.</translation>
     </message>
 </context>
 <context>
