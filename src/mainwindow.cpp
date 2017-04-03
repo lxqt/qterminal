@@ -117,7 +117,7 @@ void MainWindow::rebuildActions()
     setup_ActionsMenu_Actions();
     setup_ViewMenu_Actions();
 
-    foreach (QAction *a, oldActions.values())
+    for (const auto *a : const_cast<const QMap<QString, QAction*>&> (oldActions))
     {
         delete a;
     }
