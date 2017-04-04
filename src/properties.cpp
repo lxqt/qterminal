@@ -151,7 +151,7 @@ void Properties::saveSettings()
     {
         it.next();
         QStringList sequenceStrings;
-        foreach (QKeySequence shortcut, it.value()->shortcuts())
+        foreach (const QKeySequence &shortcut, it.value()->shortcuts())
             sequenceStrings.append(shortcut.toString());
         m_settings->setValue(it.key(), sequenceStrings.join('|'));
     }

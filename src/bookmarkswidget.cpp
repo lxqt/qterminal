@@ -140,7 +140,7 @@ public:
 
         // system env - include dirs in the tree
         QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
-        foreach (QString i, env.keys())
+        foreach (const QString &i, env.keys())
         {
             path = env.value(i);
             if (!d.exists(path) || !QFileInfo(path).isDir())
