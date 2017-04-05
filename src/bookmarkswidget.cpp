@@ -217,7 +217,7 @@ public:
                 break;
             }
             case QXmlStreamReader::Invalid:
-                qDebug() << "XML error: " << xml.errorString().data()
+                qDebug() << "XML error: " << xml.errorString().constData()
                          << xml.lineNumber() << xml.columnNumber();
                 m_map.clear();
                 return;
