@@ -44,8 +44,8 @@ MainWindow::MainWindow(const QString& work_dir,
                        QWidget * parent,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
-      m_initShell(command),
       m_initWorkDir(work_dir),
+      m_initShell(command),
       m_dropLockButton(0),
       m_dropMode(dropMode)
 {
