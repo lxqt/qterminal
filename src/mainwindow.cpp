@@ -44,8 +44,8 @@ MainWindow::MainWindow(const QString& work_dir,
                        QWidget * parent,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
-      m_initShell(command),
       m_initWorkDir(work_dir),
+      m_initShell(command),
       m_dropLockButton(0),
       m_dropMode(dropMode)
 {
@@ -117,7 +117,7 @@ void MainWindow::rebuildActions()
     setup_ActionsMenu_Actions();
     setup_ViewMenu_Actions();
 
-    foreach (QAction *a, oldActions.values())
+    for (const auto *a : const_cast<const QMap<QString, QAction*>&> (oldActions))
     {
         delete a;
     }

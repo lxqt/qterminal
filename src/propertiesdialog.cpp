@@ -272,7 +272,7 @@ void PropertiesDialog::setupShortcuts()
         QAction *keyAction = actions[keyValue];
         QStringList sequenceStrings;
 
-        foreach (QKeySequence shortcut, keyAction->shortcuts())
+        foreach (const QKeySequence &shortcut, keyAction->shortcuts())
             sequenceStrings.append(shortcut.toString());
 
         QTableWidgetItem *itemName = new QTableWidgetItem( tr(keyValue.toStdString().c_str()) );
