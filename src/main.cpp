@@ -145,6 +145,7 @@ int main(int argc, char *argv[])
 
     int ret = app->exec();
     delete Properties::Instance();
+    app->cleanup();
 
     return ret;
 }
@@ -183,6 +184,11 @@ QTerminalApp *QTerminalApp::Instance(int &argc, char **argv)
 QTerminalApp::QTerminalApp(int &argc, char **argv)
     :QApplication(argc, argv)
 {
+}
+
+void QTerminalApp::cleanup() {
+    delete m_instance;
+    m_instance = NULL;
 }
 
 
