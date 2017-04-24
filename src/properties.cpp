@@ -133,6 +133,9 @@ void Properties::loadSettings()
 
     changeWindowTitle = m_settings->value("ChangeWindowTitle", true).toBool();
     changeWindowIcon = m_settings->value("ChangeWindowIcon", true).toBool();
+
+    confirmMultilinePaste = m_settings->value("ConfirmMultilinePaste", false).toBool();
+    trimPastedTrailingNewlines = m_settings->value("TrimPastedTrailingNewlines", false).toBool();
 }
 
 void Properties::saveSettings()
@@ -213,6 +216,10 @@ void Properties::saveSettings()
 
     m_settings->setValue("ChangeWindowTitle", changeWindowTitle);
     m_settings->setValue("ChangeWindowIcon", changeWindowIcon);
+
+
+    m_settings->setValue("ConfirmMultilinePaste", confirmMultilinePaste);
+    m_settings->setValue("TrimPastedTrailingNewlines", trimPastedTrailingNewlines);
 }
 
 void Properties::migrate_settings()

@@ -20,6 +20,9 @@
 #include <QVBoxLayout>
 #include <QPainter>
 #include <QDesktopServices>
+#include <QMessageBox>
+#include <QAbstractButton>
+#include <QMouseEvent>
 #include <assert.h>
 
 #include "mainwindow.h"
@@ -178,6 +181,83 @@ void TermWidgetImpl::activateUrl(const QUrl & url, bool fromContextMenu) {
     }
 }
 
+void TermWidgetImpl::pasteSelection()
+{
+    paste(QClipboard::Selection);
+}
+
+void TermWidgetImpl::pasteClipboard()
+{
+    paste(QClipboard::Clipboard);
+}
+
+void TermWidgetImpl::paste(QClipboard::Mode mode)
+{
+    // Paste Clipboard by simulating keypress events
+    QString text = QApplication::clipboard()->text(mode);
+    if ( ! text.isEmpty() )
+    {
+        text.replace("\r\n", "\n");
+        text.replace('\n', '\r');
+        QString trimmedTrailingNl(text);
+        trimmedTrailingNl.replace(QRegExp("\\r+$"), "");
+        bool isMultiline = trimmedTrailingNl.contains('\r');
+        if (!isMultiline && Properties::Instance()->trimPastedTrailingNewlines)
+        {
+            text = trimmedTrailingNl;
+        }
+        if (Properties::Instance()->confirmMultilinePaste)
+        {
+            if (text.contains('\r') && Properties::Instance()->confirmMultilinePaste)
+            {
+                QMessageBox confirmation(this);
+                confirmation.setWindowTitle(tr("Paste multiline text"));
+                confirmation.setText(tr("Are you sure you want to paste this text?"));
+                confirmation.setDetailedText(text);
+                confirmation.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
+                // Click "Show details..." to show those by default
+                foreach( QAbstractButton * btn, confirmation.buttons() )
+                {
+                    if (confirmation.buttonRole(btn) == QMessageBox::ActionRole && btn->text() == QMessageBox::tr("Show Details..."))
+                    {
+                        btn->clicked();
+                        break;
+                    }
+                }
+                confirmation.setDefaultButton(QMessageBox::Yes);
+                confirmation.exec();
+                if (confirmation.standardButton(confirmation.clickedButton()) != QMessageBox::Yes)
+                {
+                    return;
+                }
+            }
+        }
+        
+        /* TODO: Support bracketedPasteMode
+        if (bracketedPasteMode())
+        {
+            text.prepend("\e[200~");
+            text.append("\e[201~");
+        }*/
+        sendText(text);
+    }
+}
+
+bool TermWidget::eventFilter(QObject * obj, QEvent * ev)
+{
+    if (ev->type() == QEvent::MouseButtonPress)
+    {
+        QMouseEvent *mev = (QMouseEvent *)ev;
+        if ( mev->button() == Qt::MidButton )
+        {
+            impl()->pasteSelection();
+            return true;
+        }
+    }
+    return false;
+}
+
+
 TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * parent)
     : QWidget(parent)
 {
@@ -189,6 +269,14 @@ TermWidget::TermWidget(const QString & wdir, const QString & shell, QWidget * pa
     setLayout(m_layout);
 
     m_layout->addWidget(m_term);
+    foreach (QObject *o, m_term->children())
+    {
+        // Find TerminalDisplay
+        if (!o->isWidgetType() || qobject_cast<QWidget*>(o)->isHidden())
+            continue;
+        o->installEventFilter(this);
+    }
+    
 
     propertiesChanged();
 

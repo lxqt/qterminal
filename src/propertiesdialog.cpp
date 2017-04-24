@@ -137,6 +137,10 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     changeWindowTitleCheckBox->setChecked(Properties::Instance()->changeWindowTitle);
     changeWindowIconCheckBox->setChecked(Properties::Instance()->changeWindowIcon);
+
+    trimPastedTrailingNewlinesCheckBox->setChecked(Properties::Instance()->trimPastedTrailingNewlines);
+    confirmMultilinePasteCheckBox->setChecked(Properties::Instance()->confirmMultilinePaste);
+
 }
 
 
@@ -203,6 +207,9 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->changeWindowTitle = changeWindowTitleCheckBox->isChecked();
     Properties::Instance()->changeWindowIcon = changeWindowIconCheckBox->isChecked();
+
+    Properties::Instance()->trimPastedTrailingNewlines = trimPastedTrailingNewlinesCheckBox->isChecked();
+    Properties::Instance()->confirmMultilinePaste = confirmMultilinePasteCheckBox->isChecked();
 
     emit propertiesChanged();
 }
