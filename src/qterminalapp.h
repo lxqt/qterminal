@@ -31,6 +31,8 @@ public:
     QDBusObjectPath getActiveWindow();
     #endif
 
+    static void cleanup();
+
 private:
     QString m_workDir;
     QList<MainWindow *> m_windowList;

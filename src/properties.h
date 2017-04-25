@@ -94,6 +94,9 @@ class Properties
         bool changeWindowTitle;
         bool changeWindowIcon;
 
+        bool confirmMultilinePaste;
+        bool trimPastedTrailingNewlines;
+
 
     private:
 

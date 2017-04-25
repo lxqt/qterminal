@@ -135,6 +135,19 @@ int main(int argc, char *argv[])
         workdir = QDir::currentPath();
     app->setWorkingDirectory(workdir);
 
+    const QSettings settings;
+    const QFileInfo customStyle = QFileInfo(
+        QFileInfo(settings.fileName()).canonicalPath() +
+        "/style.qss"
+    );
+    if (customStyle.isFile() && customStyle.isReadable())
+    {
+        QFile style(customStyle.canonicalFilePath());
+        style.open(QFile::ReadOnly);
+        QString styleString = QLatin1String(style.readAll());
+        app->setStyleSheet(styleString);
+    }
+
     // icons
     /* setup our custom icon theme if there is no system theme (OS X, Windows) */
     if (QIcon::themeName().isEmpty())
@@ -158,6 +171,7 @@ int main(int argc, char *argv[])
 
     int ret = app->exec();
     delete Properties::Instance();
+    app->cleanup();
 
     return ret;
 }
@@ -206,6 +220,11 @@ QString &QTerminalApp::getWorkingDirectory()
 void QTerminalApp::setWorkingDirectory(const QString &wd)
 {
     m_workDir = wd;
+}
+
+void QTerminalApp::cleanup() {
+    delete m_instance;
+    m_instance = NULL;
 }
 
 

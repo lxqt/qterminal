@@ -137,6 +137,10 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     changeWindowTitleCheckBox->setChecked(Properties::Instance()->changeWindowTitle);
     changeWindowIconCheckBox->setChecked(Properties::Instance()->changeWindowIcon);
+
+    trimPastedTrailingNewlinesCheckBox->setChecked(Properties::Instance()->trimPastedTrailingNewlines);
+    confirmMultilinePasteCheckBox->setChecked(Properties::Instance()->confirmMultilinePaste);
+
 }
 
 
@@ -203,6 +207,9 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->changeWindowTitle = changeWindowTitleCheckBox->isChecked();
     Properties::Instance()->changeWindowIcon = changeWindowIconCheckBox->isChecked();
+
+    Properties::Instance()->trimPastedTrailingNewlines = trimPastedTrailingNewlinesCheckBox->isChecked();
+    Properties::Instance()->confirmMultilinePaste = confirmMultilinePasteCheckBox->isChecked();
 
     emit propertiesChanged();
 }
@@ -272,7 +279,7 @@ void PropertiesDialog::setupShortcuts()
         QAction *keyAction = actions[keyValue];
         QStringList sequenceStrings;
 
-        foreach (QKeySequence shortcut, keyAction->shortcuts())
+        foreach (const QKeySequence &shortcut, keyAction->shortcuts())
             sequenceStrings.append(shortcut.toString());
 
         QTableWidgetItem *itemName = new QTableWidgetItem( tr(keyValue.toStdString().c_str()) );
