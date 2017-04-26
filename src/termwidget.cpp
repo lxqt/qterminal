@@ -156,7 +156,7 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
     menu.addAction(actions[CLEAR_TERMINAL]);
     menu.addAction(actions[SPLIT_HORIZONTAL]);
     menu.addAction(actions[SPLIT_VERTICAL]);
-#warning TODO/FIXME: disable the action when there is only one terminal
+    // warning TODO/FIXME: disable the action when there is only one terminal
     menu.addAction(actions[SUB_COLLAPSE]);
     menu.addSeparator();
     menu.addAction(actions[TOGGLE_MENU]);
@@ -245,7 +245,7 @@ void TermWidgetImpl::paste(QClipboard::Mode mode)
                 }
             }
         }
-        
+
         /* TODO: Support bracketedPasteMode
         if (bracketedPasteMode())
         {
@@ -271,7 +271,7 @@ bool TermWidget::eventFilter(QObject * obj, QEvent * ev)
 }
 
 TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
-    : QWidget(parent), 
+    : QWidget(parent),
       DBusAddressable("/terminals")
 {
 
@@ -293,7 +293,7 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
             continue;
         o->installEventFilter(this);
     }
-    
+
 
     propertiesChanged();
 
@@ -374,6 +374,3 @@ void TermWidget::sendText(const QString text)
 }
 
 #endif
-
-
-
