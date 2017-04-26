@@ -23,9 +23,16 @@
 #include <stdio.h>
 #include <getopt.h>
 #include <stdlib.h>
+#ifdef HAVE_QDBUS
+    #include <QtDBus/QtDBus>
+    #include <unistd.h>
+    #include "processadaptor.h"
+#endif
+
 
 #include "mainwindow.h"
 #include "qterminalapp.h"
+#include "terminalconfig.h"
 
 #define out
 
@@ -116,12 +123,17 @@ int main(int argc, char *argv[])
     QSettings::setDefaultFormat(QSettings::IniFormat);
 
     QTerminalApp *app = QTerminalApp::Instance(argc, argv);
+    #ifdef HAVE_QDBUS
+        app->registerOnDbus();
+    #endif
+
     QString workdir, shell_command;
     bool dropMode;
     parse_args(argc, argv, workdir, shell_command, dropMode);
 
     if (workdir.isEmpty())
         workdir = QDir::currentPath();
+    app->setWorkingDirectory(workdir);
 
     const QSettings settings;
     const QFileInfo customStyle = QFileInfo(
@@ -154,7 +166,8 @@ int main(int argc, char *argv[])
 #endif
     app->installTranslator(&translator);
 
-    app->newWindow(dropMode, workdir, shell_command);
+    TerminalConfig initConfig = TerminalConfig(workdir, shell_command);
+    app->newWindow(dropMode, initConfig);
 
     int ret = app->exec();
     delete Properties::Instance();
@@ -163,19 +176,19 @@ int main(int argc, char *argv[])
     return ret;
 }
 
-MainWindow *QTerminalApp::newWindow(bool dropMode, const QString& workdir, const QString& shell_command)
+MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
 {
     MainWindow *window = NULL;
     if (dropMode)
     {
         QWidget *hiddenPreviewParent = new QWidget(0, Qt::Tool);
-        window = new MainWindow(workdir, shell_command, dropMode, hiddenPreviewParent);
+        window = new MainWindow(cfg, dropMode, hiddenPreviewParent);
         if (Properties::Instance()->dropShowOnStart)
             window->show();
     }
     else
     {
-        window = new MainWindow(workdir, shell_command, dropMode);
+        window = new MainWindow(cfg, dropMode);
         window->show();
     }
     return window;
@@ -199,6 +212,16 @@ QTerminalApp::QTerminalApp(int &argc, char **argv)
 {
 }
 
+QString &QTerminalApp::getWorkingDirectory()
+{
+    return m_workDir;
+}
+
+void QTerminalApp::setWorkingDirectory(const QString &wd)
+{
+    m_workDir = wd;
+}
+
 void QTerminalApp::cleanup() {
     delete m_instance;
     m_instance = NULL;
@@ -219,3 +242,52 @@ QList<MainWindow *> QTerminalApp::getWindowList()
 {
     return m_windowList;
 }
+
+#ifdef HAVE_QDBUS
+void QTerminalApp::registerOnDbus()
+{
+    if (!QDBusConnection::sessionBus().isConnected())
+    {
+        fprintf(stderr, "Cannot connect to the D-Bus session bus.\n"
+                "To start it, run:\n"
+                "\teval `dbus-launch --auto-syntax`\n");
+        return;
+    }
+    QString serviceName = QStringLiteral("org.lxqt.QTerminal-%1").arg(getpid());
+    if (!QDBusConnection::sessionBus().registerService(serviceName))
+    {
+        fprintf(stderr, "%s\n", qPrintable(QDBusConnection::sessionBus().lastError().message()));
+        return;
+    }
+    new ProcessAdaptor(this);
+    QDBusConnection::sessionBus().registerObject("/", this);
+}
+
+QList<QDBusObjectPath> QTerminalApp::getWindows()
+{
+    QList<QDBusObjectPath> windows;
+    foreach (MainWindow *wnd, m_windowList)
+    {
+        windows.push_back(wnd->getDbusPath());
+    }
+    return windows;
+}
+
+QDBusObjectPath QTerminalApp::newWindow(const QHash<QString,QVariant> &termArgs)
+{
+    TerminalConfig cfg = TerminalConfig::fromDbus(termArgs);
+    MainWindow *wnd = newWindow(false, cfg);
+    assert(wnd != NULL);
+    return wnd->getDbusPath();
+}
+
+QDBusObjectPath QTerminalApp::getActiveWindow()
+{
+    QWidget *aw = activeWindow();
+    if (aw == NULL)
+        return QDBusObjectPath("/");
+    return qobject_cast<MainWindow*>(aw)->getDbusPath();
+}
+
+#endif
+

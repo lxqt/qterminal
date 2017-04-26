@@ -61,26 +61,17 @@ TermWidgetHolder * TabWidget::terminalHolder()
     return reinterpret_cast<TermWidgetHolder*>(widget(currentIndex()));
 }
 
-void TabWidget::setWorkDirectory(const QString& dir)
-{
-    this->work_dir = dir;
-}
 
-int TabWidget::addNewTab(const QString & shell_program)
+int TabWidget::addNewTab(TerminalConfig config)
 {
     tabNumerator++;
     QString label = QString(tr("Shell No. %1")).arg(tabNumerator);
 
     TermWidgetHolder *ch = terminalHolder();
-    QString cwd(work_dir);
-    if (Properties::Instance()->useCWD && ch)
-    {
-        cwd = ch->currentTerminal()->impl()->workingDirectory();
-        if (cwd.isEmpty())
-            cwd = work_dir;
-    }
+    if (ch)
+        config.provideCurrentDirectory(ch->currentTerminal()->impl()->workingDirectory());
 
-    TermWidgetHolder *console = new TermWidgetHolder(cwd, shell_program, this);
+    TermWidgetHolder *console = new TermWidgetHolder(config, this);
     console->setWindowTitle(label);
     connect(console, SIGNAL(finished()), SLOT(removeFinished()));
     connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));
@@ -233,7 +224,10 @@ bool TabWidget::eventFilter(QObject *obj, QEvent *event)
         // clicks on free space - open new tab
         int index = tabBar()->tabAt(e->pos());
         if (index == -1)
-            addNewTab();
+        {
+            TerminalConfig defaultConfig;
+            addNewTab(defaultConfig);
+        }
         else
             renameSession(index);
         return true;
@@ -429,7 +423,8 @@ void TabWidget::loadSession()
 
 void TabWidget::preset2Horizontal()
 {
-    int ix = TabWidget::addNewTab();
+    TerminalConfig defaultConfig;
+    int ix = TabWidget::addNewTab(defaultConfig);
     TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
     term->splitHorizontal(term->currentTerminal());
     // switch to the 1st terminal
@@ -438,7 +433,8 @@ void TabWidget::preset2Horizontal()
 
 void TabWidget::preset2Vertical()
 {
-    int ix = TabWidget::addNewTab();
+    TerminalConfig defaultConfig;
+    int ix = TabWidget::addNewTab(defaultConfig);
     TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
     term->splitVertical(term->currentTerminal());
     // switch to the 1st terminal
@@ -447,7 +443,8 @@ void TabWidget::preset2Vertical()
 
 void TabWidget::preset4Terminals()
 {
-    int ix = TabWidget::addNewTab();
+    TerminalConfig defaultConfig;
+    int ix = TabWidget::addNewTab(defaultConfig);
     TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
     term->splitVertical(term->currentTerminal());
     term->splitHorizontal(term->currentTerminal());

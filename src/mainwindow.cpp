@@ -22,6 +22,12 @@
 #include <QMessageBox>
 #include <functional>
 
+#ifdef HAVE_QDBUS
+    #include <QtDBus/QtDBus>
+    #include "windowadaptor.h"
+#endif
+
+#include "terminalconfig.h"
 #include "mainwindow.h"
 #include "tabwidget.h"
 #include "termwidgetholder.h"
@@ -30,7 +36,7 @@
 #include "propertiesdialog.h"
 #include "bookmarkswidget.h"
 #include "qterminalapp.h"
-
+#include "dbusaddressable.h"
 
 typedef std::function<bool(MainWindow&)> checkfn;
 Q_DECLARE_METATYPE(checkfn)
@@ -38,17 +44,19 @@ Q_DECLARE_METATYPE(checkfn)
 // TODO/FXIME: probably remove. QSS makes it unusable on mac...
 #define QSS_DROP    "MainWindow {border: 1px solid rgba(0, 0, 0, 50%);}\n"
 
-MainWindow::MainWindow(const QString& work_dir,
-                       const QString& command,
+MainWindow::MainWindow(TerminalConfig &cfg,
                        bool dropMode,
                        QWidget * parent,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
-      m_initWorkDir(work_dir),
-      m_initShell(command),
+      DBusAddressable("/windows"),
+      m_config(cfg),
       m_dropLockButton(0),
       m_dropMode(dropMode)
 {
+#ifdef HAVE_QDBUS
+    registerAdapter<WindowAdaptor, MainWindow>(this);
+#endif
     QTerminalApp::Instance()->addWindow(this);
     setAttribute(Qt::WA_TranslucentBackground);
     setAttribute(Qt::WA_DeleteOnClose);
@@ -91,7 +99,6 @@ MainWindow::MainWindow(const QString& work_dir,
 
     consoleTabulator->setAutoFillBackground(true);
     connect(consoleTabulator, SIGNAL(closeTabNotification()), SLOT(close()));
-    consoleTabulator->setWorkDirectory(work_dir);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
 
@@ -106,7 +113,7 @@ MainWindow::MainWindow(const QString& work_dir,
     /* The tab should be added after all changes are made to
        the main window; otherwise, the initial prompt might
        get jumbled because of changes in internal geometry. */
-    consoleTabulator->addNewTab(command);
+    consoleTabulator->addNewTab(m_config);
 }
 
 void MainWindow::rebuildActions()
@@ -649,7 +656,12 @@ bool MainWindow::event(QEvent *event)
 
 void MainWindow::newTerminalWindow()
 {
-    MainWindow *w = new MainWindow(m_initWorkDir, m_initShell, false);
+    TerminalConfig cfg;
+    TermWidgetHolder *ch = consoleTabulator->terminalHolder();
+    if (ch)
+        cfg.provideCurrentDirectory(ch->currentTerminal()->impl()->workingDirectory());
+
+    MainWindow *w = new MainWindow(cfg, false);
     w->show();
 }
 
@@ -666,6 +678,7 @@ void MainWindow::bookmarksDock_visibilityChanged(bool visible)
 
 void MainWindow::addNewTab()
 {
+    TerminalConfig cfg;
     if (Properties::Instance()->terminalsPreset == 3)
         consoleTabulator->preset4Terminals();
     else if (Properties::Instance()->terminalsPreset == 2)
@@ -673,7 +686,7 @@ void MainWindow::addNewTab()
     else if (Properties::Instance()->terminalsPreset == 1)
         consoleTabulator->preset2Horizontal();
     else
-        consoleTabulator->addNewTab();
+        consoleTabulator->addNewTab(cfg);
 }
 
 void MainWindow::onCurrentTitleChanged(int index)
@@ -714,3 +727,34 @@ void MainWindow::aboutToShowActionsMenu()
 QMap< QString, QAction * >& MainWindow::leaseActions() {
         return actions;
 }
+#ifdef HAVE_QDBUS
+
+QDBusObjectPath MainWindow::getActiveTab()
+{
+    return qobject_cast<TermWidgetHolder*>(consoleTabulator->currentWidget())->getDbusPath();
+}
+
+QList<QDBusObjectPath> MainWindow::getTabs()
+{
+    QList<QDBusObjectPath> tabs;
+    for (int i = 0; i<consoleTabulator->count(); ++i)
+    {
+        tabs.push_back(qobject_cast<TermWidgetHolder*>(consoleTabulator->widget(i))->getDbusPath());
+    }
+    return tabs;
+    
+}
+
+QDBusObjectPath MainWindow::newTab(const QHash<QString,QVariant> &termArgs)
+{
+    TerminalConfig cfg = TerminalConfig::fromDbus(termArgs);
+    int idx = consoleTabulator->addNewTab(cfg);
+    return qobject_cast<TermWidgetHolder*>(consoleTabulator->widget(idx))->getDbusPath();
+}
+
+void MainWindow::closeWindow()
+{
+    close();
+}
+
+#endif
