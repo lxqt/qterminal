@@ -58,6 +58,12 @@ private:
     QActionGroup *tabPosition, *scrollBarPosition, *keyboardCursorShape;
     QMenu *tabPosMenu, *scrollPosMenu, *keyboardCursorShapeMenu;
 
+    // A parent object for QObjects that are created dynamically based on settings
+    // Used to simplify the setting cleanup on reconfiguration: deleting settingOwner frees all related QObjects
+    QWidget *settingOwner;
+
+    QMenu *presetsMenu;
+
     TerminalConfig m_config;
 
     QDockWidget *m_bookmarksDock;

@@ -50,6 +50,14 @@ MainWindow::MainWindow(TerminalConfig &cfg,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
       DBusAddressable("/windows"),
+      tabPosition(NULL),
+      scrollBarPosition(NULL),
+      keyboardCursorShape(NULL),
+      tabPosMenu(NULL),
+      scrollPosMenu(NULL),
+      keyboardCursorShapeMenu(NULL),
+      settingOwner(NULL),
+      presetsMenu(NULL),
       m_config(cfg),
       m_dropLockButton(0),
       m_dropMode(dropMode)
@@ -118,16 +126,15 @@ MainWindow::MainWindow(TerminalConfig &cfg,
 
 void MainWindow::rebuildActions()
 {
-    QMap< QString, QAction * > oldActions(actions);
+    // Delete all setting-related QObjects
+    delete settingOwner;
+    settingOwner = new QWidget(this);
+    settingOwner->setGeometry(0,0,0,0);
 
+    // Then create them again
     setup_FileMenu_Actions();
     setup_ActionsMenu_Actions();
     setup_ViewMenu_Actions();
-
-    for (const auto *a : const_cast<const QMap<QString, QAction*>&> (oldActions))
-    {
-        delete a;
-    }
 }
 
 MainWindow::~MainWindow()
@@ -195,68 +202,70 @@ void MainWindow::setup_ActionsMenu_Actions()
     const checkfn checkTabs = &MainWindow::hasMultipleTabs;
     const checkfn checkSubterminals = &MainWindow::hasMultipleSubterminals;
 
-    setup_Action(CLEAR_TERMINAL, new QAction(QIcon::fromTheme("edit-clear"), tr("&Clear Current Tab"), this),
+    menu_Actions->clear();
+
+    setup_Action(CLEAR_TERMINAL, new QAction(QIcon::fromTheme("edit-clear"), tr("&Clear Current Tab"), settingOwner),
                  CLEAR_TERMINAL_SHORTCUT, consoleTabulator, SLOT(clearActiveTerminal()), menu_Actions);
 
     menu_Actions->addSeparator();
 
     data.setValue(checkTabs);
 
-    setup_Action(TAB_NEXT, new QAction(QIcon::fromTheme("go-next"), tr("&Next Tab"), this),
+    setup_Action(TAB_NEXT, new QAction(QIcon::fromTheme("go-next"), tr("&Next Tab"), settingOwner),
                  TAB_NEXT_SHORTCUT, consoleTabulator, SLOT(switchToRight()), menu_Actions, data);
 
-    setup_Action(TAB_PREV, new QAction(QIcon::fromTheme("go-previous"), tr("&Previous Tab"), this),
+    setup_Action(TAB_PREV, new QAction(QIcon::fromTheme("go-previous"), tr("&Previous Tab"), settingOwner),
                  TAB_PREV_SHORTCUT, consoleTabulator, SLOT(switchToLeft()), menu_Actions, data);
 
-    setup_Action(MOVE_LEFT, new QAction(tr("Move Tab &Left"), this),
+    setup_Action(MOVE_LEFT, new QAction(tr("Move Tab &Left"), settingOwner),
                  MOVE_LEFT_SHORTCUT, consoleTabulator, SLOT(moveLeft()), menu_Actions, data);
 
-    setup_Action(MOVE_RIGHT, new QAction(tr("Move Tab &Right"), this),
+    setup_Action(MOVE_RIGHT, new QAction(tr("Move Tab &Right"), settingOwner),
                  MOVE_RIGHT_SHORTCUT, consoleTabulator, SLOT(moveRight()), menu_Actions, data);
 
     menu_Actions->addSeparator();
 
-    setup_Action(SPLIT_HORIZONTAL, new QAction(tr("Split Terminal &Horizontally"), this),
+    setup_Action(SPLIT_HORIZONTAL, new QAction(tr("Split Terminal &Horizontally"), settingOwner),
                  NULL, consoleTabulator, SLOT(splitHorizontally()), menu_Actions);
 
-    setup_Action(SPLIT_VERTICAL, new QAction(tr("Split Terminal &Vertically"), this),
+    setup_Action(SPLIT_VERTICAL, new QAction(tr("Split Terminal &Vertically"), settingOwner),
                  NULL, consoleTabulator, SLOT(splitVertically()), menu_Actions);
 
     data.setValue(checkSubterminals);
 
-    setup_Action(SUB_COLLAPSE, new QAction(tr("&Collapse Subterminal"), this),
+    setup_Action(SUB_COLLAPSE, new QAction(tr("&Collapse Subterminal"), settingOwner),
                  NULL, consoleTabulator, SLOT(splitCollapse()), menu_Actions, data);
 
-    setup_Action(SUB_NEXT, new QAction(QIcon::fromTheme("go-up"), tr("N&ext Subterminal"), this),
+    setup_Action(SUB_NEXT, new QAction(QIcon::fromTheme("go-up"), tr("N&ext Subterminal"), settingOwner),
                  SUB_NEXT_SHORTCUT, consoleTabulator, SLOT(switchNextSubterminal()), menu_Actions, data);
 
-    setup_Action(SUB_PREV, new QAction(QIcon::fromTheme("go-down"), tr("P&revious Subterminal"), this),
+    setup_Action(SUB_PREV, new QAction(QIcon::fromTheme("go-down"), tr("P&revious Subterminal"), settingOwner),
                  SUB_PREV_SHORTCUT, consoleTabulator, SLOT(switchPrevSubterminal()), menu_Actions, data);
 
     menu_Actions->addSeparator();
 
     // Copy and Paste are only added to the table for the sake of bindings at the moment; there is no Edit menu, only a context menu.
-    setup_Action(COPY_SELECTION, new QAction(QIcon::fromTheme("edit-copy"), tr("Copy &Selection"), this),
+    setup_Action(COPY_SELECTION, new QAction(QIcon::fromTheme("edit-copy"), tr("Copy &Selection"), settingOwner),
                  COPY_SELECTION_SHORTCUT, consoleTabulator, SLOT(copySelection()), menu_Edit);
 
-    setup_Action(PASTE_CLIPBOARD, new QAction(QIcon::fromTheme("edit-paste"), tr("Paste Clip&board"), this),
+    setup_Action(PASTE_CLIPBOARD, new QAction(QIcon::fromTheme("edit-paste"), tr("Paste Clip&board"), settingOwner),
                  PASTE_CLIPBOARD_SHORTCUT, consoleTabulator, SLOT(pasteClipboard()), menu_Edit);
 
-    setup_Action(PASTE_SELECTION, new QAction(QIcon::fromTheme("edit-paste"), tr("Paste S&election"), this),
+    setup_Action(PASTE_SELECTION, new QAction(QIcon::fromTheme("edit-paste"), tr("Paste S&election"), settingOwner),
                  PASTE_SELECTION_SHORTCUT, consoleTabulator, SLOT(pasteSelection()), menu_Edit);
 
-    setup_Action(ZOOM_IN, new QAction(QIcon::fromTheme("zoom-in"), tr("Zoom &in"), this),
+    setup_Action(ZOOM_IN, new QAction(QIcon::fromTheme("zoom-in"), tr("Zoom &in"), settingOwner),
                  ZOOM_IN_SHORTCUT, consoleTabulator, SLOT(zoomIn()), menu_Edit);
 
-    setup_Action(ZOOM_OUT, new QAction(QIcon::fromTheme("zoom-out"), tr("Zoom &out"), this),
+    setup_Action(ZOOM_OUT, new QAction(QIcon::fromTheme("zoom-out"), tr("Zoom &out"), settingOwner),
                  ZOOM_OUT_SHORTCUT, consoleTabulator, SLOT(zoomOut()), menu_Edit);
 
-    setup_Action(ZOOM_RESET, new QAction(QIcon::fromTheme("zoom-original"), tr("Zoom rese&t"), this),
+    setup_Action(ZOOM_RESET, new QAction(QIcon::fromTheme("zoom-original"), tr("Zoom rese&t"), settingOwner),
                  ZOOM_RESET_SHORTCUT, consoleTabulator, SLOT(zoomReset()), menu_Edit);
 
     menu_Actions->addSeparator();
 
-    setup_Action(FIND, new QAction(QIcon::fromTheme("edit-find"), tr("&Find..."), this),
+    setup_Action(FIND, new QAction(QIcon::fromTheme("edit-find"), tr("&Find..."), settingOwner),
                  FIND_SHORTCUT, this, SLOT(find()), menu_Actions);
 
 #if 0
@@ -277,50 +286,55 @@ void MainWindow::setup_ActionsMenu_Actions()
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(loadSession()));
 #endif
 
-    setup_Action(TOGGLE_MENU, new QAction(tr("&Toggle Menu"), this),
+    setup_Action(TOGGLE_MENU, new QAction(tr("&Toggle Menu"), settingOwner),
                  TOGGLE_MENU_SHORTCUT, this, SLOT(find()));
     // this is correct - add action to main window - not to menu to keep toggle working
 
     // Add global rename current session shortcut
-    setup_Action(RENAME_SESSION, new QAction(tr("Rename session"), this),
+    setup_Action(RENAME_SESSION, new QAction(tr("Rename session"), settingOwner),
                  RENAME_SESSION_SHORTCUT, consoleTabulator, SLOT(renameCurrentSession()));
     // this is correct - add action to main window - not to menu
 
 }
 void MainWindow::setup_FileMenu_Actions()
 {
-    setup_Action(ADD_TAB, new QAction(QIcon::fromTheme("list-add"), tr("&New Tab"), this),
+    menu_File->clear();
+    setup_Action(ADD_TAB, new QAction(QIcon::fromTheme("list-add"), tr("&New Tab"), settingOwner),
                  ADD_TAB_SHORTCUT, this, SLOT(addNewTab()), menu_File);
 
-    QMenu *presetsMenu = new QMenu(tr("New Tab From &Preset"), this);
-    presetsMenu->addAction(QIcon(), tr("1 &Terminal"),
-                           consoleTabulator, SLOT(addNewTab()));
-    presetsMenu->addAction(QIcon(), tr("2 &Horizontal Terminals"),
-                           consoleTabulator, SLOT(preset2Horizontal()));
-    presetsMenu->addAction(QIcon(), tr("2 &Vertical Terminals"),
-                           consoleTabulator, SLOT(preset2Vertical()));
-    presetsMenu->addAction(QIcon(), tr("4 Terminal&s"),
-                           consoleTabulator, SLOT(preset4Terminals()));
+    if (presetsMenu == NULL) {
+        presetsMenu = new QMenu(tr("New Tab From &Preset"), this);
+        presetsMenu->addAction(QIcon(), tr("1 &Terminal"),
+                               consoleTabulator, SLOT(addNewTab()));
+        presetsMenu->addAction(QIcon(), tr("2 &Horizontal Terminals"),
+                               consoleTabulator, SLOT(preset2Horizontal()));
+        presetsMenu->addAction(QIcon(), tr("2 &Vertical Terminals"),
+                               consoleTabulator, SLOT(preset2Vertical()));
+        presetsMenu->addAction(QIcon(), tr("4 Terminal&s"),
+                               consoleTabulator, SLOT(preset4Terminals()));
+    }
+
     menu_File->addMenu(presetsMenu);
 
-    setup_Action(CLOSE_TAB, new QAction(QIcon::fromTheme("list-remove"), tr("&Close Tab"), this),
+    setup_Action(CLOSE_TAB, new QAction(QIcon::fromTheme("list-remove"), tr("&Close Tab"), settingOwner),
                  CLOSE_TAB_SHORTCUT, consoleTabulator, SLOT(removeCurrentTab()), menu_File);
 
-    setup_Action(NEW_WINDOW, new QAction(QIcon::fromTheme("window-new"), tr("&New Window"), this),
+    setup_Action(NEW_WINDOW, new QAction(QIcon::fromTheme("window-new"), tr("&New Window"), settingOwner),
                  NEW_WINDOW_SHORTCUT, this, SLOT(newTerminalWindow()), menu_File);
 
     menu_File->addSeparator();
 
-    setup_Action(PREFERENCES, new QAction(tr("&Preferences..."), this), "", this, SLOT(actProperties_triggered()), menu_File);
+    setup_Action(PREFERENCES, new QAction(tr("&Preferences..."), settingOwner), "", this, SLOT(actProperties_triggered()), menu_File);
 
     menu_File->addSeparator();
 
-    setup_Action(QUIT, new QAction(QIcon::fromTheme("application-exit"), tr("&Quit"), this), "", this, SLOT(close()), menu_File);
+    setup_Action(QUIT, new QAction(QIcon::fromTheme("application-exit"), tr("&Quit"), settingOwner), "", this, SLOT(close()), menu_File);
 }
 
 void MainWindow::setup_ViewMenu_Actions()
 {
-    QAction *hideBordersAction = new QAction(tr("&Hide Window Borders"), this);
+    menu_Window->clear();
+    QAction *hideBordersAction = new QAction(tr("&Hide Window Borders"), settingOwner);
     hideBordersAction->setCheckable(true);
     hideBordersAction->setVisible(!m_dropMode);
     setup_Action(HIDE_WINDOW_BORDERS, hideBordersAction,
@@ -331,7 +345,7 @@ void MainWindow::setup_ViewMenu_Actions()
 //    if (Properties::Instance()->borderless)
 //        toggleBorderless();
 
-    QAction *showTabBarAction = new QAction(tr("&Show Tab Bar"), this);
+    QAction *showTabBarAction = new QAction(tr("&Show Tab Bar"), settingOwner);
     //toggleTabbar->setObjectName("toggle_TabBar");
     showTabBarAction->setCheckable(true);
     showTabBarAction->setChecked(!Properties::Instance()->tabBarless);
@@ -339,30 +353,33 @@ void MainWindow::setup_ViewMenu_Actions()
                  NULL, this, SLOT(toggleTabBar()), menu_Window);
     toggleTabBar();
 
-    QAction *toggleFullscreen = new QAction(tr("Fullscreen"), this);
+    QAction *toggleFullscreen = new QAction(tr("Fullscreen"), settingOwner);
     toggleFullscreen->setCheckable(true);
     toggleFullscreen->setChecked(false);
     setup_Action(FULLSCREEN, toggleFullscreen,
                  FULLSCREEN_SHORTCUT, this, SLOT(showFullscreen(bool)), menu_Window);
 
-    setup_Action(TOGGLE_BOOKMARKS, new QAction(tr("Toggle Bookmarks"), this),
+    setup_Action(TOGGLE_BOOKMARKS, new QAction(tr("Toggle Bookmarks"), settingOwner),
                  TOGGLE_BOOKMARKS_SHORTCUT, NULL, NULL, menu_Window);
 
     menu_Window->addSeparator();
 
     /* tabs position */
-    tabPosition = new QActionGroup(this);
-    QAction *tabBottom = new QAction(tr("&Bottom"), this);
-    QAction *tabTop = new QAction(tr("&Top"), this);
-    QAction *tabRight = new QAction(tr("&Right"), this);
-    QAction *tabLeft = new QAction(tr("&Left"), this);
-    tabPosition->addAction(tabTop);
-    tabPosition->addAction(tabBottom);
-    tabPosition->addAction(tabLeft);
-    tabPosition->addAction(tabRight);
+    if (tabPosition == NULL) {
+        tabPosition = new QActionGroup(this);
+        QAction *tabBottom = new QAction(tr("&Bottom"), this);
+        QAction *tabTop = new QAction(tr("&Top"), this);
+        QAction *tabRight = new QAction(tr("&Right"), this);
+        QAction *tabLeft = new QAction(tr("&Left"), this);
+        tabPosition->addAction(tabTop);
+        tabPosition->addAction(tabBottom);
+        tabPosition->addAction(tabLeft);
+        tabPosition->addAction(tabRight);
 
-    for(int i = 0; i < tabPosition->actions().size(); ++i)
-        tabPosition->actions().at(i)->setCheckable(true);
+        for(int i = 0; i < tabPosition->actions().size(); ++i)
+            tabPosition->actions().at(i)->setCheckable(true);
+    }
+
 
     if( tabPosition->actions().count() > Properties::Instance()->tabsPos )
         tabPosition->actions().at(Properties::Instance()->tabsPos)->setChecked(true);
@@ -370,72 +387,79 @@ void MainWindow::setup_ViewMenu_Actions()
     connect(tabPosition, SIGNAL(triggered(QAction *)),
              consoleTabulator, SLOT(changeTabPosition(QAction *)) );
 
-    tabPosMenu = new QMenu(tr("&Tabs Layout"), menu_Window);
-    tabPosMenu->setObjectName("tabPosMenu");
+    if (tabPosMenu == NULL) {
+        tabPosMenu = new QMenu(tr("&Tabs Layout"), menu_Window);
+        tabPosMenu->setObjectName("tabPosMenu");
 
-    for(int i=0; i < tabPosition->actions().size(); ++i) {
-        tabPosMenu->addAction(tabPosition->actions().at(i));
+        for(int i=0; i < tabPosition->actions().size(); ++i) {
+            tabPosMenu->addAction(tabPosition->actions().at(i));
+        }
+
+        connect(menu_Window, SIGNAL(hovered(QAction *)),
+                this, SLOT(updateActionGroup(QAction *)));
     }
-
-    connect(menu_Window, SIGNAL(hovered(QAction *)),
-            this, SLOT(updateActionGroup(QAction *)));
     menu_Window->addMenu(tabPosMenu);
     /* */
 
     /* Scrollbar */
-    scrollBarPosition = new QActionGroup(this);
-    QAction *scrollNone = new QAction(tr("&None"), this);
-    QAction *scrollRight = new QAction(tr("&Right"), this);
-    QAction *scrollLeft = new QAction(tr("&Left"), this);
+    if (scrollBarPosition == NULL) {
+        scrollBarPosition = new QActionGroup(this);
+        QAction *scrollNone = new QAction(tr("&None"), this);
+        QAction *scrollRight = new QAction(tr("&Right"), this);
+        QAction *scrollLeft = new QAction(tr("&Left"), this);
+        /* order of insertion is dep. on QTermWidget::ScrollBarPosition enum */
+        scrollBarPosition->addAction(scrollNone);
+        scrollBarPosition->addAction(scrollLeft);
+        scrollBarPosition->addAction(scrollRight);
 
-    /* order of insertion is dep. on QTermWidget::ScrollBarPosition enum */
-    scrollBarPosition->addAction(scrollNone);
-    scrollBarPosition->addAction(scrollLeft);
-    scrollBarPosition->addAction(scrollRight);
+        for(int i = 0; i < scrollBarPosition->actions().size(); ++i)
+            scrollBarPosition->actions().at(i)->setCheckable(true);
 
-    for(int i = 0; i < scrollBarPosition->actions().size(); ++i)
-        scrollBarPosition->actions().at(i)->setCheckable(true);
-
-    if( Properties::Instance()->scrollBarPos < scrollBarPosition->actions().size() )
-        scrollBarPosition->actions().at(Properties::Instance()->scrollBarPos)->setChecked(true);
-
-    connect(scrollBarPosition, SIGNAL(triggered(QAction *)),
+        if( Properties::Instance()->scrollBarPos < scrollBarPosition->actions().size() )
+            scrollBarPosition->actions().at(Properties::Instance()->scrollBarPos)->setChecked(true);
+        connect(scrollBarPosition, SIGNAL(triggered(QAction *)),
              consoleTabulator, SLOT(changeScrollPosition(QAction *)) );
 
-    scrollPosMenu = new QMenu(tr("S&crollbar Layout"), menu_Window);
-    scrollPosMenu->setObjectName("scrollPosMenu");
+    }
+    if (scrollPosMenu == NULL) {
+        scrollPosMenu = new QMenu(tr("S&crollbar Layout"), menu_Window);
+        scrollPosMenu->setObjectName("scrollPosMenu");
 
-    for(int i=0; i < scrollBarPosition->actions().size(); ++i) {
-        scrollPosMenu->addAction(scrollBarPosition->actions().at(i));
+        for(int i=0; i < scrollBarPosition->actions().size(); ++i) {
+            scrollPosMenu->addAction(scrollBarPosition->actions().at(i));
+        }
     }
 
     menu_Window->addMenu(scrollPosMenu);
 
     /* Keyboard cursor shape */
-    keyboardCursorShape = new QActionGroup(this);
-    QAction *block = new QAction(tr("&BlockCursor"), this);
-    QAction *underline = new QAction(tr("&UnderlineCursor"), this);
-    QAction *ibeam = new QAction(tr("&IBeamCursor"), this);
+    if (keyboardCursorShape == NULL) {
+        keyboardCursorShape = new QActionGroup(this);
+        QAction *block = new QAction(tr("&BlockCursor"), this);
+        QAction *underline = new QAction(tr("&UnderlineCursor"), this);
+        QAction *ibeam = new QAction(tr("&IBeamCursor"), this);
 
-    /* order of insertion is dep. on QTermWidget::KeyboardCursorShape enum */
-    keyboardCursorShape->addAction(block);
-    keyboardCursorShape->addAction(underline);
-    keyboardCursorShape->addAction(ibeam);
+        /* order of insertion is dep. on QTermWidget::KeyboardCursorShape enum */
+        keyboardCursorShape->addAction(block);
+        keyboardCursorShape->addAction(underline);
+        keyboardCursorShape->addAction(ibeam);
+        for(int i = 0; i < keyboardCursorShape->actions().size(); ++i)
+            keyboardCursorShape->actions().at(i)->setCheckable(true);
 
-    for(int i = 0; i < keyboardCursorShape->actions().size(); ++i)
-        keyboardCursorShape->actions().at(i)->setCheckable(true);
+        if( Properties::Instance()->keyboardCursorShape < keyboardCursorShape->actions().size() )
+            keyboardCursorShape->actions().at(Properties::Instance()->keyboardCursorShape)->setChecked(true);
 
-    if( Properties::Instance()->keyboardCursorShape < keyboardCursorShape->actions().size() )
-        keyboardCursorShape->actions().at(Properties::Instance()->keyboardCursorShape)->setChecked(true);
+        connect(keyboardCursorShape, SIGNAL(triggered(QAction *)),
+                 consoleTabulator, SLOT(changeKeyboardCursorShape(QAction *)) );
+    }
 
-    connect(keyboardCursorShape, SIGNAL(triggered(QAction *)),
-             consoleTabulator, SLOT(changeKeyboardCursorShape(QAction *)) );
+    if (keyboardCursorShapeMenu == NULL) {
+        keyboardCursorShapeMenu = new QMenu(tr("&Keyboard Cursor Shape"), menu_Window);
+        keyboardCursorShapeMenu->setObjectName("keyboardCursorShapeMenu");
 
-    keyboardCursorShapeMenu = new QMenu(tr("&Keyboard Cursor Shape"), menu_Window);
-    keyboardCursorShapeMenu->setObjectName("keyboardCursorShapeMenu");
-
-    for(int i=0; i < keyboardCursorShape->actions().size(); ++i) {
-        keyboardCursorShapeMenu->addAction(keyboardCursorShape->actions().at(i));
+        for(int i=0; i < keyboardCursorShape->actions().size(); ++i) {
+            keyboardCursorShapeMenu->addAction(keyboardCursorShape->actions().at(i));
+        }
     }
 
     menu_Window->addMenu(keyboardCursorShapeMenu);
