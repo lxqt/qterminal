@@ -204,7 +204,7 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     menu_Actions->clear();
 
-    setup_Action(CLEAR_TERMINAL, new QAction(QIcon::fromTheme("edit-clear"), tr("&Clear Current Tab"), settingOwner),
+    setup_Action(CLEAR_TERMINAL, new QAction(QIcon::fromTheme("edit-clear"), tr("&Clear Active Terminal"), settingOwner),
                  CLEAR_TERMINAL_SHORTCUT, consoleTabulator, SLOT(clearActiveTerminal()), menu_Actions);
 
     menu_Actions->addSeparator();
