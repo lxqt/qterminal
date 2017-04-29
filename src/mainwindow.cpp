@@ -627,8 +627,9 @@ void MainWindow::realign()
         geometry.moveCenter(desktop.center());
         // do not use 0 here - we need to calculate with potential panel on top
         geometry.setTop(desktop.top());
-
-        setGeometry(geometry);
+        if (geometry != this->geometry()) {
+          setGeometry(geometry);
+        }
     }
 }
 
