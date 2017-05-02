@@ -27,6 +27,14 @@ class QSplitter;
 
 
 
+typedef enum NavigationDirection {
+    Left,
+    Right,
+    Top,
+    Bottom
+} NavigationDirection;
+
+
 /*! \brief TermWidget group/session manager.
 
 This widget (one per TabWidget tab) is a "proxy" widget beetween TabWidget and
@@ -69,8 +77,8 @@ class TermWidgetHolder : public QWidget
         void splitHorizontal(TermWidget * term);
         void splitVertical(TermWidget * term);
         void splitCollapse(TermWidget * term);
-        void switchNextSubterminal();
-        void switchPrevSubterminal();
+        void setWDir(const QString & wdir);
+        void directionalNavigation(NavigationDirection dir);
         void clearActiveTerminal();
         void onTermTitleChanged(QString title, QString icon) const;
 
@@ -81,8 +89,11 @@ class TermWidgetHolder : public QWidget
         void termTitleChanged(QString title, QString icon) const;
 
     private:
+        QString m_wdir;
+        QString m_shell;
         TermWidget * m_currentTerm;
 
+        void split(TermWidget * term, Qt::Orientation orientation);
         TermWidget * newTerm(TerminalConfig &cfg);
 
     private slots:

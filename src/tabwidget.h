@@ -58,8 +58,11 @@ public slots:
     void renameSession(int);
     void renameCurrentSession();
 
-    void switchNextSubterminal();
-    void switchPrevSubterminal();
+    void switchLeftSubterminal();
+    void switchRightSubterminal();
+    void switchTopSubterminal();
+    void switchBottomSubterminal();
+
     void splitHorizontally();
     void splitVertically();
     void splitCollapse();

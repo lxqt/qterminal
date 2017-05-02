@@ -236,11 +236,18 @@ void MainWindow::setup_ActionsMenu_Actions()
     setup_Action(SUB_COLLAPSE, new QAction(tr("&Collapse Subterminal"), settingOwner),
                  NULL, consoleTabulator, SLOT(splitCollapse()), menu_Actions, data);
 
-    setup_Action(SUB_NEXT, new QAction(QIcon::fromTheme("go-up"), tr("N&ext Subterminal"), settingOwner),
-                 SUB_NEXT_SHORTCUT, consoleTabulator, SLOT(switchNextSubterminal()), menu_Actions, data);
+    setup_Action(SUB_TOP, new QAction(QIcon::fromTheme("go-up"), tr("&Top Subterminal"), settingOwner),
+                 SUB_TOP_SHORTCUT, consoleTabulator, SLOT(switchTopSubterminal()), menu_Actions, data);
 
-    setup_Action(SUB_PREV, new QAction(QIcon::fromTheme("go-down"), tr("P&revious Subterminal"), settingOwner),
-                 SUB_PREV_SHORTCUT, consoleTabulator, SLOT(switchPrevSubterminal()), menu_Actions, data);
+    setup_Action(SUB_BOTTOM, new QAction(QIcon::fromTheme("go-down"), tr("&Bottom Subterminal"), settingOwner),
+                 SUB_BOTTOM_SHORTCUT, consoleTabulator, SLOT(switchBottomSubterminal()), menu_Actions, data);
+
+    setup_Action(SUB_LEFT, new QAction(QIcon::fromTheme("go-previous"), tr("L&eft Subterminal"), settingOwner),
+                 SUB_LEFT_SHORTCUT, consoleTabulator, SLOT(switchLeftSubterminal()), menu_Actions, data);
+
+    setup_Action(SUB_RIGHT, new QAction(QIcon::fromTheme("go-next"), tr("R&ight Subterminal"), settingOwner),
+                 SUB_RIGHT_SHORTCUT, consoleTabulator, SLOT(switchRightSubterminal()), menu_Actions, data);
+
 
     menu_Actions->addSeparator();
 
