@@ -74,10 +74,10 @@
 
 #define TAB_PREV_SHORTCUT	       "Ctrl+PgUp|Ctrl+Shift+Tab"
 #define TAB_NEXT_SHORTCUT	       "Ctrl+PgDown|Ctrl+Tab"
-#define SUB_BOTTOM_SHORTCUT	       "Shift+Down"
-#define SUB_TOP_SHORTCUT	       "Shift+Up"
-#define SUB_LEFT_SHORTCUT	       "Shift+Left"
-#define SUB_RIGHT_SHORTCUT	       "Shift+Right"
+#define SUB_BOTTOM_SHORTCUT	       "Alt+Down"
+#define SUB_TOP_SHORTCUT	       "Alt+Up"
+#define SUB_LEFT_SHORTCUT	       "Alt+Left"
+#define SUB_RIGHT_SHORTCUT	       "Alt+Right"
 
 #ifdef Q_WS_MAC
 // It's tricky - Ctrl is "command" key on mac's keyboards
