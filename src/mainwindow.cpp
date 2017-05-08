@@ -112,7 +112,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
 
     // apply props
     propertiesChanged();
-    
+
     setupCustomDirs();
 
     connect(consoleTabulator, &TabWidget::currentTitleChanged, this, &MainWindow::onCurrentTitleChanged);
@@ -294,7 +294,7 @@ void MainWindow::setup_ActionsMenu_Actions()
 #endif
 
     setup_Action(TOGGLE_MENU, new QAction(tr("&Toggle Menu"), settingOwner),
-                 TOGGLE_MENU_SHORTCUT, this, SLOT(find()));
+                 TOGGLE_MENU_SHORTCUT, this, SLOT(toggleMenu()));
     // this is correct - add action to main window - not to menu to keep toggle working
 
     // Add global rename current session shortcut
@@ -773,7 +773,7 @@ QList<QDBusObjectPath> MainWindow::getTabs()
         tabs.push_back(qobject_cast<TermWidgetHolder*>(consoleTabulator->widget(i))->getDbusPath());
     }
     return tabs;
-    
+
 }
 
 QDBusObjectPath MainWindow::newTab(const QHash<QString,QVariant> &termArgs)
