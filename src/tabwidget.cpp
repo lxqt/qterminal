@@ -110,16 +110,19 @@ void TabWidget::switchBottomSubterminal() {
 void TabWidget::splitHorizontally()
 {
     terminalHolder()->splitHorizontal(terminalHolder()->currentTerminal());
+    findParent<MainWindow>(this)->updateDisabledActions();
 }
 
 void TabWidget::splitVertically()
 {
     terminalHolder()->splitVertical(terminalHolder()->currentTerminal());
+    findParent<MainWindow>(this)->updateDisabledActions();
 }
 
 void TabWidget::splitCollapse()
 {
     terminalHolder()->splitCollapse(terminalHolder()->currentTerminal());
+    findParent<MainWindow>(this)->updateDisabledActions();
 }
 
 void TabWidget::copySelection()

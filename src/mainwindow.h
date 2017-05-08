@@ -94,6 +94,7 @@ private:
 
 public slots:
     void showHide();
+    void updateDisabledActions();
 
 private slots:
     void on_consoleTabulator_currentChanged(int);
@@ -118,6 +119,5 @@ private slots:
     void addNewTab();
     void onCurrentTitleChanged(int index);
 
-    void aboutToShowActionsMenu();
 };
 #endif //MAINWINDOW_H

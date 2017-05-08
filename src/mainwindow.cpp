@@ -116,7 +116,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     setupCustomDirs();
 
     connect(consoleTabulator, &TabWidget::currentTitleChanged, this, &MainWindow::onCurrentTitleChanged);
-    connect(menu_Actions, SIGNAL(aboutToShow()), this, SLOT(aboutToShowActionsMenu()));
+    connect(menu_Actions, SIGNAL(aboutToShow()), this, SLOT(updateDisabledActions()));
 
     /* The tab should be added after all changes are made to
        the main window; otherwise, the initial prompt might
@@ -719,6 +719,7 @@ void MainWindow::addNewTab()
         consoleTabulator->preset2Horizontal();
     else
         consoleTabulator->addNewTab(cfg);
+    updateDisabledActions();
 }
 
 void MainWindow::onCurrentTitleChanged(int index)
@@ -744,7 +745,7 @@ bool MainWindow::hasMultipleSubterminals()
     return consoleTabulator->terminalHolder()->findChildren<TermWidget*>().count() > 1;
 }
 
-void MainWindow::aboutToShowActionsMenu()
+void MainWindow::updateDisabledActions()
 {
     const QList<QAction*> actions = menu_Actions->actions();
     for (QAction *action : actions) {
