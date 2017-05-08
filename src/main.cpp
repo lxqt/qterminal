@@ -150,6 +150,7 @@ int main(int argc, char *argv[])
 
     // icons
     /* setup our custom icon theme if there is no system theme (OS X, Windows) */
+    QCoreApplication::instance()->setAttribute(Qt::AA_UseHighDpiPixmaps); //Fix for High-DPI systems
     if (QIcon::themeName().isEmpty())
         QIcon::setThemeName("QTerminal");
 
