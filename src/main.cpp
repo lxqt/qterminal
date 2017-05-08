@@ -290,5 +290,26 @@ QDBusObjectPath QTerminalApp::getActiveWindow()
     return qobject_cast<MainWindow*>(aw)->getDbusPath();
 }
 
+bool QTerminalApp::isDropMode() {
+  if (m_windowList.count() == 0) {
+    return false;
+  }
+  MainWindow *wnd = m_windowList.at(0);
+  return wnd->dropMode();
+}
+
+bool QTerminalApp::toggleDropdown() {
+  if (m_windowList.count() == 0) {
+    return false;
+  }
+  MainWindow *wnd = m_windowList.at(0);
+  if (!wnd->dropMode()) {
+    return false;
+  }
+  wnd->showHide();
+  return true;
+}
+
+
 #endif
 

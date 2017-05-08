@@ -12,6 +12,12 @@
     <method name="getActiveWindow">
       <arg name="window" type="o" direction="out"/>
     </method>
+    <method name="isDropMode">
+      <arg name="isDropMode" type="b" direction="out"/>
+    </method>
+    <method name="toggleDropdown">
+      <arg name="success" type="b" direction="out"/>
+    </method>
   </interface>
 </node>
 

@@ -92,6 +92,9 @@ private:
     bool hasMultipleTabs();
     bool hasMultipleSubterminals();
 
+public slots:
+    void showHide();
+
 private slots:
     void on_consoleTabulator_currentChanged(int);
     void propertiesChanged();
@@ -105,7 +108,6 @@ private slots:
     void toggleMenu();
 
     void showFullscreen(bool fullscreen);
-    void showHide();
     void setKeepOpen(bool value);
     void find();
 

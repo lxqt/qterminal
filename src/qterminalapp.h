@@ -29,6 +29,8 @@ public:
     QList<QDBusObjectPath> getWindows();
     QDBusObjectPath newWindow(const QHash<QString,QVariant> &termArgs);
     QDBusObjectPath getActiveWindow();
+    bool isDropMode();
+    bool toggleDropdown();
     #endif
 
     static void cleanup();
