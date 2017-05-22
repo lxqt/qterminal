@@ -15,7 +15,7 @@
         <location filename="../src/forms/fontdialog.ui" line="14"/>
         <location filename="../src/forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Wybór czcionki terminalu</translation>
+        <translation>Wybierz czcionki terminalu</translation>
     </message>
     <message>
         <location filename="../src/forms/fontdialog.ui" line="32"/>
@@ -73,12 +73,12 @@
     <message>
         <location filename="../src/mainwindow.cpp" line="180"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>Podziel terminal w p&amp;ionie</translation>
+        <translation>Podziel terminal w poz&amp;iomie</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="187"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>Podziel terminal w p&amp;oziomie</translation>
+        <translation>Podziel terminal w pio&amp;nie</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="194"/>
