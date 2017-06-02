@@ -226,6 +226,19 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
     }
 }
 
+void TabWidget::mouseReleaseEvent(QMouseEvent *event)
+{
+    // Close tabs by middle click
+    if(event->button() == Qt::MiddleButton)
+    {
+        int tabIndex = tabBar()->tabAt(event->pos());
+        if(tabIndex >= 0)
+        {
+            tabCloseRequested(tabIndex);
+        }
+    }
+}
+
 bool TabWidget::eventFilter(QObject *obj, QEvent *event)
 {
     if (event->type() == QEvent::MouseButtonDblClick)

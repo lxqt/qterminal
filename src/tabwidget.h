@@ -96,6 +96,7 @@ signals:
 protected:
     enum Direction{Left = 1, Right};
     void contextMenuEvent(QContextMenuEvent * event);
+    void mouseReleaseEvent(QMouseEvent * event);
     void move(Direction);
     /*! Event filter for TabWidget's QTabBar. It's installed on tabBar()
         in the constructor.
