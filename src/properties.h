@@ -49,6 +49,7 @@ class Properties
         QFont font;
         QString colorScheme;
         QString guiStyle;
+        QString setenvTERM;
         bool highlightCurrentTerminal;
 
         bool historyLimited;
