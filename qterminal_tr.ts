@@ -269,7 +269,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="74"/>
         <source>DropDown</source>
-        <translation type="unfinished"></translation>
+        <translation>Üstten Açılan Terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="79"/>
@@ -425,7 +425,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="376"/>
         <source>Select emulation behaviour. It does not mean that for example &quot;linux&quot; has to be used only on Linux OS. Feel free to use it on Mac too etc.&lt;p&gt;Default is the failback type with minimal feature set.</source>
-        <translation type="unfinished"></translation>
+        <translation>Öykünme davranışı seçin. Örneğin &quot;linux&quot; yalnızca linuxta kullanın. Mac ve benzerlerinde de kullanabilirsiniz.&lt;p&gt;Varsayılan asgari özellikleriyle geri yükleme.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="428"/>
@@ -472,12 +472,12 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="60"/>
         <source>Move start</source>
-        <translation type="unfinished"></translation>
+        <translation>Hareket et</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="60"/>
         <source>Move end</source>
-        <translation type="unfinished"></translation>
+        <translation>Hareketi bitir</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="65"/>
