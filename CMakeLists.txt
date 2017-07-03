@@ -26,7 +26,7 @@ find_package(QTermWidget5 REQUIRED)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 include(LXQtTranslateTs)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
-message(STATUS "Qt version: ${Qt5Core_VERSION_STRING}")
+message(STATUS "Qt version: ${Qt5Core_VERSION}")
 
 # TODO remove Qxt
 message(STATUS "Using bundled Qxt...")
