@@ -116,14 +116,14 @@ void TermWidgetImpl::propertiesChanged()
 
     switch(Properties::Instance()->keyboardCursorShape) {
     case 1:
-        setKeyboardCursorShape(QTermWidget::UnderlineCursor);
+        setKeyboardCursorShape(QTermWidget::KeyboardCursorShape::UnderlineCursor);
         break;
     case 2:
-        setKeyboardCursorShape(QTermWidget::IBeamCursor);
+        setKeyboardCursorShape(QTermWidget::KeyboardCursorShape::IBeamCursor);
         break;
     default:
     case 0:
-        setKeyboardCursorShape(QTermWidget::BlockCursor);
+        setKeyboardCursorShape(QTermWidget::KeyboardCursorShape::BlockCursor);
         break;
     }
 
