@@ -99,27 +99,27 @@
     <message>
         <location filename="../../mainwindow.cpp" line="207"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Išvalyti aktyvų terminalą</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="239"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Viršutinis subterminalas</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="242"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Apatinis subterminalas</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="245"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kairysis subterminalas</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="248"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Dešinysis subterminalas</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="255"/>
@@ -219,12 +219,12 @@
     <message>
         <location filename="../../mainwindow.cpp" line="334"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">&amp;Nuostatos...</translation>
+        <translation>&amp;Nuostatos...</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="338"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">&amp;Išeiti</translation>
+        <translation>&amp;Išeiti</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="344"/>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="369"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Perjungti žymeles</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="377"/>
@@ -461,12 +461,12 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="350"/>
         <source>Background image:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fono paveikslas:</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="362"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkti</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="388"/>
@@ -486,12 +486,12 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="429"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Patvirtinti kelių eilučių įdėjimą</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="436"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Apkirpti įdėtame tekste naujas eilutes</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="469"/>
@@ -655,12 +655,12 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="237"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkti fono paveikslą</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="238"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation type="unfinished"></translation>
+        <translation>Paveikslai (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="321"/>
@@ -673,7 +673,7 @@
     <message>
         <location filename="../../termwidget.cpp" line="234"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodyti išsamesnę informaciją...</translation>
     </message>
 </context>
 <context>
@@ -735,12 +735,12 @@
     <message>
         <location filename="../../termwidget.cpp" line="227"/>
         <source>Paste multiline text</source>
-        <translation type="unfinished"></translation>
+        <translation>Įdėti kelių eilučių tekstą</translation>
     </message>
     <message>
         <location filename="../../termwidget.cpp" line="228"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ar tikrai norite įdėti šį tekstą?</translation>
     </message>
 </context>
 <context>
