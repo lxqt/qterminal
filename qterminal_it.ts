@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="it">
+<TS version="2.1" language="it">
 <context>
     <name>BookmarksWidget</name>
     <message>
@@ -42,7 +42,7 @@
     </message>
     <message>
         <source>Rename Session</source>
-        <translation>Rinomina sessione</translation>
+        <translation type="vanished">Rinomina sessione</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="168"/>
@@ -51,123 +51,123 @@
     </message>
     <message>
         <source>Clear Current Tab</source>
-        <translation>Pulisci scheda attuale</translation>
+        <translation type="vanished">Pulisci scheda attuale</translation>
     </message>
     <message>
         <source>Next Tab</source>
-        <translation>Prossima scheda</translation>
+        <translation type="vanished">Prossima scheda</translation>
     </message>
     <message>
         <source>Previous Tab</source>
-        <translation>Scheda precedente</translation>
+        <translation type="vanished">Scheda precedente</translation>
     </message>
     <message>
         <source>Move Tab Left</source>
-        <translation>Sposta scheda a sinistra</translation>
+        <translation type="vanished">Sposta scheda a sinistra</translation>
     </message>
     <message>
         <source>Move Tab Right</source>
-        <translation>Sposta scheda a destra</translation>
+        <translation type="vanished">Sposta scheda a destra</translation>
     </message>
     <message>
         <source>Split Terminal Horizontally</source>
-        <translation>Dividi terminale orizzontalmente</translation>
+        <translation type="vanished">Dividi terminale orizzontalmente</translation>
     </message>
     <message>
         <source>Split Terminal Vertically</source>
-        <translation>Dividi terminale verticalmente</translation>
+        <translation type="vanished">Dividi terminale verticalmente</translation>
     </message>
     <message>
         <source>Collapse Subterminal</source>
-        <translation>Chiudi sottoterminale</translation>
+        <translation type="vanished">Chiudi sottoterminale</translation>
     </message>
     <message>
         <source>Next Subterminal</source>
-        <translation>Prossimo sottoterminale</translation>
+        <translation type="vanished">Prossimo sottoterminale</translation>
     </message>
     <message>
         <source>Previous Subterminal</source>
-        <translation>Sottoterminale precedente</translation>
+        <translation type="vanished">Sottoterminale precedente</translation>
     </message>
     <message>
         <source>Copy Selection</source>
-        <translation>Copia selezione</translation>
+        <translation type="vanished">Copia selezione</translation>
     </message>
     <message>
         <source>Paste Clipboard</source>
-        <translation>Incolla dagli appunti</translation>
+        <translation type="vanished">Incolla dagli appunti</translation>
     </message>
     <message>
         <source>Paste Selection</source>
-        <translation>Incolla selezione</translation>
+        <translation type="vanished">Incolla selezione</translation>
     </message>
     <message>
         <source>Zoom in</source>
-        <translation>Ingrandisci</translation>
+        <translation type="vanished">Ingrandisci</translation>
     </message>
     <message>
         <source>Zoom out</source>
-        <translation>Diminuisci</translation>
+        <translation type="vanished">Diminuisci</translation>
     </message>
     <message>
         <source>Zoom reset</source>
-        <translation>Ripristina zoom</translation>
+        <translation type="vanished">Ripristina zoom</translation>
     </message>
     <message>
         <source>Find...</source>
-        <translation>Cerca...</translation>
+        <translation type="vanished">Cerca...</translation>
     </message>
     <message>
         <source>Save Session</source>
-        <translation>Salva sessione</translation>
+        <translation type="vanished">Salva sessione</translation>
     </message>
     <message>
         <source>Load Session</source>
-        <translation>Carica sessione</translation>
+        <translation type="vanished">Carica sessione</translation>
     </message>
     <message>
         <source>Toggle Menu</source>
-        <translation>Mostra/nascondi menu</translation>
+        <translation type="vanished">Mostra/nascondi menu</translation>
     </message>
     <message>
         <source>New Tab</source>
-        <translation>Nuova scheda</translation>
+        <translation type="vanished">Nuova scheda</translation>
     </message>
     <message>
         <source>New Tab From Preset</source>
-        <translation>Nuova scheda preconfigurata</translation>
+        <translation type="vanished">Nuova scheda preconfigurata</translation>
     </message>
     <message>
         <source>1 Terminal</source>
-        <translation>1 terminale</translation>
+        <translation type="vanished">1 terminale</translation>
     </message>
     <message>
         <source>2 Horizontal Terminals</source>
-        <translation>2 terminali orizzontali</translation>
+        <translation type="vanished">2 terminali orizzontali</translation>
     </message>
     <message>
         <source>2 Vertical Terminals</source>
-        <translation>2 terminali verticali</translation>
+        <translation type="vanished">2 terminali verticali</translation>
     </message>
     <message>
         <source>4 Terminals</source>
-        <translation>4 terminali</translation>
+        <translation type="vanished">4 terminali</translation>
     </message>
     <message>
         <source>Close Tab</source>
-        <translation>Chiudi scheda</translation>
+        <translation type="vanished">Chiudi scheda</translation>
     </message>
     <message>
         <source>New Window</source>
-        <translation>Nuova finestra</translation>
+        <translation type="vanished">Nuova finestra</translation>
     </message>
     <message>
         <source>Hide Window Borders</source>
-        <translation>Nascondi bordi della finestra</translation>
+        <translation type="vanished">Nascondi bordi della finestra</translation>
     </message>
     <message>
         <source>Show Tab Bar</source>
-        <translation>Mostra barra delle schede</translation>
+        <translation type="vanished">Mostra barra delle schede</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="363"/>
@@ -176,31 +176,31 @@
     </message>
     <message>
         <source>Bottom</source>
-        <translation>in fondo</translation>
+        <translation type="vanished">in fondo</translation>
     </message>
     <message>
         <source>Top</source>
-        <translation>in cima</translation>
+        <translation type="vanished">in cima</translation>
     </message>
     <message>
         <source>Right</source>
-        <translation>a destra</translation>
+        <translation type="vanished">a destra</translation>
     </message>
     <message>
         <source>Left</source>
-        <translation>a sinistra</translation>
+        <translation type="vanished">a sinistra</translation>
     </message>
     <message>
         <source>Tabs Layout</source>
-        <translation>Posizione delle schede</translation>
+        <translation type="vanished">Posizione delle schede</translation>
     </message>
     <message>
         <source>None</source>
-        <translation>Nessuno</translation>
+        <translation type="vanished">Nessuno</translation>
     </message>
     <message>
         <source>Scrollbar Layout</source>
-        <translation>Posizione barra di scorrimento</translation>
+        <translation type="vanished">Posizione barra di scorrimento</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="207"/>
@@ -659,7 +659,7 @@
     </message>
     <message>
         <source>Change...</source>
-        <translation>Modifica...</translation>
+        <translation type="vanished">Modifica...</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="326"/>
@@ -854,7 +854,7 @@
     </message>
     <message>
         <source>Rename session</source>
-        <translation>Rinomina sessione</translation>
+        <translation type="vanished">Rinomina sessione</translation>
     </message>
 </context>
 <context>
@@ -927,35 +927,35 @@
     </message>
     <message>
         <source>Actions</source>
-        <translation>Azioni</translation>
+        <translation type="vanished">Azioni</translation>
     </message>
     <message>
         <source>Help</source>
-        <translation>Aiuto</translation>
+        <translation type="vanished">Aiuto</translation>
     </message>
     <message>
         <source>View</source>
-        <translation>Visualizza</translation>
+        <translation type="vanished">Visualizza</translation>
     </message>
     <message>
         <source>Edit</source>
-        <translation>Modifica</translation>
+        <translation type="vanished">Modifica</translation>
     </message>
     <message>
         <source>About...</source>
-        <translation>A proposito...</translation>
+        <translation type="vanished">A proposito...</translation>
     </message>
     <message>
         <source>About Qt...</source>
-        <translation>A proposito di Qt...</translation>
+        <translation type="vanished">A proposito di Qt...</translation>
     </message>
     <message>
         <source>Preferences...</source>
-        <translation>Preferenze...</translation>
+        <translation type="vanished">Preferenze...</translation>
     </message>
     <message>
         <source>Quit</source>
-        <translation>Esci</translation>
+        <translation type="vanished">Esci</translation>
     </message>
 </context>
 </TS>
