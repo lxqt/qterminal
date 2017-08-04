@@ -100,22 +100,22 @@
     <message>
         <location filename="../../mainwindow.cpp" line="239"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Górny sub&amp;terminal</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="242"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Dolny su&amp;bterminal</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="245"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>L&amp;ewy subterminal</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="248"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Prawy subterm&amp;inal</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="255"/>
@@ -477,7 +477,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="419"/>
         <source>Action after paste</source>
-        <translation>Po wklejeniu:</translation>
+        <translation>Działanie po wklejeniu</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="429"/>
@@ -487,7 +487,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="436"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Usuwaj znaki nowej linii z końca wklejanego tekstu</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="469"/>
