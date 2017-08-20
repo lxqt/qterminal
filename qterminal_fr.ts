@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<TS version="2.0" language="fr">
 <context>
     <name>BookmarksWidget</name>
     <message>
@@ -47,7 +47,7 @@
     </message>
     <message>
         <source>&amp;Clear Current Tab</source>
-        <translation type="vanished">&amp;Effacer l&apos;onglet courant</translation>
+        <translation>&amp;Effacer l&apos;onglet courant</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="214"/>
@@ -86,11 +86,11 @@
     </message>
     <message>
         <source>N&amp;ext Subterminal</source>
-        <translation type="vanished">Sous-terminal &amp;suivant</translation>
+        <translation>Sous-terminal &amp;suivant</translation>
     </message>
     <message>
         <source>P&amp;revious Subterminal</source>
-        <translation type="vanished">Sous-terminal &amp;précédent</translation>
+        <translation>Sous-terminal &amp;précédent</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="207"/>
@@ -467,7 +467,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="388"/>
         <source>Emulation</source>
-        <translation>Emulation</translation>
+        <translation type="unfinished">Émulation</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="397"/>
@@ -765,25 +765,25 @@
     <message>
         <location filename="../../forms/qterminal.ui" line="90"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Editer</translation>
+        <translation type="unfinished">&amp;Éditer</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="106"/>
         <source>&amp;About...</source>
-        <translation>&amp;A propos...</translation>
+        <translation type="unfinished">&amp;À propos...</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="111"/>
         <source>About &amp;Qt...</source>
-        <translation>A propos de &amp;Qt...</translation>
+        <translation type="unfinished">À propos de &amp;Qt...</translation>
     </message>
     <message>
         <source>&amp;Preferences...</source>
-        <translation type="vanished">&amp;Préférences...</translation>
+        <translation>&amp;Préférences...</translation>
     </message>
     <message>
         <source>&amp;Quit</source>
-        <translation type="vanished">&amp;Quitter</translation>
+        <translation>&amp;Quitter</translation>
     </message>
 </context>
 </TS>
