@@ -307,6 +307,7 @@ int TabWidget::switchToRight()
         setCurrentIndex(next_pos);
     else
         setCurrentIndex(0);
+    findParent<MainWindow>(this)->updateDisabledActions();
     return currentIndex();
 }
 
@@ -317,6 +318,7 @@ int TabWidget::switchToLeft()
         setCurrentIndex(count() - 1);
     else
         setCurrentIndex(previous_pos);
+    findParent<MainWindow>(this)->updateDisabledActions();
     return currentIndex();
 }
 
