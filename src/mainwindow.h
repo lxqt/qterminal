@@ -116,7 +116,7 @@ private slots:
     void bookmarksWidget_callCommand(const QString&);
     void bookmarksDock_visibilityChanged(bool visible);
 
-    void addNewTab();
+    void addNewTab(TerminalConfig cfg = TerminalConfig());
     void onCurrentTitleChanged(int index);
 
 };

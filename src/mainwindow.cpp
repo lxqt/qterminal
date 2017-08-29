@@ -121,7 +121,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     /* The tab should be added after all changes are made to
        the main window; otherwise, the initial prompt might
        get jumbled because of changes in internal geometry. */
-    consoleTabulator->addNewTab(m_config);
+    addNewTab(m_config);
 }
 
 void MainWindow::rebuildActions()
@@ -708,9 +708,8 @@ void MainWindow::bookmarksDock_visibilityChanged(bool visible)
     Properties::Instance()->bookmarksVisible = visible;
 }
 
-void MainWindow::addNewTab()
+void MainWindow::addNewTab(TerminalConfig cfg)
 {
-    TerminalConfig cfg;
     if (Properties::Instance()->terminalsPreset == 3)
         consoleTabulator->preset4Terminals();
     else if (Properties::Instance()->terminalsPreset == 2)
