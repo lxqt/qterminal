@@ -25,6 +25,11 @@
 #include <QAction>
 #include "dbusaddressable.h"
 
+#ifdef HAVE_LIBCANBERRA
+// forwarded declaration from <canberra.h>
+struct ca_context;
+#endif
+
 class TermWidgetImpl : public QTermWidget
 {
     Q_OBJECT
@@ -34,6 +39,7 @@ class TermWidgetImpl : public QTermWidget
     public:
 
         TermWidgetImpl(TerminalConfig &cfg, QWidget * parent=nullptr);
+        virtual ~TermWidgetImpl();
         void propertiesChanged();
 
     signals:
@@ -48,6 +54,12 @@ class TermWidgetImpl : public QTermWidget
     private slots:
         void customContextMenuCall(const QPoint & pos);
         void activateUrl(const QUrl& url, bool fromContextMenu);
+        void bell();
+
+    private:
+#ifdef HAVE_LIBCANBERRA
+        ca_context* libcanberra_context;
+#endif
 };
 
 
