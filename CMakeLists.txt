@@ -42,6 +42,8 @@ if (BUILD_TESTS)
 endif()
 
 include(LXQtPreventInSourceBuilds)
+include(FindPkgConfig)
+pkg_check_modules(LIBCANBERRA libcanberra)
 include(LXQtTranslateTs)
 include(LXQtTranslateDesktop)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
@@ -220,6 +222,12 @@ endif()
 
 if(X11_FOUND)
     target_link_libraries(${EXE_NAME} ${X11_X11_LIB})
+endif()
+
+if(LIBCANBERRA_FOUND)
+    add_definitions(-DHAVE_LIBCANBERRA)
+    include_directories(${LIBCANBERRA_INCLUDE_DIRS})
+    target_link_libraries(${EXE_NAME} ${LIBCANBERRA_LIBRARIES})
 endif()
 
 set(APP_DIR "${CMAKE_INSTALL_FULL_DATADIR}/qterminal")
