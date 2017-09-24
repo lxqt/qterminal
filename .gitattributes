@@ -2,6 +2,7 @@
 
 # git files
 .gitattributes export-ignore
+.github        export-ignore
 .gitignore     export-ignore
 
 
