@@ -30,7 +30,7 @@
     <message>
         <location filename="../../forms/fontdialog.ui" line="59"/>
         <source>Preview</source>
-        <translation>Forhåndsvis</translation>
+        <translation>Forhåndsvisning</translation>
     </message>
 </context>
 <context>
@@ -138,7 +138,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="275"/>
         <source>&amp;Find...</source>
-        <translation>&amp;Find...</translation>
+        <translation>&amp;Søg...</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="283"/>
@@ -285,7 +285,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="464"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>Formen af &amp;tastaturmarkør</translation>
+        <translation>&amp;Tastaturmarkørens form</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="548"/>
@@ -305,7 +305,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="582"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>Et letvægts multiplatform terminalemulator</translation>
+        <translation>En letvægts multiplatform terminalemulator</translation>
     </message>
 </context>
 <context>
@@ -324,7 +324,7 @@
         <location filename="../../forms/propertiesdialog.ui" line="57"/>
         <location filename="../../forms/propertiesdialog.ui" line="413"/>
         <source>Behavior</source>
-        <translation>Adfærd</translation>
+        <translation>Opførsel</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="62"/>
@@ -369,12 +369,12 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="143"/>
         <source>Terminal transparency</source>
-        <translation>Terminal transparens</translation>
+        <translation>Terminalens transparens</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="153"/>
         <source>Application transparency</source>
-        <translation>Program transparens</translation>
+        <translation>Programmets transparens</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="164"/>
@@ -420,7 +420,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="296"/>
         <source>Widget style</source>
-        <translation>Widget-stil</translation>
+        <translation>Widgetstil</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="319"/>
@@ -430,7 +430,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation>Formen af tastaturmarkør</translation>
+        <translation>Tastaturmarkørens form</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="336"/>
@@ -455,12 +455,12 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="388"/>
         <source>Emulation</source>
-        <translation>Emulation</translation>
+        <translation>Emulering</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="397"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hvilken adfærd som skal emuleres. Bemærk at det ikke behøver at matche dit styresystem.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Standard&lt;/span&gt;-emuleringen er et tilbagefald med et minimum funktionssæt.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hvilken opførsel som skal emuleres. Bemærk at det ikke behøver at matche dit styresystem.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Standard&lt;/span&gt;emuleringen er en reserve med et minimalt funktionssæt.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="419"/>
@@ -470,7 +470,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="429"/>
         <source>Confirm multiline paste</source>
-        <translation>Bekræft multilinje indsættelse</translation>
+        <translation>Bekræft multilinjeindsættelse</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="436"/>
@@ -566,7 +566,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="695"/>
         <source>Find...</source>
-        <translation>Find...</translation>
+        <translation>Søg...</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="704"/>
@@ -613,7 +613,7 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="78"/>
         <source>IBeamCursor</source>
-        <translation>Lodret streg markør</translation>
+        <translation>Lodret streg-markør</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="90"/>
@@ -707,7 +707,7 @@
     <message>
         <location filename="../../termwidgetholder.cpp" line="79"/>
         <source>List of saved sessions:</source>
-        <translation>Liste af gemte sessioner:</translation>
+        <translation>Liste over gemte sessioner:</translation>
     </message>
 </context>
 <context>
@@ -720,7 +720,7 @@
     <message>
         <location filename="../../termwidget.cpp" line="228"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation>Er du sikker på, at du indsætte denne tekst?</translation>
+        <translation>Er du sikker på, at du vil indsætte denne tekst?</translation>
     </message>
 </context>
 <context>
@@ -743,7 +743,7 @@
     <message>
         <location filename="../../forms/qterminal.ui" line="78"/>
         <source>&amp;Help</source>
-        <translation>&amp;Hjælp</translation>
+        <translation>H&amp;jælp</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="85"/>
