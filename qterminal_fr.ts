@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="fr">
+<TS version="2.1" language="fr">
 <context>
     <name>BookmarksWidget</name>
     <message>
@@ -47,7 +47,7 @@
     </message>
     <message>
         <source>&amp;Clear Current Tab</source>
-        <translation>&amp;Effacer l&apos;onglet courant</translation>
+        <translation type="vanished">&amp;Effacer l&apos;onglet courant</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="214"/>
@@ -86,11 +86,11 @@
     </message>
     <message>
         <source>N&amp;ext Subterminal</source>
-        <translation>Sous-terminal &amp;suivant</translation>
+        <translation type="vanished">Sous-terminal &amp;suivant</translation>
     </message>
     <message>
         <source>P&amp;revious Subterminal</source>
-        <translation>Sous-terminal &amp;précédent</translation>
+        <translation type="vanished">Sous-terminal &amp;précédent</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="207"/>
@@ -779,11 +779,11 @@
     </message>
     <message>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Préférences...</translation>
+        <translation type="vanished">&amp;Préférences...</translation>
     </message>
     <message>
         <source>&amp;Quit</source>
-        <translation>&amp;Quitter</translation>
+        <translation type="vanished">&amp;Quitter</translation>
     </message>
 </context>
 </TS>
