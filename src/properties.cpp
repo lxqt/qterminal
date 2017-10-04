@@ -70,7 +70,8 @@ void Properties::loadSettings()
 
     highlightCurrentTerminal = m_settings->value("highlightCurrentTerminal", true).toBool();
 
-    font = qvariant_cast<QFont>(m_settings->value("font", defaultFont()));
+    font = QFont(qvariant_cast<QString>(m_settings->value("fontFamily", defaultFont().family())),
+                 qvariant_cast<int>(m_settings->value("fontSize", defaultFont().pointSize())));
 
     mainWindowSize = m_settings->value("MainWindow/size").toSize();
     mainWindowPosition = m_settings->value("MainWindow/pos").toPoint();
@@ -143,7 +144,8 @@ void Properties::saveSettings()
     m_settings->setValue("guiStyle", guiStyle);
     m_settings->setValue("colorScheme", colorScheme);
     m_settings->setValue("highlightCurrentTerminal", highlightCurrentTerminal);
-    m_settings->setValue("font", font);
+    m_settings->setValue("fontFamily", font.family());
+    m_settings->setValue("fontSize", font.pointSize());
 
     m_settings->beginGroup("Shortcuts");
     MainWindow *mainWindow = QTerminalApp::Instance()->getWindowList()[0];
