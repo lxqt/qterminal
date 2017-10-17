@@ -536,7 +536,7 @@
         <location filename="../../forms/propertiesdialog.ui" line="588"/>
         <location filename="../../forms/propertiesdialog.ui" line="605"/>
         <source>%</source>
-        <translation> %</translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="595"/>
