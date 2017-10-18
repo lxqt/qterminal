@@ -23,6 +23,7 @@
 
 #include "mainwindow.h"
 #include "termwidgetholder.h"
+#include "tabbar.h"
 #include "tabwidget.h"
 #include "config.h"
 #include "properties.h"
@@ -35,6 +36,9 @@
 
 TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
 {
+    // Insert our own tab bar which overrides tab width and eliding
+    setTabBar(new TabBar(this));
+
     setFocusPolicy(Qt::NoFocus);
 
     /* On Mac OS X this will look similar to
