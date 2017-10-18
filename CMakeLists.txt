@@ -49,6 +49,8 @@ set(EXE_NAME qterminal)
 set(QTERM_SRC
     src/main.cpp
     src/mainwindow.cpp
+    src/tabbar.cpp
+    src/tabstyle.cpp
     src/tabwidget.cpp
     src/termwidget.cpp
     src/termwidgetholder.cpp
@@ -63,6 +65,8 @@ set(QTERM_SRC
 set(QTERM_MOC_SRC
     src/qterminalapp.h
     src/mainwindow.h
+    src/tabbar.h
+    src/tabstyle.h
     src/tabwidget.h
     src/termwidget.h
     src/termwidgetholder.h
