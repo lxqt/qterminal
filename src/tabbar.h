@@ -30,9 +30,18 @@ public:
 
     explicit TabBar(QWidget *parent);
 
+    void setLimitWidth(bool limitWidth);
+    void setLimitWidthValue(int value);
+    void updateWidth();
+
 protected:
 
     virtual QSize tabSizeHint(int index) const;
+
+private:
+
+    bool mLimitWidth;
+    int mLimitWidthValue;
 };
 
 #endif // TABBAR_H

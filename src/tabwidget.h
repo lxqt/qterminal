@@ -28,6 +28,7 @@
     #include "dbusaddressable.h"
 #endif
 
+#include "tabbar.h"
 #include "terminalconfig.h"
 #include "properties.h"
 
@@ -111,6 +112,8 @@ private:
     int tabNumerator;
     /* re-order naming of the tabs then removeCurrentTab() */
     void renameTabsAfterRemove();
+
+    TabBar *mTabBar;
 };
 
 #endif

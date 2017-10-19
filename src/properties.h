@@ -68,6 +68,9 @@ class Properties
         bool hideTabBarWithOneTab;
         int m_motionAfterPaste;
 
+        bool limitTabWidth;
+        int limitTabWidthValue;
+
         bool borderless;
         bool tabBarless;
         bool menuVisible;
