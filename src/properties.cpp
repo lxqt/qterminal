@@ -109,6 +109,10 @@ void Properties::loadSettings()
     hideTabBarWithOneTab = m_settings->value("HideTabBarWithOneTab", false).toBool();
     m_motionAfterPaste = m_settings->value("MotionAfterPaste", 0).toInt();
 
+    /* tab width limit */
+    limitTabWidth = m_settings->value("LimitTabWidth").toBool();
+    limitTabWidthValue = m_settings->value("LimitTabWidthValue", 300).toInt();
+
     /* toggles */
     borderless = m_settings->value("Borderless", false).toBool();
     tabBarless = m_settings->value("TabBarless", false).toBool();
@@ -198,6 +202,10 @@ void Properties::saveSettings()
     m_settings->setValue("KeyboardCursorShape", keyboardCursorShape);
     m_settings->setValue("HideTabBarWithOneTab", hideTabBarWithOneTab);
     m_settings->setValue("MotionAfterPaste", m_motionAfterPaste);
+
+    m_settings->setValue("LimitTabWidth", limitTabWidth);
+    m_settings->setValue("LimitTabWidthValue", limitTabWidthValue);
+
     m_settings->setValue("Borderless", borderless);
     m_settings->setValue("TabBarless", tabBarless);
     m_settings->setValue("MenuVisible", menuVisible);

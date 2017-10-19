@@ -23,7 +23,6 @@
 
 #include "mainwindow.h"
 #include "termwidgetholder.h"
-#include "tabbar.h"
 #include "tabwidget.h"
 #include "config.h"
 #include "properties.h"
@@ -34,10 +33,10 @@
 #define TAB_CUSTOM_NAME_PROPERTY "custom_name"
 
 
-TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0)
+TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTabBar(new TabBar(this))
 {
     // Insert our own tab bar which overrides tab width and eliding
-    setTabBar(new TabBar(this));
+    setTabBar(mTabBar);
 
     setFocusPolicy(Qt::NoFocus);
 
@@ -420,6 +419,11 @@ void TabWidget::propertiesChanged()
         console->propertiesChanged();
     }
     showHideTabBar();
+
+    // Update the tab widths
+    mTabBar->setLimitWidth(Properties::Instance()->limitTabWidth);
+    mTabBar->setLimitWidthValue(Properties::Instance()->limitTabWidthValue);
+    mTabBar->updateWidth();
 }
 
 void TabWidget::clearActiveTerminal()

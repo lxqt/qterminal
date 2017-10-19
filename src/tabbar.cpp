@@ -20,14 +20,37 @@
 #include "tabstyle.h"
 
 TabBar::TabBar(QWidget *parent)
-    : QTabBar(parent)
+    : QTabBar(parent),
+      mLimitWidth(false),
+      mLimitWidthValue(0)
 {
     setStyle(new TabStyle(this));
+}
+
+void TabBar::setLimitWidth(bool limitWidth)
+{
+    mLimitWidth = limitWidth;
+}
+
+void TabBar::setLimitWidthValue(int value)
+{
+    mLimitWidthValue = value;
+}
+
+void TabBar::updateWidth()
+{
+    // This seems to be the only way to trigger an update
+    setIconSize(iconSize());
 }
 
 QSize TabBar::tabSizeHint(int index) const
 {
     QSize size = QTabBar::tabSizeHint(index);
-    size.setWidth(300);
+
+    // If the width is limited, use that for the width hint
+    if (mLimitWidth) {
+        size.setWidth(mLimitWidthValue);
+    }
+
     return size;
 }
