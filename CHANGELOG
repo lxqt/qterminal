@@ -1,7 +1,53 @@
 
-qterminal-0.7.1 / 2016-12-21
+qterminal-0.8.0 / 2017-10-21
 ============================
 
+  * Set version to 0.8.0
+  * Update information on distribution package
+  * Added legacy font setting support
+  * Made font in settings file human readable
+  * Fix action inconsistency when switching tabs
+  * Lithuanian translation
+  * Added Lithuanian language
+  * Don't export github templates
+  * correct spelling mistake
+  * Adapt to QTermWidget API changes after DECSCUSR handling
+  * liblxqt dont make sense here
+  * Copied issue template
+  * Drops Qt5Core_VERSION_STRING
+  * Update qterminal_drop.desktop
+  * Update qterminal.desktop
+  * Make disabled actions consistent at all times (#331)
+  * DBus DropMode (#325)
+  * Change subterminal shortcuts to avoid breaking qtermwidget scrolling (#327)
+  * Update main.cpp (#322)
+  * Fix toggle menu action.
+  * Focus highlight (#266)
+  * Replace numbered terminals with directional navigation (#255)
+  * Fix '1 Terminal' preset (#324)
+  * Change "Clear Current Tab" into "Clear Active Terminal" (#268)
+  * Fix duplicated items, rework MainWindow memory-management (#313)
+  * Fixed comment - needless compiler warnings are annoying (#321)
+  * DBus integration (#307)
+  * Restore filter actions (#310)
+  * New features: trim \n from pasted strings, confirm multiline pastes (#309)
+  * Support custom QSS styles
+  * Call QApp destructor (#306)
+  * Fixes (#318)
+  * Refactor dangling actions, delete windows on close
+  * Adds superbuild support
+  * Improve translation (.ts) handling
+  * Removes Qt5X11Extras_DEFINITIONS
+  * Stops adding not exist entries to CMAKE_MODULE_PATH
+  * Use the LXQtCompilerSettings module
+  * Adapt to QTermWidget improved CMake
+  * Fix a copy/paste error from 4afcc4d0d0922f526f89aadf16ec0517f6b5267e
+  * Update dependencies and cleanup trailing spaces
+
+0.7.1 / 2016-12-21
+==================
+
+  * Release 0.7.1: Update changelog
   * Bump patch version (#294)
   * Add common shortcuts for switching tabs (#275)
   * Fix tabstop order in properties dialog & add buddy relations for labels. (#290)
