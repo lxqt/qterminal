@@ -175,6 +175,7 @@ add_executable(${EXE_NAME} ${GUI_TYPE}
 )
 target_link_libraries(${EXE_NAME}
     Qt5::Gui
+    Qt5::Widgets
     qtermwidget5
     util
 )
