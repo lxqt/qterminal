@@ -46,10 +46,6 @@
         <translation>Presser &quot;%1&quot; pour voir le terminal.</translation>
     </message>
     <message>
-        <source>&amp;Clear Current Tab</source>
-        <translation type="vanished">&amp;Effacer l&apos;onglet courant</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.cpp" line="214"/>
         <source>&amp;Next Tab</source>
         <translation>Onglet &amp;suivant</translation>
@@ -85,37 +81,29 @@
         <translation>&amp;Concaténer le sous-terminal</translation>
     </message>
     <message>
-        <source>N&amp;ext Subterminal</source>
-        <translation type="vanished">Sous-terminal &amp;suivant</translation>
-    </message>
-    <message>
-        <source>P&amp;revious Subterminal</source>
-        <translation type="vanished">Sous-terminal &amp;précédent</translation>
-    </message>
-    <message>
         <location filename="../../mainwindow.cpp" line="207"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Effacer le terminal actif</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="239"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sous-terminal au-dessus</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="242"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Sous-terminal en-&amp;dessous</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="245"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Sous-terminal à &amp;gauche</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="248"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Sous-terminal à d&amp;roite</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="255"/>
@@ -215,12 +203,12 @@
     <message>
         <location filename="../../mainwindow.cpp" line="334"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">&amp;Préférences...</translation>
+        <translation>&amp;Préférences...</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="338"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">&amp;Quitter</translation>
+        <translation>&amp;Quitter</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="344"/>
@@ -240,7 +228,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="369"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Permuter les marque-pages</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="377"/>
@@ -467,7 +455,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="388"/>
         <source>Emulation</source>
-        <translation type="unfinished">Émulation</translation>
+        <translation>Émulation</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="397"/>
@@ -482,12 +470,12 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="429"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmer le collage sur plusieurs lignes</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="436"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Supprimer la blanc final des nouvelles lignes dans le texte collé</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="469"/>
@@ -651,7 +639,7 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="237"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Choisir une image de fond d&apos;écran</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="321"/>
@@ -669,7 +657,7 @@
     <message>
         <location filename="../../termwidget.cpp" line="234"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher les détails...</translation>
     </message>
 </context>
 <context>
@@ -727,12 +715,12 @@
     <message>
         <location filename="../../termwidget.cpp" line="227"/>
         <source>Paste multiline text</source>
-        <translation type="unfinished"></translation>
+        <translation>Coller du texte sur plusieurs lignes</translation>
     </message>
     <message>
         <location filename="../../termwidget.cpp" line="228"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation>Etes-vous sûr de vouloir coller ce texte ?</translation>
     </message>
 </context>
 <context>
@@ -765,25 +753,17 @@
     <message>
         <location filename="../../forms/qterminal.ui" line="90"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished">&amp;Éditer</translation>
+        <translation>&amp;Éditer</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="106"/>
         <source>&amp;About...</source>
-        <translation type="unfinished">&amp;À propos...</translation>
+        <translation>&amp;À propos...</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="111"/>
         <source>About &amp;Qt...</source>
-        <translation type="unfinished">À propos de &amp;Qt...</translation>
-    </message>
-    <message>
-        <source>&amp;Preferences...</source>
-        <translation type="vanished">&amp;Préférences...</translation>
-    </message>
-    <message>
-        <source>&amp;Quit</source>
-        <translation type="vanished">&amp;Quitter</translation>
+        <translation>À propos de &amp;Qt...</translation>
     </message>
 </context>
 </TS>
