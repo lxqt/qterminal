@@ -110,8 +110,8 @@ void Properties::loadSettings()
     m_motionAfterPaste = m_settings->value("MotionAfterPaste", 0).toInt();
 
     /* tab width limit */
-    limitTabWidth = m_settings->value("LimitTabWidth").toBool();
-    limitTabWidthValue = m_settings->value("LimitTabWidthValue", 300).toInt();
+    limitTabWidth = m_settings->value("LimitTabWidth", true).toBool();
+    limitTabWidthValue = m_settings->value("LimitTabWidthValue", 500).toInt();
 
     /* toggles */
     borderless = m_settings->value("Borderless", false).toBool();
