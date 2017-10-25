@@ -16,6 +16,7 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>. *
  ***************************************************************************/
 
+#include <QPainter>
 #include <QPalette>
 #include <QRect>
 #include <QStyleOptionTab>
@@ -39,6 +40,20 @@ void TabStyle::drawControl(ControlElement element,
 
         // Determine the rect in which the text will be shown
         QRect rect = subElementRect(SE_TabBarTabText, option, widget);
+
+        // Draw the icon if specified
+        if (!tabOption->icon.isNull()) {
+
+            // Create a pixmap (with HiDPI support if enabled)
+            QPixmap tabIcon = tabOption->icon.pixmap(
+                        widget ? widget->window()->windowHandle() : nullptr,
+                        tabOption->iconSize);
+
+            // Draw the pixmap in the correct location
+            painter->drawPixmap(rect.left() - tabOption->iconSize.width() - 4,
+                                rect.center().y() - tabOption->iconSize.height() / 2,
+                                tabIcon);
+        }
 
         // Elide the text (truncate it with an ellipsis)
         QString elidedText = tabOption->fontMetrics.elidedText(tabOption->text,
