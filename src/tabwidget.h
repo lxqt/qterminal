@@ -28,10 +28,10 @@
     #include "dbusaddressable.h"
 #endif
 
-#include "tabbar.h"
 #include "terminalconfig.h"
 #include "properties.h"
 
+class TabBar;
 class TermWidgetHolder;
 class QAction;
 class QActionGroup;

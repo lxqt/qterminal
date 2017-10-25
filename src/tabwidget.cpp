@@ -23,6 +23,7 @@
 
 #include "mainwindow.h"
 #include "termwidgetholder.h"
+#include "tabbar.h"
 #include "tabwidget.h"
 #include "config.h"
 #include "properties.h"
