@@ -42,7 +42,7 @@ void TabStyle::drawControl(ControlElement element,
 
         // Elide the text (truncate it with an ellipsis)
         QString elidedText = tabOption->fontMetrics.elidedText(tabOption->text,
-                                                               Qt::ElideRight,
+                                                               Qt::ElideMiddle,
                                                                rect.width());
 
         // Draw the final text
