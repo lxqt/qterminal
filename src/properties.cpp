@@ -69,6 +69,7 @@ void Properties::loadSettings()
     colorScheme = m_settings->value("colorScheme", "Linux").toString();
 
     highlightCurrentTerminal = m_settings->value("highlightCurrentTerminal", true).toBool();
+    showTerminalSizeHint = m_settings->value("showTerminalSizeHint", true).toBool();
 
     font = QFont(qvariant_cast<QString>(m_settings->value("fontFamily", defaultFont().family())),
                  qvariant_cast<int>(m_settings->value("fontSize", defaultFont().pointSize())));
@@ -146,6 +147,7 @@ void Properties::saveSettings()
     m_settings->setValue("guiStyle", guiStyle);
     m_settings->setValue("colorScheme", colorScheme);
     m_settings->setValue("highlightCurrentTerminal", highlightCurrentTerminal);
+    m_settings->setValue("showTerminalSizeHint", showTerminalSizeHint);
     m_settings->setValue("fontFamily", font.family());
     m_settings->setValue("fontSize", font.pointSize());
     //Clobber legacy setting
