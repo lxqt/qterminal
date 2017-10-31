@@ -76,6 +76,10 @@ void Properties::loadSettings()
     //Legacy font setting
     font = qvariant_cast<QFont>(m_settings->value("font", font));
 
+    secondaryFont = QFont(qvariant_cast<QString>(m_settings->value("secondaryFontFamily", defaultFont().family())),
+                          qvariant_cast<int>(m_settings->value("secondaryFontSize", defaultFont().pointSize())));
+    secondaryFontPattern = m_settings->value("secondaryFontPattern", "").toString();
+
     mainWindowSize = m_settings->value("MainWindow/size").toSize();
     mainWindowPosition = m_settings->value("MainWindow/pos").toPoint();
     mainWindowState = m_settings->value("MainWindow/state").toByteArray();
@@ -152,6 +156,10 @@ void Properties::saveSettings()
     m_settings->setValue("fontSize", font.pointSize());
     //Clobber legacy setting
     m_settings->remove("font");
+
+    m_settings->setValue("secondaryFontFamily", secondaryFont.family());
+    m_settings->setValue("secondaryFontSize", secondaryFont.pointSize());
+    m_settings->setValue("secondaryFontPattern", secondaryFontPattern);
 
     m_settings->beginGroup("Shortcuts");
     MainWindow *mainWindow = QTerminalApp::Instance()->getWindowList()[0];

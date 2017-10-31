@@ -47,6 +47,10 @@ class Properties
         //ShortcutMap shortcuts;
         QString shell;
         QFont font;
+
+        QFont secondaryFont;
+        QString secondaryFontPattern;
+
         QString colorScheme;
         QString guiStyle;
         bool highlightCurrentTerminal;

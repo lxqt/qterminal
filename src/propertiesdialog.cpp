@@ -38,6 +38,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
             this, SLOT(apply()));
     connect(changeFontButton, SIGNAL(clicked()),
             this, SLOT(changeFontButton_clicked()));
+    connect(changeSecondaryFontButton, SIGNAL(clicked()),
+            this, SLOT(changeSecondaryFontButton_clicked()));
     connect(chooseBackgroundImageButton, &QPushButton::clicked,
             this, &PropertiesDialog::chooseBackgroundImageButton_clicked);
 
@@ -99,7 +101,10 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     if (ix != -1)
         styleComboBox->setCurrentIndex(ix);
 
-    setFontSample(Properties::Instance()->font);
+    setFontSample(Properties::Instance()->font, this->fontSampleLabel);
+    setFontSample(Properties::Instance()->secondaryFont, this->secondaryFontSampleLabel);
+
+    secondaryFontPatternTextEdit->setText(Properties::Instance()->secondaryFontPattern);
 
     appTransparencyBox->setValue(Properties::Instance()->appTransparency);
 
@@ -160,6 +165,10 @@ void PropertiesDialog::apply()
 {
     Properties::Instance()->colorScheme = colorSchemaCombo->currentText();
     Properties::Instance()->font = fontSampleLabel->font();//fontComboBox->currentFont();
+
+    Properties::Instance()->secondaryFont = secondaryFontSampleLabel->font();
+    Properties::Instance()->secondaryFontPattern = secondaryFontPatternTextEdit->text();
+
     Properties::Instance()->guiStyle = (styleComboBox->currentText() == tr("System Default")) ?
                                        QString() : styleComboBox->currentText();
 
@@ -217,11 +226,11 @@ void PropertiesDialog::apply()
     emit propertiesChanged();
 }
 
-void PropertiesDialog::setFontSample(const QFont & f)
+void PropertiesDialog::setFontSample(const QFont & f, QLabel * label)
 {
-    fontSampleLabel->setFont(f);
+    label->setFont(f);
     QString sample("%1 %2 pt");
-    fontSampleLabel->setText(sample.arg(f.family()).arg(f.pointSize()));
+    label->setText(sample.arg(f.family()).arg(f.pointSize()));
 }
 
 void PropertiesDialog::changeFontButton_clicked()
@@ -231,7 +240,17 @@ void PropertiesDialog::changeFontButton_clicked()
         return;
     QFont f = dia.getFont();
     if (QFontInfo(f).fixedPitch())
-        setFontSample(f);
+        setFontSample(f, this->fontSampleLabel);
+}
+
+void PropertiesDialog::changeSecondaryFontButton_clicked()
+{
+    FontDialog dia(secondaryFontSampleLabel->font());
+    if (!dia.exec())
+        return;
+    QFont f = dia.getFont();
+    if (QFontInfo(f).fixedPitch())
+        setFontSample(f, this->secondaryFontSampleLabel);
 }
 
 void PropertiesDialog::chooseBackgroundImageButton_clicked()
