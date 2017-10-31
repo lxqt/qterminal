@@ -96,6 +96,7 @@ class TermWidget : public QWidget, public DBusAddressable
         bool eventFilter(QObject * obj, QEvent * evt) override;
 
     private slots:
+        void term_titleChanged();
         void term_termGetFocus();
         void term_termLostFocus();
 };

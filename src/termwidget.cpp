@@ -23,6 +23,7 @@
 #include <QMessageBox>
 #include <QAbstractButton>
 #include <QMouseEvent>
+#include <QRegularExpression>
 #include <assert.h>
 
 #ifdef HAVE_QDBUS
@@ -85,6 +86,7 @@ void TermWidgetImpl::propertiesChanged()
     setColorScheme(Properties::Instance()->colorScheme);
     setTerminalFont(Properties::Instance()->font);
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
+    setTerminalSizeHint(Properties::Instance()->showTerminalSizeHint);
 
     if (Properties::Instance()->historyLimited)
     {
@@ -300,7 +302,29 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     connect(m_term, SIGNAL(finished()), this, SIGNAL(finished()));
     connect(m_term, SIGNAL(termGetFocus()), this, SLOT(term_termGetFocus()));
     connect(m_term, SIGNAL(termLostFocus()), this, SLOT(term_termLostFocus()));
-    connect(m_term, &QTermWidget::titleChanged, this, [this] { emit termTitleChanged(m_term->title(), m_term->icon()); });
+    connect(m_term, SIGNAL(titleChanged()), this, SLOT(term_titleChanged()));
+}
+
+void TermWidget::term_titleChanged()
+{
+    QString title = m_term->title();
+
+    QRegularExpression re(Properties::Instance()->secondaryFontPattern);
+    QFont font = Properties::Instance()->font;
+    if (re.isValid() && re.match(title).hasMatch()) {
+        qDebug() << "Terminal title changed, pattern match, use secondary font";
+        font = Properties::Instance()->secondaryFont;
+    } else {
+        qDebug() << "Terminal title changed, use default font";
+    }
+
+    QFont current_font = m_term->getTerminalFont();
+    if (current_font.family() != font.family() || current_font.pointSize() != font.pointSize()) {
+        qDebug() << "Update terminal font to " << font << ", was " << current_font;
+        m_term->setTerminalFont(font);
+    }
+
+    emit termTitleChanged(title, m_term->icon());
 }
 
 void TermWidget::propertiesChanged()

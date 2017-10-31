@@ -35,7 +35,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
         void propertiesChanged();
 
     private:
-        void setFontSample(const QFont & f);
+        void setFontSample(const QFont & f, QLabel * label);
         void openBookmarksFile(const QString &fname);
         void saveBookmarksFile(const QString &fname);
 
@@ -44,6 +44,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
         void accept();
         
         void changeFontButton_clicked();
+        void changeSecondaryFontButton_clicked();
         void chooseBackgroundImageButton_clicked();
         void bookmarksButton_clicked();
 
