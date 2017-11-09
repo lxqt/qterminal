@@ -260,7 +260,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="414"/>
         <source>&amp;None</source>
-        <translation>&amp;Intet</translation>
+        <translation>&amp;Ingen</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="432"/>
@@ -344,7 +344,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="90"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Skjul fanebladslinje med kun ét faneblad</translation>
+        <translation>Skjul fanebladslinje når der kun er ét faneblad</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="100"/>
@@ -556,7 +556,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="673"/>
         <source>Enable bookmarks</source>
-        <translation>Aktiver bogmærker</translation>
+        <translation>Aktivér bogmærker</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="682"/>
