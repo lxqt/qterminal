@@ -48,7 +48,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="207"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>アクティブなターミナルをクリアする(&amp;C)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="231"/>
@@ -131,7 +131,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="301"/>
         <source>Rename session</source>
-        <translation type="unfinished">タブ名の変更</translation>
+        <translation>セッション名の変更</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="313"/>
@@ -161,12 +161,12 @@
     <message>
         <location filename="../../mainwindow.cpp" line="334"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">設定(&amp;P)...</translation>
+        <translation>設定(&amp;P)...</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="338"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">終了(&amp;Q)</translation>
+        <translation>終了(&amp;Q)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="369"/>
@@ -213,22 +213,22 @@
     <message>
         <location filename="../../mainwindow.cpp" line="445"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>ブロックカーソル(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="446"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>アンダーラインカーソル(&amp;U)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="447"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>アイビームカーソル(&amp;I)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="464"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>カーソルの形(&amp;K)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="548"/>
@@ -400,7 +400,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="120"/>
         <source>Start with preset:</source>
-        <translation>プリセットでスタート</translation>
+        <translation>プリセットでスタート:</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="164"/>
@@ -430,27 +430,27 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>カーソルの形</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>現在のターミナルのウィンドウタイトルの変更</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>現在のターミナルのアイコンの変更</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="350"/>
         <source>Background image:</source>
-        <translation type="unfinished"></translation>
+        <translation>背景画像:</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="362"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>選択</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="397"/>
@@ -465,12 +465,12 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="429"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation>複数にまたがる行の貼り付けの確認</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="436"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストの貼付け時に空白の行を生成しない</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="469"/>
@@ -619,17 +619,17 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="78"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>ブロックカーソル</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="78"/>
         <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>アンダーラインカーソル</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="78"/>
         <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>アイビームカーソル</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="90"/>
@@ -655,12 +655,12 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="237"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>背景画像を選択</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="238"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation type="unfinished"></translation>
+        <translation>画像 (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="321"/>
@@ -673,7 +673,7 @@
     <message>
         <location filename="../../termwidget.cpp" line="234"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>詳細を表示...</translation>
     </message>
 </context>
 <context>
@@ -735,12 +735,12 @@
     <message>
         <location filename="../../termwidget.cpp" line="227"/>
         <source>Paste multiline text</source>
-        <translation type="unfinished"></translation>
+        <translation>複数行のテキストを貼り付け</translation>
     </message>
     <message>
         <location filename="../../termwidget.cpp" line="228"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation>テキストを貼り付けますか?</translation>
     </message>
 </context>
 <context>
