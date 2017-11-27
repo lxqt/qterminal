@@ -93,6 +93,7 @@ class Properties
 
         bool changeWindowTitle;
         bool changeWindowIcon;
+        bool enabledBidiSupport;
 
         bool confirmMultilinePaste;
         bool trimPastedTrailingNewlines;
