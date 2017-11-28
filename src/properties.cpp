@@ -136,7 +136,7 @@ void Properties::loadSettings()
 
     changeWindowTitle = m_settings->value("ChangeWindowTitle", true).toBool();
     changeWindowIcon = m_settings->value("ChangeWindowIcon", true).toBool();
-    enabledBidiSupport = m_settings->value("enabledBidiSupport", false).toBool();
+    enabledBidiSupport = m_settings->value("enabledBidiSupport", true).toBool();
 
     confirmMultilinePaste = m_settings->value("ConfirmMultilinePaste", false).toBool();
     trimPastedTrailingNewlines = m_settings->value("TrimPastedTrailingNewlines", false).toBool();
