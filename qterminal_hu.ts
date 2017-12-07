@@ -38,37 +38,37 @@
     <message>
         <location filename="../../mainwindow.cpp" line="214"/>
         <source>&amp;Next Tab</source>
-        <translation>&amp;Következő lap&gt;</translation>
+        <translation>&amp;Következő lap</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="217"/>
         <source>&amp;Previous Tab</source>
-        <translation>&amp;Előző lap&gt;</translation>
+        <translation>&amp;Előző lap</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="220"/>
         <source>Move Tab &amp;Left</source>
-        <translation>&amp;Lap balra&quot;&gt;</translation>
+        <translation>&amp;Lap balra</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="223"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Lap jobb&amp;ra&gt;</translation>
+        <translation>Lap jobb&amp;ra</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="228"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>Terminál &amp;vízszintes szétvágása&gt;</translation>
+        <translation>Terminál &amp;vízszintes szétvágása</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="231"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>Terminál &amp;függőleges szétvágása&quot;&gt;</translation>
+        <translation>Terminál &amp;függőleges szétvágása</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="236"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>Alter&amp;minál összevonása&gt;</translation>
+        <translation>Alter&amp;minál összevonása</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="207"/>
@@ -103,12 +103,12 @@
     <message>
         <location filename="../../mainwindow.cpp" line="258"/>
         <source>Paste Clip&amp;board</source>
-        <translation>Vágólap &amp;beillesztése&quot;&gt;</translation>
+        <translation>Vágólap &amp;beillesztése</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="261"/>
         <source>Paste S&amp;election</source>
-        <translation>Kijelölés b&amp;eillesztése&gt;</translation>
+        <translation>Kijelölés b&amp;eillesztése</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="264"/>
@@ -118,12 +118,12 @@
     <message>
         <location filename="../../mainwindow.cpp" line="267"/>
         <source>Zoom &amp;out</source>
-        <translation>Ki&amp;csinyít&gt;</translation>
+        <translation>Ki&amp;csinyít</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="270"/>
         <source>Zoom rese&amp;t</source>
-        <translation>Nagyí&amp;tás vissza&gt;</translation>
+        <translation>Nagyí&amp;tás vissza</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="275"/>
@@ -133,17 +133,17 @@
     <message>
         <location filename="../../mainwindow.cpp" line="283"/>
         <source>&amp;Save Session</source>
-        <translation>Menet menté&amp;&gt;</translation>
+        <translation>Menet menté&amp;s</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="289"/>
         <source>&amp;Load Session</source>
-        <translation>Menet tö&amp;ltés&gt;</translation>
+        <translation>Menet tö&amp;ltés</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="296"/>
         <source>&amp;Toggle Menu</source>
-        <translation>Me&amp;nü ki-be&gt;</translation>
+        <translation>Me&amp;nü ki-be</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="301"/>
@@ -153,42 +153,42 @@
     <message>
         <location filename="../../mainwindow.cpp" line="309"/>
         <source>&amp;New Tab</source>
-        <translation>Új la&amp;p&gt;</translation>
+        <translation>Új la&amp;p</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="313"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Új lap a kés&amp;zletből&gt;</translation>
+        <translation>Új lap a kés&amp;zletből</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="314"/>
         <source>1 &amp;Terminal</source>
-        <translation>1 &amp;terminál&gt;</translation>
+        <translation>1 &amp;terminál</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="316"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>2 &amp;vízszintes terminál&gt;</translation>
+        <translation>2 &amp;vízszintes terminál</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="318"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation>2 &amp;függőleges terminál&gt;</translation>
+        <translation>2 &amp;függőleges terminál</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="320"/>
         <source>4 Terminal&amp;s</source>
-        <translation>4 te&amp;rminál&gt;</translation>
+        <translation>4 te&amp;rminál</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="326"/>
         <source>&amp;Close Tab</source>
-        <translation>Lap be&amp;csuká&gt;</translation>
+        <translation>Lap be&amp;csukás</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="329"/>
         <source>&amp;New Window</source>
-        <translation>Új abla&amp;k&gt;</translation>
+        <translation>Új abla&amp;k</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="334"/>
@@ -203,17 +203,17 @@
     <message>
         <location filename="../../mainwindow.cpp" line="344"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>Ablakkeret &amp;kikapcsolása&gt;</translation>
+        <translation>Ablakkeret &amp;kikapcsolása</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="355"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>Lapfül&amp;sáv látható&gt;</translation>
+        <translation>Lapfül&amp;sáv látható</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="363"/>
         <source>Fullscreen</source>
-        <translation>Telikép&quot;&gt;</translation>
+        <translation>Telikép</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="369"/>
@@ -223,59 +223,59 @@
     <message>
         <location filename="../../mainwindow.cpp" line="377"/>
         <source>&amp;Bottom</source>
-        <translation>Al&amp;ul&gt;</translation>
+        <translation>Al&amp;ul</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="378"/>
         <source>&amp;Top</source>
-        <translation>&amp;Felül&gt;</translation>
+        <translation>&amp;Felül</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="379"/>
         <location filename="../../mainwindow.cpp" line="415"/>
         <source>&amp;Right</source>
-        <translation>&amp;Jobbra&gt;</translation>
+        <translation>&amp;Jobbra</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="380"/>
         <location filename="../../mainwindow.cpp" line="416"/>
         <source>&amp;Left</source>
-        <translation>Ba&amp;lra&gt;</translation>
+        <translation>Ba&amp;lra</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="398"/>
         <source>&amp;Tabs Layout</source>
-        <translation>La&amp;pfülek helye&gt;</translation>
+        <translation>La&amp;pfülek helye</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="414"/>
         <source>&amp;None</source>
-        <translation>&amp;Nincs&gt;</translation>
+        <translation>&amp;Nincs</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="432"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>&amp;Gördítősáv helye&gt;</translation>
+        <translation>&amp;Gördítősáv helye</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="445"/>
         <source>&amp;BlockCursor</source>
-        <translation>&amp;Tömb alak&gt;</translation>
+        <translation>&amp;Tömb alak</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="446"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>Aláh&amp;úzásjel&gt;</translation>
+        <translation>Aláh&amp;úzásjel</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="447"/>
         <source>&amp;IBeamCursor</source>
-        <translation>&amp;I alak&gt;</translation>
+        <translation>&amp;I alak</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="464"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>Billentyű&amp;kurzor&gt;</translation>
+        <translation>Billentyű&amp;kurzor</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="548"/>
@@ -469,7 +469,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="483"/>
         <source>Save Position when closing</source>
-        <translation>Bezérva a helyzet mentése</translation>
+        <translation>Bezárva a helyzet mentése</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="490"/>
@@ -743,7 +743,7 @@
     <message>
         <location filename="../../forms/qterminal.ui" line="85"/>
         <source>&amp;View</source>
-        <translation>&amp;Néz</translation>
+        <translation>&amp;Nézet</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="90"/>
