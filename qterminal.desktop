@@ -4,6 +4,7 @@ Type=Application
 GenericName=Terminal emulator
 
 Comment=Terminal emulator
+Comment[ca]=Emulador de terminal
 Comment[de]=Befehlszeile verwenden
 Comment[el]=Προσομοιωτής τερματικού
 Comment[fr]=Terminal
