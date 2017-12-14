@@ -233,6 +233,7 @@ bool KPty::open()
 
 #elif defined(HAVE_PTSNAME) || defined(TIOCGPTN)
 
+    d->masterFd = ::posix_openpt(O_RDWR|O_NOCTTY);
 #ifdef HAVE_POSIX_OPENPT
     d->masterFd = ::posix_openpt(O_RDWR|O_NOCTTY);
 #elif defined(HAVE_GETPT)

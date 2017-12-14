@@ -21,7 +21,7 @@ cp -v qterminal "${DESTDIR}"
 
 # Create the table of contents and icon
 cat >"${DESTDIR}/toc.txt" <<__EOF__
-name=Qt test
+name=qterminal
 icon=icon.png
 run=qterminal
 __EOF__

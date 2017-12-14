@@ -39,6 +39,8 @@ macx: {
 }
 
 RESOURCES += src/icons.qrc
+RESOURCES += src/fonts.qrc
+
 FORMS += $$files(src/forms/*.ui)
 
 unix {
