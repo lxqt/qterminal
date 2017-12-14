@@ -1,0 +1,6 @@
+-I/home/gogoprog/code/qtermwidget
+-I/home/gogoprog/code/qtermwidget
+-DQT_USE_QSTRINGBUILDER
+-o
+/home/gogoprog/code/qtermwidget/lib/moc_kptydevice.cpp
+/home/gogoprog/code/qtermwidget/lib/kptydevice.h
