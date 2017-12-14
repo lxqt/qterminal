@@ -1,3 +1,4 @@
+#if 0
 #include "qxtglobalshortcut.h"
 /****************************************************************************
 ** Copyright (c) 2006 - 2011, the LibQxt project.
@@ -210,3 +211,4 @@ void QxtGlobalShortcut::setDisabled(bool disabled)
 {
     qxt_d().enabled = !disabled;
 }
+#endif

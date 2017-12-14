@@ -85,7 +85,7 @@ private:
     void enableDropMode();
     QToolButton *m_dropLockButton;
     bool m_dropMode;
-    QxtGlobalShortcut m_dropShortcut;
+    //QxtGlobalShortcut m_dropShortcut;
     void realign();
     void setDropShortcut(QKeySequence dropShortCut);
 
