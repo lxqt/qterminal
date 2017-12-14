@@ -9,6 +9,7 @@ CONFIG += link_pkgconfig \
 # PKGCONFIG += qtermwidget5
 
 DEFINES += STR_VERSION=\\\"0.7.0\\\"
+DEFINES += BUNDLE_COLORSCHEMES
 
 SOURCES += $$files(src/*.cpp)
 HEADERS += $$files(src/*.h)
@@ -40,6 +41,7 @@ macx: {
 
 RESOURCES += src/icons.qrc
 RESOURCES += src/fonts.qrc
+RESOURCES += src/colorschemes.qrc
 
 FORMS += $$files(src/forms/*.ui)
 

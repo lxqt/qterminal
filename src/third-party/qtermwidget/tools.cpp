@@ -62,29 +62,28 @@ But in some cases (apple bundle) there can be more locations).
 const QStringList get_color_schemes_dirs()
 {
 #ifdef BUNDLE_COLORSCHEMES
-    return QLatin1String(":/");
+    return QStringList(QLatin1String(":/third-party/qtermwidget/color-schemes"));
 #else
 //    qDebug() << __FILE__ << __FUNCTION__;
 
     QStringList rval;
-    return rval;
-    /* QString k(COLORSCHEMES_DIR); */
-    /* QDir d(k); */
+    QString k(COLORSCHEMES_DIR);
+    QDir d(k);
 
-/* //    qDebug() << "default COLORSCHEMES_DIR: " << k; */
+//    qDebug() << "default COLORSCHEMES_DIR: " << k;
 
-    /* if (d.exists()) */
-    /*     rval << k.append("/"); */
+    if (d.exists())
+        rval << k.append("/");
 
-    /* // subdir in the app location */
-    /* d.setPath(QCoreApplication::applicationDirPath() + "/color-schemes/"); */
-    /* //qDebug() << d.path(); */
-    /* if (d.exists()) */
-    /* { */
-    /*     if (!rval.isEmpty()) */
-    /*         rval.clear(); */
-    /*     rval << (QCoreApplication::applicationDirPath() + "/color-schemes/"); */
-    /* } */
+    // subdir in the app location
+    d.setPath(QCoreApplication::applicationDirPath() + "/color-schemes/");
+    //qDebug() << d.path();
+    if (d.exists())
+    {
+        if (!rval.isEmpty())
+            rval.clear();
+        rval << (QCoreApplication::applicationDirPath() + "/color-schemes/");
+    }
 #ifdef Q_WS_MAC
     d.setPath(QCoreApplication::applicationDirPath() + "/../Resources/color-schemes/");
     if (d.exists())
