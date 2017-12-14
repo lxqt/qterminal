@@ -111,6 +111,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     highlightCurrentCheckBox->setChecked(Properties::Instance()->highlightCurrentTerminal);
 
+    showTerminalSizeHintCheckBox->setChecked(Properties::Instance()->showTerminalSizeHint);
+
     askOnExitCheckBox->setChecked(Properties::Instance()->askOnExit);
 
     savePosOnExitCheckBox->setChecked(Properties::Instance()->savePosOnExit);
@@ -176,6 +178,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->termTransparency = termTransparencyBox->value();
     Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
+    Properties::Instance()->showTerminalSizeHint = showTerminalSizeHintCheckBox->isChecked();
     Properties::Instance()->backgroundImage = backgroundImageLineEdit->text();
 
     Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();

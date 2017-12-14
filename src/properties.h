@@ -50,6 +50,7 @@ class Properties
         QString colorScheme;
         QString guiStyle;
         bool highlightCurrentTerminal;
+        bool showTerminalSizeHint;
 
         bool historyLimited;
         unsigned historyLimitedTo;
