@@ -16,11 +16,13 @@
 
 ### From sources
 
+  * See https://github.com/ValveSoftware/steamlink-sdk
   * Enable the steamlink-sdk environment `source setenv.sh`
   * Run `./build_steamlink.sh`
   * Copy steamlink directory on a USB drive
   * Plug it on the Steam Link
   * Restart your Steam Link
+  * The QTerminal application is now available in the Steam Link main menu
   
 ### From binaries
 
