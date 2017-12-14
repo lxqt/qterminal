@@ -9,6 +9,8 @@
   * Start QTerminal on the Steam Link
   * Chroot to Arch Linux (see https://www.exploitee.rs/index.php/Steam_Link)
   * Run Vim (or any console app)
+  
+![Vim](https://github.com/gogoprog/qterminal-steamlink/raw/master/doc/vim.jpg)
 
 ## Installation
 
