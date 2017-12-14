@@ -10,4 +10,4 @@ src/translations/qterminal
 /pkg-config_wrapper.sh
 /qterminal
 /.qmake.stash
-
+/tags
