@@ -200,244 +200,244 @@
     <message>
         <location filename="../../mainwindow.cpp" line="207"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Limpar terminal ativo</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="214"/>
         <source>&amp;Next Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Separador segui&amp;nte</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="217"/>
         <source>&amp;Previous Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Se&amp;parador anterior</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="220"/>
         <source>Move Tab &amp;Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Mover separador para a &amp;esquerda</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="223"/>
         <source>Move Tab &amp;Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Mover separador para a di&amp;reita</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="228"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation>Separar na &amp;horizontal</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="231"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation type="unfinished"></translation>
+        <translation>Separar na &amp;vertical</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="236"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Re&amp;colher sub-terminal</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="239"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Sub-&amp;terminal superior</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="242"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Su&amp;b-terminal inferior</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="245"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Sub-terminal &amp;esquerdo</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="248"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Sub-terminal &amp;direito</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="255"/>
         <source>Copy &amp;Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Copiar &amp;seleção</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="258"/>
         <source>Paste Clip&amp;board</source>
-        <translation type="unfinished"></translation>
+        <translation>Colar da área de &amp;transferência</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="261"/>
         <source>Paste S&amp;election</source>
-        <translation type="unfinished"></translation>
+        <translation>Colar da s&amp;eleção</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="264"/>
         <source>Zoom &amp;in</source>
-        <translation type="unfinished"></translation>
+        <translation>Ampl&amp;iar</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="267"/>
         <source>Zoom &amp;out</source>
-        <translation type="unfinished"></translation>
+        <translation>Red&amp;uzir</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="270"/>
         <source>Zoom rese&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Repor ampliação</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="275"/>
         <source>&amp;Find...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Localizar...</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="283"/>
         <source>&amp;Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Guardar &amp;sessão</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="289"/>
         <source>&amp;Load Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Carregar sessão</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="296"/>
         <source>&amp;Toggle Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Al&amp;ternar menu</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="301"/>
         <source>Rename session</source>
-        <translation type="unfinished">Renomear sessão</translation>
+        <translation>Renomear sessão</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="309"/>
         <source>&amp;New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Novo separador</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="313"/>
         <source>New Tab From &amp;Preset</source>
-        <translation type="unfinished"></translation>
+        <translation>Novo separador de &amp;pré-ajuste</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="314"/>
         <source>1 &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>1 &amp;terminal</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="316"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation type="unfinished"></translation>
+        <translation>2 terminais &amp;horizontais</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="318"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation type="unfinished"></translation>
+        <translation>2 terminais &amp;verticais</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="320"/>
         <source>4 Terminal&amp;s</source>
-        <translation type="unfinished"></translation>
+        <translation>4 terminai&amp;s</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="326"/>
         <source>&amp;Close Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Fe&amp;char separador</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="329"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nova janela</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="334"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">&amp;Preferências...</translation>
+        <translation>&amp;Preferências...</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="338"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">&amp;Sair</translation>
+        <translation>&amp;Sair</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="344"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ocultar contornos da janela</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="355"/>
         <source>&amp;Show Tab Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Mo&amp;strar barra de separadores</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="363"/>
         <source>Fullscreen</source>
-        <translation type="unfinished"></translation>
+        <translation>Ecrã completo</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="369"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Alternar marcadores</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="377"/>
         <source>&amp;Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Baixo</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="378"/>
         <source>&amp;Top</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Cima</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="379"/>
         <location filename="../../mainwindow.cpp" line="415"/>
         <source>&amp;Right</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Direita</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="380"/>
         <location filename="../../mainwindow.cpp" line="416"/>
         <source>&amp;Left</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Esquerda</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="398"/>
         <source>&amp;Tabs Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Posição dos separadores</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="414"/>
         <source>&amp;None</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nenhuma</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="432"/>
         <source>S&amp;crollbar Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Posição da barra de deslo&amp;cação</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="445"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bloco</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="446"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>S&amp;ublinhado</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="447"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ibeam</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="464"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Forma do cursor de teclado</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="548"/>
@@ -501,7 +501,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="90"/>
         <source>Hide tab bar with only one tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ocultar barra de separadores se apenas existir um</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="100"/>
@@ -511,7 +511,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="254"/>
         <source>&amp;Change...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Alterar...</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="296"/>
@@ -599,7 +599,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="429"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmação de colagem</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="436"/>
@@ -614,12 +614,12 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="476"/>
         <source>Save Size when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Guardar tamanho ao fechar</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="483"/>
         <source>Save Position when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Guardar posição ao fechar</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="490"/>
@@ -675,27 +675,27 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Forma do cursor de teclado</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterar título da janela de acordo com o terminal atual</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterar ícone da janela de acordo com o terminal atual</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="350"/>
         <source>Background image:</source>
-        <translation type="unfinished"></translation>
+        <translation>Imagem de fundo:</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="362"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecionar</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="567"/>
@@ -763,17 +763,17 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="78"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloco</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="78"/>
         <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Sublinhado</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="78"/>
         <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Ibeam</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="90"/>
@@ -799,12 +799,12 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="237"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Escolha a imagem de fundo</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="238"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation type="unfinished"></translation>
+        <translation>Imagens (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="321"/>
@@ -817,7 +817,7 @@
     <message>
         <location filename="../../termwidget.cpp" line="234"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar detalhes...</translation>
     </message>
 </context>
 <context>
@@ -879,12 +879,12 @@
     <message>
         <location filename="../../termwidget.cpp" line="227"/>
         <source>Paste multiline text</source>
-        <translation type="unfinished"></translation>
+        <translation>Colar texto multi-linha</translation>
     </message>
     <message>
         <location filename="../../termwidget.cpp" line="228"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation>Tem a certeza de que deseja colar este texto?</translation>
     </message>
 </context>
 <context>
@@ -897,37 +897,37 @@
     <message>
         <location filename="../../forms/qterminal.ui" line="65"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ficheiro</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="73"/>
         <source>&amp;Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ações</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="78"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>Aj&amp;uda</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="85"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ver</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="90"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Editar</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="106"/>
         <source>&amp;About...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sobre...</translation>
     </message>
     <message>
         <location filename="../../forms/qterminal.ui" line="111"/>
         <source>About &amp;Qt...</source>
-        <translation type="unfinished"></translation>
+        <translation>Sobre &amp;Qt...</translation>
     </message>
     <message>
         <source>File</source>
