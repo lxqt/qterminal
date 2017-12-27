@@ -49,7 +49,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTa
 
     tabBar()->setUsesScrollButtons(true);
 
-    setTabsClosable(true);
+    setTabsClosable(Properties::Instance()->showCloseTabButton);
     setMovable(true);
     setUsesScrollButtons(true);
 
@@ -420,6 +420,8 @@ void TabWidget::propertiesChanged()
         console->propertiesChanged();
     }
     showHideTabBar();
+
+    setTabsClosable(Properties::Instance()->showCloseTabButton);
 
     // Update the tab widths
     mTabBar->setLimitWidth(Properties::Instance()->limitTabWidth);

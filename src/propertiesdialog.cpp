@@ -76,6 +76,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     /* tab width */
     limitTabWidthCheckBox->setChecked(Properties::Instance()->limitTabWidth);
     limitTabWidthSpinBox->setValue(Properties::Instance()->limitTabWidthValue);
+    closeTabButtonCheckBox->setChecked(Properties::Instance()->showCloseTabButton);
 
     /* keyboard cursor shape */
     QStringList keyboardCursorShapeList;
@@ -193,6 +194,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->limitTabWidth = limitTabWidthCheckBox->isChecked();
     Properties::Instance()->limitTabWidthValue = limitTabWidthSpinBox->value();
     Properties::Instance()->keyboardCursorShape = keybCursorShape_comboBox->currentIndex();
+    Properties::Instance()->showCloseTabButton = closeTabButtonCheckBox->isChecked();
     Properties::Instance()->hideTabBarWithOneTab = hideTabBarCheckBox->isChecked();
     Properties::Instance()->menuVisible = showMenuCheckBox->isChecked();
     Properties::Instance()->m_motionAfterPaste = motionAfterPasting_comboBox->currentIndex();
