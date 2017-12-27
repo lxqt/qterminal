@@ -72,6 +72,8 @@ class Properties
         bool limitTabWidth;
         int limitTabWidthValue;
 
+        bool showCloseTabButton;
+
         bool borderless;
         bool tabBarless;
         bool menuVisible;

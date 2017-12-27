@@ -113,6 +113,7 @@ void Properties::loadSettings()
     /* tab width limit */
     limitTabWidth = m_settings->value("LimitTabWidth", true).toBool();
     limitTabWidthValue = m_settings->value("LimitTabWidthValue", 500).toInt();
+    showCloseTabButton = m_settings->value("ShowCloseTabButton", true).toBool();
 
     /* toggles */
     borderless = m_settings->value("Borderless", false).toBool();
@@ -208,6 +209,7 @@ void Properties::saveSettings()
 
     m_settings->setValue("LimitTabWidth", limitTabWidth);
     m_settings->setValue("LimitTabWidthValue", limitTabWidthValue);
+    m_settings->setValue("ShowCloseTabButton", showCloseTabButton);
 
     m_settings->setValue("Borderless", borderless);
     m_settings->setValue("TabBarless", tabBarless);
