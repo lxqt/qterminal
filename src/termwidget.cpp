@@ -247,12 +247,7 @@ void TermWidgetImpl::paste(QClipboard::Mode mode)
             }
         }
 
-        /* TODO: Support bracketedPasteMode
-        if (bracketedPasteMode())
-        {
-            text.prepend("\e[200~");
-            text.append("\e[201~");
-        }*/
+        bracketText(text);
         sendText(text);
     }
 }
