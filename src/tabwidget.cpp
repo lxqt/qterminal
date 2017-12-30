@@ -221,7 +221,7 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
     rename->setShortcut(actions[RENAME_SESSION]->shortcut());
     rename->blockSignals(true);
 
-    int tabIndex = tabBar()->tabAt(event->pos());
+    int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this,event->pos()));
     QAction *action = menu.exec(event->globalPos());
     if (action == close) {
         emit tabCloseRequested(tabIndex);
