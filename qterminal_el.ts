@@ -99,27 +99,27 @@
     <message>
         <location filename="../../mainwindow.cpp" line="207"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Εκκαθάριση του ενεργού τερματικού</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="239"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Άνω υποτερματικό</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="242"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Κάτω υποτερματικό</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="245"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Α&amp;ριστερό υποτερματικό</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="248"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Δεξί υποτερματικό</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="255"/>
@@ -174,7 +174,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="301"/>
         <source>Rename session</source>
-        <translation type="unfinished">Μετονομασία της συνεδρίας</translation>
+        <translation>Μετονομασία της συνεδρίας</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="309"/>
@@ -219,12 +219,12 @@
     <message>
         <location filename="../../mainwindow.cpp" line="334"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">&amp;Προτιμήσεις...</translation>
+        <translation>&amp;Προτιμήσεις...</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="338"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">Έ&amp;ξοδος</translation>
+        <translation>Έ&amp;ξοδος</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="344"/>
@@ -244,7 +244,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="369"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Εναλλαγή σελιδοδεικτών</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="377"/>
@@ -286,22 +286,22 @@
     <message>
         <location filename="../../mainwindow.cpp" line="445"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Κύβος</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="446"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Απροσδιόριστο</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="447"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Δοκός</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="464"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Σχήμα δρομέα πληκτρολογίου</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="548"/>
@@ -446,27 +446,27 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Σχήμα δρομέα πληκτρολογίου</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Αλλαγή του τίτλου του παραθύρου βάσει του τρέχοντος τερματικού</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Αλλαγή του εικονιδίου του παραθύρου βάσει του τρέχοντος τερματικού</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="350"/>
         <source>Background image:</source>
-        <translation type="unfinished"></translation>
+        <translation>Εικόνα παρασκηνίου:</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="362"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογή</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="388"/>
@@ -486,12 +486,12 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="429"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιβεβαίωση επικόλλησης πολλαπλών γραμμών</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="436"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλάδεμα των τελικών νέων γραμμών στο επικολλημένο κείμενο</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="469"/>
@@ -619,17 +619,17 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="78"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Κύβος</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="78"/>
         <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Απροσδιόριστο</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="78"/>
         <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Δοκός</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="90"/>
@@ -655,12 +655,12 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="237"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιλογή μιας εικόνας παρασκηνίου</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="238"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation type="unfinished"></translation>
+        <translation>Εικόνες (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="321"/>
@@ -673,7 +673,7 @@
     <message>
         <location filename="../../termwidget.cpp" line="234"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση λεπτομερειών...</translation>
     </message>
 </context>
 <context>
@@ -735,12 +735,12 @@
     <message>
         <location filename="../../termwidget.cpp" line="227"/>
         <source>Paste multiline text</source>
-        <translation type="unfinished"></translation>
+        <translation>Επικόλληση κειμένου πολλαπλών γραμμών</translation>
     </message>
     <message>
         <location filename="../../termwidget.cpp" line="228"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation>Επιθυμείτε σίγουρα την επικόλληση του κειμένου;</translation>
     </message>
 </context>
 <context>
