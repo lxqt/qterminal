@@ -6,7 +6,7 @@ include(GNUInstallDirs)
 
 # qterminal version
 set(STR_VERSION "0.8.0")
-set(LXQTBT_MINIMUM_VERSION "0.4.0")
+set(LXQTBT_MINIMUM_VERSION "0.4.1")
 set(QTERMWIDGET_MINIMUM_VERSION "0.8.0")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
@@ -43,7 +43,10 @@ elseif(UNIX)
    message(STATUS "X11_X11_LIB: ${X11_X11_LIB}")
 endif()
 
-add_definitions(-DSTR_VERSION=\"${STR_VERSION}\")
+add_definitions(
+    -DSTR_VERSION=\"${STR_VERSION}\"
+    -DQT_NO_FOREACH
+)
 
 set(EXE_NAME qterminal)
 

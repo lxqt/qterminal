@@ -267,7 +267,7 @@ void QTerminalApp::registerOnDbus()
 QList<QDBusObjectPath> QTerminalApp::getWindows()
 {
     QList<QDBusObjectPath> windows;
-    foreach (MainWindow *wnd, m_windowList)
+    for (MainWindow *wnd : qAsConst(m_windowList))
     {
         windows.push_back(wnd->getDbusPath());
     }

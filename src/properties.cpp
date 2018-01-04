@@ -165,7 +165,8 @@ void Properties::saveSettings()
     {
         it.next();
         QStringList sequenceStrings;
-        foreach (const QKeySequence &shortcut, it.value()->shortcuts())
+        const auto shortcuts = it.value()->shortcuts();
+        for (const QKeySequence &shortcut : shortcuts)
             sequenceStrings.append(shortcut.toString());
         m_settings->setValue(it.key(), sequenceStrings.join('|'));
     }

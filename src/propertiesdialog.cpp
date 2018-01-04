@@ -266,7 +266,8 @@ void PropertiesDialog::saveShortcuts()
         QString sequenceString = sequence.toString();
 
         QList<QKeySequence> shortcuts;
-        foreach (sequenceString, item->text().split('|'))
+        const auto sequences = item->text().split('|');
+        for (const QKeySequence& hsequenceString : sequences)
             shortcuts.append(QKeySequence(sequenceString));
         keyAction->setShortcuts(shortcuts);
     }
@@ -287,7 +288,8 @@ void PropertiesDialog::setupShortcuts()
         QAction *keyAction = actions[keyValue];
         QStringList sequenceStrings;
 
-        foreach (const QKeySequence &shortcut, keyAction->shortcuts())
+        const auto shortcuts = keyAction->shortcuts();
+        for (const QKeySequence &shortcut : shortcuts)
             sequenceStrings.append(shortcut.toString());
 
         QTableWidgetItem *itemName = new QTableWidgetItem( tr(keyValue.toStdString().c_str()) );
