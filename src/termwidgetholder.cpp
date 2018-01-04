@@ -118,10 +118,12 @@ void TermWidgetHolder::saveSession(const QString & name)
 {
     Session dump;
     QString num("%1");
-    foreach(QSplitter *w, findChildren<QSplitter*>())
+    const auto ws = findChildren<QSplitter*>();
+    for(QSplitter *w : ws)
     {
         dump += '|' + num.arg(w->orientation());
-        foreach (int i, w->sizes())
+        const auto sizes = w->sizes();
+        for (const int i : sizes)
             dump += ',' + num.arg(i);
     }
     Properties::Instance()->sessions[name] = dump;
@@ -198,7 +200,7 @@ void TermWidgetHolder::directionalNavigation(NavigationDirection dir) {
     // Find an active widget
     QList<TermWidget*> l = findChildren<TermWidget*>();
     int ix = -1;
-    foreach (TermWidget * w, l)
+    for (TermWidget * w : qAsConst(l))
     {
         ++ix;
         if (w->impl()->hasFocus())
@@ -230,7 +232,7 @@ void TermWidgetHolder::directionalNavigation(NavigationDirection dir) {
     int lowestX = INT_MAX;
     int lowestMidpointDistance = INT_MAX;
     TermWidget *fittest = NULL;
-    foreach (TermWidget * w, l) 
+    for (TermWidget * w : qAsConst(l))
     {
         NavigationData contenderDims = getNormalizedDimensions(w, dir);
         int midpointDistance = std::min(
@@ -260,7 +262,8 @@ void TermWidgetHolder::clearActiveTerminal()
 
 void TermWidgetHolder::propertiesChanged()
 {
-    foreach(TermWidget *w, findChildren<TermWidget*>())
+    const auto ws = findChildren<TermWidget*>();
+    for(TermWidget *w : ws)
         w->propertiesChanged();
 }
 
@@ -423,7 +426,8 @@ QDBusObjectPath TermWidgetHolder::getActiveTerminal()
 QList<QDBusObjectPath> TermWidgetHolder::getTerminals()
 {
     QList<QDBusObjectPath> terminals;
-    foreach (TermWidget* w, findChildren<TermWidget*>())
+    const auto ws = findChildren<TermWidget*>();
+    for (TermWidget* w : ws)
     {
         terminals.push_back(w->getDbusPath());
     }

@@ -230,7 +230,8 @@ void TermWidgetImpl::paste(QClipboard::Mode mode)
                 confirmation.setDetailedText(text);
                 confirmation.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
                 // Click "Show details..." to show those by default
-                foreach( QAbstractButton * btn, confirmation.buttons() )
+                const auto buttons = confirmation.buttons();
+                for( QAbstractButton * btn : buttons )
                 {
                     if (confirmation.buttonRole(btn) == QMessageBox::ActionRole && btn->text() == QMessageBox::tr("Show Details..."))
                     {
@@ -287,7 +288,8 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     setLayout(m_layout);
 
     m_layout->addWidget(m_term);
-    foreach (QObject *o, m_term->children())
+    const auto objs = m_term->children();
+    for (QObject *o : objs)
     {
         // Find TerminalDisplay
         if (!o->isWidgetType() || qobject_cast<QWidget*>(o)->isHidden())
