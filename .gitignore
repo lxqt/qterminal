@@ -1,2 +1,13 @@
 *.pro.user*
 src/translations/qterminal
+/*.o
+/*.cpp
+/CMake*
+/Makefile
+/moc_*
+/ui_*
+/steamlink
+/pkg-config_wrapper.sh
+/qterminal
+/.qmake.stash
+/tags

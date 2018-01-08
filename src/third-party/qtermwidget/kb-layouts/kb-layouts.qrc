@@ -1,0 +1,10 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource><file>linux.keytab</file></qresource>
+    <qresource><file>solaris.keytab</file></qresource>
+    <qresource><file>macbook.keytab</file></qresource>
+    <qresource><file>default.keytab</file></qresource>
+    <qresource><file>vt420pc.keytab</file></qresource>
+    <qresource><file>historic/x11r5.keytab</file></qresource>
+    <qresource><file>historic/vt100.keytab</file></qresource>
+</RCC>

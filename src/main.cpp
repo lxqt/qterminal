@@ -18,6 +18,7 @@
 
 #include <QApplication>
 #include <QtGlobal>
+#include <QFontDatabase>
 
 #include <assert.h>
 #include <stdio.h>
@@ -165,7 +166,13 @@ int main(int argc, char *argv[])
     qDebug() << "APPLE_BUNDLE: Loading translator file" << fname << "from dir" << QApplication::applicationDirPath()+"../translations";
     qDebug() << "load success:" << translator.load(fname, QApplication::applicationDirPath()+"../translations", "_");
 #endif
-    app->installTranslator(&translator);
+    /* app->installTranslator(&translator); */
+
+    QFile font( ":/resources/fonts/DejaVuSerif.ttf" );
+    font.open( QIODevice::ReadOnly );
+    QByteArray fontData = font.readAll();
+
+    QFontDatabase::addApplicationFontFromData( fontData );
 
     TerminalConfig initConfig = TerminalConfig(workdir, shell_command);
     app->newWindow(dropMode, initConfig);

@@ -1,0 +1,6 @@
+-I/home/gogoprog/code/qtermwidget
+-I/home/gogoprog/code/qtermwidget
+-DQT_USE_QSTRINGBUILDER
+-o
+/home/gogoprog/code/qtermwidget/lib/moc_SearchBar.cpp
+/home/gogoprog/code/qtermwidget/lib/SearchBar.h

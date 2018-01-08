@@ -1,0 +1,25 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource><file>BlackOnLightYellow.schema</file></qresource>
+    <qresource><file>BlackOnRandomLight.colorscheme</file></qresource>
+    <qresource><file>Linux.colorscheme</file></qresource>
+    <qresource><file>BlackOnWhite.schema</file></qresource>
+    <qresource><file>DarkPastels.colorscheme</file></qresource>
+    <qresource><file>GreenOnBlack.colorscheme</file></qresource>
+    <qresource><file>WhiteOnBlack.schema</file></qresource>
+    <qresource><file>BreezeModified.schema</file></qresource>
+    <qresource><file>historic/vim.schema</file></qresource>
+    <qresource><file>historic/Transparent.schema</file></qresource>
+    <qresource><file>historic/Transparent_MC.schema</file></qresource>
+    <qresource><file>historic/Linux.schema</file></qresource>
+    <qresource><file>historic/Transparent_darkbg.schema</file></qresource>
+    <qresource><file>historic/GreenTint.schema</file></qresource>
+    <qresource><file>historic/Transparent_lightbg.schema</file></qresource>
+    <qresource><file>historic/LightPicture.schema</file></qresource>
+    <qresource><file>historic/DarkPicture.schema</file></qresource>
+    <qresource><file>historic/syscolor.schema</file></qresource>
+    <qresource><file>historic/XTerm.schema</file></qresource>
+    <qresource><file>historic/BlackOnLightColor.schema</file></qresource>
+    <qresource><file>historic/GreenTint_MC.schema</file></qresource>
+    <qresource><file>historic/GreenOnBlack.schema</file></qresource>
+</RCC>

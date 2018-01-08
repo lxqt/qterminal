@@ -1,0 +1,8 @@
+QDialog {
+	border: 3px solid #ffffff;
+}
+QDialogButtonBox {
+	dialogbuttonbox-buttons-have-icons: 1;
+	dialog-ok-icon: url(:/resources/icons/buttonA.png);
+	dialog-cancel-icon: url(:/resources/icons/buttonB.png);
+}

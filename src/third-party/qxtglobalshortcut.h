@@ -1,3 +1,4 @@
+#if 0
 #ifndef QXTGLOBALSHORTCUT_H
 /****************************************************************************
 ** Copyright (c) 2006 - 2011, the LibQxt project.
@@ -62,3 +63,4 @@ Q_SIGNALS:
 };
 
 #endif // QXTGLOBALSHORTCUT_H
+#endif

@@ -88,7 +88,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
 
     connect(actAbout, SIGNAL(triggered()), SLOT(actAbout_triggered()));
     connect(actAboutQt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
-    connect(&m_dropShortcut, SIGNAL(activated()), SLOT(showHide()));
+    /* connect(&m_dropShortcut, SIGNAL(activated()), SLOT(showHide())); */
 
     setContentsMargins(0, 0, 0, 0);
     if (m_dropMode) {
@@ -162,11 +162,11 @@ void MainWindow::setDropShortcut(QKeySequence dropShortCut)
     if (!m_dropMode)
         return;
 
-    if (m_dropShortcut.shortcut() != dropShortCut)
-    {
-        m_dropShortcut.setShortcut(dropShortCut);
-        qWarning() << tr("Press \"%1\" to see the terminal.").arg(dropShortCut.toString());
-    }
+    /* if (m_dropShortcut.shortcut() != dropShortCut) */
+    /* { */
+    /*     m_dropShortcut.setShortcut(dropShortCut); */
+    /*     qWarning() << tr("Press \"%1\" to see the terminal.").arg(dropShortCut.toString()); */
+    /* } */
 }
 
 void MainWindow::setup_Action(const char *name, QAction *action, const char *defaultShortcut, const QObject *receiver,
