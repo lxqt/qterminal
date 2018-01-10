@@ -66,7 +66,11 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     registerAdapter<WindowAdaptor, MainWindow>(this);
 #endif
     QTerminalApp::Instance()->addWindow(this);
+    // We want terminal translucency...
     setAttribute(Qt::WA_TranslucentBackground);
+    // ... but neither a fully transparent nor a flat menubar
+    // with styles that have translucency and/or gradient.
+    setAttribute(Qt::WA_NoSystemBackground, false);
     setAttribute(Qt::WA_DeleteOnClose);
 
     setupUi(this);
