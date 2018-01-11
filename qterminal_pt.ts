@@ -463,7 +463,7 @@
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="388"/>
+        <location filename="../../forms/propertiesdialog.ui" line="415"/>
         <source>Emulation</source>
         <translation>Emulação</translation>
     </message>
@@ -484,7 +484,7 @@
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="57"/>
-        <location filename="../../forms/propertiesdialog.ui" line="413"/>
+        <location filename="../../forms/propertiesdialog.ui" line="440"/>
         <source>Behavior</source>
         <translation>Comportamento</translation>
     </message>
@@ -587,88 +587,88 @@
         <translation type="vanished">&amp;Definir tipo de letra...</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="397"/>
+        <location filename="../../forms/propertiesdialog.ui" line="424"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;O comportamento a emular. Tenha em atenção que esta opção não tem que ser igual à do sistema operativo.&lt;/p&gt;&lt;p&gt;A emulação &lt;span style=&quot; font-weight:600;&quot;&gt;padrão&lt;/span&gt; possui um conjunto mínimo de funcionalidades.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="419"/>
+        <location filename="../../forms/propertiesdialog.ui" line="446"/>
         <source>Action after paste</source>
         <translation>Ação depois de colar</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="429"/>
+        <location filename="../../forms/propertiesdialog.ui" line="456"/>
         <source>Confirm multiline paste</source>
         <translation>Confirmação de colagem</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="436"/>
+        <location filename="../../forms/propertiesdialog.ui" line="463"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="469"/>
+        <location filename="../../forms/propertiesdialog.ui" line="496"/>
         <source>Open new terminals in current working directory</source>
         <translation>Abrir novos terminais no diretório de trabalho atual</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="476"/>
+        <location filename="../../forms/propertiesdialog.ui" line="503"/>
         <source>Save Size when closing</source>
         <translation>Guardar tamanho ao fechar</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="483"/>
+        <location filename="../../forms/propertiesdialog.ui" line="510"/>
         <source>Save Position when closing</source>
         <translation>Guardar posição ao fechar</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="490"/>
+        <location filename="../../forms/propertiesdialog.ui" line="517"/>
         <source>Ask for confirmation when closing</source>
         <translation>Confirmar antes de fechar</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="500"/>
+        <location filename="../../forms/propertiesdialog.ui" line="527"/>
         <source>Unlimited history</source>
         <translation>Histórico ilimitado</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="507"/>
+        <location filename="../../forms/propertiesdialog.ui" line="534"/>
         <source>History size (in lines)</source>
         <translation>Limitar histórico (linhas)</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="578"/>
+        <location filename="../../forms/propertiesdialog.ui" line="605"/>
         <source>Height</source>
         <translation>Altura</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="588"/>
-        <location filename="../../forms/propertiesdialog.ui" line="605"/>
+        <location filename="../../forms/propertiesdialog.ui" line="615"/>
+        <location filename="../../forms/propertiesdialog.ui" line="632"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="595"/>
+        <location filename="../../forms/propertiesdialog.ui" line="622"/>
         <source>Width</source>
         <translation>Largura</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="651"/>
+        <location filename="../../forms/propertiesdialog.ui" line="678"/>
         <source>Edit bookmark file contents</source>
         <translation>Editar conteúdo do ficheiro de marcadores</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="673"/>
+        <location filename="../../forms/propertiesdialog.ui" line="700"/>
         <source>Enable bookmarks</source>
         <translation>Ativar marcadores</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="682"/>
+        <location filename="../../forms/propertiesdialog.ui" line="709"/>
         <source>Bookmark file</source>
         <translation>Ficheiro de marcadores</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="560"/>
+        <location filename="../../forms/propertiesdialog.ui" line="587"/>
         <source>Show on start</source>
         <translation>Mostrar ao iniciar</translation>
     </message>
@@ -689,31 +689,46 @@
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="350"/>
+        <source>Enable bi-directional text support</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="357"/>
         <source>Background image:</source>
         <translation>Imagem de fundo:</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="362"/>
+        <location filename="../../forms/propertiesdialog.ui" line="369"/>
         <source>Select</source>
         <translation>Selecionar</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="567"/>
+        <location filename="../../forms/propertiesdialog.ui" line="378"/>
+        <source>Limit tab width:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="388"/>
+        <source>px</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="594"/>
         <source>Size</source>
         <translation>Tamanho</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="619"/>
+        <location filename="../../forms/propertiesdialog.ui" line="646"/>
         <source>Shortcut:</source>
         <translation>Atalho:</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="695"/>
+        <location filename="../../forms/propertiesdialog.ui" line="722"/>
         <source>Find...</source>
         <translation>Localizar...</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="704"/>
+        <location filename="../../forms/propertiesdialog.ui" line="731"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Pode especificar a localização do ficheiro de marcadores. Permite a partilha de marcadores através do Own Cloud ou do Dropbox.</translation>
     </message>
@@ -724,12 +739,12 @@
         <translation> %</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="543"/>
+        <location filename="../../forms/propertiesdialog.ui" line="570"/>
         <source>Shortcut</source>
         <translation>Atalho</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="548"/>
+        <location filename="../../forms/propertiesdialog.ui" line="575"/>
         <source>Key</source>
         <translation>Tecla</translation>
     </message>
@@ -761,53 +776,53 @@
         <translation>Baixo</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="78"/>
+        <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>BlockCursor</source>
         <translation>Bloco</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="78"/>
+        <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>UnderlineCursor</source>
         <translation>Sublinhado</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="78"/>
+        <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>IBeamCursor</source>
         <translation>Ibeam</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="90"/>
+        <location filename="../../propertiesdialog.cpp" line="94"/>
         <source>No move</source>
         <translation>Não mover</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="90"/>
+        <location filename="../../propertiesdialog.cpp" line="94"/>
         <source>Move start</source>
         <translation>Mover para o inicio</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="90"/>
+        <location filename="../../propertiesdialog.cpp" line="94"/>
         <source>Move end</source>
         <translation>Mover para o fim</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="161"/>
+        <location filename="../../propertiesdialog.cpp" line="99"/>
+        <location filename="../../propertiesdialog.cpp" line="166"/>
         <source>System Default</source>
         <translation>Predefinições</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="237"/>
+        <location filename="../../propertiesdialog.cpp" line="245"/>
         <source>Choose a background image</source>
         <translation>Escolha a imagem de fundo</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="238"/>
+        <location filename="../../propertiesdialog.cpp" line="246"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>Imagens (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="321"/>
+        <location filename="../../propertiesdialog.cpp" line="329"/>
         <source>Open or create bookmarks file</source>
         <translation>Abrir ou criar um ficheiro de marcadores</translation>
     </message>
@@ -815,7 +830,7 @@
 <context>
     <name>QMessageBox</name>
     <message>
-        <location filename="../../termwidget.cpp" line="234"/>
+        <location filename="../../termwidget.cpp" line="235"/>
         <source>Show Details...</source>
         <translation>Mostrar detalhes...</translation>
     </message>
@@ -836,23 +851,23 @@
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../../tabwidget.cpp" line="68"/>
-        <location filename="../../tabwidget.cpp" line="205"/>
+        <location filename="../../tabwidget.cpp" line="72"/>
+        <location filename="../../tabwidget.cpp" line="209"/>
         <source>Shell No. %1</source>
         <translation>Consola n.º %1</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="182"/>
+        <location filename="../../tabwidget.cpp" line="186"/>
         <source>Tab name</source>
         <translation>Nome do separador</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="183"/>
+        <location filename="../../tabwidget.cpp" line="187"/>
         <source>New tab name:</source>
         <translation>Nome do novo separador:</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="215"/>
+        <location filename="../../tabwidget.cpp" line="219"/>
         <source>Close session</source>
         <translation>Fechar sessão</translation>
     </message>
@@ -877,12 +892,12 @@
 <context>
     <name>TermWidgetImpl</name>
     <message>
-        <location filename="../../termwidget.cpp" line="227"/>
+        <location filename="../../termwidget.cpp" line="228"/>
         <source>Paste multiline text</source>
         <translation>Colar texto multi-linha</translation>
     </message>
     <message>
-        <location filename="../../termwidget.cpp" line="228"/>
+        <location filename="../../termwidget.cpp" line="229"/>
         <source>Are you sure you want to paste this text?</source>
         <translation>Tem a certeza de que deseja colar este texto?</translation>
     </message>

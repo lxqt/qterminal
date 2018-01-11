@@ -338,7 +338,7 @@
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="57"/>
-        <location filename="../../forms/propertiesdialog.ui" line="413"/>
+        <location filename="../../forms/propertiesdialog.ui" line="440"/>
         <source>Behavior</source>
         <translation>Συμπεριφορά</translation>
     </message>
@@ -460,132 +460,147 @@
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="350"/>
+        <source>Enable bi-directional text support</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="357"/>
         <source>Background image:</source>
         <translation>Εικόνα παρασκηνίου:</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="362"/>
+        <location filename="../../forms/propertiesdialog.ui" line="369"/>
         <source>Select</source>
         <translation>Επιλογή</translation>
     </message>
     <message>
+        <location filename="../../forms/propertiesdialog.ui" line="378"/>
+        <source>Limit tab width:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../forms/propertiesdialog.ui" line="388"/>
+        <source>px</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="415"/>
         <source>Emulation</source>
         <translation>Προσομοίωση</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="397"/>
+        <location filename="../../forms/propertiesdialog.ui" line="424"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Συμπεριφορά προς προσομοίωση. Σημειώστε ότι δεν χρειάζεται να συνάδει με το λειτουργικό σύστημα/&lt;/p&gt;&lt;p&gt;Η προσομοίωση &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; είναι η εφεδρική με ένα ελάχιστο σύνολο χαρακτηριστικών.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="419"/>
+        <location filename="../../forms/propertiesdialog.ui" line="446"/>
         <source>Action after paste</source>
         <translation>Ενέργεια μετά την επικόλληση</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="429"/>
+        <location filename="../../forms/propertiesdialog.ui" line="456"/>
         <source>Confirm multiline paste</source>
         <translation>Επιβεβαίωση επικόλλησης πολλαπλών γραμμών</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="436"/>
+        <location filename="../../forms/propertiesdialog.ui" line="463"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Κλάδεμα των τελικών νέων γραμμών στο επικολλημένο κείμενο</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="469"/>
+        <location filename="../../forms/propertiesdialog.ui" line="496"/>
         <source>Open new terminals in current working directory</source>
         <translation>Άνοιγμα των νέων τερματικών στον τρέχοντα κατάλογο εργασίας</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="476"/>
+        <location filename="../../forms/propertiesdialog.ui" line="503"/>
         <source>Save Size when closing</source>
         <translation>Αποθήκευση του μεγέθους κατά το κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="483"/>
+        <location filename="../../forms/propertiesdialog.ui" line="510"/>
         <source>Save Position when closing</source>
         <translation>Αποθήκευση της θέσης κατά το κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="490"/>
+        <location filename="../../forms/propertiesdialog.ui" line="517"/>
         <source>Ask for confirmation when closing</source>
         <translation>Ερώτηση επιβεβαίωσης κατά το κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="500"/>
+        <location filename="../../forms/propertiesdialog.ui" line="527"/>
         <source>Unlimited history</source>
         <translation>Απεριόριστο ιστορικό</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="507"/>
+        <location filename="../../forms/propertiesdialog.ui" line="534"/>
         <source>History size (in lines)</source>
         <translation>Μέγεθος ιστορικού (γραμμές)</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="543"/>
+        <location filename="../../forms/propertiesdialog.ui" line="570"/>
         <source>Shortcut</source>
         <translation>Συντόμευση</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="548"/>
+        <location filename="../../forms/propertiesdialog.ui" line="575"/>
         <source>Key</source>
         <translation>Συνδυασμός πλήκτρων</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="560"/>
+        <location filename="../../forms/propertiesdialog.ui" line="587"/>
         <source>Show on start</source>
         <translation>Εμφάνιση κατά την έναρξη</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="567"/>
+        <location filename="../../forms/propertiesdialog.ui" line="594"/>
         <source>Size</source>
         <translation>Μέγεθος</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="578"/>
+        <location filename="../../forms/propertiesdialog.ui" line="605"/>
         <source>Height</source>
         <translation>Ύψος</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="588"/>
-        <location filename="../../forms/propertiesdialog.ui" line="605"/>
+        <location filename="../../forms/propertiesdialog.ui" line="615"/>
+        <location filename="../../forms/propertiesdialog.ui" line="632"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="595"/>
+        <location filename="../../forms/propertiesdialog.ui" line="622"/>
         <source>Width</source>
         <translation>Πλάτος</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="619"/>
+        <location filename="../../forms/propertiesdialog.ui" line="646"/>
         <source>Shortcut:</source>
         <translation>Συντόμευση:</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="651"/>
+        <location filename="../../forms/propertiesdialog.ui" line="678"/>
         <source>Edit bookmark file contents</source>
         <translation>Επεξεργασία των περιεχομένων του αρχείου των σελιδοδεικτών</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="673"/>
+        <location filename="../../forms/propertiesdialog.ui" line="700"/>
         <source>Enable bookmarks</source>
         <translation>Ενεργοποίηση των σελιδοδεικτών</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="682"/>
+        <location filename="../../forms/propertiesdialog.ui" line="709"/>
         <source>Bookmark file</source>
         <translation>Αρχείο των σελιδοδεικτών</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="695"/>
+        <location filename="../../forms/propertiesdialog.ui" line="722"/>
         <source>Find...</source>
         <translation>Αναζήτηση...</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="704"/>
+        <location filename="../../forms/propertiesdialog.ui" line="731"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Μπορείτε να καθορίσετε την δική σας τοποθεσία του αρχείου των σελιδοδεικτών. Επιτρέπει εύκολη κοινή χρήση των σελιδοδεικτών με εργαλεία όπως το OwnCloud και το Dropbox.</translation>
     </message>
@@ -617,53 +632,53 @@
         <translation>Βάση</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="78"/>
+        <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>BlockCursor</source>
         <translation>Κύβος</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="78"/>
+        <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>UnderlineCursor</source>
         <translation>Απροσδιόριστο</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="78"/>
+        <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>IBeamCursor</source>
         <translation>Δοκός</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="90"/>
+        <location filename="../../propertiesdialog.cpp" line="94"/>
         <source>No move</source>
         <translation>Χωρίς μετάβαση</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="90"/>
+        <location filename="../../propertiesdialog.cpp" line="94"/>
         <source>Move start</source>
         <translation>Μετάβαση στην αρχή</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="90"/>
+        <location filename="../../propertiesdialog.cpp" line="94"/>
         <source>Move end</source>
         <translation>Μετάβαση στο τέλος</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="161"/>
+        <location filename="../../propertiesdialog.cpp" line="99"/>
+        <location filename="../../propertiesdialog.cpp" line="166"/>
         <source>System Default</source>
         <translation>Εξ ορισμού του συστήματος</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="237"/>
+        <location filename="../../propertiesdialog.cpp" line="245"/>
         <source>Choose a background image</source>
         <translation>Επιλογή μιας εικόνας παρασκηνίου</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="238"/>
+        <location filename="../../propertiesdialog.cpp" line="246"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>Εικόνες (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="321"/>
+        <location filename="../../propertiesdialog.cpp" line="329"/>
         <source>Open or create bookmarks file</source>
         <translation>Άνοιγμα ή δημιουργία αρχείου σελιδοδεικτών</translation>
     </message>
@@ -671,7 +686,7 @@
 <context>
     <name>QMessageBox</name>
     <message>
-        <location filename="../../termwidget.cpp" line="234"/>
+        <location filename="../../termwidget.cpp" line="235"/>
         <source>Show Details...</source>
         <translation>Εμφάνιση λεπτομερειών...</translation>
     </message>
@@ -692,23 +707,23 @@
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../../tabwidget.cpp" line="68"/>
-        <location filename="../../tabwidget.cpp" line="205"/>
+        <location filename="../../tabwidget.cpp" line="72"/>
+        <location filename="../../tabwidget.cpp" line="209"/>
         <source>Shell No. %1</source>
         <translation>Κέλυφος ν. %1</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="182"/>
+        <location filename="../../tabwidget.cpp" line="186"/>
         <source>Tab name</source>
         <translation>Όνομα καρτέλας</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="183"/>
+        <location filename="../../tabwidget.cpp" line="187"/>
         <source>New tab name:</source>
         <translation>Νέο όνομα καρτέλας:</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="215"/>
+        <location filename="../../tabwidget.cpp" line="219"/>
         <source>Close session</source>
         <translation>Κλείσιμο της συνεδρίας</translation>
     </message>
@@ -733,12 +748,12 @@
 <context>
     <name>TermWidgetImpl</name>
     <message>
-        <location filename="../../termwidget.cpp" line="227"/>
+        <location filename="../../termwidget.cpp" line="228"/>
         <source>Paste multiline text</source>
         <translation>Επικόλληση κειμένου πολλαπλών γραμμών</translation>
     </message>
     <message>
-        <location filename="../../termwidget.cpp" line="228"/>
+        <location filename="../../termwidget.cpp" line="229"/>
         <source>Are you sure you want to paste this text?</source>
         <translation>Επιθυμείτε σίγουρα την επικόλληση του κειμένου;</translation>
     </message>

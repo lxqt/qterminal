@@ -459,7 +459,7 @@
         <translation type="vanished">Geçmiş</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="388"/>
+        <location filename="../../forms/propertiesdialog.ui" line="415"/>
         <source>Emulation</source>
         <translation>Öykünme</translation>
     </message>
@@ -484,7 +484,7 @@
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="57"/>
-        <location filename="../../forms/propertiesdialog.ui" line="413"/>
+        <location filename="../../forms/propertiesdialog.ui" line="440"/>
         <source>Behavior</source>
         <translation type="unfinished"></translation>
     </message>
@@ -595,92 +595,107 @@
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="350"/>
+        <source>Enable bi-directional text support</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="357"/>
         <source>Background image:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="362"/>
+        <location filename="../../forms/propertiesdialog.ui" line="369"/>
         <source>Select</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="397"/>
+        <location filename="../../forms/propertiesdialog.ui" line="378"/>
+        <source>Limit tab width:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="388"/>
+        <source>px</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="424"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="419"/>
+        <location filename="../../forms/propertiesdialog.ui" line="446"/>
         <source>Action after paste</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="429"/>
+        <location filename="../../forms/propertiesdialog.ui" line="456"/>
         <source>Confirm multiline paste</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="436"/>
+        <location filename="../../forms/propertiesdialog.ui" line="463"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="469"/>
+        <location filename="../../forms/propertiesdialog.ui" line="496"/>
         <source>Open new terminals in current working directory</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="476"/>
+        <location filename="../../forms/propertiesdialog.ui" line="503"/>
         <source>Save Size when closing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="483"/>
+        <location filename="../../forms/propertiesdialog.ui" line="510"/>
         <source>Save Position when closing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="490"/>
+        <location filename="../../forms/propertiesdialog.ui" line="517"/>
         <source>Ask for confirmation when closing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="500"/>
+        <location filename="../../forms/propertiesdialog.ui" line="527"/>
         <source>Unlimited history</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="507"/>
+        <location filename="../../forms/propertiesdialog.ui" line="534"/>
         <source>History size (in lines)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="578"/>
+        <location filename="../../forms/propertiesdialog.ui" line="605"/>
         <source>Height</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="588"/>
-        <location filename="../../forms/propertiesdialog.ui" line="605"/>
+        <location filename="../../forms/propertiesdialog.ui" line="615"/>
+        <location filename="../../forms/propertiesdialog.ui" line="632"/>
         <source>%</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="595"/>
+        <location filename="../../forms/propertiesdialog.ui" line="622"/>
         <source>Width</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="651"/>
+        <location filename="../../forms/propertiesdialog.ui" line="678"/>
         <source>Edit bookmark file contents</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="673"/>
+        <location filename="../../forms/propertiesdialog.ui" line="700"/>
         <source>Enable bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="682"/>
+        <location filename="../../forms/propertiesdialog.ui" line="709"/>
         <source>Bookmark file</source>
         <translation type="unfinished"></translation>
     </message>
@@ -709,12 +724,12 @@
         <translation type="vanished">Kaydırma Çubuğu Konumu:</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="560"/>
+        <location filename="../../forms/propertiesdialog.ui" line="587"/>
         <source>Show on start</source>
         <translation>Başlangıçta göster</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="567"/>
+        <location filename="../../forms/propertiesdialog.ui" line="594"/>
         <source>Size</source>
         <translation>Boyut</translation>
     </message>
@@ -727,7 +742,7 @@
         <translation type="vanished">Genişlik %:</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="619"/>
+        <location filename="../../forms/propertiesdialog.ui" line="646"/>
         <source>Shortcut:</source>
         <translation>Kısayol:</translation>
     </message>
@@ -744,12 +759,12 @@
         <translation type="vanished">Yerimi Dosyası:</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="695"/>
+        <location filename="../../forms/propertiesdialog.ui" line="722"/>
         <source>Find...</source>
         <translation>Bul...</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="704"/>
+        <location filename="../../forms/propertiesdialog.ui" line="731"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Kendi yerimleri dosya yolunuzu berlirleyebilirsiniz. OwnCloud veya Dropbox gibi araçlarla yerimlerinizi paylaşmayı kolaylaştırır.</translation>
     </message>
@@ -808,12 +823,12 @@
         <translation type="vanished">Öykünme davranışı seçin. Örneğin &quot;linux&quot; yalnızca linuxta kullanın. Mac ve benzerlerinde de kullanabilirsiniz.&lt;p&gt;Varsayılan asgari özellikleriyle geri yükleme.</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="543"/>
+        <location filename="../../forms/propertiesdialog.ui" line="570"/>
         <source>Shortcut</source>
         <translation>Kısayol</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="548"/>
+        <location filename="../../forms/propertiesdialog.ui" line="575"/>
         <source>Key</source>
         <translation>Anahtar</translation>
     </message>
@@ -845,53 +860,53 @@
         <translation>En Aşağı</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="78"/>
+        <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>BlockCursor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="78"/>
+        <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>UnderlineCursor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="78"/>
+        <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>IBeamCursor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="90"/>
+        <location filename="../../propertiesdialog.cpp" line="94"/>
         <source>No move</source>
         <translation>Taşıma yok</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="90"/>
+        <location filename="../../propertiesdialog.cpp" line="94"/>
         <source>Move start</source>
         <translation>Hareket et</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="90"/>
+        <location filename="../../propertiesdialog.cpp" line="94"/>
         <source>Move end</source>
         <translation>Hareketi bitir</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="161"/>
+        <location filename="../../propertiesdialog.cpp" line="99"/>
+        <location filename="../../propertiesdialog.cpp" line="166"/>
         <source>System Default</source>
         <translation>Sistem Varsayılanı</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="237"/>
+        <location filename="../../propertiesdialog.cpp" line="245"/>
         <source>Choose a background image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="238"/>
+        <location filename="../../propertiesdialog.cpp" line="246"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="321"/>
+        <location filename="../../propertiesdialog.cpp" line="329"/>
         <source>Open or create bookmarks file</source>
         <translation>Yerimleri dosyası aç ya da oluştur</translation>
     </message>
@@ -899,7 +914,7 @@
 <context>
     <name>QMessageBox</name>
     <message>
-        <location filename="../../termwidget.cpp" line="234"/>
+        <location filename="../../termwidget.cpp" line="235"/>
         <source>Show Details...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -920,23 +935,23 @@
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../../tabwidget.cpp" line="68"/>
-        <location filename="../../tabwidget.cpp" line="205"/>
+        <location filename="../../tabwidget.cpp" line="72"/>
+        <location filename="../../tabwidget.cpp" line="209"/>
         <source>Shell No. %1</source>
         <translation>Kabuk No. %1</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="182"/>
+        <location filename="../../tabwidget.cpp" line="186"/>
         <source>Tab name</source>
         <translation>Sekme adı</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="183"/>
+        <location filename="../../tabwidget.cpp" line="187"/>
         <source>New tab name:</source>
         <translation>Yeni sekme adı:</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="215"/>
+        <location filename="../../tabwidget.cpp" line="219"/>
         <source>Close session</source>
         <translation>Oturumu kapat</translation>
     </message>
@@ -965,12 +980,12 @@
         <translation type="obsolete">Rozdělit Terminál Horizontálně</translation>
     </message>
     <message>
-        <location filename="../../termwidget.cpp" line="227"/>
+        <location filename="../../termwidget.cpp" line="228"/>
         <source>Paste multiline text</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../termwidget.cpp" line="228"/>
+        <location filename="../../termwidget.cpp" line="229"/>
         <source>Are you sure you want to paste this text?</source>
         <translation type="unfinished"></translation>
     </message>
