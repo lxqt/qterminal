@@ -457,7 +457,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished"></translation>
+        <translation>Włącz wsparcie dwukierunkowego tekstu</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="357"/>
@@ -472,12 +472,12 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="378"/>
         <source>Limit tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ogranicz szerokość karty:</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="388"/>
         <source>px</source>
-        <translation type="unfinished"></translation>
+        <translation>piks.</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="415"/>
