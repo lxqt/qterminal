@@ -542,6 +542,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         Properties::Instance()->saveSettings();
         for (int i = consoleTabulator->count(); i > 0; --i) {
             consoleTabulator->removeTab(i - 1);
+            delete consoleTabulator->widget(i-1); //Also delete widget
         }
         ev->accept();
         return;
@@ -573,9 +574,15 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         Properties::Instance()->saveSettings();
         for (int i = consoleTabulator->count(); i > 0; --i) {
             consoleTabulator->removeTab(i - 1);
+            delete consoleTabulator->widget(i-1);//Also delete widget
         }
         ev->accept();
     } else {
+        for (int i = consoleTabulator->count(); i > 0; --i) {
+            consoleTabulator->removeTab(i - 1);
+            delete consoleTabulator->widget(i-1);//Also delete widget
+        }
+
         ev->ignore();
     }
 
