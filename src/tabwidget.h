@@ -90,7 +90,7 @@ public slots:
     void preset4Terminals();
 
 signals:
-    void closeTabNotification();
+    void closeTabNotification(bool);
     void tabRenameRequested(int);
     void currentTitleChanged(int);
 

@@ -65,6 +65,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
 #ifdef HAVE_QDBUS
     registerAdapter<WindowAdaptor, MainWindow>(this);
 #endif
+    m_removeFinished = false;
     QTerminalApp::Instance()->addWindow(this);
     // We want terminal translucency...
     setAttribute(Qt::WA_TranslucentBackground);
@@ -110,7 +111,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     }
 
     consoleTabulator->setAutoFillBackground(true);
-    connect(consoleTabulator, SIGNAL(closeTabNotification()), SLOT(close()));
+    connect(consoleTabulator, SIGNAL(closeTabNotification(bool)), SLOT(testClose(bool)));
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
 
@@ -518,6 +519,12 @@ void MainWindow::showFullscreen(bool fullscreen)
         setWindowState(windowState() & ~Qt::WindowFullScreen);
 }
 
+void MainWindow::testClose(bool removeFinished)
+{
+
+    m_removeFinished = removeFinished;
+    close();
+}
 void MainWindow::toggleBookmarks()
 {
     m_bookmarksDock->toggleViewAction()->trigger();
@@ -578,11 +585,12 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         }
         ev->accept();
     } else {
-        for (int i = consoleTabulator->count(); i > 0; --i) {
-            consoleTabulator->removeTab(i - 1);
-            delete consoleTabulator->widget(i-1);//Also delete widget
-        }
 
+        if(m_removeFinished) {
+            consoleTabulator->removeTab(consoleTabulator->count()-1);
+            delete consoleTabulator->widget(consoleTabulator->count()-1); //Also delete widget
+            m_removeFinished = false;
+        }
         ev->ignore();
     }
 
