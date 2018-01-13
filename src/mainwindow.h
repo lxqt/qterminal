@@ -63,7 +63,7 @@ private:
     QWidget *settingOwner;
 
     QMenu *presetsMenu;
-
+    bool m_removeFinished;
     TerminalConfig m_config;
 
     QDockWidget *m_bookmarksDock;
@@ -102,7 +102,7 @@ private slots:
     void actAbout_triggered();
     void actProperties_triggered();
     void updateActionGroup(QAction *);
-
+    void testClose(bool removeFinished);
     void toggleBookmarks();
     void toggleBorderless();
     void toggleTabBar();

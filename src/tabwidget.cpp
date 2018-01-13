@@ -282,7 +282,7 @@ void TabWidget::removeTab(int index)
     //    tabNumerator--;
         setUpdatesEnabled(true);
     } else {
-        emit closeTabNotification();
+        emit closeTabNotification(true);
     }
 
     renameTabsAfterRemove();
@@ -300,7 +300,7 @@ void TabWidget::removeCurrentTab()
     if (count() > 1) {
         removeTab(currentIndex());
     } else {
-        emit closeTabNotification();
+        emit closeTabNotification(false);
     }
 }
 
