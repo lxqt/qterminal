@@ -270,7 +270,7 @@ void PropertiesDialog::saveShortcuts()
 
         QList<QKeySequence> shortcuts;
         const auto sequences = item->text().split('|');
-        for (const QKeySequence& hsequenceString : sequences)
+        for (const QKeySequence& sequenceString : sequences)
             shortcuts.append(QKeySequence(sequenceString));
         keyAction->setShortcuts(shortcuts);
     }
