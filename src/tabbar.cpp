@@ -25,6 +25,7 @@ TabBar::TabBar(QWidget *parent)
       mLimitWidthValue(0)
 {
     setStyle(new TabStyle(this));
+    setStyleSheet("QTabBar::tab:selected { font-weight: bold; }");
 }
 
 void TabBar::setLimitWidth(bool limitWidth)
