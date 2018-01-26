@@ -18,6 +18,7 @@
 
 #include <QTabBar>
 #include <QInputDialog>
+#include <QColorDialog>
 #include <QMouseEvent>
 #include <QMenu>
 
@@ -58,6 +59,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTa
     connect(this, SIGNAL(tabCloseRequested(int)), this, SLOT(removeTab(int)));
     connect(tabBar(), SIGNAL(tabMoved(int,int)), this, SLOT(updateTabIndices()));
     connect(this, SIGNAL(tabRenameRequested(int)), this, SLOT(renameSession(int)));
+    connect(this, &TabWidget::tabTitleColorChangeRequested, this, &TabWidget::setTitleColor);
 }
 
 TermWidgetHolder * TabWidget::terminalHolder()
@@ -201,6 +203,15 @@ void TabWidget::renameCurrentSession()
     renameSession(currentIndex());
 }
 
+void TabWidget::setTitleColor(int index)
+{
+    QColor current = tabBar()->tabTextColor(index);
+    QColor color = QColorDialog::getColor(current, this, tr("Select new tab title color"));
+
+    if (color.isValid())
+        tabBar()->setTabTextColor(index, color);
+}
+
 void TabWidget::renameTabsAfterRemove()
 {
 // it breaks custom names - it replaces original/custom title with shell no #
@@ -218,6 +229,7 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
 
     QAction *close = menu.addAction(QIcon::fromTheme("document-close"), tr("Close session"));
     QAction *rename = menu.addAction(actions[RENAME_SESSION]->text());
+    QAction *changeColor = menu.addAction(QIcon::fromTheme("color-management"), tr("Change title color"));
     rename->setShortcut(actions[RENAME_SESSION]->shortcut());
     rename->blockSignals(true);
 
@@ -227,6 +239,8 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
         emit tabCloseRequested(tabIndex);
     } else if (action == rename) {
         emit tabRenameRequested(tabIndex);
+    } else if (action == changeColor) {
+	emit tabTitleColorChangeRequested(tabIndex);
     }
 }
 
