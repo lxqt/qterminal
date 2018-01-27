@@ -72,8 +72,8 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
 
     setContextMenuPolicy(Qt::CustomContextMenu);
-    connect(this, SIGNAL(customContextMenuRequested(const QPoint &)),
-            this, SLOT(customContextMenuCall(const QPoint &)));
+    connect(this, &QWidget::customContextMenuRequested,
+            this, &TermWidgetImpl::customContextMenuCall);
 
     connect(this, &QTermWidget::urlActivated, this, &TermWidgetImpl::activateUrl);
 
@@ -296,9 +296,9 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
 
     propertiesChanged();
 
-    connect(m_term, SIGNAL(finished()), this, SIGNAL(finished()));
-    connect(m_term, SIGNAL(termGetFocus()), this, SLOT(term_termGetFocus()));
-    connect(m_term, SIGNAL(termLostFocus()), this, SLOT(term_termLostFocus()));
+    connect(m_term, &QTermWidget::finished, this, &TermWidget::finished);
+    connect(m_term, &QTermWidget::termGetFocus, this, &TermWidget::term_termGetFocus);
+    connect(m_term, &QTermWidget::termLostFocus, this, &TermWidget::term_termLostFocus);
     connect(m_term, &QTermWidget::titleChanged, this, [this] { emit termTitleChanged(m_term->title(), m_term->icon()); });
 }
 
