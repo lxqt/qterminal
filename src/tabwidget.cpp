@@ -56,9 +56,9 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTa
 
     tabBar()->installEventFilter(this);
 
-    connect(this, SIGNAL(tabCloseRequested(int)), this, SLOT(removeTab(int)));
-    connect(tabBar(), SIGNAL(tabMoved(int,int)), this, SLOT(updateTabIndices()));
-    connect(this, SIGNAL(tabRenameRequested(int)), this, SLOT(renameSession(int)));
+    connect(this, &TabWidget::tabCloseRequested, this, &TabWidget::removeTab);
+    connect(tabBar(), &QTabBar::tabMoved, this, &TabWidget::updateTabIndices);
+    connect(this, &TabWidget::tabRenameRequested, this, &TabWidget::renameSession);
     connect(this, &TabWidget::tabTitleColorChangeRequested, this, &TabWidget::setTitleColor);
 }
 
@@ -79,8 +79,8 @@ int TabWidget::addNewTab(TerminalConfig config)
 
     TermWidgetHolder *console = new TermWidgetHolder(config, this);
     console->setWindowTitle(label);
-    connect(console, SIGNAL(finished()), SLOT(removeFinished()));
-    connect(console, SIGNAL(lastTerminalClosed()), this, SLOT(removeFinished()));
+    connect(console, &TermWidgetHolder::finished, this, &TabWidget::removeFinished);
+    connect(console, &TermWidgetHolder::lastTerminalClosed, this, &TabWidget::removeFinished);
     connect(console, &TermWidgetHolder::termTitleChanged, this, &TabWidget::onTermTitleChanged);
     connect(this, &QTabWidget::currentChanged, this, &TabWidget::currentTitleChanged);
 
