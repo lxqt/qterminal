@@ -85,15 +85,15 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     bookmarksWidget->setAutoFillBackground(true);
     m_bookmarksDock->setWidget(bookmarksWidget);
     addDockWidget(Qt::LeftDockWidgetArea, m_bookmarksDock);
-    connect(bookmarksWidget, SIGNAL(callCommand(QString)),
-            this, SLOT(bookmarksWidget_callCommand(QString)));
+    connect(bookmarksWidget, &BookmarksWidget::callCommand,
+            this, &MainWindow::bookmarksWidget_callCommand);
 
-    connect(m_bookmarksDock, SIGNAL(visibilityChanged(bool)),
-            this, SLOT(bookmarksDock_visibilityChanged(bool)));
+    connect(m_bookmarksDock, &QDockWidget::visibilityChanged,
+            this, &MainWindow::bookmarksDock_visibilityChanged);
 
-    connect(actAbout, SIGNAL(triggered()), SLOT(actAbout_triggered()));
-    connect(actAboutQt, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
-    connect(&m_dropShortcut, SIGNAL(activated()), SLOT(showHide()));
+    connect(actAbout, &QAction::triggered, this, &MainWindow::actAbout_triggered);
+    connect(actAboutQt, &QAction::triggered, qApp, &QApplication::aboutQt);
+    connect(&m_dropShortcut, &QxtGlobalShortcut::activated, this, &MainWindow::showHide);
 
     setContentsMargins(0, 0, 0, 0);
     if (m_dropMode) {
@@ -111,7 +111,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     }
 
     consoleTabulator->setAutoFillBackground(true);
-    connect(consoleTabulator, SIGNAL(closeTabNotification(bool)), SLOT(testClose(bool)));
+    connect(consoleTabulator, &TabWidget::closeTabNotification, this, &MainWindow::testClose);
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
 
@@ -121,7 +121,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     setupCustomDirs();
 
     connect(consoleTabulator, &TabWidget::currentTitleChanged, this, &MainWindow::onCurrentTitleChanged);
-    connect(menu_Actions, SIGNAL(aboutToShow()), this, SLOT(updateDisabledActions()));
+    connect(menu_Actions, &QMenu::aboutToShow, this, &MainWindow::updateDisabledActions);
 
     /* The tab should be added after all changes are made to
        the main window; otherwise, the initial prompt might
@@ -154,7 +154,7 @@ void MainWindow::enableDropMode()
     m_dropLockButton = new QToolButton(this);
     consoleTabulator->setCornerWidget(m_dropLockButton, Qt::BottomRightCorner);
     m_dropLockButton->setCheckable(true);
-    m_dropLockButton->connect(m_dropLockButton, SIGNAL(clicked(bool)), this, SLOT(setKeepOpen(bool)));
+    m_dropLockButton->connect(m_dropLockButton, &QToolButton::clicked, this, &MainWindow::setKeepOpen);
     setKeepOpen(Properties::Instance()->dropKeepOpen);
     m_dropLockButton->setAutoRaise(true);
 
@@ -397,8 +397,8 @@ void MainWindow::setup_ViewMenu_Actions()
     if( tabPosition->actions().count() > Properties::Instance()->tabsPos )
         tabPosition->actions().at(Properties::Instance()->tabsPos)->setChecked(true);
 
-    connect(tabPosition, SIGNAL(triggered(QAction *)),
-             consoleTabulator, SLOT(changeTabPosition(QAction *)) );
+    connect(tabPosition, &QActionGroup::triggered,
+             consoleTabulator, &TabWidget::changeTabPosition);
 
     if (tabPosMenu == NULL) {
         tabPosMenu = new QMenu(tr("&Tabs Layout"), menu_Window);
@@ -408,8 +408,8 @@ void MainWindow::setup_ViewMenu_Actions()
             tabPosMenu->addAction(tabPosition->actions().at(i));
         }
 
-        connect(menu_Window, SIGNAL(hovered(QAction *)),
-                this, SLOT(updateActionGroup(QAction *)));
+        connect(menu_Window, &QMenu::hovered,
+                this, &MainWindow::updateActionGroup);
     }
     menu_Window->addMenu(tabPosMenu);
     /* */
@@ -430,8 +430,8 @@ void MainWindow::setup_ViewMenu_Actions()
 
         if( Properties::Instance()->scrollBarPos < scrollBarPosition->actions().size() )
             scrollBarPosition->actions().at(Properties::Instance()->scrollBarPos)->setChecked(true);
-        connect(scrollBarPosition, SIGNAL(triggered(QAction *)),
-             consoleTabulator, SLOT(changeScrollPosition(QAction *)) );
+        connect(scrollBarPosition, &QActionGroup::triggered,
+             consoleTabulator, &TabWidget::changeScrollPosition);
 
     }
     if (scrollPosMenu == NULL) {
@@ -462,8 +462,8 @@ void MainWindow::setup_ViewMenu_Actions()
         if( Properties::Instance()->keyboardCursorShape < keyboardCursorShape->actions().size() )
             keyboardCursorShape->actions().at(Properties::Instance()->keyboardCursorShape)->setChecked(true);
 
-        connect(keyboardCursorShape, SIGNAL(triggered(QAction *)),
-                 consoleTabulator, SLOT(changeKeyboardCursorShape(QAction *)) );
+        connect(keyboardCursorShape, &QActionGroup::triggered,
+                 consoleTabulator, &TabWidget::changeKeyboardCursorShape);
     }
 
     if (keyboardCursorShapeMenu == NULL) {
@@ -563,8 +563,8 @@ void MainWindow::closeEvent(QCloseEvent *ev)
     QDialogButtonBox * buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes | QDialogButtonBox::No, Qt::Horizontal, dia);
     buttonBox->button(QDialogButtonBox::Yes)->setDefault(true);
 
-    connect(buttonBox, SIGNAL(accepted()), dia, SLOT(accept()));
-    connect(buttonBox, SIGNAL(rejected()), dia, SLOT(reject()));
+    connect(buttonBox, &QDialogButtonBox::accepted, dia, &QDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, dia, &QDialog::reject);
 
     QVBoxLayout * lay = new QVBoxLayout();
     lay->addWidget(new QLabel(tr("Are you sure you want to exit?")));
@@ -603,7 +603,7 @@ void MainWindow::actAbout_triggered()
 void MainWindow::actProperties_triggered()
 {
     PropertiesDialog *p = new PropertiesDialog(this);
-    connect(p, SIGNAL(propertiesChanged()), this, SLOT(propertiesChanged()));
+    connect(p, &PropertiesDialog::propertiesChanged, this, &MainWindow::propertiesChanged);
     p->exec();
 }
 
