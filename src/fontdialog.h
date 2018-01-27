@@ -32,7 +32,8 @@ public:
     QFont getFont();
 
 private slots:
-    void setFontSample();
+    void setFontSample(const QFont &f);
+    void setFontSize();
 
 };
 
