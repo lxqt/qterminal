@@ -34,10 +34,10 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 {
     setupUi(this);
 
-    connect(buttonBox->button(QDialogButtonBox::Apply), SIGNAL(clicked()),
-            this, SLOT(apply()));
-    connect(changeFontButton, SIGNAL(clicked()),
-            this, SLOT(changeFontButton_clicked()));
+    connect(buttonBox->button(QDialogButtonBox::Apply), &QPushButton::clicked,
+            this, &PropertiesDialog::apply);
+    connect(changeFontButton, &QPushButton::clicked,
+            this, &PropertiesDialog::changeFontButton_clicked);
     connect(chooseBackgroundImageButton, &QPushButton::clicked,
             this, &PropertiesDialog::chooseBackgroundImageButton_clicked);
 
@@ -137,8 +137,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     useBookmarksCheckBox->setChecked(Properties::Instance()->useBookmarks);
     bookmarksLineEdit->setText(Properties::Instance()->bookmarksFile);
     openBookmarksFile(Properties::Instance()->bookmarksFile);
-    connect(bookmarksButton, SIGNAL(clicked()),
-            this, SLOT(bookmarksButton_clicked()));
+    connect(bookmarksButton, &QPushButton::clicked,
+            this, &PropertiesDialog::bookmarksButton_clicked);
 
     terminalPresetComboBox->setCurrentIndex(Properties::Instance()->terminalsPreset);
 
