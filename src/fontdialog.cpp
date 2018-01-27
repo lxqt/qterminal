@@ -32,12 +32,12 @@ FontDialog::FontDialog(const QFont &f)
 
     sizeSpinBox->setValue(f.pointSize());
 
-    setFontSample();
+    setFontSample(f);
 
-    connect(fontComboBox, SIGNAL(currentFontChanged(QFont)),
-            this, SLOT(setFontSample()));
-    connect(sizeSpinBox, SIGNAL(valueChanged(int)),
-            this, SLOT(setFontSample()));
+    connect(fontComboBox, &QFontComboBox::currentFontChanged,
+            this, &FontDialog::setFontSample);
+    connect(sizeSpinBox, static_cast<void (QSpinBox::*)(int)>(&QSpinBox::valueChanged),
+            this, &FontDialog::setFontSize);
 }
 
 QFont FontDialog::getFont()
@@ -47,9 +47,16 @@ QFont FontDialog::getFont()
     return f;
 }
 
-void FontDialog::setFontSample()
+void FontDialog::setFontSample(const QFont &f)
 {
-    QFont f = getFont();
+    previewLabel->setFont(f);
+    QString sample("%1 %2 pt");
+    previewLabel->setText(sample.arg(f.family()).arg(f.pointSize()));
+}
+
+void FontDialog::setFontSize()
+{
+    const QFont &f = getFont();
     previewLabel->setFont(f);
     QString sample("%1 %2 pt");
     previewLabel->setText(sample.arg(f.family()).arg(f.pointSize()));
