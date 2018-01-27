@@ -370,8 +370,8 @@ BookmarksWidget::BookmarksWidget(QWidget *parent)
     treeView->setModel(m_model);
     treeView->header()->hide();
 
-    connect(treeView, SIGNAL(doubleClicked(QModelIndex)),
-            this, SLOT(handleCommand(QModelIndex)));
+    connect(treeView, &QTreeView::doubleClicked,
+            this, &BookmarksWidget::handleCommand);
 }
 
 BookmarksWidget::~BookmarksWidget()
