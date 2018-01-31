@@ -48,7 +48,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="207"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>清空活动终端(&amp;C)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="231"/>
@@ -58,7 +58,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="236"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>折叠布局终端(&amp;C)</translation>
+        <translation>折叠布局子终端(&amp;C)</translation>
     </message>
     <message>
         <source>N&amp;ext Subterminal</source>
@@ -91,22 +91,22 @@
     <message>
         <location filename="../../mainwindow.cpp" line="239"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>顶部子终端(&amp;T)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="242"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>底部子终端(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="245"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>左部子终端(&amp;E)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="248"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>右部子终端(&amp;I)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="255"/>
@@ -131,12 +131,12 @@
     <message>
         <location filename="../../mainwindow.cpp" line="301"/>
         <source>Rename session</source>
-        <translation type="unfinished">重命名会话</translation>
+        <translation>重命名会话</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="313"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>新标签窗口く(&amp;P)</translation>
+        <translation>新标签窗口(&amp;P)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="314"/>
@@ -161,17 +161,17 @@
     <message>
         <location filename="../../mainwindow.cpp" line="334"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">参数配置(&amp;P)...</translation>
+        <translation>参数配置(&amp;P)...</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="338"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">退出(&amp;Q)</translation>
+        <translation>退出(&amp;Q)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="369"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>切换书签</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="377"/>
@@ -213,22 +213,22 @@
     <message>
         <location filename="../../mainwindow.cpp" line="445"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>块状光标(&amp;B)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="446"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>下划线状光标(&amp;U)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="447"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>条状光标(&amp;I)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="464"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>光标样式(&amp;K)</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="548"/>
@@ -262,7 +262,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="168"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>按下&quot;%1&quot;显示该终端</translation>
+        <translation>按下&quot;%1&quot;显示该终端。</translation>
     </message>
     <message>
         <source>&amp;Clear Current Tab</source>
@@ -385,7 +385,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="136"/>
         <source>Show a border around the current terminal</source>
-        <translation type="unfinished">显示当前终端周围的边框</translation>
+        <translation>显示当前终端周围的边框</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="153"/>
@@ -400,7 +400,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="120"/>
         <source>Start with preset:</source>
-        <translation type="unfinished">默认配置</translation>
+        <translation>默认配置:</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="164"/>
@@ -430,87 +430,87 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>光标样式</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>基于当前终端更改窗口标题</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>基于当前终端更改窗口图标</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished"></translation>
+        <translation>开启双目录文本支持</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="357"/>
         <source>Background image:</source>
-        <translation type="unfinished"></translation>
+        <translation>背景图像:</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="369"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>选择</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="378"/>
         <source>Limit tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>限制标签宽度:</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="388"/>
         <source>px</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="424"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;终端行为: 注意! 它可能不适合您的操作系统. &lt;/p&gt;&lt;p&gt; &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt;模拟器可能回退到一个最基础的功能模式。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;选择模拟模式。注意它不必符合您的操作系统。&lt;/p&gt;&lt;p&gt;选择 &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; 模拟模式会回退到最基础的功能模式。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="446"/>
         <source>Action after paste</source>
-        <translation type="unfinished">粘贴之后的动作</translation>
+        <translation>粘贴之后的动作</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="456"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation>确认多行粘贴</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="463"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>修剪粘贴文本的最后空白行</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="496"/>
         <source>Open new terminals in current working directory</source>
-        <translation type="unfinished">在当前工作路径打开新的终端</translation>
+        <translation>在当前工作路径打开新的终端</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="503"/>
         <source>Save Size when closing</source>
-        <translation type="unfinished">关闭时保存窗口尺寸</translation>
+        <translation>关闭时保存窗口尺寸</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="510"/>
         <source>Save Position when closing</source>
-        <translation type="unfinished">关闭时保存窗口位置</translation>
+        <translation>关闭时保存窗口位置</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="517"/>
         <source>Ask for confirmation when closing</source>
-        <translation type="unfinished">关闭窗口需要确认</translation>
+        <translation>关闭窗口需要确认</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="527"/>
         <source>Unlimited history</source>
-        <translation type="unfinished">不限制历史记录条数</translation>
+        <translation>不限制历史记录条数</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="534"/>
@@ -526,12 +526,12 @@
         <location filename="../../forms/propertiesdialog.ui" line="615"/>
         <location filename="../../forms/propertiesdialog.ui" line="632"/>
         <source>%</source>
-        <translation>%</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="622"/>
         <source>Width</source>
-        <translation type="unfinished">宽度</translation>
+        <translation>宽度</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="678"/>
@@ -541,7 +541,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="700"/>
         <source>Enable bookmarks</source>
-        <translation type="unfinished">启用书签功能</translation>
+        <translation>启用书签功能</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="709"/>
@@ -552,7 +552,7 @@
         <location filename="../../forms/propertiesdialog.ui" line="187"/>
         <location filename="../../forms/propertiesdialog.ui" line="280"/>
         <source> %</source>
-        <translation>%</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="570"/>
@@ -572,12 +572,12 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="90"/>
         <source>Hide tab bar with only one tab</source>
-        <translation type="unfinished">标签栏只显示一个页面</translation>
+        <translation>只有一个页面时隐藏标签栏</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="254"/>
         <source>&amp;Change...</source>
-        <translation type="unfinished">修改设置（&amp;C)...</translation>
+        <translation>修改设置(&amp;C)...</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="587"/>
@@ -602,7 +602,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="731"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation type="unfinished">您可以指定书签保存位置, 它可以很容易通过私有云或者Dropbox分享。</translation>
+        <translation>您可以指定书签保存位置，它很容易通过私有云或者Dropbox分享。</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="66"/>
@@ -634,17 +634,17 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>块状光标</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>下划线状光标</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="82"/>
         <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>条状光标</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="94"/>
@@ -670,12 +670,12 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="245"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>选择背景图片</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="246"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation type="unfinished"></translation>
+        <translation>图像 (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="329"/>
@@ -688,7 +688,7 @@
     <message>
         <location filename="../../termwidget.cpp" line="235"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>显示详细信息...</translation>
     </message>
 </context>
 <context>
@@ -750,12 +750,12 @@
     <message>
         <location filename="../../termwidget.cpp" line="228"/>
         <source>Paste multiline text</source>
-        <translation type="unfinished"></translation>
+        <translation>粘贴多行文本</translation>
     </message>
     <message>
         <location filename="../../termwidget.cpp" line="229"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation>是否确认粘贴此文本？</translation>
     </message>
 </context>
 <context>
