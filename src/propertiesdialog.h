@@ -19,7 +19,21 @@
 #ifndef PROPERTIESDIALOG_H
 #define PROPERTIESDIALOG_H
 
+#include <QStyledItemDelegate>
 #include "ui_propertiesdialog.h"
+
+class Delegate : public QStyledItemDelegate
+{
+    Q_OBJECT
+
+public:
+    Delegate (QObject *parent = 0);
+
+    virtual QWidget* createEditor(QWidget *parent,
+                                  const QStyleOptionViewItem&,
+                                  const QModelIndex&) const;
+    virtual bool eventFilter(QObject *object, QEvent *event);
+};
 
 class PropertiesDialog : public QDialog, Ui::PropertiesDialog
 {
@@ -50,8 +64,6 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
     protected:
         void setupShortcuts();
         void saveShortcuts();
-        void recordAction(int row, int column);
-        void validateAction(int row, int column);
 };
 
 
