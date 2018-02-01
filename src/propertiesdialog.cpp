@@ -21,6 +21,7 @@
 #include <QDebug>
 #include <QStyleFactory>
 #include <QFileDialog>
+#include <QKeySequenceEdit>
 
 #include "propertiesdialog.h"
 #include "properties.h"
@@ -28,6 +29,31 @@
 #include "config.h"
 #include "qterminalapp.h"
 
+Delegate::Delegate (QObject *parent)
+    : QStyledItemDelegate (parent)
+{
+}
+
+QWidget* Delegate::createEditor(QWidget *parent,
+                                const QStyleOptionViewItem& /*option*/,
+                                const QModelIndex& /*index*/) const
+{
+    return new QKeySequenceEdit (parent);
+}
+
+bool Delegate::eventFilter(QObject *object, QEvent *event)
+{
+    QWidget *editor = qobject_cast<QWidget*>(object);
+    if (editor && event->type() == QEvent::KeyPress) {
+        int k = static_cast<QKeyEvent *>(event)->key();
+        if (k == Qt::Key_Return || k == Qt::Key_Enter) {
+            emit QAbstractItemDelegate::commitData(editor);
+            emit QAbstractItemDelegate::closeEditor(editor);
+            return true;
+        }
+    }
+    return QStyledItemDelegate::eventFilter (object, event);
+}
 
 PropertiesDialog::PropertiesDialog(QWidget *parent)
     : QDialog(parent)
@@ -58,7 +84,10 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     int eix = emulationComboBox->findText(Properties::Instance()->emulation);
     emulationComboBox->setCurrentIndex(eix != -1 ? eix : 0 );
 
-    /* shortcuts */
+    /* set the delegate of shortcut widget as well as its contents */
+    Delegate *del = new Delegate(shortcutsWidget);
+    shortcutsWidget->setItemDelegate(del);
+    shortcutsWidget->sortByColumn(0, Qt::AscendingOrder);
     setupShortcuts();
 
     /* scrollbar position */
@@ -148,7 +177,6 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     trimPastedTrailingNewlinesCheckBox->setChecked(Properties::Instance()->trimPastedTrailingNewlines);
     confirmMultilinePasteCheckBox->setChecked(Properties::Instance()->confirmMultilinePaste);
-
 }
 
 
@@ -300,35 +328,15 @@ void PropertiesDialog::setupShortcuts()
         QTableWidgetItem *itemName = new QTableWidgetItem( tr(keyValue.toStdString().c_str()) );
         QTableWidgetItem *itemShortcut = new QTableWidgetItem( sequenceStrings.join('|') );
 
-        itemName->setFlags( Qt::ItemIsSelectable | Qt::ItemIsEnabled );
+        itemName->setFlags( itemName->flags() & ~Qt::ItemIsEditable & ~Qt::ItemIsSelectable );
 
         shortcutsWidget->setItem(x, 0, itemName);
         shortcutsWidget->setItem(x, 1, itemShortcut);
     }
 
     shortcutsWidget->resizeColumnsToContents();
-/*
-    connect(shortcutsWidget, SIGNAL(currentChanged(int, int)),
-            this, SLOT(recordAction(int, int)));
-    connect(shortcutsWidget, SIGNAL(valueChanged(int, int)),
-            this, SLOT(validateAction(int, int)));
-*/
-}
 
-void PropertiesDialog::recordAction(int row, int column)
-{
-    oldAccelText = shortcutsWidget->item(row, column)->text();
-}
-
-void PropertiesDialog::validateAction(int row, int column)
-{
-    QTableWidgetItem *item = shortcutsWidget->item(row, column);
-    QString accelText = QKeySequence(item->text()).toString();
-
-    if (accelText.isEmpty() && !item->text().isEmpty())
-        item->setText(oldAccelText);
-    else
-        item->setText(accelText);
+    // No shortcut validation is needed with QKeySequenceEdit.
 }
 
 void PropertiesDialog::bookmarksButton_clicked()
