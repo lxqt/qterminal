@@ -246,9 +246,19 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
 
 bool TabWidget::eventFilter(QObject *obj, QEvent *event)
 {
-    if (event->type() == QEvent::MouseButtonDblClick)
+    QMouseEvent *e = reinterpret_cast<QMouseEvent*>(event);
+    if (e->button() == Qt::MidButton) {
+        if (event->type() == QEvent::MouseButtonRelease) {
+            // close the tab on middle clicking
+            int index = tabBar()->tabAt(e->pos());
+            if (index > -1){
+                removeTab(index);
+                return true;
+            }
+        }
+    }
+    else if (event->type() == QEvent::MouseButtonDblClick)
     {
-        QMouseEvent *e = reinterpret_cast<QMouseEvent*>(event);
         // if user doubleclicks on tab button - rename it. If user
         // clicks on free space - open new tab
         int index = tabBar()->tabAt(e->pos());
