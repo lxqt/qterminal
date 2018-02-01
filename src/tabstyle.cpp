@@ -63,7 +63,7 @@ void TabStyle::drawControl(ControlElement element,
         // Draw the final text
         drawItemText(painter,
                      rect,
-                     Qt::AlignVCenter,
+                     Qt::AlignCenter,
                      tabOption->palette,
                      tabOption->state & State_Enabled,
                      elidedText,
