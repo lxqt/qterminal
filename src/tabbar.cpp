@@ -24,8 +24,14 @@ TabBar::TabBar(QWidget *parent)
       mLimitWidth(false),
       mLimitWidthValue(0)
 {
+    // To make the selected tab text bold, first give a bold font to the tabbar
+    // for QStyle::sizeFromContents(QStyle::CT_TabBarTab, ...) to make room
+    // for the bold text, and then, set the non-selected tab text to normal.
+    QFont f = font();
+    f.setBold(true);
+    setFont(f);
+    setStyleSheet("QTabBar::tab:!selected { font-weight: normal; }");
     setStyle(new TabStyle(this));
-    setStyleSheet("QTabBar::tab:selected { font-weight: bold; }");
 }
 
 void TabBar::setLimitWidth(bool limitWidth)
