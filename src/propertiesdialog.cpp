@@ -150,6 +150,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     useCwdCheckBox->setChecked(Properties::Instance()->useCWD);
 
+    termComboBox->setCurrentText(Properties::Instance()->term);
+
     historyLimited->setChecked(Properties::Instance()->historyLimited);
     historyUnlimited->setChecked(!Properties::Instance()->historyLimited);
     historyLimitedTo->setValue(Properties::Instance()->historyLimitedTo);
@@ -216,6 +218,8 @@ void PropertiesDialog::apply()
     Properties::Instance()->saveSizeOnExit = saveSizeOnExitCheckBox->isChecked();
 
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
+
+    Properties::Instance()->term = termComboBox->currentText();
 
     Properties::Instance()->scrollBarPos = scrollBarPos_comboBox->currentIndex();
     Properties::Instance()->tabsPos = tabsPos_comboBox->currentIndex();

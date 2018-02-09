@@ -123,6 +123,7 @@ void Properties::loadSettings()
     saveSizeOnExit = m_settings->value("SaveSizeOnExit", true).toBool();
     savePosOnExit = m_settings->value("SavePosOnExit", true).toBool();
     useCWD = m_settings->value("UseCWD", false).toBool();
+    term = m_settings->value("Term", "xterm-256color").toString();
 
     // bookmarks
     useBookmarks = m_settings->value("UseBookmarks", false).toBool();
@@ -218,6 +219,7 @@ void Properties::saveSettings()
     m_settings->setValue("SavePosOnExit", savePosOnExit);
     m_settings->setValue("SaveSizeOnExit", saveSizeOnExit);
     m_settings->setValue("UseCWD", useCWD);
+    m_settings->setValue("Term", term);
 
     // bookmarks
     m_settings->setValue("UseBookmarks", useBookmarks);

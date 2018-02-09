@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>864</width>
-    <height>728</height>
+    <width>952</width>
+    <height>947</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -494,7 +494,7 @@
             </property>
            </widget>
           </item>
-          <item row="9" column="1">
+          <item row="10" column="1">
            <spacer name="verticalSpacer_4">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
@@ -550,6 +550,33 @@
             <property name="text">
              <string>History size (in lines)</string>
             </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>Default $TERM</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="2">
+           <widget class="QComboBox" name="termComboBox">
+            <property name="editable">
+             <bool>true</bool>
+            </property>
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>xterm</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>xterm-256color</string>
+             </property>
+            </item>
            </widget>
           </item>
          </layout>

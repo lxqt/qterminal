@@ -75,8 +75,6 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     setAttribute(Qt::WA_DeleteOnClose);
 
     setupUi(this);
-    Properties::Instance()->migrate_settings();
-    Properties::Instance()->loadSettings();
 
     m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
     m_bookmarksDock->setObjectName("BookmarksDockWidget");

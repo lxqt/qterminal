@@ -85,6 +85,8 @@ class Properties
 
         bool useCWD;
 
+        QString term;
+
         bool useBookmarks;
         bool bookmarksVisible;
         QString bookmarksFile;
