@@ -69,6 +69,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     QStringList emulations = QTermWidget::availableKeyBindings();
     QStringList colorSchemes = QTermWidget::availableColorSchemes();
+    colorSchemes.sort(Qt::CaseInsensitive);
 
     listWidget->setCurrentRow(0);
     listWidget->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContentsOnFirstShow);
