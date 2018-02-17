@@ -36,274 +36,274 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../mainwindow.cpp" line="214"/>
+        <location filename="../../mainwindow.cpp" line="218"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;Következő lap</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="217"/>
+        <location filename="../../mainwindow.cpp" line="221"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Előző lap</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="220"/>
+        <location filename="../../mainwindow.cpp" line="224"/>
         <source>Move Tab &amp;Left</source>
         <translation>&amp;Lap balra</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="223"/>
+        <location filename="../../mainwindow.cpp" line="227"/>
         <source>Move Tab &amp;Right</source>
         <translation>Lap jobb&amp;ra</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="228"/>
+        <location filename="../../mainwindow.cpp" line="232"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>Terminál &amp;vízszintes szétvágása</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="231"/>
+        <location filename="../../mainwindow.cpp" line="235"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>Terminál &amp;függőleges szétvágása</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="236"/>
+        <location filename="../../mainwindow.cpp" line="240"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>Alter&amp;minál összevonása</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="207"/>
+        <location filename="../../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>A&amp;ktív terminál tisztítása</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="239"/>
+        <location filename="../../mainwindow.cpp" line="243"/>
         <source>&amp;Top Subterminal</source>
         <translation>Fen&amp;ti alterminál</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="242"/>
+        <location filename="../../mainwindow.cpp" line="246"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>Al&amp;só alterminál</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="245"/>
+        <location filename="../../mainwindow.cpp" line="249"/>
         <source>L&amp;eft Subterminal</source>
         <translation>Ba&amp;l alterminál</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="248"/>
+        <location filename="../../mainwindow.cpp" line="252"/>
         <source>R&amp;ight Subterminal</source>
         <translation>&amp;Jobb alterminál</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="255"/>
+        <location filename="../../mainwindow.cpp" line="259"/>
         <source>Copy &amp;Selection</source>
         <translation>Kijelölés má&amp;solása</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="258"/>
+        <location filename="../../mainwindow.cpp" line="262"/>
         <source>Paste Clip&amp;board</source>
         <translation>Vágólap &amp;beillesztése</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="261"/>
+        <location filename="../../mainwindow.cpp" line="265"/>
         <source>Paste S&amp;election</source>
         <translation>Kijelölés b&amp;eillesztése</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="264"/>
+        <location filename="../../mainwindow.cpp" line="268"/>
         <source>Zoom &amp;in</source>
         <translation>Nagy&amp;ít</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="267"/>
+        <location filename="../../mainwindow.cpp" line="271"/>
         <source>Zoom &amp;out</source>
         <translation>Ki&amp;csinyít</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="270"/>
+        <location filename="../../mainwindow.cpp" line="274"/>
         <source>Zoom rese&amp;t</source>
         <translation>Nagyí&amp;tás vissza</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="275"/>
+        <location filename="../../mainwindow.cpp" line="279"/>
         <source>&amp;Find...</source>
         <translation>&amp;Keres...</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="283"/>
+        <location filename="../../mainwindow.cpp" line="287"/>
         <source>&amp;Save Session</source>
         <translation>Menet menté&amp;s</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="289"/>
+        <location filename="../../mainwindow.cpp" line="293"/>
         <source>&amp;Load Session</source>
         <translation>Menet tö&amp;ltés</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="296"/>
+        <location filename="../../mainwindow.cpp" line="300"/>
         <source>&amp;Toggle Menu</source>
         <translation>Me&amp;nü ki-be</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="301"/>
+        <location filename="../../mainwindow.cpp" line="305"/>
         <source>Rename session</source>
         <translation>Menet átnevezése</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="309"/>
+        <location filename="../../mainwindow.cpp" line="313"/>
         <source>&amp;New Tab</source>
         <translation>Új la&amp;p</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="313"/>
+        <location filename="../../mainwindow.cpp" line="317"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Új lap a kés&amp;zletből</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="314"/>
+        <location filename="../../mainwindow.cpp" line="318"/>
         <source>1 &amp;Terminal</source>
         <translation>1 &amp;terminál</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="316"/>
+        <location filename="../../mainwindow.cpp" line="320"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 &amp;vízszintes terminál</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="318"/>
+        <location filename="../../mainwindow.cpp" line="322"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 &amp;függőleges terminál</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="320"/>
+        <location filename="../../mainwindow.cpp" line="324"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 te&amp;rminál</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="326"/>
+        <location filename="../../mainwindow.cpp" line="330"/>
         <source>&amp;Close Tab</source>
         <translation>Lap be&amp;csukás</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="329"/>
+        <location filename="../../mainwindow.cpp" line="333"/>
         <source>&amp;New Window</source>
         <translation>Új abla&amp;k</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="334"/>
+        <location filename="../../mainwindow.cpp" line="338"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Beállítások...</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="338"/>
+        <location filename="../../mainwindow.cpp" line="342"/>
         <source>&amp;Quit</source>
         <translation>&amp;Kilép</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="344"/>
+        <location filename="../../mainwindow.cpp" line="348"/>
         <source>&amp;Hide Window Borders</source>
         <translation>Ablakkeret &amp;kikapcsolása</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="355"/>
+        <location filename="../../mainwindow.cpp" line="359"/>
         <source>&amp;Show Tab Bar</source>
         <translation>Lapfül&amp;sáv látható</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="363"/>
+        <location filename="../../mainwindow.cpp" line="367"/>
         <source>Fullscreen</source>
         <translation>Telikép</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="369"/>
+        <location filename="../../mainwindow.cpp" line="373"/>
         <source>Toggle Bookmarks</source>
         <translation>Könyvjelző ki-be</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="377"/>
+        <location filename="../../mainwindow.cpp" line="381"/>
         <source>&amp;Bottom</source>
         <translation>Al&amp;ul</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="378"/>
+        <location filename="../../mainwindow.cpp" line="382"/>
         <source>&amp;Top</source>
         <translation>&amp;Felül</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="379"/>
-        <location filename="../../mainwindow.cpp" line="415"/>
+        <location filename="../../mainwindow.cpp" line="383"/>
+        <location filename="../../mainwindow.cpp" line="419"/>
         <source>&amp;Right</source>
         <translation>&amp;Jobbra</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="380"/>
-        <location filename="../../mainwindow.cpp" line="416"/>
+        <location filename="../../mainwindow.cpp" line="384"/>
+        <location filename="../../mainwindow.cpp" line="420"/>
         <source>&amp;Left</source>
         <translation>Ba&amp;lra</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="398"/>
+        <location filename="../../mainwindow.cpp" line="402"/>
         <source>&amp;Tabs Layout</source>
         <translation>La&amp;pfülek helye</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="414"/>
+        <location filename="../../mainwindow.cpp" line="418"/>
         <source>&amp;None</source>
         <translation>&amp;Nincs</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="432"/>
+        <location filename="../../mainwindow.cpp" line="436"/>
         <source>S&amp;crollbar Layout</source>
         <translation>&amp;Gördítősáv helye</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="445"/>
+        <location filename="../../mainwindow.cpp" line="449"/>
         <source>&amp;BlockCursor</source>
         <translation>&amp;Tömb alak</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="446"/>
+        <location filename="../../mainwindow.cpp" line="450"/>
         <source>&amp;UnderlineCursor</source>
         <translation>Aláh&amp;úzásjel</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="447"/>
+        <location filename="../../mainwindow.cpp" line="451"/>
         <source>&amp;IBeamCursor</source>
         <translation>&amp;I alak</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="464"/>
+        <location filename="../../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>Billentyű&amp;kurzor</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="548"/>
+        <location filename="../../mainwindow.cpp" line="558"/>
         <source>Exit QTerminal</source>
         <translation>QTerminal befejezése</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="550"/>
+        <location filename="../../mainwindow.cpp" line="560"/>
         <source>Do not ask again</source>
         <translation>Többé nem kérdez</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="558"/>
+        <location filename="../../mainwindow.cpp" line="568"/>
         <source>Are you sure you want to exit?</source>
         <translation>Biztosan kilép?</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="582"/>
+        <location filename="../../mainwindow.cpp" line="598"/>
         <source>A lightweight multiplatform terminal emulator</source>
         <translation>Könnyed általános terminál emulátor</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="76"/>
+        <location filename="../../mainwindow.cpp" line="79"/>
         <source>Bookmarks</source>
         <translation>Könyvjelzők</translation>
     </message>
     <message>
-        <location filename="../../mainwindow.cpp" line="168"/>
+        <location filename="../../mainwindow.cpp" line="171"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>Billentyűzzön &quot;%1&quot;-t, hogy lássa a terminált.</translation>
     </message>
@@ -311,7 +311,7 @@
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="415"/>
+        <location filename="../../forms/propertiesdialog.ui" line="432"/>
         <source>Emulation</source>
         <translation>Emuláció</translation>
     </message>
@@ -332,7 +332,7 @@
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="57"/>
-        <location filename="../../forms/propertiesdialog.ui" line="440"/>
+        <location filename="../../forms/propertiesdialog.ui" line="457"/>
         <source>Behavior</source>
         <translation>Viselkedés</translation>
     </message>
@@ -443,92 +443,117 @@
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="378"/>
+        <source>Show terminal size on resize</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="385"/>
         <source>Limit tab width:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="388"/>
+        <location filename="../../forms/propertiesdialog.ui" line="395"/>
         <source>px</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="424"/>
+        <location filename="../../forms/propertiesdialog.ui" line="405"/>
+        <source>Show close button on each tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="441"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Az emulátor viselkedésének kiválasztása, mivel egyes emulátorok más rendszerek alatt is használatosak.&lt;/p&gt;&lt;p&gt;Az alapemuláció az &lt;span style=&quot; font-weight:600;&quot;&gt;alapértelmezett&lt;/span&gt; a legkevesebb lehetőséggel.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="446"/>
+        <location filename="../../forms/propertiesdialog.ui" line="463"/>
         <source>Action after paste</source>
         <translation>Beillesztés utáni teendő</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="456"/>
+        <location filename="../../forms/propertiesdialog.ui" line="473"/>
         <source>Confirm multiline paste</source>
         <translation>Többsoros beillesztés megerősítése</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="463"/>
+        <location filename="../../forms/propertiesdialog.ui" line="480"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Beillesztett szöveg soremeléseinek összevonása</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="496"/>
+        <location filename="../../forms/propertiesdialog.ui" line="513"/>
         <source>Open new terminals in current working directory</source>
         <translation>Új terminál a munkakönyvtárban nyílik</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="503"/>
+        <location filename="../../forms/propertiesdialog.ui" line="520"/>
         <source>Save Size when closing</source>
         <translation>Bezárva a méret mentése</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="510"/>
+        <location filename="../../forms/propertiesdialog.ui" line="527"/>
         <source>Save Position when closing</source>
         <translation>Bezárva a helyzet mentése</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="517"/>
+        <location filename="../../forms/propertiesdialog.ui" line="534"/>
         <source>Ask for confirmation when closing</source>
         <translation>Ablakbecsukáskor megerősítés kérés</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="527"/>
+        <location filename="../../forms/propertiesdialog.ui" line="544"/>
         <source>Unlimited history</source>
         <translation>Korlátlan naplózás</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="534"/>
+        <location filename="../../forms/propertiesdialog.ui" line="551"/>
         <source>History size (in lines)</source>
         <translation>Naplóméret (sorok)</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="605"/>
+        <location filename="../../forms/propertiesdialog.ui" line="558"/>
+        <source>Default $TERM</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="572"/>
+        <source>xterm</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="577"/>
+        <source>xterm-256color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../forms/propertiesdialog.ui" line="649"/>
         <source>Height</source>
         <translation>Magasság</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="615"/>
-        <location filename="../../forms/propertiesdialog.ui" line="632"/>
+        <location filename="../../forms/propertiesdialog.ui" line="659"/>
+        <location filename="../../forms/propertiesdialog.ui" line="676"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="622"/>
+        <location filename="../../forms/propertiesdialog.ui" line="666"/>
         <source>Width</source>
         <translation>Szélesség</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="678"/>
+        <location filename="../../forms/propertiesdialog.ui" line="722"/>
         <source>Edit bookmark file contents</source>
         <translation>Könyvjelzőfájl szerkesztés</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="700"/>
+        <location filename="../../forms/propertiesdialog.ui" line="744"/>
         <source>Enable bookmarks</source>
         <translation>Könyvjelzőhasználat</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="709"/>
+        <location filename="../../forms/propertiesdialog.ui" line="753"/>
         <source>Bookmark file</source>
         <translation>Könyvjelzőfájl</translation>
     </message>
@@ -539,12 +564,12 @@
         <translation> %</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="570"/>
+        <location filename="../../forms/propertiesdialog.ui" line="614"/>
         <source>Shortcut</source>
         <translation>Gyorsbillentyű</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="575"/>
+        <location filename="../../forms/propertiesdialog.ui" line="619"/>
         <source>Key</source>
         <translation>Billentyű</translation>
     </message>
@@ -564,105 +589,105 @@
         <translation>&amp;Változtat...</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="587"/>
+        <location filename="../../forms/propertiesdialog.ui" line="631"/>
         <source>Show on start</source>
         <translation>Induláskor látszik</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="594"/>
+        <location filename="../../forms/propertiesdialog.ui" line="638"/>
         <source>Size</source>
         <translation>Méret</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="646"/>
+        <location filename="../../forms/propertiesdialog.ui" line="690"/>
         <source>Shortcut:</source>
         <translation>Gyorsbillentyű:</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="722"/>
+        <location filename="../../forms/propertiesdialog.ui" line="766"/>
         <source>Find...</source>
         <translation>Keres...</translation>
     </message>
     <message>
-        <location filename="../../forms/propertiesdialog.ui" line="731"/>
+        <location filename="../../forms/propertiesdialog.ui" line="775"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Saját könyvjelzőfájl adható meg, ezáltal más eszözök is könnyedén használhatók, mint például az OwnCloud vagy a DropBox.</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="66"/>
+        <location filename="../../propertiesdialog.cpp" line="95"/>
         <source>No scrollbar</source>
         <translation>Nincs gördítősáv</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="66"/>
-        <location filename="../../propertiesdialog.cpp" line="72"/>
+        <location filename="../../propertiesdialog.cpp" line="95"/>
+        <location filename="../../propertiesdialog.cpp" line="101"/>
         <source>Left</source>
         <translation>Balra</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="66"/>
-        <location filename="../../propertiesdialog.cpp" line="72"/>
+        <location filename="../../propertiesdialog.cpp" line="95"/>
+        <location filename="../../propertiesdialog.cpp" line="101"/>
         <source>Right</source>
         <translation>Jobbra</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="72"/>
+        <location filename="../../propertiesdialog.cpp" line="101"/>
         <source>Top</source>
         <translation>Felül</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="72"/>
+        <location filename="../../propertiesdialog.cpp" line="101"/>
         <source>Bottom</source>
         <translation>Alul</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="82"/>
+        <location filename="../../propertiesdialog.cpp" line="112"/>
         <source>BlockCursor</source>
         <translation>Tömb kurzor</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="82"/>
+        <location filename="../../propertiesdialog.cpp" line="112"/>
         <source>UnderlineCursor</source>
         <translation>Aláhúzás kurzor</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="82"/>
+        <location filename="../../propertiesdialog.cpp" line="112"/>
         <source>IBeamCursor</source>
         <translation>I alakú kurzor</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="94"/>
+        <location filename="../../propertiesdialog.cpp" line="124"/>
         <source>No move</source>
         <translation>Áll</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="94"/>
+        <location filename="../../propertiesdialog.cpp" line="124"/>
         <source>Move start</source>
         <translation>Kezdetre</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="94"/>
+        <location filename="../../propertiesdialog.cpp" line="124"/>
         <source>Move end</source>
         <translation>Végére</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="99"/>
-        <location filename="../../propertiesdialog.cpp" line="166"/>
+        <location filename="../../propertiesdialog.cpp" line="129"/>
+        <location filename="../../propertiesdialog.cpp" line="199"/>
         <source>System Default</source>
         <translation>Rendszer alapértelmezett</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="245"/>
+        <location filename="../../propertiesdialog.cpp" line="282"/>
         <source>Choose a background image</source>
         <translation>Háttérkép választás</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="246"/>
+        <location filename="../../propertiesdialog.cpp" line="283"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>Képek (*.bmp, *.png, *.xpm, *.jpg)</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="329"/>
+        <location filename="../../propertiesdialog.cpp" line="348"/>
         <source>Open or create bookmarks file</source>
         <translation>Könyvjelzőfájl nyitás</translation>
     </message>
@@ -670,7 +695,7 @@
 <context>
     <name>QMessageBox</name>
     <message>
-        <location filename="../../termwidget.cpp" line="235"/>
+        <location filename="../../termwidget.cpp" line="237"/>
         <source>Show Details...</source>
         <translation>Részletek...</translation>
     </message>
@@ -683,7 +708,7 @@
         <translation>Helyi könyvjelzők</translation>
     </message>
     <message>
-        <location filename="../../bookmarkswidget.cpp" line="167"/>
+        <location filename="../../bookmarkswidget.cpp" line="168"/>
         <source>Synchronized Bookmarks</source>
         <translation>Szinkronizált könyvjelzők</translation>
     </message>
@@ -691,25 +716,35 @@
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../../tabwidget.cpp" line="72"/>
-        <location filename="../../tabwidget.cpp" line="209"/>
+        <location filename="../../tabwidget.cpp" line="73"/>
+        <location filename="../../tabwidget.cpp" line="219"/>
         <source>Shell No. %1</source>
         <translation>Héj Nr. %1</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="186"/>
+        <location filename="../../tabwidget.cpp" line="187"/>
         <source>Tab name</source>
         <translation>Lapnév</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="187"/>
+        <location filename="../../tabwidget.cpp" line="188"/>
         <source>New tab name:</source>
         <translation>Új lapnév:</translation>
     </message>
     <message>
-        <location filename="../../tabwidget.cpp" line="219"/>
+        <location filename="../../tabwidget.cpp" line="208"/>
+        <source>Select new tab title color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../tabwidget.cpp" line="229"/>
         <source>Close session</source>
         <translation>Menet bezárása</translation>
+    </message>
+    <message>
+        <location filename="../../tabwidget.cpp" line="231"/>
+        <source>Change title color</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -728,12 +763,12 @@
 <context>
     <name>TermWidgetImpl</name>
     <message>
-        <location filename="../../termwidget.cpp" line="228"/>
+        <location filename="../../termwidget.cpp" line="229"/>
         <source>Paste multiline text</source>
         <translation>Többsoros beillesztés</translation>
     </message>
     <message>
-        <location filename="../../termwidget.cpp" line="229"/>
+        <location filename="../../termwidget.cpp" line="230"/>
         <source>Are you sure you want to paste this text?</source>
         <translation>Beillesztjük ezt a szöveget?</translation>
     </message>
@@ -741,37 +776,37 @@
 <context>
     <name>mainWindow</name>
     <message>
-        <location filename="../../forms/qterminal.ui" line="65"/>
+        <location filename="../../forms/qterminal.ui" line="59"/>
         <source>&amp;File</source>
         <translation>&amp;Fájl</translation>
     </message>
     <message>
-        <location filename="../../forms/qterminal.ui" line="73"/>
+        <location filename="../../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
         <translation>&amp;Akciók</translation>
     </message>
     <message>
-        <location filename="../../forms/qterminal.ui" line="78"/>
+        <location filename="../../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
         <translation>&amp;Segítség</translation>
     </message>
     <message>
-        <location filename="../../forms/qterminal.ui" line="85"/>
+        <location filename="../../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
         <translation>&amp;Nézet</translation>
     </message>
     <message>
-        <location filename="../../forms/qterminal.ui" line="90"/>
+        <location filename="../../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
         <translation>Sz&amp;erkeszt</translation>
     </message>
     <message>
-        <location filename="../../forms/qterminal.ui" line="106"/>
+        <location filename="../../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
         <translation>&amp;Rólunk...</translation>
     </message>
     <message>
-        <location filename="../../forms/qterminal.ui" line="111"/>
+        <location filename="../../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
         <translation>A &amp;QT-ról...</translation>
     </message>
