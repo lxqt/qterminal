@@ -445,7 +445,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished"></translation>
+        <translation>Habilita la compatibilitat amb el text bidireccional</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="357"/>
@@ -460,22 +460,22 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra la mida del terminal amb la redimensió</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="385"/>
         <source>Limit tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Amplada límit de la pestanya:</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="395"/>
         <source>px</source>
-        <translation type="unfinished"></translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra el botó de tancament en cadascuna de les pestanyes</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="432"/>
@@ -535,17 +535,17 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="558"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>Valor per defecte de $TERM</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="572"/>
         <source>xterm</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="614"/>
@@ -734,7 +734,7 @@
     <message>
         <location filename="../../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecciona el color del títol de la pestanya nova</translation>
     </message>
     <message>
         <location filename="../../tabwidget.cpp" line="229"/>
@@ -744,7 +744,7 @@
     <message>
         <location filename="../../tabwidget.cpp" line="231"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Canvia el color del títol</translation>
     </message>
 </context>
 <context>
