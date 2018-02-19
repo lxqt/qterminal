@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="lt">
+<TS version="2.0" language="lt">
 <context>
     <name>BookmarksWidget</name>
     <message>
@@ -42,7 +42,7 @@
     </message>
     <message>
         <source>Rename Session</source>
-        <translation type="vanished">Pervadinti seansą</translation>
+        <translation>Pervadinti seansą</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="171"/>
@@ -51,7 +51,7 @@
     </message>
     <message>
         <source>&amp;Clear Current Tab</source>
-        <translation type="vanished">&amp;Išvalyti esamą kortelę</translation>
+        <translation>&amp;Išvalyti esamą kortelę</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="218"/>
@@ -90,11 +90,11 @@
     </message>
     <message>
         <source>N&amp;ext Subterminal</source>
-        <translation type="vanished">&amp;Kitas subterminalas</translation>
+        <translation>&amp;Kitas subterminalas</translation>
     </message>
     <message>
         <source>P&amp;revious Subterminal</source>
-        <translation type="vanished">&amp;Ankstesnis subterminalas</translation>
+        <translation>&amp;Ankstesnis subterminalas</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="211"/>
@@ -476,7 +476,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>Keičiant dydį, rodyti terminalo dydį</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="385"/>
@@ -491,7 +491,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Rodyti ant kiekvienos kortelės užvėrimo mygtuką</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="432"/>
@@ -551,17 +551,17 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="558"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>Numatytasis $TERM</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="572"/>
         <source>xterm</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm-256color</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="614"/>
@@ -750,7 +750,7 @@
     <message>
         <location filename="../../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Pasirinkite naują kortelės pavadinimo spalvą</translation>
     </message>
     <message>
         <location filename="../../tabwidget.cpp" line="229"/>
@@ -760,11 +760,11 @@
     <message>
         <location filename="../../tabwidget.cpp" line="231"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Keisti pavadinimo spalvą</translation>
     </message>
     <message>
         <source>Rename session</source>
-        <translation type="vanished">Pervadinti seansą</translation>
+        <translation>Pervadinti seansą</translation>
     </message>
 </context>
 <context>
@@ -837,11 +837,11 @@
     </message>
     <message>
         <source>&amp;Preferences...</source>
-        <translation type="vanished">&amp;Nuostatos...</translation>
+        <translation>&amp;Nuostatos...</translation>
     </message>
     <message>
         <source>&amp;Quit</source>
-        <translation type="vanished">&amp;Išeiti</translation>
+        <translation>&amp;Išeiti</translation>
     </message>
 </context>
 </TS>
