@@ -460,7 +460,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>重新调整大小时显示终端大小</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="385"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>在每个标签上显示关闭按钮</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="441"/>
@@ -530,17 +530,17 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="558"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>默认 $TERM</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="572"/>
         <source>xterm</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="649"/>
@@ -750,7 +750,7 @@
     <message>
         <location filename="../../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>选择新标签的标题颜色</translation>
     </message>
     <message>
         <location filename="../../tabwidget.cpp" line="229"/>
@@ -760,7 +760,7 @@
     <message>
         <location filename="../../tabwidget.cpp" line="231"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>更改标题颜色</translation>
     </message>
     <message>
         <source>Rename session</source>
