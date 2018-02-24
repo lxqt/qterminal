@@ -750,7 +750,7 @@
     <message>
         <location filename="../../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation>选择新标签的标题颜色</translation>
+        <translation>选择新的标签标题颜色</translation>
     </message>
     <message>
         <location filename="../../tabwidget.cpp" line="229"/>
