@@ -60,8 +60,8 @@ void print_usage_and_exit(int code)
     puts("  -p,  --profile            Load qterminal with specific options");
     puts("  -v,  --version            Prints application version and exits");
     puts("  -w,  --workdir <dir>      Start session with specified work directory");
-    puts("\nHomepage: <https://github.com/lxde/qterminal>");
-    puts("Report bugs to <https://github.com/lxde/qterminal/issues>");
+    puts("\nHomepage: <https://github.com/lxqt/qterminal>");
+    puts("Report bugs to <https://github.com/lxqt/qterminal/issues>");
     exit(code);
 }
 
