@@ -6,7 +6,7 @@ include(GNUInstallDirs)
 
 # qterminal version
 set(STR_VERSION "0.8.0")
-set(LXQTBT_MINIMUM_VERSION "0.4.1")
+set(LXQTBT_MINIMUM_VERSION "0.5.0")
 set(QTERMWIDGET_MINIMUM_VERSION "0.8.0")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
@@ -26,6 +26,8 @@ elseif(UNIX)
 endif()
 find_package(QTermWidget5 ${QTERMWIDGET_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+
+include(LXQtPreventInSourceBuilds)
 include(LXQtTranslateTs)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
 message(STATUS "Qt version: ${Qt5Core_VERSION}")
