@@ -15,7 +15,7 @@
         <location filename="../../forms/fontdialog.ui" line="14"/>
         <location filename="../../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Selecciona fuente del terminal</translation>
+        <translation>Seleccione la fuente de la terminal</translation>
     </message>
     <message>
         <location filename="../../forms/fontdialog.ui" line="32"/>
@@ -30,7 +30,7 @@
     <message>
         <location filename="../../forms/fontdialog.ui" line="59"/>
         <source>Preview</source>
-        <translation>Vista Previa</translation>
+        <translation>Vista previa</translation>
     </message>
 </context>
 <context>
@@ -79,7 +79,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="171"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Presiona &quot;%1&quot; para ver la terminal.</translation>
+        <translation>Presione &quot;%1&quot; para ver la terminal.</translation>
     </message>
     <message>
         <source>Clear Current Tab</source>
@@ -180,7 +180,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>Limpiar la terminal a&amp;ctual</translation>
+        <translation>Limpiar la terminal a&amp;ctiva</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="218"/>
@@ -195,12 +195,12 @@
     <message>
         <location filename="../../mainwindow.cpp" line="224"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Mover pestaña a &amp;la izquierda</translation>
+        <translation>Mover la pestaña a &amp;la izquierda</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="227"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Mover pestaña a la de&amp;recha</translation>
+        <translation>Mover la pestaña a la de&amp;recha</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="232"/>
@@ -295,32 +295,32 @@
     <message>
         <location filename="../../mainwindow.cpp" line="313"/>
         <source>&amp;New Tab</source>
-        <translation>Pestaña &amp;nueva</translation>
+        <translation>&amp;Nueva pestaña</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="317"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Pestaña nueva desde &amp;preajuste</translation>
+        <translation>Nueva pestaña desde &amp;preajuste</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="318"/>
         <source>1 &amp;Terminal</source>
-        <translation>1 &amp;Terminal</translation>
+        <translation>1 &amp;terminal</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="320"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>2 Terminales &amp;horizontales</translation>
+        <translation>2 terminales &amp;horizontales</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="322"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation>2.Terminales &amp;verticales</translation>
+        <translation>2 terminales &amp;verticales</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="324"/>
         <source>4 Terminal&amp;s</source>
-        <translation>4 Terminale&amp;s</translation>
+        <translation>4 terminale&amp;s</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="330"/>
@@ -330,7 +330,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="333"/>
         <source>&amp;New Window</source>
-        <translation>Ventana &amp;nueva</translation>
+        <translation>&amp;Nueva ventana</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="338"/>
@@ -402,17 +402,17 @@
     <message>
         <location filename="../../mainwindow.cpp" line="449"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="450"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="451"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="468"/>
@@ -432,7 +432,7 @@
     <message>
         <location filename="../../mainwindow.cpp" line="568"/>
         <source>Are you sure you want to exit?</source>
-        <translation>¿Estás seguro que quieres salir?</translation>
+        <translation>¿Está seguro de querer salir?</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="598"/>
@@ -571,7 +571,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="296"/>
         <source>Widget style</source>
-        <translation>Estilo de las miniaplicaciones</translation>
+        <translation>Estilo de los controles</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="319"/>
@@ -651,7 +651,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="513"/>
         <source>Open new terminals in current working directory</source>
-        <translation>Abrir terminales nuevas en el directorio de trabajo actual</translation>
+        <translation>Abrir las terminales nuevas en el directorio de trabajo actual</translation>
     </message>
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="520"/>
@@ -791,7 +791,7 @@
     <message>
         <location filename="../../forms/propertiesdialog.ui" line="775"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Puedes especificar tu propia locación de archivo de marcadores. Permite facilmente compartir marcadores con herramientas como OwnCloud o Dropbox.</translation>
+        <translation>Puedes especificar la ubicación de su propio archivo de marcadores. Permite facilmente compartir marcadores con herramientas como OwnCloud o Dropbox.</translation>
     </message>
     <message>
         <source>Tabs Position:</source>
@@ -883,17 +883,17 @@
     <message>
         <location filename="../../propertiesdialog.cpp" line="112"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="112"/>
         <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="112"/>
         <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../../propertiesdialog.cpp" line="124"/>
@@ -963,17 +963,17 @@
         <location filename="../../tabwidget.cpp" line="73"/>
         <location filename="../../tabwidget.cpp" line="219"/>
         <source>Shell No. %1</source>
-        <translation>Shell N° %1</translation>
+        <translation>Terminal nro. %1</translation>
     </message>
     <message>
         <location filename="../../tabwidget.cpp" line="187"/>
         <source>Tab name</source>
-        <translation>Nombre de pestaña</translation>
+        <translation>Nombre de la pestaña</translation>
     </message>
     <message>
         <location filename="../../tabwidget.cpp" line="188"/>
         <source>New tab name:</source>
-        <translation>Nuevo nombre de pestaña:</translation>
+        <translation>Nuevo nombre de la pestaña:</translation>
     </message>
     <message>
         <location filename="../../tabwidget.cpp" line="208"/>
@@ -983,7 +983,7 @@
     <message>
         <location filename="../../tabwidget.cpp" line="229"/>
         <source>Close session</source>
-        <translation>Cerrar session</translation>
+        <translation>Cerrar la session</translation>
     </message>
     <message>
         <location filename="../../tabwidget.cpp" line="231"/>
