@@ -8,7 +8,7 @@ CONFIG += link_pkgconfig \
 
 PKGCONFIG += qtermwidget5
 
-DEFINES += STR_VERSION=\\\"0.7.0\\\"
+DEFINES += STR_VERSION=\\\"0.9.0\\\"
 
 SOURCES += $$files(src/*.cpp)
 HEADERS += $$files(src/*.h)
