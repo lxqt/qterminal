@@ -2,11 +2,13 @@
 Name=QTerminal
 Type=Application
 GenericName=Terminal emulator
+GenericName[es]=Emulador de terminal
 
 Comment=Terminal emulator
 Comment[ca]=Emulador de terminal
 Comment[de]=Befehlszeile verwenden
 Comment[el]=Προσομοιωτής τερματικού
+Comment[es]=Emulador de terminal
 Comment[fr]=Terminal
 Comment[lt]=Terminalo emuliatorius
 Comment[pl]=Emulator terminala
@@ -34,7 +36,7 @@ Name[cs]=Vysouvací terminál
 Name[da]=Terminal der ruller ned
 Name[de]=Aufklapp-Terminal
 Name[el]=Αναπτυσσόμενο τερματικό
-Name[es]=Terminal de menú desplegable
+Name[es]=Terminal desplegable
 Name[et]=Lahtikeriv terminal
 Name[fr]=Terminal déroulant
 Name[hr]=Spuštajući terminal
