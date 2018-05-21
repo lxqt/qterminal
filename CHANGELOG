@@ -1,7 +1,53 @@
 
-qterminal-0.8.0 / 2017-10-21
+qterminal-0.9.0 / 2018-05-21
 ============================
 
+  * Bump version to 0.9.0
+  * Spanish translation update
+  * Now building out-of-source is mandatory
+  * Fix tab texts, especially for vertical tabs
+  * CMake: Prevent in-source builds
+  * Fixed some lxde mentions
+  * Sort color schemes alphabetically
+  * Support modifying $TERM and use xterm-256color by default
+  * Convert connect to the new syntax - termwidgetholder.cpp
+  * Convert connect to the new syntax - termwidget.cpp
+  * Convert connect to the new syntax - tabwidget.cpp
+  * Convert connect to the new syntax - propertiesdialog.cpp
+  * Convert connect to the new syntax - mainwindow.cpp, part 1
+  * Convert connect to the new syntax - fontdialog.cpp
+  * Convert connect to the new syntax - bookmarkswidget.cpp
+  * Fix tabbar
+  * Close tab on middle clicking
+  * A real shortcut editor
+  * Allow to change tab title color
+  * Make tab closing button configurable
+  * Make active tab text bold to make it more visible
+  * Fix a typo
+  * Fixes an error in the d3fa804 fix of #304
+  * new config: show terminal size on resize
+  * Fixes #304
+  * Fix bracket paste
+  * Fixes tabAt() when tabBar is not at north position
+  * Fix terminal menubar
+  * Drop Qt foreach
+  * Set QTERMWIDGET_MINIMUM_VERSION
+  * Fix a typo in qterminal_drop.desktop
+  * Fix tab icon display in proxy style.
+  * Switch tab eliding to ElideMiddle.
+  * Adjust default tab width to 500 and enable limit by default.
+  * Forward declare TabBar.
+  * Add option for configuring tab width limit.
+  * Add maximum tab width and proper text eliding.
+  * Enable bidi by default
+  * Fix UI
+  * Add RTL support button
+  * Update Catalan translation
+
+0.8.0 / 2017-10-21
+==================
+
+  * Release 0.8.0: Update changelog
   * Set version to 0.8.0
   * Update information on distribution package
   * Added legacy font setting support
