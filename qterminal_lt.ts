@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="lt">
+<TS version="2.1" language="lt">
 <context>
     <name>BookmarksWidget</name>
     <message>
@@ -42,7 +42,7 @@
     </message>
     <message>
         <source>Rename Session</source>
-        <translation>Pervadinti seansą</translation>
+        <translation type="vanished">Pervadinti seansą</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="171"/>
@@ -51,7 +51,7 @@
     </message>
     <message>
         <source>&amp;Clear Current Tab</source>
-        <translation>&amp;Išvalyti esamą kortelę</translation>
+        <translation type="vanished">&amp;Išvalyti esamą kortelę</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="218"/>
@@ -90,11 +90,11 @@
     </message>
     <message>
         <source>N&amp;ext Subterminal</source>
-        <translation>&amp;Kitas subterminalas</translation>
+        <translation type="vanished">&amp;Kitas subterminalas</translation>
     </message>
     <message>
         <source>P&amp;revious Subterminal</source>
-        <translation>&amp;Ankstesnis subterminalas</translation>
+        <translation type="vanished">&amp;Ankstesnis subterminalas</translation>
     </message>
     <message>
         <location filename="../../mainwindow.cpp" line="211"/>
@@ -630,80 +630,80 @@
         <translation>Jūs galite nurodyti savo asmeninę žymelių failo vietą. Tai leidžia lengvai bendrinti žymeles su tokiais įrankiais kaip OwnCloud ar Dropbox.</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
         <source>No scrollbar</source>
         <translation>Be slankjuostės</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Left</source>
         <translation>Kairėje</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Right</source>
         <translation>Dešinėje</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Top</source>
         <translation>Viršuje</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Bottom</source>
         <translation>Apačioje</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
         <translation>Blokas</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
         <translation>Pabraukimas</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
         <translation>Dvitėjinė sija</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>No move</source>
         <translation>Nejudėti</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>Move start</source>
         <translation>Pereiti į pradžią</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>Move end</source>
         <translation>Pereiti į pabaigą</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="129"/>
-        <location filename="../../propertiesdialog.cpp" line="199"/>
+        <location filename="../../propertiesdialog.cpp" line="130"/>
+        <location filename="../../propertiesdialog.cpp" line="200"/>
         <source>System Default</source>
         <translation>Sistemos numatytasis</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="282"/>
+        <location filename="../../propertiesdialog.cpp" line="283"/>
         <source>Choose a background image</source>
         <translation>Pasirinkti fono paveikslą</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="283"/>
+        <location filename="../../propertiesdialog.cpp" line="284"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>Paveikslai (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="348"/>
+        <location filename="../../propertiesdialog.cpp" line="349"/>
         <source>Open or create bookmarks file</source>
         <translation>Atverti ar sukurti žymelių failą</translation>
     </message>
@@ -764,7 +764,7 @@
     </message>
     <message>
         <source>Rename session</source>
-        <translation>Pervadinti seansą</translation>
+        <translation type="vanished">Pervadinti seansą</translation>
     </message>
 </context>
 <context>
@@ -837,11 +837,11 @@
     </message>
     <message>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Nuostatos...</translation>
+        <translation type="vanished">&amp;Nuostatos...</translation>
     </message>
     <message>
         <source>&amp;Quit</source>
-        <translation>&amp;Išeiti</translation>
+        <translation type="vanished">&amp;Išeiti</translation>
     </message>
 </context>
 </TS>

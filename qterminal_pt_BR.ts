@@ -630,80 +630,80 @@
         <translation>Você pode especificar a localização do arquivo de marcadores. Isso permite o compartilhamento de marcadores através do Own Cloud, Dropbox e mais serviços.</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
         <source>No scrollbar</source>
         <translation>Sem barra de rolagem</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Left</source>
         <translation>Esquerda</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Right</source>
         <translation>Direita</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Top</source>
         <translation>Topo</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Bottom</source>
         <translation>Baixo</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>No move</source>
         <translation>Não mover</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>Move start</source>
         <translation>Mover para o inicio</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>Move end</source>
         <translation>Mover para o fim</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="129"/>
-        <location filename="../../propertiesdialog.cpp" line="199"/>
+        <location filename="../../propertiesdialog.cpp" line="130"/>
+        <location filename="../../propertiesdialog.cpp" line="200"/>
         <source>System Default</source>
         <translation>Padrão do sistema</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="282"/>
+        <location filename="../../propertiesdialog.cpp" line="283"/>
         <source>Choose a background image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="283"/>
+        <location filename="../../propertiesdialog.cpp" line="284"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="348"/>
+        <location filename="../../propertiesdialog.cpp" line="349"/>
         <source>Open or create bookmarks file</source>
         <translation>Abrir ou criar arquivo de marcadores</translation>
     </message>

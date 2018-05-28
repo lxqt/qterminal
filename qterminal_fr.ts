@@ -614,80 +614,80 @@
         <translation>Vous pouvez spécifier votre propre fichier de signets. Il permet un partage aisé des signets.</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
         <source>No scrollbar</source>
         <translation>Non déroulant</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Left</source>
         <translation>Gauche</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Right</source>
         <translation>Droite</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Top</source>
         <translation>Haut</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Bottom</source>
         <translation>Bas</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
         <translation>Curseur bloc</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
         <translation>Curseur soulignement</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
         <translation>Curseur en I</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>No move</source>
         <translation>Sans déplacement</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>Move start</source>
         <translation>Démarrage du déplacement</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>Move end</source>
         <translation>Fin du déplacement</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="129"/>
-        <location filename="../../propertiesdialog.cpp" line="199"/>
+        <location filename="../../propertiesdialog.cpp" line="130"/>
+        <location filename="../../propertiesdialog.cpp" line="200"/>
         <source>System Default</source>
         <translation>Défaut système</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="282"/>
+        <location filename="../../propertiesdialog.cpp" line="283"/>
         <source>Choose a background image</source>
         <translation>Choisir une image de fond d&apos;écran</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="348"/>
+        <location filename="../../propertiesdialog.cpp" line="349"/>
         <source>Open or create bookmarks file</source>
         <translation>Ouvrir ou créer le fichier des signetss</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="283"/>
+        <location filename="../../propertiesdialog.cpp" line="284"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>Images (*.bmp *.png *.xpm *.jpg)</translation>
     </message>

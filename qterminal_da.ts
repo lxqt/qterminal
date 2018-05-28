@@ -614,80 +614,80 @@
         <translation>Du kan angive din egen placering af bogmærkefilen. Det giver mulighed for nemt at dele bogmærker med værktøjer såsom OwnCloud eller Dropbox.</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
         <source>No scrollbar</source>
         <translation>Ingen rullebjælke</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Left</source>
         <translation>Venstre</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Right</source>
         <translation>Højre</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Top</source>
         <translation>Øverst</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Bottom</source>
         <translation>Nederst</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
         <translation>Blokmarkør</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
         <translation>Understreget markør</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
         <translation>Lodret streg-markør</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>No move</source>
         <translation>Ingen flytning</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>Move start</source>
         <translation>Flyt begyndelse</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>Move end</source>
         <translation>Flyt slutning</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="129"/>
-        <location filename="../../propertiesdialog.cpp" line="199"/>
+        <location filename="../../propertiesdialog.cpp" line="130"/>
+        <location filename="../../propertiesdialog.cpp" line="200"/>
         <source>System Default</source>
         <translation>Systemstandard</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="282"/>
+        <location filename="../../propertiesdialog.cpp" line="283"/>
         <source>Choose a background image</source>
         <translation>Vælg et baggrundsbillede</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="283"/>
+        <location filename="../../propertiesdialog.cpp" line="284"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>Billeder (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="348"/>
+        <location filename="../../propertiesdialog.cpp" line="349"/>
         <source>Open or create bookmarks file</source>
         <translation>Åbn eller opret bogmærkefil</translation>
     </message>

@@ -630,80 +630,80 @@
         <translation>您可以指定书签保存位置，它很容易通过私有云或者Dropbox分享。</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
         <source>No scrollbar</source>
         <translation>无滚动栏</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Left</source>
         <translation>左</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="95"/>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="96"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Right</source>
         <translation>右</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Top</source>
         <translation>上</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="101"/>
+        <location filename="../../propertiesdialog.cpp" line="102"/>
         <source>Bottom</source>
         <translation>下</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
         <translation>块状光标</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
         <translation>下划线状光标</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="112"/>
+        <location filename="../../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
         <translation>条状光标</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>No move</source>
         <translation>无动作</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>Move start</source>
         <translation>开始移动</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="124"/>
+        <location filename="../../propertiesdialog.cpp" line="125"/>
         <source>Move end</source>
         <translation>移动完成</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="129"/>
-        <location filename="../../propertiesdialog.cpp" line="199"/>
+        <location filename="../../propertiesdialog.cpp" line="130"/>
+        <location filename="../../propertiesdialog.cpp" line="200"/>
         <source>System Default</source>
         <translation>系统默认</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="282"/>
+        <location filename="../../propertiesdialog.cpp" line="283"/>
         <source>Choose a background image</source>
         <translation>选择背景图片</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="283"/>
+        <location filename="../../propertiesdialog.cpp" line="284"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>图像 (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
-        <location filename="../../propertiesdialog.cpp" line="348"/>
+        <location filename="../../propertiesdialog.cpp" line="349"/>
         <source>Open or create bookmarks file</source>
         <translation>打开或者创建书签文件</translation>
     </message>
