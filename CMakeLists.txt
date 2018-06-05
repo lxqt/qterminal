@@ -125,14 +125,6 @@ lxqt_translate_ts(QTERM_QM
         ${QTERM_UI_SRC}
         ${QTERM_MOC_SRC}
     TRANSLATION_DIR "src/translations"
-    PULL_TRANSLATIONS
-        ${PULL_TRANSLATIONS}
-    CLEAN_TRANSLATIONS
-        ${CLEAN_TRANSLATIONS}
-    TRANSLATIONS_REPO
-        ${TRANSLATIONS_REPO}
-    TRANSLATIONS_REFSPEC
-        ${TRANSLATIONS_REFSPEC}
 )
 
 include_directories(
