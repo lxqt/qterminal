@@ -434,7 +434,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
         <source>Background image:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hintergrundbild:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
