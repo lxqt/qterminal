@@ -15,22 +15,22 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation></translation>
+        <translation>إختيار خط الطّرفيّة</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation></translation>
+        <translation>الخطّ :</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
         <source>Size:</source>
-        <translation></translation>
+        <translation>الحجم :</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="59"/>
         <source>Preview</source>
-        <translation></translation>
+        <translation>معاينة</translation>
     </message>
 </context>
 <context>
@@ -38,7 +38,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="79"/>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>الفواصل المرجعية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
@@ -48,12 +48,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
         <source>&amp;Next Tab</source>
-        <translation></translation>
+        <translation>اللسان التالي</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="221"/>
         <source>&amp;Previous Tab</source>
-        <translation></translation>
+        <translation>اللسان السابق</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
@@ -560,17 +560,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="631"/>
         <source>Show on start</source>
-        <translation></translation>
+        <translation>عرضه عند الإطلاق</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="638"/>
         <source>Size</source>
-        <translation></translation>
+        <translation>الحجم</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="649"/>
         <source>Height</source>
-        <translation></translation>
+        <translation>الإرتفاع</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="659"/>
@@ -581,12 +581,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="666"/>
         <source>Width</source>
-        <translation></translation>
+        <translation>العرض</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="690"/>
         <source>Shortcut:</source>
-        <translation></translation>
+        <translation>الاختصار :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="722"/>
@@ -596,7 +596,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="744"/>
         <source>Enable bookmarks</source>
-        <translation></translation>
+        <translation>تمكين الفواصل المرجعية</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="753"/>
