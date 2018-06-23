@@ -674,7 +674,7 @@
         <location filename="../propertiesdialog.cpp" line="130"/>
         <location filename="../propertiesdialog.cpp" line="200"/>
         <source>System Default</source>
-        <translation>Εξ ορισμού του συστήματος</translation>
+        <translation>Συστήματος</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="283"/>
