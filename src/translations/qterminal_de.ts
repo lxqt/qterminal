@@ -519,12 +519,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="572"/>
         <source>xterm</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm-256color</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="649"/>
@@ -679,12 +679,12 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="283"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Wähle ein Hintergrundbild</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="284"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilder (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="349"/>
@@ -697,7 +697,7 @@
     <message>
         <location filename="../termwidget.cpp" line="237"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>Zeige Details...</translation>
     </message>
 </context>
 <context>
@@ -770,7 +770,7 @@
     <message>
         <location filename="../termwidget.cpp" line="230"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation>Sind Sie sicher, dass der Text eingefügt werden soll?</translation>
     </message>
 </context>
 <context>
