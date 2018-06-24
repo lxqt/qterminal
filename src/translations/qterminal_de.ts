@@ -734,7 +734,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Wähle die Titelfarbe des neuen Tab</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="229"/>
