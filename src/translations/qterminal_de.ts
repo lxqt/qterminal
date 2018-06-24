@@ -429,7 +429,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation>Aktiviere bidirektionale Text Unterstützung</translation>
+        <translation>Aktiviere bidirektionale Textunterstützung</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
