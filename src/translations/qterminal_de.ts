@@ -734,7 +734,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation>Wähle die Titelfarbe des neuen Tab</translation>
+        <translation>Wähle die Titelfarbe des neuen Reiters</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="229"/>
@@ -803,7 +803,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation>Ü&amp;ber...</translation>
+        <translation>&amp;Über...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
