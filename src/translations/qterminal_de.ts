@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichen umschalten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
@@ -285,7 +285,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tastatur Cursor Form</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
@@ -414,7 +414,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Tastatur Cursor Form</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
