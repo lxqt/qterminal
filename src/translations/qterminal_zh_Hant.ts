@@ -38,52 +38,52 @@
     <message>
         <location filename="../mainwindow.cpp" line="79"/>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>書籤</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation></translation>
+        <translation>按下「%1」以顯示終端機。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
         <source>&amp;Next Tab</source>
-        <translation></translation>
+        <translation>下個分頁(&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="221"/>
         <source>&amp;Previous Tab</source>
-        <translation></translation>
+        <translation>上個分頁(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
         <source>Move Tab &amp;Left</source>
-        <translation></translation>
+        <translation>將分頁往左移動(&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="227"/>
         <source>Move Tab &amp;Right</source>
-        <translation></translation>
+        <translation>將分頁往右移動(&amp;R)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation></translation>
+        <translation>水平分割終端機(&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation></translation>
+        <translation>垂直分割終端機(&amp;V)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="240"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation></translation>
+        <translation>合併分割的終端機(&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation></translation>
+        <translation>清空目前的終端機(&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
@@ -108,37 +108,37 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Copy &amp;Selection</source>
-        <translation></translation>
+        <translation>複製選取區(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Paste Clip&amp;board</source>
-        <translation></translation>
+        <translation>貼上剪貼簿內容(&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="265"/>
         <source>Paste S&amp;election</source>
-        <translation></translation>
+        <translation>貼上選取區內容(&amp;E)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="268"/>
         <source>Zoom &amp;in</source>
-        <translation></translation>
+        <translation>放大(&amp;I)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="271"/>
         <source>Zoom &amp;out</source>
-        <translation></translation>
+        <translation>縮小(&amp;O)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
         <source>Zoom rese&amp;t</source>
-        <translation></translation>
+        <translation>重設縮放等級(&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="279"/>
         <source>&amp;Find...</source>
-        <translation></translation>
+        <translation>搜尋…(&amp;F)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
         <source>&amp;Toggle Menu</source>
-        <translation></translation>
+        <translation>顯示/隱藏功能表(&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -163,27 +163,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
         <source>&amp;New Tab</source>
-        <translation></translation>
+        <translation>新增分頁(&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="317"/>
         <source>New Tab From &amp;Preset</source>
-        <translation></translation>
+        <translation>由預設的設定新增分頁(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="318"/>
         <source>1 &amp;Terminal</source>
-        <translation></translation>
+        <translation>一個終端機(&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation></translation>
+        <translation>兩個水平的終端機(&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation></translation>
+        <translation>兩個垂直的終端機(&amp;V)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
