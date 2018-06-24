@@ -68,17 +68,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>Terminal &amp;horizontal teilen</translation>
+        <translation>Konsole &amp;horizontal teilen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>Terminal &amp;vertikal teilen</translation>
+        <translation>Konsole &amp;vertikal teilen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="240"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Unterterminal schließen</translation>
+        <translation>&amp;Unterkonsole schließen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
@@ -88,12 +88,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Anfang Unterkonsole</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ende Unterkonsole</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
