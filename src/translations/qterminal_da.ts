@@ -313,7 +313,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation>Terminal-indstillinger</translation>
+        <translation>Terminalindstillinger</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="52"/>
