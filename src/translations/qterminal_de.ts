@@ -48,32 +48,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
         <source>&amp;Next Tab</source>
-        <translation>&amp;Nächster Reiter</translation>
+        <translation>&amp;Nächste Registerkarte</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="221"/>
         <source>&amp;Previous Tab</source>
-        <translation>&amp;Voriger Reiter</translation>
+        <translation>&amp;Vorherige Registerkarte</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Reiter nach &amp;links verschieben</translation>
+        <translation>Verschiebe Registerkarte nach &amp;links</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="227"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Reiter nach &amp;rechts verschieben</translation>
+        <translation>Verschiebe Registerkarte nach &amp;rechts</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>Konsole &amp;horizontal teilen</translation>
+        <translation>Teile Konsole &amp;horizontal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>Konsole &amp;vertikal teilen</translation>
+        <translation>Teile Konsole &amp;vertikal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="240"/>
@@ -163,12 +163,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
         <source>&amp;New Tab</source>
-        <translation>Neuer Rei&amp;ter</translation>
+        <translation>&amp;Neue Registerkarte</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="317"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Neuer Reiter von Vor&amp;lage</translation>
+        <translation>Neue Registerkarte aus &amp;Vorlage</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="318"/>
@@ -193,7 +193,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="330"/>
         <source>&amp;Close Tab</source>
-        <translation>&amp;Reiter schließen</translation>
+        <translation>&amp;Schließe Registerkarte</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -203,22 +203,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">&amp;Einstellungen...</translation>
+        <translation>&amp;Einstellungen...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">&amp;Beenden</translation>
+        <translation>&amp;Beenden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>Fensterra&amp;hmen ausblenden</translation>
+        <translation>&amp;Verberge Fensterrahmen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="359"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>Reiterlei&amp;ste anzeigen</translation>
+        <translation>&amp;Zeige Registerkartenleiste</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
@@ -449,7 +449,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Limit tab width:</source>
-        <translation>Begrenze Tabbreite:</translation>
+        <translation>Begrenze Registerkartenbreite:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
