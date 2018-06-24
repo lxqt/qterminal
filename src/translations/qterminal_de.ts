@@ -424,7 +424,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation>Fenstericon ändern anhand aktuellem Terminal</translation>
+        <translation>Fenstersymbol ändern anhand aktuellem Terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
@@ -439,7 +439,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Select</source>
-        <translation>Suchen</translation>
+        <translation>Auswählen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="378"/>
@@ -449,7 +449,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Limit tab width:</source>
-        <translation>Maximale Tab Breite:</translation>
+        <translation>Begrenze Tabbreite:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
@@ -464,7 +464,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Verhalten des Emulators wählen. Hinweis: Emulationsarten können auch unter anderen Systemen genutzt werden (z.B. &quot;linux&quot; unter OS X).&lt;/p&gt;&lt;p&gt;Die Standardemulation ist &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; mit minimalem Funktionsumfang.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Emulationsverhalten wählen. Hinweis: Dieses muss nicht Ihrem Betriebssystem entsprechen.&lt;/p&gt;&lt;p&gt;Die &lt;span style=&quot; font-weight:600;&quot;&gt;Standardemulation&lt;/span&gt; ist ein Reservesystem mit minimalem Funktionsumfang.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="463"/>
@@ -479,7 +479,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Entferne Zeilenumbrüche von eingefügtem Text</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="513"/>
@@ -504,12 +504,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="544"/>
         <source>Unlimited history</source>
-        <translation>Uneingeschränkte Historie</translation>
+        <translation type="unfinished">Uneingeschränkte Historie</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="551"/>
         <source>History size (in lines)</source>
-        <translation>Historie (Zeilen)</translation>
+        <translation type="unfinished">Historie (Zeilen)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="558"/>
