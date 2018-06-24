@@ -419,12 +419,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Fenstertitel ändern anhand aktuellem Terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Fenstericon ändern anhand aktuellem Terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
@@ -474,7 +474,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="473"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Einfügen mehrerer Zeilen bestätigen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
