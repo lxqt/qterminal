@@ -83,7 +83,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Leere aktive Konsole</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
