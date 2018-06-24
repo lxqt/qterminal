@@ -524,7 +524,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation>xterm-256color</translation>
+        <translation type="unfinished">xterm-256color</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="649"/>
@@ -550,7 +550,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="744"/>
         <source>Enable bookmarks</source>
-        <translation>Lesezeichen verwenden</translation>
+        <translation type="unfinished">Lesezeichen verwenden</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="753"/>
@@ -561,7 +561,7 @@
         <location filename="../forms/propertiesdialog.ui" line="187"/>
         <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source> %</source>
-        <translation>%</translation>
+        <translation> %</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="614"/>
@@ -663,12 +663,12 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
         <source>Move start</source>
-        <translation>An den Anfang bewegen</translation>
+        <translation type="unfinished">An den Anfang bewegen</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
         <source>Move end</source>
-        <translation>An das Ende bewegen</translation>
+        <translation type="unfinished">An das Ende bewegen</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
@@ -719,7 +719,7 @@
         <location filename="../tabwidget.cpp" line="73"/>
         <location filename="../tabwidget.cpp" line="219"/>
         <source>Shell No. %1</source>
-        <translation>Shell Nr. %1</translation>
+        <translation type="unfinished">Shell Nr. %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="187"/>
