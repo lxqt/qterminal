@@ -744,7 +744,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="231"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Titelfarbe ändern</translation>
     </message>
 </context>
 <context>
