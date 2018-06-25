@@ -15,22 +15,22 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation></translation>
+        <translation>選擇終端機字型</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation></translation>
+        <translation>字型：</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
         <source>Size:</source>
-        <translation></translation>
+        <translation>大小：</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="59"/>
         <source>Preview</source>
-        <translation></translation>
+        <translation>預覽</translation>
     </message>
 </context>
 <context>
@@ -203,12 +203,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Preferences...</source>
-        <translation></translation>
+        <translation>偏好設定…(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
         <source>&amp;Quit</source>
-        <translation></translation>
+        <translation>離開(&amp;Q)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
@@ -218,12 +218,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="359"/>
         <source>&amp;Show Tab Bar</source>
-        <translation></translation>
+        <translation>顯示分頁列(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
         <source>Fullscreen</source>
-        <translation></translation>
+        <translation>全螢幕顯示</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
@@ -233,12 +233,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
         <source>&amp;Bottom</source>
-        <translation></translation>
+        <translation>下(&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="382"/>
         <source>&amp;Top</source>
-        <translation></translation>
+        <translation>上(&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="383"/>
@@ -250,7 +250,7 @@
         <location filename="../mainwindow.cpp" line="384"/>
         <location filename="../mainwindow.cpp" line="420"/>
         <source>&amp;Left</source>
-        <translation></translation>
+        <translation>左(&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="402"/>
@@ -265,7 +265,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <source>S&amp;crollbar Layout</source>
-        <translation></translation>
+        <translation>捲軸位置(&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="449"/>
@@ -285,27 +285,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation></translation>
+        <translation>游標形狀(&amp;K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
         <source>Exit QTerminal</source>
-        <translation></translation>
+        <translation>離開QTerminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="560"/>
         <source>Do not ask again</source>
-        <translation></translation>
+        <translation>不再詢問</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="568"/>
         <source>Are you sure you want to exit?</source>
-        <translation></translation>
+        <translation>確定要離開嗎？</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="598"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation></translation>
+        <translation>輕量且支援多種平台的終端機模擬器</translation>
     </message>
 </context>
 <context>
@@ -313,48 +313,48 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation></translation>
+        <translation>終端機設定</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="52"/>
         <source>Appearance</source>
-        <translation></translation>
+        <translation>外觀</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="57"/>
         <location filename="../forms/propertiesdialog.ui" line="457"/>
         <source>Behavior</source>
-        <translation></translation>
+        <translation>行為</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="62"/>
         <source>Shortcuts</source>
-        <translation></translation>
+        <translation>快速鍵</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="67"/>
         <source>Dropdown</source>
-        <translation></translation>
+        <translation>下拉模式</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="72"/>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>書籤</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="90"/>
         <source>Hide tab bar with only one tab</source>
-        <translation></translation>
+        <translation>只有一個分頁時隱藏分頁列</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="100"/>
         <source>Color scheme</source>
-        <translation></translation>
+        <translation>配色方案</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="110"/>
         <source>Scrollbar position</source>
-        <translation></translation>
+        <translation>捲軸位置</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="120"/>
