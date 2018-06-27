@@ -765,7 +765,7 @@
     <message>
         <location filename="../termwidget.cpp" line="229"/>
         <source>Paste multiline text</source>
-        <translation type="unfinished"></translation>
+        <translation>Einfügen von mehrzeiligem Text</translation>
     </message>
     <message>
         <location filename="../termwidget.cpp" line="230"/>
