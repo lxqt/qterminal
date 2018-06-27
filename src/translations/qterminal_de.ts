@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Linkes Unterterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rechtes Unterterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Rename session</source>
-        <translation type="unfinished">Sitzung umbenennen</translation>
+        <translation>Sitzung umbenennen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
@@ -270,17 +270,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="449"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Blockschreibmarke</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="450"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Unterstrichschreibmarke</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vertikalschreibmarke</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
@@ -643,17 +643,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Blockschreibmarke</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Unterstrichschreibmarke</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Vertikalschreibmarke</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
@@ -719,7 +719,7 @@
         <location filename="../tabwidget.cpp" line="73"/>
         <location filename="../tabwidget.cpp" line="219"/>
         <source>Shell No. %1</source>
-        <translation type="unfinished">Shell Nr. %1</translation>
+        <translation>Konsole Nr. %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="187"/>
@@ -770,7 +770,7 @@
     <message>
         <location filename="../termwidget.cpp" line="230"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation>Sind Sie sicher, dass der Text eingefügt werden soll?</translation>
+        <translation>Sind Sie sicher, dass dieser Text eingefügt werden soll?</translation>
     </message>
 </context>
 <context>
