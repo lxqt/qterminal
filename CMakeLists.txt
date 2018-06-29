@@ -47,7 +47,6 @@ endif()
 
 add_definitions(
     -DSTR_VERSION=\"${STR_VERSION}\"
-    -DQT_NO_FOREACH
 )
 
 set(EXE_NAME qterminal)
