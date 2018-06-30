@@ -285,7 +285,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>&amp;Schreibmarkentyp</translation>
+        <translation>&amp;Darstellung der Schreibmarke</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
@@ -414,7 +414,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation>Schreibmarkentyp</translation>
+        <translation>Darstellung der Schreibmarke</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
@@ -459,7 +459,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation>Schaltfläche Schließen auf jedem Tab anzeigen</translation>
+        <translation>Schaltfläche Schließen auf jeder Registerkarte anzeigen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
@@ -469,7 +469,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="463"/>
         <source>Action after paste</source>
-        <translation>Aktion nach Einfügen aus der Zwischenablage</translation>
+        <translation type="unfinished">Aktion nach Einfügen aus der Zwischenablage</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="473"/>
@@ -658,7 +658,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
         <source>No move</source>
-        <translation>Nicht bewegen</translation>
+        <translation type="unfinished">Verbleiben</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
