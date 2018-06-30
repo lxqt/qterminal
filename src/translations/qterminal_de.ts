@@ -270,22 +270,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="449"/>
         <source>&amp;BlockCursor</source>
-        <translation>&amp;Blockschreibmarke</translation>
+        <translation>&amp;Block</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="450"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>&amp;Unterstrichschreibmarke</translation>
+        <translation>&amp;Unterstrich</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>&amp;IBeamCursor</source>
-        <translation>&amp;Vertikalschreibmarke</translation>
+        <translation>&amp;Lotstrich</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>&amp;Tastatur Cursor Form</translation>
+        <translation>&amp;Schreibmarkentyp</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
@@ -414,7 +414,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation>Tastatur Cursor Form</translation>
+        <translation>Schreibmarkentyp</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
@@ -449,7 +449,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Limit tab width:</source>
-        <translation>Begrenze Registerkartenbreite:</translation>
+        <translation>Registerkartenbreite begrenzen auf:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
@@ -504,17 +504,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="544"/>
         <source>Unlimited history</source>
-        <translation type="unfinished">Uneingeschränkte Historie</translation>
+        <translation>Unbegrenzter Verlauf</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="551"/>
         <source>History size (in lines)</source>
-        <translation type="unfinished">Historie (Zeilen)</translation>
+        <translation>Verlaufsgröße (in Zeilen)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="558"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>Standard $TERM</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="572"/>
@@ -524,7 +524,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation type="unfinished">xterm-256color</translation>
+        <translation>xterm-256color</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="649"/>
@@ -550,7 +550,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="744"/>
         <source>Enable bookmarks</source>
-        <translation type="unfinished">Lesezeichen verwenden</translation>
+        <translation>Lesezeichen aktivieren</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="753"/>
@@ -719,7 +719,7 @@
         <location filename="../tabwidget.cpp" line="73"/>
         <location filename="../tabwidget.cpp" line="219"/>
         <source>Shell No. %1</source>
-        <translation>Konsole Nr. %1</translation>
+        <translation>Shell Nr. %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="187"/>
