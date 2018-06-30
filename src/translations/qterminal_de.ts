@@ -459,7 +459,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Schaltfläche Schließen auf jedem Tab anzeigen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
