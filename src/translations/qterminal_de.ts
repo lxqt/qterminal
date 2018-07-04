@@ -285,7 +285,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>&amp;Darstellung der Schreibmarke</translation>
+        <translation>&amp;Schreibmarkentyp</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
@@ -414,7 +414,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation>Darstellung der Schreibmarke</translation>
+        <translation>Schreibmarkentyp</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
@@ -643,17 +643,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
-        <translation>Blockschreibmarke</translation>
+        <translation>Block</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
-        <translation>Unterstrichschreibmarke</translation>
+        <translation>Unterstrich</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
-        <translation>Vertikalschreibmarke</translation>
+        <translation>Lotstrich</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
