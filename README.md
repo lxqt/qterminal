@@ -23,3 +23,10 @@ To build run `make`, to install `make install` which accepts variable `DESTDIR` 
 
 QTerminal is provided by all major Linux distributions like [Arch Linux](https://www.archlinux.org/packages/?q=qterminal), Debian (as of Debian stretch), Fedora and openSUSE.
 Just use the distributions' package managers to search for string `qterminal`.
+
+
+### Translation (Weblate)
+
+<a href="https://weblate.lxqt.org/projects/lxqt/qterminal/">
+<img src="https://weblate.lxqt.org/widgets/lxqt/-/qterminal/multi-auto.svg" alt="Translation status" />
+</a>
