@@ -6,7 +6,7 @@
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation></translation>
+        <translation>過濾：</translation>
     </message>
 </context>
 <context>
