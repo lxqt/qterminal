@@ -798,7 +798,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation>&amp;Ver</translation>
+        <translation>&amp;Exibir</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
