@@ -68,32 +68,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>Teile Konsole &amp;horizontal</translation>
+        <translation>Terminal &amp;horizontal teilen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>Teile Konsole &amp;vertikal</translation>
+        <translation>Terminal &amp;vertikal teilen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="240"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Unterkonsole schließen</translation>
+        <translation>Unterterminal &amp;schließen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>&amp;Leere aktive Konsole</translation>
+        <translation>Aktives Terminal &amp;leeren</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Top Subterminal</source>
-        <translation>&amp;Anfang Unterkonsole</translation>
+        <translation>&amp;Oberes Terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>&amp;Ende Unterkonsole</translation>
+        <translation>&amp;Unteres Terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
@@ -255,7 +255,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="402"/>
         <source>&amp;Tabs Layout</source>
-        <translation>&amp;Anzeige Reiterleiste</translation>
+        <translation>&amp;Darstellung der Reiterleiste</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="418"/>
@@ -265,7 +265,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>&amp;Anzeige Bildlaufleiste</translation>
+        <translation>&amp;Darstellung der Bildlaufleiste</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="449"/>
@@ -295,12 +295,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="560"/>
         <source>Do not ask again</source>
-        <translation>Nicht erneut nachfragen</translation>
+        <translation>Nicht erneut fragen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="568"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Soll QTerminal wirklich beendet werden?</translation>
+        <translation>QTerminal beenden?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="598"/>
@@ -384,7 +384,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="120"/>
         <source>Start with preset:</source>
-        <translation>Start mit Vorlage:</translation>
+        <translation>Startvorlage:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="164"/>
@@ -489,12 +489,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="520"/>
         <source>Save Size when closing</source>
-        <translation>Beim Beenden Größe speichern</translation>
+        <translation>Fenstergröße beim Beenden speichern</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="527"/>
         <source>Save Position when closing</source>
-        <translation>Beim Beenden Position speichern</translation>
+        <translation>Fensterposition beim Beenden speichern</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="534"/>
