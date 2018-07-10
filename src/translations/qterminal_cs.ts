@@ -158,7 +158,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Rename session</source>
-        <translation type="unfinished">Přejmenovat sezení</translation>
+        <translation>Přejmenovat sezení</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
@@ -203,12 +203,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">&amp;Nastavení...</translation>
+        <translation>&amp;Nastavení...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">&amp;Ukončit</translation>
+        <translation>&amp;Ukončit</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
@@ -658,17 +658,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
         <source>No move</source>
-        <translation>Nepřesouvat</translation>
+        <translation>Bez pohybu</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
         <source>Move start</source>
-        <translation>Přesunout začátek</translation>
+        <translation>Začátek pohybu</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
         <source>Move end</source>
-        <translation>Přesunout konec</translation>
+        <translation>Konec pohybu</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
@@ -689,7 +689,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="349"/>
         <source>Open or create bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít nebo vytvořit soubor se záložkami</translation>
     </message>
 </context>
 <context>
@@ -697,7 +697,7 @@
     <message>
         <location filename="../termwidget.cpp" line="237"/>
         <source>Show Details...</source>
-        <translation>Zobrazit podrobnosti…</translation>
+        <translation>Ukázat podrobnosti…</translation>
     </message>
 </context>
 <context>
@@ -734,7 +734,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Zvolit barvu názvu nové karty</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="229"/>
@@ -752,7 +752,7 @@
     <message>
         <location filename="../termwidgetholder.cpp" line="78"/>
         <source>Load Session</source>
-        <translation>Načíst sezení</translation>
+        <translation>Nahrát sezení</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
@@ -788,27 +788,27 @@
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
-        <translation>&amp;Akce</translation>
+        <translation>Č&amp;innosti</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation>Nápověda</translation>
+        <translation>&amp;Nápověda</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation>Zobrazit</translation>
+        <translation>&amp;Pohled</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation>Upravit</translation>
+        <translation>Úp&amp;ravy</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation>O &amp;aplikaci…</translation>
+        <translation>O &amp;programu…</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
