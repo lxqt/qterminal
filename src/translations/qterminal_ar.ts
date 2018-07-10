@@ -203,12 +203,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Preferences...</source>
-        <translation></translation>
+        <translation>التّفضيلات …</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
         <source>&amp;Quit</source>
-        <translation></translation>
+        <translation>الخروج</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
@@ -223,7 +223,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
         <source>Fullscreen</source>
-        <translation></translation>
+        <translation>ملئ الشاشة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
@@ -233,12 +233,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
         <source>&amp;Bottom</source>
-        <translation></translation>
+        <translation>الأسفل</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="382"/>
         <source>&amp;Top</source>
-        <translation></translation>
+        <translation>الأعلى</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="383"/>
@@ -250,7 +250,7 @@
         <location filename="../mainwindow.cpp" line="384"/>
         <location filename="../mainwindow.cpp" line="420"/>
         <source>&amp;Left</source>
-        <translation></translation>
+        <translation>يسار</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="402"/>
@@ -290,17 +290,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
         <source>Exit QTerminal</source>
-        <translation></translation>
+        <translation>الخروج مِن QTerminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="560"/>
         <source>Do not ask again</source>
-        <translation></translation>
+        <translation>لا تسأل ثانيةً</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="568"/>
         <source>Are you sure you want to exit?</source>
-        <translation></translation>
+        <translation>متأكد مِن أنك تريد الخروج ؟</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="598"/>
@@ -339,7 +339,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="72"/>
         <source>Bookmarks</source>
-        <translation></translation>
+        <translation>المفضلات</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="90"/>
