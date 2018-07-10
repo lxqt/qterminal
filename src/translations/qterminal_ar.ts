@@ -305,7 +305,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="598"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation></translation>
+        <translation type="unfinished">A lightweight multiplatform terminal emulator</translation>
     </message>
 </context>
 <context>
@@ -313,23 +313,23 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation></translation>
+        <translation type="unfinished">Terminal settings</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="52"/>
         <source>Appearance</source>
-        <translation></translation>
+        <translation type="unfinished">Appearance</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="57"/>
         <location filename="../forms/propertiesdialog.ui" line="457"/>
         <source>Behavior</source>
-        <translation></translation>
+        <translation type="unfinished">Behavior</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="62"/>
         <source>Shortcuts</source>
-        <translation></translation>
+        <translation type="unfinished">Shortcuts</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="67"/>
