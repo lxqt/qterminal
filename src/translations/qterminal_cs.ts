@@ -108,17 +108,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Copy &amp;Selection</source>
-        <translation>Zkopírovat výběr</translation>
+        <translation>&amp;Zkopírovat výběr</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Paste Clip&amp;board</source>
-        <translation>Vložit obsah schránky</translation>
+        <translation>Vložit o&amp;bsah schránky</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="265"/>
         <source>Paste S&amp;election</source>
-        <translation>Vložit výběr</translation>
+        <translation>&amp;Vložit výběr</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="268"/>
@@ -138,7 +138,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="279"/>
         <source>&amp;Find...</source>
-        <translation>Najít…</translation>
+        <translation>&amp;Najít…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
@@ -148,7 +148,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="293"/>
         <source>&amp;Load Session</source>
-        <translation>Načíst sezení</translation>
+        <translation>&amp;Načíst sezení</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
@@ -178,7 +178,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>2 vodorovné terminály</translation>
+        <translation>2 vodorovné &amp;terminály</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
@@ -188,12 +188,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
         <source>4 Terminal&amp;s</source>
-        <translation>4 terminály</translation>
+        <translation>4 ter&amp;minály</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="330"/>
         <source>&amp;Close Tab</source>
-        <translation>Zavřít kartu</translation>
+        <translation>&amp;Zavřít kartu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -203,7 +203,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Nastavení...</translation>
+        <translation>&amp;Předvolby…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
@@ -213,12 +213,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>Skrýt okraje oken</translation>
+        <translation>&amp;Skrýt okraje oken</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="359"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>Zobrazit pruh karet</translation>
+        <translation>&amp;Zobrazit pruh karet</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
@@ -260,7 +260,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="418"/>
         <source>&amp;None</source>
-        <translation>Žádné</translation>
+        <translation>Žá&amp;dné</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
@@ -270,22 +270,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="449"/>
         <source>&amp;BlockCursor</source>
-        <translation>&amp;Blokovat ukazatel</translation>
+        <translation>&amp;Blokový ukazatel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="450"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>&amp;Podtrhnout ukazatel</translation>
+        <translation>&amp;Podtržítkový ukazatel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>&amp;IBeamCursor</source>
-        <translation>Ukazatel v podobě &amp;svislice</translation>
+        <translation>Ukazatel v podobě sv&amp;islice</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>Tvar ukazatele kurzorových šipek</translation>
+        <translation>Tvar u&amp;kazatele kurzorových šipek</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
@@ -300,7 +300,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="568"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Jste si jistý, že chcete program ukončit?</translation>
+        <translation>Opravdu chcete program ukončit?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="598"/>
@@ -318,7 +318,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="62"/>
         <source>Shortcuts</source>
-        <translation>Zkratky</translation>
+        <translation>Klávesové zkratky</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
@@ -409,7 +409,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="254"/>
         <source>&amp;Change...</source>
-        <translation>Změnit…</translation>
+        <translation>&amp;Změnit…</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="267"/>
@@ -459,7 +459,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation>Při změně velikost zobrazit velikost terminálu</translation>
+        <translation>Při změně velikosti terminálu zobrazit jeho rozměry</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
@@ -469,17 +469,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
         <source>px</source>
-        <translation>px</translation>
+        <translation>obraz. bodů</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation>Zobrazit tlačítko uzavření na každé kartě</translation>
+        <translation>Zobrazit tlačítko zavírání na každé kartě</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobit. Poznámka: Toto nemusí odpovídat vašemu operačnímu systému.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Výchozí&lt;/span&gt; emulace je nouzová s nejmenší sadou funkcí.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobit. Poznámka: Toto nemusí odpovídat vámi používanému operačnímu systému.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Výchozí&lt;/span&gt; emulace je s nejmenší sadou funkcí, aby byla co nejslučitelnější.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="463"/>
@@ -489,7 +489,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="473"/>
         <source>Confirm multiline paste</source>
-        <translation>Potvrdit víceřádkové vložení</translation>
+        <translation>Potvrzovat vkládání víceřádkového textu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
@@ -504,7 +504,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="520"/>
         <source>Save Size when closing</source>
-        <translation>Uložit velikost při ukončování</translation>
+        <translation>Při zavírání uložit velikost</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="527"/>
@@ -575,7 +575,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="631"/>
         <source>Show on start</source>
-        <translation>Ukázat při spuštění</translation>
+        <translation>Zobrazovat při spuštění</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="638"/>
@@ -643,17 +643,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
-        <translation>Blokování ukazatele</translation>
+        <translation>Blokový kurzor</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
-        <translation>Podtržení ukazatele</translation>
+        <translation>Podtržítkový kurzor</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
-        <translation>Ukazatel v podobě svislítka</translation>
+        <translation>Ukazatel v podobě svislice</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
@@ -697,7 +697,7 @@
     <message>
         <location filename="../termwidget.cpp" line="237"/>
         <source>Show Details...</source>
-        <translation>Ukázat podrobnosti…</translation>
+        <translation>Zobrazit podrobnosti…</translation>
     </message>
 </context>
 <context>
@@ -710,7 +710,7 @@
     <message>
         <location filename="../bookmarkswidget.cpp" line="168"/>
         <source>Synchronized Bookmarks</source>
-        <translation>Seřízené záložky</translation>
+        <translation>Synchronizované záložky</translation>
     </message>
 </context>
 <context>
@@ -752,7 +752,7 @@
     <message>
         <location filename="../termwidgetholder.cpp" line="78"/>
         <source>Load Session</source>
-        <translation>Nahrát sezení</translation>
+        <translation>Načíst sezení</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
@@ -783,12 +783,12 @@
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;File</source>
-        <translation>Soubor</translation>
+        <translation>&amp;Soubor</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
-        <translation>Č&amp;innosti</translation>
+        <translation>&amp;Akce</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
@@ -808,7 +808,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation>O &amp;programu…</translation>
+        <translation>O &amp;aplikaci…</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
