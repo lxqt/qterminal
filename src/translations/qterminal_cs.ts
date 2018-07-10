@@ -265,22 +265,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <source>S&amp;crollbar Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zobrazení posuvníku</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="449"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Blokovat ukazatel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="450"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Podtrhnout ukazatel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukazatel v podobě &amp;svislice</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
@@ -479,7 +479,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobit. Poznámka: Toto nemusí odpovídat vašemu operačnímu systému.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Výchozí&lt;/span&gt; emulace je nouzová s nejmenší sadou funkcí.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="463"/>
@@ -529,17 +529,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="558"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>Výchozí $TERM</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="572"/>
         <source>xterm</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm-256 barev</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="649"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation type="unfinished"></translation>
+        <translation>Můžete stanovit své vlastní umístění souboru se záložkami. To umožní snadné sdílení záložek pomocí nástrojů, jako jsou OwnCloud nebo Dropbox.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="187"/>
@@ -643,17 +643,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokování ukazatele</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Podtržení ukazatele</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Ukazatel v podobě svislítka</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
