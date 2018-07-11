@@ -180,6 +180,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     trimPastedTrailingNewlinesCheckBox->setChecked(Properties::Instance()->trimPastedTrailingNewlines);
     confirmMultilinePasteCheckBox->setChecked(Properties::Instance()->confirmMultilinePaste);
+
+    resize(sizeHint()); // show it compact but not too much
 }
 
 
