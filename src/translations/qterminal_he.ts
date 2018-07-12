@@ -611,7 +611,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation></translation>
+        <translation>באפשרותך לציין מיקום משלך לקובץ סימניות. הגדרה זו מאפשרת לך לשתף סימניות בקלות עם כלים כגון OwnCloud או Dropbox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="96"/>
@@ -757,7 +757,7 @@
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>List of saved sessions:</source>
-        <translation></translation>
+        <translation>רשימה של הפעלות שנשמרו:</translation>
     </message>
 </context>
 <context>
@@ -765,12 +765,12 @@
     <message>
         <location filename="../termwidget.cpp" line="229"/>
         <source>Paste multiline text</source>
-        <translation></translation>
+        <translation>הדבקת טקסט מרובה שורות</translation>
     </message>
     <message>
         <location filename="../termwidget.cpp" line="230"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation></translation>
+        <translation>להדביק את הטקסט הזה?</translation>
     </message>
 </context>
 <context>
@@ -778,42 +778,42 @@
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
-        <translation></translation>
+        <translation>חלון ראשי</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;File</source>
-        <translation></translation>
+        <translation>&amp;קובץ</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
-        <translation></translation>
+        <translation>&amp;פעולות</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation></translation>
+        <translation>ע&amp;זרה</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation></translation>
+        <translation>&amp;תצוגה</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation></translation>
+        <translation>&amp;עריכה</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation></translation>
+        <translation>&amp;על אודות…</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation></translation>
+        <translation>על או&amp;דות Qt…</translation>
     </message>
 </context>
 </TS>
