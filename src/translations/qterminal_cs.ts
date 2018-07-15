@@ -43,12 +43,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Stiskněte „%1“ pro zobrazení terminálu.</translation>
+        <translation>Terminál zobrazíte stisknutím „%1“.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>Vyčistit stávající terminál</translation>
+        <translation>&amp;Vyčistit stávající terminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
@@ -133,7 +133,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
         <source>Zoom rese&amp;t</source>
-        <translation>Vrá&amp;tit měřítko zobrazení</translation>
+        <translation>Vrá&amp;tit původní velikost zobrazení</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="279"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>Toggle Bookmarks</source>
-        <translation>Přepnout záložky</translation>
+        <translation>Vyp/zap. záložky</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
@@ -260,7 +260,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="418"/>
         <source>&amp;None</source>
-        <translation>Žá&amp;dné</translation>
+        <translation>Žád&amp;né</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
@@ -285,7 +285,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>Tvar u&amp;kazatele kurzorových šipek</translation>
+        <translation>Tvar &amp;klávesového ukazatele</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
@@ -434,12 +434,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation>Změnit nadpis okna podle stávajícího temrinálu</translation>
+        <translation>Změnit nadpis okna podle stávajícího terminálu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation>Změnit ikonu okna podle stávajícího temrinálu</translation>
+        <translation>Změnit ikonu okna podle právě aktivního terminálu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
@@ -479,7 +479,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobit. Poznámka: Toto nemusí odpovídat vámi používanému operačnímu systému.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Výchozí&lt;/span&gt; emulace je s nejmenší sadou funkcí, aby byla co nejslučitelnější.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobit. Poznámka: Toto nemusí odpovídat vámi používanému operačnímu systému.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Výchozí&lt;/span&gt; emulace je s co nejmenší sadou funkcí, aby byla co nejkompatibilnější.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="463"/>
@@ -489,7 +489,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="473"/>
         <source>Confirm multiline paste</source>
-        <translation>Potvrzovat vkládání víceřádkového textu</translation>
+        <translation>Vyžadovat potvrzení při vkládání víceřádkového textu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
