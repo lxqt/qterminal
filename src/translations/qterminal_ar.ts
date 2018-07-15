@@ -198,7 +198,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
         <source>&amp;New Window</source>
-        <translation>نافذة جديدة</translation>
+        <translation>نافذة &amp;جديدة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
