@@ -254,7 +254,7 @@ void TermWidgetImpl::paste(QClipboard::Mode mode)
     }
 }
 
-bool TermWidget::eventFilter(QObject * obj, QEvent * ev)
+bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
 {
     if (ev->type() == QEvent::MouseButtonPress)
     {

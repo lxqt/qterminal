@@ -81,6 +81,7 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
         {
             case 'h':
                 print_usage_and_exit(0);
+                break;
             case 'w':
                 workdir = QString(optarg);
                 break;
@@ -102,8 +103,10 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
                 break;
             case '?':
                 print_usage_and_exit(1);
+                break;
             case 'v':
                 print_version_and_exit();
+                break;
         }
     }
     while(next_option != -1);

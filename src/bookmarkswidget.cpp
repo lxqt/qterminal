@@ -302,8 +302,8 @@ AbstractBookmarkItem *BookmarksModel::getItem(const QModelIndex &index) const
     return m_root;
  }
 
-QVariant BookmarksModel::headerData(int section, Qt::Orientation orientation,
-                                    int role) const
+QVariant BookmarksModel::headerData(int /*section*/, Qt::Orientation /*orientation*/,
+                                    int /*role*/) const
 {
     return QVariant();
 }
