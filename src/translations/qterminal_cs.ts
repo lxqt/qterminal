@@ -48,7 +48,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>&amp;Vyčistit stávající terminál</translation>
+        <translation>&amp;Vyčistit právě používaný terminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
@@ -63,12 +63,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Přesunout kartu do&amp;leva</translation>
+        <translation>Posunout kartu do&amp;leva</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="227"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Přesunout kartu dop&amp;rava</translation>
+        <translation>Posunout kartu dop&amp;rava</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
@@ -88,22 +88,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Top Subterminal</source>
-        <translation>Dílčí &amp;terminál nahoře</translation>
+        <translation>Horní dílčí &amp;terminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>&amp;Dílčí terminál dole</translation>
+        <translation>Dolní &amp;dílčí terminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>Dílčí t&amp;erminál vlevo</translation>
+        <translation>Levý dílčí t&amp;erminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>Dílčí term&amp;inál vpravo</translation>
+        <translation>Pravý dílčí term&amp;inál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
         <source>&amp;Toggle Menu</source>
-        <translation>Přepnou&amp;t nabídku</translation>
+        <translation>Zobraz./skrý&amp;t nabídku</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>Toggle Bookmarks</source>
-        <translation>Vyp/zap. záložky</translation>
+        <translation>Zobraz./skrýt záložky</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
@@ -285,7 +285,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>Tvar &amp;klávesového ukazatele</translation>
+        <translation>Tvar textového &amp;kurzoru</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
@@ -305,7 +305,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="598"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>Lehký emulátor terminálu</translation>
+        <translation>Lehký multiplatformní emulátor terminálu</translation>
     </message>
 </context>
 <context>
@@ -419,7 +419,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="296"/>
         <source>Widget style</source>
-        <translation>Styl obslužného prvku</translation>
+        <translation>Styl ovládacího prvku</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="319"/>
@@ -429,12 +429,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation>Tvar kurzoru klávesnice</translation>
+        <translation>Tvar textového kurzoru</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation>Změnit nadpis okna podle stávajícího terminálu</translation>
+        <translation>Změnit nadpis okna podle právě aktivního terminálu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Můžete stanovit své vlastní umístění souboru se záložkami. To umožní snadné sdílení záložek pomocí nástrojů, jako jsou OwnCloud nebo Dropbox.</translation>
+        <translation>Můžete stanovit své vlastní umístění souboru se záložkami. To umožňuje snadné sdílení záložek pomocí nástrojů, jako jsou OwnCloud nebo Dropbox.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="187"/>
@@ -705,7 +705,7 @@
     <message>
         <location filename="../bookmarkswidget.cpp" line="110"/>
         <source>Local Bookmarks</source>
-        <translation>Místní záložky</translation>
+        <translation>Lokální záložky</translation>
     </message>
     <message>
         <location filename="../bookmarkswidget.cpp" line="168"/>
@@ -798,7 +798,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation>&amp;Pohled</translation>
+        <translation>&amp;Zobrazení</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
