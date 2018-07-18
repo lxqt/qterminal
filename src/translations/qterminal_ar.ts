@@ -6,7 +6,7 @@
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation></translation>
+        <translation>رشّح:</translation>
     </message>
 </context>
 <context>
@@ -15,17 +15,17 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>إختيار خط الطّرفيّة</translation>
+        <translation>اختر خط الطرفية</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation>الخطّ :</translation>
+        <translation>الخط:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
         <source>Size:</source>
-        <translation>الحجم :</translation>
+        <translation>الحجم:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="59"/>
@@ -38,117 +38,117 @@
     <message>
         <location filename="../mainwindow.cpp" line="79"/>
         <source>Bookmarks</source>
-        <translation>الفواصل المرجعية</translation>
+        <translation>العلامات</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation></translation>
+        <translation>اضغط ”%1“ لترى الطرفية.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
         <source>&amp;Next Tab</source>
-        <translation>اللسان التالي</translation>
+        <translation>اللسان ال&amp;تالي</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="221"/>
         <source>&amp;Previous Tab</source>
-        <translation>اللسان السابق</translation>
+        <translation>اللسان ال&amp;سابق</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
         <source>Move Tab &amp;Left</source>
-        <translation></translation>
+        <translation>انقل اللسان يسا&amp;را</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="227"/>
         <source>Move Tab &amp;Right</source>
-        <translation></translation>
+        <translation>انقل اللسان ي&amp;مينا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation></translation>
+        <translation>اقسم الطرفية أ&amp;فقيا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation></translation>
+        <translation>ا&amp;قسم الطرفية رأسيا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="240"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation></translation>
+        <translation>ا&amp;طوِ الطرفية الفرعية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation></translation>
+        <translation>ا&amp;مسح الطرفية النشطة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Top Subterminal</source>
-        <translation></translation>
+        <translation>الطرفية الفرعية ال&amp;علوية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation></translation>
+        <translation>الطرفية الفرعية ال&amp;سفلية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>L&amp;eft Subterminal</source>
-        <translation></translation>
+        <translation>الطرفية العلوية اليس&amp;رى</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>R&amp;ight Subterminal</source>
-        <translation></translation>
+        <translation>الطرفية الفرعية اليم&amp;نى</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Copy &amp;Selection</source>
-        <translation></translation>
+        <translation>انسخ الت&amp;حديد</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Paste Clip&amp;board</source>
-        <translation></translation>
+        <translation>ألصِق الحاف&amp;ظة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="265"/>
         <source>Paste S&amp;election</source>
-        <translation></translation>
+        <translation>ألصِق التح&amp;ديد</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="268"/>
         <source>Zoom &amp;in</source>
-        <translation></translation>
+        <translation>&amp;قرّب</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="271"/>
         <source>Zoom &amp;out</source>
-        <translation></translation>
+        <translation>ب&amp;عّد</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
         <source>Zoom rese&amp;t</source>
-        <translation></translation>
+        <translation>&amp;صفّر مستوى التقريب</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="279"/>
         <source>&amp;Find...</source>
-        <translation></translation>
+        <translation>اب&amp;حث عن…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Save Session</source>
-        <translation></translation>
+        <translation>ا&amp;حفظ الجلسة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="293"/>
         <source>&amp;Load Session</source>
-        <translation></translation>
+        <translation>&amp;حمّل جلسة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
@@ -158,12 +158,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Rename session</source>
-        <translation></translation>
+        <translation>غيّر اسم الجلسة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
         <source>&amp;New Tab</source>
-        <translation></translation>
+        <translation>لسان &amp;جديد</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="317"/>
