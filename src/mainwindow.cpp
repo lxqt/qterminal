@@ -542,6 +542,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
             if (Properties::Instance()->saveSizeOnExit) {
             	Properties::Instance()->mainWindowSize = size();
             }
+            Properties::Instance()->windowMaximized = isMaximized();
             Properties::Instance()->mainWindowState = saveState();
         }
         Properties::Instance()->saveSettings();
@@ -575,6 +576,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         Properties::Instance()->mainWindowSize = size();
         Properties::Instance()->mainWindowState = saveState();
         Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
+        Properties::Instance()->windowMaximized = isMaximized();
         Properties::Instance()->saveSettings();
         for (int i = consoleTabulator->count(); i > 0; --i) {
             consoleTabulator->removeTab(i - 1);
