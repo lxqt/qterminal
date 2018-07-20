@@ -778,7 +778,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
-        <translation></translation>
+        <translation>Finestra principale</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
