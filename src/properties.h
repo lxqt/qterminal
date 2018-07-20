@@ -106,6 +106,8 @@ class Properties
         bool confirmMultilinePaste;
         bool trimPastedTrailingNewlines;
 
+        bool windowMaximized;
+
 
     private:
 

@@ -147,6 +147,8 @@ void Properties::loadSettings()
 
     confirmMultilinePaste = m_settings->value("ConfirmMultilinePaste", false).toBool();
     trimPastedTrailingNewlines = m_settings->value("TrimPastedTrailingNewlines", false).toBool();
+
+    windowMaximized = m_settings->value("LastWindowMaximized", false).toBool();
 }
 
 void Properties::saveSettings()
@@ -240,9 +242,10 @@ void Properties::saveSettings()
     m_settings->setValue("ChangeWindowIcon", changeWindowIcon);
     m_settings->setValue("enabledBidiSupport", enabledBidiSupport);
 
-
     m_settings->setValue("ConfirmMultilinePaste", confirmMultilinePaste);
     m_settings->setValue("TrimPastedTrailingNewlines", trimPastedTrailingNewlines);
+
+    m_settings->setValue("LastWindowMaximized", windowMaximized);
 }
 
 void Properties::migrate_settings()
@@ -312,6 +315,7 @@ void Properties::migrate_settings()
 	    geom.restoreGeometry(settings.value("MainWindow/geometry").toByteArray());
             settings.setValue("MainWindow/size", geom.size());
             settings.setValue("MainWindow/pos", geom.pos());
+            settings.setValue("MainWindow/isMaximized", geom.isMaximized());
             settings.remove("MainWindow/geometry");
 	}
     }

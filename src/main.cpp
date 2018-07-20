@@ -196,6 +196,8 @@ MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
     else
     {
         window = new MainWindow(cfg, dropMode);
+        if (Properties::Instance()->windowMaximized)
+            window->setWindowState(window->windowState() | Qt::WindowMaximized);
         window->show();
     }
     return window;
