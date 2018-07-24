@@ -7,6 +7,7 @@ Icon=utilities-terminal
 
 Name=QTerminal drop down
 Name[ca]=QTerminal desplegable
+Name[cs]=Rozbalovací QTerminál
 Name[de]=QTerminal herabhängend
 Name[el]=QTerminal αναπτυσσόμενο
 Name[es]=QTerminal desplegable
@@ -55,6 +56,7 @@ GenericName[zh_TW]=下拉式終端機
 
 Comment=A drop-down terminal emulator.
 Comment[ca]=Un emulador de terminal desplegable.
+Comment[ca]=Vysouvací emulátor terminálu.
 Comment[de]=Ein Ausklapp-Terminalemulator.
 Comment[el]=Ένας αναπτυσσόμενος προσομοιωτής τερματικού.
 Comment[es]=Un emulador de terminal desplegable.
