@@ -3,9 +3,11 @@ Name=QTerminal
 Type=Application
 GenericName=Terminal emulator
 GenericName[es]=Emulador de terminal
+GenericName[cs]=Emulátor terminálu
 
 Comment=Terminal emulator
 Comment[ca]=Emulador de terminal
+Comment[cs]=Emulátor terminálu
 Comment[de]=Befehlszeile verwenden
 Comment[el]=Προσομοιωτής τερματικού
 Comment[es]=Emulador de terminal
