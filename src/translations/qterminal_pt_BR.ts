@@ -88,22 +88,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Subterminal do &amp;topo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Subterminal de &amp;baixo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Subterminal &amp;esquerdo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Subterminal d&amp;ireito</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
