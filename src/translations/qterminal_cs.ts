@@ -555,7 +555,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="666"/>
         <source>Width</source>
-        <translation>Šírka</translation>
+        <translation>Šířka</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="722"/>
