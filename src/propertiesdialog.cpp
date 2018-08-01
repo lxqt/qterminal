@@ -265,7 +265,7 @@ void PropertiesDialog::apply()
 void PropertiesDialog::setFontSample(const QFont & f)
 {
     fontSampleLabel->setFont(f);
-    QString sample("%1 %2 pt");
+    QString sample = QString::fromLatin1("%1 %2 pt");
     fontSampleLabel->setText(sample.arg(f.family()).arg(f.pointSize()));
 }
 
@@ -306,7 +306,7 @@ void PropertiesDialog::saveShortcuts()
         QString sequenceString = sequence.toString();
 
         QList<QKeySequence> shortcuts;
-        const auto sequences = item->text().split('|');
+        const auto sequences = item->text().split(QLatin1Char('|'));
         for (const QKeySequence& sequenceString : sequences)
             shortcuts.append(QKeySequence(sequenceString));
         keyAction->setShortcuts(shortcuts);
@@ -333,7 +333,7 @@ void PropertiesDialog::setupShortcuts()
             sequenceStrings.append(shortcut.toString());
 
         QTableWidgetItem *itemName = new QTableWidgetItem( tr(keyValue.toStdString().c_str()) );
-        QTableWidgetItem *itemShortcut = new QTableWidgetItem( sequenceStrings.join('|') );
+        QTableWidgetItem *itemShortcut = new QTableWidgetItem( sequenceStrings.join(QLatin1Char('|')) );
 
         itemName->setFlags( itemName->flags() & ~Qt::ItemIsEditable & ~Qt::ItemIsSelectable );
 
@@ -367,9 +367,9 @@ void PropertiesDialog::openBookmarksFile(const QString &fname)
     QFile f(fname);
     QString content;
     if (!f.open(QFile::ReadOnly))
-        content = "<qterminal>\n  <group name=\"group1\">\n    <command name=\"cmd1\" value=\"cd $HOME\"/>\n  </group>\n</qterminal>";
+        content = QString::fromLatin1("<qterminal>\n  <group name=\"group1\">\n    <command name=\"cmd1\" value=\"cd $HOME\"/>\n  </group>\n</qterminal>");
     else
-        content = f.readAll();
+        content = QString::fromUtf8(f.readAll());
 
     bookmarkPlainEdit->setPlainText(content);
     bookmarkPlainEdit->document()->setModified(false);

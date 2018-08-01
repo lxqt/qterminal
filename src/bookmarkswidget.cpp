@@ -75,7 +75,7 @@ public:
         : AbstractBookmarkItem()
     {
         m_type = AbstractBookmarkItem::Root;
-        m_value = m_display = "root";
+        m_value = m_display = QStringLiteral("root");
     }
 };
 
@@ -132,8 +132,8 @@ public:
             }
             name = QStandardPaths::displayName(i);
 
-            path.replace(" ", "\\ ");
-            cmd = "cd " + path;
+            path.replace(QLatin1String(" "), QLatin1String("\\ "));
+            cmd = QLatin1String("cd ") + path;
 
             addChild(new BookmarkCommandItem(name, cmd, this));
         }
@@ -148,8 +148,8 @@ public:
             {
                 continue;
             }
-            path.replace(" ", "\\ ");
-            cmd = "cd " + path;
+            path.replace(QLatin1String(" "), QLatin1String("\\ "));
+            cmd = QLatin1String("cd ") + path;
             addChild(new BookmarkCommandItem(i, cmd, this));
         }
     }
@@ -188,9 +188,9 @@ public:
             {
                 AbstractBookmarkItem *parent = m_map.contains(xmlPos()) ? m_map[xmlPos()] : this;
                 QString tag = xml.name().toString();
-                if (tag == "group")
+                if (tag == QLatin1String("group"))
                 {
-                    QString name = xml.attributes().value("name").toString();
+                    QString name = xml.attributes().value(QLatin1String("name")).toString();
                     m_pos.append(name);
 
                     BookmarkGroupItem *i = new BookmarkGroupItem(name, parent);
@@ -198,10 +198,10 @@ public:
 
                     m_map[xmlPos()] = i;
                 }
-                else if (tag == "command")
+                else if (tag == QLatin1String("command"))
                 {
-                    QString name = xml.attributes().value("name").toString();
-                    QString cmd = xml.attributes().value("value").toString();
+                    QString name = xml.attributes().value(QLatin1String("name")).toString();
+                    QString cmd = xml.attributes().value(QLatin1String("value")).toString();
 
                     BookmarkCommandItem *i = new BookmarkCommandItem(name, cmd, parent);
                     parent->addChild(i);
@@ -211,7 +211,7 @@ public:
             case QXmlStreamReader::EndElement:
             {
                 QString tag = xml.name().toString();
-                if (tag == "group")
+                if (tag == QLatin1String("group"))
                 {
                     m_pos.removeLast();
                 }
@@ -233,7 +233,7 @@ public:
 
     QString xmlPos()
     {
-        return m_pos.join(".");
+        return m_pos.join(QLatin1Char('.'));
     }
 };
 
@@ -393,5 +393,5 @@ void BookmarksWidget::handleCommand(const QModelIndex& index)
     if (!item || item->type() != AbstractBookmarkItem::Command)
         return;
 
-    emit callCommand(item->value() + "\n"); // TODO/FIXME: decide how to handle EOL
+    emit callCommand(item->value() + QLatin1Char('\n')); // TODO/FIXME: decide how to handle EOL
 }

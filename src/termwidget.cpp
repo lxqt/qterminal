@@ -45,7 +45,7 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     : QTermWidget(0, parent)
 {
     TermWidgetCount++;
-    QString name("TermWidget_%1");
+    QString name(QStringLiteral("TermWidget_%1"));
     setObjectName(name.arg(TermWidgetCount));
 
     setFlowControlEnabled(FLOW_CONTROL_ENABLED);
@@ -61,7 +61,7 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     if (!shell.isEmpty())
     {
         qDebug() << "Shell program:" << shell;
-        QStringList parts = shell.split(QRegExp("\\s+"), QString::SkipEmptyParts);
+        QStringList parts = shell.split(QRegExp(QStringLiteral("\\s+")), QString::SkipEmptyParts);
         qDebug() << parts;
         setShellProgram(parts.at(0));
         parts.removeAt(0);
@@ -148,21 +148,21 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
         menu.addSeparator();
     }
 
-    menu.addAction(actions[COPY_SELECTION]);
-    menu.addAction(actions[PASTE_CLIPBOARD]);
-    menu.addAction(actions[PASTE_SELECTION]);
-    menu.addAction(actions[ZOOM_IN]);
-    menu.addAction(actions[ZOOM_OUT]);
-    menu.addAction(actions[ZOOM_RESET]);
+    menu.addAction(actions[QStringLiteral(COPY_SELECTION)]);
+    menu.addAction(actions[QStringLiteral(PASTE_CLIPBOARD)]);
+    menu.addAction(actions[QStringLiteral(PASTE_SELECTION)]);
+    menu.addAction(actions[QStringLiteral(ZOOM_IN)]);
+    menu.addAction(actions[QStringLiteral(ZOOM_OUT)]);
+    menu.addAction(actions[QStringLiteral(ZOOM_RESET)]);
     menu.addSeparator();
-    menu.addAction(actions[CLEAR_TERMINAL]);
-    menu.addAction(actions[SPLIT_HORIZONTAL]);
-    menu.addAction(actions[SPLIT_VERTICAL]);
+    menu.addAction(actions[QStringLiteral(CLEAR_TERMINAL)]);
+    menu.addAction(actions[QStringLiteral(SPLIT_HORIZONTAL)]);
+    menu.addAction(actions[QStringLiteral(SPLIT_VERTICAL)]);
     // warning TODO/FIXME: disable the action when there is only one terminal
-    menu.addAction(actions[SUB_COLLAPSE]);
+    menu.addAction(actions[QStringLiteral(SUB_COLLAPSE)]);
     menu.addSeparator();
-    menu.addAction(actions[TOGGLE_MENU]);
-    menu.addAction(actions[PREFERENCES]);
+    menu.addAction(actions[QStringLiteral(TOGGLE_MENU)]);
+    menu.addAction(actions[QStringLiteral(PREFERENCES)]);
     menu.exec(mapToGlobal(pos));
 }
 
@@ -212,18 +212,18 @@ void TermWidgetImpl::paste(QClipboard::Mode mode)
     QString text = QApplication::clipboard()->text(mode);
     if ( ! text.isEmpty() )
     {
-        text.replace("\r\n", "\n");
-        text.replace('\n', '\r');
+        text.replace(QLatin1String("\r\n"), QLatin1String("\n"));
+        text.replace(QLatin1Char('\n'), QLatin1Char('\r'));
         QString trimmedTrailingNl(text);
-        trimmedTrailingNl.replace(QRegExp("\\r+$"), "");
-        bool isMultiline = trimmedTrailingNl.contains('\r');
+        trimmedTrailingNl.replace(QRegExp(QStringLiteral("\\r+$")), QString());
+        bool isMultiline = trimmedTrailingNl.contains(QLatin1Char('\r'));
         if (!isMultiline && Properties::Instance()->trimPastedTrailingNewlines)
         {
             text = trimmedTrailingNl;
         }
         if (Properties::Instance()->confirmMultilinePaste)
         {
-            if (text.contains('\r') && Properties::Instance()->confirmMultilinePaste)
+            if (text.contains(QLatin1Char('\r')) && Properties::Instance()->confirmMultilinePaste)
             {
                 QMessageBox confirmation(this);
                 confirmation.setWindowTitle(tr("Paste multiline text"));
@@ -270,7 +270,7 @@ bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
 
 TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     : QWidget(parent),
-      DBusAddressable("/terminals")
+      DBusAddressable(QStringLiteral("/terminals"))
 {
 
     #ifdef HAVE_QDBUS

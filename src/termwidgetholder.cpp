@@ -38,7 +38,7 @@
 TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, QWidget * parent)
     : QWidget(parent)
       #ifdef HAVE_QDBUS
-      , DBusAddressable("/tabs")
+      , DBusAddressable(QStringLiteral("/tabs"))
       #endif
 {
     #ifdef HAVE_QDBUS
@@ -117,14 +117,14 @@ void TermWidgetHolder::loadSession()
 void TermWidgetHolder::saveSession(const QString & name)
 {
     Session dump;
-    QString num("%1");
+    QString num(QLatin1String("%1"));
     const auto ws = findChildren<QSplitter*>();
     for(QSplitter *w : ws)
     {
-        dump += '|' + num.arg(w->orientation());
+        dump += QLatin1Char('|') + num.arg(w->orientation());
         const auto sizes = w->sizes();
         for (const int i : sizes)
-            dump += ',' + num.arg(i);
+            dump += QLatin1Char(',') + num.arg(i);
     }
     Properties::Instance()->sessions[name] = dump;
     qDebug() << "dump" << dump;

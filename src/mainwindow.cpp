@@ -49,7 +49,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
                        QWidget * parent,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
-      DBusAddressable("/windows"),
+      DBusAddressable(QStringLiteral("/windows")),
       tabPosition(NULL),
       scrollBarPosition(NULL),
       keyboardCursorShape(NULL),
@@ -77,7 +77,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     setupUi(this);
 
     m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
-    m_bookmarksDock->setObjectName("BookmarksDockWidget");
+    m_bookmarksDock->setObjectName(QStringLiteral("BookmarksDockWidget"));
     m_bookmarksDock->setAutoFillBackground(true);
     BookmarksWidget *bookmarksWidget = new BookmarksWidget(m_bookmarksDock);
     bookmarksWidget->setAutoFillBackground(true);
@@ -96,7 +96,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     setContentsMargins(0, 0, 0, 0);
     if (m_dropMode) {
         this->enableDropMode();
-        setStyleSheet(QSS_DROP);
+        setStyleSheet(QStringLiteral(QSS_DROP));
     }
     else {
 	if (Properties::Instance()->saveSizeOnExit) {
@@ -176,27 +176,27 @@ void MainWindow::setup_Action(const char *name, QAction *action, const char *def
                               const char *slot, QMenu *menu, const QVariant &data)
 {
     QSettings settings;
-    settings.beginGroup("Shortcuts");
+    settings.beginGroup(QStringLiteral("Shortcuts"));
 
     QList<QKeySequence> shortcuts;
 
-    actions[name] = action;
-    const auto sequences = settings.value(name, defaultShortcut).toString().split('|');
+    actions[QLatin1String(name)] = action;
+    const auto sequences = settings.value(QLatin1String(name), QLatin1String(defaultShortcut)).toString().split(QLatin1Char('|'));
     for (const QString &sequenceString : sequences)
         shortcuts.append(QKeySequence::fromString(sequenceString));
-    actions[name]->setShortcuts(shortcuts);
+    actions[QLatin1String(name)]->setShortcuts(shortcuts);
 
     if (receiver)
     {
-        connect(actions[name], SIGNAL(triggered(bool)), receiver, slot);
-        addAction(actions[name]);
+        connect(actions[QLatin1String(name)], SIGNAL(triggered(bool)), receiver, slot);
+        addAction(actions[QLatin1String(name)]);
     }
 
     if (menu)
-        menu->addAction(actions[name]);
+        menu->addAction(actions[QLatin1String(name)]);
 
     if (!data.isNull())
-        actions[name]->setData(data);
+        actions[QLatin1String(name)]->setData(data);
 }
 
 void MainWindow::setup_ActionsMenu_Actions()
@@ -208,17 +208,17 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     menu_Actions->clear();
 
-    setup_Action(CLEAR_TERMINAL, new QAction(QIcon::fromTheme("edit-clear"), tr("&Clear Active Terminal"), settingOwner),
+    setup_Action(CLEAR_TERMINAL, new QAction(QIcon::fromTheme(QStringLiteral("edit-clear")), tr("&Clear Active Terminal"), settingOwner),
                  CLEAR_TERMINAL_SHORTCUT, consoleTabulator, SLOT(clearActiveTerminal()), menu_Actions);
 
     menu_Actions->addSeparator();
 
     data.setValue(checkTabs);
 
-    setup_Action(TAB_NEXT, new QAction(QIcon::fromTheme("go-next"), tr("&Next Tab"), settingOwner),
+    setup_Action(TAB_NEXT, new QAction(QIcon::fromTheme(QStringLiteral("go-next")), tr("&Next Tab"), settingOwner),
                  TAB_NEXT_SHORTCUT, consoleTabulator, SLOT(switchToRight()), menu_Actions, data);
 
-    setup_Action(TAB_PREV, new QAction(QIcon::fromTheme("go-previous"), tr("&Previous Tab"), settingOwner),
+    setup_Action(TAB_PREV, new QAction(QIcon::fromTheme(QStringLiteral("go-previous")), tr("&Previous Tab"), settingOwner),
                  TAB_PREV_SHORTCUT, consoleTabulator, SLOT(switchToLeft()), menu_Actions, data);
 
     setup_Action(MOVE_LEFT, new QAction(tr("Move Tab &Left"), settingOwner),
@@ -240,43 +240,43 @@ void MainWindow::setup_ActionsMenu_Actions()
     setup_Action(SUB_COLLAPSE, new QAction(tr("&Collapse Subterminal"), settingOwner),
                  NULL, consoleTabulator, SLOT(splitCollapse()), menu_Actions, data);
 
-    setup_Action(SUB_TOP, new QAction(QIcon::fromTheme("go-up"), tr("&Top Subterminal"), settingOwner),
+    setup_Action(SUB_TOP, new QAction(QIcon::fromTheme(QStringLiteral("go-up")), tr("&Top Subterminal"), settingOwner),
                  SUB_TOP_SHORTCUT, consoleTabulator, SLOT(switchTopSubterminal()), menu_Actions, data);
 
-    setup_Action(SUB_BOTTOM, new QAction(QIcon::fromTheme("go-down"), tr("&Bottom Subterminal"), settingOwner),
+    setup_Action(SUB_BOTTOM, new QAction(QIcon::fromTheme(QStringLiteral("go-down")), tr("&Bottom Subterminal"), settingOwner),
                  SUB_BOTTOM_SHORTCUT, consoleTabulator, SLOT(switchBottomSubterminal()), menu_Actions, data);
 
-    setup_Action(SUB_LEFT, new QAction(QIcon::fromTheme("go-previous"), tr("L&eft Subterminal"), settingOwner),
+    setup_Action(SUB_LEFT, new QAction(QIcon::fromTheme(QStringLiteral("go-previous")), tr("L&eft Subterminal"), settingOwner),
                  SUB_LEFT_SHORTCUT, consoleTabulator, SLOT(switchLeftSubterminal()), menu_Actions, data);
 
-    setup_Action(SUB_RIGHT, new QAction(QIcon::fromTheme("go-next"), tr("R&ight Subterminal"), settingOwner),
+    setup_Action(SUB_RIGHT, new QAction(QIcon::fromTheme(QStringLiteral("go-next")), tr("R&ight Subterminal"), settingOwner),
                  SUB_RIGHT_SHORTCUT, consoleTabulator, SLOT(switchRightSubterminal()), menu_Actions, data);
 
 
     menu_Actions->addSeparator();
 
     // Copy and Paste are only added to the table for the sake of bindings at the moment; there is no Edit menu, only a context menu.
-    setup_Action(COPY_SELECTION, new QAction(QIcon::fromTheme("edit-copy"), tr("Copy &Selection"), settingOwner),
+    setup_Action(COPY_SELECTION, new QAction(QIcon::fromTheme(QStringLiteral("edit-copy")), tr("Copy &Selection"), settingOwner),
                  COPY_SELECTION_SHORTCUT, consoleTabulator, SLOT(copySelection()), menu_Edit);
 
-    setup_Action(PASTE_CLIPBOARD, new QAction(QIcon::fromTheme("edit-paste"), tr("Paste Clip&board"), settingOwner),
+    setup_Action(PASTE_CLIPBOARD, new QAction(QIcon::fromTheme(QStringLiteral("edit-paste")), tr("Paste Clip&board"), settingOwner),
                  PASTE_CLIPBOARD_SHORTCUT, consoleTabulator, SLOT(pasteClipboard()), menu_Edit);
 
-    setup_Action(PASTE_SELECTION, new QAction(QIcon::fromTheme("edit-paste"), tr("Paste S&election"), settingOwner),
+    setup_Action(PASTE_SELECTION, new QAction(QIcon::fromTheme(QStringLiteral("edit-paste")), tr("Paste S&election"), settingOwner),
                  PASTE_SELECTION_SHORTCUT, consoleTabulator, SLOT(pasteSelection()), menu_Edit);
 
-    setup_Action(ZOOM_IN, new QAction(QIcon::fromTheme("zoom-in"), tr("Zoom &in"), settingOwner),
+    setup_Action(ZOOM_IN, new QAction(QIcon::fromTheme(QStringLiteral("zoom-in")), tr("Zoom &in"), settingOwner),
                  ZOOM_IN_SHORTCUT, consoleTabulator, SLOT(zoomIn()), menu_Edit);
 
-    setup_Action(ZOOM_OUT, new QAction(QIcon::fromTheme("zoom-out"), tr("Zoom &out"), settingOwner),
+    setup_Action(ZOOM_OUT, new QAction(QIcon::fromTheme(QStringLiteral("zoom-out")), tr("Zoom &out"), settingOwner),
                  ZOOM_OUT_SHORTCUT, consoleTabulator, SLOT(zoomOut()), menu_Edit);
 
-    setup_Action(ZOOM_RESET, new QAction(QIcon::fromTheme("zoom-original"), tr("Zoom rese&t"), settingOwner),
+    setup_Action(ZOOM_RESET, new QAction(QIcon::fromTheme(QStringLiteral("zoom-original")), tr("Zoom rese&t"), settingOwner),
                  ZOOM_RESET_SHORTCUT, consoleTabulator, SLOT(zoomReset()), menu_Edit);
 
     menu_Actions->addSeparator();
 
-    setup_Action(FIND, new QAction(QIcon::fromTheme("edit-find"), tr("&Find..."), settingOwner),
+    setup_Action(FIND, new QAction(QIcon::fromTheme(QStringLiteral("edit-find")), tr("&Find..."), settingOwner),
                  FIND_SHORTCUT, this, SLOT(find()), menu_Actions);
 
 #if 0
@@ -310,7 +310,7 @@ void MainWindow::setup_ActionsMenu_Actions()
 void MainWindow::setup_FileMenu_Actions()
 {
     menu_File->clear();
-    setup_Action(ADD_TAB, new QAction(QIcon::fromTheme("list-add"), tr("&New Tab"), settingOwner),
+    setup_Action(ADD_TAB, new QAction(QIcon::fromTheme(QStringLiteral("list-add")), tr("&New Tab"), settingOwner),
                  ADD_TAB_SHORTCUT, this, SLOT(addNewTab()), menu_File);
 
     if (presetsMenu == NULL) {
@@ -327,10 +327,10 @@ void MainWindow::setup_FileMenu_Actions()
 
     menu_File->addMenu(presetsMenu);
 
-    setup_Action(CLOSE_TAB, new QAction(QIcon::fromTheme("list-remove"), tr("&Close Tab"), settingOwner),
+    setup_Action(CLOSE_TAB, new QAction(QIcon::fromTheme(QStringLiteral("list-remove")), tr("&Close Tab"), settingOwner),
                  CLOSE_TAB_SHORTCUT, consoleTabulator, SLOT(removeCurrentTab()), menu_File);
 
-    setup_Action(NEW_WINDOW, new QAction(QIcon::fromTheme("window-new"), tr("&New Window"), settingOwner),
+    setup_Action(NEW_WINDOW, new QAction(QIcon::fromTheme(QStringLiteral("window-new")), tr("&New Window"), settingOwner),
                  NEW_WINDOW_SHORTCUT, this, SLOT(newTerminalWindow()), menu_File);
 
     menu_File->addSeparator();
@@ -339,7 +339,7 @@ void MainWindow::setup_FileMenu_Actions()
 
     menu_File->addSeparator();
 
-    setup_Action(QUIT, new QAction(QIcon::fromTheme("application-exit"), tr("&Quit"), settingOwner), "", this, SLOT(close()), menu_File);
+    setup_Action(QUIT, new QAction(QIcon::fromTheme(QStringLiteral("application-exit")), tr("&Quit"), settingOwner), "", this, SLOT(close()), menu_File);
 }
 
 void MainWindow::setup_ViewMenu_Actions()
@@ -400,7 +400,7 @@ void MainWindow::setup_ViewMenu_Actions()
 
     if (tabPosMenu == NULL) {
         tabPosMenu = new QMenu(tr("&Tabs Layout"), menu_Window);
-        tabPosMenu->setObjectName("tabPosMenu");
+        tabPosMenu->setObjectName(QStringLiteral("tabPosMenu"));
 
         for(int i=0; i < tabPosition->actions().size(); ++i) {
             tabPosMenu->addAction(tabPosition->actions().at(i));
@@ -434,7 +434,7 @@ void MainWindow::setup_ViewMenu_Actions()
     }
     if (scrollPosMenu == NULL) {
         scrollPosMenu = new QMenu(tr("S&crollbar Layout"), menu_Window);
-        scrollPosMenu->setObjectName("scrollPosMenu");
+        scrollPosMenu->setObjectName(QStringLiteral("scrollPosMenu"));
 
         for(int i=0; i < scrollBarPosition->actions().size(); ++i) {
             scrollPosMenu->addAction(scrollBarPosition->actions().at(i));
@@ -466,7 +466,7 @@ void MainWindow::setup_ViewMenu_Actions()
 
     if (keyboardCursorShapeMenu == NULL) {
         keyboardCursorShapeMenu = new QMenu(tr("&Keyboard Cursor Shape"), menu_Window);
-        keyboardCursorShapeMenu->setObjectName("keyboardCursorShapeMenu");
+        keyboardCursorShapeMenu->setObjectName(QStringLiteral("keyboardCursorShapeMenu"));
 
         for(int i=0; i < keyboardCursorShape->actions().size(); ++i) {
             keyboardCursorShapeMenu->addAction(keyboardCursorShape->actions().at(i));
@@ -479,7 +479,7 @@ void MainWindow::setup_ViewMenu_Actions()
 void MainWindow::setupCustomDirs()
 {
     const QSettings settings;
-    const QString dir = QFileInfo(settings.fileName()).canonicalPath() + "/color-schemes/";
+    const QString dir = QFileInfo(settings.fileName()).canonicalPath() + QStringLiteral("/color-schemes/");
     TermWidgetImpl::addCustomColorSchemeDir(dir);
 }
 
@@ -490,7 +490,7 @@ void MainWindow::on_consoleTabulator_currentChanged(int)
 void MainWindow::toggleTabBar()
 {
     Properties::Instance()->tabBarless
-            = !actions[SHOW_TAB_BAR]->isChecked();
+            = !actions[QLatin1String(SHOW_TAB_BAR)]->isChecked();
     consoleTabulator->showHideTabBar();
 }
 
@@ -500,7 +500,7 @@ void MainWindow::toggleBorderless()
     show();
     setWindowState(Qt::WindowActive); /* don't loose focus on the window */
     Properties::Instance()->borderless
-            = actions[HIDE_WINDOW_BORDERS]->isChecked(); realign();
+            = actions[QLatin1String(HIDE_WINDOW_BORDERS)]->isChecked(); realign();
 }
 
 void MainWindow::toggleMenu()
@@ -555,7 +555,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
 
     // ask user for cancel only when there is at least one terminal active in this window
     QDialog * dia = new QDialog(this);
-    dia->setObjectName("exitDialog");
+    dia->setObjectName(QStringLiteral("exitDialog"));
     dia->setWindowTitle(tr("Exit QTerminal"));
 
     QCheckBox * dontAskCheck = new QCheckBox(tr("Do not ask again"), dia);
@@ -597,7 +597,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
 
 void MainWindow::actAbout_triggered()
 {
-    QMessageBox::about(this, QString("QTerminal ") + STR_VERSION, tr("A lightweight multiplatform terminal emulator"));
+    QMessageBox::about(this, QStringLiteral("QTerminal ") + QLatin1String(STR_VERSION), tr("A lightweight multiplatform terminal emulator"));
 }
 
 void MainWindow::actProperties_triggered()
@@ -621,7 +621,7 @@ void MainWindow::propertiesChanged()
 
     m_bookmarksDock->setVisible(Properties::Instance()->useBookmarks
                                 && Properties::Instance()->bookmarksVisible);
-    actions[TOGGLE_BOOKMARKS]->setVisible(Properties::Instance()->useBookmarks);
+    actions[QLatin1String(TOGGLE_BOOKMARKS)]->setVisible(Properties::Instance()->useBookmarks);
 
     if (Properties::Instance()->useBookmarks)
     {
@@ -677,9 +677,9 @@ void MainWindow::setKeepOpen(bool value)
         return;
 
     if (value)
-        m_dropLockButton->setIcon(QIcon::fromTheme("object-locked"));
+        m_dropLockButton->setIcon(QIcon::fromTheme(QStringLiteral("object-locked")));
     else
-        m_dropLockButton->setIcon(QIcon::fromTheme("object-unlocked"));
+        m_dropLockButton->setIcon(QIcon::fromTheme(QStringLiteral("object-unlocked")));
 
     m_dropLockButton->setChecked(value);
 }
@@ -750,7 +750,7 @@ void MainWindow::onCurrentTitleChanged(int index)
         icon = consoleTabulator->tabIcon(index);
     }
     setWindowTitle(title.isEmpty() || !Properties::Instance()->changeWindowTitle ? QStringLiteral("QTerminal") : title);
-    setWindowIcon(icon.isNull() || !Properties::Instance()->changeWindowIcon ? QIcon::fromTheme("utilities-terminal") : icon);
+    setWindowIcon(icon.isNull() || !Properties::Instance()->changeWindowIcon ? QIcon::fromTheme(QStringLiteral("utilities-terminal")) : icon);
 }
 
 bool MainWindow::hasMultipleTabs()

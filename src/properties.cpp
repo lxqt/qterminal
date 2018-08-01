@@ -54,7 +54,7 @@ Properties::~Properties()
 QFont Properties::defaultFont()
 {
     QFont default_font = QApplication::font();
-    default_font.setFamily(DEFAULT_FONT);
+    default_font.setFamily(QLatin1String(DEFAULT_FONT));
     default_font.setPointSize(12);
     default_font.setStyleHint(QFont::TypeWriter);
     return default_font;
@@ -62,107 +62,107 @@ QFont Properties::defaultFont()
 
 void Properties::loadSettings()
 {
-    guiStyle = m_settings->value("guiStyle", QString()).toString();
+    guiStyle = m_settings->value(QLatin1String("guiStyle"), QString()).toString();
     if (!guiStyle.isNull())
         QApplication::setStyle(guiStyle);
 
-    colorScheme = m_settings->value("colorScheme", "Linux").toString();
+    colorScheme = m_settings->value(QLatin1String("colorScheme"), QLatin1String("Linux")).toString();
 
-    highlightCurrentTerminal = m_settings->value("highlightCurrentTerminal", true).toBool();
-    showTerminalSizeHint = m_settings->value("showTerminalSizeHint", true).toBool();
+    highlightCurrentTerminal = m_settings->value(QLatin1String("highlightCurrentTerminal"), true).toBool();
+    showTerminalSizeHint = m_settings->value(QLatin1String("showTerminalSizeHint"), true).toBool();
 
-    font = QFont(qvariant_cast<QString>(m_settings->value("fontFamily", defaultFont().family())),
-                 qvariant_cast<int>(m_settings->value("fontSize", defaultFont().pointSize())));
+    font = QFont(qvariant_cast<QString>(m_settings->value(QLatin1String("fontFamily"), defaultFont().family())),
+                 qvariant_cast<int>(m_settings->value(QLatin1String("fontSize"), defaultFont().pointSize())));
     //Legacy font setting
-    font = qvariant_cast<QFont>(m_settings->value("font", font));
+    font = qvariant_cast<QFont>(m_settings->value(QLatin1String("font"), font));
 
-    mainWindowSize = m_settings->value("MainWindow/size").toSize();
-    mainWindowPosition = m_settings->value("MainWindow/pos").toPoint();
-    mainWindowState = m_settings->value("MainWindow/state").toByteArray();
+    mainWindowSize = m_settings->value(QLatin1String("MainWindow/size")).toSize();
+    mainWindowPosition = m_settings->value(QLatin1String("MainWindow/pos")).toPoint();
+    mainWindowState = m_settings->value(QLatin1String("MainWindow/state")).toByteArray();
 
-    historyLimited = m_settings->value("HistoryLimited", true).toBool();
-    historyLimitedTo = m_settings->value("HistoryLimitedTo", 1000).toUInt();
+    historyLimited = m_settings->value(QLatin1String("HistoryLimited"), true).toBool();
+    historyLimitedTo = m_settings->value(QLatin1String("HistoryLimitedTo"), 1000).toUInt();
 
-    emulation = m_settings->value("emulation", "default").toString();
+    emulation = m_settings->value(QLatin1String("emulation"), QLatin1String("default")).toString();
 
     // sessions
-    int size = m_settings->beginReadArray("Sessions");
+    int size = m_settings->beginReadArray(QLatin1String("Sessions"));
     for (int i = 0; i < size; ++i)
     {
         m_settings->setArrayIndex(i);
-        QString name(m_settings->value("name").toString());
+        QString name(m_settings->value(QLatin1String("name")).toString());
         if (name.isEmpty())
             continue;
-        sessions[name] = m_settings->value("state").toByteArray();
+        sessions[name] = m_settings->value(QLatin1String("state")).toString();
     }
     m_settings->endArray();
 
-    appTransparency = m_settings->value("MainWindow/ApplicationTransparency", 0).toInt();
-    termTransparency = m_settings->value("TerminalTransparency", 0).toInt();
-    backgroundImage = m_settings->value("TerminalBackgroundImage", QString()).toString();
+    appTransparency = m_settings->value(QLatin1String("MainWindow/ApplicationTransparency"), 0).toInt();
+    termTransparency = m_settings->value(QLatin1String("TerminalTransparency"), 0).toInt();
+    backgroundImage = m_settings->value(QLatin1String("TerminalBackgroundImage"), QString()).toString();
 
     /* default to Right. see qtermwidget.h */
-    scrollBarPos = m_settings->value("ScrollbarPosition", 2).toInt();
+    scrollBarPos = m_settings->value(QLatin1String("ScrollbarPosition"), 2).toInt();
     /* default to North. I'd prefer South but North is standard (they say) */
-    tabsPos = m_settings->value("TabsPosition", 0).toInt();
+    tabsPos = m_settings->value(QLatin1String("TabsPosition"), 0).toInt();
     /* default to BlockCursor */
-    keyboardCursorShape = m_settings->value("KeyboardCursorShape", 0).toInt();
-    hideTabBarWithOneTab = m_settings->value("HideTabBarWithOneTab", false).toBool();
-    m_motionAfterPaste = m_settings->value("MotionAfterPaste", 0).toInt();
+    keyboardCursorShape = m_settings->value(QLatin1String("KeyboardCursorShape"), 0).toInt();
+    hideTabBarWithOneTab = m_settings->value(QLatin1String("HideTabBarWithOneTab"), false).toBool();
+    m_motionAfterPaste = m_settings->value(QLatin1String("MotionAfterPaste"), 0).toInt();
 
     /* tab width limit */
-    limitTabWidth = m_settings->value("LimitTabWidth", true).toBool();
-    limitTabWidthValue = m_settings->value("LimitTabWidthValue", 500).toInt();
-    showCloseTabButton = m_settings->value("ShowCloseTabButton", true).toBool();
+    limitTabWidth = m_settings->value(QLatin1String("LimitTabWidth"), true).toBool();
+    limitTabWidthValue = m_settings->value(QLatin1String("LimitTabWidthValue"), 500).toInt();
+    showCloseTabButton = m_settings->value(QLatin1String("ShowCloseTabButton"), true).toBool();
 
     /* toggles */
-    borderless = m_settings->value("Borderless", false).toBool();
-    tabBarless = m_settings->value("TabBarless", false).toBool();
-    menuVisible = m_settings->value("MenuVisible", true).toBool();
-    askOnExit = m_settings->value("AskOnExit", true).toBool();
-    saveSizeOnExit = m_settings->value("SaveSizeOnExit", true).toBool();
-    savePosOnExit = m_settings->value("SavePosOnExit", true).toBool();
-    useCWD = m_settings->value("UseCWD", false).toBool();
-    term = m_settings->value("Term", "xterm-256color").toString();
+    borderless = m_settings->value(QLatin1String("Borderless"), false).toBool();
+    tabBarless = m_settings->value(QLatin1String("TabBarless"), false).toBool();
+    menuVisible = m_settings->value(QLatin1String("MenuVisible"), true).toBool();
+    askOnExit = m_settings->value(QLatin1String("AskOnExit"), true).toBool();
+    saveSizeOnExit = m_settings->value(QLatin1String("SaveSizeOnExit"), true).toBool();
+    savePosOnExit = m_settings->value(QLatin1String("SavePosOnExit"), true).toBool();
+    useCWD = m_settings->value(QLatin1String("UseCWD"), false).toBool();
+    term = m_settings->value(QLatin1String("Term"), QLatin1String("xterm-256color")).toString();
 
     // bookmarks
-    useBookmarks = m_settings->value("UseBookmarks", false).toBool();
-    bookmarksVisible = m_settings->value("BookmarksVisible", true).toBool();
+    useBookmarks = m_settings->value(QLatin1String("UseBookmarks"), false).toBool();
+    bookmarksVisible = m_settings->value(QLatin1String("BookmarksVisible"), true).toBool();
     const QString s = QFileInfo(m_settings->fileName()).canonicalPath() + QString::fromLatin1("/qterminal_bookmarks.xml");
-    bookmarksFile = m_settings->value("BookmarksFile", s).toString();
+    bookmarksFile = m_settings->value(QLatin1String("BookmarksFile"), s).toString();
 
-    terminalsPreset = m_settings->value("TerminalsPreset", 0).toInt();
+    terminalsPreset = m_settings->value(QLatin1String("TerminalsPreset"), 0).toInt();
 
-    m_settings->beginGroup("DropMode");
-    dropShortCut = QKeySequence(m_settings->value("ShortCut", "F12").toString());
-    dropKeepOpen = m_settings->value("KeepOpen", false).toBool();
-    dropShowOnStart = m_settings->value("ShowOnStart", true).toBool();
-    dropWidht = m_settings->value("Width", 70).toInt();
-    dropHeight = m_settings->value("Height", 45).toInt();
+    m_settings->beginGroup(QLatin1String("DropMode"));
+    dropShortCut = QKeySequence(m_settings->value(QLatin1String("ShortCut"), QLatin1String("F12")).toString());
+    dropKeepOpen = m_settings->value(QLatin1String("KeepOpen"), false).toBool();
+    dropShowOnStart = m_settings->value(QLatin1String("ShowOnStart"), true).toBool();
+    dropWidht = m_settings->value(QLatin1String("Width"), 70).toInt();
+    dropHeight = m_settings->value(QLatin1String("Height"), 45).toInt();
     m_settings->endGroup();
 
-    changeWindowTitle = m_settings->value("ChangeWindowTitle", true).toBool();
-    changeWindowIcon = m_settings->value("ChangeWindowIcon", true).toBool();
-    enabledBidiSupport = m_settings->value("enabledBidiSupport", true).toBool();
+    changeWindowTitle = m_settings->value(QLatin1String("ChangeWindowTitle"), true).toBool();
+    changeWindowIcon = m_settings->value(QLatin1String("ChangeWindowIcon"), true).toBool();
+    enabledBidiSupport = m_settings->value(QLatin1String("enabledBidiSupport"), true).toBool();
 
-    confirmMultilinePaste = m_settings->value("ConfirmMultilinePaste", false).toBool();
-    trimPastedTrailingNewlines = m_settings->value("TrimPastedTrailingNewlines", false).toBool();
+    confirmMultilinePaste = m_settings->value(QLatin1String("ConfirmMultilinePaste"), false).toBool();
+    trimPastedTrailingNewlines = m_settings->value(QLatin1String("TrimPastedTrailingNewlines"), false).toBool();
 
-    windowMaximized = m_settings->value("LastWindowMaximized", false).toBool();
+    windowMaximized = m_settings->value(QLatin1String("LastWindowMaximized"), false).toBool();
 }
 
 void Properties::saveSettings()
 {
-    m_settings->setValue("guiStyle", guiStyle);
-    m_settings->setValue("colorScheme", colorScheme);
-    m_settings->setValue("highlightCurrentTerminal", highlightCurrentTerminal);
-    m_settings->setValue("showTerminalSizeHint", showTerminalSizeHint);
-    m_settings->setValue("fontFamily", font.family());
-    m_settings->setValue("fontSize", font.pointSize());
+    m_settings->setValue(QLatin1String("guiStyle"), guiStyle);
+    m_settings->setValue(QLatin1String("colorScheme"), colorScheme);
+    m_settings->setValue(QLatin1String("highlightCurrentTerminal"), highlightCurrentTerminal);
+    m_settings->setValue(QLatin1String("showTerminalSizeHint"), showTerminalSizeHint);
+    m_settings->setValue(QLatin1String("fontFamily"), font.family());
+    m_settings->setValue(QLatin1String("fontSize"), font.pointSize());
     //Clobber legacy setting
-    m_settings->remove("font");
+    m_settings->remove(QLatin1String("font"));
 
-    m_settings->beginGroup("Shortcuts");
+    m_settings->beginGroup(QLatin1String("Shortcuts"));
     MainWindow *mainWindow = QTerminalApp::Instance()->getWindowList()[0];
     assert(mainWindow != NULL);
 
@@ -174,78 +174,78 @@ void Properties::saveSettings()
         const auto shortcuts = it.value()->shortcuts();
         for (const QKeySequence &shortcut : shortcuts)
             sequenceStrings.append(shortcut.toString());
-        m_settings->setValue(it.key(), sequenceStrings.join('|'));
+        m_settings->setValue(it.key(), sequenceStrings.join(QLatin1Char('|')));
     }
     m_settings->endGroup();
 
-    m_settings->setValue("MainWindow/size", mainWindowSize);
-    m_settings->setValue("MainWindow/pos", mainWindowPosition);
-    m_settings->setValue("MainWindow/state", mainWindowState);
+    m_settings->setValue(QLatin1String("MainWindow/size"), mainWindowSize);
+    m_settings->setValue(QLatin1String("MainWindow/pos"), mainWindowPosition);
+    m_settings->setValue(QLatin1String("MainWindow/state"), mainWindowState);
 
-    m_settings->setValue("HistoryLimited", historyLimited);
-    m_settings->setValue("HistoryLimitedTo", historyLimitedTo);
+    m_settings->setValue(QLatin1String("HistoryLimited"), historyLimited);
+    m_settings->setValue(QLatin1String("HistoryLimitedTo"), historyLimitedTo);
 
-    m_settings->setValue("emulation", emulation);
+    m_settings->setValue(QLatin1String("emulation"), emulation);
 
     // sessions
-    m_settings->beginWriteArray("Sessions");
+    m_settings->beginWriteArray(QLatin1String("Sessions"));
     int i = 0;
     Sessions::iterator sit = sessions.begin();
     while (sit != sessions.end())
     {
         m_settings->setArrayIndex(i);
-        m_settings->setValue("name", sit.key());
-        m_settings->setValue("state", sit.value());
+        m_settings->setValue(QLatin1String("name"), sit.key());
+        m_settings->setValue(QLatin1String("state"), sit.value());
         ++sit;
         ++i;
     }
     m_settings->endArray();
 
-    m_settings->setValue("MainWindow/ApplicationTransparency", appTransparency);
-    m_settings->setValue("TerminalTransparency", termTransparency);
-    m_settings->setValue("TerminalBackgroundImage", backgroundImage);
-    m_settings->setValue("ScrollbarPosition", scrollBarPos);
-    m_settings->setValue("TabsPosition", tabsPos);
-    m_settings->setValue("KeyboardCursorShape", keyboardCursorShape);
-    m_settings->setValue("HideTabBarWithOneTab", hideTabBarWithOneTab);
-    m_settings->setValue("MotionAfterPaste", m_motionAfterPaste);
+    m_settings->setValue(QLatin1String("MainWindow/ApplicationTransparency"), appTransparency);
+    m_settings->setValue(QLatin1String("TerminalTransparency"), termTransparency);
+    m_settings->setValue(QLatin1String("TerminalBackgroundImage"), backgroundImage);
+    m_settings->setValue(QLatin1String("ScrollbarPosition"), scrollBarPos);
+    m_settings->setValue(QLatin1String("TabsPosition"), tabsPos);
+    m_settings->setValue(QLatin1String("KeyboardCursorShape"), keyboardCursorShape);
+    m_settings->setValue(QLatin1String("HideTabBarWithOneTab"), hideTabBarWithOneTab);
+    m_settings->setValue(QLatin1String("MotionAfterPaste"), m_motionAfterPaste);
 
-    m_settings->setValue("LimitTabWidth", limitTabWidth);
-    m_settings->setValue("LimitTabWidthValue", limitTabWidthValue);
-    m_settings->setValue("ShowCloseTabButton", showCloseTabButton);
+    m_settings->setValue(QLatin1String("LimitTabWidth"), limitTabWidth);
+    m_settings->setValue(QLatin1String("LimitTabWidthValue"), limitTabWidthValue);
+    m_settings->setValue(QLatin1String("ShowCloseTabButton"), showCloseTabButton);
 
-    m_settings->setValue("Borderless", borderless);
-    m_settings->setValue("TabBarless", tabBarless);
-    m_settings->setValue("MenuVisible", menuVisible);
-    m_settings->setValue("AskOnExit", askOnExit);
-    m_settings->setValue("SavePosOnExit", savePosOnExit);
-    m_settings->setValue("SaveSizeOnExit", saveSizeOnExit);
-    m_settings->setValue("UseCWD", useCWD);
-    m_settings->setValue("Term", term);
+    m_settings->setValue(QLatin1String("Borderless"), borderless);
+    m_settings->setValue(QLatin1String("TabBarless"), tabBarless);
+    m_settings->setValue(QLatin1String("MenuVisible"), menuVisible);
+    m_settings->setValue(QLatin1String("AskOnExit"), askOnExit);
+    m_settings->setValue(QLatin1String("SavePosOnExit"), savePosOnExit);
+    m_settings->setValue(QLatin1String("SaveSizeOnExit"), saveSizeOnExit);
+    m_settings->setValue(QLatin1String("UseCWD"), useCWD);
+    m_settings->setValue(QLatin1String("Term"), term);
 
     // bookmarks
-    m_settings->setValue("UseBookmarks", useBookmarks);
-    m_settings->setValue("BookmarksVisible", bookmarksVisible);
-    m_settings->setValue("BookmarksFile", bookmarksFile);
+    m_settings->setValue(QLatin1String("UseBookmarks"), useBookmarks);
+    m_settings->setValue(QLatin1String("BookmarksVisible"), bookmarksVisible);
+    m_settings->setValue(QLatin1String("BookmarksFile"), bookmarksFile);
 
-    m_settings->setValue("TerminalsPreset", terminalsPreset);
+    m_settings->setValue(QLatin1String("TerminalsPreset"), terminalsPreset);
 
-    m_settings->beginGroup("DropMode");
-    m_settings->setValue("ShortCut", dropShortCut.toString());
-    m_settings->setValue("KeepOpen", dropKeepOpen);
-    m_settings->setValue("ShowOnStart", dropShowOnStart);
-    m_settings->setValue("Width", dropWidht);
-    m_settings->setValue("Height", dropHeight);
+    m_settings->beginGroup(QLatin1String("DropMode"));
+    m_settings->setValue(QLatin1String("ShortCut"), dropShortCut.toString());
+    m_settings->setValue(QLatin1String("KeepOpen"), dropKeepOpen);
+    m_settings->setValue(QLatin1String("ShowOnStart"), dropShowOnStart);
+    m_settings->setValue(QLatin1String("Width"), dropWidht);
+    m_settings->setValue(QLatin1String("Height"), dropHeight);
     m_settings->endGroup();
 
-    m_settings->setValue("ChangeWindowTitle", changeWindowTitle);
-    m_settings->setValue("ChangeWindowIcon", changeWindowIcon);
-    m_settings->setValue("enabledBidiSupport", enabledBidiSupport);
+    m_settings->setValue(QLatin1String("ChangeWindowTitle"), changeWindowTitle);
+    m_settings->setValue(QLatin1String("ChangeWindowIcon"), changeWindowIcon);
+    m_settings->setValue(QLatin1String("enabledBidiSupport"), enabledBidiSupport);
 
-    m_settings->setValue("ConfirmMultilinePaste", confirmMultilinePaste);
-    m_settings->setValue("TrimPastedTrailingNewlines", trimPastedTrailingNewlines);
+    m_settings->setValue(QLatin1String("ConfirmMultilinePaste"), confirmMultilinePaste);
+    m_settings->setValue(QLatin1String("TrimPastedTrailingNewlines"), trimPastedTrailingNewlines);
 
-    m_settings->setValue("LastWindowMaximized", windowMaximized);
+    m_settings->setValue(QLatin1String("LastWindowMaximized"), windowMaximized);
 }
 
 void Properties::migrate_settings()
@@ -254,36 +254,36 @@ void Properties::migrate_settings()
     // If this method becomes unbearably huge we should look at the config-update
     // system used by kde and razor.
     QSettings settings;
-    QString lastVersion = settings.value("version", "0.0.0").toString();
-    QString currentVersion = STR_VERSION;
+    QString lastVersion = settings.value(QLatin1String("version"), QLatin1String("0.0.0")).toString();
+    QString currentVersion(QLatin1String(STR_VERSION));
     if (currentVersion < lastVersion)
     {
         qDebug() << "Warning: Configuration file was written by a newer version "
                  << "of QTerminal. Some settings might be incompatible";
     }
 
-    if (lastVersion < "0.4.0")
+    if (lastVersion < QLatin1String("0.4.0"))
     {
         // ===== Paste Selection -> Paste Clipboard =====
-        settings.beginGroup("Shortcuts");
-        if(!settings.contains(PASTE_CLIPBOARD))
+        settings.beginGroup(QLatin1String("Shortcuts"));
+        if(!settings.contains(QLatin1String(PASTE_CLIPBOARD)))
         {
-            QString value = settings.value("Paste Selection", PASTE_CLIPBOARD_SHORTCUT).toString();
-            settings.setValue(PASTE_CLIPBOARD, value);
+            QString value = settings.value(QLatin1String("Paste Selection"), QLatin1String(PASTE_CLIPBOARD_SHORTCUT)).toString();
+            settings.setValue(QLatin1String(PASTE_CLIPBOARD), value);
         }
-        settings.remove("Paste Selection");
+        settings.remove(QLatin1String("Paste Selection"));
         settings.endGroup();
     }
 
-    if (lastVersion <= "0.6.0")
+    if (lastVersion <= QLatin1String("0.6.0"))
     {
         // ===== AlwaysShowTabs -> HideTabBarWithOneTab =====
-        if(!settings.contains("HideTabBarWithOneTab"))
+        if(!settings.contains(QLatin1String("HideTabBarWithOneTab")))
         {
-            QString hideValue = settings.value("AlwaysShowTabs", false).toString();
-            settings.setValue("HideTabBarWithOneTab", hideValue);
+            QString hideValue = settings.value(QLatin1String("AlwaysShowTabs"), false).toString();
+            settings.setValue(QLatin1String("HideTabBarWithOneTab"), hideValue);
         }
-        settings.remove("AlwaysShowTabs");
+        settings.remove(QLatin1String("AlwaysShowTabs"));
 
         // ===== appOpacity -> ApplicationTransparency =====
         //
@@ -291,36 +291,36 @@ void Properties::migrate_settings()
         // restricted to [0,99] instead of [1,100]. We fix this here by
         // setting the opacity to 100 if it was 99 and to 1 if it was 0.
         //
-        if(!settings.contains("MainWindow/ApplicationTransparency"))
+        if(!settings.contains(QLatin1String("MainWindow/ApplicationTransparency")))
         {
-            int appOpacityValue = settings.value("MainWindow/appOpacity", 100).toInt();
+            int appOpacityValue = settings.value(QLatin1String("MainWindow/appOpacity"), 100).toInt();
             appOpacityValue = appOpacityValue == 99 ? 100 : appOpacityValue;
             appOpacityValue = appOpacityValue == 0 ? 1 : appOpacityValue;
-            settings.setValue("MainWindow/ApplicationTransparency", 100 - appOpacityValue);
+            settings.setValue(QLatin1String("MainWindow/ApplicationTransparency"), 100 - appOpacityValue);
         }
-        settings.remove("MainWindow/appOpacity");
+        settings.remove(QLatin1String("MainWindow/appOpacity"));
 
         // ===== termOpacity -> TerminalTransparency =====
-        if(!settings.contains("TerminalTransparency"))
+        if(!settings.contains(QLatin1String("TerminalTransparency")))
         {
-            int termOpacityValue = settings.value("termOpacity", 100).toInt();
+            int termOpacityValue = settings.value(QLatin1String("termOpacity"), 100).toInt();
             termOpacityValue = termOpacityValue == 99  ? 100 : termOpacityValue;
-            settings.setValue("TerminalTransparency", 100 - termOpacityValue);
+            settings.setValue(QLatin1String("TerminalTransparency"), 100 - termOpacityValue);
         }
-        settings.remove("termOpacity");
+        settings.remove(QLatin1String("termOpacity"));
 	// geometry -> size, pos
-	if (!settings.contains("MainWindow/size"))
+    if (!settings.contains(QLatin1String("MainWindow/size")))
 	{
 	    QWidget geom;
-	    geom.restoreGeometry(settings.value("MainWindow/geometry").toByteArray());
-            settings.setValue("MainWindow/size", geom.size());
-            settings.setValue("MainWindow/pos", geom.pos());
-            settings.setValue("MainWindow/isMaximized", geom.isMaximized());
-            settings.remove("MainWindow/geometry");
+        geom.restoreGeometry(settings.value(QLatin1String("MainWindow/geometry")).toByteArray());
+            settings.setValue(QLatin1String("MainWindow/size"), geom.size());
+            settings.setValue(QLatin1String("MainWindow/pos"), geom.pos());
+            settings.setValue(QLatin1String("MainWindow/isMaximized"), geom.isMaximized());
+            settings.remove(QLatin1String("MainWindow/geometry"));
 	}
     }
 
     if (currentVersion > lastVersion)
-        settings.setValue("version", currentVersion);
+        settings.setValue(QLatin1String("version"), currentVersion);
 }
 
