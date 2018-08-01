@@ -460,22 +460,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar tamanho do terminal ao redimensionar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Limit tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Limitar largura da aba:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
         <source>px</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar botão de fechar em cada aba</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="432"/>
@@ -485,7 +485,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&lt;html&gt;1&lt;head/&gt;2&lt;body&gt;3&lt;p&gt;4Qual comportamento emular. Veja que isto não tem que bater com seu sistema operacional.&lt;/p&gt;5&lt;p&gt;6A 7emulação&lt;span style=&quot; font-weight:600;&quot;&gt;8 padrão&lt;/span&gt; é um retrocesso com um mínimo de funcionalidades.&lt;/p&gt;9&lt;/body&gt;0&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="463"/>
@@ -495,7 +495,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="473"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Confirmar colagem de múltiplas linhas</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
@@ -535,17 +535,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="558"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>$TERM Padrão</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="572"/>
         <source>xterm</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">xterm-256cores</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="614"/>
@@ -643,17 +643,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cursor de Bloco</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cursor de Underline</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cursor de IBeam</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
@@ -679,12 +679,12 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="283"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Escolha uma imagem de plano de fundo</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="284"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation type="unfinished"></translation>
+        <translation>Imagens (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="349"/>
@@ -697,7 +697,7 @@
     <message>
         <location filename="../termwidget.cpp" line="237"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar Detalhes...</translation>
     </message>
 </context>
 <context>
@@ -734,7 +734,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Selecionar cor do título de nova aba</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="229"/>
@@ -744,7 +744,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="231"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Mudar cor do título</translation>
     </message>
 </context>
 <context>
@@ -765,12 +765,12 @@
     <message>
         <location filename="../termwidget.cpp" line="229"/>
         <source>Paste multiline text</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Colar texto com múltiplas linhas</translation>
     </message>
     <message>
         <location filename="../termwidget.cpp" line="230"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tem certeza que quer colar este texto?</translation>
     </message>
 </context>
 <context>
