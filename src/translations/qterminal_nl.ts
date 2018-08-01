@@ -48,244 +48,244 @@
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Maak actieve terminal leeg</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
         <source>&amp;Next Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Volgende tabblad</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="221"/>
         <source>&amp;Previous Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorige tabblad</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="224"/>
         <source>Move Tab &amp;Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Verplaats tabblad naar links</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="227"/>
         <source>Move Tab &amp;Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Verplaats tabblad naar rechts</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation>Splits terminal horizontaal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="235"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation type="unfinished"></translation>
+        <translation>Splits terminal vertikaal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="240"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Vouw subterminal samen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Bovenste subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Onderste subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Linker-subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechter-subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Copy &amp;Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopieer selectie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Paste Clip&amp;board</source>
-        <translation type="unfinished"></translation>
+        <translation>Plak klembord</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="265"/>
         <source>Paste S&amp;election</source>
-        <translation type="unfinished"></translation>
+        <translation>Plak selectie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="268"/>
         <source>Zoom &amp;in</source>
-        <translation type="unfinished"></translation>
+        <translation>Vergroten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="271"/>
         <source>Zoom &amp;out</source>
-        <translation type="unfinished"></translation>
+        <translation>Verkleinen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
         <source>Zoom rese&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>Vergrotingsfactor terugzetten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="279"/>
         <source>&amp;Find...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zoeken...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessie opslaan</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="293"/>
         <source>&amp;Load Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessie laden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
         <source>&amp;Toggle Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>Menu omschakelen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Rename session</source>
-        <translation type="unfinished">Hernoem sessie</translation>
+        <translation>Hernoem sessie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
         <source>&amp;New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieuw tabblad</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="317"/>
         <source>New Tab From &amp;Preset</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieuw tabblad vanuit voorkeuze</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="318"/>
         <source>1 &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>1 &amp;terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation type="unfinished"></translation>
+        <translation>2 horizontale terminals</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation type="unfinished"></translation>
+        <translation>2 verticale terminals</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
         <source>4 Terminal&amp;s</source>
-        <translation type="unfinished"></translation>
+        <translation>4 terminals</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="330"/>
         <source>&amp;Close Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabblad sluiten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nieuw venster</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">&amp;Voorkeuren...</translation>
+        <translation>&amp;Voorkeuren...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">&amp;Afsluiten</translation>
+        <translation>&amp;Afsluiten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished"></translation>
+        <translation>Vensterranden verbergen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="359"/>
         <source>&amp;Show Tab Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Toon tabbladenbalk</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
         <source>Fullscreen</source>
-        <translation type="unfinished"></translation>
+        <translation>Schermvullend</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladwijzers omschakelen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
         <source>&amp;Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Onderkant</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="382"/>
         <source>&amp;Top</source>
-        <translation type="unfinished"></translation>
+        <translation>Bovenkant</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="383"/>
         <location filename="../mainwindow.cpp" line="419"/>
         <source>&amp;Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Rechts</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="384"/>
         <location filename="../mainwindow.cpp" line="420"/>
         <source>&amp;Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Links</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="402"/>
         <source>&amp;Tabs Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Vormgeving van tabbladen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="418"/>
         <source>&amp;None</source>
-        <translation type="unfinished"></translation>
+        <translation>Geen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <source>S&amp;crollbar Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>Vormgeving van schuifbalk</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="449"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokaanwijzer</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="450"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Onderstreepte aanwijzer</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Straalaanwijzer</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorm van toetsenbordaanwijzer</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
@@ -295,7 +295,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="560"/>
         <source>Do not ask again</source>
-        <translation>Vraag niet meer</translation>
+        <translation>Vraag dit niet meer</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="568"/>
@@ -349,7 +349,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="90"/>
         <source>Hide tab bar with only one tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Verberg tabbladenbalk met slechts één tabblad</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="100"/>
@@ -359,7 +359,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="254"/>
         <source>&amp;Change...</source>
-        <translation type="unfinished"></translation>
+        <translation>Wijzigen...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="296"/>
@@ -439,7 +439,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="473"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Bevestig plakken van meerdere regels</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
@@ -454,12 +454,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="520"/>
         <source>Save Size when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Grootte opslaan bij sluiten</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="527"/>
         <source>Save Position when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Positie opslaan bij sluiten</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="534"/>
@@ -479,17 +479,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="558"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaard $TERM</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="572"/>
         <source>xterm</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm-256color</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="649"/>
@@ -530,52 +530,52 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorm van toetsenbordaanwijzer</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Verander venstertitel op basis van huidige terminalvenster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Verander vensterpictogram op basis van huidige terminalvenster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished"></translation>
+        <translation>Schakel tweerichtings-tekstondersteuning in</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
         <source>Background image:</source>
-        <translation type="unfinished"></translation>
+        <translation>Achtergrondafbeelding:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiezen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>Toon terminalgrootte bij herschalen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Limit tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Beperk tabbladbreedte:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
         <source>px</source>
-        <translation type="unfinished"></translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Toon sluitknop op elk tabblad</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="638"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>U kunt uw eigen locatie opgeven voor het bladwijzerbestand. Dit biedt u gemakkelijk delen van bladwijzers met gereedschappen zoals Own Cloud of Dropbox.</translation>
+        <translation>U kunt uw eigen locatie opgeven voor het bladwijzerbestand. Dit biedt u gemakkelijk delen van bladwijzers met gereedschappen zoals OwnCloud of Dropbox.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="187"/>
@@ -643,17 +643,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Blokaanwijzer</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Onderstreepte aanwijzer</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Straalaanwijzer</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
@@ -679,12 +679,12 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="283"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Kies een achtergrondafbeelding</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="284"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation type="unfinished"></translation>
+        <translation>Afbeeldingen (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="349"/>
@@ -697,7 +697,7 @@
     <message>
         <location filename="../termwidget.cpp" line="237"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>Toon bijzonderheden...</translation>
     </message>
 </context>
 <context>
@@ -734,7 +734,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Kies een nieuwe titelkleur voor tabblad</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="229"/>
@@ -744,7 +744,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="231"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Titelkleur wijzigen</translation>
     </message>
 </context>
 <context>
@@ -765,12 +765,12 @@
     <message>
         <location filename="../termwidget.cpp" line="229"/>
         <source>Paste multiline text</source>
-        <translation type="unfinished"></translation>
+        <translation>Meerregelige tekst plakken</translation>
     </message>
     <message>
         <location filename="../termwidget.cpp" line="230"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation>Weet u zeker dat u deze tekst wilt plakken?</translation>
     </message>
 </context>
 <context>
@@ -783,37 +783,37 @@
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;File</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bestand</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Acties</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Hulp</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tonen</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Be&amp;werken</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Over...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation type="unfinished"></translation>
+        <translation>Over &amp;Qt...</translation>
     </message>
 </context>
 </TS>
