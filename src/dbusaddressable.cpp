@@ -20,6 +20,6 @@ DBusAddressable::DBusAddressable(QString prefix)
 {
     #ifdef HAVE_QDBUS
     QString uuidString = QUuid::createUuid().toString();
-    m_path = prefix + "/" + uuidString.replace(QRegExp("[\\{\\}\\-]"), "");
+    m_path = prefix + QLatin1Char('/') + uuidString.replace(QRegExp(QStringLiteral("[\\{\\}\\-]")), QString());
     #endif
 }

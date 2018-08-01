@@ -29,7 +29,7 @@ TabBar::TabBar(QWidget *parent)
     QFont f = font();
     f.setBold(true);
     setFont(f);
-    setStyleSheet("QTabBar::tab:!selected { font-weight: normal; }");
+    setStyleSheet(QStringLiteral("QTabBar::tab:!selected { font-weight: normal; }"));
 }
 
 void TabBar::setLimitWidth(bool limitWidth)

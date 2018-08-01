@@ -83,23 +83,23 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
                 print_usage_and_exit(0);
                 break;
             case 'w':
-                workdir = QString(optarg);
+                workdir = QString::fromLocal8Bit(optarg);
                 break;
             case 'e':
-                shell_command = QString(optarg);
+                shell_command = QString::fromLocal8Bit(optarg);
                 // #15 "Raw" -e params
                 // Passing "raw" params (like konsole -e mcedit /tmp/tmp.txt") is more preferable - then I can call QString("qterminal -e ") + cmd_line in other programs
                 while (optind < argc)
                 {
                     //printf("arg: %d - %s\n", optind, argv[optind]);
-                    shell_command += ' ' + QString(argv[optind++]);
+                    shell_command += QLatin1Char(' ') + QString::fromLocal8Bit(argv[optind++]);
                 }
                 break;
             case 'd':
                 dropMode = true;
                 break;
             case 'p':
-                Properties::Instance(QString(optarg));
+                Properties::Instance(QString::fromLocal8Bit(optarg));
                 break;
             case '?':
                 print_usage_and_exit(1);
@@ -114,9 +114,9 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
 
 int main(int argc, char *argv[])
 {
-    QApplication::setApplicationName("qterminal");
-    QApplication::setApplicationVersion(STR_VERSION);
-    QApplication::setOrganizationDomain("qterminal.org");
+    QApplication::setApplicationName(QStringLiteral("qterminal"));
+    QApplication::setApplicationVersion(QStringLiteral(STR_VERSION));
+    QApplication::setOrganizationDomain(QStringLiteral("qterminal.org"));
 #if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
     QApplication::setDesktopFileName(QLatin1String("qterminal.desktop"));
 #endif
@@ -144,7 +144,7 @@ int main(int argc, char *argv[])
     const QSettings settings;
     const QFileInfo customStyle = QFileInfo(
         QFileInfo(settings.fileName()).canonicalPath() +
-        "/style.qss"
+        QStringLiteral("/style.qss")
     );
     if (customStyle.isFile() && customStyle.isReadable())
     {
@@ -158,14 +158,14 @@ int main(int argc, char *argv[])
     /* setup our custom icon theme if there is no system theme (OS X, Windows) */
     QCoreApplication::instance()->setAttribute(Qt::AA_UseHighDpiPixmaps); //Fix for High-DPI systems
     if (QIcon::themeName().isEmpty())
-        QIcon::setThemeName("QTerminal");
+        QIcon::setThemeName(QStringLiteral("QTerminal"));
 
     // translations
-    QString fname = QString("qterminal_%1.qm").arg(QLocale::system().name().left(5));
+    QString fname = QString::fromLatin1("qterminal_%1.qm").arg(QLocale::system().name().left(5));
     QTranslator translator;
 #ifdef TRANSLATIONS_DIR
     qDebug() << "TRANSLATIONS_DIR: Loading translation file" << fname << "from dir" << TRANSLATIONS_DIR;
-    qDebug() << "load success:" << translator.load(fname, TRANSLATIONS_DIR, "_");
+    qDebug() << "load success:" << translator.load(fname, QString::fromUtf8(TRANSLATIONS_DIR), QStringLiteral("+"));
 #endif
 #ifdef APPLE_BUNDLE
     qDebug() << "APPLE_BUNDLE: Loading translator file" << fname << "from dir" << QApplication::applicationDirPath()+"../translations";
@@ -269,7 +269,7 @@ void QTerminalApp::registerOnDbus()
         return;
     }
     new ProcessAdaptor(this);
-    QDBusConnection::sessionBus().registerObject("/", this);
+    QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
 }
 
 QList<QDBusObjectPath> QTerminalApp::getWindows()

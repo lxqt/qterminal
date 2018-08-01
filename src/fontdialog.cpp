@@ -50,7 +50,7 @@ QFont FontDialog::getFont()
 void FontDialog::setFontSample(const QFont &f)
 {
     previewLabel->setFont(f);
-    QString sample("%1 %2 pt");
+    QString sample(QLatin1String("%1 %2 pt"));
     previewLabel->setText(sample.arg(f.family()).arg(f.pointSize()));
 }
 
@@ -58,6 +58,6 @@ void FontDialog::setFontSize()
 {
     const QFont &f = getFont();
     previewLabel->setFont(f);
-    QString sample("%1 %2 pt");
+    QString sample(QLatin1String("%1 %2 pt"));
     previewLabel->setText(sample.arg(f.family()).arg(f.pointSize()));
 }

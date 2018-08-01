@@ -41,7 +41,7 @@ QString TerminalConfig::getShell()
     QByteArray envShell = qgetenv("SHELL");
     if (envShell.constData() != NULL)
     {
-        QString shellString = QString(envShell);
+        QString shellString = QString::fromLocal8Bit(envShell);
         if (!shellString.isEmpty())
             return shellString;
     }
@@ -73,9 +73,9 @@ void TerminalConfig::provideCurrentDirectory(const QString &val)
 TerminalConfig TerminalConfig::fromDbus(const QHash<QString,QVariant> &termArgsConst, TermWidget *toSplit)
 {
     QHash<QString,QVariant> termArgs(termArgsConst);
-    if (toSplit != NULL && !termArgs.contains(DBUS_ARG_WORKDIR))
+    if (toSplit != NULL && !termArgs.contains(QLatin1String(DBUS_ARG_WORKDIR)))
     {
-        termArgs[DBUS_ARG_WORKDIR] = QVariant(toSplit->impl()->workingDirectory());
+        termArgs[QLatin1String(DBUS_ARG_WORKDIR)] = QVariant(toSplit->impl()->workingDirectory());
     }
     return TerminalConfig::fromDbus(termArgs);
 }
@@ -89,14 +89,14 @@ static QString variantToString(QVariant variant, QString &defaultVal)
 
 TerminalConfig TerminalConfig::fromDbus(const QHash<QString,QVariant> &termArgs)
 {
-    QString wdir("");
+    QString wdir = QString();
     QString shell(Properties::Instance()->shell);
-    if (termArgs.contains(DBUS_ARG_WORKDIR))
+    if (termArgs.contains(QLatin1String(DBUS_ARG_WORKDIR)))
     {
-        wdir = variantToString(termArgs[DBUS_ARG_WORKDIR], wdir);
+        wdir = variantToString(termArgs[QLatin1String(DBUS_ARG_WORKDIR)], wdir);
     }
-    if (termArgs.contains(DBUS_ARG_SHELL)) {
-        shell = variantToString(termArgs[DBUS_ARG_SHELL], shell);
+    if (termArgs.contains(QLatin1String(DBUS_ARG_SHELL))) {
+        shell = variantToString(termArgs[QLatin1String(DBUS_ARG_SHELL)], shell);
     }
     return TerminalConfig(wdir, shell);
 }

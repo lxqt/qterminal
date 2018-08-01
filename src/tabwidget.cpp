@@ -226,10 +226,10 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
     QMenu menu(this);
     QMap< QString, QAction * > actions = findParent<MainWindow>(this)->leaseActions();
 
-    QAction *close = menu.addAction(QIcon::fromTheme("document-close"), tr("Close session"));
-    QAction *rename = menu.addAction(actions[RENAME_SESSION]->text());
-    QAction *changeColor = menu.addAction(QIcon::fromTheme("color-management"), tr("Change title color"));
-    rename->setShortcut(actions[RENAME_SESSION]->shortcut());
+    QAction *close = menu.addAction(QIcon::fromTheme(QStringLiteral("document-close")), tr("Close session"));
+    QAction *rename = menu.addAction(actions[QLatin1String(RENAME_SESSION)]->text());
+    QAction *changeColor = menu.addAction(QIcon::fromTheme(QStringLiteral("color-management")), tr("Change title color"));
+    rename->setShortcut(actions[QLatin1String(RENAME_SESSION)]->shortcut());
     rename->blockSignals(true);
 
     int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this,event->pos()));
