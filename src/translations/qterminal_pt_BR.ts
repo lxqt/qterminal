@@ -83,7 +83,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Limpar Terminal Ativo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Rename session</source>
-        <translation type="unfinished">Renomear sessão</translation>
+        <translation>Renomear sessão</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
@@ -203,12 +203,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">&amp;Preferências...</translation>
+        <translation>&amp;Preferências...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">&amp;Sair</translation>
+        <translation>&amp;Sair</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Habilitar Favoritos</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
@@ -270,22 +270,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="449"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Cursor Bloco</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="450"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Cursor Underline</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Cursor IBeam</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Forma do Cursor do Teclado</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
