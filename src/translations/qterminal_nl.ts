@@ -444,7 +444,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Verwijder nieuwe-regel-aanduidingen aan einde van geplakte tekst</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="513"/>
