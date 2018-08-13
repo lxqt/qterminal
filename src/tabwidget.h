@@ -35,21 +35,25 @@ class TabBar;
 class TermWidgetHolder;
 class QAction;
 class QActionGroup;
-
+class TabSwitcher;
 
 class TabWidget : public QTabWidget
 {
 Q_OBJECT
 public:
     TabWidget(QWidget* parent = 0);
+    ~TabWidget() override;
 
     TermWidgetHolder * terminalHolder();
 
     void showHideTabBar();
+    const QList<QWidget*>& history() const;
 
 public slots:
     int addNewTab(TerminalConfig cfg);
     void removeTab(int);
+    void switchTab(int);
+    void saveCurrentChanged(int);
     void removeCurrentTab();
     int switchToRight();
     int switchToLeft();
@@ -90,6 +94,8 @@ public slots:
     void preset2Vertical();
     void preset4Terminals();
 
+    void switchToNext();
+    void switchToPrev();
 signals:
     void closeTabNotification(bool);
     void tabRenameRequested(int);
@@ -116,6 +122,8 @@ private:
     void renameTabsAfterRemove();
 
     TabBar *mTabBar;
+    QScopedPointer<TabSwitcher> mSwitcher;
+    QList<QWidget*> mHistory;
 };
 
 #endif

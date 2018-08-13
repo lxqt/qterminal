@@ -28,6 +28,8 @@
 #define QUIT "Quit"
 #define PREFERENCES "Preferences..."
 
+#define TAB_PREV_HISTORY "Previous Tab in History"
+#define TAB_NEXT_HISTORY "Next Tab in History"
 #define TAB_NEXT "Next Tab"
 #define TAB_PREV "Previous Tab"
 
@@ -72,8 +74,10 @@
 // ACTIONS
 #define CLEAR_TERMINAL_SHORTCUT        "Ctrl+Shift+X"
 
-#define TAB_PREV_SHORTCUT	       "Ctrl+PgUp|Ctrl+Shift+Tab"
-#define TAB_NEXT_SHORTCUT	       "Ctrl+PgDown|Ctrl+Tab"
+#define TAB_PREV_HISTORY_SHORTCUT  "Ctrl+Tab"
+#define TAB_NEXT_HISTORY_SHORTCUT  "Ctrl+Shift+Tab"
+#define TAB_PREV_SHORTCUT	       "Ctrl+PgUp"
+#define TAB_NEXT_SHORTCUT	       "Ctrl+PgDown"
 #define SUB_BOTTOM_SHORTCUT	       "Alt+Down"
 #define SUB_TOP_SHORTCUT	       "Alt+Up"
 #define SUB_LEFT_SHORTCUT	       "Alt+Left"

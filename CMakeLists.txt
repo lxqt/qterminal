@@ -64,6 +64,7 @@ set(QTERM_SRC
     src/bookmarkswidget.cpp
     src/fontdialog.cpp
     src/dbusaddressable.cpp
+    src/tab-switcher.cpp
 )
 
 set(QTERM_MOC_SRC
@@ -76,6 +77,7 @@ set(QTERM_MOC_SRC
     src/propertiesdialog.h
     src/bookmarkswidget.h
     src/fontdialog.h
+    src/tab-switcher.h
 )
 
 

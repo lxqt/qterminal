@@ -185,6 +185,7 @@ void MainWindow::setup_Action(const char *name, QAction *action, const char *def
     for (const QString &sequenceString : sequences)
         shortcuts.append(QKeySequence::fromString(sequenceString));
     actions[QLatin1String(name)]->setShortcuts(shortcuts);
+    actions[QLatin1String(name)]->setShortcutContext(Qt::WidgetWithChildrenShortcut);
 
     if (receiver)
     {
@@ -220,6 +221,12 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     setup_Action(TAB_PREV, new QAction(QIcon::fromTheme(QStringLiteral("go-previous")), tr("&Previous Tab"), settingOwner),
                  TAB_PREV_SHORTCUT, consoleTabulator, SLOT(switchToLeft()), menu_Actions, data);
+
+    setup_Action(TAB_PREV_HISTORY, new QAction(tr("&Previous Tab in History"), settingOwner),
+                 TAB_PREV_HISTORY_SHORTCUT, consoleTabulator, SLOT(switchToPrev()), menu_Actions, data);
+
+    setup_Action(TAB_NEXT_HISTORY, new QAction(tr("&Next Tab in History"), settingOwner),
+                 TAB_NEXT_HISTORY_SHORTCUT, consoleTabulator, SLOT(switchToNext()), menu_Actions, data);
 
     setup_Action(MOVE_LEFT, new QAction(tr("Move Tab &Left"), settingOwner),
                  MOVE_LEFT_SHORTCUT, consoleTabulator, SLOT(moveLeft()), menu_Actions, data);
