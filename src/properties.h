@@ -69,8 +69,8 @@ class Properties
         bool hideTabBarWithOneTab;
         int m_motionAfterPaste;
 
-        bool limitTabWidth;
-        int limitTabWidthValue;
+        bool fixedTabWidth;
+        int fixedTabWidthValue;
 
         bool showCloseTabButton;
 

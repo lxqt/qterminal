@@ -20,8 +20,8 @@
 
 TabBar::TabBar(QWidget *parent)
     : QTabBar(parent),
-      mLimitWidth(false),
-      mLimitWidthValue(0)
+      mFixedWidth(false),
+      mFixedWidthValue(0)
 {
     // To make the selected tab text bold, first give a bold font to the tabbar
     // for QStyle::sizeFromContents(QStyle::CT_TabBarTab, ...) to make room
@@ -32,14 +32,14 @@ TabBar::TabBar(QWidget *parent)
     setStyleSheet(QStringLiteral("QTabBar::tab:!selected { font-weight: normal; }"));
 }
 
-void TabBar::setLimitWidth(bool limitWidth)
+void TabBar::setFixedWidth(bool fixedWidth)
 {
-    mLimitWidth = limitWidth;
+    mFixedWidth = fixedWidth;
 }
 
-void TabBar::setLimitWidthValue(int value)
+void TabBar::setFixedWidthValue(int value)
 {
-    mLimitWidthValue = value;
+    mFixedWidthValue = value;
 }
 
 void TabBar::updateWidth()
@@ -53,14 +53,14 @@ QSize TabBar::tabSizeHint(int index) const
 {
     QSize size = QTabBar::tabSizeHint(index);
 
-    // If the width is limited, use that for the width hint
-    if (mLimitWidth) {
+    // If the width is fixed, use that for the width hint
+    if (mFixedWidth) {
         if (shape() == QTabBar::RoundedEast || shape() == QTabBar::TriangularEast
             || shape() == QTabBar::RoundedWest || shape() == QTabBar::TriangularWest) {
-            size.setHeight(mLimitWidthValue);
+            size.setHeight(mFixedWidthValue);
         }
         else {
-            size.setWidth(mLimitWidthValue);
+            size.setWidth(mFixedWidthValue);
         }
     }
 

@@ -30,8 +30,8 @@ public:
 
     explicit TabBar(QWidget *parent);
 
-    void setLimitWidth(bool limitWidth);
-    void setLimitWidthValue(int value);
+    void setFixedWidth(bool fixedWidth);
+    void setFixedWidthValue(int value);
     void updateWidth();
 
 protected:
@@ -40,8 +40,8 @@ protected:
 
 private:
 
-    bool mLimitWidth;
-    int mLimitWidthValue;
+    bool mFixedWidth;
+    int mFixedWidthValue;
 };
 
 #endif // TABBAR_H
