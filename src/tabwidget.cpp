@@ -447,8 +447,8 @@ void TabWidget::propertiesChanged()
     setTabsClosable(Properties::Instance()->showCloseTabButton);
 
     // Update the tab widths
-    mTabBar->setLimitWidth(Properties::Instance()->limitTabWidth);
-    mTabBar->setLimitWidthValue(Properties::Instance()->limitTabWidthValue);
+    mTabBar->setFixedWidth(Properties::Instance()->fixedTabWidth);
+    mTabBar->setFixedWidthValue(Properties::Instance()->fixedTabWidthValue);
     mTabBar->updateWidth();
 }
 
