@@ -5,7 +5,7 @@ project(qterminal)
 include(GNUInstallDirs)
 
 # qterminal version
-set(STR_VERSION "0.9.0")
+set(QTERMINAL_VERSION "0.9.0")
 set(LXQTBT_MINIMUM_VERSION "0.5.0")
 set(QTERMWIDGET_MINIMUM_VERSION "0.9.0")
 
@@ -46,7 +46,7 @@ elseif(UNIX)
 endif()
 
 add_definitions(
-    -DSTR_VERSION=\"${STR_VERSION}\"
+    -DQTERMINAL_VERSION=\"${QTERMINAL_VERSION}\"
 )
 
 set(EXE_NAME qterminal)
@@ -146,12 +146,12 @@ if(APPLEBUNDLE)
 
     # create Info.plist file
     set(MACOSX_BUNDLE_ICON_FILE qterminal.icns)
-    set(MACOSX_BUNDLE_INFO_STRING "QTerminal ${STR_VERSION}")
+    set(MACOSX_BUNDLE_INFO_STRING "QTerminal ${QTERMINAL_VERSION}")
     set(MACOSX_BUNDLE_GUI_IDENTIFIER "com.qterminal")
-    set(MACOSX_BUNDLE_LONG_VERSION_STRING "${STR_VERSION}")
+    set(MACOSX_BUNDLE_LONG_VERSION_STRING "${QTERMINAL_VERSION}")
     set(MACOSX_BUNDLE_BUNDLE_NAME "${EXE_NAME}")
-    set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${STR_VERSION}")
-    set(MACOSX_BUNDLE_BUNDLE_VERSION "${STR_VERSION}")
+    set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${QTERMINAL_VERSION}")
+    set(MACOSX_BUNDLE_BUNDLE_VERSION "${QTERMINAL_VERSION}")
     set(MACOSX_BUNDLE_COPYRIGHT "(c) Petr Vanek &lt;petr@yarpen.cz&gt;")
 
     set_source_files_properties("${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns"
