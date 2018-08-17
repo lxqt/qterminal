@@ -255,7 +255,7 @@ void Properties::migrate_settings()
     // system used by kde and razor.
     QSettings settings;
     QString lastVersion = settings.value(QLatin1String("version"), QLatin1String("0.0.0")).toString();
-    QString currentVersion(QLatin1String(STR_VERSION));
+    QString currentVersion(QLatin1String(QTERMINAL_VERSION));
     if (currentVersion < lastVersion)
     {
         qDebug() << "Warning: Configuration file was written by a newer version "

@@ -52,7 +52,7 @@ QTerminalApp * QTerminalApp::m_instance = NULL;
 
 void print_usage_and_exit(int code)
 {
-    printf("QTerminal %s\n", STR_VERSION);
+    printf("QTerminal %s\n", QTERMINAL_VERSION);
     puts("Usage: qterminal [OPTION]...\n");
     puts("  -d,  --drop               Start in \"dropdown mode\" (like Yakuake or Tilda)");
     puts("  -e,  --execute <command>  Execute command instead of shell");
@@ -67,7 +67,7 @@ void print_usage_and_exit(int code)
 
 void print_version_and_exit(int code=0)
 {
-    printf("%s\n", STR_VERSION);
+    printf("%s\n", QTERMINAL_VERSION);
     exit(code);
 }
 
@@ -115,7 +115,7 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
 int main(int argc, char *argv[])
 {
     QApplication::setApplicationName(QStringLiteral("qterminal"));
-    QApplication::setApplicationVersion(QStringLiteral(STR_VERSION));
+    QApplication::setApplicationVersion(QStringLiteral(QTERMINAL_VERSION));
     QApplication::setOrganizationDomain(QStringLiteral("qterminal.org"));
 #if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
     QApplication::setDesktopFileName(QLatin1String("qterminal.desktop"));

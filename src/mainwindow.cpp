@@ -597,7 +597,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
 
 void MainWindow::actAbout_triggered()
 {
-    QMessageBox::about(this, QStringLiteral("QTerminal ") + QLatin1String(STR_VERSION), tr("A lightweight multiplatform terminal emulator"));
+    QMessageBox::about(this, QStringLiteral("QTerminal ") + QLatin1String(QTERMINAL_VERSION), tr("A lightweight multiplatform terminal emulator"));
 }
 
 void MainWindow::actProperties_triggered()
