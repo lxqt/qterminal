@@ -133,7 +133,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
         <source>Zoom rese&amp;t</source>
-        <translation>Zurückse&amp;tzen</translation>
+        <translation>Zoom zurückse&amp;tzen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="279"/>
@@ -479,7 +479,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>Entferne Zeilenumbrüche von eingefügtem Text</translation>
+        <translation>Entferne Zeilenumbrüche in eingefügtem Text</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="513"/>
