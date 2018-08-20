@@ -83,27 +83,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Очистить активный терминал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Верхний подтерминал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Нижний подтерминал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Л&amp;евый подтерминал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="252"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>П&amp;равый подтерминал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
@@ -158,7 +158,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Rename session</source>
-        <translation type="unfinished">Переименовать сессию</translation>
+        <translation>Переименовать сессию</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
@@ -203,12 +203,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">&amp;Настройки...</translation>
+        <translation>&amp;Настройки...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="342"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">&amp;Выход</translation>
+        <translation>&amp;Выход</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Показать закладки</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
@@ -270,22 +270,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="449"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Блок</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="450"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Нижнее подчеркивание</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;IBeam</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Форма курсора</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
@@ -419,52 +419,52 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Форма курсора</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Изменить заголовок окна на основе текущего терминала</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Изменить значок окна на основе текущего терминала</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished"></translation>
+        <translation>Включить поддержку двунаправленного текста</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
         <source>Background image:</source>
-        <translation type="unfinished"></translation>
+        <translation>Фоновое изображение:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбор</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>Показывать границы при изменении размера</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Limit tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Максимальная ширина вкладки:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
         <source>px</source>
-        <translation type="unfinished"></translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Отображать кнопку закрыть у каждой вкладки</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
@@ -479,12 +479,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="473"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation>Подтвердить вставку нескольких строк</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалять пустые строки в конце вставляемого текста</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="513"/>
@@ -519,17 +519,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="558"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>$TERM по умолчанию</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="572"/>
         <source>xterm</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation type="unfinished"></translation>
+        <translation>xterm-256color</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="649"/>
@@ -643,17 +643,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Блок</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Нижнее подчеркивание</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>IBeam</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
@@ -679,12 +679,12 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="283"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбрать фоновое изображение</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="284"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation type="unfinished"></translation>
+        <translation>Изображения (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="349"/>
@@ -697,7 +697,7 @@
     <message>
         <location filename="../termwidget.cpp" line="237"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>Подробнее...</translation>
     </message>
 </context>
 <context>
@@ -734,7 +734,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Выбрать цвет заголовка новой вкладки</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="229"/>
@@ -744,7 +744,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="231"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Сменить цвет заголовка</translation>
     </message>
 </context>
 <context>
@@ -765,12 +765,12 @@
     <message>
         <location filename="../termwidget.cpp" line="229"/>
         <source>Paste multiline text</source>
-        <translation type="unfinished"></translation>
+        <translation>Вставить многострочный текст</translation>
     </message>
     <message>
         <location filename="../termwidget.cpp" line="230"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы уверены, что хотите вставить данный текст?</translation>
     </message>
 </context>
 <context>
