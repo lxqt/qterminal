@@ -15,7 +15,7 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Terminal-Schriftart wählen</translation>
+        <translation>Terminalschriftart wählen</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>&quot;%1&quot; tippen, um das Terminal zu sehen.</translation>
+        <translation>Drücken Sie &quot;%1&quot;, um das Terminal zu sehen.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
@@ -88,12 +88,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Top Subterminal</source>
-        <translation>&amp;Oberes Terminal</translation>
+        <translation>&amp;Oberes Unterterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>&amp;Unteres Terminal</translation>
+        <translation>&amp;Unteres Unterterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="249"/>
@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Copy &amp;Selection</source>
-        <translation>Textau&amp;swahl kopieren</translation>
+        <translation>Au&amp;swahl kopieren</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
@@ -118,7 +118,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="265"/>
         <source>Paste S&amp;election</source>
-        <translation>Textauswahl &amp;einfügen</translation>
+        <translation>Auswahl &amp;einfügen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="268"/>
@@ -138,7 +138,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="279"/>
         <source>&amp;Find...</source>
-        <translation>&amp;Suchen...</translation>
+        <translation>&amp;Suchen…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="317"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Neue Registerkarte aus &amp;Vorlage</translation>
+        <translation>Neue Registerkarte von &amp;Voreinstellungen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="318"/>
@@ -213,7 +213,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;Verberge Fensterrahmen</translation>
+        <translation>Fensterrahmen &amp;ausblenden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="359"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="373"/>
         <source>Toggle Bookmarks</source>
-        <translation>Lesezeichen umschalten</translation>
+        <translation>Lesezeichen ein-/ausblenden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
@@ -280,12 +280,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="451"/>
         <source>&amp;IBeamCursor</source>
-        <translation>&amp;Lotstrich</translation>
+        <translation>&amp;DoppelT</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="468"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>&amp;Schreibmarkentyp</translation>
+        <translation>&amp;Tastatur Cursor From</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="558"/>
@@ -300,7 +300,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="568"/>
         <source>Are you sure you want to exit?</source>
-        <translation>QTerminal beenden?</translation>
+        <translation>Möchten Sie das Programm wirklich beenden?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="598"/>
@@ -318,7 +318,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="62"/>
         <source>Shortcuts</source>
-        <translation>Tastenkürzel</translation>
+        <translation>Tastenkombinationen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
@@ -384,12 +384,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="120"/>
         <source>Start with preset:</source>
-        <translation>Startvorlage:</translation>
+        <translation>Starte mit Vorlage:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="164"/>
         <source>None (single terminal)</source>
-        <translation>Keine (ein Terminal)</translation>
+        <translation>Keine (einzelnes Terminal)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="169"/>
@@ -414,7 +414,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation>Schreibmarkentyp</translation>
+        <translation>Tastatur Cursor Form</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
@@ -469,7 +469,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="463"/>
         <source>Action after paste</source>
-        <translation type="unfinished">Aktion nach Einfügen aus der Zwischenablage</translation>
+        <translation type="unfinished">Aktion nach dem Einfügen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="473"/>
@@ -586,7 +586,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="254"/>
         <source>&amp;Change...</source>
-        <translation>&amp;Ändern...</translation>
+        <translation>&amp;Ändern…</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="631"/>
@@ -653,7 +653,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
-        <translation>Lotstrich</translation>
+        <translation>DoppelT</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
@@ -668,7 +668,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
         <source>Move end</source>
-        <translation type="unfinished">An das Ende bewegen</translation>
+        <translation>Ans Ende bewegen</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
