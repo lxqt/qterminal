@@ -611,7 +611,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Sie können eine Datei für eigene Lesezeichen angeben. Das erlaubt einfachen Austausch mit Werkzeugen wie OwnCloud oder DropBox.</translation>
+        <translation>Sie können Ihre eigene Lesezeichendatei angeben. Dies erlaubt einfachen Austausch mit Werkzeugen wie OwnCloud oder DropBox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="96"/>
@@ -734,12 +734,12 @@
     <message>
         <location filename="../tabwidget.cpp" line="208"/>
         <source>Select new tab title color</source>
-        <translation>Wähle die Titelfarbe des neuen Reiters</translation>
+        <translation>Wähle die Titelfarbe der neuen Registerkarte</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="229"/>
         <source>Close session</source>
-        <translation>Sitzung schließen</translation>
+        <translation>Schließe Sitzung</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="231"/>
@@ -757,7 +757,7 @@
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>List of saved sessions:</source>
-        <translation>Liste der gespeicherten Sitzungen:</translation>
+        <translation>Liste gespeicherter Sitzungen:</translation>
     </message>
 </context>
 <context>
@@ -765,12 +765,12 @@
     <message>
         <location filename="../termwidget.cpp" line="229"/>
         <source>Paste multiline text</source>
-        <translation>Einfügen von mehrzeiligem Text</translation>
+        <translation>Mehrzeiligen Text einfügen</translation>
     </message>
     <message>
         <location filename="../termwidget.cpp" line="230"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation>Sind Sie sicher, dass dieser Text eingefügt werden soll?</translation>
+        <translation>Möchten Sie diesen Text tatsächlich einfügen?</translation>
     </message>
 </context>
 <context>
