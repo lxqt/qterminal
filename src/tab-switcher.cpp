@@ -48,16 +48,18 @@ QVariant AppModel::data(const QModelIndex &index, int role) const
 
 class AppItemDelegate: public QStyledItemDelegate
 {
+public:
+    AppItemDelegate(int frameWidth = 0, QWidget* parent = nullptr) :
+        QStyledItemDelegate(parent),
+        mParent(parent),
+        mFrameWidth(frameWidth) {}
+
 protected:
     void paint(QPainter * painter, const QStyleOptionViewItem & option, const QModelIndex & index) const override
     {
         QStyle *style = option.widget ? option.widget->style() : QApplication::style();
-        style->drawControl(QStyle::CE_ItemViewItem, &option, painter, option.widget);
 
         QString text = index.model()->data(index, static_cast<int>(AppRole::Display)).toString();
-
-        if (text.length() > m_maxTextWidth)
-            text = text.left(m_maxTextWidth)+QLatin1String("...");
 
         QStyleOptionViewItem opt = option;
         initStyleOption(&opt, index);
@@ -67,16 +69,22 @@ protected:
 
     QSize sizeHint(const QStyleOptionViewItem &option, const QModelIndex &index) const override
     {
-        QFontMetrics m(option.font);
-        QString text = index.model()->data(index, static_cast<int>(AppRole::Display)).toString();
+        QStyleOptionViewItem opt = option;
+        initStyleOption(&opt, index);
+        opt.decorationSize = QSize(0, 0);
+        opt.text = index.model()->data(index, static_cast<int>(AppRole::Display)).toString();;
+        const QWidget* widget = option.widget;
+        QStyle* style = widget ? widget->style() : QApplication::style();
+        QSize contSize = style->sizeFromContents(QStyle::CT_ItemViewItem, &opt, QSize(), widget);
 
-        if (text.length() > m_maxTextWidth)
-            text = text.left(m_maxTextWidth)+QLatin1String("...");
-
-        return QSize(10 + m.width(text), m.height()+4);
+        return QSize(
+            mParent ? qMin(mParent->width() - 2 * mFrameWidth, contSize.width()) : contSize.width(),
+            contSize.height()
+        );
     }
 private:
-    int m_maxTextWidth = 200;
+    QWidget* mParent;
+    int mFrameWidth;
 };
 
 // -----------------------------------------------------------------------------------------------------------
@@ -121,10 +129,14 @@ void TabSwitcher::showSwitcher()
             break;
     }
 
-    resize(w+contentsMargins().left()+contentsMargins().right(), h+contentsMargins().top()+contentsMargins().bottom());
+
+    w += 2 * frameWidth();
+    h += 2 * frameWidth();
+    resize(w, h);
 
     QPoint pos = m_tabs->mapToGlobal(m_tabs->geometry().topLeft());
-    move(pos.x()+m_tabs->geometry().width()/2 - width() / 2, pos.y()+m_tabs->geometry().height()/2 - height() / 2);
+    move(pos.x()+m_tabs->geometry().width()/2 - w / 2, pos.y()+m_tabs->geometry().height()/2 - h / 2);
+
     show();
 }
 
