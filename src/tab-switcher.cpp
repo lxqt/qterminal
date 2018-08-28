@@ -94,8 +94,7 @@ TabSwitcher::TabSwitcher(TabWidget* tabs):
     m_tabs(tabs)
 {
     setWindowFlags(Qt::Widget | Qt::Popup | Qt::WindowStaysOnTopHint);
-    setItemDelegate(new AppItemDelegate);
-    setContentsMargins(5, 5, 5, 5);
+    setItemDelegate(new AppItemDelegate(frameWidth(), tabs));
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
     m_timer = new QTimer(this);
