@@ -193,7 +193,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="337"/>
         <source>&amp;Close Tab</source>
-        <translation>Lap be&amp;csukás</translation>
+        <translation>Lap be&amp;zárása</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -749,7 +749,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="234"/>
         <source>Close session</source>
-        <translation>Menet bezárása</translation>
+        <translation>Munkamenet bezárása</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="236"/>
