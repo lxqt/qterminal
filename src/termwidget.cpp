@@ -82,6 +82,7 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
 
 void TermWidgetImpl::propertiesChanged()
 {
+    setMargin(Properties::Instance()->margin);
     setColorScheme(Properties::Instance()->colorScheme);
     setTerminalFont(Properties::Instance()->font);
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
@@ -97,7 +98,6 @@ void TermWidgetImpl::propertiesChanged()
         setHistorySize(-1);
     }
 
-    setMargin(Properties::Instance()->margin);
     setKeyBindings(Properties::Instance()->emulation);
     setTerminalOpacity(1.0 - Properties::Instance()->termTransparency/100.0);
     setTerminalBackgroundImage(Properties::Instance()->backgroundImage);
