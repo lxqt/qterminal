@@ -59,6 +59,7 @@ class Properties
 
         Sessions sessions;
 
+        int margin;
         int appTransparency;
         int termTransparency;
         QString backgroundImage;
