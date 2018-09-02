@@ -46,264 +46,274 @@
         <translation>Terminali görmek için &quot;%1&quot; e basın.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="211"/>
+        <location filename="../mainwindow.cpp" line="212"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>&amp;Aktif Terminali Temizle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="218"/>
+        <location filename="../mainwindow.cpp" line="219"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;Sonraki Sekme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="221"/>
+        <location filename="../mainwindow.cpp" line="222"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Önceki Sekme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="224"/>
+        <location filename="../mainwindow.cpp" line="225"/>
+        <source>&amp;Previous Tab in History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="228"/>
+        <source>&amp;Next Tab in History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="231"/>
         <source>Move Tab &amp;Left</source>
         <translation>Sekmeyi So&amp;la Al</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="227"/>
+        <location filename="../mainwindow.cpp" line="234"/>
         <source>Move Tab &amp;Right</source>
         <translation>Sekmeyi Sa&amp;ğa Al</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="232"/>
+        <location filename="../mainwindow.cpp" line="239"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>Terminali Yatay B&amp;öl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="242"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>Terminali Dike&amp;y Böl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="240"/>
+        <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;Subterminal Kapa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="243"/>
+        <location filename="../mainwindow.cpp" line="250"/>
         <source>&amp;Top Subterminal</source>
         <translation>&amp;Subterminal Üstte</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="246"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>&amp;Subterminal Altta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="256"/>
         <source>L&amp;eft Subterminal</source>
         <translation>&amp;Subterminal Solda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="252"/>
+        <location filename="../mainwindow.cpp" line="259"/>
         <source>R&amp;ight Subterminal</source>
         <translation>&amp;Subterminal Sağda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="259"/>
+        <location filename="../mainwindow.cpp" line="266"/>
         <source>Copy &amp;Selection</source>
         <translation>Seçimi &amp;Kopyala</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="269"/>
         <source>Paste Clip&amp;board</source>
         <translation>Panoyu Yap&amp;ıştır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="265"/>
+        <location filename="../mainwindow.cpp" line="272"/>
         <source>Paste S&amp;election</source>
         <translation>Seçimi &amp;Yapıştır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="268"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>Zoom &amp;in</source>
         <translation>Yakınla&amp;ştır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="271"/>
+        <location filename="../mainwindow.cpp" line="278"/>
         <source>Zoom &amp;out</source>
         <translation>Uzaklaşt&amp;ır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Zoom rese&amp;t</source>
         <translation>Günc&amp;el Boyut</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="286"/>
         <source>&amp;Find...</source>
         <translation>&amp;Bul...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>&amp;Save Session</source>
         <translation>Ot&amp;urumu Kaydet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="300"/>
         <source>&amp;Load Session</source>
         <translation>Oturu&amp;mu Yükle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="300"/>
+        <location filename="../mainwindow.cpp" line="307"/>
         <source>&amp;Toggle Menu</source>
         <translation>&amp;Geçiş Menüsü</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="312"/>
         <source>Rename session</source>
         <translation>Oturumu yeniden adlandır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="320"/>
         <source>&amp;New Tab</source>
         <translation>&amp;Yeni Sekme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="317"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Ön Ay&amp;arlı Yeni Sekme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
+        <location filename="../mainwindow.cpp" line="325"/>
         <source>1 &amp;Terminal</source>
         <translation>&amp;1 Terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="320"/>
+        <location filename="../mainwindow.cpp" line="327"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>Yatay &amp;2 Terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="329"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>Dike&amp;y 2 terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>4 Terminal&amp;s</source>
         <translation>&amp;4 Terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="337"/>
         <source>&amp;Close Tab</source>
         <translation>&amp;Sekmeyi Kapat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="333"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;New Window</source>
         <translation>&amp;Yeni Pencere</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="338"/>
+        <location filename="../mainwindow.cpp" line="345"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Tercihler...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="342"/>
+        <location filename="../mainwindow.cpp" line="349"/>
         <source>&amp;Quit</source>
         <translation>&amp;Çıkış</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="348"/>
+        <location filename="../mainwindow.cpp" line="355"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Pencere Kenarlıklarını Gizle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="359"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>&amp;Show Tab Bar</source>
         <translation>Sekme &amp;Çubuğunu Göster</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="367"/>
+        <location filename="../mainwindow.cpp" line="374"/>
         <source>Fullscreen</source>
         <translation>Tam Ekran</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="373"/>
+        <location filename="../mainwindow.cpp" line="380"/>
         <source>Toggle Bookmarks</source>
         <translation>Yer İşaretlerini Değiştir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="381"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>&amp;Bottom</source>
         <translation>&amp;Alt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="382"/>
+        <location filename="../mainwindow.cpp" line="389"/>
         <source>&amp;Top</source>
         <translation>&amp;Üst</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="383"/>
-        <location filename="../mainwindow.cpp" line="419"/>
+        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="426"/>
         <source>&amp;Right</source>
         <translation>Sa&amp;ğ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="384"/>
-        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="391"/>
+        <location filename="../mainwindow.cpp" line="427"/>
         <source>&amp;Left</source>
         <translation>So&amp;l</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="402"/>
+        <location filename="../mainwindow.cpp" line="409"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;Sekme Düzeni</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="425"/>
         <source>&amp;None</source>
         <translation>&amp;Hiçbiri</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="443"/>
         <source>S&amp;crollbar Layout</source>
         <translation>&amp;Kaydırma Çubuğu Düzeni</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="449"/>
+        <location filename="../mainwindow.cpp" line="456"/>
         <source>&amp;BlockCursor</source>
         <translation>&amp;Blok İmleç</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="450"/>
+        <location filename="../mainwindow.cpp" line="457"/>
         <source>&amp;UnderlineCursor</source>
         <translation>Altçiz&amp;gi İmleç</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="451"/>
+        <location filename="../mainwindow.cpp" line="458"/>
         <source>&amp;IBeamCursor</source>
         <translation>&amp;Işın İmleç</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="468"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Klavye İmleç Şekli</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="558"/>
+        <location filename="../mainwindow.cpp" line="566"/>
         <source>Exit QTerminal</source>
         <translation>QTerminalden Çık</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="560"/>
+        <location filename="../mainwindow.cpp" line="568"/>
         <source>Do not ask again</source>
         <translation>Tekrar Sorma</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="568"/>
+        <location filename="../mainwindow.cpp" line="576"/>
         <source>Are you sure you want to exit?</source>
         <translation>Çıkmak istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="598"/>
+        <location filename="../mainwindow.cpp" line="607"/>
         <source>A lightweight multiplatform terminal emulator</source>
         <translation>Hafif bir çok platformlu terminal öykünücüsü</translation>
     </message>
@@ -462,9 +472,8 @@
         <translation>Yeniden boyutlandırıldığında terminal boyutunu göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Limit tab width:</source>
-        <translation>Sekmesi genişliği sınırı:</translation>
+        <translation type="vanished">Sekmesi genişliği sınırı:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
@@ -578,6 +587,11 @@
         <translation>Başlangıçta göster</translation>
     </message>
     <message>
+        <location filename="../forms/propertiesdialog.ui" line="385"/>
+        <source>Fixed tab width:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../forms/propertiesdialog.ui" line="638"/>
         <source>Size</source>
         <translation>Boyut</translation>
@@ -672,22 +686,22 @@
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
-        <location filename="../propertiesdialog.cpp" line="200"/>
+        <location filename="../propertiesdialog.cpp" line="202"/>
         <source>System Default</source>
         <translation>Sistem Varsayılanı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="283"/>
+        <location filename="../propertiesdialog.cpp" line="285"/>
         <source>Choose a background image</source>
         <translation>Bir arka plan resmi seçin</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="284"/>
+        <location filename="../propertiesdialog.cpp" line="286"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>Resim (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="349"/>
+        <location filename="../propertiesdialog.cpp" line="351"/>
         <source>Open or create bookmarks file</source>
         <translation>Yerimleri dosyası aç ya da oluştur</translation>
     </message>
@@ -716,33 +730,33 @@
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="73"/>
-        <location filename="../tabwidget.cpp" line="219"/>
+        <location filename="../tabwidget.cpp" line="78"/>
+        <location filename="../tabwidget.cpp" line="224"/>
         <source>Shell No. %1</source>
         <translation>Kabuk No. %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="187"/>
+        <location filename="../tabwidget.cpp" line="192"/>
         <source>Tab name</source>
         <translation>Sekme adı</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="188"/>
+        <location filename="../tabwidget.cpp" line="193"/>
         <source>New tab name:</source>
         <translation>Yeni sekme adı:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="208"/>
+        <location filename="../tabwidget.cpp" line="213"/>
         <source>Select new tab title color</source>
         <translation>Yeni sekme başlık rengini seç</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="229"/>
+        <location filename="../tabwidget.cpp" line="234"/>
         <source>Close session</source>
         <translation>Oturumu kapat</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="231"/>
+        <location filename="../tabwidget.cpp" line="236"/>
         <source>Change title color</source>
         <translation>Başlık rengini değiştir</translation>
     </message>

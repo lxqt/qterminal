@@ -46,264 +46,274 @@
         <translation>Натисніть &quot;%1&quot; щоб бачити термінал.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="218"/>
+        <location filename="../mainwindow.cpp" line="219"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;Наступна вкладка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="221"/>
+        <location filename="../mainwindow.cpp" line="222"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Попередня вкладка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="224"/>
+        <location filename="../mainwindow.cpp" line="231"/>
         <source>Move Tab &amp;Left</source>
         <translation>Пере&amp;сунути вкладку вліво</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="227"/>
+        <location filename="../mainwindow.cpp" line="234"/>
         <source>Move Tab &amp;Right</source>
         <translation>Пересу&amp;нути вкладку вправо</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="232"/>
+        <location filename="../mainwindow.cpp" line="239"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>Розділити термінал &amp;горизонтально</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="242"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>Розділити термінал &amp;вертикально</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="240"/>
+        <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;Закрити підтермінал</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="211"/>
+        <location filename="../mainwindow.cpp" line="212"/>
         <source>&amp;Clear Active Terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="243"/>
+        <location filename="../mainwindow.cpp" line="225"/>
+        <source>&amp;Previous Tab in History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="228"/>
+        <source>&amp;Next Tab in History</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="250"/>
         <source>&amp;Top Subterminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="246"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Bottom Subterminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="256"/>
         <source>L&amp;eft Subterminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="252"/>
+        <location filename="../mainwindow.cpp" line="259"/>
         <source>R&amp;ight Subterminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="259"/>
+        <location filename="../mainwindow.cpp" line="266"/>
         <source>Copy &amp;Selection</source>
         <translation>&amp;Скопіювати вибране</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="269"/>
         <source>Paste Clip&amp;board</source>
         <translation>В&amp;ставити з буферу</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="265"/>
+        <location filename="../mainwindow.cpp" line="272"/>
         <source>Paste S&amp;election</source>
         <translation>&amp;Вкласти вибране</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="268"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>Zoom &amp;in</source>
         <translation>Збі&amp;льшити</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="271"/>
+        <location filename="../mainwindow.cpp" line="278"/>
         <source>Zoom &amp;out</source>
         <translation>Зме&amp;ншити</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Zoom rese&amp;t</source>
         <translation>Відмінити з&amp;міну</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="286"/>
         <source>&amp;Find...</source>
         <translation>&amp;Знайти...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>&amp;Save Session</source>
         <translation>&amp;Зберегти сесію</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="300"/>
         <source>&amp;Load Session</source>
         <translation>Заван&amp;таження сесії</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="300"/>
+        <location filename="../mainwindow.cpp" line="307"/>
         <source>&amp;Toggle Menu</source>
         <translation>&amp;Перемикання меню</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="312"/>
         <source>Rename session</source>
         <translation>Перейменувати сесію</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="320"/>
         <source>&amp;New Tab</source>
         <translation>Нова вкла&amp;дка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="317"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Нова ти&amp;пова вкладка</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
+        <location filename="../mainwindow.cpp" line="325"/>
         <source>1 &amp;Terminal</source>
         <translation>1 &amp;Термінал</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="320"/>
+        <location filename="../mainwindow.cpp" line="327"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 &amp;Горизонтальні термінали</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="329"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 &amp;Вертикальні термінали</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 Т&amp;ермінали</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="337"/>
         <source>&amp;Close Tab</source>
         <translation>Закрити вкладк&amp;у</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="333"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;New Window</source>
         <translation>&amp;Нове вікно</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="338"/>
+        <location filename="../mainwindow.cpp" line="345"/>
         <source>&amp;Preferences...</source>
         <translation type="unfinished">&amp;Параметри...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="342"/>
+        <location filename="../mainwindow.cpp" line="349"/>
         <source>&amp;Quit</source>
         <translation type="unfinished">&amp;Закінчити</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="348"/>
+        <location filename="../mainwindow.cpp" line="355"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Приховати межі вікна</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="359"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>&amp;Show Tab Bar</source>
         <translation>П&amp;оказати панель вкладок</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="367"/>
+        <location filename="../mainwindow.cpp" line="374"/>
         <source>Fullscreen</source>
         <translation>Повний екран</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="373"/>
+        <location filename="../mainwindow.cpp" line="380"/>
         <source>Toggle Bookmarks</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="381"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>&amp;Bottom</source>
         <translation>&amp;Внизу</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="382"/>
+        <location filename="../mainwindow.cpp" line="389"/>
         <source>&amp;Top</source>
         <translation>Вв&amp;ерху</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="383"/>
-        <location filename="../mainwindow.cpp" line="419"/>
+        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="426"/>
         <source>&amp;Right</source>
         <translation>&amp;Справа</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="384"/>
-        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="391"/>
+        <location filename="../mainwindow.cpp" line="427"/>
         <source>&amp;Left</source>
         <translation>З&amp;ліва</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="402"/>
+        <location filename="../mainwindow.cpp" line="409"/>
         <source>&amp;Tabs Layout</source>
         <translation>Розклад&amp;ка вкладок</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="418"/>
+        <location filename="../mainwindow.cpp" line="425"/>
         <source>&amp;None</source>
         <translation>Нічог&amp;о</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="443"/>
         <source>S&amp;crollbar Layout</source>
         <translation>Розкладка про&amp;крутки</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="449"/>
+        <location filename="../mainwindow.cpp" line="456"/>
         <source>&amp;BlockCursor</source>
         <translation>&amp;Блокований курсор</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="450"/>
+        <location filename="../mainwindow.cpp" line="457"/>
         <source>&amp;UnderlineCursor</source>
         <translation>&amp;Підкреслений курсор</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="451"/>
+        <location filename="../mainwindow.cpp" line="458"/>
         <source>&amp;IBeamCursor</source>
         <translation>Пу&amp;льсуючий курсор</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="468"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Форма курсору клавіатури</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="558"/>
+        <location filename="../mainwindow.cpp" line="566"/>
         <source>Exit QTerminal</source>
         <translation>Вийти з QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="560"/>
+        <location filename="../mainwindow.cpp" line="568"/>
         <source>Do not ask again</source>
         <translation>Не запитувати знову</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="568"/>
+        <location filename="../mainwindow.cpp" line="576"/>
         <source>Are you sure you want to exit?</source>
         <translation>Ви дійсно бажаєте вийти?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="598"/>
+        <location filename="../mainwindow.cpp" line="607"/>
         <source>A lightweight multiplatform terminal emulator</source>
         <translation>Легкий багатоплатформний емулятор терміналу</translation>
     </message>
@@ -464,7 +474,7 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
-        <source>Limit tab width:</source>
+        <source>Fixed tab width:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -672,22 +682,22 @@
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
-        <location filename="../propertiesdialog.cpp" line="200"/>
+        <location filename="../propertiesdialog.cpp" line="202"/>
         <source>System Default</source>
         <translation>Типові системні налаштування</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="283"/>
+        <location filename="../propertiesdialog.cpp" line="285"/>
         <source>Choose a background image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="284"/>
+        <location filename="../propertiesdialog.cpp" line="286"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="349"/>
+        <location filename="../propertiesdialog.cpp" line="351"/>
         <source>Open or create bookmarks file</source>
         <translation>Відкрити або створити файл закладки</translation>
     </message>
@@ -716,33 +726,33 @@
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="73"/>
-        <location filename="../tabwidget.cpp" line="219"/>
+        <location filename="../tabwidget.cpp" line="78"/>
+        <location filename="../tabwidget.cpp" line="224"/>
         <source>Shell No. %1</source>
         <translation>Shell №. %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="187"/>
+        <location filename="../tabwidget.cpp" line="192"/>
         <source>Tab name</source>
         <translation>Назва вкладки</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="188"/>
+        <location filename="../tabwidget.cpp" line="193"/>
         <source>New tab name:</source>
         <translation>Назва нової вкладки:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="208"/>
+        <location filename="../tabwidget.cpp" line="213"/>
         <source>Select new tab title color</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="229"/>
+        <location filename="../tabwidget.cpp" line="234"/>
         <source>Close session</source>
         <translation>Закрити сесію</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="231"/>
+        <location filename="../tabwidget.cpp" line="236"/>
         <source>Change title color</source>
         <translation type="unfinished"></translation>
     </message>
