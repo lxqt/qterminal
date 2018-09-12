@@ -88,12 +88,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>הלשונית ה&amp;קודמת בהיסטוריה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>הלשונית ה&amp;באה בהיסטוריה</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>רוחב לשונית קבוע:</translation>
     </message>
     <message>
         <source>Limit tab width:</source>
