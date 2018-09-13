@@ -97,7 +97,7 @@ void Properties::loadSettings()
     }
     m_settings->endArray();
 
-    margin = m_settings->value(QLatin1String("TerminalMargin"), 0).toInt();
+    terminalMargin = m_settings->value(QLatin1String("TerminalMargin"), 0).toInt();
 
     appTransparency = m_settings->value(QLatin1String("MainWindow/ApplicationTransparency"), 0).toInt();
     termTransparency = m_settings->value(QLatin1String("TerminalTransparency"), 0).toInt();
@@ -204,7 +204,7 @@ void Properties::saveSettings()
     m_settings->endArray();
 
     m_settings->setValue(QLatin1String("MainWindow/ApplicationTransparency"), appTransparency);
-    m_settings->setValue(QLatin1String("TerminalMargin"), margin);
+    m_settings->setValue(QLatin1String("TerminalMargin"), terminalMargin);
     m_settings->setValue(QLatin1String("TerminalTransparency"), termTransparency);
     m_settings->setValue(QLatin1String("TerminalBackgroundImage"), backgroundImage);
     m_settings->setValue(QLatin1String("ScrollbarPosition"), scrollBarPos);

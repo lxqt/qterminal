@@ -136,7 +136,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     setFontSample(Properties::Instance()->font);
 
-    marginSpinBox->setValue(Properties::Instance()->margin);
+    terminalMarginSpinBox->setValue(Properties::Instance()->terminalMargin);
 
     appTransparencyBox->setValue(Properties::Instance()->appTransparency);
 
@@ -212,7 +212,7 @@ void PropertiesDialog::apply()
                 :
             Properties::Instance()->appTransparency = appTransparencyBox->value();
 
-    Properties::Instance()->margin = marginSpinBox->value();
+    Properties::Instance()->terminalMargin = terminalMarginSpinBox->value();
     Properties::Instance()->termTransparency = termTransparencyBox->value();
     Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
     Properties::Instance()->showTerminalSizeHint = showTerminalSizeHintCheckBox->isChecked();

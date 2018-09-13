@@ -82,7 +82,7 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
 
 void TermWidgetImpl::propertiesChanged()
 {
-    setMargin(Properties::Instance()->margin);
+    setMargin(Properties::Instance()->terminalMargin);
     setColorScheme(Properties::Instance()->colorScheme);
     setTerminalFont(Properties::Instance()->font);
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
