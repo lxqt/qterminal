@@ -165,7 +165,7 @@ int main(int argc, char *argv[])
     QTranslator translator;
 #ifdef TRANSLATIONS_DIR
     qDebug() << "TRANSLATIONS_DIR: Loading translation file" << fname << "from dir" << TRANSLATIONS_DIR;
-    qDebug() << "load success:" << translator.load(fname, QString::fromUtf8(TRANSLATIONS_DIR), QStringLiteral("+"));
+    qDebug() << "load success:" << translator.load(fname, QString::fromUtf8(TRANSLATIONS_DIR), QStringLiteral("_"));
 #endif
 #ifdef APPLE_BUNDLE
     qDebug() << "APPLE_BUNDLE: Loading translator file" << fname << "from dir" << QApplication::applicationDirPath()+"../translations";
