@@ -88,12 +88,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Poprzednia karta w historii</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Następna karta w historii</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stała szerokość kart:</translation>
     </message>
     <message>
         <source>Limit tab width:</source>
