@@ -478,7 +478,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="463"/>
         <source>Action after paste</source>
-        <translation type="unfinished">Aktion nach dem Einfügen</translation>
+        <translation>Aktion nach dem Einfügen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="473"/>
@@ -554,7 +554,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="722"/>
         <source>Edit bookmark file contents</source>
-        <translation>Lesezeichendatei bearbeiten</translation>
+        <translation>Lesezeichendateiinhalt bearbeiten</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="744"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="254"/>
         <source>&amp;Change...</source>
-        <translation>&amp;Ändern…</translation>
+        <translation>&amp;Ändern...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
@@ -672,7 +672,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
         <source>No move</source>
-        <translation type="unfinished">Verbleiben</translation>
+        <translation type="unfinished">Kein Verschieben</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
