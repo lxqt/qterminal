@@ -15,7 +15,7 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Selecione o tipo de fonte</translation>
+        <translation>Selecione Fonte do Terminal</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
@@ -78,7 +78,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Recolher subterminal</translation>
+        <translation>&amp;Colapsar subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="212"/>
