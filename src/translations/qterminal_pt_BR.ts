@@ -460,7 +460,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
         <source>Background image:</source>
-        <translation>Imagem de fundo</translation>
+        <translation>Imagem de fundo:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
