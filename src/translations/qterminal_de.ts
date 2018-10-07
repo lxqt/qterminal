@@ -424,7 +424,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Keyboard cursor shape</source>
-        <translation>Tastatur Cursor Form</translation>
+        <translation>Form des Tastaturcursors</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
