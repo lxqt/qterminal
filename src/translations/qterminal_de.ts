@@ -88,12 +88,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vorherige Registerkarte im Verlauf</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Nächste Registerkarte im Verlauf</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
@@ -672,12 +672,12 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
         <source>No move</source>
-        <translation type="unfinished">Kein Verschieben</translation>
+        <translation>Kein Verschieben</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
         <source>Move start</source>
-        <translation type="unfinished">An den Anfang bewegen</translation>
+        <translation>An den Anfang bewegen</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
