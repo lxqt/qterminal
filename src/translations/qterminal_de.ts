@@ -554,7 +554,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="722"/>
         <source>Edit bookmark file contents</source>
-        <translation>Lesezeichendateiinhalt bearbeiten</translation>
+        <translation>Inhalt der Lesezeichendatei bearbeiten</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="744"/>
