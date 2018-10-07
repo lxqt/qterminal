@@ -290,7 +290,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="458"/>
         <source>&amp;IBeamCursor</source>
-        <translation>&amp;DoppelT</translation>
+        <translation>&amp;Senkrechter Strich</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="475"/>
@@ -600,7 +600,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Feste Reiterbreite:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="631"/>
@@ -667,7 +667,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="113"/>
         <source>IBeamCursor</source>
-        <translation>DoppelT</translation>
+        <translation>Senkrechter Strich</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="125"/>
@@ -753,7 +753,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="234"/>
         <source>Close session</source>
-        <translation>Schließe Sitzung</translation>
+        <translation>Sitzung schließen</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="236"/>
@@ -784,7 +784,7 @@
     <message>
         <location filename="../termwidget.cpp" line="230"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation>Möchten Sie diesen Text tatsächlich einfügen?</translation>
+        <translation>Möchten Sie diesen Text wirklich einfügen?</translation>
     </message>
 </context>
 <context>
