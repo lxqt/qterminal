@@ -738,12 +738,12 @@
     <message>
         <location filename="../tabwidget.cpp" line="192"/>
         <source>Tab name</source>
-        <translation>Reiterbezeichnung</translation>
+        <translation>Registerkartenname</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="193"/>
         <source>New tab name:</source>
-        <translation>Neue Reiterbezeichnung:</translation>
+        <translation>Neuer Registerkartenname:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="213"/>
