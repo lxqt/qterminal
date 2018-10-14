@@ -1,5 +1,9 @@
-cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
-
+cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
+# CMP0000: Call the cmake_minimum_required() command at the beginning of the top-level
+# CMakeLists.txt file even before calling the project() command.
+# The cmake_minimum_required(VERSION) command implicitly invokes the cmake_policy(VERSION)
+# command to specify that the current project code is written for the given range of CMake
+# versions.
 project(qterminal)
 
 include(GNUInstallDirs)
@@ -11,18 +15,13 @@ set(QTERMWIDGET_MINIMUM_VERSION "0.9.0")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
-if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE Release)
-endif()
-
 # we need qpa/qplatformnativeinterface.h for global shortcut
 find_package(Qt5Gui REQUIRED)
 find_package(Qt5Widgets REQUIRED)
 find_package(Qt5LinguistTools REQUIRED)
-if(APPLE)
-elseif(UNIX)
+if(UNIX)
     find_package(Qt5X11Extras REQUIRED)
-    find_package(Qt5DBus)
+    find_package(Qt5DBus REQUIRED)
 endif()
 find_package(QTermWidget5 ${QTERMWIDGET_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
