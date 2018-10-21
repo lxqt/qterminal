@@ -21,7 +21,6 @@
 #include <QDebug>
 #include <QStyleFactory>
 #include <QFileDialog>
-#include <QKeySequenceEdit>
 
 #include "propertiesdialog.h"
 #include "properties.h"
@@ -38,17 +37,23 @@ QWidget* Delegate::createEditor(QWidget *parent,
                                 const QStyleOptionViewItem& /*option*/,
                                 const QModelIndex& /*index*/) const
 {
-    return new QKeySequenceEdit (parent);
+    return new KeySequenceEdit(parent);
 }
 
 bool Delegate::eventFilter(QObject *object, QEvent *event)
 {
-    QWidget *editor = qobject_cast<QWidget*>(object);
+    KeySequenceEdit *editor = qobject_cast<KeySequenceEdit*>(object);
     if (editor && event->type() == QEvent::KeyPress) {
-        int k = static_cast<QKeyEvent *>(event)->key();
+        QKeyEvent *ke = static_cast<QKeyEvent *>(event);
+        int k = ke->key();
         if (k == Qt::Key_Return || k == Qt::Key_Enter) {
             emit QAbstractItemDelegate::commitData(editor);
             emit QAbstractItemDelegate::closeEditor(editor);
+            return true;
+        }
+        // treat Tab and Backtab like other keys
+        else if(k == Qt::Key_Tab || k ==  Qt::Key_Backtab) {
+            editor->pressKey(ke);
             return true;
         }
     }
