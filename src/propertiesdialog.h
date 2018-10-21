@@ -20,7 +20,21 @@
 #define PROPERTIESDIALOG_H
 
 #include <QStyledItemDelegate>
+#include <QKeySequenceEdit>
 #include "ui_propertiesdialog.h"
+
+class KeySequenceEdit : public QKeySequenceEdit
+{
+    Q_OBJECT
+
+public:
+    KeySequenceEdit(QWidget *parent = nullptr) : QKeySequenceEdit(parent) {}
+
+    // to be used with Tab and Backtab
+    void pressKey(QKeyEvent *event) {
+        QKeySequenceEdit::keyPressEvent(event);
+    }
+};
 
 class Delegate : public QStyledItemDelegate
 {
@@ -56,7 +70,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
     private slots:
         void apply();
         void accept();
-        
+
         void changeFontButton_clicked();
         void chooseBackgroundImageButton_clicked();
         void bookmarksButton_clicked();
