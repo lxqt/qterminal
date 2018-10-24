@@ -733,7 +733,7 @@
         <location filename="../tabwidget.cpp" line="78"/>
         <location filename="../tabwidget.cpp" line="224"/>
         <source>Shell No. %1</source>
-        <translation>Shell nº %1</translation>
+        <translation>Shell núm. %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="192"/>
