@@ -191,9 +191,10 @@ void TabWidget::onTermTitleChanged(QString title, QString icon)
 void TabWidget::renameSession(int index)
 {
     bool ok = false;
+    QString currentSessionName(tabText(index)); // saves a copy of the current title
     QString text = QInputDialog::getText(this, tr("Tab name"),
                                         tr("New tab name:"), QLineEdit::Normal,
-                                        QString(), &ok);
+                                        currentSessionName, &ok);
     if(ok && !text.isEmpty())
     {
         setTabIcon(index, QIcon{});
