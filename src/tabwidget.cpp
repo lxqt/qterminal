@@ -22,8 +22,6 @@
 #include <QMouseEvent>
 #include <QMenu>
 
-#include <iostream>
-
 #include "mainwindow.h"
 #include "termwidgetholder.h"
 #include "tabbar.h"
