@@ -40,7 +40,7 @@ Properties::Properties(const QString& filename)
     if (filename.isEmpty())
         m_settings = new QSettings();
     else
-        m_settings = new QSettings(filename);
+        m_settings = new QSettings(filename, QSettings::IniFormat);
     qDebug("Properties constructor called");
 }
 
@@ -48,7 +48,7 @@ Properties::~Properties()
 {
     qDebug("Properties destructor called");
     delete m_settings;
-    m_instance = 0;
+    m_instance = NULL;
 }
 
 QFont Properties::defaultFont()
