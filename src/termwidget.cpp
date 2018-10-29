@@ -82,7 +82,7 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
 
 void TermWidgetImpl::propertiesChanged()
 {
-    setMargin(Properties::Instance()->terminalMargin);
+//    setMargin(Properties::Instance()->terminalMargin);
     setColorScheme(Properties::Instance()->colorScheme);
     setTerminalFont(Properties::Instance()->font);
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
@@ -138,7 +138,7 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
     QMenu menu;
     QMap<QString, QAction*> actions = findParent<MainWindow>(this)->leaseActions();
 
-    QList<QAction*> extraActions = filterActions(pos, &menu);
+    QList<QAction*> extraActions = filterActions(pos); //, &menu);
     for (auto& action : extraActions)
     {
         menu.addAction(action);
