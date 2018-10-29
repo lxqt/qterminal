@@ -22,6 +22,8 @@
 #include <QMouseEvent>
 #include <QMenu>
 
+#include <iostream>
+
 #include "mainwindow.h"
 #include "termwidgetholder.h"
 #include "tabbar.h"
@@ -197,7 +199,7 @@ void TabWidget::renameSession(int index)
         setTabIcon(index, QIcon{});
         setTabText(index, text);
         widget(index)->setProperty(TAB_CUSTOM_NAME_PROPERTY, true);
-        if (currentIndex() == index)
+        if (currentIndex() == index) 
             emit currentTitleChanged(index);
     }
 }
@@ -228,6 +230,10 @@ void TabWidget::renameTabsAfterRemove()
 
 void TabWidget::contextMenuEvent(QContextMenuEvent *event)
 {
+    int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this,event->pos()));
+    if (widget(tabIndex) == NULL) // did the user click on a tab
+        return;                   // if not return
+
     QMenu menu(this);
     QMap< QString, QAction * > actions = findParent<MainWindow>(this)->leaseActions();
 
@@ -237,7 +243,6 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
     rename->setShortcut(actions[QLatin1String(RENAME_SESSION)]->shortcut());
     rename->blockSignals(true);
 
-    int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this,event->pos()));
     QAction *action = menu.exec(event->globalPos());
     if (action == close) {
         emit tabCloseRequested(tabIndex);
