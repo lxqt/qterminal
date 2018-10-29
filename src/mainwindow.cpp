@@ -637,6 +637,8 @@ void MainWindow::propertiesChanged()
 
     onCurrentTitleChanged(consoleTabulator->currentIndex());
 
+    qputenv("TERM", Properties::Instance()->term.toLatin1());
+
     realign();
 }
 

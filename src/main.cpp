@@ -135,8 +135,6 @@ int main(int argc, char *argv[])
     Properties::Instance()->migrate_settings();
     Properties::Instance()->loadSettings();
 
-    qputenv("TERM", Properties::Instance()->term.toLatin1());
-
     if (workdir.isEmpty())
         workdir = QDir::currentPath();
     app->setWorkingDirectory(workdir);
