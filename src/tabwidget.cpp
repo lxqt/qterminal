@@ -230,8 +230,8 @@ void TabWidget::renameTabsAfterRemove()
 void TabWidget::contextMenuEvent(QContextMenuEvent *event)
 {
     int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this,event->pos()));
-    if (widget(tabIndex) == NULL) // did the user click on a tab
-        return;                   // if not return
+    if (tabIndex == -1) // did the user click on a tab?
+        return;         // if not return
 
     QMenu menu(this);
     QMap< QString, QAction * > actions = findParent<MainWindow>(this)->leaseActions();
