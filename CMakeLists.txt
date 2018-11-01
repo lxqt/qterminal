@@ -5,9 +5,9 @@ project(qterminal)
 include(GNUInstallDirs)
 
 # qterminal version
-set(QTERMINAL_VERSION "0.9.0")
+set(QTERMINAL_VERSION "0.14.0")
 set(LXQTBT_MINIMUM_VERSION "0.5.0")
-set(QTERMWIDGET_MINIMUM_VERSION "0.9.0")
+set(QTERMWIDGET_MINIMUM_VERSION "0.14.0")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
