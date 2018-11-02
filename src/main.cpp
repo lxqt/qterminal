@@ -57,7 +57,7 @@ void print_usage_and_exit(int code)
     puts("  -d,  --drop               Start in \"dropdown mode\" (like Yakuake or Tilda)");
     puts("  -e,  --execute <command>  Execute command instead of shell");
     puts("  -h,  --help               Print this help");
-    puts("  -p,  --profile            Load qterminal with specific options");
+    puts("  -p,  --profile <file>     Load qterminal with specific options from an ini file");
     puts("  -v,  --version            Prints application version and exits");
     puts("  -w,  --workdir <dir>      Start session with specified work directory");
     puts("\nHomepage: <https://github.com/lxqt/qterminal>");
@@ -99,7 +99,9 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
                 dropMode = true;
                 break;
             case 'p':
-                Properties::Instance(QString::fromLocal8Bit(optarg));
+                Properties* p = Properties::Instance(QString::fromLocal8Bit(optarg));
+		if (p == nullptr)
+                    print_usage_and_exit(1);
                 break;
             case '?':
                 print_usage_and_exit(1);

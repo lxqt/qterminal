@@ -24,11 +24,13 @@
 #include "mainwindow.h"
 #include "qterminalapp.h"
 
-Properties * Properties::m_instance = 0;
+Properties * Properties::m_instance = nullptr;
 
 
 Properties * Properties::Instance(const QString& filename)
 {
+    if (!filename->endsWith(QString(".ini"), Qt::CaseInsensitive)
+        return m_instance;
     if (!m_instance)
         m_instance = new Properties(filename);
     return m_instance;
