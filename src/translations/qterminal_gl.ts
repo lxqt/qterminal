@@ -148,7 +148,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
         <source>&amp;Find...</source>
-        <translation>&amp;Buscar...</translation>
+        <translation>&amp;Atopar...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
@@ -616,7 +616,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="766"/>
         <source>Find...</source>
-        <translation>Buscar...</translation>
+        <translation>Atopar...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
