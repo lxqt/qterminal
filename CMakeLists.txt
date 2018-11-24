@@ -10,18 +10,22 @@ include(GNUInstallDirs)
 
 # qterminal version
 set(QTERMINAL_VERSION "0.14.0")
-set(LXQTBT_MINIMUM_VERSION "0.5.0")
-set(QTERMWIDGET_MINIMUM_VERSION "0.14.0")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
 # we need qpa/qplatformnativeinterface.h for global shortcut
-find_package(Qt5Gui REQUIRED)
-find_package(Qt5Widgets REQUIRED)
-find_package(Qt5LinguistTools REQUIRED)
+
+# Minimum Versions
+set(LXQTBT_MINIMUM_VERSION "0.6.0")
+set(QTERMWIDGET_MINIMUM_VERSION "0.14.0")
+set(QT_MINIMUM_VERSION "5.7.1")
+
+find_package(Qt5Gui ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt5Widgets ${QT_MINIMUM_VERSION} REQUIRED)
 if(UNIX)
-    find_package(Qt5X11Extras REQUIRED)
-    find_package(Qt5DBus REQUIRED)
+    find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
+    find_package(Qt5X11Extras ${QT_MINIMUM_VERSION} REQUIRED)
 endif()
 find_package(QTermWidget5 ${QTERMWIDGET_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
@@ -78,7 +82,6 @@ set(QTERM_MOC_SRC
     src/fontdialog.h
     src/tab-switcher.h
 )
-
 
 if (Qt5DBus_FOUND)
     add_definitions(-DHAVE_QDBUS)
