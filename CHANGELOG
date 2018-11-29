@@ -4,14 +4,14 @@ qterminal-0.14.0 / 2018-12-01
 
   * Bumped version to 0.14.0
     The big bump was needed to prevent conflicts with translations that
-    was former built out of lxqt-l10n and have version 0.13.0
+    were former built out of lxqt-l10n and have version 0.13.0
   * New implemented:
     - Added terminal margins
-    - Added tab switching
+    - Added history-based tab switching
   * Implementation fixes:
-    - main: Fixed translation loading 
+    - main: Fixed translation loading
     - propertiesdialog: Smaller settings dialog
-    - propertiesdialog:  Prevent TAB from changing focus in shortcut editor
+    - propertiesdialog: Prevent TAB from changing focus in shortcut editor
     - termwidget: Adapt API changes in qtermwidget
     - Suppress compilation warnings
     - Don't use automatic string conversions
