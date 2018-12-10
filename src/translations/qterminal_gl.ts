@@ -78,7 +78,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Colapsar o subterminal</translation>
+        <translation>&amp;Recoller o subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="212"/>
@@ -178,7 +178,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Nova lapela dende &amp;prestabelecidos</translation>
+        <translation>Nova lapela dende &amp;preestabelecidos</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
@@ -300,7 +300,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="566"/>
         <source>Exit QTerminal</source>
-        <translation>Saír de QTerminal</translation>
+        <translation>Saír do QTerminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="568"/>
@@ -369,7 +369,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="120"/>
         <source>Start with preset:</source>
-        <translation>Iniciar co prestabelecido:</translation>
+        <translation>Iniciar co preestabelecido:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="136"/>
@@ -617,7 +617,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Pode especificar a localización do seu propio ficheiro de marcadores. isto permítelle compartir marcadores facilmente con ferramentas como OwnCloud ou Dropbox.</translation>
+        <translation>Pode especificar a localización do seu propio ficheiro de marcadores. isto permítelle compartir marcadores facilmente con ferramentas como Nextcloud ou Dropbox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="101"/>
