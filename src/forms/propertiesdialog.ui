@@ -586,12 +586,12 @@
             </property>
             <item>
              <property name="text">
-              <string>xterm</string>
+              <string notr="true">xterm</string>
              </property>
             </item>
             <item>
              <property name="text">
-              <string>xterm-256color</string>
+              <string notr="true">xterm-256color</string>
              </property>
             </item>
            </widget>
