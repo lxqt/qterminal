@@ -555,7 +555,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="577"/>
         <source>xterm-256color</source>
-        <translation>xterm en 256 cores</translation>
+        <translation>xterm-256color</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="614"/>
