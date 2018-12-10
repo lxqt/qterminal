@@ -321,7 +321,7 @@
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="432"/>
+        <location filename="../forms/propertiesdialog.ui" line="449"/>
         <source>Emulation</source>
         <translation>模拟器</translation>
     </message>
@@ -342,7 +342,7 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="57"/>
-        <location filename="../forms/propertiesdialog.ui" line="457"/>
+        <location filename="../forms/propertiesdialog.ui" line="474"/>
         <source>Behavior</source>
         <translation>行为</translation>
     </message>
@@ -457,11 +457,8 @@
         <translation>重新调整大小时显示终端大小</translation>
     </message>
     <message>
-        <source>Limit tab width:</source>
-        <translation type="vanished">限制标签宽度:</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
+        <location filename="../forms/propertiesdialog.ui" line="425"/>
         <source>px</source>
         <translation></translation>
     </message>
@@ -471,98 +468,93 @@
         <translation>在每个标签上显示关闭按钮</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="441"/>
+        <location filename="../forms/propertiesdialog.ui" line="415"/>
+        <source>Terminal margin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="458"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;选择模拟模式。注意它不必符合您的操作系统。&lt;/p&gt;&lt;p&gt;选择 &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; 模拟模式会回退到最基础的功能模式。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="463"/>
+        <location filename="../forms/propertiesdialog.ui" line="480"/>
         <source>Action after paste</source>
         <translation>粘贴之后的动作</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="473"/>
+        <location filename="../forms/propertiesdialog.ui" line="490"/>
         <source>Confirm multiline paste</source>
         <translation>确认多行粘贴</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="480"/>
+        <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>修剪粘贴文本的最后空白行</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="513"/>
+        <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>Open new terminals in current working directory</source>
         <translation>在当前工作路径打开新的终端</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="520"/>
+        <location filename="../forms/propertiesdialog.ui" line="537"/>
         <source>Save Size when closing</source>
         <translation>关闭时保存窗口尺寸</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="527"/>
+        <location filename="../forms/propertiesdialog.ui" line="544"/>
         <source>Save Position when closing</source>
         <translation>关闭时保存窗口位置</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="534"/>
+        <location filename="../forms/propertiesdialog.ui" line="551"/>
         <source>Ask for confirmation when closing</source>
         <translation>关闭窗口需要确认</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="544"/>
+        <location filename="../forms/propertiesdialog.ui" line="561"/>
         <source>Unlimited history</source>
         <translation>不限制历史记录条数</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="551"/>
+        <location filename="../forms/propertiesdialog.ui" line="568"/>
         <source>History size (in lines)</source>
         <translation>历史记录大小 (行数)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="558"/>
+        <location filename="../forms/propertiesdialog.ui" line="575"/>
         <source>Default $TERM</source>
         <translation>默认 $TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="572"/>
-        <source>xterm</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="577"/>
-        <source>xterm-256color</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="649"/>
+        <location filename="../forms/propertiesdialog.ui" line="666"/>
         <source>Height</source>
         <translation>高度</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="659"/>
         <location filename="../forms/propertiesdialog.ui" line="676"/>
+        <location filename="../forms/propertiesdialog.ui" line="693"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="666"/>
+        <location filename="../forms/propertiesdialog.ui" line="683"/>
         <source>Width</source>
         <translation>宽度</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="722"/>
+        <location filename="../forms/propertiesdialog.ui" line="739"/>
         <source>Edit bookmark file contents</source>
         <translation>编辑书签文件内容</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="744"/>
+        <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>Enable bookmarks</source>
         <translation>启用书签功能</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="753"/>
+        <location filename="../forms/propertiesdialog.ui" line="770"/>
         <source>Bookmark file</source>
         <translation>书签文件</translation>
     </message>
@@ -573,12 +565,12 @@
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="614"/>
+        <location filename="../forms/propertiesdialog.ui" line="631"/>
         <source>Shortcut</source>
         <translation>快捷键</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="619"/>
+        <location filename="../forms/propertiesdialog.ui" line="636"/>
         <source>Key</source>
         <translation>按键</translation>
     </message>
@@ -603,105 +595,105 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="631"/>
+        <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
         <translation>启动时显示</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="638"/>
+        <location filename="../forms/propertiesdialog.ui" line="655"/>
         <source>Size</source>
         <translation>尺寸</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="690"/>
+        <location filename="../forms/propertiesdialog.ui" line="707"/>
         <source>Shortcut:</source>
         <translation>快捷键:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="766"/>
+        <location filename="../forms/propertiesdialog.ui" line="783"/>
         <source>Find...</source>
         <translation>搜索...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="775"/>
+        <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>您可以指定书签保存位置，它很容易通过私有云或者Dropbox分享。</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="96"/>
+        <location filename="../propertiesdialog.cpp" line="101"/>
         <source>No scrollbar</source>
         <translation>无滚动栏</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="96"/>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="101"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Left</source>
         <translation>左</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="96"/>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="101"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Right</source>
         <translation>右</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Top</source>
         <translation>上</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Bottom</source>
         <translation>下</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="113"/>
+        <location filename="../propertiesdialog.cpp" line="118"/>
         <source>BlockCursor</source>
         <translation>块状光标</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="113"/>
+        <location filename="../propertiesdialog.cpp" line="118"/>
         <source>UnderlineCursor</source>
         <translation>下划线状光标</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="113"/>
+        <location filename="../propertiesdialog.cpp" line="118"/>
         <source>IBeamCursor</source>
         <translation>条状光标</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="125"/>
+        <location filename="../propertiesdialog.cpp" line="130"/>
         <source>No move</source>
         <translation>无动作</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="125"/>
+        <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move start</source>
         <translation>开始移动</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="125"/>
+        <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move end</source>
         <translation>移动完成</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="130"/>
-        <location filename="../propertiesdialog.cpp" line="202"/>
+        <location filename="../propertiesdialog.cpp" line="135"/>
+        <location filename="../propertiesdialog.cpp" line="209"/>
         <source>System Default</source>
         <translation>系统默认</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="285"/>
+        <location filename="../propertiesdialog.cpp" line="293"/>
         <source>Choose a background image</source>
         <translation>选择背景图片</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="286"/>
+        <location filename="../propertiesdialog.cpp" line="294"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>图像 (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="351"/>
+        <location filename="../propertiesdialog.cpp" line="359"/>
         <source>Open or create bookmarks file</source>
         <translation>打开或者创建书签文件</translation>
     </message>
@@ -709,7 +701,7 @@
 <context>
     <name>QMessageBox</name>
     <message>
-        <location filename="../termwidget.cpp" line="237"/>
+        <location filename="../termwidget.cpp" line="238"/>
         <source>Show Details...</source>
         <translation>显示详细信息...</translation>
     </message>
@@ -777,12 +769,12 @@
 <context>
     <name>TermWidgetImpl</name>
     <message>
-        <location filename="../termwidget.cpp" line="229"/>
+        <location filename="../termwidget.cpp" line="230"/>
         <source>Paste multiline text</source>
         <translation>粘贴多行文本</translation>
     </message>
     <message>
-        <location filename="../termwidget.cpp" line="230"/>
+        <location filename="../termwidget.cpp" line="231"/>
         <source>Are you sure you want to paste this text?</source>
         <translation>是否确认粘贴此文本？</translation>
     </message>

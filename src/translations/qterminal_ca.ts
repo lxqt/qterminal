@@ -332,7 +332,7 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="57"/>
-        <location filename="../forms/propertiesdialog.ui" line="457"/>
+        <location filename="../forms/propertiesdialog.ui" line="474"/>
         <source>Behavior</source>
         <translation>Comportament</translation>
     </message>
@@ -478,11 +478,8 @@
         <translation>Amplada fixa de la pestanya:</translation>
     </message>
     <message>
-        <source>Limit tab width:</source>
-        <translation type="vanished">Amplada límit de la pestanya:</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
+        <location filename="../forms/propertiesdialog.ui" line="425"/>
         <source>px</source>
         <translation>px</translation>
     </message>
@@ -492,216 +489,211 @@
         <translation>Mostra el botó de tancament en cadascuna de les pestanyes</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="432"/>
+        <location filename="../forms/propertiesdialog.ui" line="415"/>
+        <source>Terminal margin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="449"/>
         <source>Emulation</source>
         <translation>Emulació</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="441"/>
+        <location filename="../forms/propertiesdialog.ui" line="458"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quin és el comportament que s&apos;ha d&apos;emular. Tingueu en compte que no ha de coincidir amb el vostre sistema operatiu.&lt;/p&gt;&lt;p&gt;L&apos;emulació &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; (predeterminada) és una alternativa que conté un nombre reduït de característiques.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="463"/>
+        <location filename="../forms/propertiesdialog.ui" line="480"/>
         <source>Action after paste</source>
         <translation>Acció després d&apos;enganxar</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="473"/>
+        <location filename="../forms/propertiesdialog.ui" line="490"/>
         <source>Confirm multiline paste</source>
         <translation>Confirma l&apos;enganxament de diverses línies</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="480"/>
+        <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Suprimeix els espais al final de les línies al text enganxat</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="513"/>
+        <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>Open new terminals in current working directory</source>
         <translation>Obre els terminals nous al directori de treball actual</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="520"/>
+        <location filename="../forms/propertiesdialog.ui" line="537"/>
         <source>Save Size when closing</source>
         <translation>Desa les mides quan es tanqui</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="527"/>
+        <location filename="../forms/propertiesdialog.ui" line="544"/>
         <source>Save Position when closing</source>
         <translation>Desa la posició quan es tanqui</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="534"/>
+        <location filename="../forms/propertiesdialog.ui" line="551"/>
         <source>Ask for confirmation when closing</source>
         <translation>Demana la confirmació quan es tanqui</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="544"/>
+        <location filename="../forms/propertiesdialog.ui" line="561"/>
         <source>Unlimited history</source>
         <translation>Historial il·limitat</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="551"/>
+        <location filename="../forms/propertiesdialog.ui" line="568"/>
         <source>History size (in lines)</source>
         <translation>Mida de l&apos;historial (en línies)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="558"/>
+        <location filename="../forms/propertiesdialog.ui" line="575"/>
         <source>Default $TERM</source>
         <translation>Valor per defecte de $TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="572"/>
-        <source>xterm</source>
-        <translation>xterm</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="577"/>
-        <source>xterm-256color</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="614"/>
+        <location filename="../forms/propertiesdialog.ui" line="631"/>
         <source>Shortcut</source>
         <translation>Dreceres</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="619"/>
+        <location filename="../forms/propertiesdialog.ui" line="636"/>
         <source>Key</source>
         <translation>Tecles</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="631"/>
+        <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
         <translation>Mostra-ho al començament</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="638"/>
+        <location filename="../forms/propertiesdialog.ui" line="655"/>
         <source>Size</source>
         <translation>Mides</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="649"/>
+        <location filename="../forms/propertiesdialog.ui" line="666"/>
         <source>Height</source>
         <translation>Alçada</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="659"/>
         <location filename="../forms/propertiesdialog.ui" line="676"/>
+        <location filename="../forms/propertiesdialog.ui" line="693"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="666"/>
+        <location filename="../forms/propertiesdialog.ui" line="683"/>
         <source>Width</source>
         <translation>Amplada</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="690"/>
+        <location filename="../forms/propertiesdialog.ui" line="707"/>
         <source>Shortcut:</source>
         <translation>Drecera:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="722"/>
+        <location filename="../forms/propertiesdialog.ui" line="739"/>
         <source>Edit bookmark file contents</source>
         <translation>Edita el contingut del fitxer dels marcadors</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="744"/>
+        <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>Enable bookmarks</source>
         <translation>Habilita els marcadors</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="753"/>
+        <location filename="../forms/propertiesdialog.ui" line="770"/>
         <source>Bookmark file</source>
         <translation>Fitxer dels marcadors</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="766"/>
+        <location filename="../forms/propertiesdialog.ui" line="783"/>
         <source>Find...</source>
         <translation>Troba...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="775"/>
+        <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Podeu especificar la ubicació del vostre fitxer de marcadors. Això us permet compartir fàcilment els marcadors amb eines com ara OwnCloud o Dropbox.</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="96"/>
+        <location filename="../propertiesdialog.cpp" line="101"/>
         <source>No scrollbar</source>
         <translation>Cap barra de desplaçament</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="96"/>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="101"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Left</source>
         <translation>Esquerra</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="96"/>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="101"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Right</source>
         <translation>Dreta</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Top</source>
         <translation>Superior</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Bottom</source>
         <translation>Inferior</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="113"/>
+        <location filename="../propertiesdialog.cpp" line="118"/>
         <source>BlockCursor</source>
         <translation>Cursor de bloc</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="113"/>
+        <location filename="../propertiesdialog.cpp" line="118"/>
         <source>UnderlineCursor</source>
         <translation>Cursor de subratllat</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="113"/>
+        <location filename="../propertiesdialog.cpp" line="118"/>
         <source>IBeamCursor</source>
         <translation>Cursor de biga I</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="125"/>
+        <location filename="../propertiesdialog.cpp" line="130"/>
         <source>No move</source>
         <translation>Cap moviment</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="125"/>
+        <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move start</source>
         <translation>Mou al començament</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="125"/>
+        <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move end</source>
         <translation>Mou a l&apos;acabament</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="130"/>
-        <location filename="../propertiesdialog.cpp" line="202"/>
+        <location filename="../propertiesdialog.cpp" line="135"/>
+        <location filename="../propertiesdialog.cpp" line="209"/>
         <source>System Default</source>
         <translation>Predeterminat del sistema</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="285"/>
+        <location filename="../propertiesdialog.cpp" line="293"/>
         <source>Choose a background image</source>
         <translation>Trieu una imatge de fons</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="286"/>
+        <location filename="../propertiesdialog.cpp" line="294"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>Imatges (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="351"/>
+        <location filename="../propertiesdialog.cpp" line="359"/>
         <source>Open or create bookmarks file</source>
         <translation>Obre o crea el fitxer dels marcadors</translation>
     </message>
@@ -709,7 +701,7 @@
 <context>
     <name>QMessageBox</name>
     <message>
-        <location filename="../termwidget.cpp" line="237"/>
+        <location filename="../termwidget.cpp" line="238"/>
         <source>Show Details...</source>
         <translation>Mostra els detalls...</translation>
     </message>
@@ -777,12 +769,12 @@
 <context>
     <name>TermWidgetImpl</name>
     <message>
-        <location filename="../termwidget.cpp" line="229"/>
+        <location filename="../termwidget.cpp" line="230"/>
         <source>Paste multiline text</source>
         <translation>Enganxament de text de diverses línies</translation>
     </message>
     <message>
-        <location filename="../termwidget.cpp" line="230"/>
+        <location filename="../termwidget.cpp" line="231"/>
         <source>Are you sure you want to paste this text?</source>
         <translation>Esteu segur que voleu enganxar aquest text?</translation>
     </message>

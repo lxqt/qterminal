@@ -321,7 +321,7 @@
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="432"/>
+        <location filename="../forms/propertiesdialog.ui" line="449"/>
         <source>Emulation</source>
         <translation>Эмуляция</translation>
     </message>
@@ -342,7 +342,7 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="57"/>
-        <location filename="../forms/propertiesdialog.ui" line="457"/>
+        <location filename="../forms/propertiesdialog.ui" line="474"/>
         <source>Behavior</source>
         <translation>Поведение</translation>
     </message>
@@ -462,11 +462,8 @@
         <translation>Показывать границы при изменении размера</translation>
     </message>
     <message>
-        <source>Limit tab width:</source>
-        <translation type="vanished">Максимальная ширина вкладки:</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
+        <location filename="../forms/propertiesdialog.ui" line="425"/>
         <source>px</source>
         <translation>px</translation>
     </message>
@@ -476,103 +473,98 @@
         <translation>Отображать кнопку закрыть у каждой вкладки</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="441"/>
+        <location filename="../forms/propertiesdialog.ui" line="415"/>
+        <source>Terminal margin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="458"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Какое поведение эмулировать. Обратите внимание, что это не обязательно должно соответствовать вашей операционной системе.&lt;/p&gt;&lt;p&gt;Эмуляция &lt;span style=&quot; font-weight:600;&quot;&gt;по умолчанию&lt;/span&gt; - это запасной режим с минимальным набором функций.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="463"/>
+        <location filename="../forms/propertiesdialog.ui" line="480"/>
         <source>Action after paste</source>
         <translation>Действие после вставки</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="473"/>
+        <location filename="../forms/propertiesdialog.ui" line="490"/>
         <source>Confirm multiline paste</source>
         <translation>Подтвердить вставку нескольких строк</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="480"/>
+        <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Удалять пустые строки в конце вставляемого текста</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="513"/>
+        <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>Open new terminals in current working directory</source>
         <translation>Открывать новые терминалы в текущем рабочем каталоге</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="520"/>
+        <location filename="../forms/propertiesdialog.ui" line="537"/>
         <source>Save Size when closing</source>
         <translation>Запоминать размер при закрытии</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="527"/>
+        <location filename="../forms/propertiesdialog.ui" line="544"/>
         <source>Save Position when closing</source>
         <translation>Запоминать расположение при закрытии</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="534"/>
+        <location filename="../forms/propertiesdialog.ui" line="551"/>
         <source>Ask for confirmation when closing</source>
         <translation>Запрашивать подтверждение при закрытии</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="544"/>
+        <location filename="../forms/propertiesdialog.ui" line="561"/>
         <source>Unlimited history</source>
         <translation>Неограниченная история</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="551"/>
+        <location filename="../forms/propertiesdialog.ui" line="568"/>
         <source>History size (in lines)</source>
         <translation>Размер истории (в строках)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="558"/>
+        <location filename="../forms/propertiesdialog.ui" line="575"/>
         <source>Default $TERM</source>
         <translation>$TERM по умолчанию</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="572"/>
-        <source>xterm</source>
-        <translation>xterm</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="577"/>
-        <source>xterm-256color</source>
-        <translation>xterm-256color</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="649"/>
+        <location filename="../forms/propertiesdialog.ui" line="666"/>
         <source>Height</source>
         <translation>Высота</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="659"/>
         <location filename="../forms/propertiesdialog.ui" line="676"/>
+        <location filename="../forms/propertiesdialog.ui" line="693"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="666"/>
+        <location filename="../forms/propertiesdialog.ui" line="683"/>
         <source>Width</source>
         <translation>Ширина</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="722"/>
+        <location filename="../forms/propertiesdialog.ui" line="739"/>
         <source>Edit bookmark file contents</source>
         <translation>Изменить содержимое файла закладок</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="744"/>
+        <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>Enable bookmarks</source>
         <translation>Включить закладки</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="753"/>
+        <location filename="../forms/propertiesdialog.ui" line="770"/>
         <source>Bookmark file</source>
         <translation>Файл закладок</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="631"/>
+        <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
         <translation>Показать при запуске</translation>
     </message>
@@ -592,22 +584,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="638"/>
+        <location filename="../forms/propertiesdialog.ui" line="655"/>
         <source>Size</source>
         <translation>Размер</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="690"/>
+        <location filename="../forms/propertiesdialog.ui" line="707"/>
         <source>Shortcut:</source>
         <translation>Сочетание клавиш:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="766"/>
+        <location filename="../forms/propertiesdialog.ui" line="783"/>
         <source>Find...</source>
         <translation>Найти...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="775"/>
+        <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Вы можете выбрать ваше собственное место для хранения закладок. Это позволит легко делиться закладками с помощью таких инструментов как OwnCloud или Dropbox.</translation>
     </message>
@@ -618,90 +610,90 @@
         <translation> %</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="614"/>
+        <location filename="../forms/propertiesdialog.ui" line="631"/>
         <source>Shortcut</source>
         <translation>Сочетание клавиш</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="619"/>
+        <location filename="../forms/propertiesdialog.ui" line="636"/>
         <source>Key</source>
         <translation>Клавиши</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="96"/>
+        <location filename="../propertiesdialog.cpp" line="101"/>
         <source>No scrollbar</source>
         <translation>Без полосы прокрутки</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="96"/>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="101"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Left</source>
         <translation>Слева</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="96"/>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="101"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Right</source>
         <translation>Справа</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Top</source>
         <translation>Сверху</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="102"/>
+        <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Bottom</source>
         <translation>Снизу</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="113"/>
+        <location filename="../propertiesdialog.cpp" line="118"/>
         <source>BlockCursor</source>
         <translation>Блок</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="113"/>
+        <location filename="../propertiesdialog.cpp" line="118"/>
         <source>UnderlineCursor</source>
         <translation>Нижнее подчеркивание</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="113"/>
+        <location filename="../propertiesdialog.cpp" line="118"/>
         <source>IBeamCursor</source>
         <translation>IBeam</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="125"/>
+        <location filename="../propertiesdialog.cpp" line="130"/>
         <source>No move</source>
         <translation>Не двигаться</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="125"/>
+        <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move start</source>
         <translation>Переместиться в начало</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="125"/>
+        <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move end</source>
         <translation>Переместиться в конец</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="130"/>
-        <location filename="../propertiesdialog.cpp" line="202"/>
+        <location filename="../propertiesdialog.cpp" line="135"/>
+        <location filename="../propertiesdialog.cpp" line="209"/>
         <source>System Default</source>
         <translation>Системный</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="285"/>
+        <location filename="../propertiesdialog.cpp" line="293"/>
         <source>Choose a background image</source>
         <translation>Выбрать фоновое изображение</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="286"/>
+        <location filename="../propertiesdialog.cpp" line="294"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>Изображения (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="351"/>
+        <location filename="../propertiesdialog.cpp" line="359"/>
         <source>Open or create bookmarks file</source>
         <translation>Открыть или создать файл закладок</translation>
     </message>
@@ -709,7 +701,7 @@
 <context>
     <name>QMessageBox</name>
     <message>
-        <location filename="../termwidget.cpp" line="237"/>
+        <location filename="../termwidget.cpp" line="238"/>
         <source>Show Details...</source>
         <translation>Подробнее...</translation>
     </message>
@@ -777,12 +769,12 @@
 <context>
     <name>TermWidgetImpl</name>
     <message>
-        <location filename="../termwidget.cpp" line="229"/>
+        <location filename="../termwidget.cpp" line="230"/>
         <source>Paste multiline text</source>
         <translation>Вставить многострочный текст</translation>
     </message>
     <message>
-        <location filename="../termwidget.cpp" line="230"/>
+        <location filename="../termwidget.cpp" line="231"/>
         <source>Are you sure you want to paste this text?</source>
         <translation>Вы уверены, что хотите вставить данный текст?</translation>
     </message>
