@@ -63,12 +63,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>Geçmişteki &amp;Önceki Sekme</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>Geçmişteki &amp;Sonraki Sekme</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
@@ -581,7 +581,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sabit sekme genişliği:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="655"/>
