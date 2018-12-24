@@ -88,12 +88,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>&amp;Aba anterior no Histórico</translation>
+        <translation>&amp;Aba Anterior no histórico</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation>&amp;Próxima aba no Histórico</translation>
+        <translation>&amp;Próxima Aba no histórico</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
