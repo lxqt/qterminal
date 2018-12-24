@@ -83,7 +83,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="212"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>&amp;Limpar Terminal Ativo</translation>
+        <translation>Limpar subterminal ativo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
@@ -491,7 +491,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>Margem do terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="449"/>
