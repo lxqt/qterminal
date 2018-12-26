@@ -496,87 +496,87 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="449"/>
         <source>Emulation</source>
-        <translation></translation>
+        <translation>Emulering</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="458"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hvilken oppførsel som skal emuleres. Merk at dette ikke trenger å passe med operativsystemet.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;Standard&lt;/span&gt;emuleringen er en reserve med minimal fuksjonalitet.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
         <source>Action after paste</source>
-        <translation></translation>
+        <translation>Handling etter lim inn</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="490"/>
         <source>Confirm multiline paste</source>
-        <translation></translation>
+        <translation>Bekreftelse på lim inn med flere linjer</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation></translation>
+        <translation>Fjern etterfølgende linjeskift i innlimt tekst</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>Open new terminals in current working directory</source>
-        <translation></translation>
+        <translation>Åpne nye terminaler i aktiv mappe</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="537"/>
         <source>Save Size when closing</source>
-        <translation></translation>
+        <translation>Lagre størrelse ved lukking</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="544"/>
         <source>Save Position when closing</source>
-        <translation></translation>
+        <translation>Lagre plassering ved lukking</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="551"/>
         <source>Ask for confirmation when closing</source>
-        <translation></translation>
+        <translation>Spør om bekreftelse ved lukking</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="561"/>
         <source>Unlimited history</source>
-        <translation></translation>
+        <translation>Ubegrenset historikk</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="568"/>
         <source>History size (in lines)</source>
-        <translation></translation>
+        <translation>Størrelse på historikk (i linjer)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="575"/>
         <source>Default $TERM</source>
-        <translation></translation>
+        <translation>Standard-$TERM</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="631"/>
         <source>Shortcut</source>
-        <translation></translation>
+        <translation>Snarevei</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="636"/>
         <source>Key</source>
-        <translation></translation>
+        <translation>Tast</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
-        <translation></translation>
+        <translation>Vis ved start</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="655"/>
         <source>Size</source>
-        <translation></translation>
+        <translation>Størrelse</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="666"/>
         <source>Height</source>
-        <translation></translation>
+        <translation>Høyde</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="676"/>
@@ -587,115 +587,115 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="683"/>
         <source>Width</source>
-        <translation></translation>
+        <translation>Bredde</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="707"/>
         <source>Shortcut:</source>
-        <translation></translation>
+        <translation>Snarevei:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="739"/>
         <source>Edit bookmark file contents</source>
-        <translation></translation>
+        <translation>Rediger innholdet i bokmerkefilen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>Enable bookmarks</source>
-        <translation></translation>
+        <translation>Aktiver bokmerker</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="770"/>
         <source>Bookmark file</source>
-        <translation></translation>
+        <translation>Bokmerkefil</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="783"/>
         <source>Find...</source>
-        <translation></translation>
+        <translation>Finn...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation></translation>
+        <translation>Du kan bestemme plasseringen for bokmerkefilne. Det gjør det lett å dele bokmerker med OwnCloud eller Dropbox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="101"/>
         <source>No scrollbar</source>
-        <translation></translation>
+        <translation>Ikke noe rullefelt</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="101"/>
         <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Left</source>
-        <translation></translation>
+        <translation>Venstre</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="101"/>
         <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Right</source>
-        <translation></translation>
+        <translation>Høyre</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Top</source>
-        <translation></translation>
+        <translation>Øverst</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="107"/>
         <source>Bottom</source>
-        <translation></translation>
+        <translation>Nederst</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="118"/>
         <source>BlockCursor</source>
-        <translation></translation>
+        <translation>Blokkmarkør</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="118"/>
         <source>UnderlineCursor</source>
-        <translation></translation>
+        <translation>Understrekingsmarkør</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="118"/>
         <source>IBeamCursor</source>
-        <translation></translation>
+        <translation>Strekmarkør</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>No move</source>
-        <translation></translation>
+        <translation>Ingen flytting</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move start</source>
-        <translation></translation>
+        <translation>Flytt begynnelse</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move end</source>
-        <translation></translation>
+        <translation>Flytt slutt</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="135"/>
         <location filename="../propertiesdialog.cpp" line="209"/>
         <source>System Default</source>
-        <translation></translation>
+        <translation>Systemstandard</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="293"/>
         <source>Choose a background image</source>
-        <translation></translation>
+        <translation>Velg et bakgrunnsbilde</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="294"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation></translation>
+        <translation>Bilder (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="359"/>
         <source>Open or create bookmarks file</source>
-        <translation></translation>
+        <translation>Åpne eller lag en bokmerkefil</translation>
     </message>
 </context>
 <context>
@@ -703,7 +703,7 @@
     <message>
         <location filename="../termwidget.cpp" line="238"/>
         <source>Show Details...</source>
-        <translation></translation>
+        <translation>Vis detaljer...</translation>
     </message>
 </context>
 <context>
@@ -711,12 +711,12 @@
     <message>
         <location filename="../bookmarkswidget.cpp" line="110"/>
         <source>Local Bookmarks</source>
-        <translation></translation>
+        <translation>Lokale bokmerker</translation>
     </message>
     <message>
         <location filename="../bookmarkswidget.cpp" line="168"/>
         <source>Synchronized Bookmarks</source>
-        <translation></translation>
+        <translation>Synkroniserte bokmerker</translation>
     </message>
 </context>
 <context>
@@ -725,32 +725,32 @@
         <location filename="../tabwidget.cpp" line="78"/>
         <location filename="../tabwidget.cpp" line="224"/>
         <source>Shell No. %1</source>
-        <translation></translation>
+        <translation>Skall nr. %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="192"/>
         <source>Tab name</source>
-        <translation></translation>
+        <translation>Fanenavn</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="193"/>
         <source>New tab name:</source>
-        <translation></translation>
+        <translation>Nytt fanenavn:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="213"/>
         <source>Select new tab title color</source>
-        <translation></translation>
+        <translation>Velg ny farge til fanetittelen</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="234"/>
         <source>Close session</source>
-        <translation></translation>
+        <translation>Lukk sesjon</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="236"/>
         <source>Change title color</source>
-        <translation></translation>
+        <translation>Skift farge på tittelen</translation>
     </message>
 </context>
 <context>
@@ -758,12 +758,12 @@
     <message>
         <location filename="../termwidgetholder.cpp" line="78"/>
         <source>Load Session</source>
-        <translation></translation>
+        <translation>Last inn sesjon</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>List of saved sessions:</source>
-        <translation></translation>
+        <translation>Liste over lagrede sesjoner:</translation>
     </message>
 </context>
 <context>
@@ -771,12 +771,12 @@
     <message>
         <location filename="../termwidget.cpp" line="230"/>
         <source>Paste multiline text</source>
-        <translation></translation>
+        <translation>Lim inn flerlinjet tekst</translation>
     </message>
     <message>
         <location filename="../termwidget.cpp" line="231"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation></translation>
+        <translation>Er du sikker på at du vil lime inn denne teksten?</translation>
     </message>
 </context>
 <context>
@@ -784,42 +784,42 @@
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
-        <translation></translation>
+        <translation>HovedVindu</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;File</source>
-        <translation></translation>
+        <translation>&amp;Fil</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
-        <translation></translation>
+        <translation>&amp;Handlinger</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation></translation>
+        <translation>&amp;Hjelp</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation></translation>
+        <translation>&amp;Vis</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation></translation>
+        <translation>&amp;Rediger</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation></translation>
+        <translation>&amp;Om...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation></translation>
+        <translation>Om &amp;Qt...</translation>
     </message>
 </context>
 </TS>
