@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>Поля терминала</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="458"/>
@@ -581,7 +581,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Постоянная ширина вкладки:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="655"/>
