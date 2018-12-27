@@ -15,7 +15,7 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Terminal yazıtipini seç</translation>
+        <translation>Terminal Yazıtipini Seç</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
@@ -93,7 +93,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Subterminal Kapa</translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
