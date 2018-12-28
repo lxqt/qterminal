@@ -88,12 +88,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Предыдущая вкладка (по порядку посещения)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Следующая вкладка (по порядку посещения)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
