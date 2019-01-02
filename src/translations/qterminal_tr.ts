@@ -93,7 +93,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation></translation>
+        <translation type="unfinished">&amp;amp;Subterminal Kapa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
