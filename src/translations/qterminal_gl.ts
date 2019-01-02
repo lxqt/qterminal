@@ -384,7 +384,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="153"/>
         <source>Application transparency</source>
-        <translation>Transparencia da aplicación</translation>
+        <translation>Transparencia do aplicativo</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="164"/>
