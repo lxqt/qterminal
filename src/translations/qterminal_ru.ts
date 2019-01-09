@@ -439,7 +439,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation>Изменить значок окна на основе текущего терминала</translation>
+        <translation>Изменять значок окна на основе текущего терминала</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
