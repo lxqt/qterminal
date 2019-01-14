@@ -12,7 +12,6 @@ qterminal-0.14.0 / 2018-12-01
     - main: Fixed translation loading
     - propertiesdialog: Smaller settings dialog
     - propertiesdialog: Prevent TAB from changing focus in shortcut editor
-    - termwidget: Adapt API changes in qtermwidget
     - Suppress compilation warnings
     - Don't use automatic string conversions
     - Remember the maximization state of the window
