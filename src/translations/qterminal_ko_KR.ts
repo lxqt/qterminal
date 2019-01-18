@@ -6,7 +6,7 @@
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation>필터</translation>
+        <translation>필터:</translation>
     </message>
 </context>
 <context>
@@ -20,12 +20,12 @@
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation>글꼴</translation>
+        <translation>글꼴:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
         <source>Size:</source>
-        <translation>크기</translation>
+        <translation>크기:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="59"/>
@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>&quot;%1&quot; 를 눌러 터미널 표시</translation>
+        <translation>&quot;%1&quot; 를 눌러 터미널 표시.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="219"/>
@@ -148,7 +148,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
         <source>&amp;Find...</source>
-        <translation>검색(&amp;F)</translation>
+        <translation>검색(&amp;F)...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
@@ -213,7 +213,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="345"/>
         <source>&amp;Preferences...</source>
-        <translation>설정(&amp;P)</translation>
+        <translation>설정(&amp;P)...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="349"/>
@@ -369,7 +369,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="120"/>
         <source>Start with preset:</source>
-        <translation>사전 설정으로 시작</translation>
+        <translation>사전 설정으로 시작:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="136"/>
@@ -460,7 +460,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
         <source>Background image:</source>
-        <translation>배경 그림</translation>
+        <translation>배경 그림:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation>탭 고정 폭</translation>
+        <translation>탭 고정 폭:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
@@ -617,7 +617,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>책갈피 파일 위치를 지정하여 OwnClound 나 Dropbox 와 같은 책갈피 공유 도구가 쉽게 접근할 수 있습니다. </translation>
+        <translation>책갈피 파일 위치를 지정하여 OwnClound 나 Dropbox 와 같은 책갈피 공유 도구가 쉽게 접근할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="101"/>
@@ -703,7 +703,7 @@
     <message>
         <location filename="../termwidget.cpp" line="238"/>
         <source>Show Details...</source>
-        <translation>세부사항 표시</translation>
+        <translation>세부사항 표시...</translation>
     </message>
 </context>
 <context>
@@ -735,7 +735,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="193"/>
         <source>New tab name:</source>
-        <translation>새 탭 이름</translation>
+        <translation>새 탭 이름:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="213"/>
@@ -763,7 +763,7 @@
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>List of saved sessions:</source>
-        <translation>저장된 세션 목록</translation>
+        <translation>저장된 세션 목록:</translation>
     </message>
 </context>
 <context>
