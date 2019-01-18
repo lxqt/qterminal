@@ -389,7 +389,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="164"/>
         <source>None (single terminal)</source>
-        <translation type="unfinished"></translation>
+        <translation>사용 안 함 (단일 터미널)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="169"/>
