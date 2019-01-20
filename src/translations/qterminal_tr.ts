@@ -437,11 +437,6 @@
         <translation>Menü çubuğunu göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="326"/>
-        <source>Keyboard cursor shape</source>
-        <translation>Klavye imleç şekli</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
         <translation>Mevcut terminale göre pencere başlığını değiştir</translation>
@@ -577,6 +572,11 @@
         <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
         <translation>Başlangıçta göster</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="326"/>
+        <source>Cursor shape</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>

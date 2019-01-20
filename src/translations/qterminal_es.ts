@@ -437,11 +437,6 @@
         <translation>Mostrar la barra de menú</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="326"/>
-        <source>Keyboard cursor shape</source>
-        <translation>Forma del cursor del teclado</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
         <translation>Cambiar el título de la ventana según la terminal actual</translation>
@@ -577,6 +572,11 @@
         <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
         <translation>Mostrar al inicio</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="326"/>
+        <source>Cursor shape</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>

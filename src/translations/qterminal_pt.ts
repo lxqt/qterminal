@@ -437,6 +437,11 @@
         <translation>Tipo de letra</translation>
     </message>
     <message>
+        <location filename="../forms/propertiesdialog.ui" line="326"/>
+        <source>Cursor shape</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
         <translation type="unfinished"></translation>
@@ -536,11 +541,6 @@
         <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
         <translation>Mostrar ao iniciar</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="326"/>
-        <source>Keyboard cursor shape</source>
-        <translation>Forma do cursor de teclado</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>

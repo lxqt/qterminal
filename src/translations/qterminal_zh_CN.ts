@@ -422,11 +422,6 @@
         <translation>字体</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="326"/>
-        <source>Keyboard cursor shape</source>
-        <translation>光标样式</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
         <translation>基于当前终端更改窗口标题</translation>
@@ -588,6 +583,11 @@
         <location filename="../forms/propertiesdialog.ui" line="254"/>
         <source>&amp;Change...</source>
         <translation>修改设置(&amp;C)...</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="326"/>
+        <source>Cursor shape</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>

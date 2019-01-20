@@ -437,11 +437,6 @@
         <translation>Kuva menüüriba</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="326"/>
-        <source>Keyboard cursor shape</source>
-        <translation>Klaviatuuri kursori kuju</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
         <translation>Muuda akna tiitlit aktiivse terminali järgi</translation>
@@ -577,6 +572,11 @@
         <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
         <translation>Kuva käivitamisel</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="326"/>
+        <source>Cursor shape</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>

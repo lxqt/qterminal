@@ -439,8 +439,8 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
-        <source>Keyboard cursor shape</source>
-        <translation>鍵盤游標形狀</translation>
+        <source>Cursor shape</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
