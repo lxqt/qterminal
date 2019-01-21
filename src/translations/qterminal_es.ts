@@ -576,7 +576,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Forma del cursor</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
