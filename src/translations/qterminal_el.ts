@@ -440,7 +440,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Σχήμα δρομέα</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
@@ -804,7 +804,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation>&amp;Προβολή</translation>
+        <translation>Π&amp;ροβολή</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
