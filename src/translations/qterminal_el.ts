@@ -804,7 +804,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation>Π&amp;ροβολή</translation>
+        <translation>&amp;Προβολή</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
