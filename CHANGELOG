@@ -1,4 +1,29 @@
 
+qterminal-0.14.0 / 2019-01-25
+=============================
+
+  * Bumped version to 0.14.0
+    The big bump was needed to prevent conflicts with translations that
+    were former built out of lxqt-l10n and have version 0.13.0
+  * New implemented:
+    - Added terminal margins
+    - Added history-based tab switching
+  * Implementation fixes:
+    - main: Fixed translation loading
+    - propertiesdialog: Smaller settings dialog
+    - propertiesdialog: Prevent TAB from changing focus in shortcut editor
+    - Suppress compilation warnings
+    - Don't use automatic string conversions
+    - Remember the maximization state of the window
+    - Refactored Limit/limit -> Fixed/fixed tabwitdh
+    - Refactor STR_VERSION -> QTERMINAL_VERSION
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+  * Moved translations from lxqt-l10n back to qterminal
+   - Removed obsolete translation fuctionality
+   - Added translation promo in README.md
+
 qterminal-0.9.0 / 2018-05-21
 ============================
 
@@ -44,7 +69,7 @@ qterminal-0.9.0 / 2018-05-21
   * Add RTL support button
   * Update Catalan translation
 
-0.8.0 / 2017-10-21
+qterminal-0.8.0 / 2017-10-21
 ==================
 
   * Release 0.8.0: Update changelog
@@ -90,7 +115,7 @@ qterminal-0.9.0 / 2018-05-21
   * Fix a copy/paste error from 4afcc4d0d0922f526f89aadf16ec0517f6b5267e
   * Update dependencies and cleanup trailing spaces
 
-0.7.1 / 2016-12-21
+qterminal-0.7.1 / 2016-12-21
 ==================
 
   * Release 0.7.1: Update changelog
@@ -108,7 +133,7 @@ qterminal-0.9.0 / 2018-05-21
   * Show exit confirmation dialog when closing the last window tab (#242)
   * remove "building with cpack" from CMakeLists.txt - not used anymore Added very basic .gitattributes
 
-0.7.0 / 2016-09-24
+qterminal-0.7.0 / 2016-09-24
 ==================
 
   * Release 0.7.0: Add changelog
@@ -209,7 +234,7 @@ qterminal-0.9.0 / 2018-05-21
   * Rework settings window
   * Fixed translation (added tr() for some combo boxes in properties dialog).
 
-0.6.0 / 2014-10-21
+qterminal-0.6.0 / 2014-10-21
 ==================
 
   * Release 0.6.0
@@ -238,7 +263,7 @@ qterminal-0.9.0 / 2018-05-21
   * Fixed install qterminal incon
   * Simple profile support
 
-0.5.0 / 2014-05-27
+qterminal-0.5.0 / 2014-05-27
 ==================
 
   * basic Qt5 port
