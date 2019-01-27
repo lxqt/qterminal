@@ -68,12 +68,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tab Precedente in cronologia</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tab Successivo in Cronologia</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
@@ -518,7 +518,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Forma Cursore</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
@@ -533,7 +533,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished"></translation>
+        <translation>Abilita supporto al testo bi-direzionale</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
@@ -548,28 +548,28 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra grandezza terminale durante il ridimensionamento</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Larghezza Fixed tab:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
         <location filename="../forms/propertiesdialog.ui" line="425"/>
         <source>px</source>
-        <translation type="unfinished"></translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra tasto chiudi su ogni tab</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>Margine del Terminale</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="449"/>
@@ -629,7 +629,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="575"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>$TERM di default</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="631"/>
@@ -740,7 +740,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="213"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleziona colore del titolo del nuovo tab</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="234"/>
@@ -750,7 +750,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="236"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambia colore titolo</translation>
     </message>
 </context>
 <context>
