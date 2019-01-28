@@ -602,7 +602,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>Enable bookmarks</source>
-        <translation>책갈피 활설화</translation>
+        <translation>책갈피 활성화</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="770"/>
