@@ -15,12 +15,12 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Sélectionner la fonte de qterminal</translation>
+        <translation>Sélectionner la police du terminal</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation>Fonte :</translation>
+        <translation>Police :</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
@@ -43,17 +43,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Presser &quot;%1&quot; pour voir le terminal.</translation>
+        <translation>Appuyer sur &quot;%1&quot; pour voir le terminal.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="219"/>
         <source>&amp;Next Tab</source>
-        <translation>Onglet &amp;suivant</translation>
+        <translation>&amp;Onglet suivant</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="222"/>
         <source>&amp;Previous Tab</source>
-        <translation>Onglet &amp;précédent</translation>
+        <translation>&amp;Onglet précédent</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
@@ -68,12 +68,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>Eclater le terminal &amp;horizontalement</translation>
+        <translation>Séparer le terminal &amp;horizontalement</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>Eclater le terminal &amp;verticalement</translation>
+        <translation>Séparer le terminal &amp;verticalement</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
@@ -88,22 +88,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>Onglet &amp;précédent dans l&apos;historique</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>Onglet &amp;suivant dans l&apos;historique</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
         <source>&amp;Top Subterminal</source>
-        <translation>&amp;Sous-terminal au-dessus</translation>
+        <translation>Sous-terminal &amp;au-dessus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>Sous-terminal en-&amp;dessous</translation>
+        <translation>Sous-terminal &amp;en-dessous</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="256"/>
@@ -113,7 +113,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>Sous-terminal à d&amp;roite</translation>
+        <translation>Sous-terminal à &amp;droite</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
@@ -133,17 +133,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
         <source>Zoom &amp;in</source>
-        <translation>Zoom a&amp;grandir</translation>
+        <translation>Zoomer</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="278"/>
         <source>Zoom &amp;out</source>
-        <translation>Zoom ra&amp;petisser</translation>
+        <translation>Dézoomer</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="281"/>
         <source>Zoom rese&amp;t</source>
-        <translation>Zoom &amp;1</translation>
+        <translation>R&amp;éinitialiser le zoom</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
@@ -223,7 +223,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="355"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>Cac&amp;her les bordures</translation>
+        <translation>&amp;Masquer les bordures de la fenêtre</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
@@ -233,7 +233,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="374"/>
         <source>Fullscreen</source>
-        <translation>Plain écran</translation>
+        <translation>Plein écran</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
@@ -440,7 +440,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Forme du curseur</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Largeur de l&apos;onglet fixe :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
@@ -491,7 +491,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>Marges du terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="449"/>
