@@ -63,12 +63,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>Se&amp;parador anterior no histórico</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>Separador segui&amp;nte no histórico</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
@@ -208,7 +208,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Nova Janela</translation>
+        <translation>&amp;Nova janela</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="345"/>
@@ -439,17 +439,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Forma do cursor</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Separador com largura fixa:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>Margem do terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="458"/>
@@ -740,7 +740,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="213"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Selecione a cor do título do novo separador</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="234"/>
@@ -814,12 +814,12 @@
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation>&amp;Sobre...</translation>
+        <translation>&amp;Acerca...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation>Sobre &amp;Qt...</translation>
+        <translation>Acerca de &amp;Qt...</translation>
     </message>
 </context>
 </TS>
