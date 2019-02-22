@@ -73,12 +73,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>历史中的前一个选项卡(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>历史中的下一个选项卡(&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
@@ -465,7 +465,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>终端边距</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="458"/>
@@ -587,12 +587,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>光标形状</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>固定的选项卡宽度：</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="648"/>
