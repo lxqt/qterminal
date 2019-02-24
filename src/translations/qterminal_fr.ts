@@ -183,7 +183,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>1 &amp;Terminal</source>
-        <translation>1 &amp;Terminal</translation>
+        <translation>1 &amp;Terminal(s)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="327"/>
@@ -695,7 +695,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="294"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation>Images (*.bmp *.png *.xpm *.jpg)</translation>
+        <translation>Image(s) (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
 </context>
 <context>
