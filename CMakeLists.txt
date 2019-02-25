@@ -9,7 +9,7 @@ project(qterminal)
 include(GNUInstallDirs)
 
 # qterminal version
-set(QTERMINAL_VERSION "0.14.0")
+set(QTERMINAL_VERSION "0.14.1")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
@@ -17,7 +17,7 @@ option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" O
 
 # Minimum Versions
 set(LXQTBT_MINIMUM_VERSION "0.6.0")
-set(QTERMWIDGET_MINIMUM_VERSION "0.14.0")
+set(QTERMWIDGET_MINIMUM_VERSION "0.14.1")
 set(QT_MINIMUM_VERSION "5.7.1")
 
 find_package(Qt5Gui ${QT_MINIMUM_VERSION} REQUIRED)
