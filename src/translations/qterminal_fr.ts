@@ -183,7 +183,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>1 &amp;Terminal</source>
-        <translation>1 &amp;Terminal(s)</translation>
+        <translation>1 &amp;Terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="327"/>
@@ -295,7 +295,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="475"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>Curseur pour usage avec &amp;clavier</translation>
+        <translation>Forme du curseur du &amp;clavier</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="566"/>
@@ -310,12 +310,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="576"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Etes-vous sûrs de vouloir quitter ?</translation>
+        <translation>Êtes-vous sûrs de vouloir quitter ?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="607"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>Un terminal léger multi plateformes</translation>
+        <translation>Un émulateur de terminal léger multiplateforme</translation>
     </message>
 </context>
 <context>
@@ -323,7 +323,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation>Configuration de qterminal</translation>
+        <translation>Configuration du terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="52"/>
@@ -344,7 +344,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="67"/>
         <source>Dropdown</source>
-        <translation>Déroulants</translation>
+        <translation>Menu déroulant</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="72"/>
@@ -379,7 +379,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="90"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Cacher la barre des onglets avec un onglet unique</translation>
+        <translation>Masquer la barre d&apos;onglets avec un seul onglet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="136"/>
@@ -405,7 +405,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="120"/>
         <source>Start with preset:</source>
-        <translation>Démarrer avec les valeurs pré-réglées :</translation>
+        <translation>Démarrer avec les valeurs préréglées :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="164"/>
@@ -430,7 +430,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="218"/>
         <source>Font</source>
-        <translation>Fonte</translation>
+        <translation>Police</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="254"/>
@@ -445,17 +445,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation>Changer le titre de la fenêtre, basé sur le terminal courant</translation>
+        <translation>Changer le titre de la fenêtre en fonction du terminal actuel</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation>Changer l&apos;icône de la fenêtre, basée sur le terminal courant</translation>
+        <translation>Changer l&apos;icône de la fenêtre en fonction du terminal actuel</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation>Activer le support de texte bidirectionnel</translation>
+        <translation>Activer la prise en charge du texte bidirectionnel</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
@@ -470,7 +470,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation>Afficher la taille du terminal lors d&apos;un redimensionnement</translation>
+        <translation>Afficher la taille du terminal lors du redimensionnement</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
@@ -501,7 +501,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="458"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quelle propriété émuler ? Notez que ceci n&apos;affecte pas votre système.&lt;/p&gt;&lt;p&gt;L&apos;émulation par &lt;span style=&quot; font-weight:600;&quot;&gt;défaut&lt;/span&gt; est un retour avec des caractéristiques minimales.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quelle propriété à émuler ? Noter que ceci n&apos;affecte pas votre système.&lt;/p&gt;&lt;p&gt;L&apos;émulation par &lt;span style=&quot; font-weight:600;&quot;&gt;défaut&lt;/span&gt; est un retour avec des caractéristiques minimales.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
@@ -516,7 +516,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>Supprimer la blanc final des nouvelles lignes dans le texte collé</translation>
+        <translation>Couper les retours à la ligne dans le texte collé</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
@@ -526,17 +526,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="537"/>
         <source>Save Size when closing</source>
-        <translation>Enregistrer la taille en fermant</translation>
+        <translation>Enregistrer la taille lors de la fermeture</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="544"/>
         <source>Save Position when closing</source>
-        <translation>Enregistrer la position en fermant</translation>
+        <translation>Enregistrer la position lors de la fermeture</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="551"/>
         <source>Ask for confirmation when closing</source>
-        <translation>Demander confirmation pour fermer</translation>
+        <translation>Demander confirmation lors de la fermeture</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="561"/>
@@ -597,12 +597,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="739"/>
         <source>Edit bookmark file contents</source>
-        <translation>Editer le fichier des signets</translation>
+        <translation>Éditer le fichier des signets</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>Enable bookmarks</source>
-        <translation>Valider les signets</translation>
+        <translation>Activer les signets</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="770"/>
@@ -617,12 +617,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Vous pouvez spécifier votre propre fichier de signets. Il permet un partage aisé des signets.</translation>
+        <translation>Vous pouvez spécifier votre propre emplacement de fichier de signets. Il permet un partage facile des signets avec des outils tels que OwnCloud ou Dropbox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="101"/>
         <source>No scrollbar</source>
-        <translation>Non déroulant</translation>
+        <translation>Pas de barre de défilement</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="101"/>
@@ -690,12 +690,12 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="359"/>
         <source>Open or create bookmarks file</source>
-        <translation>Ouvrir ou créer le fichier des signetss</translation>
+        <translation>Ouvrir ou créer le fichier de signets</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="294"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation>Image(s) (*.bmp *.png *.xpm *.jpg)</translation>
+        <translation>Images (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
 </context>
 <context>
@@ -740,7 +740,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="213"/>
         <source>Select new tab title color</source>
-        <translation>Choisir la couleur du titre du nouvel onglet</translation>
+        <translation>Sélectionner la couleur du titre du nouvel onglet</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="234"/>
@@ -763,7 +763,7 @@
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>List of saved sessions:</source>
-        <translation>Liste des sessions :</translation>
+        <translation>Liste des sessions sauvegardées :</translation>
     </message>
 </context>
 <context>
@@ -776,7 +776,7 @@
     <message>
         <location filename="../termwidget.cpp" line="231"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation>Etes-vous sûr de vouloir coller ce texte ?</translation>
+        <translation>Êtes-vous sûr de vouloir coller ce texte ?</translation>
     </message>
 </context>
 <context>
