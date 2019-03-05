@@ -69,7 +69,12 @@
 
 #define DEFAULT_WIDTH                  800
 #define DEFAULT_HEIGHT                 600
+#ifdef Q_OS_MACOS
+// Qt does not support fontconfig on macOS, so we need to use a "real" font name.
+#define DEFAULT_FONT                   "Menlo"
+#else
 #define DEFAULT_FONT                   "Monospace"
+#endif
 
 // ACTIONS
 #define CLEAR_TERMINAL_SHORTCUT        "Ctrl+Shift+X"
