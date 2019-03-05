@@ -83,7 +83,7 @@
 #define SUB_LEFT_SHORTCUT	       "Alt+Left"
 #define SUB_RIGHT_SHORTCUT	       "Alt+Right"
 
-#ifdef Q_WS_MAC
+#ifdef Q_OS_MACOS
 // It's tricky - Ctrl is "command" key on mac's keyboards
 #define COPY_SELECTION_SHORTCUT      "Ctrl+C"
 #define PASTE_CLIPBOARD_SHORTCUT      "Ctrl+V"
