@@ -68,12 +68,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>Pisahkan Terminal Secara Horizontal</translation>
+        <translation>Pisahkan Terminal Secara &amp;Horizontal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>Pisahkan Terminal Secara Vertikal</translation>
+        <translation>Pisahkan Terminal Secara &amp;Vertikal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
