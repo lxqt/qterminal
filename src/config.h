@@ -92,6 +92,7 @@
 // It's tricky - Ctrl is "command" key on mac's keyboards
 #define COPY_SELECTION_SHORTCUT      "Ctrl+C"
 #define PASTE_CLIPBOARD_SHORTCUT      "Ctrl+V"
+#define PASTE_SELECTION_SHORTCUT      "Shift+Ins"
 #define FIND_SHORTCUT                "Ctrl+F"
 #define NEW_WINDOW_SHORTCUT          "Ctrl+N"
 #define ADD_TAB_SHORTCUT               "Ctrl+T"
