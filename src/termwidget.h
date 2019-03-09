@@ -92,7 +92,7 @@ class TermWidget : public QWidget, public DBusAddressable
     public slots:
 
     protected:
-        void paintEvent (QPaintEvent * event);
+        void paintEvent (QPaintEvent * event) override;
         bool eventFilter(QObject * obj, QEvent * evt) override;
 
     private slots:
