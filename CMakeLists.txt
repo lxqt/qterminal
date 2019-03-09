@@ -8,6 +8,9 @@ project(qterminal)
 
 include(GNUInstallDirs)
 
+# Enable verbose warnings
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -Wextra")
+
 # qterminal version
 set(QTERMINAL_VERSION "0.14.1")
 
