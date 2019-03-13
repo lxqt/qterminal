@@ -170,7 +170,7 @@ public:
         QFile f(fname);
         if (!f.open(QIODevice::ReadOnly))
         {
-            qDebug() << "Canot open file" << fname;
+            qDebug() << "Cannot open file" << fname;
             // TODO/FIXME: message box
             return;
         }

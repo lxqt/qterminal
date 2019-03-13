@@ -262,7 +262,7 @@ void Properties::migrate_settings()
     if (currentVersion < lastVersion)
     {
         qDebug() << "Warning: Configuration file was written by a newer version "
-                 << "of QTerminal. Some settings might be incompatible";
+                 << "of QTerminal. Some settings might be incompatible.";
     }
 
     if (lastVersion < QLatin1String("0.4.0"))
