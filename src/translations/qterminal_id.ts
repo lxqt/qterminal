@@ -6,7 +6,7 @@
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation type="unfinished">Filter:</translation>
+        <translation>Saring:</translation>
     </message>
 </context>
 <context>
