@@ -21,6 +21,8 @@
 #include <QDebug>
 #include <QStyleFactory>
 #include <QFileDialog>
+#include <QScreen>
+#include <QWindow>
 
 #include "propertiesdialog.h"
 #include "properties.h"
@@ -188,7 +190,17 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     trimPastedTrailingNewlinesCheckBox->setChecked(Properties::Instance()->trimPastedTrailingNewlines);
     confirmMultilinePasteCheckBox->setChecked(Properties::Instance()->confirmMultilinePaste);
 
-    resize(sizeHint()); // show it compact but not too much
+    // show it compact inside available desktop geometry
+    QSize ag;
+    if (parent != nullptr)
+    {
+        if (QWindow *win = parent->windowHandle())
+        {
+            if (QScreen *sc = win->screen())
+                ag = sc->availableVirtualGeometry().size();
+        }
+    }
+    resize(sizeHint().boundedTo(ag));
 }
 
 
