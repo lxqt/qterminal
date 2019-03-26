@@ -251,6 +251,51 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("LastWindowMaximized"), windowMaximized);
 }
 
+struct Version
+{
+    Version(int maj = 0, int min = 0, int pat = 0)
+        : majorVersion(maj), minorVersion(min), patchVersion(pat)
+    {}
+
+    Version(const QString &string)
+    {
+        QRegExp rx(QLatin1String("([0-9]*)\\.([0-9])\\.([0-9]*)"));
+        if (rx.exactMatch(string)) {
+            majorVersion = rx.cap(1).toInt();
+            minorVersion = rx.cap(2).toInt();
+            patchVersion = rx.cap(3).toInt();
+        } else {
+            majorVersion = minorVersion = patchVersion = 0;
+        }
+    }
+
+    int compare(const Version &other) const
+    {
+        if (majorVersion != other.majorVersion)
+            return other.majorVersion - majorVersion;
+        if (minorVersion != other.minorVersion)
+            return other.minorVersion - minorVersion;
+        return other.patchVersion - patchVersion;
+    }
+
+    bool operator<(const Version &other) const
+    {
+        return compare(other) < 0;
+    }
+
+    bool operator<=(const Version &other) const
+    {
+        return compare(other) <= 0;
+    }
+
+    bool operator==(const Version &other) const
+    {
+        return compare(other) == 0;
+    }
+
+    int majorVersion, minorVersion, patchVersion;
+};
+
 void Properties::migrate_settings()
 {
     // Deal with rearrangements of settings.
@@ -259,13 +304,18 @@ void Properties::migrate_settings()
     QSettings settings;
     QString lastVersion = settings.value(QLatin1String("version"), QLatin1String("0.0.0")).toString();
     QString currentVersion(QLatin1String(QTERMINAL_VERSION));
-    if (currentVersion < lastVersion)
+    Version last(lastVersion);
+    Version current(currentVersion);
+    if (last == current)
+        return;
+    if (current < last)
     {
         qDebug() << "Warning: Configuration file was written by a newer version "
-                 << "of QTerminal. Some settings might be incompatible.";
+                 << "of QTerminal. Some settings might be incompatible."
+                 << currentVersion << lastVersion;
     }
 
-    if (lastVersion < QLatin1String("0.4.0"))
+    if (last < Version(0, 4, 0))
     {
         // ===== Paste Selection -> Paste Clipboard =====
         settings.beginGroup(QLatin1String("Shortcuts"));
@@ -278,7 +328,7 @@ void Properties::migrate_settings()
         settings.endGroup();
     }
 
-    if (lastVersion <= QLatin1String("0.6.0"))
+    if (last <= Version(0, 6, 0))
     {
         // ===== AlwaysShowTabs -> HideTabBarWithOneTab =====
         if(!settings.contains(QLatin1String("HideTabBarWithOneTab")))
