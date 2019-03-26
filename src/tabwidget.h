@@ -53,6 +53,7 @@ public slots:
     int addNewTab(TerminalConfig cfg);
     void removeTab(int);
     void switchTab(int);
+    void onAction();
     void saveCurrentChanged(int);
     void removeCurrentTab();
     int switchToRight();
@@ -120,6 +121,7 @@ private:
     int tabNumerator;
     /* re-order naming of the tabs then removeCurrentTab() */
     void renameTabsAfterRemove();
+    int switchTo(int index);
 
     TabBar *mTabBar;
     QScopedPointer<TabSwitcher> mSwitcher;

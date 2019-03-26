@@ -67,6 +67,11 @@
      <string>&amp;Actions</string>
     </property>
    </widget>
+   <widget class="QMenu" name="menu_GoTo">
+    <property name="title">
+     <string>&amp;Go to</string>
+    </property>
+   </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
      <string>&amp;Help</string>
@@ -86,6 +91,7 @@
    </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_Actions"/>
+   <addaction name="menu_GoTo"/>
    <addaction name="menu_Edit"/>
    <addaction name="menu_Window"/>
    <addaction name="menu_Help"/>

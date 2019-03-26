@@ -71,11 +71,12 @@ private:
     void setup_Action(const char *name, QAction *action, const char *defaultShortcut, const QObject *receiver,
                       const char *slot, QMenu *menu = nullptr, const QVariant &data = QVariant());
     QMap< QString, QAction * > actions;
-    
+
     void rebuildActions();
 
     void setup_FileMenu_Actions();
     void setup_ActionsMenu_Actions();
+    void setup_GoToMenu_Actions();
     void setup_ViewMenu_Actions();
     void setup_ContextMenu_Actions();
     void setupCustomDirs();
@@ -89,8 +90,9 @@ private:
     void realign();
     void setDropShortcut(QKeySequence dropShortCut);
 
-    bool hasMultipleTabs();
-    bool hasMultipleSubterminals();
+    bool hasMultipleTabs(QAction *);
+    bool hasMultipleSubterminals(QAction *);
+    bool hasIndexedTab(QAction *action);
 
 public slots:
     void showHide();

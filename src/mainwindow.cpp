@@ -38,7 +38,7 @@
 #include "qterminalapp.h"
 #include "dbusaddressable.h"
 
-typedef std::function<bool(MainWindow&)> checkfn;
+typedef std::function<bool(MainWindow&, QAction *)> checkfn;
 Q_DECLARE_METATYPE(checkfn)
 
 // TODO/FXIME: probably remove. QSS makes it unusable on mac...
@@ -137,6 +137,7 @@ void MainWindow::rebuildActions()
     // Then create them again
     setup_FileMenu_Actions();
     setup_ActionsMenu_Actions();
+    setup_GoToMenu_Actions();
     setup_ViewMenu_Actions();
 }
 
@@ -314,6 +315,25 @@ void MainWindow::setup_ActionsMenu_Actions()
     // this is correct - add action to main window - not to menu
 
 }
+
+
+void MainWindow::setup_GoToMenu_Actions()
+{
+    QVariant data;
+    const checkfn checkHasIndexedTab = &MainWindow::hasIndexedTab;
+    data.setValue(checkHasIndexedTab);
+
+    const QString textBase = tr("Tab");
+    for (int i=1; i<=10; ++i) {
+        QString num = QString::number(i);
+        QAction *action = new QAction(textBase + QLatin1Char(' ') + num, settingOwner);
+        action->setProperty("tab", i);
+        char name[16];
+        snprintf(name, sizeof(name), "Tab %d", i);
+        setup_Action(name, action, NULL, consoleTabulator, SLOT(onAction()), menu_GoTo, data);
+    }
+}
+
 void MainWindow::setup_FileMenu_Actions()
 {
     menu_File->clear();
@@ -758,25 +778,38 @@ void MainWindow::onCurrentTitleChanged(int index)
     setWindowIcon(icon.isNull() || !Properties::Instance()->changeWindowIcon ? QIcon::fromTheme(QStringLiteral("utilities-terminal")) : icon);
 }
 
-bool MainWindow::hasMultipleTabs()
+bool MainWindow::hasMultipleTabs(QAction *)
 {
     return consoleTabulator->findChildren<TermWidgetHolder*>().count() > 1;
 }
 
-bool MainWindow::hasMultipleSubterminals()
+bool MainWindow::hasMultipleSubterminals(QAction *)
 {
     return consoleTabulator->terminalHolder()->findChildren<TermWidget*>().count() > 1;
 }
 
+bool MainWindow::hasIndexedTab(QAction *action)
+{
+    bool ok;
+    const int index = action->property("tab").toInt(&ok);
+    Q_ASSERT(ok);
+    static_cast<void>(ok);
+    return consoleTabulator->findChildren<TermWidgetHolder*>().count() >= index;
+}
+
 void MainWindow::updateDisabledActions()
 {
-    const QList<QAction*> actions = menu_Actions->actions();
-    for (QAction *action : actions) {
-        if (!action->data().isNull()) {
-            const checkfn check = action->data().value<checkfn>();
-            action->setEnabled(check(*this));
+    auto enableActions = [this](const QList<QAction *> &actions) {
+        for (QAction *action : actions) {
+            if (!action->data().isNull()) {
+                const checkfn check = action->data().value<checkfn>();
+                action->setEnabled(check(*this, action));
+            }
         }
-    }
+    };
+
+    enableActions(menu_Actions->actions());
+    enableActions(menu_GoTo->actions());
 }
 
 
