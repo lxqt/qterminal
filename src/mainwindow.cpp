@@ -378,7 +378,7 @@ void MainWindow::setup_ViewMenu_Actions()
                  FULLSCREEN_SHORTCUT, this, SLOT(showFullscreen(bool)), menu_Window);
 
     setup_Action(TOGGLE_BOOKMARKS, new QAction(tr("Toggle Bookmarks"), settingOwner),
-                 TOGGLE_BOOKMARKS_SHORTCUT, nullptr, nullptr, menu_Window);
+                 TOGGLE_BOOKMARKS_SHORTCUT, this, SLOT(toggleBookmarks()), menu_Window);
 
     menu_Window->addSeparator();
 
