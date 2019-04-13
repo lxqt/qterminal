@@ -13,6 +13,10 @@ set(QTERMINAL_VERSION "0.14.1")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
+if(APPLE)
+    option(APPLEBUNDLE "Build as qterminal.app bundle" ON)
+endif()
+
 # we need qpa/qplatformnativeinterface.h for global shortcut
 
 # Minimum Versions
@@ -160,11 +164,11 @@ if(APPLEBUNDLE)
     set(MACOSX_BUNDLE_BUNDLE_VERSION "${QTERMINAL_VERSION}")
     set(MACOSX_BUNDLE_COPYRIGHT "(c) Petr Vanek &lt;petr@yarpen.cz&gt;")
 
-    set_source_files_properties("${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns"
+    set_source_files_properties("${CMAKE_CURRENT_SOURCE_DIR}/src/macosx/qterminal.icns"
         PROPERTIES MACOSX_PACKAGE_LOCATION Resources
     )
     # use icon for app bundle to be visible in finder
-    set(APPLE_BUNDLE_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/macosx/qterminal.icns")
+    set(APPLE_BUNDLE_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/macosx/qterminal.icns")
 else()
     set(TRANSLATIONS_DIR "${CMAKE_INSTALL_FULL_DATADIR}/qterminal/translations")
     add_definitions(-DTRANSLATIONS_DIR=\"${TRANSLATIONS_DIR}\")
@@ -228,7 +232,7 @@ if(NOT APPLEBUNDLE)
     install(FILES ${QTERM_QM} DESTINATION ${TRANSLATIONS_DIR})
     install(FILES src/icons/qterminal.png DESTINATION "${CMAKE_INSTALL_DATADIR}/icons/hicolor/64x64/apps")
 else()
-    message(STATUS "APPLEBUNDLE")
+    message(STATUS "Building qterminal.app bundle")
 
     install(CODE "message(STATUS \"Cleaning previously installed bundle (rm -r)\")")
     install(CODE "execute_process(COMMAND rm -r ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app)")
@@ -247,5 +251,10 @@ else()
     install(CODE "message(STATUS \"Bundling (cp) keytab files from ${QTERMWIDGET_SHARE}/qtermwidget/\")")
     install(CODE "execute_process(COMMAND cp -r ${QTERMWIDGET_SHARE}/qtermwidget/ ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/Resources)")
 
-    install(FILES ${QTERM_QM} DESTINATION ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/translations)
+    install(FILES ${QTERM_QM} DESTINATION ${CMAKE_INSTALL_PREFIX}/${EXE_NAME}.app/Contents/Resources/translations)
+
+    # Workaround https://bugreports.qt.io/browse/QTBUG-63324
+    add_custom_command(TARGET ${EXE_NAME} POST_BUILD
+        COMMAND "${CMAKE_COMMAND}" -E touch "${CMAKE_CURRENT_BINARY_DIR}/${EXE_NAME}.app/Contents/Resources/empty.lproj"
+        COMMENT "Creating Resources/empty.lproj")
 endif()
