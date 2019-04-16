@@ -19,10 +19,10 @@
 #include <QApplication>
 #include <QtGlobal>
 
-#include <assert.h>
-#include <stdio.h>
+#include <cassert>
+#include <cstdio>
 #include <getopt.h>
-#include <stdlib.h>
+#include <cstdlib>
 #ifdef HAVE_QDBUS
     #include <QtDBus/QtDBus>
     #include <unistd.h>
