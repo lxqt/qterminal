@@ -48,9 +48,9 @@ template <class T> T* findParent(QObject *child)
     QObject *maybeT = child;
     while (true)
     {
-        if (maybeT == NULL)
+        if (maybeT == nullptr)
         {
-            return NULL;
+            return nullptr;
         }
         T *holder = qobject_cast<T*>(maybeT);
         if (holder)

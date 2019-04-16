@@ -34,7 +34,7 @@ class TermWidgetImpl : public QTermWidget
 
     public:
 
-        TermWidgetImpl(TerminalConfig &cfg, QWidget * parent=0);
+        TermWidgetImpl(TerminalConfig &cfg, QWidget * parent=nullptr);
         void propertiesChanged();
         void paste(QClipboard::Mode mode);
 
@@ -64,7 +64,7 @@ class TermWidget : public QWidget, public DBusAddressable
     QColor m_border;
 
     public:
-        TermWidget(TerminalConfig &cfg, QWidget * parent=0);
+        TermWidget(TerminalConfig &cfg, QWidget * parent=nullptr);
 
         void propertiesChanged(); 
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }

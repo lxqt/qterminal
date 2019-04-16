@@ -39,16 +39,16 @@
 const char* const short_options = "vhw:e:dp:";
 
 const struct option long_options[] = {
-    {"version", 0, NULL, 'v'},
-    {"help",    0, NULL, 'h'},
-    {"workdir", 1, NULL, 'w'},
-    {"execute", 1, NULL, 'e'},
-    {"drop",    0, NULL, 'd'},
-    {"profile", 1, NULL, 'p'},
-    {NULL,      0, NULL,  0}
+    {"version", 0, nullptr, 'v'},
+    {"help",    0, nullptr, 'h'},
+    {"workdir", 1, nullptr, 'w'},
+    {"execute", 1, nullptr, 'e'},
+    {"drop",    0, nullptr, 'd'},
+    {"profile", 1, nullptr, 'p'},
+    {nullptr,   0, nullptr,  0}
 };
 
-QTerminalApp * QTerminalApp::m_instance = NULL;
+QTerminalApp * QTerminalApp::m_instance = nullptr;
 
 void print_usage_and_exit(int code)
 {
@@ -76,7 +76,7 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
     int next_option;
     dropMode = false;
     do{
-        next_option = getopt_long(argc, argv, short_options, long_options, NULL);
+        next_option = getopt_long(argc, argv, short_options, long_options, nullptr);
         switch(next_option)
         {
             case 'h':
@@ -185,10 +185,10 @@ int main(int argc, char *argv[])
 
 MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
 {
-    MainWindow *window = NULL;
+    MainWindow *window = nullptr;
     if (dropMode)
     {
-        QWidget *hiddenPreviewParent = new QWidget(0, Qt::Tool);
+        QWidget *hiddenPreviewParent = new QWidget(nullptr, Qt::Tool);
         window = new MainWindow(cfg, dropMode, hiddenPreviewParent);
         if (Properties::Instance()->dropShowOnStart)
             window->show();
@@ -205,13 +205,13 @@ MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
 
 QTerminalApp *QTerminalApp::Instance()
 {
-    assert(m_instance != NULL);
+    assert(m_instance != nullptr);
     return m_instance;
 }
 
 QTerminalApp *QTerminalApp::Instance(int &argc, char **argv)
 {
-    assert(m_instance == NULL);
+    assert(m_instance == nullptr);
     m_instance = new QTerminalApp(argc, argv);
     return m_instance;
 }
@@ -233,7 +233,7 @@ void QTerminalApp::setWorkingDirectory(const QString &wd)
 
 void QTerminalApp::cleanup() {
     delete m_instance;
-    m_instance = NULL;
+    m_instance = nullptr;
 }
 
 
@@ -286,14 +286,14 @@ QDBusObjectPath QTerminalApp::newWindow(const QHash<QString,QVariant> &termArgs)
 {
     TerminalConfig cfg = TerminalConfig::fromDbus(termArgs);
     MainWindow *wnd = newWindow(false, cfg);
-    assert(wnd != NULL);
+    assert(wnd != nullptr);
     return wnd->getDbusPath();
 }
 
 QDBusObjectPath QTerminalApp::getActiveWindow()
 {
     QWidget *aw = activeWindow();
-    if (aw == NULL)
+    if (aw == nullptr)
         return QDBusObjectPath("/");
     return qobject_cast<MainWindow*>(aw)->getDbusPath();
 }

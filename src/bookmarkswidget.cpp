@@ -33,7 +33,7 @@ public:
         Command = 2
     };
 
-    AbstractBookmarkItem(AbstractBookmarkItem* parent = 0)
+    AbstractBookmarkItem(AbstractBookmarkItem* parent = nullptr)
     {
         m_parent = parent;
     }
@@ -240,7 +240,7 @@ public:
 
 BookmarksModel::BookmarksModel(QObject *parent)
     : QAbstractItemModel(parent),
-      m_root(0)
+      m_root(nullptr)
 {
     setup();
 }

@@ -39,7 +39,7 @@ QString TerminalConfig::getShell()
     if (!Properties::Instance()->shell.isEmpty())
         return Properties::Instance()->shell;
     QByteArray envShell = qgetenv("SHELL");
-    if (envShell.constData() != NULL)
+    if (envShell.constData() != nullptr)
     {
         QString shellString = QString::fromLocal8Bit(envShell);
         if (!shellString.isEmpty())
@@ -73,7 +73,7 @@ void TerminalConfig::provideCurrentDirectory(const QString &val)
 TerminalConfig TerminalConfig::fromDbus(const QHash<QString,QVariant> &termArgsConst, TermWidget *toSplit)
 {
     QHash<QString,QVariant> termArgs(termArgsConst);
-    if (toSplit != NULL && !termArgs.contains(QLatin1String(DBUS_ARG_WORKDIR)))
+    if (toSplit != nullptr && !termArgs.contains(QLatin1String(DBUS_ARG_WORKDIR)))
     {
         termArgs[QLatin1String(DBUS_ARG_WORKDIR)] = QVariant(toSplit->impl()->workingDirectory());
     }

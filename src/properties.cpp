@@ -24,7 +24,7 @@
 #include "mainwindow.h"
 #include "qterminalapp.h"
 
-Properties * Properties::m_instance = 0;
+Properties * Properties::m_instance = nullptr;
 
 
 Properties * Properties::Instance(const QString& filename)
@@ -48,7 +48,7 @@ Properties::~Properties()
 {
     qDebug("Properties destructor called");
     delete m_settings;
-    m_instance = 0;
+    m_instance = nullptr;
 }
 
 QFont Properties::defaultFont()
@@ -166,7 +166,7 @@ void Properties::saveSettings()
 
     m_settings->beginGroup(QLatin1String("Shortcuts"));
     MainWindow *mainWindow = QTerminalApp::Instance()->getWindowList()[0];
-    assert(mainWindow != NULL);
+    assert(mainWindow != nullptr);
 
     QMapIterator< QString, QAction * > it(mainWindow->leaseActions());
     while( it.hasNext() )

@@ -50,16 +50,16 @@ MainWindow::MainWindow(TerminalConfig &cfg,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
       DBusAddressable(QStringLiteral("/windows")),
-      tabPosition(NULL),
-      scrollBarPosition(NULL),
-      keyboardCursorShape(NULL),
-      tabPosMenu(NULL),
-      scrollPosMenu(NULL),
-      keyboardCursorShapeMenu(NULL),
-      settingOwner(NULL),
-      presetsMenu(NULL),
+      tabPosition(nullptr),
+      scrollBarPosition(nullptr),
+      keyboardCursorShape(nullptr),
+      tabPosMenu(nullptr),
+      scrollPosMenu(nullptr),
+      keyboardCursorShapeMenu(nullptr),
+      settingOwner(nullptr),
+      presetsMenu(nullptr),
       m_config(cfg),
-      m_dropLockButton(0),
+      m_dropLockButton(nullptr),
       m_dropMode(dropMode)
 {
 #ifdef HAVE_QDBUS
@@ -237,15 +237,15 @@ void MainWindow::setup_ActionsMenu_Actions()
     menu_Actions->addSeparator();
 
     setup_Action(SPLIT_HORIZONTAL, new QAction(tr("Split Terminal &Horizontally"), settingOwner),
-                 NULL, consoleTabulator, SLOT(splitHorizontally()), menu_Actions);
+                 nullptr, consoleTabulator, SLOT(splitHorizontally()), menu_Actions);
 
     setup_Action(SPLIT_VERTICAL, new QAction(tr("Split Terminal &Vertically"), settingOwner),
-                 NULL, consoleTabulator, SLOT(splitVertically()), menu_Actions);
+                 nullptr, consoleTabulator, SLOT(splitVertically()), menu_Actions);
 
     data.setValue(checkSubterminals);
 
     setup_Action(SUB_COLLAPSE, new QAction(tr("&Collapse Subterminal"), settingOwner),
-                 NULL, consoleTabulator, SLOT(splitCollapse()), menu_Actions, data);
+                 nullptr, consoleTabulator, SLOT(splitCollapse()), menu_Actions, data);
 
     setup_Action(SUB_TOP, new QAction(QIcon::fromTheme(QStringLiteral("go-up")), tr("&Top Subterminal"), settingOwner),
                  SUB_TOP_SHORTCUT, consoleTabulator, SLOT(switchTopSubterminal()), menu_Actions, data);
@@ -320,7 +320,7 @@ void MainWindow::setup_FileMenu_Actions()
     setup_Action(ADD_TAB, new QAction(QIcon::fromTheme(QStringLiteral("list-add")), tr("&New Tab"), settingOwner),
                  ADD_TAB_SHORTCUT, this, SLOT(addNewTab()), menu_File);
 
-    if (presetsMenu == NULL) {
+    if (presetsMenu == nullptr) {
         presetsMenu = new QMenu(tr("New Tab From &Preset"), this);
         presetsMenu->addAction(QIcon(), tr("1 &Terminal"),
                                this, SLOT(addNewTab()));
@@ -356,7 +356,7 @@ void MainWindow::setup_ViewMenu_Actions()
     hideBordersAction->setCheckable(true);
     hideBordersAction->setVisible(!m_dropMode);
     setup_Action(HIDE_WINDOW_BORDERS, hideBordersAction,
-                 NULL, this, SLOT(toggleBorderless()), menu_Window);
+                 nullptr, this, SLOT(toggleBorderless()), menu_Window);
     //Properties::Instance()->actions[HIDE_WINDOW_BORDERS]->setObjectName("toggle_Borderless");
 // TODO/FIXME: it's broken somehow. When I call toggleBorderless() here the non-responsive window appear
 //    actions[HIDE_WINDOW_BORDERS]->setChecked(Properties::Instance()->borderless);
@@ -368,7 +368,7 @@ void MainWindow::setup_ViewMenu_Actions()
     showTabBarAction->setCheckable(true);
     showTabBarAction->setChecked(!Properties::Instance()->tabBarless);
     setup_Action(SHOW_TAB_BAR, showTabBarAction,
-                 NULL, this, SLOT(toggleTabBar()), menu_Window);
+                 nullptr, this, SLOT(toggleTabBar()), menu_Window);
     toggleTabBar();
 
     QAction *toggleFullscreen = new QAction(tr("Fullscreen"), settingOwner);
@@ -378,12 +378,12 @@ void MainWindow::setup_ViewMenu_Actions()
                  FULLSCREEN_SHORTCUT, this, SLOT(showFullscreen(bool)), menu_Window);
 
     setup_Action(TOGGLE_BOOKMARKS, new QAction(tr("Toggle Bookmarks"), settingOwner),
-                 TOGGLE_BOOKMARKS_SHORTCUT, NULL, NULL, menu_Window);
+                 TOGGLE_BOOKMARKS_SHORTCUT, nullptr, nullptr, menu_Window);
 
     menu_Window->addSeparator();
 
     /* tabs position */
-    if (tabPosition == NULL) {
+    if (tabPosition == nullptr) {
         tabPosition = new QActionGroup(this);
         QAction *tabBottom = new QAction(tr("&Bottom"), this);
         QAction *tabTop = new QAction(tr("&Top"), this);
@@ -405,7 +405,7 @@ void MainWindow::setup_ViewMenu_Actions()
     connect(tabPosition, &QActionGroup::triggered,
              consoleTabulator, &TabWidget::changeTabPosition);
 
-    if (tabPosMenu == NULL) {
+    if (tabPosMenu == nullptr) {
         tabPosMenu = new QMenu(tr("&Tabs Layout"), menu_Window);
         tabPosMenu->setObjectName(QStringLiteral("tabPosMenu"));
 
@@ -420,7 +420,7 @@ void MainWindow::setup_ViewMenu_Actions()
     /* */
 
     /* Scrollbar */
-    if (scrollBarPosition == NULL) {
+    if (scrollBarPosition == nullptr) {
         scrollBarPosition = new QActionGroup(this);
         QAction *scrollNone = new QAction(tr("&None"), this);
         QAction *scrollRight = new QAction(tr("&Right"), this);
@@ -439,7 +439,7 @@ void MainWindow::setup_ViewMenu_Actions()
              consoleTabulator, &TabWidget::changeScrollPosition);
 
     }
-    if (scrollPosMenu == NULL) {
+    if (scrollPosMenu == nullptr) {
         scrollPosMenu = new QMenu(tr("S&crollbar Layout"), menu_Window);
         scrollPosMenu->setObjectName(QStringLiteral("scrollPosMenu"));
 
@@ -451,7 +451,7 @@ void MainWindow::setup_ViewMenu_Actions()
     menu_Window->addMenu(scrollPosMenu);
 
     /* Keyboard cursor shape */
-    if (keyboardCursorShape == NULL) {
+    if (keyboardCursorShape == nullptr) {
         keyboardCursorShape = new QActionGroup(this);
         QAction *block = new QAction(tr("&BlockCursor"), this);
         QAction *underline = new QAction(tr("&UnderlineCursor"), this);
@@ -471,7 +471,7 @@ void MainWindow::setup_ViewMenu_Actions()
                  consoleTabulator, &TabWidget::changeKeyboardCursorShape);
     }
 
-    if (keyboardCursorShapeMenu == NULL) {
+    if (keyboardCursorShapeMenu == nullptr) {
         keyboardCursorShapeMenu = new QMenu(tr("&Keyboard Cursor Shape"), menu_Window);
         keyboardCursorShapeMenu->setObjectName(QStringLiteral("keyboardCursorShapeMenu"));
 
@@ -704,7 +704,7 @@ bool MainWindow::event(QEvent *event)
     {
         if (m_dropMode &&
             !Properties::Instance()->dropKeepOpen &&
-            qApp->activeWindow() == 0
+            qApp->activeWindow() == nullptr
            )
            hide();
     }

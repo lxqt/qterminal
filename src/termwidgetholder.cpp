@@ -231,7 +231,7 @@ void TermWidgetHolder::directionalNavigation(NavigationDirection dir) {
     l = findChildren<TermWidget*>();
     int lowestX = INT_MAX;
     int lowestMidpointDistance = INT_MAX;
-    TermWidget *fittest = NULL;
+    TermWidget *fittest = nullptr;
     for (TermWidget * w : qAsConst(l))
     {
         NavigationData contenderDims = getNormalizedDimensions(w, dir);
@@ -250,7 +250,7 @@ void TermWidgetHolder::directionalNavigation(NavigationDirection dir) {
             fittest = w;
         }
     }
-    if (fittest != NULL) {
+    if (fittest != nullptr) {
         fittest->impl()->setFocus(Qt::OtherFocusReason);
     }
 }
@@ -283,7 +283,7 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
 {
     QSplitter * parent = qobject_cast<QSplitter*>(term->parent());
     assert(parent);
-    term->setParent(0);
+    term->setParent(nullptr);
     delete term;
 
     QWidget *nextFocus = Q_NULLPTR;
@@ -305,7 +305,7 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
             {
                 nextFocus = singleHeir->findChild<TermWidget*>();
             }
-            parent->setParent(0);
+            parent->setParent(nullptr);
             delete parent;
             // Make sure there's no access to the removed parent
             parent = uselessSplitterParent;
@@ -414,7 +414,7 @@ void TermWidgetHolder::onTermTitleChanged(QString title, QString icon) const
 
 QDBusObjectPath TermWidgetHolder::getActiveTerminal()
 {
-    if (m_currentTerm != NULL)
+    if (m_currentTerm != nullptr)
     {
         return m_currentTerm->getDbusPath();
     }

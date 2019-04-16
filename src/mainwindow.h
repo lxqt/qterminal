@@ -38,7 +38,7 @@ class MainWindow : public QMainWindow, private Ui::mainWindow, public DBusAddres
 public:
     MainWindow(TerminalConfig& cfg,
                bool dropMode,
-               QWidget * parent = 0, Qt::WindowFlags f = 0);
+               QWidget * parent = nullptr, Qt::WindowFlags f = nullptr);
     ~MainWindow();
 
     bool dropMode() { return m_dropMode; }
@@ -69,7 +69,7 @@ private:
     QDockWidget *m_bookmarksDock;
 
     void setup_Action(const char *name, QAction *action, const char *defaultShortcut, const QObject *receiver,
-                      const char *slot, QMenu *menu = NULL, const QVariant &data = QVariant());
+                      const char *slot, QMenu *menu = nullptr, const QVariant &data = QVariant());
     QMap< QString, QAction * > actions;
     
     void rebuildActions();
