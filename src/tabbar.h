@@ -36,7 +36,7 @@ public:
 
 protected:
 
-    virtual QSize tabSizeHint(int index) const;
+    QSize tabSizeHint(int index) const override;
 
 private:
 

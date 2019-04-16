@@ -31,7 +31,7 @@ class BookmarksWidget : public QWidget, Ui::BookmarksWidget
 
 public:
     BookmarksWidget(QWidget *parent=nullptr);
-    ~BookmarksWidget();
+    ~BookmarksWidget() override;
 
     void setup();
 
@@ -52,20 +52,20 @@ class BookmarksModel : public QAbstractItemModel
 
 public:
     BookmarksModel(QObject *parent = nullptr);
-    ~BookmarksModel();
+    ~BookmarksModel() override;
 
     void setup();
 
-    QVariant data(const QModelIndex &index, int role) const;
+    QVariant data(const QModelIndex &index, int role) const override;
     QVariant headerData(int section, Qt::Orientation orientation,
-                        int role = Qt::DisplayRole) const;
+                        int role = Qt::DisplayRole) const override;
 
     QModelIndex index(int row, int column,
-                      const QModelIndex &parent = QModelIndex()) const;
-    QModelIndex parent(const QModelIndex &index) const;
+                      const QModelIndex &parent = QModelIndex()) const override;
+    QModelIndex parent(const QModelIndex &index) const override;
 
-    int rowCount(const QModelIndex &parent = QModelIndex()) const;
-    int columnCount(const QModelIndex &parent = QModelIndex()) const;
+    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    int columnCount(const QModelIndex &parent = QModelIndex()) const override;
 
 private:
     AbstractBookmarkItem *getItem(const QModelIndex &index) const;

@@ -39,7 +39,7 @@ public:
     MainWindow(TerminalConfig& cfg,
                bool dropMode,
                QWidget * parent = nullptr, Qt::WindowFlags f = nullptr);
-    ~MainWindow();
+    ~MainWindow() override;
 
     bool dropMode() { return m_dropMode; }
     QMap<QString, QAction*> & leaseActions();
@@ -52,7 +52,7 @@ public:
     #endif
 
 protected:
-     bool event(QEvent* event);
+     bool event(QEvent* event) override;
 
 private:
     QActionGroup *tabPosition, *scrollBarPosition, *keyboardCursorShape;
@@ -80,7 +80,7 @@ private:
     void setup_ContextMenu_Actions();
     void setupCustomDirs();
 
-    void closeEvent(QCloseEvent*);
+    void closeEvent(QCloseEvent*) override;
 
     void enableDropMode();
     QToolButton *m_dropLockButton;

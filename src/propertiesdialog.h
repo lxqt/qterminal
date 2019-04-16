@@ -43,10 +43,10 @@ class Delegate : public QStyledItemDelegate
 public:
     Delegate (QObject *parent = nullptr);
 
-    virtual QWidget* createEditor(QWidget *parent,
+    QWidget* createEditor(QWidget *parent,
                                   const QStyleOptionViewItem&,
-                                  const QModelIndex&) const;
-    virtual bool eventFilter(QObject *object, QEvent *event);
+                                  const QModelIndex&) const override;
+    bool eventFilter(QObject *object, QEvent *event) override;
 };
 
 class PropertiesDialog : public QDialog, Ui::PropertiesDialog
@@ -57,7 +57,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
 
     public:
         PropertiesDialog(QWidget *parent=nullptr);
-        ~PropertiesDialog();
+        ~PropertiesDialog() override;
 
     signals:
         void propertiesChanged();
@@ -69,7 +69,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
 
     private slots:
         void apply();
-        void accept();
+        void accept() override;
 
         void changeFontButton_clicked();
         void chooseBackgroundImageButton_clicked();
