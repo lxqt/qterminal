@@ -41,7 +41,7 @@ class Delegate : public QStyledItemDelegate
     Q_OBJECT
 
 public:
-    Delegate (QObject *parent = 0);
+    Delegate (QObject *parent = nullptr);
 
     virtual QWidget* createEditor(QWidget *parent,
                                   const QStyleOptionViewItem&,
@@ -56,7 +56,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
     QString oldAccelText; // Placeholder when editing shortcut
 
     public:
-        PropertiesDialog(QWidget *parent=NULL);
+        PropertiesDialog(QWidget *parent=nullptr);
         ~PropertiesDialog();
 
     signals:

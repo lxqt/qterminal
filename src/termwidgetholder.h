@@ -51,7 +51,7 @@ class TermWidgetHolder : public QWidget
     Q_OBJECT
 
     public:
-        TermWidgetHolder(TerminalConfig &cfg, QWidget * parent=0);
+        TermWidgetHolder(TerminalConfig &cfg, QWidget * parent=nullptr);
         ~TermWidgetHolder();
 
         void propertiesChanged();

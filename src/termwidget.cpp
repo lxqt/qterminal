@@ -344,7 +344,7 @@ void TermWidget::paintEvent (QPaintEvent *)
 QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termArgs)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
-    assert(holder != NULL);
+    assert(holder != nullptr);
     TerminalConfig cfg = TerminalConfig::fromDbus(termArgs, this);
     return holder->split(this, Qt::Horizontal, cfg)->getDbusPath();
 }
@@ -352,7 +352,7 @@ QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termA
 QDBusObjectPath TermWidget::splitVertical(const QHash<QString,QVariant> &termArgs)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
-    assert(holder != NULL);
+    assert(holder != nullptr);
     TerminalConfig cfg = TerminalConfig::fromDbus(termArgs, this);
     return holder->split(this, Qt::Vertical, cfg)->getDbusPath();
 }
