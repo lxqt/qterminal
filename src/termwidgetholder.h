@@ -52,7 +52,7 @@ class TermWidgetHolder : public QWidget
 
     public:
         TermWidgetHolder(TerminalConfig &cfg, QWidget * parent=nullptr);
-        ~TermWidgetHolder();
+        ~TermWidgetHolder() override;
 
         void propertiesChanged();
         void setInitialFocus();

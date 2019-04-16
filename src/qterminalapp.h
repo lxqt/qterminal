@@ -40,7 +40,7 @@ private:
     QList<MainWindow *> m_windowList;
     static QTerminalApp *m_instance;
     QTerminalApp(int &argc, char **argv);
-    ~QTerminalApp(){};
+    ~QTerminalApp() override{};
 };
 
 template <class T> T* findParent(QObject *child)

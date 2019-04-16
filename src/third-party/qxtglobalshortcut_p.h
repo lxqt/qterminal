@@ -46,7 +46,7 @@ class QxtGlobalShortcutPrivate : public QxtPrivate<QxtGlobalShortcut>
 public:
     QXT_DECLARE_PUBLIC(QxtGlobalShortcut)
     QxtGlobalShortcutPrivate();
-    ~QxtGlobalShortcutPrivate();
+    ~QxtGlobalShortcutPrivate() override;
 
     bool enabled;
     Qt::Key key;
@@ -58,7 +58,7 @@ public:
     static bool error;
 #ifndef Q_OS_MAC
     static int ref;
-    virtual bool nativeEventFilter(const QByteArray & eventType, void * message, long * result);
+    bool nativeEventFilter(const QByteArray & eventType, void * message, long * result) override;
 #endif
 
     static void activateShortcut(quint32 nativeKey, quint32 nativeMods);
