@@ -30,7 +30,7 @@
 #include "termwidgetholder.h"
 #include "termwidget.h"
 #include "properties.h"
-#include <assert.h>
+#include <cassert>
 #include <climits>
 #include <algorithm>
 

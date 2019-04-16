@@ -17,7 +17,7 @@
  ***************************************************************************/
 
 #include <qtermwidget.h>
-#include <assert.h>
+#include <cassert>
 
 #include "properties.h"
 #include "config.h"

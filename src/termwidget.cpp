@@ -23,7 +23,7 @@
 #include <QMessageBox>
 #include <QAbstractButton>
 #include <QMouseEvent>
-#include <assert.h>
+#include <cassert>
 
 #ifdef HAVE_QDBUS
     #include <QtDBus/QtDBus>
