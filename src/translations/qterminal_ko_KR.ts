@@ -178,7 +178,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>사전 설정된 새 탭(&amp;P)</translation>
+        <translation>미리 설정된 새 탭(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
@@ -794,7 +794,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
-        <translation>동장(&amp;A)</translation>
+        <translation>동작(&amp;A)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
