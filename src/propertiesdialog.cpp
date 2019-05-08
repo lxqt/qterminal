@@ -190,17 +190,21 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     trimPastedTrailingNewlinesCheckBox->setChecked(Properties::Instance()->trimPastedTrailingNewlines);
     confirmMultilinePasteCheckBox->setChecked(Properties::Instance()->confirmMultilinePaste);
 
-    // show it compact inside available desktop geometry
+    // show it inside available desktop geometry
     QSize ag;
     if (parent != nullptr)
     {
         if (QWindow *win = parent->windowHandle())
         {
             if (QScreen *sc = win->screen())
-                ag = sc->availableVirtualGeometry().size();
+                ag = sc->availableVirtualGeometry().size()
+                     // also consider the parent frame thickness because the parent window
+                     // is fully formed and the frame thickness of the dialog is the same
+                     - (parent->window()->frameGeometry().size()
+                        - parent->window()->geometry().size());
         }
     }
-    resize(sizeHint().boundedTo(ag));
+    resize(size().boundedTo(ag));
 }
 
 
