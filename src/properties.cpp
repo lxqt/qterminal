@@ -313,16 +313,16 @@ void Properties::migrate_settings()
             settings.setValue(QLatin1String("TerminalTransparency"), 100 - termOpacityValue);
         }
         settings.remove(QLatin1String("termOpacity"));
-	// geometry -> size, pos
-    if (!settings.contains(QLatin1String("MainWindow/size")))
-	{
-	    QWidget geom;
-        geom.restoreGeometry(settings.value(QLatin1String("MainWindow/geometry")).toByteArray());
+        // geometry -> size, pos
+        if (!settings.contains(QLatin1String("MainWindow/size")) && settings.contains(QLatin1String("MainWindow/geometry")))
+        {
+            QWidget geom;
+            geom.restoreGeometry(settings.value(QLatin1String("MainWindow/geometry")).toByteArray());
             settings.setValue(QLatin1String("MainWindow/size"), geom.size());
             settings.setValue(QLatin1String("MainWindow/pos"), geom.pos());
             settings.setValue(QLatin1String("MainWindow/isMaximized"), geom.isMaximized());
             settings.remove(QLatin1String("MainWindow/geometry"));
-	}
+        }
     }
 
     if (currentVersion > lastVersion)
