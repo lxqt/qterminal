@@ -223,7 +223,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="355"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;Agachar o bordo das xanelas</translation>
+        <translation>&amp;Agochar o bordo das xanelas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
@@ -354,7 +354,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="90"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Agachar a barra de lapelas cando hai só unha lapela</translation>
+        <translation>Agochar a barra de lapelas cando hai só unha lapela</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="100"/>
