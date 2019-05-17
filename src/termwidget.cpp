@@ -53,8 +53,6 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
 
     propertiesChanged();
 
-    setHistorySize(5000);
-
     setWorkingDirectory(cfg.getWorkingDirectory());
 
     QString shell = cfg.getShell();
