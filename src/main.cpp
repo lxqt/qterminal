@@ -174,6 +174,8 @@ int main(int argc, char *argv[])
     app->installTranslator(&translator);
 
     TerminalConfig initConfig = TerminalConfig(workdir, shell_command);
+    if (Properties::Instance()->borderless)
+        setenv("QT_WAYLAND_DISABLE_WINDOWDECORATION", "1", 0);
     app->newWindow(dropMode, initConfig);
 
     int ret = app->exec();
