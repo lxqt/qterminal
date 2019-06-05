@@ -73,12 +73,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>前のタブ履歴(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>最近使用した次のタブ(&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
@@ -93,22 +93,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>上のサブターミナル(&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>下のサブターミナル(&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="256"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>左のサブターミナル(&amp;E)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>右のサブターミナル(&amp;I)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
@@ -173,7 +173,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">ブックマークをToggle</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="388"/>
@@ -260,7 +260,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>&quot;%1&quot;を押すとそのターミナルを見ることができます</translation>
+        <translation>&quot;%1&quot;を押すとそのターミナルを見ることができます。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="269"/>
@@ -300,7 +300,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;New Window</source>
-        <translation>新規ウィンドウ(&amp;N)</translation>
+        <translation>新しいウィンドウ(&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="355"/>
@@ -434,7 +434,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished"></translation>
+        <translation>双方向テキストのサポートを有効</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
@@ -449,23 +449,23 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>ターミナルのサイズ変更時にサイズを表示</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
         <location filename="../forms/propertiesdialog.ui" line="425"/>
         <source>px</source>
-        <translation type="unfinished"></translation>
+        <translation>ピクセル</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>各タブに閉じるボタンを表示</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>ターミナルの余白</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="458"/>
@@ -520,7 +520,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="575"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>$TERMのデフォルト値</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="666"/>
@@ -557,7 +557,7 @@
         <location filename="../forms/propertiesdialog.ui" line="187"/>
         <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source> %</source>
-        <translation>%</translation>
+        <translation> %</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="631"/>
@@ -587,12 +587,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>カーソルの形</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>タブタイトルの幅を固定:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="648"/>
@@ -664,17 +664,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>No move</source>
-        <translation type="unfinished">無動作</translation>
+        <translation>スクロールしない</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move start</source>
-        <translation type="unfinished">動作開始</translation>
+        <translation>最上部にスクロール</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move end</source>
-        <translation type="unfinished">動作終了</translation>
+        <translation>最下部にスクロール</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="135"/>
@@ -740,7 +740,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="213"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>新しいタブタイトルの色を選択</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="234"/>
@@ -750,7 +750,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="236"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>タイトルの色を変更</translation>
     </message>
 </context>
 <context>
