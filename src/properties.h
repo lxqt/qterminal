@@ -109,7 +109,7 @@ class Properties
 
         bool windowMaximized;
 
-
+        bool useFontBoxDrawingChars;
     private:
 
         // Singleton handling

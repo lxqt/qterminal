@@ -146,6 +146,7 @@ void Properties::loadSettings()
     changeWindowTitle = m_settings->value(QLatin1String("ChangeWindowTitle"), true).toBool();
     changeWindowIcon = m_settings->value(QLatin1String("ChangeWindowIcon"), true).toBool();
     enabledBidiSupport = m_settings->value(QLatin1String("enabledBidiSupport"), true).toBool();
+    useFontBoxDrawingChars = m_settings->value(QLatin1String("UseFontBoxDrawingChars"), false).toBool();
 
     confirmMultilinePaste = m_settings->value(QLatin1String("ConfirmMultilinePaste"), false).toBool();
     trimPastedTrailingNewlines = m_settings->value(QLatin1String("TrimPastedTrailingNewlines"), false).toBool();
@@ -244,6 +245,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("ChangeWindowTitle"), changeWindowTitle);
     m_settings->setValue(QLatin1String("ChangeWindowIcon"), changeWindowIcon);
     m_settings->setValue(QLatin1String("enabledBidiSupport"), enabledBidiSupport);
+    m_settings->setValue(QLatin1String("UseFontBoxDrawingChars"), useFontBoxDrawingChars);
 
     m_settings->setValue(QLatin1String("ConfirmMultilinePaste"), confirmMultilinePaste);
     m_settings->setValue(QLatin1String("TrimPastedTrailingNewlines"), trimPastedTrailingNewlines);
