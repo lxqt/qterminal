@@ -76,7 +76,6 @@ private:
 
     void setup_FileMenu_Actions();
     void setup_ActionsMenu_Actions();
-    void setup_GoToMenu_Actions();
     void setup_ViewMenu_Actions();
     void setup_ContextMenu_Actions();
     void setupCustomDirs();

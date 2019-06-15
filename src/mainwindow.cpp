@@ -137,7 +137,6 @@ void MainWindow::rebuildActions()
     // Then create them again
     setup_FileMenu_Actions();
     setup_ActionsMenu_Actions();
-    setup_GoToMenu_Actions();
     setup_ViewMenu_Actions();
 }
 
@@ -207,6 +206,7 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     const checkfn checkTabs = &MainWindow::hasMultipleTabs;
     const checkfn checkSubterminals = &MainWindow::hasMultipleSubterminals;
+    const checkfn checkHasIndexedTab = &MainWindow::hasIndexedTab;
 
     menu_Actions->clear();
 
@@ -234,6 +234,20 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     setup_Action(MOVE_RIGHT, new QAction(tr("Move Tab &Right"), settingOwner),
                  MOVE_RIGHT_SHORTCUT, consoleTabulator, SLOT(moveRight()), menu_Actions, data);
+
+    data.setValue(checkHasIndexedTab);
+
+    const QString textBase = tr("Tab");
+    QMenu *menu_GoTo = new QMenu(tr("Go to"), menu_Actions);
+    for (int i=1; i<=10; ++i) {
+        QString num = QString::number(i);
+        QAction *action = new QAction(textBase + QLatin1Char(' ') + num, settingOwner);
+        action->setProperty("tab", i);
+        char name[16];
+        snprintf(name, sizeof(name), "Tab %d", i);
+        setup_Action(name, action, NULL, consoleTabulator, SLOT(onAction()), menu_GoTo, data);
+    }
+    menu_Actions->addMenu(menu_GoTo);
 
     menu_Actions->addSeparator();
 
@@ -314,24 +328,6 @@ void MainWindow::setup_ActionsMenu_Actions()
                  RENAME_SESSION_SHORTCUT, consoleTabulator, SLOT(renameCurrentSession()));
     // this is correct - add action to main window - not to menu
 
-}
-
-
-void MainWindow::setup_GoToMenu_Actions()
-{
-    QVariant data;
-    const checkfn checkHasIndexedTab = &MainWindow::hasIndexedTab;
-    data.setValue(checkHasIndexedTab);
-
-    const QString textBase = tr("Tab");
-    for (int i=1; i<=10; ++i) {
-        QString num = QString::number(i);
-        QAction *action = new QAction(textBase + QLatin1Char(' ') + num, settingOwner);
-        action->setProperty("tab", i);
-        char name[16];
-        snprintf(name, sizeof(name), "Tab %d", i);
-        setup_Action(name, action, NULL, consoleTabulator, SLOT(onAction()), menu_GoTo, data);
-    }
 }
 
 void MainWindow::setup_FileMenu_Actions()
@@ -799,19 +795,19 @@ bool MainWindow::hasIndexedTab(QAction *action)
 
 void MainWindow::updateDisabledActions()
 {
-    auto enableActions = [this](const QList<QAction *> &actions) {
+    std::function<void(const QList<QAction *> &)> enableActions = [this, &enableActions](const QList<QAction *> &actions) {
         for (QAction *action : actions) {
             if (!action->data().isNull()) {
                 const checkfn check = action->data().value<checkfn>();
                 action->setEnabled(check(*this, action));
+            } else if (QMenu *menu = action->menu()) {
+                enableActions(menu->actions());
             }
         }
     };
 
     enableActions(menu_Actions->actions());
-    enableActions(menu_GoTo->actions());
 }
-
 
 QMap< QString, QAction * >& MainWindow::leaseActions() {
     return actions;

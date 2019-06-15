@@ -67,11 +67,6 @@
      <string>&amp;Actions</string>
     </property>
    </widget>
-   <widget class="QMenu" name="menu_GoTo">
-    <property name="title">
-     <string>&amp;Go to</string>
-    </property>
-   </widget>
    <widget class="QMenu" name="menu_Help">
     <property name="title">
      <string>&amp;Help</string>
