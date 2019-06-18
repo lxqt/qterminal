@@ -86,7 +86,6 @@
    </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_Actions"/>
-   <addaction name="menu_GoTo"/>
    <addaction name="menu_Edit"/>
    <addaction name="menu_Window"/>
    <addaction name="menu_Help"/>
