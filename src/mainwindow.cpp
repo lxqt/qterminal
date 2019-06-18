@@ -23,8 +23,8 @@
 #include <functional>
 
 #ifdef HAVE_QDBUS
-    #include <QtDBus/QtDBus>
-    #include "windowadaptor.h"
+#include <QtDBus/QtDBus>
+#include "windowadaptor.h"
 #endif
 
 #include "terminalconfig.h"
@@ -38,7 +38,7 @@
 #include "qterminalapp.h"
 #include "dbusaddressable.h"
 
-typedef std::function<bool(MainWindow&)> checkfn;
+typedef std::function<bool(MainWindow&, QAction *)> checkfn;
 Q_DECLARE_METATYPE(checkfn)
 
 // TODO/FXIME: probably remove. QSS makes it unusable on mac...
@@ -99,12 +99,12 @@ MainWindow::MainWindow(TerminalConfig &cfg,
         setStyleSheet(QStringLiteral(QSS_DROP));
     }
     else {
-	if (Properties::Instance()->saveSizeOnExit) {
-	    resize(Properties::Instance()->mainWindowSize);
-	}
-	if (Properties::Instance()->savePosOnExit) {
-	    move(Properties::Instance()->mainWindowPosition);
-	}
+        if (Properties::Instance()->saveSizeOnExit) {
+            resize(Properties::Instance()->mainWindowSize);
+        }
+        if (Properties::Instance()->savePosOnExit) {
+            move(Properties::Instance()->mainWindowPosition);
+        }
         restoreState(Properties::Instance()->mainWindowState);
     }
 
@@ -206,6 +206,7 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     const checkfn checkTabs = &MainWindow::hasMultipleTabs;
     const checkfn checkSubterminals = &MainWindow::hasMultipleSubterminals;
+    const checkfn checkHasIndexedTab = &MainWindow::hasIndexedTab;
 
     menu_Actions->clear();
 
@@ -233,6 +234,20 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     setup_Action(MOVE_RIGHT, new QAction(tr("Move Tab &Right"), settingOwner),
                  MOVE_RIGHT_SHORTCUT, consoleTabulator, SLOT(moveRight()), menu_Actions, data);
+
+    data.setValue(checkHasIndexedTab);
+
+    const QString textBase = tr("Tab");
+    QMenu *menu_GoTo = new QMenu(tr("Go to"), menu_Actions);
+    for (int i=1; i<=10; ++i) {
+        QString num = QString::number(i);
+        QAction *action = new QAction(textBase + QLatin1Char(' ') + num, settingOwner);
+        action->setProperty("tab", i);
+        char name[16];
+        snprintf(name, sizeof(name), "Tab %d", i);
+        setup_Action(name, action, NULL, consoleTabulator, SLOT(onAction()), menu_GoTo, data);
+    }
+    menu_Actions->addMenu(menu_GoTo);
 
     menu_Actions->addSeparator();
 
@@ -314,6 +329,7 @@ void MainWindow::setup_ActionsMenu_Actions()
     // this is correct - add action to main window - not to menu
 
 }
+
 void MainWindow::setup_FileMenu_Actions()
 {
     menu_File->clear();
@@ -358,10 +374,10 @@ void MainWindow::setup_ViewMenu_Actions()
     setup_Action(HIDE_WINDOW_BORDERS, hideBordersAction,
                  nullptr, this, SLOT(toggleBorderless()), menu_Window);
     //Properties::Instance()->actions[HIDE_WINDOW_BORDERS]->setObjectName("toggle_Borderless");
-// TODO/FIXME: it's broken somehow. When I call toggleBorderless() here the non-responsive window appear
-//    actions[HIDE_WINDOW_BORDERS]->setChecked(Properties::Instance()->borderless);
-//    if (Properties::Instance()->borderless)
-//        toggleBorderless();
+    // TODO/FIXME: it's broken somehow. When I call toggleBorderless() here the non-responsive window appear
+    //    actions[HIDE_WINDOW_BORDERS]->setChecked(Properties::Instance()->borderless);
+    //    if (Properties::Instance()->borderless)
+    //        toggleBorderless();
 
     QAction *showTabBarAction = new QAction(tr("&Show Tab Bar"), settingOwner);
     //toggleTabbar->setObjectName("toggle_TabBar");
@@ -403,7 +419,7 @@ void MainWindow::setup_ViewMenu_Actions()
         tabPosition->actions().at(Properties::Instance()->tabsPos)->setChecked(true);
 
     connect(tabPosition, &QActionGroup::triggered,
-             consoleTabulator, &TabWidget::changeTabPosition);
+            consoleTabulator, &TabWidget::changeTabPosition);
 
     if (tabPosMenu == nullptr) {
         tabPosMenu = new QMenu(tr("&Tabs Layout"), menu_Window);
@@ -436,7 +452,7 @@ void MainWindow::setup_ViewMenu_Actions()
         if( Properties::Instance()->scrollBarPos < scrollBarPosition->actions().size() )
             scrollBarPosition->actions().at(Properties::Instance()->scrollBarPos)->setChecked(true);
         connect(scrollBarPosition, &QActionGroup::triggered,
-             consoleTabulator, &TabWidget::changeScrollPosition);
+                consoleTabulator, &TabWidget::changeScrollPosition);
 
     }
     if (scrollPosMenu == nullptr) {
@@ -468,7 +484,7 @@ void MainWindow::setup_ViewMenu_Actions()
             keyboardCursorShape->actions().at(Properties::Instance()->keyboardCursorShape)->setChecked(true);
 
         connect(keyboardCursorShape, &QActionGroup::triggered,
-                 consoleTabulator, &TabWidget::changeKeyboardCursorShape);
+                consoleTabulator, &TabWidget::changeKeyboardCursorShape);
     }
 
     if (keyboardCursorShapeMenu == nullptr) {
@@ -496,8 +512,7 @@ void MainWindow::on_consoleTabulator_currentChanged(int)
 
 void MainWindow::toggleTabBar()
 {
-    Properties::Instance()->tabBarless
-            = !actions[QLatin1String(SHOW_TAB_BAR)]->isChecked();
+    Properties::Instance()->tabBarless = !actions[QLatin1String(SHOW_TAB_BAR)]->isChecked();
     consoleTabulator->showHideTabBar();
 }
 
@@ -506,8 +521,7 @@ void MainWindow::toggleBorderless()
     setWindowFlags(windowFlags() ^ Qt::FramelessWindowHint);
     show();
     setWindowState(Qt::WindowActive); /* don't loose focus on the window */
-    Properties::Instance()->borderless
-            = actions[QLatin1String(HIDE_WINDOW_BORDERS)]->isChecked(); realign();
+    Properties::Instance()->borderless = actions[QLatin1String(HIDE_WINDOW_BORDERS)]->isChecked(); realign();
 }
 
 void MainWindow::toggleMenu()
@@ -539,15 +553,15 @@ void MainWindow::toggleBookmarks()
 void MainWindow::closeEvent(QCloseEvent *ev)
 {
     if (!Properties::Instance()->askOnExit
-            || !consoleTabulator->count())
+        || !consoleTabulator->count())
     {
         // #80 - do not save state and geometry in drop mode
         if (!m_dropMode) {
             if (Properties::Instance()->savePosOnExit) {
-            	Properties::Instance()->mainWindowPosition = pos();
+                Properties::Instance()->mainWindowPosition = pos();
             }
             if (Properties::Instance()->saveSizeOnExit) {
-            	Properties::Instance()->mainWindowSize = size();
+                Properties::Instance()->mainWindowSize = size();
             }
             Properties::Instance()->windowMaximized = isMaximized();
             Properties::Instance()->mainWindowState = saveState();
@@ -648,12 +662,12 @@ void MainWindow::realign()
         QRect geometry = QRect(0, 0,
                                desktop.width()  * Properties::Instance()->dropWidht  / 100,
                                desktop.height() * Properties::Instance()->dropHeight / 100
-                              );
+            );
         geometry.moveCenter(desktop.center());
         // do not use 0 here - we need to calculate with potential panel on top
         geometry.setTop(desktop.top());
         if (geometry != this->geometry()) {
-          setGeometry(geometry);
+            setGeometry(geometry);
         }
     }
 }
@@ -671,9 +685,9 @@ void MainWindow::showHide()
         hide();
     else
     {
-       realign();
-       show();
-       activateWindow();
+        realign();
+        show();
+        activateWindow();
     }
 }
 
@@ -705,8 +719,8 @@ bool MainWindow::event(QEvent *event)
         if (m_dropMode &&
             !Properties::Instance()->dropKeepOpen &&
             qApp->activeWindow() == nullptr
-           )
-           hide();
+            )
+            hide();
     }
     return QMainWindow::event(event);
 }
@@ -760,30 +774,43 @@ void MainWindow::onCurrentTitleChanged(int index)
     setWindowIcon(icon.isNull() || !Properties::Instance()->changeWindowIcon ? QIcon::fromTheme(QStringLiteral("utilities-terminal")) : icon);
 }
 
-bool MainWindow::hasMultipleTabs()
+bool MainWindow::hasMultipleTabs(QAction *)
 {
     return consoleTabulator->findChildren<TermWidgetHolder*>().count() > 1;
 }
 
-bool MainWindow::hasMultipleSubterminals()
+bool MainWindow::hasMultipleSubterminals(QAction *)
 {
     return consoleTabulator->terminalHolder()->findChildren<TermWidget*>().count() > 1;
 }
 
-void MainWindow::updateDisabledActions()
+bool MainWindow::hasIndexedTab(QAction *action)
 {
-    const QList<QAction*> actions = menu_Actions->actions();
-    for (QAction *action : actions) {
-        if (!action->data().isNull()) {
-            const checkfn check = action->data().value<checkfn>();
-            action->setEnabled(check(*this));
-        }
-    }
+    bool ok;
+    const int index = action->property("tab").toInt(&ok);
+    Q_ASSERT(ok);
+    static_cast<void>(ok);
+    return consoleTabulator->findChildren<TermWidgetHolder*>().count() >= index;
 }
 
+void MainWindow::updateDisabledActions()
+{
+    std::function<void(const QList<QAction *> &)> enableActions = [this, &enableActions](const QList<QAction *> &actions) {
+        for (QAction *action : actions) {
+            if (!action->data().isNull()) {
+                const checkfn check = action->data().value<checkfn>();
+                action->setEnabled(check(*this, action));
+            } else if (QMenu *menu = action->menu()) {
+                enableActions(menu->actions());
+            }
+        }
+    };
+
+    enableActions(menu_Actions->actions());
+}
 
 QMap< QString, QAction * >& MainWindow::leaseActions() {
-        return actions;
+    return actions;
 }
 #ifdef HAVE_QDBUS
 

@@ -91,7 +91,7 @@ int TabWidget::addNewTab(TerminalConfig config)
     int index = addTab(console, label);
     console->setProperty(TAB_CUSTOM_NAME_PROPERTY, false);
     updateTabIndices();
-    setCurrentIndex(index);
+    switchTab(index);
     console->setInitialFocus();
 
     showHideTabBar();
@@ -244,7 +244,7 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
     } else if (action == rename) {
         emit tabRenameRequested(tabIndex);
     } else if (action == changeColor) {
-	emit tabTitleColorChangeRequested(tabIndex);
+    emit tabTitleColorChangeRequested(tabIndex);
     }
 }
 
@@ -321,6 +321,14 @@ void TabWidget::removeTab(int index)
 void TabWidget::switchTab(int index)
 {
     setCurrentIndex(index);
+    findParent<MainWindow>(this)->updateDisabledActions();
+}
+
+void TabWidget::onAction()
+{
+    QObject *action = sender();
+    Q_ASSERT(action);
+    switchTab(action->property("tab").toInt() - 1);
 }
 
 void TabWidget::saveCurrentChanged(int index)
@@ -352,23 +360,13 @@ void TabWidget::removeCurrentTab()
 
 int TabWidget::switchToRight()
 {
-    int next_pos = currentIndex() + 1;
-    if (next_pos < count())
-        setCurrentIndex(next_pos);
-    else
-        setCurrentIndex(0);
-    findParent<MainWindow>(this)->updateDisabledActions();
+    switchTab((currentIndex() + 1) % count());
     return currentIndex();
 }
 
 int TabWidget::switchToLeft()
 {
-    int previous_pos = currentIndex() - 1;
-    if (previous_pos < 0)
-        setCurrentIndex(count() - 1);
-    else
-        setCurrentIndex(previous_pos);
-    findParent<MainWindow>(this)->updateDisabledActions();
+    switchTab(currentIndex() ? currentIndex() - 1 : count() - 1);
     return currentIndex();
 }
 
@@ -411,7 +409,7 @@ void TabWidget::move(Direction dir)
         setTabToolTip(newIndex, toolTip);
         setTabIcon(newIndex, icon);
         setUpdatesEnabled(true);
-        setCurrentIndex(newIndex);
+        switchTab(newIndex);
         child->setFocus();
         updateTabIndices();
     }
