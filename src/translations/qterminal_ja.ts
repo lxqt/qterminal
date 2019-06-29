@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="374"/>
         <source>Fullscreen</source>
-        <translation>フルスクリーン</translation>
+        <translation>全画面表示</translation>
     </message>
 </context>
 <context>
