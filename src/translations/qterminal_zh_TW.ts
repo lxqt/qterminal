@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation>修正的分頁寬度:</translation>
+        <translation>固定的分頁寬度：</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
