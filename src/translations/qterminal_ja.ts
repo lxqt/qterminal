@@ -582,7 +582,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="254"/>
         <source>&amp;Change...</source>
-        <translation>変更（&amp;C)...</translation>
+        <translation>変更(&amp;C)...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
