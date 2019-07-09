@@ -173,7 +173,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished">ブックマークをToggle</translation>
+        <translation>ブックマークの表示切替</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="388"/>
