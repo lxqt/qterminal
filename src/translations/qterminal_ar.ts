@@ -93,7 +93,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;الفرع التالي في الذاكرة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="607"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation type="unfinished">A lightweight multiplatform terminal emulator</translation>
+        <translation type="unfinished">محاكي طرفية متعدد المنصات و خفيف</translation>
     </message>
 </context>
 <context>
@@ -323,23 +323,23 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation type="unfinished">Terminal settings</translation>
+        <translation type="unfinished">إعدادات الطرفية</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="52"/>
         <source>Appearance</source>
-        <translation type="unfinished">Appearance</translation>
+        <translation type="unfinished">المظهر</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="57"/>
         <location filename="../forms/propertiesdialog.ui" line="474"/>
         <source>Behavior</source>
-        <translation type="unfinished">Behavior</translation>
+        <translation type="unfinished">الموقف</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="62"/>
         <source>Shortcuts</source>
-        <translation type="unfinished">Shortcuts</translation>
+        <translation type="unfinished">اختصارات</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="67"/>
@@ -440,7 +440,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>شكل المؤشر</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="385"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>عرض الفرع الثابت :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
