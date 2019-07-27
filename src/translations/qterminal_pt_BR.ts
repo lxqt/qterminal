@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pt_BR">
+<TS version="2.2" language="pt_BR">
 <context>
     <name>BookmarksWidget</name>
     <message>
@@ -501,7 +501,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="458"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;1&lt;head/&gt;2&lt;body&gt;3&lt;p&gt;4Qual comportamento para emular. Observe que isso não precisa corresponder ao seu sistema operacional.&lt;/p&gt;5&lt;p&gt;6A&lt;span style=&quot; font-weight:600;&quot;&gt;7emulação padrão&lt;/span&gt;8 é uma alternativa com um conjunto de recursos mínimo.&lt;/p&gt;9&lt;/body&gt;0&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Qual comportamento para emular. Observe que isso não precisa corresponder ao seu sistema operacional.&lt;/p&gt;&lt;p&gt;A&lt;span style=&quot; font-weight:600;&quot;&gt;emulação padrão&lt;/span&gt; é uma alternativa com um conjunto de recursos mínimo.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
