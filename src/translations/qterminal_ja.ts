@@ -73,7 +73,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>前のタブ履歴(&amp;P)</translation>
+        <translation>最近使用した前のタブ(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
@@ -235,7 +235,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="566"/>
         <source>Exit QTerminal</source>
-        <translation>QTerminal終了</translation>
+        <translation>QTerminal の終了</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="568"/>
@@ -250,7 +250,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="607"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>軽量マルチプラットフォーム ターミナルエミュレータ</translation>
+        <translation>軽量なマルチプラットフォーム対応のターミナルエミュレータ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="79"/>
@@ -260,7 +260,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>&quot;%1&quot;を押すとそのターミナルを見ることができます。</translation>
+        <translation>ターミナルを表示するには [%1] を押します。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="269"/>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="281"/>
         <source>Zoom rese&amp;t</source>
-        <translation>ズームリセット(&amp;T)</translation>
+        <translation>ズームのリセット(&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
@@ -379,7 +379,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="136"/>
         <source>Show a border around the current terminal</source>
-        <translation>カレントターミナルの境界を表示</translation>
+        <translation>現在のターミナルの境界を表示</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="153"/>
@@ -394,7 +394,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="120"/>
         <source>Start with preset:</source>
-        <translation>プリセットでスタート:</translation>
+        <translation>起動時のプリセット:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="164"/>
@@ -424,7 +424,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation>現在のターミナルのウィンドウタイトルの変更</translation>
+        <translation>ウィンドウタイトルを現在のターミナル名にする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
@@ -470,7 +470,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="458"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;エミュレータの挙動の選択。注意して頂きたいのは、この選択はオペレーティングシステムと適合する必要はありません。&lt;/p&gt;&lt;p&gt; &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt;エミュレーションは最小の機能にフォールバックしたものです。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;エミュレータの動作を選択します。 注意: この選択はオペレーティングシステムと一致する必要はありません。&lt;/p&gt;&lt;p&gt; &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; のエミュレーションは最小機能セットで代替されます。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
@@ -480,32 +480,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="490"/>
         <source>Confirm multiline paste</source>
-        <translation>複数にまたがる行の貼り付けの確認</translation>
+        <translation>複数行テキストの貼り付け時に確認する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>テキストの貼付け時に空白の行を生成しない</translation>
+        <translation>１行のテキストの貼り付け時に改行を取り除く</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>Open new terminals in current working directory</source>
-        <translation>カレントディレクトリに新しいターミナルを開く</translation>
+        <translation>新しいターミナルは、現在作業中のディレクトリを開く</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="537"/>
         <source>Save Size when closing</source>
-        <translation>閉じるときにサイズを保存する</translation>
+        <translation>閉じる時にサイズを保存する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="544"/>
         <source>Save Position when closing</source>
-        <translation>閉じるときに位置を保存する</translation>
+        <translation>閉じる時に位置を保存する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="551"/>
         <source>Ask for confirmation when closing</source>
-        <translation>閉じるときに確認する</translation>
+        <translation>閉じる時に確認する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="561"/>
@@ -520,7 +520,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="575"/>
         <source>Default $TERM</source>
-        <translation>$TERMのデフォルト値</translation>
+        <translation>$TERM のデフォルト値</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="666"/>
@@ -541,7 +541,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="739"/>
         <source>Edit bookmark file contents</source>
-        <translation>ブックマークの内容を編集する</translation>
+        <translation>ここでブックマークの内容を編集できます</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="761"/>
@@ -597,7 +597,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
-        <translation>起動時に表示します</translation>
+        <translation>起動時に表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="655"/>
@@ -617,7 +617,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>ブックマークファイルの場所を指定することができます。OwnCloudやDropboxのようなツールとブックマークを共有することが容易にできます。</translation>
+        <translation>ブックマークファイルの場所を指定します。OwnCloud や Dropbox のようなツールとブックマークを簡単に共有できます。</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="101"/>
@@ -685,7 +685,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="293"/>
         <source>Choose a background image</source>
-        <translation>背景画像を選択</translation>
+        <translation>背景画像の選択</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="294"/>
@@ -711,7 +711,7 @@
     <message>
         <location filename="../bookmarkswidget.cpp" line="110"/>
         <source>Local Bookmarks</source>
-        <translation>ローカルブックマーク</translation>
+        <translation>ローカルのブックマーク</translation>
     </message>
     <message>
         <location filename="../bookmarkswidget.cpp" line="168"/>
