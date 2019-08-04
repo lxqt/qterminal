@@ -42,6 +42,7 @@ class Properties
         void migrate_settings();
 
         QSize mainWindowSize;
+        QSize fixedWindowSize;
         QPoint mainWindowPosition;
         QByteArray mainWindowState;
         //ShortcutMap shortcuts;

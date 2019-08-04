@@ -74,6 +74,44 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     connect(chooseBackgroundImageButton, &QPushButton::clicked,
             this, &PropertiesDialog::chooseBackgroundImageButton_clicked);
 
+    // fixed size
+    connect(saveSizeOnExitCheckBox, &QCheckBox::stateChanged, [this] (int state) {
+        fixedSizeLabel->setEnabled(state == Qt::Unchecked);
+        xLabel->setEnabled(state == Qt::Unchecked);
+        fixedWithSpinBox->setEnabled(state == Qt::Unchecked);
+        fixedHeightSpinBox->setEnabled(state == Qt::Unchecked);
+        fixedSizeButton->setEnabled(state == Qt::Unchecked);
+    });
+    connect(fixedSizeButton, &QAbstractButton::clicked, [this, parent] {
+        if (parent != nullptr)
+        {
+            QSize pSize = parent->window()->geometry().size();
+            fixedWithSpinBox->setValue(pSize.width());
+            fixedHeightSpinBox->setValue(pSize.height());
+        }
+    });
+    fixedWithSpinBox->setMinimum(300);
+    fixedHeightSpinBox->setMinimum(200);
+    QSize ag;
+    if (parent != nullptr)
+    {
+        if (QWindow *win = parent->windowHandle())
+        {
+            if (QScreen *sc = win->screen())
+            {
+                ag = sc->availableVirtualGeometry().size()
+                     // also consider the parent frame thickness because the parent window is fully formed
+                     - (parent->window()->frameGeometry().size()
+                        - parent->window()->geometry().size());
+            }
+        }
+    }
+    if (ag.isValid())
+    {
+        fixedWithSpinBox->setMaximum(ag.width());
+        fixedHeightSpinBox->setMaximum(ag.height());
+    }
+
     QStringList emulations = QTermWidget::availableKeyBindings();
     QStringList colorSchemes = QTermWidget::availableColorSchemes();
     colorSchemes.sort(Qt::CaseInsensitive);
@@ -157,6 +195,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     savePosOnExitCheckBox->setChecked(Properties::Instance()->savePosOnExit);
     saveSizeOnExitCheckBox->setChecked(Properties::Instance()->saveSizeOnExit);
+    fixedWithSpinBox->setValue(Properties::Instance()->fixedWindowSize.width());
+    fixedHeightSpinBox->setValue(Properties::Instance()->fixedWindowSize.height());
 
     useCwdCheckBox->setChecked(Properties::Instance()->useCWD);
 
@@ -191,21 +231,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     trimPastedTrailingNewlinesCheckBox->setChecked(Properties::Instance()->trimPastedTrailingNewlines);
     confirmMultilinePasteCheckBox->setChecked(Properties::Instance()->confirmMultilinePaste);
 
-    // show it inside available desktop geometry
-    QSize ag;
-    if (parent != nullptr)
-    {
-        if (QWindow *win = parent->windowHandle())
-        {
-            if (QScreen *sc = win->screen())
-                ag = sc->availableVirtualGeometry().size()
-                     // also consider the parent frame thickness because the parent window
-                     // is fully formed and the frame thickness of the dialog is the same
-                     - (parent->window()->frameGeometry().size()
-                        - parent->window()->geometry().size());
-        }
-    }
-    resize(size().boundedTo(ag));
+    // fit it into available desktop geometry
+    if (ag.isValid())
+        resize(size().boundedTo(ag));
 }
 
 
@@ -244,6 +272,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->savePosOnExit = savePosOnExitCheckBox->isChecked();
     Properties::Instance()->saveSizeOnExit = saveSizeOnExitCheckBox->isChecked();
+    Properties::Instance()->fixedWindowSize = QSize(fixedWithSpinBox->value(), fixedHeightSpinBox->value()).expandedTo(QSize(300, 200)); // FIXME: make Properties variables private and use public methods for setting/getting them
 
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
 
