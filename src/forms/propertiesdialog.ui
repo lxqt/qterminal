@@ -117,7 +117,7 @@
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
-           <item row="17" column="1">
+           <item row="18" column="1">
             <widget class="QSpinBox" name="appTransparencyBox">
              <property name="suffix">
               <string> %</string>
@@ -194,7 +194,7 @@
              </layout>
             </widget>
            </item>
-           <item row="7" column="0">
+           <item row="8" column="0">
             <widget class="QCheckBox" name="showMenuCheckBox">
              <property name="text">
               <string>Show the menu bar</string>
@@ -204,7 +204,7 @@
            <item row="2" column="1">
             <widget class="QComboBox" name="colorSchemaCombo"/>
            </item>
-           <item row="20" column="0">
+           <item row="21" column="0">
             <widget class="QLabel" name="label_9">
              <property name="text">
               <string>Start with preset:</string>
@@ -214,7 +214,7 @@
              </property>
             </widget>
            </item>
-           <item row="20" column="1">
+           <item row="21" column="1">
             <widget class="QComboBox" name="terminalPresetComboBox">
              <item>
               <property name="text">
@@ -248,7 +248,7 @@
              </property>
             </widget>
            </item>
-           <item row="21" column="0">
+           <item row="22" column="0">
             <widget class="QLabel" name="label_15">
              <property name="text">
               <string>Terminal margin</string>
@@ -258,14 +258,14 @@
              </property>
             </widget>
            </item>
-           <item row="8" column="0">
+           <item row="9" column="0">
             <widget class="QCheckBox" name="hideTabBarCheckBox">
              <property name="text">
               <string>Hide tab bar with only one tab</string>
              </property>
             </widget>
            </item>
-           <item row="19" column="0">
+           <item row="20" column="0">
             <widget class="QLabel" name="label_13">
              <property name="text">
               <string>Background image:</string>
@@ -285,7 +285,7 @@
              </property>
             </widget>
            </item>
-           <item row="19" column="1">
+           <item row="20" column="1">
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
               <widget class="QLineEdit" name="backgroundImageLineEdit"/>
@@ -312,7 +312,7 @@
            <item row="5" column="1">
             <widget class="QComboBox" name="tabsPos_comboBox"/>
            </item>
-           <item row="22" column="0" colspan="2">
+           <item row="23" column="0" colspan="2">
             <spacer name="verticalSpacer_3">
              <property name="orientation">
               <enum>Qt::Vertical</enum>
@@ -325,7 +325,7 @@
              </property>
             </spacer>
            </item>
-           <item row="11" column="0">
+           <item row="12" column="0">
             <widget class="QCheckBox" name="closeTabButtonCheckBox">
              <property name="text">
               <string>Show close button on each tab</string>
@@ -345,7 +345,7 @@
              </property>
             </widget>
            </item>
-           <item row="18" column="0">
+           <item row="19" column="0">
             <widget class="QLabel" name="label">
              <property name="text">
               <string>Terminal transparency</string>
@@ -358,7 +358,7 @@
            <item row="6" column="1">
             <widget class="QComboBox" name="keybCursorShape_comboBox"/>
            </item>
-           <item row="17" column="0">
+           <item row="18" column="0">
             <widget class="QLabel" name="label_4">
              <property name="text">
               <string>Application transparency</string>
@@ -368,28 +368,28 @@
              </property>
             </widget>
            </item>
-           <item row="10" column="0">
+           <item row="11" column="0">
             <widget class="QCheckBox" name="highlightCurrentCheckBox">
              <property name="text">
               <string>Show a border around the current terminal</string>
              </property>
             </widget>
            </item>
-           <item row="21" column="1">
+           <item row="22" column="1">
             <widget class="QSpinBox" name="terminalMarginSpinBox">
              <property name="suffix">
               <string>px</string>
              </property>
             </widget>
            </item>
-           <item row="15" column="0" colspan="2">
+           <item row="16" column="0" colspan="2">
             <widget class="QCheckBox" name="enabledBidiSupportCheckBox">
              <property name="text">
               <string>Enable bi-directional text support</string>
              </property>
             </widget>
            </item>
-           <item row="18" column="1">
+           <item row="19" column="1">
             <widget class="QSpinBox" name="termTransparencyBox">
              <property name="suffix">
               <string> %</string>
@@ -405,7 +405,7 @@
              </property>
             </widget>
            </item>
-           <item row="9" column="1">
+           <item row="10" column="1">
             <widget class="QSpinBox" name="fixedTabWidthSpinBox">
              <property name="enabled">
               <bool>false</bool>
@@ -428,14 +428,14 @@
              </property>
             </widget>
            </item>
-           <item row="12" column="0" colspan="2">
+           <item row="13" column="0" colspan="2">
             <widget class="QCheckBox" name="changeWindowTitleCheckBox">
              <property name="text">
               <string>Change window title based on current terminal</string>
              </property>
             </widget>
            </item>
-           <item row="9" column="0">
+           <item row="10" column="0">
             <widget class="QCheckBox" name="fixedTabWidthCheckBox">
              <property name="text">
               <string>Fixed tab width:</string>
@@ -445,24 +445,34 @@
            <item row="3" column="1">
             <widget class="QComboBox" name="styleComboBox"/>
            </item>
-           <item row="13" column="0" colspan="2">
+           <item row="14" column="0" colspan="2">
             <widget class="QCheckBox" name="changeWindowIconCheckBox">
              <property name="text">
               <string>Change window icon based on current terminal</string>
              </property>
             </widget>
            </item>
-           <item row="14" column="0">
+           <item row="15" column="0">
             <widget class="QCheckBox" name="showTerminalSizeHintCheckBox">
              <property name="text">
               <string>Show terminal size on resize</string>
              </property>
             </widget>
            </item>
-           <item row="16" column="0">
+           <item row="17" column="0">
             <widget class="QCheckBox" name="useFontBoxDrawingCharsCheckBox">
              <property name="text">
               <string>Use box drawing characters contained in the font</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QCheckBox" name="menuAccelCheckBox">
+             <property name="toolTip">
+              <string>Accelerators are activated by Alt and can interfere with the terminal.</string>
+             </property>
+             <property name="text">
+              <string>No menu bar accelerator</string>
              </property>
             </widget>
            </item>

@@ -161,7 +161,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     hideTabBarCheckBox->setChecked(Properties::Instance()->hideTabBarWithOneTab);
 
-    // show main menu bar
+    // main menu bar
+    menuAccelCheckBox->setChecked(Properties::Instance()->noMenubarAccel);
     showMenuCheckBox->setChecked(Properties::Instance()->menuVisible);
 
     /* actions by motion after paste */
@@ -285,6 +286,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->keyboardCursorShape = keybCursorShape_comboBox->currentIndex();
     Properties::Instance()->showCloseTabButton = closeTabButtonCheckBox->isChecked();
     Properties::Instance()->hideTabBarWithOneTab = hideTabBarCheckBox->isChecked();
+    Properties::Instance()->noMenubarAccel = menuAccelCheckBox->isChecked();
     Properties::Instance()->menuVisible = showMenuCheckBox->isChecked();
     Properties::Instance()->m_motionAfterPaste = motionAfterPasting_comboBox->currentIndex();
 

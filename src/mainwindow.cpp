@@ -117,6 +117,10 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     //consoleTabulator->setShellProgram(command);
 
+    const auto menuBarActions = m_menuBar->actions();
+    for (auto action : menuBarActions)
+        menubarOrigTexts << action->text();
+
     // apply props
     propertiesChanged();
 
@@ -641,6 +645,23 @@ void MainWindow::propertiesChanged()
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     consoleTabulator->propertiesChanged();
     setDropShortcut(Properties::Instance()->dropShortCut);
+
+
+    const auto menuBarActions = m_menuBar->actions();
+    if (Properties::Instance()->noMenubarAccel)
+    {
+        for (auto action : menuBarActions)
+            action->setText(action->text().remove(QLatin1Char('&')));
+    }
+    else if (menubarOrigTexts.size() == menuBarActions.size())
+    {
+        int i = 0;
+        for (auto action : menuBarActions)
+        {
+            action->setText(menubarOrigTexts.at(i));
+            ++i;
+        }
+    }
 
     m_menuBar->setVisible(Properties::Instance()->menuVisible);
 

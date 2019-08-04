@@ -72,6 +72,8 @@ private:
                       const char *slot, QMenu *menu = nullptr, const QVariant &data = QVariant());
     QMap< QString, QAction * > actions;
 
+    QStringList menubarOrigTexts;
+
     void rebuildActions();
 
     void setup_FileMenu_Actions();

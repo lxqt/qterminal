@@ -66,7 +66,7 @@ class TermWidget : public QWidget, public DBusAddressable
     public:
         TermWidget(TerminalConfig &cfg, QWidget * parent=nullptr);
 
-        void propertiesChanged(); 
+        void propertiesChanged();
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }
 
         TermWidgetImpl * impl() { return m_term; }

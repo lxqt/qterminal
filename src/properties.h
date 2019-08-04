@@ -78,6 +78,7 @@ class Properties
 
         bool borderless;
         bool tabBarless;
+        bool noMenubarAccel;
         bool menuVisible;
 
         bool askOnExit;
