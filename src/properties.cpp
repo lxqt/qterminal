@@ -77,6 +77,7 @@ void Properties::loadSettings()
     font = qvariant_cast<QFont>(m_settings->value(QLatin1String("font"), font));
 
     mainWindowSize = m_settings->value(QLatin1String("MainWindow/size")).toSize();
+    fixedWindowSize = m_settings->value(QLatin1String("MainWindow/fixedSize"), QSize(600, 400)).toSize().expandedTo(QSize(300, 200));
     mainWindowPosition = m_settings->value(QLatin1String("MainWindow/pos")).toPoint();
     mainWindowState = m_settings->value(QLatin1String("MainWindow/state")).toByteArray();
 
@@ -182,6 +183,7 @@ void Properties::saveSettings()
     m_settings->endGroup();
 
     m_settings->setValue(QLatin1String("MainWindow/size"), mainWindowSize);
+    m_settings->setValue(QLatin1String("MainWindow/fixedSize"), fixedWindowSize);
     m_settings->setValue(QLatin1String("MainWindow/pos"), mainWindowPosition);
     m_settings->setValue(QLatin1String("MainWindow/state"), mainWindowState);
 
