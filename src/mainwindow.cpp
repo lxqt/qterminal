@@ -651,7 +651,12 @@ void MainWindow::propertiesChanged()
     if (Properties::Instance()->noMenubarAccel)
     {
         for (auto action : menuBarActions)
-            action->setText(action->text().remove(QLatin1Char('&')));
+        {
+            QString txt = action->text();
+            txt.remove(QRegularExpression(QStringLiteral("\\s*\\(&[a-zA-Z0-9]\\)\\s*"))); // Chinese and Japanese
+            txt.remove(QLatin1Char('&')); // other languages
+            action->setText(txt);
+        }
     }
     else if (menubarOrigTexts.size() == menuBarActions.size())
     {
