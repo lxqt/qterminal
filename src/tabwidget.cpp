@@ -179,7 +179,13 @@ void TabWidget::onTermTitleChanged(QString title, QString icon)
     {
         const int index = console->property(TAB_INDEX_PROPERTY).toInt();
 
-        setTabIcon(index, QIcon::fromTheme(icon));
+        /* In xterm, the icon string maps to the X11 WM_ICON_NAME property.
+         * Doing nothing here for several reasons:
+         * 1. Few X11 window managers use that
+         * 2. X11-only code is involved
+         */
+        Q_UNUSED(icon);
+
         setTabText(index, title);
         if (currentIndex() == index)
             emit currentTitleChanged(index);
