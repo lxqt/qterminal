@@ -90,11 +90,11 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
             fixedHeightSpinBox->setValue(pSize.height());
         }
     });
-    fixedWithSpinBox->setMinimum(300);
-    fixedHeightSpinBox->setMinimum(200);
     QSize ag;
+    QSize minWinSize(0, 0);
     if (parent != nullptr)
     {
+        minWinSize = parent->minimumSize();
         if (QWindow *win = parent->windowHandle())
         {
             if (QScreen *sc = win->screen())
@@ -106,10 +106,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
             }
         }
     }
-    if (ag.isValid())
+    fixedWithSpinBox->setMinimum(minWinSize.width());
+    fixedHeightSpinBox->setMinimum(minWinSize.height());
+    if (!ag.isEmpty())
     {
-        fixedWithSpinBox->setMaximum(ag.width());
-        fixedHeightSpinBox->setMaximum(ag.height());
+        fixedWithSpinBox->setMaximum(qMax(ag.width(), minWinSize.width()));
+        fixedHeightSpinBox->setMaximum(qMax(ag.height() , minWinSize.height()));
     }
 
     QStringList emulations = QTermWidget::availableKeyBindings();
@@ -117,7 +119,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     colorSchemes.sort(Qt::CaseInsensitive);
 
     listWidget->setCurrentRow(0);
-    listWidget->setSizeAdjustPolicy(QAbstractScrollArea::AdjustToContentsOnFirstShow);
+    // resize the list widget to its content
+    listWidget->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
+    listWidget->setMaximumWidth(listWidget->sizeHintForColumn(0) + 2 * listWidget->frameWidth() + 4);
 
     colorSchemaCombo->addItems(colorSchemes);
     int csix = colorSchemaCombo->findText(Properties::Instance()->colorScheme);
@@ -232,9 +236,22 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     trimPastedTrailingNewlinesCheckBox->setChecked(Properties::Instance()->trimPastedTrailingNewlines);
     confirmMultilinePasteCheckBox->setChecked(Properties::Instance()->confirmMultilinePaste);
 
-    // fit it into available desktop geometry
-    if (ag.isValid())
-        resize(size().boundedTo(ag));
+    // save the size on canceling too (it's saved on accepting by apply())
+    connect(this, &QDialog::rejected, [this] {
+        Properties::Instance()->prefDialogSize = size();
+        Properties::Instance()->saveSettings();
+    });
+
+    // restore its size while fitting it into available desktop geometry
+    QSize s;
+    if (!Properties::Instance()->prefDialogSize.isEmpty())
+        s = Properties::Instance()->prefDialogSize;
+    else
+        s = size(); // fall back to the ui size
+    if (!ag.isEmpty())
+        resize(s.boundedTo(ag));
+    else // never happens
+        resize(s);
 }
 
 
@@ -274,6 +291,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->savePosOnExit = savePosOnExitCheckBox->isChecked();
     Properties::Instance()->saveSizeOnExit = saveSizeOnExitCheckBox->isChecked();
     Properties::Instance()->fixedWindowSize = QSize(fixedWithSpinBox->value(), fixedHeightSpinBox->value()).expandedTo(QSize(300, 200)); // FIXME: make Properties variables private and use public methods for setting/getting them
+    Properties::Instance()->prefDialogSize = size();
 
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
 

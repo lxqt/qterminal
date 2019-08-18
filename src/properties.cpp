@@ -154,6 +154,8 @@ void Properties::loadSettings()
     trimPastedTrailingNewlines = m_settings->value(QLatin1String("TrimPastedTrailingNewlines"), false).toBool();
 
     windowMaximized = m_settings->value(QLatin1String("LastWindowMaximized"), false).toBool();
+
+    prefDialogSize = m_settings->value(QLatin1String("PrefDialogSize")).toSize();
 }
 
 void Properties::saveSettings()
@@ -255,6 +257,8 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("TrimPastedTrailingNewlines"), trimPastedTrailingNewlines);
 
     m_settings->setValue(QLatin1String("LastWindowMaximized"), windowMaximized);
+
+    m_settings->setValue(QLatin1String("PrefDialogSize"), prefDialogSize);
 }
 
 void Properties::migrate_settings()
