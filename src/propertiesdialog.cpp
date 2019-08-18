@@ -107,7 +107,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
         }
     }
     else
-        minWinSize = QSize(400, 200);
+    {
+        // Allow insane small sizes - reason:
+        // https://github.com/lxqt/qterminal/issues/181 - Minimum size
+        // https://github.com/lxqt/qterminal/issues/263 - Decrease minimal height
+        minWinSize = QSize(1, 1);
+    }
     fixedWithSpinBox->setMinimum(minWinSize.width());
     fixedHeightSpinBox->setMinimum(minWinSize.height());
     if (!ag.isEmpty())

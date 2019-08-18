@@ -75,7 +75,10 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     setAttribute(Qt::WA_DeleteOnClose);
 
     setupUi(this);
-    setMinimumSize(QSize(400, 200));
+    // Allow insane small sizes - reason:
+    // https://github.com/lxqt/qterminal/issues/181 - Minimum size
+    // https://github.com/lxqt/qterminal/issues/263 - Decrease minimal height
+    setMinimumSize(QSize(1, 1));
 
     m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
     m_bookmarksDock->setObjectName(QStringLiteral("BookmarksDockWidget"));
