@@ -80,9 +80,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
         xLabel->setEnabled(state == Qt::Unchecked);
         fixedWithSpinBox->setEnabled(state == Qt::Unchecked);
         fixedHeightSpinBox->setEnabled(state == Qt::Unchecked);
-        fixedSizeButton->setEnabled(state == Qt::Unchecked);
+        getCurrentSizeButton->setEnabled(state == Qt::Unchecked);
     });
-    connect(fixedSizeButton, &QAbstractButton::clicked, [this, parent] {
+    connect(getCurrentSizeButton, &QAbstractButton::clicked, [this, parent] {
         if (parent != nullptr)
         {
             QSize pSize = parent->window()->geometry().size();
