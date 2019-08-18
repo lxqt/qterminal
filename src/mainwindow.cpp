@@ -76,6 +76,17 @@ MainWindow::MainWindow(TerminalConfig &cfg,
 
     setupUi(this);
 
+    // Allow insane small sizes - reason:
+    // https://github.com/lxqt/qterminal/issues/181 - Minimum size
+    // https://github.com/lxqt/qterminal/issues/263 - Decrease minimal height
+    QFontMetrics metrics(Properties::Instance()->font);
+#if (QT_VERSION >= QT_VERSION_CHECK(5,11,0))
+    int spaceWidth = metrics.horizontalAdvance(QChar(QChar::Space));
+#else
+    int spaceWidth = metrics.width(QChar(QChar::Space));
+#endif
+    setMinimumSize(QSize(10 * spaceWidth, metrics.height()));
+
     m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
     m_bookmarksDock->setObjectName(QStringLiteral("BookmarksDockWidget"));
     m_bookmarksDock->setAutoFillBackground(true);
