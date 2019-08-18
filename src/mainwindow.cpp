@@ -114,7 +114,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     //consoleTabulator->setShellProgram(command);
 
     const auto menuBarActions = m_menuBar->actions();
-    for (auto action : menuBarActions)
+    for (const auto& action : menuBarActions)
         menubarOrigTexts << action->text();
 
     // apply props
@@ -646,7 +646,7 @@ void MainWindow::propertiesChanged()
     const auto menuBarActions = m_menuBar->actions();
     if (Properties::Instance()->noMenubarAccel)
     {
-        for (auto action : menuBarActions)
+        for (auto& action : menuBarActions)
         {
             QString txt = action->text();
             txt.remove(QRegularExpression(QStringLiteral("\\s*\\(&[a-zA-Z0-9]\\)\\s*"))); // Chinese and Japanese
@@ -657,7 +657,7 @@ void MainWindow::propertiesChanged()
     else if (menubarOrigTexts.size() == menuBarActions.size())
     {
         int i = 0;
-        for (auto action : menuBarActions)
+        for (auto& action : menuBarActions)
         {
             action->setText(menubarOrigTexts.at(i));
             ++i;
