@@ -75,6 +75,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     setAttribute(Qt::WA_DeleteOnClose);
 
     setupUi(this);
+    setMinimumSize(QSize(400, 200));
 
     m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
     m_bookmarksDock->setObjectName(QStringLiteral("BookmarksDockWidget"));

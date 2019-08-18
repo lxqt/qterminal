@@ -91,8 +91,10 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
         }
     });
     QSize ag;
+    QSize minWinSize;
     if (parent != nullptr)
     {
+        minWinSize = parent->minimumSize();
         if (QWindow *win = parent->windowHandle())
         {
             if (QScreen *sc = win->screen())
@@ -104,13 +106,15 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
             }
         }
     }
+    else
+        minWinSize = QSize(400, 200);
+    fixedWithSpinBox->setMinimum(minWinSize.width());
+    fixedHeightSpinBox->setMinimum(minWinSize.height());
     if (!ag.isEmpty())
     {
-        fixedWithSpinBox->setMaximum(ag.width());
-        fixedHeightSpinBox->setMaximum(ag.height());
+        fixedWithSpinBox->setMaximum(qMax(ag.width(), minWinSize.width()));
+        fixedHeightSpinBox->setMaximum(qMax(ag.height() , minWinSize.height()));
     }
-    fixedWithSpinBox->setMinimum(qMin(300, fixedWithSpinBox->maximum()));
-    fixedHeightSpinBox->setMinimum(qMin(200, fixedHeightSpinBox->maximum()));
 
     QStringList emulations = QTermWidget::availableKeyBindings();
     QStringList colorSchemes = QTermWidget::availableColorSchemes();
