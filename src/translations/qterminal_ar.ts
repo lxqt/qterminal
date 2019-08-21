@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>اللسان ال&amp;سابق في التأريخ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="607"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation type="unfinished">محاكي طرفية متعدد المنصات و خفيف</translation>
+        <translation type="unfinished">محاكي طرفية خفيف على منصّات عدّة</translation>
     </message>
 </context>
 <context>
@@ -334,12 +334,12 @@
         <location filename="../forms/propertiesdialog.ui" line="57"/>
         <location filename="../forms/propertiesdialog.ui" line="474"/>
         <source>Behavior</source>
-        <translation type="unfinished">الموقف</translation>
+        <translation type="unfinished">السلوك</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="62"/>
         <source>Shortcuts</source>
-        <translation type="unfinished">اختصارات</translation>
+        <translation type="unfinished">الاختصارات</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="67"/>
@@ -491,7 +491,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>هامش الطرفية</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="449"/>
