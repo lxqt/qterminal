@@ -261,6 +261,30 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("PrefDialogSize"), prefDialogSize);
 }
 
+int Properties::versionComparison(const QString &v1, const QString &v2)
+{
+    int res = 0;
+    QStringList list1 = v1.split(QLatin1String("."));
+    QStringList list2 = v2.split(QLatin1String("."));
+    int N = qMin(list1.size(), list2.size());
+    for (int i = 0; i < N; ++i)
+    {
+        int n1 = list1.at(i).toInt();
+        int n2 = list2.at(i).toInt();
+        if (n1 != n2)
+        {
+            if (n1 < n2)
+                res = -1;
+            else
+                res = 1;
+            break;
+        }
+    }
+    if (res == 0 && list1.size() > list2.size())
+        res = -1;
+    return res;
+}
+
 void Properties::migrate_settings()
 {
     // Deal with rearrangements of settings.
@@ -269,13 +293,13 @@ void Properties::migrate_settings()
     QSettings settings;
     QString lastVersion = settings.value(QLatin1String("version"), QLatin1String("0.0.0")).toString();
     QString currentVersion(QLatin1String(QTERMINAL_VERSION));
-    if (currentVersion < lastVersion)
+    if (versionComparison(currentVersion, lastVersion) < 0)
     {
         qDebug() << "Warning: Configuration file was written by a newer version "
                  << "of QTerminal. Some settings might be incompatible.";
     }
 
-    if (lastVersion < QLatin1String("0.4.0"))
+    if (versionComparison(lastVersion, QLatin1String("0.4.0")) < 0)
     {
         // ===== Paste Selection -> Paste Clipboard =====
         settings.beginGroup(QLatin1String("Shortcuts"));
@@ -288,7 +312,7 @@ void Properties::migrate_settings()
         settings.endGroup();
     }
 
-    if (lastVersion <= QLatin1String("0.6.0"))
+    if (versionComparison(lastVersion, QLatin1String("0.6.0")) <= 0)
     {
         // ===== AlwaysShowTabs -> HideTabBarWithOneTab =====
         if(!settings.contains(QLatin1String("HideTabBarWithOneTab")))
