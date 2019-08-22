@@ -115,6 +115,8 @@ class Properties
         bool useFontBoxDrawingChars;
     private:
 
+        int versionComparison(const QString &v1, const QString &v2);
+
         // Singleton handling
         static Properties *m_instance;
         QString filename;
