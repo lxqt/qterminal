@@ -40,7 +40,7 @@ Properties::Properties(const QString& filename)
     if (filename.isEmpty())
         m_settings = new QSettings();
     else
-        m_settings = new QSettings(filename);
+        m_settings = new QSettings(filename, QSettings::IniFormat);
     qDebug("Properties constructor called");
 }
 

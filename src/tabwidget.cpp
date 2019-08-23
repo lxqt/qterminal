@@ -195,15 +195,16 @@ void TabWidget::onTermTitleChanged(QString title, QString icon)
 void TabWidget::renameSession(int index)
 {
     bool ok = false;
+    QString currentSessionName(tabText(index)); // saves a copy of the current title
     QString text = QInputDialog::getText(this, tr("Tab name"),
                                         tr("New tab name:"), QLineEdit::Normal,
-                                        QString(), &ok);
+                                        currentSessionName, &ok);
     if(ok && !text.isEmpty())
     {
         setTabIcon(index, QIcon{});
         setTabText(index, text);
         widget(index)->setProperty(TAB_CUSTOM_NAME_PROPERTY, true);
-        if (currentIndex() == index)
+        if (currentIndex() == index) 
             emit currentTitleChanged(index);
     }
 }
@@ -234,6 +235,10 @@ void TabWidget::renameTabsAfterRemove()
 
 void TabWidget::contextMenuEvent(QContextMenuEvent *event)
 {
+    int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this,event->pos()));
+    if (tabIndex == -1) // did the user click on a tab?
+        return;         // if not return
+
     QMenu menu(this);
     QMap< QString, QAction * > actions = findParent<MainWindow>(this)->leaseActions();
 
@@ -243,7 +248,6 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
     rename->setShortcut(actions[QLatin1String(RENAME_SESSION)]->shortcut());
     rename->blockSignals(true);
 
-    int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this,event->pos()));
     QAction *action = menu.exec(event->globalPos());
     if (action == close) {
         emit tabCloseRequested(tabIndex);
