@@ -51,7 +51,7 @@ const struct option long_options[] = {
 
 QTerminalApp * QTerminalApp::m_instance = nullptr;
 
-void print_usage_and_exit(int code)
+[[ noreturn ]] void print_usage_and_exit(int code)
 {
     printf("QTerminal %s\n", QTERMINAL_VERSION);
     puts("Usage: qterminal [OPTION]...\n");
@@ -66,7 +66,7 @@ void print_usage_and_exit(int code)
     exit(code);
 }
 
-void print_version_and_exit(int code=0)
+[[ noreturn ]] void print_version_and_exit(int code=0)
 {
     printf("%s\n", QTERMINAL_VERSION);
     exit(code);
