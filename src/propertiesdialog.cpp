@@ -207,6 +207,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     termComboBox->setCurrentText(Properties::Instance()->term);
 
+    handleHistoryLineEdit->setText(Properties::Instance()->handleHistoryCommand);
+
     historyLimited->setChecked(Properties::Instance()->historyLimited);
     historyUnlimited->setChecked(!Properties::Instance()->historyLimited);
     historyLimitedTo->setValue(Properties::Instance()->historyLimitedTo);
@@ -296,6 +298,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
 
     Properties::Instance()->term = termComboBox->currentText();
+    Properties::Instance()->handleHistoryCommand = handleHistoryLineEdit->text();
 
     Properties::Instance()->scrollBarPos = scrollBarPos_comboBox->currentIndex();
     Properties::Instance()->tabsPos = tabsPos_comboBox->currentIndex();
