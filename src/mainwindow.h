@@ -122,5 +122,6 @@ private slots:
     void addNewTab();
     void onCurrentTitleChanged(int index);
 
+    void handleHistory();
 };
 #endif //MAINWINDOW_H

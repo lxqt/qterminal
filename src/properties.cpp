@@ -128,6 +128,7 @@ void Properties::loadSettings()
     savePosOnExit = m_settings->value(QLatin1String("SavePosOnExit"), true).toBool();
     useCWD = m_settings->value(QLatin1String("UseCWD"), false).toBool();
     term = m_settings->value(QLatin1String("Term"), QLatin1String("xterm-256color")).toString();
+    handleHistoryCommand = m_settings->value(QLatin1String("HandleHistory")).toString();
 
     // bookmarks
     useBookmarks = m_settings->value(QLatin1String("UseBookmarks"), false).toBool();
@@ -232,6 +233,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("SaveSizeOnExit"), saveSizeOnExit);
     m_settings->setValue(QLatin1String("UseCWD"), useCWD);
     m_settings->setValue(QLatin1String("Term"), term);
+    m_settings->setValue(QLatin1String("HandleHistory"), handleHistoryCommand);
 
     // bookmarks
     m_settings->setValue(QLatin1String("UseBookmarks"), useBookmarks);

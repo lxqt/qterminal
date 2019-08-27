@@ -320,6 +320,9 @@ void MainWindow::setup_ActionsMenu_Actions()
     setup_Action(FIND, new QAction(QIcon::fromTheme(QStringLiteral("edit-find")), tr("&Find..."), settingOwner),
                  FIND_SHORTCUT, this, SLOT(find()), menu_Actions);
 
+    setup_Action(HANDLE_HISTORY, new QAction(QIcon::fromTheme(QStringLiteral("handle-history")), tr("Handle history..."), settingOwner),
+                 NULL, this, SLOT(handleHistory()), menu_Actions);
+
 #if 0
     act = new QAction(this);
     act->setSeparator(true);
@@ -752,6 +755,31 @@ void MainWindow::find()
     consoleTabulator->terminalHolder()->currentTerminal()->impl()->toggleShowSearchBar();
 }
 
+void MainWindow::handleHistory()
+{
+    const QString dir = QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
+    QDir().mkpath(dir);
+    const QString fn = dir + QLatin1String("/qterminal.history.") + QString::number(QCoreApplication::applicationPid());
+    QFile file(fn);
+    if (!file.open(QIODevice::WriteOnly)) {
+        qDebug() << "Failed to open" << file.fileName() << "for writing";
+        return;
+    }
+    TermWidgetImpl *impl = consoleTabulator->terminalHolder()->currentTerminal()->impl();
+    impl->saveHistory(&file);
+    file.close();
+    QStringList args = Properties::Instance()->handleHistoryCommand.split(QLatin1Char(' '), QString::SkipEmptyParts);
+    if (args.isEmpty())
+        return;
+
+    QString command = args[0];
+    args.removeFirst();
+    args << fn;
+    if (!QProcess::startDetached(command, args)) {
+        qDebug() << "Failed to start command" << command << args;
+    }
+
+}
 
 bool MainWindow::event(QEvent *event)
 {

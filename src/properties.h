@@ -91,6 +91,8 @@ class Properties
 
         QString term;
 
+        QString handleHistoryCommand;
+
         bool useBookmarks;
         bool bookmarksVisible;
         QString bookmarksFile;
