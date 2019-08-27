@@ -119,7 +119,9 @@ int main(int argc, char *argv[])
         // On macOS, if qterminal.app is spawned by launchd (e.g., from Finder
         // or use `open qterminal.app`, $PWD is set to /. Workaround that by
         // go to $HOME first.
-        chdir(QDir::homePath().toLatin1().data());
+        if (chdir(QDir::homePath().toLatin1().data())) {
+            qDebug() << "Failed to chdir to $HOME" << QDir::homePath() << strerror(errno);
+        }
 
         // also initializes $LANG
         QString systemLocaleName(QLocale().name());
