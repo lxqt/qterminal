@@ -38,7 +38,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="79"/>
         <source>Bookmarks</source>
-        <translation type="unfinished">Markah</translation>
+        <translation>Markah</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
@@ -58,12 +58,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
         <source>Move Tab &amp;Left</source>
-        <translation type="unfinished">Pindahkan Tab Ke Kiri</translation>
+        <translation>Pindah Tab Ke Kiri</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="234"/>
         <source>Move Tab &amp;Right</source>
-        <translation type="unfinished">Pindahkan Tab Ke Kanan</translation>
+        <translation>Pindah Tab Ke Kanan</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
@@ -674,7 +674,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move end</source>
-        <translation type="unfinished">Henti bergerak</translation>
+        <translation>Henti bergerak</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="135"/>
