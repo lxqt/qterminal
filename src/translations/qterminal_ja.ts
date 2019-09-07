@@ -374,12 +374,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="319"/>
         <source>Show the menu bar</source>
-        <translation>メニューバーの表示</translation>
+        <translation>メニューバーを表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="136"/>
         <source>Show a border around the current terminal</source>
-        <translation>現在のターミナルの境界を表示</translation>
+        <translation>現在のターミナルの境界を表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="153"/>
@@ -424,17 +424,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation>ウィンドウタイトルを現在のターミナル名にする</translation>
+        <translation>ウィンドウのタイトルを現在のターミナル名にする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation>現在のターミナルのアイコンの変更</translation>
+        <translation>ウィンドウのアイコンを現在のターミナルに基づいて変更する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation>双方向テキストのサポートを有効</translation>
+        <translation>双方向テキスト(右横書き・左横書き)のサポートを有効にする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
@@ -449,7 +449,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>Show terminal size on resize</source>
-        <translation>ターミナルのサイズ変更時にサイズを表示</translation>
+        <translation>ターミナルのサイズ変更時にサイズを表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="395"/>
@@ -460,7 +460,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation>各タブに閉じるボタンを表示</translation>
+        <translation>各タブに閉じるボタンを表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
         <source>Action after paste</source>
-        <translation>貼り付け後の挙動</translation>
+        <translation>テキスト貼り付け後の挙動</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="490"/>
@@ -515,7 +515,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="568"/>
         <source>History size (in lines)</source>
-        <translation>履歴 (行数)</translation>
+        <translation>履歴のサイズ (行数)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="575"/>
@@ -597,7 +597,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
-        <translation>起動時に表示する</translation>
+        <translation>ドロップダウン起動時に表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="655"/>
@@ -776,7 +776,7 @@
     <message>
         <location filename="../termwidget.cpp" line="231"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation>テキストを貼り付けますか?</translation>
+        <translation>このテキストを貼り付けますか？</translation>
     </message>
 </context>
 <context>
@@ -799,12 +799,12 @@
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation>QTerminalについて(&amp;A)...</translation>
+        <translation>QTerminal について(&amp;A)...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation>Qtについて(&amp;Q)...</translation>
+        <translation>Qt について(&amp;Q)...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
