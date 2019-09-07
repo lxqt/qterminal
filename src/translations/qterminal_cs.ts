@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>&amp;Zobrazit lištu panelů</translation>
+        <translation>&amp;Zobrazovat lištu panelů</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="374"/>
@@ -470,7 +470,7 @@
         <location filename="../forms/propertiesdialog.ui" line="395"/>
         <location filename="../forms/propertiesdialog.ui" line="425"/>
         <source>px</source>
-        <translation>obraz. bodů</translation>
+        <translation>_obraz. bodů</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
