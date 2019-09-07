@@ -53,12 +53,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="219"/>
         <source>&amp;Next Tab</source>
-        <translation>&amp;Následující karta</translation>
+        <translation>&amp;Následující panel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="222"/>
         <source>&amp;Previous Tab</source>
-        <translation>&amp;Předchozí karta</translation>
+        <translation>&amp;Předchozí panel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
@@ -73,12 +73,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Posunout kartu do&amp;leva</translation>
+        <translation>Posunout panel do&amp;leva</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="234"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Posunout kartu dop&amp;rava</translation>
+        <translation>Posunout panel dop&amp;rava</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
@@ -93,27 +93,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>Sbalit dílčí terminál</translation>
+        <translation>&amp;Zrušit dílčí terminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
         <source>&amp;Top Subterminal</source>
-        <translation>Horní dílčí &amp;terminál</translation>
+        <translation>Dílčí &amp;terminál výše</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>Dolní &amp;dílčí terminál</translation>
+        <translation>&amp;Dílčí terminál níže</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="256"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>Levý dílčí t&amp;erminál</translation>
+        <translation>Dílčí t&amp;erminál vlevo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>Pravý dílčí term&amp;inál</translation>
+        <translation>Dílčí term&amp;inál vpravo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
@@ -173,12 +173,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>&amp;New Tab</source>
-        <translation>&amp;Nová karta</translation>
+        <translation>&amp;Nový panel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Nová karta z &amp;přednastavení</translation>
+        <translation>Nový &amp;přednastavený panel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
@@ -203,7 +203,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="337"/>
         <source>&amp;Close Tab</source>
-        <translation>&amp;Zavřít kartu</translation>
+        <translation>&amp;Zavřít panel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>&amp;Zobrazit pruh karet</translation>
+        <translation>&amp;Zobrazit pruh panelů</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="374"/>
@@ -265,7 +265,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="409"/>
         <source>&amp;Tabs Layout</source>
-        <translation>Rozvržení kare&amp;t</translation>
+        <translation>&amp;Rozvržení panelů</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="425"/>
@@ -285,7 +285,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="457"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>&amp;Podtržítkový ukazatel</translation>
+        <translation>Podtržítkový &amp;ukazatel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="458"/>
@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="607"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>Lehký multiplatformní emulátor terminálu</translation>
+        <translation>Nenáročný multiplatformní emulátor terminálu</translation>
     </message>
 </context>
 <context>
@@ -349,7 +349,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="67"/>
         <source>Dropdown</source>
-        <translation>Rozbalovací nabídka</translation>
+        <translation>Vysouvací</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="72"/>
@@ -359,7 +359,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="90"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Při pouze jedné kartě skrýt pruh karet</translation>
+        <translation>Při pouze jednom panelu skrýt pruh panelů</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="100"/>
@@ -424,12 +424,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="267"/>
         <source>Tabs position</source>
-        <translation>Pozice karet</translation>
+        <translation>Pozice panelů</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="296"/>
         <source>Widget style</source>
-        <translation>Styl ovládacího prvku</translation>
+        <translation>Styl ovládacích prvků</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="319"/>
@@ -449,7 +449,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation>Zapnout obousměrnou podporu textu</translation>
+        <translation>Zapnout podporu pro text psaný zleva doprava i zprava doleva</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>Show close button on each tab</source>
-        <translation>Zobrazit tlačítko zavírání na každé kartě</translation>
+        <translation>Zobrazit tlačítko zavírání na každém panelu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
@@ -500,7 +500,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>Z vkládaného textu odebrat konce řádků</translation>
+        <translation>Z konce vkládaného textu odebrat konce řádků</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
@@ -556,7 +556,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="739"/>
         <source>Edit bookmark file contents</source>
-        <translation>Upravit obsah souboru záložek</translation>
+        <translation>Upravit obsah souboru se záložkami</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="761"/>
@@ -571,7 +571,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="648"/>
         <source>Show on start</source>
-        <translation>Zobrazovat při spuštění</translation>
+        <translation>Při spuštění zobrazit</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="326"/>
@@ -664,17 +664,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>No move</source>
-        <translation>Bez pohybu</translation>
+        <translation>Nepřesouvat se</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move start</source>
-        <translation>Začátek pohybu</translation>
+        <translation>Přesunout se začátek</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move end</source>
-        <translation>Konec pohybu</translation>
+        <translation>Přesunout se na konec</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="135"/>
@@ -730,17 +730,17 @@
     <message>
         <location filename="../tabwidget.cpp" line="192"/>
         <source>Tab name</source>
-        <translation>Název karty</translation>
+        <translation>Název panelu</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="193"/>
         <source>New tab name:</source>
-        <translation>Nové název karty:</translation>
+        <translation>Nový název panelu:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="213"/>
         <source>Select new tab title color</source>
-        <translation>Zvolit barvu názvu nové karty</translation>
+        <translation>Zvolit barvu novou barvu titulku panelu</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="234"/>
@@ -776,7 +776,7 @@
     <message>
         <location filename="../termwidget.cpp" line="231"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation>Opravdu chcete vložit tento text?</translation>
+        <translation>Opravdu chcete tento text vložit?</translation>
     </message>
 </context>
 <context>
