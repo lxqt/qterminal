@@ -15,7 +15,7 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Vyberte písmo terminálu</translation>
+        <translation>Vyberte písmo pro terminál</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
@@ -270,7 +270,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="425"/>
         <source>&amp;None</source>
-        <translation>Žád&amp;né</translation>
+        <translation>&amp;Nezobrazovat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="443"/>
@@ -305,7 +305,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="568"/>
         <source>Do not ask again</source>
-        <translation>Neptat se znovu</translation>
+        <translation>Příště se neptat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="576"/>
@@ -349,7 +349,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="67"/>
         <source>Dropdown</source>
-        <translation>Vysouvací</translation>
+        <translation>Ve vysouvacím režimu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="72"/>
@@ -439,17 +439,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
         <source>Change window title based on current terminal</source>
-        <translation>Změnit nadpis okna podle právě aktivního terminálu</translation>
+        <translation>Změnit nadpis okna podle právě zaměřeného terminálu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="343"/>
         <source>Change window icon based on current terminal</source>
-        <translation>Změnit ikonu okna podle právě aktivního terminálu</translation>
+        <translation>Změnit ikonu okna podle právě zaměřeného terminálu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Enable bi-directional text support</source>
-        <translation>Zapnout podporu pro text psaný zleva doprava i zprava doleva</translation>
+        <translation>Zapnout podporu pro text obsahující směr zleva doprava i zprava doleva</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
@@ -480,7 +480,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="415"/>
         <source>Terminal margin</source>
-        <translation>Okraj terminálu</translation>
+        <translation>Okraj terminálu (odsazení obsahu od jeho rámečku)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="458"/>
@@ -612,12 +612,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="631"/>
         <source>Shortcut</source>
-        <translation>Klávesová zkratka</translation>
+        <translation>Zkratka pro</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="636"/>
         <source>Key</source>
-        <translation>Klávesa</translation>
+        <translation>Klávesy</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="101"/>
