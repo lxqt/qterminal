@@ -63,12 +63,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="225"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>&amp;Předchozí panel v historii</translation>
+        <translation>V historii &amp;předchozí panel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="228"/>
         <source>&amp;Next Tab in History</source>
-        <translation>&amp;Následující panel v historii</translation>
+        <translation>V historii &amp;následující panel</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="231"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>&amp;Zobrazit pruh panelů</translation>
+        <translation>&amp;Zobrazit lištu panelů</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="374"/>
@@ -359,7 +359,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="90"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Při pouze jednom panelu skrýt pruh panelů</translation>
+        <translation>Při pouze jediném panelu skrýt lištu panelů</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="100"/>
@@ -434,7 +434,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="319"/>
         <source>Show the menu bar</source>
-        <translation>Zobrazit pruh nabídek</translation>
+        <translation>Zobrazovat lištu nabídek</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="336"/>
@@ -740,7 +740,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="213"/>
         <source>Select new tab title color</source>
-        <translation>Zvolit barvu novou barvu titulku panelu</translation>
+        <translation>Zvolit novou barvu titulku panelu</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="234"/>
