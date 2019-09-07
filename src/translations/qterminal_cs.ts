@@ -15,7 +15,7 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Vybrat písmo terminálu</translation>
+        <translation>Vyberte písmo terminálu</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
@@ -48,7 +48,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="212"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>&amp;Vyčistit právě používaný terminál</translation>
+        <translation>&amp;Vyčistit právě zaměřený terminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="219"/>
@@ -98,22 +98,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
         <source>&amp;Top Subterminal</source>
-        <translation>Dílčí &amp;terminál výše</translation>
+        <translation>Na dílčí &amp;terminál výše</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>&amp;Dílčí terminál níže</translation>
+        <translation>Na &amp;dílčí terminál níže</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="256"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>Dílčí t&amp;erminál vlevo</translation>
+        <translation>Na dílčí t&amp;erminál vlevo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>Dílčí term&amp;inál vpravo</translation>
+        <translation>Na dílčí term&amp;inál vpravo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
@@ -133,12 +133,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
         <source>Zoom &amp;in</source>
-        <translation>Př&amp;iblížit</translation>
+        <translation>Zvětš&amp;it</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="278"/>
         <source>Zoom &amp;out</source>
-        <translation>&amp;Oddálit</translation>
+        <translation>&amp;Zmenšit</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="281"/>
@@ -153,12 +153,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>&amp;Save Session</source>
-        <translation>Uložit &amp;sezení</translation>
+        <translation>&amp;Uložit relaci</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
         <source>&amp;Load Session</source>
-        <translation>&amp;Načíst sezení</translation>
+        <translation>&amp;Načíst relaci</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="307"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
         <source>Rename session</source>
-        <translation>Přejmenovat sezení</translation>
+        <translation>Přejmenovat relaci</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
@@ -178,7 +178,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="324"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Nový &amp;přednastavený panel</translation>
+        <translation>Nový panel z &amp;přednastavených</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
@@ -485,7 +485,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="458"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobit. Poznámka: Toto nemusí odpovídat vámi používanému operačnímu systému.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Výchozí&lt;/span&gt; emulace je s co nejmenší sadou funkcí, aby byla co nejkompatibilnější.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobovat. Poznámka: není třeba, aby se shodovalo s vámi používaným operačním systémem.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Výchozí&lt;/span&gt; emulace je s co nejmenší sadou funkcí, aby byla co nejkompatibilnější.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="480"/>
@@ -500,7 +500,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>Z konce vkládaného textu odebrat konce řádků</translation>
+        <translation>Odebrat nové řádky následující po konci vkládaného textu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
@@ -601,7 +601,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Můžete stanovit své vlastní umístění souboru se záložkami. To umožňuje snadné sdílení záložek pomocí nástrojů, jako jsou OwnCloud nebo Dropbox.</translation>
+        <translation>Můžete stanovit své vlastní umístění souboru se záložkami. To umožňuje snadné sdílení záložek pomocí nástrojů, jako jsou NextCloud nebo Dropbox.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="187"/>
@@ -669,7 +669,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
         <source>Move start</source>
-        <translation>Přesunout se začátek</translation>
+        <translation>Přesunout se na začátek</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="130"/>
@@ -680,12 +680,12 @@
         <location filename="../propertiesdialog.cpp" line="135"/>
         <location filename="../propertiesdialog.cpp" line="209"/>
         <source>System Default</source>
-        <translation>Výchozí nastavení systému</translation>
+        <translation>Dle výchozího nastavení systému</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="293"/>
         <source>Choose a background image</source>
-        <translation>Zvolit obrázek na pozadí</translation>
+        <translation>Zvolte obrázek pro pozadí</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="294"/>
@@ -740,12 +740,12 @@
     <message>
         <location filename="../tabwidget.cpp" line="213"/>
         <source>Select new tab title color</source>
-        <translation>Zvolit novou barvu titulku panelu</translation>
+        <translation>Vyberte novou barvu pro titulek panelu</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="234"/>
         <source>Close session</source>
-        <translation>Zavřít sezení</translation>
+        <translation>Zavřít relaci</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="236"/>
@@ -758,12 +758,12 @@
     <message>
         <location filename="../termwidgetholder.cpp" line="78"/>
         <source>Load Session</source>
-        <translation>Načíst sezení</translation>
+        <translation>Načíst relaci</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>List of saved sessions:</source>
-        <translation>Seznam uložených sezení:</translation>
+        <translation>Seznam uložených relací:</translation>
     </message>
 </context>
 <context>
