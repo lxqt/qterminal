@@ -6,7 +6,7 @@
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation>Süzgeç:</translation>
+        <translation>Filtre:</translation>
     </message>
 </context>
 <context>
@@ -93,7 +93,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation type="unfinished">&amp;amp;Subterminal Kapa</translation>
+        <translation>&amp;amp;Subterminal Kapa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
@@ -454,7 +454,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
         <source>Background image:</source>
-        <translation>Arka plan resmi:</translation>
+        <translation>Arkaplan resmi:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
@@ -685,7 +685,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="293"/>
         <source>Choose a background image</source>
-        <translation>Bir arka plan resmi seçin</translation>
+        <translation>Bir arkaplan resmi seç</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="294"/>
