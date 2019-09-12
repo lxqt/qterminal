@@ -92,6 +92,10 @@ class TermWidget : public QWidget, public DBusAddressable
     public slots:
 
     protected:
+        bool focusNextPrevChild(bool) override {
+            // prevent focus change with Tab and, especially, Backtab
+            return false;
+        }
         void paintEvent (QPaintEvent * event) override;
         bool eventFilter(QObject * obj, QEvent * evt) override;
 
