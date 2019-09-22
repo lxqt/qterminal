@@ -36,284 +36,294 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="79"/>
+        <location filename="../mainwindow.cpp" line="90"/>
         <source>Bookmarks</source>
         <translation>Yer İmleri</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="171"/>
+        <location filename="../mainwindow.cpp" line="190"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>Terminali görmek için &quot;%1&quot; e basın.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="212"/>
+        <location filename="../mainwindow.cpp" line="232"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>&amp;Aktif Terminali Temizle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="219"/>
+        <location filename="../mainwindow.cpp" line="239"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;Sonraki Sekme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="222"/>
+        <location filename="../mainwindow.cpp" line="242"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Önceki Sekme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="225"/>
+        <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab in History</source>
         <translation>Geçmişteki &amp;Önceki Sekme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="228"/>
+        <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Next Tab in History</source>
         <translation>Geçmişteki &amp;Sonraki Sekme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="231"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>Move Tab &amp;Left</source>
         <translation>Sekmeyi So&amp;la Al</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Move Tab &amp;Right</source>
         <translation>Sekmeyi Sa&amp;ğa Al</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="239"/>
+        <location filename="../mainwindow.cpp" line="259"/>
+        <source>Tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="260"/>
+        <source>Go to</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="273"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>Terminali Yatay B&amp;öl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>Terminali Dike&amp;y Böl</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="247"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;amp;Subterminal Kapa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="250"/>
+        <location filename="../mainwindow.cpp" line="284"/>
         <source>&amp;Top Subterminal</source>
         <translation>&amp;Subterminal Üstte</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="253"/>
+        <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>&amp;Subterminal Altta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="256"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <source>L&amp;eft Subterminal</source>
         <translation>&amp;Subterminal Solda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="259"/>
+        <location filename="../mainwindow.cpp" line="293"/>
         <source>R&amp;ight Subterminal</source>
         <translation>&amp;Subterminal Sağda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="266"/>
+        <location filename="../mainwindow.cpp" line="300"/>
         <source>Copy &amp;Selection</source>
         <translation>Seçimi &amp;Kopyala</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="269"/>
+        <location filename="../mainwindow.cpp" line="303"/>
         <source>Paste Clip&amp;board</source>
         <translation>Panoyu Yap&amp;ıştır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="272"/>
+        <location filename="../mainwindow.cpp" line="306"/>
         <source>Paste S&amp;election</source>
         <translation>Seçimi &amp;Yapıştır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="275"/>
+        <location filename="../mainwindow.cpp" line="309"/>
         <source>Zoom &amp;in</source>
         <translation>Yakınla&amp;ştır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="278"/>
+        <location filename="../mainwindow.cpp" line="312"/>
         <source>Zoom &amp;out</source>
         <translation>Uzaklaşt&amp;ır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="315"/>
         <source>Zoom rese&amp;t</source>
         <translation>Günc&amp;el Boyut</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="286"/>
+        <location filename="../mainwindow.cpp" line="320"/>
         <source>&amp;Find...</source>
         <translation>&amp;Bul...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="328"/>
         <source>&amp;Save Session</source>
         <translation>Ot&amp;urumu Kaydet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="300"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>&amp;Load Session</source>
         <translation>Oturu&amp;mu Yükle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="307"/>
+        <location filename="../mainwindow.cpp" line="341"/>
         <source>&amp;Toggle Menu</source>
         <translation>&amp;Geçiş Menüsü</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="346"/>
         <source>Rename session</source>
         <translation>Oturumu yeniden adlandır</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="320"/>
+        <location filename="../mainwindow.cpp" line="355"/>
         <source>&amp;New Tab</source>
         <translation>&amp;Yeni Sekme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
+        <location filename="../mainwindow.cpp" line="359"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Ön Ay&amp;arlı Yeni Sekme</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="325"/>
+        <location filename="../mainwindow.cpp" line="360"/>
         <source>1 &amp;Terminal</source>
         <translation>&amp;1 Terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="362"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>Yatay &amp;2 Terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="329"/>
+        <location filename="../mainwindow.cpp" line="364"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>Dike&amp;y 2 terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>4 Terminal&amp;s</source>
         <translation>&amp;4 Terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="337"/>
+        <location filename="../mainwindow.cpp" line="372"/>
         <source>&amp;Close Tab</source>
         <translation>&amp;Sekmeyi Kapat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="375"/>
         <source>&amp;New Window</source>
         <translation>&amp;Yeni Pencere</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="345"/>
+        <location filename="../mainwindow.cpp" line="380"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Tercihler...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="349"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>&amp;Quit</source>
         <translation>&amp;Çıkış</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="355"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Pencere Kenarlıklarını Gizle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="401"/>
         <source>&amp;Show Tab Bar</source>
         <translation>Sekme &amp;Çubuğunu Göster</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="374"/>
+        <location filename="../mainwindow.cpp" line="409"/>
         <source>Fullscreen</source>
         <translation>Tam Ekran</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="380"/>
+        <location filename="../mainwindow.cpp" line="415"/>
         <source>Toggle Bookmarks</source>
         <translation>Yer İşaretlerini Değiştir</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="388"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>&amp;Bottom</source>
         <translation>&amp;Alt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="389"/>
+        <location filename="../mainwindow.cpp" line="424"/>
         <source>&amp;Top</source>
         <translation>&amp;Üst</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
-        <location filename="../mainwindow.cpp" line="426"/>
+        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="461"/>
         <source>&amp;Right</source>
         <translation>Sa&amp;ğ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="391"/>
-        <location filename="../mainwindow.cpp" line="427"/>
+        <location filename="../mainwindow.cpp" line="426"/>
+        <location filename="../mainwindow.cpp" line="462"/>
         <source>&amp;Left</source>
         <translation>So&amp;l</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="409"/>
+        <location filename="../mainwindow.cpp" line="444"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;Sekme Düzeni</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="460"/>
         <source>&amp;None</source>
         <translation>&amp;Hiçbiri</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="443"/>
+        <location filename="../mainwindow.cpp" line="478"/>
         <source>S&amp;crollbar Layout</source>
         <translation>&amp;Kaydırma Çubuğu Düzeni</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="456"/>
+        <location filename="../mainwindow.cpp" line="491"/>
         <source>&amp;BlockCursor</source>
         <translation>&amp;Blok İmleç</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="492"/>
         <source>&amp;UnderlineCursor</source>
         <translation>Altçiz&amp;gi İmleç</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="458"/>
+        <location filename="../mainwindow.cpp" line="493"/>
         <source>&amp;IBeamCursor</source>
         <translation>&amp;Işın İmleç</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="475"/>
+        <location filename="../mainwindow.cpp" line="510"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Klavye İmleç Şekli</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="566"/>
+        <location filename="../mainwindow.cpp" line="599"/>
         <source>Exit QTerminal</source>
         <translation>QTerminalden Çık</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="568"/>
+        <location filename="../mainwindow.cpp" line="601"/>
         <source>Do not ask again</source>
         <translation>Tekrar Sorma</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="576"/>
+        <location filename="../mainwindow.cpp" line="609"/>
         <source>Are you sure you want to exit?</source>
         <translation>Çıkmak istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="607"/>
+        <location filename="../mainwindow.cpp" line="640"/>
         <source>A lightweight multiplatform terminal emulator</source>
         <translation>Hafif bir çok platformlu terminal öykünücüsü</translation>
     </message>
@@ -321,12 +331,12 @@
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="449"/>
+        <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>Emulation</source>
         <translation>Öykünme</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="62"/>
+        <location filename="../forms/propertiesdialog.ui" line="47"/>
         <source>Shortcuts</source>
         <translation>Kısayollar</translation>
     </message>
@@ -336,364 +346,395 @@
         <translation>Terminal ayarları</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="52"/>
+        <location filename="../forms/propertiesdialog.ui" line="31"/>
         <source>Appearance</source>
         <translation>Görünüm</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="57"/>
-        <location filename="../forms/propertiesdialog.ui" line="474"/>
+        <location filename="../forms/propertiesdialog.ui" line="39"/>
+        <location filename="../forms/propertiesdialog.ui" line="555"/>
         <source>Behavior</source>
         <translation>Davranış</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="67"/>
+        <location filename="../forms/propertiesdialog.ui" line="55"/>
         <source>Dropdown</source>
         <translation>Açılış</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="72"/>
+        <location filename="../forms/propertiesdialog.ui" line="63"/>
         <source>Bookmarks</source>
         <translation>Yer İmleri</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="90"/>
+        <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Hide tab bar with only one tab</source>
         <translation>Sekme çubuğunu yalnızca bir sekmeyle gizle</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="100"/>
+        <location filename="../forms/propertiesdialog.ui" line="275"/>
         <source>Color scheme</source>
         <translation>Renk şeması</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="110"/>
+        <location filename="../forms/propertiesdialog.ui" line="335"/>
         <source>Scrollbar position</source>
         <translation>Kaydırma çubuğu pozisyonu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="120"/>
+        <location filename="../forms/propertiesdialog.ui" line="204"/>
         <source>Start with preset:</source>
         <translation>Ön ayarlar ile başlat:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="136"/>
+        <location filename="../forms/propertiesdialog.ui" line="368"/>
         <source>Show a border around the current terminal</source>
         <translation>Mevcut terminal etrafında bir sınır göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="143"/>
+        <location filename="../forms/propertiesdialog.ui" line="345"/>
         <source>Terminal transparency</source>
         <translation>Terminal saydamlığı</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="153"/>
+        <location filename="../forms/propertiesdialog.ui" line="358"/>
         <source>Application transparency</source>
         <translation>Uygulama şeffaflığı</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="164"/>
+        <location filename="../forms/propertiesdialog.ui" line="215"/>
         <source>None (single terminal)</source>
         <translation>Hiçbiri (tek terminal)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="169"/>
+        <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>2 terminals horizontally</source>
         <translation>Yatay 2 terminal</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="174"/>
+        <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>2 terminals vertically</source>
         <translation>Dikey 2 terminal</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="179"/>
+        <location filename="../forms/propertiesdialog.ui" line="230"/>
         <source>4 terminals</source>
         <translation>4 terminal</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="218"/>
+        <location filename="../forms/propertiesdialog.ui" line="148"/>
         <source>Font</source>
         <translation>Yazıtipi</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="254"/>
+        <location filename="../forms/propertiesdialog.ui" line="184"/>
         <source>&amp;Change...</source>
         <translation>&amp;Değiştir...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="267"/>
+        <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Tabs position</source>
         <translation>Sekme pozisyonu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="296"/>
+        <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Widget style</source>
         <translation>Widget stili</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="319"/>
+        <location filename="../forms/propertiesdialog.ui" line="194"/>
         <source>Show the menu bar</source>
         <translation>Menü çubuğunu göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="336"/>
+        <location filename="../forms/propertiesdialog.ui" line="428"/>
         <source>Change window title based on current terminal</source>
         <translation>Mevcut terminale göre pencere başlığını değiştir</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="343"/>
+        <location filename="../forms/propertiesdialog.ui" line="445"/>
         <source>Change window icon based on current terminal</source>
         <translation>Mevcut terminale göre pencere simgesini değiştir</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="350"/>
+        <location filename="../forms/propertiesdialog.ui" line="382"/>
         <source>Enable bi-directional text support</source>
         <translation>İki yönlü metin desteğini etkinleştir</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="357"/>
+        <location filename="../forms/propertiesdialog.ui" line="265"/>
         <source>Background image:</source>
         <translation>Arkaplan resmi:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="369"/>
+        <location filename="../forms/propertiesdialog.ui" line="290"/>
         <source>Select</source>
         <translation>Seç</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="378"/>
+        <location filename="../forms/propertiesdialog.ui" line="452"/>
         <source>Show terminal size on resize</source>
         <translation>Yeniden boyutlandırıldığında terminal boyutunu göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="395"/>
-        <location filename="../forms/propertiesdialog.ui" line="425"/>
+        <location filename="../forms/propertiesdialog.ui" line="375"/>
+        <location filename="../forms/propertiesdialog.ui" line="408"/>
         <source>px</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="405"/>
+        <location filename="../forms/propertiesdialog.ui" line="325"/>
         <source>Show close button on each tab</source>
         <translation>Her sekmede kapat düğmesini göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="415"/>
+        <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Terminal margin</source>
         <translation>Terminal kenar boşluğu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="458"/>
+        <location filename="../forms/propertiesdialog.ui" line="459"/>
+        <source>Use box drawing characters contained in the font</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="466"/>
+        <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="469"/>
+        <source>No menu bar accelerator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="539"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Taklit edilecek davranış. Bunun işletim sisteminize uygun olması gerekmediğini unutmayın.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="480"/>
+        <location filename="../forms/propertiesdialog.ui" line="561"/>
         <source>Action after paste</source>
         <translation>Yapıştırdıktan sonraki işlem</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="490"/>
+        <location filename="../forms/propertiesdialog.ui" line="571"/>
         <source>Confirm multiline paste</source>
         <translation>Çok satırlı yapıştırma işlemini onayla</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="497"/>
+        <location filename="../forms/propertiesdialog.ui" line="578"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Yapıştırılan son satırları yapıştırılan metinde kırp</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="530"/>
+        <location filename="../forms/propertiesdialog.ui" line="598"/>
         <source>Open new terminals in current working directory</source>
         <translation>Mevcut çalışma dizininde yeni terminaller açın</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="537"/>
+        <location filename="../forms/propertiesdialog.ui" line="605"/>
         <source>Save Size when closing</source>
         <translation>Kapandığında Boyutu Kaydet</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="544"/>
+        <location filename="../forms/propertiesdialog.ui" line="612"/>
         <source>Save Position when closing</source>
         <translation>Kapandığında Pozisyonu Kaydet</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="551"/>
+        <location filename="../forms/propertiesdialog.ui" line="619"/>
         <source>Ask for confirmation when closing</source>
         <translation>Kapandığında onay iste</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="561"/>
+        <location filename="../forms/propertiesdialog.ui" line="629"/>
         <source>Unlimited history</source>
         <translation>Sınırsız tarih</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="568"/>
+        <location filename="../forms/propertiesdialog.ui" line="636"/>
         <source>History size (in lines)</source>
         <translation>Tarih büyüklüğü (satırlarda)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="575"/>
+        <location filename="../forms/propertiesdialog.ui" line="643"/>
         <source>Default $TERM</source>
         <translation>Varsayılan $TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="666"/>
+        <location filename="../forms/propertiesdialog.ui" line="681"/>
+        <source>Start with this size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="688"/>
+        <location filename="../forms/propertiesdialog.ui" line="702"/>
+        <source> px</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="709"/>
+        <source>Get current size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source>Height</source>
         <translation>Yükseklik</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="676"/>
-        <location filename="../forms/propertiesdialog.ui" line="693"/>
+        <location filename="../forms/propertiesdialog.ui" line="812"/>
+        <location filename="../forms/propertiesdialog.ui" line="829"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="683"/>
+        <location filename="../forms/propertiesdialog.ui" line="819"/>
         <source>Width</source>
         <translation>Genişlik</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="739"/>
+        <location filename="../forms/propertiesdialog.ui" line="875"/>
         <source>Edit bookmark file contents</source>
         <translation>Yer imi dosyası içeriğini düzenle</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="761"/>
+        <location filename="../forms/propertiesdialog.ui" line="897"/>
         <source>Enable bookmarks</source>
         <translation>Yer işaretlerini etkinleştir</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="770"/>
+        <location filename="../forms/propertiesdialog.ui" line="906"/>
         <source>Bookmark file</source>
         <translation>Yer imi dosyası</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="648"/>
+        <location filename="../forms/propertiesdialog.ui" line="784"/>
         <source>Show on start</source>
         <translation>Başlangıçta göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="326"/>
+        <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Cursor shape</source>
         <translation>İmleç şekli</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="385"/>
+        <location filename="../forms/propertiesdialog.ui" line="435"/>
         <source>Fixed tab width:</source>
         <translation>Sabit sekme genişliği:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="655"/>
+        <location filename="../forms/propertiesdialog.ui" line="791"/>
         <source>Size</source>
         <translation>Boyut</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="707"/>
+        <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>Shortcut:</source>
         <translation>Kısayol:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="783"/>
+        <location filename="../forms/propertiesdialog.ui" line="919"/>
         <source>Find...</source>
         <translation>Bul...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="792"/>
+        <location filename="../forms/propertiesdialog.ui" line="928"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Kendi yerimleri dosya yolunuzu berlirleyebilirsiniz. OwnCloud veya Dropbox gibi araçlarla yerimlerinizi paylaşmayı kolaylaştırır.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="187"/>
-        <location filename="../forms/propertiesdialog.ui" line="280"/>
+        <location filename="../forms/propertiesdialog.ui" line="117"/>
+        <location filename="../forms/propertiesdialog.ui" line="389"/>
         <source> %</source>
         <translation> %</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="631"/>
+        <location filename="../forms/propertiesdialog.ui" line="767"/>
         <source>Shortcut</source>
         <translation>Kısayol</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="636"/>
+        <location filename="../forms/propertiesdialog.ui" line="772"/>
         <source>Key</source>
         <translation>Anahtar</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="101"/>
+        <location filename="../propertiesdialog.cpp" line="145"/>
         <source>No scrollbar</source>
         <translation>Kaydırma çubuğu yok</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="101"/>
-        <location filename="../propertiesdialog.cpp" line="107"/>
+        <location filename="../propertiesdialog.cpp" line="145"/>
+        <location filename="../propertiesdialog.cpp" line="151"/>
         <source>Left</source>
         <translation>Sol</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="101"/>
-        <location filename="../propertiesdialog.cpp" line="107"/>
+        <location filename="../propertiesdialog.cpp" line="145"/>
+        <location filename="../propertiesdialog.cpp" line="151"/>
         <source>Right</source>
         <translation>Sağ</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="107"/>
+        <location filename="../propertiesdialog.cpp" line="151"/>
         <source>Top</source>
         <translation>En Yukarı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="107"/>
+        <location filename="../propertiesdialog.cpp" line="151"/>
         <source>Bottom</source>
         <translation>En Aşağı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="118"/>
+        <location filename="../propertiesdialog.cpp" line="162"/>
         <source>BlockCursor</source>
         <translation>Blok İmleç</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="118"/>
+        <location filename="../propertiesdialog.cpp" line="162"/>
         <source>UnderlineCursor</source>
         <translation>Altçizgi İmleç</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="118"/>
+        <location filename="../propertiesdialog.cpp" line="162"/>
         <source>IBeamCursor</source>
         <translation>Işın İmleç</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="130"/>
+        <location filename="../propertiesdialog.cpp" line="175"/>
         <source>No move</source>
         <translation>Taşıma yok</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="130"/>
+        <location filename="../propertiesdialog.cpp" line="175"/>
         <source>Move start</source>
         <translation>Hareket et</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="130"/>
+        <location filename="../propertiesdialog.cpp" line="175"/>
         <source>Move end</source>
         <translation>Hareketi bitir</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="135"/>
-        <location filename="../propertiesdialog.cpp" line="209"/>
+        <location filename="../propertiesdialog.cpp" line="180"/>
+        <location filename="../propertiesdialog.cpp" line="272"/>
         <source>System Default</source>
         <translation>Sistem Varsayılanı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="293"/>
+        <location filename="../propertiesdialog.cpp" line="360"/>
         <source>Choose a background image</source>
         <translation>Bir arkaplan resmi seç</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="294"/>
+        <location filename="../propertiesdialog.cpp" line="361"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
         <translation>Resim (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="359"/>
+        <location filename="../propertiesdialog.cpp" line="426"/>
         <source>Open or create bookmarks file</source>
         <translation>Yerimleri dosyası aç ya da oluştur</translation>
     </message>
@@ -723,32 +764,32 @@
     <name>TabWidget</name>
     <message>
         <location filename="../tabwidget.cpp" line="78"/>
-        <location filename="../tabwidget.cpp" line="224"/>
+        <location filename="../tabwidget.cpp" line="230"/>
         <source>Shell No. %1</source>
         <translation>Kabuk No. %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="192"/>
+        <location filename="../tabwidget.cpp" line="198"/>
         <source>Tab name</source>
         <translation>Sekme adı</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="193"/>
+        <location filename="../tabwidget.cpp" line="199"/>
         <source>New tab name:</source>
         <translation>Yeni sekme adı:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="213"/>
+        <location filename="../tabwidget.cpp" line="219"/>
         <source>Select new tab title color</source>
         <translation>Yeni sekme başlık rengini seç</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="234"/>
+        <location filename="../tabwidget.cpp" line="240"/>
         <source>Close session</source>
         <translation>Oturumu kapat</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="236"/>
+        <location filename="../tabwidget.cpp" line="242"/>
         <source>Change title color</source>
         <translation>Başlık rengini değiştir</translation>
     </message>
