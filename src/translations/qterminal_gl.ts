@@ -58,12 +58,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="251"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Mover a lapela cara a &amp;esquerda</translation>
+        <translation>Mover a lapela cara á &amp;esquerda</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="254"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Mover a lapela cara a &amp;dereita</translation>
+        <translation>Mover a lapela cara á &amp;dereita</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Lapela</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ir a</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -394,7 +394,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="358"/>
         <source>Application transparency</source>
-        <translation>Transparencia do aplicativo</translation>
+        <translation>Transparencia da aplicación</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="215"/>
@@ -506,17 +506,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Empregue os caracteres de debuxo na caixa que contén o tipo de letra</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Os aceleradores están activados por Alt e poden interferir co terminal.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>Sen acelerador de barra de menú</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
@@ -581,18 +581,18 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Iniciar con este tamaño:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
         <location filename="../forms/propertiesdialog.ui" line="702"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="709"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>Obter o tamaño actual</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
