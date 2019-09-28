@@ -6,7 +6,7 @@
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation>フィルタ:</translation>
+        <translation>フィルター:</translation>
     </message>
 </context>
 <context>
@@ -48,7 +48,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>アクティブなターミナルをクリアする(&amp;C)</translation>
+        <translation>アクティブなターミナルをクリア(&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="276"/>
@@ -93,12 +93,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>タブ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>タブへ移動</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -143,7 +143,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="346"/>
         <source>Rename session</source>
-        <translation>セッション名の変更</translation>
+        <translation>タブ名の変更</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="359"/>
@@ -183,7 +183,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="415"/>
         <source>Toggle Bookmarks</source>
-        <translation>ブックマークの切替</translation>
+        <translation>ブックマーク表示の切り替え</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="423"/>
@@ -260,7 +260,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="640"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>軽量なマルチプラットフォーム対応のターミナルエミュレータ</translation>
+        <translation>軽量なマルチプラットフォーム対応のターミナルエミュレーター</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="90"/>
@@ -480,22 +480,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>フォントに含まれる罫線(Box-drawing characters)を使用する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt キーによってアクティブ化したアクセラレータは、ターミナルに干渉することがあります。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>メニューバーのアクセラレータを無効にする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="539"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;エミュレータの動作を選択します。 注意: この選択はオペレーティングシステムと一致する必要はありません。&lt;/p&gt;&lt;p&gt; &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; のエミュレーションは最小機能セットで代替されます。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;エミュレーターの動作を選択します。 注意: この選択はオペレーティングシステムと一致する必要はありません。&lt;/p&gt;&lt;p&gt; &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; のエミュレーションは最小機能セットで代替されます。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="561"/>
@@ -550,18 +550,18 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>起動時のサイズ:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
         <location filename="../forms/propertiesdialog.ui" line="702"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> ピクセル</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="709"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>現在のサイズを取得</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
@@ -744,7 +744,7 @@
     <message>
         <location filename="../termwidget.cpp" line="238"/>
         <source>Show Details...</source>
-        <translation>詳細を表示...</translation>
+        <translation>詳細の表示...</translation>
     </message>
 </context>
 <context>
@@ -776,7 +776,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="199"/>
         <source>New tab name:</source>
-        <translation>タブの新しい名前:</translation>
+        <translation>新しいタブの名前:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="219"/>
@@ -791,7 +791,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="242"/>
         <source>Change title color</source>
-        <translation>タイトルの色を変更</translation>
+        <translation>タブタイトルの色を変更</translation>
     </message>
 </context>
 <context>
