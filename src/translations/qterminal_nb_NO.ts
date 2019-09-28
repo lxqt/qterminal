@@ -20,7 +20,7 @@
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation></translation>
+        <translation>Skrift:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabulatur</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå til</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -133,7 +133,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="303"/>
         <source>Paste Clip&amp;board</source>
-        <translation>Lim inn fra &amp;utklippstavlen</translation>
+        <translation>Lim inn fra &amp;utklippsboken</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="306"/>
@@ -455,7 +455,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="428"/>
         <source>Change window title based on current terminal</source>
-        <translation>Endre vinduets tittel baser på aktiv terminal</translation>
+        <translation>Endre vinduets tittel basert på aktiv terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="445"/>
@@ -491,7 +491,7 @@
         <location filename="../forms/propertiesdialog.ui" line="375"/>
         <location filename="../forms/propertiesdialog.ui" line="408"/>
         <source>px</source>
-        <translation>pksl</translation>
+        <translation>pk</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="325"/>
@@ -506,17 +506,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Bruk tegn for å lage bokser fra den valgte skriften</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Akselleratorer blir aktivert med Alt og kan blande seg inn i det som skjer i terminalen.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen menylinje aksellerasjon</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
@@ -536,7 +536,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="571"/>
         <source>Confirm multiline paste</source>
-        <translation>Bekreftelse på lim inn med flere linjer</translation>
+        <translation>Bekreft lim inn med flere linjer</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="578"/>
@@ -581,23 +581,23 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Start med denne størrelsen:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
         <location filename="../forms/propertiesdialog.ui" line="702"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> pk</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="709"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>Få nåværende størrelse</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
         <source>Shortcut</source>
-        <translation>Snarevei</translation>
+        <translation>Tastatursnarevei</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="772"/>
@@ -633,7 +633,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>Shortcut:</source>
-        <translation>Snarevei:</translation>
+        <translation>Tastatursnarevei:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="875"/>
@@ -658,7 +658,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="928"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Du kan bestemme plasseringen for bokmerkefilne. Det gjør det lett å dele bokmerker med OwnCloud eller Dropbox.</translation>
+        <translation>Du kan bestemme plasseringen for bokmerkefilen. Det gjør det lett å dele bokmerker med OwnCloud eller Dropbox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="145"/>
