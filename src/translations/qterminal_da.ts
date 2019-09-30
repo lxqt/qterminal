@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Faneblad</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Gå til</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -506,17 +506,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Brug bokstegningstegn i denne skrifttype</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Genveje aktiveres med Alt og kan forstyrre terminalen.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen genveje for menulinje</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
@@ -581,18 +581,18 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Start med denne størrelse:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
         <location filename="../forms/propertiesdialog.ui" line="702"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="709"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>Hent nuværende størrelse</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
