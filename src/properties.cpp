@@ -41,12 +41,12 @@ Properties::Properties(const QString& filename)
         m_settings = new QSettings();
     else
         m_settings = new QSettings(filename);
-    qDebug("Properties constructor called");
+    //qDebug("Properties constructor called");
 }
 
 Properties::~Properties()
 {
-    qDebug("Properties destructor called");
+    //qDebug("Properties destructor called");
     delete m_settings;
     m_instance = nullptr;
 }

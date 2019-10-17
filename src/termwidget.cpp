@@ -58,9 +58,9 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     QString shell = cfg.getShell();
     if (!shell.isEmpty())
     {
-        qDebug() << "Shell program:" << shell;
+        //qDebug() << "Shell program:" << shell;
         QStringList parts = shell.split(QRegExp(QStringLiteral("\\s+")), QString::SkipEmptyParts);
-        qDebug() << parts;
+        //qDebug() << parts;
         setShellProgram(parts.at(0));
         parts.removeAt(0);
         if (parts.count())
