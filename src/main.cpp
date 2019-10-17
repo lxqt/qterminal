@@ -177,18 +177,18 @@ int main(int argc, char *argv[])
     QString fname = QString::fromLatin1("qterminal_%1.qm").arg(QLocale::system().name().left(5));
     QTranslator translator;
 #ifdef TRANSLATIONS_DIR
-    qDebug() << "TRANSLATIONS_DIR: Loading translation file" << fname << "from dir" << TRANSLATIONS_DIR;
-    qDebug() << "load success:" << translator.load(fname, QString::fromUtf8(TRANSLATIONS_DIR), QStringLiteral("_"));
+    //qDebug() << "TRANSLATIONS_DIR: Loading translation file" << fname << "from dir" << TRANSLATIONS_DIR;
+    /*qDebug() << "load success:" <<*/ translator.load(fname, QString::fromUtf8(TRANSLATIONS_DIR), QStringLiteral("_"));
 #endif
 #ifdef APPLE_BUNDLE
     QDir translations_dir = QDir(QApplication::applicationDirPath());
     translations_dir.cdUp();
     if (translations_dir.cd(QStringLiteral("Resources/translations"))) {
-        qDebug() << "APPLE_BUNDLE: Loading translator file" << fname << "from dir" << translations_dir.path();
-        qDebug() << "load success:" << translator.load(fname, translations_dir.path(), QStringLiteral("_"));
-    } else {
+        //qDebug() << "APPLE_BUNDLE: Loading translator file" << fname << "from dir" << translations_dir.path();
+        /*qDebug() << "load success:" <<*/ translator.load(fname, translations_dir.path(), QStringLiteral("_"));
+    } /*else {
         qWarning() << "Unable to find \"Resources/translations\" dir in" << translations_dir.path();
-    }
+    }*/
 #endif
     app->installTranslator(&translator);
 
