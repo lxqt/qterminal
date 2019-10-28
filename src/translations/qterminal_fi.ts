@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Välilehti</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Siirry</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -450,7 +450,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Osoittimen muoto</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="428"/>
@@ -501,12 +501,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>Päätteen marginaali</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Käytä fontin laatikon-piirto merkkejä</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
