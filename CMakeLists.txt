@@ -183,15 +183,6 @@ add_executable(${EXE_NAME} ${GUI_TYPE}
     ${QTERM_QM}
 )
 
-target_compile_definitions(${EXE_NAME}
-    PRIVATE
-        "QT_USE_QSTRINGBUILDER"
-        "QT_NO_CAST_FROM_ASCII"
-        "QT_NO_CAST_TO_ASCII"
-        "QT_NO_URL_CAST_FROM_STRING"
-        "QT_NO_CAST_FROM_BYTEARRAY"
-)
-
 target_link_libraries(${EXE_NAME}
     Qt5::Gui
     qtermwidget5
