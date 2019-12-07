@@ -354,7 +354,7 @@
         <location filename="../forms/propertiesdialog.ui" line="39"/>
         <location filename="../forms/propertiesdialog.ui" line="555"/>
         <source>Behavior</source>
-        <translation>挙動</translation>
+        <translation>動作</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="55"/>
@@ -500,7 +500,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="561"/>
         <source>Action after paste</source>
-        <translation>テキスト貼り付け後の挙動</translation>
+        <translation>テキスト貼り付け後の動作</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="571"/>
