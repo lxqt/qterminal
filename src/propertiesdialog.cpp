@@ -424,7 +424,7 @@ void PropertiesDialog::setupShortcuts()
 void PropertiesDialog::bookmarksButton_clicked()
 {
     QFileDialog dia(this, tr("Open or create bookmarks file"));
-    dia.setConfirmOverwrite(false);
+    dia.setOption(QFileDialog::DontConfirmOverwrite, true);
     dia.setFileMode(QFileDialog::AnyFile);
     if (!dia.exec())
         return;
