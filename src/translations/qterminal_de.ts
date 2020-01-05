@@ -550,18 +550,18 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mit dieser Größe beginnen:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
         <location filename="../forms/propertiesdialog.ui" line="702"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="709"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktuelle Größe ermitteln</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
