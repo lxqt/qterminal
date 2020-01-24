@@ -455,6 +455,9 @@
            </item>
            <item row="17" column="0" colspan="2">
             <widget class="QCheckBox" name="useFontBoxDrawingCharsCheckBox">
+             <property name="toolTip">
+              <string>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</string>
+             </property>
              <property name="text">
               <string>Use box drawing characters contained in the font</string>
              </property>
