@@ -223,7 +223,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="390"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>Ablakkeret &amp;kikapcsolása</translation>
+        <translation>Ablakkeret &amp;elrejtése</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="401"/>
@@ -300,7 +300,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Exit QTerminal</source>
-        <translation type="unfinished">QTerminal befejezése</translation>
+        <translation type="unfinished">QTerminal bezárása</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="601"/>
@@ -325,7 +325,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation type="unfinished">Billentyűzzön &quot;%1&quot;-t, hogy lássa a terminált.</translation>
+        <translation type="unfinished">A terminál megtekintéséhez nyomja meg a  &quot;%1&quot; gombot.</translation>
     </message>
 </context>
 <context>
@@ -454,7 +454,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="290"/>
         <source>Select</source>
-        <translation>Választás</translation>
+        <translation>Kiválasztás</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="452"/>
@@ -500,7 +500,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="561"/>
         <source>Action after paste</source>
-        <translation>Beillesztés utáni teendő</translation>
+        <translation>Beillesztés utáni művelet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="571"/>
@@ -710,12 +710,12 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="175"/>
         <source>Move start</source>
-        <translation type="unfinished">Kezdetre</translation>
+        <translation type="unfinished">Elejére</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="175"/>
         <source>Move end</source>
-        <translation type="unfinished">Végére</translation>
+        <translation type="unfinished">Legvégére</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="180"/>
@@ -726,7 +726,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="360"/>
         <source>Choose a background image</source>
-        <translation>Háttérkép választása</translation>
+        <translation>Háttérkép kiválasztása</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="361"/>
