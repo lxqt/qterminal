@@ -128,7 +128,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="306"/>
         <source>Paste S&amp;election</source>
-        <translation>Kijelölés b&amp;eillesztése</translation>
+        <translation>&amp;Kijelölés beillesztése</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="401"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>Lap&amp;sáv látható</translation>
+        <translation>Lap&amp;sáv megjelenítése</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="409"/>
