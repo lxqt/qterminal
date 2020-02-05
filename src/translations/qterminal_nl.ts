@@ -83,12 +83,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ga naar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
@@ -449,7 +449,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Cursorvorm</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="435"/>
@@ -459,12 +459,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminalmarge</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Gebruik karakters uit het font om rechthoeken te tekenen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
