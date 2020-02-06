@@ -93,7 +93,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ugrás</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -238,7 +238,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="415"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished">Könyvjelző ki-be</translation>
+        <translation>Könyvjelző ki-be</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="423"/>
@@ -300,7 +300,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Exit QTerminal</source>
-        <translation type="unfinished">QTerminal bezárása</translation>
+        <translation>QTerminal bezárása</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="601"/>
@@ -480,17 +480,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A betűtípus dobozrajzoló karaktereinek használata</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">A gyorsítókat az Alt aktiválja, és zavarhatják a terminált.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Menüsor gyorsító kikapcsolása</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="539"/>
@@ -550,7 +550,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Indulás ezzel a mérettel:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
@@ -587,7 +587,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="897"/>
         <source>Enable bookmarks</source>
-        <translation type="unfinished">Könyvjelzőhasználat</translation>
+        <translation type="unfinished">Könyvjelzők használata</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="906"/>
@@ -705,7 +705,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="175"/>
         <source>No move</source>
-        <translation type="unfinished">Áll</translation>
+        <translation type="unfinished">Nem mozdul</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="175"/>
@@ -715,7 +715,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="175"/>
         <source>Move end</source>
-        <translation type="unfinished">Legvégére</translation>
+        <translation type="unfinished">Végére</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="180"/>
@@ -781,7 +781,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="219"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished">Új lapcím szín megadása</translation>
+        <translation type="unfinished">Lapcím színének megadása</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="240"/>
