@@ -63,12 +63,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>Geçmişteki &amp;Önceki Sekme</translation>
+        <translation>&amp;Geçmişten Önceki Sekmeler</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Next Tab in History</source>
-        <translation>Geçmişteki &amp;Sonraki Sekme</translation>
+        <translation>&amp;Geçmişten Sonraki Sekme</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="251"/>
@@ -495,7 +495,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Yazı tipi içindeki kutu çizme karakterlerini kullan</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
