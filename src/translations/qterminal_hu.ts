@@ -444,7 +444,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="382"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished">Kétirányú szövegtámogatás engedélyezése</translation>
+        <translation>Kétirányú szövegtámogatás engedélyezése</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
@@ -550,7 +550,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished">Indulás mérettel:</translation>
+        <translation type="unfinished">Indulás  ezzel a mérettel:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
@@ -603,12 +603,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
         <source>Shortcut</source>
-        <translation>Gyorsbillentyű</translation>
+        <translation>Művelet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="772"/>
         <source>Key</source>
-        <translation>Billentyű</translation>
+        <translation>Kombináció</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="63"/>
