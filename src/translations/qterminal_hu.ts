@@ -325,7 +325,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation type="unfinished">A terminál megtekintéséhez nyomja meg a  &quot;%1&quot; gombot.</translation>
+        <translation>A terminál megtekintéséhez nyomja meg a  &quot;%1&quot; gombot.</translation>
     </message>
 </context>
 <context>
@@ -404,7 +404,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="204"/>
         <source>Start with preset:</source>
-        <translation type="unfinished">Új terminálok szétválasztása:</translation>
+        <translation>Új terminálok szétválasztása:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="215"/>
@@ -550,7 +550,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished">Indulás  ezzel a mérettel:</translation>
+        <translation>Indulás  ezzel a mérettel:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
@@ -561,7 +561,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="709"/>
         <source>Get current size</source>
-        <translation type="unfinished">Aktuális méret mentése</translation>
+        <translation>Aktuális méret mentése</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
@@ -582,12 +582,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="875"/>
         <source>Edit bookmark file contents</source>
-        <translation type="unfinished">Könyvjelzőfájl szerkesztése</translation>
+        <translation>Könyvjelzőfájl szerkesztése</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="897"/>
         <source>Enable bookmarks</source>
-        <translation type="unfinished">Könyvjelzők használata</translation>
+        <translation>Könyvjelzők használata</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="906"/>
@@ -623,7 +623,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
         <source>&amp;Change...</source>
-        <translation type="unfinished">&amp;Változtatás...</translation>
+        <translation>&amp;Változtatás...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
@@ -638,7 +638,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="784"/>
         <source>Show on start</source>
-        <translation type="unfinished">Megjelenítés induláskor</translation>
+        <translation>Megjelenítés induláskor</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="791"/>
@@ -705,17 +705,17 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="175"/>
         <source>No move</source>
-        <translation type="unfinished">Nem mozdul</translation>
+        <translation>Változatlan</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="175"/>
         <source>Move start</source>
-        <translation type="unfinished">Elejére</translation>
+        <translation>Elejére</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="175"/>
         <source>Move end</source>
-        <translation type="unfinished">Végére</translation>
+        <translation>Végére</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="180"/>
@@ -781,7 +781,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="219"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished">Lapcím színének módosítása</translation>
+        <translation>Lapcím színének módosítása</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="240"/>
@@ -791,7 +791,7 @@
     <message>
         <location filename="../tabwidget.cpp" line="242"/>
         <source>Change title color</source>
-        <translation type="unfinished">Lapcím színének módosítása</translation>
+        <translation>Lapcím színének módosítása</translation>
     </message>
 </context>
 <context>
