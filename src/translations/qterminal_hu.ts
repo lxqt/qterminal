@@ -78,12 +78,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished">E&amp;lőzőleg használt lap</translation>
+        <translation>E&amp;lőzőleg használt lap</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished">Ezután h&amp;asznált lap</translation>
+        <translation>Ezután h&amp;asznált lap</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
@@ -188,12 +188,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>2 &amp;vízszintes terminál</translation>
+        <translation>2 &amp;függőleges terminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation>2 &amp;függőleges terminál</translation>
+        <translation>2 &amp;vízszintes terminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
