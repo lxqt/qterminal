@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>לשונית</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>מעבר אל</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -450,7 +450,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>צורת סמן</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="428"/>
@@ -501,22 +501,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>גבול מסוף</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>להשתמש בתווי תיבה שנכללים בגופן</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>מקשי האצה מופעלים עם Alt ויכולים לשבש את פעילות המסוף.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>אין מאיץ לסרגל התפריטים</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
@@ -581,18 +581,18 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>התחלה עם הגודל הזה:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
         <location filename="../forms/propertiesdialog.ui" line="702"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> פיקסלים</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="709"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>קבלת הגודל הנוכחי</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
