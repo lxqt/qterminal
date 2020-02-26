@@ -485,12 +485,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>A gyorsítókat az Alt aktiválja, és zavarhatják a terminált.</translation>
+        <translation>A gyorsítót az Alt aktiválja, és zavarhatja a terminált.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>No menu bar accelerator</source>
-        <translation>Menüsor gyorsítók kikapcsolása</translation>
+        <translation>Menüsor gyorsító kikapcsolása</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="539"/>
