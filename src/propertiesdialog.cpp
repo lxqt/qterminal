@@ -169,6 +169,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     menuAccelCheckBox->setChecked(Properties::Instance()->noMenubarAccel);
     showMenuCheckBox->setChecked(Properties::Instance()->menuVisible);
 
+    borderlessCheckBox->setChecked(Properties::Instance()->borderless);
+
     /* actions by motion after paste */
 
     QStringList motionAfter;
@@ -309,6 +311,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->hideTabBarWithOneTab = hideTabBarCheckBox->isChecked();
     Properties::Instance()->noMenubarAccel = menuAccelCheckBox->isChecked();
     Properties::Instance()->menuVisible = showMenuCheckBox->isChecked();
+    Properties::Instance()->borderless = borderlessCheckBox->isChecked();
     Properties::Instance()->m_motionAfterPaste = motionAfterPasting_comboBox->currentIndex();
 
     Properties::Instance()->historyLimited = historyLimited->isChecked();

@@ -20,6 +20,7 @@
 #include <QDesktopWidget>
 #include <QToolButton>
 #include <QMessageBox>
+#include <QTimer>
 #include <functional>
 
 #ifdef HAVE_QDBUS
@@ -393,13 +394,20 @@ void MainWindow::setup_ViewMenu_Actions()
     QAction *hideBordersAction = new QAction(tr("&Hide Window Borders"), settingOwner);
     hideBordersAction->setCheckable(true);
     hideBordersAction->setVisible(!m_dropMode);
+
+    hideBordersAction->setChecked(Properties::Instance()->borderless);
+    if (!m_dropMode) // dropdown mode doesn't need any change
+    {
+        if (!testAttribute(Qt::WA_WState_Created)) // called by c-tor
+        {
+            if (Properties::Instance()->borderless)
+                setWindowFlags(windowFlags() ^ Qt::FramelessWindowHint);
+        }
+        else if (Properties::Instance()->borderless != windowFlags().testFlag(Qt::FramelessWindowHint))
+            QTimer::singleShot(0, this, &MainWindow::toggleBorderless); // called by PropertiesDialog
+    }
     setup_Action(HIDE_WINDOW_BORDERS, hideBordersAction,
                  nullptr, this, SLOT(toggleBorderless()), menu_Window);
-    //Properties::Instance()->actions[HIDE_WINDOW_BORDERS]->setObjectName("toggle_Borderless");
-    // TODO/FIXME: it's broken somehow. When I call toggleBorderless() here the non-responsive window appear
-    //    actions[HIDE_WINDOW_BORDERS]->setChecked(Properties::Instance()->borderless);
-    //    if (Properties::Instance()->borderless)
-    //        toggleBorderless();
 
     QAction *showTabBarAction = new QAction(tr("&Show Tab Bar"), settingOwner);
     //toggleTabbar->setObjectName("toggle_TabBar");
@@ -543,7 +551,8 @@ void MainWindow::toggleBorderless()
     setWindowFlags(windowFlags() ^ Qt::FramelessWindowHint);
     show();
     setWindowState(Qt::WindowActive); /* don't loose focus on the window */
-    Properties::Instance()->borderless = actions[QLatin1String(HIDE_WINDOW_BORDERS)]->isChecked(); realign();
+    Properties::Instance()->borderless = actions[QLatin1String(HIDE_WINDOW_BORDERS)]->isChecked();
+    realign();
 }
 
 void MainWindow::toggleMenu()
