@@ -208,7 +208,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Új ablak</translation>
+        <translation>Ú&amp;j ablak</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
