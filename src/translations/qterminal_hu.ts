@@ -53,7 +53,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="254"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Lap mozgatása  jobb&amp;ra</translation>
+        <translation>Lap mozgatása jobb&amp;ra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
@@ -173,12 +173,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="355"/>
         <source>&amp;New Tab</source>
-        <translation>Új la&amp;p</translation>
+        <translation>Ú&amp;j lap</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="359"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Új lap a kés&amp;zletből</translation>
+        <translation>Új &amp;lap a készletből</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="360"/>
@@ -203,12 +203,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
         <source>&amp;Close Tab</source>
-        <translation>Lap be&amp;zárása</translation>
+        <translation>&amp;Lap bezárása</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
         <source>&amp;New Window</source>
-        <translation>Ú&amp;j ablak</translation>
+        <translation>Új &amp;ablak</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
