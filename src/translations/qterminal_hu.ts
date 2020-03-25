@@ -38,7 +38,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>&amp;Next Tab</source>
-        <translation>&amp;Következő lap</translation>
+        <translation>Köv&amp;etkező lap</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
@@ -48,12 +48,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="251"/>
         <source>Move Tab &amp;Left</source>
-        <translation>&amp;Lap mozgatása balra</translation>
+        <translation>Lap &amp;mozgatása balra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="254"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Lap mozgatása jobb&amp;ra</translation>
+        <translation>L&amp;ap mozgatása jobbra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
@@ -68,12 +68,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="281"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>Alter&amp;minálok összevonása</translation>
+        <translation>Alterminálok összev&amp;onása</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>A&amp;ktív terminál tisztítása</translation>
+        <translation>Akt&amp;ív terminál tisztítása</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
@@ -83,7 +83,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Next Tab in History</source>
-        <translation>Ezután h&amp;asznált lap</translation>
+        <translation>Ezután has&amp;znált lap</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
         <source>&amp;Top Subterminal</source>
-        <translation>Fel&amp;ső alterminál</translation>
+        <translation>F&amp;első alterminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="290"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>Ba&amp;l alterminál</translation>
+        <translation>&amp;Bal alterminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="293"/>
@@ -133,7 +133,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>Zoom &amp;in</source>
-        <translation>Nagy&amp;ítás</translation>
+        <translation>&amp;Nagyítás</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -855,7 +855,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation>A &amp;QT-ról...</translation>
+        <translation>A Qt névjegye...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
