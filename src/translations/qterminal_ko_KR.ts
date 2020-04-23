@@ -103,7 +103,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>이동</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -506,17 +506,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>글꼴에 포함 된 상자 그리기 문자 사용</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>가속기는 Alt에 의해 활성화되며 터미널을 방해 할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>메뉴 바 액셀러레이터 없음</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
@@ -581,7 +581,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>이 크기로 시작하십시오 :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
@@ -592,7 +592,8 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="709"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>현재 크기 가져 오기
+확</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
