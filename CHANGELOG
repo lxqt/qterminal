@@ -1,3 +1,33 @@
+qterminal-0.15.0 / 2020-04-24
+=============================
+
+  * Bumped version to 0.15.0.
+  * CMakeLists: Do not use Qt5X11Extras on macOS.
+  * Replace deprecated/removed Q_WS_MAC macro with Q_OS_MACOS.
+  * Fixed the default font on macOS.
+  * Fixed the missing PASTE_SELECTION_SHORTCUT on macOS.
+  * Fixed inconsistent-missing-override warnings.
+  * Scrollable and compact Settings dialog.
+  * C++11 code updates.
+  * Fix View → Toggle Bookmarks.
+  * Consider settings dialog frame on fitting it into screen.
+  * Fixed the duplicated setHistorySize() call.
+  * Create actions for switching to tab by index.
+  * Allow to disable drawing line chars.
+  * Made the initial terminal size consistent with qterminal.ui.
+  * Fixed building qterminal.app on macOS.
+  * No more incorrectly setting icon via OSC 1.
+  * Allow fixed custom size for QTerminal.
+  * Made menubar accelerators optional.
+  * Added "Hide Window Borders" to context menu.
+  * Remember the size of preferences dialog.
+  * Fixed the version comparison.
+  * Removed some debug outputs.
+  * Removed the deprecated QFileDialog method `setConfirmOverwrite()`.
+  * config: add a tooltip about box-drawing chars.
+  * Implemented an action that allows you to send the history to your editor.
+  * Added an option for borderless state and remembered it.
+
 qterminal-0.14.1 / 2019-02-25
 =============================
 
