@@ -526,7 +526,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="539"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Qual comportamento para emular. Observe que isso não precisa corresponder ao seu sistema operacional.&lt;/p&gt;&lt;p&gt;A&lt;span style=&quot; font-weight:600;&quot;&gt;emulação padrão&lt;/span&gt; é uma alternativa com um conjunto de recursos mínimo.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Qual comportamento para emular. Observe que isso não precisa corresponder ao seu sistema operacional.&lt;/p&gt;&lt;p&gt;A &lt;span style=&quot; font-weight:600;&quot;&gt;emulação padrão&lt;/span&gt; é uma alternativa com um conjunto de recursos mínimo.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="561"/>
