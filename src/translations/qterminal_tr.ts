@@ -6,7 +6,7 @@
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation>Filtre:</translation>
+        <translation>Süzgeç:</translation>
     </message>
 </context>
 <context>
@@ -15,12 +15,12 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Terminal Yazıtipini Seç</translation>
+        <translation>Uçbirim Yazı Tipini Seç</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation>Yazıtipi:</translation>
+        <translation>Yazı Tipi:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
@@ -30,7 +30,7 @@
     <message>
         <location filename="../forms/fontdialog.ui" line="59"/>
         <source>Preview</source>
-        <translation>Önizleme</translation>
+        <translation>Ön İzleme</translation>
     </message>
 </context>
 <context>
@@ -43,12 +43,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Terminali görmek için &quot;%1&quot; e basın.</translation>
+        <translation>Uçbirimi görmek için &quot;%1&quot;&apos;e basın.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>&amp;Aktif Terminali Temizle</translation>
+        <translation>Aktif Uçbirimi &amp;Temizle</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
@@ -63,12 +63,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>&amp;Geçmişten Önceki Sekmeler</translation>
+        <translation>Geçmişten &amp;Önceki Sekmeler</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Next Tab in History</source>
-        <translation>&amp;Geçmişten Sonraki Sekme</translation>
+        <translation>Geçmişten &amp;Sonraki Sekme</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="251"/>
@@ -93,37 +93,37 @@
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>Terminali Yatay B&amp;öl</translation>
+        <translation>Uçbirimi Yatay B&amp;öl</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="276"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>Terminali Dike&amp;y Böl</translation>
+        <translation>Uçbirimi Dike&amp;y Böl</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="281"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;amp;Subterminal Kapa</translation>
+        <translation>Alt Uçbirimi &amp;Daralt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
         <source>&amp;Top Subterminal</source>
-        <translation>&amp;Subterminal Üstte</translation>
+        <translation>Alt Uçbirim &amp;Üstte</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>&amp;Subterminal Altta</translation>
+        <translation>Alt Uçbirim &amp;Altta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="290"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>&amp;Subterminal Solda</translation>
+        <translation>Alt Uçbirim So&amp;lda</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="293"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>&amp;Subterminal Sağda</translation>
+        <translation>Alt Uçbirim Sa&amp;ğda</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
@@ -198,17 +198,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>Yatay &amp;2 Terminal</translation>
+        <translation>Yatay &amp;2 Uçbirim</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation>Dike&amp;y 2 terminal</translation>
+        <translation>Dike&amp;y 2 Uçbirim</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="366"/>
         <source>4 Terminal&amp;s</source>
-        <translation>&amp;4 Terminal</translation>
+        <translation>&amp;4 Uçbirim</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
@@ -248,7 +248,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="415"/>
         <source>Toggle Bookmarks</source>
-        <translation>Yer İşaretlerini Değiştir</translation>
+        <translation>Yer İmlerini Değiştir</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="423"/>
@@ -310,12 +310,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="599"/>
         <source>Exit QTerminal</source>
-        <translation>QTerminalden Çık</translation>
+        <translation>QTerminal&apos;den Çık</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="601"/>
         <source>Do not ask again</source>
-        <translation>Tekrar Sorma</translation>
+        <translation>Tekrar sorma</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="609"/>
@@ -325,7 +325,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="640"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>Hafif bir çok platformlu terminal öykünücüsü</translation>
+        <translation>Hafif bir çok platformlu uçbirim öykünücüsü</translation>
     </message>
 </context>
 <context>
@@ -343,7 +343,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation>Terminal ayarları</translation>
+        <translation>Uçbirim ayarları</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="31"/>
@@ -374,12 +374,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="275"/>
         <source>Color scheme</source>
-        <translation>Renk şeması</translation>
+        <translation>Renk düzeni</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="335"/>
         <source>Scrollbar position</source>
-        <translation>Kaydırma çubuğu pozisyonu</translation>
+        <translation>Kaydırma çubuğu durumu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="204"/>
@@ -389,12 +389,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="368"/>
         <source>Show a border around the current terminal</source>
-        <translation>Mevcut terminal etrafında bir sınır göster</translation>
+        <translation>Mevcut uçbirim etrafında bir sınır göster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="345"/>
         <source>Terminal transparency</source>
-        <translation>Terminal saydamlığı</translation>
+        <translation>Uçbirim saydamlığı</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="358"/>
@@ -409,22 +409,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>2 terminals horizontally</source>
-        <translation>Yatay 2 terminal</translation>
+        <translation>Yatay 2 uçbirim</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>2 terminals vertically</source>
-        <translation>Dikey 2 terminal</translation>
+        <translation>Dikey 2 uçbirim</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="230"/>
         <source>4 terminals</source>
-        <translation>4 terminal</translation>
+        <translation>4 uçbirim</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="148"/>
         <source>Font</source>
-        <translation>Yazıtipi</translation>
+        <translation>Yazı Tipi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
@@ -434,12 +434,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Tabs position</source>
-        <translation>Sekme pozisyonu</translation>
+        <translation>Sekme durumu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Widget style</source>
-        <translation>Widget stili</translation>
+        <translation>Widget biçimi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
@@ -449,12 +449,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="428"/>
         <source>Change window title based on current terminal</source>
-        <translation>Mevcut terminale göre pencere başlığını değiştir</translation>
+        <translation>Mevcut uçbirime göre pencere başlığını değiştir</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="445"/>
         <source>Change window icon based on current terminal</source>
-        <translation>Mevcut terminale göre pencere simgesini değiştir</translation>
+        <translation>Mevcut uçbirime göre pencere simgesini değiştir</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="382"/>
@@ -474,13 +474,13 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="452"/>
         <source>Show terminal size on resize</source>
-        <translation>Yeniden boyutlandırıldığında terminal boyutunu göster</translation>
+        <translation>Yeniden boyutlandırıldığında uçbirim boyutunu göster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="375"/>
         <location filename="../forms/propertiesdialog.ui" line="408"/>
         <source>px</source>
-        <translation></translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="325"/>
@@ -490,7 +490,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Terminal margin</source>
-        <translation>Terminal kenar boşluğu</translation>
+        <translation>Uçbirim kenar boşluğu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
@@ -500,7 +500,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Hızlandırıcılar Alt ile etkinleşir ve Terminale müdahale edilebilir.</translation>
+        <translation>Hızlandırıcılar Alt ile etkinleşir ve uçbirime müdahale edilebilir.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
@@ -510,7 +510,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="539"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Taklit edilecek davranış. Bunun işletim sisteminize uygun olması gerekmediğini unutmayın.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation is a fallback with a minimal featureset.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Taklit edilecek davranış. Bunun işletim sisteminize uygun olması gerekmediğini unutmayın.&lt;/p&gt;&lt;p&gt;The &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; Taklit edilme, bir en az özellik takımıyla birlikte bir özellik azaltmadır.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="561"/>
@@ -530,7 +530,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="598"/>
         <source>Open new terminals in current working directory</source>
-        <translation>Mevcut çalışma dizininde yeni terminaller açın</translation>
+        <translation>Mevcut çalışma dizininde yeni uçbirimler açın</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="605"/>
@@ -540,7 +540,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="612"/>
         <source>Save Position when closing</source>
-        <translation>Kapandığında Pozisyonu Kaydet</translation>
+        <translation>Kapandığında Durumu Kaydet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="619"/>
@@ -602,12 +602,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="897"/>
         <source>Enable bookmarks</source>
-        <translation>Yer işaretlerini etkinleştir</translation>
+        <translation>Yer imlerini etkinleştir</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="906"/>
         <source>Bookmark file</source>
-        <translation>Yer imi dosyası</translation>
+        <translation>Yer İmi dosyası</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="784"/>
@@ -642,7 +642,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="928"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Kendi yerimleri dosya yolunuzu berlirleyebilirsiniz. OwnCloud veya Dropbox gibi araçlarla yerimlerinizi paylaşmayı kolaylaştırır.</translation>
+        <translation>Kendi yer imleri dosya yolunuzu berlirleyebilirsiniz. OwnCloud veya Dropbox gibi araçlarla yerimlerinizi paylaşmayı kolaylaştırır.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="117"/>
@@ -710,7 +710,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="175"/>
         <source>Move start</source>
-        <translation>Hareket et</translation>
+        <translation>Hareketi başlat</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="175"/>
@@ -752,12 +752,12 @@
     <message>
         <location filename="../bookmarkswidget.cpp" line="110"/>
         <source>Local Bookmarks</source>
-        <translation>Yerel Yerimleri</translation>
+        <translation>Yerel Yer İmleri</translation>
     </message>
     <message>
         <location filename="../bookmarkswidget.cpp" line="168"/>
         <source>Synchronized Bookmarks</source>
-        <translation>Yerimlerini Eşitle</translation>
+        <translation>Yer İmlerini Eşitle</translation>
     </message>
 </context>
 <context>
@@ -804,7 +804,7 @@
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>List of saved sessions:</source>
-        <translation>Kaydedilmiş oturum listesi:</translation>
+        <translation>Kaydedilmiş oturumların listesi:</translation>
     </message>
 </context>
 <context>
