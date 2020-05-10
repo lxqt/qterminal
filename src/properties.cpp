@@ -113,10 +113,12 @@ void Properties::loadSettings()
     hideTabBarWithOneTab = m_settings->value(QLatin1String("HideTabBarWithOneTab"), false).toBool();
     m_motionAfterPaste = m_settings->value(QLatin1String("MotionAfterPaste"), 0).toInt();
 
-    /* fixed tab width */
+    /* fixed tabs width */
     fixedTabWidth = m_settings->value(QLatin1String("FixedTabWidth"), true).toBool();
     fixedTabWidthValue = m_settings->value(QLatin1String("FixedTabWidthValue"), 500).toInt();
+    /* tabs features */
     showCloseTabButton = m_settings->value(QLatin1String("ShowCloseTabButton"), true).toBool();
+    closeTabOnMiddleClick = m_settings->value(QLatin1String("CloseTabOnMiddleClick"), true).toBool();
 
     /* toggles */
     borderless = m_settings->value(QLatin1String("Borderless"), false).toBool();
@@ -223,6 +225,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("FixedTabWidth"), fixedTabWidth);
     m_settings->setValue(QLatin1String("FixedTabWidthValue"), fixedTabWidthValue);
     m_settings->setValue(QLatin1String("ShowCloseTabButton"), showCloseTabButton);
+    m_settings->setValue(QLatin1String("CloseTabOnMiddleClick"), closeTabOnMiddleClick);
 
     m_settings->setValue(QLatin1String("Borderless"), borderless);
     m_settings->setValue(QLatin1String("TabBarless"), tabBarless);
