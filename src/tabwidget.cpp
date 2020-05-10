@@ -258,7 +258,7 @@ bool TabWidget::eventFilter(QObject *obj, QEvent *event)
 {
     QMouseEvent *e = reinterpret_cast<QMouseEvent*>(event);
     if (e->button() == Qt::MidButton) {
-        if (event->type() == QEvent::MouseButtonRelease) {
+        if (event->type() == QEvent::MouseButtonRelease && Properties::Instance()->closeTabOnMiddleClick) {
             // close the tab on middle clicking
             int index = tabBar()->tabAt(e->pos());
             if (index > -1){
