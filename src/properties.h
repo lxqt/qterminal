@@ -76,6 +76,7 @@ class Properties
         int fixedTabWidthValue;
 
         bool showCloseTabButton;
+        bool closeTabOnMiddleClick;
 
         bool borderless;
         bool tabBarless;

@@ -152,10 +152,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     tabsPos_comboBox->addItems(tabsPosList);
     tabsPos_comboBox->setCurrentIndex(Properties::Instance()->tabsPos);
 
-    /* tab width */
+    /* fixed tabs width */
     fixedTabWidthCheckBox->setChecked(Properties::Instance()->fixedTabWidth);
     fixedTabWidthSpinBox->setValue(Properties::Instance()->fixedTabWidthValue);
+    /* tabs features */
     closeTabButtonCheckBox->setChecked(Properties::Instance()->showCloseTabButton);
+    closeTabOnMiddleClickCheckBox->setChecked(Properties::Instance()->closeTabOnMiddleClick);
 
     /* keyboard cursor shape */
     QStringList keyboardCursorShapeList;
@@ -308,6 +310,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->fixedTabWidthValue = fixedTabWidthSpinBox->value();
     Properties::Instance()->keyboardCursorShape = keybCursorShape_comboBox->currentIndex();
     Properties::Instance()->showCloseTabButton = closeTabButtonCheckBox->isChecked();
+    Properties::Instance()->closeTabOnMiddleClick = closeTabOnMiddleClickCheckBox->isChecked();
     Properties::Instance()->hideTabBarWithOneTab = hideTabBarCheckBox->isChecked();
     Properties::Instance()->noMenubarAccel = menuAccelCheckBox->isChecked();
     Properties::Instance()->menuVisible = showMenuCheckBox->isChecked();
