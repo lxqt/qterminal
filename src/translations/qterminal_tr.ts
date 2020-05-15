@@ -63,7 +63,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>Geçmişten &amp;Önceki Sekmeler</translation>
+        <translation>&amp;Geçmişten Önceki Sekmeler</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="315"/>
         <source>Zoom rese&amp;t</source>
-        <translation>Günc&amp;el Boyut</translation>
+        <translation>&amp;İlk Boyut</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
@@ -275,7 +275,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="444"/>
         <source>&amp;Tabs Layout</source>
-        <translation>&amp;Sekme Düzeni</translation>
+        <translation>&amp;Sekmelerin Düzeni</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="460"/>
@@ -295,7 +295,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="492"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>Altçiz&amp;gi İmleç</translation>
+        <translation>Alt Çiz&amp;gi İmleç</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="493"/>
@@ -384,12 +384,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="204"/>
         <source>Start with preset:</source>
-        <translation>Ön ayarlar ile başlat:</translation>
+        <translation>Ön ayarlarla başlat:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="368"/>
         <source>Show a border around the current terminal</source>
-        <translation>Mevcut uçbirim etrafında bir sınır göster</translation>
+        <translation>Geçerli uçbirim etrafında bir sınır göster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="345"/>
@@ -424,7 +424,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="148"/>
         <source>Font</source>
-        <translation>Yazı Tipi</translation>
+        <translation>Yazı tipi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
@@ -439,7 +439,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Widget style</source>
-        <translation>Widget biçimi</translation>
+        <translation>Parçacık biçimi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
@@ -464,7 +464,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
         <source>Background image:</source>
-        <translation>Arkaplan resmi:</translation>
+        <translation>Arka Plan resmi:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="290"/>
@@ -500,7 +500,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Hızlandırıcılar Alt ile etkinleşir ve uçbirime müdahale edilebilir.</translation>
+        <translation>Hızlandırıcılar, Alt ile etkinleşir ve uçbirime müdahale edilebilir.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
@@ -530,27 +530,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="598"/>
         <source>Open new terminals in current working directory</source>
-        <translation>Mevcut çalışma dizininde yeni uçbirimler açın</translation>
+        <translation>Geçerli çalışma dizininde yeni uçbirimler açın</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="605"/>
         <source>Save Size when closing</source>
-        <translation>Kapandığında Boyutu Kaydet</translation>
+        <translation>Kapandığında boyutu kaydet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="612"/>
         <source>Save Position when closing</source>
-        <translation>Kapandığında Durumu Kaydet</translation>
+        <translation>Kapandığında durumu kaydet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="619"/>
         <source>Ask for confirmation when closing</source>
-        <translation>Kapandığında onay iste</translation>
+        <translation>Kapandığında onay için sor</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="629"/>
         <source>Unlimited history</source>
-        <translation>Sınırsız tarih</translation>
+        <translation>Sınırsız geçmiş</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="636"/>
@@ -587,7 +587,7 @@
         <location filename="../forms/propertiesdialog.ui" line="812"/>
         <location filename="../forms/propertiesdialog.ui" line="829"/>
         <source>%</source>
-        <translation></translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="819"/>
@@ -642,7 +642,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="928"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Kendi yer imleri dosya yolunuzu berlirleyebilirsiniz. OwnCloud veya Dropbox gibi araçlarla yerimlerinizi paylaşmayı kolaylaştırır.</translation>
+        <translation>Kendi yer imleri dosya yolunuzu berlirleyebilirsiniz. Bu, OwnCloud veya Dropbox gibi araçlarla yer imlerinizi paylaşmayı kolaylaştırır.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="117"/>
@@ -695,7 +695,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="162"/>
         <source>UnderlineCursor</source>
-        <translation>Altçizgi İmleç</translation>
+        <translation>Alt Çizgi İmleç</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="162"/>
@@ -736,7 +736,7 @@
     <message>
         <location filename="../propertiesdialog.cpp" line="426"/>
         <source>Open or create bookmarks file</source>
-        <translation>Yerimleri dosyası aç ya da oluştur</translation>
+        <translation>Yer imleri dosyası aç ya da oluştur</translation>
     </message>
 </context>
 <context>
@@ -757,7 +757,7 @@
     <message>
         <location filename="../bookmarkswidget.cpp" line="168"/>
         <source>Synchronized Bookmarks</source>
-        <translation>Yer İmlerini Eşitle</translation>
+        <translation>Eşitlenmiş Yer İmleri</translation>
     </message>
 </context>
 <context>
@@ -850,7 +850,7 @@
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Düzen</translation>
+        <translation>D&amp;üzen</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
