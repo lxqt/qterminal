@@ -386,8 +386,6 @@ void PropertiesDialog::saveShortcuts()
         QAction *keyAction = actions[keyValue];
 
         QTableWidgetItem *item = shortcutsWidget->item(x, 1);
-        QKeySequence sequence = QKeySequence(item->text());
-        QString sequenceString = sequence.toString();
 
         QList<QKeySequence> shortcuts;
         const auto sequences = item->text().split(QLatin1Char('|'));
