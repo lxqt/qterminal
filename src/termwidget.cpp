@@ -169,7 +169,7 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
 
 void TermWidgetImpl::zoomIn()
 {
-    emit QTermWidget::zoomIn();
+    QTermWidget::zoomIn();
 // note: do not save zoom here due the #74 Zoom reset option resets font back to Monospace
 //    Properties::Instance()->font = getTerminalFont();
 //    Properties::Instance()->saveSettings();
@@ -177,7 +177,7 @@ void TermWidgetImpl::zoomIn()
 
 void TermWidgetImpl::zoomOut()
 {
-    emit QTermWidget::zoomOut();
+    QTermWidget::zoomOut();
 // note: do not save zoom here due the #74 Zoom reset option resets font back to Monospace
 //    Properties::Instance()->font = getTerminalFont();
 //    Properties::Instance()->saveSettings();
@@ -237,7 +237,7 @@ void TermWidgetImpl::paste(QClipboard::Mode mode)
                 {
                     if (confirmation.buttonRole(btn) == QMessageBox::ActionRole && btn->text() == QMessageBox::tr("Show Details..."))
                     {
-                        btn->clicked();
+                        Q_EMIT btn->clicked();
                         break;
                     }
                 }

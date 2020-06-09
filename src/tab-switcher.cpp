@@ -178,7 +178,7 @@ void TabSwitcher::timer()
 void TabSwitcher::closeEvent(QCloseEvent *)
 {
     m_timer->stop();
-    activateTab(model()->data(model()->index(currentIndex().row(), 0), static_cast<int>(AppRole::Index)).value<int>());
+    Q_EMIT activateTab(model()->data(model()->index(currentIndex().row(), 0), static_cast<int>(AppRole::Index)).value<int>());
 }
 
 // -----------------------------------------------------------------------------------------------------------

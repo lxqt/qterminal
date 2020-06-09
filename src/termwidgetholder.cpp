@@ -442,7 +442,7 @@ void TermWidgetHolder::closeTab()
     QTabWidget *parent = findParent<QTabWidget>(this);
     int idx = parent->indexOf(this);
     assert(idx != -1);
-    parent->tabCloseRequested(idx);
+    Q_EMIT parent->tabCloseRequested(idx);
 }
 
 #endif
