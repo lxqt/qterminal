@@ -101,6 +101,7 @@ void TermWidgetImpl::propertiesChanged()
     setTerminalBackgroundImage(Properties::Instance()->backgroundImage);
     setBidiEnabled(Properties::Instance()->enabledBidiSupport);
     setDrawLineChars(!Properties::Instance()->useFontBoxDrawingChars);
+    setBoldIntense(Properties::Instance()->boldIntense);
 
     /* be consequent with qtermwidget.h here */
     switch(Properties::Instance()->scrollBarPos) {

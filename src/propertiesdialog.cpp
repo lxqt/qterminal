@@ -167,6 +167,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     hideTabBarCheckBox->setChecked(Properties::Instance()->hideTabBarWithOneTab);
 
+    // bold font face for intense colors
+    boldIntenseCheckBox->setChecked(Properties::Instance()->boldIntense);
+
     // main menu bar
     menuAccelCheckBox->setChecked(Properties::Instance()->noMenubarAccel);
     showMenuCheckBox->setChecked(Properties::Instance()->menuVisible);
@@ -312,6 +315,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->showCloseTabButton = closeTabButtonCheckBox->isChecked();
     Properties::Instance()->closeTabOnMiddleClick = closeTabOnMiddleClickCheckBox->isChecked();
     Properties::Instance()->hideTabBarWithOneTab = hideTabBarCheckBox->isChecked();
+    Properties::Instance()->boldIntense = boldIntenseCheckBox->isChecked();
     Properties::Instance()->noMenubarAccel = menuAccelCheckBox->isChecked();
     Properties::Instance()->menuVisible = showMenuCheckBox->isChecked();
     Properties::Instance()->borderless = borderlessCheckBox->isChecked();

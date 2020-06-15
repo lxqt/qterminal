@@ -78,6 +78,8 @@ class Properties
         bool showCloseTabButton;
         bool closeTabOnMiddleClick;
 
+        bool boldIntense;
+
         bool borderless;
         bool tabBarless;
         bool noMenubarAccel;
