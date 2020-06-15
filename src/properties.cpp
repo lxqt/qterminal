@@ -124,6 +124,7 @@ void Properties::loadSettings()
     borderless = m_settings->value(QLatin1String("Borderless"), false).toBool();
     tabBarless = m_settings->value(QLatin1String("TabBarless"), false).toBool();
     menuVisible = m_settings->value(QLatin1String("MenuVisible"), true).toBool();
+    boldIntense = m_settings->value(QLatin1String("BoldIntense"), true).toBool();
     noMenubarAccel = m_settings->value(QLatin1String("NoMenubarAccel"), true).toBool();
     askOnExit = m_settings->value(QLatin1String("AskOnExit"), true).toBool();
     saveSizeOnExit = m_settings->value(QLatin1String("SaveSizeOnExit"), true).toBool();
@@ -229,6 +230,7 @@ void Properties::saveSettings()
 
     m_settings->setValue(QLatin1String("Borderless"), borderless);
     m_settings->setValue(QLatin1String("TabBarless"), tabBarless);
+    m_settings->setValue(QLatin1String("BoldIntense"), boldIntense);
     m_settings->setValue(QLatin1String("NoMenubarAccel"), noMenubarAccel);
     m_settings->setValue(QLatin1String("MenuVisible"), menuVisible);
     m_settings->setValue(QLatin1String("AskOnExit"), askOnExit);
