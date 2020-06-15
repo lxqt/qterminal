@@ -38,7 +38,7 @@ class MainWindow : public QMainWindow, private Ui::mainWindow, public DBusAddres
 public:
     MainWindow(TerminalConfig& cfg,
                bool dropMode,
-               QWidget * parent = nullptr, Qt::WindowFlags f = nullptr);
+               QWidget * parent = nullptr, Qt::WindowFlags f = Qt::WindowFlags());
     ~MainWindow() override;
 
     bool dropMode() { return m_dropMode; }
