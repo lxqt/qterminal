@@ -20,6 +20,7 @@
 #include <QDesktopWidget>
 #include <QToolButton>
 #include <QMessageBox>
+#include <QStandardPaths>
 #include <QTimer>
 #include <functional>
 
@@ -531,6 +532,14 @@ void MainWindow::setup_ViewMenu_Actions()
 
 void MainWindow::setupCustomDirs()
 {
+    const QString appName = QCoreApplication::applicationName();
+    const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QLatin1String(),
+                                                       QStandardPaths::LocateDirectory);
+
+    for (const QString& dir : dirs) {
+        TermWidgetImpl::addCustomColorSchemeDir(dir + QLatin1Char('/') + appName + QLatin1String("/color-schemes"));
+    }
+    // FIXME: To be deprecated and then removed
     const QSettings settings;
     const QString dir = QFileInfo(settings.fileName()).canonicalPath() + QStringLiteral("/color-schemes/");
     TermWidgetImpl::addCustomColorSchemeDir(dir);
