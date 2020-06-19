@@ -536,9 +536,9 @@ void MainWindow::setupCustomDirs()
     const QStringList dirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QLatin1String(),
                                                        QStandardPaths::LocateDirectory);
 
-    for (const QString& dir : dirs)
+    for (const QString& dir : dirs) {
         TermWidgetImpl::addCustomColorSchemeDir(dir + QLatin1Char('/') + appName + QLatin1String("/color-schemes"));
-
+    }
     // FIXME: To be deprecated and then removed
     const QSettings settings;
     const QString dir = QFileInfo(settings.fileName()).canonicalPath() + QStringLiteral("/color-schemes/");
