@@ -91,6 +91,7 @@ class Properties
         bool savePosOnExit;
 
         bool useCWD;
+        bool m_openNewTabRightToActiveTab;
 
         QString term;
 

@@ -88,7 +88,9 @@ int TabWidget::addNewTab(TerminalConfig config)
     connect(console, &TermWidgetHolder::termTitleChanged, this, &TabWidget::onTermTitleChanged);
     connect(this, &QTabWidget::currentChanged, this, &TabWidget::currentTitleChanged);
 
-    int index = addTab(console, label);
+    const int newIndex = (Properties::Instance()->m_openNewTabRightToActiveTab ? currentIndex() + 1 : count());
+    const int index = insertTab(newIndex, console, label);
+
     console->setProperty(TAB_CUSTOM_NAME_PROPERTY, false);
     updateTabIndices();
     switchTab(index);
