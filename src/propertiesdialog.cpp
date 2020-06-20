@@ -211,6 +211,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     fixedHeightSpinBox->setValue(Properties::Instance()->fixedWindowSize.height());
 
     useCwdCheckBox->setChecked(Properties::Instance()->useCWD);
+    openNewTabRightToActiveTabCheckBox->setChecked(Properties::Instance()->m_openNewTabRightToActiveTab);
 
     termComboBox->setCurrentText(Properties::Instance()->term);
 
@@ -303,6 +304,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->prefDialogSize = size();
 
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
+    Properties::Instance()->m_openNewTabRightToActiveTab = openNewTabRightToActiveTabCheckBox->isChecked();
 
     Properties::Instance()->term = termComboBox->currentText();
     Properties::Instance()->handleHistoryCommand = handleHistoryLineEdit->text();
