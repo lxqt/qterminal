@@ -55,6 +55,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
       tabPosition(nullptr),
       scrollBarPosition(nullptr),
       keyboardCursorShape(nullptr),
+      keyboardCursorBlink(nullptr),
       tabPosMenu(nullptr),
       scrollPosMenu(nullptr),
       keyboardCursorShapeMenu(nullptr),
@@ -518,6 +519,21 @@ void MainWindow::setup_ViewMenu_Actions()
                 consoleTabulator, &TabWidget::changeKeyboardCursorShape);
     }
 
+    if (keyboardCursorBlink == nullptr) {
+        keyboardCursorBlink = new QActionGroup(this);
+        QAction *blink = new QAction(tr("&BlinkingCursor"), this);
+        keyboardCursorBlink->addAction(blink);
+        keyboardCursorBlink->setExclusive(false);
+
+        for (int i = 0; i < keyboardCursorBlink->actions().size(); ++i) {
+            keyboardCursorBlink->actions().at(i)->setCheckable(true);
+        }
+        keyboardCursorBlink->actions().at(0)->setChecked(Properties::Instance()->keyboardCursorBlink);
+
+        connect(keyboardCursorBlink, &QActionGroup::triggered,
+                consoleTabulator, &TabWidget::changeKeyboardCursorBlink);
+    }
+
     if (keyboardCursorShapeMenu == nullptr) {
         keyboardCursorShapeMenu = new QMenu(tr("&Keyboard Cursor Shape"), menu_Window);
         keyboardCursorShapeMenu->setObjectName(QStringLiteral("keyboardCursorShapeMenu"));
@@ -525,6 +541,14 @@ void MainWindow::setup_ViewMenu_Actions()
         for(int i=0; i < keyboardCursorShape->actions().size(); ++i) {
             keyboardCursorShapeMenu->addAction(keyboardCursorShape->actions().at(i));
         }
+
+        keyboardCursorShapeMenu->addSeparator();
+
+        // Blinking cursor
+        for (int i=0; i < keyboardCursorBlink->actions().size(); ++i) {
+            keyboardCursorShapeMenu->addAction(keyboardCursorBlink->actions().at(i));
+        }
+
     }
 
     menu_Window->addMenu(keyboardCursorShapeMenu);

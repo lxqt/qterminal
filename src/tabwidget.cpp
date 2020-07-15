@@ -474,6 +474,20 @@ void TabWidget::changeKeyboardCursorShape(QAction *triggered)
     propertiesChanged();
 }
 
+void TabWidget::changeKeyboardCursorBlink(QAction *triggered)
+{
+    QActionGroup *keyboardCursorBlink = static_cast<QActionGroup *>(sender());
+    if (!keyboardCursorBlink)
+        qFatal("keyboardCursorBlink is NULL");
+
+    const int index = keyboardCursorBlink->actions().indexOf(triggered);
+    const bool flag = keyboardCursorBlink->actions().at(index)->isChecked();
+
+    Properties::Instance()->keyboardCursorBlink = flag;
+    Properties::Instance()->saveSettings();
+    propertiesChanged();
+}
+
 void TabWidget::propertiesChanged()
 {
     for (int i = 0; i < count(); ++i)

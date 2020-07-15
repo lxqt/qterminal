@@ -55,7 +55,7 @@ protected:
      bool event(QEvent* event) override;
 
 private:
-    QActionGroup *tabPosition, *scrollBarPosition, *keyboardCursorShape;
+    QActionGroup *tabPosition, *scrollBarPosition, *keyboardCursorShape, *keyboardCursorBlink;
     QMenu *tabPosMenu, *scrollPosMenu, *keyboardCursorShapeMenu;
 
     // A parent object for QObjects that are created dynamically based on settings

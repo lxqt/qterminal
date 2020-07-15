@@ -139,6 +139,8 @@ void TermWidgetImpl::propertiesChanged()
         break;
     }
 
+    setBlinkingCursor(Properties::Instance()->keyboardCursorBlink);
+
     update();
 }
 

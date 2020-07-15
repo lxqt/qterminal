@@ -84,6 +84,7 @@ public slots:
     void changeTabPosition(QAction *);
     void changeScrollPosition(QAction *);
     void changeKeyboardCursorShape(QAction *);
+    void changeKeyboardCursorBlink(QAction *);
     void propertiesChanged();
 
     void clearActiveTerminal();
