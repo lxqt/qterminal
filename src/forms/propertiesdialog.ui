@@ -710,7 +710,7 @@
                 </property>
                </widget>
               </item>
-              <item row="5" column="0" colspan="2"> 
+              <item row="5" column="0" colspan="2">
                <widget class="QCheckBox" name="closeTabOnMiddleClickCheckBox">
                 <property name="text">
                  <string>Close tab on middle-click</string>
@@ -782,6 +782,18 @@
      </widget>
      <widget class="QWidget" name="shortcutsPage">
       <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_16">
+         <property name="text">
+          <string>To edit a Shortcut:
+1 double-click its Key
+2 press the desired combination and release it
+3 click on a Shortcut
+
+To remove/disable a Shortcut, at point 2 press a modifier (like Shift)</string>
+         </property>
+        </widget>
+       </item>
        <item>
         <widget class="QTableWidget" name="shortcutsWidget">
          <property name="alternatingRowColors">
