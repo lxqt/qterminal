@@ -5,6 +5,7 @@ GenericName=Terminal emulator
 GenericName[ca]=Emulador de terminal
 GenericName[cs]=Emulátor terminálu
 GenericName[es]=Emulador de terminal
+GenericName[hu]=Terminál emulátor
 
 
 Comment=Terminal emulator
@@ -14,6 +15,7 @@ Comment[de]=Befehlszeile verwenden
 Comment[el]=Προσομοιωτής τερματικού
 Comment[es]=Emulador de terminal
 Comment[fr]=Terminal
+Comment[hu]=Terminál emulátor
 Comment[lt]=Terminalo emuliatorius
 Comment[pl]=Emulator terminala
 Comment[pt]=Emulador de terminal
