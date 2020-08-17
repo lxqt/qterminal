@@ -33,7 +33,8 @@ public:
         Command = 2
     };
 
-    AbstractBookmarkItem(AbstractBookmarkItem* parent = nullptr)
+    AbstractBookmarkItem(ItemType type, AbstractBookmarkItem* parent = nullptr)
+        : m_type(type)
     {
         m_parent = parent;
     }
@@ -72,9 +73,8 @@ class BookmarkRootItem : public AbstractBookmarkItem
 {
 public:
     BookmarkRootItem()
-        : AbstractBookmarkItem()
+        : AbstractBookmarkItem(AbstractBookmarkItem::Root)
     {
-        m_type = AbstractBookmarkItem::Root;
         m_value = m_display = QStringLiteral("root");
     }
 };
@@ -83,9 +83,8 @@ class BookmarkCommandItem : public AbstractBookmarkItem
 {
 public:
     BookmarkCommandItem(const QString &name, const QString &command, AbstractBookmarkItem *parent)
-        : AbstractBookmarkItem(parent)
+        : AbstractBookmarkItem(AbstractBookmarkItem::Command, parent)
     {
-        m_type = AbstractBookmarkItem::Command;
         m_value = command;
         m_display = name;
     }
@@ -96,9 +95,8 @@ class BookmarkGroupItem : public AbstractBookmarkItem
 {
 public:
     BookmarkGroupItem(const QString &name, AbstractBookmarkItem *parent)
-        : AbstractBookmarkItem(parent)
+        : AbstractBookmarkItem(AbstractBookmarkItem::Group, parent)
     {
-        m_type = AbstractBookmarkItem::Group;
         m_display = name;
     }
 };
