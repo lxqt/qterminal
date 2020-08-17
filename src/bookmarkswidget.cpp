@@ -34,9 +34,9 @@ public:
     };
 
     AbstractBookmarkItem(ItemType type, AbstractBookmarkItem* parent = nullptr)
-        : m_type(type)
+        : m_type(type),
+          m_parent(parent)
     {
-        m_parent = parent;
     }
     virtual ~AbstractBookmarkItem()
     {
