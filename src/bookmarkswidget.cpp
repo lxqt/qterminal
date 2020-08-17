@@ -37,7 +37,7 @@ public:
     {
         m_parent = parent;
     }
-    ~AbstractBookmarkItem()
+    virtual ~AbstractBookmarkItem()
     {
         qDeleteAll(m_children);
     }
