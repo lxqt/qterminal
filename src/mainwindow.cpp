@@ -543,7 +543,7 @@ void MainWindow::setupCustomDirs()
     }
     // FIXME: To be deprecated and then removed
     const QSettings settings;
-    const QString dir = QFileInfo(settings.fileName()).canonicalPath() + QStringLiteral("/color-schemes/");
+    const QString dir = QFileInfo(settings.fileName()).canonicalPath() + QLatin1String("/color-schemes");
     TermWidgetImpl::addCustomColorSchemeDir(dir);
 }
 
