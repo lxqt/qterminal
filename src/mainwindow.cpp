@@ -533,13 +533,13 @@ void MainWindow::setup_ViewMenu_Actions()
 void MainWindow::setupCustomDirs()
 {
     const QString appName = QCoreApplication::applicationName();
-    QStringList dirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QLatin1String(),
+    QStringList dirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, appName,
                                                        QStandardPaths::LocateDirectory);
 
     dirs.removeDuplicates(); // QStandardPaths::locateAll() produces duplicates
 
     for (const QString& dir : qAsConst(dirs)) {
-        TermWidgetImpl::addCustomColorSchemeDir(dir + QLatin1Char('/') + appName + QLatin1String("/color-schemes"));
+        TermWidgetImpl::addCustomColorSchemeDir(dir + QLatin1String("/color-schemes"));
     }
     // FIXME: To be deprecated and then removed
     const QSettings settings;
