@@ -786,11 +786,11 @@
         <widget class="QTableWidget" name="shortcutsWidget">
          <property name="toolTip">
           <string>To edit a Shortcut:
-1 double-click its Key
-2 press the desired combination and release it
-3 press Enter
+1. Double-click its Key
+2. Press the desired combination and release it
+3. Click on a Shortcut or press Enter
 
-To remove/disable a Shortcut, at point 2 press a modifier (like Shift)</string>
+To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</string>
          </property>
          <property name="alternatingRowColors">
           <bool>true</bool>
