@@ -121,6 +121,9 @@ class Properties
         bool useFontBoxDrawingChars;
     private:
 
+        Properties(const Properties &) = delete;
+        Properties &operator=(const Properties &) = delete;
+
         int versionComparison(const QString &v1, const QString &v2);
 
         // Singleton handling
@@ -128,7 +131,6 @@ class Properties
         QString filename;
 
         explicit Properties(const QString& filename);
-        Properties(const Properties &) {};
 
         QSettings *m_settings;
 
