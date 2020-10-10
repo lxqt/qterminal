@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>分頁</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>前往</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -445,12 +445,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
         <source>Show the menu bar</source>
-        <translation>顯示菜單列</translation>
+        <translation>顯示功能表</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Cursor shape</source>
-        <translation>光標形狀</translation>
+        <translation>游標形狀</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="428"/>
@@ -506,17 +506,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>使用字型中的方框繪製字元</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>使用Alt的快速鍵可能會與終端機應用程式互相干擾。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>停用功能表快速鍵</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
@@ -581,7 +581,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="681"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>啟動時的終端機大小：</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="688"/>
@@ -592,7 +592,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="709"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>使用目前的終端機大小</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
