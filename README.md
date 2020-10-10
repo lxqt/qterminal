@@ -25,8 +25,11 @@ QTerminal is provided by all major Linux distributions like [Arch Linux](https:/
 Just use the distributions' package managers to search for string `qterminal`.
 
 
-### Translation (Weblate)
+### Translation
 
-<a href="https://weblate.lxqt.org/projects/lxqt/qterminal/">
-<img src="https://weblate.lxqt.org/widgets/lxqt/-/qterminal/multi-auto.svg" alt="Translation status" />
+Translations can be done in [LXQt-Weblate](https://translate.lxqt-project.org/projects/lxqt-desktop/qterminal/)
+
+<a href="https://translate.lxqt-project.org/projects/lxqt-desktop/qterminal/">
+<img src="https://translate.lxqt-project.org/widgets/lxqt-desktop/-/qterminal/multi-auto.svg" alt="Translation status" />
 </a>
+
