@@ -98,7 +98,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tab</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>

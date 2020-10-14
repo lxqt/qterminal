@@ -464,7 +464,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizar caracteres de desenho de caixa contidos no tipo de letra</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="466"/>
