@@ -17,7 +17,7 @@
  ***************************************************************************/
 
 #include <QDockWidget>
-#include <QDesktopWidget>
+#include <QScreen>
 #include <QToolButton>
 #include <QMessageBox>
 #include <QStandardPaths>
@@ -722,16 +722,19 @@ void MainWindow::realign()
 {
     if (m_dropMode)
     {
-        QRect desktop = QApplication::desktop()->availableGeometry(this);
-        QRect geometry = QRect(0, 0,
-                               desktop.width()  * Properties::Instance()->dropWidht  / 100,
-                               desktop.height() * Properties::Instance()->dropHeight / 100
-            );
-        geometry.moveCenter(desktop.center());
+        QScreen *appScreen = QGuiApplication::screenAt(QCursor::pos());
+        if(appScreen == nullptr)
+            appScreen = QGuiApplication::primaryScreen();
+        const QRect desktop = appScreen->availableGeometry();
+        QRect g = QRect(desktop.x(),
+                        desktop.y(),
+                        desktop.width()  * Properties::Instance()->dropWidht  / 100,
+                        desktop.height() * Properties::Instance()->dropHeight / 100);
+        g.moveCenter(desktop.center());
         // do not use 0 here - we need to calculate with potential panel on top
-        geometry.setTop(desktop.top());
-        if (geometry != this->geometry()) {
-            setGeometry(geometry);
+        g.setTop(desktop.top());
+        if (g != geometry()) {
+            setGeometry(g);
         }
     }
 }
