@@ -700,7 +700,7 @@
         <location filename="../forms/propertiesdialog.ui" line="603"/>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source> px</source>
-        <translation type="unfinished"> px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="624"/>
@@ -710,17 +710,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri schede nuove a destro della scheda attuale</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Se non è spuntato la scheda nuova si apre ultima sulla destra</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi scheda con tasto centrale</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
@@ -730,7 +730,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Per modificare una scorciatoia:
+1. Clic doppio sulla combinazione
+2. Premere la scorciatoia/combinazione desiderata
+3. Cliccare una scorciatoia o premere Invio
+
+Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
