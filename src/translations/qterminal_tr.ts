@@ -575,17 +575,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Yoğun renkler oluşturmak için kalın yazı tipi yüzünün kullanımını değiştirir</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Yoğun renkler için kalın yazı tipi yüzü kullanın</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Pencere Kenarlıklarını Gizle</translation>
+        <translation>&amp;Pencere Kenarlıklarını Gizle</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu komut, geri kaydırma geçmişini içeren bir geçici dosyanın dosya adını içeren bir bağımsız değişkenle çalıştırılacaktır</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
@@ -616,17 +616,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Etkin sekmenin sağında yeni sekme aç</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>İşaretlenmezse, yeni sekme en sağdaki sekme olarak açılacaktır</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Orta tıklamayla sekmeyi kapat</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
@@ -636,7 +636,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bir Kısayolu düzenlemek için:
+1. Anahtarına çift tıklayın
+2. İstenilen kombinasyona basın ve bırakın
+3. Bir Kısayolu tıklayın veya Enter tuşuna basın
+
+Bir Kısayolu silmek/devre dışı bırakmak için, 2. noktada yalnızca bir değiştiriciye (Shift gibi) basın</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="863"/>
