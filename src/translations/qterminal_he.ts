@@ -601,7 +601,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">הסתרת &amp;גבולות החלון</translation>
+        <translation>ה&amp;סתרת גבולות החלון</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
