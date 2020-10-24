@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Előzmények kezelése...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -591,22 +591,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Beállítja a félkövér betűtípus használatát az intenzív színek megjelenítéséhez</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Használjon félkövér betűtípust az intenzív színekhez</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">Ablakkeret &amp;elrejtése</translation>
+        <translation>Ablakkeret &amp;elrejtése</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Melyik működést kell emulálni. Ne feledje, hogy ennek nem kell egyeznie az operációs rendszerrel.&lt;/p&gt;&lt;p&gt;Ha nem biztos benne, válassza a &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; opciót.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
@@ -632,17 +632,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Új lap megnyitása az aktív lap jobb oldalán</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ha nincs bejelölve, az új lap a sor végén lesz megnyitva</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Lap bezárása középső kattintásra</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
