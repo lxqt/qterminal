@@ -98,7 +98,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="261"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">탭</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
@@ -586,17 +586,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">세로선을 QTerminal이 내부적으로 묘사할지 또는 기본적인 폰트 렌더링 라이브러리에 위임할지 지정합니다.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">강조색을 렌더링하기 위해 볼드체 사용을 전환합니다.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">강조색을 위해 볼드체를 사용</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
