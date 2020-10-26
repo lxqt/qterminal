@@ -103,7 +103,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Gehe zu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
@@ -570,7 +570,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">Fensterrahmen &amp;ausblenden</translation>
+        <translation>Fensterrahmen &amp;ausblenden</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
