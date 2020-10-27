@@ -632,7 +632,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת לשונית חדשה משמאל ללשונית הפעילה</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
@@ -642,7 +642,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>סגירת לשונית בלחיצה על הלחצן האמצעי</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
