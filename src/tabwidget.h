@@ -115,7 +115,7 @@ protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 protected slots:
     void updateTabIndices();
-    void onTermTitleChanged(QString title, QString icon);
+    void onTermTitleChanged(const QString& title, const QString& icon);
 
 private:
     int tabNumerator;

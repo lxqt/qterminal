@@ -80,7 +80,7 @@ TerminalConfig TerminalConfig::fromDbus(const QHash<QString,QVariant> &termArgsC
     return TerminalConfig::fromDbus(termArgs);
 }
 
-static QString variantToString(QVariant variant, QString &defaultVal)
+static QString variantToString(const QVariant& variant, QString &defaultVal)
 {
     if (variant.type() == QVariant::String)
         return qvariant_cast<QString>(variant);

@@ -388,7 +388,7 @@ void PropertiesDialog::saveShortcuts()
 
     for( int x=0; x < shortcutCount; x++ )
     {
-        QString keyValue = shortcutKeys.at(x);
+        const QString& keyValue = shortcutKeys.at(x);
         QAction *keyAction = actions[keyValue];
 
         QTableWidgetItem *item = shortcutsWidget->item(x, 1);
@@ -412,7 +412,7 @@ void PropertiesDialog::setupShortcuts()
 
     for( int x=0; x < shortcutCount; x++ )
     {
-        QString keyValue = shortcutKeys.at(x);
+        const QString& keyValue = shortcutKeys.at(x);
         QAction *keyAction = actions[keyValue];
         QStringList sequenceStrings;
 
