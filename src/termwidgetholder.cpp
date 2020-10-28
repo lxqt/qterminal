@@ -33,6 +33,7 @@
 #include <cassert>
 #include <climits>
 #include <algorithm>
+#include <utility>
 
 
 TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, QWidget * parent)
@@ -407,7 +408,7 @@ void TermWidgetHolder::onTermTitleChanged(QString title, QString icon) const
 {
     TermWidget * term = qobject_cast<TermWidget *>(sender());
     if (m_currentTerm == term)
-        emit termTitleChanged(title, icon);
+        emit termTitleChanged(std::move(title), std::move(icon));
 }
 
 #ifdef HAVE_QDBUS
