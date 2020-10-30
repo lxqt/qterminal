@@ -570,7 +570,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">ウィンドウ枠を隠す(&amp;H)</translation>
+        <translation>ウィンドウ枠を隠す(&amp;H)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
