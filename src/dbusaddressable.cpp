@@ -16,7 +16,7 @@ QDBusObjectPath DBusAddressable::getDbusPath()
 }
 #endif
 
-DBusAddressable::DBusAddressable(QString prefix)
+DBusAddressable::DBusAddressable(const QString& prefix)
 {
     #ifdef HAVE_QDBUS
     QString uuidString = QUuid::createUuid().toString();

@@ -75,7 +75,7 @@ class TermWidget : public QWidget, public DBusAddressable
         QDBusObjectPath splitHorizontal(const QHash<QString,QVariant> &termArgs);
         QDBusObjectPath splitVertical(const QHash<QString,QVariant> &termArgs);
         QDBusObjectPath getTab();
-        void sendText(const QString text);
+        void sendText(const QString& text);
         void closeTerminal();
         #endif
 

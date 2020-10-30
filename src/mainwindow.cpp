@@ -181,7 +181,7 @@ void MainWindow::enableDropMode()
     realign();
 }
 
-void MainWindow::setDropShortcut(QKeySequence dropShortCut)
+void MainWindow::setDropShortcut(const QKeySequence& dropShortCut)
 {
     if (!m_dropMode)
         return;

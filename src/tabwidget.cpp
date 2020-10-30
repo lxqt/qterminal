@@ -173,7 +173,7 @@ void TabWidget::updateTabIndices()
         widget(i)->setProperty(TAB_INDEX_PROPERTY, i);
 }
 
-void TabWidget::onTermTitleChanged(QString title, QString icon)
+void TabWidget::onTermTitleChanged(const QString& title, const QString& icon)
 {
     TermWidgetHolder * console = qobject_cast<TermWidgetHolder*>(sender());
     const bool custom_name = console->property(TAB_CUSTOM_NAME_PROPERTY).toBool();

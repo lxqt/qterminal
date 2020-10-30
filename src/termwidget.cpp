@@ -369,7 +369,7 @@ void TermWidget::closeTerminal()
     holder->splitCollapse(this);
 }
 
-void TermWidget::sendText(const QString text)
+void TermWidget::sendText(const QString& text)
 {
     if (impl())
     {
