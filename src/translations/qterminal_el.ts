@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαχείριση ιστορικού...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -586,37 +586,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Καθορίζει αν οι χαρακτήρες για τον σχεδιασμό του πλαισίου θα σχεδιάζονται εσωτερικά από το QTerminal ή από την υποκείμενη βιβλιοθήκη αποτύπωσης της γραμματοσειράς.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Εναλλαγή της χρήσης έντονων χαρακτήρων γραμματοσειρών για την αποτύπωση έντονων χρωματισμών</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρήση έντονων χαρακτήρων για έντονους χρωματισμούς</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">Απόκρυ&amp;ψη του περιγράμματος του παραθύρου</translation>
+        <translation>Απόκρυ&amp;ψη του περιγράμματος του παραθύρου</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Συμπεριφορά προς προσομοίωση Σημειώστε ότι δεν χρειάζεται να συνάδει με το λειτουργικό σύστημα&lt;/p&gt;&lt;p&gt;Αν δεν είστε σίγουρος-η, χρησιμοποιήστε την &lt;span style=&quot; font-weight:600;&quot;&gt;προσομοίωση&lt;/span&gt; default.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή η εντολή θα εκτελεστεί με ένα όρισμα με το όνομα ενός προσωρινού αρχείου που θα χρησιμοποιηθεί για την καταγραφή του ιστορικού κύλισης</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Εντολή διαχείρισης ιστορικού</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
@@ -632,17 +632,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Άνοιγμα της νέας καρτέλας δεξιά από την ενεργή καρτέλα</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Αν δεν είναι επιλεγμένο η νέα καρτέλα θα ανοίγει στην δεξιότερη θέση</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλείσιμο της καρτέλας με μεσαίο κλικ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
@@ -652,7 +652,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Για την επεξεργασία μιας συντόμευσης:
+1. Κάντε διπλό κλικ στο πλήκτρο της
+2. Πιέστε τον επιθυμητό συνδυασμό και αφήστε τον
+3. Κάντε κλικ σε μια συντόμευση ή πιέστε Enter
+
+Για την αφαίρεση/απενεργοποίηση μιας συντόμευσης, στο στάδιο 2 πιέστε μόνον έναν τροποποιητή (πχ το Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
