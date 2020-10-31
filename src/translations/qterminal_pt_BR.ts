@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Lidar com histórico...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -586,37 +586,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Especifique se os caracteres do desenho da caixa devem ser desenhados pelo QTerminal internamente ou deixados nas bibliotecas de renderização de fontes subjacentes.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterna o uso de fonte em negrito para renderizar cores intensas</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Use fonte em negrito para cores intensas</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Ocultar bordas da janela</translation>
+        <translation>&amp;Ocultar Bordas da Janela</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Qual comportamento emular. Observe que isso não precisa corresponder ao seu sistema operacional.&lt;/p&gt;&lt;p&gt;Se você não tiver certeza, use a &lt;span style=&quot; font-weight:600;&quot;&gt;emulação&lt;/span&gt; padrão.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Este comando será executado com um argumento contendo o nome do arquivo de um arquivo temporário contendo o histórico de rolagem</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Lidar com histórico de comando</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
@@ -632,17 +632,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Abra uma nova aba à direita da aba ativa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Se estiver desmarcada, a nova aba será aberta como a guia mais à direita</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar aba ao clicar com o botão do meio</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
@@ -652,7 +652,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Para editar um atalho:
+1. Clique duas vezes em sua chave
+2. Pressione a combinação desejada e solte-a
+3. Clique em um atalho ou pressione Enter
+
+Para remover/desativar um atalho, no ponto 2, pressione apenas um modificador (como Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
