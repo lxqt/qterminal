@@ -862,12 +862,12 @@ Bir Kısayolu silmek/devre dışı bırakmak için, 2. noktada yalnızca bir de�
 <context>
     <name>TermWidgetHolder</name>
     <message>
-        <location filename="../termwidgetholder.cpp" line="78"/>
+        <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
         <translation>Oturum Yükle</translation>
     </message>
     <message>
-        <location filename="../termwidgetholder.cpp" line="79"/>
+        <location filename="../termwidgetholder.cpp" line="80"/>
         <source>List of saved sessions:</source>
         <translation>Kaydedilmiş oturumların listesi:</translation>
     </message>

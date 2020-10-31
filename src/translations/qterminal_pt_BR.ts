@@ -862,12 +862,12 @@ Para remover/desativar um atalho, no ponto 2, pressione apenas um modificador (c
 <context>
     <name>TermWidgetHolder</name>
     <message>
-        <location filename="../termwidgetholder.cpp" line="78"/>
+        <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
         <translation>Carregar sessão</translation>
     </message>
     <message>
-        <location filename="../termwidgetholder.cpp" line="79"/>
+        <location filename="../termwidgetholder.cpp" line="80"/>
         <source>List of saved sessions:</source>
         <translation>Lista de sessões salvas:</translation>
     </message>

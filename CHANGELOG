@@ -1,3 +1,17 @@
+qterminal-0.16.0 / 2020-11-01
+=============================
+
+  * Made closing of tab on middle-clicking optional.
+  * Avoid loop variable copy.
+  * Emit signals with Q_EMIT.
+  * Use the default constructor of QFlags.
+  * Dropped qmake .pro file.
+  * Made the color scheme dirs comply with XDG Base Directory Specification.
+  * Added an optopn for openning the new tab to the right of the active tab.
+  * Added virtual destructor to a base class.
+  * Let QStandardPaths::locateAll() handle application name.
+  * Put drop-down QTerminal on screen with cursor.
+
 qterminal-0.15.0 / 2020-04-24
 =============================
 

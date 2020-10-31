@@ -862,12 +862,12 @@ Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
 <context>
     <name>TermWidgetHolder</name>
     <message>
-        <location filename="../termwidgetholder.cpp" line="78"/>
+        <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
         <translation>Carica Sessione</translation>
     </message>
     <message>
-        <location filename="../termwidgetholder.cpp" line="79"/>
+        <location filename="../termwidgetholder.cpp" line="80"/>
         <source>List of saved sessions:</source>
         <translation>Lista delle sessioni salvate:</translation>
     </message>

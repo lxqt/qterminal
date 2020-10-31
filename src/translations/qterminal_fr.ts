@@ -862,12 +862,12 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
 <context>
     <name>TermWidgetHolder</name>
     <message>
-        <location filename="../termwidgetholder.cpp" line="78"/>
+        <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
         <translation>Charger une session</translation>
     </message>
     <message>
-        <location filename="../termwidgetholder.cpp" line="79"/>
+        <location filename="../termwidgetholder.cpp" line="80"/>
         <source>List of saved sessions:</source>
         <translation>Liste des sessions sauvegardées :</translation>
     </message>
