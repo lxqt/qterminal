@@ -391,7 +391,12 @@ void PropertiesDialog::saveShortcuts()
         const QString& keyValue = shortcutKeys.at(x);
         QAction *keyAction = actions[keyValue];
 
-        QTableWidgetItem *item = shortcutsWidget->item(x, 1);
+        QTableWidgetItem *item = nullptr;
+        auto items = shortcutsWidget->findItems(tr(keyValue.toStdString().c_str()), Qt::MatchExactly);
+        if (!items.isEmpty())
+            item = shortcutsWidget->item(shortcutsWidget->row(items.at(0)), 1);
+        if (item == nullptr)
+            continue;
 
         QList<QKeySequence> shortcuts;
         const auto sequences = item->text().split(QLatin1Char('|'));
