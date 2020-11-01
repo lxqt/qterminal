@@ -30,6 +30,14 @@
 #include "config.h"
 #include "qterminalapp.h"
 
+void KeySequenceEdit::keyPressEvent(QKeyEvent* event)
+{
+    // by not allowing multiple shortcuts,
+    // the Qt bug that makes Meta a non-modifier is worked around
+    clear();
+    QKeySequenceEdit::keyPressEvent(event);
+}
+
 Delegate::Delegate (QObject *parent)
     : QStyledItemDelegate (parent)
 {
@@ -392,7 +400,10 @@ void PropertiesDialog::saveShortcuts()
         QAction *keyAction = actions[keyValue];
 
         QTableWidgetItem *item = nullptr;
-        auto items = shortcutsWidget->findItems(tr(keyValue.toStdString().c_str()), Qt::MatchExactly);
+        QString txt = keyAction->text();
+        txt.remove(QRegularExpression(QStringLiteral("\\s*\\(&[a-zA-Z0-9]\\)\\s*")));
+        txt.remove(QLatin1Char('&'));
+        auto items = shortcutsWidget->findItems(txt, Qt::MatchExactly);
         if (!items.isEmpty())
             item = shortcutsWidget->item(shortcutsWidget->row(items.at(0)), 1);
         if (item == nullptr)
@@ -401,7 +412,7 @@ void PropertiesDialog::saveShortcuts()
         QList<QKeySequence> shortcuts;
         const auto sequences = item->text().split(QLatin1Char('|'));
         for (const QString& sequenceString : sequences)
-            shortcuts.append(QKeySequence(sequenceString));
+            shortcuts.append(QKeySequence(sequenceString, QKeySequence::NativeText));
         keyAction->setShortcuts(shortcuts);
     }
     Properties::Instance()->saveSettings();
@@ -409,6 +420,8 @@ void PropertiesDialog::saveShortcuts()
 
 void PropertiesDialog::setupShortcuts()
 {
+    shortcutsWidget->setSortingEnabled(false);
+
     QMap<QString, QAction*> actions = QTerminalApp::Instance()->getWindowList()[0]->leaseActions();
     QList< QString > shortcutKeys = actions.keys();
     int shortcutCount = shortcutKeys.count();
@@ -423,9 +436,12 @@ void PropertiesDialog::setupShortcuts()
 
         const auto shortcuts = keyAction->shortcuts();
         for (const QKeySequence &shortcut : shortcuts)
-            sequenceStrings.append(shortcut.toString());
+            sequenceStrings.append(shortcut.toString(QKeySequence::NativeText));
 
-        QTableWidgetItem *itemName = new QTableWidgetItem( tr(keyValue.toStdString().c_str()) );
+        QString txt = keyAction->text();
+        txt.remove(QRegularExpression(QStringLiteral("\\s*\\(&[a-zA-Z0-9]\\)\\s*")));
+        txt.remove(QLatin1Char('&'));
+        QTableWidgetItem *itemName = new QTableWidgetItem(txt);
         QTableWidgetItem *itemShortcut = new QTableWidgetItem( sequenceStrings.join(QLatin1Char('|')) );
 
         itemName->setFlags( itemName->flags() & ~Qt::ItemIsEditable & ~Qt::ItemIsSelectable );
@@ -435,6 +451,8 @@ void PropertiesDialog::setupShortcuts()
     }
 
     shortcutsWidget->resizeColumnsToContents();
+
+    shortcutsWidget->setSortingEnabled(true);
 
     // No shortcut validation is needed with QKeySequenceEdit.
 }
