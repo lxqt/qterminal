@@ -41,6 +41,8 @@ class Properties
         void loadSettings();
         void migrate_settings();
 
+        static void removeAccelerator(QString& str);
+
         QSize mainWindowSize;
         QSize fixedWindowSize;
         QSize prefDialogSize;

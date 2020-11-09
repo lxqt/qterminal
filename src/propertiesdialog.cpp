@@ -401,8 +401,7 @@ void PropertiesDialog::saveShortcuts()
 
         QTableWidgetItem *item = nullptr;
         QString txt = keyAction->text();
-        txt.remove(QRegularExpression(QStringLiteral("\\s*\\(&[a-zA-Z0-9]\\)\\s*")));
-        txt.remove(QLatin1Char('&'));
+        Properties::removeAccelerator(txt);
         auto items = shortcutsWidget->findItems(txt, Qt::MatchExactly);
         if (!items.isEmpty())
             item = shortcutsWidget->item(shortcutsWidget->row(items.at(0)), 1);
@@ -439,8 +438,7 @@ void PropertiesDialog::setupShortcuts()
             sequenceStrings.append(shortcut.toString(QKeySequence::NativeText));
 
         QString txt = keyAction->text();
-        txt.remove(QRegularExpression(QStringLiteral("\\s*\\(&[a-zA-Z0-9]\\)\\s*")));
-        txt.remove(QLatin1Char('&'));
+        Properties::removeAccelerator(txt);
         QTableWidgetItem *itemName = new QTableWidgetItem(txt);
         QTableWidgetItem *itemShortcut = new QTableWidgetItem( sequenceStrings.join(QLatin1Char('|')) );
 

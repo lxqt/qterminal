@@ -370,3 +370,11 @@ void Properties::migrate_settings()
         settings.setValue(QLatin1String("version"), currentVersion);
 }
 
+void Properties::removeAccelerator(QString& str)
+{
+    // Chinese, Japanese,...
+    str.remove(QRegularExpression(QStringLiteral("\\s*\\(&[a-zA-Z0-9]\\)\\s*")));
+    // other languages
+    str.remove(QLatin1Char('&'));
+}
+
