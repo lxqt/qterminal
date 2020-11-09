@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Zpracovat historii...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="385"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Předvolby…</translation>
+        <translation>&amp;Nastavení…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="389"/>
@@ -310,7 +310,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>Tvar textového &amp;kurzoru</translation>
+        <translation>Tvar textového &amp;ukazatele</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="622"/>
@@ -330,7 +330,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>Nenáročný multiplatformní emulátor terminálu</translation>
+        <translation>Nenáročný emulátor terminálu pro více systémů</translation>
     </message>
 </context>
 <context>
@@ -570,37 +570,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Určete, zda mají být znaky pro kreslení rámečku kresleny QTerminalem vnitřně nebo ponechány na podkladových knihovnách vykreslování písem.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Přepíná použití tučného písma pro vykreslení výrazných barev</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Pro výrazné barvy použít tučné písmo</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Skrýt okraje oken</translation>
+        <translation>&amp;Skrýt okraje oken</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobit. Všimněte si, že toto nemusí odpovídat vašemu operačnímu systému.&lt;/p&gt;&lt;p&gt;Pokud si nejste jisti, použijte &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulaci.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Tento příkaz bude spuštěn s argumentem obsahujícím název souboru dočasného souboru obsahujícího historii posouvání</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Zpracovat příkaz pro historii</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
@@ -616,17 +616,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít novou kartu napravo od činné karty</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokud není zaškrtnuto, nová karta se otevře jako karta zcela vpravo</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřít kartu klepnutím prostředního tlačítka myši</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
@@ -636,7 +636,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pro upravení zkratky:
+1. Poklepejte na její klávesu
+2. Stiskněte požadovanou kombinaci a uvolněte ji
+3. Klepněte na zástupce nebo stiskněte klávesu Enter
+
+pro odebrání/zakázání zkratky, v bodě 2 stiskněte pouze modifikátor (například Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="863"/>
