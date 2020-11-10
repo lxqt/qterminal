@@ -34,6 +34,9 @@ public:
     void pressKey(QKeyEvent *event) {
         QKeySequenceEdit::keyPressEvent(event);
     }
+
+protected:
+    void keyPressEvent(QKeyEvent* event) override;
 };
 
 class Delegate : public QStyledItemDelegate

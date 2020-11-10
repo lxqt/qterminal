@@ -687,8 +687,7 @@ void MainWindow::propertiesChanged()
         for (auto& action : menuBarActions)
         {
             QString txt = action->text();
-            txt.remove(QRegularExpression(QStringLiteral("\\s*\\(&[a-zA-Z0-9]\\)\\s*"))); // Chinese and Japanese
-            txt.remove(QLatin1Char('&')); // other languages
+            Properties::removeAccelerator(txt);
             action->setText(txt);
         }
     }
