@@ -1,3 +1,8 @@
+qterminal-0.16.1 / 2020-11-14
+=============================
+  * Fixed a mistake in the layout of Terminal settings dialog.
+  * Fixed translation of shortcuts (in Terminal settings dialog).
+
 qterminal-0.16.0 / 2020-11-01
 =============================
 
