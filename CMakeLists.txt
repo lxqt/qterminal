@@ -38,6 +38,7 @@ find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
 include(LXQtPreventInSourceBuilds)
 include(LXQtTranslateTs)
+include(LXQtTranslateDesktop)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
 message(STATUS "Qt version: ${Qt5Core_VERSION}")
 
@@ -136,6 +137,14 @@ lxqt_translate_ts(QTERM_QM
     TRANSLATION_DIR "src/translations"
 )
 
+lxqt_translate_desktop(DESKTOP_FILES
+    SOURCES
+        qterminal.desktop.in
+        qterminal-drop.desktop.in
+    TRANSLATION_DIR "src/translations"
+    USE_YAML
+)
+
 include_directories(
     "${PROJECT_SOURCE_DIR}"
     "${PROJECT_SOURCE_DIR}/src"
@@ -181,6 +190,7 @@ add_executable(${EXE_NAME} ${GUI_TYPE}
     ${QTERM_RCC}
     ${APPLE_BUNDLE_SOURCES}
     ${QTERM_QM}
+    ${DESKTOP_FILES}
 )
 
 target_link_libraries(${EXE_NAME}
@@ -208,8 +218,7 @@ endif()
 
 
 install(FILES
-    qterminal.desktop
-    qterminal_drop.desktop
+    ${DESKTOP_FILES}
     DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
 )
 
