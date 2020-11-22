@@ -13,7 +13,7 @@ This project is licensed under the terms of the [GPLv2](https://www.gnu.org/lice
 ### Compiling sources
 
 Dependencies are qtx11extras ≥ 5.2 and [QTermWidget](https://github.com/lxqt/qtermwidget).
-In order to build CMake ≥ 3.0.2 and [lxqt-build-tools](https://github.com/lxqt/lxqt-build-tools) are needed as well as optionally Git to pull latest VCS checkouts. The localization files were outsourced to repository [lxqt-l10n](https://github.com/lxqt/lxqt-l10n) so the corresponding dependencies are needed, too. Please refer to this repository's `README.md` for further information.
+In order to build CMake ≥ 3.0.2 and [lxqt-build-tools](https://github.com/lxqt/lxqt-build-tools) are needed as well as optionally Git to pull latest VCS checkouts.
 
 Code configuration is handled by CMake. Building out of source is required. CMake variable `CMAKE_INSTALL_PREFIX` will normally have to be set to `/usr`.
 
