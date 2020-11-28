@@ -133,7 +133,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>处理历史...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -485,17 +485,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="462"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>使用字体中的方框绘制字符</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>使用 Alt 的快捷键可能会和终端应用程序互相干扰。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="472"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>停用菜单栏快捷键</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="675"/>
@@ -550,68 +550,69 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="596"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>启动时的终端大小：</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>指定应该由 QTerminal 绘制方框字符还是将其留给基础字体渲染库。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">切换是否为强调色使用粗体字</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>为强调色使用粗体字</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">隐藏窗口边框(&amp;H)</translation>
+        <translation>隐藏窗口边框(&amp;H)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;模仿哪个行为。请注意，这不必与您的操作系统匹配。&lt;/p&gt;&lt;p&gt;如果不确定，请使用
+&lt;span style=&quot; font-weight:600;&quot;&gt;默认&lt;/span&gt; 模仿。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">此命令运行时将带有一个文件名作参数，它是一个含有回滚历史记录的临时文件</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">处理历史命令</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> 像素</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="624"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">获取当前大小</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>在当前标签右侧打开新标签</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>如果未选中，新标签将在最右侧打开</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>使用鼠标中键关闭标签</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
@@ -621,7 +622,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">如何编辑快捷方式：
+1. 双击它的按键
+2. 按下想要的组合键，然后松开
+3. 点击一个快捷键或者按下回车
+
+如果要删除或者禁用一个快捷键，在第 2 步只按下一个修饰键（比如 Shift）</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="863"/>
