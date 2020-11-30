@@ -72,8 +72,17 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
 
     setContextMenuPolicy(Qt::CustomContextMenu);
-    connect(this, &QWidget::customContextMenuRequested,
-            this, &TermWidgetImpl::customContextMenuCall);
+
+    if(Properties::Instance()->SwapMouseButtons2and3 == true)
+    {
+	connect(this, &QWidget::customContextMenuRequested,
+		this, &TermWidgetImpl::pasteSelection);
+    }
+    else
+    {
+	connect(this, &QWidget::customContextMenuRequested,
+		this, &TermWidgetImpl::customContextMenuCall);
+    }
 
     connect(this, &QTermWidget::urlActivated, this, &TermWidgetImpl::activateUrl);
 
@@ -262,9 +271,16 @@ bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
         QMouseEvent *mev = (QMouseEvent *)ev;
         if ( mev->button() == Qt::MidButton )
         {
-            impl()->pasteSelection();
+	    if(Properties::Instance()->SwapMouseButtons2and3 == true)
+	    {
+		    const QPoint &point = (const QPoint &)(mev->pos());
+	            impl()->customContextMenuCall(point);
+	    }
+	    else  impl()->pasteSelection();
+
             return true;
         }
+
     }
     return false;
 }
