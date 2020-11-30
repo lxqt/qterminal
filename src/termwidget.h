@@ -48,9 +48,10 @@ class TermWidgetImpl : public QTermWidget
         void zoomReset();
         void pasteSelection();
         void pasteClipboard();
+	void customContextMenuCall(const QPoint & pos);
 
     private slots:
-        void customContextMenuCall(const QPoint & pos);
+        //void customContextMenuCall(const QPoint & pos);
         void activateUrl(const QUrl& url, bool fromContextMenu);
 };
 

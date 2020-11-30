@@ -151,6 +151,9 @@ void Properties::loadSettings()
     trimPastedTrailingNewlines = m_settings->value(QLatin1String("TrimPastedTrailingNewlines"), false).toBool();
 
     windowMaximized = m_settings->value(QLatin1String("LastWindowMaximized"), false).toBool();
+
+    SwapMouseButtons2and3 = m_settings->value(QLatin1String("SwapMouseButtons2and3"), false).toBool();
+
 }
 
 void Properties::saveSettings()
@@ -249,6 +252,9 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("TrimPastedTrailingNewlines"), trimPastedTrailingNewlines);
 
     m_settings->setValue(QLatin1String("LastWindowMaximized"), windowMaximized);
+
+    m_settings->setValue(QLatin1String("SwapMouseButtons2and3"), SwapMouseButtons2and3);
+
 }
 
 void Properties::migrate_settings()
