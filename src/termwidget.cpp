@@ -90,6 +90,8 @@ void TermWidgetImpl::propertiesChanged()
     setTerminalFont(Properties::Instance()->font);
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
     disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
+    setConfirmMultilinePaste(Properties::Instance()->confirmMultilinePaste);
+    setTrimPastedTrailingNewlines(Properties::Instance()->trimPastedTrailingNewlines);
     setTerminalSizeHint(Properties::Instance()->showTerminalSizeHint);
 
     if (Properties::Instance()->historyLimited)
@@ -204,78 +206,6 @@ void TermWidgetImpl::activateUrl(const QUrl & url, bool fromContextMenu) {
     }
 }
 
-void TermWidgetImpl::pasteSelection()
-{
-    paste(QClipboard::Selection);
-}
-
-void TermWidgetImpl::pasteClipboard()
-{
-    paste(QClipboard::Clipboard);
-}
-
-void TermWidgetImpl::paste(QClipboard::Mode mode)
-{
-    // Paste Clipboard by simulating keypress events
-    QString text = QApplication::clipboard()->text(mode);
-    if ( ! text.isEmpty() )
-    {
-        text.replace(QLatin1String("\r\n"), QLatin1String("\n"));
-        text.replace(QLatin1Char('\n'), QLatin1Char('\r'));
-        QString trimmedTrailingNl(text);
-        trimmedTrailingNl.replace(QRegExp(QStringLiteral("\\r+$")), QString());
-        bool isMultiline = trimmedTrailingNl.contains(QLatin1Char('\r'));
-        if (!isMultiline && Properties::Instance()->trimPastedTrailingNewlines)
-        {
-            text = trimmedTrailingNl;
-        }
-        if (Properties::Instance()->confirmMultilinePaste)
-        {
-            if (text.contains(QLatin1Char('\r')) && Properties::Instance()->confirmMultilinePaste)
-            {
-                QMessageBox confirmation(this);
-                confirmation.setWindowTitle(tr("Paste multiline text"));
-                confirmation.setText(tr("Are you sure you want to paste this text?"));
-                confirmation.setDetailedText(text);
-                confirmation.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
-                // Click "Show details..." to show those by default
-                const auto buttons = confirmation.buttons();
-                for( QAbstractButton * btn : buttons )
-                {
-                    if (confirmation.buttonRole(btn) == QMessageBox::ActionRole && btn->text() == QMessageBox::tr("Show Details..."))
-                    {
-                        Q_EMIT btn->clicked();
-                        break;
-                    }
-                }
-                confirmation.setDefaultButton(QMessageBox::Yes);
-                confirmation.exec();
-                if (confirmation.standardButton(confirmation.clickedButton()) != QMessageBox::Yes)
-                {
-                    return;
-                }
-            }
-        }
-
-        bracketText(text);
-        sendText(text);
-    }
-}
-
-bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
-{
-    if (ev->type() == QEvent::MouseButtonPress)
-    {
-        QMouseEvent *mev = (QMouseEvent *)ev;
-        if ( mev->button() == Qt::MidButton )
-        {
-            impl()->pasteSelection();
-            return true;
-        }
-    }
-    return false;
-}
-
 TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     : QWidget(parent),
       DBusAddressable(QStringLiteral("/terminals"))
@@ -293,14 +223,6 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
 
     m_layout->addWidget(m_term);
     const auto objs = m_term->children();
-    for (QObject *o : objs)
-    {
-        // Find TerminalDisplay
-        if (!o->isWidgetType() || qobject_cast<QWidget*>(o)->isHidden())
-            continue;
-        o->installEventFilter(this);
-    }
-
 
     propertiesChanged();
 

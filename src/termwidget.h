@@ -22,7 +22,6 @@
 #include <qtermwidget.h>
 #include "terminalconfig.h"
 
-#include <QClipboard>
 #include <QAction>
 #include "dbusaddressable.h"
 
@@ -36,7 +35,6 @@ class TermWidgetImpl : public QTermWidget
 
         TermWidgetImpl(TerminalConfig &cfg, QWidget * parent=nullptr);
         void propertiesChanged();
-        void paste(QClipboard::Mode mode);
 
     signals:
         void renameSession();
@@ -46,8 +44,6 @@ class TermWidgetImpl : public QTermWidget
         void zoomIn();
         void zoomOut();
         void zoomReset();
-        void pasteSelection();
-        void pasteClipboard();
 
     private slots:
         void customContextMenuCall(const QPoint & pos);
@@ -97,7 +93,6 @@ class TermWidget : public QWidget, public DBusAddressable
             return false;
         }
         void paintEvent (QPaintEvent * event) override;
-        bool eventFilter(QObject * obj, QEvent * evt) override;
 
     private slots:
         void term_termGetFocus();
