@@ -58,12 +58,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Verschiebe Registerkarte nach &amp;links</translation>
+        <translation>Registerkarte nach &amp;links verschieben</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="256"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Verschiebe Registerkarte nach &amp;rechts</translation>
+        <translation>Registerkarte nach &amp;rechts verschieben</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
@@ -98,7 +98,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="261"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Registerkarte</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
@@ -218,7 +218,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="377"/>
         <source>&amp;Close Tab</source>
-        <translation>&amp;Schließe Registerkarte</translation>
+        <translation>Registerkarte s&amp;chließen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
@@ -243,7 +243,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>&amp;Zeige Registerkartenleiste</translation>
+        <translation>Regi&amp;sterkartenleiste anzeigen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="421"/>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="456"/>
         <source>&amp;Tabs Layout</source>
-        <translation>&amp;Darstellung der Reiterleiste</translation>
+        <translation>&amp;Darstellung der Registerkarten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="472"/>
@@ -384,7 +384,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Tabs position</source>
-        <translation>Position der Reiter</translation>
+        <translation>Registerkartenposition</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
@@ -601,17 +601,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Neue Registerkarte rechts neben der aktiven Registerkarte öffnen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Wenn dieses Kontrollkästchen deaktiviert ist, wird die neue Registerkarte als die ganz rechte Registerkarte geöffnet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Registerkarte durch Mittelklick schließen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
@@ -678,7 +678,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Reiterleiste bei nur einem Reiter verbergen</translation>
+        <translation>Registerkartenleiste mit nur einer Registerkarte ausblenden</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
@@ -693,7 +693,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="435"/>
         <source>Fixed tab width:</source>
-        <translation>Feste Reiterbreite:</translation>
+        <translation>Feste Registerkartenbreite:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="845"/>
@@ -841,7 +841,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
         <source>Select new tab title color</source>
-        <translation>Wähle die Titelfarbe der neuen Registerkarte</translation>
+        <translation>Farbe des neuen Registerkartentitels auswählen</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="242"/>
