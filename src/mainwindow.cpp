@@ -790,7 +790,11 @@ void MainWindow::handleHistory()
     TermWidgetImpl *impl = consoleTabulator->terminalHolder()->currentTerminal()->impl();
     impl->saveHistory(&file);
     file.close();
+#if (QT_VERSION >= QT_VERSION_CHECK(5,15,0))
+    QStringList args = Properties::Instance()->handleHistoryCommand.split(QLatin1Char(' '), Qt::SkipEmptyParts);
+#else
     QStringList args = Properties::Instance()->handleHistoryCommand.split(QLatin1Char(' '), QString::SkipEmptyParts);
+#endif
     if (args.isEmpty())
         return;
 
