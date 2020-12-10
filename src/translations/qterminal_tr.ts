@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Geçmişi yönet...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -570,7 +570,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kutu çizimi karakterlerinin Terminal tarafından dahili olarak mı yoksa alttaki yazı tipi oluşturma kütüphaneleri ile mi çizileceğini belirtin.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
@@ -590,7 +590,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; Taklit edilecek davranış. Bunun işletim sisteminizle uyuşmasının gerekmediğini unutmayın. &lt;/p&gt; &lt;p&gt; Emin değilseniz &lt;span style = &quot;font-weight: 600;&quot;&gt; varsayılan &lt;/span&gt; öykünmeyi kullanın. &lt;/ P &gt; &lt;/body&gt; &lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
@@ -600,7 +600,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Geçmiş komutları yönet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
