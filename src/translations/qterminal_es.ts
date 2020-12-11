@@ -83,7 +83,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="261"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestaña</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Administrar historial...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -600,7 +600,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Administrar historial de comandos</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
