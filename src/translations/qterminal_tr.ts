@@ -600,7 +600,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation>Geçmiş komutları yönet</translation>
+        <translation>Geçmiş komutunu işle</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
