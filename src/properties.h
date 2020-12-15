@@ -67,6 +67,7 @@ class Properties
         int appTransparency;
         int termTransparency;
         QString backgroundImage;
+        int backgroundMode;
 
         int scrollBarPos;
         int tabsPos;
