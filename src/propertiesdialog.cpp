@@ -138,6 +138,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     backgroundImageLineEdit->setText(Properties::Instance()->backgroundImage);
 
+    backgroundModecomboBox->setCurrentIndex(Properties::Instance()->backgroundMode);
+
     emulationComboBox->addItems(emulations);
     int eix = emulationComboBox->findText(Properties::Instance()->emulation);
     emulationComboBox->setCurrentIndex(eix != -1 ? eix : 0 );
@@ -303,6 +305,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
     Properties::Instance()->showTerminalSizeHint = showTerminalSizeHintCheckBox->isChecked();
     Properties::Instance()->backgroundImage = backgroundImageLineEdit->text();
+    Properties::Instance()->backgroundMode = qBound(0, backgroundModecomboBox->currentIndex(), 4);
 
     Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();
 
@@ -381,7 +384,7 @@ void PropertiesDialog::chooseBackgroundImageButton_clicked()
 {
     QString filename = QFileDialog::getOpenFileName(
                             this, tr("Choose a background image"),
-                            QString(), tr("Images (*.bmp *.png *.xpm *.jpg)"));
+                            QString(), tr("Images (*.bmp *.jpg *.png *.svg *.xpm)"));
     if (!filename.isNull())
         backgroundImageLineEdit->setText(filename);
 }

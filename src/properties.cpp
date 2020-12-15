@@ -103,6 +103,7 @@ void Properties::loadSettings()
     appTransparency = m_settings->value(QLatin1String("MainWindow/ApplicationTransparency"), 0).toInt();
     termTransparency = m_settings->value(QLatin1String("TerminalTransparency"), 0).toInt();
     backgroundImage = m_settings->value(QLatin1String("TerminalBackgroundImage"), QString()).toString();
+    backgroundMode = qBound(0, m_settings->value(QLatin1String("TerminalBackgroundMode"), 0).toInt(), 4);
 
     /* default to Right. see qtermwidget.h */
     scrollBarPos = m_settings->value(QLatin1String("ScrollbarPosition"), 2).toInt();
@@ -218,6 +219,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("TerminalMargin"), terminalMargin);
     m_settings->setValue(QLatin1String("TerminalTransparency"), termTransparency);
     m_settings->setValue(QLatin1String("TerminalBackgroundImage"), backgroundImage);
+    m_settings->setValue(QLatin1String("TerminalBackgroundMode"), backgroundMode);
     m_settings->setValue(QLatin1String("ScrollbarPosition"), scrollBarPos);
     m_settings->setValue(QLatin1String("TabsPosition"), tabsPos);
     m_settings->setValue(QLatin1String("KeyboardCursorShape"), keyboardCursorShape);

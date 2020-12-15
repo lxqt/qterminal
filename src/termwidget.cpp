@@ -103,6 +103,7 @@ void TermWidgetImpl::propertiesChanged()
     setKeyBindings(Properties::Instance()->emulation);
     setTerminalOpacity(1.0 - Properties::Instance()->termTransparency/100.0);
     setTerminalBackgroundImage(Properties::Instance()->backgroundImage);
+    setTerminalBackgroundMode(Properties::Instance()->backgroundMode);
     setBidiEnabled(Properties::Instance()->enabledBidiSupport);
     setDrawLineChars(!Properties::Instance()->useFontBoxDrawingChars);
     setBoldIntense(Properties::Instance()->boldIntense);
