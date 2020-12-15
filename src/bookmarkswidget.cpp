@@ -124,7 +124,7 @@ public:
         for (const QStandardPaths::StandardLocation i : qAsConst(locations))
         {
             path = QStandardPaths::writableLocation(i);
-            if (!d.exists(path))
+            if (path.isEmpty() || !d.exists(path))
             {
                 continue;
             }
@@ -142,7 +142,7 @@ public:
         for (const QString &i : keys)
         {
             path = env.value(i);
-            if (!d.exists(path) || !QFileInfo(path).isDir())
+            if (path.isEmpty() || !d.exists(path) || !QFileInfo(path).isDir())
             {
                 continue;
             }
