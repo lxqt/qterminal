@@ -594,12 +594,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Acceleratori sono attivati con Alt e possono interferire con il terminale.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="472"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>Nessun acceleratore per la barre del menu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="550"/>
@@ -669,12 +669,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambia l&apos;uso del grassetto per visualizzare i colori intensi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Visualizza i colori intensi in grassetto</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
@@ -684,7 +684,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quale comportamento da emulare. Questo non deve corrispondere al sistema operativo in uso.&lt;/p&gt;&lt;p&gt;Se si è insicuri usare l&apos;emulazione &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
