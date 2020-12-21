@@ -243,7 +243,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;Nascondi bordi della finestra</translation>
+        <translation>&amp;Nascondi decorazione della finestra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
@@ -568,7 +568,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="435"/>
         <source>Fixed tab width:</source>
-        <translation>Larghezza Fixed tab:</translation>
+        <translation>Larghezza scheda fissa:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="375"/>
@@ -599,7 +599,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="472"/>
         <source>No menu bar accelerator</source>
-        <translation>Nessun acceleratore per la barre del menu</translation>
+        <translation>Nessun acceleratore per la barra del menu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="550"/>
@@ -674,12 +674,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished">Visualizza i colori intensi in grassetto</translation>
+        <translation>Visualizza i colori intensi in grassetto</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Nascondi bordi della finestra</translation>
+        <translation>&amp;Nascondi decorazione della finestra</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
