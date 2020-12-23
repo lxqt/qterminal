@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Upravljaj poviješću …</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -238,7 +238,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;Sakrij okvire prozora</translation>
+        <translation>&amp;Sakrij rubove prozora</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
@@ -389,7 +389,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="368"/>
         <source>Show a border around the current terminal</source>
-        <translation>Prikaži okvir trenutačnog terminala</translation>
+        <translation>Prikaži rub za trenutačni terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="345"/>
@@ -496,7 +496,7 @@
         <location filename="../forms/propertiesdialog.ui" line="375"/>
         <location filename="../forms/propertiesdialog.ui" line="408"/>
         <source>px</source>
-        <translation> px</translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="325"/>
@@ -586,37 +586,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Odredi, treba li QTerminal crtati znakove za crtanje okvira interno ili ih treba prepustiti osnovnim bibliotekama za prikazivanje fontova.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Uključuje/isključuje upotrebu podebljanog fonta za prikaz intenzivnih boja</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Koristi podebljani font za intenzivne boje</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Sakrij okvire prozora</translation>
+        <translation>&amp;Sakrij rubove prozora</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Koje ponašanje emulirati. Ovo ne mora odgovarati tvom operacijskom sustavu.&lt;/p&gt;&lt;p&gt;Kad u nedoumici, koristi &lt;span style=&quot;font-weight:600;&quot;&gt; standardnu&lt;/span&gt; emulaciju.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Ova će se naredba pokrenuti s argumentom koji sadrži ime privremene datoteke koja sadrži povijest</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Naredba za upravljanje poviješću</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
@@ -632,17 +632,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Otvori novu karticu desno od aktivne kartice</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ako nije označeno, nova će se kartica otvoriti kao krajnja desna kartica</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Zatvori karticu srednjom tipkom</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
@@ -652,7 +652,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Za mijenjanje prečaca:
+1. Dvaput pritisni njegovu tipku
+2. Pritisni željenu kombinaciju i otpusti je
+3. Pritisni prečac ili pritisni Enter
+
+Za uklanjanje/deaktiviranje prečaca, u točki 2 pritisni samo modifikatorsku tipku (poput Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
@@ -683,7 +688,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <location filename="../forms/propertiesdialog.ui" line="873"/>
         <location filename="../forms/propertiesdialog.ui" line="890"/>
         <source>%</source>
-        <translation> %</translation>
+        <translation>%</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="880"/>
