@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Håndter historik...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -601,7 +601,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Skjul vindueskanter</translation>
+        <translation>&amp;Skjul vindueskanter</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
@@ -616,7 +616,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Håndter historikkommando</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
@@ -632,7 +632,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Åbn nyt faneblad til højre for det aktive faneblad</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
@@ -642,7 +642,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Luk faneblad ved midterklik</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
