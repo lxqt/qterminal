@@ -187,7 +187,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     /* actions by motion after paste */
 
     QStringList motionAfter;
-    motionAfter << tr("No move") << tr("Move start") << tr("Move end");
+    motionAfter << tr("No move") << tr("Scrolling to top") << tr("Scrolling to bottom");
     motionAfterPasting_comboBox->addItems(motionAfter);
     motionAfterPasting_comboBox->setCurrentIndex(Properties::Instance()->m_motionAfterPaste);
 

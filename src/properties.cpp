@@ -111,7 +111,8 @@ void Properties::loadSettings()
     /* default to BlockCursor */
     keyboardCursorShape = m_settings->value(QLatin1String("KeyboardCursorShape"), 0).toInt();
     hideTabBarWithOneTab = m_settings->value(QLatin1String("HideTabBarWithOneTab"), false).toBool();
-    m_motionAfterPaste = m_settings->value(QLatin1String("MotionAfterPaste"), 0).toInt();
+    // For "Motion after paste", 2 (scrolling to bottom) makes more sense
+    m_motionAfterPaste = m_settings->value(QLatin1String("MotionAfterPaste"), 2).toInt();
     m_disableBracketedPasteMode = m_settings->value(QLatin1String("DisableBracketedPasteMode"), false).toBool();
 
     /* fixed tabs width */
