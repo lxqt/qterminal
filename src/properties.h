@@ -73,6 +73,7 @@ class Properties
         int keyboardCursorShape;
         bool hideTabBarWithOneTab;
         int m_motionAfterPaste;
+        bool m_disableBracketedPasteMode;
 
         bool fixedTabWidth;
         int fixedTabWidthValue;

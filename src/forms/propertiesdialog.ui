@@ -575,7 +575,7 @@
               <string>Behavior</string>
              </property>
              <layout class="QGridLayout" name="gridLayout_2">
-              <item row="13" column="0">
+              <item row="14" column="0">
                <widget class="QLabel" name="label_17">
                 <property name="toolTip">
                  <string>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</string>
@@ -585,7 +585,7 @@
                 </property>
                </widget>
               </item>
-              <item row="9" column="0" colspan="2">
+              <item row="10" column="0" colspan="2">
                <layout class="QHBoxLayout" name="horizontalLayout_4">
                 <property name="spacing">
                  <number>5</number>
@@ -643,7 +643,7 @@
                 </item>
                </layout>
               </item>
-              <item row="12" column="1">
+              <item row="13" column="1">
                <widget class="QComboBox" name="termComboBox">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -682,14 +682,14 @@
               <item row="2" column="1">
                <widget class="QComboBox" name="motionAfterPasting_comboBox"/>
               </item>
-              <item row="10" column="0" colspan="2">
+              <item row="11" column="0" colspan="2">
                <widget class="QCheckBox" name="useCwdCheckBox">
                 <property name="text">
                  <string>Open new terminals in current working directory</string>
                 </property>
                </widget>
               </item>
-              <item row="11" column="0" colspan="2">
+              <item row="12" column="0" colspan="2">
                <widget class="QCheckBox" name="openNewTabRightToActiveTabCheckBox">
                 <property name="text">
                  <string>Open new tab to the right of the active tab</string>
@@ -699,28 +699,28 @@
                 </property>
                </widget>
               </item>
-              <item row="12" column="0">
+              <item row="13" column="0">
                <widget class="QLabel" name="label_14">
                 <property name="text">
                  <string>Default $TERM</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="0" colspan="2">
+              <item row="4" column="0" colspan="2">
                <widget class="QCheckBox" name="confirmMultilinePasteCheckBox">
                 <property name="text">
                  <string>Confirm multiline paste</string>
                 </property>
                </widget>
               </item>
-              <item row="8" column="0" colspan="2">
+              <item row="9" column="0" colspan="2">
                <widget class="QCheckBox" name="saveSizeOnExitCheckBox">
                 <property name="text">
                  <string>Save Size when closing</string>
                 </property>
                </widget>
               </item>
-              <item row="5" column="0" colspan="2">
+              <item row="6" column="0" colspan="2">
                <widget class="QCheckBox" name="closeTabOnMiddleClickCheckBox">
                 <property name="text">
                  <string>Close tab on middle-click</string>
@@ -730,14 +730,14 @@
                 </property>
                </widget>
               </item>
-              <item row="6" column="0" colspan="2">
+              <item row="7" column="0" colspan="2">
                <widget class="QCheckBox" name="askOnExitCheckBox">
                 <property name="text">
                  <string>Ask for confirmation when closing</string>
                 </property>
                </widget>
               </item>
-              <item row="13" column="1">
+              <item row="14" column="1">
                <widget class="QLineEdit" name="handleHistoryLineEdit"/>
               </item>
               <item row="0" column="0">
@@ -747,14 +747,14 @@
                 </property>
                </widget>
               </item>
-              <item row="4" column="0" colspan="2">
+              <item row="5" column="0" colspan="2">
                <widget class="QCheckBox" name="trimPastedTrailingNewlinesCheckBox">
                 <property name="text">
                  <string>Trim trailing newlines in pasted text</string>
                 </property>
                </widget>
               </item>
-              <item row="7" column="0" colspan="2">
+              <item row="8" column="0" colspan="2">
                <widget class="QCheckBox" name="savePosOnExitCheckBox">
                 <property name="text">
                  <string>Save Position when closing</string>
@@ -778,6 +778,13 @@
                <widget class="QRadioButton" name="historyUnlimited">
                 <property name="text">
                  <string>Unlimited history</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0" colspan="2">
+               <widget class="QCheckBox" name="disableBracketedPasteModeCheckBox">
+                <property name="text">
+                 <string>Forcefully disable bracketed paste mode</string>
                 </property>
                </widget>
               </item>

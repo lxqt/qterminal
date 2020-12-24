@@ -191,6 +191,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     motionAfterPasting_comboBox->addItems(motionAfter);
     motionAfterPasting_comboBox->setCurrentIndex(Properties::Instance()->m_motionAfterPaste);
 
+    disableBracketedPasteModeCheckBox->setChecked(Properties::Instance()->m_disableBracketedPasteMode);
+
     // Setting windows style actions
     styleComboBox->addItem(tr("System Default"));
     styleComboBox->addItems(QStyleFactory::keys());
@@ -330,6 +332,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->menuVisible = showMenuCheckBox->isChecked();
     Properties::Instance()->borderless = borderlessCheckBox->isChecked();
     Properties::Instance()->m_motionAfterPaste = motionAfterPasting_comboBox->currentIndex();
+    Properties::Instance()->m_disableBracketedPasteMode = disableBracketedPasteModeCheckBox->isChecked();
 
     Properties::Instance()->historyLimited = historyLimited->isChecked();
     Properties::Instance()->historyLimitedTo = historyLimitedTo->value();
