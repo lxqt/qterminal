@@ -112,6 +112,7 @@ void Properties::loadSettings()
     keyboardCursorShape = m_settings->value(QLatin1String("KeyboardCursorShape"), 0).toInt();
     hideTabBarWithOneTab = m_settings->value(QLatin1String("HideTabBarWithOneTab"), false).toBool();
     m_motionAfterPaste = m_settings->value(QLatin1String("MotionAfterPaste"), 0).toInt();
+    m_disableBracketedPasteMode = m_settings->value(QLatin1String("DisableBracketedPasteMode"), false).toBool();
 
     /* fixed tabs width */
     fixedTabWidth = m_settings->value(QLatin1String("FixedTabWidth"), true).toBool();
@@ -223,6 +224,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("KeyboardCursorShape"), keyboardCursorShape);
     m_settings->setValue(QLatin1String("HideTabBarWithOneTab"), hideTabBarWithOneTab);
     m_settings->setValue(QLatin1String("MotionAfterPaste"), m_motionAfterPaste);
+    m_settings->setValue(QLatin1String("DisableBracketedPasteMode"), m_disableBracketedPasteMode);
 
     m_settings->setValue(QLatin1String("FixedTabWidth"), fixedTabWidth);
     m_settings->setValue(QLatin1String("FixedTabWidthValue"), fixedTabWidthValue);

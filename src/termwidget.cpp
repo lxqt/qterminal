@@ -72,6 +72,7 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     }
 
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
+    disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
 
     setContextMenuPolicy(Qt::CustomContextMenu);
     connect(this, &QWidget::customContextMenuRequested,
@@ -88,6 +89,7 @@ void TermWidgetImpl::propertiesChanged()
     setColorScheme(Properties::Instance()->colorScheme);
     setTerminalFont(Properties::Instance()->font);
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
+    disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
     setTerminalSizeHint(Properties::Instance()->showTerminalSizeHint);
 
     if (Properties::Instance()->historyLimited)
