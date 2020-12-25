@@ -586,17 +586,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Angiv om tegn der tegnes i en boks skal tegnes af QTerminal internt eller af underliggende skriftgengivelse.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Slår anvendelse af fed skrift til gengivelse af intense farver til/fra</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Brug fed skrift til intense farver</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
@@ -606,12 +606,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hvilken opførsel der skal emuleres. Bemærk at det ikke behøver være det samme som dit styresystem.&lt;/p&gt;&lt;p&gt;Hvis du er i tvivl, så brug &lt;span style=&quot; font-weight:600;&quot;&gt;standardemulering&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommandoen køres med et argument der indeholder filnavnet på en midlertidig fil der med tilbagerulningshistorikken</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
@@ -637,7 +637,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Hvis den er fravalgt, så åbnes nye faneblade helt til højre</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
@@ -652,7 +652,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Rediger en genvej:
+1. Dobbeltklik på dens tast
+2. Tryk på den ønskede kombination og slip den
+3. Klik på en genvej eller tryk på enter
+
+Fjern/deaktivér en genvej, i punkt 2, ved kun at trykke på en ændringstast (såsom Skift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
