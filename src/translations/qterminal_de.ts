@@ -560,12 +560,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Schaltet die Verwendung fettgedruckter Schriftbilder für die Darstellung intensiver Farben um</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Fettgedrucktes Schriftbild für intensive Farben verwenden</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
@@ -575,7 +575,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Welches Verhalten nachgeahmt werden soll. Beachten Sie, dass dies nicht mit Ihrem Betriebssystem übereinstimmen muss.&lt;/p&gt;&lt;p&gt;Verwenden Sie die &lt;span style=&quot; font-weight:600;&quot;&gt;Standard&lt;/span&gt;emulation, wenn Sie sich nicht sicher sind.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
