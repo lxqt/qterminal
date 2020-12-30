@@ -123,12 +123,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>Copy &amp;Selection</source>
-        <translation>選択部分をコピー(&amp;S)</translation>
+        <translation>選択範囲のコピー(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="308"/>
         <source>Paste S&amp;election</source>
-        <translation>選択部分を貼り付け(&amp;E)</translation>
+        <translation>選択範囲の貼り付け(&amp;E)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
@@ -265,7 +265,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>軽量なマルチプラットフォーム対応のターミナルエミュレーター</translation>
+        <translation>軽量なマルチプラットフォーム対応の端末エミュレーター</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="92"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="325"/>
         <source>Show close button on each tab</source>
-        <translation>各タブに閉じるボタンを表示する</translation>
+        <translation>各タブに [閉じる] ボタンを表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
@@ -575,7 +575,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;どの動作をエミュレートするかです。これはオペレーティングシステムと一致する必要はありません。&lt;/p&gt;&lt;p&gt;よくわからない場合には、&lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; エミュレーションを使います。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;どの動作を模倣するかです。これはオペレーティングシステムと一致する必要はありません。&lt;/p&gt;&lt;p&gt;よくわからない場合には、&lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; エミュレーションを使って下さい。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
@@ -683,7 +683,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>1つのタブしか使用していない場合、タブバーを隠す</translation>
+        <translation>タブが 1 つの場合タブバーを隠す</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
@@ -831,7 +831,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <location filename="../tabwidget.cpp" line="78"/>
         <location filename="../tabwidget.cpp" line="232"/>
         <source>Shell No. %1</source>
-        <translation>Shell No. %1</translation>
+        <translation>シェル No. %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="200"/>
