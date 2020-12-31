@@ -560,7 +560,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished">切换是否为强调色使用粗体字</translation>
+        <translation>切换是否为强调色使用粗体字</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
@@ -575,18 +575,18 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;模仿哪个行为。请注意，这不必与您的操作系统匹配。&lt;/p&gt;&lt;p&gt;如果不确定，请使用
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;模仿哪个行为。请注意，这不必与您的操作系统匹配。&lt;/p&gt;&lt;p&gt;如果不确定，请使用
 &lt;span style=&quot; font-weight:600;&quot;&gt;默认&lt;/span&gt; 模仿。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished">此命令运行时将带有一个文件名作参数，它是一个含有回滚历史记录的临时文件</translation>
+        <translation>此命令运行时将带有一个文件名作参数，它是一个含有回滚历史记录的临时文件</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation type="unfinished">处理历史命令</translation>
+        <translation>处理历史命令</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
@@ -597,7 +597,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="624"/>
         <source>Get current size</source>
-        <translation type="unfinished">获取当前大小</translation>
+        <translation>获取当前大小</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
@@ -622,7 +622,7 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished">如何编辑快捷方式：
+        <translation>如何编辑快捷方式：
 1. 双击它的按键
 2. 按下想要的组合键，然后松开
 3. 点击一个快捷键或者按下回车
@@ -916,7 +916,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
-        <translation></translation>
+        <translation>主窗口</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
