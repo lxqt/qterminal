@@ -786,6 +786,9 @@
                 <property name="text">
                  <string>Forcefully disable bracketed paste mode</string>
                 </property>
+                <property name="toolTip">
+                 <string>Bracketed paste mode is useful for pasting multiline strings.</string>
+                </property>
                </widget>
               </item>
              </layout>
