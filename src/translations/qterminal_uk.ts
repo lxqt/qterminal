@@ -228,12 +228,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="385"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished">&amp;Параметри...</translation>
+        <translation>&amp;Параметри...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="389"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished">&amp;Закінчити</translation>
+        <translation>&amp;Вийти</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
@@ -465,7 +465,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="445"/>
         <source>Change window icon based on current terminal</source>
-        <translation>Змінити назву значка на основі поточного терміналу</translation>
+        <translation>Змінити піктограму вікна на основі поточного терміналу</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="382"/>
@@ -601,7 +601,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Приховати межі вікна</translation>
+        <translation>&amp;Приховати межі вікна</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
