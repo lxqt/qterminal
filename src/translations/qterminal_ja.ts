@@ -260,7 +260,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="632"/>
         <source>Are you sure you want to exit?</source>
-        <translation>終了してもよろしいですか?</translation>
+        <translation>終了しますか？</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
