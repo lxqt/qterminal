@@ -877,7 +877,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../termwidget.cpp" line="232"/>
         <source>Are you sure you want to paste this text?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ви впевнені, що хочете вставити цей текст?</translation>
     </message>
 </context>
 <context>
