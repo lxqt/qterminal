@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Обработать историю...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -560,37 +560,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Задаёт, должны ли символы псевдографики отрисовываться самим QTerminal&apos;ом или же они должны быть оставлены на откуп библиотеке рендеринга шрифтов.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Включает или выключает, будет ли использоваться жирное начертание для символов, которые должны отображаться ярким цветом</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Использовать жирное начертание для ярких цветов</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Спрятать рамку окна</translation>
+        <translation>&amp;Спрятать рамку окна</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Какое поведение следует эмалировать. Обратите внимание, что это не обязательно должно соответствовать вашей операционной системе.&lt;/p&gt;&lt;p&gt; Если вы не уверены, то выберите «&lt;span style=&quot; font-weight:600;&quot;&gt;По умолчанию&lt;/span&gt;».&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Эта команда будет запускаться со временным файлов, содержащим историю из буфера терминала, в качестве аргумента</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда обработки истории</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="603"/>
@@ -606,17 +606,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Открывать новые вкладки справа от активной</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Если не отмечено, новые вкладки будут открываться как крайние справа</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Закрывать вкладки по щелчку средней кнопкой</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
@@ -626,7 +626,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Чтобы изменить сочетание клавиш:
+1. Дважды щёлкните на «Клавише»
+2. Нажмите нужную комбинацию и отпустите её
+3. Щёлкните на «Сочетание клавиш» или нажмите Ввод
+
+Чтобы удалить/отключить какое-либо сочетание, в пункте 2 нажмите только клавишу-модификатор (например, Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="863"/>
