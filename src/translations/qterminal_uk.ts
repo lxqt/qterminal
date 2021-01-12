@@ -622,7 +622,7 @@
         <location filename="../forms/propertiesdialog.ui" line="603"/>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="624"/>
