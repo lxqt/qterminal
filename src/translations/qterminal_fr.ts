@@ -586,12 +586,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished">Spécifiez si les caractères de dessin de boîte doivent être dessinés par QTerminal en interne ou laissés aux bibliothèques de rendu de polices sous-jacentes.</translation>
+        <translation>Spécifiez si les caractères de dessin de boîte doivent être dessinés par QTerminal en interne ou laissés aux bibliothèques de rendu de polices sous-jacentes.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished">Active ou désactive l&apos;utilisation de police de caractère gras pour le rendu de couleurs intenses</translation>
+        <translation>Active ou désactive l&apos;utilisation de police de caractère gras pour le rendu de couleurs intenses</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
@@ -601,12 +601,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Masquer les bordures de la fenêtre</translation>
+        <translation>&amp;Masquer les bordures de la fenêtre</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quel comportement émuler. Notez que cela ne doit pas nécessairement correspondre à votre système d&apos;exploitation&lt;/p&gt;&lt;p&gt;Si vous n&apos;êtes pas sûr, utiliser le &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quel comportement émuler. Notez que cela ne doit pas nécessairement correspondre à votre système d&apos;exploitation&lt;/p&gt;&lt;p&gt;Si vous n&apos;êtes pas sûr, utiliser le &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
@@ -637,7 +637,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished">Si elle n&apos;est pas cochée, le nouvel onglet sera ouvert comme l&apos;onglet le plus à droite</translation>
+        <translation>Si elle n&apos;est pas cochée, le nouvel onglet sera ouvert comme l&apos;onglet le plus à droite</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
