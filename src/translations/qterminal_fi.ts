@@ -138,7 +138,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="308"/>
         <source>Paste S&amp;election</source>
-        <translation>L%iitä valinta</translation>
+        <translation>Liitä v&amp;alinta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="311"/>
@@ -228,32 +228,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="385"/>
         <source>&amp;Preferences...</source>
-        <translation></translation>
+        <translation>&amp;Asetukset...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="389"/>
         <source>&amp;Quit</source>
-        <translation></translation>
+        <translation>&amp;Poistu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
         <source>&amp;Hide Window Borders</source>
-        <translation></translation>
+        <translation>&amp;Piilota ikkunan reunat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
         <source>&amp;Show Tab Bar</source>
-        <translation></translation>
+        <translation>&amp;Näytä välilehtipalkki</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="421"/>
         <source>Fullscreen</source>
-        <translation></translation>
+        <translation>Koko näyttö</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="427"/>
         <source>Toggle Bookmarks</source>
-        <translation></translation>
+        <translation>Vaihda kirjanmerkkejä</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
@@ -275,7 +275,7 @@
         <location filename="../mainwindow.cpp" line="438"/>
         <location filename="../mainwindow.cpp" line="474"/>
         <source>&amp;Left</source>
-        <translation></translation>
+        <translation>&amp;Vasen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="456"/>
@@ -315,22 +315,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="622"/>
         <source>Exit QTerminal</source>
-        <translation></translation>
+        <translation>Poistu QTerminalista</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="624"/>
         <source>Do not ask again</source>
-        <translation></translation>
+        <translation>Älä kysy uudelleen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="632"/>
         <source>Are you sure you want to exit?</source>
-        <translation></translation>
+        <translation>Haluatko varmasti poistua?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation></translation>
+        <translation>Kevyt, monialustainen pääte-emulaattori</translation>
     </message>
 </context>
 <context>
@@ -419,7 +419,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="230"/>
         <source>4 terminals</source>
-        <translation></translation>
+        <translation>4 päätettä</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="117"/>
@@ -475,12 +475,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
         <source>Background image:</source>
-        <translation></translation>
+        <translation>Taustakuva:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="290"/>
         <source>Select</source>
-        <translation></translation>
+        <translation>Valitse</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="452"/>
@@ -662,12 +662,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Key</source>
-        <translation></translation>
+        <translation>Näppäin</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="845"/>
         <source>Show on start</source>
-        <translation></translation>
+        <translation>Näytä käynnistyksessä</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>

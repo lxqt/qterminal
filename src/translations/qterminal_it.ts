@@ -253,7 +253,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="427"/>
         <source>Toggle Bookmarks</source>
-        <translation>Attiva/disattiva segnalibri</translation>
+        <translation>Mostra/nascondi segnalibri</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
@@ -563,7 +563,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="452"/>
         <source>Show terminal size on resize</source>
-        <translation>Mostra grandezza terminale durante il ridimensionamento</translation>
+        <translation>Mostra dimensione terminale durante il ridimensionamento</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="435"/>
@@ -817,7 +817,7 @@ Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
     <message>
         <location filename="../bookmarkswidget.cpp" line="108"/>
         <source>Local Bookmarks</source>
-        <translation>Segnalibiri locali</translation>
+        <translation>Segnalibri locali</translation>
     </message>
     <message>
         <location filename="../bookmarkswidget.cpp" line="166"/>
