@@ -570,17 +570,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Especifica si se deben dibujar los caracteres de dibujo de caja por QTerminal de forma interna o se deja a las bibliotecas de representación de fuentes subyacentes.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterna el uso de fuente en negrita para mostrar colores intensos</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="482"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Usa fuentes en negrita para colores intensos</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
@@ -590,12 +590,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="559"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt;Cuál comportamiento emular. Tenga en cuenta que esto no tiene que coincidir con su sistema operativo.&lt;/p&gt; &lt;p&gt; Si no está seguro, utilice la emulación &lt;span style = &quot;font-weight: 600;&quot;&gt; predeterminada &lt;/span&gt;. &lt;/p&gt; &lt;/body&gt; &lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Este comando correrá con un argumento conteniendo el nombre de archivo de un archivo temporal conteniendo el historial de scrollback</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="584"/>
@@ -606,7 +606,7 @@
         <location filename="../forms/propertiesdialog.ui" line="603"/>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="624"/>
@@ -616,17 +616,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="695"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir una nueva pestaña a la derecha de la pestaña activa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="698"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Si está sin seleccionar, la nueva pestaña será abierta en la posición extrema derecha</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="726"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Cierra pestaña con botón de en medio</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="798"/>
@@ -636,7 +636,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Para editar un acceso directo:
+1. Haga doble clic en su clave
+2. Presione la combinación deseada y suéltela
+3. Haga clic en un acceso directo o presione Entrar
+
+Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un modificador (como Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="863"/>
