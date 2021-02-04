@@ -133,7 +133,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Paste Clip&amp;board</source>
-        <translation>Lim inn fra &amp;utklippsboken</translation>
+        <translation>Lim inn fra &amp;utklippstavlen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="308"/>
