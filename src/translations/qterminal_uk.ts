@@ -153,7 +153,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="317"/>
         <source>Zoom rese&amp;t</source>
-        <translation>Відмінити з&amp;міну</translation>
+        <translation>Відновити масш&amp;таб</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
@@ -163,27 +163,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Обробити історію...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
         <source>&amp;Save Session</source>
-        <translation>&amp;Зберегти сесію</translation>
+        <translation>&amp;Зберегти сеанс</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>
         <source>&amp;Load Session</source>
-        <translation>Заван&amp;таження сесії</translation>
+        <translation>Заван&amp;тажити сеанс</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="346"/>
         <source>&amp;Toggle Menu</source>
-        <translation>&amp;Перемикання меню</translation>
+        <translation>&amp;Перемкнути меню</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="351"/>
         <source>Rename session</source>
-        <translation>Перейменувати сесію</translation>
+        <translation>Перейменувати сеанс</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="360"/>
@@ -263,19 +263,19 @@
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <source>&amp;Top</source>
-        <translation>Вв&amp;ерху</translation>
+        <translation>В&amp;горі</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="437"/>
         <location filename="../mainwindow.cpp" line="473"/>
         <source>&amp;Right</source>
-        <translation>&amp;Справа</translation>
+        <translation>&amp;Праворуч</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="438"/>
         <location filename="../mainwindow.cpp" line="474"/>
         <source>&amp;Left</source>
-        <translation>З&amp;ліва</translation>
+        <translation>&amp;Ліворуч</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="456"/>
@@ -551,17 +551,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="719"/>
         <source>Save Size when closing</source>
-        <translation>Зберегти розмір при закриванні</translation>
+        <translation>Зберігати розмір під час закривання</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="760"/>
         <source>Save Position when closing</source>
-        <translation>Зберегти позицію при закриванні</translation>
+        <translation>Зберегти розташування під час закривання</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="736"/>
         <source>Ask for confirmation when closing</source>
-        <translation>Запитати про підтвердження при закриванні</translation>
+        <translation>Запитувати підтвердження під час закривання</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="780"/>

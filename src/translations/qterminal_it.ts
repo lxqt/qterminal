@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestisci cronologia...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -599,7 +599,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="472"/>
         <source>No menu bar accelerator</source>
-        <translation>Nessun acceleratore per la barra del menu</translation>
+        <translation>Nessun acceleratore nella barra del menu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="550"/>
