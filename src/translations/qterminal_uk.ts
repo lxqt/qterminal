@@ -83,27 +83,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="234"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Очистити активний термінал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Попередня вкладка в історії</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Наступна вкладка в історії</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="261"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Вкладка</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Перейти до</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
@@ -475,33 +475,33 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
         <source>Background image:</source>
-        <translation type="unfinished"></translation>
+        <translation>Зображення тла:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="290"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="452"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>Показувати розмір термінала під час зміни розміру</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="435"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Стала ширина вкладки:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="375"/>
         <location filename="../forms/propertiesdialog.ui" line="408"/>
         <source>px</source>
-        <translation type="unfinished"></translation>
+        <translation>пікселів</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="325"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Показувати кнопку закриття на кожній вкладці</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
@@ -576,7 +576,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="705"/>
         <source>Default $TERM</source>
-        <translation type="unfinished"></translation>
+        <translation>Типовий $TERM</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="596"/>
@@ -786,12 +786,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="375"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати зображення тла</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="376"/>
         <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation type="unfinished"></translation>
+        <translation>Зображення (*.bmp *.png *.xpm *.jpg)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="439"/>
@@ -804,7 +804,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../termwidget.cpp" line="239"/>
         <source>Show Details...</source>
-        <translation type="unfinished"></translation>
+        <translation>Показати подробиці...</translation>
     </message>
 </context>
 <context>
@@ -841,7 +841,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Вибрати колір заголовка нової вкладки</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="242"/>
@@ -851,7 +851,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../tabwidget.cpp" line="244"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Змінити колір заголовка</translation>
     </message>
 </context>
 <context>
