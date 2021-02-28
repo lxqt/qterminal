@@ -153,7 +153,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>新規タブをプリセットで開く(&amp;P)</translation>
+        <translation>新しいタブをプリセットで開く(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -310,7 +310,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="360"/>
         <source>&amp;New Tab</source>
-        <translation>新規タブ(&amp;N)</translation>
+        <translation>新しいタブ(&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
@@ -325,7 +325,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>タブを表示(&amp;S)</translation>
+        <translation>タブの表示(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="421"/>
@@ -647,7 +647,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="936"/>
         <source>Edit bookmark file contents</source>
-        <translation>ここでブックマークの内容を編集できます</translation>
+        <translation>ブックマークファイルの内容を編集して下さい</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="958"/>
