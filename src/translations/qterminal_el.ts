@@ -347,7 +347,7 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="39"/>
-        <location filename="../forms/propertiesdialog.ui" line="575"/>
+        <location filename="../forms/propertiesdialog.ui" line="611"/>
         <source>Behavior</source>
         <translation>Συμπεριφορά</translation>
     </message>
@@ -377,12 +377,12 @@
         <translation>Ύφος συστατικού</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="335"/>
+        <location filename="../forms/propertiesdialog.ui" line="371"/>
         <source>Scrollbar position</source>
         <translation>Θέση της γραμμής κύλισης</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="418"/>
+        <location filename="../forms/propertiesdialog.ui" line="454"/>
         <source>Tabs position</source>
         <translation>Θέση καρτελών</translation>
     </message>
@@ -397,23 +397,23 @@
         <translation>Απόκρυψη της γραμμής καρτελών με μία μόνο καρτέλα</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="368"/>
+        <location filename="../forms/propertiesdialog.ui" line="404"/>
         <source>Show a border around the current terminal</source>
         <translation>Εμφάνιση περιγράμματος στο τρέχον τερματικό</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="358"/>
+        <location filename="../forms/propertiesdialog.ui" line="394"/>
         <source>Application transparency</source>
         <translation>Διαφάνεια της εφαρμογής</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="345"/>
+        <location filename="../forms/propertiesdialog.ui" line="381"/>
         <source>Terminal transparency</source>
         <translation>Διαφάνεια του τερματικού</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="117"/>
-        <location filename="../forms/propertiesdialog.ui" line="389"/>
+        <location filename="../forms/propertiesdialog.ui" line="425"/>
         <source> %</source>
         <translation> %</translation>
     </message>
@@ -453,22 +453,22 @@
         <translation>&amp;Αλλαγή...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="299"/>
+        <location filename="../forms/propertiesdialog.ui" line="335"/>
         <source>Cursor shape</source>
         <translation>Σχήμα δρομέα</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="428"/>
+        <location filename="../forms/propertiesdialog.ui" line="464"/>
         <source>Change window title based on current terminal</source>
         <translation>Αλλαγή του τίτλου του παραθύρου βάσει του τρέχοντος τερματικού</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="445"/>
+        <location filename="../forms/propertiesdialog.ui" line="481"/>
         <source>Change window icon based on current terminal</source>
         <translation>Αλλαγή του εικονιδίου του παραθύρου βάσει του τρέχοντος τερματικού</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="382"/>
+        <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Enable bi-directional text support</source>
         <translation>Ενεργοποίηση της υποστήριξης κειμένου διπλής κατεύθυνσης</translation>
     </message>
@@ -483,23 +483,23 @@
         <translation>Επιλογή</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="452"/>
+        <location filename="../forms/propertiesdialog.ui" line="488"/>
         <source>Show terminal size on resize</source>
         <translation>Εμφάνιση του μεγέθους του τερματικού κατά την αλλαγή μεγέθους του παραθύρου</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="435"/>
+        <location filename="../forms/propertiesdialog.ui" line="471"/>
         <source>Fixed tab width:</source>
         <translation>Σταθερό πλάτος καρτέλας:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="375"/>
-        <location filename="../forms/propertiesdialog.ui" line="408"/>
+        <location filename="../forms/propertiesdialog.ui" line="411"/>
+        <location filename="../forms/propertiesdialog.ui" line="444"/>
         <source>px</source>
         <translation>εικ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="325"/>
+        <location filename="../forms/propertiesdialog.ui" line="361"/>
         <source>Show close button on each tab</source>
         <translation>Εμφάνιση του κουμπιού κλεισίματος σε κάθε καρτέλα</translation>
     </message>
@@ -509,143 +509,183 @@
         <translation>Περιθώριο τερματικού</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="462"/>
+        <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
         <translation>Χρήση των χαρακτήρων σχεδίασης πλαισίου που περιέχονται στην γραμματοσειρά</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="469"/>
+        <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>Οι επιταχυντές ενεργοποιούνται με Alt και μπορούν να επιδρούν με το τερματικό.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="472"/>
+        <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
         <translation>Χωρίς επιταχυντή γραμμής μενού</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="550"/>
+        <location filename="../forms/propertiesdialog.ui" line="586"/>
         <source>Emulation</source>
         <translation>Προσομοίωση</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="675"/>
+        <location filename="../forms/propertiesdialog.ui" line="711"/>
         <source>Action after paste</source>
         <translation>Ενέργεια μετά την επικόλληση</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="712"/>
+        <location filename="../forms/propertiesdialog.ui" line="748"/>
         <source>Confirm multiline paste</source>
         <translation>Επιβεβαίωση επικόλλησης πολλαπλών γραμμών</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="753"/>
+        <location filename="../forms/propertiesdialog.ui" line="789"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Κλάδεμα των τελικών νέων γραμμών στο επικολλημένο κείμενο</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="688"/>
+        <location filename="../forms/propertiesdialog.ui" line="724"/>
         <source>Open new terminals in current working directory</source>
         <translation>Άνοιγμα των νέων τερματικών στον τρέχοντα κατάλογο εργασίας</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="719"/>
+        <location filename="../forms/propertiesdialog.ui" line="755"/>
         <source>Save Size when closing</source>
         <translation>Αποθήκευση του μεγέθους κατά το κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="760"/>
+        <location filename="../forms/propertiesdialog.ui" line="796"/>
         <source>Save Position when closing</source>
         <translation>Αποθήκευση της θέσης κατά το κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="736"/>
+        <location filename="../forms/propertiesdialog.ui" line="772"/>
         <source>Ask for confirmation when closing</source>
         <translation>Ερώτηση επιβεβαίωσης κατά το κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="780"/>
+        <location filename="../forms/propertiesdialog.ui" line="816"/>
         <source>Unlimited history</source>
         <translation>Απεριόριστο ιστορικό</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="746"/>
+        <location filename="../forms/propertiesdialog.ui" line="782"/>
         <source>History size (in lines)</source>
         <translation>Μέγεθος ιστορικού (γραμμές)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="705"/>
+        <location filename="../forms/propertiesdialog.ui" line="741"/>
         <source>Default $TERM</source>
         <translation>Εξ ορισμού $TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="596"/>
+        <location filename="../forms/propertiesdialog.ui" line="632"/>
         <source>Start with this size:</source>
         <translation>Έναρξη με αυτό το μέγεθος:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="459"/>
+        <location filename="../forms/propertiesdialog.ui" line="299"/>
+        <source>Background mode:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="307"/>
+        <source>None</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="312"/>
+        <source>Stretch</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="317"/>
+        <source>Zoom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="322"/>
+        <source>Fit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="327"/>
+        <source>Center</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
         <translation>Καθορίζει αν οι χαρακτήρες για τον σχεδιασμό του πλαισίου θα σχεδιάζονται εσωτερικά από το QTerminal ή από την υποκείμενη βιβλιοθήκη αποτύπωσης της γραμματοσειράς.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="479"/>
+        <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
         <translation>Εναλλαγή της χρήσης έντονων χαρακτήρων γραμματοσειρών για την αποτύπωση έντονων χρωματισμών</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="482"/>
+        <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
         <translation>Χρήση έντονων χαρακτήρων για έντονους χρωματισμούς</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="489"/>
+        <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
         <translation>Απόκρυ&amp;ψη του περιγράμματος του παραθύρου</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="559"/>
+        <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Συμπεριφορά προς προσομοίωση Σημειώστε ότι δεν χρειάζεται να συνάδει με το λειτουργικό σύστημα&lt;/p&gt;&lt;p&gt;Αν δεν είστε σίγουρος-η, χρησιμοποιήστε την &lt;span style=&quot; font-weight:600;&quot;&gt;προσομοίωση&lt;/span&gt; default.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="581"/>
+        <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>Αυτή η εντολή θα εκτελεστεί με ένα όρισμα με το όνομα ενός προσωρινού αρχείου που θα χρησιμοποιηθεί για την καταγραφή του ιστορικού κύλισης</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="584"/>
+        <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
         <translation>Εντολή διαχείρισης ιστορικού</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="603"/>
-        <location filename="../forms/propertiesdialog.ui" line="617"/>
+        <location filename="../forms/propertiesdialog.ui" line="639"/>
+        <location filename="../forms/propertiesdialog.ui" line="653"/>
         <source> px</source>
         <translation> εικ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="624"/>
+        <location filename="../forms/propertiesdialog.ui" line="660"/>
         <source>Get current size</source>
         <translation>Λήψη του τρέχοντος μεγέθους</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="695"/>
+        <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>Άνοιγμα της νέας καρτέλας δεξιά από την ενεργή καρτέλα</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="698"/>
+        <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>Αν δεν είναι επιλεγμένο η νέα καρτέλα θα ανοίγει στην δεξιότερη θέση</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="726"/>
+        <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
         <translation>Κλείσιμο της καρτέλας με μεσαίο κλικ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="798"/>
+        <location filename="../forms/propertiesdialog.ui" line="823"/>
+        <source>Forcefully disable bracketed paste mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="826"/>
+        <source>Bracketed paste mode is useful for pasting multiline strings.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="844"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -660,156 +700,148 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 Για την αφαίρεση/απενεργοποίηση μιας συντόμευσης, στο στάδιο 2 πιέστε μόνον έναν τροποποιητή (πχ το Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="828"/>
+        <location filename="../forms/propertiesdialog.ui" line="874"/>
         <source>Shortcut</source>
         <translation>Συντόμευση</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="833"/>
+        <location filename="../forms/propertiesdialog.ui" line="879"/>
         <source>Key</source>
         <translation>Συνδυασμός πλήκτρων</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="845"/>
+        <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>Show on start</source>
         <translation>Εμφάνιση κατά την έναρξη</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="852"/>
+        <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>Size</source>
         <translation>Μέγεθος</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="863"/>
+        <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>Height</source>
         <translation>Ύψος</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="873"/>
-        <location filename="../forms/propertiesdialog.ui" line="890"/>
+        <location filename="../forms/propertiesdialog.ui" line="919"/>
+        <location filename="../forms/propertiesdialog.ui" line="936"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="880"/>
+        <location filename="../forms/propertiesdialog.ui" line="926"/>
         <source>Width</source>
         <translation>Πλάτος</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="904"/>
+        <location filename="../forms/propertiesdialog.ui" line="950"/>
         <source>Shortcut:</source>
         <translation>Συντόμευση:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="982"/>
         <source>Edit bookmark file contents</source>
         <translation>Επεξεργασία των περιεχομένων του αρχείου των σελιδοδεικτών</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="958"/>
+        <location filename="../forms/propertiesdialog.ui" line="1004"/>
         <source>Enable bookmarks</source>
         <translation>Ενεργοποίηση των σελιδοδεικτών</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="967"/>
+        <location filename="../forms/propertiesdialog.ui" line="1013"/>
         <source>Bookmark file</source>
         <translation>Αρχείο των σελιδοδεικτών</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="980"/>
+        <location filename="../forms/propertiesdialog.ui" line="1026"/>
         <source>Find...</source>
         <translation>Αναζήτηση...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="989"/>
+        <location filename="../forms/propertiesdialog.ui" line="1035"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Μπορείτε να καθορίσετε την δική σας τοποθεσία του αρχείου των σελιδοδεικτών. Επιτρέπει εύκολη κοινή χρήση των σελιδοδεικτών με εργαλεία όπως το OwnCloud και το Dropbox.</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="145"/>
+        <location filename="../propertiesdialog.cpp" line="155"/>
         <source>No scrollbar</source>
         <translation>Χωρίς γραμμή κύλισης</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="145"/>
-        <location filename="../propertiesdialog.cpp" line="151"/>
+        <location filename="../propertiesdialog.cpp" line="155"/>
+        <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Left</source>
         <translation>Αριστερά</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="145"/>
-        <location filename="../propertiesdialog.cpp" line="151"/>
+        <location filename="../propertiesdialog.cpp" line="155"/>
+        <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Right</source>
         <translation>Δεξιά</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="151"/>
+        <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Top</source>
         <translation>Κορυφή</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="151"/>
+        <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Bottom</source>
         <translation>Βάση</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="164"/>
+        <location filename="../propertiesdialog.cpp" line="174"/>
         <source>BlockCursor</source>
         <translation>Κύβος</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="164"/>
+        <location filename="../propertiesdialog.cpp" line="174"/>
         <source>UnderlineCursor</source>
         <translation>Απροσδιόριστο</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="164"/>
+        <location filename="../propertiesdialog.cpp" line="174"/>
         <source>IBeamCursor</source>
         <translation>Δοκός</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="182"/>
+        <location filename="../propertiesdialog.cpp" line="192"/>
         <source>No move</source>
         <translation>Χωρίς μετάβαση</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="182"/>
-        <source>Move start</source>
-        <translation>Μετάβαση στην αρχή</translation>
+        <location filename="../propertiesdialog.cpp" line="192"/>
+        <source>Scrolling to top</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="182"/>
-        <source>Move end</source>
-        <translation>Μετάβαση στο τέλος</translation>
+        <location filename="../propertiesdialog.cpp" line="192"/>
+        <source>Scrolling to bottom</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="187"/>
-        <location filename="../propertiesdialog.cpp" line="282"/>
+        <location filename="../propertiesdialog.cpp" line="390"/>
+        <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="199"/>
+        <location filename="../propertiesdialog.cpp" line="294"/>
         <source>System Default</source>
         <translation>Συστήματος</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="375"/>
+        <location filename="../propertiesdialog.cpp" line="389"/>
         <source>Choose a background image</source>
         <translation>Επιλογή μιας εικόνας παρασκηνίου</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="376"/>
-        <source>Images (*.bmp *.png *.xpm *.jpg)</source>
-        <translation>Εικόνες (*.bmp *.png *.xpm *.jpg)</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="439"/>
+        <location filename="../propertiesdialog.cpp" line="466"/>
         <source>Open or create bookmarks file</source>
         <translation>Άνοιγμα ή δημιουργία αρχείου σελιδοδεικτών</translation>
-    </message>
-</context>
-<context>
-    <name>QMessageBox</name>
-    <message>
-        <location filename="../termwidget.cpp" line="239"/>
-        <source>Show Details...</source>
-        <translation>Εμφάνιση λεπτομερειών...</translation>
     </message>
 </context>
 <context>
@@ -870,19 +902,6 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <location filename="../termwidgetholder.cpp" line="80"/>
         <source>List of saved sessions:</source>
         <translation>Κατάλογος των αποθηκευμένων συνεδριών:</translation>
-    </message>
-</context>
-<context>
-    <name>TermWidgetImpl</name>
-    <message>
-        <location filename="../termwidget.cpp" line="231"/>
-        <source>Paste multiline text</source>
-        <translation>Επικόλληση κειμένου πολλαπλών γραμμών</translation>
-    </message>
-    <message>
-        <location filename="../termwidget.cpp" line="232"/>
-        <source>Are you sure you want to paste this text?</source>
-        <translation>Επιθυμείτε σίγουρα την επικόλληση του κειμένου;</translation>
     </message>
 </context>
 <context>
