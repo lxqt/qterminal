@@ -616,12 +616,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Angi om tegn som tegnes i en boks skal tegnes av QTerminal internt, eller av underliggende skriftopptegningsbibliotek.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Veksler bruk av fet skrift for opptegning av intense farger</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
@@ -636,12 +636,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hvilken oppførsel som skal emuleres. Merk at dette ikke må samsvare med ditt operativsystem.&lt;/p&gt;&lt;p&gt;Hvis du ikke er sikker, bruk &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt;emuleringen.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Kommandoen vil kjøres med et argument som inneholder filnavnet til en midlertidig fil som inneholder tilbakerullingshistorikken</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
@@ -667,7 +667,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Hvis ikke valgt blir den nye fanen åpnes som fane lengst til høyre</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
@@ -677,12 +677,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Skru av innliming med kontrolltegn tvangsmessig</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Innliming med kontrolltegn er nyttig for å lime inn strenger som har flere linjer.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -692,7 +692,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">For å redigere en snarvei:
+1. Dobbeltklikk dens nøkkel
+2. Trykk ønsket kombinasjon og slipp den
+3. Klikk på en snarvei eller trykk enter
+
+For å fjerne/skru av en snarvei, kan du trykke kun en endringstast (som Shift) i steg 2.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="874"/>
