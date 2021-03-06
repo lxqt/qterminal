@@ -595,7 +595,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation>強調色のために太字フォントを使う</translation>
+        <translation>強調色のために太字フォントを使用する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
@@ -831,7 +831,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <location filename="../propertiesdialog.cpp" line="199"/>
         <location filename="../propertiesdialog.cpp" line="294"/>
         <source>System Default</source>
-        <translation>システムの既定</translation>
+        <translation>システムの既定値</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="389"/>

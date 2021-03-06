@@ -290,17 +290,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="490"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>Disposition de la barre de &amp;défilement</translation>
+        <translation>Disposition de la barre de défilement</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;BlockCursor</source>
-        <translation>&amp;Bloquer le curseur</translation>
+        <translation>Curseur &amp;Bloc</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>&amp;Souligner le curseur</translation>
+        <translation>Curseur So&amp;uligné</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="505"/>
@@ -310,7 +310,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>Forme du curseur du &amp;clavier</translation>
+        <translation>Forme du curseur du clavier</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="622"/>
@@ -420,7 +420,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="204"/>
         <source>Start with preset:</source>
-        <translation>Démarrer avec les valeurs préréglées :</translation>
+        <translation>Démarrer avec les préréglages :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="215"/>
@@ -626,12 +626,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation>Utilisez des caractères gras pour des couleurs intenses</translation>
+        <translation>Utiliser des caractères gras pour des couleurs intenses</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;Masquer les bordures de la fenêtre</translation>
+        <translation>Masquer les bordures de la fenêtre</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
@@ -667,7 +667,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation>Si elle n&apos;est pas cochée, le nouvel onglet sera ouvert comme l&apos;onglet le plus à droite</translation>
+        <translation>Si non cochée, le nouvel onglet sera ouvert comme l&apos;onglet le plus à droite</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
@@ -677,12 +677,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished">Forcer la désactivation du mode de collage entre crochets</translation>
+        <translation>Forcer la désactivation du mode de collage entre crochets</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished">Le mode Collage entre crochets est utile pour coller des chaînes multilignes.</translation>
+        <translation>Le mode Collage entre crochets est utile pour coller des chaînes multilignes.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -924,7 +924,7 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation>&amp;Aide</translation>
+        <translation>Aide</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>

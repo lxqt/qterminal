@@ -108,22 +108,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Верхній підтермінал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="289"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Нижній підтермінал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="292"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Лівий підтермінал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="295"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Правий підтермінал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
@@ -253,7 +253,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="427"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Перемкнути вкладки</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
@@ -455,7 +455,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="335"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Вигляд курсора</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="464"/>
@@ -470,7 +470,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished"></translation>
+        <translation>Увімкнути двонапрямну підтримку тексту</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
@@ -506,7 +506,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>Поля термінала</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
