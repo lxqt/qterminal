@@ -63,12 +63,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>Ee&amp;lmine kaart ajaloost</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>Jä&amp;rgmine kaart ajaloost</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
@@ -83,12 +83,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="261"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaart</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Töötle ajalugu...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -275,7 +275,7 @@
         <location filename="../mainwindow.cpp" line="438"/>
         <location filename="../mainwindow.cpp" line="474"/>
         <source>&amp;Left</source>
-        <translation>&amp;Vasak</translation>
+        <translation>&amp;Vasakul</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="456"/>
@@ -495,12 +495,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>Tühi ruum terminali sisu ja akna vahel</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasuta fondifailis leiduvaid joonistamismärke</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="789"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>Eemalda asetatava teksti lõpust tühjad read</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="724"/>
@@ -570,7 +570,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Taustarežiim:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
@@ -615,7 +615,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Peida akna piirid</translation>
+        <translation>&amp;Peida akna piirjooned</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
@@ -630,13 +630,13 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Käsk ajaloo töötlemiseks</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
         <location filename="../forms/propertiesdialog.ui" line="653"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="660"/>
@@ -646,17 +646,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava uus kaart kasutusel oleva kaardi kõrval</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Kui see seadistus pole valitud, siis uus kaart avatakse paremas ääres</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Keskmise nupu klõps sulgeb kaardi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
@@ -717,12 +717,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="335"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>Kursori kuju</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="471"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>Fikseeritud tabulaatorisamm:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
@@ -820,7 +820,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pildid (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
