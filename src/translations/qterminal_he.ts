@@ -586,32 +586,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>מצב רקע:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>ללא</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>מתיחה</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>התקרבות</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>התאמה</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>מירכוז</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
@@ -677,12 +677,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>אילוץ השבתת מצב הדבקה בסוגריים</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>מצב הדבקה בסוגריים שימוש להדבקת מחרוזות עם כמה שורות.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -815,17 +815,17 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>גלילה למעלה</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>גלילה למטה</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>תמונות (‎*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
