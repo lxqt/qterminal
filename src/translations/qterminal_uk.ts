@@ -369,7 +369,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Приховати панель вкладок з тільки одною вкладкою</translation>
+        <translation>Приховати панель вкладок з лише однією вкладкою</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="275"/>
@@ -763,7 +763,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1035"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Ви можете вказати Ваш власний шлях до файлу закладки. Це дозволить легко поділитися закладками за допомогою OwnCloud або Dropbox.</translation>
+        <translation>Ви можете вказати свій власний шлях до файлу закладки. Це дозволить легко поділитися закладками за допомогою OwnCloud або Dropbox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="155"/>
