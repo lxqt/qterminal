@@ -738,7 +738,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="471"/>
         <source>Fixed tab width:</source>
-        <translation>タブタイトルの幅を固定:</translation>
+        <translation>タブタイトルの幅を固定する:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="891"/>
