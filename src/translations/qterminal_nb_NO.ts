@@ -591,7 +591,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished">Ingen</translation>
+        <translation>Ingen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
@@ -631,7 +631,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Skjul kanter rundt vinduer</translation>
+        <translation>&amp;Skjul vinduskanter</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
@@ -641,12 +641,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished">Kommandoen vil kjøres med et argument som inneholder filnavnet til en midlertidig fil som inneholder tilbakerullingshistorikken</translation>
+        <translation>Kommandoen vil kjøres med et argument som inneholder filnavnet til en midlertidig fil som inneholder tilbakerullingshistorikken</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation type="unfinished">Kommando for håndtering av historikk</translation>
+        <translation>Håndter historikkommando</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
@@ -667,7 +667,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished">Hvis ikke valgt blir den nye fanen åpnes som fane lengst til høyre</translation>
+        <translation>Hvis ikke valgt vil den nye fanen åpnes lengst til høyre</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
@@ -677,12 +677,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished">Skru av innliming med kontrolltegn tvangsmessig</translation>
+        <translation>Tvangsavskru innliming med kontrolltegn</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished">Innliming med kontrolltegn er nyttig for å lime inn strenger som har flere linjer.</translation>
+        <translation>Innliming med kontrolltegn er nyttig for å lime inn flere strenger.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -692,8 +692,8 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished">For å redigere en snarvei:
-1. Dobbeltklikk dens nøkkel
+        <translation>For å redigere en snarvei:
+1. Dobbeltklikk dens tast
 2. Trykk ønsket kombinasjon og slipp den
 3. Klikk på en snarvei eller trykk enter
 

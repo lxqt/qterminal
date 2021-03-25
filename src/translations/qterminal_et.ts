@@ -223,7 +223,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Uus aken</translation>
+        <translation>&amp;Uus akne</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="385"/>
