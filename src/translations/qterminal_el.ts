@@ -677,12 +677,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Εξαναγκασμός απενεργοποίησης της λειτουργίας επικόλλησης με αγκύλη</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Η λειτουργία επικόλλησης με αγκύλη είναι χρήσιμη κατά την επικόλληση συμβολοσειρών πολλαπλών γραμμών.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
