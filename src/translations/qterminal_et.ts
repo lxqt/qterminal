@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Terminali nägemiseks vajuta &quot;%1&quot;.</translation>
+        <translation>Terminali nägemiseks vajuta „%1“.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="234"/>
@@ -223,7 +223,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Uus akne</translation>
+        <translation>&amp;Uus aken</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="385"/>
@@ -248,7 +248,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="421"/>
         <source>Fullscreen</source>
-        <translation>Täisekraan</translation>
+        <translation>Täisekraanivaade</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="427"/>
@@ -295,7 +295,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;BlockCursor</source>
-        <translation>&amp;Plokk kursor</translation>
+        <translation>&amp;Plokk-kursor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="504"/>
@@ -343,7 +343,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="47"/>
         <source>Shortcuts</source>
-        <translation>Otseteed</translation>
+        <translation>Kiirklahvid</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
@@ -505,12 +505,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuteklahvid käivitab vajutus Alt klahvile ning see võib segada terminali tööd.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>Menüüriba muuteklahv puudub</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="711"/>
@@ -565,7 +565,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="632"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Alusta sellise mõõduga:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
@@ -575,42 +575,42 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Puudub</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Venita</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Suumi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Mahuta</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Keskele</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Määratle, kas kastgraafika jaoks vajalikke märke QTerminal joonistab ise või kasutab väliseid kirjatüüpide visualiseerimise teeke.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Võtab intensiivsete värvide kuvamisel kasutusele paksu kirjatüübi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasuta intensiivsete värvide jaoks fondinägu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
@@ -620,12 +620,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Missugust käitumist peaksime emuleerima ning see ei pea kattuma mujal operatsioonisüsteemis kasutatavaga.&lt;/p&gt;&lt;p&gt;Kui sa pole kindel, siis kasuta &lt;span style=&quot; font-weight:600;&quot;&gt;vaikimisi&lt;/span&gt; emulatsiooni.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Seda käsku käivitatakse argumendiga, milles leidub ajalugu sisaldava ajutise faili nimi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
@@ -641,7 +641,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="660"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>Laadi praegune suurus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
@@ -676,7 +676,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kiirklahvi muutmiseks:
+1. Topeltklõpsi tema võtmel
+2. Vajuta soovitud klahvikombinatsiooni ning vabasta klahvid
+3. Klõpsi kiirklahvil või vajuta Enter
+
+Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklahvi (nt Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -732,7 +737,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="950"/>
         <source>Shortcut:</source>
-        <translation>Otsetee:</translation>
+        <translation>Kiirklahv:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1026"/>
@@ -753,7 +758,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="874"/>
         <source>Shortcut</source>
-        <translation>Otsetee</translation>
+        <translation>Kiirklahv</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="879"/>
@@ -929,7 +934,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Redigeeri</translation>
+        <translation>&amp;Muuda</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
