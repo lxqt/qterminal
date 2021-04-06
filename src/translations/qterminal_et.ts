@@ -661,12 +661,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Üheselt blokeeri sulgudega asetamisrežiim</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulgudega asetamisrežiim on tuleb kasuks mitmerealise teksti asetamisel.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -810,17 +810,17 @@ Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklah
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>No move</source>
-        <translation type="unfinished"></translation>
+        <translation>Ära muuda asukohta</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Üles kerimine</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Alla kerimine</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
