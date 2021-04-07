@@ -575,7 +575,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>フィット</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
