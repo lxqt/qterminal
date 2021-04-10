@@ -15,7 +15,7 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Kies lettertype voor terminalvenster</translation>
+        <translation>Terminallettertype kiezen</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
@@ -30,7 +30,7 @@
     <message>
         <location filename="../forms/fontdialog.ui" line="59"/>
         <source>Preview</source>
-        <translation>Voorbeeldweergave</translation>
+        <translation>Voorvertoning</translation>
     </message>
 </context>
 <context>
@@ -43,47 +43,47 @@
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Druk op &apos;%1&apos; om het terminalvenster te zien.</translation>
+        <translation>Druk op &apos;%1&apos; om het terminalvenster te openen.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="234"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>Maak actieve terminal leeg</translation>
+        <translation>A&amp;ctief terminalvenster leegmaken</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="241"/>
         <source>&amp;Next Tab</source>
-        <translation>Volgende tabblad</translation>
+        <translation>Volge&amp;nd tabblad</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="244"/>
         <source>&amp;Previous Tab</source>
-        <translation>Vorige tabblad</translation>
+        <translation>&amp;Vorig tabblad</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>Vorige tabblad in geschiedenis</translation>
+        <translation>Vorig tab&amp;blad in geschiedenis</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
         <source>&amp;Next Tab in History</source>
-        <translation>Volgende tabblad in geschiedenis</translation>
+        <translation>Volge&amp;nd tabblad in geschiedenis</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Verplaats tabblad naar links</translation>
+        <translation>Tabblad naar &amp;links verplaatsen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="256"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Verplaats tabblad naar rechts</translation>
+        <translation>Tabblad naar &amp;rechts verplaatsen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="261"/>
         <source>Tab</source>
-        <translation>Tab</translation>
+        <translation>Tabblad</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
@@ -93,107 +93,107 @@
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>Splits terminal horizontaal</translation>
+        <translation>Terminalvenster &amp;horizontaal splitsen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="278"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>Splits terminal vertikaal</translation>
+        <translation>Terminalvenster &amp;verticaal splitsen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="283"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>Vouw subterminal samen</translation>
+        <translation>Onderliggende terminal in&amp;klappen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
         <source>&amp;Top Subterminal</source>
-        <translation>Bovenste subterminal</translation>
+        <translation>&amp;Bovenste terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="289"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>Onderste subterminal</translation>
+        <translation>On&amp;derste terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="292"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>Linker-subterminal</translation>
+        <translation>Lin&amp;kerterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="295"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>Rechter-subterminal</translation>
+        <translation>Rechterterm&amp;inal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>Copy &amp;Selection</source>
-        <translation>Kopieer selectie</translation>
+        <translation>&amp;Selectie kopiëren</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Paste Clip&amp;board</source>
-        <translation>Plak klembord</translation>
+        <translation>Klem&amp;bord plakken</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="308"/>
         <source>Paste S&amp;election</source>
-        <translation>Plak selectie</translation>
+        <translation>S&amp;electie plakken</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="311"/>
         <source>Zoom &amp;in</source>
-        <translation>Vergroten</translation>
+        <translation>&amp;Inzoomen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="314"/>
         <source>Zoom &amp;out</source>
-        <translation>Verkleinen</translation>
+        <translation>Uitz&amp;oomen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="317"/>
         <source>Zoom rese&amp;t</source>
-        <translation>Vergrotingsfactor terugzetten</translation>
+        <translation>S&amp;tandaard zoomniveau</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
         <source>&amp;Find...</source>
-        <translation>&amp;Zoeken...</translation>
+        <translation>&amp;Zoeken…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschiedenis beheren…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
         <source>&amp;Save Session</source>
-        <translation>Sessie opslaan</translation>
+        <translation>Sessie op&amp;slaan</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>
         <source>&amp;Load Session</source>
-        <translation>Sessie laden</translation>
+        <translation>Sessie &amp;laden</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="346"/>
         <source>&amp;Toggle Menu</source>
-        <translation>Menu omschakelen</translation>
+        <translation>Menu open/slui&amp;ten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="351"/>
         <source>Rename session</source>
-        <translation>Hernoem sessie</translation>
+        <translation>Sessienaam wijzigen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="360"/>
         <source>&amp;New Tab</source>
-        <translation>Nieuw tabblad</translation>
+        <translation>&amp;Nieuw tabblad</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Nieuw tabblad vanuit voorkeuze</translation>
+        <translation>Nieuw tabbla&amp;d uit voorinstelling</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -203,22 +203,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>2 horizontale terminals</translation>
+        <translation>2 &amp;horizontale terminals</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="369"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation>2 verticale terminals</translation>
+        <translation>2 &amp;verticale terminals</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="371"/>
         <source>4 Terminal&amp;s</source>
-        <translation>4 terminals</translation>
+        <translation>4 terminal&amp;s</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="377"/>
         <source>&amp;Close Tab</source>
-        <translation>Tabblad sluiten</translation>
+        <translation>Tabblad &amp;sluiten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="385"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Voorkeuren...</translation>
+        <translation>&amp;Instellingen…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="389"/>
@@ -238,89 +238,89 @@
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>Vensterranden verbergen</translation>
+        <translation>Vensterranden verber&amp;gen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>Toon tabbladenbalk</translation>
+        <translation>Tabbladbalk to&amp;nen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="421"/>
         <source>Fullscreen</source>
-        <translation>Schermvullend</translation>
+        <translation>Beeldvullend</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="427"/>
         <source>Toggle Bookmarks</source>
-        <translation>Bladwijzers omschakelen</translation>
+        <translation>Bladwijzers tonen/verbergen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>&amp;Bottom</source>
-        <translation>Onderkant</translation>
+        <translation>&amp;Onderkant</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <source>&amp;Top</source>
-        <translation>Bovenkant</translation>
+        <translation>Bovenkan&amp;t</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="437"/>
         <location filename="../mainwindow.cpp" line="473"/>
         <source>&amp;Right</source>
-        <translation>Rechts</translation>
+        <translation>&amp;Rechts</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="438"/>
         <location filename="../mainwindow.cpp" line="474"/>
         <source>&amp;Left</source>
-        <translation>Links</translation>
+        <translation>&amp;Links</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="456"/>
         <source>&amp;Tabs Layout</source>
-        <translation>Vormgeving van tabbladen</translation>
+        <translation>&amp;Tabbladindeling</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="472"/>
         <source>&amp;None</source>
-        <translation>Geen</translation>
+        <translation>Gee&amp;n</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="490"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>Vormgeving van schuifbalk</translation>
+        <translation>S&amp;chuifbalkindeling</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;BlockCursor</source>
-        <translation>Blokaanwijzer</translation>
+        <translation>&amp;Blok</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>Onderstreepte aanwijzer</translation>
+        <translation>Ligg&amp;end streepje</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="505"/>
         <source>&amp;IBeamCursor</source>
-        <translation>Straalaanwijzer</translation>
+        <translation>Plat vert&amp;icaal streepje</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>Vorm van toetsenbordaanwijzer</translation>
+        <translation>&amp;Cursorvorm</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="622"/>
         <source>Exit QTerminal</source>
-        <translation>Sluit QTerminal af</translation>
+        <translation>QTerminal afsluiten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="624"/>
         <source>Do not ask again</source>
-        <translation>Vraag dit niet meer</translation>
+        <translation>Niet meer vragen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="632"/>
@@ -330,7 +330,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>Een lichtgewicht-terminalnabootser voor meerdere platformen</translation>
+        <translation>Een lichte terminalemulator voor meerdere platformen</translation>
     </message>
 </context>
 <context>
@@ -338,7 +338,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="586"/>
         <source>Emulation</source>
-        <translation>Nabootsing</translation>
+        <translation>Emulatie</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="47"/>
@@ -348,12 +348,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation>Instellingen voor het terminalvenster</translation>
+        <translation>Terminalinstellingen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="31"/>
         <source>Appearance</source>
-        <translation>Uiterlijk</translation>
+        <translation>Vormgeving</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="39"/>
@@ -364,7 +364,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="55"/>
         <source>Dropdown</source>
-        <translation>Openklappen</translation>
+        <translation>Uitvouwen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="63"/>
@@ -374,7 +374,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Verberg tabbladenbalk met slechts één tabblad</translation>
+        <translation>Tabbladbalk verbergen als er slechts één tabblad is</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="275"/>
@@ -384,7 +384,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
         <source>&amp;Change...</source>
-        <translation>Wijzigen...</translation>
+        <translation>Wij&amp;zigen…</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
@@ -394,32 +394,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="371"/>
         <source>Scrollbar position</source>
-        <translation>Positie van schuifbalk</translation>
+        <translation>Schuifbalkpositie</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="454"/>
         <source>Tabs position</source>
-        <translation>Positie van tabbladen</translation>
+        <translation>Tabbladpositie</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
         <source>Show the menu bar</source>
-        <translation>Toon de menubalk</translation>
+        <translation>Menubalk tonen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="404"/>
         <source>Show a border around the current terminal</source>
-        <translation>Toon een rand rond het huidige terminalvenster</translation>
+        <translation>Rand tonen rond huidige terminalvenster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="394"/>
         <source>Application transparency</source>
-        <translation>Doorzichtigheid van de toepassing</translation>
+        <translation>Doorzichtigheid</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="381"/>
         <source>Terminal transparency</source>
-        <translation>Doorzichtigheid van de terminal</translation>
+        <translation>Terminaldoorzichtigheid</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="204"/>
