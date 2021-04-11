@@ -424,7 +424,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="204"/>
         <source>Start with preset:</source>
-        <translation>Begin met voorinstelling:</translation>
+        <translation>Beginnen met voorinstelling:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="215"/>
@@ -434,12 +434,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>2 terminals horizontally</source>
-        <translation>2 terminalvensters horizontaal</translation>
+        <translation>2 terminalvensters (horizontaal)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>2 terminals vertically</source>
-        <translation>2 terminalvensters verticaal</translation>
+        <translation>2 terminalvensters (verticaal)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="230"/>
@@ -469,17 +469,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation>Gebruik karakters uit het font om rechthoeken te tekenen</translation>
+        <translation>Tekens uit lettertype gebruiken om rechthoeken te tekenen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Snelkoppelingen worden met Alt geactiveerd en kunnen de terminal verstoren.</translation>
+        <translation>Sneltoetsen worden met Alt geactiveerd en kunnen de terminal verstoren.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
-        <translation>Geen snelknop menubalk</translation>
+        <translation>Geen sneltoetsen op menubalk</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="711"/>
@@ -489,22 +489,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="748"/>
         <source>Confirm multiline paste</source>
-        <translation>Bevestig plakken van meerdere regels</translation>
+        <translation>Plakken van meerdere regels bevestigen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="789"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>Verwijder nieuwe-regel-aanduidingen aan einde van geplakte tekst</translation>
+        <translation>Nieuweregelaanduidingen aan einde van geplakte tekst wissen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="724"/>
         <source>Open new terminals in current working directory</source>
-        <translation>Open nieuwe terminalvensters in huidige werkmap</translation>
+        <translation>Nieuwe terminalvensters openen in huidige werkmap</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="755"/>
         <source>Save Size when closing</source>
-        <translation>Grootte opslaan bij sluiten</translation>
+        <translation>Afmetingen onthouden bij sluiten</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="796"/>
@@ -514,7 +514,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="772"/>
         <source>Ask for confirmation when closing</source>
-        <translation>Vraag om bevestiging bij afsluiten</translation>
+        <translation>Om bevestiging vragen bij sluiten</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="816"/>
@@ -524,7 +524,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
         <source>History size (in lines)</source>
-        <translation>Geschiedenisgrootte (in regels)</translation>
+        <translation>Geschiedenisomvang (aantal regels)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="741"/>
@@ -534,72 +534,72 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="632"/>
         <source>Start with this size:</source>
-        <translation>Start met deze grootte:</translation>
+        <translation>Starten met de volgende afmetingen:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Achtergrondmodus:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Geen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Uitrekken</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoomen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Inpassen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Centreren</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Geef aan of rechthoeken getekend moeten worden door QTerminal zelf of door het gebruikte lettertype.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Schakel het gebruik van vetgedrukte lettertypen voor intensere kleuren in/uit</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Vetgedrukt lettertype gebruiken bij intensere kleuren</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">Vensterranden verbergen</translation>
+        <translation>Vensterranden verber&amp;gen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Welk gedrag moet worden nagebootst. Let op: dit hoeft niet overeen te komen met uw besturingssysteem.&lt;/p&gt;&lt;p&gt;Gebruik bij twijfel de &lt;span style=&quot; font-weight:600;&quot;&gt;standaard&lt;/span&gt;emulatie.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Deze opdracht wordt uitgevoerd met een aanvullende optie die de bestandsnaam van een tijdelijk bestand met de terugscrollgeschiedenis bevat</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschiedenisopdracht beheren</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
@@ -610,32 +610,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="660"/>
         <source>Get current size</source>
-        <translation>Haal huidige grootte op</translation>
+        <translation>Huidige afmetingen bepalen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Nieuw tabblad rechts van actief tabblad openen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Schakel uit om een nieuw tabblad zo rechts mogelijk te openen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabblad sluiten met middelste muisklik</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Opdelen van geplakte tekst uitschakelen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dit is handig bij het plakken van meerdere regels.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -645,7 +645,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Sneltoets aanpassen:
+1. Dubbelklik op de toets
+2. Druk op de gewenste sneltoets
+3. Klik op een sneltoets of druk op Enter
+
+Sneltoets wissen: druk bij stap 2 op een samensteltoets (bijv. Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -666,12 +671,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="982"/>
         <source>Edit bookmark file contents</source>
-        <translation>Bewerk de inhoud van bladwijzerbestand</translation>
+        <translation>Inhoud van bladwijzerbestand aanpassen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1004"/>
         <source>Enable bookmarks</source>
-        <translation>Schakel bladwijzers in</translation>
+        <translation>Bladwijzers gebruiken</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1013"/>
@@ -681,22 +686,22 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>Show on start</source>
-        <translation>Toon bij start</translation>
+        <translation>Tonen na opstarten</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="464"/>
         <source>Change window title based on current terminal</source>
-        <translation>Verander venstertitel op basis van huidige terminalvenster</translation>
+        <translation>Venstertitel aanpassen op basis van huidig terminalvenster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="481"/>
         <source>Change window icon based on current terminal</source>
-        <translation>Verander vensterpictogram op basis van huidige terminalvenster</translation>
+        <translation>Vensterpictogram aanpassen op basis van huidig terminalvenster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Enable bi-directional text support</source>
-        <translation>Schakel tweerichtings-tekstondersteuning in</translation>
+        <translation>Tweerichtingstekstondersteuning inschakelen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
@@ -711,7 +716,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="488"/>
         <source>Show terminal size on resize</source>
-        <translation>Toon terminalgrootte bij herschalen</translation>
+        <translation>Terminalafmetingen tonen bij aanpassen van grootte</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="411"/>
@@ -722,7 +727,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="361"/>
         <source>Show close button on each tab</source>
-        <translation>Toon sluitknop op elk tabblad</translation>
+        <translation>Sluitknop op tabbladen tonen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
@@ -737,12 +742,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1026"/>
         <source>Find...</source>
-        <translation>Zoeken...</translation>
+        <translation>Zoeken…</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1035"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>U kunt uw eigen locatie opgeven voor het bladwijzerbestand. Dit biedt u gemakkelijk delen van bladwijzers met gereedschappen zoals OwnCloud of Dropbox.</translation>
+        <translation>U kunt uw eigen locatie opgeven voor het bladwijzerbestand. Hierdoor kunt het gemakkelijk opslaan op bijv. OwnCloud of Dropbox.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="117"/>
@@ -800,7 +805,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="174"/>
         <source>IBeamCursor</source>
-        <translation>Straalaanwijzer</translation>
+        <translation>Platte streep-aanwijzer</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
@@ -810,17 +815,17 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Scrollen naar bovenkant</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Scrollen naar onderkant</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Afbeeldingen (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
@@ -844,7 +849,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../bookmarkswidget.cpp" line="108"/>
         <source>Local Bookmarks</source>
-        <translation>Plaatselijke bladwijzers</translation>
+        <translation>Lokale bladwijzers</translation>
     </message>
     <message>
         <location filename="../bookmarkswidget.cpp" line="166"/>
@@ -863,22 +868,22 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../tabwidget.cpp" line="200"/>
         <source>Tab name</source>
-        <translation>Naam van tabblad</translation>
+        <translation>Tabbladnaam</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="201"/>
         <source>New tab name:</source>
-        <translation>Nieuwe naam van tabblad:</translation>
+        <translation>Nieuwe tabbladnaam:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
         <source>Select new tab title color</source>
-        <translation>Kies een nieuwe titelkleur voor tabblad</translation>
+        <translation>Kies een nieuwe tabbladnaamkleur</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="242"/>
         <source>Close session</source>
-        <translation>Sluit sessie</translation>
+        <translation>Sessie sluiten</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="244"/>
@@ -891,12 +896,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
-        <translation>Laad sessie</translation>
+        <translation>Sessie laden</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="80"/>
         <source>List of saved sessions:</source>
-        <translation>Lijst van opgeslagen sessies:</translation>
+        <translation>Lijst met opgeslagen sessies:</translation>
     </message>
 </context>
 <context>
@@ -904,7 +909,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
-        <translation>HoofdVenster</translation>
+        <translation>Hoofdvenster</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
@@ -924,22 +929,22 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation>&amp;Tonen</translation>
+        <translation>&amp;Beeld</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation>Be&amp;werken</translation>
+        <translation>B&amp;ewerken</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation>&amp;Over...</translation>
+        <translation>&amp;Over…</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation>Over &amp;Qt...</translation>
+        <translation>Over &amp;Qt…</translation>
     </message>
 </context>
 </TS>
