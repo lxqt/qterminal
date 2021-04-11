@@ -1,3 +1,13 @@
+qterminal-0.17.0 / 2021-04-15
+=============================
+  * Some code cleanup and modernization.
+  * Removed two warnings that were shown when QTerminal was started.
+  * Added an option to disable bracketed paste mode.
+  * Moved the paste-related codes to qtermwidget.
+  * Made "Action after paste" clearer and default to "Scrolling to bottom".
+  * Added a tooltip about bracketed paste mode.
+  * Added modes for background image.
+
 qterminal-0.16.1 / 2020-11-14
 =============================
   * Fixed a mistake in the layout of Terminal settings dialog.

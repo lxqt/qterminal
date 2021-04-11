@@ -9,7 +9,7 @@ project(qterminal)
 include(GNUInstallDirs)
 
 # qterminal version
-set(QTERMINAL_VERSION "0.16.1")
+set(QTERMINAL_VERSION "0.17.0")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
@@ -20,8 +20,8 @@ endif()
 # we need qpa/qplatformnativeinterface.h for global shortcut
 
 # Minimum Versions
-set(LXQTBT_MINIMUM_VERSION "0.8.0")
-set(QTERMWIDGET_MINIMUM_VERSION "0.16.1")
+set(LXQTBT_MINIMUM_VERSION "0.9.0")
+set(QTERMWIDGET_MINIMUM_VERSION "0.17.0")
 set(QT_MINIMUM_VERSION "5.12.0")
 
 find_package(Qt5Gui ${QT_MINIMUM_VERSION} REQUIRED)
