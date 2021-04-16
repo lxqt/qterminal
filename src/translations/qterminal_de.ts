@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Organisiere Verlauf...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -485,17 +485,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Benutze in der Schriftart enthaltene Rahmenzeichen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Beschleuniger werden mit Alt aktiviert und können das Terminal stören.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>Kein Menüleisten-Beschleuniger</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="711"/>
@@ -555,37 +555,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Hintergrund-Modus:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Kein</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Strecken</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Passt</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Zentriert</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Gib an, ob Rahmenzeichen von QTerminal intern oder von zugrunde liegenden Bibliotheken gezeichnet werden soll.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
@@ -610,12 +610,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Dieser Befehl wird mit einem Argument ausgeführt, dass den Dateinamen der den Scrollback-Verlauf beinhaltenden temporären Datei beinhaltet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Verlaufsbefehl bearbeiten</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
@@ -646,12 +646,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Erzwinge Ende des Klammer-Modus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mit dem Klammer-Modus ist es möglich längere Zeichenketten einzufügen.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -661,7 +661,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Einen Shortcut bearbeiten:
+1. Die Tastenkombination doppeklicken
+2. Die gewünschte Tastenkombination halten und loslassen
+3. Auf einen Shortcut klicken oder Eingabe drücken
+
+Um einen Shortcut zu löschen/ deaktivieren, drücke bei Schritt 2 nur einen Modifikator (z.B. Umschalt)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -810,17 +815,17 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach oben rollen</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Nach unten rollen</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilder (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
