@@ -48,7 +48,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="234"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>&amp;kustuta aktiivne terminal</translation>
+        <translation>&amp;Kustuta aktiivne terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="241"/>
@@ -178,7 +178,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="346"/>
         <source>&amp;Toggle Menu</source>
-        <translation>&amp;Menüü lülitamine</translation>
+        <translation>Näita või peida &amp;menüü</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="351"/>
