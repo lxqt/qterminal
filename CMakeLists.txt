@@ -22,7 +22,7 @@ endif()
 # Minimum Versions
 set(LXQTBT_MINIMUM_VERSION "0.9.0")
 set(QTERMWIDGET_MINIMUM_VERSION "0.17.0")
-set(QT_MINIMUM_VERSION "5.12.0")
+set(QT_MINIMUM_VERSION "5.15.0")
 
 find_package(Qt5Gui ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)

@@ -59,11 +59,7 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     if (!shell.isEmpty())
     {
         //qDebug() << "Shell program:" << shell;
-#if (QT_VERSION >= QT_VERSION_CHECK(5,15,0))
         QStringList parts = shell.split(QRegExp(QStringLiteral("\\s+")), Qt::SkipEmptyParts);
-#else
-        QStringList parts = shell.split(QRegExp(QStringLiteral("\\s+")), QString::SkipEmptyParts);
-#endif
         //qDebug() << parts;
         setShellProgram(parts.at(0));
         parts.removeAt(0);

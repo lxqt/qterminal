@@ -82,11 +82,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     // https://github.com/lxqt/qterminal/issues/181 - Minimum size
     // https://github.com/lxqt/qterminal/issues/263 - Decrease minimal height
     QFontMetrics metrics(Properties::Instance()->font);
-#if (QT_VERSION >= QT_VERSION_CHECK(5,11,0))
     int spaceWidth = metrics.horizontalAdvance(QChar(QChar::Space));
-#else
-    int spaceWidth = metrics.width(QChar(QChar::Space));
-#endif
     setMinimumSize(QSize(10 * spaceWidth, metrics.height()));
 
     m_bookmarksDock = new QDockWidget(tr("Bookmarks"), this);
@@ -790,11 +786,7 @@ void MainWindow::handleHistory()
     TermWidgetImpl *impl = consoleTabulator->terminalHolder()->currentTerminal()->impl();
     impl->saveHistory(&file);
     file.close();
-#if (QT_VERSION >= QT_VERSION_CHECK(5,15,0))
     QStringList args = Properties::Instance()->handleHistoryCommand.split(QLatin1Char(' '), Qt::SkipEmptyParts);
-#else
-    QStringList args = Properties::Instance()->handleHistoryCommand.split(QLatin1Char(' '), QString::SkipEmptyParts);
-#endif
     if (args.isEmpty())
         return;
 
