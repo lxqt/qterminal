@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaobchádzanie s históriou...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -586,32 +586,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Režim na pozadí:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Meno</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Stretch</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Fit</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Stred</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
@@ -621,12 +621,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Prepnúť na použitie tučného písma na vykreslenie intenzívnych farieb</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Použiť tučné písmo na zvýraznenie farby</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
