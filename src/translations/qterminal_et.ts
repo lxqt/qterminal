@@ -924,7 +924,7 @@ Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklah
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation>&amp;Spikker</translation>
+        <translation>&amp;Abiteave</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
