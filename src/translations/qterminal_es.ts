@@ -223,7 +223,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Nueva ventana</translation>
+        <translation>Ventana &amp;nueva</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="385"/>
@@ -560,7 +560,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="741"/>
         <source>Default $TERM</source>
-        <translation>$TERM por omisión</translation>
+        <translation>$TERM predeterminado</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="632"/>
@@ -570,32 +570,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Modo de fondo:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Ninguno</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Expandir</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Escalar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Encajar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Centrar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
@@ -610,12 +610,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation>Usa fuentes en negrita para colores intensos</translation>
+        <translation>Utilizar tipos de letra en negrita para colores intensos</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">Ocultar el borde de las ventanas</translation>
+        <translation>&amp;Ocultar bordes de ventanas</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
@@ -630,13 +630,13 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation>Administrar historial de comandos</translation>
+        <translation>Gestionar orden de histórico</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
         <location filename="../forms/propertiesdialog.ui" line="653"/>
         <source> px</source>
-        <translation>px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="660"/>
@@ -656,17 +656,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation>Cierra pestaña con botón de en medio</translation>
+        <translation>Cerrar pestaña con el botón central del ratón</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Forzar desactivamiento de modo de pegado enmarcado</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>El modo de pegado enmarcado es útil para pegar cadenas de más de un renglón.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -686,7 +686,7 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>Height</source>
-        <translation>Alto</translation>
+        <translation>Altura</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="919"/>
@@ -697,7 +697,7 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
     <message>
         <location filename="../forms/propertiesdialog.ui" line="926"/>
         <source>Width</source>
-        <translation>Ancho</translation>
+        <translation>Anchura</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="982"/>
@@ -815,23 +815,23 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Desplazarse a la parte superior</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Desplazarse a la parte inferior</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Imágenes (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
         <location filename="../propertiesdialog.cpp" line="294"/>
         <source>System Default</source>
-        <translation>Por defecto del sistema</translation>
+        <translation>Valor predeterminado del sistema</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="389"/>
@@ -863,7 +863,7 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
         <location filename="../tabwidget.cpp" line="78"/>
         <location filename="../tabwidget.cpp" line="232"/>
         <source>Shell No. %1</source>
-        <translation>Terminal nro. %1</translation>
+        <translation>Terminal n.º %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="200"/>
@@ -873,7 +873,7 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
     <message>
         <location filename="../tabwidget.cpp" line="201"/>
         <source>New tab name:</source>
-        <translation>Nuevo nombre de la pestaña:</translation>
+        <translation>Nombre nuevo de la pestaña:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
