@@ -626,7 +626,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation>Застосувати жирний шрифт для насичених кольорів</translation>
+        <translation>Застосувати грубий шрифт для насичених кольорів</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>

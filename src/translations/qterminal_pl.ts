@@ -63,27 +63,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="256"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Przesuń kartę w p&amp;rawo</translation>
+        <translation>Przesuń kartę w &amp;prawo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>Podziel terminal w poz&amp;iomie</translation>
+        <translation>Podziel terminal w &amp;poziomie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="278"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>Podziel terminal w pio&amp;nie</translation>
+        <translation>Podziel terminal w &amp;pionie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="283"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>Zam&amp;knij terminal</translation>
+        <translation>&amp;Zamknij podterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="234"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>Wy&amp;czyść aktywny terminal</translation>
+        <translation>&amp;Wyczyść aktywny terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
@@ -108,17 +108,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
         <source>&amp;Top Subterminal</source>
-        <translation>Górny sub&amp;terminal</translation>
+        <translation>Górny &amp;subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="289"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>Dolny su&amp;bterminal</translation>
+        <translation>&amp;Dolny subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="292"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>L&amp;ewy subterminal</translation>
+        <translation>&amp;Lewy subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="295"/>
@@ -631,7 +631,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">Ukryj ob&amp;ramowanie okna</translation>
+        <translation>&amp;Ukryj obramowanie okna</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
@@ -820,7 +820,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>obrazy (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>

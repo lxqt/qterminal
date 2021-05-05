@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation>Organisiere Verlauf...</translation>
+        <translation>Verlauf bearbeiten...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -193,7 +193,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Neue Registerkarte von &amp;Voreinstellungen</translation>
+        <translation>Neue Registerkarte aus &amp;Vorlagen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -723,7 +723,7 @@ Um einen Shortcut zu löschen/ deaktivieren, drücke bei Schritt 2 nur einen Mod
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Registerkartenleiste mit nur einer Registerkarte ausblenden</translation>
+        <translation>Registerkartenleiste bei einer Registerkarte ausblenden</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
