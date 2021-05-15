@@ -87,6 +87,7 @@ class TermWidgetHolder : public QWidget
         void lastTerminalClosed();
         void renameSession();
         void termTitleChanged(QString title, QString icon) const;
+        void termFocusChanged();
 
     private:
         QString m_wdir;

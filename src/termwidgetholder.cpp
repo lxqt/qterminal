@@ -240,7 +240,7 @@ void TermWidgetHolder::directionalNavigation(NavigationDirection dir) {
             abs(poi.y() - contenderDims.topLeft.y()),
             abs(poi.y() - contenderDims.bottomRight.y())
         );
-        if (contenderDims.topLeft.x() > poi.x()) 
+        if (contenderDims.topLeft.x() > poi.x())
         {
             if (contenderDims.topLeft.x() > lowestX)
                 continue;
@@ -345,7 +345,7 @@ TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientati
     s->insertWidget(0, term);
 
     cfg.provideCurrentDirectory(term->impl()->workingDirectory());
-    
+
     TermWidget * w = newTerm(cfg);
     s->insertWidget(1, w);
     s->setSizes(sizes);
@@ -390,6 +390,7 @@ void TermWidgetHolder::setCurrentTerminal(TermWidget* term)
         {
             emit termTitleChanged(windowTitle(), QString{});
         }
+        emit termFocusChanged();
     }
 }
 
