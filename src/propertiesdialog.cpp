@@ -215,7 +215,11 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     showTerminalSizeHintCheckBox->setChecked(Properties::Instance()->showTerminalSizeHint);
 
-    askOnExitCheckBox->setChecked(Properties::Instance()->askOnExit);
+    /* Ask before exit */
+    QStringList askOnExitList;
+    askOnExitList << tr("Always") << tr("Never") << tr("More than one tab exists");
+    askOnExit_comboBox->addItems(askOnExitList);
+    askOnExit_comboBox->setCurrentIndex(Properties::Instance()->askOnExit);
 
     savePosOnExitCheckBox->setChecked(Properties::Instance()->savePosOnExit);
     saveSizeOnExitCheckBox->setChecked(Properties::Instance()->saveSizeOnExit);
@@ -309,7 +313,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->backgroundImage = backgroundImageLineEdit->text();
     Properties::Instance()->backgroundMode = qBound(0, backgroundModecomboBox->currentIndex(), 4);
 
-    Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();
+    Properties::Instance()->askOnExit = askOnExit_comboBox->currentIndex();
 
     Properties::Instance()->savePosOnExit = savePosOnExitCheckBox->isChecked();
     Properties::Instance()->saveSizeOnExit = saveSizeOnExitCheckBox->isChecked();

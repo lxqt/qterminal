@@ -81,7 +81,7 @@ private:
     void setup_ViewMenu_Actions();
     void setup_ContextMenu_Actions();
     void setupCustomDirs();
-
+    bool shouldAskOnExit();
     void closeEvent(QCloseEvent*) override;
 
     void enableDropMode();

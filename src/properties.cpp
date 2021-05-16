@@ -129,7 +129,7 @@ void Properties::loadSettings()
     menuVisible = m_settings->value(QLatin1String("MenuVisible"), true).toBool();
     boldIntense = m_settings->value(QLatin1String("BoldIntense"), true).toBool();
     noMenubarAccel = m_settings->value(QLatin1String("NoMenubarAccel"), true).toBool();
-    askOnExit = m_settings->value(QLatin1String("AskOnExit"), true).toBool();
+    askOnExit = m_settings->value(QLatin1String("AskOnExit"), true).toInt();
     saveSizeOnExit = m_settings->value(QLatin1String("SaveSizeOnExit"), true).toBool();
     savePosOnExit = m_settings->value(QLatin1String("SavePosOnExit"), true).toBool();
     useCWD = m_settings->value(QLatin1String("UseCWD"), false).toBool();

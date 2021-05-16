@@ -31,7 +31,8 @@
        <string>Appearance</string>
       </property>
       <property name="icon">
-       <iconset theme="preferences-desktop-theme"/>
+       <iconset theme="preferences-desktop-theme">
+        <normaloff>.</normaloff>.</iconset>
       </property>
      </item>
      <item>
@@ -39,7 +40,8 @@
        <string>Behavior</string>
       </property>
       <property name="icon">
-       <iconset theme="preferences-system"/>
+       <iconset theme="preferences-system">
+        <normaloff>.</normaloff>.</iconset>
       </property>
      </item>
      <item>
@@ -47,7 +49,8 @@
        <string>Shortcuts</string>
       </property>
       <property name="icon">
-       <iconset theme="preferences-desktop-keyboard"/>
+       <iconset theme="preferences-desktop-keyboard">
+        <normaloff>.</normaloff>.</iconset>
       </property>
      </item>
      <item>
@@ -55,7 +58,8 @@
        <string>Dropdown</string>
       </property>
       <property name="icon">
-       <iconset theme="utilities-terminal"/>
+       <iconset theme="utilities-terminal">
+        <normaloff>.</normaloff>.</iconset>
       </property>
      </item>
      <item>
@@ -63,18 +67,22 @@
        <string>Bookmarks</string>
       </property>
       <property name="icon">
-       <iconset theme="bookmark-new"/>
+       <iconset theme="bookmark-new">
+        <normaloff>.</normaloff>.</iconset>
       </property>
      </item>
     </widget>
    </item>
    <item row="0" column="1">
     <widget class="QStackedWidget" name="stackedWidget">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <property name="frameShape">
       <enum>QFrame::StyledPanel</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="appearancePage">
       <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -106,8 +114,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>425</width>
-            <height>688</height>
+            <width>421</width>
+            <height>775</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
@@ -562,8 +570,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>464</width>
-            <height>633</height>
+            <width>452</width>
+            <height>712</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_5">
@@ -611,7 +619,67 @@
               <string>Behavior</string>
              </property>
              <layout class="QGridLayout" name="gridLayout_2">
-              <item row="14" column="0">
+              <item row="9" column="0" colspan="2">
+               <widget class="QCheckBox" name="savePosOnExitCheckBox">
+                <property name="text">
+                 <string>Save Position when closing</string>
+                </property>
+               </widget>
+              </item>
+              <item row="13" column="0" colspan="2">
+               <widget class="QCheckBox" name="openNewTabRightToActiveTabCheckBox">
+                <property name="toolTip">
+                 <string>If unchecked the new tab will be opened as the rightmost tab</string>
+                </property>
+                <property name="text">
+                 <string>Open new tab to the right of the active tab</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0" colspan="2">
+               <widget class="QCheckBox" name="confirmMultilinePasteCheckBox">
+                <property name="text">
+                 <string>Confirm multiline paste</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0" colspan="2">
+               <widget class="QCheckBox" name="trimPastedTrailingNewlinesCheckBox">
+                <property name="text">
+                 <string>Trim trailing newlines in pasted text</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QComboBox" name="motionAfterPasting_comboBox"/>
+              </item>
+              <item row="14" column="1">
+               <widget class="QComboBox" name="termComboBox">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+                <property name="currentIndex">
+                 <number>1</number>
+                </property>
+                <item>
+                 <property name="text">
+                  <string notr="true">xterm</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string notr="true">xterm-256color</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="15" column="0">
                <widget class="QLabel" name="label_17">
                 <property name="toolTip">
                  <string>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</string>
@@ -621,7 +689,61 @@
                 </property>
                </widget>
               </item>
+              <item row="6" column="0" colspan="2">
+               <widget class="QCheckBox" name="closeTabOnMiddleClickCheckBox">
+                <property name="text">
+                 <string>Close tab on middle-click</string>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QSpinBox" name="historyLimitedTo">
+                <property name="minimum">
+                 <number>100</number>
+                </property>
+                <property name="maximum">
+                 <number>1000000</number>
+                </property>
+                <property name="value">
+                 <number>1000</number>
+                </property>
+               </widget>
+              </item>
+              <item row="14" column="0">
+               <widget class="QLabel" name="label_14">
+                <property name="text">
+                 <string>Default $TERM</string>
+                </property>
+               </widget>
+              </item>
+              <item row="15" column="1">
+               <widget class="QLineEdit" name="handleHistoryLineEdit"/>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QRadioButton" name="historyUnlimited">
+                <property name="text">
+                 <string>Unlimited history</string>
+                </property>
+               </widget>
+              </item>
               <item row="10" column="0" colspan="2">
+               <widget class="QCheckBox" name="saveSizeOnExitCheckBox">
+                <property name="text">
+                 <string>Save Size when closing</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QRadioButton" name="historyLimited">
+                <property name="text">
+                 <string>History size (in lines)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="0" colspan="2">
                <layout class="QHBoxLayout" name="horizontalLayout_4">
                 <property name="spacing">
                  <number>5</number>
@@ -679,30 +801,11 @@
                 </item>
                </layout>
               </item>
-              <item row="13" column="1">
-               <widget class="QComboBox" name="termComboBox">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
+              <item row="12" column="0" colspan="2">
+               <widget class="QCheckBox" name="useCwdCheckBox">
+                <property name="text">
+                 <string>Open new terminals in current working directory</string>
                 </property>
-                <property name="editable">
-                 <bool>true</bool>
-                </property>
-                <property name="currentIndex">
-                 <number>1</number>
-                </property>
-                <item>
-                 <property name="text">
-                  <string notr="true">xterm</string>
-                 </property>
-                </item>
-                <item>
-                 <property name="text">
-                  <string notr="true">xterm-256color</string>
-                 </property>
-                </item>
                </widget>
               </item>
               <item row="2" column="0">
@@ -715,117 +818,25 @@
                 </property>
                </widget>
               </item>
-              <item row="2" column="1">
-               <widget class="QComboBox" name="motionAfterPasting_comboBox"/>
-              </item>
-              <item row="11" column="0" colspan="2">
-               <widget class="QCheckBox" name="useCwdCheckBox">
-                <property name="text">
-                 <string>Open new terminals in current working directory</string>
-                </property>
-               </widget>
-              </item>
-              <item row="12" column="0" colspan="2">
-               <widget class="QCheckBox" name="openNewTabRightToActiveTabCheckBox">
-                <property name="text">
-                 <string>Open new tab to the right of the active tab</string>
-                </property>
-                <property name="toolTip">
-                 <string>If unchecked the new tab will be opened as the rightmost tab</string>
-                </property>
-               </widget>
-              </item>
-              <item row="13" column="0">
-               <widget class="QLabel" name="label_14">
-                <property name="text">
-                 <string>Default $TERM</string>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="0" colspan="2">
-               <widget class="QCheckBox" name="confirmMultilinePasteCheckBox">
-                <property name="text">
-                 <string>Confirm multiline paste</string>
-                </property>
-               </widget>
-              </item>
-              <item row="9" column="0" colspan="2">
-               <widget class="QCheckBox" name="saveSizeOnExitCheckBox">
-                <property name="text">
-                 <string>Save Size when closing</string>
-                </property>
-               </widget>
-              </item>
-              <item row="6" column="0" colspan="2">
-               <widget class="QCheckBox" name="closeTabOnMiddleClickCheckBox">
-                <property name="text">
-                 <string>Close tab on middle-click</string>
-                </property>
-                <property name="checked">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="7" column="0" colspan="2">
-               <widget class="QCheckBox" name="askOnExitCheckBox">
-                <property name="text">
-                 <string>Ask for confirmation when closing</string>
-                </property>
-               </widget>
-              </item>
-              <item row="14" column="1">
-               <widget class="QLineEdit" name="handleHistoryLineEdit"/>
-              </item>
-              <item row="0" column="0">
-               <widget class="QRadioButton" name="historyLimited">
-                <property name="text">
-                 <string>History size (in lines)</string>
-                </property>
-               </widget>
-              </item>
-              <item row="5" column="0" colspan="2">
-               <widget class="QCheckBox" name="trimPastedTrailingNewlinesCheckBox">
-                <property name="text">
-                 <string>Trim trailing newlines in pasted text</string>
-                </property>
-               </widget>
-              </item>
-              <item row="8" column="0" colspan="2">
-               <widget class="QCheckBox" name="savePosOnExitCheckBox">
-                <property name="text">
-                 <string>Save Position when closing</string>
-                </property>
-               </widget>
-              </item>
-              <item row="0" column="1">
-               <widget class="QSpinBox" name="historyLimitedTo">
-                <property name="minimum">
-                 <number>100</number>
-                </property>
-                <property name="maximum">
-                 <number>1000000</number>
-                </property>
-                <property name="value">
-                 <number>1000</number>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0" colspan="2">
-               <widget class="QRadioButton" name="historyUnlimited">
-                <property name="text">
-                 <string>Unlimited history</string>
-                </property>
-               </widget>
-              </item>
               <item row="3" column="0" colspan="2">
                <widget class="QCheckBox" name="disableBracketedPasteModeCheckBox">
-                <property name="text">
-                 <string>Forcefully disable bracketed paste mode</string>
-                </property>
                 <property name="toolTip">
                  <string>Bracketed paste mode is useful for pasting multiline strings.</string>
                 </property>
+                <property name="text">
+                 <string>Forcefully disable bracketed paste mode</string>
+                </property>
                </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QLabel" name="label_18">
+                <property name="text">
+                 <string>Ask before closing</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="QComboBox" name="askOnExit_comboBox"/>
               </item>
              </layout>
             </widget>
@@ -1068,7 +1079,6 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
   <tabstop>historyLimitedTo</tabstop>
   <tabstop>historyUnlimited</tabstop>
   <tabstop>motionAfterPasting_comboBox</tabstop>
-  <tabstop>askOnExitCheckBox</tabstop>
   <tabstop>savePosOnExitCheckBox</tabstop>
   <tabstop>saveSizeOnExitCheckBox</tabstop>
   <tabstop>useCwdCheckBox</tabstop>
@@ -1093,8 +1103,8 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>224</x>
-     <y>227</y>
+     <x>233</x>
+     <y>690</y>
     </hint>
     <hint type="destinationlabel">
      <x>157</x>
@@ -1109,8 +1119,8 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>292</x>
-     <y>233</y>
+     <x>301</x>
+     <y>690</y>
     </hint>
     <hint type="destinationlabel">
      <x>286</x>
@@ -1129,8 +1139,8 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
      <y>70</y>
     </hint>
     <hint type="destinationlabel">
-     <x>147</x>
-     <y>24</y>
+     <x>401</x>
+     <y>33</y>
     </hint>
    </hints>
   </connection>
@@ -1141,12 +1151,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
    <slot>setEnabled(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>350</x>
-     <y>275</y>
+     <x>426</x>
+     <y>351</y>
     </hint>
     <hint type="destinationlabel">
-     <x>618</x>
-     <y>275</y>
+     <x>666</x>
+     <y>350</y>
     </hint>
    </hints>
   </connection>
