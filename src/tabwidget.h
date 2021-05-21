@@ -52,6 +52,7 @@ public:
 public slots:
     int addNewTab(TerminalConfig cfg);
     void removeTab(int);
+    int removeTabWithConfirm(int,int);
     void switchTab(int);
     void onAction();
     void saveCurrentChanged(int);

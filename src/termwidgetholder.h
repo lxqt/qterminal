@@ -74,6 +74,7 @@ class TermWidgetHolder : public QWidget
 
 
     public slots:
+        int count();
         void splitHorizontal(TermWidget * term);
         void splitVertical(TermWidget * term);
         void splitCollapse(TermWidget * term);

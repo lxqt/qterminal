@@ -592,6 +592,7 @@ bool MainWindow::shouldAskOnExit(){
      *  0 Always
      *  1 Never
      *  2 only if more than one active tab
+     *  3 For every single tab
      * */
     if(Properties::Instance()->askOnExit ==0){
         return true;
@@ -624,8 +625,13 @@ void MainWindow::closeEvent(QCloseEvent *ev)
             Properties::Instance()->mainWindowState = saveState();
         }
         Properties::Instance()->saveSettings();
+        int dialogResult = 0;
         for (int i = consoleTabulator->count(); i > 0; --i) {
-            consoleTabulator->removeTab(i - 1);
+            dialogResult = consoleTabulator->removeTabWithConfirm(i - 1,dialogResult);
+            if(dialogResult==QMessageBox::No){
+                ev->ignore();
+                return;
+            }
         }
         ev->accept();
         return;
@@ -659,8 +665,13 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         }
         Properties::Instance()->windowMaximized = isMaximized();
         Properties::Instance()->saveSettings();
+        int dialogResult = 0;
         for (int i = consoleTabulator->count(); i > 0; --i) {
-            consoleTabulator->removeTab(i - 1);
+            dialogResult = consoleTabulator->removeTabWithConfirm(i - 1,dialogResult);
+            if(dialogResult==QMessageBox::No){
+                ev->ignore();
+                return;
+            }
         }
         ev->accept();
     } else {

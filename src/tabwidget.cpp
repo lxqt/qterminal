@@ -21,6 +21,12 @@
 #include <QColorDialog>
 #include <QMouseEvent>
 #include <QMenu>
+#include <QMessageBox>
+#include <QToolButton>
+#include <QtWidgets/QPushButton>
+#include <QCheckBox>
+#include <QDialogButtonBox>
+#include <QLabel>
 
 #include "mainwindow.h"
 #include "termwidgetholder.h"
@@ -312,7 +318,51 @@ void TabWidget::removeFinished()
 
 void TabWidget::removeTab(int index)
 {
-    if (count() > 1) {
+    removeTabWithConfirm(index,0);
+
+}
+
+int TabWidget::removeTabWithConfirm(int index,int confirmclose)
+{
+    if (count() > 0) {
+        //multile tabs, check configuration to ask before close or not
+        //if there is only a single tab let the main window to handle the job
+
+        if(confirmclose!= QMessageBox::YesToAll &&
+                (Properties::Instance()->askOnExit==3 ||
+                (Properties::Instance()->askOnExit==4 && terminalHolder()->count() >1)
+                )){
+            QDialog * dia = new QDialog(this);
+            dia->setObjectName(QStringLiteral("exitDialog"));
+            dia->setWindowTitle(tr("Close QTerminal tab"));
+            QCheckBox * dontAskCheck = new QCheckBox(tr("Do not ask again for remaining tabs"), dia);
+
+            if(count()<2){
+                dontAskCheck->hide();
+            }
+
+
+            QDialogButtonBox * buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes |
+                                                                QDialogButtonBox::No,
+                                                                Qt::Horizontal, dia);
+            buttonBox->button(QDialogButtonBox::Yes)->setDefault(true);
+
+            connect(buttonBox, &QDialogButtonBox::accepted, dia, &QDialog::accept);
+            connect(buttonBox, &QDialogButtonBox::rejected, dia, &QDialog::reject);
+            QVBoxLayout * lay = new QVBoxLayout();
+            lay->addWidget(new QLabel(tr("Are you sure you want to close the tab:")));
+            lay->addWidget(new QLabel(tr("<center><b>\"")+tabText(index)+tr("\"</b></center>")));
+
+            lay->addWidget(dontAskCheck);
+            lay->addWidget(buttonBox);
+            dia->setLayout(lay);
+            int diagResult = dia->exec() ;
+            if (diagResult != QDialog::Accepted) {
+                return QMessageBox::No;
+            }else if(dontAskCheck->isChecked())
+                confirmclose = QMessageBox::YesToAll;
+            else confirmclose = QMessageBox::Yes;
+        }
         setUpdatesEnabled(false);
 
         QWidget * w = widget(index);
@@ -335,6 +385,7 @@ void TabWidget::removeTab(int index)
 
     renameTabsAfterRemove();
     showHideTabBar();
+    return confirmclose;
 }
 
 void TabWidget::switchTab(int index)

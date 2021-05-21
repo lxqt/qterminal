@@ -217,7 +217,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     /* Ask before exit */
     QStringList askOnExitList;
-    askOnExitList << tr("Always") << tr("Never") << tr("More than one tab exists");
+    askOnExitList << tr("0: Always")
+                  << tr("1: Never")
+                  << tr("2: More than one tab exists")
+                  << tr("3: yes and for every tab")
+                  << tr("4: yes and for splited tabs")
+               ;
     askOnExit_comboBox->addItems(askOnExitList);
     askOnExit_comboBox->setCurrentIndex(Properties::Instance()->askOnExit);
 
