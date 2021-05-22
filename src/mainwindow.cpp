@@ -587,11 +587,31 @@ void MainWindow::toggleBookmarks()
     m_bookmarksDock->toggleViewAction()->trigger();
 }
 
+bool MainWindow::shouldAskOnExit(){
+    /* *
+     *  0 Always
+     *  1 Never
+     *  2 only if more than one active tab
+     *  3 For every single tab
+     * */
+    if(Properties::Instance()->askOnExit ==0){
+        return true;
+    }
+    if(Properties::Instance()->askOnExit ==1){
+        return false;
+    }
+    if (Properties::Instance()->askOnExit ==2)
+    {
+        if(consoleTabulator->count()>1)
+            return true;
+        else return false;
+    }
+    return true;
+}
 
 void MainWindow::closeEvent(QCloseEvent *ev)
 {
-    if (!Properties::Instance()->askOnExit
-        || !consoleTabulator->count())
+    if (!shouldAskOnExit())
     {
         // #80 - do not save state and geometry in drop mode
         if (!m_dropMode) {
@@ -605,8 +625,13 @@ void MainWindow::closeEvent(QCloseEvent *ev)
             Properties::Instance()->mainWindowState = saveState();
         }
         Properties::Instance()->saveSettings();
+        int dialogResult = 0;
         for (int i = consoleTabulator->count(); i > 0; --i) {
-            consoleTabulator->removeTab(i - 1);
+            dialogResult = consoleTabulator->removeTabWithConfirm(i - 1,dialogResult);
+            if(dialogResult==QMessageBox::No){
+                ev->ignore();
+                return;
+            }
         }
         ev->accept();
         return;
@@ -634,11 +659,19 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         Properties::Instance()->mainWindowPosition = pos();
         Properties::Instance()->mainWindowSize = size();
         Properties::Instance()->mainWindowState = saveState();
-        Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
+        if (dontAskCheck->isChecked()){
+            //0 always,1 never , 2 means only if more than one tab exists
+            Properties::Instance()->askOnExit = 1;
+        }
         Properties::Instance()->windowMaximized = isMaximized();
         Properties::Instance()->saveSettings();
+        int dialogResult = 0;
         for (int i = consoleTabulator->count(); i > 0; --i) {
-            consoleTabulator->removeTab(i - 1);
+            dialogResult = consoleTabulator->removeTabWithConfirm(i - 1,dialogResult);
+            if(dialogResult==QMessageBox::No){
+                ev->ignore();
+                return;
+            }
         }
         ev->accept();
     } else {

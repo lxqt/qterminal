@@ -766,12 +766,44 @@
                 </property>
                </widget>
               </item>
-              <item row="7" column="0" colspan="2">
-               <widget class="QCheckBox" name="askOnExitCheckBox">
-                <property name="text">
-                 <string>Ask for confirmation when closing</string>
-                </property>
-               </widget>
+              <item row="7" column="0">
+              <widget class="QLabel" name="label_askBeforeExit">
+               <property name="text">
+                <string>Ask before exit:</string>
+               </property>
+               <property name="buddy">
+                <cstring>askOnExit_comboBox</cstring>
+               </property>
+              </widget>
+              </item>
+              <item row="7" column="1">
+                <widget class="QComboBox" name="askOnExit_comboBox">
+                <item>
+                 <property name="text">
+                  <string>Always before closing the window</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Never ask</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>If window has 2 or more tabs</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Before closing window or tab</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Before closing window or splited tab(s)</string>
+                 </property>
+                </item>
+                </widget>
               </item>
               <item row="14" column="1">
                <widget class="QLineEdit" name="handleHistoryLineEdit"/>
@@ -1068,7 +1100,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
   <tabstop>historyLimitedTo</tabstop>
   <tabstop>historyUnlimited</tabstop>
   <tabstop>motionAfterPasting_comboBox</tabstop>
-  <tabstop>askOnExitCheckBox</tabstop>
+  <tabstop>askOnExit_comboBox</tabstop>
   <tabstop>savePosOnExitCheckBox</tabstop>
   <tabstop>saveSizeOnExitCheckBox</tabstop>
   <tabstop>useCwdCheckBox</tabstop>

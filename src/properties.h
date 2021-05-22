@@ -89,7 +89,7 @@ class Properties
         bool noMenubarAccel;
         bool menuVisible;
 
-        bool askOnExit;
+        unsigned askOnExit;
 
         bool saveSizeOnExit;
         bool savePosOnExit;
