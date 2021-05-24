@@ -8,6 +8,7 @@
     <method name="newWindow">
       <annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="QHash&lt;QString,QVariant&gt;"/>
       <arg name="termArgs" type="a{sv}" direction="in"/>
+      <arg name="newWindow" type="o" direction="out">
     </method>
     <method name="getActiveWindow">
       <arg name="window" type="o" direction="out"/>
