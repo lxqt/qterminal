@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ko_KR">
+<TS version="2.1" language="fa">
 <context>
     <name>BookmarksWidget</name>
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation>필터:</translation>
+        <translation>فیلتر:</translation>
     </message>
 </context>
 <context>
@@ -15,22 +15,22 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>터미널 글꼴 선택</translation>
+        <translation>انتخاب فونت ترمینال</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation>글꼴:</translation>
+        <translation>فونت:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
         <source>Size:</source>
-        <translation>크기:</translation>
+        <translation>اندازه:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="59"/>
         <source>Preview</source>
-        <translation>미리보기</translation>
+        <translation>پیش نمایش</translation>
     </message>
 </context>
 <context>
@@ -38,299 +38,299 @@
     <message>
         <location filename="../mainwindow.cpp" line="92"/>
         <source>Bookmarks</source>
-        <translation>책갈피</translation>
+        <translation>نشانک ها</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>&quot;%1&quot; 를 눌러 터미널 표시.</translation>
+        <translation>برای مشاهده ترمینال کلید %1 را فشار دهید.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="241"/>
         <source>&amp;Next Tab</source>
-        <translation>다음 탭(&amp;N)</translation>
+        <translation>&amp;زبانه بعدی</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="244"/>
         <source>&amp;Previous Tab</source>
-        <translation>이전 탭(&amp;P)</translation>
+        <translation>زبانه &amp;قبلی</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>Move Tab &amp;Left</source>
-        <translation>탭을 왼쪽으로 이동(&amp;L)</translation>
+        <translation>انتقال زبانه به &amp;چپ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="256"/>
         <source>Move Tab &amp;Right</source>
-        <translation>탭을 오른쪽으로 이동(&amp;R)</translation>
+        <translation>انتقال زبانه به &amp;راست</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>터미널 수평 분할(&amp;H)</translation>
+        <translation>تقسیم ترمینال به صورت &amp;افقی</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="278"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>터미널 수직 분할(&amp;V)</translation>
+        <translation>نقسیم ترمینال به صورت &amp;عمودی</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="283"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>분할된 터미널 닫기(&amp;C)</translation>
+        <translation>&amp;بستن زیر ترمینال</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="234"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>활성화 된 터미널 화면 비우기(&amp;C)</translation>
+        <translation>&amp;پاک کردن ترمینال فعال</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>스크롤백에서 이전 탭(&amp;P)</translation>
+        <translation>زبانه ی &amp;قبلی در تاریخچه</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="250"/>
         <source>&amp;Next Tab in History</source>
-        <translation>스크롤백에서 다음 탭(&amp;N)</translation>
+        <translation>زبانه ی &amp;بعدی در تاریخچه</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="261"/>
         <source>Tab</source>
-        <translation>탭</translation>
+        <translation>زبانه</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Go to</source>
-        <translation>이동</translation>
+        <translation>برو به</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
         <source>&amp;Top Subterminal</source>
-        <translation>상단 보조터미널(&amp;T)</translation>
+        <translation>زیرترمینال &amp;بالا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="289"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>하단 보조터미널(&amp;B)</translation>
+        <translation>زیرترمینال &amp;پایین</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="292"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>왼쪽 보조터미널(&amp;E)</translation>
+        <translation>زیرترمینال &amp;چپ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="295"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>오른쪽 보조터미널(&amp;I)</translation>
+        <translation>زیر ترمینال &amp;راست</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>Copy &amp;Selection</source>
-        <translation>선택영역 복사(&amp;S)</translation>
+        <translation>کپی &amp;انتخاب شده</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Paste Clip&amp;board</source>
-        <translation>클립보드 붙여넣기(&amp;B)</translation>
+        <translation>چسباندن از &amp;حافظه</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="308"/>
         <source>Paste S&amp;election</source>
-        <translation>선택영역 붙여넣기(&amp;E)</translation>
+        <translation>&amp;چسباندن انتخاب شده</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="311"/>
         <source>Zoom &amp;in</source>
-        <translation>글꼴 크기 확대(&amp;I)</translation>
+        <translation>&amp;یزرگنمایی</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="314"/>
         <source>Zoom &amp;out</source>
-        <translation>글꼴 크기 축소(&amp;O)</translation>
+        <translation>&amp;کوچکنمایی</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="317"/>
         <source>Zoom rese&amp;t</source>
-        <translation>기본 글꼴 크기(&amp;T)</translation>
+        <translation>&amp;بازنشانی بزرگنمایی</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
         <source>&amp;Find...</source>
-        <translation>검색(&amp;F)...</translation>
+        <translation>&amp;جستجو...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation>기록 처리...</translation>
+        <translation>مدیریت تاریخچه...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
         <source>&amp;Save Session</source>
-        <translation>세션 저장하기(&amp;S)</translation>
+        <translation>&amp;ذخیره جلسه کاری</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="339"/>
         <source>&amp;Load Session</source>
-        <translation>세션 불러오기(&amp;L)</translation>
+        <translation>&amp;فراخوانی جلسه کاری</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="346"/>
         <source>&amp;Toggle Menu</source>
-        <translation>메뉴 토글(&amp;T)</translation>
+        <translation>&amp;تغییر وضعیت نمایش منو</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="351"/>
         <source>Rename session</source>
-        <translation>세션 이름바꾸기</translation>
+        <translation>تغییر نام جلسه کاری</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="360"/>
         <source>&amp;New Tab</source>
-        <translation>새 탭(&amp;N)</translation>
+        <translation>&amp;زبانه جدید</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>미리 설정된 새 탭(&amp;P)</translation>
+        <translation>زبانه جدید از &amp;چیدمان</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
         <source>1 &amp;Terminal</source>
-        <translation>1 &amp;터미널</translation>
+        <translation>۱ &amp;ترمینال</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>2 &amp;수평 터미널</translation>
+        <translation>۲ ترمینال &amp;افقی</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="369"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation>2 &amp;수직 터미널</translation>
+        <translation>۲ ترمینال &amp;عمودی</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="371"/>
         <source>4 Terminal&amp;s</source>
-        <translation>4 터미널&amp;</translation>
+        <translation>&amp;۴ ترمینال</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="377"/>
         <source>&amp;Close Tab</source>
-        <translation>탭 닫기(&amp;C)</translation>
+        <translation>&amp;بستن زبانه</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="380"/>
         <source>&amp;New Window</source>
-        <translation>새 창(&amp;N)</translation>
+        <translation>&amp;پنجره جدید</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="385"/>
         <source>&amp;Preferences...</source>
-        <translation>설정(&amp;P)...</translation>
+        <translation>&amp;تنظیمات...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="389"/>
         <source>&amp;Quit</source>
-        <translation>종료(&amp;Q)</translation>
+        <translation>&amp;خروج</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>윈도우 경계선 숨김(&amp;H)</translation>
+        <translation>&amp;مخفی کردن قاب پنجره</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>탭 바 표시(&amp;S)</translation>
+        <translation>&amp;نمایش نوار زبانه ها</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="421"/>
         <source>Fullscreen</source>
-        <translation>전체화면</translation>
+        <translation>تمام صفحه</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="427"/>
         <source>Toggle Bookmarks</source>
-        <translation>책갈피 토글</translation>
+        <translation>تغییر وضعیت نمایش نشانک ها</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>&amp;Bottom</source>
-        <translation>하단(&amp;B)</translation>
+        <translation>&amp;پایین</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <source>&amp;Top</source>
-        <translation>상단(&amp;T)</translation>
+        <translation>&amp;بالا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="437"/>
         <location filename="../mainwindow.cpp" line="473"/>
         <source>&amp;Right</source>
-        <translation>오른쪽(&amp;R)</translation>
+        <translation>&amp;راست</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="438"/>
         <location filename="../mainwindow.cpp" line="474"/>
         <source>&amp;Left</source>
-        <translation>왼쪽(&amp;L)</translation>
+        <translation>&amp;چپ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="456"/>
         <source>&amp;Tabs Layout</source>
-        <translation>탭 레이아웃(&amp;T)</translation>
+        <translation>&amp;جایگاه زبانه ها</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="472"/>
         <source>&amp;None</source>
-        <translation>아니오(&amp;N)</translation>
+        <translation>&amp;هیچکدام</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="490"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>스크롤바 레이아웃(&amp;C)</translation>
+        <translation>&amp;نمایش نوارپیمایش</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;BlockCursor</source>
-        <translation>블럭(&amp;B)</translation>
+        <translation>مکان نما &amp;مکعب</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>밑줄(&amp;U)</translation>
+        <translation>مکان نما &amp;زیرخط</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="505"/>
         <source>&amp;IBeamCursor</source>
-        <translation>I-빔(&amp;I)</translation>
+        <translation>مکان نما &amp;خط عمودی</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>커서 모양(&amp;K)</translation>
+        <translation>&amp;شکل مکان نما صفحه کلید</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="622"/>
         <source>Exit QTerminal</source>
-        <translation>QTerminal 종료</translation>
+        <translation>خروج از کیو ترمینال</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="624"/>
         <source>Do not ask again</source>
-        <translation>다시 묻지 않음</translation>
+        <translation>دوباره نپرس</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="632"/>
         <source>Are you sure you want to exit?</source>
-        <translation>정말로 종료 할까요?</translation>
+        <translation>مطمئن هسنید می خواهید خارج شوید؟</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>가벼운 다중 플랫폼 터미널 에뮬레이터</translation>
+        <translation>یک شبیه ساز ترمینال سبک برای پلتفرم های مختلف</translation>
     </message>
 </context>
 <context>
@@ -338,88 +338,88 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation>터미널 설정</translation>
+        <translation>تنظیمات ترمینال</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="31"/>
         <source>Appearance</source>
-        <translation>모양</translation>
+        <translation>نمایش</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="39"/>
         <location filename="../forms/propertiesdialog.ui" line="611"/>
         <source>Behavior</source>
-        <translation>동작</translation>
+        <translation>عملکرد</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="47"/>
         <source>Shortcuts</source>
-        <translation>단축키</translation>
+        <translation>میانبرها</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="55"/>
         <source>Dropdown</source>
-        <translation>메뉴내리기</translation>
+        <translation>کشویی</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="63"/>
         <source>Bookmarks</source>
-        <translation>책갈피</translation>
+        <translation>نشانک ها</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>탭이 하나일 때 탭 바 숨김</translation>
+        <translation>مخفی کردن نوار زبانه ها وقتی که فقط یک زبانه وجود دارد</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="275"/>
         <source>Color scheme</source>
-        <translation>색상 표</translation>
+        <translation>رنگبندی</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="371"/>
         <source>Scrollbar position</source>
-        <translation>스크롤바 위치</translation>
+        <translation>موقعیت نوار لغزان</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="204"/>
         <source>Start with preset:</source>
-        <translation>사전 설정으로 시작:</translation>
+        <translation>شروع به کار با طرح پیشفرض:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="404"/>
         <source>Show a border around the current terminal</source>
-        <translation>현재 터미널 경계선 표시</translation>
+        <translation>یک قاب دور ترمینال فعال نمایش بده</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="381"/>
         <source>Terminal transparency</source>
-        <translation>터미널 투명도</translation>
+        <translation>شفافیت ترمینال</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="394"/>
         <source>Application transparency</source>
-        <translation>어플리케이션 투명도</translation>
+        <translation>شفافیت برنامه</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="215"/>
         <source>None (single terminal)</source>
-        <translation>사용 안 함 (단일 터미널)</translation>
+        <translation>هیچکدام (تک ترمینال)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>2 terminals horizontally</source>
-        <translation>터미널을 수평으로 2개로 분할</translation>
+        <translation>۲ ترمینال افقی</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>2 terminals vertically</source>
-        <translation>터미널을 수직으로 2개로 분할</translation>
+        <translation>۲ ترمینال عمودی</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="230"/>
         <source>4 terminals</source>
-        <translation>4 터미널</translation>
+        <translation>۴ ترمینال</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="117"/>
@@ -430,260 +430,259 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="148"/>
         <source>Font</source>
-        <translation>글꼴</translation>
+        <translation>فونت</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
         <source>&amp;Change...</source>
-        <translation>설정변경(&amp;C)...</translation>
+        <translation>&amp;تغییر...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="454"/>
         <source>Tabs position</source>
-        <translation>탭 위치</translation>
+        <translation>موقعیت زبانه ها</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Widget style</source>
-        <translation>위젯 모양</translation>
+        <translation>فرم پنجره برنامه</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
         <source>Show the menu bar</source>
-        <translation>메뉴 표시</translation>
+        <translation>نمایش نوار منو</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="335"/>
         <source>Cursor shape</source>
-        <translation>커서 모양</translation>
+        <translation>شکل مکان نما</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="464"/>
         <source>Change window title based on current terminal</source>
-        <translation>현재 터미널의 제목 변경</translation>
+        <translation>بر اساس ترمینال جاری عنوان پنجره را تغییر بده</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="481"/>
         <source>Change window icon based on current terminal</source>
-        <translation>현재 터미널의 아이콘 변경</translation>
+        <translation>بر اساس ترمینال فعال آیکون پنجره اصلی را تغییر بده</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Enable bi-directional text support</source>
-        <translation>문장의 양방향 지원 활성화</translation>
+        <translation>فعال سازی پشتیبانی از متن دوجهته</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
         <source>Background image:</source>
-        <translation>배경 그림:</translation>
+        <translation>تصویر پس زمینه:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="290"/>
         <source>Select</source>
-        <translation>선택</translation>
+        <translation>انتخاب</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="488"/>
         <source>Show terminal size on resize</source>
-        <translation>변경된 터미널 크기 표시</translation>
+        <translation>ابعاد ترمینال را در هنگام تغییر اندازه نمایش بده</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="471"/>
         <source>Fixed tab width:</source>
-        <translation>탭 고정 폭:</translation>
+        <translation>عرض زبانه ثابت:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="411"/>
         <location filename="../forms/propertiesdialog.ui" line="444"/>
         <source>px</source>
-        <translation>화소</translation>
+        <translation>پیکسل</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="361"/>
         <source>Show close button on each tab</source>
-        <translation>탭에 종료 버튼 표시</translation>
+        <translation>نمایش دکمه بستن برای هر زبانه</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Terminal margin</source>
-        <translation>터미널 계선</translation>
+        <translation>اندازه لبه ترمینال</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation>글꼴에 포함 된 상자 그리기 문자 사용</translation>
+        <translation>استفاده از جعبه های طراحی داخل فونت</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>가속기는 Alt에 의해 활성화되며 터미널을 방해 할 수 있습니다.</translation>
+        <translation>شتاب دهنده ها توسط Alt فعال می شوند و می توانند در ترمینال تداخل ایجاد کنند.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
-        <translation>메뉴 바 액셀러레이터 없음</translation>
+        <translation>شتاب دهنده های نوار منو استفاده نشوند</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="586"/>
         <source>Emulation</source>
-        <translation>에뮬레이션</translation>
+        <translation>شبیه سازی</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="711"/>
         <source>Action after paste</source>
-        <translation>붙여넣기 이후 동작</translation>
+        <translation>عملکرد بعد از چسباندن</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="748"/>
         <source>Confirm multiline paste</source>
-        <translation>여러 줄 붙여넣기 승인</translation>
+        <translation>تایید قبل از چسباندن چند خطی</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="789"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>붙여넣은 문장의 마지막 공백 잘라내기</translation>
+        <translation>در زمان چسباندن کرکتر خط جدید را حذف کن</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="724"/>
         <source>Open new terminals in current working directory</source>
-        <translation>현재 작업 위치로 터미널 열기</translation>
+        <translation>باز کردن ترمینال جدید در پوشه جاری</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="755"/>
         <source>Save Size when closing</source>
-        <translation>종료시 창 크기 저장</translation>
+        <translation>ذخیره اندازه در هنگام خروج</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="796"/>
         <source>Save Position when closing</source>
-        <translation>종료시 현재 위치 저장</translation>
+        <translation>ذخیره موقعیت در هنگام خروج</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="772"/>
         <source>Ask for confirmation when closing</source>
-        <translation>종료시 묻기</translation>
+        <translation>تایید گرفتن در زمان خروج</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="816"/>
         <source>Unlimited history</source>
-        <translation>무제한 스크롤백</translation>
+        <translation>تاریخچه بدون محدودیت</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
         <source>History size (in lines)</source>
-        <translation>스크롤백 크기</translation>
+        <translation>اندازه تاریخچه (بر اساس تعداد خط)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="741"/>
         <source>Default $TERM</source>
-        <translation>기본 $TERM</translation>
+        <translation>$TERM پیشفرض</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="632"/>
         <source>Start with this size:</source>
-        <translation>이 크기로 시작하십시오 :</translation>
+        <translation>شروع به کار با این اندازه:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation>배경 모드:</translation>
+        <translation>مدل پس زمینه:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation>없음</translation>
+        <translation>هیچکدام</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation>늘이기</translation>
+        <translation>کشیده شده</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation>확대/축소</translation>
+        <translation>بزرگنمایی</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation>맞추기</translation>
+        <translation>به اندازه</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation>중앙</translation>
+        <translation>وسط</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation>세로선을 QTerminal에서 내부적으로 그릴지 또는 기본 글꼴 렌더링 라이브러리에 남겨둘지 여부를 지정합니다.</translation>
+        <translation>نعیین کردن اینکه از جعبه طراحی باید توسط کیو ترمینال زسم شوند یا به عهده فونت اصلی گذاشته شود.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation>강조색을 렌더링하기 위해 굵은 글꼴 사용 전환</translation>
+        <translation>انتخاب وضعیت استفاده ازفونت پررنگ برای نمایش رنگ های تند</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation>강조색을 위해 굵은 글꼴 사용</translation>
+        <translation>استفاده از فونت پررنگ برای رنگ های تند</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>창 테두리 숨김(&amp;H)</translation>
+        <translation>&amp;ممخفی کردن قاب ونجره</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;에뮬레이트할 동작. 운영 체제와 반드시 일치해야 하는 것은 아닙니다.&lt;/p&gt;&lt;p&gt;확실하지 않은 경우, &lt;span style=&quot; font-weight:600;&quot;&gt;기본&lt;/span&gt; 에뮬레이션을 사용하십시오.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;انتخاب عملکرد برای شبیه سازی. توجه داشته باشید که این قابلیت لزوما توسط سیستم عامل شما پشتیبانی نمی شود.&lt;/p&gt;&lt;p&gt;اگر شما مطمئن نیستید از شبیه ساز &lt;span style=&quot; font-weight:600;&quot;&gt;پیشفرض&lt;/span&gt; .استفاده کنید&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>이 명령은 스크롤백 기록을 포함하는 임시 파일의 파일 이름을 포함하는 인수를 사용하여 실행됩니다</translation>
+        <translation>این دستور با پارامتر حاوی نام یک فایل موقت که حاوی تاریخچه می باشد اجرا می شود</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation>기록 명령 처리</translation>
+        <translation>مدیریت تاریخچه دستورات</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
         <location filename="../forms/propertiesdialog.ui" line="653"/>
         <source> px</source>
-        <translation> 픽셀</translation>
+        <translation> پیکسل</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="660"/>
         <source>Get current size</source>
-        <translation>현재 크기 가져 오기
-확</translation>
+        <translation>اندازه فعلی را بگیر</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation>활성 탭의 오른쪽에 새 탭 열기</translation>
+        <translation>زبانه جدید را در سمت راست ونجره فغلی باز کن</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation>선택하지 않은 경우 새 탭이 가장 적합한 탭으로 열립니다</translation>
+        <translation>اگر انتخاب نشود، زبانه جدید در منتها الیه سمت راست باز می شود</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation>마우스 가운데 버튼 클릭시 탭 닫기</translation>
+        <translation>با کلیک وسط زبانه را ببند</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation>괄호 붙여넣기 모드 강제 비활성화</translation>
+        <translation>حالت چسباندن براکت را به زور غیرفعال کنید</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation>대괄호 붙여넣기 모드는 여러 줄 문자열을 붙여 넣을 때 유용합니다.</translation>
+        <translation>حالت چسباندن براکت برای چسباندن رشته های چند خطی مفید است.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -693,37 +692,37 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation>단축키를 편집하려면:
-1. 키를 두 번 클릭합니다
-2. 원하는 조합을 눌렀다 놓습니다
-3. 단축키를 클릭하거나 Enter 키를 누릅니다
+        <translation>برای ویرایش یک میانبر:
+۱. بر روی کلید آن دوبار کلیک کنید
+۲. ترکیب مورد نظر را فشار داده و رها کنید
+۲. بر روی یک میانبر کلیک کنید یا Enter را فشار دهید
 
-단축키를 제거/비활성화하려면 2 지점에서 수정자만 누릅니다(예: Shift)</translation>
+برای حذف / غیرفعال کردن یک میانبر ، در نقطه 2 فقط یک اصلاح کننده (مانند Shift) را فشار دهید</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="874"/>
         <source>Shortcut</source>
-        <translation>단축키</translation>
+        <translation>میانبر</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="879"/>
         <source>Key</source>
-        <translation>키</translation>
+        <translation>کلید</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>Show on start</source>
-        <translation>시작할 때 표시</translation>
+        <translation>نمایش در هنگام شروع به کار</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>Size</source>
-        <translation>크기</translation>
+        <translation>اندازه</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>Height</source>
-        <translation>눂이</translation>
+        <translation>ارتفاع</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="919"/>
@@ -734,115 +733,115 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="926"/>
         <source>Width</source>
-        <translation>폭</translation>
+        <translation>عرض</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="950"/>
         <source>Shortcut:</source>
-        <translation>단축키:</translation>
+        <translation>میانبر:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="982"/>
         <source>Edit bookmark file contents</source>
-        <translation>책갈피 파일 내용 편집</translation>
+        <translation>ویرایش محتویات فایل میانبر</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1004"/>
         <source>Enable bookmarks</source>
-        <translation>책갈피 활성화</translation>
+        <translation>نمایش نشانک ها</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1013"/>
         <source>Bookmark file</source>
-        <translation>책갈피 파일</translation>
+        <translation>فایل نشانک ها</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1026"/>
         <source>Find...</source>
-        <translation>검색...</translation>
+        <translation>جستجو...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1035"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>책갈피 파일 위치를 지정하여 OwnClound 나 Dropbox 와 같은 책갈피 공유 도구가 쉽게 접근할 수 있습니다.</translation>
+        <translation>می توانید مکان فایل بوک مارک های خود را مشخص کنید. این امکان به اشتراک گذاری نشانک را به راحتی با ابزارهایی ماننددراپ باکس را فراهم می کند.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="155"/>
         <source>No scrollbar</source>
-        <translation>스크롤바 없음</translation>
+        <translation>بدون نوار های لغزان</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="155"/>
         <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Left</source>
-        <translation>왼쪽</translation>
+        <translation>چپ</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="155"/>
         <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Right</source>
-        <translation>오른쪽</translation>
+        <translation>راست</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Top</source>
-        <translation>상단</translation>
+        <translation>بالا</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Bottom</source>
-        <translation>하단</translation>
+        <translation>پایین</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="174"/>
         <source>BlockCursor</source>
-        <translation>블록</translation>
+        <translation>مکان نما مکعبی</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="174"/>
         <source>UnderlineCursor</source>
-        <translation>밑줄</translation>
+        <translation>مکان نمای زیرخط</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="174"/>
         <source>IBeamCursor</source>
-        <translation>I-빔</translation>
+        <translation>مکان نما خط عمودی</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>No move</source>
-        <translation>이동하지 않음</translation>
+        <translation>بی حرکت</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to top</source>
-        <translation>위로 스크롤</translation>
+        <translation>لغزش به بالا</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to bottom</source>
-        <translation>아래로 스크롤</translation>
+        <translation>لغزش به پایین</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation>이미지 (*.bmp *.jpg *.png *.svg *.xpm)</translation>
+        <translation>تصاویر (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
         <location filename="../propertiesdialog.cpp" line="294"/>
         <source>System Default</source>
-        <translation>시스템 기본값</translation>
+        <translation>پیشفرض های سیستم</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="389"/>
         <source>Choose a background image</source>
-        <translation>배경 그림 선택</translation>
+        <translation>انتخاب یک تضویر پس زمینه</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="466"/>
         <source>Open or create bookmarks file</source>
-        <translation>책갈피 파일을 열거나 생성</translation>
+        <translation>باز کردن یا ایجاد فایل نشانک ها</translation>
     </message>
 </context>
 <context>
@@ -850,12 +849,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../bookmarkswidget.cpp" line="108"/>
         <source>Local Bookmarks</source>
-        <translation>로컬 책갈피</translation>
+        <translation>نشانک های محلی</translation>
     </message>
     <message>
         <location filename="../bookmarkswidget.cpp" line="166"/>
         <source>Synchronized Bookmarks</source>
-        <translation>동기화된 책갈피</translation>
+        <translation>نشانک های همگام سازی شده</translation>
     </message>
 </context>
 <context>
@@ -864,32 +863,32 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <location filename="../tabwidget.cpp" line="78"/>
         <location filename="../tabwidget.cpp" line="232"/>
         <source>Shell No. %1</source>
-        <translation>쉘 번호. %1</translation>
+        <translation>پوسته ی شماره %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="200"/>
         <source>Tab name</source>
-        <translation>탭 이름</translation>
+        <translation>عنوان زبانه</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="201"/>
         <source>New tab name:</source>
-        <translation>새 탭 이름:</translation>
+        <translation>عنوان جدید برای زیانه:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
         <source>Select new tab title color</source>
-        <translation>새 탭 제목 색상 선택</translation>
+        <translation>انتخاب رنگ جدید برای عنوان زیانه</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="242"/>
         <source>Close session</source>
-        <translation>세션 종료</translation>
+        <translation>بستن جلسه کاری</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="244"/>
         <source>Change title color</source>
-        <translation>제목 색상 변경</translation>
+        <translation>تغییر رنگ عنوان</translation>
     </message>
 </context>
 <context>
@@ -897,12 +896,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
-        <translation>세션 불러오기</translation>
+        <translation>فراخوانی جلسه کاری</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="80"/>
         <source>List of saved sessions:</source>
-        <translation>저장된 세션 목록:</translation>
+        <translation>لیست جلسه کاری های ذخیره شده:</translation>
     </message>
 </context>
 <context>
@@ -910,42 +909,42 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
-        <translation>주 윈도우</translation>
+        <translation>پنجره اصلی</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;File</source>
-        <translation>파일(&amp;F)</translation>
+        <translation>&amp;فایل</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
-        <translation>동작(&amp;A)</translation>
+        <translation>&amp;عملیات</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation>도움말(&amp;H)</translation>
+        <translation>&amp;دستیار</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation>보기(&amp;V)</translation>
+        <translation>&amp;نمایش</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation>편집(&amp;E)</translation>
+        <translation>&amp;ویرایش</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation>프로그램 정보(&amp;A)...</translation>
+        <translation>&amp;درباره ...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation>Qt 정보(&amp;Q)...</translation>
+        <translation>درباره &amp;Qt...</translation>
     </message>
 </context>
 </TS>
