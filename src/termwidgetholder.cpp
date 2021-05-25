@@ -385,12 +385,12 @@ void TermWidgetHolder::setCurrentTerminal(TermWidget* term)
     {
         if (m_currentTerm->impl()->isTitleChanged())
         {
-            emit termTitleChanged(m_currentTerm->impl()->title(), m_currentTerm->impl()->icon());
+            Q_EMIT termTitleChanged(m_currentTerm->impl()->title(), m_currentTerm->impl()->icon());
         } else
         {
-            emit termTitleChanged(windowTitle(), QString{});
+            Q_EMIT termTitleChanged(windowTitle(), QString{});
         }
-        emit termFocusChanged();
+        Q_EMIT termFocusChanged();
     }
 }
 

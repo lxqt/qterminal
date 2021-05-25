@@ -279,11 +279,17 @@ bool TabWidget::eventFilter(QObject *obj, QEvent *event)
         if (index == -1)
         {
             if (Properties::Instance()->terminalsPreset == 3)
+            {
                 preset4Terminals();
+            }
             else if (Properties::Instance()->terminalsPreset == 2)
+            {
                 preset2Vertical();
+            }
             else if (Properties::Instance()->terminalsPreset == 1)
+            {
                 preset2Horizontal();
+            }
             else
             {
                 TerminalConfig defaultConfig;
