@@ -564,6 +564,8 @@ void TabWidget::preset4Terminals()
     TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
 
     // see preset2Horizontal() for an explanation
+    // Waiting for the first focus change is enough because, after it happens,
+    // the window is active and the other events happen serially.
     QObject::disconnect(mFocusConnection);
     mFocusConnection = connect(term, &TermWidgetHolder::termFocusChanged, this, [this, term] {
         QObject::disconnect(mFocusConnection);
