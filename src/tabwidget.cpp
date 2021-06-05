@@ -64,7 +64,9 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTa
 }
 
 TabWidget::~TabWidget()
-{}
+{
+    QObject::disconnect(mFocusConnection);
+}
 
 TermWidgetHolder * TabWidget::terminalHolder()
 {
@@ -276,8 +278,23 @@ bool TabWidget::eventFilter(QObject *obj, QEvent *event)
         int index = tabBar()->tabAt(e->pos());
         if (index == -1)
         {
-            TerminalConfig defaultConfig;
-            addNewTab(defaultConfig);
+            if (Properties::Instance()->terminalsPreset == 3)
+            {
+                preset4Terminals();
+            }
+            else if (Properties::Instance()->terminalsPreset == 2)
+            {
+                preset2Vertical();
+            }
+            else if (Properties::Instance()->terminalsPreset == 1)
+            {
+                preset2Horizontal();
+            }
+            else
+            {
+                TerminalConfig defaultConfig;
+                addNewTab(defaultConfig);
+            }
         }
         else
             renameSession(index);
@@ -512,9 +529,16 @@ void TabWidget::preset2Horizontal()
     TerminalConfig defaultConfig;
     int ix = TabWidget::addNewTab(defaultConfig);
     TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
+
+    // NOTE: When splitting happens, the focus changes. Therefore, we should switch to
+    // the 1st terminal only when the window is activated and the focus has really changed.
+    QObject::disconnect(mFocusConnection);
+    mFocusConnection = connect(term, &TermWidgetHolder::termFocusChanged, this, [this, term] {
+        QObject::disconnect(mFocusConnection);
+        term->directionalNavigation(NavigationDirection::Top);
+    });
+
     term->splitHorizontal(term->currentTerminal());
-    // switch to the 1st terminal
-    term->directionalNavigation(NavigationDirection::Left);
 }
 
 void TabWidget::preset2Vertical()
@@ -522,9 +546,15 @@ void TabWidget::preset2Vertical()
     TerminalConfig defaultConfig;
     int ix = TabWidget::addNewTab(defaultConfig);
     TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
+
+    // see preset2Horizontal() for an explanation
+    QObject::disconnect(mFocusConnection);
+    mFocusConnection = connect(term, &TermWidgetHolder::termFocusChanged, this, [this, term] {
+        QObject::disconnect(mFocusConnection);
+        term->directionalNavigation(NavigationDirection::Left);
+    });
+
     term->splitVertical(term->currentTerminal());
-    // switch to the 1st terminal
-    term->directionalNavigation(NavigationDirection::Left);
 }
 
 void TabWidget::preset4Terminals()
@@ -532,13 +562,21 @@ void TabWidget::preset4Terminals()
     TerminalConfig defaultConfig;
     int ix = TabWidget::addNewTab(defaultConfig);
     TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
-    term->splitVertical(term->currentTerminal());
-    term->splitHorizontal(term->currentTerminal());
-    term->directionalNavigation(NavigationDirection::Left);
 
-    term->splitHorizontal(term->currentTerminal());
-    // switch to the 1st terminal
-    term->directionalNavigation(NavigationDirection::Top);
+    // see preset2Horizontal() for an explanation
+    // Waiting for the first focus change is enough because, after it happens,
+    // the window is active and the other events happen serially.
+    QObject::disconnect(mFocusConnection);
+    mFocusConnection = connect(term, &TermWidgetHolder::termFocusChanged, this, [this, term] {
+        QObject::disconnect(mFocusConnection);
+        term->splitHorizontal(term->currentTerminal());
+        term->directionalNavigation(NavigationDirection::Left);
+        term->splitHorizontal(term->currentTerminal());
+        // switch to the 1st terminal (the focus is already changed)
+        term->directionalNavigation(NavigationDirection::Top);
+    });
+
+    term->splitVertical(term->currentTerminal());
 }
 
 void TabWidget::showHideTabBar()
