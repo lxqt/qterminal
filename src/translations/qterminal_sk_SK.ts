@@ -596,7 +596,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation>Stretch</translation>
+        <translation>Roztiahnuť</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
@@ -606,7 +606,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation>Fit</translation>
+        <translation>Prispôsobiť</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
@@ -636,12 +636,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;QTerminal napodobní vybraný systém. Vaša voľba nemusí byť totožná s vašim operačným systémom.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Tento príkaz bude spustený a ako argument sa použije názov dočasného súboru, ktorý obsahuje históriu posúvania</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
