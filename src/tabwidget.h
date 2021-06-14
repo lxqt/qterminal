@@ -127,6 +127,8 @@ private:
     TabBar *mTabBar;
     QScopedPointer<TabSwitcher> mSwitcher;
     QList<QWidget*> mHistory;
+
+    QMetaObject::Connection mFocusConnection;
 };
 
 #endif
