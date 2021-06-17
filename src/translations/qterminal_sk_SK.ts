@@ -896,7 +896,7 @@ Ak chcete odstrániť alebo zakázať odkaz, v bode 2 stlačte iba modifikátor 
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
-        <translation>Načítať sedenie</translation>
+        <translation>Načítať reláciu</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="80"/>
