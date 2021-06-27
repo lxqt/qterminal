@@ -447,5 +447,11 @@ void TermWidgetHolder::closeTab()
     Q_EMIT parent->tabCloseRequested(idx);
 }
 
+int TermWidgetHolder::count()
+{
+    return findChildren<TermWidget*>().count();
+}
+
+
 #endif
 
