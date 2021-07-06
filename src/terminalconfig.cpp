@@ -35,13 +35,13 @@ QString TerminalConfig::getWorkingDirectory()
 QString TerminalConfig::getShell()
 {
     if (!m_shell.isEmpty())
-        return m_shell;
+        return m_shell.trimmed();
     if (!Properties::Instance()->shell.isEmpty())
-        return Properties::Instance()->shell;
+        return Properties::Instance()->shell.trimmed();
     QByteArray envShell = qgetenv("SHELL");
     if (envShell.constData() != nullptr)
     {
-        QString shellString = QString::fromLocal8Bit(envShell);
+        QString shellString = QString::fromLocal8Bit(envShell).trimmed();
         if (!shellString.isEmpty())
             return shellString;
     }
