@@ -34,9 +34,9 @@ QString TerminalConfig::getWorkingDirectory()
 
 QString TerminalConfig::getShell()
 {
-    if (!m_shell.isEmpty())
+    if (!m_shell.trimmed().isEmpty())
         return m_shell.trimmed();
-    if (!Properties::Instance()->shell.isEmpty())
+    if (!Properties::Instance()->shell.trimmed().isEmpty())
         return Properties::Instance()->shell.trimmed();
     QByteArray envShell = qgetenv("SHELL");
     if (envShell.constData() != nullptr)
