@@ -496,7 +496,7 @@
         <location filename="../forms/propertiesdialog.ui" line="411"/>
         <location filename="../forms/propertiesdialog.ui" line="444"/>
         <source>px</source>
-        <translation>pikselių</translation>
+        <translation>piks.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="361"/>
@@ -606,22 +606,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Priderinti</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Centruoti</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nurodo, ar langelį piešiančius simbolius turėtų piešti QTerminal ar bazinės šrifto atvaizdavimo bibliotekos.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Perjungia pusjuodžio teksto naudojimą intensyvioms spalvoms atvaizduoti</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
@@ -641,12 +641,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Ši komanda bus paleista su argumentu, kuriame yra nurodytas failo pavadinimas ar laikinasis failas, turintis slinkimo istoriją</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Istorijos apdorojimo komanda</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
@@ -662,27 +662,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Atverti naują kortelę aktyvios kortelės dešinėje</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Jei žymėjimas nuimtas, nauja kortelė bus atveriama pačioje dešinėje</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Užverti kortelę, spustelėjus viduriniuoju pelės mygtuku</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Priverstinai išjungti įdėjimo skliausteliuose veikseną</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Įdėjimo skliausteliuose veiksena praverčia įdedant kelių eilučių eilutes.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -692,7 +692,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Norėdami taisyti spartųjį klavišą:
+1. Spustelėkite du kartus stulpelyje „Klavišai“
+2. Paspauskite ir atleiskite pageidaujamą klavišų kombinaciją
+3. Spustelėkite stulpelyje „Spartusis klavišas“ arba paspauskite Įvedimo (Enter) klavišą
+
+Norėdami pašalinti/išjungti spartųjį klavišą, 2-ame punkte paspauskite tik modifikatoriaus klavišą, pvz., Lyg2 (Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="874"/>
@@ -810,17 +815,17 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Slinkimas į viršų</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Slinkimas į apačią</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Paveikslai (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
