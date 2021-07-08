@@ -737,9 +737,7 @@ void MainWindow::realign()
 void MainWindow::updateActionGroup(QAction *a)
 {
     if (a->parent()->objectName() == tabPosMenu->objectName()) {
-      if (Properties::Instance()->tabsPos >= 0 && Properties::Instance()->tabsPos < tabPosition->actions().size()) {
         tabPosition->actions().at(Properties::Instance()->tabsPos)->setChecked(true);
-      }
     }
 }
 
