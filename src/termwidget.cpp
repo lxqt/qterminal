@@ -55,7 +55,7 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
 
     setWorkingDirectory(cfg.getWorkingDirectory());
 
-    QString shell = cfg.getShell().trimmed();
+    QString shell = cfg.getShell();
     if (!shell.isEmpty())
     {
         //qDebug() << "Shell program:" << shell;
