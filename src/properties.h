@@ -119,6 +119,7 @@ class Properties
 
         bool confirmMultilinePaste;
         bool trimPastedTrailingNewlines;
+        bool quotePastedUrls;
 
         bool windowMaximized;
 

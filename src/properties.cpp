@@ -160,6 +160,7 @@ void Properties::loadSettings()
 
     confirmMultilinePaste = m_settings->value(QLatin1String("ConfirmMultilinePaste"), false).toBool();
     trimPastedTrailingNewlines = m_settings->value(QLatin1String("TrimPastedTrailingNewlines"), false).toBool();
+    quotePastedUrls = m_settings->value(QLatin1String("QuotePastedUrls"), false).toBool();
 
     windowMaximized = m_settings->value(QLatin1String("LastWindowMaximized"), false).toBool();
 
@@ -269,6 +270,7 @@ void Properties::saveSettings()
 
     m_settings->setValue(QLatin1String("ConfirmMultilinePaste"), confirmMultilinePaste);
     m_settings->setValue(QLatin1String("TrimPastedTrailingNewlines"), trimPastedTrailingNewlines);
+    m_settings->setValue(QLatin1String("QuotePastedUrls"), quotePastedUrls);
 
     m_settings->setValue(QLatin1String("LastWindowMaximized"), windowMaximized);
 
