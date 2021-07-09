@@ -314,6 +314,8 @@ void TabWidget::removeFinished()
 //        if (count() == 0)
 //            emit closeTabNotification();
     }
+
+    findParent<MainWindow>(this)->updateDisabledActions();
 }
 
 void TabWidget::removeTab(int index)
