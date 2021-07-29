@@ -586,37 +586,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Háttér mód:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Egyik sem</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyújtás</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Nagyítás</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Illesztés</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Középre</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Szabályozza, hogy a dobozrajzoló karaktereket a QTerminal jelenítse meg, vagy hagyja ezt a betűrenderelő könyvtárakra.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
@@ -815,17 +815,17 @@ A kombináció törléséhez csak egy módosítóbillentyűt (mint például a S
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Görgetés a tetejére</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Görgetés az aljára</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Képek (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>

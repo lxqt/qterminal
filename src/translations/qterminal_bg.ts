@@ -586,32 +586,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Режим на заден план:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Никой</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Разтегляне</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Мащабиране</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Събиране</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Центриране</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
@@ -825,7 +825,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Изображения (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
