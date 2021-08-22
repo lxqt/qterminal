@@ -641,12 +641,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>A parancs futtatása egy argumentummal történik amelyben szerepel egy átmeneti fájlnév, tartalmazva a görgetési előzményeket</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Előzmények parancs kezelése</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
