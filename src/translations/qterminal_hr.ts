@@ -113,7 +113,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="289"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>&amp;Doljni podterminal</translation>
+        <translation>&amp;Donji podterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="292"/>
@@ -295,17 +295,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;BlockCursor</source>
-        <translation>Pravokutnik</translation>
+        <translation>&amp;Pravokutnik</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>Podvlaka</translation>
+        <translation>Pod&amp;vlaka</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="505"/>
         <source>&amp;IBeamCursor</source>
-        <translation>Uspravna crta</translation>
+        <translation>&amp;Uspravna crta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="522"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="624"/>
         <source>Do not ask again</source>
-        <translation>Ne pitaj ponovo</translation>
+        <translation>Nemoj ponovo pitati</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="632"/>
@@ -330,7 +330,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>Jednostavan multiplatformski emulator terminala</translation>
+        <translation>Jednostavan višeplatformski emulator terminala</translation>
     </message>
 </context>
 <context>
@@ -511,7 +511,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation>Koristi linijske znakove fonta za gradnju okvira</translation>
+        <translation>Koristi grafičke znakove fonta</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
@@ -586,37 +586,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Način prikaza pozadine:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Ništa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Razvučeno</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Uvećano</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Prilagođeno</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Centrirano</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation>Odredi, treba li QTerminal crtati znakove za crtanje okvira interno ili ih treba prepustiti osnovnim bibliotekama za prikazivanje fontova.</translation>
+        <translation>Odredi, treba li QTerminal crtati znakove za crtanje okvira interno ili pomoću osnovnih biblioteka za prikazivanje fontova.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
@@ -677,12 +677,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Prisilno deaktiviraj način umetanja teksta u zagradama</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Način umetanja teksta u zagradama koristan je za umetanje višerednih nizova.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -810,22 +810,22 @@ Za uklanjanje/deaktiviranje prečaca, u točki 2 pritisni samo modifikatorsku ti
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>No move</source>
-        <translation>Ne premještaj</translation>
+        <translation>Bez premještanja</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Klizanje skroz gore</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Klizanje skroz dolje</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Slike (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
