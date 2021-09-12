@@ -128,7 +128,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>Copy &amp;Selection</source>
-        <translation>&amp;Скопіювати вибране</translation>
+        <translation>С&amp;копіювати вибране</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -138,7 +138,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="308"/>
         <source>Paste S&amp;election</source>
-        <translation>&amp;Вкласти вибране</translation>
+        <translation>&amp;Вставити вибране</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="311"/>
@@ -883,7 +883,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../tabwidget.cpp" line="242"/>
         <source>Close session</source>
-        <translation>Закрити сесію</translation>
+        <translation>Закрити сеанс</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="244"/>
@@ -896,12 +896,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
-        <translation>Заантажити сесію</translation>
+        <translation>Завантажити сеанс</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="80"/>
         <source>List of saved sessions:</source>
-        <translation>Список збережених сесій:</translation>
+        <translation>Список збережених сеансів:</translation>
     </message>
 </context>
 <context>
@@ -924,7 +924,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation>&amp;Допомога</translation>
+        <translation>&amp;Довідка</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
