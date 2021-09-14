@@ -516,12 +516,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Prečaci se aktiviraju pomoću tipke Alt i mogu ometati rad s terminalom.</translation>
+        <translation>Ubrzivači se aktiviraju pomoću tipke Alt i mogu ometati rad s terminalom.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
-        <translation>Bez prečaca u traci izbornika</translation>
+        <translation>Bez ubrzivača u traci izbornika</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="586"/>
