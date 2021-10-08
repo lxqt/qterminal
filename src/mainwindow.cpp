@@ -167,6 +167,7 @@ void MainWindow::enableDropMode()
     setWindowFlags(Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint);
 
     m_dropLockButton = new QToolButton(this);
+    m_dropLockButton->setToolTip(tr("Keep window open when it loses focus"));
     consoleTabulator->setCornerWidget(m_dropLockButton, Qt::BottomRightCorner);
     m_dropLockButton->setCheckable(true);
     m_dropLockButton->connect(m_dropLockButton, &QToolButton::clicked, this, &MainWindow::setKeepOpen);
@@ -709,6 +710,8 @@ void MainWindow::propertiesChanged()
     }
 
     onCurrentTitleChanged(consoleTabulator->currentIndex());
+
+    setKeepOpen(Properties::Instance()->dropKeepOpen);
 
     realign();
 }

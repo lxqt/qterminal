@@ -234,6 +234,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     historyLimitedTo->setValue(Properties::Instance()->historyLimitedTo);
 
     dropShowOnStartCheckBox->setChecked(Properties::Instance()->dropShowOnStart);
+    dropKeepOpenCheckBox->setChecked(Properties::Instance()->dropKeepOpen);
 
     dropHeightSpinBox->setValue(Properties::Instance()->dropHeight);
     dropHeightSpinBox->setMaximum(100);
@@ -345,6 +346,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->saveSettings();
 
     Properties::Instance()->dropShowOnStart = dropShowOnStartCheckBox->isChecked();
+    Properties::Instance()->dropKeepOpen = dropKeepOpenCheckBox->isChecked();
     Properties::Instance()->dropHeight = dropHeightSpinBox->value();
     Properties::Instance()->dropWidht = dropWidthSpinBox->value();
     Properties::Instance()->dropShortCut = QKeySequence(dropShortCutEdit->text());
