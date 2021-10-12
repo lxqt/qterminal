@@ -23,6 +23,7 @@
 #include <QStandardPaths>
 #include <QTimer>
 #include <functional>
+#include <QGuiApplication>
 
 #ifdef HAVE_QDBUS
 #include <QtDBus/QtDBus>
@@ -115,7 +116,9 @@ MainWindow::MainWindow(TerminalConfig &cfg,
         else if (Properties::Instance()->fixedWindowSize.isValid()) {
             resize(Properties::Instance()->fixedWindowSize);
         }
-        if (Properties::Instance()->savePosOnExit && !Properties::Instance()->mainWindowPosition.isNull()) {
+        if (Properties::Instance()->savePosOnExit && !Properties::Instance()->mainWindowPosition.isNull()
+            && QGuiApplication::platformName() != QStringLiteral("wayland")
+            ) {
             move(Properties::Instance()->mainWindowPosition);
         }
         restoreState(Properties::Instance()->mainWindowState);
