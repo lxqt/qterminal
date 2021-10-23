@@ -103,7 +103,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Pergi Ke</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Menangani histori...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
