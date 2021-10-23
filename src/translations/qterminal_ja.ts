@@ -490,12 +490,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Alt キーによってアクティブ化したアクセラレータは、ターミナルに干渉することがあります。</translation>
+        <translation>Alt キーによってアクティブ化したアクセラレーターは、ターミナルに干渉することがあります。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
-        <translation>メニューバーのアクセラレータを無効にする</translation>
+        <translation>メニューバーのアクセラレーターを無効にする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="711"/>
