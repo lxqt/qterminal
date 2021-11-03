@@ -173,7 +173,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="339"/>
         <source>&amp;Load Session</source>
-        <translation>&amp;Načíst relaci</translation>
+        <translation>Načíst re&amp;laci</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="346"/>
@@ -620,7 +620,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobit. Všimněte si, že toto nemusí odpovídat vašemu operačnímu systému.&lt;/p&gt;&lt;p&gt;Pokud si nejste jisti, použijte &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulaci.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobit. Všimněte si, že toto nemusí odpovídat vámi využívanému operačnímu systému.&lt;/p&gt;&lt;p&gt;Pokud si nejste jistí, použijte &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulaci.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
@@ -646,7 +646,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation>Otevřít novou kartu napravo od činné karty</translation>
+        <translation>Otevřít novou kartu napravo od té stávající</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
@@ -763,7 +763,7 @@ pro odebrání/zakázání zkratky, v bodě 2 stiskněte pouze modifikátor (nap
     <message>
         <location filename="../forms/propertiesdialog.ui" line="879"/>
         <source>Key</source>
-        <translation>Klávesy</translation>
+        <translation>Klávesa</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="155"/>
