@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="261"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Pestanya</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>Ves a</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestiona l&apos;historial...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -511,17 +511,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilitza les taules de caràcters continguts a la lletra tipogràfica</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Les dreceres estan activades per Alt i poden interferir amb el terminal.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>Sense drecera de barra de menú</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="586"/>
@@ -581,22 +581,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="632"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>Comença amb aquesta mida:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode de fons:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Cap</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Estirar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
@@ -631,7 +631,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;Oculta les vores de la finestra</translation>
+        <translation>&amp;Oculta les vores de la finestra</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>

@@ -656,7 +656,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation>Zavřít kartu klepnutím prostředního tlačítka myši</translation>
+        <translation>Zavřít kartu kliknutím prostředním tlačítkem myši</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
@@ -679,7 +679,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>Pro upravení zkratky:
 1. Poklepejte na její klávesu
 2. Stiskněte požadovanou kombinaci a uvolněte ji
-3. Klepněte na zástupce nebo stiskněte klávesu Enter
+3. Klikněte na zástupce nebo stiskněte klávesu Enter
 
 pro odebrání/zakázání zkratky, v bodě 2 stiskněte pouze modifikátor (například Shift)</translation>
     </message>
