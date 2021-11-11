@@ -863,7 +863,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <location filename="../tabwidget.cpp" line="78"/>
         <location filename="../tabwidget.cpp" line="232"/>
         <source>Shell No. %1</source>
-        <translation>Shell №. %1</translation>
+        <translation>Оболонка №. %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="200"/>
