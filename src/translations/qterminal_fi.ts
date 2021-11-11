@@ -258,59 +258,59 @@
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <source>&amp;Bottom</source>
-        <translation></translation>
+        <translation>&amp;Alhaalla</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <source>&amp;Top</source>
-        <translation></translation>
+        <translation>&amp;Ylhäällä</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="437"/>
         <location filename="../mainwindow.cpp" line="473"/>
         <source>&amp;Right</source>
-        <translation></translation>
+        <translation>&amp;Oikealla</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="438"/>
         <location filename="../mainwindow.cpp" line="474"/>
         <source>&amp;Left</source>
-        <translation>&amp;Vasen</translation>
+        <translation>&amp;Vasemmalla</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="456"/>
         <source>&amp;Tabs Layout</source>
-        <translation></translation>
+        <translation>&amp;Välilehtien Asettelu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="472"/>
         <source>&amp;None</source>
-        <translation></translation>
+        <translation>&amp;Ei mitään</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="490"/>
         <source>S&amp;crollbar Layout</source>
-        <translation></translation>
+        <translation>Vierityspalkin Asettelu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;BlockCursor</source>
-        <translation></translation>
+        <translation>&amp;Laatikko</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;UnderlineCursor</source>
-        <translation></translation>
+        <translation>&amp;Vaakaviiva</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="505"/>
         <source>&amp;IBeamCursor</source>
-        <translation></translation>
+        <translation>&amp;Pystyviiva</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation></translation>
+        <translation>&amp;Näppäimistön Osoittimen Muoto</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="622"/>
@@ -349,7 +349,7 @@
         <location filename="../forms/propertiesdialog.ui" line="39"/>
         <location filename="../forms/propertiesdialog.ui" line="611"/>
         <source>Behavior</source>
-        <translation></translation>
+        <translation>Käytös</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="47"/>
@@ -359,7 +359,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="55"/>
         <source>Dropdown</source>
-        <translation></translation>
+        <translation>Pudotusvalikko</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="63"/>
@@ -369,7 +369,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Hide tab bar with only one tab</source>
-        <translation></translation>
+        <translation>Piilota välilehtipalkki vain yhden välilehden auki ollessa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="275"/>
@@ -384,7 +384,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="204"/>
         <source>Start with preset:</source>
-        <translation></translation>
+        <translation>Aloitusnäkymä:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="404"/>
@@ -399,22 +399,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="394"/>
         <source>Application transparency</source>
-        <translation></translation>
+        <translation>Sovelluksen läpinäkyvyys</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="215"/>
         <source>None (single terminal)</source>
-        <translation></translation>
+        <translation>Normaali (yksi pääte)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>2 terminals horizontally</source>
-        <translation></translation>
+        <translation>2 päätettä vaakasuorassa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>2 terminals vertically</source>
-        <translation></translation>
+        <translation>2 päätettä pystysuorassa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="230"/>
@@ -435,22 +435,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
         <source>&amp;Change...</source>
-        <translation></translation>
+        <translation>&amp;Muuta...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="454"/>
         <source>Tabs position</source>
-        <translation></translation>
+        <translation>Välilehtien asettelu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Widget style</source>
-        <translation></translation>
+        <translation>Pienoisohjelma tyyli</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
         <source>Show the menu bar</source>
-        <translation></translation>
+        <translation>Näytä valikkopalkki</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="335"/>
@@ -460,17 +460,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="464"/>
         <source>Change window title based on current terminal</source>
-        <translation></translation>
+        <translation>Muuta ikkunan otsikko käytössä olevan päätteen mukaan</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="481"/>
         <source>Change window icon based on current terminal</source>
-        <translation></translation>
+        <translation>Muuta ikkunan ikoni käytössä olevan päätteen mukaan</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Enable bi-directional text support</source>
-        <translation></translation>
+        <translation>Ota käyttöön kaksisuuntainen tekstinsyöttö</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
@@ -485,12 +485,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="488"/>
         <source>Show terminal size on resize</source>
-        <translation></translation>
+        <translation>Näytä päätteen koko sitä muuttaessa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="471"/>
         <source>Fixed tab width:</source>
-        <translation></translation>
+        <translation>Pysyvä välilehden koko:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="411"/>
@@ -501,7 +501,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="361"/>
         <source>Show close button on each tab</source>
-        <translation></translation>
+        <translation>Näytä sulkemisnappi kaikissa välilehdissä</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
@@ -531,17 +531,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="711"/>
         <source>Action after paste</source>
-        <translation></translation>
+        <translation>Toiminta liittämisen jälkeen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="748"/>
         <source>Confirm multiline paste</source>
-        <translation></translation>
+        <translation>Pyydä vahvistus useita rivejä kerralla liitettäessä</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="789"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation></translation>
+        <translation>Poista uudet rivit liitetyn tekstin lopusta</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="724"/>
@@ -576,12 +576,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="741"/>
         <source>Default $TERM</source>
-        <translation></translation>
+        <translation>Oletus $TERM</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="632"/>
         <source>Start with this size:</source>
-        <translation>Aloita tällä koolla:</translation>
+        <translation>Aloituskoko:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
@@ -722,7 +722,7 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>Height</source>
-        <translation></translation>
+        <translation>Korkeus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="919"/>
@@ -733,84 +733,84 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
     <message>
         <location filename="../forms/propertiesdialog.ui" line="926"/>
         <source>Width</source>
-        <translation></translation>
+        <translation>Leveys</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="950"/>
         <source>Shortcut:</source>
-        <translation></translation>
+        <translation>Pikanäppäin:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="982"/>
         <source>Edit bookmark file contents</source>
-        <translation></translation>
+        <translation>Muokkaa kirjainmerkkitiedoston sisältöä</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1004"/>
         <source>Enable bookmarks</source>
-        <translation></translation>
+        <translation>Ota kirjainmerkit käyttöön</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1013"/>
         <source>Bookmark file</source>
-        <translation></translation>
+        <translation>Kirjainmerkki tiedosto</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1026"/>
         <source>Find...</source>
-        <translation></translation>
+        <translation>Hae...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1035"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation></translation>
+        <translation>Voit määritellä kirjainmerkkitiedoston sijainnin tässä. Tämä mahdollistaa helpon jakamisen esimerkiksi OwnCloudin tai DropBoxin kautta.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="155"/>
         <source>No scrollbar</source>
-        <translation></translation>
+        <translation>Ei vierityspalkkia</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="155"/>
         <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Left</source>
-        <translation></translation>
+        <translation>Vasemmalla</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="155"/>
         <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Right</source>
-        <translation></translation>
+        <translation>Oikealla</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Top</source>
-        <translation></translation>
+        <translation>Ylhäällä</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="161"/>
         <source>Bottom</source>
-        <translation></translation>
+        <translation>Alhaalla</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="174"/>
         <source>BlockCursor</source>
-        <translation></translation>
+        <translation>Laatikko</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="174"/>
         <source>UnderlineCursor</source>
-        <translation></translation>
+        <translation>Alaviiva</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="174"/>
         <source>IBeamCursor</source>
-        <translation></translation>
+        <translation>Pystyviiva</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>No move</source>
-        <translation></translation>
+        <translation>Ei mitään</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
@@ -878,17 +878,17 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
         <source>Select new tab title color</source>
-        <translation></translation>
+        <translation>Valitse uusi välilehden otsikon väri</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="242"/>
         <source>Close session</source>
-        <translation></translation>
+        <translation>Sulje istunto</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="244"/>
         <source>Change title color</source>
-        <translation></translation>
+        <translation>Muuta otsikon väri</translation>
     </message>
 </context>
 <context>
@@ -896,12 +896,12 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
-        <translation></translation>
+        <translation>Lataa Istunto</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="80"/>
         <source>List of saved sessions:</source>
-        <translation></translation>
+        <translation>Tallennetut istunnot:</translation>
     </message>
 </context>
 <context>
@@ -909,42 +909,42 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
-        <translation></translation>
+        <translation>PääIkkuna</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;File</source>
-        <translation></translation>
+        <translation>&amp;Tiedosto</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
-        <translation></translation>
+        <translation>T&amp;oiminnot</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation></translation>
+        <translation>O&amp;hje</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation></translation>
+        <translation>&amp;Näytä</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation></translation>
+        <translation>&amp;Muokkaa</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation></translation>
+        <translation>&amp;Tietoja...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation></translation>
+        <translation>&amp;Qt Tietoja...</translation>
     </message>
 </context>
 </TS>
