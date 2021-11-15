@@ -601,17 +601,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Zoom</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajusta</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Centra</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
@@ -621,12 +621,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Commuta l&apos;ús de la font en negreta per representar colors intensos</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilitzeu una font en negreta per a colors intensos</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
@@ -636,12 +636,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quin comportament emular. Tingueu en compte que això no ha de coincidir amb el vostre sistema operatiu.&lt;/p&gt;&lt;p&gt;Si no n&apos;esteu segur, utilitzeu &lt;span style=&quot; font-weight:600;&quot;&gt;l&apos;emulació &lt;/span&gt;predeterminada.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Aquesta ordre s&apos;executarà amb un argument que conté el nom d&apos;un fitxer temporal inclòs en l&apos;historial de desplaçament.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
@@ -652,37 +652,37 @@
         <location filename="../forms/propertiesdialog.ui" line="639"/>
         <location filename="../forms/propertiesdialog.ui" line="653"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="660"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>Obté la mida actual</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Obre una pestanya nova a la dreta de la pestanya activa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Si no està seleccionat, la nova pestanya s&apos;obrirà a la dreta de l&apos;última pestanya oberta</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanca la pestanya amb el botó central del ratolí</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Inhabilita el mode d&apos;enganxat entre parèntesis</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>El mode d&apos;enganxat entre parèntesis és útil per enganxar cadenes de diverses línies.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -692,7 +692,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Per editar una drecera:
+1. Feu doble clic a la seva clau
+2. Premeu la drecera / combinació desitjada
+3. Feu clic en una drecera o premeu Retorn
+
+Per eliminar/desactivar una drecera, al punt 2, premeu només un modificador (com ara Maj)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="874"/>
@@ -810,17 +815,17 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Desplaça a la part superior</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="192"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Desplaça a la part inferior</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="390"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Imatges (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
