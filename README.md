@@ -21,8 +21,8 @@ To build run `make`, to install `make install` which accepts variable `DESTDIR` 
 
 ### Binary packages
 
-QTerminal is provided by all major Linux distributions like [Arch Linux](https://www.archlinux.org/packages/?q=qterminal), Debian (as of Debian stretch), Fedora and openSUSE.
-Just use the distributions' package managers to search for string `qterminal`.
+Official binary packages are provided by all major Linux and BSD distributions. 
+Just use your package manager to search for string `qterminal`.
 
 
 ### Translation
