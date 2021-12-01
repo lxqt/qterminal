@@ -674,7 +674,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished">Allarga</translation>
+        <translation>Allarga</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
