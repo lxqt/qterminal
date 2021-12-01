@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation>Zpracovat historii...</translation>
+        <translation>Zpracovat historii…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
@@ -485,7 +485,7 @@
         <location filename="../forms/propertiesdialog.ui" line="411"/>
         <location filename="../forms/propertiesdialog.ui" line="444"/>
         <source>px</source>
-        <translation>_obraz. bodů</translation>
+        <translation>obraz. bodů</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="361"/>
@@ -676,12 +676,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation>Pro upravení zkratky:
-1. Poklepejte na její klávesu
+        <translation>Pokud chcete zkratku upravit:
+1. Dvojklik na její klávesu
 2. Stiskněte požadovanou kombinaci a uvolněte ji
 3. Klikněte na zástupce nebo stiskněte klávesu Enter
 
-pro odebrání/zakázání zkratky, v bodě 2 stiskněte pouze modifikátor (například Shift)</translation>
+Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifikátor (například Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -929,7 +929,7 @@ pro odebrání/zakázání zkratky, v bodě 2 stiskněte pouze modifikátor (nap
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation>&amp;Zobrazení</translation>
+        <translation>&amp;Zobrazit</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
