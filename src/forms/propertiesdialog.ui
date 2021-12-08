@@ -1160,5 +1160,21 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>historyUnlimited</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>historyLimitedTo</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>640</x>
+     <y>77</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
 </ui>
