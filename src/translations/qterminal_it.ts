@@ -589,7 +589,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Usa i caratteri di disegno del box contenuti nei caratteri</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
@@ -694,7 +694,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Specifica quali caratteri devono essere disegnati internamente da Qterminal o lasciati al rendering delle librerie di font rendering.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
