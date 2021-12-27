@@ -36,7 +36,7 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="92"/>
+        <location filename="../mainwindow.cpp" line="89"/>
         <source>Bookmarks</source>
         <translation>Žymelės</translation>
     </message>
@@ -84,6 +84,11 @@
         <location filename="../mainwindow.cpp" line="234"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>&amp;Išvalyti aktyvų terminalą</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="173"/>
+        <source>Keep window open when it loses focus</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
@@ -716,52 +721,62 @@ Norėdami pašalinti/išjungti spartųjį klavišą, 2-ame punkte paspauskite ti
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <source>A lock button is shown on horizontal tab bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="901"/>
+        <source>Keep window open when it loses focus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="908"/>
         <source>Size</source>
         <translation>Dydis</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="909"/>
+        <location filename="../forms/propertiesdialog.ui" line="919"/>
         <source>Height</source>
         <translation>Aukštis</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="919"/>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="929"/>
+        <location filename="../forms/propertiesdialog.ui" line="946"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="926"/>
+        <location filename="../forms/propertiesdialog.ui" line="936"/>
         <source>Width</source>
         <translation>Plotis</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="950"/>
+        <location filename="../forms/propertiesdialog.ui" line="960"/>
         <source>Shortcut:</source>
         <translation>Spartusis klavišas:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="982"/>
+        <location filename="../forms/propertiesdialog.ui" line="992"/>
         <source>Edit bookmark file contents</source>
         <translation>Redaguoti žymelių failo turinį</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1004"/>
+        <location filename="../forms/propertiesdialog.ui" line="1014"/>
         <source>Enable bookmarks</source>
         <translation>Įjungti žymeles</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1013"/>
+        <location filename="../forms/propertiesdialog.ui" line="1023"/>
         <source>Bookmark file</source>
         <translation>Žymelių failas</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1026"/>
+        <location filename="../forms/propertiesdialog.ui" line="1036"/>
         <source>Find...</source>
         <translation>Rasti...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1035"/>
+        <location filename="../forms/propertiesdialog.ui" line="1045"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Jūs galite nurodyti savo asmeninę žymelių failo vietą. Tai leidžia lengvai bendrinti žymeles su tokiais įrankiais kaip OwnCloud ar Dropbox.</translation>
     </message>
@@ -823,23 +838,23 @@ Norėdami pašalinti/išjungti spartųjį klavišą, 2-ame punkte paspauskite ti
         <translation>Slinkimas į apačią</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="390"/>
+        <location filename="../propertiesdialog.cpp" line="392"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Paveikslai (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
-        <location filename="../propertiesdialog.cpp" line="294"/>
+        <location filename="../propertiesdialog.cpp" line="295"/>
         <source>System Default</source>
         <translation>Sistemos numatytasis</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="389"/>
+        <location filename="../propertiesdialog.cpp" line="391"/>
         <source>Choose a background image</source>
         <translation>Pasirinkti fono paveikslą</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="466"/>
+        <location filename="../propertiesdialog.cpp" line="468"/>
         <source>Open or create bookmarks file</source>
         <translation>Atverti ar sukurti žymelių failą</translation>
     </message>
@@ -860,33 +875,33 @@ Norėdami pašalinti/išjungti spartųjį klavišą, 2-ame punkte paspauskite ti
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="78"/>
-        <location filename="../tabwidget.cpp" line="232"/>
+        <location filename="../tabwidget.cpp" line="80"/>
+        <location filename="../tabwidget.cpp" line="234"/>
         <source>Shell No. %1</source>
         <translation>Apvalkalas nr. %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="200"/>
+        <location filename="../tabwidget.cpp" line="202"/>
         <source>Tab name</source>
         <translation>Kortelės pavadinimas</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="201"/>
+        <location filename="../tabwidget.cpp" line="203"/>
         <source>New tab name:</source>
         <translation>Naujas kortelės pavadinimas:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="221"/>
+        <location filename="../tabwidget.cpp" line="223"/>
         <source>Select new tab title color</source>
         <translation>Pasirinkite naują kortelės pavadinimo spalvą</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="242"/>
+        <location filename="../tabwidget.cpp" line="244"/>
         <source>Close session</source>
         <translation>Užverti seansą</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="244"/>
+        <location filename="../tabwidget.cpp" line="246"/>
         <source>Change title color</source>
         <translation>Keisti pavadinimo spalvą</translation>
     </message>

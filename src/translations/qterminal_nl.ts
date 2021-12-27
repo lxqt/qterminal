@@ -36,9 +36,14 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="92"/>
+        <location filename="../mainwindow.cpp" line="89"/>
         <source>Bookmarks</source>
         <translation>Bladwijzers</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="173"/>
+        <source>Keep window open when it loses focus</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -653,33 +658,43 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 Sneltoets wissen: druk bij stap 2 op een samensteltoets (bijv. Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="909"/>
+        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <source>A lock button is shown on horizontal tab bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="901"/>
+        <source>Keep window open when it loses focus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="919"/>
         <source>Height</source>
         <translation>Hoogte</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="919"/>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="929"/>
+        <location filename="../forms/propertiesdialog.ui" line="946"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="926"/>
+        <location filename="../forms/propertiesdialog.ui" line="936"/>
         <source>Width</source>
         <translation>Breedte</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="982"/>
+        <location filename="../forms/propertiesdialog.ui" line="992"/>
         <source>Edit bookmark file contents</source>
         <translation>Inhoud van bladwijzerbestand aanpassen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1004"/>
+        <location filename="../forms/propertiesdialog.ui" line="1014"/>
         <source>Enable bookmarks</source>
         <translation>Bladwijzers gebruiken</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1013"/>
+        <location filename="../forms/propertiesdialog.ui" line="1023"/>
         <source>Bookmark file</source>
         <translation>Bladwijzerbestand</translation>
     </message>
@@ -730,22 +745,22 @@ Sneltoets wissen: druk bij stap 2 op een samensteltoets (bijv. Shift)</translati
         <translation>Sluitknop op tabbladen tonen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="908"/>
         <source>Size</source>
         <translation>Grootte</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="950"/>
+        <location filename="../forms/propertiesdialog.ui" line="960"/>
         <source>Shortcut:</source>
         <translation>Sneltoets:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1026"/>
+        <location filename="../forms/propertiesdialog.ui" line="1036"/>
         <source>Find...</source>
         <translation>Zoeken…</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1035"/>
+        <location filename="../forms/propertiesdialog.ui" line="1045"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>U kunt uw eigen locatie opgeven voor het bladwijzerbestand. Hierdoor kunt het gemakkelijk opslaan op bijv. OwnCloud of Dropbox.</translation>
     </message>
@@ -823,23 +838,23 @@ Sneltoets wissen: druk bij stap 2 op een samensteltoets (bijv. Shift)</translati
         <translation>Scrollen naar onderkant</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="390"/>
+        <location filename="../propertiesdialog.cpp" line="392"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Afbeeldingen (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
-        <location filename="../propertiesdialog.cpp" line="294"/>
+        <location filename="../propertiesdialog.cpp" line="295"/>
         <source>System Default</source>
         <translation>Systeemstandaard</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="389"/>
+        <location filename="../propertiesdialog.cpp" line="391"/>
         <source>Choose a background image</source>
         <translation>Kies een achtergrondafbeelding</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="466"/>
+        <location filename="../propertiesdialog.cpp" line="468"/>
         <source>Open or create bookmarks file</source>
         <translation>Open of maak een bladwijzerbestand</translation>
     </message>
@@ -860,33 +875,33 @@ Sneltoets wissen: druk bij stap 2 op een samensteltoets (bijv. Shift)</translati
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="78"/>
-        <location filename="../tabwidget.cpp" line="232"/>
+        <location filename="../tabwidget.cpp" line="80"/>
+        <location filename="../tabwidget.cpp" line="234"/>
         <source>Shell No. %1</source>
         <translation>Terminalvenster nr. %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="200"/>
+        <location filename="../tabwidget.cpp" line="202"/>
         <source>Tab name</source>
         <translation>Tabbladnaam</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="201"/>
+        <location filename="../tabwidget.cpp" line="203"/>
         <source>New tab name:</source>
         <translation>Nieuwe tabbladnaam:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="221"/>
+        <location filename="../tabwidget.cpp" line="223"/>
         <source>Select new tab title color</source>
         <translation>Kies een nieuwe tabbladnaamkleur</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="242"/>
+        <location filename="../tabwidget.cpp" line="244"/>
         <source>Close session</source>
         <translation>Sessie sluiten</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="244"/>
+        <location filename="../tabwidget.cpp" line="246"/>
         <source>Change title color</source>
         <translation>Titelkleur wijzigen</translation>
     </message>

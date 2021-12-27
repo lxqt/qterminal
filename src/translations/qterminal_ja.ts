@@ -66,6 +66,11 @@
         <translation>次のタブ(&amp;N)</translation>
     </message>
     <message>
+        <location filename="../mainwindow.cpp" line="173"/>
+        <source>Keep window open when it loses focus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../mainwindow.cpp" line="244"/>
         <source>&amp;Previous Tab</source>
         <translation>前のタブ(&amp;P)</translation>
@@ -268,7 +273,7 @@
         <translation>軽量なマルチプラットフォーム対応の端末エミュレーター</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="92"/>
+        <location filename="../mainwindow.cpp" line="89"/>
         <source>Bookmarks</source>
         <translation>ブックマーク</translation>
     </message>
@@ -669,33 +674,43 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 ショートカットキーを削除または無効にするには、2 番目で(Shift のような)修飾キーのみを押します</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="909"/>
+        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <source>A lock button is shown on horizontal tab bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="901"/>
+        <source>Keep window open when it loses focus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="919"/>
         <source>Height</source>
         <translation>高さ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="919"/>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="929"/>
+        <location filename="../forms/propertiesdialog.ui" line="946"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="926"/>
+        <location filename="../forms/propertiesdialog.ui" line="936"/>
         <source>Width</source>
         <translation>幅</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="982"/>
+        <location filename="../forms/propertiesdialog.ui" line="992"/>
         <source>Edit bookmark file contents</source>
         <translation>ブックマークファイルの内容を編集して下さい</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1004"/>
+        <location filename="../forms/propertiesdialog.ui" line="1014"/>
         <source>Enable bookmarks</source>
         <translation>ブックマークを利用可能にする</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1013"/>
+        <location filename="../forms/propertiesdialog.ui" line="1023"/>
         <source>Bookmark file</source>
         <translation>ブックマークファイル</translation>
     </message>
@@ -746,22 +761,22 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>ドロップダウン起動時に表示する</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="908"/>
         <source>Size</source>
         <translation>サイズ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="950"/>
+        <location filename="../forms/propertiesdialog.ui" line="960"/>
         <source>Shortcut:</source>
         <translation>ショートカット:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1026"/>
+        <location filename="../forms/propertiesdialog.ui" line="1036"/>
         <source>Find...</source>
         <translation>検索...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1035"/>
+        <location filename="../forms/propertiesdialog.ui" line="1045"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>ブックマークファイルの場所を指定します。OwnCloud や Dropbox のようなツールとブックマークを簡単に共有できます。</translation>
     </message>
@@ -823,23 +838,23 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>最下部へスクロール</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="390"/>
+        <location filename="../propertiesdialog.cpp" line="392"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>画像 (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
-        <location filename="../propertiesdialog.cpp" line="294"/>
+        <location filename="../propertiesdialog.cpp" line="295"/>
         <source>System Default</source>
         <translation>システムの既定値</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="389"/>
+        <location filename="../propertiesdialog.cpp" line="391"/>
         <source>Choose a background image</source>
         <translation>背景画像の選択</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="466"/>
+        <location filename="../propertiesdialog.cpp" line="468"/>
         <source>Open or create bookmarks file</source>
         <translation>ブックマークファイルを開く、または新規作成</translation>
     </message>
@@ -860,33 +875,33 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="78"/>
-        <location filename="../tabwidget.cpp" line="232"/>
+        <location filename="../tabwidget.cpp" line="80"/>
+        <location filename="../tabwidget.cpp" line="234"/>
         <source>Shell No. %1</source>
         <translation>シェル No. %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="200"/>
+        <location filename="../tabwidget.cpp" line="202"/>
         <source>Tab name</source>
         <translation>タブの名前</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="201"/>
+        <location filename="../tabwidget.cpp" line="203"/>
         <source>New tab name:</source>
         <translation>新しいタブの名前:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="221"/>
+        <location filename="../tabwidget.cpp" line="223"/>
         <source>Select new tab title color</source>
         <translation>新しいタブタイトルの色を選択</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="242"/>
+        <location filename="../tabwidget.cpp" line="244"/>
         <source>Close session</source>
         <translation>タブを閉じる</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="244"/>
+        <location filename="../tabwidget.cpp" line="246"/>
         <source>Change title color</source>
         <translation>タブタイトルの色を変更</translation>
     </message>

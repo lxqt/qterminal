@@ -36,9 +36,14 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="92"/>
+        <location filename="../mainwindow.cpp" line="89"/>
         <source>Bookmarks</source>
         <translation>Järjehoidjad</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="173"/>
+        <source>Keep window open when it loses focus</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -684,33 +689,43 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklahvi (nt Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="909"/>
+        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <source>A lock button is shown on horizontal tab bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="901"/>
+        <source>Keep window open when it loses focus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="919"/>
         <source>Height</source>
         <translation>Kõrgus</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="919"/>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="929"/>
+        <location filename="../forms/propertiesdialog.ui" line="946"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="926"/>
+        <location filename="../forms/propertiesdialog.ui" line="936"/>
         <source>Width</source>
         <translation>Laius</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="982"/>
+        <location filename="../forms/propertiesdialog.ui" line="992"/>
         <source>Edit bookmark file contents</source>
         <translation>Muuda järjehoidjate faili sisu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1004"/>
+        <location filename="../forms/propertiesdialog.ui" line="1014"/>
         <source>Enable bookmarks</source>
         <translation>Luba järjehoidjad</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1013"/>
+        <location filename="../forms/propertiesdialog.ui" line="1023"/>
         <source>Bookmark file</source>
         <translation>Järjehoidjate fail</translation>
     </message>
@@ -730,22 +745,22 @@ Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklah
         <translation>Fikseeritud tabulaatorisamm:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="908"/>
         <source>Size</source>
         <translation>Suurus</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="950"/>
+        <location filename="../forms/propertiesdialog.ui" line="960"/>
         <source>Shortcut:</source>
         <translation>Kiirklahv:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1026"/>
+        <location filename="../forms/propertiesdialog.ui" line="1036"/>
         <source>Find...</source>
         <translation>Leia...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1035"/>
+        <location filename="../forms/propertiesdialog.ui" line="1045"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Võid määrata oma järjehoidjate faili asukoha. See võimaldab lihtsalt jagada järjehoidjaid vahenditega nagu OwnCloud või Dropbox.</translation>
     </message>
@@ -823,23 +838,23 @@ Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklah
         <translation>Alla kerimine</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="390"/>
+        <location filename="../propertiesdialog.cpp" line="392"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Pildid (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
-        <location filename="../propertiesdialog.cpp" line="294"/>
+        <location filename="../propertiesdialog.cpp" line="295"/>
         <source>System Default</source>
         <translation>Süsteemne vaikeväärtus</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="389"/>
+        <location filename="../propertiesdialog.cpp" line="391"/>
         <source>Choose a background image</source>
         <translation>Vali taustapilt</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="466"/>
+        <location filename="../propertiesdialog.cpp" line="468"/>
         <source>Open or create bookmarks file</source>
         <translation>Ava või loo järjehoidjate fail</translation>
     </message>
@@ -860,33 +875,33 @@ Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklah
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="78"/>
-        <location filename="../tabwidget.cpp" line="232"/>
+        <location filename="../tabwidget.cpp" line="80"/>
+        <location filename="../tabwidget.cpp" line="234"/>
         <source>Shell No. %1</source>
         <translation>Kest nr. %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="200"/>
+        <location filename="../tabwidget.cpp" line="202"/>
         <source>Tab name</source>
         <translation>Kaardi nimi</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="201"/>
+        <location filename="../tabwidget.cpp" line="203"/>
         <source>New tab name:</source>
         <translation>Kaardi uus nimi:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="221"/>
+        <location filename="../tabwidget.cpp" line="223"/>
         <source>Select new tab title color</source>
         <translation>Vali uus kaardi pealkirja värv</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="242"/>
+        <location filename="../tabwidget.cpp" line="244"/>
         <source>Close session</source>
         <translation>Sulge seanss</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="244"/>
+        <location filename="../tabwidget.cpp" line="246"/>
         <source>Change title color</source>
         <translation>Muuda pealkirja värvi</translation>
     </message>

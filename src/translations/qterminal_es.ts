@@ -36,9 +36,14 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="92"/>
+        <location filename="../mainwindow.cpp" line="89"/>
         <source>Bookmarks</source>
         <translation>Marcadores</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="173"/>
+        <source>Keep window open when it loses focus</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -684,33 +689,43 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un modificador (como Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="909"/>
+        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <source>A lock button is shown on horizontal tab bar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="901"/>
+        <source>Keep window open when it loses focus</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="919"/>
         <source>Height</source>
         <translation>Altura</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="919"/>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="929"/>
+        <location filename="../forms/propertiesdialog.ui" line="946"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="926"/>
+        <location filename="../forms/propertiesdialog.ui" line="936"/>
         <source>Width</source>
         <translation>Anchura</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="982"/>
+        <location filename="../forms/propertiesdialog.ui" line="992"/>
         <source>Edit bookmark file contents</source>
         <translation>Editar el contenido del archivo de marcadores</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1004"/>
+        <location filename="../forms/propertiesdialog.ui" line="1014"/>
         <source>Enable bookmarks</source>
         <translation>Habilitar los marcadores</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1013"/>
+        <location filename="../forms/propertiesdialog.ui" line="1023"/>
         <source>Bookmark file</source>
         <translation>Añadir el fichero a marcadores</translation>
     </message>
@@ -730,22 +745,22 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
         <translation>Ancho fijo de pestaña:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="908"/>
         <source>Size</source>
         <translation>Tamaño</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="950"/>
+        <location filename="../forms/propertiesdialog.ui" line="960"/>
         <source>Shortcut:</source>
         <translation>Atajo:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1026"/>
+        <location filename="../forms/propertiesdialog.ui" line="1036"/>
         <source>Find...</source>
         <translation>Buscar...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1035"/>
+        <location filename="../forms/propertiesdialog.ui" line="1045"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Puedes especificar la ubicación de su propio archivo de marcadores. Permite facilmente compartir marcadores con herramientas como OwnCloud o Dropbox.</translation>
     </message>
@@ -823,23 +838,23 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
         <translation>Desplazarse a la parte inferior</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="390"/>
+        <location filename="../propertiesdialog.cpp" line="392"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Imágenes (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="199"/>
-        <location filename="../propertiesdialog.cpp" line="294"/>
+        <location filename="../propertiesdialog.cpp" line="295"/>
         <source>System Default</source>
         <translation>Valor predeterminado del sistema</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="389"/>
+        <location filename="../propertiesdialog.cpp" line="391"/>
         <source>Choose a background image</source>
         <translation>Elija una imagen de fondo</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="466"/>
+        <location filename="../propertiesdialog.cpp" line="468"/>
         <source>Open or create bookmarks file</source>
         <translation>Abrir o crear archivo de marcadores</translation>
     </message>
@@ -860,33 +875,33 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="78"/>
-        <location filename="../tabwidget.cpp" line="232"/>
+        <location filename="../tabwidget.cpp" line="80"/>
+        <location filename="../tabwidget.cpp" line="234"/>
         <source>Shell No. %1</source>
         <translation>Terminal n.º %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="200"/>
+        <location filename="../tabwidget.cpp" line="202"/>
         <source>Tab name</source>
         <translation>Nombre de la pestaña</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="201"/>
+        <location filename="../tabwidget.cpp" line="203"/>
         <source>New tab name:</source>
         <translation>Nombre nuevo de la pestaña:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="221"/>
+        <location filename="../tabwidget.cpp" line="223"/>
         <source>Select new tab title color</source>
         <translation>Seleccione el color del título de las pestañas nuevas</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="242"/>
+        <location filename="../tabwidget.cpp" line="244"/>
         <source>Close session</source>
         <translation>Cerrar la session</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="244"/>
+        <location filename="../tabwidget.cpp" line="246"/>
         <source>Change title color</source>
         <translation>Cambiar el color del título</translation>
     </message>
