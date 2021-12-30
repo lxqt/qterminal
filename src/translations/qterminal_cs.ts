@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Když ztratí zaměření, ponechat okno otevřené</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -691,12 +691,12 @@ Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifik
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Tlačítko pro uzamčení je zobrazeno na vodorovné pruhu panelů</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Když ztratí zaměření, ponechat okno otevřené</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="919"/>

@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Garder la fenêtre ouverte lorsqu&apos;elle perd le focus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
@@ -722,12 +722,12 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Un bouton de verrouillage est affiché sur la barre d&apos;onglets horizontale</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Garder la fenêtre ouverte lorsqu&apos;elle perd le focus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
