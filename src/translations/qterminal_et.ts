@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Jäta rakenduse aken avatuks ka siis, kui fookus on mujal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -691,12 +691,12 @@ Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklah
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Lukustuse nupp on kuvatud horisontaalsel kaardiribal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Jäta rakenduse aken avatuks ka siis, kui fookus on mujal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="919"/>

@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Venster geopend houden na verliezen van focus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -660,12 +660,12 @@ Sneltoets wissen: druk bij stap 2 op een samensteltoets (bijv. Shift)</translati
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Er wordt een vergrendelknop getoond op de horizontale tabbladbalk</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Venster geopend houden na verliezen van focus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="919"/>

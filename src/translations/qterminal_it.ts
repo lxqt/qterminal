@@ -58,7 +58,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Tieni finestra aperta se perde il focus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="241"/>
@@ -800,12 +800,12 @@ Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Un lucchetto verrà mostrato sulla barra orizzontale dei tab</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Tieni finestra aperta se perde il focus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
