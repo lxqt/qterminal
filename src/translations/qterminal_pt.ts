@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Manter a janela aberta quando perder o foco</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -651,7 +651,7 @@
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
         <translation>Para editar um atalho:
-1. Clique duas vezes na chave
+1. Clique duas vezes na tecla
 2. Prima a combinação desejada
 3. Clique no atalho ou prima Enter
 
@@ -660,12 +660,12 @@ Para remover/desativar um atalho, no ponto 2, prima apenas um modificador (como 
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Um botão de bloqueio é mostrado na barra de separador horizontal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Manter a janela aberta quando perder o foco</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="919"/>
