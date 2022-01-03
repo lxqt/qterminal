@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Hold vindu åpent når det mister fokus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
@@ -722,12 +722,12 @@ For å fjerne/skru av en snarvei, kan du trykke kun en endringstast (som Shift) 
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">En låseknapp vises på det vannrette fanefeltet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Hold vindu åpent når det mister fokus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
