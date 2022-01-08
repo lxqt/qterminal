@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Jätä auki aktiivisen ikkunan vaihtuessa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
@@ -722,12 +722,12 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Lukitus painike näytetään vaakasuorassa välilehtipalkissa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Pidä ikkuna avoinna kohdistuksen vaihtuessa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
