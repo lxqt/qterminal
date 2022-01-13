@@ -341,6 +341,19 @@ int BookmarksModel::rowCount(const QModelIndex &parent) const
     return parentItem->childCount();
 }
 
+QModelIndexList BookmarksModel::allChildRows(const QModelIndex& parent) const
+{
+    QModelIndexList list;
+    for (int row = 0; row < rowCount(parent); ++row)
+    {
+        auto child = index(row, 0, parent); // we only need the row
+        list << child;
+        if (hasChildren(child))
+            list << allChildRows(child);
+    }
+    return list;
+}
+
 #if 0
 bool BookmarksModel::setData(const QModelIndex &index, const QVariant &value,
                              int role)
@@ -370,6 +383,8 @@ BookmarksWidget::BookmarksWidget(QWidget *parent)
 
     connect(treeView, &QTreeView::activated,
             this, &BookmarksWidget::handleCommand);
+    connect(filterEdit, &QLineEdit::textChanged,
+            this, &BookmarksWidget::filter);
 }
 
 BookmarksWidget::~BookmarksWidget()
@@ -392,4 +407,24 @@ void BookmarksWidget::handleCommand(const QModelIndex& index)
         return;
 
     emit callCommand(item->value() + QLatin1Char('\n')); // TODO/FIXME: decide how to handle EOL
+}
+
+void BookmarksWidget::filter(const QString& str)
+{
+    treeView->clearSelection();
+    const QModelIndexList list = m_model->allChildRows(QModelIndex());
+    for (const auto& index : list)
+    {
+        AbstractBookmarkItem *item = static_cast<AbstractBookmarkItem*>(index.internalPointer());
+        if (item && item->type() == AbstractBookmarkItem::Command)
+        {
+            if (item->value().contains(str, Qt::CaseInsensitive)
+                || item->display().contains(str, Qt::CaseInsensitive))
+            {
+                treeView->setRowHidden(index.row(), index.parent(), false);
+            }
+            else
+                treeView->setRowHidden(index.row(), index.parent(), true);
+        }
+    }
 }
