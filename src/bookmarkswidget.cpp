@@ -368,7 +368,7 @@ BookmarksWidget::BookmarksWidget(QWidget *parent)
     treeView->setModel(m_model);
     treeView->header()->hide();
 
-    connect(treeView, &QTreeView::doubleClicked,
+    connect(treeView, &QTreeView::activated,
             this, &BookmarksWidget::handleCommand);
 }
 
