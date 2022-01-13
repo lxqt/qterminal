@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Nechať okno otvorené, ak stratí zameranie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
@@ -722,12 +722,12 @@ Ak chcete odstrániť alebo zakázať odkaz, v bode 2 stlačte iba modifikátor 
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Na vodorovnom paneli kariet je zobrazené tlačítko uzamknutia</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Nechať okno otvorené, ak stratí zameranie</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>

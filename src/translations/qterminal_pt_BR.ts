@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Manter janela aberta quando perder o foco</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
@@ -722,12 +722,12 @@ Para remover/desativar um atalho, no ponto 2, pressione apenas um modificador (c
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Um botão de trava é mostrado na barra de abas horizontal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Manter janela aberta quando perder o foco</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
