@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Odağı kaybetse bile pencereyi açık tut</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -691,12 +691,12 @@ Bir Kısayolu silmek/devre dışı bırakmak için, 2. noktada yalnızca bir de�
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Kilit tuşunu yatay sekme barında gösterir</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Odağı kaybetse bile pencereyi açık tut</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="919"/>
