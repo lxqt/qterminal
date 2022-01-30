@@ -349,7 +349,9 @@ QModelIndexList BookmarksModel::allChildRows(const QModelIndex& parent) const
         auto child = index(row, 0, parent); // we only need the row
         list << child;
         if (hasChildren(child))
+        {
             list << allChildRows(child);
+        }
     }
     return list;
 }
@@ -424,7 +426,9 @@ void BookmarksWidget::filter(const QString& str)
                 treeView->setRowHidden(index.row(), index.parent(), false);
             }
             else
+            {
                 treeView->setRowHidden(index.row(), index.parent(), true);
+            }
         }
     }
 }
