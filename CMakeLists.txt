@@ -227,6 +227,11 @@ install(FILES
     DESTINATION "${CMAKE_INSTALL_DATADIR}/appdata"
 )
 
+install(FILES
+    qterminal_bookmarks_example.xml
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/qterminal"
+)
+
 if(NOT APPLEBUNDLE)
     install(TARGETS ${EXE_NAME} RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}")
     install(FILES ${QTERM_QM} DESTINATION ${TRANSLATIONS_DIR})
