@@ -674,9 +674,9 @@ void MainWindow::actAbout_triggered()
 
 void MainWindow::actProperties_triggered()
 {
-    PropertiesDialog *p = new PropertiesDialog(this);
-    connect(p, &PropertiesDialog::propertiesChanged, this, &MainWindow::propertiesChanged);
-    p->exec();
+    PropertiesDialog p(this);
+    connect(&p, &PropertiesDialog::propertiesChanged, this, &MainWindow::propertiesChanged);
+    p.exec();
 }
 
 void MainWindow::propertiesChanged()
