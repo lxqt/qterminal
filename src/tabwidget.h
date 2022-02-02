@@ -98,7 +98,7 @@ public slots:
     void switchToNext();
     void switchToPrev();
 signals:
-    void closeTabNotification(bool);
+    void closeLastTabNotification();
     void tabRenameRequested(int);
     void tabTitleColorChangeRequested(int);
     void currentTitleChanged(int);
