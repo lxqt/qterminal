@@ -589,6 +589,10 @@ void MainWindow::testClose(bool removeFinished)
 void MainWindow::toggleBookmarks()
 {
     m_bookmarksDock->toggleViewAction()->trigger();
+    if (m_bookmarksDock->isVisible())
+    {
+        m_bookmarksDock->widget()->setFocus();
+    }
 }
 
 
