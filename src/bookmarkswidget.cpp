@@ -17,7 +17,6 @@
  ***************************************************************************/
 
 #include <QDebug>
-#include <QStandardPaths>
 #include <QShortcut>
 
 #include "bookmarkswidget.h"
