@@ -223,7 +223,7 @@ install(FILES
 )
 
 install(FILES
-    qterminal.appdata.xml
+    qterminal.metainfo.xml
     DESTINATION "${CMAKE_INSTALL_DATADIR}/metainfo"
 )
 
