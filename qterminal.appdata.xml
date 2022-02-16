@@ -19,7 +19,7 @@
       <li>Text search</li>
       <li>Configurable user interface</li>
       <li>Integration of system clipboard</li>
-      <li>Shortcut editor</i>
+      <li>Shortcut editor</li>
       <li>Bookmarks for commands</li>
     </ul>
   </description>
@@ -29,7 +29,5 @@
       <caption>QTerminal with split terminals.</caption>
     </screenshot>
   </screenshots>
-  <screenshots>
-
   <url type="homepage">https://github.com/lxqt/qterminal</url>
 </application>
