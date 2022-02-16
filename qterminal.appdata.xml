@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
-  <id type="desktop">qterminal.desktop</id>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-2</project_license>
+<component type="desktop-application">
+  <id>io.github.lxqt.qterminal</id>
+
   <name>QTerminal</name>
-  <summary>A lightweight multiplatform terminal emulator.</summary>
+  <summary>A lightweight multiplatform terminal emulator</summary>
+
+  <metadata_license>CC-BY-4.0</metadata_license>
+  <project_license>GPL-2.0-only</project_license>
+  <content_rating type="oars-1.1"/>
+
+  <url type="homepage">https://github.com/lxqt/qterminal</url>
+
   <description>
     <p>
-    QTerminal is a lightweight multiplatform terminal emulator.
-    </p>
-    <p>
-    Its main features are:
+      QTerminal is a lightweight multi-platform terminal emulator.
+      Its main features are:
     </p>
     <ul>
       <li>Multiple tabs</li>
@@ -23,11 +27,14 @@
       <li>Bookmarks for commands</li>
     </ul>
   </description>
+
+  <launchable type="desktop-id">qterminal.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://lxqt-project.org/images/screenshots/qterminal-1.png</image>
-      <caption>QTerminal with split terminals.</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://lxqt-project.org/images/screenshots/qterminal-2.png</image>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://github.com/lxqt/qterminal</url>
-</application>
+</component>
