@@ -223,8 +223,8 @@ install(FILES
 )
 
 install(FILES
-    qterminal.appdata.xml
-    DESTINATION "${CMAKE_INSTALL_DATADIR}/appdata"
+    qterminal.metainfo.xml
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/metainfo"
 )
 
 if(NOT APPLEBUNDLE)
