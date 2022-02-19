@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Hold vinduet åbent når det ikke er i fokus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
@@ -727,7 +727,7 @@ Fjern/deaktivér en genvej, i punkt 2, ved kun at trykke på en ændringstast (s
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Hold vinduet åbent når det mister fokus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
