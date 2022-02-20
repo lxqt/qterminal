@@ -213,8 +213,7 @@ MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
     MainWindow *window = nullptr;
     if (dropMode)
     {
-        QWidget *hiddenPreviewParent = new QWidget(nullptr, Qt::Tool);
-        window = new MainWindow(cfg, dropMode, hiddenPreviewParent);
+        window = new MainWindow(cfg, dropMode);
         if (Properties::Instance()->dropShowOnStart)
             window->show();
     }
