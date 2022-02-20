@@ -311,8 +311,6 @@ void TabWidget::removeFinished()
     {
         int index = prop.toInt();
         removeTab(index);
-//        if (count() == 0)
-//            emit closeTabNotification();
     }
 }
 
@@ -336,7 +334,7 @@ void TabWidget::removeTab(int index)
     //    tabNumerator--;
         setUpdatesEnabled(true);
     } else {
-        emit closeTabNotification(true);
+        emit closeLastTabNotification();
     }
 
     renameTabsAfterRemove();
@@ -379,7 +377,7 @@ void TabWidget::removeCurrentTab()
     if (count() > 1) {
         removeTab(currentIndex());
     } else {
-        emit closeTabNotification(false);
+        emit closeLastTabNotification();
     }
 }
 
