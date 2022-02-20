@@ -592,7 +592,9 @@ void MainWindow::toggleBookmarks()
 void MainWindow::closeEvent(QCloseEvent *ev)
 {
     if (!Properties::Instance()->askOnExit
-        || !consoleTabulator->count())
+        || consoleTabulator->count() == 0
+        // the session is ended explicitly (e.g., by ctrl-d); prompt doesn't make sense
+        || consoleTabulator->terminalHolder()->findChildren<TermWidget*>().count() == 0)
     {
         // #80 - do not save state and geometry in drop mode
         if (!m_dropMode) {
