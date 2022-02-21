@@ -62,6 +62,8 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
         PropertiesDialog(QWidget *parent=nullptr);
         ~PropertiesDialog() override;
 
+        bool eventFilter(QObject *object, QEvent *event) override;
+
     signals:
         void propertiesChanged();
 
@@ -69,6 +71,8 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
         void setFontSample(const QFont & f);
         void openBookmarksFile(const QString &fname);
         void saveBookmarksFile(const QString &fname);
+
+        KeySequenceEdit *dropShortCutEdit;
 
     private slots:
         void apply();
