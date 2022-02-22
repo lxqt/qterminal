@@ -38,7 +38,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="89"/>
         <source>Bookmarks</source>
-        <translation>책갈피</translation>
+        <translation>바로찾기</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="173"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>초점을 잃을 때 열린 창 유지하기</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="247"/>
@@ -258,7 +258,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="427"/>
         <source>Toggle Bookmarks</source>
-        <translation>책갈피 토글</translation>
+        <translation>바로찾기 전환</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
@@ -335,7 +335,9 @@
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>A lightweight multiplatform terminal emulator</source>
-        <translation>가벼운 다중 플랫폼 터미널 에뮬레이터</translation>
+        <translation>가벼운 멀티플랫폼 터미널 에뮬레이터
+
+한국어 번역: 이정희 &lt;daemul72@gmail.com&gt;</translation>
     </message>
 </context>
 <context>
@@ -369,7 +371,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="63"/>
         <source>Bookmarks</source>
-        <translation>책갈피</translation>
+        <translation>바로찾기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
@@ -723,12 +725,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>가로 탭 막대에 잠금 버튼이 표시됩니다</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>초점을 잃을 때 열린 창 유지하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
@@ -759,17 +761,17 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="992"/>
         <source>Edit bookmark file contents</source>
-        <translation>책갈피 파일 내용 편집</translation>
+        <translation>바로찾기 파일 내용 편집</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1014"/>
         <source>Enable bookmarks</source>
-        <translation>책갈피 활성화</translation>
+        <translation>바로찾기 활성화</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1023"/>
         <source>Bookmark file</source>
-        <translation>책갈피 파일</translation>
+        <translation>바로찾기 파일</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1036"/>
@@ -779,7 +781,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1045"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>책갈피 파일 위치를 지정하여 OwnClound 나 Dropbox 와 같은 책갈피 공유 도구가 쉽게 접근할 수 있습니다.</translation>
+        <translation>자신의 바로찾기 파일 위치를 지정할 수 있습니다. OwnCloud 또는 Dropbox와 같은 도구를 사용하여 쉽게 바로찾기를 공유할 수 있습니다.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="155"/>
@@ -857,7 +859,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="468"/>
         <source>Open or create bookmarks file</source>
-        <translation>책갈피 파일을 열거나 생성</translation>
+        <translation>바로찾기 파일 열기 또는 만들기</translation>
     </message>
 </context>
 <context>
@@ -865,12 +867,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../bookmarkswidget.cpp" line="108"/>
         <source>Local Bookmarks</source>
-        <translation>로컬 책갈피</translation>
+        <translation>로컬 바로찾기</translation>
     </message>
     <message>
         <location filename="../bookmarkswidget.cpp" line="166"/>
         <source>Synchronized Bookmarks</source>
-        <translation>동기화된 책갈피</translation>
+        <translation>동기화된 바로찾기</translation>
     </message>
 </context>
 <context>
