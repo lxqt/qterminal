@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
         <source>Handle history...</source>
-        <translation>기록 처리...</translation>
+        <translation>히스토리 처리...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="333"/>
