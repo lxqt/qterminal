@@ -248,7 +248,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>탭 바 표시(&amp;S)</translation>
+        <translation>탭 표시줄 표시(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="421"/>
@@ -350,7 +350,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="31"/>
         <source>Appearance</source>
-        <translation>모양</translation>
+        <translation>모양새</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="39"/>
@@ -457,7 +457,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
         <source>Show the menu bar</source>
-        <translation>메뉴 표시</translation>
+        <translation>메뉴 표시줄 표시</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="335"/>
