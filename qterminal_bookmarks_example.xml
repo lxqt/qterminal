@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!--  Example file for QTerminal Bookmarks  -->
+<!-- Some examples to demonstrate how the use of QTerminal bookmarks. Adjust them to fit your needs. -->
 <qterminal>
 <group name="Base">
     <command name="Open in Filemanager" value="xdg-open $(pwd)"/>
