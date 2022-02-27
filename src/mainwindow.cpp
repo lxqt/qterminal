@@ -751,6 +751,16 @@ void MainWindow::updateActionGroup(QAction *a)
 
 void MainWindow::showHide()
 {
+    // don't toggle the drop-down terminal when it has a modal dialog
+    const auto dialogs = findChildren<QDialog*>();
+    for (const auto& dialog : dialogs)
+    {
+        if(dialog->isModal())
+        {
+            return;
+        }
+    }
+
     if (isVisible())
         hide();
     else
