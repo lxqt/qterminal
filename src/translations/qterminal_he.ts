@@ -36,306 +36,331 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="89"/>
+        <location filename="../mainwindow.cpp" line="88"/>
         <source>Bookmarks</source>
         <translation>סימניות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="192"/>
+        <location filename="../mainwindow.cpp" line="191"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>לחיצה על „%1” כדי לצפות במסוף.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="241"/>
+        <location filename="../mainwindow.cpp" line="240"/>
         <source>&amp;Next Tab</source>
         <translation>הלשונית ה&amp;באה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="244"/>
+        <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Previous Tab</source>
         <translation>הלשונית ה&amp;קודמת</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="253"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Move Tab &amp;Left</source>
         <translation>העברת לשונית &amp;שמאלה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="256"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>Move Tab &amp;Right</source>
         <translation>העברת לשונית ימי&amp;נה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="275"/>
+        <location filename="../mainwindow.cpp" line="274"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>פיצול המסוף או&amp;פקית</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="278"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>פיצול המסוף א&amp;נכית</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="283"/>
+        <location filename="../mainwindow.cpp" line="282"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;צמצום תת־מסוף</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="233"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>מ&amp;חיקת תוכן המסוף הפעיל</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="173"/>
+        <location filename="../mainwindow.cpp" line="172"/>
         <source>Keep window open when it loses focus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="247"/>
+        <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Previous Tab in History</source>
         <translation>הלשונית ה&amp;קודמת בהיסטוריה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="250"/>
+        <location filename="../mainwindow.cpp" line="249"/>
         <source>&amp;Next Tab in History</source>
         <translation>הלשונית ה&amp;באה בהיסטוריה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="261"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <source>Tab</source>
         <translation>לשונית</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="261"/>
         <source>Go to</source>
         <translation>מעבר אל</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="286"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>&amp;Top Subterminal</source>
         <translation>תת־מסוף &amp;עליון</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="289"/>
+        <location filename="../mainwindow.cpp" line="288"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>תת־מסוף &amp;תחתון</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="292"/>
+        <location filename="../mainwindow.cpp" line="291"/>
         <source>L&amp;eft Subterminal</source>
         <translation>תת־מסוף &amp;שמאלי</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>R&amp;ight Subterminal</source>
         <translation>תת־מסוף ימ&amp;ני</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="302"/>
+        <location filename="../mainwindow.cpp" line="301"/>
         <source>Copy &amp;Selection</source>
         <translation>העתקת ה&amp;בחירה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>Paste Clip&amp;board</source>
         <translation>הדבקת לוח הג&amp;זירים</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="308"/>
+        <location filename="../mainwindow.cpp" line="307"/>
         <source>Paste S&amp;election</source>
         <translation>הדבקת הב&amp;חירה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="311"/>
+        <location filename="../mainwindow.cpp" line="310"/>
         <source>Zoom &amp;in</source>
         <translation>הת&amp;קרבות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="314"/>
+        <location filename="../mainwindow.cpp" line="313"/>
         <source>Zoom &amp;out</source>
         <translation>הת&amp;רחקות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="317"/>
+        <location filename="../mainwindow.cpp" line="316"/>
         <source>Zoom rese&amp;t</source>
         <translation>&amp;איפוס התקריב</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>&amp;Find...</source>
         <translation>חי&amp;פוש…</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="325"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>Handle history...</source>
         <translation>טיפול בהיסטוריה…</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="333"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>&amp;Save Session</source>
         <translation>&amp;שמירת ההפעלה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="339"/>
+        <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Load Session</source>
         <translation>&amp;טעינת הפעלה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="346"/>
+        <location filename="../mainwindow.cpp" line="345"/>
         <source>&amp;Toggle Menu</source>
         <translation>ה&amp;חלפת מצב תפריט</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="351"/>
+        <location filename="../mainwindow.cpp" line="350"/>
         <source>Rename session</source>
         <translation>שינוי שם הפעלה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="360"/>
+        <location filename="../mainwindow.cpp" line="359"/>
         <source>&amp;New Tab</source>
         <translation>&amp;לשונית חדשה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="364"/>
+        <location filename="../mainwindow.cpp" line="363"/>
         <source>New Tab From &amp;Preset</source>
         <translation>לשונית חדשה מ&amp;ערכה מוגדרת</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="364"/>
         <source>1 &amp;Terminal</source>
         <translation>מסוף &amp;1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="367"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 מסופים או&amp;פקיים</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="368"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 מסופים א&amp;נכיים</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 מ&amp;סופים</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="377"/>
+        <location filename="../mainwindow.cpp" line="376"/>
         <source>&amp;Close Tab</source>
         <translation>ס&amp;גירת לשונית</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="380"/>
+        <location filename="../mainwindow.cpp" line="379"/>
         <source>&amp;New Window</source>
         <translation>&amp;חלון חדש</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="385"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>&amp;Preferences...</source>
         <translation>ה&amp;עדפות…</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="389"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>&amp;Quit</source>
         <translation>י&amp;ציאה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="395"/>
+        <location filename="../mainwindow.cpp" line="394"/>
         <source>&amp;Hide Window Borders</source>
         <translation>הסתרת &amp;גבולות החלון</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="413"/>
+        <location filename="../mainwindow.cpp" line="412"/>
         <source>&amp;Show Tab Bar</source>
         <translation>הצגת ס&amp;רגל לשוניות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="421"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Fullscreen</source>
         <translation>מסך מלא</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="427"/>
+        <location filename="../mainwindow.cpp" line="426"/>
         <source>Toggle Bookmarks</source>
         <translation>החלפת הצגת לשוניות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="435"/>
+        <location filename="../mainwindow.cpp" line="434"/>
         <source>&amp;Bottom</source>
         <translation>ת&amp;חתון</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="435"/>
         <source>&amp;Top</source>
         <translation>&amp;עליון</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="437"/>
-        <location filename="../mainwindow.cpp" line="473"/>
+        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="472"/>
         <source>&amp;Right</source>
         <translation>י&amp;מין</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="438"/>
-        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="437"/>
+        <location filename="../mainwindow.cpp" line="473"/>
         <source>&amp;Left</source>
         <translation>&amp;שמאל</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="456"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;פריסת לשוניות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="471"/>
         <source>&amp;None</source>
         <translation>&amp;ללא</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="490"/>
+        <location filename="../mainwindow.cpp" line="489"/>
         <source>S&amp;crollbar Layout</source>
         <translation>פריסת סרגל &amp;גלילה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;BlockCursor</source>
         <translation>סמן מ&amp;רובע</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;UnderlineCursor</source>
         <translation>סמן &amp;קו תחתי</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="505"/>
+        <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;IBeamCursor</source>
         <translation>סמן קור&amp;ת I</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="../mainwindow.cpp" line="521"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;צורת סמן המקלדת</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="621"/>
         <source>Exit QTerminal</source>
         <translation>יציאה מ־QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="624"/>
+        <location filename="../mainwindow.cpp" line="623"/>
         <source>Do not ask again</source>
         <translation>לא לשאול שוב</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="632"/>
+        <location filename="../mainwindow.cpp" line="631"/>
         <source>Are you sure you want to exit?</source>
         <translation>לצאת?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="663"/>
-        <source>A lightweight multiplatform terminal emulator</source>
-        <translation>מדמה מסוף קליל במשאבים שמיועד למגוון פלטפורמות</translation>
+        <location filename="../mainwindow.cpp" line="656"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="658"/>
+        <source>A lightweight and powerful multiplatform terminal emulator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="660"/>
+        <source>Copyright (C) </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="660"/>
+        <source>2013-2022</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="662"/>
+        <source>LXQt Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="664"/>
+        <source>Development: </source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -862,12 +887,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bookmarkswidget.cpp" line="108"/>
-        <source>Local Bookmarks</source>
-        <translation>סימניות מקומיות</translation>
-    </message>
-    <message>
-        <location filename="../bookmarkswidget.cpp" line="166"/>
+        <location filename="../bookmarkswidget.cpp" line="114"/>
         <source>Synchronized Bookmarks</source>
         <translation>סימניות מסונכרנות</translation>
     </message>

@@ -36,304 +36,329 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="377"/>
+        <location filename="../mainwindow.cpp" line="376"/>
         <source>&amp;Close Tab</source>
         <translation>タブを閉じる(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="275"/>
+        <location filename="../mainwindow.cpp" line="274"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>ターミナルの上下分割(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="234"/>
+        <location filename="../mainwindow.cpp" line="233"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>アクティブなターミナルをクリア(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="278"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>ターミナルの左右分割(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="283"/>
+        <location filename="../mainwindow.cpp" line="282"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>サブターミナルを折りたたむ(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="241"/>
+        <location filename="../mainwindow.cpp" line="240"/>
         <source>&amp;Next Tab</source>
         <translation>次のタブ(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="173"/>
+        <location filename="../mainwindow.cpp" line="172"/>
         <source>Keep window open when it loses focus</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="244"/>
+        <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Previous Tab</source>
         <translation>前のタブ(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="247"/>
+        <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Previous Tab in History</source>
         <translation>最近使用した前のタブ(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="250"/>
+        <location filename="../mainwindow.cpp" line="249"/>
         <source>&amp;Next Tab in History</source>
         <translation>最近使用した次のタブ(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="253"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Move Tab &amp;Left</source>
         <translation>タブを左へ移動(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="256"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>Move Tab &amp;Right</source>
         <translation>タブを右へ移動(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="261"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <source>Tab</source>
         <translation>タブ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="261"/>
         <source>Go to</source>
         <translation>タブへ移動</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="286"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>&amp;Top Subterminal</source>
         <translation>上のサブターミナル(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="289"/>
+        <location filename="../mainwindow.cpp" line="288"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>下のサブターミナル(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="292"/>
+        <location filename="../mainwindow.cpp" line="291"/>
         <source>L&amp;eft Subterminal</source>
         <translation>左のサブターミナル(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="295"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>R&amp;ight Subterminal</source>
         <translation>右のサブターミナル(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="302"/>
+        <location filename="../mainwindow.cpp" line="301"/>
         <source>Copy &amp;Selection</source>
         <translation>選択範囲のコピー(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="308"/>
+        <location filename="../mainwindow.cpp" line="307"/>
         <source>Paste S&amp;election</source>
         <translation>選択範囲の貼り付け(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="325"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>Handle history...</source>
         <translation>履歴の処理...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="333"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>&amp;Save Session</source>
         <translation>セッションを保存(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="339"/>
+        <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Load Session</source>
         <translation>セッションを読出(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="351"/>
+        <location filename="../mainwindow.cpp" line="350"/>
         <source>Rename session</source>
         <translation>タブ名の変更</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="364"/>
+        <location filename="../mainwindow.cpp" line="363"/>
         <source>New Tab From &amp;Preset</source>
         <translation>新しいタブをプリセットで開く(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="364"/>
         <source>1 &amp;Terminal</source>
         <translation>画面分割なし(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="367"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>上下２分割(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="368"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>左右２分割(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>4 Terminal&amp;s</source>
         <translation>４分割(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="385"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>&amp;Preferences...</source>
         <translation>設定(&amp;P)...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="389"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>&amp;Quit</source>
         <translation>終了(&amp;Q)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="427"/>
+        <location filename="../mainwindow.cpp" line="426"/>
         <source>Toggle Bookmarks</source>
         <translation>ブックマーク表示の切り替え</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="435"/>
+        <location filename="../mainwindow.cpp" line="434"/>
         <source>&amp;Bottom</source>
         <translation>下(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="435"/>
         <source>&amp;Top</source>
         <translation>上(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="437"/>
-        <location filename="../mainwindow.cpp" line="473"/>
+        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="472"/>
         <source>&amp;Right</source>
         <translation>右(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="438"/>
-        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="437"/>
+        <location filename="../mainwindow.cpp" line="473"/>
         <source>&amp;Left</source>
         <translation>左(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="456"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>&amp;Tabs Layout</source>
         <translation>タブの位置(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="471"/>
         <source>&amp;None</source>
         <translation>なし(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="490"/>
+        <location filename="../mainwindow.cpp" line="489"/>
         <source>S&amp;crollbar Layout</source>
         <translation>スクロールバーの位置(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;BlockCursor</source>
         <translation>ブロックカーソル(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;UnderlineCursor</source>
         <translation>アンダーラインカーソル(&amp;U)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="505"/>
+        <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;IBeamCursor</source>
         <translation>アイビームカーソル(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="../mainwindow.cpp" line="521"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>カーソルの形(&amp;K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="622"/>
+        <location filename="../mainwindow.cpp" line="621"/>
         <source>Exit QTerminal</source>
         <translation>QTerminal の終了</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="624"/>
+        <location filename="../mainwindow.cpp" line="623"/>
         <source>Do not ask again</source>
         <translation>次から確認しない</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="632"/>
+        <location filename="../mainwindow.cpp" line="631"/>
         <source>Are you sure you want to exit?</source>
         <translation>終了しますか？</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="663"/>
-        <source>A lightweight multiplatform terminal emulator</source>
-        <translation>軽量なマルチプラットフォーム対応の端末エミュレーター</translation>
+        <location filename="../mainwindow.cpp" line="656"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="89"/>
+        <location filename="../mainwindow.cpp" line="658"/>
+        <source>A lightweight and powerful multiplatform terminal emulator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="660"/>
+        <source>Copyright (C) </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="660"/>
+        <source>2013-2022</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="662"/>
+        <source>LXQt Project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="664"/>
+        <source>Development: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="88"/>
         <source>Bookmarks</source>
         <translation>ブックマーク</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="192"/>
+        <location filename="../mainwindow.cpp" line="191"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>ターミナルを表示するには [%1] を押します。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>Paste Clip&amp;board</source>
         <translation>クリップボードの貼り付け(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="311"/>
+        <location filename="../mainwindow.cpp" line="310"/>
         <source>Zoom &amp;in</source>
         <translation>ズームイン(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="314"/>
+        <location filename="../mainwindow.cpp" line="313"/>
         <source>Zoom &amp;out</source>
         <translation>ズームアウト(&amp;O)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="317"/>
+        <location filename="../mainwindow.cpp" line="316"/>
         <source>Zoom rese&amp;t</source>
         <translation>ズームのリセット(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>&amp;Find...</source>
         <translation>検索(&amp;F)...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="346"/>
+        <location filename="../mainwindow.cpp" line="345"/>
         <source>&amp;Toggle Menu</source>
         <translation>メニューの表示/非表示(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="360"/>
+        <location filename="../mainwindow.cpp" line="359"/>
         <source>&amp;New Tab</source>
         <translation>新しいタブ(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="380"/>
+        <location filename="../mainwindow.cpp" line="379"/>
         <source>&amp;New Window</source>
         <translation>新しいウィンドウ(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="395"/>
+        <location filename="../mainwindow.cpp" line="394"/>
         <source>&amp;Hide Window Borders</source>
         <translation>ウィンドウ枠を隠す(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="413"/>
+        <location filename="../mainwindow.cpp" line="412"/>
         <source>&amp;Show Tab Bar</source>
         <translation>タブの表示(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="421"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Fullscreen</source>
         <translation>全画面表示</translation>
     </message>
@@ -862,12 +887,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../bookmarkswidget.cpp" line="108"/>
-        <source>Local Bookmarks</source>
-        <translation>ローカルのブックマーク</translation>
-    </message>
-    <message>
-        <location filename="../bookmarkswidget.cpp" line="166"/>
+        <location filename="../bookmarkswidget.cpp" line="114"/>
         <source>Synchronized Bookmarks</source>
         <translation>ブックマークの同期</translation>
     </message>
