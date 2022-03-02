@@ -469,9 +469,9 @@ void PropertiesDialog::setupShortcuts()
 
 void PropertiesDialog::bookmarksButton_clicked()
 {
-    QFileDialog dia(this, tr("Open or create bookmarks file"));
+    QFileDialog dia(this, tr("Select bookmarks file"));
     dia.setOption(QFileDialog::DontConfirmOverwrite, true);
-    dia.setFileMode(QFileDialog::AnyFile);
+    dia.setNameFilter(tr("*.xml files (*.xml)"));
     if (!dia.exec())
         return;
 
@@ -488,7 +488,7 @@ void PropertiesDialog::openBookmarksFile(const QString &fname)
     QFile f(fname);
     QString content;
     if (!f.open(QFile::ReadOnly))
-        content = QString::fromLatin1("<qterminal>\n  <group name=\"group1\">\n    <command name=\"cmd1\" value=\"cd $HOME\"/>\n  </group>\n</qterminal>");
+        content = QString::fromLatin1("<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<!-- Syntax for bookmarks file-->\n<qterminal>\n  <group name=\"group 1\">\n    <command name=\"temp\" value=\"cd /tmp\"/>\n    <command name=\"Other command\" value=\"command\"/>\n  </group>\n</qterminal>");
     else
         content = QString::fromUtf8(f.readAll());
 

@@ -1,3 +1,4 @@
+
 /***************************************************************************
  *   Copyright (C) 2010 by Petr Vanek                                      *
  *   petr@scribus.info                                                     *
@@ -140,7 +141,7 @@ void Properties::loadSettings()
     // bookmarks
     useBookmarks = m_settings->value(QLatin1String("UseBookmarks"), false).toBool();
     bookmarksVisible = m_settings->value(QLatin1String("BookmarksVisible"), true).toBool();
-    const QString s = QFileInfo(m_settings->fileName()).canonicalPath() + QString::fromLatin1("/qterminal_bookmarks.xml");
+    const QString s = QFileInfo(m_settings->fileName()).canonicalPath() + QString::fromLatin1("/qterminal_bookmarks_example.xml");
     bookmarksFile = m_settings->value(QLatin1String("BookmarksFile"), s).toString();
 
     terminalsPreset = m_settings->value(QLatin1String("TerminalsPreset"), 0).toInt();
