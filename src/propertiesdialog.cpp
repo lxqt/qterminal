@@ -56,13 +56,14 @@ bool Delegate::eventFilter(QObject *object, QEvent *event)
     if (editor && event->type() == QEvent::KeyPress) {
         QKeyEvent *ke = static_cast<QKeyEvent *>(event);
         int k = ke->key();
-        if (k == Qt::Key_Return || k == Qt::Key_Enter) {
+        // commit data and close the editor with Enter/Return
+        if (ke->modifiers() == Qt::NoModifier && (k == Qt::Key_Return || k == Qt::Key_Enter)) {
             emit QAbstractItemDelegate::commitData(editor);
             emit QAbstractItemDelegate::closeEditor(editor);
             return true;
         }
-        // treat Tab and Backtab like other keys
-        else if(k == Qt::Key_Tab || k ==  Qt::Key_Backtab) {
+        // treat Tab and Backtab like other keys (instead of changing focus)
+        if (k == Qt::Key_Tab || k ==  Qt::Key_Backtab) {
             editor->pressKey(ke);
             return true;
         }
@@ -241,7 +242,10 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     dropHeightSpinBox->setValue(Properties::Instance()->dropHeight);
     dropWidthSpinBox->setValue(Properties::Instance()->dropWidht);
 
-    dropShortCutEdit->setText(Properties::Instance()->dropShortCut.toString());
+    dropShortCutEdit = new KeySequenceEdit();
+    dropShortCutFormLayout->setWidget(0, QFormLayout::FieldRole, dropShortCutEdit);
+    dropShortCutEdit->installEventFilter(this);
+    dropShortCutEdit->setKeySequence(Properties::Instance()->dropShortCut);
 
     useBookmarksCheckBox->setChecked(Properties::Instance()->useBookmarks);
     bookmarksLineEdit->setText(Properties::Instance()->bookmarksFile);
@@ -349,7 +353,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->dropKeepOpen = dropKeepOpenCheckBox->isChecked();
     Properties::Instance()->dropHeight = dropHeightSpinBox->value();
     Properties::Instance()->dropWidht = dropWidthSpinBox->value();
-    Properties::Instance()->dropShortCut = QKeySequence(dropShortCutEdit->text());
+    Properties::Instance()->dropShortCut = dropShortCutEdit->keySequence();
 
     Properties::Instance()->useBookmarks = useBookmarksCheckBox->isChecked();
     Properties::Instance()->bookmarksFile = bookmarksLineEdit->text();
@@ -502,6 +506,34 @@ void PropertiesDialog::saveBookmarksFile(const QString &fname)
         qDebug() << "Cannot write to file" << f.fileName();
     else
         f.write(bookmarkPlainEdit->toPlainText().toUtf8());
+}
+
+bool PropertiesDialog::eventFilter(QObject *object, QEvent *event)
+{
+    if (object == dropShortCutEdit) {
+        if (event->type() == QEvent::KeyPress) {
+            QKeyEvent *ke = static_cast<QKeyEvent *>(event);
+            int k = ke->key();
+            // treat Tab and Backtab like other keys (instead of changing focus)
+            if (k == Qt::Key_Tab || k ==  Qt::Key_Backtab) {
+                dropShortCutEdit->pressKey(ke);
+                return true;
+            }
+            // apply with Enter/Return and cancel with Escape, like in other entries
+            if (ke->modifiers() == Qt::NoModifier)
+            {
+                if (k == Qt::Key_Return || k == Qt::Key_Enter) {
+                    accept();
+                    return true;
+                }
+                if (k == Qt::Key_Escape) {
+                    reject();
+                    return true;
+                }
+            }
+        }
+    }
+    return QDialog::eventFilter(object, event);
 }
 
 /*
