@@ -335,32 +335,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="656"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>À propos</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="658"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Un émulateur de terminal multiplateforme léger et puissant</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="660"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="660"/>
         <source>2013-2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2013-2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="662"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt Project</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="664"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>Développement : </translation>
     </message>
 </context>
 <context>
