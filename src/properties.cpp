@@ -383,3 +383,8 @@ void Properties::removeAccelerator(QString& str)
     str.remove(QLatin1Char('&'));
 }
 
+QString Properties::configDir() const
+{
+    return QFileInfo(m_settings->fileName()).absoluteDir().canonicalPath();
+}
+

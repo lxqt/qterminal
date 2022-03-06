@@ -40,6 +40,7 @@ class Properties
         void saveSettings();
         void loadSettings();
         void migrate_settings();
+        QString configDir() const;
 
         static void removeAccelerator(QString& str);
 

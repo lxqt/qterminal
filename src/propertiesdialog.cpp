@@ -21,6 +21,7 @@
 #include <QDebug>
 #include <QStyleFactory>
 #include <QFileDialog>
+#include <QMessageBox>
 #include <QScreen>
 #include <QWindow>
 
@@ -248,10 +249,19 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     dropShortCutEdit->setKeySequence(Properties::Instance()->dropShortCut);
 
     useBookmarksCheckBox->setChecked(Properties::Instance()->useBookmarks);
-    bookmarksLineEdit->setText(Properties::Instance()->bookmarksFile);
-    openBookmarksFile(Properties::Instance()->bookmarksFile);
+    bookmarksLineEdit->setText(Properties::Instance()->bookmarksFile); // also needed by openBookmarksFile()
+    connect(bookmarksLineEdit, &QLineEdit::editingFinished,
+            this, &PropertiesDialog::bookmarksPathEdited); // manual editing of bookmarks file path
+    openBookmarksFile();
     connect(bookmarksButton, &QPushButton::clicked,
             this, &PropertiesDialog::bookmarksButton_clicked);
+    exampleBookmarksButton = nullptr;
+#ifdef APP_DIR
+    exampleBookmarksButton = new QPushButton(QLatin1String("Examples"));
+    FindBookmarkLayout->addWidget(exampleBookmarksButton);
+    connect(exampleBookmarksButton, &QPushButton::clicked,
+            this, &PropertiesDialog::bookmarksButton_clicked);
+#endif
 
     terminalPresetComboBox->setCurrentIndex(Properties::Instance()->terminalsPreset);
 
@@ -356,8 +366,10 @@ void PropertiesDialog::apply()
     Properties::Instance()->dropShortCut = dropShortCutEdit->keySequence();
 
     Properties::Instance()->useBookmarks = useBookmarksCheckBox->isChecked();
+    saveBookmarksFile();
+    // NOTE: Because the path of the bookmarks file may be changed by saveBookmarksFile(),
+    // it should be saved only after that.
     Properties::Instance()->bookmarksFile = bookmarksLineEdit->text();
-    saveBookmarksFile(Properties::Instance()->bookmarksFile);
 
     Properties::Instance()->terminalsPreset = terminalPresetComboBox->currentIndex();
 
@@ -467,45 +479,136 @@ void PropertiesDialog::setupShortcuts()
     // No shortcut validation is needed with QKeySequenceEdit.
 }
 
-void PropertiesDialog::bookmarksButton_clicked()
+void PropertiesDialog::bookmarksPathEdited()
 {
-    QFileDialog dia(this, tr("Open or create bookmarks file"));
-    dia.setOption(QFileDialog::DontConfirmOverwrite, true);
-    dia.setFileMode(QFileDialog::AnyFile);
-    if (!dia.exec())
+    if(!bookmarksLineEdit->isModified()) {
         return;
-
-    QString fname = dia.selectedFiles().count() ? dia.selectedFiles().at(0) : QString();
-    if (fname.isNull())
-        return;
-
-    bookmarksLineEdit->setText(fname);
-    openBookmarksFile(bookmarksLineEdit->text());
+    }
+    auto fname = bookmarksLineEdit->text();
+    if (!fname.isEmpty()) {
+        QFileInfo fInfo(fname);
+        if (fInfo.isFile() && fInfo.isReadable()) {
+            openBookmarksFile();
+        }
+    }
 }
 
-void PropertiesDialog::openBookmarksFile(const QString &fname)
+void PropertiesDialog::bookmarksButton_clicked()
 {
+    QFileDialog dia(this, tr("Open bookmarks file"));
+    dia.setFileMode(QFileDialog::ExistingFile);
+    dia.setNameFilter(tr("XML files (*.xml)"));
+
+    bool openAppDir(QObject::sender() != bookmarksButton);
+    if (!openAppDir) {
+        // if the path exists, select it; otherwise, open the app directory
+        auto path = bookmarksLineEdit->text();
+        if (!path.isEmpty() && QFile::exists(path)) {
+            dia.selectFile(path);
+        }
+        else {
+            openAppDir = true;
+        }
+    }
+#ifdef APP_DIR
+    if (openAppDir) {
+        auto appDirStr = QString::fromUtf8(APP_DIR);
+        if (!appDirStr.isEmpty()) {
+            QDir appDir(appDirStr);
+            if (appDir.exists()) {
+                dia.setDirectory(appDir);
+            }
+        }
+    }
+#endif
+
+    if (!dia.exec()) {
+        return;
+    }
+
+    QString fname = dia.selectedFiles().count() ? dia.selectedFiles().at(0) : QString();
+    if (fname.isNull()) {
+        return;
+    }
+
+    bookmarksLineEdit->setText(fname);
+    openBookmarksFile();
+}
+
+void PropertiesDialog::openBookmarksFile()
+{
+    auto fname = bookmarksLineEdit->text();
+    if (fname.isEmpty()) {
+        return;
+    }
+
     QFile f(fname);
     QString content;
-    if (!f.open(QFile::ReadOnly))
-        content = QString::fromLatin1("<qterminal>\n  <group name=\"group1\">\n    <command name=\"cmd1\" value=\"cd $HOME\"/>\n  </group>\n</qterminal>");
-    else
+    if (!f.open(QFile::ReadOnly)) {
+        content = QString::fromLatin1("<qterminal>\n  <group name=\"Change Directory\">\n    <command name=\"Home\" value=\"cd $HOME\"/>\n  </group>\n  <group name=\"File Manager\">\n    <command name=\"Open here\" value=\"xdg-open $(pwd)\"/>\n  </group>\n</qterminal>\n");
+    }
+    else {
         content = QString::fromUtf8(f.readAll());
+    }
 
     bookmarkPlainEdit->setPlainText(content);
     bookmarkPlainEdit->document()->setModified(false);
 }
 
-void PropertiesDialog::saveBookmarksFile(const QString &fname)
+void PropertiesDialog::saveBookmarksFile()
 {
-    if (!bookmarkPlainEdit->document()->isModified())
+    auto fname = bookmarksLineEdit->text();
+    if (fname.isEmpty()) {
         return;
+    }
+
+    bool fromAppDir = false;
+#ifdef APP_DIR
+    // if the file is chosen from the app directory, save it to the config directory
+    auto appDirStr = QString::fromUtf8(APP_DIR);
+    if (!appDirStr.isEmpty()) {
+        QFileInfo fInfo(fname);
+        if (fInfo.exists() && fInfo.dir() == QDir(appDirStr)) {
+            QString configDir = Properties::Instance()->configDir();
+            if (!configDir.isEmpty()) {
+                fname = QDir(configDir).absoluteFilePath(fInfo.fileName());
+                fromAppDir = true;
+            }
+        }
+    }
+#endif
+
+    // don't proceed if the bookmarks file exists but isn't from the app directory
+    // and the editor isn't modified
+    if (!fromAppDir
+        && !bookmarkPlainEdit->document()->isModified()
+        && QFile::exists(fname)) {
+        return;
+    }
 
     QFile f(fname);
-    if (!f.open(QFile::WriteOnly|QFile::Truncate))
-        qDebug() << "Cannot write to file" << f.fileName();
-    else
+
+    // first show a prompt message if needed
+    if (fromAppDir && f.exists()) {
+        QMessageBox::StandardButton btn =
+        QMessageBox::question(this, tr("Question"), tr("Do you want to overwrite this bookmarks file?")
+                                                    + QLatin1String("\n%1").arg(fname));
+        if (btn == QMessageBox::No) {
+            return;
+        }
+    }
+
+    if (!f.open(QFile::WriteOnly|QFile::Truncate)) {
+        QMessageBox::warning(this, tr("Warning"), tr("Cannot write bookmarks to this file:")
+                                                  + QLatin1String("\n%1").arg(fname));
+    }
+    else {
         f.write(bookmarkPlainEdit->toPlainText().toUtf8());
+        if (fromAppDir) {
+            bookmarksLineEdit->setText(fname); // update the bookmarks file path
+        }
+        bookmarkPlainEdit->document()->setModified(false); // the user may have clicked "Apply", not "OK"
+    }
 }
 
 bool PropertiesDialog::eventFilter(QObject *object, QEvent *event)

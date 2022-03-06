@@ -216,6 +216,8 @@ if(X11_FOUND)
     target_link_libraries(${EXE_NAME} ${X11_X11_LIB})
 endif()
 
+set(APP_DIR "${CMAKE_INSTALL_FULL_DATADIR}/qterminal")
+add_definitions(-DAPP_DIR=\"${APP_DIR}\")
 
 install(FILES
     ${DESKTOP_FILES}
@@ -229,7 +231,7 @@ install(FILES
 
 install(FILES
     qterminal_bookmarks_example.xml
-    DESTINATION "${CMAKE_INSTALL_DATADIR}/qterminal"
+    DESTINATION ${APP_DIR}
 )
 
 if(NOT APPLEBUNDLE)
