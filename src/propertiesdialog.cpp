@@ -257,7 +257,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
             this, &PropertiesDialog::bookmarksButton_clicked);
     exampleBookmarksButton = nullptr;
 #ifdef APP_DIR
-    exampleBookmarksButton = new QPushButton(QLatin1String("Examples"));
+    exampleBookmarksButton = new QPushButton(tr("Examples"));
     FindBookmarkLayout->addWidget(exampleBookmarksButton);
     connect(exampleBookmarksButton, &QPushButton::clicked,
             this, &PropertiesDialog::bookmarksButton_clicked);
