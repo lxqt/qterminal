@@ -762,9 +762,18 @@ void MainWindow::showHide()
     }
 
     if (isVisible())
+    {
         hide();
+    }
     else
     {
+        // The checked state of the fullscreen action should be reset; otherwise, its shortcut
+        // might need to be pressed twice later to make the window fullscreen. We don't consult
+        // "isFullScreen()" because it will return "false" if the window has been deactivated.
+        if (auto a = actions.value(QLatin1String(FULLSCREEN)))
+        {
+            a->setChecked(false);
+        }
         realign();
         show();
         activateWindow();
