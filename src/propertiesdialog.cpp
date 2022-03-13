@@ -497,13 +497,18 @@ void PropertiesDialog::bookmarksButton_clicked()
 {
     QFileDialog dia(this, tr("Open bookmarks file"));
     dia.setFileMode(QFileDialog::ExistingFile);
-    dia.setNameFilter(tr("XML files (*.xml)"));
+    QString xmlStr = tr("XML files (*.xml)");
+    QString allStr = tr("All files (*)");
+    dia.setNameFilters(QStringList() << xmlStr << allStr);
 
     bool openAppDir(QObject::sender() != bookmarksButton);
     if (!openAppDir) {
         // if the path exists, select it; otherwise, open the app directory
         auto path = bookmarksLineEdit->text();
         if (!path.isEmpty() && QFile::exists(path)) {
+            if (!path.endsWith(QLatin1String(".xml"))) {
+                dia.selectNameFilter(allStr);
+            }
             dia.selectFile(path);
         }
         else {
@@ -589,10 +594,15 @@ void PropertiesDialog::saveBookmarksFile()
     QFile f(fname);
 
     // first show a prompt message if needed
-    if (fromAppDir && f.exists()) {
-        QMessageBox::StandardButton btn =
-        QMessageBox::question(this, tr("Question"), tr("Do you want to overwrite this bookmarks file?")
-                                                    + QLatin1String("\n%1").arg(fname));
+    if (f.exists()) {
+        QMessageBox::StandardButton btn = QMessageBox::Yes;
+        if (fromAppDir) {
+            btn = QMessageBox::question(this, tr("Question"), tr("Do you want to overwrite this bookmarks file?")
+                                                              + QLatin1String("\n%1").arg(fname));
+        }
+        else if (!fname.endsWith(QLatin1String(".xml"))) {
+            btn =  QMessageBox::question(this, tr("Question"), tr("The name of bookmarks file does not end with '.xml'.\nAre you sure that you want to overwrite it?"));
+        }
         if (btn == QMessageBox::No) {
             return;
         }
