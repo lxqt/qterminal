@@ -1010,7 +1010,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
         </widget>
        </item>
        <item row="1" column="0">
-        <layout class="QHBoxLayout" name="horizontalLayout">
+        <layout class="QHBoxLayout" name="FindBookmarkLayout">
          <item>
           <widget class="QLabel" name="label_10">
            <property name="text">
