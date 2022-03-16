@@ -582,10 +582,6 @@ void MainWindow::showFullscreen(bool fullscreen)
 void MainWindow::toggleBookmarks()
 {
     m_bookmarksDock->toggleViewAction()->trigger();
-    if (m_bookmarksDock->isVisible())
-    {
-        m_bookmarksDock->widget()->setFocus();
-    }
 }
 
 
@@ -852,6 +848,10 @@ void MainWindow::newTerminalWindow()
 
 void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
 {
+    if (m_bookmarksDock->isFloating())
+    {
+        activateWindow();
+    }
     consoleTabulator->terminalHolder()->currentTerminal()->impl()->sendText(cmd);
     consoleTabulator->terminalHolder()->currentTerminal()->setFocus();
 }
@@ -859,6 +859,18 @@ void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
 void MainWindow::bookmarksDock_visibilityChanged(bool visible)
 {
     Properties::Instance()->bookmarksVisible = visible;
+    if (visible)
+    {
+        if (m_bookmarksDock->isFloating())
+        {
+            m_bookmarksDock->activateWindow();
+        }
+        m_bookmarksDock->widget()->setFocus();
+    }
+    else
+    { // this is especially needed in the drop-down mode
+        consoleTabulator->terminalHolder()->currentTerminal()->setFocus();
+    }
 }
 
 void MainWindow::addNewTab(TerminalConfig cfg)
