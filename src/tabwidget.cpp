@@ -238,6 +238,14 @@ void TabWidget::renameTabsAfterRemove()
 
 void TabWidget::contextMenuEvent(QContextMenuEvent *event)
 {
+    int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this, event->pos()));
+    if (tabIndex == -1) {
+        tabIndex = currentIndex();
+    }
+    if (tabIndex == -1) {
+        return;
+    }
+
     QMenu menu(this);
     QMap< QString, QAction * > actions = findParent<MainWindow>(this)->leaseActions();
 
@@ -247,14 +255,13 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
     rename->setShortcut(actions[QLatin1String(RENAME_SESSION)]->shortcut());
     rename->blockSignals(true);
 
-    int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this,event->pos()));
     QAction *action = menu.exec(event->globalPos());
     if (action == close) {
         emit tabCloseRequested(tabIndex);
     } else if (action == rename) {
         emit tabRenameRequested(tabIndex);
     } else if (action == changeColor) {
-    emit tabTitleColorChangeRequested(tabIndex);
+        emit tabTitleColorChangeRequested(tabIndex);
     }
 }
 
