@@ -871,7 +871,7 @@ void MainWindow::addNewTab(TerminalConfig cfg)
         consoleTabulator->preset2Horizontal();
     else
         consoleTabulator->addNewTab(cfg);
-    updateDisabledActions();
+    // disabled actions are updated by TabWidget::onCurrentChanged()
 }
 
 void MainWindow::onCurrentTitleChanged(int index)
