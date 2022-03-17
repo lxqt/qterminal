@@ -54,7 +54,7 @@ public slots:
     void removeTab(int);
     void switchTab(int);
     void onAction();
-    void saveCurrentChanged(int);
+    void onCurrentChanged(int);
     void removeCurrentTab();
     int switchToRight();
     int switchToLeft();

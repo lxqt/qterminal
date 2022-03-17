@@ -60,7 +60,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTa
     connect(this, &TabWidget::tabRenameRequested, this, &TabWidget::renameSession);
     connect(this, &TabWidget::tabTitleColorChangeRequested, this, &TabWidget::setTitleColor);
     connect(mSwitcher.data(), &TabSwitcher::activateTab, this, &TabWidget::switchTab);
-    connect(this, &TabWidget::currentChanged, this, &TabWidget::saveCurrentChanged);
+    connect(this, &TabWidget::currentChanged, this, &TabWidget::onCurrentChanged);
 }
 
 TabWidget::~TabWidget()
@@ -344,7 +344,6 @@ void TabWidget::removeTab(int index)
 void TabWidget::switchTab(int index)
 {
     setCurrentIndex(index);
-    findParent<MainWindow>(this)->updateDisabledActions();
 }
 
 void TabWidget::onAction()
@@ -354,8 +353,11 @@ void TabWidget::onAction()
     switchTab(action->property("tab").toInt() - 1);
 }
 
-void TabWidget::saveCurrentChanged(int index)
+void TabWidget::onCurrentChanged(int index)
 {
+    // update disabled actions
+    findParent<MainWindow>(this)->updateDisabledActions();
+    // also, update hstory
     auto* w = widget(index);
     mHistory.removeAll(w);
     mHistory.prepend(w);
