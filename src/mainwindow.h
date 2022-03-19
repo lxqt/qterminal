@@ -60,7 +60,7 @@ private:
 
     // A parent object for QObjects that are created dynamically based on settings
     // Used to simplify the setting cleanup on reconfiguration: deleting settingOwner frees all related QObjects
-    QWidget *settingOwner;
+    QObject *settingOwner;
 
     QMenu *presetsMenu;
     TerminalConfig m_config;
