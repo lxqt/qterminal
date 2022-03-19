@@ -150,8 +150,7 @@ void MainWindow::rebuildActions()
 {
     // Delete all setting-related QObjects
     delete settingOwner;
-    settingOwner = new QWidget(this);
-    settingOwner->setGeometry(0,0,0,0);
+    settingOwner = new QObject(this);
 
     // Then create them again
     setup_FileMenu_Actions();
