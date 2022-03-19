@@ -58,7 +58,9 @@ bool Delegate::eventFilter(QObject *object, QEvent *event)
         QKeyEvent *ke = static_cast<QKeyEvent *>(event);
         int k = ke->key();
         // commit data and close the editor with Enter/Return
-        if (ke->modifiers() == Qt::NoModifier && (k == Qt::Key_Return || k == Qt::Key_Enter)) {
+        // NOTE: "Enter" from numeric pad is accompanied by "KeypadModifier"
+        if ((ke->modifiers() == Qt::NoModifier || ke->modifiers() == Qt::KeypadModifier)
+            && (k == Qt::Key_Return || k == Qt::Key_Enter)) {
             emit QAbstractItemDelegate::commitData(editor);
             emit QAbstractItemDelegate::closeEditor(editor);
             return true;
@@ -633,7 +635,7 @@ bool PropertiesDialog::eventFilter(QObject *object, QEvent *event)
                 return true;
             }
             // apply with Enter/Return and cancel with Escape, like in other entries
-            if (ke->modifiers() == Qt::NoModifier)
+            if (ke->modifiers() == Qt::NoModifier || ke->modifiers() == Qt::KeypadModifier)
             {
                 if (k == Qt::Key_Return || k == Qt::Key_Enter) {
                     accept();
