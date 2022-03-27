@@ -582,6 +582,14 @@ void MainWindow::showFullscreen(bool fullscreen)
 void MainWindow::toggleBookmarks()
 {
     m_bookmarksDock->toggleViewAction()->trigger();
+    if (m_bookmarksDock->isVisible())
+    { // give the focus to the bookmarks dock
+        if (m_bookmarksDock->isFloating())
+        {
+            m_bookmarksDock->activateWindow();
+        }
+        m_bookmarksDock->widget()->setFocus();
+    }
 }
 
 
@@ -853,21 +861,17 @@ void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
         activateWindow();
     }
     consoleTabulator->terminalHolder()->currentTerminal()->impl()->sendText(cmd);
-    consoleTabulator->terminalHolder()->currentTerminal()->setFocus();
+    // the focus proxy (TermWidgetImpl) should be checked because it's nullptr with "exit"
+    if (consoleTabulator->terminalHolder()->currentTerminal()->focusProxy() != nullptr) {
+        consoleTabulator->terminalHolder()->currentTerminal()->setFocus();
+    }
 }
 
 void MainWindow::bookmarksDock_visibilityChanged(bool visible)
 {
     Properties::Instance()->bookmarksVisible = visible;
-    if (visible)
-    {
-        if (m_bookmarksDock->isFloating())
-        {
-            m_bookmarksDock->activateWindow();
-        }
-        m_bookmarksDock->widget()->setFocus();
-    }
-    else
+    if (!visible
+        && consoleTabulator->terminalHolder()->currentTerminal()->focusProxy() != nullptr)
     { // this is especially needed in the drop-down mode
         consoleTabulator->terminalHolder()->currentTerminal()->setFocus();
     }
