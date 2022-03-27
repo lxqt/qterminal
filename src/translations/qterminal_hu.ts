@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="172"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Ablak nyitvatartása fókusz elvesztésekor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="246"/>
@@ -335,32 +335,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="656"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Névjegy</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="658"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Egy könnyed és erőteljes  többplatformos terminál emulátor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="660"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>Szerzői jog (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="660"/>
         <source>2013-2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2013-2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="662"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt projekt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="664"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>Fejlesztés: </translation>
     </message>
 </context>
 <context>
@@ -646,7 +646,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished">Szabályozza, hogy a dobozrajzoló karaktereket a QTerminal jelenítse meg, vagy hagyja ezt a betűrenderelő könyvtárakra.</translation>
+        <translation type="unfinished">Válassza ki, hogy a dobozrajzoló karaktereket a QTerminal jelenítse meg, vagy hagyja ezt az alábbi betűrenderelő könyvtárakra.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
@@ -697,7 +697,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished">Ha nincs bejelölve, az új lap a sor végén lesz megnyitva</translation>
+        <translation>Ha nincs kiválasztva, az új lap a sor végén lesz megnyitva</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
