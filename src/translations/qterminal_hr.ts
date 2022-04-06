@@ -318,47 +318,47 @@
         <translation>Obli&amp;k pokazivača tipkovnice</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="621"/>
+        <location filename="../mainwindow.cpp" line="625"/>
         <source>Exit QTerminal</source>
         <translation>Zatvori QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="623"/>
+        <location filename="../mainwindow.cpp" line="627"/>
         <source>Do not ask again</source>
         <translation>Nemoj ponovo pitati</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="631"/>
+        <location filename="../mainwindow.cpp" line="635"/>
         <source>Are you sure you want to exit?</source>
         <translation>Stvarno želiš zatvoriti program?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="656"/>
+        <location filename="../mainwindow.cpp" line="660"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="658"/>
+        <location filename="../mainwindow.cpp" line="662"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>Copyright (C) </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>2013-2022</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="666"/>
         <source>LXQt Project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="668"/>
         <source>Development: </source>
         <translation type="unfinished"></translation>
     </message>
@@ -781,107 +781,149 @@ Za uklanjanje/deaktiviranje prečaca, u točki 2 pritisni samo modifikatorsku ti
         <translation>Prečac:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="992"/>
+        <location filename="../forms/propertiesdialog.ui" line="986"/>
         <source>Edit bookmark file contents</source>
         <translation>Uredi sadržaj datoteke knjižnih oznaka</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1014"/>
+        <location filename="../forms/propertiesdialog.ui" line="1008"/>
         <source>Enable bookmarks</source>
         <translation>Aktiviraj knjižne oznake</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1023"/>
+        <location filename="../forms/propertiesdialog.ui" line="1017"/>
         <source>Bookmark file</source>
         <translation>Datoteka knjižnih oznaka</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1036"/>
+        <location filename="../forms/propertiesdialog.ui" line="1030"/>
         <source>Find...</source>
         <translation>Pronađi …</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1045"/>
+        <location filename="../forms/propertiesdialog.ui" line="1039"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Moguće je odrediti vlastito mjesto datoteke knjižnih oznaka. To omogućuje jednostavno dijeljenje knjižnih oznaka s alatima poput OwnCloud ili Dropbox.</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="155"/>
+        <location filename="../propertiesdialog.cpp" line="159"/>
         <source>No scrollbar</source>
         <translation>Bez klizne trake</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="155"/>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="159"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Left</source>
         <translation>Lijevo</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="155"/>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="159"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Right</source>
         <translation>Desno</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Top</source>
         <translation>Gore</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Bottom</source>
         <translation>Dolje</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="174"/>
+        <location filename="../propertiesdialog.cpp" line="178"/>
         <source>BlockCursor</source>
         <translation>Pravokutnik</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="174"/>
+        <location filename="../propertiesdialog.cpp" line="178"/>
         <source>UnderlineCursor</source>
         <translation>Podvlaka</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="174"/>
+        <location filename="../propertiesdialog.cpp" line="178"/>
         <source>IBeamCursor</source>
         <translation>Uspravna crta</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="192"/>
+        <location filename="../propertiesdialog.cpp" line="196"/>
         <source>No move</source>
         <translation>Bez premještanja</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="192"/>
+        <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to top</source>
         <translation>Klizanje skroz gore</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="192"/>
+        <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to bottom</source>
         <translation>Klizanje skroz dolje</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="392"/>
+        <location filename="../propertiesdialog.cpp" line="262"/>
+        <source>Examples</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="410"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Slike (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="199"/>
-        <location filename="../propertiesdialog.cpp" line="295"/>
+        <location filename="../propertiesdialog.cpp" line="500"/>
+        <source>Open bookmarks file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="502"/>
+        <source>XML files (*.xml)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="503"/>
+        <source>All files (*)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="602"/>
+        <location filename="../propertiesdialog.cpp" line="606"/>
+        <source>Question</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="602"/>
+        <source>Do you want to overwrite this bookmarks file?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="606"/>
+        <source>The name of bookmarks file does not end with &apos;.xml&apos;.
+Are you sure that you want to overwrite it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="614"/>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="614"/>
+        <source>Cannot write bookmarks to this file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="203"/>
+        <location filename="../propertiesdialog.cpp" line="311"/>
         <source>System Default</source>
         <translation>Standard sustava</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="391"/>
+        <location filename="../propertiesdialog.cpp" line="409"/>
         <source>Choose a background image</source>
         <translation>Odaberi sliku pozadine</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="468"/>
-        <source>Open or create bookmarks file</source>
-        <translation>Otvori ili stvori datoteku knjižnih oznaka</translation>
     </message>
 </context>
 <context>
@@ -916,12 +958,12 @@ Za uklanjanje/deaktiviranje prečaca, u točki 2 pritisni samo modifikatorsku ti
         <translation>Odaberi boju naslova nove kartice</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="244"/>
+        <location filename="../tabwidget.cpp" line="252"/>
         <source>Close session</source>
         <translation>Zatvori sesiju</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="246"/>
+        <location filename="../tabwidget.cpp" line="254"/>
         <source>Change title color</source>
         <translation>Promijeni boju naslova</translation>
     </message>

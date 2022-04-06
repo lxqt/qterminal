@@ -318,47 +318,47 @@
         <translation>Tvar textového &amp;ukazatele</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="621"/>
+        <location filename="../mainwindow.cpp" line="625"/>
         <source>Exit QTerminal</source>
         <translation>Ukončit QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="623"/>
+        <location filename="../mainwindow.cpp" line="627"/>
         <source>Do not ask again</source>
         <translation>Příště se neptat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="631"/>
+        <location filename="../mainwindow.cpp" line="635"/>
         <source>Are you sure you want to exit?</source>
         <translation>Opravdu chcete program ukončit?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="656"/>
+        <location filename="../mainwindow.cpp" line="660"/>
         <source>About</source>
         <translation>O aplikaci</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="658"/>
+        <location filename="../mainwindow.cpp" line="662"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Na systémové prostředky nenáročný a funkcemi nabitý multiplatformní emulátor terminálu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>Copyright (C) </source>
         <translation>Autorská práva © </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="666"/>
         <source>LXQt Project</source>
         <translation>Projekt LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="668"/>
         <source>Development: </source>
         <translation>Vývoj: </translation>
     </message>
@@ -740,17 +740,17 @@ Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifik
         <translation>Šířka</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="992"/>
+        <location filename="../forms/propertiesdialog.ui" line="986"/>
         <source>Edit bookmark file contents</source>
         <translation>Upravit obsah souboru se záložkami</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1014"/>
+        <location filename="../forms/propertiesdialog.ui" line="1008"/>
         <source>Enable bookmarks</source>
         <translation>Používat záložky</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1023"/>
+        <location filename="../forms/propertiesdialog.ui" line="1017"/>
         <source>Bookmark file</source>
         <translation>Soubor se záložkami</translation>
     </message>
@@ -780,12 +780,12 @@ Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifik
         <translation>Klávesová zkratka:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1036"/>
+        <location filename="../forms/propertiesdialog.ui" line="1030"/>
         <source>Find...</source>
         <translation>Najít…</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1045"/>
+        <location filename="../forms/propertiesdialog.ui" line="1039"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Můžete stanovit své vlastní umístění souboru se záložkami. To umožňuje snadné sdílení záložek pomocí nástrojů, jako jsou NextCloud nebo Dropbox.</translation>
     </message>
@@ -806,82 +806,124 @@ Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifik
         <translation>Klávesa</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="155"/>
+        <location filename="../propertiesdialog.cpp" line="159"/>
         <source>No scrollbar</source>
         <translation>Žádný posuvník</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="155"/>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="159"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Left</source>
         <translation>Vlevo</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="155"/>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="159"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Right</source>
         <translation>Vpravo</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Top</source>
         <translation>Nahoře</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Bottom</source>
         <translation>Dole</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="174"/>
+        <location filename="../propertiesdialog.cpp" line="178"/>
         <source>BlockCursor</source>
         <translation>Blokový kurzor</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="174"/>
+        <location filename="../propertiesdialog.cpp" line="178"/>
         <source>UnderlineCursor</source>
         <translation>Podtržítkový kurzor</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="174"/>
+        <location filename="../propertiesdialog.cpp" line="178"/>
         <source>IBeamCursor</source>
         <translation>Ukazatel v podobě svislice</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="192"/>
+        <location filename="../propertiesdialog.cpp" line="196"/>
         <source>No move</source>
         <translation>Nepřesouvat se</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="192"/>
+        <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to top</source>
         <translation>Posun nahoru</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="192"/>
+        <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to bottom</source>
         <translation>Posun dolů</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="392"/>
+        <location filename="../propertiesdialog.cpp" line="262"/>
+        <source>Examples</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="410"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Obrázky (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="199"/>
-        <location filename="../propertiesdialog.cpp" line="295"/>
+        <location filename="../propertiesdialog.cpp" line="500"/>
+        <source>Open bookmarks file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="502"/>
+        <source>XML files (*.xml)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="503"/>
+        <source>All files (*)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="602"/>
+        <location filename="../propertiesdialog.cpp" line="606"/>
+        <source>Question</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="602"/>
+        <source>Do you want to overwrite this bookmarks file?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="606"/>
+        <source>The name of bookmarks file does not end with &apos;.xml&apos;.
+Are you sure that you want to overwrite it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="614"/>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="614"/>
+        <source>Cannot write bookmarks to this file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="203"/>
+        <location filename="../propertiesdialog.cpp" line="311"/>
         <source>System Default</source>
         <translation>Dle výchozího nastavení systému</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="391"/>
+        <location filename="../propertiesdialog.cpp" line="409"/>
         <source>Choose a background image</source>
         <translation>Zvolte obrázek pro pozadí</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="468"/>
-        <source>Open or create bookmarks file</source>
-        <translation>Otevřít nebo vytvořit soubor se záložkami</translation>
     </message>
 </context>
 <context>
@@ -916,12 +958,12 @@ Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifik
         <translation>Vyberte novou barvu pro titulek panelu</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="244"/>
+        <location filename="../tabwidget.cpp" line="252"/>
         <source>Close session</source>
         <translation>Zavřít relaci</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="246"/>
+        <location filename="../tabwidget.cpp" line="254"/>
         <source>Change title color</source>
         <translation>Změnit barvu titulku</translation>
     </message>

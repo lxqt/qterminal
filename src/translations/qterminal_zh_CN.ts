@@ -253,47 +253,47 @@
         <translation>光标样式(&amp;K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="621"/>
+        <location filename="../mainwindow.cpp" line="625"/>
         <source>Exit QTerminal</source>
         <translation>退出程序</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="623"/>
+        <location filename="../mainwindow.cpp" line="627"/>
         <source>Do not ask again</source>
         <translation>不要再次问我</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="631"/>
+        <location filename="../mainwindow.cpp" line="635"/>
         <source>Are you sure you want to exit?</source>
         <translation>您真的要关闭本程序吗?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="656"/>
+        <location filename="../mainwindow.cpp" line="660"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="658"/>
+        <location filename="../mainwindow.cpp" line="662"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>Copyright (C) </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>2013-2022</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="666"/>
         <source>LXQt Project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="668"/>
         <source>Development: </source>
         <translation type="unfinished"></translation>
     </message>
@@ -726,17 +726,17 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>宽度</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="992"/>
+        <location filename="../forms/propertiesdialog.ui" line="986"/>
         <source>Edit bookmark file contents</source>
         <translation>编辑书签文件内容</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1014"/>
+        <location filename="../forms/propertiesdialog.ui" line="1008"/>
         <source>Enable bookmarks</source>
         <translation>启用书签功能</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1023"/>
+        <location filename="../forms/propertiesdialog.ui" line="1017"/>
         <source>Bookmark file</source>
         <translation>书签文件</translation>
     </message>
@@ -797,92 +797,134 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>快捷键:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1036"/>
+        <location filename="../forms/propertiesdialog.ui" line="1030"/>
         <source>Find...</source>
         <translation>搜索...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1045"/>
+        <location filename="../forms/propertiesdialog.ui" line="1039"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>您可以指定书签保存位置，它很容易通过私有云或者Dropbox分享。</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="155"/>
+        <location filename="../propertiesdialog.cpp" line="159"/>
         <source>No scrollbar</source>
         <translation>无滚动栏</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="155"/>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="159"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Left</source>
         <translation>左</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="155"/>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="159"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Right</source>
         <translation>右</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Top</source>
         <translation>上</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="161"/>
+        <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Bottom</source>
         <translation>下</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="174"/>
+        <location filename="../propertiesdialog.cpp" line="178"/>
         <source>BlockCursor</source>
         <translation>块状光标</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="174"/>
+        <location filename="../propertiesdialog.cpp" line="178"/>
         <source>UnderlineCursor</source>
         <translation>下划线状光标</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="174"/>
+        <location filename="../propertiesdialog.cpp" line="178"/>
         <source>IBeamCursor</source>
         <translation>条状光标</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="192"/>
+        <location filename="../propertiesdialog.cpp" line="196"/>
         <source>No move</source>
         <translation>无动作</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="192"/>
+        <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to top</source>
         <translation>滚动到顶部</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="192"/>
+        <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to bottom</source>
         <translation>滚动到底部</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="392"/>
+        <location filename="../propertiesdialog.cpp" line="262"/>
+        <source>Examples</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="410"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>图片 (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="199"/>
-        <location filename="../propertiesdialog.cpp" line="295"/>
+        <location filename="../propertiesdialog.cpp" line="500"/>
+        <source>Open bookmarks file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="502"/>
+        <source>XML files (*.xml)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="503"/>
+        <source>All files (*)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="602"/>
+        <location filename="../propertiesdialog.cpp" line="606"/>
+        <source>Question</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="602"/>
+        <source>Do you want to overwrite this bookmarks file?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="606"/>
+        <source>The name of bookmarks file does not end with &apos;.xml&apos;.
+Are you sure that you want to overwrite it?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="614"/>
+        <source>Warning</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="614"/>
+        <source>Cannot write bookmarks to this file:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="203"/>
+        <location filename="../propertiesdialog.cpp" line="311"/>
         <source>System Default</source>
         <translation>系统默认</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="391"/>
+        <location filename="../propertiesdialog.cpp" line="409"/>
         <source>Choose a background image</source>
         <translation>选择背景图片</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="468"/>
-        <source>Open or create bookmarks file</source>
-        <translation>打开或者创建书签文件</translation>
     </message>
 </context>
 <context>
@@ -917,12 +959,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>选择新的标签标题颜色</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="244"/>
+        <location filename="../tabwidget.cpp" line="252"/>
         <source>Close session</source>
         <translation>关闭会话</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="246"/>
+        <location filename="../tabwidget.cpp" line="254"/>
         <source>Change title color</source>
         <translation>更改标题颜色</translation>
     </message>
