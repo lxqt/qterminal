@@ -505,7 +505,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
         <source>Background image:</source>
-        <translation>배경 그림:</translation>
+        <translation>배경 이미지:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="290"/>
@@ -774,7 +774,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="936"/>
         <source>Width</source>
-        <translation>폭</translation>
+        <translation>너비</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="960"/>
@@ -836,37 +836,37 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>BlockCursor</source>
-        <translation>블록</translation>
+        <translation>블록커서</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>UnderlineCursor</source>
-        <translation>밑줄</translation>
+        <translation>밑줄커서</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>IBeamCursor</source>
-        <translation>I-빔</translation>
+        <translation>I-빔커서</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
         <source>No move</source>
-        <translation>이동하지 않음</translation>
+        <translation>이동 없음</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to top</source>
-        <translation>위로 스크롤</translation>
+        <translation>맨 위로 스크롤</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to bottom</source>
-        <translation>아래로 스크롤</translation>
+        <translation>맨 아래로 스크롤</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>예제</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
@@ -876,44 +876,45 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>바로찾기 파일 열기</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>XML 파일 (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>모든 파일 (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>질문</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>이 바로찾기 파일을 덮어쓰시겠습니까?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>바로찾기 파일의 이름은 &apos;.xml&apos;로 끝나지 않습니다.
+덮어쓰시겠습니까?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>경고</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>이 파일에 바로찾기를 쓸 수 없음:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
@@ -924,7 +925,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="409"/>
         <source>Choose a background image</source>
-        <translation>배경 그림 선택</translation>
+        <translation>배경 이미지 선택하기</translation>
     </message>
 </context>
 <context>
@@ -932,7 +933,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../bookmarkswidget.cpp" line="114"/>
         <source>Synchronized Bookmarks</source>
-        <translation>동기화된 바로찾기</translation>
+        <translation>바로찾기 동기화됨</translation>
     </message>
 </context>
 <context>
