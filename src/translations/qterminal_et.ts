@@ -865,7 +865,7 @@ Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklah
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>Näited</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
@@ -875,44 +875,45 @@ Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklah
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava järjehoidjate fail</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>XML failid (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kõik failid (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Küsimus</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kas sa soovid asendada olemasoleva järjehoidjate faili?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Järjehoidjate failil puudub xml-laiend.
+Kas sa oled kindel, et see on õige fail ja soovid seda asendada?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Hoiatus</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Järjehoidjaid ei õnnestu salvestada sellesse faili:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
