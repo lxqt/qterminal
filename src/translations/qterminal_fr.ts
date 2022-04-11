@@ -360,7 +360,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation>Développement&#xa0;: </translation>
+        <translation>Développement : </translation>
     </message>
 </context>
 <context>
@@ -871,7 +871,7 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>Exemples</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="409"/>
@@ -886,44 +886,45 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir le fichier de signets</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>Fichiers XML (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Tous les fichiers (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Question</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Voulez-vous écraser ce fichier de signets ?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Le nom du fichier de signets ne se termine pas par &apos;.xml&apos;.
+Êtes-vous sûr de vouloir l&apos;écraser ?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Attention</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Impossible d&apos;écrire des signets dans ce fichier :</translation>
     </message>
 </context>
 <context>
