@@ -865,7 +865,7 @@ Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifik
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>Příklady</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
@@ -875,44 +875,45 @@ Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifik
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevřít soubor se záložkami</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>XML soubory (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Všechny soubory (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Otázka</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Opravdu chcete tento soubor se záložkami přepsat?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Název souboru se záložkami nekonči na „.xml“.
+Opravdu ho chcete přepsat?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Varování</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nedaří se zapsat záložky do tohoto souboru:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
