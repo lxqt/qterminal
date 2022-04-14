@@ -290,7 +290,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <source>&amp;None</source>
-        <translation>&amp;Ουδεμία</translation>
+        <translation>&amp;Καμία</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="488"/>
@@ -455,7 +455,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="215"/>
         <source>None (single terminal)</source>
-        <translation>Ουδεμία (απλό τερματικό)</translation>
+        <translation>Καμία (απλό τερματικό)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="220"/>

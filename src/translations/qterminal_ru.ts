@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation>Не закрывать окно после потери фокуса</translation>
+        <translation>Оставить окно открытым после потери фокуса</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
