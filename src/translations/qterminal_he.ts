@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>לשמור על החלון פתוח בעת אובדן מיקוד</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
@@ -335,32 +335,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>על אודות</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>מדמה מסוף קליל ורב עוצמה למגוון פלטפורמות</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>כל הזכויות שמורות (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>2013-2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2013‏-2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="665"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>מיזם LXQt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>פיתוח: </translation>
     </message>
 </context>
 <context>
@@ -747,12 +747,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>כפתור נעילה מופיע בסרגל לשוניות אופקי</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>לשמור על החלון פתוח בעת אובדן מיקוד</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
@@ -865,7 +865,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>דוגמאות</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
@@ -875,44 +875,45 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>פתיחת קובץ סימניות</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>קובצי XML ‏(‎*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>כל הקבצים (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>שאלה</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>לדרוס את קובץ הסימניות הזה?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>שם קובץ הסימניות לא מסתיים ב־‚‎.xml’.
+לדרוס אותו?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>אזהרה</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>לא ניתן לכתוב סימניות לקובץ הזה:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
