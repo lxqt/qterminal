@@ -1,3 +1,24 @@
+qterminal-1.1.0 / 2022-04-15
+=============================
+ * Updated README.md.
+ * Fixed max. value of drop-down width/height spin-box.
+ * Use explicit QFlags default constructor instead of nullptr.
+ * Changed the relation between unlimited history and history size (selecting unlimited history now disables the history size spinbox).
+ * Activate bookmarks according to platform click behavior.
+ * Enabled bookmark filtering.
+ * Cleaned up bookmarks tree.
+ * No hidden parent for dropdown window (fixes several old issues).
+ * Fixed closing of last tab with prompt.
+ * Never show close prompt when explicitly ending session from terminal.
+ * Don't toggle drop-down terminal if it has modal dialog.
+ * Added bookmarks examples.
+ * Added a shortcut entry for drop-down shortcut.
+ * Fixed a minor problem in full-screening in drop-down mode.
+ * Improved the Bookmarks page of QTerminal's settings dialog.
+ * Fixed focus change on showing/hiding bookmarks dock.
+ * Fixed updating of shortcuts on tab switching/removal/creation.
+ * Fixed right clicking of an empty area of tabbar.
+
 qterminal-1.0.0 / 2021-11-04
 =============================
  * Bumped minimum required Qt version to 5.15.
