@@ -285,7 +285,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="454"/>
         <source>&amp;Tabs Layout</source>
-        <translation>&amp;Välilehtien Asettelu</translation>
+        <translation>&amp;Välilehtien asettelu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="470"/>
@@ -295,7 +295,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="488"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>Vierityspalkin Asettelu</translation>
+        <translation>Vierityspalkin asettelu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="501"/>
@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="520"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>&amp;Näppäimistön Osoittimen Muoto</translation>
+        <translation>&amp;Näppäimistön osoittimen muoto</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="624"/>
@@ -335,32 +335,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Tietoja</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Kevyt ja tehokas pääte-emulaattori</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>Tekijänoikeus (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>2013-2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2013-2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="665"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt-projekti</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>Kehitys: </translation>
     </message>
 </context>
 <context>
@@ -460,7 +460,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="148"/>
         <source>Font</source>
-        <translation></translation>
+        <translation>Fontti</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="184"/>
@@ -475,7 +475,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Widget style</source>
-        <translation>Pienoisohjelma tyyli</translation>
+        <translation>Pienoisohjelman tyyli</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
@@ -541,12 +541,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation>Käytä fontin laatikon-piirto merkkejä</translation>
+        <translation>Käytä fontin laatikon-piirtomerkkejä</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Pikakomennot aktivoidaan Alt painikkeella, joka saattaa vaikuttaa päätteen toimintaan.</translation>
+        <translation>Pikakomennot aktivoidaan Alt-painikkeella, joka saattaa vaikuttaa päätteen toimintaan.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
@@ -676,7 +676,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation>Historian käsittely komento</translation>
+        <translation>Historian käsittely -komento</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
@@ -747,7 +747,7 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation>Lukitus painike näytetään vaakasuorassa välilehtipalkissa</translation>
+        <translation>Lukituspainike näytetään vaakasuorassa välilehtipalkissa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
@@ -865,7 +865,7 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>Esimerkit</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
@@ -875,44 +875,45 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>Avaa krjanmerkkitiedosto</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>XML-tiedostot (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaikki tiedostot (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Kysymys</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Haluatko korvata tämän kirjanmerkkitiedoston?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirjanmerkkitiedoston pääte ei ole &apos;.xml&apos;.
+Haluatko varmasti korvata sen?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Varoitus</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirjanmerkkejä ei voi kirjoittaa tähän tiedostoon:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
@@ -973,7 +974,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
-        <translation>Lataa Istunto</translation>
+        <translation>Lataa istunto</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="80"/>
@@ -1021,7 +1022,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation>&amp;Qt Tietoja...</translation>
+        <translation>Tietoja &amp;Qt:stä...</translation>
     </message>
 </context>
 </TS>
