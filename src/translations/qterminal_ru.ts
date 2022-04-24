@@ -355,7 +355,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="665"/>
         <source>LXQt Project</source>
-        <translation>Проект LXQt</translation>
+        <translation>LXQt Project</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
@@ -595,7 +595,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation>Никто</translation>
+        <translation>Ничего</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
@@ -605,17 +605,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation>Приблизить</translation>
+        <translation>Масштаб</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation>Уместить</translation>
+        <translation>Заполнить</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation>Центрировать</translation>
+        <translation>По центру</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>

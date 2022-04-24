@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Fenster geöffnet lassen, wenn es den Fokus verliert</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
@@ -335,12 +335,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Über</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Ein leichtgewichtiger und leistungsstarker Multiplattform-Terminalemulator</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
@@ -350,17 +350,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>2013-2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2013-2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="665"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt-Projekt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>Entwicklung: </translation>
     </message>
 </context>
 <context>
@@ -706,7 +706,7 @@ Um einen Shortcut zu löschen/ deaktivieren, drücke bei Schritt 2 nur einen Mod
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Fenster geöffnet lassen, wenn es den Fokus verliert</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="919"/>
@@ -865,7 +865,7 @@ Um einen Shortcut zu löschen/ deaktivieren, drücke bei Schritt 2 nur einen Mod
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>Beispiele</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
@@ -875,28 +875,28 @@ Um einen Shortcut zu löschen/ deaktivieren, drücke bei Schritt 2 nur einen Mod
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>Lesezeichendatei öffnen</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>XML-Dateien (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Alle Dateien (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Frage</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Möchten Sie diese Lesezeichendatei überschreiben?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
@@ -907,12 +907,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Warnung</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Es können keine Lesezeichen in diese Datei geschrieben werden:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
