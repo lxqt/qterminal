@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozostaw okno otwarte po przełączeniu skupienia na inne</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="323"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>Przetwarzaj historię...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="331"/>
@@ -335,32 +335,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>O programie</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>Lekki, wieloplatformowy emulator terminala</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>2013-2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2013-2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="665"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>Projekt LXQt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>Rozwój: </translation>
     </message>
 </context>
 <context>
@@ -616,47 +616,47 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryb tła:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>Brak</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozciągnij</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>Powiększ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Dopasuj</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyśrodkuj</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Określ, czy znaki powinny być rysowane wewnętrznie przez QTerminal, czy za pomocą bazowych bibliotek renderowania czcionek.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Przełącza użycie pogrubionej czcionki do renderowania intensywnych kolorów</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Użyj pogrubionej czcionki do intensywnych kolorów</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
@@ -666,17 +666,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Jakie zachowanie emulować. Pamiętaj, że nie musi to odpowiadać Twojemu systemowi operacyjnemu.&lt;/p&gt;&lt;p&gt;Jeśli nie masz pewności, użyj trybu &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>To polecenie zostanie uruchomione z argumentem zawierającym nazwę pliku tymczasowego zawierającego historię przewijania</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Polecenie obsługi historii</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
@@ -692,27 +692,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz nową kartę po prawej od aktywnej</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Po odznaczeniu tej opcji nowa karta zostanie otwarta jako pierwsza od prawej</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Zamknij kartę klikając kółko myszy</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Wymuś wyłączenie trybu wklejania w nawiasach</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryb wklejania w nawiasach jest pomocny przy wklejaniu wielu linii tekstu.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -722,7 +722,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Aby edytować Skrót:
+1. Kliknij dwa razy jego przycisk
+2. Naciśnij żądaną kombinację klawiszy, a następnie puść wszystkie klawisze
+3. Kliknij na Skrót i naciśnij Enter
+
+Aby usunąć/wyłączyć Skrót, przy drugim punkcie naciśnij tylko klawisz modyfikatora (np. Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="874"/>
@@ -742,12 +747,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Przycisk blokowania jest wyświetlany na poziomym pasku kart</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozostaw okno otwarte po utracie skupienia</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
