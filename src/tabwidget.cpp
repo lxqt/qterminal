@@ -201,7 +201,7 @@ void TabWidget::renameSession(int index)
     bool ok = false;
     QString text = QInputDialog::getText(this, tr("Tab name"),
                                         tr("New tab name:"), QLineEdit::Normal,
-                                        QString(), &ok);
+                                        tabBar()->tabText(index), &ok);
     if(ok && !text.isEmpty())
     {
         setTabIcon(index, QIcon{});
