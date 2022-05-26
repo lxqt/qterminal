@@ -783,7 +783,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="986"/>
         <source>Edit bookmark file contents</source>
-        <translation>עריכת תכני קובץ סימניות</translation>
+        <translation>עריכת תוכן קובץ הסימניות</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1008"/>
