@@ -621,7 +621,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished">Egyik sem</translation>
+        <translation>Egyik sem</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
@@ -651,7 +651,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished">Beállítja a félkövér betűtípus használatát az intenzív színek megjelenítéséhez</translation>
+        <translation>Beállítja a félkövér betűtípust az intenzív színek megjelenítéséhez</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
