@@ -83,22 +83,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>활성화 된 터미널 화면 비우기(&amp;C)</translation>
+        <translation>활성 터미널 화면 비우기(&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation>초점을 잃을 때 열린 창 유지하기</translation>
+        <translation>초점을 잃으면 열린 창 유지하기</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>스크롤백에서 이전 탭(&amp;P)</translation>
+        <translation>내역의 이전 탭(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Next Tab in History</source>
-        <translation>스크롤백에서 다음 탭(&amp;N)</translation>
+        <translation>내역의 다음 탭(&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
@@ -133,7 +133,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
         <source>Copy &amp;Selection</source>
-        <translation>선택영역 복사(&amp;S)</translation>
+        <translation>선택영역 복사하기(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="303"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="323"/>
         <source>Handle history...</source>
-        <translation>히스토리 처리...</translation>
+        <translation>내역 처리하기...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="331"/>
@@ -198,7 +198,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>미리 설정된 새 탭(&amp;P)</translation>
+        <translation>프리셋에서 새 탭(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="363"/>
@@ -243,12 +243,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="393"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>윈도우 경계선 숨김(&amp;H)</translation>
+        <translation>창 테두리 숨김(&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="411"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>탭 표시줄 표시(&amp;S)</translation>
+        <translation>탭 표시줄 표시하기(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="419"/>
@@ -325,12 +325,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="626"/>
         <source>Do not ask again</source>
-        <translation>다시 묻지 않음</translation>
+        <translation>다시 묻지않음</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="634"/>
         <source>Are you sure you want to exit?</source>
-        <translation>정말로 종료 할까요?</translation>
+        <translation>종료하시겠습니까?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
@@ -399,7 +399,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>탭이 하나일 때 탭 바 숨김</translation>
+        <translation>탭이 하나일 때 탭 표시줄 숨김</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="275"/>
@@ -414,12 +414,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="204"/>
         <source>Start with preset:</source>
-        <translation>사전 설정으로 시작:</translation>
+        <translation>프리셋으로 시작:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="404"/>
         <source>Show a border around the current terminal</source>
-        <translation>현재 터미널 경계선 표시</translation>
+        <translation>현재 터미널 경계선 표시하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="381"/>
@@ -480,7 +480,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
         <source>Show the menu bar</source>
-        <translation>메뉴 표시줄 표시</translation>
+        <translation>메뉴 표시줄 표시하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="335"/>
@@ -515,7 +515,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="488"/>
         <source>Show terminal size on resize</source>
-        <translation>변경된 터미널 크기 표시</translation>
+        <translation>변경된 터미널 크기 표시하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="471"/>
@@ -531,7 +531,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="361"/>
         <source>Show close button on each tab</source>
-        <translation>탭에 종료 버튼 표시</translation>
+        <translation>탭에 종료 버튼 표시하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
@@ -551,7 +551,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
-        <translation>메뉴 바 액셀러레이터 없음</translation>
+        <translation>메뉴 모음 가속기 없음</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="586"/>
@@ -581,12 +581,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="755"/>
         <source>Save Size when closing</source>
-        <translation>종료시 창 크기 저장</translation>
+        <translation>종료시 창 크기 저장하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="796"/>
         <source>Save Position when closing</source>
-        <translation>종료시 현재 위치 저장</translation>
+        <translation>종료시 현재 위치 저장하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="772"/>
@@ -596,12 +596,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="816"/>
         <source>Unlimited history</source>
-        <translation>무제한 스크롤백</translation>
+        <translation>무제한 내역</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
         <source>History size (in lines)</source>
-        <translation>스크롤백 크기</translation>
+        <translation>내역 크기 (줄 단위)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="741"/>
@@ -671,12 +671,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>이 명령은 스크롤백 기록을 포함하는 임시 파일의 파일 이름을 포함하는 인수를 사용하여 실행됩니다</translation>
+        <translation>이 명령은 스크롤백 내역을 포함하는 임시 파일의 파일 이름을 포함하는 인수를 사용하여 실행됩니다</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation>기록 명령 처리</translation>
+        <translation>내역 명령 처리하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
@@ -743,17 +743,17 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>Show on start</source>
-        <translation>시작할 때 표시</translation>
+        <translation>시작 시 표시하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation>가로 탭 막대에 잠금 버튼이 표시됩니다</translation>
+        <translation>가로 탭 표시줄에 잠금 버튼이 표시됩니다</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation>초점을 잃을 때 열린 창 유지하기</translation>
+        <translation>초점을 잃으면 열린 창 유지하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
@@ -784,7 +784,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="986"/>
         <source>Edit bookmark file contents</source>
-        <translation>바로찾기 파일 내용 편집</translation>
+        <translation>바로찾기 파일 내용 편집하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1008"/>
@@ -866,7 +866,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation>예제</translation>
+        <translation>예시</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
@@ -925,7 +925,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="409"/>
         <source>Choose a background image</source>
-        <translation>배경 이미지 선택하기</translation>
+        <translation>배경 이미지 고르기</translation>
     </message>
 </context>
 <context>
@@ -988,7 +988,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
-        <translation>주 윈도우</translation>
+        <translation>기본 창</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
@@ -1013,7 +1013,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation>편집(&amp;E)</translation>
+        <translation>편집하기(&amp;E)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
