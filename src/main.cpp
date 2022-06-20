@@ -72,7 +72,50 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     exit(code);
 }
 
-void parse_args(int argc, char* argv[], QString& workdir, QString & shell_command, out bool& dropMode)
+QStringList parse_command(const QString& str)
+{
+    const QRegularExpression separator(QString::fromLatin1(R"('|(?<!\\)(\\{2})*(\s|")|\z)"));
+    const QRegularExpression doubleQuote(QString::fromLatin1(R"((?<!\\)(\\{2})*")"));
+    const QRegularExpression escapedSpace(QString::fromLatin1(R"(\\(\\{2})*\s)"));
+    const QRegularExpression singleQuote(QStringLiteral("'"));
+
+    QStringList list;
+    QRegularExpressionMatch match;
+    int index = 0;
+    int nextIndex;
+    while((nextIndex = str.indexOf(separator, index, &match)) != -1)
+    {
+        if (nextIndex > index)
+        {
+            list << str.mid(index, nextIndex - index).replace(escapedSpace, QStringLiteral(" "));
+        }
+        if (match.capturedLength() == 0)
+        { // end of string ("\z") is matched
+            break;
+        }
+        index = nextIndex + match.capturedLength();
+        auto c = str.at(index - 1); // last matched character
+        if (!c.isSpace())
+        { // a single quote or an unescaped double quote is matched
+            nextIndex = str.indexOf(c == QLatin1Char('\'') ? singleQuote : doubleQuote, index, &match);
+            if (nextIndex == -1)
+            { // the quote is not closed
+                break;
+            }
+            else
+            {
+                if (nextIndex > index)
+                {
+                    list << str.mid(index, nextIndex - index).replace(escapedSpace, QStringLiteral(" "));
+                }
+                index = nextIndex + match.capturedLength();
+            }
+        }
+    }
+    return list;
+}
+
+void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode)
 {
     int next_option;
     dropMode = false;
@@ -87,13 +130,13 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
                 workdir = QString::fromLocal8Bit(optarg);
                 break;
             case 'e':
-                shell_command = QString::fromLocal8Bit(optarg);
+                shell_command << parse_command(QString::fromLocal8Bit(optarg));
                 // #15 "Raw" -e params
                 // Passing "raw" params (like konsole -e mcedit /tmp/tmp.txt") is more preferable - then I can call QString("qterminal -e ") + cmd_line in other programs
                 while (optind < argc)
                 {
                     //printf("arg: %d - %s\n", optind, argv[optind]);
-                    shell_command += QLatin1Char(' ') + QString::fromLocal8Bit(argv[optind++]);
+                    shell_command << QString::fromLocal8Bit(argv[optind++]);
                 }
                 break;
             case 'd':
@@ -141,7 +184,8 @@ int main(int argc, char *argv[])
         app->registerOnDbus();
     #endif
 
-    QString workdir, shell_command;
+    QString workdir;
+    QStringList shell_command;
     bool dropMode;
     parse_args(argc, argv, workdir, shell_command, dropMode);
 

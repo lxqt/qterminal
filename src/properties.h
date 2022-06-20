@@ -50,7 +50,7 @@ class Properties
         QPoint mainWindowPosition;
         QByteArray mainWindowState;
         //ShortcutMap shortcuts;
-        QString shell;
+        QStringList shell;
         QFont font;
         QString colorScheme;
         QString guiStyle;
