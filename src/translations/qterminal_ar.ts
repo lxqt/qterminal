@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>اترك النافذة مفتوحة عندما تفقد التركيز</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="323"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>التعامل مع التاريخ ...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="331"/>
@@ -198,7 +198,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
         <source>New Tab From &amp;Preset</source>
-        <translation></translation>
+        <translation>لسان جديد من &amp; إعداد مسبق</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="363"/>
@@ -218,37 +218,37 @@
     <message>
         <location filename="../mainwindow.cpp" line="369"/>
         <source>4 Terminal&amp;s</source>
-        <translation>4 طر&amp;فيات</translation>
+        <translation>4 طرفيات</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
         <source>&amp;Close Tab</source>
-        <translation>أ&amp;غلِق اللسان</translation>
+        <translation>&amp;أغلِق اللسان</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
         <source>&amp;New Window</source>
-        <translation>نافذة &amp;جديدة</translation>
+        <translation>&amp;نافذة جديدة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="383"/>
         <source>&amp;Preferences...</source>
-        <translation>التّفضيلات …</translation>
+        <translation>&amp;التّفضيلات …</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="387"/>
         <source>&amp;Quit</source>
-        <translation>أ&amp;نهِ</translation>
+        <translation>&amp;أنهِ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="393"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>أ&amp;خفِ حدود النافذة</translation>
+        <translation>&amp;أخفِ حدود النافذة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="411"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>ا&amp;عرض شريط الألسنة</translation>
+        <translation>&amp;اعرض شريط الألسنة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="419"/>
@@ -258,7 +258,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="425"/>
         <source>Toggle Bookmarks</source>
-        <translation></translation>
+        <translation>تبديل الإشارات المرجعية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="433"/>
@@ -274,18 +274,18 @@
         <location filename="../mainwindow.cpp" line="435"/>
         <location filename="../mainwindow.cpp" line="471"/>
         <source>&amp;Right</source>
-        <translation></translation>
+        <translation>&amp;يمين</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <location filename="../mainwindow.cpp" line="472"/>
         <source>&amp;Left</source>
-        <translation>يسار</translation>
+        <translation>&amp;يسار</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="454"/>
         <source>&amp;Tabs Layout</source>
-        <translation>تخطيط الأل&amp;سنة</translation>
+        <translation>&amp;تخطيط الألسنة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="470"/>
@@ -295,32 +295,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="488"/>
         <source>S&amp;crollbar Layout</source>
-        <translation></translation>
+        <translation>تخطيط شريط التمرير</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="501"/>
         <source>&amp;BlockCursor</source>
-        <translation></translation>
+        <translation>&amp; كتلة المؤشر</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;UnderlineCursor</source>
-        <translation></translation>
+        <translation>&amp; تسطير المؤشر</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;IBeamCursor</source>
-        <translation></translation>
+        <translation>&amp; مؤشر اي بيم</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="520"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation></translation>
+        <translation>&amp;شكل مؤشر لوحة المفاتيح</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="624"/>
         <source>Exit QTerminal</source>
-        <translation type="unfinished">الخروج مِن QTerminal</translation>
+        <translation>الخروج مِن QTerminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="626"/>
@@ -335,32 +335,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>حول</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>محاكي طرفية خفيف وقوي متعدد المنصات</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>حقوق النشر (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>2013-2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2013-2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="665"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>مشروع LXQt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>تطوير: </translation>
     </message>
 </context>
 <context>
@@ -389,7 +389,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="55"/>
         <source>Dropdown</source>
-        <translation></translation>
+        <translation>منسدل</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="63"/>
@@ -541,7 +541,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>استخدم أحرف الرسم المربع المضمنة في الخط</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
@@ -571,7 +571,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="789"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished">Trim trailing newlines in pasted text</translation>
+        <translation>تقليم الأسطر الجديدة اللاحقة في النص الملصق</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="724"/>
@@ -616,67 +616,67 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>وضع الخلفية:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>لا أحد</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>مدّ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>تكبير</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>ملائم</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>مركز</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>حدد ما إذا كان يجب رسم أحرف رسم المربعات بواسطة QTerminal داخليًا أو تركها لمكتبات عرض الخطوط الأساسية.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>يبدل استخدام وجه الخط الغامق لتقديم ألوان مكثفة</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>استخدم وجه الخط الغامق للحصول على ألوان مكثفة</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">أ&amp;خفِ حدود النافذة</translation>
+        <translation>&amp;أخفِ حدود النافذة</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;أي سلوك لمحاكاته. لاحظ أن هذا لا يجب أن يتطابق مع نظام التشغيل الخاص بك.&lt;/p&gt;&lt;p&gt;إذا لم تكن متأكدًا ، فاستخدم &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>سيتم تشغيل هذا الأمر باستخدام وسيطة تحتوي على اسم ملف الملف المؤقت الذي يحتوي على محفوظات التمرير</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>التعامل مع أمر التاريخ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
@@ -687,32 +687,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="660"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation>احصل على الحجم الحالي</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>افتح لسان جديد على يمين اللسان النشط</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>إذا لم يتم تحديده ، فسيتم فتح اللسان الجديد باعتباره لسان موجودة في أقصى اليمين</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>إغلاق علامة التبويب في النقر الأوسط</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>قم بتعطيل وضع اللصق بين قوسين بقوة</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>وضع اللصق بين قوسين مفيد للصق سلاسل متعددة الأسطر.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -722,7 +722,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>لتحرير اختصار:
+1. انقر نقرًا مزدوجًا فوق مفتاحه
+2. اضغط على المجموعة المرغوبة ثم حررها
+3. انقر فوق اختصار أو اضغط على Enter
+
+لإزالة / تعطيل اختصار ، عند النقطة 2 ، اضغط على معدِّل فقط (مثل Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="874"/>
@@ -737,17 +742,17 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>Show on start</source>
-        <translation type="unfinished">عرضه عند الإطلاق</translation>
+        <translation>عرضه عند البدء</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>يظهر زر القفل على شريط الألسنة الأفقي</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>اترك النافذة مفتوحة عندما تفقد التركيز</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
@@ -778,7 +783,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="986"/>
         <source>Edit bookmark file contents</source>
-        <translation></translation>
+        <translation>تحرير محتويات ملف الإشارات المرجعية</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1008"/>
@@ -793,12 +798,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1030"/>
         <source>Find...</source>
-        <translation></translation>
+        <translation>جد...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1039"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation></translation>
+        <translation>يمكنك تحديد موقع ملف الإشارات المرجعية الخاص بك. يسمح بمشاركة الإشارات المرجعية بسهولة باستخدام أدوات مثل OwnCloud أو Dropbox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="159"/>
@@ -809,105 +814,106 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <location filename="../propertiesdialog.cpp" line="159"/>
         <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Left</source>
-        <translation>اليسار</translation>
+        <translation>يسار</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="159"/>
         <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Right</source>
-        <translation>اليمين</translation>
+        <translation>يمين</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Top</source>
-        <translation>الأعلى</translation>
+        <translation>أعلى</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Bottom</source>
-        <translation>الأسفل</translation>
+        <translation>أسفل</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>BlockCursor</source>
-        <translation></translation>
+        <translation>كتلة المؤشر</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>UnderlineCursor</source>
-        <translation></translation>
+        <translation>تسطير المؤشر</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>IBeamCursor</source>
-        <translation></translation>
+        <translation>مؤشر آي بيم</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
         <source>No move</source>
-        <translation></translation>
+        <translation>لا حركة</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>التمرير للأعلى</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>التمرير للأسفل</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>أمثلة</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>الصور (* .bmp * .jpg * .png * .svg * .xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>افتح ملف الإشارات المرجعية</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>ملفات XML (* .xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>كل الملفات (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>سؤال</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>هل تريد الكتابة فوق ملف الإشارات المرجعية هذا؟</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>لا ينتهي اسم ملف الإشارات المرجعية بـ &quot;.xml&quot;.
+هل أنت متأكد أنك تريد الكتابة فوقه؟</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>تحذير</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>لا يمكن كتابة إشارات مرجعية لهذا الملف:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
@@ -926,7 +932,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../bookmarkswidget.cpp" line="114"/>
         <source>Synchronized Bookmarks</source>
-        <translation></translation>
+        <translation>الإشارات المرجعية المتزامنة</translation>
     </message>
 </context>
 <context>
@@ -935,7 +941,7 @@ Are you sure that you want to overwrite it?</source>
         <location filename="../tabwidget.cpp" line="80"/>
         <location filename="../tabwidget.cpp" line="234"/>
         <source>Shell No. %1</source>
-        <translation></translation>
+        <translation>غلاف رقم %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="202"/>
@@ -968,7 +974,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
-        <translation></translation>
+        <translation>حمّل جلسة</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="80"/>
