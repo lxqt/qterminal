@@ -875,12 +875,12 @@ Fjern/deaktivér en genvej, i punkt 2, ved kun at trykke på en ændringstast (s
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation>Åben bogmærke fil</translation>
+        <translation type="unfinished">Åbne bogmærkefil</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation>XML filer (*.xml)</translation>
+        <translation>XML-filer (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
