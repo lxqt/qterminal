@@ -196,6 +196,16 @@ void TabWidget::onTermTitleChanged(const QString& title, const QString& icon)
     }
 }
 
+void TabWidget::setFixedName(int index, QString text)
+{
+printf("here%i\n",index);///
+    setTabIcon(index, QIcon{});
+    setTabText(index, text);
+    widget(index)->setProperty(TAB_CUSTOM_NAME_PROPERTY, true);
+    if (currentIndex() == index)
+        emit currentTitleChanged(index);
+}
+
 void TabWidget::renameSession(int index)
 {
     bool ok = false;
@@ -204,11 +214,7 @@ void TabWidget::renameSession(int index)
                                         QString(), &ok);
     if(ok && !text.isEmpty())
     {
-        setTabIcon(index, QIcon{});
-        setTabText(index, text);
-        widget(index)->setProperty(TAB_CUSTOM_NAME_PROPERTY, true);
-        if (currentIndex() == index)
-            emit currentTitleChanged(index);
+        setFixedName(index, text);
     }
 }
 

@@ -33,10 +33,11 @@ public:
         Command = 2
     };
 
-    AbstractBookmarkItem(ItemType type, AbstractBookmarkItem* parent = nullptr, int newtab = 0)
+    AbstractBookmarkItem(ItemType type, AbstractBookmarkItem* parent = nullptr, int newtab = 0, int fixname = 0)
         : m_type(type),
           m_parent(parent),
-          m_newtab(newtab)
+          m_newtab(newtab),
+          m_fixname(fixname)
     {
     }
     virtual ~AbstractBookmarkItem()
@@ -48,6 +49,7 @@ public:
     QString value() { return m_value; }
     QString display() { return m_display; }
     int newtab() { return m_newtab; }
+    int fixname() { return m_fixname; }
 
     void addChild(AbstractBookmarkItem* item) { m_children << item; }
     int childCount() { return m_children.count(); }
@@ -63,6 +65,8 @@ public:
         return 0;
     }
 
+    int m_visible;
+
 protected:
     ItemType m_type;
     AbstractBookmarkItem *m_parent;
@@ -70,6 +74,7 @@ protected:
     QString m_value;
     QString m_display;
     int m_newtab;
+    int m_fixname;
 };
 
 class BookmarkRootItem : public AbstractBookmarkItem
@@ -80,18 +85,20 @@ public:
     {
         m_value = m_display = QStringLiteral("root");
         m_newtab = 0;
+        m_fixname = 0;
     }
 };
 
 class BookmarkCommandItem : public AbstractBookmarkItem
 {
 public:
-    BookmarkCommandItem(const QString &name, const QString &command, int newtab, AbstractBookmarkItem *parent)
+    BookmarkCommandItem(const QString &name, const QString &command, int newtab, int fixname, AbstractBookmarkItem *parent)
         : AbstractBookmarkItem(AbstractBookmarkItem::Command, parent)
     {
         m_value = command;
         m_display = name;
         m_newtab = newtab;
+        m_fixname = fixname;
     }
 };
 
@@ -154,8 +161,9 @@ public:
                     QString name = xml.attributes().value(QLatin1String("name")).toString();
                     QString cmd = xml.attributes().value(QLatin1String("value")).toString();
                     int newtab = xml.attributes().value(QLatin1String("newtab")).toInt();
+                    int fixname = xml.attributes().value(QLatin1String("fixname")).toInt();
 
-                    BookmarkCommandItem *i = new BookmarkCommandItem(name, cmd, newtab, parent);
+                    BookmarkCommandItem *i = new BookmarkCommandItem(name, cmd, newtab, fixname, parent);
                     parent->addChild(i);
                 }
                 break;
@@ -368,13 +376,22 @@ void BookmarksWidget::handleCommand(const QModelIndex& index)
     if (!item || item->type() != AbstractBookmarkItem::Command)
         return;
 
-    emit callCommand(item->newtab(), item->value() + QLatin1Char('\n')); // TODO/FIXME: decide how to handle EOL
+    emit callCommand(item->newtab(), item->fixname(), item->display(), item->value() + QLatin1Char('\n')); // TODO/FIXME: decide how to handle EOL
 }
 
 void BookmarksWidget::filter(const QString& str)
 {
     treeView->clearSelection();
     const QModelIndexList list = m_model->allChildRows(QModelIndex());
+
+    // first mark everyone hidden
+    for (const auto& index : list)
+    {
+        AbstractBookmarkItem *item = static_cast<AbstractBookmarkItem*>(index.internalPointer());
+        item->m_visible = 0;
+    }
+
+    // now mark the matching ones visible
     for (const auto& index : list)
     {
         AbstractBookmarkItem *item = static_cast<AbstractBookmarkItem*>(index.internalPointer());
@@ -383,12 +400,36 @@ void BookmarksWidget::filter(const QString& str)
             if (item->value().contains(str, Qt::CaseInsensitive)
                 || item->display().contains(str, Qt::CaseInsensitive))
             {
-                treeView->setRowHidden(index.row(), index.parent(), false);
-            }
-            else
-            {
-                treeView->setRowHidden(index.row(), index.parent(), true);
+                item->m_visible = 1;
             }
         }
     }
+
+    // now who became visible, their parents, grandparents, grand-grandparents, etc, need to be marked too
+    for (const auto& index : list)
+    {
+        AbstractBookmarkItem *item = static_cast<AbstractBookmarkItem*>(index.internalPointer());
+        if (item->m_visible == 0)
+            continue;
+        for (;;)
+        {
+            item = item->parent();
+            if (item == nullptr)
+                break;
+            item->m_visible = 1;
+        }
+    }
+
+    // finally do update the view
+    for (const auto& index : list)
+    {
+        AbstractBookmarkItem *item = static_cast<AbstractBookmarkItem*>(index.internalPointer());
+        if (item->m_visible == 0)
+        {
+            treeView->setRowHidden(index.row(), index.parent(), true);
+        } else {
+            treeView->setRowHidden(index.row(), index.parent(), false);
+        }
+    }
+
 }

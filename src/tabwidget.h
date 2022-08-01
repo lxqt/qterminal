@@ -61,6 +61,7 @@ public slots:
     void removeFinished();
     void moveLeft();
     void moveRight();
+    void setFixedName(int, QString);
     void renameSession(int);
     void renameCurrentSession();
     void setTitleColor(int);
