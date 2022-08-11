@@ -48,42 +48,42 @@
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
         <source>&amp;Next Tab</source>
-        <translation>اللسان ال&amp;تالي</translation>
+        <translation>اللسان &amp;التالي</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
         <source>&amp;Previous Tab</source>
-        <translation>اللسان ال&amp;سابق</translation>
+        <translation>اللسان &amp;السابق</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="251"/>
         <source>Move Tab &amp;Left</source>
-        <translation>انقل اللسان يسا&amp;را</translation>
+        <translation>انقل اللسان &amp;يسارا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="254"/>
         <source>Move Tab &amp;Right</source>
-        <translation>انقل اللسان ي&amp;مينا</translation>
+        <translation>انقل اللسان &amp;يمينا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation>اقسم الطرفية أ&amp;فقيا</translation>
+        <translation>اقسم الطرفية &amp;أفقيا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="276"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation>ا&amp;قسم الطرفية رأسيا</translation>
+        <translation>اقسم الطرفية &amp;رأسيا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="281"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>ا&amp;طوِ الطرفية الفرعية</translation>
+        <translation>&amp;اطوِ الطرفية الفرعية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="232"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>ا&amp;مسح الطرفية النشطة</translation>
+        <translation>&amp;امسح الطرفية النشطة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
@@ -93,12 +93,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>اللسان ال&amp;سابق في التأريخ</translation>
+        <translation>&amp;اللسان السابق في التأريخ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Next Tab in History</source>
-        <translation>اللسان ال&amp;تالي في التأريخ</translation>
+        <translation>&amp;اللسان التالي في التأريخ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
@@ -113,37 +113,37 @@
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
         <source>&amp;Top Subterminal</source>
-        <translation>الطرفية الفرعية ال&amp;علوية</translation>
+        <translation>&amp;الطرفية الفرعية العلوية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>الطرفية الفرعية ال&amp;سفلية</translation>
+        <translation>&amp;الطرفية الفرعية السفلية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="290"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>الطرفية العلوية اليس&amp;رى</translation>
+        <translation>&amp;الطرفية العلوية اليسرى</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="293"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>الطرفية الفرعية اليم&amp;نى</translation>
+        <translation>&amp;الطرفية الفرعية اليمنى</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
         <source>Copy &amp;Selection</source>
-        <translation>انسخ الت&amp;حديد</translation>
+        <translation>&amp;انسخ التحديد</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="303"/>
         <source>Paste Clip&amp;board</source>
-        <translation>ألصِق الحاف&amp;ظة</translation>
+        <translation>&amp;ألصِق الحافظة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="306"/>
         <source>Paste S&amp;election</source>
-        <translation>ألصِق التح&amp;ديد</translation>
+        <translation>&amp;ألصِق التحديد</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
@@ -153,7 +153,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
         <source>Zoom &amp;out</source>
-        <translation>ب&amp;عّد</translation>
+        <translation>&amp;بعّد</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="315"/>
@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>&amp;Find...</source>
-        <translation>اب&amp;حث عن…</translation>
+        <translation>&amp;ابحث…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="323"/>
@@ -173,7 +173,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="331"/>
         <source>&amp;Save Session</source>
-        <translation>ا&amp;حفظ الجلسة</translation>
+        <translation>&amp;احفظ الجلسة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="337"/>
@@ -183,7 +183,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="344"/>
         <source>&amp;Toggle Menu</source>
-        <translation>اعرض/أ&amp;خفِ القائمة</translation>
+        <translation>&amp;اعرض/أخفِ القائمة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="349"/>
@@ -193,12 +193,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="358"/>
         <source>&amp;New Tab</source>
-        <translation>لسان &amp;جديد</translation>
+        <translation>&amp;لسان جديد</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>لسان جديد من &amp; إعداد مسبق</translation>
+        <translation>&amp;لسان جديد من إعداد مسبق</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="363"/>
@@ -208,12 +208,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>طرفيتان أ&amp;فقيّتان</translation>
+        <translation>&amp;طرفيتان أفقيّتان</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation>طرفيتان رأ&amp;سيّتان</translation>
+        <translation>&amp;طرفيتان رأسيّتان</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="369"/>
@@ -268,7 +268,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="434"/>
         <source>&amp;Top</source>
-        <translation>الأعلى</translation>
+        <translation>&amp;الأعلى</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
@@ -300,17 +300,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="501"/>
         <source>&amp;BlockCursor</source>
-        <translation>&amp; كتلة المؤشر</translation>
+        <translation>&amp;مؤشر كتلة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>&amp; تسطير المؤشر</translation>
+        <translation>&amp;مؤشر تحتي</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;IBeamCursor</source>
-        <translation>&amp; مؤشر اي بيم</translation>
+        <translation>&amp;مؤشر عمودي</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="520"/>
@@ -335,7 +335,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation>حول</translation>
+        <translation>عن</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -394,7 +394,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="63"/>
         <source>Bookmarks</source>
-        <translation>العلامات</translation>
+        <translation>العلامات المرجعية</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
@@ -414,7 +414,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="204"/>
         <source>Start with preset:</source>
-        <translation></translation>
+        <translation>ابدأ بالإعداد المسبق:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="404"/>
@@ -434,22 +434,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="215"/>
         <source>None (single terminal)</source>
-        <translation></translation>
+        <translation>لا شيء (طرف واحد)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>2 terminals horizontally</source>
-        <translation></translation>
+        <translation>2 محطات أفقيا</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>2 terminals vertically</source>
-        <translation></translation>
+        <translation>محطتان عمودياً</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="230"/>
         <source>4 terminals</source>
-        <translation></translation>
+        <translation>4 محطات</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="117"/>
@@ -520,7 +520,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="471"/>
         <source>Fixed tab width:</source>
-        <translation></translation>
+        <translation>عرض لسان ثابت:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="411"/>
@@ -556,7 +556,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="586"/>
         <source>Emulation</source>
-        <translation></translation>
+        <translation>محاكاة</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="711"/>
@@ -566,17 +566,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="748"/>
         <source>Confirm multiline paste</source>
-        <translation></translation>
+        <translation>تأكيد لصق متعدد</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="789"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>تقليم الأسطر الجديدة اللاحقة في النص الملصق</translation>
+        <translation>اقتطاع الخطوط الجديدة الزائدة في النص الذي تم لصقه</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="724"/>
         <source>Open new terminals in current working directory</source>
-        <translation></translation>
+        <translation>افتح محطات جديدة في مجلد العمل الحالي</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="755"/>
@@ -606,7 +606,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="741"/>
         <source>Default $TERM</source>
-        <translation></translation>
+        <translation>الافتراضي $ TERM</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="632"/>
@@ -656,12 +656,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation>استخدم وجه الخط الغامق للحصول على ألوان مكثفة</translation>
+        <translation>إستعمل خط عريض للأ لوان الداكنة</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;أخفِ حدود النافذة</translation>
+        <translation>أ&amp;خفِ حدود النافذة</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
@@ -798,12 +798,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1030"/>
         <source>Find...</source>
-        <translation>جد...</translation>
+        <translation>بحث...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1039"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>يمكنك تحديد موقع ملف الإشارات المرجعية الخاص بك. يسمح بمشاركة الإشارات المرجعية بسهولة باستخدام أدوات مثل OwnCloud أو Dropbox.</translation>
+        <translation>يمكنك تحديد مكان ملف العلامات الخاص بك. بهذا يمكنك مشاركته بسهولة على تثبيتات مثل OwnCloud أو Dropbox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="159"/>
@@ -845,7 +845,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>IBeamCursor</source>
-        <translation>مؤشر آي بيم</translation>
+        <translation>مؤشر عمودي</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
@@ -1022,7 +1022,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation>عن &amp;كيوت…</translation>
+        <translation>عن &amp;QT…</translation>
     </message>
 </context>
 </TS>

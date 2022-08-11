@@ -797,7 +797,7 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Gestisci il comando per la cronologia</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
