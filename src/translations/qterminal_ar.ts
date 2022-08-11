@@ -218,7 +218,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="369"/>
         <source>4 Terminal&amp;s</source>
-        <translation>4 طرفيات</translation>
+        <translation>&amp;4 طرفيات</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
@@ -263,7 +263,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="433"/>
         <source>&amp;Bottom</source>
-        <translation>الأسفل</translation>
+        <translation>&amp;الأسفل</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="434"/>
@@ -295,7 +295,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="488"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>تخطيط شريط التمرير</translation>
+        <translation>&amp;تخطيط شريط التمرير</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="501"/>
@@ -1022,7 +1022,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation>عن &amp;QT…</translation>
+        <translation>&amp;عن Qt...</translation>
     </message>
 </context>
 </TS>
