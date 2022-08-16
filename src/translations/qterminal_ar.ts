@@ -571,7 +571,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="789"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>اقتطاع الخطوط الجديدة الزائدة في النص الذي تم لصقه</translation>
+        <translation>حذف الاسطر الفارغة في النص الذي تم لصقه</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="724"/>
