@@ -300,17 +300,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="501"/>
         <source>&amp;BlockCursor</source>
-        <translation>&amp;BlockCursor</translation>
+        <translation>&amp;BlokKursor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>&amp;UnderlineCursor</translation>
+        <translation>&amp;Garis Bawah Kursor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;IBeamCursor</source>
-        <translation>&amp;IBeamCursor</translation>
+        <translation>&amp;Gaya IBeam Pada Kursor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="520"/>
@@ -335,7 +335,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation type="unfinished">Tentang</translation>
+        <translation>Tentang</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -389,7 +389,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="55"/>
         <source>Dropdown</source>
-        <translation>Dropdown</translation>
+        <translation>Reruntuhan</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="63"/>
