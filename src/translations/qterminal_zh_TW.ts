@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>當視窗不在焦點時仍保持開啟</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="323"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>處理畫面紀錄…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="331"/>
