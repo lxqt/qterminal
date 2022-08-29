@@ -12,6 +12,7 @@ include(GNUInstallDirs)
 set(QTERMINAL_VERSION "1.1.0")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
+option(BUILD_TESTS "Builds tests" ON)
 
 if(APPLE)
     option(APPLEBUNDLE "Build as qterminal.app bundle" ON)
@@ -35,6 +36,10 @@ if(UNIX)
 endif()
 find_package(QTermWidget5 ${QTERMWIDGET_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+
+if (BUILD_TESTS)
+    find_package(Qt5 ${QT_MINIMUM_VERSION} CONFIG REQUIRED Test)
+endif()
 
 include(LXQtPreventInSourceBuilds)
 include(LXQtTranslateTs)
@@ -75,6 +80,7 @@ set(QTERM_SRC
     src/fontdialog.cpp
     src/dbusaddressable.cpp
     src/tab-switcher.cpp
+    src/qterminalutils.cpp
 )
 
 set(QTERM_MOC_SRC
@@ -264,4 +270,9 @@ else()
     add_custom_command(TARGET ${EXE_NAME} POST_BUILD
         COMMAND "${CMAKE_COMMAND}" -E touch "${CMAKE_CURRENT_BINARY_DIR}/${EXE_NAME}.app/Contents/Resources/empty.lproj"
         COMMENT "Creating Resources/empty.lproj")
+endif()
+
+if(BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(test)
 endif()
