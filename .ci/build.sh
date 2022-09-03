@@ -7,3 +7,4 @@ pacman -S --noconfirm --needed git cmake lxqt-build-tools-git qt5-tools qtermwid
 
 cmake -B build -S .
 make -C build
+ARGS="-V" make -C build test

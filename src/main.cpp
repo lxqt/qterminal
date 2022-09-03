@@ -33,6 +33,7 @@
 
 #include "mainwindow.h"
 #include "qterminalapp.h"
+#include "qterminalutils.h"
 #include "terminalconfig.h"
 
 #define out
@@ -72,7 +73,7 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     exit(code);
 }
 
-void parse_args(int argc, char* argv[], QString& workdir, QString & shell_command, out bool& dropMode)
+void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode)
 {
     int next_option;
     dropMode = false;
@@ -87,13 +88,13 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
                 workdir = QString::fromLocal8Bit(optarg);
                 break;
             case 'e':
-                shell_command = QString::fromLocal8Bit(optarg);
+                shell_command << parse_command(QString::fromLocal8Bit(optarg));
                 // #15 "Raw" -e params
                 // Passing "raw" params (like konsole -e mcedit /tmp/tmp.txt") is more preferable - then I can call QString("qterminal -e ") + cmd_line in other programs
                 while (optind < argc)
                 {
                     //printf("arg: %d - %s\n", optind, argv[optind]);
-                    shell_command += QLatin1Char(' ') + QString::fromLocal8Bit(argv[optind++]);
+                    shell_command << QString::fromLocal8Bit(argv[optind++]);
                 }
                 break;
             case 'd':
@@ -141,7 +142,8 @@ int main(int argc, char *argv[])
         app->registerOnDbus();
     #endif
 
-    QString workdir, shell_command;
+    QString workdir;
+    QStringList shell_command;
     bool dropMode;
     parse_args(argc, argv, workdir, shell_command, dropMode);
 

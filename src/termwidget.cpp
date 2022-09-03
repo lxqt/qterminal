@@ -55,16 +55,13 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
 
     setWorkingDirectory(cfg.getWorkingDirectory());
 
-    QString shell = cfg.getShell();
+    QStringList shell = cfg.getShell();
     if (!shell.isEmpty())
     {
-        //qDebug() << "Shell program:" << shell;
-        QStringList parts = shell.split(QRegExp(QStringLiteral("\\s+")), Qt::SkipEmptyParts);
-        //qDebug() << parts;
-        setShellProgram(parts.at(0));
-        parts.removeAt(0);
-        if (parts.count())
-            setArgs(parts);
+        setShellProgram(shell.at(0));
+        shell.removeAt(0);
+        if (!shell.isEmpty())
+            setArgs(shell);
     }
 
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
