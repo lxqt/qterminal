@@ -869,7 +869,7 @@ void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
 void MainWindow::bookmarksDock_visibilityChanged(bool visible)
 {
     Properties::Instance()->bookmarksVisible = visible;
-    if (!visible
+    if (!visible && consoleTabulator->terminalHolder()
         && consoleTabulator->terminalHolder()->currentTerminal()->focusProxy() != nullptr)
     { // this is especially needed in the drop-down mode
         consoleTabulator->terminalHolder()->currentTerminal()->setFocus();
