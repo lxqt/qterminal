@@ -345,7 +345,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
@@ -701,7 +701,7 @@ Um einen Shortcut zu löschen/ deaktivieren, drücke bei Schritt 2 nur einen Mod
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Auf der horizontalen Registerkartenleiste wird eine Sperrschaltfläche angezeigt</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
@@ -902,7 +902,8 @@ Um einen Shortcut zu löschen/ deaktivieren, drücke bei Schritt 2 nur einen Mod
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Der Name der Lesezeichendatei endet nicht auf &quot;.xml&quot;
+Sind Sie sicher, dass Sie sie überschreiben wollen?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
