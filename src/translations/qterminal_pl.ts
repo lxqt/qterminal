@@ -541,17 +541,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>Użyj znaków rysunkowych zawartych w czcionce</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Akceleratory są aktywowane przez klawisz Alt i mogą zakłócać pracę terminala.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>Brak akceleratora paska menu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="586"/>
@@ -855,17 +855,17 @@ Aby usunąć/wyłączyć Skrót, przy drugim punkcie naciśnij tylko klawisz mod
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Przewijanie do góry</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Przewijanie na dół</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>Przykłady</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
@@ -875,34 +875,35 @@ Aby usunąć/wyłączyć Skrót, przy drugim punkcie naciśnij tylko klawisz mod
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwórz plik zakładek</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>Pliki XML (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Wszystkie pliki (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Pytanie</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Czy chcesz nadpisać ten plik zakładek?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Nazwa pliku zakładek nie kończy się na „.xml”.
+Czy na pewno chcesz go zastąpić?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
@@ -912,7 +913,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nie można zapisać zakładek do tego pliku:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
