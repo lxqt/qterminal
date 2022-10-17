@@ -701,7 +701,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>ロックボタンが水平タブバーに表示されます</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
