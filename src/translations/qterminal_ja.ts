@@ -68,7 +68,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>フォーカスを失った時にウィンドウを開いたままにする</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="242"/>
@@ -270,7 +270,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>このアプリケーションについて</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -295,7 +295,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>開発: </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="88"/>
@@ -706,7 +706,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>フォーカスを失った時にウィンドウを開いたままにする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="919"/>
@@ -865,7 +865,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>例</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
@@ -885,13 +885,13 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>すべてのファイル (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">質問</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
