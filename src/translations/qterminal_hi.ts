@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>नई विंडो (&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="383"/>
