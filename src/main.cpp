@@ -59,7 +59,7 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     puts("  -d,  --drop               Start in \"dropdown mode\" (like Yakuake or Tilda)");
     puts("  -e,  --execute <command>  Execute command instead of shell");
     puts("  -h,  --help               Print this help");
-    puts("  -p,  --profile            Load qterminal with specific options");
+    puts("  -p,  --profile <name>     Load profile from ~/.config/<name>.conf");
     puts("  -v,  --version            Prints application version and exits");
     puts("  -w,  --workdir <dir>      Start session with specified work directory");
     puts("\nHomepage: <https://github.com/lxqt/qterminal>");
