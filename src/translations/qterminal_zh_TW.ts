@@ -747,7 +747,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">當視窗不在焦點時仍保持開啟</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
