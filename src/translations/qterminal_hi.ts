@@ -394,7 +394,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="63"/>
         <source>Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">बुकमार्क</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
