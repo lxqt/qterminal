@@ -335,17 +335,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>關於</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>輕量而且強大的多平台支援終端機模擬器</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>版權所有 (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
@@ -616,73 +616,73 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation type="unfinished"></translation>
+        <translation>背景顯示:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>無</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>延展</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation type="unfinished"></translation>
+        <translation>縮放</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>適合視窗大小</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>中間</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>框線字元應該由 QTerminal 內部處理，或是交由底層的字體繪製函式庫處理。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>切換當繪製強調色時是否使用粗體字</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>當繪製強調色時使用粗體字</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">隱藏視窗邊界(&amp;H)</translation>
+        <translation>隱藏視窗邊框(&amp;H)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;模擬哪種行為。這並不需要與您的作業系統一致。&lt;/p&gt;&lt;p&gt;如果不確定的話，使用 &lt;span style=&quot; font-weight:600;&quot;&gt;預設&lt;/span&gt;的模擬。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>這個指令在執行時，會帶入含有終端機歷史內容的臨時檔案的路徑作為參數</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>歷史處理指令</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
         <location filename="../forms/propertiesdialog.ui" line="653"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="660"/>
@@ -692,27 +692,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>在目前分頁的右邊開啟新分頁</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>如果取消選取則新分頁會開啟在所有分頁的最右側</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>中鍵關閉分頁</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>強制停用括號貼上模式</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>括號貼上模式在貼上多行文字時會很方便。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="844"/>
@@ -722,7 +722,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>如要修改快捷建
+1. 連點兩下對應的按鍵
+2. 按下想要的按鍵組合並放開
+3. 在快捷鍵欄位點一下或是按下 Enter
+
+如果要移除快捷鍵，請在步驟二時只按下修飾鍵 (例如 Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="874"/>
@@ -742,12 +747,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>在分頁列上會顯示一個鎖定鈕</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished">當視窗不在焦點時仍保持開啟</translation>
+        <translation>當視窗不在焦點時仍保持開啟</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
@@ -850,64 +855,65 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>捲動到最上方</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>捲動到最下方</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="262"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>範例</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>圖片 (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="500"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>打開書籤檔</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="502"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>XML 檔案 (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="503"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>所有檔案 (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>問題</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>請問您要覆寫這個書籤檔嗎？</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>書籤檔的檔名並不是以 &apos;.xml&apos; 結尾。
+請問您真的要覆寫它嗎？</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>警告</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>無法把書籤寫入到這個檔案:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
