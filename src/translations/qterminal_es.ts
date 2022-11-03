@@ -295,22 +295,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="488"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>Diseño de barras de de&amp;splazamiento</translation>
+        <translation>Diseño de la barra de&amp;splazamiento</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="501"/>
         <source>&amp;BlockCursor</source>
-        <translation></translation>
+        <translation>Cursor de &amp;bloque</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;UnderlineCursor</source>
-        <translation></translation>
+        <translation>Cursor &amp;horizontal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;IBeamCursor</source>
-        <translation></translation>
+        <translation>Cursor &amp;vertical</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="520"/>
@@ -835,17 +835,17 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>BlockCursor</source>
-        <translation></translation>
+        <translation>Cursor de bloque</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>UnderlineCursor</source>
-        <translation></translation>
+        <translation>Cursor horizontal</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>IBeamCursor</source>
-        <translation></translation>
+        <translation>Cursor vertical</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
@@ -902,7 +902,7 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation>El nombre del archivo de marcadores no acaba en «.xm».
+        <translation>El nombre del archivo de marcadores no acaba en «.xml».
 ¿Seguro que quiere sobrescribirlo?</translation>
     </message>
     <message>
