@@ -1,3 +1,10 @@
+qterminal-1.2.0 / 2022-11-05
+=============================
+ * Add CI using GitHub Actions.
+ * Fixed command parsing with the `-e` option.
+ * Avoid segfault when using global menus.
+ * Improved documentation for the `--profile` option.
+
 qterminal-1.1.0 / 2022-04-15
 =============================
  * Updated README.md.
