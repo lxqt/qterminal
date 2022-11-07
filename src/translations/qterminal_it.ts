@@ -792,7 +792,7 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished">Questo comando sarà eseguito con un argomento che indica il nome del file temporaneo contenente la cronologia scrollback</translation>
+        <translation type="unfinished">Questo comando sarà eseguito con un argomento contenente il nome del file temporaneo contenente la cronologia scrollback</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
