@@ -33,9 +33,10 @@ public:
         Command = 2
     };
 
-    AbstractBookmarkItem(ItemType type, AbstractBookmarkItem* parent = nullptr)
+    AbstractBookmarkItem(ItemType type, AbstractBookmarkItem* parent = nullptr, int newtab = 0)
         : m_type(type),
-          m_parent(parent)
+          m_parent(parent),
+          m_newtab(newtab)
     {
     }
     virtual ~AbstractBookmarkItem()
@@ -46,6 +47,7 @@ public:
     ItemType type() { return m_type; }
     QString value() { return m_value; }
     QString display() { return m_display; }
+    int newtab() { return m_newtab; }
 
     void addChild(AbstractBookmarkItem* item) { m_children << item; }
     int childCount() { return m_children.count(); }
@@ -67,6 +69,7 @@ protected:
     QList<AbstractBookmarkItem*> m_children;
     QString m_value;
     QString m_display;
+    int m_newtab;
 };
 
 class BookmarkRootItem : public AbstractBookmarkItem
@@ -76,17 +79,19 @@ public:
         : AbstractBookmarkItem(AbstractBookmarkItem::Root)
     {
         m_value = m_display = QStringLiteral("root");
+        m_newtab = 0;
     }
 };
 
 class BookmarkCommandItem : public AbstractBookmarkItem
 {
 public:
-    BookmarkCommandItem(const QString &name, const QString &command, AbstractBookmarkItem *parent)
+    BookmarkCommandItem(const QString &name, const QString &command, int newtab, AbstractBookmarkItem *parent)
         : AbstractBookmarkItem(AbstractBookmarkItem::Command, parent)
     {
         m_value = command;
         m_display = name;
+        m_newtab = newtab;
     }
 };
 
@@ -148,8 +153,9 @@ public:
                 {
                     QString name = xml.attributes().value(QLatin1String("name")).toString();
                     QString cmd = xml.attributes().value(QLatin1String("value")).toString();
+                    int newtab = xml.attributes().value(QLatin1String("newtab")).toInt();
 
-                    BookmarkCommandItem *i = new BookmarkCommandItem(name, cmd, parent);
+                    BookmarkCommandItem *i = new BookmarkCommandItem(name, cmd, newtab, parent);
                     parent->addChild(i);
                 }
                 break;
@@ -362,7 +368,7 @@ void BookmarksWidget::handleCommand(const QModelIndex& index)
     if (!item || item->type() != AbstractBookmarkItem::Command)
         return;
 
-    emit callCommand(item->value() + QLatin1Char('\n')); // TODO/FIXME: decide how to handle EOL
+    emit callCommand(item->newtab(), item->value() + QLatin1Char('\n')); // TODO/FIXME: decide how to handle EOL
 }
 
 void BookmarksWidget::filter(const QString& str)

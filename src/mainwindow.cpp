@@ -853,8 +853,11 @@ void MainWindow::newTerminalWindow()
     w->show();
 }
 
-void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
+void MainWindow::bookmarksWidget_callCommand(int newtab, const QString& cmd)
 {
+    if (newtab != 0) {
+        addNewTab(m_config);
+    }
     if (m_bookmarksDock->isFloating())
     {
         activateWindow();
