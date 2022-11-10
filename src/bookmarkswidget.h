@@ -36,7 +36,7 @@ public:
     void setup();
 
 signals:
-    void callCommand(const QString &cmd);
+    void callCommand(int newtab, int fixname, const QString &name, const QString &cmd);
 
 private:
     BookmarksModel *m_model;
