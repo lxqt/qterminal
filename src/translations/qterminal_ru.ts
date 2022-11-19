@@ -625,7 +625,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation>Включает или выключает, будет ли использоваться жирное начертание для символов, которые должны отображаться ярким цветом</translation>
+        <translation>Включает или отключает использование жирного начертания символов, которые должны отображаться ярким цветом</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
