@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Терминалды көру үшін &quot;%1&quot; басыңыз.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
@@ -58,22 +58,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="251"/>
         <source>Move Tab &amp;Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Бетті со&amp;лға жылжыту</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="254"/>
         <source>Move Tab &amp;Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Бетті &amp;оңға жыжыту</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation>Терминалды &amp;горизонталды бөлу</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="276"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation type="unfinished"></translation>
+        <translation>Терминалды &amp;вертикалды бөлу</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="281"/>
@@ -815,22 +815,22 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <location filename="../propertiesdialog.cpp" line="159"/>
         <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Оң жақ</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Top</source>
-        <translation type="unfinished"></translation>
+        <translation>Жоғары</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="165"/>
         <source>Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Төмен</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Блок</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
