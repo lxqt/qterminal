@@ -137,7 +137,7 @@ void TermWidgetImpl::propertiesChanged()
 
 void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
 {
-    QMenu menu;
+    QMenu menu(this);
     QMap<QString, QAction*> actions = findParent<MainWindow>(this)->leaseActions();
 
     QList<QAction*> extraActions = filterActions(pos);
