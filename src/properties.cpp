@@ -132,7 +132,7 @@ void Properties::loadSettings()
     askOnExit = m_settings->value(QLatin1String("AskOnExit"), true).toBool();
     saveSizeOnExit = m_settings->value(QLatin1String("SaveSizeOnExit"), true).toBool();
     savePosOnExit = m_settings->value(QLatin1String("SavePosOnExit"), true).toBool();
-    useCWD = m_settings->value(QLatin1String("UseCWD"), false).toBool();
+    useCWD = m_settings->value(QLatin1String("UseCWD"), true).toBool();
     m_openNewTabRightToActiveTab = m_settings->value(QLatin1String("OpenNewTabRightToActiveTab"), false).toBool();
     term = m_settings->value(QLatin1String("Term"), QLatin1String("xterm-256color")).toString();
     handleHistoryCommand = m_settings->value(QLatin1String("HandleHistory")).toString();
