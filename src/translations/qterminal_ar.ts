@@ -6,7 +6,7 @@
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation>رشّح:</translation>
+        <translation>مرشّح:</translation>
     </message>
 </context>
 <context>

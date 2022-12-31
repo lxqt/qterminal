@@ -646,7 +646,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="495"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>Especifica si els caràcters de dibuix de quadres s&apos;han de dibuixar internament a QTerminal o deixar-los a les biblioteques de renderització de tipus de lletra subjacents.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
