@@ -891,7 +891,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <location filename="../propertiesdialog.cpp" line="602"/>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>Question</source>
-        <translation type="unfinished">質問</translation>
+        <translation>質問</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
