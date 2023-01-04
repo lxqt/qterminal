@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation>Ves a</translation>
+        <translation>Vés a</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="323"/>
         <source>Handle history...</source>
-        <translation>Gestiona l&apos;historial...</translation>
+        <translation>Gestiona l&apos;històric...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="331"/>
@@ -546,7 +546,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Les dreceres estan activades per Alt i poden interferir amb el terminal.</translation>
+        <translation>Els acceleradors s&apos;activen amb Alt i poden interferir amb el terminal.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>

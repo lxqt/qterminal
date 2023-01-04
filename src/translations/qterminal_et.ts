@@ -68,12 +68,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>Ee&amp;lmine kaart ajaloost</translation>
+        <translation>Eelmine aken ajaoos</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Next Tab in History</source>
-        <translation>Jä&amp;rgmine kaart ajaloost</translation>
+        <translation>Järgmine aken ajaloos</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="251"/>
@@ -88,12 +88,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation>Kaart</translation>
+        <translation>Aken</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation>Ava</translation>
+        <translation>Mine</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
@@ -525,7 +525,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Terminal margin</source>
-        <translation>Tühi ruum terminali sisu ja akna vahel</translation>
+        <translation>Terminali vahe</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="498"/>
