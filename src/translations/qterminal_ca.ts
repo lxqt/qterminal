@@ -671,7 +671,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>Aquesta ordre s&apos;executarà amb un argument que conté el nom d&apos;un fitxer temporal inclòs en l&apos;historial de desplaçament.</translation>
+        <translation>Aquesta ordre s&apos;executarà amb un argument que conté el nom d&apos;un fitxer temporal inclòs en l&apos;historial de desplaçament</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
