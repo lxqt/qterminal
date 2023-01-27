@@ -36,6 +36,7 @@
  *
  ****************************************************************************/
 
+#include <QGuiApplication>
 #include <QVector>
 #include <QtX11Extras/QX11Info>
 
@@ -99,7 +100,7 @@ public:
 
     bool isValid()
     {
-        return m_display != nullptr;
+        return QGuiApplication::platformName() == QStringLiteral("xcb") && m_display != nullptr;
     }
 
     Display *display()
