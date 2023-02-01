@@ -711,7 +711,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 2. İstenilen kombinasyona basın ve bırakın
 3. Bir Kısayolu tıklayın veya Enter tuşuna basın
 
-Bir Kısayolu silmek/devre dışı bırakmak için, 2. noktada yalnızca bir değiştiriciye (Shift gibi) basın</translation>
+Bir Kısayolu kaldırmak/devre dışı bırakmak için, 2. noktada yalnızca bir değiştiriciye (Shift gibi) basın</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
