@@ -111,7 +111,7 @@ class Properties
         QKeySequence dropShortCut;
         bool dropKeepOpen;
         bool dropShowOnStart;
-        int dropWidht;
+        int dropWidth;
         int dropHeight;
 
         bool changeWindowTitle;

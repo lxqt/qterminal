@@ -58,7 +58,7 @@ qterminal-0.16.0 / 2020-11-01
   * Use the default constructor of QFlags.
   * Dropped qmake .pro file.
   * Made the color scheme dirs comply with XDG Base Directory Specification.
-  * Added an optopn for openning the new tab to the right of the active tab.
+  * Added an optopn for opening the new tab to the right of the active tab.
   * Added virtual destructor to a base class.
   * Let QStandardPaths::locateAll() handle application name.
   * Put drop-down QTerminal on screen with cursor.
@@ -119,7 +119,7 @@ qterminal-0.14.0 / 2019-01-25
     - Refactor STR_VERSION -> QTERMINAL_VERSION
   * Improved cmake scripting
     - Set cmake_minimum_required to 3.1.0
-    - Removed locale compile definitons
+    - Removed locale compile definitions
   * Moved translations from lxqt-l10n back to qterminal
    - Removed obsolete translation fuctionality
    - Added translation promo in README.md
@@ -373,7 +373,7 @@ qterminal-0.5.0 / 2014-05-27
   * fixed #51 Shortcuts broken after menu hiding
   * fixed #50 Bookmarks panel always shows, even if the bookmarks are disabled
   * fixed #49 Only show monospace fonts in the font picker
-  * save bookmars widget visibility; fix crash in some config circumstances
+  * save bookmarks widget visibility; fix crash in some config circumstances
   * Include QApplication where needed. Fixes #47
   * removed un-needed file
   * changes required for new qtermwidget build/structure; includes fixed for qtermwidget Qt5 port
@@ -404,7 +404,7 @@ qterminal-0.5.0 / 2014-05-27
   * fixed main window ui file (manually edited probably) to work with designr again. Use "Preferences..." instead of "Configure QTerminal"
   * compile also italian translations
   * added italian translations
-  * get rid of contraproductive Ctrl-W to close a tab. Replaced that   wieht Ctrl-Shift-W. Use nano in qterminal and try to search. You   will see, what i mean ... * it takes a horizontal ruler to tile a terminal vertically and   vice versa * make border of active terminal a litte bit thinner 3px -> 2px
+  * get rid of contraproductive Ctrl-W to close a tab. Replaced that   wieht Ctrl-Shift-W. Use nano in qterminal and try to search. You   will see, what i mean ... * it takes a horizontal ruler to tile a terminal vertically and   vice versa * make border of active terminal a little bit thinner 3px -> 2px
   * Added new action: "Paste Selection". Fixes #21
   * Handle migration "Paste Selection"->"Paste Clipboard" in settings
   * Rename PASTE_SELECTION to PASTE_CLIPBOARD which is what it does
@@ -432,7 +432,7 @@ qterminal-0.5.0 / 2014-05-27
   * yakuake mode compile fix for X11
   * build on mac
   * Switch to Qxt global shortcut
-  * "make lupdate" implemented; do ot delete ts files on "make clean"; fix translator loading
+  * "make lupdate" implemented; do not delete ts files on "make clean"; fix translator loading
   * DropDown mode
   * allow translations
   * tabs to spaces
