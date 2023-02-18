@@ -243,7 +243,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     dropHeightSpinBox->setMaximum(100);
     dropWidthSpinBox->setMaximum(100);
     dropHeightSpinBox->setValue(Properties::Instance()->dropHeight);
-    dropWidthSpinBox->setValue(Properties::Instance()->dropWidht);
+    dropWidthSpinBox->setValue(Properties::Instance()->dropWidth);
 
     dropShortCutEdit = new KeySequenceEdit();
     dropShortCutFormLayout->setWidget(0, QFormLayout::FieldRole, dropShortCutEdit);
@@ -364,7 +364,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->dropShowOnStart = dropShowOnStartCheckBox->isChecked();
     Properties::Instance()->dropKeepOpen = dropKeepOpenCheckBox->isChecked();
     Properties::Instance()->dropHeight = dropHeightSpinBox->value();
-    Properties::Instance()->dropWidht = dropWidthSpinBox->value();
+    Properties::Instance()->dropWidth = dropWidthSpinBox->value();
     Properties::Instance()->dropShortCut = dropShortCutEdit->keySequence();
 
     Properties::Instance()->useBookmarks = useBookmarksCheckBox->isChecked();

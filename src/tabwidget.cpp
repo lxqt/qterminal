@@ -364,7 +364,7 @@ void TabWidget::onCurrentChanged(int index)
 {
     // update disabled actions
     findParent<MainWindow>(this)->updateDisabledActions();
-    // also, update hstory
+    // also, update history
     auto* w = widget(index);
     mHistory.removeAll(w);
     mHistory.prepend(w);
@@ -377,7 +377,7 @@ const QList<QWidget*>& TabWidget::history() const
 
 void TabWidget::removeCurrentTab()
 {
-    // question disabled due user requests. Yes I agree it was anoying.
+    // question disabled due user requests. Yes I agree it was annoying.
 //    if (QMessageBox::question(this,
 //                    tr("Close current session"),
 //                    tr("Are you sure you want to close current sesstion?"),

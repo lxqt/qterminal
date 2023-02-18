@@ -149,7 +149,7 @@ void Properties::loadSettings()
     dropShortCut = QKeySequence(m_settings->value(QLatin1String("ShortCut"), QLatin1String("F12")).toString());
     dropKeepOpen = m_settings->value(QLatin1String("KeepOpen"), false).toBool();
     dropShowOnStart = m_settings->value(QLatin1String("ShowOnStart"), true).toBool();
-    dropWidht = m_settings->value(QLatin1String("Width"), 70).toInt();
+    dropWidth = m_settings->value(QLatin1String("Width"), 70).toInt();
     dropHeight = m_settings->value(QLatin1String("Height"), 45).toInt();
     m_settings->endGroup();
 
@@ -258,7 +258,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("ShortCut"), dropShortCut.toString());
     m_settings->setValue(QLatin1String("KeepOpen"), dropKeepOpen);
     m_settings->setValue(QLatin1String("ShowOnStart"), dropShowOnStart);
-    m_settings->setValue(QLatin1String("Width"), dropWidht);
+    m_settings->setValue(QLatin1String("Width"), dropWidth);
     m_settings->setValue(QLatin1String("Height"), dropHeight);
     m_settings->endGroup();
 

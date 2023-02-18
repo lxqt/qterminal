@@ -329,13 +329,13 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     // TODO/FIXME: unimplemented for now
     act = new QAction(tr("&Save Session"), this);
-    // do not use sequences for this task - it collides with eg. mc shorcuts
+    // do not use sequences for this task - it collides with eg. mc shortcuts
     // and mainly - it's not used too often
     //act->setShortcut(QKeySequence::Save);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(saveSession()));
 
     act = new QAction(tr("&Load Session"), this);
-    // do not use sequences for this task - it collides with eg. mc shorcuts
+    // do not use sequences for this task - it collides with eg. mc shortcuts
     // and mainly - it's not used too often
     //act->setShortcut(QKeySequence::Open);
     connect(act, SIGNAL(triggered()), consoleTabulator, SLOT(loadSession()));
@@ -734,7 +734,7 @@ void MainWindow::realign()
         const QRect desktop = appScreen->availableGeometry();
         QRect g = QRect(desktop.x(),
                         desktop.y(),
-                        desktop.width()  * Properties::Instance()->dropWidht  / 100,
+                        desktop.width()  * Properties::Instance()->dropWidth  / 100,
                         desktop.height() * Properties::Instance()->dropHeight / 100);
         g.moveCenter(desktop.center());
         // do not use 0 here - we need to calculate with potential panel on top
