@@ -6,7 +6,8 @@
   <summary>A lightweight multiplatform terminal emulator</summary>
 
   <metadata_license>CC-BY-4.0</metadata_license>
-  <project_license>GPL-2.0-only</project_license>
+  <!-- qterminal itself is GPL2+, and bundled libqxt is BSD -->
+  <project_license>GPL-2.0-or-later AND BSD-3-Clause</project_license>
   <content_rating type="oars-1.1"/>
 
   <url type="homepage">https://github.com/lxqt/qterminal</url>
