@@ -661,7 +661,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;ممخفی کردن قاب ونجره</translation>
+        <translation type="unfinished">&amp;مخفی کردن قاب پنجره</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
