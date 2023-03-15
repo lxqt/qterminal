@@ -187,7 +187,7 @@ void MainWindow::setDropShortcut(const QKeySequence& dropShortCut)
     if (m_dropShortcut.shortcut() != dropShortCut)
     {
         m_dropShortcut.setShortcut(dropShortCut);
-        qWarning() << tr("Press \"%1\" to see the terminal.").arg(dropShortCut.toString());
+        qWarning().noquote() << tr("Press \"%1\" to see the terminal.").arg(dropShortCut.toString());
     }
 }
 
