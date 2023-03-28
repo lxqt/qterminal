@@ -631,7 +631,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Zoom</source>
-        <translation>Zoomattu</translation>
+        <translation>Lähennetty</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
