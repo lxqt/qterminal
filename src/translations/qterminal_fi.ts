@@ -238,7 +238,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="387"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Poistu</translation>
+        <translation>&amp;Lopeta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="393"/>
