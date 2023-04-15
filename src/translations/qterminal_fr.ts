@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Appuyer sur &quot;%1&quot; pour voir le terminal.</translation>
+        <translation>Appuyer sur « %1 » pour voir le terminal.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
@@ -58,12 +58,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="251"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Déplacer l&apos;onglet à &amp;gauche</translation>
+        <translation>Déplacer l’onglet à &amp;gauche</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="254"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Déplacer l&apos;onglet à &amp;droite</translation>
+        <translation>Déplacer l’onglet à &amp;droite</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
@@ -88,17 +88,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation>Garder la fenêtre ouverte lorsqu&apos;elle perd le focus</translation>
+        <translation>Garder la fenêtre ouverte lorsqu’elle perd le focus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>Onglet &amp;précédent dans l&apos;historique</translation>
+        <translation>Onglet &amp;précédent dans l’historique</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Next Tab in History</source>
-        <translation>Onglet &amp;suivant dans l&apos;historique</translation>
+        <translation>Onglet &amp;suivant dans l’historique</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="323"/>
         <source>Handle history...</source>
-        <translation>Gérer l&apos;historique ...</translation>
+        <translation>Gérer l’historique ...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="331"/>
@@ -223,7 +223,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
         <source>&amp;Close Tab</source>
-        <translation>&amp;Fermer l&apos;onglet</translation>
+        <translation>&amp;Fermer l’onglet</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
@@ -330,7 +330,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="634"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Êtes-vous sûrs de vouloir quitter ?</translation>
+        <translation>Êtes-vous sûr de vouloir quitter ?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
@@ -360,7 +360,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation>Développement&#xa0;: </translation>
+        <translation>Développement : </translation>
     </message>
 </context>
 <context>
@@ -424,7 +424,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Masquer la barre d&apos;onglets avec un seul onglet</translation>
+        <translation>Masquer la barre d’onglets avec un seul onglet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="404"/>
@@ -434,7 +434,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="394"/>
         <source>Application transparency</source>
-        <translation>Transparence de l&apos;application</translation>
+        <translation>Transparence de l’application</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="381"/>
@@ -495,7 +495,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="481"/>
         <source>Change window icon based on current terminal</source>
-        <translation>Changer l&apos;icône de la fenêtre en fonction du terminal actuel</translation>
+        <translation>Changer l’icône de la fenêtre en fonction du terminal actuel</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
@@ -520,7 +520,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="471"/>
         <source>Fixed tab width:</source>
-        <translation>Largeur de l&apos;onglet fixe :</translation>
+        <translation>Largeur de l’onglet fixe :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="411"/>
@@ -546,12 +546,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Les accélérateurs sont activés par Alt et peuvent parasiter l&apos;usage du terminal.</translation>
+        <translation>Les accélérateurs sont activés par Alt et peuvent parasiter l’usage du terminal.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>No menu bar accelerator</source>
-        <translation>Pas d&apos;accélérateur de menu</translation>
+        <translation>Pas d’accélérateur de menu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="586"/>
@@ -601,7 +601,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
         <source>History size (in lines)</source>
-        <translation>Taille de l&apos;historique (en lignes)</translation>
+        <translation>Taille de l’historique (en lignes)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="741"/>
@@ -616,7 +616,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Background mode:</source>
-        <translation>Mode d&apos;arrière-plan :</translation>
+        <translation>Mode d’arrière-plan :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="307"/>
@@ -651,7 +651,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation>Active ou désactive l&apos;utilisation de police de caractère gras pour le rendu de couleurs intenses</translation>
+        <translation>Active ou désactive l’utilisation de police de caractère gras pour le rendu de couleurs intenses</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
@@ -666,17 +666,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quel comportement émuler. Notez que cela ne doit pas nécessairement correspondre à votre système d&apos;exploitation&lt;/p&gt;&lt;p&gt;Si vous n&apos;êtes pas sûr, utiliser le &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quel comportement émuler. Notez que cela ne doit pas nécessairement correspondre à votre système d’exploitation&lt;/p&gt;&lt;p&gt;Si vous n’êtes pas sûr, utiliser le &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>Cette commande sera exécutée avec un argument contenant le nom de fichier d&apos;un fichier temporaire contenant l&apos;historique de défilement</translation>
+        <translation>Cette commande sera exécutée avec un argument contenant le nom de fichier d’un fichier temporaire contenant l’historique de défilement</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
         <source>Handle history command</source>
-        <translation>Gérer l&apos;historique des commandes</translation>
+        <translation>Gérer l’historique des commandes</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="639"/>
@@ -692,17 +692,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="731"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation>Ouvrir un nouvel onglet à droite de l&apos;onglet actif</translation>
+        <translation>Ouvrir un nouvel onglet à droite de l’onglet actif</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="734"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation>Si non cochée, le nouvel onglet sera ouvert comme l&apos;onglet le plus à droite</translation>
+        <translation>Si non cochée, le nouvel onglet sera ouvert comme l’onglet le plus à droite</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Close tab on middle-click</source>
-        <translation>Fermer l&apos;onglet d&apos;un clique du milieu</translation>
+        <translation>Fermer l’onglet d’un clique du milieu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
@@ -747,12 +747,12 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation>Un bouton de verrouillage est affiché sur la barre d&apos;onglets horizontale</translation>
+        <translation>Un bouton de verrouillage est affiché sur la barre d’onglets horizontale</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="901"/>
         <source>Keep window open when it loses focus</source>
-        <translation>Garder la fenêtre ouverte lorsqu&apos;elle perd le focus</translation>
+        <translation>Garder la fenêtre ouverte lorsqu’elle perd le focus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="908"/>
@@ -876,7 +876,7 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../propertiesdialog.cpp" line="409"/>
         <source>Choose a background image</source>
-        <translation>Choisir une image de fond d&apos;écran</translation>
+        <translation>Choisir une image de fond d’écran</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="410"/>
@@ -907,14 +907,14 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../propertiesdialog.cpp" line="602"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation>Voulez-vous écraser ce fichier de signets&#xa0;?</translation>
+        <translation>Voulez-vous écraser ce fichier de signets ?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="606"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation>Le nom du fichier de signets ne se termine pas par &apos;.xml&apos;.
-Êtes-vous sûr de vouloir l&apos;écraser&#xa0;?</translation>
+        <translation>Le nom du fichier de signets ne se termine pas par « .xml ».
+Êtes-vous sûr de vouloir l’écraser ?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
@@ -924,7 +924,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation>Impossible d&apos;écrire des signets dans ce fichier&#xa0;:</translation>
+        <translation>Impossible d’écrire des signets dans ce fichier :</translation>
     </message>
 </context>
 <context>
@@ -946,12 +946,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="202"/>
         <source>Tab name</source>
-        <translation>Nom de l&apos;onglet</translation>
+        <translation>Nom de l’onglet</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="203"/>
         <source>New tab name:</source>
-        <translation>Nouveau nom d&apos;onglet :</translation>
+        <translation>Nouveau nom d’onglet :</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="223"/>
