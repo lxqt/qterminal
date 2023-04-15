@@ -1,3 +1,11 @@
+qterminal-1.3.0 / 2023-04-15
+=============================
+ * Specified the parent of the main context menu for correct positioning under Wayland.
+ * Improve UX by opening new terminals in current directory by default.
+ * Fixed a crash in the dropdown mode under Wayland.
+ * Corrected typos.
+ * Corrected the license in the meta-info.
+
 qterminal-1.2.0 / 2022-11-05
 =============================
  * Add CI using GitHub Actions.
