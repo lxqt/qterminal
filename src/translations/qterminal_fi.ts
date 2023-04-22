@@ -671,7 +671,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>Tämä komento suoritetaan käyttäen vierityshistorian sisältävän väliaikaistiedoston nimeä sen argumenttina</translation>
+        <translation>Tämä komento suoritetaan käyttäen vierityshistorian sisältävän väliaikaistiedoston nimeä sen parametrina</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="620"/>
