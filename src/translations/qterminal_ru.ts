@@ -188,7 +188,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="349"/>
         <source>Rename session</source>
-        <translation>Переименовать сессию</translation>
+        <translation>Переименовать сеанс</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="358"/>
@@ -640,7 +640,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Какое поведение следует эмалировать. Обратите внимание, что это не обязательно должно соответствовать вашей операционной системе.&lt;/p&gt;&lt;p&gt; Если вы не уверены, то выберите «&lt;span style=&quot; font-weight:600;&quot;&gt;По умолчанию&lt;/span&gt;».&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Какое поведение следует эмулировать. Обратите внимание, что это не обязательно должно соответствовать вашей операционной системе.&lt;/p&gt;&lt;p&gt; Если вы не уверены, то выберите «&lt;span style=&quot; font-weight:600;&quot;&gt;По умолчанию&lt;/span&gt;».&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="617"/>
@@ -961,7 +961,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="252"/>
         <source>Close session</source>
-        <translation>Закрыть сессию</translation>
+        <translation>Закрыть сеанс</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="254"/>
@@ -974,12 +974,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
-        <translation>Загрузить сессию</translation>
+        <translation>Загрузить сеанс</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="80"/>
         <source>List of saved sessions:</source>
-        <translation>Список сохранённых сессий:</translation>
+        <translation>Список сохранённых сеансов:</translation>
     </message>
 </context>
 <context>
