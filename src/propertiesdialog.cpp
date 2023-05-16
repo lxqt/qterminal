@@ -274,6 +274,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     trimPastedTrailingNewlinesCheckBox->setChecked(Properties::Instance()->trimPastedTrailingNewlines);
     confirmMultilinePasteCheckBox->setChecked(Properties::Instance()->confirmMultilinePaste);
+    quotePastedUrlsCheckBox->setChecked(Properties::Instance()->quotePastedUrls);
 
     // save the size on canceling too (it's saved on accepting by apply())
     connect(this, &QDialog::rejected, [this] {
@@ -382,6 +383,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->trimPastedTrailingNewlines = trimPastedTrailingNewlinesCheckBox->isChecked();
     Properties::Instance()->confirmMultilinePaste = confirmMultilinePasteCheckBox->isChecked();
+    Properties::Instance()->quotePastedUrls = quotePastedUrlsCheckBox->isChecked();
 
     emit propertiesChanged();
 }
