@@ -98,6 +98,8 @@ class Properties
         bool useCWD;
         bool m_openNewTabRightToActiveTab;
 
+        bool audibleBell;
+
         QString term;
 
         QString handleHistoryCommand;

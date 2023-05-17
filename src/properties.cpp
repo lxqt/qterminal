@@ -134,6 +134,7 @@ void Properties::loadSettings()
     savePosOnExit = m_settings->value(QLatin1String("SavePosOnExit"), true).toBool();
     useCWD = m_settings->value(QLatin1String("UseCWD"), true).toBool();
     m_openNewTabRightToActiveTab = m_settings->value(QLatin1String("OpenNewTabRightToActiveTab"), false).toBool();
+    audibleBell = m_settings->value(QLatin1String("AudibleBell"), false).toBool();
     term = m_settings->value(QLatin1String("Term"), QLatin1String("xterm-256color")).toString();
     handleHistoryCommand = m_settings->value(QLatin1String("HandleHistory")).toString();
 
@@ -244,6 +245,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("SaveSizeOnExit"), saveSizeOnExit);
     m_settings->setValue(QLatin1String("UseCWD"), useCWD);
     m_settings->setValue(QLatin1String("OpenNewTabRightToActiveTab"), m_openNewTabRightToActiveTab);
+    m_settings->setValue(QLatin1String("AudibleBell"), audibleBell);
     m_settings->setValue(QLatin1String("Term"), term);
     m_settings->setValue(QLatin1String("HandleHistory"), handleHistoryCommand);
 

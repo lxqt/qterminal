@@ -217,16 +217,18 @@ void TermWidgetImpl::activateUrl(const QUrl & url, bool fromContextMenu) {
 }
 
 void TermWidgetImpl::bell() {
+    if (Properties::Instance()->audibleBell) {
 #ifdef HAVE_LIBCANBERRA
-    if (!libcanberra_context) {
-        ca_context_create (&libcanberra_context);
-    }
-    ca_context_play (libcanberra_context, 0,
-                     CA_PROP_EVENT_ID, "bell-terminal",
-                     NULL);
+        if (!libcanberra_context) {
+            ca_context_create (&libcanberra_context);
+        }
+        ca_context_play (libcanberra_context, 0,
+                         CA_PROP_EVENT_ID, "bell-terminal",
+                         NULL);
 #else
-    qWarning() << "Bell! But QTerminal is not built with libcanberra, so there's no sound.";
+        qWarning() << "Bell! But QTerminal is not built with libcanberra, so there's no sound.";
 #endif
+    }
 }
 
 TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
