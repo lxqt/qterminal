@@ -229,6 +229,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     useCwdCheckBox->setChecked(Properties::Instance()->useCWD);
     openNewTabRightToActiveTabCheckBox->setChecked(Properties::Instance()->m_openNewTabRightToActiveTab);
 
+#ifdef HAVE_LIBCANBERRA
+    audibleBellCheckBox->setChecked(Properties::Instance()->audibleBell);
+#else
+    audibleBellCheckBox->setEnabled(false);
+#endif
+
     termComboBox->setCurrentText(Properties::Instance()->term);
 
     handleHistoryLineEdit->setText(Properties::Instance()->handleHistoryCommand);
@@ -335,6 +341,11 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
     Properties::Instance()->m_openNewTabRightToActiveTab = openNewTabRightToActiveTabCheckBox->isChecked();
+#ifdef HAVE_LIBCANBERRA
+    Properties::Instance()->audibleBell = audibleBellCheckBox->isChecked();
+#else
+    Properties::Instance()->audibleBell = false;
+#endif
 
     Properties::Instance()->term = termComboBox->currentText();
     Properties::Instance()->handleHistoryCommand = handleHistoryLineEdit->text();
