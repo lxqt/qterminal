@@ -268,7 +268,7 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
 bool TabWidget::eventFilter(QObject *obj, QEvent *event)
 {
     QMouseEvent *e = reinterpret_cast<QMouseEvent*>(event);
-    if (e->button() == Qt::MidButton) {
+    if (e->button() == Qt::MiddleButton) {
         if (event->type() == QEvent::MouseButtonRelease && Properties::Instance()->closeTabOnMiddleClick) {
             // close the tab on middle clicking
             int index = tabBar()->tabAt(e->pos());
