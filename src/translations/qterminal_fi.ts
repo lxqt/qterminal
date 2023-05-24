@@ -6,7 +6,7 @@
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation>Suodatin:</translation>
+        <translation>Suodatus:</translation>
     </message>
 </context>
 <context>
@@ -208,12 +208,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>2 päätettä &amp;vierekkäin</translation>
+        <translation>2 päätettä &amp;vaakasuorassa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation>2 päätettä &amp;vierekkäin</translation>
+        <translation>2 päätettä &amp;pystysuorassa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="369"/>
@@ -335,7 +335,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation>Tietoja</translation>
+        <translation>Tietoa</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -355,7 +355,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="665"/>
         <source>LXQt Project</source>
-        <translation>LXQt-projekti</translation>
+        <translation>LXQt-hanke</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
