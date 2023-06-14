@@ -366,12 +366,12 @@
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="586"/>
+        <location filename="../forms/propertiesdialog.ui" line="591"/>
         <source>Emulation</source>
         <translation>Öykünme</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="47"/>
+        <location filename="../forms/propertiesdialog.ui" line="49"/>
         <source>Shortcuts</source>
         <translation>Kısayollar</translation>
     </message>
@@ -386,320 +386,325 @@
         <translation>Görünüm</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="39"/>
-        <location filename="../forms/propertiesdialog.ui" line="611"/>
+        <location filename="../forms/propertiesdialog.ui" line="40"/>
+        <location filename="../forms/propertiesdialog.ui" line="616"/>
         <source>Behavior</source>
         <translation>Davranış</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="55"/>
+        <location filename="../forms/propertiesdialog.ui" line="58"/>
         <source>Dropdown</source>
         <translation>Açılış</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="63"/>
+        <location filename="../forms/propertiesdialog.ui" line="67"/>
         <source>Bookmarks</source>
         <translation>Yer İmleri</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="258"/>
+        <location filename="../forms/propertiesdialog.ui" line="263"/>
         <source>Hide tab bar with only one tab</source>
         <translation>Sekme çubuğunu yalnızca bir sekmeyle gizle</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="275"/>
+        <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Color scheme</source>
         <translation>Renk düzeni</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="371"/>
+        <location filename="../forms/propertiesdialog.ui" line="376"/>
         <source>Scrollbar position</source>
         <translation>Kaydırma çubuğu durumu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="204"/>
+        <location filename="../forms/propertiesdialog.ui" line="209"/>
         <source>Start with preset:</source>
         <translation>Ön ayarlarla başlat:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="404"/>
+        <location filename="../forms/propertiesdialog.ui" line="409"/>
         <source>Show a border around the current terminal</source>
         <translation>Geçerli uçbirim etrafında bir sınır göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="381"/>
+        <location filename="../forms/propertiesdialog.ui" line="386"/>
         <source>Terminal transparency</source>
         <translation>Uçbirim saydamlığı</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="394"/>
+        <location filename="../forms/propertiesdialog.ui" line="399"/>
         <source>Application transparency</source>
         <translation>Uygulama şeffaflığı</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="215"/>
+        <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>None (single terminal)</source>
         <translation>Hiçbiri (tek terminal)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="220"/>
+        <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>2 terminals horizontally</source>
         <translation>Yatay 2 uçbirim</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="225"/>
+        <location filename="../forms/propertiesdialog.ui" line="230"/>
         <source>2 terminals vertically</source>
         <translation>Dikey 2 uçbirim</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="230"/>
+        <location filename="../forms/propertiesdialog.ui" line="235"/>
         <source>4 terminals</source>
         <translation>4 uçbirim</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="148"/>
+        <location filename="../forms/propertiesdialog.ui" line="153"/>
         <source>Font</source>
         <translation>Yazı tipi</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="184"/>
+        <location filename="../forms/propertiesdialog.ui" line="189"/>
         <source>&amp;Change...</source>
         <translation>&amp;Değiştir...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="454"/>
+        <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Tabs position</source>
         <translation>Sekme durumu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="238"/>
+        <location filename="../forms/propertiesdialog.ui" line="243"/>
         <source>Widget style</source>
         <translation>Parçacık biçimi</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="194"/>
+        <location filename="../forms/propertiesdialog.ui" line="199"/>
         <source>Show the menu bar</source>
         <translation>Menü çubuğunu göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="464"/>
+        <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>Change window title based on current terminal</source>
         <translation>Mevcut uçbirime göre pencere başlığını değiştir</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="481"/>
+        <location filename="../forms/propertiesdialog.ui" line="486"/>
         <source>Change window icon based on current terminal</source>
         <translation>Mevcut uçbirime göre pencere simgesini değiştir</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="418"/>
+        <location filename="../forms/propertiesdialog.ui" line="423"/>
         <source>Enable bi-directional text support</source>
         <translation>İki yönlü metin desteğini etkinleştir</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="265"/>
+        <location filename="../forms/propertiesdialog.ui" line="270"/>
         <source>Background image:</source>
         <translation>Arka Plan resmi:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="290"/>
+        <location filename="../forms/propertiesdialog.ui" line="295"/>
         <source>Select</source>
         <translation>Seç</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="488"/>
+        <location filename="../forms/propertiesdialog.ui" line="493"/>
         <source>Show terminal size on resize</source>
         <translation>Yeniden boyutlandırıldığında uçbirim boyutunu göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="411"/>
-        <location filename="../forms/propertiesdialog.ui" line="444"/>
+        <location filename="../forms/propertiesdialog.ui" line="416"/>
+        <location filename="../forms/propertiesdialog.ui" line="449"/>
         <source>px</source>
         <translation>px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="361"/>
+        <location filename="../forms/propertiesdialog.ui" line="366"/>
         <source>Show close button on each tab</source>
         <translation>Her sekmede kapat düğmesini göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="248"/>
+        <location filename="../forms/propertiesdialog.ui" line="253"/>
         <source>Terminal margin</source>
         <translation>Uçbirim kenar boşluğu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="498"/>
+        <location filename="../forms/propertiesdialog.ui" line="503"/>
         <source>Use box drawing characters contained in the font</source>
         <translation>Yazı tipi içindeki kutu çizme karakterlerini kullan</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="505"/>
+        <location filename="../forms/propertiesdialog.ui" line="510"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>Hızlandırıcılar, Alt ile etkinleşir ve uçbirime müdahale edilebilir.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="508"/>
+        <location filename="../forms/propertiesdialog.ui" line="513"/>
         <source>No menu bar accelerator</source>
         <translation>Menü çubuğu hızlandırıcısı yok</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="711"/>
+        <location filename="../forms/propertiesdialog.ui" line="693"/>
         <source>Action after paste</source>
         <translation>Yapıştırdıktan sonraki işlem</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="748"/>
+        <location filename="../forms/propertiesdialog.ui" line="639"/>
         <source>Confirm multiline paste</source>
         <translation>Çok satırlı yapıştırma işlemini onayla</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="789"/>
+        <location filename="../forms/propertiesdialog.ui" line="632"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Yapıştırılan son satırları yapıştırılan metinde kırp</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="724"/>
+        <location filename="../forms/propertiesdialog.ui" line="656"/>
         <source>Open new terminals in current working directory</source>
         <translation>Geçerli çalışma dizininde yeni uçbirimler açın</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="755"/>
+        <location filename="../forms/propertiesdialog.ui" line="713"/>
         <source>Save Size when closing</source>
         <translation>Kapandığında boyutu kaydet</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="796"/>
+        <location filename="../forms/propertiesdialog.ui" line="646"/>
         <source>Save Position when closing</source>
         <translation>Kapandığında durumu kaydet</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="772"/>
+        <location filename="../forms/propertiesdialog.ui" line="676"/>
         <source>Ask for confirmation when closing</source>
         <translation>Kapandığında onay için sor</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="816"/>
+        <location filename="../forms/propertiesdialog.ui" line="763"/>
         <source>Unlimited history</source>
         <translation>Sınırsız geçmiş</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="782"/>
+        <location filename="../forms/propertiesdialog.ui" line="756"/>
         <source>History size (in lines)</source>
         <translation>Tarih büyüklüğü (satırlarda)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="741"/>
+        <location filename="../forms/propertiesdialog.ui" line="723"/>
         <source>Default $TERM</source>
         <translation>Varsayılan $TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="632"/>
+        <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Start with this size:</source>
         <translation>Bu boyutlarla başla:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="299"/>
+        <location filename="../forms/propertiesdialog.ui" line="304"/>
         <source>Background mode:</source>
         <translation>Arka plan modu:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="307"/>
+        <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>None</source>
         <translation>None</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="312"/>
+        <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Stretch</source>
         <translation>Uzatmak</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="317"/>
+        <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Zoom</source>
         <translation>Yakınlaştır</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="322"/>
+        <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Fit</source>
         <translation>Uygun</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="327"/>
+        <location filename="../forms/propertiesdialog.ui" line="332"/>
         <source>Center</source>
         <translation>Merkez</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="495"/>
+        <location filename="../forms/propertiesdialog.ui" line="500"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
         <translation>Kutu çizimi karakterlerinin Terminal tarafından dahili olarak mı yoksa alttaki yazı tipi oluşturma kütüphaneleri ile mi çizileceğini belirtin.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="515"/>
+        <location filename="../forms/propertiesdialog.ui" line="520"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
         <translation>Yoğun renkler oluşturmak için kalın yazı tipi yüzünün kullanımını değiştirir</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="518"/>
+        <location filename="../forms/propertiesdialog.ui" line="523"/>
         <source>Use bold font face for intense colors</source>
         <translation>Yoğun renkler için kalın yazı tipi yüzü kullanın</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="525"/>
+        <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Pencere Kenarlıklarını Gizle</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="595"/>
+        <location filename="../forms/propertiesdialog.ui" line="600"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt; &lt;p&gt; Taklit edilecek davranış. Bunun işletim sisteminizle uyuşmasının gerekmediğini unutmayın. &lt;/p&gt; &lt;p&gt; Emin değilseniz &lt;span style = &quot;font-weight: 600;&quot;&gt; varsayılan &lt;/span&gt; öykünmeyi kullanın. &lt;/ P &gt; &lt;/body&gt; &lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="617"/>
+        <location filename="../forms/propertiesdialog.ui" line="703"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>Bu komut, geri kaydırma geçmişini içeren bir geçici dosyanın dosya adını içeren bir bağımsız değişkenle çalıştırılacaktır</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="620"/>
+        <location filename="../forms/propertiesdialog.ui" line="706"/>
         <source>Handle history command</source>
         <translation>Geçmiş komutunu işle</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="639"/>
-        <location filename="../forms/propertiesdialog.ui" line="653"/>
+        <location filename="../forms/propertiesdialog.ui" line="792"/>
+        <location filename="../forms/propertiesdialog.ui" line="806"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="660"/>
+        <location filename="../forms/propertiesdialog.ui" line="813"/>
         <source>Get current size</source>
         <translation>Mevcut boyutu al</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="731"/>
+        <location filename="../forms/propertiesdialog.ui" line="686"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>Etkin sekmenin sağında yeni sekme aç</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="734"/>
+        <location filename="../forms/propertiesdialog.ui" line="683"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>İşaretlenmezse, yeni sekme en sağdaki sekme olarak açılacaktır</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="762"/>
+        <location filename="../forms/propertiesdialog.ui" line="770"/>
         <source>Close tab on middle-click</source>
         <translation>Orta tıklamayla sekmeyi kapat</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="823"/>
+        <location filename="../forms/propertiesdialog.ui" line="625"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>Basamaklı yapıştırma modunu zorla devre dışı bırakın</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="826"/>
+        <location filename="../forms/propertiesdialog.ui" line="622"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>Parantezli yapıştırma modu, çok satırlı dizeleri yapıştırmak için kullanışlıdır.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="844"/>
+        <location filename="../forms/propertiesdialog.ui" line="838"/>
+        <source>Audible bell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="856"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -714,94 +719,94 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 Bir Kısayolu kaldırmak/devre dışı bırakmak için, 2. noktada yalnızca bir değiştiriciye (Shift gibi) basın</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="910"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>Kilit tuşunu yatay sekme barında gösterir</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="901"/>
+        <location filename="../forms/propertiesdialog.ui" line="913"/>
         <source>Keep window open when it loses focus</source>
         <translation>Odağı kaybetse bile pencereyi açık tut</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="919"/>
+        <location filename="../forms/propertiesdialog.ui" line="931"/>
         <source>Height</source>
         <translation>Yükseklik</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="929"/>
-        <location filename="../forms/propertiesdialog.ui" line="946"/>
+        <location filename="../forms/propertiesdialog.ui" line="941"/>
+        <location filename="../forms/propertiesdialog.ui" line="958"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="948"/>
         <source>Width</source>
         <translation>Genişlik</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="986"/>
+        <location filename="../forms/propertiesdialog.ui" line="998"/>
         <source>Edit bookmark file contents</source>
         <translation>Yer imi dosyası içeriğini düzenle</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1008"/>
+        <location filename="../forms/propertiesdialog.ui" line="1020"/>
         <source>Enable bookmarks</source>
         <translation>Yer imlerini etkinleştir</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1017"/>
+        <location filename="../forms/propertiesdialog.ui" line="1029"/>
         <source>Bookmark file</source>
         <translation>Yer İmi dosyası</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="891"/>
+        <location filename="../forms/propertiesdialog.ui" line="903"/>
         <source>Show on start</source>
         <translation>Başlangıçta göster</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="335"/>
+        <location filename="../forms/propertiesdialog.ui" line="340"/>
         <source>Cursor shape</source>
         <translation>İmleç şekli</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="471"/>
+        <location filename="../forms/propertiesdialog.ui" line="476"/>
         <source>Fixed tab width:</source>
         <translation>Sabit sekme genişliği:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="908"/>
+        <location filename="../forms/propertiesdialog.ui" line="920"/>
         <source>Size</source>
         <translation>Boyut</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="960"/>
+        <location filename="../forms/propertiesdialog.ui" line="972"/>
         <source>Shortcut:</source>
         <translation>Kısayol:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1030"/>
+        <location filename="../forms/propertiesdialog.ui" line="1042"/>
         <source>Find...</source>
         <translation>Bul...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1039"/>
+        <location filename="../forms/propertiesdialog.ui" line="1051"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Kendi yer imleri dosya yolunuzu berlirleyebilirsiniz. Bu, OwnCloud veya Dropbox gibi araçlarla yer imlerinizi paylaşmayı kolaylaştırır.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="117"/>
-        <location filename="../forms/propertiesdialog.ui" line="425"/>
+        <location filename="../forms/propertiesdialog.ui" line="122"/>
+        <location filename="../forms/propertiesdialog.ui" line="430"/>
         <source> %</source>
         <translation> %</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="874"/>
+        <location filename="../forms/propertiesdialog.ui" line="886"/>
         <source>Shortcut</source>
         <translation>Kısayol</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="879"/>
+        <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>Key</source>
         <translation>Anahtar</translation>
     </message>
@@ -863,66 +868,66 @@ Bir Kısayolu kaldırmak/devre dışı bırakmak için, 2. noktada yalnızca bir
         <translation>En alta kaydırılıyor</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="262"/>
+        <location filename="../propertiesdialog.cpp" line="268"/>
         <source>Examples</source>
         <translation>Örnekler</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="410"/>
+        <location filename="../propertiesdialog.cpp" line="421"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Görüntüler (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="500"/>
+        <location filename="../propertiesdialog.cpp" line="511"/>
         <source>Open bookmarks file</source>
         <translation>Yer imleri dosyasını aç</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="502"/>
+        <location filename="../propertiesdialog.cpp" line="513"/>
         <source>XML files (*.xml)</source>
         <translation>XML dosyası (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="503"/>
+        <location filename="../propertiesdialog.cpp" line="514"/>
         <source>All files (*)</source>
         <translation>Tüm dosyalar (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="602"/>
-        <location filename="../propertiesdialog.cpp" line="606"/>
+        <location filename="../propertiesdialog.cpp" line="613"/>
+        <location filename="../propertiesdialog.cpp" line="617"/>
         <source>Question</source>
         <translation>Soru</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="602"/>
+        <location filename="../propertiesdialog.cpp" line="613"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Bu yer imleri dosyasının üzerine yazmak istiyor musunuz?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="606"/>
+        <location filename="../propertiesdialog.cpp" line="617"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Yer imleri dosyasının adı &apos;.xml&apos; ile bitmiyor.
  Üzerine yazmak istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="625"/>
         <source>Warning</source>
         <translation>Uyarı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="625"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Bu dosyaya yer imleri yazılamıyor:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
-        <location filename="../propertiesdialog.cpp" line="311"/>
+        <location filename="../propertiesdialog.cpp" line="317"/>
         <source>System Default</source>
         <translation>Sistem Varsayılanı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="409"/>
+        <location filename="../propertiesdialog.cpp" line="420"/>
         <source>Choose a background image</source>
         <translation>Bir arkaplan resmi seç</translation>
     </message>

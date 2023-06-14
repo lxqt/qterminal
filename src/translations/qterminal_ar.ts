@@ -376,346 +376,351 @@
         <translation>المظهر</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="39"/>
-        <location filename="../forms/propertiesdialog.ui" line="611"/>
+        <location filename="../forms/propertiesdialog.ui" line="40"/>
+        <location filename="../forms/propertiesdialog.ui" line="616"/>
         <source>Behavior</source>
         <translation>السلوك</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="47"/>
+        <location filename="../forms/propertiesdialog.ui" line="49"/>
         <source>Shortcuts</source>
         <translation>الاختصارات</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="55"/>
+        <location filename="../forms/propertiesdialog.ui" line="58"/>
         <source>Dropdown</source>
         <translation>منسدل</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="63"/>
+        <location filename="../forms/propertiesdialog.ui" line="67"/>
         <source>Bookmarks</source>
         <translation>العلامات المرجعية</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="258"/>
+        <location filename="../forms/propertiesdialog.ui" line="263"/>
         <source>Hide tab bar with only one tab</source>
         <translation>أخفِ شريط الألسنة لو لم يكن هناك إلّا لسان واحد</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="275"/>
+        <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Color scheme</source>
         <translation>مخطّط الألوان</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="371"/>
+        <location filename="../forms/propertiesdialog.ui" line="376"/>
         <source>Scrollbar position</source>
         <translation>مكان شريط التمرير</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="204"/>
+        <location filename="../forms/propertiesdialog.ui" line="209"/>
         <source>Start with preset:</source>
         <translation>ابدأ بالإعداد المسبق:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="404"/>
+        <location filename="../forms/propertiesdialog.ui" line="409"/>
         <source>Show a border around the current terminal</source>
         <translation>اعرض حدًا يُحيط بالطرفية الحالية</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="381"/>
+        <location filename="../forms/propertiesdialog.ui" line="386"/>
         <source>Terminal transparency</source>
         <translation>شفافية الطرفية</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="394"/>
+        <location filename="../forms/propertiesdialog.ui" line="399"/>
         <source>Application transparency</source>
         <translation>شفافية التطبيق</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="215"/>
+        <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>None (single terminal)</source>
         <translation>لا شيء (طرف واحد)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="220"/>
+        <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>2 terminals horizontally</source>
         <translation>2 محطات أفقيا</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="225"/>
+        <location filename="../forms/propertiesdialog.ui" line="230"/>
         <source>2 terminals vertically</source>
         <translation>محطتان عمودياً</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="230"/>
+        <location filename="../forms/propertiesdialog.ui" line="235"/>
         <source>4 terminals</source>
         <translation>4 محطات</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="117"/>
-        <location filename="../forms/propertiesdialog.ui" line="425"/>
+        <location filename="../forms/propertiesdialog.ui" line="122"/>
+        <location filename="../forms/propertiesdialog.ui" line="430"/>
         <source> %</source>
         <translation> ‏٪</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="148"/>
+        <location filename="../forms/propertiesdialog.ui" line="153"/>
         <source>Font</source>
         <translation>الخط</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="184"/>
+        <location filename="../forms/propertiesdialog.ui" line="189"/>
         <source>&amp;Change...</source>
         <translation>&amp;غيّر…</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="454"/>
+        <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Tabs position</source>
         <translation>مكان الألسنة</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="238"/>
+        <location filename="../forms/propertiesdialog.ui" line="243"/>
         <source>Widget style</source>
         <translation>نمط الودجات</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="194"/>
+        <location filename="../forms/propertiesdialog.ui" line="199"/>
         <source>Show the menu bar</source>
         <translation>اعرض شريط القوائم</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="335"/>
+        <location filename="../forms/propertiesdialog.ui" line="340"/>
         <source>Cursor shape</source>
         <translation>شكل المؤشر</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="464"/>
+        <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>Change window title based on current terminal</source>
         <translation>غيّر عنوان النافذة حسب الطرفية الحالية</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="481"/>
+        <location filename="../forms/propertiesdialog.ui" line="486"/>
         <source>Change window icon based on current terminal</source>
         <translation>غيّر أيقونة النافذة حسب الطرفية الحالية</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="418"/>
+        <location filename="../forms/propertiesdialog.ui" line="423"/>
         <source>Enable bi-directional text support</source>
         <translation>فعّل دعم النصوص ثنائية الاتجاه (كالعربية والإنجليزية)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="265"/>
+        <location filename="../forms/propertiesdialog.ui" line="270"/>
         <source>Background image:</source>
         <translation>صورة الخلفية:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="290"/>
+        <location filename="../forms/propertiesdialog.ui" line="295"/>
         <source>Select</source>
         <translation>اختر</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="488"/>
+        <location filename="../forms/propertiesdialog.ui" line="493"/>
         <source>Show terminal size on resize</source>
         <translation>اعرض مقاس الطرفية عند تغيير مقاسها</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="471"/>
+        <location filename="../forms/propertiesdialog.ui" line="476"/>
         <source>Fixed tab width:</source>
         <translation>عرض لسان ثابت:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="411"/>
-        <location filename="../forms/propertiesdialog.ui" line="444"/>
+        <location filename="../forms/propertiesdialog.ui" line="416"/>
+        <location filename="../forms/propertiesdialog.ui" line="449"/>
         <source>px</source>
         <translation>بكسل</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="361"/>
+        <location filename="../forms/propertiesdialog.ui" line="366"/>
         <source>Show close button on each tab</source>
         <translation>اعرض زر الإغلاق في كل لسان</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="248"/>
+        <location filename="../forms/propertiesdialog.ui" line="253"/>
         <source>Terminal margin</source>
         <translation>هامش الطرفية</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="498"/>
+        <location filename="../forms/propertiesdialog.ui" line="503"/>
         <source>Use box drawing characters contained in the font</source>
         <translation>استخدم أحرف الرسم المربع المضمنة في الخط</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="505"/>
+        <location filename="../forms/propertiesdialog.ui" line="510"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>يُفعّل مفتاح Alt المُسرّعات ويمكن أن يتداخل عملها مع عمل الطرفية.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="508"/>
+        <location filename="../forms/propertiesdialog.ui" line="513"/>
         <source>No menu bar accelerator</source>
         <translation>بلا مُسرّعات في شريط القوائم</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="586"/>
+        <location filename="../forms/propertiesdialog.ui" line="591"/>
         <source>Emulation</source>
         <translation>محاكاة</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="711"/>
+        <location filename="../forms/propertiesdialog.ui" line="693"/>
         <source>Action after paste</source>
         <translation>الإجراء بعد اللصق</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="748"/>
+        <location filename="../forms/propertiesdialog.ui" line="639"/>
         <source>Confirm multiline paste</source>
         <translation>تأكيد لصق متعدد</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="789"/>
+        <location filename="../forms/propertiesdialog.ui" line="632"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>تقليم الأسطر الجديدة اللاحقة في النص الملصق</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="724"/>
+        <location filename="../forms/propertiesdialog.ui" line="656"/>
         <source>Open new terminals in current working directory</source>
         <translation>افتح محطات جديدة في مجلد العمل الحالي</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="755"/>
+        <location filename="../forms/propertiesdialog.ui" line="713"/>
         <source>Save Size when closing</source>
         <translation>احفظ المقاس عند الإغلاق</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="796"/>
+        <location filename="../forms/propertiesdialog.ui" line="646"/>
         <source>Save Position when closing</source>
         <translation>احفظ المكان عند الإغلاق</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="772"/>
+        <location filename="../forms/propertiesdialog.ui" line="676"/>
         <source>Ask for confirmation when closing</source>
         <translation>اطلب التأكيد عند الإغلاق</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="816"/>
+        <location filename="../forms/propertiesdialog.ui" line="763"/>
         <source>Unlimited history</source>
         <translation>تأريخ غير محدود</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="782"/>
+        <location filename="../forms/propertiesdialog.ui" line="756"/>
         <source>History size (in lines)</source>
         <translation>حجم التأريخ (بالأسطر)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="741"/>
+        <location filename="../forms/propertiesdialog.ui" line="723"/>
         <source>Default $TERM</source>
         <translation>الافتراضي $ TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="632"/>
+        <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Start with this size:</source>
         <translation>ابدأ بهذا المقاس:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="299"/>
+        <location filename="../forms/propertiesdialog.ui" line="304"/>
         <source>Background mode:</source>
         <translation>وضع الخلفية:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="307"/>
+        <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>None</source>
         <translation>لا أحد</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="312"/>
+        <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Stretch</source>
         <translation>مدّ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="317"/>
+        <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Zoom</source>
         <translation>تكبير</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="322"/>
+        <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Fit</source>
         <translation>ملائم</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="327"/>
+        <location filename="../forms/propertiesdialog.ui" line="332"/>
         <source>Center</source>
         <translation>مركز</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="495"/>
+        <location filename="../forms/propertiesdialog.ui" line="500"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
         <translation>حدد ما إذا كان يجب رسم أحرف رسم المربعات بواسطة QTerminal داخليًا أو تركها لمكتبات عرض الخطوط الأساسية.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="515"/>
+        <location filename="../forms/propertiesdialog.ui" line="520"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
         <translation>يبدل استخدام وجه الخط الغامق لتقديم ألوان مكثفة</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="518"/>
+        <location filename="../forms/propertiesdialog.ui" line="523"/>
         <source>Use bold font face for intense colors</source>
         <translation>إستعمل خط عريض للأ لوان الداكنة</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="525"/>
+        <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>&amp;Hide Window Borders</source>
         <translation>أ&amp;خفِ حدود النافذة</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="595"/>
+        <location filename="../forms/propertiesdialog.ui" line="600"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;أي سلوك لمحاكاته. لاحظ أن هذا لا يجب أن يتطابق مع نظام التشغيل الخاص بك.&lt;/p&gt;&lt;p&gt;إذا لم تكن متأكدًا ، فاستخدم &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="617"/>
+        <location filename="../forms/propertiesdialog.ui" line="703"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>سيتم تشغيل هذا الأمر باستخدام وسيطة تحتوي على اسم ملف الملف المؤقت الذي يحتوي على محفوظات التمرير</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="620"/>
+        <location filename="../forms/propertiesdialog.ui" line="706"/>
         <source>Handle history command</source>
         <translation>التعامل مع أمر التاريخ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="639"/>
-        <location filename="../forms/propertiesdialog.ui" line="653"/>
+        <location filename="../forms/propertiesdialog.ui" line="792"/>
+        <location filename="../forms/propertiesdialog.ui" line="806"/>
         <source> px</source>
         <translation> بكسل</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="660"/>
+        <location filename="../forms/propertiesdialog.ui" line="813"/>
         <source>Get current size</source>
         <translation>احصل على الحجم الحالي</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="731"/>
+        <location filename="../forms/propertiesdialog.ui" line="686"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>افتح لسان جديد على يمين اللسان النشط</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="734"/>
+        <location filename="../forms/propertiesdialog.ui" line="683"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>إذا لم يتم تحديده ، فسيتم فتح اللسان الجديد باعتباره لسان موجودة في أقصى اليمين</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="762"/>
+        <location filename="../forms/propertiesdialog.ui" line="770"/>
         <source>Close tab on middle-click</source>
         <translation>إغلاق علامة التبويب في النقر الأوسط</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="823"/>
+        <location filename="../forms/propertiesdialog.ui" line="625"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>قم بتعطيل وضع اللصق بين قوسين بقوة</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="826"/>
+        <location filename="../forms/propertiesdialog.ui" line="622"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>وضع اللصق بين قوسين مفيد للصق سلاسل متعددة الأسطر.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="844"/>
+        <location filename="../forms/propertiesdialog.ui" line="838"/>
+        <source>Audible bell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="856"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -730,78 +735,78 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 لإزالة / تعطيل اختصار ، عند النقطة 2 ، اضغط على معدِّل فقط (مثل Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="874"/>
+        <location filename="../forms/propertiesdialog.ui" line="886"/>
         <source>Shortcut</source>
         <translation>الاختصار</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="879"/>
+        <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>Key</source>
         <translation>المفتاح</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="891"/>
+        <location filename="../forms/propertiesdialog.ui" line="903"/>
         <source>Show on start</source>
         <translation>عرضه عند البدء</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="910"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>يظهر زر القفل على شريط الألسنة الأفقي</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="901"/>
+        <location filename="../forms/propertiesdialog.ui" line="913"/>
         <source>Keep window open when it loses focus</source>
         <translation>اترك النافذة مفتوحة عندما تفقد التركيز</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="908"/>
+        <location filename="../forms/propertiesdialog.ui" line="920"/>
         <source>Size</source>
         <translation>المقاس</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="919"/>
+        <location filename="../forms/propertiesdialog.ui" line="931"/>
         <source>Height</source>
         <translation>الارتفاع</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="929"/>
-        <location filename="../forms/propertiesdialog.ui" line="946"/>
+        <location filename="../forms/propertiesdialog.ui" line="941"/>
+        <location filename="../forms/propertiesdialog.ui" line="958"/>
         <source>%</source>
         <translation>٪</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="948"/>
         <source>Width</source>
         <translation>العرض</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="960"/>
+        <location filename="../forms/propertiesdialog.ui" line="972"/>
         <source>Shortcut:</source>
         <translation>الاختصار:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="986"/>
+        <location filename="../forms/propertiesdialog.ui" line="998"/>
         <source>Edit bookmark file contents</source>
         <translation>تحرير محتويات ملف الإشارات المرجعية</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1008"/>
+        <location filename="../forms/propertiesdialog.ui" line="1020"/>
         <source>Enable bookmarks</source>
         <translation>فعّل العلامات</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1017"/>
+        <location filename="../forms/propertiesdialog.ui" line="1029"/>
         <source>Bookmark file</source>
         <translation>ملف العلامات</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1030"/>
+        <location filename="../forms/propertiesdialog.ui" line="1042"/>
         <source>Find...</source>
         <translation>بحث...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1039"/>
+        <location filename="../forms/propertiesdialog.ui" line="1051"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>يمكنك تحديد مكان ملف العلامات الخاص بك. بهذا يمكنك مشاركته بسهولة على تثبيتات مثل OwnCloud أو Dropbox.</translation>
     </message>
@@ -863,66 +868,66 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>التمرير للأسفل</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="262"/>
+        <location filename="../propertiesdialog.cpp" line="268"/>
         <source>Examples</source>
         <translation>أمثلة</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="410"/>
+        <location filename="../propertiesdialog.cpp" line="421"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>الصور (* .bmp * .jpg * .png * .svg * .xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="500"/>
+        <location filename="../propertiesdialog.cpp" line="511"/>
         <source>Open bookmarks file</source>
         <translation>افتح ملف الإشارات المرجعية</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="502"/>
+        <location filename="../propertiesdialog.cpp" line="513"/>
         <source>XML files (*.xml)</source>
         <translation>ملفات XML (* .xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="503"/>
+        <location filename="../propertiesdialog.cpp" line="514"/>
         <source>All files (*)</source>
         <translation>كل الملفات (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="602"/>
-        <location filename="../propertiesdialog.cpp" line="606"/>
+        <location filename="../propertiesdialog.cpp" line="613"/>
+        <location filename="../propertiesdialog.cpp" line="617"/>
         <source>Question</source>
         <translation>سؤال</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="602"/>
+        <location filename="../propertiesdialog.cpp" line="613"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>هل تريد الكتابة فوق ملف الإشارات المرجعية هذا؟</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="606"/>
+        <location filename="../propertiesdialog.cpp" line="617"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>لا ينتهي اسم ملف الإشارات المرجعية بـ &quot;.xml&quot;.
 هل أنت متأكد أنك تريد الكتابة فوقه؟</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="625"/>
         <source>Warning</source>
         <translation>تحذير</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="625"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>لا يمكن كتابة إشارات مرجعية لهذا الملف:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
-        <location filename="../propertiesdialog.cpp" line="311"/>
+        <location filename="../propertiesdialog.cpp" line="317"/>
         <source>System Default</source>
         <translation>مبدئيات النظام</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="409"/>
+        <location filename="../propertiesdialog.cpp" line="420"/>
         <source>Choose a background image</source>
         <translation>اختر صورة الخلفية</translation>
     </message>

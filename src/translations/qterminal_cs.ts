@@ -366,12 +366,12 @@
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="586"/>
+        <location filename="../forms/propertiesdialog.ui" line="591"/>
         <source>Emulation</source>
         <translation>Emulace</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="47"/>
+        <location filename="../forms/propertiesdialog.ui" line="49"/>
         <source>Shortcuts</source>
         <translation>Klávesové zkratky</translation>
     </message>
@@ -386,320 +386,325 @@
         <translation>Vzhled</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="39"/>
-        <location filename="../forms/propertiesdialog.ui" line="611"/>
+        <location filename="../forms/propertiesdialog.ui" line="40"/>
+        <location filename="../forms/propertiesdialog.ui" line="616"/>
         <source>Behavior</source>
         <translation>Chování</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="55"/>
+        <location filename="../forms/propertiesdialog.ui" line="58"/>
         <source>Dropdown</source>
         <translation>Ve vysouvacím režimu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="63"/>
+        <location filename="../forms/propertiesdialog.ui" line="67"/>
         <source>Bookmarks</source>
         <translation>Záložky</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="258"/>
+        <location filename="../forms/propertiesdialog.ui" line="263"/>
         <source>Hide tab bar with only one tab</source>
         <translation>Při pouze jediném panelu skrýt lištu panelů</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="275"/>
+        <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Color scheme</source>
         <translation>Barevné schéma</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="371"/>
+        <location filename="../forms/propertiesdialog.ui" line="376"/>
         <source>Scrollbar position</source>
         <translation>Pozice posuvníku</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="204"/>
+        <location filename="../forms/propertiesdialog.ui" line="209"/>
         <source>Start with preset:</source>
         <translation>Spustit s přednastavením:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="404"/>
+        <location filename="../forms/propertiesdialog.ui" line="409"/>
         <source>Show a border around the current terminal</source>
         <translation>Zobrazit okraj okolo právě používaného terminálu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="381"/>
+        <location filename="../forms/propertiesdialog.ui" line="386"/>
         <source>Terminal transparency</source>
         <translation>Průhlednost terminálu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="394"/>
+        <location filename="../forms/propertiesdialog.ui" line="399"/>
         <source>Application transparency</source>
         <translation>Průhlednost aplikace</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="215"/>
+        <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>None (single terminal)</source>
         <translation>Žádné (jediný terminál)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="220"/>
+        <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>2 terminals horizontally</source>
         <translation>2 terminály vodorovně</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="225"/>
+        <location filename="../forms/propertiesdialog.ui" line="230"/>
         <source>2 terminals vertically</source>
         <translation>2 terminály svisle</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="230"/>
+        <location filename="../forms/propertiesdialog.ui" line="235"/>
         <source>4 terminals</source>
         <translation>4 terminály</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="148"/>
+        <location filename="../forms/propertiesdialog.ui" line="153"/>
         <source>Font</source>
         <translation>Písmo</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="184"/>
+        <location filename="../forms/propertiesdialog.ui" line="189"/>
         <source>&amp;Change...</source>
         <translation>&amp;Změnit…</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="454"/>
+        <location filename="../forms/propertiesdialog.ui" line="459"/>
         <source>Tabs position</source>
         <translation>Pozice panelů</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="238"/>
+        <location filename="../forms/propertiesdialog.ui" line="243"/>
         <source>Widget style</source>
         <translation>Styl ovládacích prvků</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="194"/>
+        <location filename="../forms/propertiesdialog.ui" line="199"/>
         <source>Show the menu bar</source>
         <translation>Zobrazovat lištu nabídek</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="464"/>
+        <location filename="../forms/propertiesdialog.ui" line="469"/>
         <source>Change window title based on current terminal</source>
         <translation>Změnit nadpis okna podle právě zaměřeného terminálu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="481"/>
+        <location filename="../forms/propertiesdialog.ui" line="486"/>
         <source>Change window icon based on current terminal</source>
         <translation>Změnit ikonu okna podle právě zaměřeného terminálu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="418"/>
+        <location filename="../forms/propertiesdialog.ui" line="423"/>
         <source>Enable bi-directional text support</source>
         <translation>Zapnout podporu pro text obsahující směr zleva doprava i zprava doleva</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="265"/>
+        <location filename="../forms/propertiesdialog.ui" line="270"/>
         <source>Background image:</source>
         <translation>Obrázek na pozadí:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="290"/>
+        <location filename="../forms/propertiesdialog.ui" line="295"/>
         <source>Select</source>
         <translation>Vybrat</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="488"/>
+        <location filename="../forms/propertiesdialog.ui" line="493"/>
         <source>Show terminal size on resize</source>
         <translation>Při změně velikosti terminálu zobrazit jeho rozměry</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="411"/>
-        <location filename="../forms/propertiesdialog.ui" line="444"/>
+        <location filename="../forms/propertiesdialog.ui" line="416"/>
+        <location filename="../forms/propertiesdialog.ui" line="449"/>
         <source>px</source>
         <translation>obraz. bodů</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="361"/>
+        <location filename="../forms/propertiesdialog.ui" line="366"/>
         <source>Show close button on each tab</source>
         <translation>Zobrazit tlačítko zavírání na každém panelu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="248"/>
+        <location filename="../forms/propertiesdialog.ui" line="253"/>
         <source>Terminal margin</source>
         <translation>Okraj terminálu (odsazení obsahu od jeho rámečku)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="498"/>
+        <location filename="../forms/propertiesdialog.ui" line="503"/>
         <source>Use box drawing characters contained in the font</source>
         <translation>Použít znak, představující obdélník, z písma</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="505"/>
+        <location filename="../forms/propertiesdialog.ui" line="510"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>Urychlovače jsou zobrazeny po stisknutí Alt a mohou kolidovat s terminálem.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="508"/>
+        <location filename="../forms/propertiesdialog.ui" line="513"/>
         <source>No menu bar accelerator</source>
         <translation>Žádný urychlovač lišty nabídek</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="711"/>
+        <location filename="../forms/propertiesdialog.ui" line="693"/>
         <source>Action after paste</source>
         <translation>Akce po vložení</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="748"/>
+        <location filename="../forms/propertiesdialog.ui" line="639"/>
         <source>Confirm multiline paste</source>
         <translation>Vyžadovat potvrzení při vkládání víceřádkového textu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="789"/>
+        <location filename="../forms/propertiesdialog.ui" line="632"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Odebrat nové řádky následující po konci vkládaného textu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="724"/>
+        <location filename="../forms/propertiesdialog.ui" line="656"/>
         <source>Open new terminals in current working directory</source>
         <translation>Otevírat nové terminály ve stávající pracovní složce</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="755"/>
+        <location filename="../forms/propertiesdialog.ui" line="713"/>
         <source>Save Size when closing</source>
         <translation>Při zavírání uložit velikost</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="796"/>
+        <location filename="../forms/propertiesdialog.ui" line="646"/>
         <source>Save Position when closing</source>
         <translation>Při zavírání uložit pozici</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="772"/>
+        <location filename="../forms/propertiesdialog.ui" line="676"/>
         <source>Ask for confirmation when closing</source>
         <translation>Při zavírání vyžadovat potvrzení</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="816"/>
+        <location filename="../forms/propertiesdialog.ui" line="763"/>
         <source>Unlimited history</source>
         <translation>Neomezená historie</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="782"/>
+        <location filename="../forms/propertiesdialog.ui" line="756"/>
         <source>History size (in lines)</source>
         <translation>Hloubka historie (v řádcích)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="741"/>
+        <location filename="../forms/propertiesdialog.ui" line="723"/>
         <source>Default $TERM</source>
         <translation>Výchozí $TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="632"/>
+        <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Start with this size:</source>
         <translation>Spustit s touto velikostí:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="299"/>
+        <location filename="../forms/propertiesdialog.ui" line="304"/>
         <source>Background mode:</source>
         <translation>Režim pozadí:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="307"/>
+        <location filename="../forms/propertiesdialog.ui" line="312"/>
         <source>None</source>
         <translation>Žádný</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="312"/>
+        <location filename="../forms/propertiesdialog.ui" line="317"/>
         <source>Stretch</source>
         <translation>Roztáhnout</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="317"/>
+        <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Zoom</source>
         <translation>Zvětšit</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="322"/>
+        <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Fit</source>
         <translation>Přizpůsobit</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="327"/>
+        <location filename="../forms/propertiesdialog.ui" line="332"/>
         <source>Center</source>
         <translation>Vystředit</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="495"/>
+        <location filename="../forms/propertiesdialog.ui" line="500"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
         <translation>Určete, zda mají být znaky pro kreslení rámečku kresleny QTerminalem vnitřně nebo ponechány na podkladových knihovnách vykreslování písem.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="515"/>
+        <location filename="../forms/propertiesdialog.ui" line="520"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
         <translation>Přepíná použití tučného písma pro vykreslení výrazných barev</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="518"/>
+        <location filename="../forms/propertiesdialog.ui" line="523"/>
         <source>Use bold font face for intense colors</source>
         <translation>Pro výrazné barvy použít tučné písmo</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="525"/>
+        <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Skrýt okraje oken</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="595"/>
+        <location filename="../forms/propertiesdialog.ui" line="600"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Které chování napodobit. Všimněte si, že toto nemusí odpovídat vámi využívanému operačnímu systému.&lt;/p&gt;&lt;p&gt;Pokud si nejste jistí, použijte &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulaci.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="617"/>
+        <location filename="../forms/propertiesdialog.ui" line="703"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>Tento příkaz bude spuštěn s argumentem obsahujícím název souboru dočasného souboru obsahujícího historii posouvání</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="620"/>
+        <location filename="../forms/propertiesdialog.ui" line="706"/>
         <source>Handle history command</source>
         <translation>Zpracovat příkaz pro historii</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="639"/>
-        <location filename="../forms/propertiesdialog.ui" line="653"/>
+        <location filename="../forms/propertiesdialog.ui" line="792"/>
+        <location filename="../forms/propertiesdialog.ui" line="806"/>
         <source> px</source>
         <translation> obr. bodů</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="660"/>
+        <location filename="../forms/propertiesdialog.ui" line="813"/>
         <source>Get current size</source>
         <translation>Získat stávající velikost</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="731"/>
+        <location filename="../forms/propertiesdialog.ui" line="686"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>Otevřít novou kartu napravo od té stávající</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="734"/>
+        <location filename="../forms/propertiesdialog.ui" line="683"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>Pokud není zaškrtnuto, nová karta se otevře jako karta zcela vpravo</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="762"/>
+        <location filename="../forms/propertiesdialog.ui" line="770"/>
         <source>Close tab on middle-click</source>
         <translation>Zavřít kartu kliknutím prostředním tlačítkem myši</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="823"/>
+        <location filename="../forms/propertiesdialog.ui" line="625"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>Nuceně zakázat závorkový režim vkládání</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="826"/>
+        <location filename="../forms/propertiesdialog.ui" line="622"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>Závorkový režim vkládání je užitečný na vkládání víceřádkových řetězců.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="844"/>
+        <location filename="../forms/propertiesdialog.ui" line="838"/>
+        <source>Audible bell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="856"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -714,94 +719,94 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifikátor (například Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="910"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>Tlačítko pro uzamčení je zobrazeno na vodorovné pruhu panelů</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="901"/>
+        <location filename="../forms/propertiesdialog.ui" line="913"/>
         <source>Keep window open when it loses focus</source>
         <translation>Když ztratí zaměření, ponechat okno otevřené</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="919"/>
+        <location filename="../forms/propertiesdialog.ui" line="931"/>
         <source>Height</source>
         <translation>Výška</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="929"/>
-        <location filename="../forms/propertiesdialog.ui" line="946"/>
+        <location filename="../forms/propertiesdialog.ui" line="941"/>
+        <location filename="../forms/propertiesdialog.ui" line="958"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="948"/>
         <source>Width</source>
         <translation>Šířka</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="986"/>
+        <location filename="../forms/propertiesdialog.ui" line="998"/>
         <source>Edit bookmark file contents</source>
         <translation>Upravit obsah souboru se záložkami</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1008"/>
+        <location filename="../forms/propertiesdialog.ui" line="1020"/>
         <source>Enable bookmarks</source>
         <translation>Používat záložky</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1017"/>
+        <location filename="../forms/propertiesdialog.ui" line="1029"/>
         <source>Bookmark file</source>
         <translation>Soubor se záložkami</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="891"/>
+        <location filename="../forms/propertiesdialog.ui" line="903"/>
         <source>Show on start</source>
         <translation>Při spuštění zobrazit</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="335"/>
+        <location filename="../forms/propertiesdialog.ui" line="340"/>
         <source>Cursor shape</source>
         <translation>Tvar kurzoru</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="471"/>
+        <location filename="../forms/propertiesdialog.ui" line="476"/>
         <source>Fixed tab width:</source>
         <translation>Pevná velikost panelu:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="908"/>
+        <location filename="../forms/propertiesdialog.ui" line="920"/>
         <source>Size</source>
         <translation>Velikost</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="960"/>
+        <location filename="../forms/propertiesdialog.ui" line="972"/>
         <source>Shortcut:</source>
         <translation>Klávesová zkratka:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1030"/>
+        <location filename="../forms/propertiesdialog.ui" line="1042"/>
         <source>Find...</source>
         <translation>Najít…</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1039"/>
+        <location filename="../forms/propertiesdialog.ui" line="1051"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Můžete stanovit své vlastní umístění souboru se záložkami. To umožňuje snadné sdílení záložek pomocí nástrojů, jako jsou NextCloud nebo Dropbox.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="117"/>
-        <location filename="../forms/propertiesdialog.ui" line="425"/>
+        <location filename="../forms/propertiesdialog.ui" line="122"/>
+        <location filename="../forms/propertiesdialog.ui" line="430"/>
         <source> %</source>
         <translation> %</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="874"/>
+        <location filename="../forms/propertiesdialog.ui" line="886"/>
         <source>Shortcut</source>
         <translation>Zkratka pro</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="879"/>
+        <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>Key</source>
         <translation>Klávesa</translation>
     </message>
@@ -863,66 +868,66 @@ Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifik
         <translation>Posun dolů</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="262"/>
+        <location filename="../propertiesdialog.cpp" line="268"/>
         <source>Examples</source>
         <translation>Příklady</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="410"/>
+        <location filename="../propertiesdialog.cpp" line="421"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Obrázky (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="500"/>
+        <location filename="../propertiesdialog.cpp" line="511"/>
         <source>Open bookmarks file</source>
         <translation>Otevřít soubor se záložkami</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="502"/>
+        <location filename="../propertiesdialog.cpp" line="513"/>
         <source>XML files (*.xml)</source>
         <translation>XML soubory (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="503"/>
+        <location filename="../propertiesdialog.cpp" line="514"/>
         <source>All files (*)</source>
         <translation>Všechny soubory (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="602"/>
-        <location filename="../propertiesdialog.cpp" line="606"/>
+        <location filename="../propertiesdialog.cpp" line="613"/>
+        <location filename="../propertiesdialog.cpp" line="617"/>
         <source>Question</source>
         <translation>Otázka</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="602"/>
+        <location filename="../propertiesdialog.cpp" line="613"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Opravdu chcete tento soubor se záložkami přepsat?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="606"/>
+        <location filename="../propertiesdialog.cpp" line="617"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Název souboru se záložkami nekonči na „.xml“.
 Opravdu ho chcete přepsat?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="625"/>
         <source>Warning</source>
         <translation>Varování</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="625"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Nedaří se zapsat záložky do tohoto souboru:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
-        <location filename="../propertiesdialog.cpp" line="311"/>
+        <location filename="../propertiesdialog.cpp" line="317"/>
         <source>System Default</source>
         <translation>Dle výchozího nastavení systému</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="409"/>
+        <location filename="../propertiesdialog.cpp" line="420"/>
         <source>Choose a background image</source>
         <translation>Zvolte obrázek pro pozadí</translation>
     </message>
