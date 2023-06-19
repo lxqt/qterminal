@@ -838,7 +838,7 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="838"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Campanella udibile</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="856"/>
