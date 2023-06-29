@@ -70,6 +70,8 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
             setArgs(shell);
     }
 
+    setEnvironment(QStringList(QStringLiteral("TERM=%1").arg(Properties::Instance()->term)));
+
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
     disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
 
