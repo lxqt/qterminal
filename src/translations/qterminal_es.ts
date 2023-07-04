@@ -295,7 +295,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="488"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>Diseño de la barra de&amp;splazamiento</translation>
+        <translation>Diseño de barras de desplazamiento</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="501"/>
@@ -701,7 +701,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="838"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Tono audible</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="856"/>

@@ -525,7 +525,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="253"/>
         <source>Terminal margin</source>
-        <translation>Terminali vahe</translation>
+        <translation>Tühi ruum terminali sisu ja akna vahel</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="503"/>
