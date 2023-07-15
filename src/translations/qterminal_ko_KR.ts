@@ -718,7 +718,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="838"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>경고음</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="856"/>
@@ -768,7 +768,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="931"/>
         <source>Height</source>
-        <translation>눂이</translation>
+        <translation>높이</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="941"/>
@@ -851,7 +851,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>IBeamCursor</source>
-        <translation>I-빔커서</translation>
+        <translation>아이빔커서</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="196"/>
@@ -919,7 +919,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="625"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation>이 파일에 바로찾기를 쓸 수 없음:</translation>
+        <translation>이 파일에 바로찾기를 기록할 수 없음:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
