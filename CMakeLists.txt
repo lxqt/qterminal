@@ -147,8 +147,8 @@ lxqt_translate_ts(QTERM_QM
 
 lxqt_translate_desktop(DESKTOP_FILES
     SOURCES
-        qterminal.desktop.in
-        qterminal-drop.desktop.in
+        Qterminal.desktop.in
+        Qterminal_drop.desktop.in
     TRANSLATION_DIR "src/translations"
     USE_YAML
 )
@@ -233,13 +233,10 @@ endif()
 set(APP_DIR "${CMAKE_INSTALL_FULL_DATADIR}/qterminal")
 add_definitions(-DAPP_DIR=\"${APP_DIR}\")
 
-install(FILES
-    ${DESKTOP_FILES}
-    DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
-)
+install(SCRIPT "rename_DNS.cmake")
 
 install(FILES
-    qterminal.metainfo.xml
+    org.lxqt_project.Qterminal.metainfo.xml
     DESTINATION "${CMAKE_INSTALL_DATADIR}/metainfo"
 )
 
