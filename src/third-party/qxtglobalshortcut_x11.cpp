@@ -38,7 +38,6 @@
 
 #include <QGuiApplication>
 #include <QVector>
-#include <QtX11Extras/QX11Info>
 
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
@@ -95,7 +94,8 @@ class QxtX11Data {
 public:
     QxtX11Data()
     {
-        m_display = QX11Info::display();
+        auto *x11Application = qGuiApp->nativeInterface<QNativeInterface::QX11Application>();
+        m_display = x11Application ? x11Application->display() : nullptr;
     }
 
     bool isValid()
@@ -149,7 +149,7 @@ private:
 } // namespace
 
 bool QxtGlobalShortcutPrivate::nativeEventFilter(const QByteArray & eventType,
-    void *message, long *result)
+    void *message, qintptr *result)
 {
     Q_UNUSED(result);
 
