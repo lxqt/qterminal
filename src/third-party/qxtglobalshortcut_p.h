@@ -58,7 +58,7 @@ public:
     static bool error;
 #ifndef Q_OS_MAC
     static int ref;
-    bool nativeEventFilter(const QByteArray & eventType, void * message, long * result) override;
+    bool nativeEventFilter(const QByteArray &eventType, void *message, qintptr *result);
 #endif
 
     static void activateShortcut(quint32 nativeKey, quint32 nativeMods);

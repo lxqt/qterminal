@@ -24,6 +24,7 @@
 #include <QTimer>
 #include <functional>
 #include <QGuiApplication>
+#include <QActionGroup>
 
 #ifdef HAVE_QDBUS
 #include <QtDBus/QtDBus>
