@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation>Mantener la ventana abierta al perder el foco</translation>
+        <translation>Mantener la ventana abierta cuando pierda el foco</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
@@ -726,7 +726,7 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
     <message>
         <location filename="../forms/propertiesdialog.ui" line="913"/>
         <source>Keep window open when it loses focus</source>
-        <translation>Mantener la ventana abierta al perder el foco</translation>
+        <translation>Mantenga la ventana abierta cuando pierda el foco</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="931"/>
@@ -880,7 +880,7 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
     <message>
         <location filename="../propertiesdialog.cpp" line="511"/>
         <source>Open bookmarks file</source>
-        <translation>Abrir el archivo de marcadores</translation>
+        <translation>Abrir archivo de marcadores</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="513"/>
@@ -901,7 +901,7 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
     <message>
         <location filename="../propertiesdialog.cpp" line="613"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation>¿Quiere sobrescribir este archivo de marcadores?</translation>
+        <translation>¿Desea sobrescribir este archivo de marcadores?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="617"/>
