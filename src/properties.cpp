@@ -164,6 +164,8 @@ void Properties::loadSettings()
 
     windowMaximized = m_settings->value(QLatin1String("LastWindowMaximized"), false).toBool();
 
+    SwapMouseButtons2and3 = m_settings->value(QLatin1String("SwapMouseButtons2and3"), false).toBool();
+
     prefDialogSize = m_settings->value(QLatin1String("PrefDialogSize")).toSize();
 }
 
@@ -273,6 +275,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("TrimPastedTrailingNewlines"), trimPastedTrailingNewlines);
 
     m_settings->setValue(QLatin1String("LastWindowMaximized"), windowMaximized);
+    m_settings->setValue(QLatin1String("SwapMouseButtons2and3"), SwapMouseButtons2and3);
 
     m_settings->setValue(QLatin1String("PrefDialogSize"), prefDialogSize);
 }

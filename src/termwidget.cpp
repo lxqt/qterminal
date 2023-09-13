@@ -76,8 +76,19 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
 
     setContextMenuPolicy(Qt::CustomContextMenu);
-    connect(this, &QWidget::customContextMenuRequested,
-            this, &TermWidgetImpl::customContextMenuCall);
+    //connect(this, &QWidget::customContextMenuRequested,
+    //        this, &TermWidgetImpl::customContextMenuCall);
+
+    if(Properties::Instance()->SwapMouseButtons2and3 == true)
+    {
+	connect(this, &QWidget::customContextMenuRequested,
+		this, &TermWidgetImpl::pasteSelection);
+    }
+    else
+    {
+	connect(this, &QWidget::customContextMenuRequested,
+		this, &TermWidgetImpl::customContextMenuCall);
+    }
 
     connect(this, &QTermWidget::urlActivated, this, &TermWidgetImpl::activateUrl);
     connect(this, &QTermWidget::bell, this, &TermWidgetImpl::bell);
@@ -238,6 +249,29 @@ void TermWidgetImpl::bell() {
     }
 }
 
+bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
+{
+    if (ev->type() == QEvent::MouseButtonPress)
+    {
+        QMouseEvent *mev = (QMouseEvent *)ev;
+        if ( mev->button() == Qt::MiddleButton )
+        {
+            impl()->pasteSelection();
+            if(Properties::Instance()->SwapMouseButtons2and3 == true)
+            {
+                    const QPoint &point = (const QPoint &)(mev->pos());
+                    impl()->customContextMenuCall(point);
+            }
+            else  impl()->pasteSelection();
+
+            return true;
+        }
+
+    }
+    return false;
+}
+
+
 TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     : QWidget(parent),
       DBusAddressable(QStringLiteral("/terminals"))
@@ -256,6 +290,14 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     m_layout->addWidget(m_term);
     const auto objs = m_term->children();
 
+    for (QObject *o : objs)
+    {
+        // Find TerminalDisplay
+        if (!o->isWidgetType() || qobject_cast<QWidget*>(o)->isHidden())
+            continue;
+        o->installEventFilter(this);
+    }
+
     propertiesChanged();
 
     connect(m_term, &QTermWidget::finished, this, &TermWidget::finished);
@@ -263,6 +305,7 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     connect(m_term, &QTermWidget::termLostFocus, this, &TermWidget::term_termLostFocus);
     connect(m_term, &QTermWidget::titleChanged, this, [this] { emit termTitleChanged(m_term->title(), m_term->icon()); });
 }
+
 
 void TermWidget::propertiesChanged()
 {
