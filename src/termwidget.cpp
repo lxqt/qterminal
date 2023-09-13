@@ -304,7 +304,6 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     connect(m_term, &QTermWidget::titleChanged, this, [this] { emit termTitleChanged(m_term->title(), m_term->icon()); });
 }
 
-
 void TermWidget::propertiesChanged()
 {
     if (Properties::Instance()->highlightCurrentTerminal)

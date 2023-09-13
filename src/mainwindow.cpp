@@ -666,7 +666,6 @@ void MainWindow::actAbout_triggered()
                      + QStringLiteral("</a><br><br>")
                      + tr("Development: ")
                      + QStringLiteral("<a href='https://github.com/lxqt/qterminal'>https://github.com/lxqt/qterminal</a><br><br>"));
-
 }
 
 void MainWindow::actProperties_triggered()

@@ -89,7 +89,6 @@ class TermWidget : public QWidget, public DBusAddressable
 
 	bool eventFilter(QObject * obj, QEvent * evt) override;
 
-
     signals:
         void finished();
         void renameSession();
