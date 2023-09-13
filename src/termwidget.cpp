@@ -76,8 +76,6 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
 
     setContextMenuPolicy(Qt::CustomContextMenu);
-    //connect(this, &QWidget::customContextMenuRequested,
-    //        this, &TermWidgetImpl::customContextMenuCall);
 
     if(Properties::Instance()->SwapMouseButtons2and3 == true)
     {

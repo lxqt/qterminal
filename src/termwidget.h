@@ -53,7 +53,6 @@ class TermWidgetImpl : public QTermWidget
 	void customContextMenuCall(const QPoint & pos);
 
     private slots:
-        //void customContextMenuCall(const QPoint & pos);
         void activateUrl(const QUrl& url, bool fromContextMenu);
         void bell();
 

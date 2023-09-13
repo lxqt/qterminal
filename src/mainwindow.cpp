@@ -658,8 +658,15 @@ void MainWindow::actAbout_triggered()
 {
      QMessageBox::about(this, tr("About"),
                      QStringLiteral("<center><b><big>QTerminal %1</big></b></center><br>").arg(qApp->applicationVersion())
-                     + tr("another private build in 2023")
-                     + QStringLiteral("<br><br>"));
+                     + tr("A lightweight and powerful multiplatform terminal emulator (mouse swap build)")
+                     + QStringLiteral("<br><br>")
+                     + tr("Copyright (C) ") + tr("2013-2022")
+                     + QStringLiteral("<br><a href='https://lxqt-project.org'>")
+                     + tr("LXQt Project")
+                     + QStringLiteral("</a><br><br>")
+                     + tr("Development: ")
+                     + QStringLiteral("<a href='https://github.com/lxqt/qterminal'>https://github.com/lxqt/qterminal</a><br><br>"));
+
 }
 
 void MainWindow::actProperties_triggered()
