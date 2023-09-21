@@ -254,7 +254,6 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     setLayout(m_layout);
 
     m_layout->addWidget(m_term);
-    const auto objs = m_term->children();
 
     propertiesChanged();
 
