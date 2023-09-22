@@ -717,7 +717,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="838"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Girdimas skambutis</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="856"/>
