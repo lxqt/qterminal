@@ -77,7 +77,7 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
 
     setContextMenuPolicy(Qt::CustomContextMenu);
 
-    if(Properties::Instance()->SwapMouseButtons2and3 == true)
+    if(Properties::Instance()->swapMouseButtons2and3)
     {
 	connect(this, &QWidget::customContextMenuRequested,
 		this, &TermWidgetImpl::pasteSelection);
@@ -251,13 +251,13 @@ bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
 {
     if (ev->type() == QEvent::MouseButtonPress)
     {
-        QMouseEvent *mev = (QMouseEvent *)ev;
+        QMouseEvent *mev = static_cast<QMouseEvent*>(ev);
         if ( mev->button() == Qt::MiddleButton )
         {
             impl()->pasteSelection();
-            if(Properties::Instance()->SwapMouseButtons2and3 == true)
+            if(Properties::Instance()->swapMouseButtons2and3)
             {
-                    const QPoint &point = (const QPoint &)(mev->pos());
+                    const QPoint& point = static_cast<const QPoint&>(mev->pos());
                     impl()->customContextMenuCall(point);
             }
             else  impl()->pasteSelection();

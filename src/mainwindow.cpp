@@ -658,7 +658,7 @@ void MainWindow::actAbout_triggered()
 {
      QMessageBox::about(this, tr("About"),
                      QStringLiteral("<center><b><big>QTerminal %1</big></b></center><br>").arg(qApp->applicationVersion())
-                     + tr("A lightweight and powerful multiplatform terminal emulator (mouse swap build)")
+                     + tr("A lightweight and powerful multiplatform terminal emulator")
                      + QStringLiteral("<br><br>")
                      + tr("Copyright (C) ") + tr("2013-2022")
                      + QStringLiteral("<br><a href='https://lxqt-project.org'>")
