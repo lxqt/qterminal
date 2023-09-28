@@ -50,7 +50,7 @@ class TermWidgetImpl : public QTermWidget
         void zoomIn();
         void zoomOut();
         void zoomReset();
-	void customContextMenuCall(const QPoint & pos);
+        void customContextMenuCall(const QPoint & pos);
 
     private slots:
         void activateUrl(const QUrl& url, bool fromContextMenu);
