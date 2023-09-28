@@ -88,7 +88,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>پنجره در صورت از دست دادن فوکوس باز نگه داشته شود</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
@@ -335,32 +335,32 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>درباره</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>یک شبیه ساز ترمینال چندسکویی قدرتمند و سبک</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>کپی‌رایت(C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>2013-2022</source>
-        <translation type="unfinished"></translation>
+        <translation>۱۳۹۱-۱۴۰۱</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="665"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>پروژه LXQt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>توسعه: </translation>
     </message>
 </context>
 <context>
@@ -661,17 +661,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">&amp;مخفی کردن قاب پنجره</translation>
+        <translation>&amp;کناره های پنجره پنهان شود</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="600"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;انتخاب عملکرد برای شبیه سازی. توجه داشته باشید که این قابلیت لزوما توسط سیستم عامل شما پشتیبانی نمی شود.&lt;/p&gt;&lt;p&gt;اگر شما مطمئن نیستید از شبیه ساز &lt;span style=&quot; font-weight:600;&quot;&gt;پیشفرض&lt;/span&gt; .استفاده کنید&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;انتخاب عملکرد برای شبیه سازی. توجه داشته باشید که این قابلیت لزوما با سیستم‌عامل شما هم‌خوانی ندارد.&lt;/p&gt;&lt;p&gt;اگر مطمئن نیستید از شبیه‌ساز &lt;span style=&quot; font-weight:600;&quot;&gt;پیشفرض&lt;/span&gt; استفاده کنید.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="703"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>این دستور با پارامتر حاوی نام یک فایل موقت که حاوی تاریخچه می باشد اجرا می شود</translation>
+        <translation>این دستور با پارامتری شامل نام یک فایل موقت که حاوی تاریخچه پیمایش می باشد اجرا می شود</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="706"/>
@@ -717,7 +717,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="838"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>زنگ صدا دار</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="856"/>
@@ -752,12 +752,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="910"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>یک دکمه قفل روی میله تب افقی نمایش داده می‌شود</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="913"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>هنگام از دست دادن فوکوس پنجره را باز نگه دار</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="920"/>
@@ -870,7 +870,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="268"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>نمونه ها</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="421"/>
@@ -880,55 +880,56 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="511"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>فایل نشانک ها را باز کن</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="513"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">فایل های XML (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="514"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>تمام فایل ها (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="613"/>
         <location filename="../propertiesdialog.cpp" line="617"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>سؤال</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="613"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>آیا می خواهید این فایل نشانک ها را بازنویسی کنید؟</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="617"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>نام فایل نشانک ها با &apos;xml.&apos; تمام نشده است.
+آیا مطمئن هستید که میخواهید آن را بازنویسی کنید؟</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="625"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>اخطار</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="625"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>نشانک ها نمی‌توانند به این فایل نوشته شوند:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="203"/>
         <location filename="../propertiesdialog.cpp" line="317"/>
         <source>System Default</source>
-        <translation>پیشفرض های سیستم</translation>
+        <translation>پیش‌فرض های سیستم</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="420"/>
         <source>Choose a background image</source>
-        <translation>انتخاب یک تضویر پس زمینه</translation>
+        <translation>انتخاب یک تصویر پس زمینه</translation>
     </message>
 </context>
 <context>
