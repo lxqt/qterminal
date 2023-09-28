@@ -254,21 +254,19 @@ bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
         QMouseEvent *mev = static_cast<QMouseEvent*>(ev);
         if ( mev->button() == Qt::MiddleButton )
         {
-            impl()->pasteSelection();
             if(Properties::Instance()->swapMouseButtons2and3)
             {
-                    const QPoint& point = static_cast<const QPoint&>(mev->pos());
-                    impl()->customContextMenuCall(point);
+                    impl()->customContextMenuCall(mev->pos());
             }
-            else  impl()->pasteSelection();
-
+            else
+            {
+                    impl()->pasteSelection();
+            }
             return true;
         }
-
     }
     return false;
 }
-
 
 TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     : QWidget(parent),
@@ -292,7 +290,9 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     {
         // Find TerminalDisplay
         if (!o->isWidgetType() || qobject_cast<QWidget*>(o)->isHidden())
+	{
             continue;
+	}
         o->installEventFilter(this);
     }
 
