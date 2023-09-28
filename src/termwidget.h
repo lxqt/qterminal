@@ -87,7 +87,7 @@ class TermWidget : public QWidget, public DBusAddressable
         void closeTerminal();
         #endif
 
-	bool eventFilter(QObject * obj, QEvent * evt) override;
+        bool eventFilter(QObject * obj, QEvent * evt) override;
 
     signals:
         void finished();
