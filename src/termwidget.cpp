@@ -79,13 +79,13 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
 
     if(Properties::Instance()->swapMouseButtons2and3)
     {
-	connect(this, &QWidget::customContextMenuRequested,
-		this, &TermWidgetImpl::pasteSelection);
+        connect(this, &QWidget::customContextMenuRequested,
+                this, &TermWidgetImpl::pasteSelection);
     }
     else
     {
-	connect(this, &QWidget::customContextMenuRequested,
-		this, &TermWidgetImpl::customContextMenuCall);
+        connect(this, &QWidget::customContextMenuRequested,
+                this, &TermWidgetImpl::customContextMenuCall);
     }
 
     connect(this, &QTermWidget::urlActivated, this, &TermWidgetImpl::activateUrl);
@@ -290,9 +290,9 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     {
         // Find TerminalDisplay
         if (!o->isWidgetType() || qobject_cast<QWidget*>(o)->isHidden())
-	{
+        {
             continue;
-	}
+        }
         o->installEventFilter(this);
     }
 
