@@ -76,8 +76,17 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
 
     setContextMenuPolicy(Qt::CustomContextMenu);
-    connect(this, &QWidget::customContextMenuRequested,
-            this, &TermWidgetImpl::customContextMenuCall);
+
+    if(Properties::Instance()->swapMouseButtons2and3)
+    {
+        connect(this, &QWidget::customContextMenuRequested,
+                this, &TermWidgetImpl::pasteSelection);
+    }
+    else
+    {
+        connect(this, &QWidget::customContextMenuRequested,
+                this, &TermWidgetImpl::customContextMenuCall);
+    }
 
     connect(this, &QTermWidget::urlActivated, this, &TermWidgetImpl::activateUrl);
     connect(this, &QTermWidget::bell, this, &TermWidgetImpl::bell);
@@ -238,6 +247,27 @@ void TermWidgetImpl::bell() {
     }
 }
 
+bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
+{
+    if (ev->type() == QEvent::MouseButtonPress)
+    {
+        QMouseEvent *mev = static_cast<QMouseEvent*>(ev);
+        if ( mev->button() == Qt::MiddleButton )
+        {
+            if(Properties::Instance()->swapMouseButtons2and3)
+            {
+                    impl()->customContextMenuCall(mev->pos());
+            }
+            else
+            {
+                    impl()->pasteSelection();
+            }
+            return true;
+        }
+    }
+    return false;
+}
+
 TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     : QWidget(parent),
       DBusAddressable(QStringLiteral("/terminals"))
@@ -254,6 +284,17 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
     setLayout(m_layout);
 
     m_layout->addWidget(m_term);
+    const auto objs = m_term->children();
+
+    for (QObject *o : objs)
+    {
+        // Find TerminalDisplay
+        if (!o->isWidgetType() || qobject_cast<QWidget*>(o)->isHidden())
+        {
+            continue;
+        }
+        o->installEventFilter(this);
+    }
 
     propertiesChanged();
 

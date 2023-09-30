@@ -124,6 +124,7 @@ class Properties
         bool trimPastedTrailingNewlines;
 
         bool windowMaximized;
+        bool swapMouseButtons2and3;
 
         bool useFontBoxDrawingChars;
     private:

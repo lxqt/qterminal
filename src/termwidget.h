@@ -50,9 +50,9 @@ class TermWidgetImpl : public QTermWidget
         void zoomIn();
         void zoomOut();
         void zoomReset();
+        void customContextMenuCall(const QPoint & pos);
 
     private slots:
-        void customContextMenuCall(const QPoint & pos);
         void activateUrl(const QUrl& url, bool fromContextMenu);
         void bell();
 
@@ -86,6 +86,8 @@ class TermWidget : public QWidget, public DBusAddressable
         void sendText(const QString& text);
         void closeTerminal();
         #endif
+
+        bool eventFilter(QObject * obj, QEvent * evt) override;
 
     signals:
         void finished();
