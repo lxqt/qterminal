@@ -397,10 +397,9 @@ void TermWidgetHolder::setCurrentTerminal(TermWidget* term)
 void TermWidgetHolder::handle_finished()
 {
     TermWidget * w = qobject_cast<TermWidget*>(sender());
-    if (!w)
+    if (w == nullptr)
     {
-        qDebug() << "TermWidgetHolder::handle_finished: Unknown object to handle" << w;
-        assert(0);
+        qFatal("TermWidgetHolder::handle_finished: Unknown object to handle");
     }
     splitCollapse(w);
 }
