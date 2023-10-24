@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Paspauskite &quot;%1&quot;, kad pamatytumėte terminalą.</translation>
+        <translation>Paspauskite „%1“, kad pamatytumėte terminalą.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
@@ -666,7 +666,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="600"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Kurią veikseną emuliuoti. Turėkite omenyje, kad tai neturi atitikti jūsų operacinę sistemą.&lt;/p&gt;&lt;p&gt;Jei nesate tikri, naudokite &lt;span style=&quot; font-weight:600;&quot;&gt;numatytąją&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Kurią veikseną emuliuoti. Turėkite omenyje, kad tai neturi atitikti jūsų operacinę sistemą.&lt;/p&gt;&lt;p&gt;Jei nesate tikri, naudokite &lt;span style=&quot; font-weight:600;&quot;&gt;numatytąją&lt;/span&gt; emuliaciją.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="703"/>
