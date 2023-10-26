@@ -26,7 +26,6 @@
 #include <unistd.h>
 #ifdef HAVE_QDBUS
     #include <QtDBus/QtDBus>
-    #include <unistd.h>
     #include "processadaptor.h"
 #endif
 
