@@ -914,7 +914,7 @@ bool MainWindow::hasMultipleSubterminals(QAction *)
 
 bool MainWindow::hasIndexedTab(QAction *action)
 {
-    bool ok;
+    bool ok = false;
     const int index = action->property("tab").toInt(&ok);
     Q_ASSERT(ok);
     static_cast<void>(ok);

@@ -75,7 +75,7 @@ void TermWidgetHolder::setInitialFocus()
 
 void TermWidgetHolder::loadSession()
 {
-    bool ok;
+    bool ok = false;
     QString name = QInputDialog::getItem(this, tr("Load Session"),
                                          tr("List of saved sessions:"),
                                          Properties::Instance()->sessions.keys(),
