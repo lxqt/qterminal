@@ -268,19 +268,20 @@ bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
     return false;
 }
 
-TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
-    : QWidget(parent),
-      DBusAddressable(QStringLiteral("/terminals"))
+TermWidget::TermWidget(TerminalConfig &cfg, QWidget *parent)
+    : QWidget(parent)
+    , DBusAddressable(QStringLiteral("/terminals"))
+    , m_term(new TermWidgetImpl(cfg, this))
+    , m_layout(new QVBoxLayout)
+    , m_border(palette().color(QPalette::Window))
 {
 
     #ifdef HAVE_QDBUS
     registerAdapter<TerminalAdaptor, TermWidget>(this);
     #endif
-    m_border = palette().color(QPalette::Window);
-    m_term = new TermWidgetImpl(cfg, this);
+
     setFocusProxy(m_term);
 
-    m_layout = new QVBoxLayout;
     setLayout(m_layout);
 
     m_layout->addWidget(m_term);

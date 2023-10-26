@@ -89,15 +89,15 @@ private:
 
 // -----------------------------------------------------------------------------------------------------------
 
-TabSwitcher::TabSwitcher(TabWidget* tabs):
-    QListView(tabs),
-    m_tabs(tabs)
+TabSwitcher::TabSwitcher(TabWidget *tabs)
+    : QListView(tabs)
+    , m_timer(new QTimer(this))
+    , m_tabs(tabs)
 {
     setWindowFlags(Qt::Widget | Qt::Popup | Qt::WindowStaysOnTopHint);
     setItemDelegate(new AppItemDelegate(frameWidth(), tabs));
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-    m_timer = new QTimer(this);
     m_timer->setInterval(100);
     m_timer->setSingleShot(true);
 

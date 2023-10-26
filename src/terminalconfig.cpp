@@ -8,10 +8,10 @@
 #include "properties.h"
 #include "termwidget.h"
 
-TerminalConfig::TerminalConfig(const QString & wdir, const QStringList & shell)
+TerminalConfig::TerminalConfig(const QString &wdir, const QStringList &shell)
+    : m_workingDirectory(wdir)
+    , m_shell(shell)
 {
-    m_workingDirectory = wdir;
-    m_shell = shell;
 }
 
 TerminalConfig::TerminalConfig()
