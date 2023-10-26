@@ -323,10 +323,10 @@ bool BookmarksModel::setData(const QModelIndex &index, const QVariant &value,
 
 BookmarksWidget::BookmarksWidget(QWidget *parent)
     : QWidget(parent)
+    , m_model(new BookmarksModel(this))
 {
     setupUi(this);
 
-    m_model = new BookmarksModel(this);
     treeView->setModel(m_model);
     treeView->header()->hide();
     setFocusProxy(filterEdit);
