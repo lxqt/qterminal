@@ -29,7 +29,7 @@ QStringList parse_command(const QString& str)
     QStringList list;
     QRegularExpressionMatch match;
     int index = 0;
-    int nextIndex;
+    int nextIndex = 0;
     while((nextIndex = str.indexOf(separator, index, &match)) != -1)
     {
         if (nextIndex > index)

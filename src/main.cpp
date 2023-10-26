@@ -75,7 +75,7 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
 
 void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode)
 {
-    int next_option;
+    int next_option = 0;
     dropMode = false;
     do{
         next_option = getopt_long(argc, argv, short_options, long_options, nullptr);
@@ -144,7 +144,7 @@ int main(int argc, char *argv[])
 
     QString workdir;
     QStringList shell_command;
-    bool dropMode;
+    bool dropMode = false;
     parse_args(argc, argv, workdir, shell_command, dropMode);
 
     Properties::Instance()->migrate_settings();
