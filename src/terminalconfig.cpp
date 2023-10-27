@@ -14,9 +14,7 @@ TerminalConfig::TerminalConfig(const QString &wdir, const QStringList &shell)
 {
 }
 
-TerminalConfig::TerminalConfig()
-{
-}
+TerminalConfig::TerminalConfig() = default;
 
 TerminalConfig::TerminalConfig(const TerminalConfig &cfg)
     : m_currentDirectory(cfg.m_currentDirectory),

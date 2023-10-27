@@ -104,8 +104,7 @@ TabSwitcher::TabSwitcher(TabWidget *tabs)
     connect(m_timer, &QTimer::timeout, this, &TabSwitcher::timer);
 }
 
-TabSwitcher::~TabSwitcher()
-{}
+TabSwitcher::~TabSwitcher() = default;
 
 void TabSwitcher::showSwitcher()
 {

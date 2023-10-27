@@ -61,9 +61,7 @@ TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, QWidget * parent)
     setLayout(lay);
 }
 
-TermWidgetHolder::~TermWidgetHolder()
-{
-}
+TermWidgetHolder::~TermWidgetHolder() = default;
 
 void TermWidgetHolder::setInitialFocus()
 {

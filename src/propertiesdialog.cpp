@@ -299,10 +299,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
         resize(s);
 }
 
-
-PropertiesDialog::~PropertiesDialog()
-{
-}
+PropertiesDialog::~PropertiesDialog() = default;
 
 void PropertiesDialog::accept()
 {
