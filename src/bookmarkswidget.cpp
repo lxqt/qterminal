@@ -193,8 +193,7 @@ BookmarksModel::BookmarksModel(QObject *parent)
 
 void BookmarksModel::setup()
 {
-    if (m_root)
-        delete m_root;
+    delete m_root;
     m_root = new BookmarkRootItem();
     m_root->addChild(new BookmarkFileGroupItem(m_root, Properties::Instance()->bookmarksFile));
     beginResetModel();
@@ -203,8 +202,8 @@ void BookmarksModel::setup()
 
 BookmarksModel::~BookmarksModel()
 {
-    if (m_root)
-        delete m_root;
+    delete m_root;
+    m_root = nullptr;
 }
 
 int BookmarksModel::columnCount(const QModelIndex & /* parent */) const
