@@ -341,9 +341,7 @@ BookmarksWidget::BookmarksWidget(QWidget *parent)
     });
 }
 
-BookmarksWidget::~BookmarksWidget()
-{
-}
+BookmarksWidget::~BookmarksWidget() = default;
 
 void BookmarksWidget::setup()
 {
