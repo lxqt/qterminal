@@ -103,7 +103,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation>Registerkarte</translation>
+        <translation>Tab</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="520"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>&amp;Tastatur Cursor From</translation>
+        <translation>&amp;Tastatur Cursor Form</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="624"/>
@@ -340,7 +340,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation>Ein leichtgewichtiger und leistungsstarker Multiplattform-Terminalemulator</translation>
+        <translation>Ein leichtgewichtiger und starker Multiplatform Terminal Emulator</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
@@ -515,7 +515,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="503"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation>Benutze in der Schriftart enthaltene Rahmenzeichen</translation>
+        <translation>In der Schriftart enthaltene Zeichen für die Boxzeichnung verwenden</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="510"/>
@@ -540,7 +540,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="632"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>Entferne Zeilenumbrüche in eingefügtem Text</translation>
+        <translation>Zeilenumbrüche am Ende des eingefügten Textes entfernen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="656"/>
@@ -600,27 +600,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="322"/>
         <source>Zoom</source>
-        <translation>Zoom</translation>
+        <translation>Vergrößerung</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Fit</source>
-        <translation>Passt</translation>
+        <translation>Fit</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="332"/>
         <source>Center</source>
-        <translation>Zentriert</translation>
+        <translation>Zentrieren</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="500"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation>Gib an, ob Rahmenzeichen von QTerminal intern oder von zugrunde liegenden Bibliotheken gezeichnet werden soll.</translation>
+        <translation>Gibt an, ob Rahmenzeichen von QTerminal intern oder von zugrunde liegenden Bibliotheken gezeichnet werden soll.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="520"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation>Schaltet die Verwendung fettgedruckter Schriftbilder für die Darstellung intensiver Farben um</translation>
+        <translation>Schaltet Verwendung fettgedruckter Schriftarten für intensive Farben um</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="523"/>
@@ -635,12 +635,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="600"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Welches Verhalten nachgeahmt werden soll. Beachten Sie, dass dies nicht mit Ihrem Betriebssystem übereinstimmen muss.&lt;/p&gt;&lt;p&gt;Verwenden Sie die &lt;span style=&quot; font-weight:600;&quot;&gt;Standard&lt;/span&gt;emulation, wenn Sie sich nicht sicher sind.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Welches Verhalten emuliert wird. Beachte, dass das nicht mit deinem Betriebssystem übereinstimmen muss.&lt;/p&gt;&lt;p&gt;Wenn du unsicher bist, nutze die &lt;span style=&quot; font-weight:600;&quot;&gt;Standard-Emulation&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="703"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>Dieser Befehl wird mit einem Argument ausgeführt, dass den Dateinamen der den Scrollback-Verlauf beinhaltenden temporären Datei beinhaltet</translation>
+        <translation>Dieser Befehl wird mit einem Argument ausgeführt, das den Dateinamen eines tempfiles enthält, welches die Scrollback-Historie enthält</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="706"/>
@@ -661,32 +661,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="686"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation>Neue Registerkarte rechts neben der aktiven Registerkarte öffnen</translation>
+        <translation>Neuen Tab rechts von aktivem Tab öffnen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="683"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation>Wenn dieses Kontrollkästchen deaktiviert ist, wird die neue Registerkarte als die ganz rechte Registerkarte geöffnet</translation>
+        <translation>Falls deaktiviert, wird ein neuer Reiter ganz rechts geöffnet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="770"/>
         <source>Close tab on middle-click</source>
-        <translation>Registerkarte durch Mittelklick schließen</translation>
+        <translation>Tab mit Mittelklick schließen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="625"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation>Erzwinge Ende des Klammer-Modus</translation>
+        <translation>Das Beenden des Einfüge-Modus in Klammern erzwingen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="622"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation>Mit dem Klammer-Modus ist es möglich längere Zeichenketten einzufügen.</translation>
+        <translation>Mit dem geklammerten Einfüge-Modus ist es möglich, längere Zeichenketten einzufügen.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="838"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Audiosignal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="856"/>
@@ -696,12 +696,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation>Einen Shortcut bearbeiten:
-1. Die Tastenkombination doppeklicken
-2. Die gewünschte Tastenkombination halten und loslassen
-3. Auf einen Shortcut klicken oder Eingabe drücken
+        <translation>Bearbeiten eines Tastenkürzels:
+1. Doppelklick auf die Zuweisung
+2. Drücken und Loslassen der neuen Tastenkombination
+3. Klcke auf das Tastenkürzel oder drücke Enter
 
-Um einen Shortcut zu löschen/ deaktivieren, drücke bei Schritt 2 nur einen Modifikator (z.B. Umschalt)</translation>
+Zum entfernen/deaktivieren eines Tastenkürzel, bei Schritt 2 nur eine Modifier-Taste (z. B. Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="910"/>
