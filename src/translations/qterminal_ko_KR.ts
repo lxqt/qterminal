@@ -371,357 +371,357 @@
         <translation>터미널 설정</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="31"/>
+        <location filename="../forms/propertiesdialog.ui" line="21"/>
         <source>Appearance</source>
         <translation>모양새</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="40"/>
-        <location filename="../forms/propertiesdialog.ui" line="616"/>
+        <location filename="../forms/propertiesdialog.ui" line="30"/>
+        <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>Behavior</source>
         <translation>동작</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="49"/>
+        <location filename="../forms/propertiesdialog.ui" line="39"/>
         <source>Shortcuts</source>
         <translation>단축키</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="58"/>
+        <location filename="../forms/propertiesdialog.ui" line="48"/>
         <source>Dropdown</source>
         <translation>메뉴내리기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="67"/>
+        <location filename="../forms/propertiesdialog.ui" line="57"/>
         <source>Bookmarks</source>
         <translation>바로찾기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="263"/>
+        <location filename="../forms/propertiesdialog.ui" line="272"/>
         <source>Hide tab bar with only one tab</source>
         <translation>탭이 하나일 때 탭 표시줄 숨김</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="280"/>
+        <location filename="../forms/propertiesdialog.ui" line="173"/>
         <source>Color scheme</source>
         <translation>색상 표</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="376"/>
+        <location filename="../forms/propertiesdialog.ui" line="199"/>
         <source>Scrollbar position</source>
         <translation>스크롤바 위치</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="209"/>
+        <location filename="../forms/propertiesdialog.ui" line="463"/>
         <source>Start with preset:</source>
         <translation>프리셋으로 시작:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="409"/>
+        <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Show a border around the current terminal</source>
         <translation>현재 터미널 경계선 표시하기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="386"/>
+        <location filename="../forms/propertiesdialog.ui" line="380"/>
         <source>Terminal transparency</source>
         <translation>터미널 투명도</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="399"/>
+        <location filename="../forms/propertiesdialog.ui" line="354"/>
         <source>Application transparency</source>
         <translation>어플리케이션 투명도</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="220"/>
+        <location filename="../forms/propertiesdialog.ui" line="474"/>
         <source>None (single terminal)</source>
         <translation>사용 안 함 (단일 터미널)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="225"/>
+        <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>2 terminals horizontally</source>
         <translation>터미널을 수평으로 2개로 분할</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="230"/>
+        <location filename="../forms/propertiesdialog.ui" line="484"/>
         <source>2 terminals vertically</source>
         <translation>터미널을 수직으로 2개로 분할</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="235"/>
+        <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>4 terminals</source>
         <translation>4 터미널</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="122"/>
-        <location filename="../forms/propertiesdialog.ui" line="430"/>
+        <location filename="../forms/propertiesdialog.ui" line="364"/>
+        <location filename="../forms/propertiesdialog.ui" line="390"/>
         <source> %</source>
         <translation> %</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="153"/>
+        <location filename="../forms/propertiesdialog.ui" line="127"/>
         <source>Font</source>
         <translation>글꼴</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="189"/>
+        <location filename="../forms/propertiesdialog.ui" line="163"/>
         <source>&amp;Change...</source>
         <translation>설정변경(&amp;C)...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="459"/>
+        <location filename="../forms/propertiesdialog.ui" line="212"/>
         <source>Tabs position</source>
         <translation>탭 위치</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="243"/>
+        <location filename="../forms/propertiesdialog.ui" line="186"/>
         <source>Widget style</source>
         <translation>위젯 모양</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="199"/>
+        <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Show the menu bar</source>
         <translation>메뉴 표시줄 표시하기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="340"/>
+        <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>Cursor shape</source>
         <translation>커서 모양</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="469"/>
+        <location filename="../forms/propertiesdialog.ui" line="316"/>
         <source>Change window title based on current terminal</source>
         <translation>현재 터미널의 제목 변경</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="486"/>
+        <location filename="../forms/propertiesdialog.ui" line="323"/>
         <source>Change window icon based on current terminal</source>
         <translation>현재 터미널의 아이콘 변경</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="423"/>
+        <location filename="../forms/propertiesdialog.ui" line="337"/>
         <source>Enable bi-directional text support</source>
         <translation>문장의 양방향 지원 활성화</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="270"/>
+        <location filename="../forms/propertiesdialog.ui" line="406"/>
         <source>Background image:</source>
         <translation>배경 이미지:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="295"/>
+        <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Select</source>
         <translation>선택</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="493"/>
+        <location filename="../forms/propertiesdialog.ui" line="330"/>
         <source>Show terminal size on resize</source>
         <translation>변경된 터미널 크기 표시하기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="476"/>
+        <location filename="../forms/propertiesdialog.ui" line="279"/>
         <source>Fixed tab width:</source>
         <translation>탭 고정 폭:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="416"/>
-        <location filename="../forms/propertiesdialog.ui" line="449"/>
+        <location filename="../forms/propertiesdialog.ui" line="289"/>
+        <location filename="../forms/propertiesdialog.ui" line="507"/>
         <source>px</source>
         <translation>화소</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="366"/>
+        <location filename="../forms/propertiesdialog.ui" line="306"/>
         <source>Show close button on each tab</source>
         <translation>탭에 종료 버튼 표시하기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="253"/>
+        <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Terminal margin</source>
         <translation>터미널 계선</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="503"/>
+        <location filename="../forms/propertiesdialog.ui" line="347"/>
         <source>Use box drawing characters contained in the font</source>
         <translation>글꼴에 포함 된 상자 그리기 문자 사용</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="510"/>
+        <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>가속기는 Alt에 의해 활성화되며 터미널을 방해 할 수 있습니다.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="513"/>
+        <location filename="../forms/propertiesdialog.ui" line="251"/>
         <source>No menu bar accelerator</source>
         <translation>메뉴 모음 가속기 없음</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="591"/>
+        <location filename="../forms/propertiesdialog.ui" line="813"/>
         <source>Emulation</source>
         <translation>에뮬레이션</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="693"/>
+        <location filename="../forms/propertiesdialog.ui" line="614"/>
         <source>Action after paste</source>
         <translation>붙여넣기 이후 동작</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="639"/>
+        <location filename="../forms/propertiesdialog.ui" line="644"/>
         <source>Confirm multiline paste</source>
         <translation>여러 줄 붙여넣기 승인</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="632"/>
+        <location filename="../forms/propertiesdialog.ui" line="651"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>붙여넣은 문장의 마지막 공백 잘라내기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="656"/>
+        <location filename="../forms/propertiesdialog.ui" line="747"/>
         <source>Open new terminals in current working directory</source>
         <translation>현재 작업 위치로 터미널 열기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="713"/>
+        <location filename="../forms/propertiesdialog.ui" line="682"/>
         <source>Save Size when closing</source>
         <translation>종료시 창 크기 저장하기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="646"/>
+        <location filename="../forms/propertiesdialog.ui" line="675"/>
         <source>Save Position when closing</source>
         <translation>종료시 현재 위치 저장하기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="676"/>
+        <location filename="../forms/propertiesdialog.ui" line="668"/>
         <source>Ask for confirmation when closing</source>
         <translation>종료시 묻기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="763"/>
+        <location filename="../forms/propertiesdialog.ui" line="594"/>
         <source>Unlimited history</source>
         <translation>무제한 내역</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="756"/>
+        <location filename="../forms/propertiesdialog.ui" line="587"/>
         <source>History size (in lines)</source>
         <translation>내역 크기 (줄 단위)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="723"/>
+        <location filename="../forms/propertiesdialog.ui" line="627"/>
         <source>Default $TERM</source>
         <translation>기본 $TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="785"/>
+        <location filename="../forms/propertiesdialog.ui" line="694"/>
         <source>Start with this size:</source>
         <translation>이 크기로 시작하십시오 :</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="304"/>
+        <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Background mode:</source>
         <translation>배경 모드:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="312"/>
+        <location filename="../forms/propertiesdialog.ui" line="435"/>
         <source>None</source>
         <translation>없음</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="317"/>
+        <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Stretch</source>
         <translation>늘이기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="322"/>
+        <location filename="../forms/propertiesdialog.ui" line="445"/>
         <source>Zoom</source>
         <translation>확대/축소</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="327"/>
+        <location filename="../forms/propertiesdialog.ui" line="450"/>
         <source>Fit</source>
         <translation>맞추기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="332"/>
+        <location filename="../forms/propertiesdialog.ui" line="455"/>
         <source>Center</source>
         <translation>중앙</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="500"/>
+        <location filename="../forms/propertiesdialog.ui" line="344"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
         <translation>세로선을 QTerminal에서 내부적으로 그릴지 또는 기본 글꼴 렌더링 라이브러리에 남겨둘지 여부를 지정합니다.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="520"/>
+        <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
         <translation>강조색을 렌더링하기 위해 굵은 글꼴 사용 전환</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="523"/>
+        <location filename="../forms/propertiesdialog.ui" line="241"/>
         <source>Use bold font face for intense colors</source>
         <translation>강조색을 위해 굵은 글꼴 사용</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="530"/>
+        <location filename="../forms/propertiesdialog.ui" line="265"/>
         <source>&amp;Hide Window Borders</source>
         <translation>창 테두리 숨김(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="600"/>
+        <location filename="../forms/propertiesdialog.ui" line="822"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;에뮬레이트할 동작. 운영 체제와 반드시 일치해야 하는 것은 아닙니다.&lt;/p&gt;&lt;p&gt;확실하지 않은 경우, &lt;span style=&quot; font-weight:600;&quot;&gt;기본&lt;/span&gt; 에뮬레이션을 사용하십시오.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="703"/>
+        <location filename="../forms/propertiesdialog.ui" line="800"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>이 명령은 스크롤백 내역을 포함하는 임시 파일의 파일 이름을 포함하는 인수를 사용하여 실행됩니다</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="706"/>
+        <location filename="../forms/propertiesdialog.ui" line="803"/>
         <source>Handle history command</source>
         <translation>내역 명령 처리하기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="792"/>
-        <location filename="../forms/propertiesdialog.ui" line="806"/>
+        <location filename="../forms/propertiesdialog.ui" line="701"/>
+        <location filename="../forms/propertiesdialog.ui" line="715"/>
         <source> px</source>
         <translation> 픽셀</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="813"/>
+        <location filename="../forms/propertiesdialog.ui" line="722"/>
         <source>Get current size</source>
         <translation>현재 크기 가져 오기
 확</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="686"/>
+        <location filename="../forms/propertiesdialog.ui" line="757"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>활성 탭의 오른쪽에 새 탭 열기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="683"/>
+        <location filename="../forms/propertiesdialog.ui" line="754"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>선택하지 않은 경우 새 탭이 가장 적합한 탭으로 열립니다</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="770"/>
+        <location filename="../forms/propertiesdialog.ui" line="658"/>
         <source>Close tab on middle-click</source>
         <translation>마우스 가운데 버튼 클릭시 탭 닫기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="625"/>
+        <location filename="../forms/propertiesdialog.ui" line="637"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>괄호 붙여넣기 모드 강제 비활성화</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="622"/>
+        <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>대괄호 붙여넣기 모드는 여러 줄 문자열을 붙여 넣을 때 유용합니다.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="838"/>
+        <location filename="../forms/propertiesdialog.ui" line="764"/>
         <source>Audible bell</source>
         <translation>경고음</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="856"/>
+        <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -736,78 +736,78 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 단축키를 제거/비활성화하려면 2 지점에서 수정자만 누릅니다(예: Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="886"/>
+        <location filename="../forms/propertiesdialog.ui" line="876"/>
         <source>Shortcut</source>
         <translation>단축키</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="891"/>
+        <location filename="../forms/propertiesdialog.ui" line="881"/>
         <source>Key</source>
         <translation>키</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="903"/>
+        <location filename="../forms/propertiesdialog.ui" line="893"/>
         <source>Show on start</source>
         <translation>시작 시 표시하기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="910"/>
+        <location filename="../forms/propertiesdialog.ui" line="900"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>가로 탭 표시줄에 잠금 버튼이 표시됩니다</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="913"/>
+        <location filename="../forms/propertiesdialog.ui" line="903"/>
         <source>Keep window open when it loses focus</source>
         <translation>초점을 잃으면 열린 창 유지하기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="920"/>
+        <location filename="../forms/propertiesdialog.ui" line="910"/>
         <source>Size</source>
         <translation>크기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="931"/>
+        <location filename="../forms/propertiesdialog.ui" line="921"/>
         <source>Height</source>
         <translation>높이</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="941"/>
-        <location filename="../forms/propertiesdialog.ui" line="958"/>
+        <location filename="../forms/propertiesdialog.ui" line="931"/>
+        <location filename="../forms/propertiesdialog.ui" line="948"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="948"/>
+        <location filename="../forms/propertiesdialog.ui" line="938"/>
         <source>Width</source>
         <translation>너비</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="972"/>
+        <location filename="../forms/propertiesdialog.ui" line="962"/>
         <source>Shortcut:</source>
         <translation>단축키:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="998"/>
+        <location filename="../forms/propertiesdialog.ui" line="1029"/>
         <source>Edit bookmark file contents</source>
         <translation>바로찾기 파일 내용 편집하기</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1020"/>
+        <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Enable bookmarks</source>
         <translation>바로찾기 활성화</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1029"/>
+        <location filename="../forms/propertiesdialog.ui" line="997"/>
         <source>Bookmark file</source>
         <translation>바로찾기 파일</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1042"/>
+        <location filename="../forms/propertiesdialog.ui" line="1010"/>
         <source>Find...</source>
         <translation>검색...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1051"/>
+        <location filename="../forms/propertiesdialog.ui" line="1019"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>자신의 바로찾기 파일 위치를 지정할 수 있습니다. OwnCloud 또는 Dropbox와 같은 도구를 사용하여 쉽게 바로찾기를 공유할 수 있습니다.</translation>
     </message>
