@@ -1,3 +1,14 @@
+qterminal-1.4.0 / 2023-11-05
+=============================
+ * Handled bell (BEL, '\a') via libcanberra, and added an "Audible bell" option.
+ * Use `qWarning().noquote()`.
+ * Ported away from deprecated Qt::MidButton.
+ * Let the latest QTermWidget library set TERM.
+ * Corrected tab order in settings dialog.
+ * Removed an unused non POD variable.
+ * Supported Putty-style mouse button swap.
+ * Avoided a case of null pointer dereference.
+
 qterminal-1.3.0 / 2023-04-15
 =============================
  * Specified the parent of the main context menu for correct positioning under Wayland.
