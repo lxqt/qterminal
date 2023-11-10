@@ -727,12 +727,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation>Aby edytować Skrót:
+        <translation>Aby edytować skrót:
 1. Kliknij dwa razy jego przycisk
 2. Naciśnij żądaną kombinację klawiszy, a następnie puść wszystkie klawisze
-3. Kliknij na Skrót i naciśnij Enter
+3. Kliknij na skrót i naciśnij Enter
 
-Aby usunąć/wyłączyć Skrót, przy drugim punkcie naciśnij tylko klawisz modyfikatora (np. Shift)</translation>
+Aby usunąć/wyłączyć skrót, przy drugim punkcie naciśnij tylko klawisz modyfikatora (np. Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="876"/>
@@ -875,7 +875,7 @@ Aby usunąć/wyłączyć Skrót, przy drugim punkcie naciśnij tylko klawisz mod
     <message>
         <location filename="../propertiesdialog.cpp" line="421"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation>obrazy (*.bmp *.jpg *.png *.svg *.xpm)</translation>
+        <translation>Obrazy (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="511"/>
@@ -979,7 +979,7 @@ Czy na pewno chcesz go zastąpić?</translation>
     <message>
         <location filename="../termwidgetholder.cpp" line="79"/>
         <source>Load Session</source>
-        <translation>Wczytaj Sesję</translation>
+        <translation>Wczytaj sesję</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="80"/>
