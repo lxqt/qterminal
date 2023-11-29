@@ -691,7 +691,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="764"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Звуковой сигнал</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
