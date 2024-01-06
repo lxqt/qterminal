@@ -330,7 +330,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="634"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Вы уверены, что хотите выйти?</translation>
+        <translation>Уверены, что хотите выйти?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
@@ -656,7 +656,7 @@
         <location filename="../forms/propertiesdialog.ui" line="701"/>
         <location filename="../forms/propertiesdialog.ui" line="715"/>
         <source> px</source>
-        <translation> пикс</translation>
+        <translation> пкс</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="722"/>
@@ -907,8 +907,8 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <location filename="../propertiesdialog.cpp" line="617"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation>Название файла с закладками не оканчивается &apos;.xml&apos;.
-Вы уверены, что хотите его перезаписать?</translation>
+        <translation>Название файла с закладками не оканчивается «.xml».
+Уверены, что хотите его перезаписать?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="625"/>
