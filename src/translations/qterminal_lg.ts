@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nyiga &quot;%1&quot; okulaba ekiwandikiro.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
@@ -335,7 +335,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation>Ebifa ku QTerminal</translation>
+        <translation>Ebifa ku ScreenGrab</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -390,7 +390,7 @@ ekikolera ku sisitemu ez&apos;ebika ebisukka mu kimu</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="48"/>
         <source>Dropdown</source>
-        <translation>Menyu eboneka</translation>
+        <translation>Ekiwandikiro ekiboneka</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="57"/>
@@ -776,12 +776,12 @@ enkola ya gannaago (okugeza erya Shift)</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="893"/>
         <source>Show on start</source>
-        <translation>QTerminal olutandika nga ne menyu eno eboneka</translation>
+        <translation>QTerminal olutandika nga ne menyu eboneka</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="900"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Ku njegoyego ey&apos;akatimbe eya waggulu wajjawo eppeesa erikasibirawo</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="903"/>
@@ -791,7 +791,7 @@ enkola ya gannaago (okugeza erya Shift)</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="910"/>
         <source>Size</source>
-        <translation>Bunene bwa menyu</translation>
+        <translation>Bunene bw&apos;ekiwandikiro ekiboneka</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="921"/>
@@ -991,7 +991,7 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="223"/>
         <source>Select new tab title color</source>
-        <translation>Londa langi y&apos;erinnya ly&apos;akatimbe akapya</translation>
+        <translation>Londa langi empya ey&apos;erinnya ly&apos;akatimbe</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="252"/>
