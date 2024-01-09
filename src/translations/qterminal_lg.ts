@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Leeta ddirisa ppya</translation>
+        <translation>&amp;Leeta ddirisa Ppya</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="383"/>
