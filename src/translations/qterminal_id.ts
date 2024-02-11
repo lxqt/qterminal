@@ -546,7 +546,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Akselelator diaktifkan oleh Alt dan dapat menganggu terminal</translation>
+        <translation>Akselelator diaktifkan oleh Alt dan dapat menganggu terminal.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="251"/>
@@ -641,7 +641,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="455"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Tengah</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="344"/>
@@ -651,12 +651,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Mengalihkan penggunaan tampilan font tebal untuk menghasilkan warna yang intens</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="241"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Gunakan font tebal untuk warna yang intens</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
@@ -835,12 +835,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>BlockCursor</source>
-        <translation>BlockCursor</translation>
+        <translation>KursorBlok</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
         <source>UnderlineCursor</source>
-        <translation>UnderlineCursor</translation>
+        <translation>KursorGarisBawah</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="178"/>
