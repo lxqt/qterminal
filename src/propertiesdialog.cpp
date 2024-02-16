@@ -199,6 +199,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     disableBracketedPasteModeCheckBox->setChecked(Properties::Instance()->m_disableBracketedPasteMode);
 
+    // word characters for text selection
+    wordCharactersLineEdit->setText(Properties::Instance()->wordCharacters);
+
     // Setting windows style actions
     styleComboBox->addItem(tr("System Default"));
     styleComboBox->addItems(QStyleFactory::keys());
@@ -390,6 +393,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->trimPastedTrailingNewlines = trimPastedTrailingNewlinesCheckBox->isChecked();
     Properties::Instance()->confirmMultilinePaste = confirmMultilinePasteCheckBox->isChecked();
+    Properties::Instance()->wordCharacters = wordCharactersLineEdit->text();
 
     emit propertiesChanged();
 }

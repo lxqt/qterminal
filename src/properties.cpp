@@ -161,6 +161,7 @@ void Properties::loadSettings()
 
     confirmMultilinePaste = m_settings->value(QLatin1String("ConfirmMultilinePaste"), false).toBool();
     trimPastedTrailingNewlines = m_settings->value(QLatin1String("TrimPastedTrailingNewlines"), false).toBool();
+    wordCharacters = m_settings->value(QLatin1String("WordCharacters"), QLatin1String(":@-./_~")).toString();
 
     windowMaximized = m_settings->value(QLatin1String("LastWindowMaximized"), false).toBool();
 
