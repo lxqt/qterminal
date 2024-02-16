@@ -122,6 +122,7 @@ class Properties
 
         bool confirmMultilinePaste;
         bool trimPastedTrailingNewlines;
+        QString wordCharacters;
 
         bool windowMaximized;
         bool swapMouseButtons2and3;
