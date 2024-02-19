@@ -218,7 +218,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="369"/>
         <source>4 Terminal&amp;s</source>
-        <translation>Biwandikiro 4</translation>
+        <translation>Biwandikir&amp;o 4</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
@@ -926,7 +926,7 @@ Kino kyanguya okukwataganya QTerminal n&apos;ebiyamba ebirala nga OwnCloud oba D
         <location filename="../propertiesdialog.cpp" line="613"/>
         <location filename="../propertiesdialog.cpp" line="617"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Kubuuza</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="613"/>
@@ -967,7 +967,7 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
     <message>
         <location filename="../bookmarkswidget.cpp" line="114"/>
         <source>Synchronized Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>Obukwatakifo obugguka ku sisitemu endala</translation>
     </message>
 </context>
 <context>
@@ -1022,7 +1022,7 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
-        <translation type="unfinished"></translation>
+        <translation>Ddirisa ery&apos;ennono</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
