@@ -274,6 +274,7 @@ void Properties::saveSettings()
 
     m_settings->setValue(QLatin1String("ConfirmMultilinePaste"), confirmMultilinePaste);
     m_settings->setValue(QLatin1String("TrimPastedTrailingNewlines"), trimPastedTrailingNewlines);
+    m_settings->setValue(QLatin1String("WordCharacters"), wordCharacters);
 
     m_settings->setValue(QLatin1String("LastWindowMaximized"), windowMaximized);
     m_settings->setValue(QLatin1String("SwapMouseButtons2and3"), swapMouseButtons2and3);
