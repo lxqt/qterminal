@@ -88,142 +88,142 @@
     <message>
         <location filename="../mainwindow.cpp" line="171"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished"></translation>
+        <translation>फोकस खोने पर विंडो खुली रखें</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>इतिहास में पिछला टैब (&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Next Tab in History</source>
-        <translation type="unfinished"></translation>
+        <translation>इतिहास में अगला टैब (&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="259"/>
         <source>Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>टैब</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>Go to</source>
-        <translation type="unfinished"></translation>
+        <translation>जाएं</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
         <source>&amp;Top Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>शीर्ष उपटर्मिनल (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>निचला उपटर्मिनल (&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="290"/>
         <source>L&amp;eft Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>बायां उपटर्मिनल (&amp;E)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="293"/>
         <source>R&amp;ight Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>दायां उपटर्मिनल (&amp;I)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
         <source>Copy &amp;Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>चयन की प्रतिलिपि बनाएँ (&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="303"/>
         <source>Paste Clip&amp;board</source>
-        <translation type="unfinished"></translation>
+        <translation>क्लिपबोर्ड चिपकाएँ (&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="306"/>
         <source>Paste S&amp;election</source>
-        <translation type="unfinished"></translation>
+        <translation>चयन चिपकाएँ (&amp;E)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>Zoom &amp;in</source>
-        <translation type="unfinished"></translation>
+        <translation>ज़ूम इन करें (&amp;I)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
         <source>Zoom &amp;out</source>
-        <translation type="unfinished"></translation>
+        <translation>ज़ूम आउट करें (&amp;O)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="315"/>
         <source>Zoom rese&amp;t</source>
-        <translation type="unfinished"></translation>
+        <translation>ज़ूम रीसेट करें (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>&amp;Find...</source>
-        <translation type="unfinished"></translation>
+        <translation>ढूंढें (&amp;F)...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="323"/>
         <source>Handle history...</source>
-        <translation type="unfinished"></translation>
+        <translation>इतिहास संभालें...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="331"/>
         <source>&amp;Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>सत्र सेव करें (&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="337"/>
         <source>&amp;Load Session</source>
-        <translation type="unfinished"></translation>
+        <translation>सत्र लोड करें (&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="344"/>
         <source>&amp;Toggle Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>मेनू टॉगल करें (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="349"/>
         <source>Rename session</source>
-        <translation type="unfinished"></translation>
+        <translation>सत्र का नाम बदलें</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="358"/>
         <source>&amp;New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>नया टैब (&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="362"/>
         <source>New Tab From &amp;Preset</source>
-        <translation type="unfinished"></translation>
+        <translation>प्रीसेट से नया टैब (&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="363"/>
         <source>1 &amp;Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>1 टर्मिनल (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation type="unfinished"></translation>
+        <translation>2 क्षैतिज टर्मिनल (&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation type="unfinished"></translation>
+        <translation>2 लंबवत टर्मिनल (&amp;V)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="369"/>
         <source>4 Terminal&amp;s</source>
-        <translation type="unfinished"></translation>
+        <translation>4 टर्मिनल (&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="375"/>
         <source>&amp;Close Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>टैब बंद करें (&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
@@ -233,134 +233,134 @@
     <message>
         <location filename="../mainwindow.cpp" line="383"/>
         <source>&amp;Preferences...</source>
-        <translation type="unfinished"></translation>
+        <translation>प्राथमिकताएं (&amp;P)...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="387"/>
         <source>&amp;Quit</source>
-        <translation type="unfinished"></translation>
+        <translation>छोड़ें (&amp;Q)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="393"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished"></translation>
+        <translation>विंडो बॉर्डर छिपाएँ (&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="411"/>
         <source>&amp;Show Tab Bar</source>
-        <translation type="unfinished"></translation>
+        <translation>टैब बार दिखाएँ (&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="419"/>
         <source>Fullscreen</source>
-        <translation type="unfinished"></translation>
+        <translation>फुल स्क्रीन</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="425"/>
         <source>Toggle Bookmarks</source>
-        <translation type="unfinished"></translation>
+        <translation>बुकमार्क टॉगल करें</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="433"/>
         <source>&amp;Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>नीचे (&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="434"/>
         <source>&amp;Top</source>
-        <translation type="unfinished"></translation>
+        <translation>ऊपर (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="435"/>
         <location filename="../mainwindow.cpp" line="471"/>
         <source>&amp;Right</source>
-        <translation type="unfinished"></translation>
+        <translation>दाएँ (&amp;R)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <location filename="../mainwindow.cpp" line="472"/>
         <source>&amp;Left</source>
-        <translation type="unfinished"></translation>
+        <translation>बाएँ (&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="454"/>
         <source>&amp;Tabs Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>टैब लेआउट (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="470"/>
         <source>&amp;None</source>
-        <translation type="unfinished"></translation>
+        <translation>कोई नहीं (&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="488"/>
         <source>S&amp;crollbar Layout</source>
-        <translation type="unfinished"></translation>
+        <translation>स्क्रोल बार लेआउट (&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="501"/>
         <source>&amp;BlockCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>ब्लॉक आकार का कर्सर (&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;UnderlineCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>रेखांकित आकार का कर्सर (&amp;U)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;IBeamCursor</source>
-        <translation type="unfinished"></translation>
+        <translation>आईबीम आकार का कर्सर (&amp;I)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="520"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation type="unfinished"></translation>
+        <translation>कीबोर्ड कर्सर आकार (&amp;K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="624"/>
         <source>Exit QTerminal</source>
-        <translation type="unfinished"></translation>
+        <translation>QTerminal से बाहर निकलें</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="626"/>
         <source>Do not ask again</source>
-        <translation type="unfinished"></translation>
+        <translation>पुनः न पूछें</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="634"/>
         <source>Are you sure you want to exit?</source>
-        <translation type="unfinished"></translation>
+        <translation>क्या आप वाकई बाहर निकलना चाहते हैं?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="659"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>इसके बारे में</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>एक लाइटवेट और शक्तिशाली मल्टी-प्लेटफ़ॉर्म टर्मिनल एमुलेटर</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>कॉपीराइट (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>2013-2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2013-2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="665"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt प्रोजेक्ट</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>डेवलपमेंट : </translation>
     </message>
 </context>
 <context>
@@ -368,205 +368,205 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation type="unfinished"></translation>
+        <translation>टर्मिनल सेटिंग्स</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="21"/>
         <source>Appearance</source>
-        <translation type="unfinished"></translation>
+        <translation>रूप</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>व्यवहार</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="39"/>
         <source>Shortcuts</source>
-        <translation type="unfinished"></translation>
+        <translation>शॉर्टकट</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="48"/>
         <source>Dropdown</source>
-        <translation type="unfinished"></translation>
+        <translation>ड्रॉप डाउन</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="57"/>
         <source>Bookmarks</source>
-        <translation type="unfinished">बुकमार्क</translation>
+        <translation>बुकमार्क</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="272"/>
         <source>Hide tab bar with only one tab</source>
-        <translation type="unfinished"></translation>
+        <translation>जब केवल एक टैब हो तो टैब बार छिपाएँ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="173"/>
         <source>Color scheme</source>
-        <translation type="unfinished"></translation>
+        <translation>रंग योजना</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="199"/>
         <source>Scrollbar position</source>
-        <translation type="unfinished"></translation>
+        <translation>स्क्रोल बार स्थिति</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="463"/>
         <source>Start with preset:</source>
-        <translation type="unfinished"></translation>
+        <translation>इस प्रीसेट से शुरू करें :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="299"/>
         <source>Show a border around the current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>वर्तमान टर्मिनल के चारों ओर बॉर्डर दिखाएं</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="380"/>
         <source>Terminal transparency</source>
-        <translation type="unfinished"></translation>
+        <translation>टर्मिनल पारदर्शिता</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="354"/>
         <source>Application transparency</source>
-        <translation type="unfinished"></translation>
+        <translation>अनुप्रयोग पारदर्शिता</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="474"/>
         <source>None (single terminal)</source>
-        <translation type="unfinished"></translation>
+        <translation>अक्षम (एकल टर्मिनल)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="479"/>
         <source>2 terminals horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation>क्षैतिज रूप से 2 टर्मिनल</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="484"/>
         <source>2 terminals vertically</source>
-        <translation type="unfinished"></translation>
+        <translation>लंबवत रूप से 2 टर्मिनल</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="489"/>
         <source>4 terminals</source>
-        <translation type="unfinished"></translation>
+        <translation>4 टर्मिनल</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <location filename="../forms/propertiesdialog.ui" line="390"/>
         <source> %</source>
-        <translation type="unfinished"></translation>
+        <translation> %</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="127"/>
         <source>Font</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ॉन्ट</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="163"/>
         <source>&amp;Change...</source>
-        <translation type="unfinished"></translation>
+        <translation>परिवर्तन करें (&amp;C)...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="212"/>
         <source>Tabs position</source>
-        <translation type="unfinished"></translation>
+        <translation>टैब स्थिति</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="186"/>
         <source>Widget style</source>
-        <translation type="unfinished"></translation>
+        <translation>विजेट शैली</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="258"/>
         <source>Show the menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>मेनू बार दिखाएँ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>Cursor shape</source>
-        <translation type="unfinished"></translation>
+        <translation>कर्सर का आकार</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="316"/>
         <source>Change window title based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>वर्तमान टर्मिनल के अनुसार विंडो का शीर्षक बदलें</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="323"/>
         <source>Change window icon based on current terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>वर्तमान टर्मिनल के अनुसार विंडो आइकन बदलें</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="337"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished"></translation>
+        <translation>द्विदिशात्मक लेखन के लिए समर्थन सक्षम करें</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="406"/>
         <source>Background image:</source>
-        <translation type="unfinished"></translation>
+        <translation>पृष्ठभूमि चित्र :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Select</source>
-        <translation type="unfinished"></translation>
+        <translation>चुनें</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="330"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>टर्मिनल का आकार बदलते समय आकार दिखाएँ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="279"/>
         <source>Fixed tab width:</source>
-        <translation type="unfinished"></translation>
+        <translation>निश्चित टैब चौड़ाई :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="289"/>
         <location filename="../forms/propertiesdialog.ui" line="507"/>
         <source>px</source>
-        <translation type="unfinished"></translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="306"/>
         <source>Show close button on each tab</source>
-        <translation type="unfinished"></translation>
+        <translation>प्रत्येक टैब पर बंद करें बटन दिखाएं</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Terminal margin</source>
-        <translation type="unfinished"></translation>
+        <translation>टर्मिनल मार्जिन</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="347"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>फ़ॉन्ट में मौजूद बॉक्स बनाने वाले वर्णों का उपयोग करें</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>त्वरक Alt द्वारा सक्रिय होते हैं और वे टर्मिनल में हस्तक्षेप कर सकते हैं।</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="251"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>कोई मेनू बार त्वरक नहीं</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="813"/>
         <source>Emulation</source>
-        <translation type="unfinished"></translation>
+        <translation>अनुकरण</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="614"/>
         <source>Action after paste</source>
-        <translation type="unfinished"></translation>
+        <translation>चिपकाने के बाद का व्यवहार</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="644"/>
         <source>Confirm multiline paste</source>
-        <translation type="unfinished"></translation>
+        <translation>मल्टी-लाइन टेक्स्ट चिपकाते समय पुष्टि करें</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="651"/>
@@ -621,7 +621,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="435"/>
         <source>None</source>
-        <translation type="unfinished"></translation>
+        <translation>कोई नहीं</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
