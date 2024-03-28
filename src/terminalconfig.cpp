@@ -80,14 +80,14 @@ TerminalConfig TerminalConfig::fromDbus(const QHash<QString,QVariant> &termArgsC
 
 static QString variantToString(const QVariant& variant, QString &defaultVal)
 {
-    if (variant.type() == QVariant::String)
+    if (variant.typeId() == QMetaType::type("QString"))
         return qvariant_cast<QString>(variant);
     return defaultVal;
 }
 
 static QStringList variantToStringList(const QVariant& variant, QStringList &defaultVal)
 {
-    if (variant.type() == QVariant::StringList)
+    if (variant.typeId() == QMetaType::type("QStringList"))
         return qvariant_cast<QStringList>(variant);
     return defaultVal;
 }

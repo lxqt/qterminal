@@ -1,6 +1,7 @@
 #ifndef DBUSADDRESSABLE_H
 #define DBUSADDRESSABLE_H
 
+#include <QRegularExpression>
 #include <QString>
 #ifdef HAVE_QDBUS
 #include <QtDBus/QtDBus>

@@ -168,7 +168,6 @@ int main(int argc, char *argv[])
 
     // icons
     /* setup our custom icon theme if there is no system theme (OS X, Windows) */
-    QCoreApplication::instance()->setAttribute(Qt::AA_UseHighDpiPixmaps); //Fix for High-DPI systems
     if (QIcon::themeName().isEmpty())
         QIcon::setThemeName(QStringLiteral("QTerminal"));
 
@@ -176,7 +175,7 @@ int main(int argc, char *argv[])
 
     // install the translations built-into Qt itself
     QTranslator qtTranslator;
-    qtTranslator.load(QStringLiteral("qt_") + QLocale::system().name(), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
+    qtTranslator.load(QStringLiteral("qt_") + QLocale::system().name(), QLibraryInfo::path(QLibraryInfo::TranslationsPath));
     app->installTranslator(&qtTranslator);
 
     QTranslator translator;

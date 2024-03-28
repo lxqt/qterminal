@@ -21,6 +21,7 @@
 #include <QColorDialog>
 #include <QMouseEvent>
 #include <QMenu>
+#include <QActionGroup>
 
 #include "mainwindow.h"
 #include "termwidgetholder.h"

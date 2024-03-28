@@ -21,24 +21,23 @@ endif()
 # we need qpa/qplatformnativeinterface.h for global shortcut
 
 # Minimum Versions
-set(LXQTBT_MINIMUM_VERSION "0.13.0")
-set(QTERMWIDGET_MINIMUM_VERSION "1.4.0")
-set(QT_MINIMUM_VERSION "5.15.0")
+set(LXQTBT_MINIMUM_VERSION "2.0.0")
+set(QT_MINIMUM_VERSION "6.3.0")
+set(QT_MAJOR_VERSION "6")
 
-find_package(Qt5Gui ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5Widgets ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6Core ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6Gui ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
 if(UNIX)
-    find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
-    if (NOT APPLE)
-        find_package(Qt5X11Extras ${QT_MINIMUM_VERSION} REQUIRED)
-    endif (NOT APPLE)
+    find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
+    find_package(Qt6 COMPONENTS Core Core5Compat REQUIRED)
 endif()
-find_package(QTermWidget5 ${QTERMWIDGET_MINIMUM_VERSION} REQUIRED)
-find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+find_package(QTermWidget6 ${QTERMWIDGET_MINIMUM_VERSION} REQUIRED)
+find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 
 if (BUILD_TESTS)
-    find_package(Qt5 ${QT_MINIMUM_VERSION} CONFIG REQUIRED Test)
+    find_package(Qt6 ${QT_MINIMUM_VERSION} CONFIG REQUIRED Test)
 endif()
 
 include(LXQtPreventInSourceBuilds)
@@ -47,12 +46,16 @@ pkg_check_modules(LIBCANBERRA libcanberra)
 include(LXQtTranslateTs)
 include(LXQtTranslateDesktop)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
-message(STATUS "Qt version: ${Qt5Core_VERSION}")
+message(STATUS "Qt version: ${Qt6Core_VERSION}")
 
 # TODO remove Qxt
 message(STATUS "Using bundled Qxt...")
 set(QXT_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/src/third-party")
 
+
+find_path(QTERMWIDGET6_INCLUDE_DIR NAMES qtermwidget6/qtermwidget.h)
+add_definitions(-DUSE_QTERMWIDGET6)
+include_directories(${QTERMWIDGET6_INCLUDE_DIR})
 
 if(APPLE)
    find_library(CARBON_LIBRARY Carbon REQUIRED)
@@ -98,14 +101,15 @@ set(QTERM_MOC_SRC
     src/tab-switcher.h
 )
 
-if (Qt5DBus_FOUND)
+if (Qt6DBus_FOUND)
     add_definitions(-DHAVE_QDBUS)
-    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Window.xml mainwindow.h MainWindow)
-    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Tab.xml termwidgetholder.h TermWidgetHolder)
-    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Terminal.xml termwidget.h TermWidget)
-    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Process.xml qterminalapp.h QTerminalApp)
+    QT6_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Window.xml mainwindow.h MainWindow)
+    QT6_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Tab.xml termwidgetholder.h TermWidgetHolder)
+    QT6_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Terminal.xml termwidget.h TermWidget)
+    QT6_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Process.xml qterminalapp.h QTerminalApp)
+
     set(QTERM_MOC_SRC ${QTERM_MOC_SRC} src/dbusaddressable.h)
-    message(STATUS "Building with Qt5DBus support")
+    message(STATUS "Building with Qt6DBus support")
 endif()
 
 if(NOT QXT_FOUND)
@@ -132,9 +136,10 @@ set(QTERM_RCC_SRC
     src/icons.qrc
 )
 
-qt5_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
-qt5_wrap_cpp( QTERM_MOC ${QTERM_MOC_SRC} )
-qt5_add_resources( QTERM_RCC ${QTERM_RCC_SRC} )
+qt6_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
+qt6_wrap_cpp( QTERM_MOC ${QTERM_MOC_SRC} )
+qt6_add_resources( QTERM_RCC ${QTERM_RCC_SRC} )
+
 lxqt_translate_ts(QTERM_QM
     UPDATE_TRANSLATIONS
         ${UPDATE_TRANSLATIONS}
@@ -202,22 +207,22 @@ add_executable(${EXE_NAME} ${GUI_TYPE}
 )
 
 target_link_libraries(${EXE_NAME}
-    Qt5::Gui
-    qtermwidget5
+    Qt6::Core
+    Qt6::Gui
+    Qt6::Widgets
+    qtermwidget6
     util
 )
 if(QXT_FOUND)
     target_link_libraries(${EXE_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
 endif()
 
-if (Qt5DBus_FOUND)
-    target_link_libraries(${EXE_NAME} ${Qt5DBus_LIBRARIES})
+if (Qt6DBus_FOUND)
+    target_link_libraries(${EXE_NAME} ${Qt6DBus_LIBRARIES})
 endif()
 
 if(APPLE)
     target_link_libraries(${EXE_NAME} ${CARBON_LIBRARY})
-elseif(UNIX)
-    target_link_libraries(${EXE_NAME} Qt5::X11Extras)
 endif()
 
 if(X11_FOUND)
