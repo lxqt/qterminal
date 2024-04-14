@@ -656,7 +656,7 @@
         <location filename="../forms/propertiesdialog.ui" line="701"/>
         <location filename="../forms/propertiesdialog.ui" line="715"/>
         <source> px</source>
-        <translation> пкс</translation>
+        <translation> пикс</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="722"/>

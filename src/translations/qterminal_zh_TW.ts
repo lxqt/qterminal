@@ -350,17 +350,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="663"/>
         <source>2013-2022</source>
-        <translation type="unfinished"></translation>
+        <translation>2013-2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="665"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>LXQt 項目</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="667"/>
         <source>Development: </source>
-        <translation type="unfinished"></translation>
+        <translation>開發: </translation>
     </message>
 </context>
 <context>
@@ -717,7 +717,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="764"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>聽到鈴聲</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>

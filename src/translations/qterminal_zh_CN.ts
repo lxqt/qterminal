@@ -315,12 +315,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>Zoom &amp;in</source>
-        <translation>缩小(&amp;I)</translation>
+        <translation>放大(&amp;I)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
         <source>Zoom &amp;out</source>
-        <translation>放大(&amp;O)</translation>
+        <translation>缩小(&amp;O)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="315"/>

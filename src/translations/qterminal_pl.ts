@@ -113,22 +113,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
         <source>&amp;Top Subterminal</source>
-        <translation>Górny &amp;subterminal</translation>
+        <translation>&amp;Górny podterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>&amp;Dolny subterminal</translation>
+        <translation>&amp;Dolny podterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="290"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>&amp;Lewy subterminal</translation>
+        <translation>&amp;Lewy podterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="293"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>Prawy subterm&amp;inal</translation>
+        <translation>Prawy podterm&amp;inal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="624"/>
         <source>Exit QTerminal</source>
-        <translation>Zamknięcie QTerminalu</translation>
+        <translation>Zamknij QTerminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="626"/>
@@ -581,12 +581,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="682"/>
         <source>Save Size when closing</source>
-        <translation>Wychodząc, zapisz rozmiar</translation>
+        <translation>Zapisz rozmiar podczas zamykania</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="675"/>
         <source>Save Position when closing</source>
-        <translation>Wychodząc, zapisz położenie</translation>
+        <translation>Zapisz pozycję podczas zamykania</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="668"/>
@@ -702,7 +702,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="658"/>
         <source>Close tab on middle-click</source>
-        <translation>Zamknij kartę klikając kółko myszy</translation>
+        <translation>Zamknij kartę kliknięciem środkowym przyciskiem</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
