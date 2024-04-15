@@ -177,8 +177,8 @@ int main(int argc, char *argv[])
 
     // install the translations built-into Qt itself
     QTranslator qtTranslator;
-    qtTranslator.load(QStringLiteral("qt_") + QLocale::system().name(), QLibraryInfo::path(QLibraryInfo::TranslationsPath));
-    app->installTranslator(&qtTranslator);
+    if (qtTranslator.load(QStringLiteral("qt_") + QLocale::system().name(), QLibraryInfo::path(QLibraryInfo::TranslationsPath)))
+        app->installTranslator(&qtTranslator);
 
     QTranslator translator;
     QString fname = QString::fromLatin1("qterminal_%1.qm").arg(QLocale::system().name().left(5));
