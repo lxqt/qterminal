@@ -199,7 +199,7 @@ void TermWidgetHolder::directionalNavigation(NavigationDirection dir) {
     // Find an active widget
     QList<TermWidget*> l = findChildren<TermWidget*>();
     int ix = -1;
-    for (TermWidget * w : qAsConst(l))
+    for (TermWidget * w : std::as_const(l))
     {
         ++ix;
         if (w->impl()->hasFocus())
@@ -231,7 +231,7 @@ void TermWidgetHolder::directionalNavigation(NavigationDirection dir) {
     int lowestX = INT_MAX;
     int lowestMidpointDistance = INT_MAX;
     TermWidget *fittest = nullptr;
-    for (TermWidget * w : qAsConst(l))
+    for (TermWidget * w : std::as_const(l))
     {
         NavigationData contenderDims = getNormalizedDimensions(w, dir);
         int midpointDistance = std::min(

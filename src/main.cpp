@@ -24,6 +24,8 @@
 #include <getopt.h>
 #include <cstdlib>
 #include <unistd.h>
+#include <utility>
+
 #ifdef HAVE_QDBUS
     #include <QtDBus/QtDBus>
     #include "processadaptor.h"
@@ -297,7 +299,7 @@ void QTerminalApp::registerOnDbus()
 QList<QDBusObjectPath> QTerminalApp::getWindows()
 {
     QList<QDBusObjectPath> windows;
-    for (MainWindow *wnd : qAsConst(m_windowList))
+    for (MainWindow *wnd : std::as_const(m_windowList))
     {
         windows.push_back(wnd->getDbusPath());
     }
