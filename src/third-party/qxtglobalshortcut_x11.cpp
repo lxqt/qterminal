@@ -42,6 +42,8 @@
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
 
+#include <utility>
+
 namespace {
 
 const QVector<quint32> maskModifiers = QVector<quint32>()
@@ -135,7 +137,7 @@ public:
     {
         QxtX11ErrorHandler errorHandler;
 
-        for (const quint32& maskMods :  qAsConst(maskModifiers)) {
+        for (const quint32& maskMods :  std::as_const(maskModifiers)) {
             XUngrabKey(display(), keycode, modifiers | maskMods, window);
         }
 
