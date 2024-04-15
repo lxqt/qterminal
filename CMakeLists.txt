@@ -31,7 +31,7 @@ find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
 if(UNIX)
     find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
-    find_package(Qt6 COMPONENTS Core Core5Compat REQUIRED)
+    find_package(Qt6 COMPONENTS Core REQUIRED)
 endif()
 find_package(QTermWidget6 ${QTERMWIDGET_MINIMUM_VERSION} REQUIRED)
 find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
@@ -211,7 +211,6 @@ target_link_libraries(${EXE_NAME}
     Qt6::Gui
     Qt6::Widgets
     qtermwidget6
-    util
 )
 if(QXT_FOUND)
     target_link_libraries(${EXE_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
