@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.16.0 FATAL_ERROR)
 # CMP0000: Call the cmake_minimum_required() command at the beginning of the top-level
 # CMakeLists.txt file even before calling the project() command.
 # The cmake_minimum_required(VERSION) command implicitly invokes the cmake_policy(VERSION)
@@ -9,7 +9,7 @@ project(qterminal)
 include(GNUInstallDirs)
 
 # qterminal version
-set(QTERMINAL_VERSION "1.4.0")
+set(QTERMINAL_VERSION "2.0.0")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 option(BUILD_TESTS "Builds tests" ON)
@@ -22,7 +22,7 @@ endif()
 
 # Minimum Versions
 set(LXQTBT_MINIMUM_VERSION "2.0.0")
-set(QT_MINIMUM_VERSION "6.3.0")
+set(QT_MINIMUM_VERSION "6.6.0")
 set(QT_MAJOR_VERSION "6")
 
 find_package(Qt6Core ${QT_MINIMUM_VERSION} REQUIRED)
