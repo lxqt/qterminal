@@ -19,11 +19,7 @@
 #ifndef TERMWIDGET_H
 #define TERMWIDGET_H
 
-#ifdef USE_QTERMWIDGET5
-    #include <qtermwidget5/qtermwidget.h>
-#elif defined(USE_QTERMWIDGET6)
-    #include <qtermwidget6/qtermwidget.h>
-#endif
+#include <qtermwidget6/qtermwidget.h>
 
 #include "terminalconfig.h"
 

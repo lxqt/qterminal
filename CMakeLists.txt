@@ -52,11 +52,6 @@ message(STATUS "Qt version: ${Qt6Core_VERSION}")
 message(STATUS "Using bundled Qxt...")
 set(QXT_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/src/third-party")
 
-
-find_path(QTERMWIDGET6_INCLUDE_DIR NAMES qtermwidget6/qtermwidget.h)
-add_definitions(-DUSE_QTERMWIDGET6)
-include_directories(${QTERMWIDGET6_INCLUDE_DIR})
-
 if(APPLE)
    find_library(CARBON_LIBRARY Carbon REQUIRED)
    message(STATUS "CARBON_LIBRARY: ${CARBON_LIBRARY}")
