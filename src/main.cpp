@@ -19,6 +19,10 @@
 #include <QApplication>
 #include <QtGlobal>
 
+#include <QLockFile>
+#include <QLocalServer>
+#include <QLocalSocket>
+
 #include <cassert>
 #include <cstdio>
 #include <getopt.h>
@@ -29,11 +33,11 @@
     #include "processadaptor.h"
 #endif
 
-
 #include "mainwindow.h"
 #include "qterminalapp.h"
 #include "qterminalutils.h"
 #include "terminalconfig.h"
+#include "instance-locker.h"
 
 #define out
 
@@ -197,7 +201,38 @@ int main(int argc, char *argv[])
     app->installTranslator(&translator);
 
     TerminalConfig initConfig = TerminalConfig(workdir, shell_command);
-    app->newWindow(dropMode, initConfig);
+    MainWindow *window = app->newWindow(dropMode, initConfig);
+
+    /** Instance locker */
+    if ( dropMode ) {
+        InstanceLocker *locker = new InstanceLocker( QString::fromUtf8( "%1-%2" ).arg( qApp->organizationName() ).arg( qApp->applicationName() ), nullptr );
+
+        /** Another isntance is running */
+        if ( locker->isRunning() ) {
+            /** Ask the other instance to toggle the instance. */
+            locker->sendMessage( QString::fromUtf8( "toggle" ) );
+
+            delete locker;
+
+            return 0;
+        }
+
+        QObject::connect(
+            locker->mServer, &QLocalServer::newConnection, [ = ] () {
+                QString msg = locker->handleConnection();
+                if (msg == QString::fromUtf8( "toggle" ))
+                {
+                    if ( window->isVisible() ) {
+                        window->hide();
+                    }
+
+                    else {
+                        window->show();
+                    }
+                }
+            }
+        );
+    }
 
     int ret = app->exec();
     delete Properties::Instance();
@@ -342,4 +377,3 @@ bool QTerminalApp::toggleDropdown() {
 
 
 #endif
-

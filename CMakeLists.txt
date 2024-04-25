@@ -24,11 +24,13 @@ endif()
 set(LXQTBT_MINIMUM_VERSION "2.0.0")
 set(QT_MINIMUM_VERSION "6.3.0")
 set(QT_MAJOR_VERSION "6")
+set(SHELLQT_MINIMUM_VERSION "6.0.0")
 
 find_package(Qt6Core ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6Gui ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6Network ${QT_MINIMUM_VERSION} REQUIRED)
 if(UNIX)
     find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
     find_package(Qt6 COMPONENTS Core Core5Compat REQUIRED)
@@ -39,6 +41,8 @@ find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 if (BUILD_TESTS)
     find_package(Qt6 ${QT_MINIMUM_VERSION} CONFIG REQUIRED Test)
 endif()
+
+find_package(LayerShellQt ${SHELLQT_MINIMUM_VERSION} REQUIRED)
 
 include(LXQtPreventInSourceBuilds)
 include(FindPkgConfig)
@@ -74,6 +78,7 @@ set(EXE_NAME qterminal)
 set(QTERM_SRC
     src/main.cpp
     src/mainwindow.cpp
+    src/instance-locker.cpp
     src/tabbar.cpp
     src/tabwidget.cpp
     src/termwidget.cpp
@@ -91,6 +96,7 @@ set(QTERM_SRC
 set(QTERM_MOC_SRC
     src/qterminalapp.h
     src/mainwindow.h
+    src/instance-locker.h
     src/tabbar.h
     src/tabwidget.h
     src/termwidget.h
@@ -210,7 +216,9 @@ target_link_libraries(${EXE_NAME}
     Qt6::Core
     Qt6::Gui
     Qt6::Widgets
+    Qt6::Network
     qtermwidget6
+    LayerShellQtInterface
     util
 )
 if(QXT_FOUND)
