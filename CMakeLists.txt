@@ -24,7 +24,6 @@ endif()
 set(LXQTBT_MINIMUM_VERSION "2.0.0")
 set(QT_MINIMUM_VERSION "6.3.0")
 set(QT_MAJOR_VERSION "6")
-set(SHELLQT_MINIMUM_VERSION "6.0.0")
 
 find_package(Qt6Core ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6Gui ${QT_MINIMUM_VERSION} REQUIRED)
@@ -41,8 +40,6 @@ find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
 if (BUILD_TESTS)
     find_package(Qt6 ${QT_MINIMUM_VERSION} CONFIG REQUIRED Test)
 endif()
-
-find_package(LayerShellQt ${SHELLQT_MINIMUM_VERSION} REQUIRED)
 
 include(LXQtPreventInSourceBuilds)
 include(FindPkgConfig)
@@ -218,7 +215,6 @@ target_link_libraries(${EXE_NAME}
     Qt6::Widgets
     Qt6::Network
     qtermwidget6
-    LayerShellQtInterface
     util
 )
 if(QXT_FOUND)
