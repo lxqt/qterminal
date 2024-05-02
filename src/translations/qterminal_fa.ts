@@ -36,329 +36,329 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="88"/>
+        <location filename="../mainwindow.cpp" line="89"/>
         <source>Bookmarks</source>
         <translation>نشانک ها</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="190"/>
+        <location filename="../mainwindow.cpp" line="191"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>برای مشاهده ترمینال کلید %1 را فشار دهید.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="239"/>
+        <location filename="../mainwindow.cpp" line="240"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;زبانه بعدی</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Previous Tab</source>
         <translation>زبانه &amp;قبلی</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Move Tab &amp;Left</source>
         <translation>انتقال زبانه به &amp;چپ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>Move Tab &amp;Right</source>
         <translation>انتقال زبانه به &amp;راست</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="273"/>
+        <location filename="../mainwindow.cpp" line="274"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>تقسیم ترمینال به صورت &amp;افقی</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>نقسیم ترمینال به صورت &amp;عمودی</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="282"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;بستن زیر ترمینال</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="232"/>
+        <location filename="../mainwindow.cpp" line="233"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>&amp;پاک کردن ترمینال فعال</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="171"/>
+        <location filename="../mainwindow.cpp" line="172"/>
         <source>Keep window open when it loses focus</source>
         <translation>پنجره در صورت از دست دادن فوکوس باز نگه داشته شود</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="245"/>
+        <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Previous Tab in History</source>
         <translation>زبانه ی &amp;قبلی در تاریخچه</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="249"/>
         <source>&amp;Next Tab in History</source>
         <translation>زبانه ی &amp;بعدی در تاریخچه</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="259"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <source>Tab</source>
         <translation>زبانه</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="260"/>
+        <location filename="../mainwindow.cpp" line="261"/>
         <source>Go to</source>
         <translation>برو به</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="284"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>&amp;Top Subterminal</source>
         <translation>زیرترمینال &amp;بالا</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="288"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>زیرترمینال &amp;پایین</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.cpp" line="291"/>
         <source>L&amp;eft Subterminal</source>
         <translation>زیرترمینال &amp;چپ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>R&amp;ight Subterminal</source>
         <translation>زیر ترمینال &amp;راست</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="300"/>
+        <location filename="../mainwindow.cpp" line="301"/>
         <source>Copy &amp;Selection</source>
         <translation>کپی &amp;انتخاب شده</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="303"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>Paste Clip&amp;board</source>
         <translation>چسباندن از &amp;حافظه</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="307"/>
         <source>Paste S&amp;election</source>
         <translation>&amp;چسباندن انتخاب شده</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="310"/>
         <source>Zoom &amp;in</source>
         <translation>&amp;یزرگنمایی</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="313"/>
         <source>Zoom &amp;out</source>
         <translation>&amp;کوچکنمایی</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
+        <location filename="../mainwindow.cpp" line="316"/>
         <source>Zoom rese&amp;t</source>
         <translation>&amp;بازنشانی بزرگنمایی</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="320"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>&amp;Find...</source>
         <translation>&amp;جستجو...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>Handle history...</source>
         <translation>مدیریت تاریخچه...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>&amp;Save Session</source>
         <translation>&amp;ذخیره جلسه کاری</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="337"/>
+        <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Load Session</source>
         <translation>&amp;فراخوانی جلسه کاری</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="344"/>
+        <location filename="../mainwindow.cpp" line="345"/>
         <source>&amp;Toggle Menu</source>
         <translation>&amp;تغییر وضعیت نمایش منو</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="349"/>
+        <location filename="../mainwindow.cpp" line="350"/>
         <source>Rename session</source>
         <translation>تغییر نام جلسه کاری</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="358"/>
+        <location filename="../mainwindow.cpp" line="359"/>
         <source>&amp;New Tab</source>
         <translation>&amp;زبانه جدید</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="363"/>
         <source>New Tab From &amp;Preset</source>
         <translation>زبانه جدید از &amp;چیدمان</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="364"/>
         <source>1 &amp;Terminal</source>
         <translation>۱ &amp;ترمینال</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>۲ ترمینال &amp;افقی</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="367"/>
+        <location filename="../mainwindow.cpp" line="368"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>۲ ترمینال &amp;عمودی</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>4 Terminal&amp;s</source>
         <translation>&amp;۴ ترمینال</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="375"/>
+        <location filename="../mainwindow.cpp" line="376"/>
         <source>&amp;Close Tab</source>
         <translation>&amp;بستن زبانه</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="378"/>
+        <location filename="../mainwindow.cpp" line="379"/>
         <source>&amp;New Window</source>
         <translation>&amp;پنجره جدید</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="383"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;تنظیمات...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="387"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>&amp;Quit</source>
         <translation>&amp;خروج</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="393"/>
+        <location filename="../mainwindow.cpp" line="394"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;مخفی کردن قاب پنجره</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="412"/>
         <source>&amp;Show Tab Bar</source>
         <translation>&amp;نمایش نوار زبانه ها</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="419"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Fullscreen</source>
         <translation>تمام صفحه</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="426"/>
         <source>Toggle Bookmarks</source>
         <translation>تغییر وضعیت نمایش نشانک ها</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="433"/>
+        <location filename="../mainwindow.cpp" line="434"/>
         <source>&amp;Bottom</source>
         <translation>&amp;پایین</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="434"/>
+        <location filename="../mainwindow.cpp" line="435"/>
         <source>&amp;Top</source>
         <translation>&amp;بالا</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="435"/>
-        <location filename="../mainwindow.cpp" line="471"/>
+        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="472"/>
         <source>&amp;Right</source>
         <translation>&amp;راست</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="437"/>
+        <location filename="../mainwindow.cpp" line="473"/>
         <source>&amp;Left</source>
         <translation>&amp;چپ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;جایگاه زبانه ها</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="470"/>
+        <location filename="../mainwindow.cpp" line="471"/>
         <source>&amp;None</source>
         <translation>&amp;هیچکدام</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="488"/>
+        <location filename="../mainwindow.cpp" line="489"/>
         <source>S&amp;crollbar Layout</source>
         <translation>&amp;نمایش نوارپیمایش</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="501"/>
+        <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;BlockCursor</source>
         <translation>مکان نما &amp;مکعب</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="502"/>
+        <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;UnderlineCursor</source>
         <translation>مکان نما &amp;زیرخط</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;IBeamCursor</source>
         <translation>مکان نما &amp;خط عمودی</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="520"/>
+        <location filename="../mainwindow.cpp" line="521"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;شکل مکان نما صفحه کلید</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="624"/>
+        <location filename="../mainwindow.cpp" line="625"/>
         <source>Exit QTerminal</source>
         <translation>خروج از کیو ترمینال</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="626"/>
+        <location filename="../mainwindow.cpp" line="627"/>
         <source>Do not ask again</source>
         <translation>دوباره نپرس</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="634"/>
+        <location filename="../mainwindow.cpp" line="635"/>
         <source>Are you sure you want to exit?</source>
         <translation>مطمئن هسنید می خواهید خارج شوید؟</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="659"/>
+        <location filename="../mainwindow.cpp" line="660"/>
         <source>About</source>
         <translation>درباره</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="661"/>
+        <location filename="../mainwindow.cpp" line="662"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>یک شبیه ساز ترمینال چندسکویی قدرتمند و سبک</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="663"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>Copyright (C) </source>
         <translation>کپی‌رایت(C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="663"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>2013-2022</source>
         <translation>۱۳۹۱-۱۴۰۱</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="665"/>
+        <location filename="../mainwindow.cpp" line="666"/>
         <source>LXQt Project</source>
         <translation>پروژه LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="668"/>
         <source>Development: </source>
         <translation>توسعه: </translation>
     </message>
@@ -554,7 +554,7 @@
         <translation>شتاب دهنده های نوار منو استفاده نشوند</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="813"/>
+        <location filename="../forms/propertiesdialog.ui" line="830"/>
         <source>Emulation</source>
         <translation>شبیه سازی</translation>
     </message>
@@ -564,32 +564,32 @@
         <translation>عملکرد بعد از چسباندن</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="644"/>
+        <location filename="../forms/propertiesdialog.ui" line="654"/>
         <source>Confirm multiline paste</source>
         <translation>تایید قبل از چسباندن چند خطی</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="651"/>
+        <location filename="../forms/propertiesdialog.ui" line="661"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>در زمان چسباندن کرکتر خط جدید را حذف کن</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="747"/>
+        <location filename="../forms/propertiesdialog.ui" line="757"/>
         <source>Open new terminals in current working directory</source>
         <translation>باز کردن ترمینال جدید در پوشه جاری</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="682"/>
+        <location filename="../forms/propertiesdialog.ui" line="692"/>
         <source>Save Size when closing</source>
         <translation>ذخیره اندازه در هنگام خروج</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="675"/>
+        <location filename="../forms/propertiesdialog.ui" line="685"/>
         <source>Save Position when closing</source>
         <translation>ذخیره موقعیت در هنگام خروج</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="668"/>
+        <location filename="../forms/propertiesdialog.ui" line="678"/>
         <source>Ask for confirmation when closing</source>
         <translation>تایید گرفتن در زمان خروج</translation>
     </message>
@@ -604,12 +604,12 @@
         <translation>اندازه تاریخچه (بر اساس تعداد خط)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="627"/>
+        <location filename="../forms/propertiesdialog.ui" line="781"/>
         <source>Default $TERM</source>
         <translation>$TERM پیشفرض</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="694"/>
+        <location filename="../forms/propertiesdialog.ui" line="704"/>
         <source>Start with this size:</source>
         <translation>شروع به کار با این اندازه:</translation>
     </message>
@@ -664,63 +664,78 @@
         <translation>&amp;کناره های پنجره پنهان شود</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="822"/>
+        <location filename="../forms/propertiesdialog.ui" line="839"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;انتخاب عملکرد برای شبیه سازی. توجه داشته باشید که این قابلیت لزوما با سیستم‌عامل شما هم‌خوانی ندارد.&lt;/p&gt;&lt;p&gt;اگر مطمئن نیستید از شبیه‌ساز &lt;span style=&quot; font-weight:600;&quot;&gt;پیشفرض&lt;/span&gt; استفاده کنید.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="800"/>
+        <location filename="../forms/propertiesdialog.ui" line="817"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>این دستور با پارامتر حاوی نام یک فایل موقت که حاوی تاریخچه پیمایش می باشد اجرا می شود</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="803"/>
+        <location filename="../forms/propertiesdialog.ui" line="820"/>
         <source>Handle history command</source>
         <translation>مدیریت تاریخچه دستورات</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="701"/>
-        <location filename="../forms/propertiesdialog.ui" line="715"/>
+        <location filename="../forms/propertiesdialog.ui" line="711"/>
+        <location filename="../forms/propertiesdialog.ui" line="725"/>
         <source> px</source>
         <translation> پیکسل</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="722"/>
+        <location filename="../forms/propertiesdialog.ui" line="732"/>
         <source>Get current size</source>
         <translation>اندازه فعلی را بگیر</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="757"/>
+        <location filename="../forms/propertiesdialog.ui" line="767"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>زبانه جدید را در سمت راست ونجره فغلی باز کن</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="754"/>
+        <location filename="../forms/propertiesdialog.ui" line="764"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>اگر انتخاب نشود، زبانه جدید در منتها الیه سمت راست باز می شود</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="658"/>
+        <location filename="../forms/propertiesdialog.ui" line="668"/>
         <source>Close tab on middle-click</source>
         <translation>با کلیک وسط زبانه را ببند</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="637"/>
+        <location filename="../forms/propertiesdialog.ui" line="647"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>حالت چسباندن براکت را به زور غیرفعال کنید</translation>
     </message>
     <message>
+        <location filename="../forms/propertiesdialog.ui" line="627"/>
+        <source>Word selection characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
+        <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="637"/>
+        <source>:@-./_~</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="644"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>حالت چسباندن براکت برای چسباندن رشته های چند خطی مفید است.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="764"/>
+        <location filename="../forms/propertiesdialog.ui" line="774"/>
         <source>Audible bell</source>
         <translation>زنگ صدا دار</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="846"/>
+        <location filename="../forms/propertiesdialog.ui" line="863"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -735,78 +750,78 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 برای حذف / غیرفعال کردن یک میانبر ، در نقطه 2 فقط یک اصلاح کننده (مانند Shift) را فشار دهید</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="876"/>
+        <location filename="../forms/propertiesdialog.ui" line="893"/>
         <source>Shortcut</source>
         <translation>میانبر</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="881"/>
+        <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>Key</source>
         <translation>کلید</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="893"/>
+        <location filename="../forms/propertiesdialog.ui" line="910"/>
         <source>Show on start</source>
         <translation>نمایش در هنگام شروع به کار</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="900"/>
+        <location filename="../forms/propertiesdialog.ui" line="917"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>یک دکمه قفل روی میله تب افقی نمایش داده می‌شود</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="903"/>
+        <location filename="../forms/propertiesdialog.ui" line="920"/>
         <source>Keep window open when it loses focus</source>
         <translation>هنگام از دست دادن فوکوس پنجره را باز نگه دار</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="910"/>
+        <location filename="../forms/propertiesdialog.ui" line="927"/>
         <source>Size</source>
         <translation>اندازه</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="921"/>
+        <location filename="../forms/propertiesdialog.ui" line="938"/>
         <source>Height</source>
         <translation>ارتفاع</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="931"/>
         <location filename="../forms/propertiesdialog.ui" line="948"/>
+        <location filename="../forms/propertiesdialog.ui" line="965"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="938"/>
+        <location filename="../forms/propertiesdialog.ui" line="955"/>
         <source>Width</source>
         <translation>عرض</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="962"/>
+        <location filename="../forms/propertiesdialog.ui" line="979"/>
         <source>Shortcut:</source>
         <translation>میانبر:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1029"/>
+        <location filename="../forms/propertiesdialog.ui" line="1046"/>
         <source>Edit bookmark file contents</source>
         <translation>ویرایش محتویات فایل میانبر</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <location filename="../forms/propertiesdialog.ui" line="1005"/>
         <source>Enable bookmarks</source>
         <translation>نمایش نشانک ها</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="997"/>
+        <location filename="../forms/propertiesdialog.ui" line="1014"/>
         <source>Bookmark file</source>
         <translation>فایل نشانک ها</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1010"/>
+        <location filename="../forms/propertiesdialog.ui" line="1027"/>
         <source>Find...</source>
         <translation>جستجو...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1019"/>
+        <location filename="../forms/propertiesdialog.ui" line="1036"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>می توانید مکان فایل بوک مارک های خود را مشخص کنید. این امکان به اشتراک گذاری نشانک را به راحتی با ابزارهایی ماننددراپ باکس را فراهم می کند.</translation>
     </message>
@@ -868,66 +883,66 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>لغزش به پایین</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="268"/>
+        <location filename="../propertiesdialog.cpp" line="271"/>
         <source>Examples</source>
         <translation>نمونه ها</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="421"/>
+        <location filename="../propertiesdialog.cpp" line="422"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>تصاویر (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="511"/>
+        <location filename="../propertiesdialog.cpp" line="512"/>
         <source>Open bookmarks file</source>
         <translation>فایل نشانک ها را باز کن</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="513"/>
+        <location filename="../propertiesdialog.cpp" line="514"/>
         <source>XML files (*.xml)</source>
         <translation>فایل های xml) XML.*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="514"/>
+        <location filename="../propertiesdialog.cpp" line="515"/>
         <source>All files (*)</source>
         <translation>تمام فایل ها (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="613"/>
-        <location filename="../propertiesdialog.cpp" line="617"/>
+        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="618"/>
         <source>Question</source>
         <translation>سؤال</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="613"/>
+        <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>آیا می خواهید این فایل نشانک ها را بازنویسی کنید؟</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="617"/>
+        <location filename="../propertiesdialog.cpp" line="618"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>نام فایل نشانک ها با &apos;xml.&apos; تمام نشده است.
 آیا مطمئن هستید که میخواهید آن را بازنویسی کنید؟</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="625"/>
+        <location filename="../propertiesdialog.cpp" line="626"/>
         <source>Warning</source>
         <translation>اخطار</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="625"/>
+        <location filename="../propertiesdialog.cpp" line="626"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>نمی شود بوک‌مارک ها را در این فایل ذخیره کرد:</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="203"/>
+        <location filename="../propertiesdialog.cpp" line="206"/>
         <location filename="../propertiesdialog.cpp" line="317"/>
         <source>System Default</source>
         <translation>پیش‌فرض های سیستم</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="420"/>
+        <location filename="../propertiesdialog.cpp" line="421"/>
         <source>Choose a background image</source>
         <translation>انتخاب یک تصویر پس زمینه</translation>
     </message>
@@ -943,33 +958,33 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="80"/>
-        <location filename="../tabwidget.cpp" line="234"/>
+        <location filename="../tabwidget.cpp" line="81"/>
+        <location filename="../tabwidget.cpp" line="235"/>
         <source>Shell No. %1</source>
         <translation>پوسته ی شماره %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="202"/>
+        <location filename="../tabwidget.cpp" line="203"/>
         <source>Tab name</source>
         <translation>عنوان زبانه</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="203"/>
+        <location filename="../tabwidget.cpp" line="204"/>
         <source>New tab name:</source>
         <translation>عنوان جدید برای زیانه:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="223"/>
+        <location filename="../tabwidget.cpp" line="224"/>
         <source>Select new tab title color</source>
         <translation>انتخاب رنگ جدید برای عنوان زیانه</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="252"/>
+        <location filename="../tabwidget.cpp" line="253"/>
         <source>Close session</source>
         <translation>بستن جلسه کاری</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="254"/>
+        <location filename="../tabwidget.cpp" line="255"/>
         <source>Change title color</source>
         <translation>تغییر رنگ عنوان</translation>
     </message>
@@ -977,12 +992,12 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>TermWidgetHolder</name>
     <message>
-        <location filename="../termwidgetholder.cpp" line="79"/>
+        <location filename="../termwidgetholder.cpp" line="77"/>
         <source>Load Session</source>
         <translation>فراخوانی جلسه کاری</translation>
     </message>
     <message>
-        <location filename="../termwidgetholder.cpp" line="80"/>
+        <location filename="../termwidgetholder.cpp" line="78"/>
         <source>List of saved sessions:</source>
         <translation>لیست جلسه کاری های ذخیره شده:</translation>
     </message>
