@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="190"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Нажмите &quot;%1&quot; чтобы увидеть терминал.</translation>
+        <translation>Нажмите «%1», чтобы увидеть терминал.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="239"/>
@@ -133,7 +133,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="300"/>
         <source>Copy &amp;Selection</source>
-        <translation>Скопировать &amp;выделенное</translation>
+        <translation>Копировать &amp;выделенное</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="303"/>
@@ -610,7 +610,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="450"/>
         <source>Fit</source>
-        <translation>Заполнить</translation>
+        <translation>Подогнать</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="455"/>
