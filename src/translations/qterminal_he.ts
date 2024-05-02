@@ -36,329 +36,329 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="88"/>
+        <location filename="../mainwindow.cpp" line="89"/>
         <source>Bookmarks</source>
         <translation>סימניות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="190"/>
+        <location filename="../mainwindow.cpp" line="191"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>לחיצה על „%1” כדי לצפות במסוף.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="239"/>
+        <location filename="../mainwindow.cpp" line="240"/>
         <source>&amp;Next Tab</source>
         <translation>הלשונית ה&amp;באה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="243"/>
         <source>&amp;Previous Tab</source>
         <translation>הלשונית ה&amp;קודמת</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="252"/>
         <source>Move Tab &amp;Left</source>
         <translation>העברת לשונית &amp;שמאלה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="255"/>
         <source>Move Tab &amp;Right</source>
         <translation>העברת לשונית ימי&amp;נה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="273"/>
+        <location filename="../mainwindow.cpp" line="274"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>פיצול המסוף או&amp;פקית</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="277"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>פיצול המסוף א&amp;נכית</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="282"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;צמצום תת־מסוף</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="232"/>
+        <location filename="../mainwindow.cpp" line="233"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>מ&amp;חיקת תוכן המסוף הפעיל</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="171"/>
+        <location filename="../mainwindow.cpp" line="172"/>
         <source>Keep window open when it loses focus</source>
         <translation>לשמור על החלון פתוח בעת אובדן מיקוד</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="245"/>
+        <location filename="../mainwindow.cpp" line="246"/>
         <source>&amp;Previous Tab in History</source>
         <translation>הלשונית ה&amp;קודמת בהיסטוריה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="249"/>
         <source>&amp;Next Tab in History</source>
         <translation>הלשונית ה&amp;באה בהיסטוריה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="259"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <source>Tab</source>
         <translation>לשונית</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="260"/>
+        <location filename="../mainwindow.cpp" line="261"/>
         <source>Go to</source>
         <translation>מעבר אל</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="284"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>&amp;Top Subterminal</source>
         <translation>תת־מסוף &amp;עליון</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="288"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>תת־מסוף &amp;תחתון</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.cpp" line="291"/>
         <source>L&amp;eft Subterminal</source>
         <translation>תת־מסוף &amp;שמאלי</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>R&amp;ight Subterminal</source>
         <translation>תת־מסוף ימ&amp;ני</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="300"/>
+        <location filename="../mainwindow.cpp" line="301"/>
         <source>Copy &amp;Selection</source>
         <translation>העתקת ה&amp;בחירה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="303"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>Paste Clip&amp;board</source>
         <translation>הדבקת לוח הג&amp;זירים</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="307"/>
         <source>Paste S&amp;election</source>
         <translation>הדבקת הב&amp;חירה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="310"/>
         <source>Zoom &amp;in</source>
         <translation>הת&amp;קרבות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="313"/>
         <source>Zoom &amp;out</source>
         <translation>הת&amp;רחקות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
+        <location filename="../mainwindow.cpp" line="316"/>
         <source>Zoom rese&amp;t</source>
         <translation>&amp;איפוס התקריב</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="320"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>&amp;Find...</source>
         <translation>חי&amp;פוש…</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>Handle history...</source>
         <translation>טיפול בהיסטוריה…</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
+        <location filename="../mainwindow.cpp" line="332"/>
         <source>&amp;Save Session</source>
         <translation>&amp;שמירת ההפעלה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="337"/>
+        <location filename="../mainwindow.cpp" line="338"/>
         <source>&amp;Load Session</source>
         <translation>&amp;טעינת הפעלה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="344"/>
+        <location filename="../mainwindow.cpp" line="345"/>
         <source>&amp;Toggle Menu</source>
         <translation>ה&amp;חלפת מצב תפריט</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="349"/>
+        <location filename="../mainwindow.cpp" line="350"/>
         <source>Rename session</source>
         <translation>שינוי שם הפעלה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="358"/>
+        <location filename="../mainwindow.cpp" line="359"/>
         <source>&amp;New Tab</source>
         <translation>&amp;לשונית חדשה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="362"/>
+        <location filename="../mainwindow.cpp" line="363"/>
         <source>New Tab From &amp;Preset</source>
         <translation>לשונית חדשה מ&amp;ערכה מוגדרת</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="364"/>
         <source>1 &amp;Terminal</source>
         <translation>מסוף &amp;1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 מסופים או&amp;פקיים</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="367"/>
+        <location filename="../mainwindow.cpp" line="368"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 מסופים א&amp;נכיים</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 מ&amp;סופים</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="375"/>
+        <location filename="../mainwindow.cpp" line="376"/>
         <source>&amp;Close Tab</source>
         <translation>ס&amp;גירת לשונית</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="378"/>
+        <location filename="../mainwindow.cpp" line="379"/>
         <source>&amp;New Window</source>
         <translation>&amp;חלון חדש</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="383"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>&amp;Preferences...</source>
         <translation>ה&amp;עדפות…</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="387"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>&amp;Quit</source>
         <translation>י&amp;ציאה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="393"/>
+        <location filename="../mainwindow.cpp" line="394"/>
         <source>&amp;Hide Window Borders</source>
         <translation>הסתרת &amp;גבולות החלון</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="412"/>
         <source>&amp;Show Tab Bar</source>
         <translation>הצגת ס&amp;רגל לשוניות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="419"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>Fullscreen</source>
         <translation>מסך מלא</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="425"/>
+        <location filename="../mainwindow.cpp" line="426"/>
         <source>Toggle Bookmarks</source>
         <translation>החלפת הצגת לשוניות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="433"/>
+        <location filename="../mainwindow.cpp" line="434"/>
         <source>&amp;Bottom</source>
         <translation>ת&amp;חתון</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="434"/>
+        <location filename="../mainwindow.cpp" line="435"/>
         <source>&amp;Top</source>
         <translation>&amp;עליון</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="435"/>
-        <location filename="../mainwindow.cpp" line="471"/>
+        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="472"/>
         <source>&amp;Right</source>
         <translation>י&amp;מין</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="437"/>
+        <location filename="../mainwindow.cpp" line="473"/>
         <source>&amp;Left</source>
         <translation>&amp;שמאל</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;פריסת לשוניות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="470"/>
+        <location filename="../mainwindow.cpp" line="471"/>
         <source>&amp;None</source>
         <translation>&amp;ללא</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="488"/>
+        <location filename="../mainwindow.cpp" line="489"/>
         <source>S&amp;crollbar Layout</source>
         <translation>פריסת סרגל &amp;גלילה</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="501"/>
+        <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;BlockCursor</source>
         <translation>סמן מ&amp;רובע</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="502"/>
+        <location filename="../mainwindow.cpp" line="503"/>
         <source>&amp;UnderlineCursor</source>
         <translation>סמן &amp;קו תחתי</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;IBeamCursor</source>
         <translation>סמן קור&amp;ת I</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="520"/>
+        <location filename="../mainwindow.cpp" line="521"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;צורת סמן המקלדת</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="624"/>
+        <location filename="../mainwindow.cpp" line="625"/>
         <source>Exit QTerminal</source>
         <translation>יציאה מ־QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="626"/>
+        <location filename="../mainwindow.cpp" line="627"/>
         <source>Do not ask again</source>
         <translation>לא לשאול שוב</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="634"/>
+        <location filename="../mainwindow.cpp" line="635"/>
         <source>Are you sure you want to exit?</source>
         <translation>לצאת?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="659"/>
+        <location filename="../mainwindow.cpp" line="660"/>
         <source>About</source>
         <translation>על אודות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="661"/>
+        <location filename="../mainwindow.cpp" line="662"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>מדמה מסוף קליל ורב עוצמה למגוון פלטפורמות</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="663"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>Copyright (C) </source>
         <translation>כל הזכויות שמורות (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="663"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>2013-2022</source>
         <translation>2013‏-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="665"/>
+        <location filename="../mainwindow.cpp" line="666"/>
         <source>LXQt Project</source>
         <translation>מיזם LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="668"/>
         <source>Development: </source>
         <translation>פיתוח: </translation>
     </message>
@@ -554,7 +554,7 @@
         <translation>אין מאיץ לסרגל התפריטים</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="813"/>
+        <location filename="../forms/propertiesdialog.ui" line="830"/>
         <source>Emulation</source>
         <translation>הדמיה</translation>
     </message>
@@ -564,32 +564,32 @@
         <translation>פעולה לאחר הדבקה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="644"/>
+        <location filename="../forms/propertiesdialog.ui" line="654"/>
         <source>Confirm multiline paste</source>
         <translation>בקשת אישור להדבקה של מספר שורות</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="651"/>
+        <location filename="../forms/propertiesdialog.ui" line="661"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>חיתוך שורות חדשות מקדימות בטקסט שמודבק</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="747"/>
+        <location filename="../forms/propertiesdialog.ui" line="757"/>
         <source>Open new terminals in current working directory</source>
         <translation>פתיחת מסופים חדשים בתיקיית העבודה הנוכחית</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="682"/>
+        <location filename="../forms/propertiesdialog.ui" line="692"/>
         <source>Save Size when closing</source>
         <translation>שמירת הגודל עם הסגירה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="675"/>
+        <location filename="../forms/propertiesdialog.ui" line="685"/>
         <source>Save Position when closing</source>
         <translation>שמירת המיקום בעת הסגירה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="668"/>
+        <location filename="../forms/propertiesdialog.ui" line="678"/>
         <source>Ask for confirmation when closing</source>
         <translation>לבקש אישור בעת סגירה</translation>
     </message>
@@ -604,12 +604,12 @@
         <translation>גודל ההיסטוריה (בשורות)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="627"/>
+        <location filename="../forms/propertiesdialog.ui" line="781"/>
         <source>Default $TERM</source>
         <translation>$TERM כבררת מחדל</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="694"/>
+        <location filename="../forms/propertiesdialog.ui" line="704"/>
         <source>Start with this size:</source>
         <translation>התחלה עם הגודל הזה:</translation>
     </message>
@@ -664,63 +664,78 @@
         <translation>ה&amp;סתרת גבולות החלון</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="822"/>
+        <location filename="../forms/propertiesdialog.ui" line="839"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;איזו התנהגות לדמות. נא לשים לב שזה לא חייבת להיות מערכת ההפעלה שלך.&lt;/p&gt;&lt;p&gt;במקרה של ספק, עדיף להשתמש בהדמיית &lt;span style=&quot; font-weight:600;&quot;&gt;בררת המחדל&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="800"/>
+        <location filename="../forms/propertiesdialog.ui" line="817"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>הפקודה הזאת תופעל עם ארגומנט שכולל את שם קובץ התבנית שמכילה את היסטוריית הגלילה לאחור</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="803"/>
+        <location filename="../forms/propertiesdialog.ui" line="820"/>
         <source>Handle history command</source>
         <translation>טיפול בפקודה history</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="701"/>
-        <location filename="../forms/propertiesdialog.ui" line="715"/>
+        <location filename="../forms/propertiesdialog.ui" line="711"/>
+        <location filename="../forms/propertiesdialog.ui" line="725"/>
         <source> px</source>
         <translation> פיקסלים</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="722"/>
+        <location filename="../forms/propertiesdialog.ui" line="732"/>
         <source>Get current size</source>
         <translation>קבלת הגודל הנוכחי</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="757"/>
+        <location filename="../forms/propertiesdialog.ui" line="767"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>פתיחת לשונית חדשה משמאל ללשונית הפעילה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="754"/>
+        <location filename="../forms/propertiesdialog.ui" line="764"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>אם לא סומן אז הלשונית החדשה תיפתח כלשונית השמאלית ביותר</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="658"/>
+        <location filename="../forms/propertiesdialog.ui" line="668"/>
         <source>Close tab on middle-click</source>
         <translation>סגירת לשונית בלחיצה על הלחצן האמצעי</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="637"/>
+        <location filename="../forms/propertiesdialog.ui" line="647"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>אילוץ השבתת מצב הדבקה בסוגריים</translation>
     </message>
     <message>
+        <location filename="../forms/propertiesdialog.ui" line="627"/>
+        <source>Word selection characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
+        <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="637"/>
+        <source>:@-./_~</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="644"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>מצב הדבקה בסוגריים שימוש להדבקת מחרוזות עם כמה שורות.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="764"/>
+        <location filename="../forms/propertiesdialog.ui" line="774"/>
         <source>Audible bell</source>
         <translation>צלצול פעמון</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="846"/>
+        <location filename="../forms/propertiesdialog.ui" line="863"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -735,78 +750,78 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 כדי להסיר/להשבית קיצור דרך, בנקודה 2 ללחוץ על מקש החלפה בלבד (כגון Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="876"/>
+        <location filename="../forms/propertiesdialog.ui" line="893"/>
         <source>Shortcut</source>
         <translation>קיצור דרך</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="881"/>
+        <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>Key</source>
         <translation>מקש</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="893"/>
+        <location filename="../forms/propertiesdialog.ui" line="910"/>
         <source>Show on start</source>
         <translation>הצגה בהתחלה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="900"/>
+        <location filename="../forms/propertiesdialog.ui" line="917"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>כפתור נעילה מופיע בסרגל לשוניות אופקי</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="903"/>
+        <location filename="../forms/propertiesdialog.ui" line="920"/>
         <source>Keep window open when it loses focus</source>
         <translation>לשמור על החלון פתוח בעת אובדן מיקוד</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="910"/>
+        <location filename="../forms/propertiesdialog.ui" line="927"/>
         <source>Size</source>
         <translation>גודל</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="921"/>
+        <location filename="../forms/propertiesdialog.ui" line="938"/>
         <source>Height</source>
         <translation>גובה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="931"/>
         <location filename="../forms/propertiesdialog.ui" line="948"/>
+        <location filename="../forms/propertiesdialog.ui" line="965"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="938"/>
+        <location filename="../forms/propertiesdialog.ui" line="955"/>
         <source>Width</source>
         <translation>רוחב</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="962"/>
+        <location filename="../forms/propertiesdialog.ui" line="979"/>
         <source>Shortcut:</source>
         <translation>קיצור דרך:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1029"/>
+        <location filename="../forms/propertiesdialog.ui" line="1046"/>
         <source>Edit bookmark file contents</source>
         <translation>עריכת תוכן קובץ הסימניות</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <location filename="../forms/propertiesdialog.ui" line="1005"/>
         <source>Enable bookmarks</source>
         <translation>הפעלת סימניות</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="997"/>
+        <location filename="../forms/propertiesdialog.ui" line="1014"/>
         <source>Bookmark file</source>
         <translation>הוספת סימנייה לקובץ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1010"/>
+        <location filename="../forms/propertiesdialog.ui" line="1027"/>
         <source>Find...</source>
         <translation>חיפוש…</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1019"/>
+        <location filename="../forms/propertiesdialog.ui" line="1036"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>באפשרותך לציין מיקום משלך לקובץ סימניות. הגדרה זו מאפשרת לך לשתף סימניות בקלות עם כלים כגון OwnCloud או Dropbox.</translation>
     </message>
@@ -868,66 +883,66 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>גלילה למטה</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="268"/>
+        <location filename="../propertiesdialog.cpp" line="271"/>
         <source>Examples</source>
         <translation>דוגמאות</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="421"/>
+        <location filename="../propertiesdialog.cpp" line="422"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>תמונות (‎*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="511"/>
+        <location filename="../propertiesdialog.cpp" line="512"/>
         <source>Open bookmarks file</source>
         <translation>פתיחת קובץ סימניות</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="513"/>
+        <location filename="../propertiesdialog.cpp" line="514"/>
         <source>XML files (*.xml)</source>
         <translation>קובצי XML ‏(‎*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="514"/>
+        <location filename="../propertiesdialog.cpp" line="515"/>
         <source>All files (*)</source>
         <translation>כל הקבצים (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="613"/>
-        <location filename="../propertiesdialog.cpp" line="617"/>
+        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="618"/>
         <source>Question</source>
         <translation>שאלה</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="613"/>
+        <location filename="../propertiesdialog.cpp" line="614"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>לדרוס את קובץ הסימניות הזה?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="617"/>
+        <location filename="../propertiesdialog.cpp" line="618"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>שם קובץ הסימניות לא מסתיים ב־‚‎.xml’.
 לדרוס אותו?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="625"/>
+        <location filename="../propertiesdialog.cpp" line="626"/>
         <source>Warning</source>
         <translation>אזהרה</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="625"/>
+        <location filename="../propertiesdialog.cpp" line="626"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>לא ניתן לכתוב סימניות לקובץ הזה:</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="203"/>
+        <location filename="../propertiesdialog.cpp" line="206"/>
         <location filename="../propertiesdialog.cpp" line="317"/>
         <source>System Default</source>
         <translation>בררת מחדל של המערכת</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="420"/>
+        <location filename="../propertiesdialog.cpp" line="421"/>
         <source>Choose a background image</source>
         <translation>בחירת תמונת רקע</translation>
     </message>
@@ -943,33 +958,33 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="80"/>
-        <location filename="../tabwidget.cpp" line="234"/>
+        <location filename="../tabwidget.cpp" line="81"/>
+        <location filename="../tabwidget.cpp" line="235"/>
         <source>Shell No. %1</source>
         <translation>מעטפת מס׳ %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="202"/>
+        <location filename="../tabwidget.cpp" line="203"/>
         <source>Tab name</source>
         <translation>שם לשונית</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="203"/>
+        <location filename="../tabwidget.cpp" line="204"/>
         <source>New tab name:</source>
         <translation>שם חדש ללשונית:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="223"/>
+        <location filename="../tabwidget.cpp" line="224"/>
         <source>Select new tab title color</source>
         <translation>בחירת צבע כותרת חדש ללשונית</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="252"/>
+        <location filename="../tabwidget.cpp" line="253"/>
         <source>Close session</source>
         <translation>סגירת הפעלה</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="254"/>
+        <location filename="../tabwidget.cpp" line="255"/>
         <source>Change title color</source>
         <translation>החלפת צבע כותרת</translation>
     </message>
@@ -977,12 +992,12 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>TermWidgetHolder</name>
     <message>
-        <location filename="../termwidgetholder.cpp" line="79"/>
+        <location filename="../termwidgetholder.cpp" line="77"/>
         <source>Load Session</source>
         <translation>טעינת הפעלה</translation>
     </message>
     <message>
-        <location filename="../termwidgetholder.cpp" line="80"/>
+        <location filename="../termwidgetholder.cpp" line="78"/>
         <source>List of saved sessions:</source>
         <translation>רשימה של הפעלות שנשמרו:</translation>
     </message>
