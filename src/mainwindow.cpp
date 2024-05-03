@@ -16,6 +16,8 @@
  *   along with this program.  If not, see <http://www.gnu.org/licenses/>. *
  ***************************************************************************/
 
+#include <utility>
+
 #include <QDockWidget>
 #include <QScreen>
 #include <QToolButton>
@@ -537,7 +539,7 @@ void MainWindow::setupCustomDirs()
 
     dirs.removeDuplicates(); // QStandardPaths::locateAll() produces duplicates
 
-    for (const QString& dir : qAsConst(dirs)) {
+    for (const QString& dir : std::as_const(dirs)) {
         TermWidgetImpl::addCustomColorSchemeDir(dir + QLatin1String("/color-schemes"));
     }
     // FIXME: To be deprecated and then removed
