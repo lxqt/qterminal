@@ -315,7 +315,7 @@ void TabWidget::removeFinished()
 {
     QObject* term = sender();
     QVariant prop = term->property(TAB_INDEX_PROPERTY);
-    if(prop.isValid() && prop.canConvert(QVariant::Int))
+    if(prop.isValid() && prop.canConvert<int>())
     {
         int index = prop.toInt();
         removeTab(index);
