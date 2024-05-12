@@ -682,17 +682,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="627"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>选中字符识别为词语</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>当按单词选中时，将选中字符识别为单词的一部分，而不是单个字母数字字符</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="644"/>

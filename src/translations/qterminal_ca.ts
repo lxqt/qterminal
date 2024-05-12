@@ -712,12 +712,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="627"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Caràcters de selecció de mots</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>En seleccionar text per mot, pren en consideració aquests caràcters com a part dels mots a més dels caràcters alfanumèrics</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>

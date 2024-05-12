@@ -665,17 +665,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="627"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Aantal tekens in woordselectie</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Reken dit aantal tekens tot onderdeel van de woorden tijdens het selecteren van woorden</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="644"/>
@@ -696,9 +696,9 @@
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
         <translation>Sneltoets aanpassen:
-1. Dubbelklik op de toets
-2. Druk op de gewenste sneltoets
-3. Klik op een sneltoets of druk op Enter
+1. Dubbelklik op de toets;
+2. Druk op de gewenste sneltoets;
+3. Klik op een sneltoets of druk op enter.
 
 Sneltoets wissen: druk bij stap 2 op een samensteltoets (bijv. Shift)</translation>
     </message>

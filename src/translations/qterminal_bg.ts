@@ -243,7 +243,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="394"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;Скриване на границите на прозореца</translation>
+        <translation>&amp;Скриване на рамката на прозорците</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="412"/>
@@ -546,7 +546,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Символите за избиране на елементи от менюто (акцелератори) се активират с Alt и могат да интерферират с терминала.</translation>
+        <translation>Символите за избиране на елементи от менюто (акцелератори) се активират с Alt и могат да доведат до смущения в терминала.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="251"/>
@@ -661,7 +661,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="265"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;Скриване на границите на прозореца</translation>
+        <translation>&amp;Скриване на рамката на прозорците</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="839"/>
@@ -687,7 +687,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="732"/>
         <source>Get current size</source>
-        <translation>Вземете текущ размер</translation>
+        <translation>Вземане на текущия размер</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
@@ -702,7 +702,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="668"/>
         <source>Close tab on middle-click</source>
-        <translation>Затвяряне на раздела със средния бутон на мишката</translation>
+        <translation>Затваряне на раздела със средния бутон на мишката</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="647"/>
@@ -712,17 +712,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="627"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Символи за избор на думи</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Когато избирате текст по думи, считайте тези знаци за част от думите в допълнение към буквено-цифровите знаци</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="644"/>
@@ -798,7 +798,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="979"/>
         <source>Shortcut:</source>
-        <translation>Клавишна комбинция:</translation>
+        <translation>Клавишна комбинация:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1046"/>
@@ -961,7 +961,7 @@ Are you sure that you want to overwrite it?</source>
         <location filename="../tabwidget.cpp" line="81"/>
         <location filename="../tabwidget.cpp" line="235"/>
         <source>Shell No. %1</source>
-        <translation>Shell No. %1</translation>
+        <translation>Терминал: %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="203"/>
