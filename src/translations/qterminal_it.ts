@@ -838,12 +838,12 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Quando si seleziona il testo per parola, considerare questi caratteri come parte delle parole oltre ai caratteri alfanumerici</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~%</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="644"/>

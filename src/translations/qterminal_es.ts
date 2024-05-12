@@ -696,12 +696,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="627"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Caracteres de selección de palabras</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Al seleccionar textos por palabra, considerar estos caracteres como parte de las palabras además de los caracteres alfanuméricos</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
