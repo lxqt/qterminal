@@ -36,329 +36,329 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="89"/>
+        <location filename="../mainwindow.cpp" line="91"/>
         <source>Bookmarks</source>
         <translation>Markah</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="191"/>
+        <location filename="../mainwindow.cpp" line="193"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>Tekan &quot;%1&quot; untuk melihat terminal.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="240"/>
+        <location filename="../mainwindow.cpp" line="242"/>
         <source>&amp;Next Tab</source>
         <translation>Tab Berikutnya</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="243"/>
+        <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab</source>
         <translation>Tab Sebelumnya</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="252"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Move Tab &amp;Left</source>
         <translation>Pindah Tab Ke Kiri</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="255"/>
+        <location filename="../mainwindow.cpp" line="257"/>
         <source>Move Tab &amp;Right</source>
         <translation>Pindah Tab Ke Kanan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>Pisahkan Terminal Secara &amp;Horizontal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>Pisahkan Terminal Secara &amp;Vertikal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="282"/>
+        <location filename="../mainwindow.cpp" line="284"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>Tutup Subterminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="233"/>
+        <location filename="../mainwindow.cpp" line="235"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>Bersihkan Terminal Aktif</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="172"/>
+        <location filename="../mainwindow.cpp" line="174"/>
         <source>Keep window open when it loses focus</source>
         <translation>Biarkan jendela tetap terbuka saat kehilangan fokus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="246"/>
+        <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Previous Tab in History</source>
         <translation>Tab Sebelumnya dalam Sejarah</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>&amp;Next Tab in History</source>
         <translation>Tab Berikutnya dalam Sejarah</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="260"/>
+        <location filename="../mainwindow.cpp" line="262"/>
         <source>Tab</source>
         <translation>Tab</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="261"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <source>Go to</source>
         <translation>Pergi Ke</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="285"/>
+        <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Top Subterminal</source>
         <translation>Sub&amp;terminal Atas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="288"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>Subterminal &amp;Bawah</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="291"/>
+        <location filename="../mainwindow.cpp" line="293"/>
         <source>L&amp;eft Subterminal</source>
         <translation>Subt&amp;erminal Kiri</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="296"/>
         <source>R&amp;ight Subterminal</source>
         <translation>Subterm&amp;inal Kanan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="301"/>
+        <location filename="../mainwindow.cpp" line="303"/>
         <source>Copy &amp;Selection</source>
         <translation>&amp;Salin Seleksi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="306"/>
         <source>Paste Clip&amp;board</source>
         <translation>Tempel Papan Klip</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="307"/>
+        <location filename="../mainwindow.cpp" line="309"/>
         <source>Paste S&amp;election</source>
         <translation>T&amp;empel Pilihan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="310"/>
+        <location filename="../mainwindow.cpp" line="312"/>
         <source>Zoom &amp;in</source>
         <translation>Perbesar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="315"/>
         <source>Zoom &amp;out</source>
         <translation>Perkecil</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="316"/>
+        <location filename="../mainwindow.cpp" line="318"/>
         <source>Zoom rese&amp;t</source>
         <translation>Atur ulang zoom</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="321"/>
+        <location filename="../mainwindow.cpp" line="323"/>
         <source>&amp;Find...</source>
         <translation>Cari...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
+        <location filename="../mainwindow.cpp" line="326"/>
         <source>Handle history...</source>
         <translation>Menangani histori...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="332"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>&amp;Save Session</source>
         <translation>&amp;Simpan Sesi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="338"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;Load Session</source>
         <translation>Muat Sesi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="345"/>
+        <location filename="../mainwindow.cpp" line="347"/>
         <source>&amp;Toggle Menu</source>
         <translation>Buka Menu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="350"/>
+        <location filename="../mainwindow.cpp" line="352"/>
         <source>Rename session</source>
         <translation>Ganti nama sesi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="359"/>
+        <location filename="../mainwindow.cpp" line="361"/>
         <source>&amp;New Tab</source>
         <translation>Tab Baru</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Tab Baru Dari &amp;Preset</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="364"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>1 &amp;Terminal</source>
         <translation>1 &amp;Terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="368"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 Terminal &amp;Horisontal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="368"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 Terminal &amp;Vertikal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="372"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 Terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="376"/>
+        <location filename="../mainwindow.cpp" line="378"/>
         <source>&amp;Close Tab</source>
         <translation>Tutup Tab</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="379"/>
+        <location filename="../mainwindow.cpp" line="381"/>
         <source>&amp;New Window</source>
         <translation>Je&amp;ndela Baru</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="384"/>
+        <location filename="../mainwindow.cpp" line="386"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Pengaturan...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="388"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>&amp;Quit</source>
         <translation>Keluar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="394"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>&amp;Hide Window Borders</source>
         <translation>Sembunyikan Garis Jendela</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>&amp;Show Tab Bar</source>
         <translation>Tampilkan Bilah Tab</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="422"/>
         <source>Fullscreen</source>
         <translation>Layar Penuh</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="426"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>Toggle Bookmarks</source>
         <translation>Alihkan Markah</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="434"/>
+        <location filename="../mainwindow.cpp" line="436"/>
         <source>&amp;Bottom</source>
         <translation>&amp;Bawah</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="435"/>
+        <location filename="../mainwindow.cpp" line="437"/>
         <source>&amp;Top</source>
         <translation>Atas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="438"/>
+        <location filename="../mainwindow.cpp" line="474"/>
         <source>&amp;Right</source>
         <translation>Kanan</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="437"/>
-        <location filename="../mainwindow.cpp" line="473"/>
+        <location filename="../mainwindow.cpp" line="439"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>&amp;Left</source>
         <translation>Kiri</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="457"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;Tata Letak Tab</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="471"/>
+        <location filename="../mainwindow.cpp" line="473"/>
         <source>&amp;None</source>
         <translation>Tidak ada</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="489"/>
+        <location filename="../mainwindow.cpp" line="491"/>
         <source>S&amp;crollbar Layout</source>
         <translation>Tata letak Scrollbar</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="502"/>
+        <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;BlockCursor</source>
         <translation>&amp;BlokKursor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="505"/>
         <source>&amp;UnderlineCursor</source>
         <translation>&amp;Garis Bawah Kursor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="506"/>
         <source>&amp;IBeamCursor</source>
         <translation>&amp;Gaya IBeam Pada Kursor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="521"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>Bentuk Kursor &amp;Keyboard</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="625"/>
+        <location filename="../mainwindow.cpp" line="627"/>
         <source>Exit QTerminal</source>
         <translation>Keluar dari QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="629"/>
         <source>Do not ask again</source>
         <translation>Jangan tanyakan lagi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="635"/>
+        <location filename="../mainwindow.cpp" line="637"/>
         <source>Are you sure you want to exit?</source>
         <translation>Apakah anda yakin ingin keluar?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="662"/>
         <source>About</source>
         <translation>Tentang</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Terminal emulator multiplatform yang ringan dan kuat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="666"/>
         <source>Copyright (C) </source>
         <translation>Hak cipta </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="666"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="668"/>
         <source>LXQt Project</source>
         <translation>Proyek LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="670"/>
         <source>Development: </source>
         <translation>Pengembang: </translation>
     </message>

@@ -36,329 +36,329 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="89"/>
+        <location filename="../mainwindow.cpp" line="91"/>
         <source>Bookmarks</source>
         <translation>Marcadors</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="191"/>
+        <location filename="../mainwindow.cpp" line="193"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>Premeu «%1» per veure el terminal.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="240"/>
+        <location filename="../mainwindow.cpp" line="242"/>
         <source>&amp;Next Tab</source>
         <translation>Pesta&amp;nya següent</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="243"/>
+        <location filename="../mainwindow.cpp" line="245"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Pestanya anterior</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="252"/>
+        <location filename="../mainwindow.cpp" line="254"/>
         <source>Move Tab &amp;Left</source>
         <translation>Mou la pestanya a &amp;l&apos;esquerra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="255"/>
+        <location filename="../mainwindow.cpp" line="257"/>
         <source>Move Tab &amp;Right</source>
         <translation>Mou la pestanya a la d&amp;reta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>Divideix &amp;horitzontalment el terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>Divideix &amp;verticalment el terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="282"/>
+        <location filename="../mainwindow.cpp" line="284"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;Col·lapsa el subterminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="233"/>
+        <location filename="../mainwindow.cpp" line="235"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>Neteja el terminal a&amp;ctiu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="172"/>
+        <location filename="../mainwindow.cpp" line="174"/>
         <source>Keep window open when it loses focus</source>
         <translation>Mantén la finestra oberta en perdre el focus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="246"/>
+        <location filename="../mainwindow.cpp" line="248"/>
         <source>&amp;Previous Tab in History</source>
         <translation>&amp;Pestanya anterior a l&apos;historial</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="249"/>
+        <location filename="../mainwindow.cpp" line="251"/>
         <source>&amp;Next Tab in History</source>
         <translation>Pestanya següe&amp;nt a l&apos;historial</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="260"/>
+        <location filename="../mainwindow.cpp" line="262"/>
         <source>Tab</source>
         <translation>Pestanya</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="261"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <source>Go to</source>
         <translation>Vés a</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="285"/>
+        <location filename="../mainwindow.cpp" line="287"/>
         <source>&amp;Top Subterminal</source>
         <translation>Sub&amp;terminal superior</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="288"/>
+        <location filename="../mainwindow.cpp" line="290"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>Subterminal in&amp;ferior</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="291"/>
+        <location filename="../mainwindow.cpp" line="293"/>
         <source>L&amp;eft Subterminal</source>
         <translation>Subterminal &amp;esquerre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="296"/>
         <source>R&amp;ight Subterminal</source>
         <translation>Subterm&amp;inal dret</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="301"/>
+        <location filename="../mainwindow.cpp" line="303"/>
         <source>Copy &amp;Selection</source>
         <translation>Copia la &amp;selecció</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="306"/>
         <source>Paste Clip&amp;board</source>
         <translation>Enganxa el p&amp;orta-retalls</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="307"/>
+        <location filename="../mainwindow.cpp" line="309"/>
         <source>Paste S&amp;election</source>
         <translation>Enganxa la s&amp;elecció</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="310"/>
+        <location filename="../mainwindow.cpp" line="312"/>
         <source>Zoom &amp;in</source>
         <translation>Ampl&amp;ia el zoom</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="315"/>
         <source>Zoom &amp;out</source>
         <translation>Redueix el z&amp;oom</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="316"/>
+        <location filename="../mainwindow.cpp" line="318"/>
         <source>Zoom rese&amp;t</source>
         <translation>Res&amp;tableix el zoom</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="321"/>
+        <location filename="../mainwindow.cpp" line="323"/>
         <source>&amp;Find...</source>
         <translation>&amp;Troba...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
+        <location filename="../mainwindow.cpp" line="326"/>
         <source>Handle history...</source>
         <translation>Gestiona l&apos;històric...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="332"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>&amp;Save Session</source>
         <translation>De&amp;sa la sessió</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="338"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;Load Session</source>
         <translation>Carrega &amp;la sessió</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="345"/>
+        <location filename="../mainwindow.cpp" line="347"/>
         <source>&amp;Toggle Menu</source>
         <translation>Commu&amp;ta el menú</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="350"/>
+        <location filename="../mainwindow.cpp" line="352"/>
         <source>Rename session</source>
         <translation>Reanomena la sessió</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="359"/>
+        <location filename="../mainwindow.cpp" line="361"/>
         <source>&amp;New Tab</source>
         <translation>Pestanya &amp;nova</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Pestanya nova a partir d&apos;una de &amp;preestablerta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="364"/>
+        <location filename="../mainwindow.cpp" line="366"/>
         <source>1 &amp;Terminal</source>
         <translation>1 &amp;terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="368"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 terminals &amp;horitzontals</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="368"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 terminals &amp;verticals</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="372"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 terminal&amp;s</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="376"/>
+        <location filename="../mainwindow.cpp" line="378"/>
         <source>&amp;Close Tab</source>
         <translation>Tan&amp;ca la pestanya</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="379"/>
+        <location filename="../mainwindow.cpp" line="381"/>
         <source>&amp;New Window</source>
         <translation>Finestra &amp;nova</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="384"/>
+        <location filename="../mainwindow.cpp" line="386"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Preferències...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="388"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>&amp;Quit</source>
         <translation>S&amp;urt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="394"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Oculta les vores de la finestra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>&amp;Show Tab Bar</source>
         <translation>Mo&amp;stra la barra de les pestanyes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="420"/>
+        <location filename="../mainwindow.cpp" line="422"/>
         <source>Fullscreen</source>
         <translation>Pantalla completa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="426"/>
+        <location filename="../mainwindow.cpp" line="428"/>
         <source>Toggle Bookmarks</source>
         <translation>Commuta els marcadors</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="434"/>
+        <location filename="../mainwindow.cpp" line="436"/>
         <source>&amp;Bottom</source>
         <translation>&amp;Inferior</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="435"/>
+        <location filename="../mainwindow.cpp" line="437"/>
         <source>&amp;Top</source>
         <translation>&amp;Superior</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
-        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="438"/>
+        <location filename="../mainwindow.cpp" line="474"/>
         <source>&amp;Right</source>
         <translation>&amp;Dreta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="437"/>
-        <location filename="../mainwindow.cpp" line="473"/>
+        <location filename="../mainwindow.cpp" line="439"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>&amp;Left</source>
         <translation>&amp;Esquerra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="457"/>
         <source>&amp;Tabs Layout</source>
         <translation>Disposició de les pes&amp;tanyes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="471"/>
+        <location filename="../mainwindow.cpp" line="473"/>
         <source>&amp;None</source>
         <translation>Se&amp;nse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="489"/>
+        <location filename="../mainwindow.cpp" line="491"/>
         <source>S&amp;crollbar Layout</source>
         <translation>Disposi&amp;ció de la barra de desplaçament</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="502"/>
+        <location filename="../mainwindow.cpp" line="504"/>
         <source>&amp;BlockCursor</source>
         <translation>Cursor de &amp;bloc</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="503"/>
+        <location filename="../mainwindow.cpp" line="505"/>
         <source>&amp;UnderlineCursor</source>
         <translation>Cursor de s&amp;ubratllat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="506"/>
         <source>&amp;IBeamCursor</source>
         <translation>Cursor de biga &amp;I</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="521"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Forma del cursor del teclat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="625"/>
+        <location filename="../mainwindow.cpp" line="627"/>
         <source>Exit QTerminal</source>
         <translation>Sortida de QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="629"/>
         <source>Do not ask again</source>
         <translation>No tornis a preguntar-ho</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="635"/>
+        <location filename="../mainwindow.cpp" line="637"/>
         <source>Are you sure you want to exit?</source>
         <translation>Esteu segur que voleu sortir?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="662"/>
         <source>About</source>
         <translation>Quant a</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="664"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Un emulador de terminal lleuger i multiplataforma</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="666"/>
         <source>Copyright (C) </source>
         <translation>Copyright (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="666"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="668"/>
         <source>LXQt Project</source>
         <translation>Projecte LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="670"/>
         <source>Development: </source>
         <translation>Desenvolupament: </translation>
     </message>
