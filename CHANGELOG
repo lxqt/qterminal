@@ -1,4 +1,4 @@
-qqterminal-2.0.0 / 2024-05-17
+qterminal-2.0.0 / 2024-05-17
 =============================
  * Ported to Qt6.
  * Initialized some variables.
@@ -14,7 +14,7 @@ qqterminal-2.0.0 / 2024-05-17
  * Dropped `USE_QTERMWIDGET5/6`.
  * Silenced Qt6 compilation warnings.
 
-terminal-1.4.0 / 2023-11-05
+qterminal-1.4.0 / 2023-11-05
 =============================
  * Handled bell (BEL, '\a') via libcanberra, and added an "Audible bell" option.
  * Use `qWarning().noquote()`.
