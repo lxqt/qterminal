@@ -1,4 +1,20 @@
-qterminal-1.4.0 / 2023-11-05
+qqterminal-2.0.0 / 2024-05-17
+=============================
+ * Ported to Qt6.
+ * Initialized some variables.
+ * Initialized some members in constructors.
+ * Removed a duplicated `#include`.
+ * Removed nullity test before deleting a pointer.
+ * Used `default` to define trivial constructors.
+ * Added word characters option to preferences.
+ * Fixed inactive tab text with Qt6.
+ * Dropped `qAsConst`.
+ * Improved Qt translations loading.
+ * Removes unused libraries.
+ * Dropped `USE_QTERMWIDGET5/6`.
+ * Silenced Qt6 compilation warnings.
+
+terminal-1.4.0 / 2023-11-05
 =============================
  * Handled bell (BEL, '\a') via libcanberra, and added an "Audible bell" option.
  * Use `qWarning().noquote()`.
