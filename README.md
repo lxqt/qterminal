@@ -14,7 +14,7 @@ This project is licensed under the terms of the [GPLv2](https://www.gnu.org/lice
 
 Dependencies Qt ≥ 6.6.0 and [QTermWidget](https://github.com/lxqt/qtermwidget).
 Optional dependencies include [libcanberra](https://0pointer.net/lennart/projects/libcanberra/) for playing bells.
-In order to build CMake ≥ 3.16.0 and [lxqt-build-tools](https://github.com/lxqt/lxqt-build-tools) are needed as well as optionally Git to pull latest VCS checkouts.
+In order to build CMake ≥ 3.18.0 and [lxqt-build-tools](https://github.com/lxqt/lxqt-build-tools) are needed as well as optionally Git to pull latest VCS checkouts.
 
 Code configuration is handled by CMake. Building out of source is required. CMake variable `CMAKE_INSTALL_PREFIX` will normally have to be set to `/usr`.
 
@@ -22,7 +22,7 @@ To build run `make`, to install `make install` which accepts variable `DESTDIR` 
 
 ### Binary packages
 
-Official binary packages are provided by all major Linux and BSD distributions. 
+Official binary packages are provided by all major Linux and BSD distributions.
 Just use your package manager to search for string `qterminal`.
 
 
