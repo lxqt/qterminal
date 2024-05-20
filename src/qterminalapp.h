@@ -25,12 +25,14 @@ public:
     void setWorkingDirectory(const QString &wd);
 
     #ifdef HAVE_QDBUS
-    void registerOnDbus();
+    void registerOnDbus(bool dropDown);
     QList<QDBusObjectPath> getWindows();
     QDBusObjectPath newWindow(const QHash<QString,QVariant> &termArgs);
     QDBusObjectPath getActiveWindow();
     bool isDropMode();
     bool toggleDropdown();
+    void requestDropDown();
+    bool isPrimaryInstance();
     #endif
 
     static void cleanup();
@@ -39,6 +41,7 @@ private:
     QString m_workDir;
     QList<MainWindow *> m_windowList;
     static QTerminalApp *m_instance;
+    bool m_isPrimaryInstance = true;
     QTerminalApp(int &argc, char **argv);
     ~QTerminalApp() override{};
 };

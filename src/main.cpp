@@ -41,6 +41,9 @@
 
 const char* const short_options = "vhw:e:dp:";
 
+static const char* serviceName = "org.lxqt.QTerminal";
+static const char* ifaceName = "org.lxqt.QTerminal.Process";
+
 const struct option long_options[] = {
     {"version", 0, nullptr, 'v'},
     {"help",    0, nullptr, 'h'},
@@ -139,14 +142,21 @@ int main(int argc, char *argv[])
     QSettings::setDefaultFormat(QSettings::IniFormat);
 
     QTerminalApp *app = QTerminalApp::Instance(argc, argv);
-    #ifdef HAVE_QDBUS
-        app->registerOnDbus();
-    #endif
 
     QString workdir;
     QStringList shell_command;
     bool dropMode = false;
     parse_args(argc, argv, workdir, shell_command, dropMode);
+
+    #ifdef HAVE_QDBUS
+        app->registerOnDbus(dropMode);
+    #endif
+
+    if (!app->isPrimaryInstance())
+    {
+        app->requestDropDown();
+        return 0;
+    }
 
     Properties::Instance()->migrate_settings();
     Properties::Instance()->loadSettings();
@@ -282,7 +292,7 @@ QList<MainWindow *> QTerminalApp::getWindowList()
 }
 
 #ifdef HAVE_QDBUS
-void QTerminalApp::registerOnDbus()
+void QTerminalApp::registerOnDbus(bool dropDown)
 {
     if (!QDBusConnection::sessionBus().isConnected())
     {
@@ -291,14 +301,28 @@ void QTerminalApp::registerOnDbus()
                 "\teval `dbus-launch --auto-syntax`\n");
         return;
     }
-    QString serviceName = QStringLiteral("org.lxqt.QTerminal-%1").arg(getpid());
-    if (!QDBusConnection::sessionBus().registerService(serviceName))
+
+    if (dropDown)
     {
-        fprintf(stderr, "%s\n", qPrintable(QDBusConnection::sessionBus().lastError().message()));
-        return;
+        if (!QDBusConnection::sessionBus().registerService(QLatin1String(serviceName)))
+        {
+            m_isPrimaryInstance = false;
+            return;
+        }
+        new ProcessAdaptor(this);
+        QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
     }
-    new ProcessAdaptor(this);
-    QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
+    else
+    {
+        if (!QDBusConnection::sessionBus().registerService(QLatin1String(serviceName)
+                                                           + QStringLiteral("-%1").arg(getpid())))
+        {
+            fprintf(stderr, "%s\n", qPrintable(QDBusConnection::sessionBus().lastError().message()));
+            return;
+        }
+        new ProcessAdaptor(this);
+        QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
+    }
 }
 
 QList<QDBusObjectPath> QTerminalApp::getWindows()
@@ -345,6 +369,18 @@ bool QTerminalApp::toggleDropdown() {
   }
   wnd->showHide();
   return true;
+}
+
+void QTerminalApp::requestDropDown()
+{
+    QDBusInterface iface(QLatin1String(serviceName),
+                         QStringLiteral("/"),
+                         QLatin1String(ifaceName), QDBusConnection::sessionBus(), this);
+    iface.call(QStringLiteral("toggleDropdown"));
+}
+
+bool QTerminalApp::isPrimaryInstance() {
+  return m_isPrimaryInstance;
 }
 
 
