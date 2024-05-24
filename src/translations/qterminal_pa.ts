@@ -58,22 +58,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="254"/>
         <source>Move Tab &amp;Left</source>
-        <translation type="unfinished"></translation>
+        <translation>ਟੈਬ ਖੱਬੇ ਪਾਸੇ ਭੇਜੋ(&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="257"/>
         <source>Move Tab &amp;Right</source>
-        <translation type="unfinished"></translation>
+        <translation>ਟੈਬ ਸੱਜੇ ਪਾਸੇ ਭੇਜੋ(&amp;R)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="276"/>
         <source>Split Terminal &amp;Horizontally</source>
-        <translation type="unfinished"></translation>
+        <translation>ਟਰਮੀਨਲ ਨੂੰ ਲੇਟਵੇਂ ਰੂਪ ਵਿੱਚ ਵੰਡੋ(&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="279"/>
         <source>Split Terminal &amp;Vertically</source>
-        <translation type="unfinished"></translation>
+        <translation>ਟਰਮੀਨਲ ਨੂੰ ਖੜ੍ਹਵੇਂ ਰੂਪ ਵਿੱਚ ਵੰਡੋ(&amp;V)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="284"/>
@@ -133,12 +133,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="303"/>
         <source>Copy &amp;Selection</source>
-        <translation type="unfinished"></translation>
+        <translation>ਚੋਣ ਦੀ ਕਾਪੀ ਕਰੋ(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="306"/>
         <source>Paste Clip&amp;board</source>
-        <translation type="unfinished"></translation>
+        <translation>ਕਲਿੱਪਬੋਰਡ ਨੂੰ ਚੇਪੋ(&amp;b)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
@@ -148,7 +148,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
         <source>Zoom &amp;in</source>
-        <translation type="unfinished"></translation>
+        <translation>ਜ਼ੂਮ ਇਨ(&amp;i)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="315"/>
@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="323"/>
         <source>&amp;Find...</source>
-        <translation type="unfinished"></translation>
+        <translation>...ਲੱਭੋ(&amp;F)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="326"/>
@@ -173,22 +173,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="334"/>
         <source>&amp;Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>ਸ਼ੈਸ਼ਨ ਨੂੰ ਸੰਭਾਲੋ(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
         <source>&amp;Load Session</source>
-        <translation type="unfinished"></translation>
+        <translation>ਸ਼ੈਸ਼ਨ ਨੂੰ ਲੋਡ ਕਰੋ(&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="347"/>
         <source>&amp;Toggle Menu</source>
-        <translation type="unfinished"></translation>
+        <translation>ਮੇਨੂ ਨੂੰ ਬਦਲੋ(&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="352"/>
         <source>Rename session</source>
-        <translation type="unfinished"></translation>
+        <translation>ਸ਼ੈਸ਼ਨ ਦਾ ਨਾਂ ਬਦਲੋ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="361"/>
@@ -223,7 +223,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
         <source>&amp;Close Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>ਟੈਬ ਨੂੰ ਬੰਦ ਕਰੋ(&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
@@ -455,7 +455,7 @@
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <location filename="../forms/propertiesdialog.ui" line="390"/>
         <source> %</source>
-        <translation type="unfinished"></translation>
+        <translation> %</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="127"/>
