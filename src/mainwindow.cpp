@@ -44,6 +44,9 @@
 #include "qterminalapp.h"
 #include "dbusaddressable.h"
 
+#include <LayerShellQt/Shell>
+#include <LayerShellQt/Window>
+
 typedef std::function<bool(MainWindow&, QAction *)> checkfn;
 Q_DECLARE_METATYPE(checkfn)
 
@@ -168,6 +171,21 @@ MainWindow::~MainWindow()
 
 void MainWindow::enableDropMode()
 {
+    if (QGuiApplication::platformName() == QStringLiteral("wayland"))
+    {
+        winId();
+        if (QWindow *win = windowHandle())
+        {
+            if (LayerShellQt::Window* layershell = LayerShellQt::Window::get(win))
+            {
+                layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
+                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
+                layershell->setAnchors(anchors);
+            }
+        }
+    }
+
     setWindowFlags(Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint);
 
     m_dropLockButton = new QToolButton(this);
