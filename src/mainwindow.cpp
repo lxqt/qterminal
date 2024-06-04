@@ -620,6 +620,8 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         // the session is ended explicitly (e.g., by ctrl-d); prompt doesn't make sense
         || consoleTabulator->terminalHolder()->findChildren<TermWidget*>().count() == 0)
     {
+        disconnect(m_bookmarksDock, &QDockWidget::visibilityChanged,
+                   this, &MainWindow::bookmarksDock_visibilityChanged); // prevent crash
         // #80 - do not save state and geometry in drop mode
         if (!m_dropMode) {
             if (Properties::Instance()->savePosOnExit) {
@@ -658,6 +660,8 @@ void MainWindow::closeEvent(QCloseEvent *ev)
     dia->setLayout(lay);
 
     if (dia->exec() == QDialog::Accepted) {
+        disconnect(m_bookmarksDock, &QDockWidget::visibilityChanged,
+                   this, &MainWindow::bookmarksDock_visibilityChanged);
         Properties::Instance()->mainWindowPosition = pos();
         Properties::Instance()->mainWindowSize = size();
         Properties::Instance()->mainWindowState = saveState();
