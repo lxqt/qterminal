@@ -233,7 +233,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="386"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Præferencer...</translation>
+        <translation>&amp;Indstillinger...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="390"/>
@@ -345,7 +345,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="666"/>
         <source>Copyright (C) </source>
-        <translation>Copyright (C) </translation>
+        <translation>Ophavsret (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="666"/>
@@ -646,12 +646,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="344"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation>Angiv om tegn der tegnes i en boks skal tegnes af QTerminal internt eller af underliggende skriftgengivelse.</translation>
+        <translation>Angiv om tegn der tegnes i en boks skal tegnes af QTerminal internt eller af underliggende skrifttypegengivelsesbiblioteker.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation>Slår anvendelse af fed skrift til gengivelse af intense farver til/fra</translation>
+        <translation>Skift anvendelse af fed skrift til gengivelse af intense farver til/fra</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="241"/>
@@ -671,7 +671,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="817"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>Kommandoen køres med et argument der indeholder filnavnet på en midlertidig fil der med tilbagerulningshistorikken</translation>
+        <translation>Kommandoen køres med et argument der indeholder filnavnet på en midlertidig fil der indeholder tilbagerulningshistorikken</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="820"/>
