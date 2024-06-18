@@ -763,7 +763,7 @@ void MainWindow::realign()
                         desktop.height() * Properties::Instance()->dropHeight / 100);
         g.moveCenter(desktop.center());
         // do not use 0 here - we need to calculate with potential panel on top
-        g.setTop(desktop.top());
+        g.moveTop(desktop.top());
         if (g != geometry()) {
             setGeometry(g);
         }
