@@ -1,3 +1,9 @@
+qterminal-2.0.1 / 2024-06-27
+=============================
+ * Single instance for drop-down mode.
+ * Prevented a crash on entering `exit` when bookmark dock is shown.
+ * Fixed the window height in drop-down mode.
+
 qterminal-2.0.0 / 2024-05-17
 =============================
  * Ported to Qt6.
