@@ -9,7 +9,7 @@ project(qterminal)
 include(GNUInstallDirs)
 
 # qterminal version
-set(QTERMINAL_VERSION "2.0.0")
+set(QTERMINAL_VERSION "2.0.1")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 option(BUILD_TESTS "Builds tests" ON)
@@ -22,6 +22,7 @@ endif()
 
 # Minimum Versions
 set(LXQTBT_MINIMUM_VERSION "2.0.0")
+set(QTERMWIDGET_MINIMUM_VERSION "2.0.1")
 set(QT_MINIMUM_VERSION "6.6.0")
 set(QT_MAJOR_VERSION "6")
 set(SHELLQT_MINIMUM_VERSION "6.0.0")
