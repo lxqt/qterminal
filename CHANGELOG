@@ -1,6 +1,7 @@
 qterminal-2.0.1 / 2024-06-27
 =============================
  * Single instance for drop-down mode.
+ * Used layer shell for the drop-down mode under Wayland.
  * Prevented a crash on entering `exit` when bookmark dock is shown.
  * Fixed the window height in drop-down mode.
  * Set `QTERMWIDGET_MINIMUM_VERSION`, which was missing after Qt6 port.
