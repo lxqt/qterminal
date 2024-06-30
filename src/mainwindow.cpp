@@ -633,6 +633,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
             Properties::Instance()->windowMaximized = isMaximized();
             Properties::Instance()->mainWindowState = saveState();
         }
+        rebuildActions(); // shortcuts may have changed by another running instance
         Properties::Instance()->saveSettings();
         for (int i = consoleTabulator->count(); i > 0; --i) {
             consoleTabulator->removeTab(i - 1);
@@ -667,6 +668,7 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         Properties::Instance()->mainWindowState = saveState();
         Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
         Properties::Instance()->windowMaximized = isMaximized();
+        rebuildActions();
         Properties::Instance()->saveSettings();
         for (int i = consoleTabulator->count(); i > 0; --i) {
             consoleTabulator->removeTab(i - 1);

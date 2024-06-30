@@ -87,7 +87,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
 
     protected:
         void setupShortcuts();
-        void saveShortcuts();
+        void applyShortcuts();
 };
 
 

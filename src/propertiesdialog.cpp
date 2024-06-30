@@ -368,9 +368,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->historyLimited = historyLimited->isChecked();
     Properties::Instance()->historyLimitedTo = historyLimitedTo->value();
 
-    saveShortcuts();
-
-    Properties::Instance()->saveSettings();
+    applyShortcuts();
 
     Properties::Instance()->dropShowOnStart = dropShowOnStartCheckBox->isChecked();
     Properties::Instance()->dropKeepOpen = dropKeepOpenCheckBox->isChecked();
@@ -379,10 +377,6 @@ void PropertiesDialog::apply()
     Properties::Instance()->dropShortCut = dropShortCutEdit->keySequence();
 
     Properties::Instance()->useBookmarks = useBookmarksCheckBox->isChecked();
-    saveBookmarksFile();
-    // NOTE: Because the path of the bookmarks file may be changed by saveBookmarksFile(),
-    // it should be saved only after that.
-    Properties::Instance()->bookmarksFile = bookmarksLineEdit->text();
 
     Properties::Instance()->terminalsPreset = terminalPresetComboBox->currentIndex();
 
@@ -394,6 +388,13 @@ void PropertiesDialog::apply()
     Properties::Instance()->trimPastedTrailingNewlines = trimPastedTrailingNewlinesCheckBox->isChecked();
     Properties::Instance()->confirmMultilinePaste = confirmMultilinePasteCheckBox->isChecked();
     Properties::Instance()->wordCharacters = wordCharactersLineEdit->text();
+
+    saveBookmarksFile();
+    // NOTE: Because the path of the bookmarks file may be changed by saveBookmarksFile(),
+    // it should be saved only after that.
+    Properties::Instance()->bookmarksFile = bookmarksLineEdit->text();
+
+    Properties::Instance()->saveSettings();
 
     emit propertiesChanged();
 }
@@ -424,9 +425,14 @@ void PropertiesDialog::chooseBackgroundImageButton_clicked()
         backgroundImageLineEdit->setText(filename);
 }
 
-void PropertiesDialog::saveShortcuts()
+void PropertiesDialog::applyShortcuts()
 {
-    QMap<QString, QAction*> actions = QTerminalApp::Instance()->getWindowList()[0]->leaseActions();
+    auto winList = QTerminalApp::Instance()->getWindowList();
+    if (winList.isEmpty())
+    {
+        return;
+    }
+    QMap<QString, QAction*> actions = winList.at(0)->leaseActions();
     QList< QString > shortcutKeys = actions.keys();
     int shortcutCount = shortcutKeys.count();
 
@@ -452,14 +458,21 @@ void PropertiesDialog::saveShortcuts()
             shortcuts.append(QKeySequence(sequenceString, QKeySequence::NativeText));
         keyAction->setShortcuts(shortcuts);
     }
-    Properties::Instance()->saveSettings();
 }
 
 void PropertiesDialog::setupShortcuts()
 {
+    auto winList = QTerminalApp::Instance()->getWindowList();
+    if (winList.isEmpty())
+    {
+        return;
+    }
+    // shortcuts may have changed by another running instance
+    winList.at(0)->rebuildActions();
+
     shortcutsWidget->setSortingEnabled(false);
 
-    QMap<QString, QAction*> actions = QTerminalApp::Instance()->getWindowList()[0]->leaseActions();
+    QMap<QString, QAction*> actions = winList.at(0)->leaseActions();
     QList< QString > shortcutKeys = actions.keys();
     int shortcutCount = shortcutKeys.count();
 
