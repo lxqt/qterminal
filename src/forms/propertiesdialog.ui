@@ -985,7 +985,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
        <item>
         <widget class="QLabel" name="waylandLabel">
          <property name="text">
-          <string>Note: On Wayland, you need to add the shortcut to the compositor settings for 'qterminal -d'.</string>
+          <string>Note: On Wayland, the shortcut has to be added in the compositor settings for 'qterminal -d'.</string>
          </property>
          <property name="wordWrap">
           <bool>true</bool>
