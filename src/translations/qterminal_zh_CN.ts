@@ -36,329 +36,329 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="378"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>&amp;Close Tab</source>
         <translation>关闭标签页(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>水平布局终端(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>清空活动终端(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>垂直布局终端(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="284"/>
+        <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>折叠布局子终端(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <source>&amp;Next Tab</source>
         <translation>下个标签页(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
+        <location filename="../mainwindow.cpp" line="192"/>
         <source>Keep window open when it loses focus</source>
         <translation>焦点失去时保持窗口开启</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="245"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <source>&amp;Previous Tab</source>
         <translation>最前终端页(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="266"/>
         <source>&amp;Previous Tab in History</source>
         <translation>历史中的前一个选项卡(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="269"/>
         <source>&amp;Next Tab in History</source>
         <translation>历史中的下一个选项卡(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="272"/>
         <source>Move Tab &amp;Left</source>
         <translation>往左边移动标签页(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="257"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>Move Tab &amp;Right</source>
         <translation>往右边移动标签页(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="280"/>
         <source>Tab</source>
         <translation>标签</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Go to</source>
         <translation>前往</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="305"/>
         <source>&amp;Top Subterminal</source>
         <translation>顶部子终端(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>底部子终端(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="311"/>
         <source>L&amp;eft Subterminal</source>
         <translation>左部子终端(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="296"/>
+        <location filename="../mainwindow.cpp" line="314"/>
         <source>R&amp;ight Subterminal</source>
         <translation>右部子终端(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="303"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>Copy &amp;Selection</source>
         <translation>复制选区(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="327"/>
         <source>Paste S&amp;election</source>
         <translation>粘贴选区(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="326"/>
+        <location filename="../mainwindow.cpp" line="344"/>
         <source>Handle history...</source>
         <translation>处理历史...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="352"/>
         <source>&amp;Save Session</source>
         <translation>保存会话(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="358"/>
         <source>&amp;Load Session</source>
         <translation>载入会话(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>Rename session</source>
         <translation>重命名会话</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>New Tab From &amp;Preset</source>
         <translation>新标签窗口(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>1 &amp;Terminal</source>
         <translation>单个终端窗口(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="368"/>
+        <location filename="../mainwindow.cpp" line="386"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>水平分割为2(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>垂直分割为2(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>4 Terminal&amp;s</source>
         <translation>分割4块(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="386"/>
+        <location filename="../mainwindow.cpp" line="404"/>
         <source>&amp;Preferences...</source>
         <translation>参数配置(&amp;P)...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="408"/>
         <source>&amp;Quit</source>
         <translation>退出(&amp;Q)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Toggle Bookmarks</source>
         <translation>切换书签</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source>&amp;Bottom</source>
         <translation>下(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="437"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>&amp;Top</source>
         <translation>上(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="438"/>
-        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="456"/>
+        <location filename="../mainwindow.cpp" line="492"/>
         <source>&amp;Right</source>
         <translation>右(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="439"/>
-        <location filename="../mainwindow.cpp" line="475"/>
+        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="493"/>
         <source>&amp;Left</source>
         <translation>左(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>&amp;Tabs Layout</source>
         <translation>标签位置(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="473"/>
+        <location filename="../mainwindow.cpp" line="491"/>
         <source>&amp;None</source>
         <translation>空(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="491"/>
+        <location filename="../mainwindow.cpp" line="509"/>
         <source>S&amp;crollbar Layout</source>
         <translation>滚动条位置(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;BlockCursor</source>
         <translation>块状光标(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="505"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>&amp;UnderlineCursor</source>
         <translation>下划线状光标(&amp;U)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="506"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>&amp;IBeamCursor</source>
         <translation>条状光标(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="523"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>光标样式(&amp;K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="647"/>
         <source>Exit QTerminal</source>
         <translation>退出程序</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="629"/>
+        <location filename="../mainwindow.cpp" line="649"/>
         <source>Do not ask again</source>
         <translation>不要再次问我</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="637"/>
+        <location filename="../mainwindow.cpp" line="657"/>
         <source>Are you sure you want to exit?</source>
         <translation>您真的要关闭本程序吗?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="684"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>轻量级多平台支持的终端模拟器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>Copyright (C) </source>
         <translation>版权 (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>LXQt Project</source>
         <translation>LXQt 项目</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>Development: </source>
         <translation>开发： </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="91"/>
+        <location filename="../mainwindow.cpp" line="94"/>
         <source>Bookmarks</source>
         <translation>书签</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="193"/>
+        <location filename="../mainwindow.cpp" line="211"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>按下&quot;%1&quot;显示该终端。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>Paste Clip&amp;board</source>
         <translation>粘贴剪切板内容(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="330"/>
         <source>Zoom &amp;in</source>
         <translation>放大(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
+        <location filename="../mainwindow.cpp" line="333"/>
         <source>Zoom &amp;out</source>
         <translation>缩小(&amp;O)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>Zoom rese&amp;t</source>
         <translation>重置大小(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
+        <location filename="../mainwindow.cpp" line="341"/>
         <source>&amp;Find...</source>
         <translation>搜索(&amp;F)...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="347"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>&amp;Toggle Menu</source>
         <translation>下拉菜单(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="361"/>
+        <location filename="../mainwindow.cpp" line="379"/>
         <source>&amp;New Tab</source>
         <translation>新建标签页(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="381"/>
+        <location filename="../mainwindow.cpp" line="399"/>
         <source>&amp;New Window</source>
         <translation>新建窗口(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>&amp;Hide Window Borders</source>
         <translation>隐藏窗口边框(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="432"/>
         <source>&amp;Show Tab Bar</source>
         <translation>显示标签栏(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="422"/>
+        <location filename="../mainwindow.cpp" line="440"/>
         <source>Fullscreen</source>
         <translation>全屏显示</translation>
     </message>
@@ -746,17 +746,22 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>宽度</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1046"/>
+        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="1056"/>
         <source>Edit bookmark file contents</source>
         <translation>编辑书签文件内容</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1005"/>
+        <location filename="../forms/propertiesdialog.ui" line="1015"/>
         <source>Enable bookmarks</source>
         <translation>启用书签功能</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1014"/>
+        <location filename="../forms/propertiesdialog.ui" line="1024"/>
         <source>Bookmark file</source>
         <translation>书签文件</translation>
     </message>
@@ -817,12 +822,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>快捷键:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1027"/>
+        <location filename="../forms/propertiesdialog.ui" line="1037"/>
         <source>Find...</source>
         <translation>搜索...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1036"/>
+        <location filename="../forms/propertiesdialog.ui" line="1046"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>您可以指定书签保存位置，它很容易通过私有云或者Dropbox分享。</translation>
     </message>
@@ -889,61 +894,61 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>Examples</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="422"/>
+        <location filename="../propertiesdialog.cpp" line="424"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>图片 (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="512"/>
+        <location filename="../propertiesdialog.cpp" line="514"/>
         <source>Open bookmarks file</source>
         <translation>打开书签文件</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="514"/>
+        <location filename="../propertiesdialog.cpp" line="516"/>
         <source>XML files (*.xml)</source>
         <translation>XML files (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="515"/>
+        <location filename="../propertiesdialog.cpp" line="517"/>
         <source>All files (*)</source>
         <translation>所有文件 (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
-        <location filename="../propertiesdialog.cpp" line="618"/>
+        <location filename="../propertiesdialog.cpp" line="616"/>
+        <location filename="../propertiesdialog.cpp" line="620"/>
         <source>Question</source>
         <translation>疑问</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="616"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>你想覆盖此书签文件吗？</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="618"/>
+        <location filename="../propertiesdialog.cpp" line="620"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>书签文件的名称没有以&apos;.xml&apos;结尾。
 你确定你要覆盖它吗？</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="626"/>
+        <location filename="../propertiesdialog.cpp" line="628"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="626"/>
+        <location filename="../propertiesdialog.cpp" line="628"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>无法将书签写入此文件:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="206"/>
-        <location filename="../propertiesdialog.cpp" line="317"/>
+        <location filename="../propertiesdialog.cpp" line="319"/>
         <source>System Default</source>
         <translation>系统默认</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="421"/>
+        <location filename="../propertiesdialog.cpp" line="423"/>
         <source>Choose a background image</source>
         <translation>选择背景图片</translation>
     </message>

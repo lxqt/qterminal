@@ -36,329 +36,329 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="91"/>
+        <location filename="../mainwindow.cpp" line="94"/>
         <source>Bookmarks</source>
         <translation>Suosikit</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="193"/>
+        <location filename="../mainwindow.cpp" line="211"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>Paina &quot;%1&quot; avataksesi päätteen.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;Seuraava välilehti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="245"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Edellinen välilehti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="272"/>
         <source>Move Tab &amp;Left</source>
         <translation>Siirrä välilehti &amp;vasemmalle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="257"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>Move Tab &amp;Right</source>
         <translation>Siirrä välilehti &amp;oikealle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>Jaa pääte vaakas&amp;uunnassa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>Jaa pääte p&amp;ystysuunnassa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="284"/>
+        <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;Pienennä alapääte</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>&amp;Tyhjennä aktiivinen pääte</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
+        <location filename="../mainwindow.cpp" line="192"/>
         <source>Keep window open when it loses focus</source>
         <translation>Jätä auki aktiivisen ikkunan vaihtuessa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="266"/>
         <source>&amp;Previous Tab in History</source>
         <translation>&amp;Viimeksi käytetty välilehti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="269"/>
         <source>&amp;Next Tab in History</source>
         <translation>&amp;Seuraavaksi käytetty välilehti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="280"/>
         <source>Tab</source>
         <translation>Välilehti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Go to</source>
         <translation>Siirry</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="305"/>
         <source>&amp;Top Subterminal</source>
         <translation>&amp;Ylempi alipääte</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>&amp;Alempi alipääte</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="311"/>
         <source>L&amp;eft Subterminal</source>
         <translation>&amp;Vasen alipääte</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="296"/>
+        <location filename="../mainwindow.cpp" line="314"/>
         <source>R&amp;ight Subterminal</source>
         <translation>&amp;Oikea alipääte</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="303"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>Copy &amp;Selection</source>
         <translation>&amp;Kopioi valinta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>Paste Clip&amp;board</source>
         <translation>&amp;Liitä leikepöytä</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="327"/>
         <source>Paste S&amp;election</source>
         <translation>Liitä v&amp;alinta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="330"/>
         <source>Zoom &amp;in</source>
         <translation>Lä&amp;hennä</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
+        <location filename="../mainwindow.cpp" line="333"/>
         <source>Zoom &amp;out</source>
         <translation>Loito&amp;nna</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>Zoom rese&amp;t</source>
         <translation>Palauta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
+        <location filename="../mainwindow.cpp" line="341"/>
         <source>&amp;Find...</source>
         <translation>&amp;Etsi...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="326"/>
+        <location filename="../mainwindow.cpp" line="344"/>
         <source>Handle history...</source>
         <translation>Käsittele historiaa...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="352"/>
         <source>&amp;Save Session</source>
         <translation>Tallenna i&amp;stunto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="358"/>
         <source>&amp;Load Session</source>
         <translation>&amp;Lataa istunto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="347"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>&amp;Toggle Menu</source>
         <translation>&amp;Näytä valikko</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>Rename session</source>
         <translation>Nimeä istunto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="361"/>
+        <location filename="../mainwindow.cpp" line="379"/>
         <source>&amp;New Tab</source>
         <translation>&amp;Uusi välilehti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Uusi välilehti &amp;pikavalinnasta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>1 &amp;Terminal</source>
         <translation>1 &amp;pääte</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="368"/>
+        <location filename="../mainwindow.cpp" line="386"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 päätettä &amp;vaakasuorassa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 päätettä &amp;pystysuorassa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 pää&amp;tettä</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="378"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>&amp;Close Tab</source>
         <translation>&amp;Sulje välilehti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="381"/>
+        <location filename="../mainwindow.cpp" line="399"/>
         <source>&amp;New Window</source>
         <translation>&amp;Uusi ikkuna</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="386"/>
+        <location filename="../mainwindow.cpp" line="404"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Asetukset...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="408"/>
         <source>&amp;Quit</source>
         <translation>&amp;Lopeta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Piilota ikkunan reunat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="432"/>
         <source>&amp;Show Tab Bar</source>
         <translation>&amp;Näytä välilehtipalkki</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="422"/>
+        <location filename="../mainwindow.cpp" line="440"/>
         <source>Fullscreen</source>
         <translation>Koko näyttö</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Toggle Bookmarks</source>
         <translation>Vaihda kirjanmerkkejä</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source>&amp;Bottom</source>
         <translation>&amp;Alhaalla</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="437"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>&amp;Top</source>
         <translation>&amp;Ylhäällä</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="438"/>
-        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="456"/>
+        <location filename="../mainwindow.cpp" line="492"/>
         <source>&amp;Right</source>
         <translation>&amp;Oikealla</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="439"/>
-        <location filename="../mainwindow.cpp" line="475"/>
+        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="493"/>
         <source>&amp;Left</source>
         <translation>&amp;Vasemmalla</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;Välilehtien asettelu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="473"/>
+        <location filename="../mainwindow.cpp" line="491"/>
         <source>&amp;None</source>
         <translation>&amp;Ei mitään</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="491"/>
+        <location filename="../mainwindow.cpp" line="509"/>
         <source>S&amp;crollbar Layout</source>
         <translation>Vierityspalkin asettelu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;BlockCursor</source>
         <translation>&amp;Laatikko</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="505"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>&amp;UnderlineCursor</source>
         <translation>&amp;Vaakaviiva</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="506"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>&amp;IBeamCursor</source>
         <translation>&amp;Pystyviiva</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="523"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Näppäimistön osoittimen muoto</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="647"/>
         <source>Exit QTerminal</source>
         <translation>Poistu QTerminalista</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="629"/>
+        <location filename="../mainwindow.cpp" line="649"/>
         <source>Do not ask again</source>
         <translation>Älä kysy uudelleen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="637"/>
+        <location filename="../mainwindow.cpp" line="657"/>
         <source>Are you sure you want to exit?</source>
         <translation>Haluatko varmasti poistua?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="684"/>
         <source>About</source>
         <translation>Tietoa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Kevyt ja tehokas pääte-emulaattori</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>Copyright (C) </source>
         <translation>Tekijänoikeus (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>LXQt Project</source>
         <translation>LXQt-hanke</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>Development: </source>
         <translation>Kehitys: </translation>
     </message>
@@ -801,27 +801,32 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
         <translation>Pikanäppäin:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1046"/>
+        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="1056"/>
         <source>Edit bookmark file contents</source>
         <translation>Muokkaa kirjainmerkkitiedoston sisältöä</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1005"/>
+        <location filename="../forms/propertiesdialog.ui" line="1015"/>
         <source>Enable bookmarks</source>
         <translation>Ota kirjainmerkit käyttöön</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1014"/>
+        <location filename="../forms/propertiesdialog.ui" line="1024"/>
         <source>Bookmark file</source>
         <translation>Kirjainmerkki tiedosto</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1027"/>
+        <location filename="../forms/propertiesdialog.ui" line="1037"/>
         <source>Find...</source>
         <translation>Hae...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1036"/>
+        <location filename="../forms/propertiesdialog.ui" line="1046"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Voit määritellä kirjainmerkkitiedoston sijainnin tässä. Tämä mahdollistaa helpon jakamisen esimerkiksi OwnCloudin tai DropBoxin kautta.</translation>
     </message>
@@ -888,61 +893,61 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
         <translation>Esimerkit</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="422"/>
+        <location filename="../propertiesdialog.cpp" line="424"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Kuvat (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="512"/>
+        <location filename="../propertiesdialog.cpp" line="514"/>
         <source>Open bookmarks file</source>
         <translation>Avaa krjanmerkkitiedosto</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="514"/>
+        <location filename="../propertiesdialog.cpp" line="516"/>
         <source>XML files (*.xml)</source>
         <translation>XML-tiedostot (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="515"/>
+        <location filename="../propertiesdialog.cpp" line="517"/>
         <source>All files (*)</source>
         <translation>Kaikki tiedostot (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
-        <location filename="../propertiesdialog.cpp" line="618"/>
+        <location filename="../propertiesdialog.cpp" line="616"/>
+        <location filename="../propertiesdialog.cpp" line="620"/>
         <source>Question</source>
         <translation>Kysymys</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="616"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Haluatko korvata tämän kirjanmerkkitiedoston?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="618"/>
+        <location filename="../propertiesdialog.cpp" line="620"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Kirjanmerkkitiedoston pääte ei ole &apos;.xml&apos;.
 Haluatko varmasti korvata sen?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="626"/>
+        <location filename="../propertiesdialog.cpp" line="628"/>
         <source>Warning</source>
         <translation>Varoitus</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="626"/>
+        <location filename="../propertiesdialog.cpp" line="628"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Kirjanmerkkejä ei voi kirjoittaa tähän tiedostoon:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="206"/>
-        <location filename="../propertiesdialog.cpp" line="317"/>
+        <location filename="../propertiesdialog.cpp" line="319"/>
         <source>System Default</source>
         <translation>Järjestelmän oletus</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="421"/>
+        <location filename="../propertiesdialog.cpp" line="423"/>
         <source>Choose a background image</source>
         <translation>Valitse taustakuva</translation>
     </message>

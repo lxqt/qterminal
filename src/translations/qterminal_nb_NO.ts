@@ -36,329 +36,329 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="91"/>
+        <location filename="../mainwindow.cpp" line="94"/>
         <source>Bookmarks</source>
         <translation>Bokmerker</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="193"/>
+        <location filename="../mainwindow.cpp" line="211"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>Trykk på &quot;%1&quot; for å se terminalen.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;Neste fane</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="245"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Forrige fane</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="272"/>
         <source>Move Tab &amp;Left</source>
         <translation>Flytt fane til &amp;venstre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="257"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>Move Tab &amp;Right</source>
         <translation>Flytt fane til &amp;høyre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>Del opp terminalen &amp;horisontalt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>Del opp terminalen &amp;vertikalt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="284"/>
+        <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;Brett sammen underterminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>&amp;Ta vekk alt fra aktiv terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
+        <location filename="../mainwindow.cpp" line="192"/>
         <source>Keep window open when it loses focus</source>
         <translation>Hold vindu åpent når det mister fokus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="266"/>
         <source>&amp;Previous Tab in History</source>
         <translation>&amp;Forrige fane i historikk</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="269"/>
         <source>&amp;Next Tab in History</source>
         <translation>&amp;Neste fane i historikk</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="280"/>
         <source>Tab</source>
         <translation>Tabulatur</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Go to</source>
         <translation>Gå til</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="305"/>
         <source>&amp;Top Subterminal</source>
         <translation>&amp;Øverste underterminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>&amp;Nederste underterminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="311"/>
         <source>L&amp;eft Subterminal</source>
         <translation>&amp;Venstre underterminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="296"/>
+        <location filename="../mainwindow.cpp" line="314"/>
         <source>R&amp;ight Subterminal</source>
         <translation>&amp;Høyre underterminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="303"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>Copy &amp;Selection</source>
         <translation>Kopier &amp;markering</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>Paste Clip&amp;board</source>
         <translation>Lim inn fra &amp;utklippstavlen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="327"/>
         <source>Paste S&amp;election</source>
         <translation>Lim inn m&amp;arkering</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="330"/>
         <source>Zoom &amp;in</source>
         <translation>Zoom &amp;inn</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
+        <location filename="../mainwindow.cpp" line="333"/>
         <source>Zoom &amp;out</source>
         <translation>Zoom &amp;ut</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>Zoom rese&amp;t</source>
         <translation>&amp;Nullstill zoom</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
+        <location filename="../mainwindow.cpp" line="341"/>
         <source>&amp;Find...</source>
         <translation>&amp;Finn...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="326"/>
+        <location filename="../mainwindow.cpp" line="344"/>
         <source>Handle history...</source>
         <translation>Håndter historikk …</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="352"/>
         <source>&amp;Save Session</source>
         <translation>&amp;Lagre sesjon</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="358"/>
         <source>&amp;Load Session</source>
         <translation>Last &amp;inn sesjon</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="347"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>&amp;Toggle Menu</source>
         <translation>&amp;Skru meny av eller på</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>Rename session</source>
         <translation>Gi nytt navn til sesjon</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="361"/>
+        <location filename="../mainwindow.cpp" line="379"/>
         <source>&amp;New Tab</source>
         <translation>&amp;Ny fane</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Ny fane fra &amp;forhåndstinnstilling</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>1 &amp;Terminal</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="368"/>
+        <location filename="../mainwindow.cpp" line="386"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 &amp;Horisontale terminaler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 &amp;Vertikale terminaler</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 Terminal&amp;er</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="378"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>&amp;Close Tab</source>
         <translation>&amp;Lukk fane</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="381"/>
+        <location filename="../mainwindow.cpp" line="399"/>
         <source>&amp;New Window</source>
         <translation>&amp;Nytt vindu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="386"/>
+        <location filename="../mainwindow.cpp" line="404"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Innstillinger...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="408"/>
         <source>&amp;Quit</source>
         <translation>&amp;Avslutt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Skjul kanter rundt vinduer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="432"/>
         <source>&amp;Show Tab Bar</source>
         <translation>&amp;Vis fanelinjen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="422"/>
+        <location filename="../mainwindow.cpp" line="440"/>
         <source>Fullscreen</source>
         <translation>Fullskjerm</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Toggle Bookmarks</source>
         <translation>Skru bokmerker av eller på</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source>&amp;Bottom</source>
         <translation>&amp;Nederst</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="437"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>&amp;Top</source>
         <translation>&amp;Øverst</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="438"/>
-        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="456"/>
+        <location filename="../mainwindow.cpp" line="492"/>
         <source>&amp;Right</source>
         <translation>&amp;Høyre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="439"/>
-        <location filename="../mainwindow.cpp" line="475"/>
+        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="493"/>
         <source>&amp;Left</source>
         <translation>&amp;Venstre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>&amp;Tabs Layout</source>
         <translation>Layout for &amp;faner</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="473"/>
+        <location filename="../mainwindow.cpp" line="491"/>
         <source>&amp;None</source>
         <translation>&amp;Ingen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="491"/>
+        <location filename="../mainwindow.cpp" line="509"/>
         <source>S&amp;crollbar Layout</source>
         <translation>Layout for &amp;rullefelt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;BlockCursor</source>
         <translation>&amp;Blokkmarkør</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="505"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>&amp;UnderlineCursor</source>
         <translation>&amp;Understreksmarkør</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="506"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>&amp;IBeamCursor</source>
         <translation>&amp;Strekmarkør</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="523"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Tastaturmarkørens form</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="647"/>
         <source>Exit QTerminal</source>
         <translation>Avslutt QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="629"/>
+        <location filename="../mainwindow.cpp" line="649"/>
         <source>Do not ask again</source>
         <translation>Ikke spør igjen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="637"/>
+        <location filename="../mainwindow.cpp" line="657"/>
         <source>Are you sure you want to exit?</source>
         <translation>Vil du virkelig avslutte?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="684"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>En lett og kraftig terminalemulator for flere plattformer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>Copyright (C) </source>
         <translation>Opphavsrett © </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>2013-2022</source>
         <translation type="unfinished">2013–2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>LXQt Project</source>
         <translation>LXQt-prosjektet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>Development: </source>
         <translation>Utvikling: </translation>
     </message>
@@ -801,27 +801,32 @@ For å fjerne/skru av en snarvei, kan du trykke kun en endringstast (som Shift) 
         <translation>Tastatursnarevei:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1046"/>
+        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="1056"/>
         <source>Edit bookmark file contents</source>
         <translation>Rediger innholdet i bokmerkefilen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1005"/>
+        <location filename="../forms/propertiesdialog.ui" line="1015"/>
         <source>Enable bookmarks</source>
         <translation>Aktiver bokmerker</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1014"/>
+        <location filename="../forms/propertiesdialog.ui" line="1024"/>
         <source>Bookmark file</source>
         <translation>Bokmerkefil</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1027"/>
+        <location filename="../forms/propertiesdialog.ui" line="1037"/>
         <source>Find...</source>
         <translation>Finn...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1036"/>
+        <location filename="../forms/propertiesdialog.ui" line="1046"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Du kan bestemme plasseringen for bokmerkefilen. Det gjør det lett å dele bokmerker med OwnCloud eller Dropbox.</translation>
     </message>
@@ -888,61 +893,61 @@ For å fjerne/skru av en snarvei, kan du trykke kun en endringstast (som Shift) 
         <translation>Eksempler</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="422"/>
+        <location filename="../propertiesdialog.cpp" line="424"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Bilder (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="512"/>
+        <location filename="../propertiesdialog.cpp" line="514"/>
         <source>Open bookmarks file</source>
         <translation>Åpne bokmerkefil</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="514"/>
+        <location filename="../propertiesdialog.cpp" line="516"/>
         <source>XML files (*.xml)</source>
         <translation>XML-filer (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="515"/>
+        <location filename="../propertiesdialog.cpp" line="517"/>
         <source>All files (*)</source>
         <translation>Alle filer (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
-        <location filename="../propertiesdialog.cpp" line="618"/>
+        <location filename="../propertiesdialog.cpp" line="616"/>
+        <location filename="../propertiesdialog.cpp" line="620"/>
         <source>Question</source>
         <translation>Spørsmål</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="616"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation type="unfinished">Overskriv denne bokmerkefilen?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="618"/>
+        <location filename="../propertiesdialog.cpp" line="620"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Navnet på bokmerkefilen slutter ikke med «.xml».
 Vil du overskrive den?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="626"/>
+        <location filename="../propertiesdialog.cpp" line="628"/>
         <source>Warning</source>
         <translation>Advarsel</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="626"/>
+        <location filename="../propertiesdialog.cpp" line="628"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Kan ikke skrive bokmerker til denne filen:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="206"/>
-        <location filename="../propertiesdialog.cpp" line="317"/>
+        <location filename="../propertiesdialog.cpp" line="319"/>
         <source>System Default</source>
         <translation>Systemstandard</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="421"/>
+        <location filename="../propertiesdialog.cpp" line="423"/>
         <source>Choose a background image</source>
         <translation>Velg et bakgrunnsbilde</translation>
     </message>

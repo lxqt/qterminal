@@ -36,329 +36,329 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="91"/>
+        <location filename="../mainwindow.cpp" line="94"/>
         <source>Bookmarks</source>
         <translation>Záložky</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="193"/>
+        <location filename="../mainwindow.cpp" line="211"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>Terminál zobrazíte stlačením „%1“.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="242"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;Následujúca karta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="245"/>
+        <location filename="../mainwindow.cpp" line="263"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Predošlá karta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="254"/>
+        <location filename="../mainwindow.cpp" line="272"/>
         <source>Move Tab &amp;Left</source>
         <translation>&amp;Presunúť kartu doľava</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="257"/>
+        <location filename="../mainwindow.cpp" line="275"/>
         <source>Move Tab &amp;Right</source>
         <translation>&amp;Presunúť kartu doprava</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>Split Terminal &amp;Horizontally</source>
         <translation>&amp;Rozdeliť terminál vodorovne</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Terminal &amp;Vertically</source>
         <translation>&amp;Rozdeliť terminál zvisle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="284"/>
+        <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>Zbaliť dielčí terminál</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="235"/>
+        <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>&amp;Vyčistiť aktívny terminál</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="174"/>
+        <location filename="../mainwindow.cpp" line="192"/>
         <source>Keep window open when it loses focus</source>
         <translation>Nechať okno otvorené, ak stratí zameranie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="248"/>
+        <location filename="../mainwindow.cpp" line="266"/>
         <source>&amp;Previous Tab in History</source>
         <translation>&amp;Predchodí panel v chronológii</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="251"/>
+        <location filename="../mainwindow.cpp" line="269"/>
         <source>&amp;Next Tab in History</source>
         <translation>&amp;Následujúci panel v histórii</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="262"/>
+        <location filename="../mainwindow.cpp" line="280"/>
         <source>Tab</source>
         <translation>Panel</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="281"/>
         <source>Go to</source>
         <translation>Prejsť na</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="305"/>
         <source>&amp;Top Subterminal</source>
         <translation>&amp;Horný dielčí terminál</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="290"/>
+        <location filename="../mainwindow.cpp" line="308"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>&amp;Dolný dielčí terminál</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="311"/>
         <source>L&amp;eft Subterminal</source>
         <translation>&amp;Ľavý dielčí terminál</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="296"/>
+        <location filename="../mainwindow.cpp" line="314"/>
         <source>R&amp;ight Subterminal</source>
         <translation>&amp;Pravý dielčí terminál</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="303"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>Copy &amp;Selection</source>
         <translation>&amp;Skopírovať výber</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="306"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>Paste Clip&amp;board</source>
         <translation>&amp;Vložiť obsah schránky</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="327"/>
         <source>Paste S&amp;election</source>
         <translation>&amp;Vložiť výber</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="330"/>
         <source>Zoom &amp;in</source>
         <translation>&amp;Priblížiť</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
+        <location filename="../mainwindow.cpp" line="333"/>
         <source>Zoom &amp;out</source>
         <translation>&amp;Oddialiť</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
+        <location filename="../mainwindow.cpp" line="336"/>
         <source>Zoom rese&amp;t</source>
         <translation>&amp;Vrátiť na pôvodnú veľkosť</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="323"/>
+        <location filename="../mainwindow.cpp" line="341"/>
         <source>&amp;Find...</source>
         <translation>&amp;Nájsť...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="326"/>
+        <location filename="../mainwindow.cpp" line="344"/>
         <source>Handle history...</source>
         <translation>Zaobchádzanie s históriou...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="352"/>
         <source>&amp;Save Session</source>
         <translation>&amp;Uložiť reláciu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="358"/>
         <source>&amp;Load Session</source>
         <translation>&amp;Načítať reláciu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="347"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>&amp;Toggle Menu</source>
         <translation>&amp;Zobraziť/skryť ponuku</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="370"/>
         <source>Rename session</source>
         <translation>Premenovať reláciu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="361"/>
+        <location filename="../mainwindow.cpp" line="379"/>
         <source>&amp;New Tab</source>
         <translation>&amp;Nová karta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Nová karta &amp; Prednastavenie</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="366"/>
+        <location filename="../mainwindow.cpp" line="384"/>
         <source>1 &amp;Terminal</source>
         <translation>1 &amp;Terminál</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="368"/>
+        <location filename="../mainwindow.cpp" line="386"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 vodorovné &amp;terminály</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 &amp;Zvislé terminály</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>4 Terminal&amp;s</source>
         <translation>&amp;Terminály</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="378"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>&amp;Close Tab</source>
         <translation>&amp;Zatvoriť kartu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="381"/>
+        <location filename="../mainwindow.cpp" line="399"/>
         <source>&amp;New Window</source>
         <translation>&amp;Nové okno</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="386"/>
+        <location filename="../mainwindow.cpp" line="404"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Predvoľby...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="408"/>
         <source>&amp;Quit</source>
         <translation>&amp;Ukončiť</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Skryť okraje okien</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="432"/>
         <source>&amp;Show Tab Bar</source>
         <translation>&amp;Zobraziť panel s kartami</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="422"/>
+        <location filename="../mainwindow.cpp" line="440"/>
         <source>Fullscreen</source>
         <translation>Na celú obrazovku</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="428"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Toggle Bookmarks</source>
         <translation>Zobraziť/skryť položky</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="436"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source>&amp;Bottom</source>
         <translation>&amp;Dole</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="437"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>&amp;Top</source>
         <translation>&amp;Hore</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="438"/>
-        <location filename="../mainwindow.cpp" line="474"/>
+        <location filename="../mainwindow.cpp" line="456"/>
+        <location filename="../mainwindow.cpp" line="492"/>
         <source>&amp;Right</source>
         <translation>&amp;Vpravo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="439"/>
-        <location filename="../mainwindow.cpp" line="475"/>
+        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="493"/>
         <source>&amp;Left</source>
         <translation>&amp;Vľavo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="475"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;Rozvrhnutie kariet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="473"/>
+        <location filename="../mainwindow.cpp" line="491"/>
         <source>&amp;None</source>
         <translation>&amp;Žiadne</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="491"/>
+        <location filename="../mainwindow.cpp" line="509"/>
         <source>S&amp;crollbar Layout</source>
         <translation>&amp;Zobrazenie posuvníku</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="522"/>
         <source>&amp;BlockCursor</source>
         <translation>&amp;Blokový ukazovateľ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="505"/>
+        <location filename="../mainwindow.cpp" line="523"/>
         <source>&amp;UnderlineCursor</source>
         <translation>&amp;Podtržníkový ukazovateľ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="506"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>&amp;IBeamCursor</source>
         <translation>&amp;Ukazovateľ v podobe zvisle</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="523"/>
+        <location filename="../mainwindow.cpp" line="541"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Tvar kurzoru</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="627"/>
+        <location filename="../mainwindow.cpp" line="647"/>
         <source>Exit QTerminal</source>
         <translation>Ukončiť QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="629"/>
+        <location filename="../mainwindow.cpp" line="649"/>
         <source>Do not ask again</source>
         <translation>Nepýtať sa znovu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="637"/>
+        <location filename="../mainwindow.cpp" line="657"/>
         <source>Are you sure you want to exit?</source>
         <translation>Určite chcete program ukončiť?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="662"/>
+        <location filename="../mainwindow.cpp" line="684"/>
         <source>About</source>
         <translation>O programe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="664"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Rýchly a výkonný multiplatformový emulátor terminálu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>Copyright (C) </source>
         <translation>Copyright (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="666"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="668"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>LXQt Project</source>
         <translation>Projekt LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="670"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>Development: </source>
         <translation>Vývoj: </translation>
     </message>
@@ -801,27 +801,32 @@ Ak chcete odstrániť alebo zakázať odkaz, v bode 2 stlačte iba modifikátor 
         <translation>Klávesová skratka:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1046"/>
+        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="1056"/>
         <source>Edit bookmark file contents</source>
         <translation>Upraviť obsah súboru záložiek</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1005"/>
+        <location filename="../forms/propertiesdialog.ui" line="1015"/>
         <source>Enable bookmarks</source>
         <translation>Používať záložky</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1014"/>
+        <location filename="../forms/propertiesdialog.ui" line="1024"/>
         <source>Bookmark file</source>
         <translation>Súbor so záložkami</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1027"/>
+        <location filename="../forms/propertiesdialog.ui" line="1037"/>
         <source>Find...</source>
         <translation>Hľadať...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1036"/>
+        <location filename="../forms/propertiesdialog.ui" line="1046"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Môžete stanoviť svoje vlastné umiestnenie súboru so záložkami. To umožňuje jednoduché zdieľanie záložiek pomocou nástrojov ako je OwnCloud alebo Dropbox.</translation>
     </message>
@@ -888,61 +893,61 @@ Ak chcete odstrániť alebo zakázať odkaz, v bode 2 stlačte iba modifikátor 
         <translation>Príklady</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="422"/>
+        <location filename="../propertiesdialog.cpp" line="424"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Obrázky (* .bmp * .jpg * .png * .svg * .xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="512"/>
+        <location filename="../propertiesdialog.cpp" line="514"/>
         <source>Open bookmarks file</source>
         <translation>Otvoriť súbor so záložkami</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="514"/>
+        <location filename="../propertiesdialog.cpp" line="516"/>
         <source>XML files (*.xml)</source>
         <translation>Súbory XML (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="515"/>
+        <location filename="../propertiesdialog.cpp" line="517"/>
         <source>All files (*)</source>
         <translation>Všetky súbory (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
-        <location filename="../propertiesdialog.cpp" line="618"/>
+        <location filename="../propertiesdialog.cpp" line="616"/>
+        <location filename="../propertiesdialog.cpp" line="620"/>
         <source>Question</source>
         <translation>Otázka</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="614"/>
+        <location filename="../propertiesdialog.cpp" line="616"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Chcete prepísať tento súbor so záložkami?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="618"/>
+        <location filename="../propertiesdialog.cpp" line="620"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Názov súboru so záložkami nekončí na &apos;.xml&apos;.
 Ste si istý, že ho chcete prepísať?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="626"/>
+        <location filename="../propertiesdialog.cpp" line="628"/>
         <source>Warning</source>
         <translation>Varovanie</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="626"/>
+        <location filename="../propertiesdialog.cpp" line="628"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Do tohto súboru nie je možné zapisovať záložky:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="206"/>
-        <location filename="../propertiesdialog.cpp" line="317"/>
+        <location filename="../propertiesdialog.cpp" line="319"/>
         <source>System Default</source>
         <translation>Východzie nastavenie systému</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="421"/>
+        <location filename="../propertiesdialog.cpp" line="423"/>
         <source>Choose a background image</source>
         <translation>Zvoliť obrázok na pozadí</translation>
     </message>
