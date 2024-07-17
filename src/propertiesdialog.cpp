@@ -290,6 +290,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
         Properties::Instance()->saveSettings();
     });
 
+    waylandLabel->setVisible(QGuiApplication::platformName() == QStringLiteral("wayland"));
+
     // restore its size while fitting it into available desktop geometry
     QSize s;
     if (!Properties::Instance()->prefDialogSize.isEmpty())
