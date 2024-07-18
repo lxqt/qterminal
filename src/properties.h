@@ -42,6 +42,7 @@ class Properties
         void loadSettings();
         void migrate_settings();
         QString configDir() const;
+        QString profile() const;
 
         static void removeAccelerator(QString& str);
 

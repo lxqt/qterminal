@@ -416,3 +416,8 @@ QString Properties::configDir() const
     return QFileInfo(m_settings->fileName()).absoluteDir().canonicalPath();
 }
 
+QString Properties::profile() const
+{
+    return filename;
+}
+
