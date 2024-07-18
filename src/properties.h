@@ -22,6 +22,7 @@
 #include <QApplication>
 #include <QtCore>
 #include <QFont>
+#include <QFileSystemWatcher>
 
 typedef QString Session;
 
@@ -143,6 +144,7 @@ class Properties
 
         QSettings *m_settings;
 
+        QFileSystemWatcher *m_watcher;
 };
 
 #endif

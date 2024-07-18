@@ -44,6 +44,8 @@ public:
     bool dropMode() { return m_dropMode; }
     QMap<QString, QAction*> & leaseActions();
 
+    void rebuildActions();
+
     #ifdef HAVE_QDBUS
     QDBusObjectPath getActiveTab();
     QList<QDBusObjectPath> getTabs();
@@ -72,8 +74,6 @@ private:
     QMap< QString, QAction * > actions;
 
     QStringList menubarOrigTexts;
-
-    void rebuildActions();
 
     void setup_FileMenu_Actions();
     void setup_ActionsMenu_Actions();

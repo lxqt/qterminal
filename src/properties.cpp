@@ -42,6 +42,18 @@ Properties::Properties(const QString& filename)
     else
         m_settings = new QSettings(filename);
     //qDebug("Properties constructor called");
+
+    m_watcher = new QFileSystemWatcher();
+    m_watcher->addPath(m_settings->fileName());
+    QObject::connect(m_watcher, &QFileSystemWatcher::fileChanged, [this](const QString &path) {
+        if (m_settings)
+        {
+            m_settings->sync();
+            loadSettings();
+            if (!m_watcher->files().contains(path))
+                m_watcher->addPath(path);
+        }
+    });
 }
 
 Properties::~Properties()
@@ -49,6 +61,8 @@ Properties::~Properties()
     //qDebug("Properties destructor called");
     delete m_settings;
     m_instance = nullptr;
+    delete  m_watcher;
+    m_watcher = nullptr;
 }
 
 QFont Properties::defaultFont()
@@ -280,6 +294,13 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("SwapMouseButtons2and3"), swapMouseButtons2and3);
 
     m_settings->setValue(QLatin1String("PrefDialogSize"), prefDialogSize);
+
+    // the config file may be created now
+    if (!m_watcher->files().contains(m_settings->fileName()))
+    {
+        m_settings->sync();
+        m_watcher->addPath(m_settings->fileName());
+    }
 }
 
 int Properties::versionComparison(const QString &v1, const QString &v2)
