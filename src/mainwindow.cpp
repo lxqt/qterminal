@@ -876,8 +876,22 @@ void MainWindow::newTerminalWindow()
     if (ch)
         cfg.provideCurrentDirectory(ch->currentTerminal()->impl()->workingDirectory());
 
-    MainWindow *w = new MainWindow(cfg, false);
-    w->show();
+    if (m_dropMode)
+    { // the dropdown process has only one (dropdown) main window
+        QStringList args;
+        args <<  QStringLiteral("-w") << cfg.getWorkingDirectory();
+        QString profile = Properties::Instance()->profile();
+        if (!profile.isEmpty())
+        {
+            args << QStringLiteral("-p") << profile;
+        }
+        QProcess::startDetached(QStringLiteral("qterminal"), args);
+    }
+    else
+    {
+        MainWindow *w = new MainWindow(cfg, false);
+        w->show();
+    }
 }
 
 void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
