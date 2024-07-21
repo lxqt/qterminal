@@ -681,7 +681,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="627"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>単語文字選択</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>

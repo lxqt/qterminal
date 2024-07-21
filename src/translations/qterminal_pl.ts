@@ -803,7 +803,7 @@ Aby usunąć/wyłączyć skrót, przy drugim punkcie naciśnij tylko klawisz mod
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uwaga: w Wayland należy dodać skrót w ustawieniach kompozytora dla „qterminal -d”.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>

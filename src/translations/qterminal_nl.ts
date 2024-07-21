@@ -731,7 +731,7 @@ Sneltoets wissen: druk bij stap 2 op een samensteltoets (bijv. Shift)</translati
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Let op: op Wayland dient de sneltoets de worden toegevoegd aan de vensterbeheerinstellingen als ‘qterminal -d’.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
