@@ -798,12 +798,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="979"/>
         <source>Shortcut:</source>
-        <translation>Скорочення:</translation>
+        <translation>Комбінація клавіш:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Примітка: У Wayland комбінацію клавіш потрібно додати у налаштуваннях композитора за допомогою команди «qterminal -d».</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
