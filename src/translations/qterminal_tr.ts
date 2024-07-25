@@ -762,7 +762,7 @@ Bir Kısayolu kaldırmak/devre dışı bırakmak için, 2. noktada yalnızca bir
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Not: Wayland üzerinde, kısayolun &apos;qterminal -d&apos; için kompozitör ayarlarına eklenmesi gerekir.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>

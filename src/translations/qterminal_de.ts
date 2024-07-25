@@ -691,7 +691,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
         <source>:@-./_~</source>
-        <translation type="unfinished">:@-./_~</translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="644"/>
@@ -747,7 +747,7 @@ Zum entfernen/deaktivieren eines Tastenkürzel, bei Schritt 2 nur eine Modifier-
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Hinweis: Unter Wayland muss das Tastenkürzel in den Kompositor-Einstellungen für &apos;qterminal -d&apos; hinzugefügt werden.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>

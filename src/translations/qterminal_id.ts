@@ -626,7 +626,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Stretch</source>
-        <translation type="unfinished"></translation>
+        <translation>Tarik</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="445"/>
@@ -636,7 +636,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="450"/>
         <source>Fit</source>
-        <translation type="unfinished"></translation>
+        <translation>Pas</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="455"/>
@@ -646,7 +646,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="344"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tentukan apakah karakter gambar kotak harus diolah dengan QTerminal atau menggunakan library perender font.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
@@ -682,12 +682,12 @@
         <location filename="../forms/propertiesdialog.ui" line="711"/>
         <location filename="../forms/propertiesdialog.ui" line="725"/>
         <source> px</source>
-        <translation type="unfinished"></translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="732"/>
         <source>Get current size</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Pakai ukuran sekarang</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
@@ -762,7 +762,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="917"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>Tombol kunci ditampilkan pada tab bar horizontal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="920"/>
