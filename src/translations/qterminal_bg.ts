@@ -66,16 +66,6 @@
         <translation>Преместете раздела на&amp;дясно</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
-        <source>Split Terminal &amp;Horizontally</source>
-        <translation>Разделяне на терминала &amp;Хоризонтално</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="297"/>
-        <source>Split Terminal &amp;Vertically</source>
-        <translation>Разделяне на терминала &amp;Вертикално</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;Свиване на подтерминал</translation>
@@ -109,6 +99,16 @@
         <location filename="../mainwindow.cpp" line="281"/>
         <source>Go to</source>
         <translation>Отиване до</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="294"/>
+        <source>Split &amp;View Top-Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="297"/>
+        <source>Split Vie&amp;w Left-Right</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -318,47 +318,47 @@
         <translation>&amp;Форма на курсора</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="647"/>
+        <location filename="../mainwindow.cpp" line="648"/>
         <source>Exit QTerminal</source>
         <translation>Излизане от QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="649"/>
+        <location filename="../mainwindow.cpp" line="650"/>
         <source>Do not ask again</source>
         <translation>Не питай отново</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="658"/>
         <source>Are you sure you want to exit?</source>
         <translation>Наистина ли искате да излезете?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="684"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>About</source>
         <translation>Относно</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Лек и мощен мултиплатформен терминален емулатор</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>Copyright (C) </source>
         <translation>Авторски права (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>LXQt Project</source>
         <translation>Проектът LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="692"/>
+        <location filename="../mainwindow.cpp" line="694"/>
         <source>Development: </source>
         <translation>Разработка: </translation>
     </message>
@@ -893,50 +893,50 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>Примери</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="424"/>
+        <location filename="../propertiesdialog.cpp" line="425"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Изображения (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="514"/>
+        <location filename="../propertiesdialog.cpp" line="527"/>
         <source>Open bookmarks file</source>
         <translation>Отваряне на файла с отметките</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="516"/>
+        <location filename="../propertiesdialog.cpp" line="529"/>
         <source>XML files (*.xml)</source>
         <translation>XML файлове (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="517"/>
+        <location filename="../propertiesdialog.cpp" line="530"/>
         <source>All files (*)</source>
         <translation>Всички файлове (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="616"/>
-        <location filename="../propertiesdialog.cpp" line="620"/>
+        <location filename="../propertiesdialog.cpp" line="629"/>
+        <location filename="../propertiesdialog.cpp" line="633"/>
         <source>Question</source>
         <translation>Запитване</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="616"/>
+        <location filename="../propertiesdialog.cpp" line="629"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Искате ли да презапишете този файл с отметки?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="620"/>
+        <location filename="../propertiesdialog.cpp" line="633"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Името на файла с отметки не завършва с &apos;.xml&apos;.
 Сигурни ли сте, че искате да го презапишете?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="628"/>
+        <location filename="../propertiesdialog.cpp" line="641"/>
         <source>Warning</source>
         <translation>Внимание</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="628"/>
+        <location filename="../propertiesdialog.cpp" line="641"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Не могат да бъдат записани отметки в този файл:</translation>
     </message>
@@ -947,7 +947,7 @@ Are you sure that you want to overwrite it?</source>
         <translation>Системни настройки по подразбиране</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="423"/>
+        <location filename="../propertiesdialog.cpp" line="424"/>
         <source>Choose a background image</source>
         <translation>Изберете фоново изображение</translation>
     </message>

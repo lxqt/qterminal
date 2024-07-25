@@ -66,16 +66,6 @@
         <translation>&amp;Presunúť kartu doprava</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
-        <source>Split Terminal &amp;Horizontally</source>
-        <translation>&amp;Rozdeliť terminál vodorovne</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="297"/>
-        <source>Split Terminal &amp;Vertically</source>
-        <translation>&amp;Rozdeliť terminál zvisle</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>Zbaliť dielčí terminál</translation>
@@ -109,6 +99,16 @@
         <location filename="../mainwindow.cpp" line="281"/>
         <source>Go to</source>
         <translation>Prejsť na</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="294"/>
+        <source>Split &amp;View Top-Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="297"/>
+        <source>Split Vie&amp;w Left-Right</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -318,47 +318,47 @@
         <translation>&amp;Tvar kurzoru</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="647"/>
+        <location filename="../mainwindow.cpp" line="648"/>
         <source>Exit QTerminal</source>
         <translation>Ukončiť QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="649"/>
+        <location filename="../mainwindow.cpp" line="650"/>
         <source>Do not ask again</source>
         <translation>Nepýtať sa znovu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="658"/>
         <source>Are you sure you want to exit?</source>
         <translation>Určite chcete program ukončiť?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="684"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>About</source>
         <translation>O programe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Rýchly a výkonný multiplatformový emulátor terminálu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>Copyright (C) </source>
         <translation>Copyright (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>LXQt Project</source>
         <translation>Projekt LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="692"/>
+        <location filename="../mainwindow.cpp" line="694"/>
         <source>Development: </source>
         <translation>Vývoj: </translation>
     </message>
@@ -893,50 +893,50 @@ Ak chcete odstrániť alebo zakázať odkaz, v bode 2 stlačte iba modifikátor 
         <translation>Príklady</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="424"/>
+        <location filename="../propertiesdialog.cpp" line="425"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Obrázky (* .bmp * .jpg * .png * .svg * .xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="514"/>
+        <location filename="../propertiesdialog.cpp" line="527"/>
         <source>Open bookmarks file</source>
         <translation>Otvoriť súbor so záložkami</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="516"/>
+        <location filename="../propertiesdialog.cpp" line="529"/>
         <source>XML files (*.xml)</source>
         <translation>Súbory XML (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="517"/>
+        <location filename="../propertiesdialog.cpp" line="530"/>
         <source>All files (*)</source>
         <translation>Všetky súbory (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="616"/>
-        <location filename="../propertiesdialog.cpp" line="620"/>
+        <location filename="../propertiesdialog.cpp" line="629"/>
+        <location filename="../propertiesdialog.cpp" line="633"/>
         <source>Question</source>
         <translation>Otázka</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="616"/>
+        <location filename="../propertiesdialog.cpp" line="629"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Chcete prepísať tento súbor so záložkami?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="620"/>
+        <location filename="../propertiesdialog.cpp" line="633"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Názov súboru so záložkami nekončí na &apos;.xml&apos;.
 Ste si istý, že ho chcete prepísať?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="628"/>
+        <location filename="../propertiesdialog.cpp" line="641"/>
         <source>Warning</source>
         <translation>Varovanie</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="628"/>
+        <location filename="../propertiesdialog.cpp" line="641"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Do tohto súboru nie je možné zapisovať záložky:</translation>
     </message>
@@ -947,7 +947,7 @@ Ste si istý, že ho chcete prepísať?</translation>
         <translation>Východzie nastavenie systému</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="423"/>
+        <location filename="../propertiesdialog.cpp" line="424"/>
         <source>Choose a background image</source>
         <translation>Zvoliť obrázok na pozadí</translation>
     </message>
