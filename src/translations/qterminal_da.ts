@@ -66,16 +66,6 @@
         <translation>Flyt faneblad til &amp;højre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
-        <source>Split Terminal &amp;Horizontally</source>
-        <translation>Opdel terminal &amp;vandret</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="297"/>
-        <source>Split Terminal &amp;Vertically</source>
-        <translation>Opdel terminal &amp;lodret</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;Sammenfold underterminal</translation>
@@ -109,6 +99,16 @@
         <location filename="../mainwindow.cpp" line="281"/>
         <source>Go to</source>
         <translation>Gå til</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="294"/>
+        <source>Split &amp;View Top-Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="297"/>
+        <source>Split Vie&amp;w Left-Right</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -318,47 +318,47 @@
         <translation>&amp;Tastaturmarkørens form</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="647"/>
+        <location filename="../mainwindow.cpp" line="648"/>
         <source>Exit QTerminal</source>
         <translation>Afslut QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="649"/>
+        <location filename="../mainwindow.cpp" line="650"/>
         <source>Do not ask again</source>
         <translation>Spørg ikke igen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="658"/>
         <source>Are you sure you want to exit?</source>
         <translation>Er du sikker på, at du vil afslutte?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="684"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>En letvægts men kraftfuld multiplatform terminal emulator</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>Copyright (C) </source>
         <translation>Ophavsret (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>LXQt Project</source>
         <translation>LXQt Projektet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="692"/>
+        <location filename="../mainwindow.cpp" line="694"/>
         <source>Development: </source>
         <translation>Udvikling: </translation>
     </message>
@@ -893,50 +893,50 @@ Fjern/deaktivér en genvej, i punkt 2, ved kun at trykke på en ændringstast (s
         <translation>Eksempler</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="424"/>
+        <location filename="../propertiesdialog.cpp" line="425"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Billeder (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="514"/>
+        <location filename="../propertiesdialog.cpp" line="527"/>
         <source>Open bookmarks file</source>
         <translation>Åbne bogmærkefil</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="516"/>
+        <location filename="../propertiesdialog.cpp" line="529"/>
         <source>XML files (*.xml)</source>
         <translation>XML-filer (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="517"/>
+        <location filename="../propertiesdialog.cpp" line="530"/>
         <source>All files (*)</source>
         <translation>Alle filer (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="616"/>
-        <location filename="../propertiesdialog.cpp" line="620"/>
+        <location filename="../propertiesdialog.cpp" line="629"/>
+        <location filename="../propertiesdialog.cpp" line="633"/>
         <source>Question</source>
         <translation>Spørgsmål</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="616"/>
+        <location filename="../propertiesdialog.cpp" line="629"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Vil du overskrive denne bogmærke fil?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="620"/>
+        <location filename="../propertiesdialog.cpp" line="633"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Navnet på bogmærkefilen ender ikke med &apos;.xml&apos;.
 Er du sikker på du vil overskrive den?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="628"/>
+        <location filename="../propertiesdialog.cpp" line="641"/>
         <source>Warning</source>
         <translation>Advarsel</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="628"/>
+        <location filename="../propertiesdialog.cpp" line="641"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>kan ikke skrive bogmærker til denne fil:</translation>
     </message>
@@ -947,7 +947,7 @@ Er du sikker på du vil overskrive den?</translation>
         <translation>Systemstandard</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="423"/>
+        <location filename="../propertiesdialog.cpp" line="424"/>
         <source>Choose a background image</source>
         <translation>Vælg et baggrundsbillede</translation>
     </message>

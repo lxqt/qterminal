@@ -66,16 +66,6 @@
         <translation>Mover aba para a &amp;direta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
-        <source>Split Terminal &amp;Horizontally</source>
-        <translation>Dividir terminal &amp;horizontalmente</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="297"/>
-        <source>Split Terminal &amp;Vertically</source>
-        <translation>Dividir terminal &amp;verticalmente</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;Colapsar subterminal</translation>
@@ -109,6 +99,16 @@
         <location filename="../mainwindow.cpp" line="281"/>
         <source>Go to</source>
         <translation>Ir para</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="294"/>
+        <source>Split &amp;View Top-Bottom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="297"/>
+        <source>Split Vie&amp;w Left-Right</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -318,47 +318,47 @@
         <translation>&amp;Forma de Cursor do Teclado</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="647"/>
+        <location filename="../mainwindow.cpp" line="648"/>
         <source>Exit QTerminal</source>
         <translation>Sair</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="649"/>
+        <location filename="../mainwindow.cpp" line="650"/>
         <source>Do not ask again</source>
         <translation>Não perguntar novamente</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="658"/>
         <source>Are you sure you want to exit?</source>
         <translation>Tem certeza que deseja sair?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="684"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>About</source>
         <translation>Sobre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Um emulador de terminal multiplataforma leve e poderoso</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>Copyright (C) </source>
         <translation>Direitos Autorais (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>LXQt Project</source>
         <translation>Projeto LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="692"/>
+        <location filename="../mainwindow.cpp" line="694"/>
         <source>Development: </source>
         <translation>Desenvolvimento: </translation>
     </message>
@@ -893,50 +893,50 @@ Para remover/desativar um atalho, no ponto 2, pressione apenas um modificador (c
         <translation>Exemplos</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="424"/>
+        <location filename="../propertiesdialog.cpp" line="425"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Imagens (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="514"/>
+        <location filename="../propertiesdialog.cpp" line="527"/>
         <source>Open bookmarks file</source>
         <translation>Abrir arquivo de marcadores</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="516"/>
+        <location filename="../propertiesdialog.cpp" line="529"/>
         <source>XML files (*.xml)</source>
         <translation>Arquivos XML (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="517"/>
+        <location filename="../propertiesdialog.cpp" line="530"/>
         <source>All files (*)</source>
         <translation>Todos os arquivos (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="616"/>
-        <location filename="../propertiesdialog.cpp" line="620"/>
+        <location filename="../propertiesdialog.cpp" line="629"/>
+        <location filename="../propertiesdialog.cpp" line="633"/>
         <source>Question</source>
         <translation>Questão</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="616"/>
+        <location filename="../propertiesdialog.cpp" line="629"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Você deseja sobrescrever esse arquivo de marcadores?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="620"/>
+        <location filename="../propertiesdialog.cpp" line="633"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>O nome do arquivo de marcadores não termina com &apos;.xml&apos;.
 Você tem certeza que quer o sobrescrever?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="628"/>
+        <location filename="../propertiesdialog.cpp" line="641"/>
         <source>Warning</source>
         <translation>Alerta</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="628"/>
+        <location filename="../propertiesdialog.cpp" line="641"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Não é possível escrever marcadores neste arquivo:</translation>
     </message>
@@ -947,7 +947,7 @@ Você tem certeza que quer o sobrescrever?</translation>
         <translation>Padrão do sistema</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="423"/>
+        <location filename="../propertiesdialog.cpp" line="424"/>
         <source>Choose a background image</source>
         <translation>Escolha uma imagem de fundo</translation>
     </message>
