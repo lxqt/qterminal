@@ -35,8 +35,8 @@
 
 #define CLEAR_TERMINAL "Clear Active Terminal"
 
-#define SPLIT_HORIZONTAL "Split Terminal Horizontally"
-#define SPLIT_VERTICAL "Split Terminal Vertically"
+#define SPLIT_HORIZONTAL "Split View Top-Bottom"
+#define SPLIT_VERTICAL "Split View Left-Right"
 
 #define SUB_COLLAPSE "Collapse Subterminal"
 #define SUB_LEFT "Left Subterminal"

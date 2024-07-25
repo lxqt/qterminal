@@ -291,10 +291,10 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     menu_Actions->addSeparator();
 
-    setup_Action(SPLIT_HORIZONTAL, new QAction(tr("Split Terminal &Horizontally"), settingOwner),
+    setup_Action(SPLIT_HORIZONTAL, new QAction(tr("Split &View Top-Bottom"), settingOwner),
                  nullptr, consoleTabulator, SLOT(splitHorizontally()), menu_Actions);
 
-    setup_Action(SPLIT_VERTICAL, new QAction(tr("Split Terminal &Vertically"), settingOwner),
+    setup_Action(SPLIT_VERTICAL, new QAction(tr("Split Vie&w Left-Right"), settingOwner),
                  nullptr, consoleTabulator, SLOT(splitVertically()), menu_Actions);
 
     data.setValue(checkSubterminals);
