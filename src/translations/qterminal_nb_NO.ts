@@ -223,7 +223,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="396"/>
         <source>&amp;Close Tab</source>
-        <translation>&amp;Lukk fane</translation>
+        <translation>Lu&amp;kk fane</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="399"/>
@@ -384,7 +384,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="39"/>
         <source>Shortcuts</source>
-        <translation>Snareveier</translation>
+        <translation>Snarveier</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="48"/>
@@ -743,16 +743,16 @@
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
         <translation>For å redigere en snarvei:
-1. Dobbeltklikk dens tast
+1. Dobbeltklikk dens tastekombinasjon
 2. Trykk ønsket kombinasjon og slipp den
-3. Klikk på en snarvei eller trykk enter
+3. Klikk på en snarvei eller trykk Enter
 
-For å fjerne/skru av en snarvei, kan du trykke kun en endringstast (som Shift) i steg 2.</translation>
+For å fjerne/slå av en snarvei, kan du under punkt 2 trykke kun en endringstast (som Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="893"/>
         <source>Shortcut</source>
-        <translation>Tastatursnarevei</translation>
+        <translation>Tastatursnarvei</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
@@ -767,7 +767,7 @@ For å fjerne/skru av en snarvei, kan du trykke kun en endringstast (som Shift) 
     <message>
         <location filename="../forms/propertiesdialog.ui" line="917"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished">En låseknapp vises på det vannrette fanefeltet</translation>
+        <translation>En låseknapp vises på den horisontale fanelinjen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="920"/>
@@ -798,7 +798,7 @@ For å fjerne/skru av en snarvei, kan du trykke kun en endringstast (som Shift) 
     <message>
         <location filename="../forms/propertiesdialog.ui" line="979"/>
         <source>Shortcut:</source>
-        <translation>Tastatursnarevei:</translation>
+        <translation>Tastatursnarvei:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
@@ -921,7 +921,7 @@ For å fjerne/skru av en snarvei, kan du trykke kun en endringstast (som Shift) 
     <message>
         <location filename="../propertiesdialog.cpp" line="629"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished">Overskriv denne bokmerkefilen?</translation>
+        <translation>Vil du overskrive denne bokmerkefilen?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="633"/>

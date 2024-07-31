@@ -48,12 +48,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista divisa &amp;sopra-sotto</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista divisa sinistra-&amp;destra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="440"/>
@@ -63,7 +63,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>&amp;Pulisci terminale attivo</translation>
+        <translation>Pulisci terminale &amp;attivo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -83,12 +83,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>&amp;Tab Precedente in cronologia</translation>
+        <translation>&amp;Tab precedente nella cronologia</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="269"/>
         <source>&amp;Next Tab in History</source>
-        <translation>&amp;Tab Successivo in Cronologia</translation>
+        <translation>Ta&amp;b successivo nella cronologia</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="272"/>
@@ -113,12 +113,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Collassa sottoterminale</translation>
+        <translation>&amp;Chiudi sottoterminale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>&amp;Top Subterminal</source>
-        <translation>&amp;Sottoterminale in cima</translation>
+        <translation>Sottoterminale &amp;in cima</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="308"/>
@@ -128,12 +128,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="311"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>Sottoterminale a &amp;sinistra</translation>
+        <translation>Sottoterminale a s&amp;inistra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="314"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>Sottoterminale a &amp;destra</translation>
+        <translation>Sottoterminale a d&amp;estra</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="321"/>

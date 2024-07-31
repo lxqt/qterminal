@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Jagatud &amp;vaade ülevalt alla</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Jagatud vaa&amp;de vasakult paremale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
