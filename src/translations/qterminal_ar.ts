@@ -53,27 +53,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>&amp;Previous Tab</source>
-        <translation>اللسان &amp;السابق</translation>
+        <translation>اللسان السابق</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="272"/>
         <source>Move Tab &amp;Left</source>
-        <translation>انقل اللسان &amp;يسارا</translation>
+        <translation>انقل اللسان يسارا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
         <source>Move Tab &amp;Right</source>
-        <translation>انقل اللسان &amp;يمينا</translation>
+        <translation>انقل اللسان يمينا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;اطوِ الطرفية الفرعية</translation>
+        <translation>اطوِ الطرفية الفرعية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>&amp;امسح الطرفية النشطة</translation>
+        <translation>امسح الطرفية النشطة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="192"/>
@@ -83,12 +83,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>&amp;اللسان السابق في التأريخ</translation>
+        <translation>اللسان السابق في التأريخ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="269"/>
         <source>&amp;Next Tab in History</source>
-        <translation>&amp;اللسان التالي في التأريخ</translation>
+        <translation>اللسان التالي في التأريخ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="280"/>

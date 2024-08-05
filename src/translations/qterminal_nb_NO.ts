@@ -526,7 +526,7 @@
         <location filename="../forms/propertiesdialog.ui" line="289"/>
         <location filename="../forms/propertiesdialog.ui" line="507"/>
         <source>px</source>
-        <translation>pk</translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="306"/>
@@ -682,7 +682,7 @@
         <location filename="../forms/propertiesdialog.ui" line="711"/>
         <location filename="../forms/propertiesdialog.ui" line="725"/>
         <source> px</source>
-        <translation> pk</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="732"/>
