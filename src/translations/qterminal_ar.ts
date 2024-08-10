@@ -6,7 +6,7 @@
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation>مرشّح:</translation>
+        <translation>رشّح:</translation>
     </message>
 </context>
 <context>
@@ -38,7 +38,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="94"/>
         <source>Bookmarks</source>
-        <translation>العلامات</translation>
+        <translation>العلامات المرجعية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="211"/>
@@ -48,22 +48,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>&amp;Next Tab</source>
-        <translation>اللسان &amp;التالي</translation>
+        <translation>التبويب &amp;التالي</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>&amp;Previous Tab</source>
-        <translation>اللسان السابق</translation>
+        <translation>التبويب &amp;السابق</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="272"/>
         <source>Move Tab &amp;Left</source>
-        <translation>انقل اللسان يسارا</translation>
+        <translation>انقل التبويب &amp;يسارا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
         <source>Move Tab &amp;Right</source>
-        <translation>انقل اللسان يمينا</translation>
+        <translation>انقل التبويب يمينا</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
@@ -83,17 +83,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>اللسان السابق في التأريخ</translation>
+        <translation>&amp;التبويب السابق في التأريخ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="269"/>
         <source>&amp;Next Tab in History</source>
-        <translation>اللسان التالي في التأريخ</translation>
+        <translation>&amp;التبويب التالي في التأريخ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="280"/>
         <source>Tab</source>
-        <translation>لسان</translation>
+        <translation>تبويب</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="281"/>
@@ -971,17 +971,17 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="203"/>
         <source>Tab name</source>
-        <translation>اسم اللسان</translation>
+        <translation>اسم التبويب</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="204"/>
         <source>New tab name:</source>
-        <translation>اسم اللسان الجديد:</translation>
+        <translation>اسم التبويب الجديد:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="224"/>
         <source>Select new tab title color</source>
-        <translation>اختر لون عنوان اللسان الجديد</translation>
+        <translation>اختر لون عنوان التبويب الجديد</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="253"/>
