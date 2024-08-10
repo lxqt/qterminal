@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Vista dividida de cima para baixo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista &amp;dividida da esquerda para a direita</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
@@ -731,7 +731,7 @@ Para remover/desativar um atalho, no ponto 2, prima apenas um modificador (como 
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota: no Wayland, o atalho tem de ser adicionado nas definições do compositor para &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
