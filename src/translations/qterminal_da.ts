@@ -103,12 +103,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Split &amp; Fremvis Top-til-Bund</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Split &amp; fremvis Venstre-mod-højre</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -803,7 +803,7 @@ Fjern/deaktivér en genvej, i punkt 2, ved kun at trykke på en ændringstast (s
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bemærk: På Wayland skal genvejen tilføjes i kompositorindstillingerne for &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
