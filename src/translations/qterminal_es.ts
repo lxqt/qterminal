@@ -98,7 +98,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Dividir y ver de arriba a abajo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
@@ -762,7 +762,7 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota: En Wayland, el atajo debe ser añadido en los ajustes del compositor para &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
