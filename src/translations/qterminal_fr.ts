@@ -103,12 +103,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Diviser la &amp;vue Haut-Bas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Diviser la vu&amp;e Gauche-Droite</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -360,7 +360,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="694"/>
         <source>Development: </source>
-        <translation>Développement&#xa0;: </translation>
+        <translation>Développement : </translation>
     </message>
 </context>
 <context>
@@ -803,7 +803,7 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Note : Sous Wayland, le raccourci doit être ajouté dans les paramètres du compositeur pour &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
@@ -932,14 +932,14 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../propertiesdialog.cpp" line="629"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation>Voulez-vous écraser ce fichier de signets&#xa0;?</translation>
+        <translation>Voulez-vous écraser ce fichier de signets ?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="633"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Le nom du fichier de signets ne se termine pas par &apos;.xml&apos;.
-Êtes-vous sûr de vouloir l&apos;écraser&#xa0;?</translation>
+Êtes-vous sûr de vouloir l&apos;écraser ?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="641"/>
@@ -949,7 +949,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="641"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation>Impossible d&apos;écrire des signets dans ce fichier&#xa0;:</translation>
+        <translation>Impossible d&apos;écrire des signets dans ce fichier :</translation>
     </message>
 </context>
 <context>

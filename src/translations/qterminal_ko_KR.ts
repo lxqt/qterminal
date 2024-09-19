@@ -103,12 +103,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>상하 분할 보기(&amp;V)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>좌우 분할 보기(&amp;W)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -713,17 +713,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="627"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>단어 선택 문자</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>단어별로 텍스트를 선택할 때 영숫자 외에 단어의 일부로 이러한 문자를 고려합니다</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="644"/>
@@ -804,7 +804,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>참고: Wayland에서는 &apos;qterminal -d&apos;에 대한 컴포지터 설정에 바로가기를 추가해야 합니다.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
