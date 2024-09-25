@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>上下分屏查看</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>左右分屏查看</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -748,7 +748,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>注意：在 Wayland 上，必须在合成器设置中为 “qterminal -d ”添加快捷方式。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>

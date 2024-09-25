@@ -686,7 +686,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>単語ごとにテキストを選択する場合は、英数字だけでなく、これらの文字も単語の一部として考慮します</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
@@ -747,7 +747,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">注: Wayland では、コンポジターの設定に &apos;qterminal -d&apos; のためのショートカットを追加する必要があります。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
