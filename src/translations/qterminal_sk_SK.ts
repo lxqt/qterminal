@@ -103,12 +103,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozdeliť a zobraziť zhora-nadol</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozdeliť a zobraziť zľava-doprava</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -712,17 +712,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="627"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Znaky na výber slov</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Pri výbere textu podľa slov považuj tieto znaky za súčasť slov, okrem alfanumerických znakov</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="644"/>
@@ -803,7 +803,7 @@ Ak chcete odstrániť alebo zakázať odkaz, v bode 2 stlačte iba modifikátor 
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Poznámka: Na Waylande je potrebné pridať skratku v nastaveniach kompozitora pre &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
