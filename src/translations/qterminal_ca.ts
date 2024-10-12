@@ -103,12 +103,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista partida de dalt a baix</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Vista partida d&apos;esquerra a dreta</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -722,7 +722,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="644"/>
@@ -732,7 +732,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="774"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Campana audible</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="863"/>
@@ -803,7 +803,7 @@ Per eliminar/desactivar una drecera, al punt 2, premeu només un modificador (co
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota: amb Wayland, la drecera s&apos;ha d&apos;afegir a la configuració del compositor per a qterminal -d.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
