@@ -55,6 +55,7 @@ Q_DECLARE_METATYPE(checkfn)
 
 MainWindow::MainWindow(TerminalConfig &cfg,
                        bool dropMode,
+                       bool fullScreen,
                        QWidget * parent,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
@@ -69,7 +70,8 @@ MainWindow::MainWindow(TerminalConfig &cfg,
       presetsMenu(nullptr),
       m_config(cfg),
       m_dropLockButton(nullptr),
-      m_dropMode(dropMode)
+      m_dropMode(dropMode),
+      m_fullScreen(fullScreen)
 {
 #ifdef HAVE_QDBUS
     registerAdapter<WindowAdaptor, MainWindow>(this);
@@ -439,10 +441,10 @@ void MainWindow::setup_ViewMenu_Actions()
 
     QAction *toggleFullscreen = new QAction(tr("Fullscreen"), settingOwner);
     toggleFullscreen->setCheckable(true);
-    toggleFullscreen->setChecked(false);
+    toggleFullscreen->setChecked(m_fullScreen);
+    showFullscreen(m_fullScreen);
     setup_Action(FULLSCREEN, toggleFullscreen,
                  FULLSCREEN_SHORTCUT, this, SLOT(showFullscreen(bool)), menu_Window);
-
     setup_Action(TOGGLE_BOOKMARKS, new QAction(tr("Toggle Bookmarks"), settingOwner),
                  TOGGLE_BOOKMARKS_SHORTCUT, this, SLOT(toggleBookmarks()), menu_Window);
 
@@ -888,8 +890,8 @@ void MainWindow::newTerminalWindow()
         QProcess::startDetached(QStringLiteral("qterminal"), args);
     }
     else
-    {
-        MainWindow *w = new MainWindow(cfg, false);
+    { // fullScreen arg false so additional windows are not started in fullscreen
+        MainWindow *w = new MainWindow(cfg, false, false);
         w->show();
     }
 }

@@ -77,10 +77,11 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     exit(code);
 }
 
-void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode)
+void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode, out bool& fullScreen)
 {
     int next_option = 0;
     dropMode = false;
+    fullScreen = false;
     do{
         next_option = getopt_long(argc, argv, short_options, long_options, nullptr);
         switch(next_option)
@@ -106,6 +107,9 @@ void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_co
                 break;
             case 'p':
                 Properties::Instance(QString::fromLocal8Bit(optarg));
+                break;
+            case 'f':
+                fullScreen = true;
                 break;
             case '?':
                 print_usage_and_exit(1);
@@ -146,7 +150,8 @@ int main(int argc, char *argv[])
     QString workdir;
     QStringList shell_command;
     bool dropMode = false;
-    parse_args(argc, argv, workdir, shell_command, dropMode);
+    bool fullScreen = false;
+    parse_args(argc, argv, workdir, shell_command, dropMode, fullScreen);
 
     #ifdef HAVE_QDBUS
         app->registerOnDbus(dropMode);
@@ -214,7 +219,7 @@ int main(int argc, char *argv[])
     }
 
     TerminalConfig initConfig = TerminalConfig(workdir, shell_command);
-    app->newWindow(dropMode, initConfig);
+    app->newWindow(dropMode, fullScreen, initConfig);
 
     int ret = app->exec();
     delete Properties::Instance();
@@ -223,18 +228,18 @@ int main(int argc, char *argv[])
     return ret;
 }
 
-MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
+MainWindow *QTerminalApp::newWindow(bool dropMode, bool fullScreen, TerminalConfig &cfg)
 {
     MainWindow *window = nullptr;
     if (dropMode)
     {
-        window = new MainWindow(cfg, dropMode);
+        window = new MainWindow(cfg, dropMode, fullScreen);
         if (Properties::Instance()->dropShowOnStart)
             window->show();
     }
     else
     {
-        window = new MainWindow(cfg, dropMode);
+        window = new MainWindow(cfg, dropMode, fullScreen);
         if (Properties::Instance()->windowMaximized)
             window->setWindowState(Qt::WindowMaximized);
         window->show();

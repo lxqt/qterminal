@@ -15,7 +15,7 @@ class QTerminalApp : public QApplication
 Q_OBJECT
 
 public:
-    MainWindow *newWindow(bool dropMode, TerminalConfig &cfg);
+    MainWindow *newWindow(bool dropMode, bool fullScreen, TerminalConfig &cfg);
     QList<MainWindow*> getWindowList();
     void addWindow(MainWindow *window);
     void removeWindow(MainWindow *window);
