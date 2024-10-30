@@ -381,8 +381,10 @@ void MainWindow::setup_FileMenu_Actions()
 
     if (presetsMenu == nullptr) {
         presetsMenu = new QMenu(tr("New Tab From &Preset"), this);
-        presetsMenu->addAction(QIcon(), tr("1 &Terminal"),
-                               this, SLOT(addNewTab()));
+        auto a = presetsMenu->addAction(QIcon(), tr("1 &Terminal"));
+        connect(a, &QAction::triggered, consoleTabulator, [this]() {
+            consoleTabulator->addNewTab(m_config);
+        });
         presetsMenu->addAction(QIcon(), tr("2 &Horizontal Terminals"),
                                consoleTabulator, SLOT(preset2Horizontal()));
         presetsMenu->addAction(QIcon(), tr("2 &Vertical Terminals"),

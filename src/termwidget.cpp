@@ -200,6 +200,11 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
     menu.addAction(actions[QStringLiteral(TOGGLE_MENU)]);
     menu.addAction(actions[QStringLiteral(HIDE_WINDOW_BORDERS)]);
     menu.addAction(actions[QStringLiteral(PREFERENCES)]);
+
+    // The disabled actions should be updated before showing the menu because
+    // the "Actions" menu of the main window may have not been shown yet.
+    mainWindow->updateDisabledActions();
+
     menu.exec(mapToGlobal(pos));
 }
 
