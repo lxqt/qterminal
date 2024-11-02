@@ -198,7 +198,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="383"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Ny fane fra &amp;forhåndstinnstilling</translation>
+        <translation>Ny fane fra &amp;forhåndsinnstilling</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="384"/>
@@ -495,7 +495,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="323"/>
         <source>Change window icon based on current terminal</source>
-        <translation>Endre vinduets symbol basert på aktiv terminal</translation>
+        <translation>Endre vinduets ikon basert på gjeldende terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="337"/>

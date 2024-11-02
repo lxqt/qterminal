@@ -103,17 +103,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Разделить терминал по &amp;вертикали</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Разделить терминал по &amp;горизонтали</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>&amp;Top Subterminal</source>
-        <translation>&amp;Верхний подтерминал</translation>
+        <translation>Ве&amp;рхний подтерминал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="308"/>
@@ -752,7 +752,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Примечание: в Wayland необходимо также добавить сочетание клавиш в настройки композитора, чтобы он запускал &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
