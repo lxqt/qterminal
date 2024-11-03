@@ -206,159 +206,159 @@
         <translation>1 &amp;터미널</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="386"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 &amp;수평 터미널</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="388"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 &amp;수직 터미널</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="392"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 터미널&amp;</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="398"/>
         <source>&amp;Close Tab</source>
         <translation>탭 닫기(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="399"/>
+        <location filename="../mainwindow.cpp" line="401"/>
         <source>&amp;New Window</source>
         <translation>새 창(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="404"/>
+        <location filename="../mainwindow.cpp" line="406"/>
         <source>&amp;Preferences...</source>
         <translation>설정(&amp;P)...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="410"/>
         <source>&amp;Quit</source>
         <translation>종료(&amp;Q)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>&amp;Hide Window Borders</source>
         <translation>창 테두리 숨김(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="432"/>
+        <location filename="../mainwindow.cpp" line="434"/>
         <source>&amp;Show Tab Bar</source>
         <translation>탭 표시줄 표시하기(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="440"/>
+        <location filename="../mainwindow.cpp" line="442"/>
         <source>Fullscreen</source>
         <translation>전체화면</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="448"/>
         <source>Toggle Bookmarks</source>
         <translation>바로찾기 전환</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="456"/>
         <source>&amp;Bottom</source>
         <translation>하단(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="457"/>
         <source>&amp;Top</source>
         <translation>상단(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="456"/>
-        <location filename="../mainwindow.cpp" line="492"/>
+        <location filename="../mainwindow.cpp" line="458"/>
+        <location filename="../mainwindow.cpp" line="494"/>
         <source>&amp;Right</source>
         <translation>오른쪽(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
-        <location filename="../mainwindow.cpp" line="493"/>
+        <location filename="../mainwindow.cpp" line="459"/>
+        <location filename="../mainwindow.cpp" line="495"/>
         <source>&amp;Left</source>
         <translation>왼쪽(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="475"/>
+        <location filename="../mainwindow.cpp" line="477"/>
         <source>&amp;Tabs Layout</source>
         <translation>탭 레이아웃(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="491"/>
+        <location filename="../mainwindow.cpp" line="493"/>
         <source>&amp;None</source>
         <translation>아니오(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="509"/>
+        <location filename="../mainwindow.cpp" line="511"/>
         <source>S&amp;crollbar Layout</source>
         <translation>스크롤바 레이아웃(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>&amp;BlockCursor</source>
         <translation>블럭(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="523"/>
+        <location filename="../mainwindow.cpp" line="525"/>
         <source>&amp;UnderlineCursor</source>
         <translation>밑줄(&amp;U)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="../mainwindow.cpp" line="526"/>
         <source>&amp;IBeamCursor</source>
         <translation>I-빔(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="541"/>
+        <location filename="../mainwindow.cpp" line="543"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>커서 모양(&amp;K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="648"/>
+        <location filename="../mainwindow.cpp" line="650"/>
         <source>Exit QTerminal</source>
         <translation>QTerminal 종료</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="650"/>
+        <location filename="../mainwindow.cpp" line="652"/>
         <source>Do not ask again</source>
         <translation>다시 묻지않음</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="658"/>
+        <location filename="../mainwindow.cpp" line="660"/>
         <source>Are you sure you want to exit?</source>
         <translation>종료하시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>About</source>
         <translation>정보</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>가볍고 강력한 다중 플랫폼 터미널 에뮬레이터</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>Copyright (C) </source>
         <translation>저작권 (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="692"/>
+        <location filename="../mainwindow.cpp" line="694"/>
         <source>LXQt Project</source>
         <translation>LXQt 프로젝트</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="694"/>
+        <location filename="../mainwindow.cpp" line="696"/>
         <source>Development: </source>
         <translation>개발: </translation>
     </message>
@@ -832,123 +832,123 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>자신의 바로찾기 파일 위치를 지정할 수 있습니다. OwnCloud 또는 Dropbox와 같은 도구를 사용하여 쉽게 바로찾기를 공유할 수 있습니다.</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="159"/>
+        <location filename="../propertiesdialog.cpp" line="164"/>
         <source>No scrollbar</source>
         <translation>스크롤바 없음</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="159"/>
-        <location filename="../propertiesdialog.cpp" line="165"/>
+        <location filename="../propertiesdialog.cpp" line="164"/>
+        <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Left</source>
         <translation>왼쪽</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="159"/>
-        <location filename="../propertiesdialog.cpp" line="165"/>
+        <location filename="../propertiesdialog.cpp" line="164"/>
+        <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Right</source>
         <translation>오른쪽</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="165"/>
+        <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Top</source>
         <translation>상단</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="165"/>
+        <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Bottom</source>
         <translation>하단</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="178"/>
+        <location filename="../propertiesdialog.cpp" line="183"/>
         <source>BlockCursor</source>
         <translation>블록커서</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="178"/>
+        <location filename="../propertiesdialog.cpp" line="183"/>
         <source>UnderlineCursor</source>
         <translation>밑줄커서</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="178"/>
+        <location filename="../propertiesdialog.cpp" line="183"/>
         <source>IBeamCursor</source>
         <translation>아이빔커서</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="196"/>
+        <location filename="../propertiesdialog.cpp" line="201"/>
         <source>No move</source>
         <translation>이동 없음</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="196"/>
+        <location filename="../propertiesdialog.cpp" line="201"/>
         <source>Scrolling to top</source>
         <translation>맨 위로 스크롤</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="196"/>
+        <location filename="../propertiesdialog.cpp" line="201"/>
         <source>Scrolling to bottom</source>
         <translation>맨 아래로 스크롤</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="271"/>
+        <location filename="../propertiesdialog.cpp" line="276"/>
         <source>Examples</source>
         <translation>예시</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="425"/>
+        <location filename="../propertiesdialog.cpp" line="430"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>이미지 (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="527"/>
+        <location filename="../propertiesdialog.cpp" line="532"/>
         <source>Open bookmarks file</source>
         <translation>바로찾기 파일 열기</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="529"/>
+        <location filename="../propertiesdialog.cpp" line="534"/>
         <source>XML files (*.xml)</source>
         <translation>XML 파일 (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="530"/>
+        <location filename="../propertiesdialog.cpp" line="535"/>
         <source>All files (*)</source>
         <translation>모든 파일 (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="629"/>
-        <location filename="../propertiesdialog.cpp" line="633"/>
+        <location filename="../propertiesdialog.cpp" line="634"/>
+        <location filename="../propertiesdialog.cpp" line="638"/>
         <source>Question</source>
         <translation>질문</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="629"/>
+        <location filename="../propertiesdialog.cpp" line="634"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>이 바로찾기 파일을 덮어쓰시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="633"/>
+        <location filename="../propertiesdialog.cpp" line="638"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>바로찾기 파일의 이름은 &apos;.xml&apos;로 끝나지 않습니다.
 덮어쓰시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="641"/>
+        <location filename="../propertiesdialog.cpp" line="646"/>
         <source>Warning</source>
         <translation>경고</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="641"/>
+        <location filename="../propertiesdialog.cpp" line="646"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>이 파일에 바로찾기를 기록할 수 없음:</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="206"/>
-        <location filename="../propertiesdialog.cpp" line="319"/>
+        <location filename="../propertiesdialog.cpp" line="211"/>
+        <location filename="../propertiesdialog.cpp" line="324"/>
         <source>System Default</source>
         <translation>시스템 기본값</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="424"/>
+        <location filename="../propertiesdialog.cpp" line="429"/>
         <source>Choose a background image</source>
         <translation>배경 이미지 고르기</translation>
     </message>
