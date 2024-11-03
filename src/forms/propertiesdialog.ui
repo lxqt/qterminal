@@ -124,7 +124,7 @@
               <item>
                <widget class="QLabel" name="fontLabel">
                 <property name="text">
-                 <string>Font</string>
+                 <string>Font:</string>
                 </property>
                 <property name="buddy">
                  <cstring>changeFontButton</cstring>
@@ -170,7 +170,7 @@
            <item row="2" column="0">
             <widget class="QLabel" name="label_5">
              <property name="text">
-              <string>Color scheme</string>
+              <string>Color scheme:</string>
              </property>
              <property name="buddy">
               <cstring>colorSchemaCombo</cstring>
@@ -183,7 +183,7 @@
            <item row="3" column="0">
             <widget class="QLabel" name="label_6">
              <property name="text">
-              <string>Widget style</string>
+              <string>Widget style:</string>
              </property>
              <property name="buddy">
               <cstring>styleComboBox</cstring>
@@ -196,7 +196,7 @@
            <item row="4" column="0">
             <widget class="QLabel" name="label_7">
              <property name="text">
-              <string>Scrollbar position</string>
+              <string>Scrollbar position:</string>
              </property>
              <property name="buddy">
               <cstring>scrollBarPos_comboBox</cstring>
@@ -209,7 +209,7 @@
            <item row="5" column="0">
             <widget class="QLabel" name="label_8">
              <property name="text">
-              <string>Tabs position</string>
+              <string>Tabs position:</string>
              </property>
              <property name="buddy">
               <cstring>tabsPos_comboBox</cstring>
@@ -222,7 +222,7 @@
            <item row="6" column="0">
             <widget class="QLabel" name="label_12">
              <property name="text">
-              <string>Cursor shape</string>
+              <string>Cursor shape:</string>
              </property>
              <property name="buddy">
               <cstring>keybCursorShape_comboBox</cstring>
@@ -276,7 +276,7 @@
            <item row="12" column="0">
             <widget class="QLabel" name="label">
              <property name="text">
-              <string>Terminal transparency</string>
+              <string>Terminal transparency:</string>
              </property>
              <property name="buddy">
               <cstring>termTransparencyBox</cstring>
@@ -393,7 +393,7 @@
            <item row="16" column="0">
             <widget class="QLabel" name="label_15">
              <property name="text">
-              <string>Terminal margin</string>
+              <string>Terminal margin:</string>
              </property>
              <property name="buddy">
               <cstring>terminalMarginSpinBox</cstring>
@@ -403,7 +403,7 @@
            <item row="16" column="1">
             <widget class="QSpinBox" name="terminalMarginSpinBox">
              <property name="suffix">
-              <string>px</string>
+              <string> px</string>
              </property>
             </widget>
            </item>
@@ -554,7 +554,7 @@
               <bool>false</bool>
              </property>
              <property name="suffix">
-              <string>px</string>
+              <string> px</string>
              </property>
              <property name="maximum">
               <number>1000</number>
@@ -708,7 +708,7 @@
               <item row="0" column="0">
                <widget class="QRadioButton" name="historyLimited">
                 <property name="text">
-                 <string>History size (in lines)</string>
+                 <string>History size (in lines):</string>
                 </property>
                </widget>
               </item>
@@ -735,7 +735,7 @@
               <item row="2" column="0">
                <widget class="QLabel" name="label_3">
                 <property name="text">
-                 <string>Action after paste</string>
+                 <string>Action after paste:</string>
                 </property>
                 <property name="buddy">
                  <cstring>motionAfterPasting_comboBox</cstring>
@@ -748,7 +748,7 @@
               <item row="3" column="0">
                <widget class="QLabel" name="label_18">
                 <property name="text">
-                 <string>Word selection characters</string>
+                 <string>Word selection characters:</string>
                 </property>
                </widget>
               </item>
@@ -765,7 +765,7 @@
               <item row="4" column="0">
                <widget class="QLabel" name="label_4">
                 <property name="text">
-                 <string>Mouse cursor hiding delay</string>
+                 <string>Mouse cursor hiding delay:</string>
                 </property>
                </widget>
               </item>
@@ -846,7 +846,7 @@
               <item row="12" column="0">
                <widget class="QLabel" name="label_14">
                 <property name="text">
-                 <string>Default $TERM</string>
+                 <string>Default $TERM:</string>
                 </property>
                </widget>
               </item>
@@ -885,7 +885,7 @@
                  <string>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</string>
                 </property>
                 <property name="text">
-                 <string>Handle history command</string>
+                 <string>Handle history command:</string>
                 </property>
                </widget>
               </item>
@@ -998,12 +998,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
           <item>
            <layout class="QFormLayout" name="formLayout">
             <property name="fieldGrowthPolicy">
-             <enum>QFormLayout::ExpandingFieldsGrow</enum>
+             <enum>QFormLayout::FieldGrowthPolicy::ExpandingFieldsGrow</enum>
             </property>
             <item row="0" column="0">
              <widget class="QLabel" name="dropHeightLabel">
               <property name="text">
-               <string>Height</string>
+               <string>Height:</string>
               </property>
               <property name="buddy">
                <cstring>dropHeightSpinBox</cstring>
@@ -1026,7 +1026,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
             <item row="1" column="0">
              <widget class="QLabel" name="dropWidthLabel">
               <property name="text">
-               <string>Width</string>
+               <string>Width:</string>
               </property>
               <property name="buddy">
                <cstring>dropWidthSpinBox</cstring>
@@ -1101,7 +1101,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
          <item>
           <widget class="QLabel" name="label_10">
            <property name="text">
-            <string>Bookmark file</string>
+            <string>Bookmark file:</string>
            </property>
            <property name="buddy">
             <cstring>bookmarksLineEdit</cstring>
