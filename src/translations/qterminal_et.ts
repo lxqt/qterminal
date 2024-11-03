@@ -206,159 +206,159 @@
         <translation>1 &amp;terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="386"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 &amp;horisontaalset terminali</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="388"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 &amp;vertikaalset terminali</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="392"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 terminal&amp;i</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="398"/>
         <source>&amp;Close Tab</source>
         <translation>&amp;Sulge kaart</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="399"/>
+        <location filename="../mainwindow.cpp" line="401"/>
         <source>&amp;New Window</source>
         <translation>&amp;Uus aken</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="404"/>
+        <location filename="../mainwindow.cpp" line="406"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Eelistused...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="410"/>
         <source>&amp;Quit</source>
         <translation>&amp;Välju</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="416"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Peida akna piirid</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="432"/>
+        <location filename="../mainwindow.cpp" line="434"/>
         <source>&amp;Show Tab Bar</source>
         <translation>&amp;Kuva kaardiriba</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="440"/>
+        <location filename="../mainwindow.cpp" line="442"/>
         <source>Fullscreen</source>
         <translation>Täisekraanivaade</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="446"/>
+        <location filename="../mainwindow.cpp" line="448"/>
         <source>Toggle Bookmarks</source>
         <translation>Lülita järjehoidjad sisse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="454"/>
+        <location filename="../mainwindow.cpp" line="456"/>
         <source>&amp;Bottom</source>
         <translation>&amp;All</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="457"/>
         <source>&amp;Top</source>
         <translation>&amp;Ülal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="456"/>
-        <location filename="../mainwindow.cpp" line="492"/>
+        <location filename="../mainwindow.cpp" line="458"/>
+        <location filename="../mainwindow.cpp" line="494"/>
         <source>&amp;Right</source>
         <translation>&amp;Paremal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
-        <location filename="../mainwindow.cpp" line="493"/>
+        <location filename="../mainwindow.cpp" line="459"/>
+        <location filename="../mainwindow.cpp" line="495"/>
         <source>&amp;Left</source>
         <translation>&amp;Vasakul</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="475"/>
+        <location filename="../mainwindow.cpp" line="477"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;Kaartide paigutus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="491"/>
+        <location filename="../mainwindow.cpp" line="493"/>
         <source>&amp;None</source>
         <translation>&amp;Pole</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="509"/>
+        <location filename="../mainwindow.cpp" line="511"/>
         <source>S&amp;crollbar Layout</source>
         <translation>K&amp;erimisriba paigutus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>&amp;BlockCursor</source>
         <translation>&amp;Plokk-kursor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="523"/>
+        <location filename="../mainwindow.cpp" line="525"/>
         <source>&amp;UnderlineCursor</source>
         <translation>&amp;Allajoonitud kursor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="../mainwindow.cpp" line="526"/>
         <source>&amp;IBeamCursor</source>
         <translation>&amp;I-tala kursor</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="541"/>
+        <location filename="../mainwindow.cpp" line="543"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Klaviatuuri kursori kuju</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="648"/>
+        <location filename="../mainwindow.cpp" line="650"/>
         <source>Exit QTerminal</source>
         <translation>Lõpeta Qterminali töö</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="650"/>
+        <location filename="../mainwindow.cpp" line="652"/>
         <source>Do not ask again</source>
         <translation>Ära küsi uuesti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="658"/>
+        <location filename="../mainwindow.cpp" line="660"/>
         <source>Are you sure you want to exit?</source>
         <translation>Soovid sa tõesti väljuda?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="688"/>
         <source>About</source>
         <translation>Rakenduse teave</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="690"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Tõhus terminaliemulaator, mis toimib paljudel platvormidel</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>Copyright (C) </source>
         <translation>Autoriõigused (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="692"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="692"/>
+        <location filename="../mainwindow.cpp" line="694"/>
         <source>LXQt Project</source>
         <translation>LXQt projekt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="694"/>
+        <location filename="../mainwindow.cpp" line="696"/>
         <source>Development: </source>
         <translation>Arendus: </translation>
     </message>
@@ -831,123 +831,123 @@ Kiirklahvi kustutamiseks või väljalülitamiseks vajuta sammus 2 vaid muuteklah
         <translation>Klahv</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="159"/>
+        <location filename="../propertiesdialog.cpp" line="164"/>
         <source>No scrollbar</source>
         <translation>Kerimisribata</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="159"/>
-        <location filename="../propertiesdialog.cpp" line="165"/>
+        <location filename="../propertiesdialog.cpp" line="164"/>
+        <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Left</source>
         <translation>Vasakul</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="159"/>
-        <location filename="../propertiesdialog.cpp" line="165"/>
+        <location filename="../propertiesdialog.cpp" line="164"/>
+        <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Right</source>
         <translation>Paremal</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="165"/>
+        <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Top</source>
         <translation>Ülal</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="165"/>
+        <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Bottom</source>
         <translation>All</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="178"/>
+        <location filename="../propertiesdialog.cpp" line="183"/>
         <source>BlockCursor</source>
         <translation>Plokk kursor</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="178"/>
+        <location filename="../propertiesdialog.cpp" line="183"/>
         <source>UnderlineCursor</source>
         <translation>Allajoonitud kursor</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="178"/>
+        <location filename="../propertiesdialog.cpp" line="183"/>
         <source>IBeamCursor</source>
         <translation>I-tala kursor</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="196"/>
+        <location filename="../propertiesdialog.cpp" line="201"/>
         <source>No move</source>
         <translation>Ära muuda asukohta</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="196"/>
+        <location filename="../propertiesdialog.cpp" line="201"/>
         <source>Scrolling to top</source>
         <translation>Üles kerimine</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="196"/>
+        <location filename="../propertiesdialog.cpp" line="201"/>
         <source>Scrolling to bottom</source>
         <translation>Alla kerimine</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="271"/>
+        <location filename="../propertiesdialog.cpp" line="276"/>
         <source>Examples</source>
         <translation>Näited</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="425"/>
+        <location filename="../propertiesdialog.cpp" line="430"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Pildid (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="527"/>
+        <location filename="../propertiesdialog.cpp" line="532"/>
         <source>Open bookmarks file</source>
         <translation>Ava järjehoidjate fail</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="529"/>
+        <location filename="../propertiesdialog.cpp" line="534"/>
         <source>XML files (*.xml)</source>
         <translation>XML failid (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="530"/>
+        <location filename="../propertiesdialog.cpp" line="535"/>
         <source>All files (*)</source>
         <translation>Kõik failid (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="629"/>
-        <location filename="../propertiesdialog.cpp" line="633"/>
+        <location filename="../propertiesdialog.cpp" line="634"/>
+        <location filename="../propertiesdialog.cpp" line="638"/>
         <source>Question</source>
         <translation>Küsimus</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="629"/>
+        <location filename="../propertiesdialog.cpp" line="634"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Kas sa soovid asendada olemasoleva järjehoidjate faili?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="633"/>
+        <location filename="../propertiesdialog.cpp" line="638"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Järjehoidjate failil puudub xml-laiend.
 Kas sa oled kindel, et see on õige fail ja soovid seda asendada?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="641"/>
+        <location filename="../propertiesdialog.cpp" line="646"/>
         <source>Warning</source>
         <translation>Hoiatus</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="641"/>
+        <location filename="../propertiesdialog.cpp" line="646"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Järjehoidjaid ei õnnestu salvestada sellesse faili:</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="206"/>
-        <location filename="../propertiesdialog.cpp" line="319"/>
+        <location filename="../propertiesdialog.cpp" line="211"/>
+        <location filename="../propertiesdialog.cpp" line="324"/>
         <source>System Default</source>
         <translation>Süsteemne vaikeväärtus</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="424"/>
+        <location filename="../propertiesdialog.cpp" line="429"/>
         <source>Choose a background image</source>
         <translation>Vali taustapilt</translation>
     </message>
