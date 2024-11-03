@@ -505,7 +505,7 @@
         <location filename="../forms/propertiesdialog.ui" line="289"/>
         <location filename="../forms/propertiesdialog.ui" line="507"/>
         <source>px</source>
-        <translation>px</translation>
+        <translation>пикс</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="306"/>
@@ -590,7 +590,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Background mode:</source>
-        <translation>Фоновый режим:</translation>
+        <translation>Режим фонового изображения:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="435"/>
@@ -600,12 +600,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Stretch</source>
-        <translation>Растянуть</translation>
+        <translation>Заполнение</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="445"/>
         <source>Zoom</source>
-        <translation>Масштаб</translation>
+        <translation>Увеличить</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="450"/>
@@ -615,7 +615,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="455"/>
         <source>Center</source>
-        <translation>По центру</translation>
+        <translation>Центр</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="344"/>
@@ -676,7 +676,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="668"/>
         <source>Close tab on middle-click</source>
-        <translation>Закрывать вкладки по щелчку средней кнопкой</translation>
+        <translation>Закрывать вкладки щелчком средней кнопки</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="647"/>
