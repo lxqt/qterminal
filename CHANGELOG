@@ -1,3 +1,11 @@
+qterminal-2.1.0 / 2024-11-05
+=============================
+ * Added a hint on drop-down shortcut under Wayland.
+ * Resolved the conflicts when settings were changed by multiple instances.
+ * Prevent ordinary main windows under dropdown process.
+ * User-friendly texts for split menu-items.
+ * Fixed adding new tab from preset and fixed the disabled state of the context menu's collapse action.
+
 qterminal-2.0.1 / 2024-06-27
 =============================
  * Single instance for drop-down mode.
