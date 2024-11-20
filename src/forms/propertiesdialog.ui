@@ -69,7 +69,7 @@
       <enum>QFrame::StyledPanel</enum>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="appearancePage">
       <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -301,6 +301,13 @@
             </widget>
            </item>
            <item row="14" column="0" colspan="2">
+            <widget class="QCheckBox" name="focusOnMoueOverCheckBox">
+             <property name="text">
+              <string>Focus the terminal on mouseover</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="0" colspan="2">
             <widget class="QCheckBox" name="closeTabButtonCheckBox">
              <property name="text">
               <string>Show close button on each tab</string>
@@ -310,35 +317,35 @@
              </property>
             </widget>
            </item>
-           <item row="15" column="0" colspan="2">
+           <item row="16" column="0" colspan="2">
             <widget class="QCheckBox" name="changeWindowTitleCheckBox">
              <property name="text">
               <string>Change window title based on current terminal</string>
              </property>
             </widget>
            </item>
-           <item row="16" column="0" colspan="2">
+           <item row="17" column="0" colspan="2">
             <widget class="QCheckBox" name="changeWindowIconCheckBox">
              <property name="text">
               <string>Change window icon based on current terminal</string>
              </property>
             </widget>
            </item>
-           <item row="17" column="0" colspan="2">
+           <item row="18" column="0" colspan="2">
             <widget class="QCheckBox" name="showTerminalSizeHintCheckBox">
              <property name="text">
               <string>Show terminal size on resize</string>
              </property>
             </widget>
            </item>
-           <item row="18" column="0" colspan="2">
+           <item row="19" column="0" colspan="2">
             <widget class="QCheckBox" name="enabledBidiSupportCheckBox">
              <property name="text">
               <string>Enable bi-directional text support</string>
              </property>
             </widget>
            </item>
-           <item row="19" column="0" colspan="2">
+           <item row="20" column="0" colspan="2">
             <widget class="QCheckBox" name="useFontBoxDrawingCharsCheckBox">
              <property name="toolTip">
               <string>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</string>
@@ -348,7 +355,7 @@
              </property>
             </widget>
            </item>
-           <item row="20" column="0">
+           <item row="21" column="0">
             <widget class="QLabel" name="label_4">
              <property name="text">
               <string>Application transparency</string>
@@ -358,7 +365,7 @@
              </property>
             </widget>
            </item>
-           <item row="20" column="1">
+           <item row="21" column="1">
             <widget class="QSpinBox" name="appTransparencyBox">
              <property name="suffix">
               <string> %</string>
@@ -374,7 +381,7 @@
              </property>
             </widget>
            </item>
-           <item row="21" column="0">
+           <item row="22" column="0">
             <widget class="QLabel" name="label">
              <property name="text">
               <string>Terminal transparency</string>
@@ -384,7 +391,7 @@
              </property>
             </widget>
            </item>
-           <item row="21" column="1">
+           <item row="22" column="1">
             <widget class="QSpinBox" name="termTransparencyBox">
              <property name="suffix">
               <string> %</string>
@@ -400,14 +407,14 @@
              </property>
             </widget>
            </item>
-           <item row="22" column="0">
+           <item row="23" column="0">
             <widget class="QLabel" name="label_13">
              <property name="text">
               <string>Background image:</string>
              </property>
             </widget>
            </item>
-           <item row="22" column="1">
+           <item row="23" column="1">
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
               <widget class="QLineEdit" name="backgroundImageLineEdit"/>
@@ -421,14 +428,14 @@
              </item>
             </layout>
            </item>
-           <item row="23" column="0">
+           <item row="24" column="0">
             <widget class="QLabel" name="label_16">
              <property name="text">
               <string>Background mode:</string>
              </property>
             </widget>
            </item>
-           <item row="23" column="1">
+           <item row="24" column="1">
             <widget class="QComboBox" name="backgroundModecomboBox">
              <item>
               <property name="text">
@@ -457,7 +464,7 @@
              </item>
             </widget>
            </item>
-           <item row="24" column="0">
+           <item row="25" column="0">
             <widget class="QLabel" name="label_9">
              <property name="text">
               <string>Start with preset:</string>
@@ -467,7 +474,7 @@
              </property>
             </widget>
            </item>
-           <item row="24" column="1">
+           <item row="25" column="1">
             <widget class="QComboBox" name="terminalPresetComboBox">
              <item>
               <property name="text">
@@ -491,7 +498,7 @@
              </item>
             </widget>
            </item>
-           <item row="25" column="0">
+           <item row="26" column="0">
             <widget class="QLabel" name="label_15">
              <property name="text">
               <string>Terminal margin</string>
@@ -501,14 +508,14 @@
              </property>
             </widget>
            </item>
-           <item row="25" column="1">
+           <item row="26" column="1">
             <widget class="QSpinBox" name="terminalMarginSpinBox">
              <property name="suffix">
               <string>px</string>
              </property>
             </widget>
            </item>
-           <item row="26" column="0" colspan="2">
+           <item row="27" column="0" colspan="2">
             <spacer name="verticalSpacer_3">
              <property name="orientation">
               <enum>Qt::Vertical</enum>

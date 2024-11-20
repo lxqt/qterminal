@@ -57,6 +57,7 @@ class Properties
         QString colorScheme;
         QString guiStyle;
         bool highlightCurrentTerminal;
+        bool focusOnMoueOver;
         bool showTerminalSizeHint;
 
         bool historyLimited;
