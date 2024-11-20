@@ -303,7 +303,7 @@
            <item row="14" column="0" colspan="2">
             <widget class="QCheckBox" name="focusOnMoueOverCheckBox">
              <property name="text">
-              <string>Focus the terminal on mouseover</string>
+              <string>Set the current terminal on mouseover</string>
              </property>
             </widget>
            </item>
