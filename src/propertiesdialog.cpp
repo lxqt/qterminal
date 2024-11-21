@@ -225,6 +225,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     highlightCurrentCheckBox->setChecked(Properties::Instance()->highlightCurrentTerminal);
 
+    focusOnMoueOverCheckBox->setChecked(Properties::Instance()->focusOnMoueOver);
+
     showTerminalSizeHintCheckBox->setChecked(Properties::Instance()->showTerminalSizeHint);
 
     askOnExitCheckBox->setChecked(Properties::Instance()->askOnExit);
@@ -335,6 +337,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->terminalMargin = terminalMarginSpinBox->value();
     Properties::Instance()->termTransparency = termTransparencyBox->value();
     Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
+    Properties::Instance()->focusOnMoueOver = focusOnMoueOverCheckBox->isChecked();
     Properties::Instance()->showTerminalSizeHint = showTerminalSizeHintCheckBox->isChecked();
     Properties::Instance()->backgroundImage = backgroundImageLineEdit->text();
     Properties::Instance()->backgroundMode = qBound(0, backgroundModecomboBox->currentIndex(), 4);

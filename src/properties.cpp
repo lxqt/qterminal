@@ -83,6 +83,7 @@ void Properties::loadSettings()
     colorScheme = m_settings->value(QLatin1String("colorScheme"), QLatin1String("Linux")).toString();
 
     highlightCurrentTerminal = m_settings->value(QLatin1String("highlightCurrentTerminal"), true).toBool();
+    focusOnMoueOver = m_settings->value(QLatin1String("focusOnMoueOver"), false).toBool();
     showTerminalSizeHint = m_settings->value(QLatin1String("showTerminalSizeHint"), true).toBool();
 
     font = QFont(qvariant_cast<QString>(m_settings->value(QLatin1String("fontFamily"), defaultFont().family())),
@@ -189,6 +190,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("guiStyle"), guiStyle);
     m_settings->setValue(QLatin1String("colorScheme"), colorScheme);
     m_settings->setValue(QLatin1String("highlightCurrentTerminal"), highlightCurrentTerminal);
+    m_settings->setValue(QLatin1String("focusOnMoueOver"), focusOnMoueOver);
     m_settings->setValue(QLatin1String("showTerminalSizeHint"), showTerminalSizeHint);
     m_settings->setValue(QLatin1String("fontFamily"), font.family());
     m_settings->setValue(QLatin1String("fontSize"), font.pointSize());

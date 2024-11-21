@@ -258,18 +258,25 @@ bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
     if (ev->type() == QEvent::MouseButtonPress)
     {
         QMouseEvent *mev = static_cast<QMouseEvent*>(ev);
-        if ( mev->button() == Qt::MiddleButton )
+        if (mev->button() == Qt::MiddleButton)
         {
             if(Properties::Instance()->swapMouseButtons2and3)
             {
-                    impl()->customContextMenuCall(mev->pos());
+                impl()->customContextMenuCall(mev->pos());
             }
             else
             {
-                    impl()->pasteSelection();
+                impl()->pasteSelection();
             }
             return true;
         }
+    }
+    else if ((ev->type() == QEvent::MouseMove
+              || ev->type() == QEvent::Enter
+              || ev->type() == QEvent::HoverEnter)
+             && Properties::Instance()->focusOnMoueOver)
+    {
+        impl()->setFocus();
     }
     return false;
 }
