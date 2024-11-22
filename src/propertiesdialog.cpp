@@ -297,7 +297,14 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
         Properties::Instance()->saveSettings();
     });
 
-    waylandLabel->setVisible(QGuiApplication::platformName() == QStringLiteral("wayland"));
+    // show, hide or disable some widgets on Wayland
+    bool onWayland(QGuiApplication::platformName() == QStringLiteral("wayland"));
+    appTransparencyLabel->setVisible(!onWayland);
+    appTransparencyBox->setVisible(!onWayland);
+    savePosOnExitCheckBox->setVisible(!onWayland);
+    waylandLabel->setVisible(onWayland);
+    dropShortCutLabel->setEnabled(!onWayland);
+    dropShortCutEdit->setEnabled(!onWayland);
 
     // restore its size while fitting it into available desktop geometry
     QSize s;
