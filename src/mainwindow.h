@@ -38,6 +38,7 @@ class MainWindow : public QMainWindow, private Ui::mainWindow, public DBusAddres
 public:
     MainWindow(TerminalConfig& cfg,
                bool dropMode,
+               bool fullScreen,
                QWidget * parent = nullptr, Qt::WindowFlags f = Qt::WindowFlags());
     ~MainWindow() override;
 
@@ -86,6 +87,7 @@ private:
     void enableDropMode();
     QToolButton *m_dropLockButton;
     bool m_dropMode;
+    bool m_fullScreen;
     QxtGlobalShortcut m_dropShortcut;
     void realign();
     void setDropShortcut(const QKeySequence& dropShortCut);
