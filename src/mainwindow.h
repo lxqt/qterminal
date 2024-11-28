@@ -28,6 +28,9 @@
 #include "terminalconfig.h"
 #include "dbusaddressable.h"
 
+namespace LayerShellQt {
+    class Window;
+}
 
 class QToolButton;
 
@@ -55,6 +58,7 @@ public:
 
 protected:
      bool event(QEvent* event) override;
+     void showEvent(QShowEvent* event) override;
 
 private:
     QActionGroup *tabPosition, *scrollBarPosition, *keyboardCursorShape;
@@ -86,6 +90,7 @@ private:
     void enableDropMode();
     QToolButton *m_dropLockButton;
     bool m_dropMode;
+    LayerShellQt::Window *m_layerWindow;
     QxtGlobalShortcut m_dropShortcut;
     void realign();
     void setDropShortcut(const QKeySequence& dropShortCut);
