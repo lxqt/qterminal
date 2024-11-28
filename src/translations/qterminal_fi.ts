@@ -53,22 +53,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="263"/>
         <source>&amp;Previous Tab</source>
-        <translation>&amp;Edellinen välilehti</translation>
+        <translation>E&amp;dellinen välilehti</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="272"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Siirrä välilehti &amp;vasemmalle</translation>
+        <translation>Siirrä välilehti vase&amp;mmalle</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="275"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Siirrä välilehti &amp;oikealle</translation>
+        <translation>Siirrä välilehti o&amp;ikealle</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="302"/>
         <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Pienennä alapääte</translation>
+        <translation>&amp;Pienennä alipääte</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="253"/>
@@ -83,12 +83,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="266"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>&amp;Viimeksi käytetty välilehti</translation>
+        <translation>Viime&amp;ksi käytetty välilehti</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="269"/>
         <source>&amp;Next Tab in History</source>
-        <translation>&amp;Seuraavaksi käytetty välilehti</translation>
+        <translation>Se&amp;uraavaksi käytetty välilehti</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="280"/>
@@ -103,12 +103,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="294"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Jaa näkymä yl&amp;häältä alas</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="297"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Jaa näkymä vasemma&amp;lta oikealle</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="401"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Uusi ikkuna</translation>
+        <translation>Uusi &amp;ikkuna</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="406"/>
@@ -295,7 +295,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="511"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>Vierityspalkin asettelu</translation>
+        <translation>Vierityspalk&amp;in asettelu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="524"/>
@@ -717,7 +717,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="634"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Kun tekstiä valitaan sanojen perusteella, huomioi nämä merkit sanojen osana aakkosnumeeristen lisäksi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
@@ -803,7 +803,7 @@ Pikanäppäimen poistamiseksi, paina 2 -kohdassa vain muuttajanäppäintä (kute
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Huomautus: Waylandia käytettäessä, pikanäppäin täytyy lisätä koostimen asetuksissa, että &apos;qterminal -d&apos;-komento toimii.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1056"/>
