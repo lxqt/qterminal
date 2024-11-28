@@ -36,329 +36,329 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="94"/>
+        <location filename="../mainwindow.cpp" line="95"/>
         <source>Bookmarks</source>
         <translation>Marcadors</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="211"/>
+        <location filename="../mainwindow.cpp" line="218"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>Premeu «%1» per veure el terminal.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="260"/>
+        <location filename="../mainwindow.cpp" line="267"/>
         <source>&amp;Next Tab</source>
         <translation>Pesta&amp;nya següent</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="263"/>
+        <location filename="../mainwindow.cpp" line="270"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Pestanya anterior</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="272"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Move Tab &amp;Left</source>
         <translation>Mou la pestanya a &amp;l&apos;esquerra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="275"/>
+        <location filename="../mainwindow.cpp" line="282"/>
         <source>Move Tab &amp;Right</source>
         <translation>Mou la pestanya a la d&amp;reta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="302"/>
+        <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Collapse Subterminal</source>
         <translation>&amp;Col·lapsa el subterminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="253"/>
+        <location filename="../mainwindow.cpp" line="260"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>Neteja el terminal a&amp;ctiu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="192"/>
+        <location filename="../mainwindow.cpp" line="199"/>
         <source>Keep window open when it loses focus</source>
         <translation>Mantén la finestra oberta en perdre el focus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="266"/>
+        <location filename="../mainwindow.cpp" line="273"/>
         <source>&amp;Previous Tab in History</source>
         <translation>&amp;Pestanya anterior a l&apos;historial</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="269"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>&amp;Next Tab in History</source>
         <translation>Pestanya següe&amp;nt a l&apos;historial</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="280"/>
+        <location filename="../mainwindow.cpp" line="287"/>
         <source>Tab</source>
         <translation>Pestanya</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="281"/>
+        <location filename="../mainwindow.cpp" line="288"/>
         <source>Go to</source>
         <translation>Vés a</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="301"/>
         <source>Split &amp;View Top-Bottom</source>
         <translation>Vista partida de dalt a baix</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="297"/>
+        <location filename="../mainwindow.cpp" line="304"/>
         <source>Split Vie&amp;w Left-Right</source>
         <translation>Vista partida d&apos;esquerra a dreta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="312"/>
         <source>&amp;Top Subterminal</source>
         <translation>Sub&amp;terminal superior</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="308"/>
+        <location filename="../mainwindow.cpp" line="315"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>Subterminal in&amp;ferior</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="311"/>
+        <location filename="../mainwindow.cpp" line="318"/>
         <source>L&amp;eft Subterminal</source>
         <translation>Subterminal &amp;esquerre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="314"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>R&amp;ight Subterminal</source>
         <translation>Subterm&amp;inal dret</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="321"/>
+        <location filename="../mainwindow.cpp" line="328"/>
         <source>Copy &amp;Selection</source>
         <translation>Copia la &amp;selecció</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>Paste Clip&amp;board</source>
         <translation>Enganxa el p&amp;orta-retalls</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>Paste S&amp;election</source>
         <translation>Enganxa la s&amp;elecció</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="330"/>
+        <location filename="../mainwindow.cpp" line="337"/>
         <source>Zoom &amp;in</source>
         <translation>Ampl&amp;ia el zoom</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="333"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>Zoom &amp;out</source>
         <translation>Redueix el z&amp;oom</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="336"/>
+        <location filename="../mainwindow.cpp" line="343"/>
         <source>Zoom rese&amp;t</source>
         <translation>Res&amp;tableix el zoom</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="341"/>
+        <location filename="../mainwindow.cpp" line="348"/>
         <source>&amp;Find...</source>
         <translation>&amp;Troba...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="344"/>
+        <location filename="../mainwindow.cpp" line="351"/>
         <source>Handle history...</source>
         <translation>Gestiona l&apos;històric...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="359"/>
         <source>&amp;Save Session</source>
         <translation>De&amp;sa la sessió</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="358"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>&amp;Load Session</source>
         <translation>Carrega &amp;la sessió</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="372"/>
         <source>&amp;Toggle Menu</source>
         <translation>Commu&amp;ta el menú</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="370"/>
+        <location filename="../mainwindow.cpp" line="377"/>
         <source>Rename session</source>
         <translation>Reanomena la sessió</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="379"/>
+        <location filename="../mainwindow.cpp" line="386"/>
         <source>&amp;New Tab</source>
         <translation>Pestanya &amp;nova</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="383"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Pestanya nova a partir d&apos;una de &amp;preestablerta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="384"/>
+        <location filename="../mainwindow.cpp" line="391"/>
         <source>1 &amp;Terminal</source>
         <translation>1 &amp;terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="388"/>
+        <location filename="../mainwindow.cpp" line="395"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 terminals &amp;horitzontals</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="397"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 terminals &amp;verticals</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="392"/>
+        <location filename="../mainwindow.cpp" line="399"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 terminal&amp;s</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="398"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source>&amp;Close Tab</source>
         <translation>Tan&amp;ca la pestanya</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="408"/>
         <source>&amp;New Window</source>
         <translation>Finestra &amp;nova</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="406"/>
+        <location filename="../mainwindow.cpp" line="413"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Preferències...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="410"/>
+        <location filename="../mainwindow.cpp" line="417"/>
         <source>&amp;Quit</source>
         <translation>S&amp;urt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="416"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Oculta les vores de la finestra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="434"/>
+        <location filename="../mainwindow.cpp" line="441"/>
         <source>&amp;Show Tab Bar</source>
         <translation>Mo&amp;stra la barra de les pestanyes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="442"/>
+        <location filename="../mainwindow.cpp" line="449"/>
         <source>Fullscreen</source>
         <translation>Pantalla completa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="448"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>Toggle Bookmarks</source>
         <translation>Commuta els marcadors</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="456"/>
+        <location filename="../mainwindow.cpp" line="463"/>
         <source>&amp;Bottom</source>
         <translation>&amp;Inferior</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="457"/>
+        <location filename="../mainwindow.cpp" line="464"/>
         <source>&amp;Top</source>
         <translation>&amp;Superior</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="458"/>
-        <location filename="../mainwindow.cpp" line="494"/>
+        <location filename="../mainwindow.cpp" line="465"/>
+        <location filename="../mainwindow.cpp" line="501"/>
         <source>&amp;Right</source>
         <translation>&amp;Dreta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="459"/>
-        <location filename="../mainwindow.cpp" line="495"/>
+        <location filename="../mainwindow.cpp" line="466"/>
+        <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;Left</source>
         <translation>&amp;Esquerra</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="477"/>
+        <location filename="../mainwindow.cpp" line="484"/>
         <source>&amp;Tabs Layout</source>
         <translation>Disposició de les pes&amp;tanyes</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="493"/>
+        <location filename="../mainwindow.cpp" line="500"/>
         <source>&amp;None</source>
         <translation>Se&amp;nse</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="511"/>
+        <location filename="../mainwindow.cpp" line="518"/>
         <source>S&amp;crollbar Layout</source>
         <translation>Disposi&amp;ció de la barra de desplaçament</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="../mainwindow.cpp" line="531"/>
         <source>&amp;BlockCursor</source>
         <translation>Cursor de &amp;bloc</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="525"/>
+        <location filename="../mainwindow.cpp" line="532"/>
         <source>&amp;UnderlineCursor</source>
         <translation>Cursor de s&amp;ubratllat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="526"/>
+        <location filename="../mainwindow.cpp" line="533"/>
         <source>&amp;IBeamCursor</source>
         <translation>Cursor de biga &amp;I</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="543"/>
+        <location filename="../mainwindow.cpp" line="550"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Forma del cursor del teclat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="650"/>
+        <location filename="../mainwindow.cpp" line="657"/>
         <source>Exit QTerminal</source>
         <translation>Sortida de QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="652"/>
+        <location filename="../mainwindow.cpp" line="659"/>
         <source>Do not ask again</source>
         <translation>No tornis a preguntar-ho</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="660"/>
+        <location filename="../mainwindow.cpp" line="667"/>
         <source>Are you sure you want to exit?</source>
         <translation>Esteu segur que voleu sortir?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="688"/>
+        <location filename="../mainwindow.cpp" line="695"/>
         <source>About</source>
         <translation>Quant a</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="690"/>
+        <location filename="../mainwindow.cpp" line="697"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Un emulador de terminal lleuger i multiplataforma</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="692"/>
+        <location filename="../mainwindow.cpp" line="699"/>
         <source>Copyright (C) </source>
         <translation>Copyright (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="692"/>
+        <location filename="../mainwindow.cpp" line="699"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="694"/>
+        <location filename="../mainwindow.cpp" line="701"/>
         <source>LXQt Project</source>
         <translation>Projecte LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="696"/>
+        <location filename="../mainwindow.cpp" line="703"/>
         <source>Development: </source>
         <translation>Desenvolupament: </translation>
     </message>
@@ -376,366 +376,381 @@
         <translation>Aparença</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="30"/>
-        <location filename="../forms/propertiesdialog.ui" line="581"/>
+        <location filename="../forms/propertiesdialog.ui" line="38"/>
+        <location filename="../forms/propertiesdialog.ui" line="741"/>
         <source>Behavior</source>
         <translation>Comportament</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="39"/>
+        <location filename="../forms/propertiesdialog.ui" line="47"/>
         <source>Shortcuts</source>
         <translation>Dreceres</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="48"/>
+        <location filename="../forms/propertiesdialog.ui" line="56"/>
         <source>Dropdown</source>
         <translation>Desplegament</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="57"/>
+        <location filename="../forms/propertiesdialog.ui" line="65"/>
         <source>Bookmarks</source>
         <translation>Marcadors</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="272"/>
+        <location filename="../forms/propertiesdialog.ui" line="575"/>
         <source>Hide tab bar with only one tab</source>
         <translation>Oculta la barra de les pestanyes amb només una pestanya</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="173"/>
+        <location filename="../forms/propertiesdialog.ui" line="181"/>
         <source>Color scheme</source>
         <translation>Esquema de colors</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="199"/>
+        <location filename="../forms/propertiesdialog.ui" line="207"/>
         <source>Scrollbar position</source>
         <translation>Posició de la barra de desplaçament</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="463"/>
+        <location filename="../forms/propertiesdialog.ui" line="389"/>
         <source>Start with preset:</source>
         <translation>Comença amb la pestanya preestablerta:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="299"/>
+        <location filename="../forms/propertiesdialog.ui" line="446"/>
         <source>Show a border around the current terminal</source>
         <translation>Mostra una vora al voltant del terminal actual</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="380"/>
+        <location filename="../forms/propertiesdialog.ui" line="306"/>
         <source>Terminal transparency</source>
         <translation>Transparència del terminal</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="354"/>
+        <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Application transparency</source>
         <translation>Transparència de l&apos;aplicació</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="474"/>
+        <location filename="../forms/propertiesdialog.ui" line="400"/>
         <source>None (single terminal)</source>
         <translation>Sense (només un terminal)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="479"/>
+        <location filename="../forms/propertiesdialog.ui" line="405"/>
         <source>2 terminals horizontally</source>
         <translation>2 terminals horitzontals</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="484"/>
+        <location filename="../forms/propertiesdialog.ui" line="410"/>
         <source>2 terminals vertically</source>
         <translation>2 terminals verticals</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="489"/>
+        <location filename="../forms/propertiesdialog.ui" line="415"/>
         <source>4 terminals</source>
         <translation>4 terminals</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="364"/>
-        <location filename="../forms/propertiesdialog.ui" line="390"/>
+        <location filename="../forms/propertiesdialog.ui" line="290"/>
+        <location filename="../forms/propertiesdialog.ui" line="316"/>
         <source> %</source>
         <translation> %</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="127"/>
+        <location filename="../forms/propertiesdialog.ui" line="135"/>
         <source>Font</source>
         <translation>Lletra</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="163"/>
+        <location filename="../forms/propertiesdialog.ui" line="171"/>
         <source>&amp;Change...</source>
         <translation>&amp;Canvia...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="212"/>
+        <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>Tabs position</source>
         <translation>Posició de les pestanyes</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="186"/>
+        <location filename="../forms/propertiesdialog.ui" line="194"/>
         <source>Widget style</source>
         <translation>Estil de l&apos;estri</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="258"/>
+        <location filename="../forms/propertiesdialog.ui" line="531"/>
         <source>Show the menu bar</source>
         <translation>Mostra la barra de menús</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="225"/>
+        <location filename="../forms/propertiesdialog.ui" line="233"/>
         <source>Cursor shape</source>
         <translation>Forma del cursor</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="316"/>
+        <location filename="../forms/propertiesdialog.ui" line="460"/>
         <source>Change window title based on current terminal</source>
         <translation>Canvia el títol de la finestra en funció del terminal actual</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="323"/>
+        <location filename="../forms/propertiesdialog.ui" line="467"/>
         <source>Change window icon based on current terminal</source>
         <translation>Canvia la icona de la finestra en funció del terminal actual</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="337"/>
+        <location filename="../forms/propertiesdialog.ui" line="263"/>
         <source>Enable bi-directional text support</source>
         <translation>Habilita la compatibilitat amb el text bidireccional</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="406"/>
+        <location filename="../forms/propertiesdialog.ui" line="332"/>
         <source>Background image:</source>
         <translation>Imatge de fons:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="418"/>
+        <location filename="../forms/propertiesdialog.ui" line="344"/>
         <source>Select</source>
         <translation>Selecciona</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="330"/>
+        <location filename="../forms/propertiesdialog.ui" line="256"/>
         <source>Show terminal size on resize</source>
         <translation>Mostra la mida del terminal amb la redimensió</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="279"/>
+        <location filename="../forms/propertiesdialog.ui" line="582"/>
         <source>Fixed tab width:</source>
         <translation>Amplada fixa de la pestanya:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="289"/>
-        <location filename="../forms/propertiesdialog.ui" line="507"/>
+        <location filename="../forms/propertiesdialog.ui" line="433"/>
+        <location filename="../forms/propertiesdialog.ui" line="592"/>
         <source>px</source>
         <translation>px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="306"/>
+        <location filename="../forms/propertiesdialog.ui" line="555"/>
         <source>Show close button on each tab</source>
         <translation>Mostra el botó de tancament en cadascuna de les pestanyes</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="497"/>
+        <location filename="../forms/propertiesdialog.ui" line="423"/>
         <source>Terminal margin</source>
         <translation>Marge del terminal</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="347"/>
+        <location filename="../forms/propertiesdialog.ui" line="273"/>
         <source>Use box drawing characters contained in the font</source>
         <translation>Utilitza les taules de caràcters continguts a la lletra tipogràfica</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="248"/>
+        <location filename="../forms/propertiesdialog.ui" line="538"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>Els acceleradors s&apos;activen amb Alt i poden interferir amb el terminal.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="251"/>
+        <location filename="../forms/propertiesdialog.ui" line="541"/>
         <source>No menu bar accelerator</source>
         <translation>Sense drecera de barra de menú</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="830"/>
+        <location filename="../forms/propertiesdialog.ui" line="908"/>
         <source>Emulation</source>
         <translation>Emulació</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="614"/>
+        <location filename="../forms/propertiesdialog.ui" line="774"/>
         <source>Action after paste</source>
         <translation>Acció després d&apos;enganxar</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="654"/>
+        <location filename="../forms/propertiesdialog.ui" line="814"/>
         <source>Confirm multiline paste</source>
         <translation>Confirma l&apos;enganxament de diverses línies</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="661"/>
+        <location filename="../forms/propertiesdialog.ui" line="821"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Suprimeix els espais al final de les línies al text enganxat</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="757"/>
+        <location filename="../forms/propertiesdialog.ui" line="835"/>
         <source>Open new terminals in current working directory</source>
         <translation>Obre els terminals nous al directori de treball actual</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="692"/>
+        <location filename="../forms/propertiesdialog.ui" line="609"/>
         <source>Save Size when closing</source>
         <translation>Desa les mides quan es tanqui</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="685"/>
+        <location filename="../forms/propertiesdialog.ui" line="602"/>
         <source>Save Position when closing</source>
         <translation>Desa la posició quan es tanqui</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="678"/>
+        <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Ask for confirmation when closing</source>
         <translation>Demana la confirmació quan es tanqui</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="594"/>
+        <location filename="../forms/propertiesdialog.ui" line="767"/>
         <source>Unlimited history</source>
         <translation>Historial il·limitat</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="587"/>
+        <location filename="../forms/propertiesdialog.ui" line="747"/>
         <source>History size (in lines)</source>
         <translation>Mida de l&apos;historial (en línies)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="781"/>
+        <location filename="../forms/propertiesdialog.ui" line="859"/>
         <source>Default $TERM</source>
         <translation>Valor per defecte de $TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="704"/>
+        <location filename="../forms/propertiesdialog.ui" line="621"/>
         <source>Start with this size:</source>
         <translation>Comença amb aquesta mida:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="427"/>
+        <location filename="../forms/propertiesdialog.ui" line="353"/>
         <source>Background mode:</source>
         <translation>Mode de fons:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="435"/>
+        <location filename="../forms/propertiesdialog.ui" line="361"/>
         <source>None</source>
         <translation>Cap</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="440"/>
+        <location filename="../forms/propertiesdialog.ui" line="366"/>
         <source>Stretch</source>
         <translation>Estirar</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="445"/>
+        <location filename="../forms/propertiesdialog.ui" line="371"/>
         <source>Zoom</source>
         <translation>Zoom</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="450"/>
+        <location filename="../forms/propertiesdialog.ui" line="376"/>
         <source>Fit</source>
         <translation>Ajusta</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="455"/>
+        <location filename="../forms/propertiesdialog.ui" line="381"/>
         <source>Center</source>
         <translation>Centra</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="344"/>
+        <location filename="../forms/propertiesdialog.ui" line="270"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
         <translation>Especifica si els caràcters de dibuix de quadres s&apos;han de dibuixar internament a QTerminal o deixar-los a les biblioteques de renderització de tipus de lletra subjacents.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="238"/>
+        <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
         <translation>Commuta l&apos;ús de la font en negreta per representar colors intensos</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="241"/>
+        <location filename="../forms/propertiesdialog.ui" line="249"/>
         <source>Use bold font face for intense colors</source>
         <translation>Utilitzeu una font en negreta per a colors intensos</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="265"/>
+        <location filename="../forms/propertiesdialog.ui" line="548"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Oculta les vores de la finestra</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="839"/>
+        <location filename="../forms/propertiesdialog.ui" line="917"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quin comportament emular. Tingueu en compte que això no ha de coincidir amb el vostre sistema operatiu.&lt;/p&gt;&lt;p&gt;Si no n&apos;esteu segur, utilitzeu &lt;span style=&quot; font-weight:600;&quot;&gt;l&apos;emulació &lt;/span&gt;predeterminada.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="817"/>
+        <location filename="../forms/propertiesdialog.ui" line="895"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>Aquesta ordre s&apos;executarà amb un argument que conté el nom d&apos;un fitxer temporal inclòs en l&apos;historial de desplaçament</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="820"/>
+        <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>Handle history command</source>
         <translation>Gestiona l&apos;historial d&apos;ordres</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="711"/>
-        <location filename="../forms/propertiesdialog.ui" line="725"/>
+        <location filename="../forms/propertiesdialog.ui" line="628"/>
+        <location filename="../forms/propertiesdialog.ui" line="642"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="732"/>
+        <location filename="../forms/propertiesdialog.ui" line="649"/>
         <source>Get current size</source>
         <translation>Obté la mida actual</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="767"/>
+        <location filename="../forms/propertiesdialog.ui" line="845"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>Obre una pestanya nova a la dreta de la pestanya activa</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="764"/>
+        <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>Si no està seleccionat, la nova pestanya s&apos;obrirà a la dreta de l&apos;última pestanya oberta</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="668"/>
+        <location filename="../forms/propertiesdialog.ui" line="565"/>
         <source>Close tab on middle-click</source>
         <translation>Tanca la pestanya amb el botó central del ratolí</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="647"/>
+        <location filename="../forms/propertiesdialog.ui" line="807"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>Inhabilita el mode d&apos;enganxat entre parèntesis</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="627"/>
+        <location filename="../forms/propertiesdialog.ui" line="787"/>
         <source>Word selection characters</source>
         <translation>Caràcters de selecció de mots</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="634"/>
+        <location filename="../forms/propertiesdialog.ui" line="30"/>
+        <source>Window</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="440"/>
+        <source>Current Terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="453"/>
+        <source>Set the current terminal on mouseover</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="794"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
         <translation>En seleccionar text per mot, pren en consideració aquests caràcters com a part dels mots a més dels caràcters alfanumèrics</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="637"/>
+        <location filename="../forms/propertiesdialog.ui" line="797"/>
         <source>:@-./_~</source>
         <translation>:@-./_~</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="644"/>
+        <location filename="../forms/propertiesdialog.ui" line="804"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>El mode d&apos;enganxat entre parèntesis és útil per enganxar cadenes de diverses línies.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="774"/>
+        <location filename="../forms/propertiesdialog.ui" line="852"/>
         <source>Audible bell</source>
         <translation>Campana audible</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="863"/>
+        <location filename="../forms/propertiesdialog.ui" line="941"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -750,83 +765,83 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 Per eliminar/desactivar una drecera, al punt 2, premeu només un modificador (com ara Maj)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="893"/>
+        <location filename="../forms/propertiesdialog.ui" line="971"/>
         <source>Shortcut</source>
         <translation>Dreceres</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="976"/>
         <source>Key</source>
         <translation>Tecles</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="910"/>
+        <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Show on start</source>
         <translation>Mostra-ho al començament</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="917"/>
+        <location filename="../forms/propertiesdialog.ui" line="995"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>Apareixerà un botó de bloqueig en la barra de pestanyes horitzontal</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="920"/>
+        <location filename="../forms/propertiesdialog.ui" line="998"/>
         <source>Keep window open when it loses focus</source>
         <translation>Mantén la finestra oberta en perdre el focus</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="927"/>
+        <location filename="../forms/propertiesdialog.ui" line="1005"/>
         <source>Size</source>
         <translation>Mides</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="938"/>
+        <location filename="../forms/propertiesdialog.ui" line="1016"/>
         <source>Height</source>
         <translation>Alçada</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="948"/>
-        <location filename="../forms/propertiesdialog.ui" line="965"/>
+        <location filename="../forms/propertiesdialog.ui" line="1026"/>
+        <location filename="../forms/propertiesdialog.ui" line="1043"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="955"/>
+        <location filename="../forms/propertiesdialog.ui" line="1033"/>
         <source>Width</source>
         <translation>Amplada</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="979"/>
+        <location filename="../forms/propertiesdialog.ui" line="1057"/>
         <source>Shortcut:</source>
         <translation>Drecera:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <location filename="../forms/propertiesdialog.ui" line="1066"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
         <translation>Nota: amb Wayland, la drecera s&apos;ha d&apos;afegir a la configuració del compositor per a qterminal -d.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1056"/>
+        <location filename="../forms/propertiesdialog.ui" line="1134"/>
         <source>Edit bookmark file contents</source>
         <translation>Edita el contingut del fitxer dels marcadors</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1015"/>
+        <location filename="../forms/propertiesdialog.ui" line="1093"/>
         <source>Enable bookmarks</source>
         <translation>Habilita els marcadors</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1024"/>
+        <location filename="../forms/propertiesdialog.ui" line="1102"/>
         <source>Bookmark file</source>
         <translation>Fitxer dels marcadors</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1037"/>
+        <location filename="../forms/propertiesdialog.ui" line="1115"/>
         <source>Find...</source>
         <translation>Troba...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1046"/>
+        <location filename="../forms/propertiesdialog.ui" line="1124"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Podeu especificar la ubicació del vostre fitxer de marcadors. Això us permet compartir fàcilment els marcadors amb eines com ara OwnCloud o Dropbox.</translation>
     </message>
@@ -888,66 +903,66 @@ Per eliminar/desactivar una drecera, al punt 2, premeu només un modificador (co
         <translation>Desplaça a la part inferior</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="276"/>
+        <location filename="../propertiesdialog.cpp" line="278"/>
         <source>Examples</source>
         <translation>Exemples</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="430"/>
+        <location filename="../propertiesdialog.cpp" line="440"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Imatges (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="532"/>
+        <location filename="../propertiesdialog.cpp" line="542"/>
         <source>Open bookmarks file</source>
         <translation>Obre el fitxer de marcadors</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="534"/>
+        <location filename="../propertiesdialog.cpp" line="544"/>
         <source>XML files (*.xml)</source>
         <translation>Fitxers XML (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="535"/>
+        <location filename="../propertiesdialog.cpp" line="545"/>
         <source>All files (*)</source>
         <translation>Tots els fitxers (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="634"/>
-        <location filename="../propertiesdialog.cpp" line="638"/>
+        <location filename="../propertiesdialog.cpp" line="644"/>
+        <location filename="../propertiesdialog.cpp" line="648"/>
         <source>Question</source>
         <translation>Pregunta</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="634"/>
+        <location filename="../propertiesdialog.cpp" line="644"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Voleu sobreescriure el fitxer de marcadors?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="638"/>
+        <location filename="../propertiesdialog.cpp" line="648"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>El nom del fitxer de marcadors no té extensió «.xml».
 Esteu segur que el voleu sobreescriure?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="646"/>
+        <location filename="../propertiesdialog.cpp" line="656"/>
         <source>Warning</source>
         <translation>Advertiment</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="646"/>
+        <location filename="../propertiesdialog.cpp" line="656"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>No s&apos;han pogut escriure els marcadors en el fitxer:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="211"/>
-        <location filename="../propertiesdialog.cpp" line="324"/>
+        <location filename="../propertiesdialog.cpp" line="333"/>
         <source>System Default</source>
         <translation>Predeterminat del sistema</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="429"/>
+        <location filename="../propertiesdialog.cpp" line="439"/>
         <source>Choose a background image</source>
         <translation>Trieu una imatge de fons</translation>
     </message>
