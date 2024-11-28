@@ -187,6 +187,7 @@ void MainWindow::enableDropMode()
                                                          | LayerShellQt::Window::AnchorLeft
                                                          | LayerShellQt::Window::AnchorRight};
                 m_layerWindow->setAnchors(anchors);
+                m_layerWindow->setScope(QStringLiteral("dropdown_terminal"));
                 m_layerWindow->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
             }
         }
