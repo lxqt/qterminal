@@ -606,7 +606,7 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="225"/>
         <source>Cursor shape</source>
-        <translation>Forma Cursore</translation>
+        <translation>Forma cursore</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="316"/>
@@ -652,12 +652,12 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="306"/>
         <source>Show close button on each tab</source>
-        <translation>Mostra tasto chiudi su ogni tab</translation>
+        <translation>Mostra pulsante chiusura su ogni tab</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="497"/>
         <source>Terminal margin</source>
-        <translation>Margine del Terminale</translation>
+        <translation>Margine del terminale</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="347"/>
