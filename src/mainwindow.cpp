@@ -69,7 +69,8 @@ MainWindow::MainWindow(TerminalConfig &cfg,
       presetsMenu(nullptr),
       m_config(cfg),
       m_dropLockButton(nullptr),
-      m_dropMode(dropMode)
+      m_dropMode(dropMode),
+      m_layerWindow(nullptr)
 {
 #ifdef HAVE_QDBUS
     registerAdapter<WindowAdaptor, MainWindow>(this);
@@ -176,12 +177,17 @@ void MainWindow::enableDropMode()
         winId();
         if (QWindow *win = windowHandle())
         {
-            if (LayerShellQt::Window* layershell = LayerShellQt::Window::get(win))
+            m_layerWindow = LayerShellQt::Window::get(win);
+            if (m_layerWindow)
             {
-                layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
-                layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
-                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
-                layershell->setAnchors(anchors);
+                m_layerWindow->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                m_layerWindow->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
+                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop
+                                                         | LayerShellQt::Window::AnchorBottom
+                                                         | LayerShellQt::Window::AnchorLeft
+                                                         | LayerShellQt::Window::AnchorRight};
+                m_layerWindow->setAnchors(anchors);
+                m_layerWindow->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
             }
         }
     }
@@ -757,9 +763,15 @@ void MainWindow::realign()
 {
     if (m_dropMode)
     {
+        if (m_layerWindow)
+        {
+            return; // done in showEvent
+        }
         QScreen *appScreen = QGuiApplication::screenAt(QCursor::pos());
         if(appScreen == nullptr)
+        {
             appScreen = QGuiApplication::primaryScreen();
+        }
         const QRect desktop = appScreen->availableGeometry();
         QRect g = QRect(desktop.x(),
                         desktop.y(),
@@ -768,7 +780,8 @@ void MainWindow::realign()
         g.moveCenter(desktop.center());
         // do not use 0 here - we need to calculate with potential panel on top
         g.moveTop(desktop.top());
-        if (g != geometry()) {
+        if (g != geometry())
+        {
             setGeometry(g);
         }
     }
@@ -869,6 +882,18 @@ bool MainWindow::event(QEvent *event)
             hide();
     }
     return QMainWindow::event(event);
+}
+
+void MainWindow::showEvent(QShowEvent* event)
+{
+    if (m_dropMode && m_layerWindow)
+    {
+        const QRect desktop = windowHandle()->screen()->availableGeometry();
+        int hMargin = desktop.width() * (100 - Properties::Instance()->dropWidth) / 200;
+        int vMargin = desktop.height() * (100 - Properties::Instance()->dropHeight) / 100;
+        m_layerWindow->setMargins(QMargins(hMargin, 0, hMargin, vMargin));
+    }
+    QMainWindow::showEvent(event);
 }
 
 void MainWindow::newTerminalWindow()
