@@ -46,6 +46,11 @@ QStringList TerminalConfig::getShell()
     return QStringList();
 }
 
+bool TerminalConfig::hasCommand() const
+{
+    return !m_shell.isEmpty();
+}
+
 void TerminalConfig::setWorkingDirectory(const QString &val)
 {
     m_workingDirectory = val;

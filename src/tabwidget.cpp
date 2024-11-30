@@ -22,6 +22,7 @@
 #include <QMouseEvent>
 #include <QMenu>
 #include <QActionGroup>
+#include <QMessageBox>
 
 #include "mainwindow.h"
 #include "termwidgetholder.h"
@@ -56,7 +57,9 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTa
 
     tabBar()->installEventFilter(this);
 
-    connect(this, &TabWidget::tabCloseRequested, this, &TabWidget::removeTab);
+    connect(this, &TabWidget::tabCloseRequested, this, [this](int indx) {
+        removeTab(indx, true);
+    });
     connect(tabBar(), &QTabBar::tabMoved, this, &TabWidget::updateTabIndices);
     connect(this, &TabWidget::tabRenameRequested, this, &TabWidget::renameSession);
     connect(this, &TabWidget::tabTitleColorChangeRequested, this, &TabWidget::setTitleColor);
@@ -136,8 +139,23 @@ void TabWidget::splitVertically()
 
 void TabWidget::splitCollapse()
 {
+    auto win = findParent<MainWindow>(this);
+    if (Properties::Instance()->askOnExit)
+    {
+        if (auto impl = terminalHolder()->currentTerminal()->impl())
+        {
+            if (impl->hasCommand() || impl->getForegroundProcessId() != impl->getShellPID())
+            {
+                if (!win->closePrompt(tr("Close Subterminal"), tr("Are you sure you want to close this subterminal?")))
+                {
+                    return;
+                }
+            }
+        }
+    }
+
     terminalHolder()->splitCollapse(terminalHolder()->currentTerminal());
-    findParent<MainWindow>(this)->updateDisabledActions();
+    win->updateDisabledActions();
 }
 
 void TabWidget::copySelection()
@@ -270,11 +288,13 @@ bool TabWidget::eventFilter(QObject *obj, QEvent *event)
 {
     QMouseEvent *e = reinterpret_cast<QMouseEvent*>(event);
     if (e->button() == Qt::MiddleButton) {
-        if (event->type() == QEvent::MouseButtonRelease && Properties::Instance()->closeTabOnMiddleClick) {
+        if (event->type() == QEvent::MouseButtonRelease && Properties::Instance()->closeTabOnMiddleClick)
+        {
             // close the tab on middle clicking
             int index = tabBar()->tabAt(e->pos());
-            if (index > -1){
-                removeTab(index);
+            if (index > -1)
+            {
+                removeTab(index, true);
                 return true;
             }
         }
@@ -322,9 +342,24 @@ void TabWidget::removeFinished()
     }
 }
 
-void TabWidget::removeTab(int index)
+void TabWidget::removeTab(int index, bool prompt)
 {
-    if (count() > 1) {
+    if (count() > 1)
+    {
+        if (prompt && Properties::Instance()->askOnExit)
+        {
+            if (TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(index)))
+            {
+                if (term->hasRunningProcess())
+                {
+                    if (!findParent<MainWindow>(this)->closePrompt(tr("Close tab"), tr("Are you sure you want to close this tab?")))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
         setUpdatesEnabled(false);
 
         QWidget * w = widget(index);
@@ -378,14 +413,8 @@ const QList<QWidget*>& TabWidget::history() const
 
 void TabWidget::removeCurrentTab()
 {
-    // question disabled due user requests. Yes I agree it was annoying.
-//    if (QMessageBox::question(this,
-//                    tr("Close current session"),
-//                    tr("Are you sure you want to close current sesstion?"),
-//                    QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
-//    {
     if (count() > 1) {
-        removeTab(currentIndex());
+        removeTab(currentIndex(), true);
     } else {
         emit closeLastTabNotification();
     }
@@ -593,4 +622,19 @@ void TabWidget::showHideTabBar()
         tabBar()->setVisible(false);
     else
         tabBar()->setVisible(!Properties::Instance()->hideTabBarWithOneTab || count() > 1);
+}
+
+bool TabWidget::hasRunningProcess() const
+{
+    for (int i = 0; i < count(); i++)
+    {
+        if (TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(i)))
+        {
+            if (term->hasRunningProcess())
+            {
+                return true;
+            }
+        }
+    }
+    return false;
 }

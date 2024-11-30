@@ -49,9 +49,11 @@ public:
     void showHideTabBar();
     const QList<QWidget*>& history() const;
 
+    bool hasRunningProcess() const;
+
 public slots:
     int addNewTab(TerminalConfig cfg);
-    void removeTab(int);
+    void removeTab(int index, bool prompt = false);
     void switchTab(int);
     void onAction();
     void onCurrentChanged(int);

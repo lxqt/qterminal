@@ -43,6 +43,10 @@ class TermWidgetImpl : public QTermWidget
         virtual ~TermWidgetImpl();
         void propertiesChanged();
 
+        bool hasCommand() const {
+            return m_hasCommand;
+        }
+
     signals:
         void renameSession();
         void removeCurrentSession();
@@ -58,6 +62,7 @@ class TermWidgetImpl : public QTermWidget
         void bell();
 
     private:
+        bool m_hasCommand;
 #ifdef HAVE_LIBCANBERRA
         ca_context* libcanberra_context;
 #endif
