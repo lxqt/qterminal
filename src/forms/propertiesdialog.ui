@@ -825,7 +825,7 @@
               <item row="7" column="0" colspan="2">
                <widget class="QCheckBox" name="askOnExitCheckBox">
                 <property name="text">
-                 <string>Ask for confirmation when closing</string>
+                 <string>Prompt on closing with a running process</string>
                 </property>
                </widget>
               </item>

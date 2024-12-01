@@ -49,6 +49,8 @@ public:
 
     void rebuildActions();
 
+    bool closePrompt(const QString &title, const QString &text);
+
     #ifdef HAVE_QDBUS
     QDBusObjectPath getActiveTab();
     QList<QDBusObjectPath> getTabs();

@@ -409,6 +409,22 @@ void TermWidgetHolder::onTermTitleChanged(QString title, QString icon) const
         emit termTitleChanged(std::move(title), std::move(icon));
 }
 
+bool TermWidgetHolder::hasRunningProcess() const
+{
+    const QList<TermWidget*> list = findChildren<TermWidget*>();
+    for (const auto &term : list)
+    {
+        if (auto impl = term->impl())
+        {
+            if (impl->hasCommand() || impl->getForegroundProcessId() != impl->getShellPID())
+            {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 #ifdef HAVE_QDBUS
 
 QDBusObjectPath TermWidgetHolder::getActiveTerminal()

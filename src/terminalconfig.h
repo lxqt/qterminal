@@ -17,6 +17,7 @@ class TerminalConfig
 
         QString getWorkingDirectory();
         QStringList getShell();
+        bool hasCommand() const;
 
         void setWorkingDirectory(const QString &val);
         void setShell(const QStringList &val);

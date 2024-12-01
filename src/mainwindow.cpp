@@ -306,7 +306,7 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     data.setValue(checkSubterminals);
 
-    setup_Action(SUB_COLLAPSE, new QAction(tr("&Collapse Subterminal"), settingOwner),
+    setup_Action(SUB_COLLAPSE, new QAction(tr("&Close Subterminal"), settingOwner),
                  nullptr, consoleTabulator, SLOT(splitCollapse()), menu_Actions, data);
 
     setup_Action(SUB_TOP, new QAction(QIcon::fromTheme(QStringLiteral("go-up")), tr("&Top Subterminal"), settingOwner),
@@ -621,13 +621,44 @@ void MainWindow::toggleBookmarks()
     }
 }
 
+bool MainWindow::closePrompt(const QString &title, const QString &text)
+{
+    QDialog * dia = new QDialog(this);
+    dia->setObjectName(QStringLiteral("exitDialog"));
+    dia->setWindowTitle(title);
+
+    QCheckBox * dontAskCheck = new QCheckBox(tr("Do not ask again"), dia);
+    QDialogButtonBox * buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes | QDialogButtonBox::No, Qt::Horizontal, dia);
+    buttonBox->button(QDialogButtonBox::Yes)->setDefault(true);
+
+    connect(buttonBox, &QDialogButtonBox::accepted, dia, &QDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, dia, &QDialog::reject);
+
+    QVBoxLayout * lay = new QVBoxLayout();
+    lay->addWidget(new QLabel(QStringLiteral("<center>") + text + QStringLiteral("</center>")));
+    lay->addWidget(new QLabel(QStringLiteral("<center><i>") + tr("A process is running.") + QStringLiteral("</i></center>")));
+    lay->addStretch();
+    lay->addWidget(dontAskCheck);
+    lay->addWidget(buttonBox);
+    dia->setLayout(lay);
+
+    bool res(dia->exec() == QDialog::Accepted);
+    if (res)
+    {
+        Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
+    }
+    dia->deleteLater();
+    return res;
+}
 
 void MainWindow::closeEvent(QCloseEvent *ev)
 {
     if (!Properties::Instance()->askOnExit
         || consoleTabulator->count() == 0
         // the session is ended explicitly (e.g., by ctrl-d); prompt doesn't make sense
-        || consoleTabulator->terminalHolder()->findChildren<TermWidget*>().count() == 0)
+        || consoleTabulator->terminalHolder()->findChildren<TermWidget*>().count() == 0
+        // there is no running process
+        || !consoleTabulator->hasRunningProcess())
     {
         disconnect(m_bookmarksDock, &QDockWidget::visibilityChanged,
                    this, &MainWindow::bookmarksDock_visibilityChanged); // prevent crash
@@ -652,30 +683,13 @@ void MainWindow::closeEvent(QCloseEvent *ev)
     }
 
     // ask user for cancel only when there is at least one terminal active in this window
-    QDialog * dia = new QDialog(this);
-    dia->setObjectName(QStringLiteral("exitDialog"));
-    dia->setWindowTitle(tr("Exit QTerminal"));
-
-    QCheckBox * dontAskCheck = new QCheckBox(tr("Do not ask again"), dia);
-    QDialogButtonBox * buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes | QDialogButtonBox::No, Qt::Horizontal, dia);
-    buttonBox->button(QDialogButtonBox::Yes)->setDefault(true);
-
-    connect(buttonBox, &QDialogButtonBox::accepted, dia, &QDialog::accept);
-    connect(buttonBox, &QDialogButtonBox::rejected, dia, &QDialog::reject);
-
-    QVBoxLayout * lay = new QVBoxLayout();
-    lay->addWidget(new QLabel(tr("Are you sure you want to exit?")));
-    lay->addWidget(dontAskCheck);
-    lay->addWidget(buttonBox);
-    dia->setLayout(lay);
-
-    if (dia->exec() == QDialog::Accepted) {
+    if (closePrompt(tr("Exit QTerminal"), tr("Are you sure you want to exit?")))
+    {
         disconnect(m_bookmarksDock, &QDockWidget::visibilityChanged,
                    this, &MainWindow::bookmarksDock_visibilityChanged);
         Properties::Instance()->mainWindowPosition = pos();
         Properties::Instance()->mainWindowSize = size();
         Properties::Instance()->mainWindowState = saveState();
-        Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
         Properties::Instance()->windowMaximized = isMaximized();
         rebuildActions();
         Properties::Instance()->saveSettings();
@@ -683,11 +697,11 @@ void MainWindow::closeEvent(QCloseEvent *ev)
             consoleTabulator->removeTab(i - 1);
         }
         ev->accept();
-    } else {
+    }
+    else
+    {
         ev->ignore();
     }
-
-    dia->deleteLater();
 }
 
 void MainWindow::actAbout_triggered()

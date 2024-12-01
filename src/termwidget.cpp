@@ -57,6 +57,8 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     setFlowControlEnabled(FLOW_CONTROL_ENABLED);
     setFlowControlWarningEnabled(FLOW_CONTROL_WARNING_ENABLED);
 
+    m_hasCommand = cfg.hasCommand();
+
     propertiesChanged();
 
     setWorkingDirectory(cfg.getWorkingDirectory());

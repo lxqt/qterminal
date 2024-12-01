@@ -65,6 +65,8 @@ class TermWidgetHolder : public QWidget
         TermWidget* currentTerminal();
         TermWidget* split(TermWidget * term, Qt::Orientation orientation, TerminalConfig cfg);
 
+        bool hasRunningProcess() const;
+
         #ifdef HAVE_QDBUS
         QDBusObjectPath getActiveTerminal();
         QList<QDBusObjectPath> getTerminals();
