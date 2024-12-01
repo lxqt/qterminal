@@ -163,7 +163,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="341"/>
         <source>&amp;Find...</source>
-        <translation type="unfinished"></translation>
+        <translation>A&amp;f-d…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="344"/>
@@ -173,7 +173,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="352"/>
         <source>&amp;Save Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Selkes tiɣimit</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="358"/>
@@ -193,7 +193,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="379"/>
         <source>&amp;New Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Iccer amay&amp;nut</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="383"/>
@@ -228,7 +228,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="401"/>
         <source>&amp;New Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Asfaylu amay&amp;nut</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="406"/>
@@ -345,7 +345,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="692"/>
         <source>Copyright (C) </source>
-        <translation type="unfinished"></translation>
+        <translation>Copyright (C) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="692"/>
@@ -355,7 +355,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="694"/>
         <source>LXQt Project</source>
-        <translation type="unfinished"></translation>
+        <translation>Asenfaṛ n LXQt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="696"/>
@@ -1031,7 +1031,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Ẓr&amp;eg</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
@@ -1041,7 +1041,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation type="unfinished"></translation>
+        <translation>Ɣef &amp;Qt...</translation>
     </message>
 </context>
 </TS>

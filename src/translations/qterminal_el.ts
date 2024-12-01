@@ -717,17 +717,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράθυρο</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Τρέχον τερματικό</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Ορισμός του τρέχοντος τερματικού με το πέρασμα του ποντικιού</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>

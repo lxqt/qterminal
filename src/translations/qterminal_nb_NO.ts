@@ -103,12 +103,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="301"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Splitt &amp;visning Topp-Bunn</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Splitt visnin&amp;g Venstre-Høyre</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -350,7 +350,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="699"/>
         <source>2013-2022</source>
-        <translation type="unfinished">2013–2022</translation>
+        <translation>2013–2022</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="701"/>

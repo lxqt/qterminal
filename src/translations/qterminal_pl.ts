@@ -717,17 +717,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Okno</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Bieżący terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustaw bieżący terminal po najechaniu myszką</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
