@@ -670,17 +670,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Venster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Huidige terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Huidige terminal instellen na aanwijzen met muis</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>

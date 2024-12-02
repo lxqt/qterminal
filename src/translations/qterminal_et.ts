@@ -701,17 +701,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Aken</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Praegune terminalivaade</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali hiirega liikumisel praegune terminalivaade</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
