@@ -892,16 +892,51 @@ bool MainWindow::event(QEvent *event)
     {
         if (m_dropMode &&
             !Properties::Instance()->dropKeepOpen &&
-            qApp->activeWindow() == nullptr
-            )
-            hide();
+            qApp->activeWindow() == nullptr)
+        {
+            // On Wayland and with a modal dialog, the dropdown window can be activated by
+            // clicking inside it and then deactivated by clicking on another window (see below).
+            if (!m_layerWindow || m_layerWindow->layer() == LayerShellQt::Window::Layer::LayerOverlay)
+            {
+                hide();
+            }
+        }
     }
+    // A workaround for the modal dialogs of the dropdown window on Wayland.
+    else if (event->type() == QEvent::WindowBlocked && m_layerWindow && m_dropMode)
+    {
+        if (auto dialog = qobject_cast<QDialog*>(qApp->activeModalWidget()))
+        {
+            dialog->winId();
+            if (QWindow *win = dialog->windowHandle())
+            {
+                if (LayerShellQt::Window *layershell = LayerShellQt::Window::get(win))
+                {
+                    layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                    layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
+                    LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
+                    layershell->setAnchors(anchors);
+                    layershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
+                    // For preventing the dialog from going behind the dropdown window if
+                    // the latter is clicked, the window is set on the top layer temporarily.
+                    // It will be set on the overlay layer again when the dialog exits.
+                    m_layerWindow->setLayer(LayerShellQt::Window::Layer::LayerTop);
+                }
+            }
+        }
+    }
+    else if (event->type() == QEvent::WindowUnblocked && m_layerWindow && m_dropMode)
+    {
+        // Restore the overlay layer.
+        m_layerWindow->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+    }
+
     return QMainWindow::event(event);
 }
 
 void MainWindow::showEvent(QShowEvent* event)
 {
-    if (m_dropMode && m_layerWindow)
+    if (m_layerWindow && m_dropMode)
     {
         const QRect desktop = windowHandle()->screen()->availableGeometry();
         int hMargin = desktop.width() * (100 - Properties::Instance()->dropWidth) / 200;
