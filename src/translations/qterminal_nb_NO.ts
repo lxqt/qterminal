@@ -66,11 +66,6 @@
         <translation>Flytt fane til &amp;høyre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
-        <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Brett sammen underterminal</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>&amp;Ta vekk alt fra aktiv terminal</translation>
@@ -109,6 +104,11 @@
         <location filename="../mainwindow.cpp" line="304"/>
         <source>Split Vie&amp;w Left-Right</source>
         <translation>Splitt visnin&amp;g Venstre-Høyre</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="309"/>
+        <source>&amp;Close Subterminal</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -318,47 +318,52 @@
         <translation>&amp;Tastaturmarkørens form</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="639"/>
+        <source>A process is running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>Exit QTerminal</source>
         <translation>Avslutt QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="659"/>
+        <location filename="../mainwindow.cpp" line="630"/>
         <source>Do not ask again</source>
         <translation>Ikke spør igjen</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>Are you sure you want to exit?</source>
         <translation>Vil du virkelig avslutte?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="695"/>
+        <location filename="../mainwindow.cpp" line="709"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="697"/>
+        <location filename="../mainwindow.cpp" line="711"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>En lett og kraftig terminalemulator for flere plattformer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="713"/>
         <source>Copyright (C) </source>
         <translation>Opphavsrett © </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="713"/>
         <source>2013-2022</source>
         <translation>2013–2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="701"/>
+        <location filename="../mainwindow.cpp" line="715"/>
         <source>LXQt Project</source>
         <translation>LXQt-prosjektet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="703"/>
+        <location filename="../mainwindow.cpp" line="717"/>
         <source>Development: </source>
         <translation>Utvikling: </translation>
     </message>
@@ -589,11 +594,6 @@
         <translation>Lagre plassering ved lukking</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="828"/>
-        <source>Ask for confirmation when closing</source>
-        <translation>Spør om bekreftelse ved lukking</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
         <source>Unlimited history</source>
         <translation>Ubegrenset historikk</translation>
@@ -743,6 +743,11 @@
         <location filename="../forms/propertiesdialog.ui" line="804"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>Innliming med kontrolltegn er nyttig for å lime inn flere strenger.</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="828"/>
+        <source>Prompt on closing with a running process</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
@@ -978,35 +983,55 @@ Vil du overskrive den?</translation>
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="81"/>
-        <location filename="../tabwidget.cpp" line="235"/>
+        <location filename="../tabwidget.cpp" line="84"/>
+        <location filename="../tabwidget.cpp" line="253"/>
         <source>Shell No. %1</source>
         <translation>Skall nr. %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="203"/>
+        <location filename="../tabwidget.cpp" line="149"/>
+        <source>Close Subterminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="149"/>
+        <source>Are you sure you want to close this subterminal?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="221"/>
         <source>Tab name</source>
         <translation>Fanenavn</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="204"/>
+        <location filename="../tabwidget.cpp" line="222"/>
         <source>New tab name:</source>
         <translation>Nytt fanenavn:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="224"/>
+        <location filename="../tabwidget.cpp" line="242"/>
         <source>Select new tab title color</source>
         <translation>Velg ny farge til fanetittelen</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="253"/>
+        <location filename="../tabwidget.cpp" line="271"/>
         <source>Close session</source>
         <translation>Lukk sesjon</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="255"/>
+        <location filename="../tabwidget.cpp" line="273"/>
         <source>Change title color</source>
         <translation>Skift farge på tittelen</translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="355"/>
+        <source>Close tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="355"/>
+        <source>Are you sure you want to close this tab?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

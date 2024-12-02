@@ -66,11 +66,6 @@
         <translation>Mou la pestanya a la d&amp;reta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
-        <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Col·lapsa el subterminal</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>Neteja el terminal a&amp;ctiu</translation>
@@ -109,6 +104,11 @@
         <location filename="../mainwindow.cpp" line="304"/>
         <source>Split Vie&amp;w Left-Right</source>
         <translation>Vista partida d&apos;esquerra a dreta</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="309"/>
+        <source>&amp;Close Subterminal</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -318,47 +318,52 @@
         <translation>&amp;Forma del cursor del teclat</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="639"/>
+        <source>A process is running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>Exit QTerminal</source>
         <translation>Sortida de QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="659"/>
+        <location filename="../mainwindow.cpp" line="630"/>
         <source>Do not ask again</source>
         <translation>No tornis a preguntar-ho</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>Are you sure you want to exit?</source>
         <translation>Esteu segur que voleu sortir?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="695"/>
+        <location filename="../mainwindow.cpp" line="709"/>
         <source>About</source>
         <translation>Quant a</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="697"/>
+        <location filename="../mainwindow.cpp" line="711"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Un emulador de terminal lleuger i multiplataforma</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="713"/>
         <source>Copyright (C) </source>
         <translation>Copyright (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="713"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="701"/>
+        <location filename="../mainwindow.cpp" line="715"/>
         <source>LXQt Project</source>
         <translation>Projecte LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="703"/>
+        <location filename="../mainwindow.cpp" line="717"/>
         <source>Development: </source>
         <translation>Desenvolupament: </translation>
     </message>
@@ -589,11 +594,6 @@
         <translation>Desa la posició quan es tanqui</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="828"/>
-        <source>Ask for confirmation when closing</source>
-        <translation>Demana la confirmació quan es tanqui</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
         <source>Unlimited history</source>
         <translation>Historial il·limitat</translation>
@@ -743,6 +743,11 @@
         <location filename="../forms/propertiesdialog.ui" line="804"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>El mode d&apos;enganxat entre parèntesis és útil per enganxar cadenes de diverses línies.</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="828"/>
+        <source>Prompt on closing with a running process</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
@@ -978,35 +983,55 @@ Esteu segur que el voleu sobreescriure?</translation>
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="81"/>
-        <location filename="../tabwidget.cpp" line="235"/>
+        <location filename="../tabwidget.cpp" line="84"/>
+        <location filename="../tabwidget.cpp" line="253"/>
         <source>Shell No. %1</source>
         <translation>Shell núm. %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="203"/>
+        <location filename="../tabwidget.cpp" line="149"/>
+        <source>Close Subterminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="149"/>
+        <source>Are you sure you want to close this subterminal?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="221"/>
         <source>Tab name</source>
         <translation>Nom de la pestanya</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="204"/>
+        <location filename="../tabwidget.cpp" line="222"/>
         <source>New tab name:</source>
         <translation>Nom nou de la pestanya:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="224"/>
+        <location filename="../tabwidget.cpp" line="242"/>
         <source>Select new tab title color</source>
         <translation>Selecciona el color del títol de la pestanya nova</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="253"/>
+        <location filename="../tabwidget.cpp" line="271"/>
         <source>Close session</source>
         <translation>Tanca la sessió</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="255"/>
+        <location filename="../tabwidget.cpp" line="273"/>
         <source>Change title color</source>
         <translation>Canvia el color del títol</translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="355"/>
+        <source>Close tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="355"/>
+        <source>Are you sure you want to close this tab?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
