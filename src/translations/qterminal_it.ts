@@ -111,11 +111,6 @@
         <translation>Vai a</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
-        <source>&amp;Collapse Subterminal</source>
-        <translation>&amp;Chiudi sottoterminale</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="312"/>
         <source>&amp;Top Subterminal</source>
         <translation>Sottoterminale &amp;in cima</translation>
@@ -318,47 +313,57 @@
         <translation>&amp;Tipo di cursore</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="657"/>
+        <location filename="../mainwindow.cpp" line="639"/>
+        <source>A process is running.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>Exit QTerminal</source>
         <translation>Esci da QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="659"/>
+        <location filename="../mainwindow.cpp" line="630"/>
         <source>Do not ask again</source>
         <translation>Non chiedermelo di nuovo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="667"/>
+        <location filename="../mainwindow.cpp" line="309"/>
+        <source>&amp;Close Subterminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="686"/>
         <source>Are you sure you want to exit?</source>
         <translation>Sei sicuro di voler uscire?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="695"/>
+        <location filename="../mainwindow.cpp" line="709"/>
         <source>About</source>
         <translation>Informazioni</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="697"/>
+        <location filename="../mainwindow.cpp" line="711"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Un emulatore di terminale multi-piattaforme potente e leggero</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="713"/>
         <source>Copyright (C) </source>
         <translation>Copyright (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="699"/>
+        <location filename="../mainwindow.cpp" line="713"/>
         <source>2013-2022</source>
         <translation>2013-2022</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="701"/>
+        <location filename="../mainwindow.cpp" line="715"/>
         <source>LXQt Project</source>
         <translation>LXQt Project</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="703"/>
+        <location filename="../mainwindow.cpp" line="717"/>
         <source>Development: </source>
         <translation>Sviluppo: </translation>
     </message>
@@ -710,11 +715,6 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <translation>Salva posizione alla chiusura</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="828"/>
-        <source>Ask for confirmation when closing</source>
-        <translation>Chiedi conferma per la chiusura</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
         <source>Unlimited history</source>
         <translation>Cronologia illimitata</translation>
@@ -866,6 +866,11 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <translation>La modalità incolla tra parentesi può essere utile per stringe multi-righe.</translation>
     </message>
     <message>
+        <location filename="../forms/propertiesdialog.ui" line="828"/>
+        <source>Prompt on closing with a running process</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
         <source>Audible bell</source>
         <translation>Campanella udibile</translation>
@@ -978,35 +983,55 @@ Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="81"/>
-        <location filename="../tabwidget.cpp" line="235"/>
+        <location filename="../tabwidget.cpp" line="84"/>
+        <location filename="../tabwidget.cpp" line="253"/>
         <source>Shell No. %1</source>
         <translation>Shell N° %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="203"/>
+        <location filename="../tabwidget.cpp" line="149"/>
+        <source>Close Subterminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="149"/>
+        <source>Are you sure you want to close this subterminal?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="221"/>
         <source>Tab name</source>
         <translation>Nome scheda</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="204"/>
+        <location filename="../tabwidget.cpp" line="222"/>
         <source>New tab name:</source>
         <translation>Nuovo nome scheda:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="224"/>
+        <location filename="../tabwidget.cpp" line="242"/>
         <source>Select new tab title color</source>
         <translation>Seleziona colore del titolo del nuovo tab</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="253"/>
+        <location filename="../tabwidget.cpp" line="271"/>
         <source>Close session</source>
         <translation>Chiudi sessione</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="255"/>
+        <location filename="../tabwidget.cpp" line="273"/>
         <source>Change title color</source>
         <translation>Cambia colore titolo</translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="355"/>
+        <source>Close tab</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../tabwidget.cpp" line="355"/>
+        <source>Are you sure you want to close this tab?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
