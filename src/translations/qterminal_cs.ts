@@ -427,11 +427,6 @@
         <translation>Spustit s přednastavením:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="446"/>
-        <source>Show a border around the current terminal</source>
-        <translation>Zobrazit okraj okolo právě používaného terminálu</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="306"/>
         <source>Terminal transparency</source>
         <translation>Průhlednost terminálu</translation>
@@ -485,16 +480,6 @@
         <location filename="../forms/propertiesdialog.ui" line="531"/>
         <source>Show the menu bar</source>
         <translation>Zobrazovat lištu nabídek</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="460"/>
-        <source>Change window title based on current terminal</source>
-        <translation>Změnit nadpis okna podle právě zaměřeného terminálu</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="467"/>
-        <source>Change window icon based on current terminal</source>
-        <translation>Změnit ikonu okna podle právě zaměřeného terminálu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="263"/>
@@ -709,8 +694,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../forms/propertiesdialog.ui" line="446"/>
+        <source>Draw a border</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
         <source>Set the current terminal on mouseover</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="460"/>
+        <source>Change window title based on the terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="467"/>
+        <source>Change window icon based on the terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

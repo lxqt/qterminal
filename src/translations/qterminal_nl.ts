@@ -442,11 +442,6 @@
         <translation>Menubalk tonen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="446"/>
-        <source>Show a border around the current terminal</source>
-        <translation>Rand tonen rond huidige terminalvenster</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Application transparency</source>
         <translation>Doorzichtigheid</translation>
@@ -678,9 +673,24 @@
         <translation>Huidige terminal</translation>
     </message>
     <message>
+        <location filename="../forms/propertiesdialog.ui" line="446"/>
+        <source>Draw a border</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
         <source>Set the current terminal on mouseover</source>
         <translation>Huidige terminal instellen na aanwijzen met muis</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="460"/>
+        <source>Change window title based on the terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="467"/>
+        <source>Change window icon based on the terminal</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
@@ -772,16 +782,6 @@ Sneltoets wissen: druk bij stap 2 op een samensteltoets (bijv. Shift)</translati
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Show on start</source>
         <translation>Tonen na opstarten</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="460"/>
-        <source>Change window title based on current terminal</source>
-        <translation>Venstertitel aanpassen op basis van huidig terminalvenster</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="467"/>
-        <source>Change window icon based on current terminal</source>
-        <translation>Vensterpictogram aanpassen op basis van huidig terminalvenster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="263"/>
