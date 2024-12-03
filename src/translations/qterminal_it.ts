@@ -558,11 +558,6 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <translation>Nascondi barra con una scheda sola</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="446"/>
-        <source>Show a border around the current terminal</source>
-        <translation>Mostra un bordo intorno al terminale attuale</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Application transparency</source>
         <translation>Trasparenza dell&apos;applicazione</translation>
@@ -612,16 +607,6 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <location filename="../forms/propertiesdialog.ui" line="233"/>
         <source>Cursor shape</source>
         <translation>Forma cursore</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="460"/>
-        <source>Change window title based on current terminal</source>
-        <translation>Cambia titolo della finestra in base al terminale corrente</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="467"/>
-        <source>Change window icon based on current terminal</source>
-        <translation>Cambia icona della finestra in base al terminale corrente</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="263"/>
@@ -846,9 +831,24 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <translation>Terminale attuale</translation>
     </message>
     <message>
+        <location filename="../forms/propertiesdialog.ui" line="446"/>
+        <source>Draw a border</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
         <source>Set the current terminal on mouseover</source>
         <translation>Attiva terminale corrente al passaggio del mouse</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="460"/>
+        <source>Change window title based on the terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="467"/>
+        <source>Change window icon based on the terminal</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>

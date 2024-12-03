@@ -442,11 +442,6 @@
         <translation>Mostrar barra de menu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="446"/>
-        <source>Show a border around the current terminal</source>
-        <translation>Mostrar contornos do terminal</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Application transparency</source>
         <translation>Transparência da aplicação</translation>
@@ -678,9 +673,24 @@
         <translation>Terminal atual</translation>
     </message>
     <message>
+        <location filename="../forms/propertiesdialog.ui" line="446"/>
+        <source>Draw a border</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
         <source>Set the current terminal on mouseover</source>
         <translation>Definir o terminal atual ao passar o rato</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="460"/>
+        <source>Change window title based on the terminal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="467"/>
+        <source>Change window icon based on the terminal</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
@@ -772,16 +782,6 @@ Para remover/desativar um atalho, no ponto 2, prima apenas um modificador (como 
         <location filename="../forms/propertiesdialog.ui" line="988"/>
         <source>Show on start</source>
         <translation>Mostrar ao iniciar</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="460"/>
-        <source>Change window title based on current terminal</source>
-        <translation>Alterar título da janela de acordo com o terminal atual</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="467"/>
-        <source>Change window icon based on current terminal</source>
-        <translation>Alterar ícone da janela de acordo com o terminal atual</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="263"/>
