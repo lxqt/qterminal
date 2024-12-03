@@ -443,7 +443,7 @@
               <item>
                <widget class="QCheckBox" name="highlightCurrentCheckBox">
                 <property name="text">
-                 <string>Show a border around the current terminal</string>
+                 <string>Draw a border</string>
                 </property>
                </widget>
               </item>
@@ -457,14 +457,14 @@
               <item>
                <widget class="QCheckBox" name="changeWindowTitleCheckBox">
                 <property name="text">
-                 <string>Change window title based on current terminal</string>
+                 <string>Change window title based on the terminal</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="changeWindowIconCheckBox">
                 <property name="text">
-                 <string>Change window icon based on current terminal</string>
+                 <string>Change window icon based on the terminal</string>
                 </property>
                </widget>
               </item>
