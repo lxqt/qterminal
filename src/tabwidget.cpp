@@ -36,6 +36,7 @@
 
 #define TAB_INDEX_PROPERTY "tab_index"
 #define TAB_CUSTOM_NAME_PROPERTY "custom_name"
+#define TAB_TERM_TITLE_NAME_PROPERTY "term_title_name"
 
 TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTabBar(new TabBar(this)), mSwitcher(new TabSwitcher(this))
 {
@@ -198,7 +199,11 @@ void TabWidget::onTermTitleChanged(const QString& title, const QString& icon)
 {
     TermWidgetHolder * console = qobject_cast<TermWidgetHolder*>(sender());
     const bool custom_name = console->property(TAB_CUSTOM_NAME_PROPERTY).toBool();
-    if (!custom_name)
+    if (custom_name)
+    {   /* Store the new title to use it when customization is removed */
+        console->setProperty(TAB_TERM_TITLE_NAME_PROPERTY, title);
+    }
+    else
     {
         const int index = console->property(TAB_INDEX_PROPERTY).toInt();
 
@@ -220,12 +225,27 @@ void TabWidget::renameSession(int index)
     bool ok = false;
     QString text = QInputDialog::getText(this, tr("Tab name"),
                                         tr("New tab name:"), QLineEdit::Normal,
-                                        QString(), &ok);
-    if(ok && !text.isEmpty())
+                                        QString(tabText(index)), &ok);
+    if(ok)
     {
         setTabIcon(index, QIcon{});
-        setTabText(index, text);
-        widget(index)->setProperty(TAB_CUSTOM_NAME_PROPERTY, true);
+        if (text.isEmpty())
+        {
+            /* Set the custom text */
+            setTabText(index, widget(index)->property(TAB_TERM_TITLE_NAME_PROPERTY).toString());
+            widget(index)->setProperty(TAB_CUSTOM_NAME_PROPERTY, false);
+            /* Release the stored title memory */
+            widget(index)->setProperty(TAB_TERM_TITLE_NAME_PROPERTY, QVariant::Invalid);
+        }
+        else
+        {
+            /* Store the current title before we set the first custom value */
+            if (!widget(index)->property(TAB_CUSTOM_NAME_PROPERTY).toBool())
+                widget(index)->setProperty(TAB_TERM_TITLE_NAME_PROPERTY, QString(tabText(index)));
+            /* Set the custom text */
+            setTabText(index, text);
+            widget(index)->setProperty(TAB_CUSTOM_NAME_PROPERTY, true);
+        }
         if (currentIndex() == index)
             emit currentTitleChanged(index);
     }
