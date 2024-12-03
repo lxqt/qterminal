@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Затваряне на подтерминала</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Изпълнява се процес.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -747,7 +747,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Запитване за потвърждение при затваряне на терминал с работещ процес</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
@@ -991,12 +991,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Затваряне на подтерминал</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Сигурни ли сте, че искате да затворите този подтерминал?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1026,12 +1026,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Затваряне на раздела</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Сигурни ли сте, че искате да затворите този раздел?</translation>
     </message>
 </context>
 <context>
