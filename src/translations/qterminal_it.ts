@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Un processo è in esecuzione.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -330,7 +330,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Chiudi sottoterminale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -868,7 +868,7 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiedi una conferma per chiudere quando un processo è in esecuzione</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
@@ -991,12 +991,12 @@ Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi sottoterminale</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Si è sicuro di voler chiudere questo sottoterminale?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1026,12 +1026,12 @@ Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Chiudi scheda</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>SI è sicuro di voler chiudere questa scheda?</translation>
     </message>
 </context>
 <context>

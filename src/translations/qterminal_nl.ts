@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Er wordt een proces uitgevoerd.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -330,7 +330,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Subter&amp;minal sluiten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -700,7 +700,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Om bevestiging vragen bij sluiten als er een proces wordt uitgevoerd</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
@@ -991,12 +991,12 @@ Weet u zeker dat u het wilt overschrijven?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Subterminal sluiten</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Weet u zeker dat u deze subterminal wilt sluiten?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1026,12 +1026,12 @@ Weet u zeker dat u het wilt overschrijven?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabblad sluiten</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Weet u zeker dat u dit tabblad wilt sluiten?</translation>
     </message>
 </context>
 <context>
