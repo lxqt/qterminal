@@ -98,17 +98,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="301"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Akatimbe Kawulemu Ekya Waggulu N&apos;ekya Wansi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Akatimbe Kawulemu Kya &amp;Ddyo N&apos;ekya Kkono</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Akawandikiro Ka&amp;gyewo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Waliwo omulimu ogukyabumbujja.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -726,52 +726,52 @@ obutatabulwatabulwa nga kibikolako.</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ddirisa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekiwandikiro kino</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="446"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Taayizawo olusalo</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekiwandikiro akalagakifo kwekayita kifuuke ekikozesebwa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="460"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Omutwe ku mwango gw&apos;eddirisa gugendere ku kiwandikiro</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="467"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Akafaananyi ku mwango gw&apos;eddirisa kagendere ku kiwandikiro</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="787"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Obubonero obulaga ekigambo ekitangaazidwa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Mu gw&apos;okutangaaza ebiwandike kigambo ku kigambo, obubonero buno bubalibwa ng&apos;obuli mu kigambo awamu n&apos;ennukuta za mu za ddala</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="797"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Sooka okubuuza ekiwandikiro bwe kiba kigenda okuggalibwawo nga wakyaliwo omulimu ogubumbujja</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
@@ -849,7 +849,7 @@ enkola ya gannaago (okugeza erya Shift)</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1066"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kutangaaza: Nga wayland y&apos;ekola, ekikolwa okitegeranga mu nteekateeka za puloguramu ekwanaganya ebirabikira awakolerwa ezikola ku &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1134"/>
@@ -1018,12 +1018,12 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Akawandikiro Kagyewo</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ddala akawandikiro oyagala okukagyawo?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1053,12 +1053,12 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Gyawo katimbe</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ddala akatimbe kano oyagala okukagyawo?</translation>
     </message>
 </context>
 <context>

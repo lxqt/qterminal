@@ -48,7 +48,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="267"/>
         <source>&amp;Next Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Next Tab</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="270"/>
