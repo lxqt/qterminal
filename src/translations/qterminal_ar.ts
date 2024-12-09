@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;إغلاق المحطة الفرعية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>هناك عملية جارية.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -712,7 +712,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="446"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>ارسم حدودا</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
@@ -722,12 +722,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="460"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>تغيير عنوان النافذة استنادًا إلى المحطة الطرفية</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="467"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>تغيير أيقونة النافذة بناءً على المحطة الطرفية</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
@@ -747,7 +747,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>المطالبة بالإغلاق باستخدام عملية جارية</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
@@ -991,12 +991,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>إغلاق المحطة الفرعية</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>هل أنت متأكد أنك تريد إغلاق هذا المحطة الفرعية؟</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1026,12 +1026,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>إغلاق التبويب</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>هل أنت متأكد أنك تريد إغلاق هذا التبويب؟</translation>
     </message>
 </context>
 <context>

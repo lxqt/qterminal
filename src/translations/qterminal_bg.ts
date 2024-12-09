@@ -712,7 +712,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="446"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Изчертаване на рамка</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
@@ -722,12 +722,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="460"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Промяна на заглавието на прозореца според терминала</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="467"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Промяна на иконата на прозореца в зависимост от терминала</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
