@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Um processo está em execução.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -330,7 +330,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fechar subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -675,7 +675,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="446"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Desenhar um contorno</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
@@ -685,12 +685,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="460"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterar o título da janela com base no terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="467"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Alterar o ícone da janela com base no terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
@@ -710,7 +710,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Avisar ao fechar com um processo em execução</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
@@ -991,12 +991,12 @@ Tem a certeza de que o quer substituir?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar subterminal</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar este subterminal?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1026,12 +1026,12 @@ Tem a certeza de que o quer substituir?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar separador</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar este separador?</translation>
     </message>
 </context>
 <context>
