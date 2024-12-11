@@ -78,12 +78,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>내역의 이전 탭(&amp;P)</translation>
+        <translation>히스토리의 이전 탭(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="276"/>
         <source>&amp;Next Tab in History</source>
-        <translation>내역의 다음 탭(&amp;N)</translation>
+        <translation>히스토리의 다음 탭(&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>보조터미널 닫기(&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="351"/>
         <source>Handle history...</source>
-        <translation>내역 처리하기...</translation>
+        <translation>히스토리 처리하기...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="359"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>프로세스가 실행 중입니다.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -581,12 +581,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="767"/>
         <source>Unlimited history</source>
-        <translation>무제한 내역</translation>
+        <translation>무제한 히스토리</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="747"/>
         <source>History size (in lines)</source>
-        <translation>내역 크기 (줄 단위)</translation>
+        <translation>히스토리 크기 (줄 단위)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="859"/>
@@ -656,12 +656,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="895"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>이 명령은 스크롤백 내역을 포함하는 임시 파일의 파일 이름을 포함하는 인수를 사용하여 실행됩니다</translation>
+        <translation>이 명령은 스크롤백 히스토리를 포함하는 임시 파일의 파일 이름을 포함하는 인수를 사용하여 실행됩니다</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="898"/>
         <source>Handle history command</source>
-        <translation>내역 명령 처리하기</translation>
+        <translation>히스토리 명령 처리하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="628"/>
@@ -672,8 +672,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="649"/>
         <source>Get current size</source>
-        <translation>현재 크기 가져 오기
-확</translation>
+        <translation>현재 크기 확인</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="845"/>
@@ -703,32 +702,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>창</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>현재 터미널</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="446"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>테두리 그리기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>마우스를 가리키면 현재 터미널 활성화</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="460"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>터미널에 따라 창 제목 변경하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="467"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>터미널에 따라 창 아이콘 변경하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
@@ -748,7 +747,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>실행 중인 프로세스를 닫을 때 프롬프트</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
@@ -992,12 +991,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>보조터미널 닫기</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>이 보조터미널을 닫으시겠습니까?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1027,12 +1026,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>탭 닫기</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>이 탭을 닫으시겠습니까?</translation>
     </message>
 </context>
 <context>

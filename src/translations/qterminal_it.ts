@@ -828,12 +828,12 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Current Terminal</source>
-        <translation>Terminale attuale</translation>
+        <translation>Terminale corrente</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="446"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra un bordo</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="453"/>
@@ -843,12 +843,12 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="460"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambia titolo della finestra in base al terminale</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="467"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambia icona della finestra in base al terminale</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
