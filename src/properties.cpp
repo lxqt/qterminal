@@ -115,7 +115,6 @@ void Properties::loadSettings()
 
     terminalMargin = m_settings->value(QLatin1String("TerminalMargin"), 0).toInt();
 
-    appTransparency = m_settings->value(QLatin1String("MainWindow/ApplicationTransparency"), 0).toInt();
     termTransparency = m_settings->value(QLatin1String("TerminalTransparency"), 0).toInt();
     backgroundImage = m_settings->value(QLatin1String("TerminalBackgroundImage"), QString()).toString();
     backgroundMode = qBound(0, m_settings->value(QLatin1String("TerminalBackgroundMode"), 0).toInt(), 4);
@@ -237,7 +236,6 @@ void Properties::saveSettings()
     }
     m_settings->endArray();
 
-    m_settings->setValue(QLatin1String("MainWindow/ApplicationTransparency"), appTransparency);
     m_settings->setValue(QLatin1String("TerminalMargin"), terminalMargin);
     m_settings->setValue(QLatin1String("TerminalTransparency"), termTransparency);
     m_settings->setValue(QLatin1String("TerminalBackgroundImage"), backgroundImage);
@@ -365,21 +363,6 @@ void Properties::migrate_settings()
             settings.setValue(QLatin1String("HideTabBarWithOneTab"), hideValue);
         }
         settings.remove(QLatin1String("AlwaysShowTabs"));
-
-        // ===== appOpacity -> ApplicationTransparency =====
-        //
-        // Note: In 0.6.0 the opacity values had been erroneously
-        // restricted to [0,99] instead of [1,100]. We fix this here by
-        // setting the opacity to 100 if it was 99 and to 1 if it was 0.
-        //
-        if(!settings.contains(QLatin1String("MainWindow/ApplicationTransparency")))
-        {
-            int appOpacityValue = settings.value(QLatin1String("MainWindow/appOpacity"), 100).toInt();
-            appOpacityValue = appOpacityValue == 99 ? 100 : appOpacityValue;
-            appOpacityValue = appOpacityValue == 0 ? 1 : appOpacityValue;
-            settings.setValue(QLatin1String("MainWindow/ApplicationTransparency"), 100 - appOpacityValue);
-        }
-        settings.remove(QLatin1String("MainWindow/appOpacity"));
 
         // ===== termOpacity -> TerminalTransparency =====
         if(!settings.contains(QLatin1String("TerminalTransparency")))
