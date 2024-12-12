@@ -219,8 +219,6 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     terminalMarginSpinBox->setValue(Properties::Instance()->terminalMargin);
 
-    appTransparencyBox->setValue(Properties::Instance()->appTransparency);
-
     termTransparencyBox->setValue(Properties::Instance()->termTransparency);
 
     highlightCurrentCheckBox->setChecked(Properties::Instance()->highlightCurrentTerminal);
@@ -299,8 +297,6 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     // show, hide or disable some widgets on Wayland
     bool onWayland(QGuiApplication::platformName() == QStringLiteral("wayland"));
-    appTransparencyLabel->setVisible(!onWayland);
-    appTransparencyBox->setVisible(!onWayland);
     savePosOnExitCheckBox->setVisible(!onWayland);
     waylandLabel->setVisible(onWayland);
     dropShortCutLabel->setEnabled(!onWayland);
@@ -334,12 +330,6 @@ void PropertiesDialog::apply()
                                        QString() : styleComboBox->currentText();
 
     Properties::Instance()->emulation = emulationComboBox->currentText();
-
-    /* do not allow to go above 99 or we lose transparency option */
-    (appTransparencyBox->value() >= 100) ?
-            Properties::Instance()->appTransparency = 99
-                :
-            Properties::Instance()->appTransparency = appTransparencyBox->value();
 
     Properties::Instance()->terminalMargin = terminalMarginSpinBox->value();
     Properties::Instance()->termTransparency = termTransparencyBox->value();
