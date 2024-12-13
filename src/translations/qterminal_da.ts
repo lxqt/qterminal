@@ -382,7 +382,7 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="38"/>
-        <location filename="../forms/propertiesdialog.ui" line="741"/>
+        <location filename="../forms/propertiesdialog.ui" line="715"/>
         <source>Behavior</source>
         <translation>Opførsel</translation>
     </message>
@@ -402,7 +402,7 @@
         <translation>Bogmærker</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="575"/>
+        <location filename="../forms/propertiesdialog.ui" line="549"/>
         <source>Hide tab bar with only one tab</source>
         <translation>Skjul fanebladslinje når der kun er ét faneblad</translation>
     </message>
@@ -417,43 +417,37 @@
         <translation>Placering af rullebjælke</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="389"/>
+        <location filename="../forms/propertiesdialog.ui" line="363"/>
         <source>Start with preset:</source>
         <translation>Start med forudindstilling:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="306"/>
+        <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Terminal transparency</source>
         <translation>Terminalens transparens</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="280"/>
-        <source>Application transparency</source>
-        <translation>Programmets transparens</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="400"/>
+        <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>None (single terminal)</source>
         <translation>Ingen (én terminal)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="405"/>
+        <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>2 terminals horizontally</source>
         <translation>2 terminaler vandret</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="410"/>
+        <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>2 terminals vertically</source>
         <translation>2 terminaler lodret</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="415"/>
+        <location filename="../forms/propertiesdialog.ui" line="389"/>
         <source>4 terminals</source>
         <translation>4 terminaler</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="290"/>
-        <location filename="../forms/propertiesdialog.ui" line="316"/>
         <source> %</source>
         <translation> %</translation>
     </message>
@@ -478,7 +472,7 @@
         <translation>Widgetstil</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="531"/>
+        <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Show the menu bar</source>
         <translation>Vis menulinjen</translation>
     </message>
@@ -493,12 +487,12 @@
         <translation>Aktivér understøttelse af tovejstekst</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="332"/>
+        <location filename="../forms/propertiesdialog.ui" line="306"/>
         <source>Background image:</source>
         <translation>Baggrundsbillede:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="344"/>
+        <location filename="../forms/propertiesdialog.ui" line="318"/>
         <source>Select</source>
         <translation>Vælg</translation>
     </message>
@@ -508,23 +502,23 @@
         <translation>Vis terminalens størrelse under tilpasning af størrelse</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="582"/>
+        <location filename="../forms/propertiesdialog.ui" line="556"/>
         <source>Fixed tab width:</source>
         <translation>Fast brede for faneblad:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="433"/>
-        <location filename="../forms/propertiesdialog.ui" line="592"/>
+        <location filename="../forms/propertiesdialog.ui" line="407"/>
+        <location filename="../forms/propertiesdialog.ui" line="566"/>
         <source>px</source>
         <translation>px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="555"/>
+        <location filename="../forms/propertiesdialog.ui" line="529"/>
         <source>Show close button on each tab</source>
         <translation>Vis luk-knap på hvert faneblad</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="423"/>
+        <location filename="../forms/propertiesdialog.ui" line="397"/>
         <source>Terminal margin</source>
         <translation>Terminalmargin</translation>
     </message>
@@ -534,97 +528,97 @@
         <translation>Brug bokstegningstegn i denne skrifttype</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="538"/>
+        <location filename="../forms/propertiesdialog.ui" line="512"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>Genveje aktiveres med Alt og kan forstyrre terminalen.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="541"/>
+        <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>No menu bar accelerator</source>
         <translation>Ingen genveje for menulinje</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="908"/>
+        <location filename="../forms/propertiesdialog.ui" line="882"/>
         <source>Emulation</source>
         <translation>Emulering</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="774"/>
+        <location filename="../forms/propertiesdialog.ui" line="748"/>
         <source>Action after paste</source>
         <translation>Handling efter indsættelse</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="814"/>
+        <location filename="../forms/propertiesdialog.ui" line="788"/>
         <source>Confirm multiline paste</source>
         <translation>Bekræft multilinjeindsættelse</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="821"/>
+        <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Fjern efterstillede linjeskift i indsat tekst</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="835"/>
+        <location filename="../forms/propertiesdialog.ui" line="809"/>
         <source>Open new terminals in current working directory</source>
         <translation>Åbn nye terminaler i nuværende arbejdsmappe</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="609"/>
+        <location filename="../forms/propertiesdialog.ui" line="583"/>
         <source>Save Size when closing</source>
         <translation>Gem størrelse ved lukning</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="602"/>
+        <location filename="../forms/propertiesdialog.ui" line="576"/>
         <source>Save Position when closing</source>
         <translation>Gem placering ved lukning</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="767"/>
+        <location filename="../forms/propertiesdialog.ui" line="741"/>
         <source>Unlimited history</source>
         <translation>Ubegrænset historik</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="747"/>
+        <location filename="../forms/propertiesdialog.ui" line="721"/>
         <source>History size (in lines)</source>
         <translation>Historikstørrelse (i linjer)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="859"/>
+        <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Default $TERM</source>
         <translation>Standard-$TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="621"/>
+        <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>Start with this size:</source>
         <translation>Start med denne størrelse:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="353"/>
+        <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Background mode:</source>
         <translation>Baggrundstilstand:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="361"/>
+        <location filename="../forms/propertiesdialog.ui" line="335"/>
         <source>None</source>
         <translation>Ingen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="366"/>
+        <location filename="../forms/propertiesdialog.ui" line="340"/>
         <source>Stretch</source>
         <translation>Stræk</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="371"/>
+        <location filename="../forms/propertiesdialog.ui" line="345"/>
         <source>Zoom</source>
         <translation>Zoom</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="376"/>
+        <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Fit</source>
         <translation>Tilpas</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="381"/>
+        <location filename="../forms/propertiesdialog.ui" line="355"/>
         <source>Center</source>
         <translation>Centrér</translation>
     </message>
@@ -644,58 +638,58 @@
         <translation>Brug fed skrift til intense farver</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="548"/>
+        <location filename="../forms/propertiesdialog.ui" line="522"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Skjul vindueskanter</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="917"/>
+        <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hvilken opførsel der skal emuleres. Bemærk at det ikke behøver være det samme som dit styresystem.&lt;/p&gt;&lt;p&gt;Hvis du er i tvivl, så brug &lt;span style=&quot; font-weight:600;&quot;&gt;standardemulering&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="895"/>
+        <location filename="../forms/propertiesdialog.ui" line="869"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>Kommandoen køres med et argument der indeholder filnavnet på en midlertidig fil der indeholder tilbagerulningshistorikken</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="872"/>
         <source>Handle history command</source>
         <translation>Håndter historikkommando</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="628"/>
-        <location filename="../forms/propertiesdialog.ui" line="642"/>
+        <location filename="../forms/propertiesdialog.ui" line="602"/>
+        <location filename="../forms/propertiesdialog.ui" line="616"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="649"/>
+        <location filename="../forms/propertiesdialog.ui" line="623"/>
         <source>Get current size</source>
         <translation>Hent nuværende størrelse</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="845"/>
+        <location filename="../forms/propertiesdialog.ui" line="819"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>Åbn nyt faneblad til højre for det aktive faneblad</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="842"/>
+        <location filename="../forms/propertiesdialog.ui" line="816"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>Hvis den er fravalgt, så åbnes nye faneblade helt til højre</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="565"/>
+        <location filename="../forms/propertiesdialog.ui" line="539"/>
         <source>Close tab on middle-click</source>
         <translation>Luk faneblad ved midterklik</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="807"/>
+        <location filename="../forms/propertiesdialog.ui" line="781"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>Deaktiver parentes indsæt tilstand med magt</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="787"/>
+        <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>Word selection characters</source>
         <translation>Ordvalgstegn</translation>
     </message>
@@ -705,57 +699,57 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="440"/>
+        <location filename="../forms/propertiesdialog.ui" line="414"/>
         <source>Current Terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="446"/>
+        <location filename="../forms/propertiesdialog.ui" line="420"/>
         <source>Draw a border</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="453"/>
+        <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Set the current terminal on mouseover</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="460"/>
+        <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Change window title based on the terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="467"/>
+        <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window icon based on the terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="794"/>
+        <location filename="../forms/propertiesdialog.ui" line="768"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
         <translation>Når du vælger tekst ved ord, skal du betragte disse tegn som en del af ordene ud over de alfanumeriske tegn</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="797"/>
+        <location filename="../forms/propertiesdialog.ui" line="771"/>
         <source>:@-./_~</source>
         <translation>:@-./_~</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="804"/>
+        <location filename="../forms/propertiesdialog.ui" line="778"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>Indsæt-tilstand med parentes er nyttig til at indsætte strenge med flere linjer.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="828"/>
+        <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source>Prompt on closing with a running process</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="852"/>
+        <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Audible bell</source>
         <translation>Hørbar klokke</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="941"/>
+        <location filename="../forms/propertiesdialog.ui" line="915"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -770,83 +764,83 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 Fjern/deaktivér en genvej, i punkt 2, ved kun at trykke på en ændringstast (såsom Skift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="971"/>
+        <location filename="../forms/propertiesdialog.ui" line="945"/>
         <source>Shortcut</source>
         <translation>Genvej</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="976"/>
+        <location filename="../forms/propertiesdialog.ui" line="950"/>
         <source>Key</source>
         <translation>Tast</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <location filename="../forms/propertiesdialog.ui" line="962"/>
         <source>Show on start</source>
         <translation>Vis ved start</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="995"/>
+        <location filename="../forms/propertiesdialog.ui" line="969"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>En lås knap er vist på den lodrette tab bar</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="998"/>
+        <location filename="../forms/propertiesdialog.ui" line="972"/>
         <source>Keep window open when it loses focus</source>
         <translation>Hold vinduet åbent når det mister fokus</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1005"/>
+        <location filename="../forms/propertiesdialog.ui" line="979"/>
         <source>Size</source>
         <translation>Størrelse</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1016"/>
+        <location filename="../forms/propertiesdialog.ui" line="990"/>
         <source>Height</source>
         <translation>Højde</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1026"/>
-        <location filename="../forms/propertiesdialog.ui" line="1043"/>
+        <location filename="../forms/propertiesdialog.ui" line="1000"/>
+        <location filename="../forms/propertiesdialog.ui" line="1017"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1033"/>
+        <location filename="../forms/propertiesdialog.ui" line="1007"/>
         <source>Width</source>
         <translation>Bredde</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1057"/>
+        <location filename="../forms/propertiesdialog.ui" line="1031"/>
         <source>Shortcut:</source>
         <translation>Genvej:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1066"/>
+        <location filename="../forms/propertiesdialog.ui" line="1040"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
         <translation>Bemærk: På Wayland skal genvejen tilføjes i kompositorindstillingerne for &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1134"/>
+        <location filename="../forms/propertiesdialog.ui" line="1108"/>
         <source>Edit bookmark file contents</source>
         <translation>Rediger indholdet af bogmærkefilen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1093"/>
+        <location filename="../forms/propertiesdialog.ui" line="1067"/>
         <source>Enable bookmarks</source>
         <translation>Aktivér bogmærker</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1102"/>
+        <location filename="../forms/propertiesdialog.ui" line="1076"/>
         <source>Bookmark file</source>
         <translation>Bogmærkefil</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1115"/>
+        <location filename="../forms/propertiesdialog.ui" line="1089"/>
         <source>Find...</source>
         <translation>Søg...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1124"/>
+        <location filename="../forms/propertiesdialog.ui" line="1098"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Du kan angive din egen placering af bogmærkefilen. Det giver mulighed for nemt at dele bogmærker med værktøjer såsom OwnCloud eller Dropbox.</translation>
     </message>
@@ -908,66 +902,66 @@ Fjern/deaktivér en genvej, i punkt 2, ved kun at trykke på en ændringstast (s
         <translation>Ruller til bunden</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="278"/>
+        <location filename="../propertiesdialog.cpp" line="276"/>
         <source>Examples</source>
         <translation>Eksempler</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="440"/>
+        <location filename="../propertiesdialog.cpp" line="430"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Billeder (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="542"/>
+        <location filename="../propertiesdialog.cpp" line="532"/>
         <source>Open bookmarks file</source>
         <translation>Åbne bogmærkefil</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="544"/>
+        <location filename="../propertiesdialog.cpp" line="534"/>
         <source>XML files (*.xml)</source>
         <translation>XML-filer (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="545"/>
+        <location filename="../propertiesdialog.cpp" line="535"/>
         <source>All files (*)</source>
         <translation>Alle filer (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="644"/>
-        <location filename="../propertiesdialog.cpp" line="648"/>
+        <location filename="../propertiesdialog.cpp" line="634"/>
+        <location filename="../propertiesdialog.cpp" line="638"/>
         <source>Question</source>
         <translation>Spørgsmål</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="644"/>
+        <location filename="../propertiesdialog.cpp" line="634"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Vil du overskrive denne bogmærke fil?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="648"/>
+        <location filename="../propertiesdialog.cpp" line="638"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Navnet på bogmærkefilen ender ikke med &apos;.xml&apos;.
 Er du sikker på du vil overskrive den?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="656"/>
+        <location filename="../propertiesdialog.cpp" line="646"/>
         <source>Warning</source>
         <translation>Advarsel</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="656"/>
+        <location filename="../propertiesdialog.cpp" line="646"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>kan ikke skrive bogmærker til denne fil:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="211"/>
-        <location filename="../propertiesdialog.cpp" line="333"/>
+        <location filename="../propertiesdialog.cpp" line="329"/>
         <source>System Default</source>
         <translation>Systemstandard</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="439"/>
+        <location filename="../propertiesdialog.cpp" line="429"/>
         <source>Choose a background image</source>
         <translation>Vælg et baggrundsbillede</translation>
     </message>
