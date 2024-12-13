@@ -382,7 +382,7 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="38"/>
-        <location filename="../forms/propertiesdialog.ui" line="741"/>
+        <location filename="../forms/propertiesdialog.ui" line="715"/>
         <source>Behavior</source>
         <translation>Поведение</translation>
     </message>
@@ -402,7 +402,7 @@
         <translation>Отметки</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="575"/>
+        <location filename="../forms/propertiesdialog.ui" line="549"/>
         <source>Hide tab bar with only one tab</source>
         <translation>Скриване на лентата с раздели само с едно кликване</translation>
     </message>
@@ -417,43 +417,37 @@
         <translation>Позиция на лентата за превъртане</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="389"/>
+        <location filename="../forms/propertiesdialog.ui" line="363"/>
         <source>Start with preset:</source>
         <translation>Брой и позиция на терминалите:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="306"/>
+        <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Terminal transparency</source>
         <translation>Прозрачност на терминала</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="280"/>
-        <source>Application transparency</source>
-        <translation>Прозрачност на приложението</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="400"/>
+        <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>None (single terminal)</source>
         <translation>един терминал</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="405"/>
+        <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>2 terminals horizontally</source>
         <translation>2 хоризонтални терминала</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="410"/>
+        <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>2 terminals vertically</source>
         <translation>2 вертикални терминала</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="415"/>
+        <location filename="../forms/propertiesdialog.ui" line="389"/>
         <source>4 terminals</source>
         <translation>4 терминала</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="290"/>
-        <location filename="../forms/propertiesdialog.ui" line="316"/>
         <source> %</source>
         <translation> %</translation>
     </message>
@@ -478,7 +472,7 @@
         <translation>Стил на интерфейса</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="531"/>
+        <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Show the menu bar</source>
         <translation>Показване на лентата с менюта</translation>
     </message>
@@ -493,12 +487,12 @@
         <translation>Активиране на двупосочна поддръжка на текст</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="332"/>
+        <location filename="../forms/propertiesdialog.ui" line="306"/>
         <source>Background image:</source>
         <translation>Фоново изображение:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="344"/>
+        <location filename="../forms/propertiesdialog.ui" line="318"/>
         <source>Select</source>
         <translation>Избиране</translation>
     </message>
@@ -508,23 +502,23 @@
         <translation>Показване на размера на терминала при преоразмеряване</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="582"/>
+        <location filename="../forms/propertiesdialog.ui" line="556"/>
         <source>Fixed tab width:</source>
         <translation>Фиксирана ширина на раздела:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="433"/>
-        <location filename="../forms/propertiesdialog.ui" line="592"/>
+        <location filename="../forms/propertiesdialog.ui" line="407"/>
+        <location filename="../forms/propertiesdialog.ui" line="566"/>
         <source>px</source>
         <translation>px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="555"/>
+        <location filename="../forms/propertiesdialog.ui" line="529"/>
         <source>Show close button on each tab</source>
         <translation>Показване на бутона за затваряне на всеки раздел</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="423"/>
+        <location filename="../forms/propertiesdialog.ui" line="397"/>
         <source>Terminal margin</source>
         <translation>Отстояние на текста от рамката</translation>
     </message>
@@ -534,97 +528,97 @@
         <translation>Използване на съдържащи се в шрифта символи,чертаещи полета</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="538"/>
+        <location filename="../forms/propertiesdialog.ui" line="512"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>Символите за избиране на елементи от менюто (акцелератори) се активират с Alt и могат да доведат до смущения в терминала.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="541"/>
+        <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>No menu bar accelerator</source>
         <translation>Деактивиране акцелератори на менюто</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="908"/>
+        <location filename="../forms/propertiesdialog.ui" line="882"/>
         <source>Emulation</source>
         <translation>Емулатор</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="774"/>
+        <location filename="../forms/propertiesdialog.ui" line="748"/>
         <source>Action after paste</source>
         <translation>Действие след поставяне</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="814"/>
+        <location filename="../forms/propertiesdialog.ui" line="788"/>
         <source>Confirm multiline paste</source>
         <translation>Потвърждаване на многоредово копиране</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="821"/>
+        <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Премахване на завършващите символи за нов ред в копиран текст</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="835"/>
+        <location filename="../forms/propertiesdialog.ui" line="809"/>
         <source>Open new terminals in current working directory</source>
         <translation>Отваряне на нов терминал в текущата работна директория</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="609"/>
+        <location filename="../forms/propertiesdialog.ui" line="583"/>
         <source>Save Size when closing</source>
         <translation>Запазване на размера при затваряне</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="602"/>
+        <location filename="../forms/propertiesdialog.ui" line="576"/>
         <source>Save Position when closing</source>
         <translation>Запазване на позиция при затваряне</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="767"/>
+        <location filename="../forms/propertiesdialog.ui" line="741"/>
         <source>Unlimited history</source>
         <translation>Неограничена история</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="747"/>
+        <location filename="../forms/propertiesdialog.ui" line="721"/>
         <source>History size (in lines)</source>
         <translation>Размер на историята (в редове)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="859"/>
+        <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Default $TERM</source>
         <translation>$TERM по подразбиране</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="621"/>
+        <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>Start with this size:</source>
         <translation>Стартиране с размер:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="353"/>
+        <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Background mode:</source>
         <translation>Режим на заден план:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="361"/>
+        <location filename="../forms/propertiesdialog.ui" line="335"/>
         <source>None</source>
         <translation>Никой</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="366"/>
+        <location filename="../forms/propertiesdialog.ui" line="340"/>
         <source>Stretch</source>
         <translation>Разтегляне</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="371"/>
+        <location filename="../forms/propertiesdialog.ui" line="345"/>
         <source>Zoom</source>
         <translation>Мащабиране</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="376"/>
+        <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Fit</source>
         <translation>Събиране</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="381"/>
+        <location filename="../forms/propertiesdialog.ui" line="355"/>
         <source>Center</source>
         <translation>Центриране</translation>
     </message>
@@ -644,58 +638,58 @@
         <translation>Използване на получерен шрифт за изобразяване на интензивни цветове</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="548"/>
+        <location filename="../forms/propertiesdialog.ui" line="522"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Скриване на рамката на прозорците</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="917"/>
+        <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Кое поведение да се емулира. Имайте предвид, че това не трябва непременно да съответства на вашата операционна система.&lt;/p&gt;&lt;p&gt;Ако не сте сигурни използвайте &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; емулация.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="895"/>
+        <location filename="../forms/propertiesdialog.ui" line="869"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>Командата трябва да има формат: име на програмата и аргумент, съдържащ местоположението на файла с историята</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="872"/>
         <source>Handle history command</source>
         <translation>Команда за обработване на историята</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="628"/>
-        <location filename="../forms/propertiesdialog.ui" line="642"/>
+        <location filename="../forms/propertiesdialog.ui" line="602"/>
+        <location filename="../forms/propertiesdialog.ui" line="616"/>
         <source> px</source>
         <translation> пиксела</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="649"/>
+        <location filename="../forms/propertiesdialog.ui" line="623"/>
         <source>Get current size</source>
         <translation>Вземане на текущия размер</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="845"/>
+        <location filename="../forms/propertiesdialog.ui" line="819"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>Отваряне на нов раздел отдясно на активния раздел</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="842"/>
+        <location filename="../forms/propertiesdialog.ui" line="816"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>Ако опцията не избрана, новите раздели ще бъдат отваряни най-вдясно</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="565"/>
+        <location filename="../forms/propertiesdialog.ui" line="539"/>
         <source>Close tab on middle-click</source>
         <translation>Затваряне на раздела със средния бутон на мишката</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="807"/>
+        <location filename="../forms/propertiesdialog.ui" line="781"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>Принудително изключване на режима на поставяне със скоби</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="787"/>
+        <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>Word selection characters</source>
         <translation>Символи за избор на думи</translation>
     </message>
@@ -705,57 +699,57 @@
         <translation>Прозорец</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="440"/>
+        <location filename="../forms/propertiesdialog.ui" line="414"/>
         <source>Current Terminal</source>
         <translation>Текущ терминал</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="446"/>
+        <location filename="../forms/propertiesdialog.ui" line="420"/>
         <source>Draw a border</source>
         <translation>Изчертаване на рамка</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="453"/>
+        <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Set the current terminal on mouseover</source>
         <translation>Задаване на текущия терминал при преминаване с мишката</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="460"/>
+        <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Change window title based on the terminal</source>
         <translation>Промяна на заглавието на прозореца според терминала</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="467"/>
+        <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window icon based on the terminal</source>
         <translation>Промяна на иконата на прозореца в зависимост от терминала</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="794"/>
+        <location filename="../forms/propertiesdialog.ui" line="768"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
         <translation>Когато избирате текст по думи, считайте тези знаци за част от думите в допълнение към буквено-цифровите знаци</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="797"/>
+        <location filename="../forms/propertiesdialog.ui" line="771"/>
         <source>:@-./_~</source>
         <translation>:@-./_~</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="804"/>
+        <location filename="../forms/propertiesdialog.ui" line="778"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>Режимът на поставяне със скоби е полезен за поставяне на многоредови низове.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="828"/>
+        <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source>Prompt on closing with a running process</source>
         <translation>Запитване за потвърждение при затваряне на терминал с работещ процес</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="852"/>
+        <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Audible bell</source>
         <translation>Звуково уведомяване</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="941"/>
+        <location filename="../forms/propertiesdialog.ui" line="915"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -770,83 +764,83 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 За да премахнете / деактивирате пряк път, в точка 2 натиснете само модификатор (като Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="971"/>
+        <location filename="../forms/propertiesdialog.ui" line="945"/>
         <source>Shortcut</source>
         <translation>Действие</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="976"/>
+        <location filename="../forms/propertiesdialog.ui" line="950"/>
         <source>Key</source>
         <translation>Комбинация</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <location filename="../forms/propertiesdialog.ui" line="962"/>
         <source>Show on start</source>
         <translation>Показване при стартиране</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="995"/>
+        <location filename="../forms/propertiesdialog.ui" line="969"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>Бутонът за заключване е показан на хоризонталната лента с раздели</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="998"/>
+        <location filename="../forms/propertiesdialog.ui" line="972"/>
         <source>Keep window open when it loses focus</source>
         <translation>Задържане на прозореца отворен, когато загуби фокус</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1005"/>
+        <location filename="../forms/propertiesdialog.ui" line="979"/>
         <source>Size</source>
         <translation>Размер</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1016"/>
+        <location filename="../forms/propertiesdialog.ui" line="990"/>
         <source>Height</source>
         <translation>Височина</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1026"/>
-        <location filename="../forms/propertiesdialog.ui" line="1043"/>
+        <location filename="../forms/propertiesdialog.ui" line="1000"/>
+        <location filename="../forms/propertiesdialog.ui" line="1017"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1033"/>
+        <location filename="../forms/propertiesdialog.ui" line="1007"/>
         <source>Width</source>
         <translation>Широчина</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1057"/>
+        <location filename="../forms/propertiesdialog.ui" line="1031"/>
         <source>Shortcut:</source>
         <translation>Клавишна комбинация:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1066"/>
+        <location filename="../forms/propertiesdialog.ui" line="1040"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
         <translation>Забележка: В Wayland, клавишната комбинация за &apos;qterminal -d&apos;, трябва да бъде добавена в настройките на композитора.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1134"/>
+        <location filename="../forms/propertiesdialog.ui" line="1108"/>
         <source>Edit bookmark file contents</source>
         <translation>Редактиране на съдържанието на файла с отметки</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1093"/>
+        <location filename="../forms/propertiesdialog.ui" line="1067"/>
         <source>Enable bookmarks</source>
         <translation>Активиране на отметки</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1102"/>
+        <location filename="../forms/propertiesdialog.ui" line="1076"/>
         <source>Bookmark file</source>
         <translation>Файл с отметки</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1115"/>
+        <location filename="../forms/propertiesdialog.ui" line="1089"/>
         <source>Find...</source>
         <translation>Търсене...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1124"/>
+        <location filename="../forms/propertiesdialog.ui" line="1098"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Можете да зададете собствено местоположение на файла с отметки. То позволява лесно споделяне на отметки с инструменти като OwnCloud или Dropbox.</translation>
     </message>
@@ -908,66 +902,66 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>Превъртане надолу</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="278"/>
+        <location filename="../propertiesdialog.cpp" line="276"/>
         <source>Examples</source>
         <translation>Примери</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="440"/>
+        <location filename="../propertiesdialog.cpp" line="430"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Изображения (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="542"/>
+        <location filename="../propertiesdialog.cpp" line="532"/>
         <source>Open bookmarks file</source>
         <translation>Отваряне на файла с отметките</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="544"/>
+        <location filename="../propertiesdialog.cpp" line="534"/>
         <source>XML files (*.xml)</source>
         <translation>XML файлове (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="545"/>
+        <location filename="../propertiesdialog.cpp" line="535"/>
         <source>All files (*)</source>
         <translation>Всички файлове (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="644"/>
-        <location filename="../propertiesdialog.cpp" line="648"/>
+        <location filename="../propertiesdialog.cpp" line="634"/>
+        <location filename="../propertiesdialog.cpp" line="638"/>
         <source>Question</source>
         <translation>Запитване</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="644"/>
+        <location filename="../propertiesdialog.cpp" line="634"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Искате ли да презапишете този файл с отметки?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="648"/>
+        <location filename="../propertiesdialog.cpp" line="638"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Името на файла с отметки не завършва с &apos;.xml&apos;.
 Сигурни ли сте, че искате да го презапишете?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="656"/>
+        <location filename="../propertiesdialog.cpp" line="646"/>
         <source>Warning</source>
         <translation>Внимание</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="656"/>
+        <location filename="../propertiesdialog.cpp" line="646"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Не могат да бъдат записани отметки в този файл:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="211"/>
-        <location filename="../propertiesdialog.cpp" line="333"/>
+        <location filename="../propertiesdialog.cpp" line="329"/>
         <source>System Default</source>
         <translation>Системни настройки по подразбиране</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="439"/>
+        <location filename="../propertiesdialog.cpp" line="429"/>
         <source>Choose a background image</source>
         <translation>Изберете фоново изображение</translation>
     </message>
