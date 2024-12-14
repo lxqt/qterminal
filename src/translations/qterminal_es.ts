@@ -1050,8 +1050,8 @@ Are you sure that you want to overwrite it?</source>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
-        <source>&amp;File</source>
-        <translation>Archivo</translation>
+        <source>&amp;Session</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>

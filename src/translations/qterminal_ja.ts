@@ -1043,6 +1043,11 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>mainWindow</name>
     <message>
+        <location filename="../forms/qterminal.ui" line="59"/>
+        <source>&amp;Session</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
         <translation>操作(&amp;A)</translation>
@@ -1071,11 +1076,6 @@ Are you sure that you want to overwrite it?</source>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
         <translation>Qterminal メインウィンドウ</translation>
-    </message>
-    <message>
-        <location filename="../forms/qterminal.ui" line="59"/>
-        <source>&amp;File</source>
-        <translation>ファイル(&amp;F)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>

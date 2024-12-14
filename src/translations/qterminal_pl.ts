@@ -1050,8 +1050,8 @@ Czy na pewno chcesz go zastąpić?</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
-        <source>&amp;File</source>
-        <translation>&amp;Plik</translation>
+        <source>&amp;Session</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>

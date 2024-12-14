@@ -1050,8 +1050,8 @@ Weet u zeker dat u het wilt overschrijven?</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
-        <source>&amp;File</source>
-        <translation>&amp;Bestand</translation>
+        <source>&amp;Session</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
