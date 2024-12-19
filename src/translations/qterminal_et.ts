@@ -1051,7 +1051,7 @@ Kas sa oled kindel, et see on õige fail ja soovid seda asendada?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sessioon</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
