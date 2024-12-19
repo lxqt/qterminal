@@ -1051,7 +1051,7 @@ Weet u zeker dat u het wilt overschrijven?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sessie</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>

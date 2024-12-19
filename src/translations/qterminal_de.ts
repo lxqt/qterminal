@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Unterterminal s&amp;chließen</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Es läuft ein Prozess.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -666,32 +666,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Fenster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="414"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktuelles Terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="420"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Einen Rahmen zeichnen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Das aktuelle Terminal beim Überfahren mit der Maus festlegen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Fenstertitel auf Basis des Terminals ändern</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Fenstersymbol auf Basis des Terminals ändern</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="768"/>
@@ -711,7 +711,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Aufforderung zum Schließen eines laufenden Prozesses</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
@@ -985,12 +985,12 @@ Sind Sie sicher, dass Sie sie überschreiben wollen?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Unterterminal schließen</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Sind Sie sicher, dass Sie dieses Unterterminal schließen möchten?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1020,12 +1020,12 @@ Sind Sie sicher, dass Sie sie überschreiben wollen?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Registerkarte schließen</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Sind Sie sicher, dass Sie diese Registerkarte schließen möchten?</translation>
     </message>
 </context>
 <context>
@@ -1046,7 +1046,7 @@ Sind Sie sicher, dass Sie sie überschreiben wollen?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sitzung</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>

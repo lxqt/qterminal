@@ -1051,7 +1051,7 @@ Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sessione</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
