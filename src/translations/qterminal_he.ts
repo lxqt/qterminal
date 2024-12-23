@@ -43,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>לחיצה על „%1” כדי לצפות במסוף.</translation>
+        <translation>לחיצה על „%1” תציג את המסוף.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="267"/>
@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>סגירת &amp;תת־מסוף</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>תהליך רץ.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -696,32 +696,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>חלון</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="414"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>מסוף נוכחי</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="420"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>ציור מסגרת</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>הגדרת המסוף הנוכחי עם מעבר העכבר מעליו</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>החלפת כותרת החלון לפי המסוף</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>החלפת סמל החלון לפי המסוף</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="768"/>
@@ -741,7 +741,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>להציג בקשה בנוגע להרצת תהליך שרץ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
@@ -985,12 +985,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>סגירת תת־מסוף</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>לסגור את תת־המסוף הזה?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1020,12 +1020,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>סגירת לשונית</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>לסגור את הלשונית הזאת?</translation>
     </message>
 </context>
 <context>
@@ -1051,7 +1051,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>ה&amp;פעלה</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
