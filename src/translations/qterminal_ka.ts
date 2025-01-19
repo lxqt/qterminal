@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="lt">
+<TS version="2.1" language="ka">
 <context>
     <name>BookmarksWidget</name>
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation>Filtras:</translation>
+        <translation>ფილტრი:</translation>
     </message>
 </context>
 <context>
@@ -15,22 +15,22 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Pasirinkti terminalo šriftą</translation>
+        <translation>აირჩიეთ ტერმინალის ფონტი</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation>Šriftas:</translation>
+        <translation>ფონტი:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
         <source>Size:</source>
-        <translation>Dydis:</translation>
+        <translation>ზომა:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="59"/>
         <source>Preview</source>
-        <translation>Peržiūra</translation>
+        <translation>მინიატურა</translation>
     </message>
 </context>
 <context>
@@ -38,319 +38,319 @@
     <message>
         <location filename="../mainwindow.cpp" line="95"/>
         <source>Bookmarks</source>
-        <translation>Žymelės</translation>
+        <translation>სანიშნეები</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="218"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Paspauskite „%1“, kad pamatytumėte terminalą.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="267"/>
         <source>&amp;Next Tab</source>
-        <translation>&amp;Kita kortelė</translation>
+        <translation>&amp;შემდეგი ჩანართი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="270"/>
         <source>&amp;Previous Tab</source>
-        <translation>&amp;Ankstesnė kortelė</translation>
+        <translation>&amp;წინა ჩანართი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="279"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Perkelti kortelę &amp;kairėn</translation>
+        <translation>ჩანართის &amp;მარცხნივ გადატანა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="282"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Perkelti kortelę &amp;dešinėn</translation>
+        <translation>ჩანართის მა&amp;რჯვნივ გადატანა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="260"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>&amp;Išvalyti aktyvų terminalą</translation>
+        <translation>ა&amp;ქტიური ტერმინალის გასუფთავება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="199"/>
         <source>Keep window open when it loses focus</source>
-        <translation>Palikti langą atvertą, kai jis praranda fokusą</translation>
+        <translation>ფანჯრის ღიად დატოვება მას შემდეგაც კი, რაც ის ფოკუსს დაკარგავს</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="273"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>&amp;Ankstesnė kortelė istorijoje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="276"/>
         <source>&amp;Next Tab in History</source>
-        <translation>&amp;Kita kortelė istorijoje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="287"/>
         <source>Tab</source>
-        <translation>Kortelė</translation>
+        <translation>ჩანართი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="288"/>
         <source>Go to</source>
-        <translation>Pereiti į</translation>
+        <translation>გადასვლა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="301"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation>Padalyti &amp;rodinį į viršutinį ir apatinį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation>Padalyti r&amp;odinį į kairįjį ir dešinįjį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation>&amp;Užverti subterminalą</translation>
+        <translation>ქვეტერმინალის &amp;დახურვა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
         <source>&amp;Top Subterminal</source>
-        <translation>&amp;Viršutinis subterminalas</translation>
+        <translation>&amp;ზედა ქვეტერმინალი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="315"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>&amp;Apatinis subterminalas</translation>
+        <translation>&amp;ქვედა ქვეტერმინალი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="318"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>&amp;Kairysis subterminalas</translation>
+        <translation>&amp;მარცხენა ქვეტერმინალი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="321"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>&amp;Dešinysis subterminalas</translation>
+        <translation>მარ&amp;ჯვენა ქვეტერმინალი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="328"/>
         <source>Copy &amp;Selection</source>
-        <translation>Kopijuoti &amp;žymėjimą</translation>
+        <translation>მონიშნულის &amp;კოპირება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="331"/>
         <source>Paste Clip&amp;board</source>
-        <translation>Įdėti iš iškar&amp;pinės</translation>
+        <translation>&amp;ბუფერის ჩასმა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="334"/>
         <source>Paste S&amp;election</source>
-        <translation>Įdėti ž&amp;ymėjimą</translation>
+        <translation>მ&amp;ონიშნულის ჩასმა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="337"/>
         <source>Zoom &amp;in</source>
-        <translation>&amp;Didinti</translation>
+        <translation>გად&amp;იდება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="340"/>
         <source>Zoom &amp;out</source>
-        <translation>&amp;Mažinti</translation>
+        <translation>&amp;დაპატარავება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="343"/>
         <source>Zoom rese&amp;t</source>
-        <translation>A&amp;tstatyti mastelį</translation>
+        <translation>გადიდების ჩამო&amp;ყრა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="348"/>
         <source>&amp;Find...</source>
-        <translation>&amp;Rasti...</translation>
+        <translation>ძ&amp;ებნა...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="351"/>
         <source>Handle history...</source>
-        <translation>Apdoroti istoriją...</translation>
+        <translation>ისტორიის დამუშავება...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="359"/>
         <source>&amp;Save Session</source>
-        <translation>Į&amp;rašyti seansą</translation>
+        <translation>სესიის &amp;შენახვა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
         <source>&amp;Load Session</source>
-        <translation>Į&amp;kelti seansą</translation>
+        <translation>სესიის &amp;ჩატვირთვა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
         <source>&amp;Toggle Menu</source>
-        <translation>&amp;Perjungti meniu</translation>
+        <translation>მენიუს &amp;გადართვა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="377"/>
         <source>Rename session</source>
-        <translation>Pervadinti seansą</translation>
+        <translation>სესიის სახელის გადარქმევა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="386"/>
         <source>&amp;New Tab</source>
-        <translation>&amp;Nauja kortelė</translation>
+        <translation>&amp;ახალი ჩანართი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="390"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Nauja kortelė iš išankstinių pari&amp;nkčių</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="391"/>
         <source>1 &amp;Terminal</source>
-        <translation>1 &amp;terminalas</translation>
+        <translation>1 &amp;ტერმინალი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="395"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>2 &amp;horizontalūs terminalai</translation>
+        <translation>2 &amp;ჰორიზონტალური ტერმინალი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="397"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation>2 &amp;vertikalūs terminalai</translation>
+        <translation>2 &amp;ვერტიკალური ტერმინალი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="399"/>
         <source>4 Terminal&amp;s</source>
-        <translation>4 termin&amp;аlai</translation>
+        <translation>4 ტერმ&amp;ინალი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="405"/>
         <source>&amp;Close Tab</source>
-        <translation>&amp;Užverti kortelę</translation>
+        <translation>&amp;ჩანართის დახურვა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="408"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Naujas langas</translation>
+        <translation>&amp;ახალი ფანჯარა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="413"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Nuostatos...</translation>
+        <translation>&amp;გამართვა...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="417"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Išeiti</translation>
+        <translation>გამოსვლა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="423"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;Slėpti lango rėmelį</translation>
+        <translation>ფანჯრის &amp;საზღვრების დამალვა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="441"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>&amp;Rodyti kortelių juostą</translation>
+        <translation>ჩანართების პანელი&amp;ს ჩვენება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="449"/>
         <source>Fullscreen</source>
-        <translation>Visas ekranas</translation>
+        <translation>სრულ ეკრანზე</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="455"/>
         <source>Toggle Bookmarks</source>
-        <translation>Perjungti žymeles</translation>
+        <translation>სანიშნეების გადართვა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="463"/>
         <source>&amp;Bottom</source>
-        <translation>&amp;Apačioje</translation>
+        <translation>ქ&amp;ვედა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="464"/>
         <source>&amp;Top</source>
-        <translation>&amp;Viršuje</translation>
+        <translation>&amp;ზედა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="465"/>
         <location filename="../mainwindow.cpp" line="501"/>
         <source>&amp;Right</source>
-        <translation>&amp;Dešinėje</translation>
+        <translation>მარჯვენა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="466"/>
         <location filename="../mainwindow.cpp" line="502"/>
         <source>&amp;Left</source>
-        <translation>&amp;Kairėje</translation>
+        <translation>მარ&amp;ცხნივ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="484"/>
         <source>&amp;Tabs Layout</source>
-        <translation>Kortelių &amp;išdėstymas</translation>
+        <translation>&amp;ჩანართების განლაგება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="500"/>
         <source>&amp;None</source>
-        <translation>&amp;Nėra</translation>
+        <translation>არაფერი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="518"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>S&amp;lankjuostės išdėstymas</translation>
+        <translation>&amp;ჩოჩიის განლაგება</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="531"/>
         <source>&amp;BlockCursor</source>
-        <translation>&amp;Blokas</translation>
+        <translation>&amp;ბლოკი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="532"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>Pabra&amp;ukimas</translation>
+        <translation>&amp;ხაზგასმული</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="533"/>
         <source>&amp;IBeamCursor</source>
-        <translation>&amp;Dvitėjinė sija</translation>
+        <translation>&amp;IBeam</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="550"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>&amp;Klaviatūros žymeklio forma</translation>
+        <translation>&amp;კლავიატურის კურსორის ფორმა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation>Yra vykdomas procesas.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
         <source>Exit QTerminal</source>
-        <translation>Išeiti iš QTerminal</translation>
+        <translation>QTerminal--დან გასვლა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="630"/>
         <source>Do not ask again</source>
-        <translation>Daugiau nebeklausti</translation>
+        <translation>აღარ მკითხო</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Ar tikrai norite išeiti?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="709"/>
         <source>About</source>
-        <translation>Apie</translation>
+        <translation>შესახებ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="711"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation>Supaprastintas ir galingas daugiaplatformis terminalo emuliatorius</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="713"/>
         <source>Copyright (C) </source>
-        <translation>Autorių teisės (C) </translation>
+        <translation>საავტორო უფლებები დაცულია (c) </translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="713"/>
@@ -360,12 +360,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="715"/>
         <source>LXQt Project</source>
-        <translation>LXQt projektas</translation>
+        <translation>პროექტი LXQt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="717"/>
         <source>Development: </source>
-        <translation>Plėtojimas: </translation>
+        <translation>პროგრამირება: </translation>
     </message>
 </context>
 <context>
@@ -373,78 +373,78 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation>Terminalo nustatymai</translation>
+        <translation>ტერმინალის მორგება</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="21"/>
         <source>Appearance</source>
-        <translation>Išvaizda</translation>
+        <translation>გარეგნობა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="38"/>
         <location filename="../forms/propertiesdialog.ui" line="715"/>
         <source>Behavior</source>
-        <translation>Elgsena</translation>
+        <translation>ქცევა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="47"/>
         <source>Shortcuts</source>
-        <translation>Spartieji klavišai</translation>
+        <translation>მალსახმობი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="56"/>
         <source>Dropdown</source>
-        <translation>Išskleidžiamasis terminalas</translation>
+        <translation>ჩამოსაშლელი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="65"/>
         <source>Bookmarks</source>
-        <translation>Žymelės</translation>
+        <translation>სანიშნეები</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="549"/>
         <source>Hide tab bar with only one tab</source>
-        <translation>Slėpti kortelių juostą, esant tik vienai kortelei</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="181"/>
         <source>Color scheme</source>
-        <translation>Spalvų rinkinys</translation>
+        <translation>ფერების სქემა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="207"/>
         <source>Scrollbar position</source>
-        <translation>Slankjuostės vieta</translation>
+        <translation>ჩოჩიის მდებარეობა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="363"/>
         <source>Start with preset:</source>
-        <translation>Paleisti su išankstine parinktimi:</translation>
+        <translation>გაშვება პრესეტით:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Terminal transparency</source>
-        <translation>Terminalo permatomumas</translation>
+        <translation>ტერმინალის გამჭვირვალობა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>None (single terminal)</source>
-        <translation>Nėra (vienas terminalas)</translation>
+        <translation>არცერთი (ერთი ტერმინალი)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>2 terminals horizontally</source>
-        <translation>2 horizontalūs terminalai</translation>
+        <translation>2 ტერმინალი ჰორიზონტალურად</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>2 terminals vertically</source>
-        <translation>2 vertikalūs terminalai</translation>
+        <translation>2 ტერმინალი ვერტიკალურად</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="389"/>
         <source>4 terminals</source>
-        <translation>4 terminalai</translation>
+        <translation>4 ტერმინალი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="290"/>
@@ -454,279 +454,279 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="135"/>
         <source>Font</source>
-        <translation>Šriftas</translation>
+        <translation>ფონტი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="171"/>
         <source>&amp;Change...</source>
-        <translation>&amp;Keisti...</translation>
+        <translation>შე&amp;ცვლა...</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>Tabs position</source>
-        <translation>Kortelių vieta</translation>
+        <translation>ჩანართების პოზიცია</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
         <source>Widget style</source>
-        <translation>Valdiklių stilius</translation>
+        <translation>ვიჯეტის სტილი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Show the menu bar</source>
-        <translation>Rodyti meniu juostą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="233"/>
         <source>Cursor shape</source>
-        <translation>Žymeklio forma</translation>
+        <translation>კურსორის ფორმა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="263"/>
         <source>Enable bi-directional text support</source>
-        <translation>Įjungti dvikrypčio teksto palaikymą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="306"/>
         <source>Background image:</source>
-        <translation>Fono paveikslas:</translation>
+        <translation>ფონის გამოსახულება:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="318"/>
         <source>Select</source>
-        <translation>Pasirinkti</translation>
+        <translation>არჩევა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="256"/>
         <source>Show terminal size on resize</source>
-        <translation>Keičiant dydį, rodyti terminalo dydį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="556"/>
         <source>Fixed tab width:</source>
-        <translation>Fiksuotas kortelės plotis:</translation>
+        <translation>მუდმივი ჩანართის სიგანე:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="407"/>
         <location filename="../forms/propertiesdialog.ui" line="566"/>
         <source>px</source>
-        <translation>piks.</translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="529"/>
         <source>Show close button on each tab</source>
-        <translation>Rodyti ant kiekvienos kortelės užvėrimo mygtuką</translation>
+        <translation>ჩანართებზე დახურვის ღილაკის ჩვენება</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="397"/>
         <source>Terminal margin</source>
-        <translation>Terminalo paraštė</translation>
+        <translation>ტერმინალის მინდორი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="273"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation>Naudoti šrifte esančius langelio piešimo simbolius</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="512"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Prieigos klavišai yra aktyvuojami Alt klavišu ir gali trukdyti terminalui.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="515"/>
         <source>No menu bar accelerator</source>
-        <translation>Jokių meniu juostos prieigos klavišų</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="882"/>
         <source>Emulation</source>
-        <translation>Emuliacija</translation>
+        <translation>ემულაცია</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="748"/>
         <source>Action after paste</source>
-        <translation>Veiksmas po įdėjimo</translation>
+        <translation>ქმედება ჩასმის შემდეგ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="788"/>
         <source>Confirm multiline paste</source>
-        <translation>Patvirtinti kelių eilučių įdėjimą</translation>
+        <translation>ერთზე მეტი ჩასმის დადასტურება</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>Apkirpti įdėtame tekste naujas eilutes</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="809"/>
         <source>Open new terminals in current working directory</source>
-        <translation>Atverti naujus terminalus esamame darbiniame kataloge</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="583"/>
         <source>Save Size when closing</source>
-        <translation>Užveriant, įsiminti dydį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="576"/>
         <source>Save Position when closing</source>
-        <translation>Užveriant, įsiminti poziciją</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="741"/>
         <source>Unlimited history</source>
-        <translation>Neribota istorija</translation>
+        <translation>ულიმიტო ისტორია</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="721"/>
         <source>History size (in lines)</source>
-        <translation>Istorijos dydis (eilutėmis)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Default $TERM</source>
-        <translation>Numatytasis $TERM</translation>
+        <translation>ნაგულისხმევი $TERM</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="595"/>
         <source>Start with this size:</source>
-        <translation>Paleisti šio dydžio:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="327"/>
         <source>Background mode:</source>
-        <translation>Foninė veiksena:</translation>
+        <translation>ფონის რეჟიმი:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="335"/>
         <source>None</source>
-        <translation>Nėra</translation>
+        <translation>არაფერი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="340"/>
         <source>Stretch</source>
-        <translation>Ištempti</translation>
+        <translation>გაწელვა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="345"/>
         <source>Zoom</source>
-        <translation>Keisti mastelį</translation>
+        <translation>მასშტაბი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="350"/>
         <source>Fit</source>
-        <translation>Priderinti</translation>
+        <translation>ჩატევა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="355"/>
         <source>Center</source>
-        <translation>Centruoti</translation>
+        <translation>ცენტრი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="270"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation>Nurodo, ar langelį piešiančius simbolius turėtų piešti QTerminal ar bazinės šrifto atvaizdavimo bibliotekos.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation>Perjungia pusjuodžio teksto naudojimą intensyvioms spalvoms atvaizduoti</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="249"/>
         <source>Use bold font face for intense colors</source>
-        <translation>Ryškioms spalvoms naudoti pusjuodį šriftą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="522"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>&amp;Slėpti lango rėmelį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="891"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Kurią veikseną emuliuoti. Turėkite omenyje, kad tai neturi atitikti jūsų operacinę sistemą.&lt;/p&gt;&lt;p&gt;Jei nesate tikri, naudokite &lt;span style=&quot; font-weight:600;&quot;&gt;numatytąją&lt;/span&gt; emuliaciją.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="869"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>Ši komanda bus paleista su argumentu, kuriame yra nurodytas failo pavadinimas ar laikinasis failas, turintis slinkimo istoriją</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="872"/>
         <source>Handle history command</source>
-        <translation>Istorijos apdorojimo komanda</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="602"/>
         <location filename="../forms/propertiesdialog.ui" line="616"/>
         <source> px</source>
-        <translation> piks.</translation>
+        <translation> პქს</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="623"/>
         <source>Get current size</source>
-        <translation>Gauti dabartinį dydį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="819"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation>Atverti naują kortelę aktyvios kortelės dešinėje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="816"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation>Jei žymėjimas nuimtas, nauja kortelė bus atveriama pačioje dešinėje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="539"/>
         <source>Close tab on middle-click</source>
-        <translation>Užverti kortelę, spustelėjus viduriniuoju pelės mygtuku</translation>
+        <translation>თაგუნას შუა ღილაკით ჩანართის დახურვა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="781"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation>Priverstinai išjungti įdėjimo skliausteliuose veikseną</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>Word selection characters</source>
-        <translation>Žodžių žymėjimo simboliai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation>Langas</translation>
+        <translation>ფანჯარა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="414"/>
         <source>Current Terminal</source>
-        <translation>Dabartinis terminalas</translation>
+        <translation>მიმდინარე ტერმინალი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="420"/>
         <source>Draw a border</source>
-        <translation>Piešti rėmelį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Set the current terminal on mouseover</source>
-        <translation>Nustatyti dabartinį terminalą užvedus pelę</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Change window title based on the terminal</source>
-        <translation>Keisti lango pavadinimą remiantis terminalu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window icon based on the terminal</source>
-        <translation>Keisti lango piktogramą remiantis terminalu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="768"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation>Žymint žodžius, papildomai prie raidžių ir skaitmenų, laikyti šiuos simbolius žodžių dalimi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="771"/>
@@ -736,17 +736,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="778"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation>Įdėjimo skliausteliuose veiksena praverčia įdedant kelių eilučių eilutes.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source>Prompt on closing with a running process</source>
-        <translation>Klausti, kai užveriant yra vykdomas procesas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Audible bell</source>
-        <translation>Girdimas skambutis</translation>
+        <translation>გასაგონი ზარი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="915"/>
@@ -756,47 +756,42 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation>Norėdami taisyti spartųjį klavišą:
-1. Spustelėkite du kartus stulpelyje „Klavišai“
-2. Paspauskite ir atleiskite pageidaujamą klavišų kombinaciją
-3. Spustelėkite stulpelyje „Spartusis klavišas“ arba paspauskite Įvedimo (Enter) klavišą
-
-Norėdami pašalinti/išjungti spartųjį klavišą, 2-ame punkte paspauskite tik modifikatoriaus klavišą, pvz., Lyg2 (Shift)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="945"/>
         <source>Shortcut</source>
-        <translation>Spartusis klavišas</translation>
+        <translation>მალმხმობი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="950"/>
         <source>Key</source>
-        <translation>Klavišai</translation>
+        <translation>გასაღები</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="962"/>
         <source>Show on start</source>
-        <translation>Rodyti paleisties metu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="969"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation>Užrakinimo mygtukas yra rodomas horizontalioje kortelių juostoje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="972"/>
         <source>Keep window open when it loses focus</source>
-        <translation>Palikti langą atvertą, kai jis praranda fokusą</translation>
+        <translation>ფანჯრის ღიად დატოვება მას შემდეგაც კი, რაც ის ფოკუსს დაკარგავს</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="979"/>
         <source>Size</source>
-        <translation>Dydis</translation>
+        <translation>ზომა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="990"/>
         <source>Height</source>
-        <translation>Aukštis</translation>
+        <translation>სიმაღლე</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1000"/>
@@ -807,163 +802,162 @@ Norėdami pašalinti/išjungti spartųjį klavišą, 2-ame punkte paspauskite ti
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1007"/>
         <source>Width</source>
-        <translation>Plotis</translation>
+        <translation>სიგანე</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1031"/>
         <source>Shortcut:</source>
-        <translation>Spartusis klavišas:</translation>
+        <translation>მალსახმობი:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1040"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation>Pastaba: „Wayland“ aplinkoje tvarkytojo nustatymuose turi būti pridėtas spartusis klavišas, skirtas „qterminal -d“.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1108"/>
         <source>Edit bookmark file contents</source>
-        <translation>Redaguoti žymelių failo turinį</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1067"/>
         <source>Enable bookmarks</source>
-        <translation>Įjungti žymeles</translation>
+        <translation>სანიშნეების ჩართვა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1076"/>
         <source>Bookmark file</source>
-        <translation>Žymelių failas</translation>
+        <translation>სანიშნეს ფაილი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1089"/>
         <source>Find...</source>
-        <translation>Rasti...</translation>
+        <translation>მოძებნა…</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1098"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Jūs galite nurodyti savo asmeninę žymelių failo vietą. Tai leidžia lengvai bendrinti žymeles su tokiais įrankiais kaip OwnCloud ar Dropbox.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="164"/>
         <source>No scrollbar</source>
-        <translation>Be slankjuostės</translation>
+        <translation>ჩოჩიის გარეშე</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="164"/>
         <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Left</source>
-        <translation>Kairėje</translation>
+        <translation>მარცხნივ</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="164"/>
         <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Right</source>
-        <translation>Dešinėje</translation>
+        <translation>მარჯვნივ</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Top</source>
-        <translation>Viršuje</translation>
+        <translation>ზემოთ</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="170"/>
         <source>Bottom</source>
-        <translation>Apačioje</translation>
+        <translation>ქვემოთ</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="183"/>
         <source>BlockCursor</source>
-        <translation>Blokas</translation>
+        <translation>ბლოკი</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="183"/>
         <source>UnderlineCursor</source>
-        <translation>Pabraukimas</translation>
+        <translation>ხაზგასმული</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="183"/>
         <source>IBeamCursor</source>
-        <translation>Dvitėjinė sija</translation>
+        <translation>IBeam</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="201"/>
         <source>No move</source>
-        <translation>Nejudėti</translation>
+        <translation>სვლების გარეშე</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="201"/>
         <source>Scrolling to top</source>
-        <translation>Slinkimas į viršų</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="201"/>
         <source>Scrolling to bottom</source>
-        <translation>Slinkimas į apačią</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="276"/>
         <source>Examples</source>
-        <translation>Pavyzdžiai</translation>
+        <translation>მაგალითები</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="430"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation>Paveikslai (*.bmp *.jpg *.png *.svg *.xpm)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="532"/>
         <source>Open bookmarks file</source>
-        <translation>Atverti žymelių failą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="534"/>
         <source>XML files (*.xml)</source>
-        <translation>XML failai (*.xml)</translation>
+        <translation>XML ფაილები (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="535"/>
         <source>All files (*)</source>
-        <translation>Visi failai (*)</translation>
+        <translation>ყველა ფაილი (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="634"/>
         <location filename="../propertiesdialog.cpp" line="638"/>
         <source>Question</source>
-        <translation>Klausimas</translation>
+        <translation>კითხვა</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="634"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation>Ar norite perrašyti šį žymelių failą?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="638"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation>Žymelių failo pavadinimas nesibaigia prievardžiu „.xml“.
-Ar tikrai norite jį perrašyti?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="646"/>
         <source>Warning</source>
-        <translation>Įspėjimas</translation>
+        <translation>გაფრთხილება</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="646"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation>Negalima rašyti žymelių į šį failą:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="211"/>
         <location filename="../propertiesdialog.cpp" line="329"/>
         <source>System Default</source>
-        <translation>Sistemos numatytasis</translation>
+        <translation>სისტემის ნაგულისხმები</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="429"/>
         <source>Choose a background image</source>
-        <translation>Pasirinkti fono paveikslą</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -971,7 +965,7 @@ Ar tikrai norite jį perrašyti?</translation>
     <message>
         <location filename="../bookmarkswidget.cpp" line="114"/>
         <source>Synchronized Bookmarks</source>
-        <translation>Sinchronizuotos žymelės</translation>
+        <translation>სინქრონიზებული სანიშნეები</translation>
     </message>
 </context>
 <context>
@@ -980,52 +974,52 @@ Ar tikrai norite jį perrašyti?</translation>
         <location filename="../tabwidget.cpp" line="84"/>
         <location filename="../tabwidget.cpp" line="253"/>
         <source>Shell No. %1</source>
-        <translation>Apvalkalas nr. %1</translation>
+        <translation>გარემო #%1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation>Užverti subterminalą</translation>
+        <translation>ქვეტერმინალის დახურვა</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation>Ar tikrai norite užverti šį subterminalą?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
         <source>Tab name</source>
-        <translation>Kortelės pavadinimas</translation>
+        <translation>ჩანართის სახელი</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="222"/>
         <source>New tab name:</source>
-        <translation>Naujas kortelės pavadinimas:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="242"/>
         <source>Select new tab title color</source>
-        <translation>Pasirinkite naują kortelės pavadinimo spalvą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="271"/>
         <source>Close session</source>
-        <translation>Užverti seansą</translation>
+        <translation>სესიის დახურვა</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="273"/>
         <source>Change title color</source>
-        <translation>Keisti pavadinimo spalvą</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation>Užverti kortelę</translation>
+        <translation>ჩანართის დახურვა</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation>Ar tikrai norite užverti šią kortelę?</translation>
+        <translation>ნამდვილად გსურთ ამ ჩანართის დახურვა?</translation>
     </message>
 </context>
 <context>
@@ -1033,12 +1027,12 @@ Ar tikrai norite jį perrašyti?</translation>
     <message>
         <location filename="../termwidgetholder.cpp" line="77"/>
         <source>Load Session</source>
-        <translation>Įkelti seansą</translation>
+        <translation>სესიის ჩატვირთვა</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="78"/>
         <source>List of saved sessions:</source>
-        <translation>Įrašytų seansų sąrašas:</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1046,42 +1040,42 @@ Ar tikrai norite jį perrašyti?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="14"/>
         <source>MainWindow</source>
-        <translation>Pagrindinis langas</translation>
+        <translation>მთავარი ფანჯარა</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation>&amp;Seansas</translation>
+        <translation>&amp;სესია</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
-        <translation>&amp;Veiksmai</translation>
+        <translation>&amp;ქმედებები</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation>Ž&amp;inynas</translation>
+        <translation>&amp;დახმარება</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation>&amp;Rodinys</translation>
+        <translation>&amp;ნახვა</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Taisa</translation>
+        <translation>&amp;ჩასწორება</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation>&amp;Apie...</translation>
+        <translation>&amp;შესახებ...</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation>Apie &amp;Qt...</translation>
+        <translation>&amp;Qt-ის შესახებ...</translation>
     </message>
 </context>
 </TS>
