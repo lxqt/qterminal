@@ -103,7 +103,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>サブターミナルを閉じる(&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -255,7 +255,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>プロセスが実行中です。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -666,7 +666,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>ウィンドウ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="414"/>
