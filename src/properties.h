@@ -23,6 +23,7 @@
 #include <QtCore>
 #include <QFont>
 #include <QFileSystemWatcher>
+#include <QTime>
 
 typedef QString Session;
 
@@ -55,6 +56,9 @@ class Properties
         QStringList shell;
         QFont font;
         QString colorScheme;
+        QString nightScheme;
+        QTime nightStart;
+        QTime nightEnd;
         QString guiStyle;
         bool highlightCurrentTerminal;
         bool focusOnMoueOver;

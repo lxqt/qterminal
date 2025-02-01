@@ -81,6 +81,7 @@ set(QTERM_SRC
     src/propertiesdialog.cpp
     src/bookmarkswidget.cpp
     src/fontdialog.cpp
+    src/palettedialog.cpp
     src/dbusaddressable.cpp
     src/tab-switcher.cpp
     src/qterminalutils.cpp
@@ -96,6 +97,7 @@ set(QTERM_MOC_SRC
     src/propertiesdialog.h
     src/bookmarkswidget.h
     src/fontdialog.h
+    src/palettedialog.h
     src/tab-switcher.h
 )
 
@@ -128,6 +130,7 @@ set(QTERM_UI_SRC
     src/forms/propertiesdialog.ui
     src/forms/bookmarkswidget.ui
     src/forms/fontdialog.ui
+    src/forms/palettedialog.ui
 )
 
 set(QTERM_RCC_SRC
