@@ -21,6 +21,7 @@
 #include <QDebug>
 #include <QStyleFactory>
 #include <QFileDialog>
+#include <QInputDialog>
 #include <QMessageBox>
 #include <QScreen>
 #include <QWindow>
@@ -28,6 +29,7 @@
 #include "propertiesdialog.h"
 #include "properties.h"
 #include "fontdialog.h"
+#include "palettedialog.h"
 #include "config.h"
 #include "qterminalapp.h"
 
@@ -144,7 +146,43 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     int csix = colorSchemaCombo->findText(Properties::Instance()->colorScheme);
     if (csix != -1)
         colorSchemaCombo->setCurrentIndex(csix);
-
+    nightSchemaCombo->addItems(colorSchemes);
+    nightSchema->setChecked(!Properties::Instance()->nightScheme.isEmpty());
+    nightSchemaStart->setTime(Properties::Instance()->nightStart);
+    nightSchemaEnd->setTime(Properties::Instance()->nightEnd);
+    if (nightSchema->isChecked()) {
+        csix = nightSchemaCombo->findText(Properties::Instance()->nightScheme);
+        if (csix != -1)
+            nightSchemaCombo->setCurrentIndex(csix);
+    }
+    QMenu *schemeActions = new QMenu(this);
+    QAction *csNewAct = schemeActions->addAction(tr("New…"));
+    QAction *csEditAct = schemeActions->addAction(tr("Edit…"));
+    QAction *csImportAct = schemeActions->addAction(tr("Import…"));
+    schemeActions->addSeparator();
+    QAction *csDeleteAct = schemeActions->addAction(tr("Delete"));
+    configColorSchema->setMenu(schemeActions);
+    configNightSchema->setMenu(schemeActions);
+    connect(configColorSchema, &QToolButton::triggered, [=](QAction *act) {
+        if (act == csNewAct)
+            newColorScheme(colorSchemaCombo);
+        else if (act == csEditAct)
+            editColorScheme(colorSchemaCombo);
+        else if (act == csImportAct)
+            importColorScheme(colorSchemaCombo);
+        else if (act == csDeleteAct)
+            deleteColorScheme(colorSchemaCombo);
+    });
+    connect(configNightSchema, &QToolButton::triggered, [=](QAction *act) {
+        if (act == csNewAct)
+            newColorScheme(nightSchemaCombo);
+        else if (act == csEditAct)
+            editColorScheme(nightSchemaCombo);
+        else if (act == csImportAct)
+            importColorScheme(nightSchemaCombo);
+        else if (act == csDeleteAct)
+            deleteColorScheme(nightSchemaCombo);
+    });
     backgroundImageLineEdit->setText(Properties::Instance()->backgroundImage);
 
     backgroundModecomboBox->setCurrentIndex(Properties::Instance()->backgroundMode);
@@ -325,6 +363,9 @@ void PropertiesDialog::accept()
 void PropertiesDialog::apply()
 {
     Properties::Instance()->colorScheme = colorSchemaCombo->currentText();
+    Properties::Instance()->nightScheme = nightSchema->isChecked() ? nightSchemaCombo->currentText() : QString();
+    Properties::Instance()->nightStart = nightSchemaStart->time();
+    Properties::Instance()->nightEnd = nightSchemaEnd->time();
     Properties::Instance()->font = fontSampleLabel->font();//fontComboBox->currentFont();
     Properties::Instance()->guiStyle = (styleComboBox->currentText() == tr("System Default")) ?
                                        QString() : styleComboBox->currentText();
@@ -681,6 +722,163 @@ bool PropertiesDialog::eventFilter(QObject *object, QEvent *event)
         }
     }
     return QDialog::eventFilter(object, event);
+}
+
+void PropertiesDialog::newColorScheme(QComboBox *target)
+{
+    QString newName;
+    bool ok = false;
+    while (!ok) {
+        newName = QInputDialog::getText(this, tr("New Colorscheme"),
+                                              tr("Enter the name of the new colorscheme"),
+                                              QLineEdit::Normal, newName, &ok);
+        if (!ok)
+            return;
+        if (newName.contains(QLatin1Char('.'))) { // not allowed, see comment in ::import()
+            ok = false;
+            newName.replace(QLatin1Char('.'), QLatin1Char('-'));
+            continue;
+        }
+        if (target->findText(newName) > -1) {
+            ok = false;
+            for (int i = 1;;++i) {
+                if (target->findText(newName + QString::fromLatin1("_%1").arg(i)) < 0) {
+                    newName = newName + QString::fromLatin1("_%1").arg(i);
+                    break;
+                }
+            }
+        }
+    }
+    // create and edit newName
+    colorSchemaCombo->addItem(newName);
+    nightSchemaCombo->addItem(newName);
+    target->setCurrentText(newName);
+    editColorScheme(target);
+}
+
+void PropertiesDialog::editColorScheme(QComboBox *target)
+{
+    QString name = target->currentText();
+    QString writable = QFileInfo(QSettings().fileName()).canonicalPath() + QLatin1String("/color-schemes/")
+                     + name + QLatin1String(".colorscheme");
+    QString readable;
+    QSettings *scheme = nullptr;
+    if (QFile::exists(writable)) {
+        scheme = new QSettings(writable, QSettings::IniFormat);
+    } else {
+        QStringList dirs = QStandardPaths::locateAll(   QStandardPaths::GenericDataLocation, 
+                                                        QCoreApplication::applicationName(),
+                                                        QStandardPaths::LocateDirectory)
+                         + QStandardPaths::locateAll(   QStandardPaths::GenericDataLocation,
+                                                        QLatin1String("qtermwidget6"),
+                                                        QStandardPaths::LocateDirectory);
+        dirs.removeDuplicates(); // QStandardPaths::locateAll() produces duplicates
+        
+        for (const QString& dir : std::as_const(dirs)) {
+            readable = dir + QLatin1String("/color-schemes/") + name + QLatin1String(".colorscheme");
+            if (QFile::exists(readable)) {
+                scheme = new QSettings(readable, QSettings::IniFormat);
+                break;
+            }
+        }
+    }
+    PaletteDialog dlg;
+    dlg.setColorSchemeName(name);
+
+    QMap<QString, QColor> colors;
+    if (scheme) {
+        QStringList keys = scheme->allKeys().filter(QLatin1String("/Color"));
+        for (const QString &key : std::as_const(keys)) {
+            QStringList nac = scheme->value(key).toStringList();
+            if (nac.size() < 3) {
+                qDebug() << "not a color" << key << scheme->value(key);
+                continue;
+            }
+            colors[key.section(QLatin1Char('/'),0,0)] = QColor(nac.at(0).toShort(), nac.at(1).toShort(), nac.at(2).toShort());
+        }
+    }
+    dlg.setColors(colors);
+
+    if (dlg.exec()) {
+        if (!readable.isEmpty())
+            QFile::copy(readable, writable);
+        if (scheme && scheme->fileName() != writable) {
+            delete scheme;
+            scheme = nullptr;
+        }
+        if (!scheme)
+            scheme = new QSettings(writable, QSettings::IniFormat);
+        colors = dlg.colors();
+        for (auto i = colors.cbegin(), end = colors.cend(); i != end; ++i) {
+            QColor c = i.value();
+            QStringList nac;
+            nac << QString::number(c.red()) << QString::number(c.green()) << QString::number(c.blue());
+            scheme->setValue(i.key() + QLatin1String("/Color"), nac);
+        }
+        scheme->sync();
+    }
+    delete scheme;
+}
+
+void PropertiesDialog::importColorScheme(QComboBox *target)
+{
+    Q_UNUSED(target)
+    const QString dir = QFileInfo(QSettings().fileName()).canonicalPath() + QLatin1String("/color-schemes/");
+    QStringList imports = QFileDialog::getOpenFileNames(this, tr("Import Color Schemes"),
+                                                        QString(), QString::fromLatin1("*.colorscheme"));
+    if (imports.isEmpty())
+        return;
+    if (!QDir(dir).exists())
+        QDir().mkpath(dir);
+    QStringList baddies, collies;
+    for (QString import : imports) {
+        if (!QSettings(import, QSettings::IniFormat).allKeys().contains(QString::fromLatin1("Color0/Color"))) {
+            baddies << import;
+            continue;
+        }
+        // sanitize name. QTermWidget handles them by the files basename, if the import includes
+        // multiple dots like "fancy.dark.colorscheme" this will cause a collision there
+        // so we need to make sure the imports stay unambigious and replace inner dot's with
+        // dashes ("·" would be nice by maybe don't rely on utf8 too much)
+        QString newName = QFileInfo(import).fileName();
+        newName = newName.left(newName.lastIndexOf(QLatin1String(".colorscheme"), -1))
+                         .replace(QLatin1Char('.'), QLatin1Char('-'));
+        
+        QString dst = dir + newName + QLatin1String(".colorscheme");
+        if (QFile::exists(dst)) {
+            collies << import;
+            continue;
+        }
+        QFile::copy(import, dst);
+        colorSchemaCombo->addItem(newName);
+        nightSchemaCombo->addItem(newName);
+    }
+    /// @todo QTermWidget doesn't pick up in the new items
+    if (!(baddies.isEmpty() && collies.isEmpty())) {
+        QString message;
+        if (!baddies.isEmpty())
+            message += tr("<b>These files don't have a Color0/Color entry - not color schemes?</b><ul><li>")
+                    + baddies.join(QString::fromLatin1("</li><li>")) + QString::fromLatin1("</li></ul>");
+        if (!collies.isEmpty())
+            message += tr("<b>These schemes already exist</b><ul><li>")
+                    + collies.join(QString::fromLatin1("</li><li>")) + QString::fromLatin1("</li></ul>");
+        QMessageBox::warning(this, tr("Some files could not be imported"), message);
+    }
+}
+
+void PropertiesDialog::deleteColorScheme(QComboBox *target)
+{
+    const QString name = target->currentText();
+    QString path = QFileInfo(QSettings().fileName()).canonicalPath() + QLatin1String("/color-schemes/")
+                 + name + QLatin1String(".colorscheme");
+    if (QFile::exists(path)) {
+        QFile::remove(path);
+        colorSchemaCombo->removeItem(colorSchemaCombo->findText(name));
+        nightSchemaCombo->removeItem(nightSchemaCombo->findText(name));
+        return;
+    }
+    QMessageBox::warning(this, tr("%1 could not be removed").arg(target->currentText()),
+                               tr("%1 is not a personal scheme and could not be removed").arg(target->currentText()));
 }
 
 /*

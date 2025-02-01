@@ -76,6 +76,11 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
         KeySequenceEdit *dropShortCutEdit;
         QPushButton *exampleBookmarksButton;
 
+        void newColorScheme(QComboBox *target);
+        void editColorScheme(QComboBox *target);
+        void importColorScheme(QComboBox *target);
+        void deleteColorScheme(QComboBox *target);
+
     private slots:
         void apply();
         void accept() override;

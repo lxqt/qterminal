@@ -81,6 +81,9 @@ void Properties::loadSettings()
         QApplication::setStyle(guiStyle);
 
     colorScheme = m_settings->value(QLatin1String("colorScheme"), QLatin1String("Linux")).toString();
+    nightScheme = m_settings->value(QLatin1String("nightScheme"), QLatin1String("")).toString();
+    nightStart = m_settings->value(QLatin1String("nightStart"), QTime(21,0)).toTime();
+    nightEnd = m_settings->value(QLatin1String("nightEnd"), QTime(7,0)).toTime();
 
     highlightCurrentTerminal = m_settings->value(QLatin1String("highlightCurrentTerminal"), true).toBool();
     focusOnMoueOver = m_settings->value(QLatin1String("focusOnMoueOver"), false).toBool();
@@ -188,6 +191,9 @@ void Properties::saveSettings()
 {
     m_settings->setValue(QLatin1String("guiStyle"), guiStyle);
     m_settings->setValue(QLatin1String("colorScheme"), colorScheme);
+    m_settings->setValue(QLatin1String("nightScheme"), nightScheme);
+    m_settings->setValue(QLatin1String("nightStart"), nightStart);
+    m_settings->setValue(QLatin1String("nightEnd"), nightEnd);
     m_settings->setValue(QLatin1String("highlightCurrentTerminal"), highlightCurrentTerminal);
     m_settings->setValue(QLatin1String("focusOnMoueOver"), focusOnMoueOver);
     m_settings->setValue(QLatin1String("showTerminalSizeHint"), showTerminalSizeHint);
