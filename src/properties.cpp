@@ -122,7 +122,7 @@ void Properties::loadSettings()
     /* default to Right. see qtermwidget.h */
     scrollBarPos = m_settings->value(QLatin1String("ScrollbarPosition"), 2).toInt();
     /* default to North. I'd prefer South but North is standard (they say) */
-    tabsPos = m_settings->value(QLatin1String("TabsPosition"), 0).toInt();
+    tabsPos = qBound(0, m_settings->value(QLatin1String("TabsPosition"), 0).toInt(), 3);
     /* default to BlockCursor */
     keyboardCursorShape = m_settings->value(QLatin1String("KeyboardCursorShape"), 0).toInt();
     hideTabBarWithOneTab = m_settings->value(QLatin1String("HideTabBarWithOneTab"), false).toBool();
