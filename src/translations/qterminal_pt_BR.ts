@@ -696,17 +696,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Janela</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="414"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal Atual</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="420"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Desenhar uma borda</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
@@ -731,7 +731,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="771"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="778"/>
@@ -1020,12 +1020,12 @@ Você tem certeza que quer o sobrescrever?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar aba</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Você tem certeza que deseja fechar esta aba?</translation>
     </message>
 </context>
 <context>
@@ -1051,7 +1051,7 @@ Você tem certeza que quer o sobrescrever?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sessão</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>

@@ -198,7 +198,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="390"/>
         <source>New Tab From &amp;Preset</source>
-        <translation type="unfinished"></translation>
+        <translation>ახალი ჩანართი &amp;პრესეტიდან</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="391"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>პროცესი გაშვებულია.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -335,7 +335,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
         <source>Are you sure you want to exit?</source>
-        <translation type="unfinished"></translation>
+        <translation>დარწმუნებული ბრძანდებით, რომ გნებავთ, გახვიდეთ?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="709"/>
@@ -345,7 +345,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="711"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation type="unfinished"></translation>
+        <translation>მსუბუქი და მძლავრი მრავალპლატფორმული ტერმინალის ემულატორი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="713"/>
@@ -404,7 +404,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="549"/>
         <source>Hide tab bar with only one tab</source>
-        <translation type="unfinished"></translation>
+        <translation>ჩანართების პანელის დამალვა, როცა, მხოლოდ, ერთი ჩანართი არსებობს</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="181"/>
@@ -474,7 +474,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="505"/>
         <source>Show the menu bar</source>
-        <translation type="unfinished"></translation>
+        <translation>მენიუს პანელის ჩვენება</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="233"/>
@@ -484,7 +484,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="263"/>
         <source>Enable bi-directional text support</source>
-        <translation type="unfinished"></translation>
+        <translation>ორმხრივი ტექსტის მხარდაჭერის ჩართვა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="306"/>
@@ -499,7 +499,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="256"/>
         <source>Show terminal size on resize</source>
-        <translation type="unfinished"></translation>
+        <translation>ტერმინალის ზომის ჩვენება ზომის შეცვლისას</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="556"/>
