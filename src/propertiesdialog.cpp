@@ -207,6 +207,17 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     // word characters for text selection
     wordCharactersLineEdit->setText(Properties::Instance()->wordCharacters);
 
+    int autoDelay = Properties::Instance()->mouseAutoHideDelay;
+    if (autoDelay > 0)
+    {
+        autoDelay /= 1000;
+    }
+    else if (autoDelay < 0)
+    {
+        autoDelay = -1;
+    }
+    mouseAutoHideSpinBox->setValue(autoDelay);
+
     // Setting windows style actions
     styleComboBox->addItem(tr("System Default"));
     styleComboBox->addItems(QStyleFactory::keys());
@@ -395,6 +406,13 @@ void PropertiesDialog::apply()
     Properties::Instance()->trimPastedTrailingNewlines = trimPastedTrailingNewlinesCheckBox->isChecked();
     Properties::Instance()->confirmMultilinePaste = confirmMultilinePasteCheckBox->isChecked();
     Properties::Instance()->wordCharacters = wordCharactersLineEdit->text();
+
+    int autoDelay = mouseAutoHideSpinBox->value();
+    if (autoDelay > 0)
+    {
+        autoDelay *= 1000;
+    }
+    Properties::Instance()->mouseAutoHideDelay = autoDelay;
 
     saveBookmarksFile();
     // NOTE: Because the path of the bookmarks file may be changed by saveBookmarksFile(),

@@ -128,6 +128,7 @@ class Properties
 
         bool windowMaximized;
         bool swapMouseButtons2and3;
+        int mouseAutoHideDelay;
 
         bool useFontBoxDrawingChars;
     private:
