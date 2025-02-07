@@ -114,6 +114,7 @@ void TermWidgetImpl::propertiesChanged()
     disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
     setConfirmMultilinePaste(Properties::Instance()->confirmMultilinePaste);
     setWordCharacters(Properties::Instance()->wordCharacters);
+    autoHideMouseAfter(Properties::Instance()->mouseAutoHideDelay);
     setTrimPastedTrailingNewlines(Properties::Instance()->trimPastedTrailingNewlines);
     setTerminalSizeHint(Properties::Instance()->showTerminalSizeHint);
 

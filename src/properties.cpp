@@ -181,6 +181,12 @@ void Properties::loadSettings()
 
     swapMouseButtons2and3 = m_settings->value(QLatin1String("SwapMouseButtons2and3"), false).toBool();
 
+    mouseAutoHideDelay = m_settings->value(QLatin1String("MouseAutoHideDelay"), -1).toInt();
+    if (mouseAutoHideDelay > 0)
+    {
+        mouseAutoHideDelay *= 1000;
+    }
+
     prefDialogSize = m_settings->value(QLatin1String("PrefDialogSize")).toSize();
 }
 
@@ -292,6 +298,17 @@ void Properties::saveSettings()
 
     m_settings->setValue(QLatin1String("LastWindowMaximized"), windowMaximized);
     m_settings->setValue(QLatin1String("SwapMouseButtons2and3"), swapMouseButtons2and3);
+
+    int autoDelay = mouseAutoHideDelay;
+    if (autoDelay > 0)
+    {
+        autoDelay /= 1000;
+    }
+    else if (autoDelay < 0)
+    {
+        autoDelay = -1;
+    }
+    m_settings->setValue(QLatin1String("MouseAutoHideDelay"), autoDelay);
 
     m_settings->setValue(QLatin1String("PrefDialogSize"), prefDialogSize);
 
