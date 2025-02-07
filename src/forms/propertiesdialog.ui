@@ -175,7 +175,7 @@
              </layout>
             </widget>
            </item>
-           <item row="2" column="0">
+           <item row="1" column="0">
             <widget class="QLabel" name="label_5">
              <property name="text">
               <string>Color scheme</string>
@@ -185,10 +185,10 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="1">
+           <item row="1" column="1">
             <widget class="QComboBox" name="colorSchemaCombo"/>
            </item>
-           <item row="3" column="0">
+           <item row="2" column="0">
             <widget class="QLabel" name="label_6">
              <property name="text">
               <string>Widget style</string>
@@ -198,10 +198,10 @@
              </property>
             </widget>
            </item>
-           <item row="3" column="1">
+           <item row="2" column="1">
             <widget class="QComboBox" name="styleComboBox"/>
            </item>
-           <item row="4" column="0">
+           <item row="3" column="0">
             <widget class="QLabel" name="label_7">
              <property name="text">
               <string>Scrollbar position</string>
@@ -211,10 +211,10 @@
              </property>
             </widget>
            </item>
-           <item row="4" column="1">
+           <item row="3" column="1">
             <widget class="QComboBox" name="scrollBarPos_comboBox"/>
            </item>
-           <item row="5" column="0">
+           <item row="4" column="0">
             <widget class="QLabel" name="label_8">
              <property name="text">
               <string>Tabs position</string>
@@ -224,10 +224,10 @@
              </property>
             </widget>
            </item>
-           <item row="5" column="1">
+           <item row="4" column="1">
             <widget class="QComboBox" name="tabsPos_comboBox"/>
            </item>
-           <item row="6" column="0">
+           <item row="5" column="0">
             <widget class="QLabel" name="label_12">
              <property name="text">
               <string>Cursor shape</string>
@@ -237,8 +237,15 @@
              </property>
             </widget>
            </item>
-           <item row="6" column="1">
+           <item row="5" column="1">
             <widget class="QComboBox" name="keybCursorShape_comboBox"/>
+           </item>
+           <item row="6" column="0" colspan="2">
+            <widget class="QCheckBox" name="keybCursorBlinkCheckBox">
+             <property name="text">
+              <string>Blinking cursor</string>
+             </property>
+            </widget>
            </item>
            <item row="7" column="0" colspan="2">
             <widget class="QCheckBox" name="boldIntenseCheckBox">
