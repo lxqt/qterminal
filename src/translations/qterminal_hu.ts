@@ -382,7 +382,7 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="38"/>
-        <location filename="../forms/propertiesdialog.ui" line="715"/>
+        <location filename="../forms/propertiesdialog.ui" line="722"/>
         <source>Behavior</source>
         <translation>Viselkedés</translation>
     </message>
@@ -402,7 +402,7 @@
         <translation>Könyvjelzők</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="549"/>
+        <location filename="../forms/propertiesdialog.ui" line="556"/>
         <source>Hide tab bar with only one tab</source>
         <translation>Egy lapnál lapsáv elrejtése</translation>
     </message>
@@ -417,37 +417,37 @@
         <translation>Görgetősáv helye</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="363"/>
+        <location filename="../forms/propertiesdialog.ui" line="370"/>
         <source>Start with preset:</source>
         <translation>Új terminálok szétválasztása:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="280"/>
+        <location filename="../forms/propertiesdialog.ui" line="287"/>
         <source>Terminal transparency</source>
         <translation>Terminál átlátszósága</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="374"/>
+        <location filename="../forms/propertiesdialog.ui" line="381"/>
         <source>None (single terminal)</source>
         <translation>Nem (1 terminál)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="379"/>
+        <location filename="../forms/propertiesdialog.ui" line="386"/>
         <source>2 terminals horizontally</source>
         <translation>2 terminál függőlegesen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="384"/>
+        <location filename="../forms/propertiesdialog.ui" line="391"/>
         <source>2 terminals vertically</source>
         <translation>2 terminál vízszintesen</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="389"/>
+        <location filename="../forms/propertiesdialog.ui" line="396"/>
         <source>4 terminals</source>
         <translation>4 terminál</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="290"/>
+        <location filename="../forms/propertiesdialog.ui" line="297"/>
         <source> %</source>
         <translation> %</translation>
     </message>
@@ -472,7 +472,7 @@
         <translation>Elemstílus</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="505"/>
+        <location filename="../forms/propertiesdialog.ui" line="512"/>
         <source>Show the menu bar</source>
         <translation>Menüsor megjelenítése</translation>
     </message>
@@ -482,214 +482,214 @@
         <translation>Kurzor alakja</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="263"/>
+        <location filename="../forms/propertiesdialog.ui" line="270"/>
         <source>Enable bi-directional text support</source>
         <translation>Kétirányú szövegtámogatás engedélyezése</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="306"/>
+        <location filename="../forms/propertiesdialog.ui" line="313"/>
         <source>Background image:</source>
         <translation>Háttérkép:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="318"/>
+        <location filename="../forms/propertiesdialog.ui" line="325"/>
         <source>Select</source>
         <translation>Kiválasztás</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="256"/>
+        <location filename="../forms/propertiesdialog.ui" line="263"/>
         <source>Show terminal size on resize</source>
         <translation>Terminálméret megjelenítése átméretezésnél</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="556"/>
+        <location filename="../forms/propertiesdialog.ui" line="563"/>
         <source>Fixed tab width:</source>
         <translation>Fix lapszélesség:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="407"/>
-        <location filename="../forms/propertiesdialog.ui" line="566"/>
+        <location filename="../forms/propertiesdialog.ui" line="414"/>
+        <location filename="../forms/propertiesdialog.ui" line="573"/>
         <source>px</source>
         <translation>px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="529"/>
+        <location filename="../forms/propertiesdialog.ui" line="536"/>
         <source>Show close button on each tab</source>
         <translation>Bezárás gomb megjelenítése a lapokon</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="397"/>
+        <location filename="../forms/propertiesdialog.ui" line="404"/>
         <source>Terminal margin</source>
         <translation>Terminál margója</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="273"/>
+        <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Use box drawing characters contained in the font</source>
         <translation>A betűtípus dobozrajzoló karaktereinek használata</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="512"/>
+        <location filename="../forms/propertiesdialog.ui" line="519"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>A gyorsítókat az Alt aktiválja, és zavarhatják a terminált.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="515"/>
+        <location filename="../forms/propertiesdialog.ui" line="522"/>
         <source>No menu bar accelerator</source>
         <translation>Menüsor gyorsító kikapcsolása</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="882"/>
+        <location filename="../forms/propertiesdialog.ui" line="915"/>
         <source>Emulation</source>
         <translation>Emuláció</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="748"/>
+        <location filename="../forms/propertiesdialog.ui" line="755"/>
         <source>Action after paste</source>
         <translation>Beillesztés utáni művelet</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="788"/>
+        <location filename="../forms/propertiesdialog.ui" line="821"/>
         <source>Confirm multiline paste</source>
         <translation>Többsoros beillesztés megerősítése</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="795"/>
+        <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Beillesztett szöveg soremeléseinek összevonása</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="809"/>
+        <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Open new terminals in current working directory</source>
         <translation>Új terminál megnyitása a jelenlegi munkakönyvtárba</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="583"/>
+        <location filename="../forms/propertiesdialog.ui" line="590"/>
         <source>Save Size when closing</source>
         <translation>Méret mentése bezáráskor</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="576"/>
+        <location filename="../forms/propertiesdialog.ui" line="583"/>
         <source>Save Position when closing</source>
         <translation>Helyzet mentése bezáráskor</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="741"/>
+        <location filename="../forms/propertiesdialog.ui" line="748"/>
         <source>Unlimited history</source>
         <translation>Korlátlan naplózás</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="721"/>
+        <location filename="../forms/propertiesdialog.ui" line="728"/>
         <source>History size (in lines)</source>
         <translation>Naplóméret (sorok)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="833"/>
+        <location filename="../forms/propertiesdialog.ui" line="866"/>
         <source>Default $TERM</source>
         <translation>Alapértelmezett $TERM</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="595"/>
+        <location filename="../forms/propertiesdialog.ui" line="602"/>
         <source>Start with this size:</source>
         <translation>Indulás ezzel a mérettel:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="327"/>
+        <location filename="../forms/propertiesdialog.ui" line="334"/>
         <source>Background mode:</source>
         <translation>Háttér mód:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="335"/>
+        <location filename="../forms/propertiesdialog.ui" line="342"/>
         <source>None</source>
         <translation>Egyik sem</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="340"/>
+        <location filename="../forms/propertiesdialog.ui" line="347"/>
         <source>Stretch</source>
         <translation>Nyújtás</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="345"/>
+        <location filename="../forms/propertiesdialog.ui" line="352"/>
         <source>Zoom</source>
         <translation>Nagyítás</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="350"/>
+        <location filename="../forms/propertiesdialog.ui" line="357"/>
         <source>Fit</source>
         <translation>Illesztés</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="355"/>
+        <location filename="../forms/propertiesdialog.ui" line="362"/>
         <source>Center</source>
         <translation>Középre</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="270"/>
+        <location filename="../forms/propertiesdialog.ui" line="277"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
         <translation type="unfinished">Válassza ki, hogy a dobozrajzoló karaktereket a QTerminal jelenítse meg, vagy hagyja ezt az alábbi betűrenderelő könyvtárakra.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="246"/>
+        <location filename="../forms/propertiesdialog.ui" line="253"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
         <translation>Beállítja a félkövér betűtípust az intenzív színek megjelenítéséhez</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="249"/>
+        <location filename="../forms/propertiesdialog.ui" line="256"/>
         <source>Use bold font face for intense colors</source>
         <translation>Használjon félkövér betűtípust az intenzív színekhez</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="522"/>
+        <location filename="../forms/propertiesdialog.ui" line="529"/>
         <source>&amp;Hide Window Borders</source>
         <translation>Ablakkeret &amp;elrejtése</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="891"/>
+        <location filename="../forms/propertiesdialog.ui" line="924"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Melyik viselkedést kell emulálni. Ne feledje, hogy ennek nem kell egyeznie az operációs rendszerrel.&lt;/p&gt;&lt;p&gt;Ha nem biztos benne, válassza a &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; opciót.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="869"/>
+        <location filename="../forms/propertiesdialog.ui" line="902"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>A parancs futtatása egy argumentummal történik amelyben szerepel egy átmeneti fájlnév, tartalmazva a görgetési előzményeket</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="872"/>
+        <location filename="../forms/propertiesdialog.ui" line="905"/>
         <source>Handle history command</source>
         <translation>Előzmények parancs kezelése</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="602"/>
-        <location filename="../forms/propertiesdialog.ui" line="616"/>
+        <location filename="../forms/propertiesdialog.ui" line="609"/>
+        <location filename="../forms/propertiesdialog.ui" line="623"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="623"/>
+        <location filename="../forms/propertiesdialog.ui" line="630"/>
         <source>Get current size</source>
         <translation>Jelenlegi méret mentése</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="819"/>
+        <location filename="../forms/propertiesdialog.ui" line="852"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>Új lap megnyitása az aktív lap jobb oldalán</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="816"/>
+        <location filename="../forms/propertiesdialog.ui" line="849"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>Ha nincs kiválasztva, az új lap a sor végén lesz megnyitva</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="539"/>
+        <location filename="../forms/propertiesdialog.ui" line="546"/>
         <source>Close tab on middle-click</source>
         <translation>Lap bezárása középső kattintásra</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="781"/>
+        <location filename="../forms/propertiesdialog.ui" line="814"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="761"/>
+        <location filename="../forms/propertiesdialog.ui" line="768"/>
         <source>Word selection characters</source>
         <translation type="unfinished"></translation>
     </message>
@@ -699,57 +699,77 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="414"/>
+        <location filename="../forms/propertiesdialog.ui" line="246"/>
+        <source>Blinking cursor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Current Terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="420"/>
+        <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Draw a border</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="427"/>
+        <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="434"/>
+        <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="441"/>
+        <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="768"/>
+        <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="771"/>
+        <location filename="../forms/propertiesdialog.ui" line="778"/>
         <source>:@-./_~</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="778"/>
+        <location filename="../forms/propertiesdialog.ui" line="785"/>
+        <source>Mouse cursor hiding delay</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="792"/>
+        <source>No hiding</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="795"/>
+        <source> sec</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="811"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="802"/>
+        <location filename="../forms/propertiesdialog.ui" line="835"/>
         <source>Prompt on closing with a running process</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="826"/>
+        <location filename="../forms/propertiesdialog.ui" line="859"/>
         <source>Audible bell</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="915"/>
+        <location filename="../forms/propertiesdialog.ui" line="948"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -764,83 +784,83 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 A kombináció törléséhez csak egy módosítóbillentyűt (mint például a Shift) kell lenyomnia</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="945"/>
+        <location filename="../forms/propertiesdialog.ui" line="978"/>
         <source>Shortcut</source>
         <translation>Művelet</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="950"/>
+        <location filename="../forms/propertiesdialog.ui" line="983"/>
         <source>Key</source>
         <translation>Gyorsbillentyű</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="962"/>
+        <location filename="../forms/propertiesdialog.ui" line="995"/>
         <source>Show on start</source>
         <translation>Megjelenítés induláskor</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="969"/>
+        <location filename="../forms/propertiesdialog.ui" line="1002"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="972"/>
+        <location filename="../forms/propertiesdialog.ui" line="1005"/>
         <source>Keep window open when it loses focus</source>
         <translation type="unfinished">Ablak nyitvatartása fókusz elvesztésekor</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="979"/>
+        <location filename="../forms/propertiesdialog.ui" line="1012"/>
         <source>Size</source>
         <translation>Méret</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="990"/>
+        <location filename="../forms/propertiesdialog.ui" line="1023"/>
         <source>Height</source>
         <translation>Magasság</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1000"/>
-        <location filename="../forms/propertiesdialog.ui" line="1017"/>
+        <location filename="../forms/propertiesdialog.ui" line="1033"/>
+        <location filename="../forms/propertiesdialog.ui" line="1050"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1007"/>
+        <location filename="../forms/propertiesdialog.ui" line="1040"/>
         <source>Width</source>
         <translation>Szélesség</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1031"/>
+        <location filename="../forms/propertiesdialog.ui" line="1064"/>
         <source>Shortcut:</source>
         <translation>Gyorsbillentyű:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1040"/>
+        <location filename="../forms/propertiesdialog.ui" line="1073"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1108"/>
+        <location filename="../forms/propertiesdialog.ui" line="1141"/>
         <source>Edit bookmark file contents</source>
         <translation>Könyvjelzőfájl szerkesztése</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1067"/>
+        <location filename="../forms/propertiesdialog.ui" line="1100"/>
         <source>Enable bookmarks</source>
         <translation>Könyvjelzők engedélyezése</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1076"/>
+        <location filename="../forms/propertiesdialog.ui" line="1109"/>
         <source>Bookmark file</source>
         <translation>Könyvjelzőfájl</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1089"/>
+        <location filename="../forms/propertiesdialog.ui" line="1122"/>
         <source>Find...</source>
         <translation>Keresés...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1098"/>
+        <location filename="../forms/propertiesdialog.ui" line="1131"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Megadhatja a saját könyvjelzőfájljának helyét. Ez lehetővé teszi a könyvjelzők egyszerű megosztását olyan eszközökkel, mint az OwnCloud vagy a Dropbox.</translation>
     </message>
@@ -887,80 +907,80 @@ A kombináció törléséhez csak egy módosítóbillentyűt (mint például a S
         <translation>I alakú kurzor</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="201"/>
+        <location filename="../propertiesdialog.cpp" line="205"/>
         <source>No move</source>
         <translation>Változatlan</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="201"/>
+        <location filename="../propertiesdialog.cpp" line="205"/>
         <source>Scrolling to top</source>
         <translation>Görgetés a tetejére</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="201"/>
+        <location filename="../propertiesdialog.cpp" line="205"/>
         <source>Scrolling to bottom</source>
         <translation>Görgetés az aljára</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="276"/>
+        <location filename="../propertiesdialog.cpp" line="291"/>
         <source>Examples</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="430"/>
+        <location filename="../propertiesdialog.cpp" line="453"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Képek (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="532"/>
+        <location filename="../propertiesdialog.cpp" line="555"/>
         <source>Open bookmarks file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="534"/>
+        <location filename="../propertiesdialog.cpp" line="557"/>
         <source>XML files (*.xml)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="535"/>
+        <location filename="../propertiesdialog.cpp" line="558"/>
         <source>All files (*)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="634"/>
-        <location filename="../propertiesdialog.cpp" line="638"/>
+        <location filename="../propertiesdialog.cpp" line="657"/>
+        <location filename="../propertiesdialog.cpp" line="661"/>
         <source>Question</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="634"/>
+        <location filename="../propertiesdialog.cpp" line="657"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="638"/>
+        <location filename="../propertiesdialog.cpp" line="661"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="646"/>
+        <location filename="../propertiesdialog.cpp" line="669"/>
         <source>Warning</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="646"/>
+        <location filename="../propertiesdialog.cpp" line="669"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="211"/>
-        <location filename="../propertiesdialog.cpp" line="329"/>
+        <location filename="../propertiesdialog.cpp" line="226"/>
+        <location filename="../propertiesdialog.cpp" line="344"/>
         <source>System Default</source>
         <translation>Rendszer alapértelmezett</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="429"/>
+        <location filename="../propertiesdialog.cpp" line="452"/>
         <source>Choose a background image</source>
         <translation>Háttérkép kiválasztása</translation>
     </message>
