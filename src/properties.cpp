@@ -187,6 +187,10 @@ void Properties::loadSettings()
     {
         mouseAutoHideDelay *= 1000;
     }
+    else
+    {
+        mouseAutoHideDelay = -1; // disable (no zero delay)
+    }
 
     prefDialogSize = m_settings->value(QLatin1String("PrefDialogSize")).toSize();
 }
@@ -306,9 +310,9 @@ void Properties::saveSettings()
     {
         autoDelay /= 1000;
     }
-    else if (autoDelay < 0)
+    else
     {
-        autoDelay = -1;
+        autoDelay = 0; // means disabling when saved
     }
     m_settings->setValue(QLatin1String("MouseAutoHideDelay"), autoDelay);
 

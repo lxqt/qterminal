@@ -795,13 +795,13 @@
                  <string> sec</string>
                 </property>
                 <property name="minimum">
-                 <number>-1</number>
+                 <number>0</number>
                 </property>
                 <property name="maximum">
                  <number>60</number>
                 </property>
                 <property name="value">
-                 <number>-1</number>
+                 <number>0</number>
                 </property>
                </widget>
               </item>
