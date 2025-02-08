@@ -184,6 +184,10 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     keybCursorShape_comboBox->addItems(keyboardCursorShapeList);
     keybCursorShape_comboBox->setCurrentIndex(Properties::Instance()->keyboardCursorShape);
 
+    /* keyboard cursor blinking */
+    keybCursorBlinkCheckBox->setChecked(Properties::Instance()->keyboardCursorBlink);
+
+    /* hiding single tab */
     hideTabBarCheckBox->setChecked(Properties::Instance()->hideTabBarWithOneTab);
 
     // bold font face for intense colors
@@ -373,6 +377,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->fixedTabWidth = fixedTabWidthCheckBox->isChecked();
     Properties::Instance()->fixedTabWidthValue = fixedTabWidthSpinBox->value();
     Properties::Instance()->keyboardCursorShape = keybCursorShape_comboBox->currentIndex();
+    Properties::Instance()->keyboardCursorBlink = keybCursorBlinkCheckBox->isChecked();
     Properties::Instance()->showCloseTabButton = closeTabButtonCheckBox->isChecked();
     Properties::Instance()->closeTabOnMiddleClick = closeTabOnMiddleClickCheckBox->isChecked();
     Properties::Instance()->hideTabBarWithOneTab = hideTabBarCheckBox->isChecked();
