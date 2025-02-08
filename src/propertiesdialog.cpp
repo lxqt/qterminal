@@ -216,10 +216,6 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     {
         autoDelay /= 1000;
     }
-    else if (autoDelay < 0)
-    {
-        autoDelay = -1;
-    }
     mouseAutoHideSpinBox->setValue(autoDelay);
 
     // Setting windows style actions
@@ -416,6 +412,10 @@ void PropertiesDialog::apply()
     if (autoDelay > 0)
     {
         autoDelay *= 1000;
+    }
+    else
+    {
+        autoDelay = -1; // disable (no zero delay)
     }
     Properties::Instance()->mouseAutoHideDelay = autoDelay;
 
