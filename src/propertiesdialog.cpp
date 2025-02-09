@@ -719,31 +719,38 @@ bool PropertiesDialog::event(QEvent *event)
     {
         if (auto layershell = LayerShellQt::Window::get(windowHandle()))
         {
-            if (event->type() == QEvent::WindowBlocked
-                && layershell->layer() == LayerShellQt::Window::Layer::LayerOverlay)
+            LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
+            if (layershell->anchors() == anchors)
             {
-                if (auto dialog = qobject_cast<QDialog*>(qApp->activeModalWidget()))
+                if (event->type() == QEvent::WindowBlocked
+                    && layershell->layer() == LayerShellQt::Window::Layer::LayerOverlay)
                 {
-                    dialog->winId();
-                    if (QWindow *win = dialog->windowHandle())
+                    if (auto dialog = qobject_cast<QDialog*>(qApp->activeModalWidget()))
                     {
-                        if (auto dlgLayershell = LayerShellQt::Window::get(win))
+                        dialog->winId();
+                        if (QWindow *win = dialog->windowHandle())
                         {
-                            dlgLayershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
-                            dlgLayershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
-                            LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
-                            dlgLayershell->setAnchors(anchors);
-                            dlgLayershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
-
-                            layershell->setLayer(LayerShellQt::Window::Layer::LayerTop);
+                            if (auto dlgLayershell = LayerShellQt::Window::get(win))
+                            {
+                                dlgLayershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                                dlgLayershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
+                                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
+                                dlgLayershell->setAnchors(anchors);
+                                dlgLayershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
+                                if (auto fontDialog = qobject_cast<FontDialog*>(dialog))
+                                {
+                                    fontDialog->drawBorder();
+                                }
+                                layershell->setLayer(LayerShellQt::Window::Layer::LayerTop);
+                            }
                         }
                     }
                 }
-            }
-            else if (event->type() == QEvent::WindowUnblocked
-                     && layershell->layer() == LayerShellQt::Window::Layer::LayerTop)
-            {
-                layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                else if (event->type() == QEvent::WindowUnblocked
+                         && layershell->layer() == LayerShellQt::Window::Layer::LayerTop)
+                {
+                    layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                }
             }
         }
     }

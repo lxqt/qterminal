@@ -30,11 +30,17 @@ class FontDialog : public QDialog, public Ui::FontDialog
 public:
     FontDialog(const QFont &f, QWidget *parent = nullptr);
     QFont getFont();
+    void drawBorder();
+
+protected:
+    void paintEvent(QPaintEvent *event);
 
 private slots:
     void setFontSample(const QFont &f);
     void setFontSize();
 
+private:
+    bool mDrawBorder;
 };
 
 #endif
