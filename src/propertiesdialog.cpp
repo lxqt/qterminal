@@ -441,8 +441,7 @@ void PropertiesDialog::setFontSample(const QFont & f)
 
 void PropertiesDialog::changeFontButton_clicked()
 {
-    FontDialog dia(fontSampleLabel->font(),
-                   QGuiApplication::platformName() == QStringLiteral("wayland") ? this : nullptr);
+    FontDialog dia(fontSampleLabel->font(), this);
     if (!dia.exec())
         return;
     QFont f = dia.getFont();
