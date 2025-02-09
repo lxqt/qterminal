@@ -18,8 +18,8 @@
 
 #include "fontdialog.h"
 
-FontDialog::FontDialog(const QFont &f)
-    : QDialog(nullptr)
+FontDialog::FontDialog(const QFont &f, QWidget *parent)
+    : QDialog(parent)
 {
     setupUi(this);
 

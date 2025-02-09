@@ -28,7 +28,7 @@ class FontDialog : public QDialog, public Ui::FontDialog
 {
     Q_OBJECT
 public:
-    FontDialog(const QFont &f);
+    FontDialog(const QFont &f, QWidget *parent = nullptr);
     QFont getFont();
 
 private slots:
