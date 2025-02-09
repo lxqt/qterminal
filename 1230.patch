@@ -1,0 +1,226 @@
+From 4cf665395e99ecac1c2b76a9c2bc7a12739f20b5 Mon Sep 17 00:00:00 2001
+From: Tsu Jan <tsujan2000@gmail.com>
+Date: Sun, 9 Feb 2025 19:46:24 +0330
+Subject: [PATCH] Set font dialog in front of Preferences dialog on Wayland
+
+This is rather a small hack than a clean code.
+
+Also, silenced a compilation warning about "gridLayout".
+---
+ src/fontdialog.cpp            |  4 +-
+ src/fontdialog.h              |  2 +-
+ src/forms/propertiesdialog.ui | 12 ++---
+ src/propertiesdialog.cpp      | 85 +++++++++++++++++------------------
+ src/propertiesdialog.h        |  1 +
+ 5 files changed, 51 insertions(+), 53 deletions(-)
+
+diff --git a/src/fontdialog.cpp b/src/fontdialog.cpp
+index 4a053ee4..02a3517b 100644
+--- a/src/fontdialog.cpp
++++ b/src/fontdialog.cpp
+@@ -18,8 +18,8 @@
+ 
+ #include "fontdialog.h"
+ 
+-FontDialog::FontDialog(const QFont &f)
+-    : QDialog(nullptr)
++FontDialog::FontDialog(const QFont &f, QWidget *parent)
++    : QDialog(parent)
+ {
+     setupUi(this);
+ 
+diff --git a/src/fontdialog.h b/src/fontdialog.h
+index 19dc67c0..49198d56 100644
+--- a/src/fontdialog.h
++++ b/src/fontdialog.h
+@@ -28,7 +28,7 @@ class FontDialog : public QDialog, public Ui::FontDialog
+ {
+     Q_OBJECT
+ public:
+-    FontDialog(const QFont &f);
++    FontDialog(const QFont &f, QWidget *parent = nullptr);
+     QFont getFont();
+ 
+ private slots:
+diff --git a/src/forms/propertiesdialog.ui b/src/forms/propertiesdialog.ui
+index 80e54b29..792d0ebe 100644
+--- a/src/forms/propertiesdialog.ui
++++ b/src/forms/propertiesdialog.ui
+@@ -13,7 +13,7 @@
+   <property name="windowTitle">
+    <string>Terminal settings</string>
+   </property>
+-  <layout class="QGridLayout" name="gridLayout_4">
++  <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QListWidget" name="listWidget">
+      <item>
+@@ -113,7 +113,7 @@
+             <height>659</height>
+            </rect>
+           </property>
+-          <layout class="QGridLayout" name="gridLayout_3">
++          <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0" rowspan="2" colspan="2">
+             <widget class="QWidget" name="fontWidget" native="true">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+@@ -702,7 +702,7 @@
+             <height>530</height>
+            </rect>
+           </property>
+-          <layout class="QGridLayout" name="gridLayout_5">
++          <layout class="QGridLayout" name="gridLayout_4">
+            <item row="2" column="0">
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+@@ -721,7 +721,7 @@
+              <property name="title">
+               <string>Behavior</string>
+              </property>
+-             <layout class="QGridLayout" name="gridLayout_2">
++             <layout class="QGridLayout" name="gridLayout_5">
+               <item row="0" column="0">
+                <widget class="QRadioButton" name="historyLimited">
+                 <property name="text">
+@@ -1093,7 +1093,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
+       </layout>
+      </widget>
+      <widget class="QWidget" name="bookmarksPage">
+-      <layout class="QGridLayout" name="gridLayout_9">
++      <layout class="QGridLayout" name="gridLayout_7">
+        <item row="0" column="0">
+         <widget class="QCheckBox" name="useBookmarksCheckBox">
+          <property name="text">
+@@ -1140,7 +1140,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
+          <property name="title">
+           <string>Edit bookmark file contents</string>
+          </property>
+-         <layout class="QGridLayout" name="gridLayout_10">
++         <layout class="QGridLayout" name="gridLayout_8">
+           <item row="0" column="0">
+            <widget class="QPlainTextEdit" name="bookmarkPlainEdit">
+             <property name="font">
+diff --git a/src/propertiesdialog.cpp b/src/propertiesdialog.cpp
+index 8f56f05f..c0b6d924 100644
+--- a/src/propertiesdialog.cpp
++++ b/src/propertiesdialog.cpp
+@@ -31,6 +31,9 @@
+ #include "config.h"
+ #include "qterminalapp.h"
+ 
++#include <LayerShellQt/Shell>
++#include <LayerShellQt/Window>
++
+ void KeySequenceEdit::keyPressEvent(QKeyEvent* event)
+ {
+     // by not allowing multiple shortcuts,
+@@ -438,7 +441,8 @@ void PropertiesDialog::setFontSample(const QFont & f)
+ 
+ void PropertiesDialog::changeFontButton_clicked()
+ {
+-    FontDialog dia(fontSampleLabel->font());
++    FontDialog dia(fontSampleLabel->font(),
++                   QGuiApplication::platformName() == QStringLiteral("wayland") ? this : nullptr);
+     if (!dia.exec())
+         return;
+     QFont f = dia.getFont();
+@@ -706,51 +710,44 @@ bool PropertiesDialog::eventFilter(QObject *object, QEvent *event)
+     return QDialog::eventFilter(object, event);
+ }
+ 
+-/*
+-void PropertiesDialog::setupShortcuts()
++bool PropertiesDialog::event(QEvent *event)
+ {
+-    QList< QString > shortcutKeys = Properties::Instance()->shortcuts.keys();
+-    int shortcutCount = shortcutKeys.count();
+-
+-    shortcutsWidget->setRowCount( shortcutCount );
+-
+-    for( int x=0; x < shortcutCount; x++ )
++    // This is needed for showing the font dialog (and, probably, other child dialogs) on the
++    // overlay layer and in front of the properties dialog under Wayland. See MainWindow::event.
++    if ((event->type() == QEvent::WindowBlocked || event->type() == QEvent::WindowUnblocked)
++        && QGuiApplication::platformName() == QStringLiteral("wayland")
++        && windowHandle())
+     {
+-        QString keyValue = shortcutKeys.at(x);
+-
+-        QLabel *lblShortcut = new QLabel( keyValue, this );
+-        QPushButton *btnLaunch = new QPushButton( Properties::Instance()->shortcuts.value( keyValue ), this );
+-
+-        btnLaunch->setObjectName(keyValue);
+-        connect( btnLaunch, SIGNAL(clicked()), this, SLOT(shortcutPrompt()) );
+-
+-        shortcutsWidget->setCellWidget( x, 0, lblShortcut );
+-        shortcutsWidget->setCellWidget( x, 1, btnLaunch );
++        if (auto layershell = LayerShellQt::Window::get(windowHandle()))
++        {
++            if (event->type() == QEvent::WindowBlocked
++                && layershell->layer() == LayerShellQt::Window::Layer::LayerOverlay)
++            {
++                if (auto dialog = qobject_cast<QDialog*>(qApp->activeModalWidget()))
++                {
++                    dialog->winId();
++                    if (QWindow *win = dialog->windowHandle())
++                    {
++                        if (auto dlgLayershell = LayerShellQt::Window::get(win))
++                        {
++                            dlgLayershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
++                            dlgLayershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
++                            LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
++                            dlgLayershell->setAnchors(anchors);
++                            dlgLayershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
++
++                            layershell->setLayer(LayerShellQt::Window::Layer::LayerTop);
++                        }
++                    }
++                }
++            }
++            else if (event->type() == QEvent::WindowUnblocked
++                     && layershell->layer() == LayerShellQt::Window::Layer::LayerTop)
++            {
++                layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
++            }
++        }
+     }
+-}
+-
+-void PropertiesDialog::shortcutPrompt()
+-{
+-    QObject *objectSender = sender();
+-
+-    if( !objectSender )
+-        return;
+-
+-    QString name = objectSender->objectName();
+-    qDebug() << "shortcutPrompt(" << name << ")";
+-
+-    DialogShortcut *dlgShortcut = new DialogShortcut(this);
+-    dlgShortcut->setTitle( tr("Select a key sequence for %1").arg(name) );
+-
+-    QString sequenceString = Properties::Instance()->shortcuts[name];
+-    dlgShortcut->setKey(sequenceString);
+ 
+-    int result = dlgShortcut->exec();
+-    if( result == QDialog::Accepted )
+-    {
+-        sequenceString = dlgShortcut->getKey();
+-        Properties::Instance()->shortcuts[name] = sequenceString;
+-        Properties::Instance()->saveSettings();
+-    }
++    return QDialog::event(event);
+ }
+-*/
+diff --git a/src/propertiesdialog.h b/src/propertiesdialog.h
+index 4ebbd263..79ac993d 100644
+--- a/src/propertiesdialog.h
++++ b/src/propertiesdialog.h
+@@ -88,6 +88,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
+     protected:
+         void setupShortcuts();
+         void applyShortcuts();
++        bool event(QEvent *event) override;
+ };
+ 
+ 
