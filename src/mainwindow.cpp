@@ -50,9 +50,6 @@
 typedef std::function<bool(MainWindow&, QAction *)> checkfn;
 Q_DECLARE_METATYPE(checkfn)
 
-// TODO/FXIME: probably remove. QSS makes it unusable on mac...
-#define QSS_DROP    "MainWindow {border: 1px solid rgba(0, 0, 0, 50%);}\n"
-
 MainWindow::MainWindow(TerminalConfig &cfg,
                        bool dropMode,
                        QWidget * parent,
@@ -112,7 +109,6 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     setContentsMargins(0, 0, 0, 0);
     if (m_dropMode) {
         this->enableDropMode();
-        setStyleSheet(QStringLiteral(QSS_DROP));
     }
     else {
         if (Properties::Instance()->saveSizeOnExit) {
