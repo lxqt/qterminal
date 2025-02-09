@@ -88,6 +88,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
     protected:
         void setupShortcuts();
         void applyShortcuts();
+        bool event(QEvent *event) override;
 };
 
 

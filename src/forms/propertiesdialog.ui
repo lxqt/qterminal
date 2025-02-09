@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Terminal settings</string>
   </property>
-  <layout class="QGridLayout" name="gridLayout_4">
+  <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QListWidget" name="listWidget">
      <item>
@@ -113,7 +113,7 @@
             <height>659</height>
            </rect>
           </property>
-          <layout class="QGridLayout" name="gridLayout_3">
+          <layout class="QGridLayout" name="gridLayout_2">
            <item row="0" column="0" rowspan="2" colspan="2">
             <widget class="QWidget" name="fontWidget" native="true">
              <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -702,7 +702,7 @@
             <height>530</height>
            </rect>
           </property>
-          <layout class="QGridLayout" name="gridLayout_5">
+          <layout class="QGridLayout" name="gridLayout_4">
            <item row="2" column="0">
             <spacer name="verticalSpacer_2">
              <property name="orientation">
@@ -721,7 +721,7 @@
              <property name="title">
               <string>Behavior</string>
              </property>
-             <layout class="QGridLayout" name="gridLayout_2">
+             <layout class="QGridLayout" name="gridLayout_5">
               <item row="0" column="0">
                <widget class="QRadioButton" name="historyLimited">
                 <property name="text">
@@ -1093,7 +1093,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
       </layout>
      </widget>
      <widget class="QWidget" name="bookmarksPage">
-      <layout class="QGridLayout" name="gridLayout_9">
+      <layout class="QGridLayout" name="gridLayout_7">
        <item row="0" column="0">
         <widget class="QCheckBox" name="useBookmarksCheckBox">
          <property name="text">
@@ -1140,7 +1140,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
          <property name="title">
           <string>Edit bookmark file contents</string>
          </property>
-         <layout class="QGridLayout" name="gridLayout_10">
+         <layout class="QGridLayout" name="gridLayout_8">
           <item row="0" column="0">
            <widget class="QPlainTextEdit" name="bookmarkPlainEdit">
             <property name="font">

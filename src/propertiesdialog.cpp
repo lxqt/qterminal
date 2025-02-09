@@ -31,6 +31,9 @@
 #include "config.h"
 #include "qterminalapp.h"
 
+#include <LayerShellQt/Shell>
+#include <LayerShellQt/Window>
+
 void KeySequenceEdit::keyPressEvent(QKeyEvent* event)
 {
     // by not allowing multiple shortcuts,
@@ -438,7 +441,8 @@ void PropertiesDialog::setFontSample(const QFont & f)
 
 void PropertiesDialog::changeFontButton_clicked()
 {
-    FontDialog dia(fontSampleLabel->font());
+    FontDialog dia(fontSampleLabel->font(),
+                   QGuiApplication::platformName() == QStringLiteral("wayland") ? this : nullptr);
     if (!dia.exec())
         return;
     QFont f = dia.getFont();
@@ -706,51 +710,44 @@ bool PropertiesDialog::eventFilter(QObject *object, QEvent *event)
     return QDialog::eventFilter(object, event);
 }
 
-/*
-void PropertiesDialog::setupShortcuts()
+bool PropertiesDialog::event(QEvent *event)
 {
-    QList< QString > shortcutKeys = Properties::Instance()->shortcuts.keys();
-    int shortcutCount = shortcutKeys.count();
-
-    shortcutsWidget->setRowCount( shortcutCount );
-
-    for( int x=0; x < shortcutCount; x++ )
+    // This is needed for showing the font dialog (and, probably, other child dialogs) on the
+    // overlay layer and in front of the properties dialog under Wayland. See MainWindow::event.
+    if ((event->type() == QEvent::WindowBlocked || event->type() == QEvent::WindowUnblocked)
+        && QGuiApplication::platformName() == QStringLiteral("wayland")
+        && windowHandle())
     {
-        QString keyValue = shortcutKeys.at(x);
+        if (auto layershell = LayerShellQt::Window::get(windowHandle()))
+        {
+            if (event->type() == QEvent::WindowBlocked
+                && layershell->layer() == LayerShellQt::Window::Layer::LayerOverlay)
+            {
+                if (auto dialog = qobject_cast<QDialog*>(qApp->activeModalWidget()))
+                {
+                    dialog->winId();
+                    if (QWindow *win = dialog->windowHandle())
+                    {
+                        if (auto dlgLayershell = LayerShellQt::Window::get(win))
+                        {
+                            dlgLayershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                            dlgLayershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
+                            LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
+                            dlgLayershell->setAnchors(anchors);
+                            dlgLayershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
 
-        QLabel *lblShortcut = new QLabel( keyValue, this );
-        QPushButton *btnLaunch = new QPushButton( Properties::Instance()->shortcuts.value( keyValue ), this );
-
-        btnLaunch->setObjectName(keyValue);
-        connect( btnLaunch, SIGNAL(clicked()), this, SLOT(shortcutPrompt()) );
-
-        shortcutsWidget->setCellWidget( x, 0, lblShortcut );
-        shortcutsWidget->setCellWidget( x, 1, btnLaunch );
+                            layershell->setLayer(LayerShellQt::Window::Layer::LayerTop);
+                        }
+                    }
+                }
+            }
+            else if (event->type() == QEvent::WindowUnblocked
+                     && layershell->layer() == LayerShellQt::Window::Layer::LayerTop)
+            {
+                layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+            }
+        }
     }
+
+    return QDialog::event(event);
 }
-
-void PropertiesDialog::shortcutPrompt()
-{
-    QObject *objectSender = sender();
-
-    if( !objectSender )
-        return;
-
-    QString name = objectSender->objectName();
-    qDebug() << "shortcutPrompt(" << name << ")";
-
-    DialogShortcut *dlgShortcut = new DialogShortcut(this);
-    dlgShortcut->setTitle( tr("Select a key sequence for %1").arg(name) );
-
-    QString sequenceString = Properties::Instance()->shortcuts[name];
-    dlgShortcut->setKey(sequenceString);
-
-    int result = dlgShortcut->exec();
-    if( result == QDialog::Accepted )
-    {
-        sequenceString = dlgShortcut->getKey();
-        Properties::Instance()->shortcuts[name] = sequenceString;
-        Properties::Instance()->saveSettings();
-    }
-}
-*/
