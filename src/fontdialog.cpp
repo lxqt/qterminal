@@ -64,6 +64,7 @@ void FontDialog::setFontSize()
     previewLabel->setText(sample.arg(f.family()).arg(f.pointSize()));
 }
 
+// May be used on the overlay layer of Wayland.
 void FontDialog::drawBorder()
 {
     if (!mDrawBorder)
