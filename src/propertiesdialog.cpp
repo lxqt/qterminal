@@ -734,7 +734,6 @@ bool PropertiesDialog::event(QEvent *event)
                             {
                                 dlgLayershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
                                 dlgLayershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
-                                LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
                                 dlgLayershell->setAnchors(anchors);
                                 dlgLayershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
                                 if (auto fontDialog = qobject_cast<FontDialog*>(dialog))
