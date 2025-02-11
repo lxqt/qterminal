@@ -912,6 +912,7 @@ bool MainWindow::event(QEvent *event)
                     LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
                     layershell->setAnchors(anchors);
                     layershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
+                    layershell->setScope(QStringLiteral("dialog"));
                     // For preventing the dialog from going behind the dropdown window if
                     // the latter is clicked, the window is set on the top layer temporarily.
                     // It will be set on the overlay layer again when the dialog exits.
