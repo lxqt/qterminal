@@ -831,6 +831,7 @@ void MainWindow::showHide()
         }
         realign();
         show();
+        setWindowState(windowState() & ~Qt::WindowMinimized);
         activateWindow();
     }
 }
