@@ -822,7 +822,7 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Cursore lampeggiante</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
@@ -862,17 +862,17 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Ritardo di nascondimento del cursore</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Non nascondere</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sec</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="811"/>

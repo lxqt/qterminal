@@ -525,17 +525,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation type="unfinished"></translation>
+        <translation>ფონტში არსებული სახატავი სიმბოლოების გამოყენება</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="519"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>მალსახმობები Alt ღილაკით აქტიურდება და შეუძლია, ტერმინალის მუშაობაში ჩაერიოს.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="522"/>
         <source>No menu bar accelerator</source>
-        <translation type="unfinished"></translation>
+        <translation>მენიუს ამაჩქრებლების გამორთვა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="915"/>
@@ -555,22 +555,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation type="unfinished"></translation>
+        <translation>ბოლოში მოყოლილი ახალი ხაზების წაჭრა ჩასმულ ტექსტში</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Open new terminals in current working directory</source>
-        <translation type="unfinished"></translation>
+        <translation>ახალი ტერმინალების გახსნა მიმდინარე სამუშაო საქაღალდეში</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="590"/>
         <source>Save Size when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>ზომის შენახვა დახურვისას</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="583"/>
         <source>Save Position when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>მდებარეობის შენახვა დახურვისას</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="748"/>
@@ -580,7 +580,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="728"/>
         <source>History size (in lines)</source>
-        <translation type="unfinished"></translation>
+        <translation>ისტორიის ზომა (ხაზებში)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="866"/>
@@ -590,7 +590,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="602"/>
         <source>Start with this size:</source>
-        <translation type="unfinished"></translation>
+        <translation>დაწყება ამ ზომით:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="334"/>
@@ -625,17 +625,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="277"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished"></translation>
+        <translation>მიუთითეთ, უნდა იყოს თუ არა ფანჯრის დასახატი სიმბოლოები QTerminal-ის მიერ შიდა ფუნქციებით, თუ ეს რენდერის ბიბლიოთეკებისთვის დარჩეს.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="253"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>გადართავს სქელ ფონტის ვარიანტზე ინტენსიური ფერების რენდერისთვის</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="256"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>სქელი ფონტის გამოყენება ინტენსიური ფერებისთვის</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="529"/>
@@ -645,12 +645,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="924"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;რომელი ქცევის ემულაცია მოხდება. დაიმახსოვრეთ, რომ შეიძლება, ეს თქვენს ოპერაციულ სისტემისას არა ემთხვდეოდეს.&lt;/p&gt;&lt;p&gt;თუ დარწმუნებული არ ბრძანდებით, გამოიყენეთ &lt;span style=&quot; font-weight:600;&quot;&gt;ნაგულისხმევი&lt;/span&gt; ემულაცია.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="902"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>ეს ბრძანება გაეშვება არგუმენტით, რომელიც შეიცავს დროებითი ფაილის სახელს, რომელიც გადახვევის ისტორიას შეიცავს</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="905"/>
@@ -671,12 +671,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="852"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>ახალი ჩანართის გახსნა აქტიური ჩანართის მარჯვნივ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="849"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>გამორთულია, ახალი ჩანართი ყველაზე მარვენა ჩანართად გაიხსნება</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="546"/>
@@ -686,12 +686,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="814"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>ბრჭყალებში ჩასმის რეჟიმის ძალით გათიშვა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="768"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>სიმბოლოები სიტყვის მოსანიშნად</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
@@ -701,7 +701,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>მოციმციმე კურსორი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
@@ -716,22 +716,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>მიმდინარე ტერმინალის დაყენება თაგუნას გადატარებისას</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>ფანჯრის სათაურის ცვლილება ტერმინალის მიხედვით</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>ფანჯრის ხატულას შეცვლა ტერმინალის მიხედვით</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>ტექსტის სიტყვებით მონიშვნისას ეს სიმბოლოები სიტყვის ნაწილად ჩაითვლება ალფარიცხვით სიმბოლოებთან ერთად</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="778"/>
@@ -741,27 +741,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>თაგუნას კურსორის დამალვის დაყოვნება</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>არ დამალო</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> წმ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="811"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>ბრჭყალებში ჩასმული ჩასმის რეჟიმი სასარგებლოა მრავალხაზიანი სტრიქონების ჩასმისთვის.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="835"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>კითხვა გაშვებული პროცესით დახურვისას</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="859"/>
@@ -776,7 +776,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>მალსახმობის ჩასასწორებლად:
+1. ორმაგი წკაპი მის ღილაკზე
+2. დააჭირეთ სასურველ კომბინაციას და აუშვით
+3. დააწკაპუნეთ მალსახმობზე, ან დააჭირეთ ღილაკს Enter
+
+მალსახმობის წასაშლელად/გასათიშად მეორე პუნქტზე, უბრალოდ, მხოლოდ, მოდიფიკატორს დააჭირეთ (მაგ: Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="978"/>
@@ -796,7 +801,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1002"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation type="unfinished"></translation>
+        <translation>ჩაკეტვის ღილაკი ნაჩვენებია ჰორიზონტალური ჩანართის ზოლზე</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1005"/>
@@ -832,12 +837,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1073"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>შენიშვნა: Wayland-ზე მალსახმობები კომპოზიტორის მორგების ფანჯრიდან უნდა შეცვალოთ ბრძანებისთვის &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1141"/>
         <source>Edit bookmark file contents</source>
-        <translation type="unfinished"></translation>
+        <translation>სანიშნების ფაილის შემცველობის ჩასწორება</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1100"/>
@@ -857,7 +862,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1131"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation type="unfinished"></translation>
+        <translation>შეგიძლიათ, საკუთარი სანიშნეების ფაილის მდებარეობა ხელით მიუთითოთ. ეს საშუალებას გაძლევთ სანიშნეები გააზიაროთ, მაგალითად, OwnCloud-ით ან Dropbox-ით.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="164"/>
@@ -914,7 +919,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="205"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>ბოლომდე გადახვევა</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="291"/>
@@ -924,12 +929,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="453"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>გამოსახულებები (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="555"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>სანიშნეების ფაილის გახსნა</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="557"/>
@@ -950,13 +955,14 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="657"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>გნებავთ ამ სანიშნეების ფაილის თავზე გადაწერა?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="661"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>სანიშნეების ფაილის სახელი არ მთავრდება სტრიქონით &apos;.xml&apos;.
+მართლა გნებავთ, თავზე გადააწეროთ?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="669"/>
@@ -966,7 +972,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="669"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>ამ ფაილში სანიშნეების ჩაწერა შეუძლებელია:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="226"/>
@@ -977,7 +983,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="452"/>
         <source>Choose a background image</source>
-        <translation type="unfinished"></translation>
+        <translation>აირჩიეთ ფონის გამოსახულება</translation>
     </message>
 </context>
 <context>
@@ -1004,7 +1010,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>მართლა გნებავთ, დახუროთ ეს ქვეტერმინალი?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1014,12 +1020,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="222"/>
         <source>New tab name:</source>
-        <translation type="unfinished"></translation>
+        <translation>ახალი ჩანართის სახელი:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="242"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>აირჩიეთ ახალი ჩანართის სათაურის ფერი</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="271"/>
@@ -1029,7 +1035,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="273"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>სათაურის ფერის შეცვლა</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
@@ -1052,7 +1058,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../termwidgetholder.cpp" line="78"/>
         <source>List of saved sessions:</source>
-        <translation type="unfinished"></translation>
+        <translation>შენახული სესიების სია:</translation>
     </message>
 </context>
 <context>

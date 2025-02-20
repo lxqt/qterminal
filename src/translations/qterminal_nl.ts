@@ -665,7 +665,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Knipperende cursor</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
@@ -705,17 +705,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Cursor verbergen na</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Niet verbergen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sec.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="811"/>
