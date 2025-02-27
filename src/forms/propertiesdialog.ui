@@ -1032,6 +1032,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
               <property name="suffix">
                <string>%</string>
               </property>
+              <property name="minimum">
+               <number>25</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
              </widget>
             </item>
             <item row="1" column="0">
@@ -1048,6 +1054,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
              <widget class="QSpinBox" name="dropWidthSpinBox">
               <property name="suffix">
                <string>%</string>
+              </property>
+              <property name="minimum">
+               <number>25</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
               </property>
              </widget>
             </item>
