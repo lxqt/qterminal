@@ -650,7 +650,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="902"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>這個指令在執行時，會帶入含有終端機歷史內容的臨時檔案的路徑作為參數</translation>
+        <translation>這個指令在執行時，會帶入含有終端機歷史內容的臨時檔案名稱作為參數</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="905"/>
@@ -934,7 +934,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="555"/>
         <source>Open bookmarks file</source>
-        <translation>打開書籤檔</translation>
+        <translation>開啟書籤檔案</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="557"/>
