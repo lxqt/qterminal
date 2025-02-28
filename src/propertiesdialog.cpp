@@ -268,8 +268,6 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     dropShowOnStartCheckBox->setChecked(Properties::Instance()->dropShowOnStart);
     dropKeepOpenCheckBox->setChecked(Properties::Instance()->dropKeepOpen);
 
-    dropHeightSpinBox->setMaximum(100);
-    dropWidthSpinBox->setMaximum(100);
     dropHeightSpinBox->setValue(Properties::Instance()->dropHeight);
     dropWidthSpinBox->setValue(Properties::Instance()->dropWidth);
 
