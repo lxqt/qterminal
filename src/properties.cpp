@@ -419,6 +419,14 @@ void Properties::removeAccelerator(QString& str)
     str.remove(QLatin1Char('&'));
 }
 
+QString Properties::getShortcut(const QString &name, const QString &defaultShortcut) const
+{
+    m_settings->beginGroup(QStringLiteral("Shortcuts"));
+    QString sequence = m_settings->value(name, defaultShortcut).toString();
+    m_settings->endGroup();
+    return sequence;
+}
+
 QString Properties::configDir() const
 {
     return QFileInfo(m_settings->fileName()).absoluteDir().canonicalPath();

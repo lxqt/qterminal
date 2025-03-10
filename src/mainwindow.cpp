@@ -222,13 +222,10 @@ void MainWindow::setDropShortcut(const QKeySequence& dropShortCut)
 void MainWindow::setup_Action(const char *name, QAction *action, const char *defaultShortcut, const QObject *receiver,
                               const char *slot, QMenu *menu, const QVariant &data)
 {
-    QSettings settings;
-    settings.beginGroup(QStringLiteral("Shortcuts"));
-
     QList<QKeySequence> shortcuts;
 
     actions[QLatin1String(name)] = action;
-    const auto sequences = settings.value(QLatin1String(name), QLatin1String(defaultShortcut)).toString().split(QLatin1Char('|'));
+    const auto sequences = Properties::Instance()->getShortcut(QLatin1String(name), QLatin1String(defaultShortcut)).split(QLatin1Char('|'));
     for (const QString &sequenceString : sequences)
         shortcuts.append(QKeySequence::fromString(sequenceString));
     actions[QLatin1String(name)]->setShortcuts(shortcuts);
