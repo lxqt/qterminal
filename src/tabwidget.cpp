@@ -23,6 +23,7 @@
 #include <QMenu>
 #include <QActionGroup>
 #include <QMessageBox>
+#include <QTimer>
 
 #include "mainwindow.h"
 #include "termwidgetholder.h"
@@ -398,8 +399,10 @@ void TabWidget::onAction()
 
 void TabWidget::onCurrentChanged(int index)
 {
-    // update disabled actions
-    findParent<MainWindow>(this)->updateDisabledActions();
+    // update disabled actions, but only after probable subterminals are added
+    QTimer::singleShot(0, this, [this] {
+        findParent<MainWindow>(this)->updateDisabledActions();
+    });
     // also, update history
     auto* w = widget(index);
     mHistory.removeAll(w);
