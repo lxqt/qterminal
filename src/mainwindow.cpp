@@ -996,6 +996,13 @@ void MainWindow::bookmarksDock_visibilityChanged(bool visible)
 
 void MainWindow::addNewTab(TerminalConfig cfg)
 {
+    if (cfg.hasCommand())
+    {
+        // do not create subterminals if there is a command (-e option)
+        consoleTabulator->addNewTab(cfg);
+        return;
+    }
+
     if (Properties::Instance()->terminalsPreset == 3)
         consoleTabulator->preset4Terminals();
     else if (Properties::Instance()->terminalsPreset == 2)
