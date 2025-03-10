@@ -41,6 +41,7 @@ class Properties
         void saveSettings();
         void loadSettings();
         void migrate_settings();
+        QString getShortcut(const QString &name, const QString &defaultShortcut) const;
         QString configDir() const;
         QString profile() const;
 
