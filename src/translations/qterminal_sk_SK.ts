@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Close Subterminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Proces spustený.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -696,37 +696,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Okno</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Blikajúci kurzor</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Súčasný terminál</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Nakresliť hranicu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Nastavenie aktuálneho terminálu pri prejdení myšou</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmena názvu okna v závislosti od terminálu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Zmena ikony okna v závislosti od terminálu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
@@ -741,17 +741,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Oneskorenie skrytia kurzora myši</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Neskrývať</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sek</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="811"/>
@@ -761,7 +761,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="835"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Výzva pri ukončení bežiaceho procesu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="859"/>
@@ -1005,12 +1005,12 @@ Ste si istý, že ho chcete prepísať?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Zatvoriť subterminál</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Naozaj chcete zatvoriť tento podterminál?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1040,12 +1040,12 @@ Ste si istý, že ho chcete prepísať?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavrieť kartu</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Určite chcete túto kartu zavrieť?</translation>
     </message>
 </context>
 <context>
@@ -1071,7 +1071,7 @@ Ste si istý, že ho chcete prepísať?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Relácia</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
