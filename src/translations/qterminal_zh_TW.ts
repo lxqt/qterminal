@@ -459,7 +459,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="171"/>
         <source>&amp;Change...</source>
-        <translation>更改(&amp;C)...</translation>
+        <translation>變更(&amp;C)…</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="220"/>
@@ -499,7 +499,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="263"/>
         <source>Show terminal size on resize</source>
-        <translation>在改變大小時顯示終端機的尺寸</translation>
+        <translation>在變更大小時顯示終端機大小</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="563"/>
@@ -560,7 +560,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Open new terminals in current working directory</source>
-        <translation>在目前的目錄開啟新的終端機</translation>
+        <translation>在目前作用的目錄開啟新的終端機</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="590"/>
@@ -630,7 +630,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="253"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation>切換當繪製強調色時是否使用粗體字</translation>
+        <translation>切換使用粗體字體來渲染強烈的色彩</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="256"/>
@@ -650,7 +650,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="902"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>這個指令在執行時，會帶入含有終端機歷史內容的臨時檔案的路徑作為參數</translation>
+        <translation>這個指令在執行時，會帶入含有終端機歷史內容的臨時檔案名稱作為參數</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="905"/>
@@ -776,12 +776,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation>如要修改快捷建
+        <translation>如要修改快速建
 1. 連點兩下對應的按鍵
 2. 按下想要的按鍵組合並放開
-3. 在快捷鍵欄位點一下或是按下 Enter
+3. 在快速鍵欄位點按一下或是按下 Enter 鍵
 
-如果要移除快捷鍵，請在步驟二時只按下修飾鍵 (例如 Shift)</translation>
+如果要移除/停用快速鍵，在步驟2時只要按下修飾鍵 (像是 Shift 鍵)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="978"/>
@@ -934,7 +934,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="555"/>
         <source>Open bookmarks file</source>
-        <translation>打開書籤檔</translation>
+        <translation>開啟書籤檔案</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="557"/>
@@ -1035,7 +1035,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="273"/>
         <source>Change title color</source>
-        <translation>更改標題顏色</translation>
+        <translation>變更標題顏色</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
