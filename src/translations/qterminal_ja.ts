@@ -736,7 +736,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="859"/>
         <source>Audible bell</source>
-        <translation>可聴ベル</translation>
+        <translation>ベルを聞こえるようにする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="948"/>
