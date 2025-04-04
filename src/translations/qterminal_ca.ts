@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tanca el subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>S&apos;executa un procés.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -696,37 +696,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Finestra</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Cursor parpellejant</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal actual</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Dibuixa una vora</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Estableix el terminal actual en passar-hi el ratolí</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Canvia el títol de la finestra en funció del terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Canvia la icona de la finestra segons el terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
@@ -741,17 +741,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Retard d&apos;ocultació del cursor del ratolí</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>No s&apos;amaga</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="811"/>
@@ -761,7 +761,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="835"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Sol·licita què fer en tancar amb un procés en execució</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="859"/>
@@ -1005,12 +1005,12 @@ Esteu segur que el voleu sobreescriure?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanca el subterminal</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Segur que voleu tancar aquest subterminal?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
@@ -1040,12 +1040,12 @@ Esteu segur que el voleu sobreescriure?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanca la pestanya</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Segur que voleu tancar aquesta pestanya?</translation>
     </message>
 </context>
 <context>
@@ -1071,7 +1071,7 @@ Esteu segur que el voleu sobreescriure?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sessió</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
