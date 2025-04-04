@@ -686,7 +686,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>マウスオーバーで現在のターミナルを設定する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
@@ -711,17 +711,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>マウスカーソルを隠すまでの時間</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>隠さない</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> 秒</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="811"/>
@@ -731,12 +731,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="835"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>実行中のプロセスを閉じるときにプロンプトを表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="859"/>
         <source>Audible bell</source>
-        <translation>可聴ベル</translation>
+        <translation>ベルを聞こえるようにする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="948"/>
@@ -782,7 +782,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1073"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished">注: Wayland では、コンポジターの設定に &apos;qterminal -d&apos; のためのショートカットを追加する必要があります。</translation>
+        <translation>注意: Wayland ではショートカットを「qterminal -d」のコンポジター設定に追加する必要があります。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1141"/>
@@ -1065,7 +1065,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>セッション(&amp;S)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>

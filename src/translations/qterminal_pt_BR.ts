@@ -98,17 +98,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="301"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Dividir em &amp;cima e baixo</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Dividir em &amp;esquerda e direita</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fechar subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Um processo está em andamento.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -691,7 +691,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="768"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Seleção de palavras a partir de caracteres</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
@@ -701,7 +701,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Cursor intermitente</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
@@ -716,22 +716,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Definir o terminal atual ao passar o mouse</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Mudar o título da janela de acordo com o terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Mudar o ícone da janela de acordo com o terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Ao selecionar texto por palavra, considerar que esses caracteres fazem parte de palavras alfanuméricas</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="778"/>
@@ -741,17 +741,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Atraso na ocultação do cursor do mouse</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Sem ocultação</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="811"/>
@@ -761,7 +761,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="835"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Perguntar ao fechar com um processo em andamento</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="859"/>
@@ -837,7 +837,7 @@ Para remover/desativar um atalho, no ponto 2, pressione apenas um modificador (c
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1073"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nota: No Wayland, o atalho deve ser adicionado nas configurações do compositor para &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1141"/>
@@ -1005,12 +1005,12 @@ Você tem certeza que quer o sobrescrever?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Fechar Subterminal</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Você tem certeza que deseja fechar este subterminal?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="221"/>
