@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="639"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bir işlem çalışıyor.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -330,7 +330,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Alt Terminali Kapat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="686"/>
@@ -681,22 +681,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Pencere</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Yanıp sönen imleç</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Mevcut Terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Sınır çiz</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
@@ -736,7 +736,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sn</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="811"/>
@@ -1005,7 +1005,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt Terminali Kapat</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="149"/>
@@ -1040,12 +1040,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekmeyi kapat</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="355"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Bu sekmeyi kapatmak istediğinizden emin misiniz?</translation>
     </message>
 </context>
 <context>
@@ -1071,7 +1071,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Oturum</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
