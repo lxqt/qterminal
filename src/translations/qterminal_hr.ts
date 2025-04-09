@@ -354,7 +354,7 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="713"/>
-        <source>2013-2022</source>
+        <source>2013-2025</source>
         <translation>2013. – 2022.</translation>
     </message>
     <message>
