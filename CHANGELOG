@@ -1,3 +1,29 @@
+qterminal-2.2.0 / 2025-04-17
+=============================
+ * Prompt on closing with a running process.
+ * Added option for mouse cursor auto-hiding.
+ * Added option for blinking cursor.
+ * Added an option for focusing the sub-terminal on mouseover.
+ * Cleaner preferences dialog.
+ * Change sizeHint of spacer in Preferences → Behavior.
+ * Hide/disable some options on Wayland.
+ * Put the dropdown window on the active screen under Wayland.
+ * Added "scope" to the layer window on Wayland.
+ * Made modal dialogs stay in front of dropdown window on Wayland.
+ * Put font dialog in front of Preferences dialog on Wayland (and draw a border around it).
+ * Make font dialog remain in front of Preferences dialog on certain X11 WMs.
+ * Made the dropdown window a tool window under X11.
+ * Set the dropdown minimum size to 25%.
+ * Better wording for the current terminal section in preferences.
+ * Removed app transparency (terminal transparency exits).
+ * Changed "File" to "Session" on the menubar.
+ * Guarantee that tabs position is between 0 and 3.
+ * Removed a wrong style sheet from dropdown mode.
+ * Ignore presets (subterminal creation) with `-e` option.
+ * Improved desktop files.
+ * Fixed shortcuts for switching subterminals with presets.
+ * Fixed shortcut setting with a profile.
+
 qterminal-2.1.0 / 2024-11-05
 =============================
  * Added a hint on drop-down shortcut under Wayland.
