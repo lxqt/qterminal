@@ -15,7 +15,7 @@ qterminal-2.2.0 / 2025-04-17
  * Made the dropdown window a tool window under X11.
  * Set the dropdown minimum size to 25%.
  * Better wording for the current terminal section in preferences.
- * Removed app transparency (terminal transparency exits).
+ * Removed app transparency (terminal transparency exists).
  * Changed "File" to "Session" on the menubar.
  * Guarantee that tabs position is between 0 and 3.
  * Removed a wrong style sheet from dropdown mode.
