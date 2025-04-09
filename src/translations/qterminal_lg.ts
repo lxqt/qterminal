@@ -355,8 +355,8 @@ ekikolera ku sisitemu ez&apos;ebika ebisukka mu kimu</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="713"/>
-        <source>2013-2022</source>
-        <translation>2013-2022</translation>
+        <source>2013-2025</source>
+        <translation>2013-2025</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="715"/>
