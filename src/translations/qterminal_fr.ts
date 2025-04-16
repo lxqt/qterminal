@@ -36,7 +36,7 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="95"/>
+        <location filename="../mainwindow.cpp" line="92"/>
         <source>Bookmarks</source>
         <translation>Signets</translation>
     </message>
@@ -46,27 +46,27 @@
         <translation>Appuyer sur &quot;%1&quot; pour voir le terminal.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="267"/>
+        <location filename="../mainwindow.cpp" line="264"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;Onglet suivant</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="270"/>
+        <location filename="../mainwindow.cpp" line="267"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Onglet précédent</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>Move Tab &amp;Left</source>
         <translation>Déplacer l&apos;onglet à &amp;gauche</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="282"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>Move Tab &amp;Right</source>
         <translation>Déplacer l&apos;onglet à &amp;droite</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="260"/>
+        <location filename="../mainwindow.cpp" line="257"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>&amp;Effacer le terminal actif</translation>
     </message>
@@ -76,294 +76,294 @@
         <translation>Garder la fenêtre ouverte lorsqu&apos;elle perd le focus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="273"/>
+        <location filename="../mainwindow.cpp" line="270"/>
         <source>&amp;Previous Tab in History</source>
         <translation>Onglet &amp;précédent dans l&apos;historique</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="273"/>
         <source>&amp;Next Tab in History</source>
         <translation>Onglet &amp;suivant dans l&apos;historique</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="287"/>
+        <location filename="../mainwindow.cpp" line="284"/>
         <source>Tab</source>
         <translation>Onglet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="288"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>Go to</source>
         <translation>Aller à</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="301"/>
+        <location filename="../mainwindow.cpp" line="298"/>
         <source>Split &amp;View Top-Bottom</source>
         <translation>Diviser la &amp;vue Haut-Bas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="304"/>
+        <location filename="../mainwindow.cpp" line="301"/>
         <source>Split Vie&amp;w Left-Right</source>
         <translation>Diviser la vu&amp;e Gauche-Droite</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="309"/>
+        <location filename="../mainwindow.cpp" line="306"/>
         <source>&amp;Close Subterminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="312"/>
+        <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Top Subterminal</source>
         <translation>Sous-terminal &amp;au-dessus</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
+        <location filename="../mainwindow.cpp" line="312"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>Sous-terminal &amp;en-dessous</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
+        <location filename="../mainwindow.cpp" line="315"/>
         <source>L&amp;eft Subterminal</source>
         <translation>Sous-terminal à &amp;gauche</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="321"/>
+        <location filename="../mainwindow.cpp" line="318"/>
         <source>R&amp;ight Subterminal</source>
         <translation>Sous-terminal à &amp;droite</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="328"/>
+        <location filename="../mainwindow.cpp" line="325"/>
         <source>Copy &amp;Selection</source>
         <translation>&amp;Copier la sélection</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="331"/>
+        <location filename="../mainwindow.cpp" line="328"/>
         <source>Paste Clip&amp;board</source>
         <translation>Coller le &amp;presse-papier</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>Paste S&amp;election</source>
         <translation>Coller la &amp;sélection</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="337"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>Zoom &amp;in</source>
         <translation>Zoomer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="337"/>
         <source>Zoom &amp;out</source>
         <translation>Dézoomer</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="343"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>Zoom rese&amp;t</source>
         <translation>R&amp;éinitialiser le zoom</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="348"/>
+        <location filename="../mainwindow.cpp" line="345"/>
         <source>&amp;Find...</source>
         <translation>&amp;Chercher...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="351"/>
+        <location filename="../mainwindow.cpp" line="348"/>
         <source>Handle history...</source>
         <translation>Gérer l&apos;historique ...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="359"/>
+        <location filename="../mainwindow.cpp" line="356"/>
         <source>&amp;Save Session</source>
         <translation>&amp;Enregistrer la session</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="362"/>
         <source>&amp;Load Session</source>
         <translation>&amp;Charger une session</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="372"/>
+        <location filename="../mainwindow.cpp" line="369"/>
         <source>&amp;Toggle Menu</source>
         <translation>&amp;Permuter le menu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="377"/>
+        <location filename="../mainwindow.cpp" line="374"/>
         <source>Rename session</source>
         <translation>Renommer la session</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="386"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>&amp;New Tab</source>
         <translation>&amp;Nouvel onglet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="387"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Nouvel onglet depuis la &amp;présélection</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="391"/>
+        <location filename="../mainwindow.cpp" line="388"/>
         <source>1 &amp;Terminal</source>
         <translation>1 &amp;Terminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="395"/>
+        <location filename="../mainwindow.cpp" line="392"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 Terminaux &amp;horizontaux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="397"/>
+        <location filename="../mainwindow.cpp" line="394"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 Terminaux &amp;verticaux</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="399"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 Terminau&amp;x</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="405"/>
+        <location filename="../mainwindow.cpp" line="402"/>
         <source>&amp;Close Tab</source>
         <translation>&amp;Fermer l&apos;onglet</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="408"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source>&amp;New Window</source>
         <translation>&amp;Nouvelle fenêtre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="413"/>
+        <location filename="../mainwindow.cpp" line="410"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Préférences...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>&amp;Quit</source>
         <translation>&amp;Quitter</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="420"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Masquer les bordures de la fenêtre</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="441"/>
+        <location filename="../mainwindow.cpp" line="438"/>
         <source>&amp;Show Tab Bar</source>
         <translation>&amp;Afficher la barre des onglets</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="449"/>
+        <location filename="../mainwindow.cpp" line="446"/>
         <source>Fullscreen</source>
         <translation>Plein écran</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="452"/>
         <source>Toggle Bookmarks</source>
         <translation>Permuter les marque-pages</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="463"/>
+        <location filename="../mainwindow.cpp" line="460"/>
         <source>&amp;Bottom</source>
         <translation>&amp;Bas</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="464"/>
+        <location filename="../mainwindow.cpp" line="461"/>
         <source>&amp;Top</source>
         <translation>&amp;Haut</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="465"/>
-        <location filename="../mainwindow.cpp" line="501"/>
+        <location filename="../mainwindow.cpp" line="462"/>
+        <location filename="../mainwindow.cpp" line="498"/>
         <source>&amp;Right</source>
         <translation>&amp;Droite</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="466"/>
-        <location filename="../mainwindow.cpp" line="502"/>
+        <location filename="../mainwindow.cpp" line="463"/>
+        <location filename="../mainwindow.cpp" line="499"/>
         <source>&amp;Left</source>
         <translation>&amp;Gauche</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="484"/>
+        <location filename="../mainwindow.cpp" line="481"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;Disposition des onglets</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="500"/>
+        <location filename="../mainwindow.cpp" line="497"/>
         <source>&amp;None</source>
         <translation>&amp;Aucun</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="518"/>
+        <location filename="../mainwindow.cpp" line="515"/>
         <source>S&amp;crollbar Layout</source>
         <translation>Disposition de la barre de &amp;défilement</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="531"/>
+        <location filename="../mainwindow.cpp" line="528"/>
         <source>&amp;BlockCursor</source>
         <translation>Curseur &amp;Bloc</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="532"/>
+        <location filename="../mainwindow.cpp" line="529"/>
         <source>&amp;UnderlineCursor</source>
         <translation>Curseur So&amp;uligné</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="533"/>
+        <location filename="../mainwindow.cpp" line="530"/>
         <source>&amp;IBeamCursor</source>
         <translation>Curseur en forme de &amp;I</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="550"/>
+        <location filename="../mainwindow.cpp" line="547"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>Forme du curseur du &amp;clavier</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="639"/>
+        <location filename="../mainwindow.cpp" line="636"/>
         <source>A process is running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="683"/>
         <source>Exit QTerminal</source>
         <translation>Quitter QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="630"/>
+        <location filename="../mainwindow.cpp" line="627"/>
         <source>Do not ask again</source>
         <translation>Ne plus demander</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="686"/>
+        <location filename="../mainwindow.cpp" line="683"/>
         <source>Are you sure you want to exit?</source>
         <translation>Êtes-vous sûr de vouloir quitter ?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="709"/>
+        <location filename="../mainwindow.cpp" line="706"/>
         <source>About</source>
         <translation>À propos</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="711"/>
+        <location filename="../mainwindow.cpp" line="708"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Un émulateur de terminal multiplateforme léger et puissant</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="713"/>
+        <location filename="../mainwindow.cpp" line="710"/>
         <source>Copyright (C) </source>
         <translation>Copyright (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="713"/>
+        <location filename="../mainwindow.cpp" line="710"/>
         <source>2013-2025</source>
         <translation>2013-2025</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="715"/>
+        <location filename="../mainwindow.cpp" line="712"/>
         <source>LXQt Project</source>
         <translation>LXQt Project</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="717"/>
+        <location filename="../mainwindow.cpp" line="714"/>
         <source>Development: </source>
         <translation>Développement&#xa0;: </translation>
     </message>
@@ -820,168 +820,168 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1033"/>
-        <location filename="../forms/propertiesdialog.ui" line="1050"/>
+        <location filename="../forms/propertiesdialog.ui" line="1056"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1040"/>
+        <location filename="../forms/propertiesdialog.ui" line="1046"/>
         <source>Width</source>
         <translation>Largeur</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1064"/>
+        <location filename="../forms/propertiesdialog.ui" line="1076"/>
         <source>Shortcut:</source>
         <translation>Raccourci :</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1073"/>
+        <location filename="../forms/propertiesdialog.ui" line="1085"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
         <translation>Note : Sous Wayland, le raccourci doit être ajouté dans les paramètres du compositeur pour &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1141"/>
+        <location filename="../forms/propertiesdialog.ui" line="1153"/>
         <source>Edit bookmark file contents</source>
         <translation>Éditer le fichier des signets</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1100"/>
+        <location filename="../forms/propertiesdialog.ui" line="1112"/>
         <source>Enable bookmarks</source>
         <translation>Activer les signets</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1109"/>
+        <location filename="../forms/propertiesdialog.ui" line="1121"/>
         <source>Bookmark file</source>
         <translation>Fichier des signets</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1122"/>
+        <location filename="../forms/propertiesdialog.ui" line="1134"/>
         <source>Find...</source>
         <translation>Chercher...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1131"/>
+        <location filename="../forms/propertiesdialog.ui" line="1143"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Vous pouvez spécifier votre propre emplacement de fichier de signets. Il permet un partage facile des signets avec des outils tels que OwnCloud ou Dropbox.</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="164"/>
+        <location filename="../propertiesdialog.cpp" line="167"/>
         <source>No scrollbar</source>
         <translation>Pas de barre de défilement</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="164"/>
-        <location filename="../propertiesdialog.cpp" line="170"/>
+        <location filename="../propertiesdialog.cpp" line="167"/>
+        <location filename="../propertiesdialog.cpp" line="173"/>
         <source>Left</source>
         <translation>Gauche</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="164"/>
-        <location filename="../propertiesdialog.cpp" line="170"/>
+        <location filename="../propertiesdialog.cpp" line="167"/>
+        <location filename="../propertiesdialog.cpp" line="173"/>
         <source>Right</source>
         <translation>Droite</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="170"/>
+        <location filename="../propertiesdialog.cpp" line="173"/>
         <source>Top</source>
         <translation>Haut</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="170"/>
+        <location filename="../propertiesdialog.cpp" line="173"/>
         <source>Bottom</source>
         <translation>Bas</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="183"/>
+        <location filename="../propertiesdialog.cpp" line="186"/>
         <source>BlockCursor</source>
         <translation>Curseur bloc</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="183"/>
+        <location filename="../propertiesdialog.cpp" line="186"/>
         <source>UnderlineCursor</source>
         <translation>Curseur soulignement</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="183"/>
+        <location filename="../propertiesdialog.cpp" line="186"/>
         <source>IBeamCursor</source>
         <translation>Curseur en I</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="205"/>
+        <location filename="../propertiesdialog.cpp" line="208"/>
         <source>No move</source>
         <translation>Sans déplacement</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="205"/>
+        <location filename="../propertiesdialog.cpp" line="208"/>
         <source>Scrolling to top</source>
         <translation>Défiler vers le haut</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="205"/>
+        <location filename="../propertiesdialog.cpp" line="208"/>
         <source>Scrolling to bottom</source>
         <translation>Défiler vers le bas</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="226"/>
-        <location filename="../propertiesdialog.cpp" line="344"/>
+        <location filename="../propertiesdialog.cpp" line="225"/>
+        <location filename="../propertiesdialog.cpp" line="341"/>
         <source>System Default</source>
         <translation>Défaut système</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="291"/>
+        <location filename="../propertiesdialog.cpp" line="288"/>
         <source>Examples</source>
         <translation>Exemples</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="452"/>
+        <location filename="../propertiesdialog.cpp" line="453"/>
         <source>Choose a background image</source>
         <translation>Choisir une image de fond d&apos;écran</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="453"/>
+        <location filename="../propertiesdialog.cpp" line="454"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Images (*.bmp *.jpg *.png *.svg *.xpm )</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="555"/>
+        <location filename="../propertiesdialog.cpp" line="556"/>
         <source>Open bookmarks file</source>
         <translation>Ouvrir le fichier de signets</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="557"/>
+        <location filename="../propertiesdialog.cpp" line="558"/>
         <source>XML files (*.xml)</source>
         <translation>Fichiers XML (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="558"/>
+        <location filename="../propertiesdialog.cpp" line="559"/>
         <source>All files (*)</source>
         <translation>Tous les fichiers (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="657"/>
-        <location filename="../propertiesdialog.cpp" line="661"/>
+        <location filename="../propertiesdialog.cpp" line="658"/>
+        <location filename="../propertiesdialog.cpp" line="662"/>
         <source>Question</source>
         <translation>Question</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="657"/>
+        <location filename="../propertiesdialog.cpp" line="658"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Voulez-vous écraser ce fichier de signets&#xa0;?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="661"/>
+        <location filename="../propertiesdialog.cpp" line="662"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Le nom du fichier de signets ne se termine pas par &apos;.xml&apos;.
 Êtes-vous sûr de vouloir l&apos;écraser&#xa0;?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="669"/>
+        <location filename="../propertiesdialog.cpp" line="670"/>
         <source>Warning</source>
         <translation>Attention</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="669"/>
+        <location filename="../propertiesdialog.cpp" line="670"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Impossible d&apos;écrire des signets dans ce fichier&#xa0;:</translation>
     </message>
@@ -997,53 +997,53 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="84"/>
-        <location filename="../tabwidget.cpp" line="253"/>
+        <location filename="../tabwidget.cpp" line="85"/>
+        <location filename="../tabwidget.cpp" line="254"/>
         <source>Shell No. %1</source>
         <translation>Shell No. %1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="149"/>
+        <location filename="../tabwidget.cpp" line="150"/>
         <source>Close Subterminal</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="149"/>
+        <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="221"/>
+        <location filename="../tabwidget.cpp" line="222"/>
         <source>Tab name</source>
         <translation>Nom de l&apos;onglet</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="222"/>
+        <location filename="../tabwidget.cpp" line="223"/>
         <source>New tab name:</source>
         <translation>Nouveau nom d&apos;onglet :</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="242"/>
+        <location filename="../tabwidget.cpp" line="243"/>
         <source>Select new tab title color</source>
         <translation>Sélection de la couleur du titre du nouvel onglet</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="271"/>
+        <location filename="../tabwidget.cpp" line="272"/>
         <source>Close session</source>
         <translation>Fermer la session</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="273"/>
+        <location filename="../tabwidget.cpp" line="274"/>
         <source>Change title color</source>
         <translation>Changer la couleur du titre</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="355"/>
+        <location filename="../tabwidget.cpp" line="356"/>
         <source>Close tab</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="355"/>
+        <location filename="../tabwidget.cpp" line="356"/>
         <source>Are you sure you want to close this tab?</source>
         <translation type="unfinished"></translation>
     </message>
