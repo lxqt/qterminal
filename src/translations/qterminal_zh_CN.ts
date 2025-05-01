@@ -103,27 +103,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="306"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>关闭分屏</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="309"/>
         <source>&amp;Top Subterminal</source>
-        <translation>顶部子终端(&amp;T)</translation>
+        <translation>顶部分屏(&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="312"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>底部子终端(&amp;B)</translation>
+        <translation>底部分屏(&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="315"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>左部子终端(&amp;E)</translation>
+        <translation>左部分屏(&amp;E)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="318"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>右部子终端(&amp;I)</translation>
+        <translation>右部分屏(&amp;I)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
@@ -255,7 +255,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="636"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>进程运行中。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="683"/>
@@ -667,37 +667,37 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>窗口</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>光标闪烁</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>当前终端</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>绘制边框</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>鼠标悬停时设置为当前终端</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>根据终端更改窗口标题</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>根据终端更改窗口图标</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
@@ -712,17 +712,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>鼠标光标隐藏延时</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>不隐藏</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="795"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> 秒</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="811"/>
@@ -732,7 +732,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="835"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>提示关闭正在运行的进程</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="859"/>
@@ -1006,12 +1006,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>关闭分屏</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>你确定要关闭这个分屏吗？</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="222"/>
@@ -1041,12 +1041,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>关闭标签页</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>你确定要关闭这个标签页吗？</translation>
     </message>
 </context>
 <context>
@@ -1067,7 +1067,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;会话</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
