@@ -419,7 +419,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="207"/>
         <source>Scrollbar position</source>
-        <translation>Pozice posuvníku</translation>
+        <translation>Poloha posuvníku</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="370"/>
@@ -464,7 +464,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="220"/>
         <source>Tabs position</source>
-        <translation>Pozice panelů</translation>
+        <translation>Poloha panelů</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="194"/>
@@ -555,7 +555,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="583"/>
         <source>Save Position when closing</source>
-        <translation>Při zavírání uložit pozici</translation>
+        <translation>Při zavírání uložit polohu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="748"/>
@@ -666,7 +666,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="546"/>
         <source>Close tab on middle-click</source>
-        <translation>Zavřít kartu kliknutím prostředním tlačítkem myši</translation>
+        <translation>Zavřít kartu klepnutím prostředním tlačítkem myši</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="814"/>
@@ -762,9 +762,9 @@
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
         <translation>Pokud chcete zkratku upravit:
-1. Dvojklik na její klávesu
+1. Dvojklepnutí na její klávesu
 2. Stiskněte požadovanou kombinaci a uvolněte ji
-3. Klikněte na zástupce nebo stiskněte klávesu Enter
+3. Klepněte na zástupce nebo stiskněte klávesu Enter
 
 Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifikátor (například Shift)</translation>
     </message>
