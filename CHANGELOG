@@ -1,3 +1,7 @@
+qterminal-2.2.1 / 2025-05-05
+=============================
+ * Removed the workaround for problems that some X11 WMs had with the drop-down mode because (1) it prevented exiting on closing and (2) didn't let the terminal be focused on showing.
+
 qterminal-2.2.0 / 2025-04-17
 =============================
  * Prompt on closing with a running process.
