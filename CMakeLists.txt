@@ -9,7 +9,7 @@ project(qterminal)
 include(GNUInstallDirs)
 
 # qterminal version
-set(QTERMINAL_VERSION "2.2.0")
+set(QTERMINAL_VERSION "2.2.1")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 option(BUILD_TESTS "Builds tests" ON)
