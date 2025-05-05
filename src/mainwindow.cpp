@@ -190,10 +190,6 @@ void MainWindow::enableDropMode()
     }
 
     setWindowFlags(Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint);
-    if (QGuiApplication::platformName() != QStringLiteral("wayland"))
-    { // some X11 WMs may need this
-        setWindowFlags(windowFlags() | Qt::Popup);
-    }
 
     m_dropLockButton = new QToolButton(this);
     m_dropLockButton->setToolTip(tr("Keep window open when it loses focus"));
