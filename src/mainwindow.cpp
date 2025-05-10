@@ -123,7 +123,9 @@ MainWindow::MainWindow(TerminalConfig &cfg,
             ) {
             move(Properties::Instance()->mainWindowPosition);
         }
-        restoreState(Properties::Instance()->mainWindowState);
+        if (Properties::Instance()->saveStateOnExit) {
+            restoreState(Properties::Instance()->mainWindowState);
+        }
     }
 
     consoleTabulator->setAutoFillBackground(true);
@@ -664,7 +666,9 @@ void MainWindow::closeEvent(QCloseEvent *ev)
                 Properties::Instance()->mainWindowSize = size();
             }
             Properties::Instance()->windowMaximized = isMaximized();
-            Properties::Instance()->mainWindowState = saveState();
+            if (Properties::Instance()->saveStateOnExit) {
+                Properties::Instance()->mainWindowState = saveState();
+            }
         }
         rebuildActions(); // shortcuts may have changed by another running instance
         Properties::Instance()->saveSettings();

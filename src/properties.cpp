@@ -147,6 +147,7 @@ void Properties::loadSettings()
     askOnExit = m_settings->value(QLatin1String("AskOnExit"), true).toBool();
     saveSizeOnExit = m_settings->value(QLatin1String("SaveSizeOnExit"), true).toBool();
     savePosOnExit = m_settings->value(QLatin1String("SavePosOnExit"), true).toBool();
+    saveStateOnExit = m_settings->value(QLatin1String("SaveStateOnExit"), true).toBool();
     useCWD = m_settings->value(QLatin1String("UseCWD"), true).toBool();
     m_openNewTabRightToActiveTab = m_settings->value(QLatin1String("OpenNewTabRightToActiveTab"), false).toBool();
     audibleBell = m_settings->value(QLatin1String("AudibleBell"), false).toBool();
@@ -272,6 +273,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("AskOnExit"), askOnExit);
     m_settings->setValue(QLatin1String("SavePosOnExit"), savePosOnExit);
     m_settings->setValue(QLatin1String("SaveSizeOnExit"), saveSizeOnExit);
+    m_settings->setValue(QLatin1String("SaveStateOnExit"), saveStateOnExit);
     m_settings->setValue(QLatin1String("UseCWD"), useCWD);
     m_settings->setValue(QLatin1String("OpenNewTabRightToActiveTab"), m_openNewTabRightToActiveTab);
     m_settings->setValue(QLatin1String("AudibleBell"), audibleBell);

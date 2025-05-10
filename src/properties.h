@@ -98,6 +98,7 @@ class Properties
 
         bool saveSizeOnExit;
         bool savePosOnExit;
+        bool saveStateOnExit;
 
         bool useCWD;
         bool m_openNewTabRightToActiveTab;

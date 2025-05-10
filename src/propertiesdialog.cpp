@@ -245,6 +245,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     savePosOnExitCheckBox->setChecked(Properties::Instance()->savePosOnExit);
     saveSizeOnExitCheckBox->setChecked(Properties::Instance()->saveSizeOnExit);
+    saveStateOnExitCheckBox->setChecked(Properties::Instance()->saveStateOnExit);
     fixedWithSpinBox->setValue(Properties::Instance()->fixedWindowSize.width());
     fixedHeightSpinBox->setValue(Properties::Instance()->fixedWindowSize.height());
 
@@ -355,6 +356,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->savePosOnExit = savePosOnExitCheckBox->isChecked();
     Properties::Instance()->saveSizeOnExit = saveSizeOnExitCheckBox->isChecked();
+    Properties::Instance()->saveStateOnExit = saveStateOnExitCheckBox->isChecked();
     Properties::Instance()->fixedWindowSize = QSize(fixedWithSpinBox->value(), fixedHeightSpinBox->value()).expandedTo(QSize(300, 200)); // FIXME: make Properties variables private and use public methods for setting/getting them
     Properties::Instance()->prefDialogSize = size();
 
