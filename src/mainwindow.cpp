@@ -653,44 +653,33 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         // the session is ended explicitly (e.g., by ctrl-d); prompt doesn't make sense
         || consoleTabulator->terminalHolder()->findChildren<TermWidget*>().count() == 0
         // there is no running process
-        || !consoleTabulator->hasRunningProcess())
+        || !consoleTabulator->hasRunningProcess()
+        // ask user for canceling otherwise
+        || closePrompt(tr("Exit QTerminal"), tr("Are you sure you want to exit?")))
     {
         disconnect(m_bookmarksDock, &QDockWidget::visibilityChanged,
                    this, &MainWindow::bookmarksDock_visibilityChanged); // prevent crash
-        // #80 - do not save state and geometry in drop mode
-        if (!m_dropMode) {
-            if (Properties::Instance()->savePosOnExit) {
+        // do not save state and geometry in drop mode
+        if (!m_dropMode)
+        {
+            if (Properties::Instance()->savePosOnExit)
+            {
                 Properties::Instance()->mainWindowPosition = pos();
             }
-            if (Properties::Instance()->saveSizeOnExit) {
+            if (Properties::Instance()->saveSizeOnExit)
+            {
                 Properties::Instance()->mainWindowSize = size();
+                Properties::Instance()->windowMaximized = isMaximized();
             }
-            Properties::Instance()->windowMaximized = isMaximized();
-            if (Properties::Instance()->saveStateOnExit) {
+            if (Properties::Instance()->saveStateOnExit)
+            {
                 Properties::Instance()->mainWindowState = saveState();
             }
         }
         rebuildActions(); // shortcuts may have changed by another running instance
         Properties::Instance()->saveSettings();
-        for (int i = consoleTabulator->count(); i > 0; --i) {
-            consoleTabulator->removeTab(i - 1);
-        }
-        ev->accept();
-        return;
-    }
-
-    // ask user for cancel only when there is at least one terminal active in this window
-    if (closePrompt(tr("Exit QTerminal"), tr("Are you sure you want to exit?")))
-    {
-        disconnect(m_bookmarksDock, &QDockWidget::visibilityChanged,
-                   this, &MainWindow::bookmarksDock_visibilityChanged);
-        Properties::Instance()->mainWindowPosition = pos();
-        Properties::Instance()->mainWindowSize = size();
-        Properties::Instance()->mainWindowState = saveState();
-        Properties::Instance()->windowMaximized = isMaximized();
-        rebuildActions();
-        Properties::Instance()->saveSettings();
-        for (int i = consoleTabulator->count(); i > 0; --i) {
+        for (int i = consoleTabulator->count(); i > 0; --i)
+        {
             consoleTabulator->removeTab(i - 1);
         }
         ev->accept();
