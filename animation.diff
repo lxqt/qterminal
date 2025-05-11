@@ -1,0 +1,149 @@
+diff -ruNp qterminal-orig/src/mainwindow.cpp qterminal/src/mainwindow.cpp
+--- qterminal-orig/src/mainwindow.cpp	2025-03-17 00:14:03.000000000 +0330
++++ qterminal/src/mainwindow.cpp	2025-03-20 20:44:46.004181512 +0330
+@@ -27,6 +27,7 @@
+ #include <functional>
+ #include <QGuiApplication>
+ #include <QActionGroup>
++#include <QVariantAnimation>
+ 
+ #ifdef HAVE_QDBUS
+ #include <QtDBus/QtDBus>
+@@ -67,7 +68,9 @@ MainWindow::MainWindow(TerminalConfig &c
+       m_config(cfg),
+       m_dropLockButton(nullptr),
+       m_dropMode(dropMode),
+-      m_layerWindow(nullptr)
++      m_layerWindow(nullptr),
++      m_showAnimation(nullptr),
++      m_hideAnimation(nullptr)
+ {
+ #ifdef HAVE_QDBUS
+     registerAdapter<WindowAdaptor, MainWindow>(this);
+@@ -819,7 +822,7 @@ void MainWindow::showHide()
+ 
+     if (isVisible())
+     {
+-        hide();
++        hideWindow();
+     }
+     else
+     {
+@@ -894,7 +897,7 @@ bool MainWindow::event(QEvent *event)
+             // clicking inside it and then deactivated by clicking on another window (see below).
+             if (!m_layerWindow || m_layerWindow->layer() == LayerShellQt::Window::Layer::LayerOverlay)
+             {
+-                hide();
++                hideWindow();
+             }
+         }
+     }
+@@ -938,11 +941,83 @@ void MainWindow::showEvent(QShowEvent* e
+         const QRect desktop = windowHandle()->screen()->availableGeometry();
+         int hMargin = desktop.width() * (100 - Properties::Instance()->dropWidth) / 200;
+         int vMargin = desktop.height() * (100 - Properties::Instance()->dropHeight) / 100;
+-        m_layerWindow->setMargins(QMargins(hMargin, 0, hMargin, vMargin));
++        m_margins = QMargins(hMargin, 0, hMargin, vMargin);
++        // for some reason, a zero margin makes the animation choppy
++        setContentsMargins(0, 1, 0, 0);
++        if (m_showAnimation == nullptr)
++        {
++            m_showAnimation = new QVariantAnimation(this);
++            m_showAnimation->setEasingCurve(QEasingCurve::InOutQuad);
++            m_showAnimation->setStartValue(static_cast<qreal>(0));
++            m_showAnimation->setEndValue(static_cast<qreal>(1));
++            m_showAnimation->setDuration(150);
++            connect(m_showAnimation, &QVariantAnimation::valueChanged, this,
++                    [this] (const QVariant &value) {
++                qreal h = windowHandle()->screen()->availableGeometry().height();
++                qreal topMargin = (m_showAnimation->endValue().toReal() - value.toReal())
++                                  * (-h + m_margins.bottom());
++                qreal bottomMargin = m_margins.bottom()
++                                     + (m_showAnimation->endValue().toReal() - value.toReal())
++                                       * (h - m_margins.bottom());
++                if (bottomMargin > h - 1)
++                {
++                    // For some reason unknown to me, at least one pixel should be visible;
++                    // otherwise, the window might not be shown.
++                    bottomMargin = h - 1;
++                    topMargin = -h + m_margins.bottom() + 1;
++                }
++                QMarginsF m(m_margins.left(), topMargin, m_margins.right(), bottomMargin);
++                m_layerWindow->setMargins(m.toMargins());
++                windowHandle()->requestUpdate(); // make LayerShellQt apply changes immediately
++            });
++            connect(m_showAnimation, &QVariantAnimation::finished, this, [this] {
++                m_layerWindow->setMargins(m_margins);
++                windowHandle()->requestUpdate();
++            });
++        }
++        m_layerWindow->setMargins(QMargins(m_margins.left(),
++                                           -desktop.height() + m_margins.bottom(),
++                                           m_margins.right(),
++                                           desktop.height()));
++        windowHandle()->requestUpdate();
++        m_showAnimation->start();
+     }
+     QMainWindow::showEvent(event);
+ }
+ 
++void MainWindow::hideWindow()
++{
++    if (m_layerWindow && m_dropMode)
++    {
++        if (m_hideAnimation == nullptr)
++        {
++            m_hideAnimation = new QVariantAnimation(this);
++            m_hideAnimation->setEasingCurve(QEasingCurve::InOutQuad);
++            m_hideAnimation->setStartValue(static_cast<qreal>(0));
++            m_hideAnimation->setEndValue(static_cast<qreal>(1));
++            m_hideAnimation->setDuration(150);
++            connect(m_hideAnimation, &QVariantAnimation::valueChanged, this,
++                    [this] (const QVariant &value) {
++                qreal h = windowHandle()->screen()->availableGeometry().height();
++                qreal topMargin = value.toReal() * (-h + m_margins.bottom());
++                qreal bottomMargin = m_margins.bottom()
++                                     + value.toReal() * (h - m_margins.bottom());
++                QMarginsF m(m_margins.left(), topMargin, m_margins.right(), bottomMargin);
++                m_layerWindow->setMargins(m.toMargins());
++                windowHandle()->requestUpdate();
++            });
++            connect(m_hideAnimation, &QVariantAnimation::finished, this, [this] {
++                hide();
++            });
++        }
++        m_hideAnimation->start();
++    }
++    else
++    {
++        hide();
++    }
++}
++
+ void MainWindow::newTerminalWindow()
+ {
+     TerminalConfig cfg;
+diff -ruNp qterminal-orig/src/mainwindow.h qterminal/src/mainwindow.h
+--- qterminal-orig/src/mainwindow.h	2025-03-17 00:14:03.000000000 +0330
++++ qterminal/src/mainwindow.h	2025-03-20 20:44:46.004181512 +0330
+@@ -33,6 +33,7 @@ namespace LayerShellQt {
+ }
+ 
+ class QToolButton;
++class QVariantAnimation;
+ 
+ class MainWindow : public QMainWindow, private Ui::mainWindow, public DBusAddressable
+ {
+@@ -93,9 +94,12 @@ private:
+     QToolButton *m_dropLockButton;
+     bool m_dropMode;
+     LayerShellQt::Window *m_layerWindow;
++    QVariantAnimation *m_showAnimation, *m_hideAnimation; // for Wayland
++    QMargins m_margins;
+     QxtGlobalShortcut m_dropShortcut;
+     void realign();
+     void setDropShortcut(const QKeySequence& dropShortCut);
++    void hideWindow();
+ 
+     bool hasMultipleTabs(QAction *);
+     bool hasMultipleSubterminals(QAction *);
