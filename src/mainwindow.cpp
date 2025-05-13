@@ -622,9 +622,8 @@ bool MainWindow::closePrompt(const QString &title, const QString &text)
     dia->setObjectName(QStringLiteral("exitDialog"));
     dia->setWindowTitle(title);
 
-    QCheckBox * dontAskCheck = new QCheckBox(tr("Do not ask again"), dia);
     QDialogButtonBox * buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes | QDialogButtonBox::No, Qt::Horizontal, dia);
-    buttonBox->button(QDialogButtonBox::Yes)->setDefault(true);
+    buttonBox->button(QDialogButtonBox::No)->setDefault(true);
 
     connect(buttonBox, &QDialogButtonBox::accepted, dia, &QDialog::accept);
     connect(buttonBox, &QDialogButtonBox::rejected, dia, &QDialog::reject);
@@ -633,15 +632,10 @@ bool MainWindow::closePrompt(const QString &title, const QString &text)
     lay->addWidget(new QLabel(QStringLiteral("<center>") + text + QStringLiteral("</center>")));
     lay->addWidget(new QLabel(QStringLiteral("<center><i>") + tr("A process is running.") + QStringLiteral("</i></center>")));
     lay->addStretch();
-    lay->addWidget(dontAskCheck);
     lay->addWidget(buttonBox);
     dia->setLayout(lay);
 
     bool res(dia->exec() == QDialog::Accepted);
-    if (res)
-    {
-        Properties::Instance()->askOnExit = !dontAskCheck->isChecked();
-    }
     dia->deleteLater();
     return res;
 }
