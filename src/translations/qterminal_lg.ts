@@ -725,7 +725,7 @@ obutatabulwatabulwa nga kibikolako.</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Akalagakifo kabeere nga katemya</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
@@ -755,7 +755,8 @@ obutatabulwatabulwa nga kibikolako.</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>QTerminal etandikiranga mu mbeera
+gye yalimu lwe yasemba okuggalibwa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
@@ -775,17 +776,17 @@ obutatabulwatabulwa nga kibikolako.</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Akasirikiriro akabawo akalagakifo karyoke kakisibwe</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="799"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Akalagakifo kaleme okukisibwanga</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sik</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
@@ -1103,7 +1104,7 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Lutuula</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>

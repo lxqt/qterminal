@@ -695,7 +695,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Sessie bewaren na afsluiten</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>

@@ -852,7 +852,7 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Salva lo stato alla chiusura</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
