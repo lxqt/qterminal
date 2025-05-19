@@ -313,19 +313,14 @@
         <translation>Tvar textového &amp;ukazatele</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="634"/>
+        <location filename="../mainwindow.cpp" line="633"/>
         <source>A process is running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="683"/>
+        <location filename="../mainwindow.cpp" line="652"/>
         <source>Exit QTerminal</source>
         <translation>Ukončit QTerminal</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="625"/>
-        <source>Do not ask again</source>
-        <translation>Příště se neptat</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
@@ -333,37 +328,37 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="683"/>
+        <location filename="../mainwindow.cpp" line="652"/>
         <source>Are you sure you want to exit?</source>
         <translation>Opravdu chcete program ukončit?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="706"/>
+        <location filename="../mainwindow.cpp" line="689"/>
         <source>About</source>
         <translation>O aplikaci</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="708"/>
+        <location filename="../mainwindow.cpp" line="691"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Na systémové prostředky nenáročný a funkcemi nabitý multiplatformní emulátor terminálu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="710"/>
+        <location filename="../mainwindow.cpp" line="693"/>
         <source>Copyright (C) </source>
         <translation>Autorská práva © </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="710"/>
+        <location filename="../mainwindow.cpp" line="693"/>
         <source>2013-2025</source>
         <translation>2013-2025</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="712"/>
+        <location filename="../mainwindow.cpp" line="695"/>
         <source>LXQt Project</source>
         <translation>Projekt LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="714"/>
+        <location filename="../mainwindow.cpp" line="697"/>
         <source>Development: </source>
         <translation>Vývoj: </translation>
     </message>
