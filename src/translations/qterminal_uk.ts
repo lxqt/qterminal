@@ -318,52 +318,47 @@
         <translation>&amp;Форма курсору клавіатури</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="634"/>
+        <location filename="../mainwindow.cpp" line="633"/>
         <source>A process is running.</source>
         <translation>Процес виконується.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="683"/>
+        <location filename="../mainwindow.cpp" line="652"/>
         <source>Exit QTerminal</source>
         <translation>Вийти з QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="625"/>
-        <source>Do not ask again</source>
-        <translation>Не запитувати знову</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="683"/>
+        <location filename="../mainwindow.cpp" line="652"/>
         <source>Are you sure you want to exit?</source>
         <translation>Ви дійсно бажаєте вийти?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="706"/>
+        <location filename="../mainwindow.cpp" line="689"/>
         <source>About</source>
         <translation>Про застосунок</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="708"/>
+        <location filename="../mainwindow.cpp" line="691"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Легкий і потужний багатоплатформовий емулятор терміналу</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="710"/>
+        <location filename="../mainwindow.cpp" line="693"/>
         <source>Copyright (C) </source>
         <translation>Авторське право (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="710"/>
+        <location filename="../mainwindow.cpp" line="693"/>
         <source>2013-2025</source>
         <translation>2013-2025</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="712"/>
+        <location filename="../mainwindow.cpp" line="695"/>
         <source>LXQt Project</source>
         <translation>Проєкт LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="714"/>
+        <location filename="../mainwindow.cpp" line="697"/>
         <source>Development: </source>
         <translation>Розробка: </translation>
     </message>
