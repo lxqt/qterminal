@@ -98,17 +98,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="296"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>P&amp;odijeli prikaz gore-dolje</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="299"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Podij&amp;eli prikaz lijevo-desno</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zatvori podterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="307"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="633"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Izvodi se jedan proces.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="652"/>
@@ -350,7 +350,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="693"/>
         <source>2013-2025</source>
-        <translation>2013. – 2022.</translation>
+        <translation>2013. – 2025.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="695"/>
@@ -691,42 +691,42 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Prozor</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Trepereći kursor</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Trenutačni terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Nacrtaj okvir</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Postavi trenutačni terminal prilikom prelaska mišem</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Promijeni naslov prozora na temelju terminala</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Promijeni ikonu prozora na temelju terminala</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Spremi stanje prilikom zatvaranja</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
@@ -741,17 +741,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Kašnjenje skrivanja kursora miša</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="799"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Bez skrivanja</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="818"/>
@@ -761,7 +761,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Upit pri zatvaranju s pokrenutim procesom</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="866"/>
@@ -837,7 +837,7 @@ Za uklanjanje/deaktiviranje prečaca, u točki 2 pritisni samo modifikatorsku ti
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1092"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Napomena: Na Waylandu prečac za &apos;qterminal -d&apos; mora biti dodan u postavkama kompozitora.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1160"/>
@@ -1005,12 +1005,12 @@ Stvarno je želiš prepisati?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Zatvori podterminal</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Stvarno želiš zatvoriti ovaj podterminal?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="222"/>
@@ -1040,12 +1040,12 @@ Stvarno je želiš prepisati?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zatvori karticu</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Stvarno želiš zatvoriti ovu karticu?</translation>
     </message>
 </context>
 <context>
@@ -1071,7 +1071,7 @@ Stvarno je želiš prepisati?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sesija</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
