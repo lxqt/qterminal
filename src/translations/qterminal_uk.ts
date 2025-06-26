@@ -726,7 +726,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Зберігати стан під час закриття</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>

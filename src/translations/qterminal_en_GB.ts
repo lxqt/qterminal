@@ -379,7 +379,7 @@
         <location filename="../forms/propertiesdialog.ui" line="38"/>
         <location filename="../forms/propertiesdialog.ui" line="729"/>
         <source>Behavior</source>
-        <translation type="unfinished"></translation>
+        <translation>Behaviour</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="47"/>
@@ -404,7 +404,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="181"/>
         <source>Color scheme</source>
-        <translation type="unfinished"></translation>
+        <translation>Colour scheme</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="207"/>
@@ -615,7 +615,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="362"/>
         <source>Center</source>
-        <translation type="unfinished"></translation>
+        <translation>Centre</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="277"/>
@@ -625,12 +625,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="253"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Toggles usage of bold font face for rendering intense colours</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="256"/>
         <source>Use bold font face for intense colors</source>
-        <translation type="unfinished"></translation>
+        <translation>Use bold font face for intense colours</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="529"/>
@@ -640,7 +640,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="931"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behaviour to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -1019,7 +1019,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="243"/>
         <source>Select new tab title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Select new tab title colour</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="272"/>
@@ -1029,7 +1029,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="274"/>
         <source>Change title color</source>
-        <translation type="unfinished"></translation>
+        <translation>Change title colour</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
