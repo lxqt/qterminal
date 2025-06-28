@@ -203,6 +203,7 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
     menu.addAction(actions[QStringLiteral(SUB_COLLAPSE)]);
     menu.addSeparator();
     menu.addAction(actions[QStringLiteral(TOGGLE_MENU)]);
+    menu.addAction(actions[QStringLiteral(TOGGLE_BOOKMARKS)]);
     menu.addAction(actions[QStringLiteral(HIDE_WINDOW_BORDERS)]);
     menu.addAction(actions[QStringLiteral(PREFERENCES)]);
 
