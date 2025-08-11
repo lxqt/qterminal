@@ -255,7 +255,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="633"/>
         <source>A process is running.</source>
-        <translation>进程运行中。</translation>
+        <translation>进程运行中</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="652"/>
