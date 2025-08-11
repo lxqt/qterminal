@@ -696,7 +696,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>깜빡이는 커서</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
@@ -726,7 +726,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>닫을 때 상태 저장하기</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
@@ -741,17 +741,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>마우스 커서 숨기기 지연</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="799"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>숨기지 않음</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> 초</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="818"/>

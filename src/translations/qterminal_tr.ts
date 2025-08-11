@@ -701,17 +701,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminali baz alarak pencere başlığını değiştir</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal baz alınarak pencere ikonunu değiştir</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Kapatırken Durumu kaydet</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
@@ -726,12 +726,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Fare işaretçisi gizleme süresi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="799"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Gizleme yok</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
@@ -746,7 +746,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Devam eden işlem varken çıkarken uyarı göster</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="866"/>
@@ -1010,7 +1010,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminalciği kapatmak üzeresiniz. Emin misiniz?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="222"/>
