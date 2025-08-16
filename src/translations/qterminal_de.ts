@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="296"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ansicht teilen Oben-Unten</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="299"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>A&amp;nsicht teilen Links-Rechts</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
@@ -696,7 +696,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Status beim Schließen speichern</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
