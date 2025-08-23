@@ -36,8 +36,7 @@
 
 
 #define TAB_INDEX_PROPERTY "tab_index"
-#define TAB_CUSTOM_NAME_PROPERTY "custom_name"
-#define TAB_TERM_TITLE_NAME_PROPERTY "term_title_name"
+#define TAB_SYSTEM_TITLE_PROPERTY "system_title" // Store the system title when a custom one was set
 
 TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTabBar(new TabBar(this)), mSwitcher(new TabSwitcher(this))
 {
@@ -99,7 +98,7 @@ int TabWidget::addNewTab(TerminalConfig config)
     const int newIndex = (Properties::Instance()->m_openNewTabRightToActiveTab ? currentIndex() + 1 : count());
     const int index = insertTab(newIndex, console, label);
 
-    console->setProperty(TAB_CUSTOM_NAME_PROPERTY, false);
+    console->setProperty(TAB_SYSTEM_TITLE_PROPERTY, QVariant()); // = no custom title
     updateTabIndices();
     switchTab(index);
     console->setInitialFocus();
@@ -199,10 +198,10 @@ void TabWidget::updateTabIndices()
 void TabWidget::onTermTitleChanged(const QString& title, const QString& icon)
 {
     TermWidgetHolder * console = qobject_cast<TermWidgetHolder*>(sender());
-    const bool custom_name = console->property(TAB_CUSTOM_NAME_PROPERTY).toBool();
-    if (custom_name)
-    {   /* Store the new title to use it when customization is removed */
-        console->setProperty(TAB_TERM_TITLE_NAME_PROPERTY, title);
+    /* Are we in the custom title mode ? */
+    if (console->property(TAB_SYSTEM_TITLE_PROPERTY).isValid())
+    {   /* Store the new system title to restore it when custom one will be stopped */
+        console->setProperty(TAB_SYSTEM_TITLE_PROPERTY, title);
     }
     else
     {
@@ -224,28 +223,41 @@ void TabWidget::onTermTitleChanged(const QString& title, const QString& icon)
 void TabWidget::renameSession(int index)
 {
     bool ok = false;
+    QString previous_text = tabText(index);
     QString text = QInputDialog::getText(this, tr("Tab name"),
                                         tr("New tab name:"), QLineEdit::Normal,
-                                        QString(tabText(index)), &ok);
+                                        previous_text, &ok);
     if(ok)
     {
         setTabIcon(index, QIcon{});
-        if (text.isEmpty())
+        const QVariant system_title = widget(index)->property(TAB_SYSTEM_TITLE_PROPERTY);
+        if (system_title.isValid()) /* Do we already have a custom title ? */
         {
-            /* Set the custom text */
-            setTabText(index, widget(index)->property(TAB_TERM_TITLE_NAME_PROPERTY).toString());
-            widget(index)->setProperty(TAB_CUSTOM_NAME_PROPERTY, false);
-            /* Release the stored title memory */
-            widget(index)->setProperty(TAB_TERM_TITLE_NAME_PROPERTY, QVariant::Invalid);
+            /* Stop custom title when text is empty or match the default system value */
+            if (text.isEmpty() || text==system_title.toString())
+            {
+                /* Restore the stored title */
+                setTabText(index, system_title.toString());
+                /* Reset the stored title memory */
+                widget(index)->setProperty(TAB_SYSTEM_TITLE_PROPERTY, QVariant());
+            }
+            else
+            {
+                /* Set the custom text */
+                setTabText(index, text);
+            }
         }
         else
         {
-            /* Store the current title before we set the first custom value */
-            if (!widget(index)->property(TAB_CUSTOM_NAME_PROPERTY).toBool())
-                widget(index)->setProperty(TAB_TERM_TITLE_NAME_PROPERTY, QString(tabText(index)));
-            /* Set the custom text */
-            setTabText(index, text);
-            widget(index)->setProperty(TAB_CUSTOM_NAME_PROPERTY, true);
+            /* Start custom title when text is no more the default value */
+            if (!text.isEmpty() && text!=previous_text)
+            {
+                /* Store the title before we set the first custom value */
+                widget(index)->setProperty(TAB_SYSTEM_TITLE_PROPERTY, previous_text);
+                /* Set the custom text */
+                setTabText(index, text);
+            }
+            /* else... no need to change the title */
         }
         if (currentIndex() == index)
             emit currentTitleChanged(index);
