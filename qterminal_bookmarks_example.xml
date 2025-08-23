@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Some examples to demonstrate how to use QTerminal bookmarks.
+Adjust them to fit your needs. -->
+<qterminal>
+<group name="Base">
+    <command name="Open in Filemanager" value="xdg-open $(pwd)"/>
+    <command name="Edit bookmarks" value="featherpad ~/.config/qterminal.org/qterminal_bookmarks.xml"/>
+    <command name="Clear terminal" value="clear"/>
+</group>
+<group name="Utility">
+    <command name="Reset $HOME permissions" value="sudo chown -R $USER:$USER /home/$USER"/>
+    <command name="Find keycode" value="xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p' xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p' "/>
+</group>
+<group name="Directories">
+    <command name="Desktop" value="cd $(xdg-user-dir DESKTOP)"/>
+    <command name="Downloads" value="cd $(xdg-user-dir DOWNLOAD)"/>
+    <command name="~~~~~~~~~~~~~~~" value=""/>
+    <command name="~/.config" value="cd $XDG_CONFIG_HOME"/>
+    <command name="~/.local/share" value="cd $XDG_DATA_HOME"/>
+  </group>
+<group name="Distributions">
+  <group name="Arch Linux">
+    <command name="Update" value="sudo pacman -Syu --noconfirm"/>
+    <command name="Remove orphan packages" value="sudo pacman -Rns $(pacman -Qtdq)"/>
+    <command name="Last installed" value="grep -i installed /var/log/pacman.log|tail -n 150"/>
+  </group>
+  <group name="Debian-based">
+   <command name="Update" value="sudo apt update &amp;&amp; sudo apt upgrade"/>
+  </group>
+    <group name="Fedora">}
+   <command name="List Updated" value="yum list updates"/>
+  </group>
+    <group name="OpenSUSE">
+   <command name="Update" value="sudo zypper refresh"/>
+  </group>
+</group>
+</qterminal>

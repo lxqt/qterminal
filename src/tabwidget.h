@@ -49,12 +49,14 @@ public:
     void showHideTabBar();
     const QList<QWidget*>& history() const;
 
+    bool hasRunningProcess() const;
+
 public slots:
     int addNewTab(TerminalConfig cfg);
-    void removeTab(int);
+    void removeTab(int index, bool prompt = false);
     void switchTab(int);
     void onAction();
-    void saveCurrentChanged(int);
+    void onCurrentChanged(int);
     void removeCurrentTab();
     int switchToRight();
     int switchToLeft();
@@ -98,7 +100,7 @@ public slots:
     void switchToNext();
     void switchToPrev();
 signals:
-    void closeTabNotification(bool);
+    void closeLastTabNotification();
     void tabRenameRequested(int);
     void tabTitleColorChangeRequested(int);
     void currentTitleChanged(int);
@@ -115,7 +117,7 @@ protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
 protected slots:
     void updateTabIndices();
-    void onTermTitleChanged(QString title, QString icon);
+    void onTermTitleChanged(const QString& title, const QString& icon);
 
 private:
     int tabNumerator;
@@ -126,6 +128,8 @@ private:
     TabBar *mTabBar;
     QScopedPointer<TabSwitcher> mSwitcher;
     QList<QWidget*> mHistory;
+
+    QMetaObject::Connection mFocusConnection;
 };
 
 #endif

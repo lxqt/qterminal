@@ -24,20 +24,25 @@
 #include <getopt.h>
 #include <cstdlib>
 #include <unistd.h>
+#include <utility>
+
 #ifdef HAVE_QDBUS
     #include <QtDBus/QtDBus>
-    #include <unistd.h>
     #include "processadaptor.h"
 #endif
 
 
 #include "mainwindow.h"
 #include "qterminalapp.h"
+#include "qterminalutils.h"
 #include "terminalconfig.h"
 
 #define out
 
 const char* const short_options = "vhw:e:dp:";
+
+static const char* serviceName = "org.lxqt.QTerminal";
+static const char* ifaceName = "org.lxqt.QTerminal.Process";
 
 const struct option long_options[] = {
     {"version", 0, nullptr, 'v'},
@@ -58,7 +63,7 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     puts("  -d,  --drop               Start in \"dropdown mode\" (like Yakuake or Tilda)");
     puts("  -e,  --execute <command>  Execute command instead of shell");
     puts("  -h,  --help               Print this help");
-    puts("  -p,  --profile            Load qterminal with specific options");
+    puts("  -p,  --profile <name>     Load profile from ~/.config/<name>.conf");
     puts("  -v,  --version            Prints application version and exits");
     puts("  -w,  --workdir <dir>      Start session with specified work directory");
     puts("\nHomepage: <https://github.com/lxqt/qterminal>");
@@ -72,9 +77,9 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     exit(code);
 }
 
-void parse_args(int argc, char* argv[], QString& workdir, QString & shell_command, out bool& dropMode)
+void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode)
 {
-    int next_option;
+    int next_option = 0;
     dropMode = false;
     do{
         next_option = getopt_long(argc, argv, short_options, long_options, nullptr);
@@ -87,13 +92,13 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
                 workdir = QString::fromLocal8Bit(optarg);
                 break;
             case 'e':
-                shell_command = QString::fromLocal8Bit(optarg);
+                shell_command << parse_command(QString::fromLocal8Bit(optarg));
                 // #15 "Raw" -e params
                 // Passing "raw" params (like konsole -e mcedit /tmp/tmp.txt") is more preferable - then I can call QString("qterminal -e ") + cmd_line in other programs
                 while (optind < argc)
                 {
                     //printf("arg: %d - %s\n", optind, argv[optind]);
-                    shell_command += QLatin1Char(' ') + QString::fromLocal8Bit(argv[optind++]);
+                    shell_command << QString::fromLocal8Bit(argv[optind++]);
                 }
                 break;
             case 'd':
@@ -111,6 +116,13 @@ void parse_args(int argc, char* argv[], QString& workdir, QString & shell_comman
         }
     }
     while(next_option != -1);
+
+    // FIXME: The app might not exit in the dropdown mode after the shell command is terminated
+    // and the window is closed. For now, the dropdown mode is disabled with command execution.
+    if (!shell_command.isEmpty())
+    {
+        dropMode = false;
+    }
 }
 
 int main(int argc, char *argv[])
@@ -132,25 +144,29 @@ int main(int argc, char *argv[])
     QApplication::setApplicationName(QStringLiteral("qterminal"));
     QApplication::setApplicationVersion(QStringLiteral(QTERMINAL_VERSION));
     QApplication::setOrganizationDomain(QStringLiteral("qterminal.org"));
-#if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
-    QApplication::setDesktopFileName(QLatin1String("qterminal.desktop"));
-#endif
+    QApplication::setDesktopFileName(QLatin1String("qterminal"));
     // Warning: do not change settings format. It can screw bookmarks later.
     QSettings::setDefaultFormat(QSettings::IniFormat);
 
     QTerminalApp *app = QTerminalApp::Instance(argc, argv);
+
+    QString workdir;
+    QStringList shell_command;
+    bool dropMode = false;
+    parse_args(argc, argv, workdir, shell_command, dropMode);
+
     #ifdef HAVE_QDBUS
-        app->registerOnDbus();
+        app->registerOnDbus(dropMode);
     #endif
 
-    QString workdir, shell_command;
-    bool dropMode;
-    parse_args(argc, argv, workdir, shell_command, dropMode);
+    if (!app->isPrimaryInstance())
+    {
+        app->requestDropDown();
+        return 0;
+    }
 
     Properties::Instance()->migrate_settings();
     Properties::Instance()->loadSettings();
-
-    qputenv("TERM", Properties::Instance()->term.toLatin1());
 
     if (workdir.isEmpty())
         workdir = QDir::currentPath();
@@ -171,28 +187,38 @@ int main(int argc, char *argv[])
 
     // icons
     /* setup our custom icon theme if there is no system theme (OS X, Windows) */
-    QCoreApplication::instance()->setAttribute(Qt::AA_UseHighDpiPixmaps); //Fix for High-DPI systems
     if (QIcon::themeName().isEmpty())
         QIcon::setThemeName(QStringLiteral("QTerminal"));
 
     // translations
-    QString fname = QString::fromLatin1("qterminal_%1.qm").arg(QLocale::system().name().left(5));
+
+    // install the translations built-into Qt itself
+    QTranslator qtTranslator;
+    if (qtTranslator.load(QStringLiteral("qt_") + QLocale::system().name(), QLibraryInfo::path(QLibraryInfo::TranslationsPath)))
+    {
+        app->installTranslator(&qtTranslator);
+    }
+
     QTranslator translator;
+    bool installTr = false;
+    QString fname = QString::fromLatin1("qterminal_%1.qm").arg(QLocale::system().name().left(5));
 #ifdef TRANSLATIONS_DIR
     //qDebug() << "TRANSLATIONS_DIR: Loading translation file" << fname << "from dir" << TRANSLATIONS_DIR;
-    /*qDebug() << "load success:" <<*/ translator.load(fname, QString::fromUtf8(TRANSLATIONS_DIR), QStringLiteral("_"));
+    installTr = translator.load(fname, QString::fromUtf8(TRANSLATIONS_DIR), QStringLiteral("_"));
 #endif
 #ifdef APPLE_BUNDLE
     QDir translations_dir = QDir(QApplication::applicationDirPath());
     translations_dir.cdUp();
     if (translations_dir.cd(QStringLiteral("Resources/translations"))) {
-        //qDebug() << "APPLE_BUNDLE: Loading translator file" << fname << "from dir" << translations_dir.path();
-        /*qDebug() << "load success:" <<*/ translator.load(fname, translations_dir.path(), QStringLiteral("_"));
+        installTr = translator.load(fname, translations_dir.path(), QStringLiteral("_"));
     } /*else {
         qWarning() << "Unable to find \"Resources/translations\" dir in" << translations_dir.path();
     }*/
 #endif
-    app->installTranslator(&translator);
+    if (installTr)
+    {
+        app->installTranslator(&translator);
+    }
 
     TerminalConfig initConfig = TerminalConfig(workdir, shell_command);
     app->newWindow(dropMode, initConfig);
@@ -209,16 +235,18 @@ MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
     MainWindow *window = nullptr;
     if (dropMode)
     {
-        QWidget *hiddenPreviewParent = new QWidget(nullptr, Qt::Tool);
-        window = new MainWindow(cfg, dropMode, hiddenPreviewParent);
+        window = new MainWindow(cfg, dropMode);
         if (Properties::Instance()->dropShowOnStart)
             window->show();
     }
     else
     {
         window = new MainWindow(cfg, dropMode);
-        if (Properties::Instance()->windowMaximized)
+        if (Properties::Instance()->saveSizeOnExit
+            && Properties::Instance()->windowMaximized)
+        {
             window->setWindowState(Qt::WindowMaximized);
+        }
         window->show();
     }
     return window;
@@ -274,7 +302,7 @@ QList<MainWindow *> QTerminalApp::getWindowList()
 }
 
 #ifdef HAVE_QDBUS
-void QTerminalApp::registerOnDbus()
+void QTerminalApp::registerOnDbus(bool dropDown)
 {
     if (!QDBusConnection::sessionBus().isConnected())
     {
@@ -283,20 +311,34 @@ void QTerminalApp::registerOnDbus()
                 "\teval `dbus-launch --auto-syntax`\n");
         return;
     }
-    QString serviceName = QStringLiteral("org.lxqt.QTerminal-%1").arg(getpid());
-    if (!QDBusConnection::sessionBus().registerService(serviceName))
+
+    if (dropDown)
     {
-        fprintf(stderr, "%s\n", qPrintable(QDBusConnection::sessionBus().lastError().message()));
-        return;
+        if (!QDBusConnection::sessionBus().registerService(QLatin1String(serviceName)))
+        {
+            m_isPrimaryInstance = false;
+            return;
+        }
+        new ProcessAdaptor(this);
+        QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
     }
-    new ProcessAdaptor(this);
-    QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
+    else
+    {
+        if (!QDBusConnection::sessionBus().registerService(QLatin1String(serviceName)
+                                                           + QStringLiteral("-%1").arg(getpid())))
+        {
+            fprintf(stderr, "%s\n", qPrintable(QDBusConnection::sessionBus().lastError().message()));
+            return;
+        }
+        new ProcessAdaptor(this);
+        QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
+    }
 }
 
 QList<QDBusObjectPath> QTerminalApp::getWindows()
 {
     QList<QDBusObjectPath> windows;
-    for (MainWindow *wnd : qAsConst(m_windowList))
+    for (MainWindow *wnd : std::as_const(m_windowList))
     {
         windows.push_back(wnd->getDbusPath());
     }
@@ -337,6 +379,18 @@ bool QTerminalApp::toggleDropdown() {
   }
   wnd->showHide();
   return true;
+}
+
+void QTerminalApp::requestDropDown()
+{
+    QDBusInterface iface(QLatin1String(serviceName),
+                         QStringLiteral("/"),
+                         QLatin1String(ifaceName), QDBusConnection::sessionBus(), this);
+    iface.call(QStringLiteral("toggleDropdown"));
+}
+
+bool QTerminalApp::isPrimaryInstance() {
+  return m_isPrimaryInstance;
 }
 
 

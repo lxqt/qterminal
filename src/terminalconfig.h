@@ -11,15 +11,16 @@ class TermWidget;
 class TerminalConfig
 {
     public:
-        TerminalConfig(const QString & wdir, const QString & shell);
+        TerminalConfig(const QString & wdir, const QStringList & shell);
         TerminalConfig(const TerminalConfig &cfg);
         TerminalConfig();
 
         QString getWorkingDirectory();
-        QString getShell();
+        QStringList getShell();
+        bool hasCommand() const;
 
         void setWorkingDirectory(const QString &val);
-        void setShell(const QString &val);
+        void setShell(const QStringList &val);
         void provideCurrentDirectory(const QString &val);
 
         #ifdef HAVE_QDBUS
@@ -29,10 +30,10 @@ class TerminalConfig
 
 
     private:
-    	// True when 
+    	// True when
     	QString m_currentDirectory;
     	QString m_workingDirectory;
-        QString m_shell;
+        QStringList m_shell;
 };
 
 #endif

@@ -21,6 +21,9 @@
 #include <QColorDialog>
 #include <QMouseEvent>
 #include <QMenu>
+#include <QActionGroup>
+#include <QMessageBox>
+#include <QTimer>
 
 #include "mainwindow.h"
 #include "termwidgetholder.h"
@@ -56,16 +59,20 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTa
 
     tabBar()->installEventFilter(this);
 
-    connect(this, &TabWidget::tabCloseRequested, this, &TabWidget::removeTab);
+    connect(this, &TabWidget::tabCloseRequested, this, [this](int indx) {
+        removeTab(indx, true);
+    });
     connect(tabBar(), &QTabBar::tabMoved, this, &TabWidget::updateTabIndices);
     connect(this, &TabWidget::tabRenameRequested, this, &TabWidget::renameSession);
     connect(this, &TabWidget::tabTitleColorChangeRequested, this, &TabWidget::setTitleColor);
     connect(mSwitcher.data(), &TabSwitcher::activateTab, this, &TabWidget::switchTab);
-    connect(this, &TabWidget::currentChanged, this, &TabWidget::saveCurrentChanged);
+    connect(this, &TabWidget::currentChanged, this, &TabWidget::onCurrentChanged);
 }
 
 TabWidget::~TabWidget()
-{}
+{
+    QObject::disconnect(mFocusConnection);
+}
 
 TermWidgetHolder * TabWidget::terminalHolder()
 {
@@ -89,7 +96,9 @@ int TabWidget::addNewTab(TerminalConfig config)
     connect(console, &TermWidgetHolder::termTitleChanged, this, &TabWidget::onTermTitleChanged);
     connect(this, &QTabWidget::currentChanged, this, &TabWidget::currentTitleChanged);
 
-    int index = addTab(console, label);
+    const int newIndex = (Properties::Instance()->m_openNewTabRightToActiveTab ? currentIndex() + 1 : count());
+    const int index = insertTab(newIndex, console, label);
+
     console->setProperty(TAB_CUSTOM_NAME_PROPERTY, false);
     updateTabIndices();
     switchTab(index);
@@ -132,8 +141,23 @@ void TabWidget::splitVertically()
 
 void TabWidget::splitCollapse()
 {
+    auto win = findParent<MainWindow>(this);
+    if (Properties::Instance()->askOnExit)
+    {
+        if (auto impl = terminalHolder()->currentTerminal()->impl())
+        {
+            if (impl->hasCommand() || impl->getForegroundProcessId() != impl->getShellPID())
+            {
+                if (!win->closePrompt(tr("Close Subterminal"), tr("Are you sure you want to close this subterminal?")))
+                {
+                    return;
+                }
+            }
+        }
+    }
+
     terminalHolder()->splitCollapse(terminalHolder()->currentTerminal());
-    findParent<MainWindow>(this)->updateDisabledActions();
+    win->updateDisabledActions();
 }
 
 void TabWidget::copySelection()
@@ -172,7 +196,7 @@ void TabWidget::updateTabIndices()
         widget(i)->setProperty(TAB_INDEX_PROPERTY, i);
 }
 
-void TabWidget::onTermTitleChanged(QString title, QString icon)
+void TabWidget::onTermTitleChanged(const QString& title, const QString& icon)
 {
     TermWidgetHolder * console = qobject_cast<TermWidgetHolder*>(sender());
     const bool custom_name = console->property(TAB_CUSTOM_NAME_PROPERTY).toBool();
@@ -254,6 +278,14 @@ void TabWidget::renameTabsAfterRemove()
 
 void TabWidget::contextMenuEvent(QContextMenuEvent *event)
 {
+    int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this, event->pos()));
+    if (tabIndex == -1) {
+        tabIndex = currentIndex();
+    }
+    if (tabIndex == -1) {
+        return;
+    }
+
     QMenu menu(this);
     QMap< QString, QAction * > actions = findParent<MainWindow>(this)->leaseActions();
 
@@ -263,26 +295,27 @@ void TabWidget::contextMenuEvent(QContextMenuEvent *event)
     rename->setShortcut(actions[QLatin1String(RENAME_SESSION)]->shortcut());
     rename->blockSignals(true);
 
-    int tabIndex = tabBar()->tabAt(tabBar()->mapFrom(this,event->pos()));
     QAction *action = menu.exec(event->globalPos());
     if (action == close) {
         emit tabCloseRequested(tabIndex);
     } else if (action == rename) {
         emit tabRenameRequested(tabIndex);
     } else if (action == changeColor) {
-    emit tabTitleColorChangeRequested(tabIndex);
+        emit tabTitleColorChangeRequested(tabIndex);
     }
 }
 
 bool TabWidget::eventFilter(QObject *obj, QEvent *event)
 {
     QMouseEvent *e = reinterpret_cast<QMouseEvent*>(event);
-    if (e->button() == Qt::MidButton) {
-        if (event->type() == QEvent::MouseButtonRelease) {
+    if (e->button() == Qt::MiddleButton) {
+        if (event->type() == QEvent::MouseButtonRelease && Properties::Instance()->closeTabOnMiddleClick)
+        {
             // close the tab on middle clicking
             int index = tabBar()->tabAt(e->pos());
-            if (index > -1){
-                removeTab(index);
+            if (index > -1)
+            {
+                removeTab(index, true);
                 return true;
             }
         }
@@ -294,8 +327,23 @@ bool TabWidget::eventFilter(QObject *obj, QEvent *event)
         int index = tabBar()->tabAt(e->pos());
         if (index == -1)
         {
-            TerminalConfig defaultConfig;
-            addNewTab(defaultConfig);
+            if (Properties::Instance()->terminalsPreset == 3)
+            {
+                preset4Terminals();
+            }
+            else if (Properties::Instance()->terminalsPreset == 2)
+            {
+                preset2Vertical();
+            }
+            else if (Properties::Instance()->terminalsPreset == 1)
+            {
+                preset2Horizontal();
+            }
+            else
+            {
+                TerminalConfig defaultConfig;
+                addNewTab(defaultConfig);
+            }
         }
         else
             renameSession(index);
@@ -308,18 +356,31 @@ void TabWidget::removeFinished()
 {
     QObject* term = sender();
     QVariant prop = term->property(TAB_INDEX_PROPERTY);
-    if(prop.isValid() && prop.canConvert(QVariant::Int))
+    if(prop.isValid() && prop.canConvert<int>())
     {
         int index = prop.toInt();
         removeTab(index);
-//        if (count() == 0)
-//            emit closeTabNotification();
     }
 }
 
-void TabWidget::removeTab(int index)
+void TabWidget::removeTab(int index, bool prompt)
 {
-    if (count() > 1) {
+    if (count() > 1)
+    {
+        if (prompt && Properties::Instance()->askOnExit)
+        {
+            if (TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(index)))
+            {
+                if (term->hasRunningProcess())
+                {
+                    if (!findParent<MainWindow>(this)->closePrompt(tr("Close tab"), tr("Are you sure you want to close this tab?")))
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
         setUpdatesEnabled(false);
 
         QWidget * w = widget(index);
@@ -337,7 +398,7 @@ void TabWidget::removeTab(int index)
     //    tabNumerator--;
         setUpdatesEnabled(true);
     } else {
-        emit closeTabNotification(true);
+        emit closeLastTabNotification();
     }
 
     renameTabsAfterRemove();
@@ -347,7 +408,6 @@ void TabWidget::removeTab(int index)
 void TabWidget::switchTab(int index)
 {
     setCurrentIndex(index);
-    findParent<MainWindow>(this)->updateDisabledActions();
 }
 
 void TabWidget::onAction()
@@ -357,8 +417,13 @@ void TabWidget::onAction()
     switchTab(action->property("tab").toInt() - 1);
 }
 
-void TabWidget::saveCurrentChanged(int index)
+void TabWidget::onCurrentChanged(int index)
 {
+    // update disabled actions, but only after probable subterminals are added
+    QTimer::singleShot(0, this, [this] {
+        findParent<MainWindow>(this)->updateDisabledActions();
+    });
+    // also, update history
     auto* w = widget(index);
     mHistory.removeAll(w);
     mHistory.prepend(w);
@@ -371,16 +436,10 @@ const QList<QWidget*>& TabWidget::history() const
 
 void TabWidget::removeCurrentTab()
 {
-    // question disabled due user requests. Yes I agree it was anoying.
-//    if (QMessageBox::question(this,
-//                    tr("Close current session"),
-//                    tr("Are you sure you want to close current sesstion?"),
-//                    QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes)
-//    {
     if (count() > 1) {
-        removeTab(currentIndex());
+        removeTab(currentIndex(), true);
     } else {
-        emit closeTabNotification(false);
+        emit closeLastTabNotification();
     }
 }
 
@@ -530,9 +589,16 @@ void TabWidget::preset2Horizontal()
     TerminalConfig defaultConfig;
     int ix = TabWidget::addNewTab(defaultConfig);
     TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
+
+    // NOTE: When splitting happens, the focus changes. Therefore, we should switch to
+    // the 1st terminal only when the window is activated and the focus has really changed.
+    QObject::disconnect(mFocusConnection);
+    mFocusConnection = connect(term, &TermWidgetHolder::termFocusChanged, this, [this, term] {
+        QObject::disconnect(mFocusConnection);
+        term->directionalNavigation(NavigationDirection::Top);
+    });
+
     term->splitHorizontal(term->currentTerminal());
-    // switch to the 1st terminal
-    term->directionalNavigation(NavigationDirection::Left);
 }
 
 void TabWidget::preset2Vertical()
@@ -540,9 +606,15 @@ void TabWidget::preset2Vertical()
     TerminalConfig defaultConfig;
     int ix = TabWidget::addNewTab(defaultConfig);
     TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
+
+    // see preset2Horizontal() for an explanation
+    QObject::disconnect(mFocusConnection);
+    mFocusConnection = connect(term, &TermWidgetHolder::termFocusChanged, this, [this, term] {
+        QObject::disconnect(mFocusConnection);
+        term->directionalNavigation(NavigationDirection::Left);
+    });
+
     term->splitVertical(term->currentTerminal());
-    // switch to the 1st terminal
-    term->directionalNavigation(NavigationDirection::Left);
 }
 
 void TabWidget::preset4Terminals()
@@ -550,13 +622,21 @@ void TabWidget::preset4Terminals()
     TerminalConfig defaultConfig;
     int ix = TabWidget::addNewTab(defaultConfig);
     TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(ix));
-    term->splitVertical(term->currentTerminal());
-    term->splitHorizontal(term->currentTerminal());
-    term->directionalNavigation(NavigationDirection::Left);
 
-    term->splitHorizontal(term->currentTerminal());
-    // switch to the 1st terminal
-    term->directionalNavigation(NavigationDirection::Top);
+    // see preset2Horizontal() for an explanation
+    // Waiting for the first focus change is enough because, after it happens,
+    // the window is active and the other events happen serially.
+    QObject::disconnect(mFocusConnection);
+    mFocusConnection = connect(term, &TermWidgetHolder::termFocusChanged, this, [this, term] {
+        QObject::disconnect(mFocusConnection);
+        term->splitHorizontal(term->currentTerminal());
+        term->directionalNavigation(NavigationDirection::Left);
+        term->splitHorizontal(term->currentTerminal());
+        // switch to the 1st terminal (the focus is already changed)
+        term->directionalNavigation(NavigationDirection::Top);
+    });
+
+    term->splitVertical(term->currentTerminal());
 }
 
 void TabWidget::showHideTabBar()
@@ -565,4 +645,19 @@ void TabWidget::showHideTabBar()
         tabBar()->setVisible(false);
     else
         tabBar()->setVisible(!Properties::Instance()->hideTabBarWithOneTab || count() > 1);
+}
+
+bool TabWidget::hasRunningProcess() const
+{
+    for (int i = 0; i < count(); i++)
+    {
+        if (TermWidgetHolder* term = reinterpret_cast<TermWidgetHolder*>(widget(i)))
+        {
+            if (term->hasRunningProcess())
+            {
+                return true;
+            }
+        }
+    }
+    return false;
 }

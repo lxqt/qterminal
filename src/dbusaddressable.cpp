@@ -16,10 +16,10 @@ QDBusObjectPath DBusAddressable::getDbusPath()
 }
 #endif
 
-DBusAddressable::DBusAddressable(QString prefix)
+DBusAddressable::DBusAddressable(const QString& prefix)
 {
     #ifdef HAVE_QDBUS
     QString uuidString = QUuid::createUuid().toString();
-    m_path = prefix + QLatin1Char('/') + uuidString.replace(QRegExp(QStringLiteral("[\\{\\}\\-]")), QString());
+    m_path = prefix + QLatin1Char('/') + uuidString.replace(QRegularExpression(QStringLiteral("[\\{\\}\\-]")), QString());
     #endif
 }

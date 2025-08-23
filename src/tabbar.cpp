@@ -17,19 +17,59 @@
  ***************************************************************************/
 
 #include "tabbar.h"
+#include <QPainter>
+#include <QStyleOption>
+#include <QProxyStyle>
+
+class TabTextStyle : public QProxyStyle
+{ // Give a normal font to inactive tabs.
+public:
+    using QProxyStyle::QProxyStyle;
+    void drawControl(QStyle::ControlElement element, const QStyleOption *option, QPainter *painter, const QWidget *widget) const override
+    {
+        bool painterSaved = false;
+        if (element == QStyle::CE_TabBarTabLabel)
+        {
+            if (const auto opt = qstyleoption_cast<const QStyleOptionTab*>(option))
+            {
+                if (const auto tb = qobject_cast<const QTabBar*>(widget))
+                {
+                    int indx = tb->currentIndex();
+                    if (indx > -1 && !tb->tabRect(indx).contains(opt->rect.center()))
+                    {
+                        QFont f = painter->font();
+                        f.setBold(false);
+                        painter->save();
+                        painterSaved = true;
+                        painter->setFont(f);
+                    }
+                }
+            }
+        }
+        QProxyStyle::drawControl(element, option, painter, widget);
+        if (painterSaved)
+        {
+            painter->restore();
+        }
+    }
+};
 
 TabBar::TabBar(QWidget *parent)
     : QTabBar(parent),
       mFixedWidth(false),
       mFixedWidthValue(0)
 {
-    // To make the selected tab text bold, first give a bold font to the tabbar
-    // for QStyle::sizeFromContents(QStyle::CT_TabBarTab, ...) to make room
-    // for the bold text, and then, set the non-selected tab text to normal.
+    // To make the text of the active tab bold, first give a bold font to the tabbar
+    // for QStyle::sizeFromContents(QStyle::CT_TabBarTab, ...) to make room for the
+    // bold text, and then use TabTextStyle as the style.
+    // WARNING: Using a stylesheet could result in elided texts with Qt6,
+    // although it worked with Qt5.
     QFont f = font();
     f.setBold(true);
     setFont(f);
-    setStyleSheet(QStringLiteral("QTabBar::tab:!selected { font-weight: normal; }"));
+    TabTextStyle *s = new TabTextStyle;
+    s->setParent(this);
+    setStyle(s);
 }
 
 void TabBar::setFixedWidth(bool fixedWidth)

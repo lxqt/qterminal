@@ -89,23 +89,22 @@ private:
 
 // -----------------------------------------------------------------------------------------------------------
 
-TabSwitcher::TabSwitcher(TabWidget* tabs):
-    QListView(tabs),
-    m_tabs(tabs)
+TabSwitcher::TabSwitcher(TabWidget *tabs)
+    : QListView(tabs)
+    , m_timer(new QTimer(this))
+    , m_tabs(tabs)
 {
     setWindowFlags(Qt::Widget | Qt::Popup | Qt::WindowStaysOnTopHint);
     setItemDelegate(new AppItemDelegate(frameWidth(), tabs));
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
-    m_timer = new QTimer(this);
     m_timer->setInterval(100);
     m_timer->setSingleShot(true);
 
     connect(m_timer, &QTimer::timeout, this, &TabSwitcher::timer);
 }
 
-TabSwitcher::~TabSwitcher()
-{}
+TabSwitcher::~TabSwitcher() = default;
 
 void TabSwitcher::showSwitcher()
 {
@@ -178,7 +177,7 @@ void TabSwitcher::timer()
 void TabSwitcher::closeEvent(QCloseEvent *)
 {
     m_timer->stop();
-    activateTab(model()->data(model()->index(currentIndex().row(), 0), static_cast<int>(AppRole::Index)).value<int>());
+    Q_EMIT activateTab(model()->data(model()->index(currentIndex().row(), 0), static_cast<int>(AppRole::Index)).value<int>());
 }
 
 // -----------------------------------------------------------------------------------------------------------

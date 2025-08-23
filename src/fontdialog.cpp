@@ -17,9 +17,11 @@
  ***************************************************************************/
 
 #include "fontdialog.h"
+#include <QPaintEvent>
+#include <QPainter>
 
-FontDialog::FontDialog(const QFont &f)
-    : QDialog(nullptr)
+FontDialog::FontDialog(const QFont &f, QWidget *parent)
+    : QDialog(parent), mDrawBorder(false)
 {
     setupUi(this);
 
@@ -60,4 +62,37 @@ void FontDialog::setFontSize()
     previewLabel->setFont(f);
     QString sample(QLatin1String("%1 %2 pt"));
     previewLabel->setText(sample.arg(f.family()).arg(f.pointSize()));
+}
+
+// May be used on the overlay layer of Wayland.
+void FontDialog::drawBorder()
+{
+    if (!mDrawBorder)
+    {
+        mDrawBorder = true;
+        QMargins m = contentsMargins();
+        setContentsMargins(m.left() + 1, 0, m.right() + 1, m.bottom() + 1);
+    }
+}
+
+void FontDialog::paintEvent(QPaintEvent *event)
+{
+    QDialog::paintEvent(event);
+
+    if (mDrawBorder)
+    {
+        QPainter painter(this);
+        painter.save();
+        painter.setClipRegion(rect());
+        QColor color = palette().color(QPalette::Highlight);
+        color.setAlpha(180);
+        QPen pen(color);
+        pen.setWidth(1);
+        painter.setPen(pen);
+        painter.drawLine(rect().topLeft(), rect().bottomLeft());
+        painter.drawLine(rect().bottomLeft() + QPoint(1 , 0), rect().bottomRight() + QPoint(-1 , 0));
+        painter.drawLine(rect().topRight(), rect().bottomRight());
+        painter.restore();
+        painter.end();
+    }
 }

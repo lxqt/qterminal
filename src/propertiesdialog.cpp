@@ -21,6 +21,7 @@
 #include <QDebug>
 #include <QStyleFactory>
 #include <QFileDialog>
+#include <QMessageBox>
 #include <QScreen>
 #include <QWindow>
 
@@ -29,6 +30,17 @@
 #include "fontdialog.h"
 #include "config.h"
 #include "qterminalapp.h"
+
+#include <LayerShellQt/Shell>
+#include <LayerShellQt/Window>
+
+void KeySequenceEdit::keyPressEvent(QKeyEvent* event)
+{
+    // by not allowing multiple shortcuts,
+    // the Qt bug that makes Meta a non-modifier is worked around
+    clear();
+    QKeySequenceEdit::keyPressEvent(event);
+}
 
 Delegate::Delegate (QObject *parent)
     : QStyledItemDelegate (parent)
@@ -48,13 +60,16 @@ bool Delegate::eventFilter(QObject *object, QEvent *event)
     if (editor && event->type() == QEvent::KeyPress) {
         QKeyEvent *ke = static_cast<QKeyEvent *>(event);
         int k = ke->key();
-        if (k == Qt::Key_Return || k == Qt::Key_Enter) {
+        // commit data and close the editor with Enter/Return
+        // NOTE: "Enter" from numeric pad is accompanied by "KeypadModifier"
+        if ((ke->modifiers() == Qt::NoModifier || ke->modifiers() == Qt::KeypadModifier)
+            && (k == Qt::Key_Return || k == Qt::Key_Enter)) {
             emit QAbstractItemDelegate::commitData(editor);
             emit QAbstractItemDelegate::closeEditor(editor);
             return true;
         }
-        // treat Tab and Backtab like other keys
-        else if(k == Qt::Key_Tab || k ==  Qt::Key_Backtab) {
+        // treat Tab and Backtab like other keys (instead of changing focus)
+        if (k == Qt::Key_Tab || k ==  Qt::Key_Backtab) {
             editor->pressKey(ke);
             return true;
         }
@@ -75,7 +90,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
             this, &PropertiesDialog::chooseBackgroundImageButton_clicked);
 
     // fixed size
-    connect(saveSizeOnExitCheckBox, &QCheckBox::stateChanged, [this] (int state) {
+#if (QT_VERSION >= QT_VERSION_CHECK(6,7,0))
+    connect(saveSizeOnExitCheckBox, &QCheckBox::checkStateChanged, [this] (int state)
+#else
+    connect(saveSizeOnExitCheckBox, &QCheckBox::stateChanged, [this] (int state)
+#endif
+    {
         fixedSizeLabel->setEnabled(state == Qt::Unchecked);
         xLabel->setEnabled(state == Qt::Unchecked);
         fixedWithSpinBox->setEnabled(state == Qt::Unchecked);
@@ -130,6 +150,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     backgroundImageLineEdit->setText(Properties::Instance()->backgroundImage);
 
+    backgroundModecomboBox->setCurrentIndex(Properties::Instance()->backgroundMode);
+
     emulationComboBox->addItems(emulations);
     int eix = emulationComboBox->findText(Properties::Instance()->emulation);
     emulationComboBox->setCurrentIndex(eix != -1 ? eix : 0 );
@@ -152,10 +174,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     tabsPos_comboBox->addItems(tabsPosList);
     tabsPos_comboBox->setCurrentIndex(Properties::Instance()->tabsPos);
 
-    /* tab width */
+    /* fixed tabs width */
     fixedTabWidthCheckBox->setChecked(Properties::Instance()->fixedTabWidth);
     fixedTabWidthSpinBox->setValue(Properties::Instance()->fixedTabWidthValue);
+    /* tabs features */
     closeTabButtonCheckBox->setChecked(Properties::Instance()->showCloseTabButton);
+    closeTabOnMiddleClickCheckBox->setChecked(Properties::Instance()->closeTabOnMiddleClick);
 
     /* keyboard cursor shape */
     QStringList keyboardCursorShapeList;
@@ -163,7 +187,14 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     keybCursorShape_comboBox->addItems(keyboardCursorShapeList);
     keybCursorShape_comboBox->setCurrentIndex(Properties::Instance()->keyboardCursorShape);
 
+    /* keyboard cursor blinking */
+    keybCursorBlinkCheckBox->setChecked(Properties::Instance()->keyboardCursorBlink);
+
+    /* hiding single tab */
     hideTabBarCheckBox->setChecked(Properties::Instance()->hideTabBarWithOneTab);
+
+    // bold font face for intense colors
+    boldIntenseCheckBox->setChecked(Properties::Instance()->boldIntense);
 
     // main menu bar
     menuAccelCheckBox->setChecked(Properties::Instance()->noMenubarAccel);
@@ -174,9 +205,21 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     /* actions by motion after paste */
 
     QStringList motionAfter;
-    motionAfter << tr("No move") << tr("Move start") << tr("Move end");
+    motionAfter << tr("No move") << tr("Scrolling to top") << tr("Scrolling to bottom");
     motionAfterPasting_comboBox->addItems(motionAfter);
     motionAfterPasting_comboBox->setCurrentIndex(Properties::Instance()->m_motionAfterPaste);
+
+    disableBracketedPasteModeCheckBox->setChecked(Properties::Instance()->m_disableBracketedPasteMode);
+
+    // word characters for text selection
+    wordCharactersLineEdit->setText(Properties::Instance()->wordCharacters);
+
+    int autoDelay = Properties::Instance()->mouseAutoHideDelay;
+    if (autoDelay > 0)
+    {
+        autoDelay /= 1000;
+    }
+    mouseAutoHideSpinBox->setValue(autoDelay);
 
     // Setting windows style actions
     styleComboBox->addItem(tr("System Default"));
@@ -190,11 +233,11 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     terminalMarginSpinBox->setValue(Properties::Instance()->terminalMargin);
 
-    appTransparencyBox->setValue(Properties::Instance()->appTransparency);
-
     termTransparencyBox->setValue(Properties::Instance()->termTransparency);
 
     highlightCurrentCheckBox->setChecked(Properties::Instance()->highlightCurrentTerminal);
+
+    focusOnMoueOverCheckBox->setChecked(Properties::Instance()->focusOnMoueOver);
 
     showTerminalSizeHintCheckBox->setChecked(Properties::Instance()->showTerminalSizeHint);
 
@@ -202,10 +245,18 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     savePosOnExitCheckBox->setChecked(Properties::Instance()->savePosOnExit);
     saveSizeOnExitCheckBox->setChecked(Properties::Instance()->saveSizeOnExit);
+    saveStateOnExitCheckBox->setChecked(Properties::Instance()->saveStateOnExit);
     fixedWithSpinBox->setValue(Properties::Instance()->fixedWindowSize.width());
     fixedHeightSpinBox->setValue(Properties::Instance()->fixedWindowSize.height());
 
     useCwdCheckBox->setChecked(Properties::Instance()->useCWD);
+    openNewTabRightToActiveTabCheckBox->setChecked(Properties::Instance()->m_openNewTabRightToActiveTab);
+
+#ifdef HAVE_LIBCANBERRA
+    audibleBellCheckBox->setChecked(Properties::Instance()->audibleBell);
+#else
+    audibleBellCheckBox->setEnabled(false);
+#endif
 
     termComboBox->setCurrentText(Properties::Instance()->term);
 
@@ -216,19 +267,30 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     historyLimitedTo->setValue(Properties::Instance()->historyLimitedTo);
 
     dropShowOnStartCheckBox->setChecked(Properties::Instance()->dropShowOnStart);
+    dropKeepOpenCheckBox->setChecked(Properties::Instance()->dropKeepOpen);
 
     dropHeightSpinBox->setValue(Properties::Instance()->dropHeight);
-    dropHeightSpinBox->setMaximum(100);
-    dropWidthSpinBox->setValue(Properties::Instance()->dropWidht);
-    dropWidthSpinBox->setMaximum(100);
+    dropWidthSpinBox->setValue(Properties::Instance()->dropWidth);
 
-    dropShortCutEdit->setText(Properties::Instance()->dropShortCut.toString());
+    dropShortCutEdit = new KeySequenceEdit();
+    dropShortCutFormLayout->setWidget(0, QFormLayout::FieldRole, dropShortCutEdit);
+    dropShortCutEdit->installEventFilter(this);
+    dropShortCutEdit->setKeySequence(Properties::Instance()->dropShortCut);
 
     useBookmarksCheckBox->setChecked(Properties::Instance()->useBookmarks);
-    bookmarksLineEdit->setText(Properties::Instance()->bookmarksFile);
-    openBookmarksFile(Properties::Instance()->bookmarksFile);
+    bookmarksLineEdit->setText(Properties::Instance()->bookmarksFile); // also needed by openBookmarksFile()
+    connect(bookmarksLineEdit, &QLineEdit::editingFinished,
+            this, &PropertiesDialog::bookmarksPathEdited); // manual editing of bookmarks file path
+    openBookmarksFile();
     connect(bookmarksButton, &QPushButton::clicked,
             this, &PropertiesDialog::bookmarksButton_clicked);
+    exampleBookmarksButton = nullptr;
+#ifdef APP_DIR
+    exampleBookmarksButton = new QPushButton(tr("Examples"));
+    FindBookmarkLayout->addWidget(exampleBookmarksButton);
+    connect(exampleBookmarksButton, &QPushButton::clicked,
+            this, &PropertiesDialog::bookmarksButton_clicked);
+#endif
 
     terminalPresetComboBox->setCurrentIndex(Properties::Instance()->terminalsPreset);
 
@@ -246,6 +308,13 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
         Properties::Instance()->saveSettings();
     });
 
+    // show, hide or disable some widgets on Wayland
+    bool onWayland(QGuiApplication::platformName() == QStringLiteral("wayland"));
+    savePosOnExitCheckBox->setVisible(!onWayland);
+    waylandLabel->setVisible(onWayland);
+    dropShortCutLabel->setEnabled(!onWayland);
+    dropShortCutEdit->setEnabled(!onWayland);
+
     // restore its size while fitting it into available desktop geometry
     QSize s;
     if (!Properties::Instance()->prefDialogSize.isEmpty())
@@ -258,10 +327,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
         resize(s);
 }
 
-
-PropertiesDialog::~PropertiesDialog()
-{
-}
+PropertiesDialog::~PropertiesDialog() = default;
 
 void PropertiesDialog::accept()
 {
@@ -278,26 +344,29 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->emulation = emulationComboBox->currentText();
 
-    /* do not allow to go above 99 or we lose transparency option */
-    (appTransparencyBox->value() >= 100) ?
-            Properties::Instance()->appTransparency = 99
-                :
-            Properties::Instance()->appTransparency = appTransparencyBox->value();
-
     Properties::Instance()->terminalMargin = terminalMarginSpinBox->value();
     Properties::Instance()->termTransparency = termTransparencyBox->value();
     Properties::Instance()->highlightCurrentTerminal = highlightCurrentCheckBox->isChecked();
+    Properties::Instance()->focusOnMoueOver = focusOnMoueOverCheckBox->isChecked();
     Properties::Instance()->showTerminalSizeHint = showTerminalSizeHintCheckBox->isChecked();
     Properties::Instance()->backgroundImage = backgroundImageLineEdit->text();
+    Properties::Instance()->backgroundMode = qBound(0, backgroundModecomboBox->currentIndex(), 4);
 
     Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();
 
     Properties::Instance()->savePosOnExit = savePosOnExitCheckBox->isChecked();
     Properties::Instance()->saveSizeOnExit = saveSizeOnExitCheckBox->isChecked();
+    Properties::Instance()->saveStateOnExit = saveStateOnExitCheckBox->isChecked();
     Properties::Instance()->fixedWindowSize = QSize(fixedWithSpinBox->value(), fixedHeightSpinBox->value()).expandedTo(QSize(300, 200)); // FIXME: make Properties variables private and use public methods for setting/getting them
     Properties::Instance()->prefDialogSize = size();
 
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
+    Properties::Instance()->m_openNewTabRightToActiveTab = openNewTabRightToActiveTabCheckBox->isChecked();
+#ifdef HAVE_LIBCANBERRA
+    Properties::Instance()->audibleBell = audibleBellCheckBox->isChecked();
+#else
+    Properties::Instance()->audibleBell = false;
+#endif
 
     Properties::Instance()->term = termComboBox->currentText();
     Properties::Instance()->handleHistoryCommand = handleHistoryLineEdit->text();
@@ -307,28 +376,29 @@ void PropertiesDialog::apply()
     Properties::Instance()->fixedTabWidth = fixedTabWidthCheckBox->isChecked();
     Properties::Instance()->fixedTabWidthValue = fixedTabWidthSpinBox->value();
     Properties::Instance()->keyboardCursorShape = keybCursorShape_comboBox->currentIndex();
+    Properties::Instance()->keyboardCursorBlink = keybCursorBlinkCheckBox->isChecked();
     Properties::Instance()->showCloseTabButton = closeTabButtonCheckBox->isChecked();
+    Properties::Instance()->closeTabOnMiddleClick = closeTabOnMiddleClickCheckBox->isChecked();
     Properties::Instance()->hideTabBarWithOneTab = hideTabBarCheckBox->isChecked();
+    Properties::Instance()->boldIntense = boldIntenseCheckBox->isChecked();
     Properties::Instance()->noMenubarAccel = menuAccelCheckBox->isChecked();
     Properties::Instance()->menuVisible = showMenuCheckBox->isChecked();
     Properties::Instance()->borderless = borderlessCheckBox->isChecked();
     Properties::Instance()->m_motionAfterPaste = motionAfterPasting_comboBox->currentIndex();
+    Properties::Instance()->m_disableBracketedPasteMode = disableBracketedPasteModeCheckBox->isChecked();
 
     Properties::Instance()->historyLimited = historyLimited->isChecked();
     Properties::Instance()->historyLimitedTo = historyLimitedTo->value();
 
-    saveShortcuts();
-
-    Properties::Instance()->saveSettings();
+    applyShortcuts();
 
     Properties::Instance()->dropShowOnStart = dropShowOnStartCheckBox->isChecked();
+    Properties::Instance()->dropKeepOpen = dropKeepOpenCheckBox->isChecked();
     Properties::Instance()->dropHeight = dropHeightSpinBox->value();
-    Properties::Instance()->dropWidht = dropWidthSpinBox->value();
-    Properties::Instance()->dropShortCut = QKeySequence(dropShortCutEdit->text());
+    Properties::Instance()->dropWidth = dropWidthSpinBox->value();
+    Properties::Instance()->dropShortCut = dropShortCutEdit->keySequence();
 
     Properties::Instance()->useBookmarks = useBookmarksCheckBox->isChecked();
-    Properties::Instance()->bookmarksFile = bookmarksLineEdit->text();
-    saveBookmarksFile(Properties::Instance()->bookmarksFile);
 
     Properties::Instance()->terminalsPreset = terminalPresetComboBox->currentIndex();
 
@@ -339,6 +409,25 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->trimPastedTrailingNewlines = trimPastedTrailingNewlinesCheckBox->isChecked();
     Properties::Instance()->confirmMultilinePaste = confirmMultilinePasteCheckBox->isChecked();
+    Properties::Instance()->wordCharacters = wordCharactersLineEdit->text();
+
+    int autoDelay = mouseAutoHideSpinBox->value();
+    if (autoDelay > 0)
+    {
+        autoDelay *= 1000;
+    }
+    else
+    {
+        autoDelay = -1; // disable (no zero delay)
+    }
+    Properties::Instance()->mouseAutoHideDelay = autoDelay;
+
+    saveBookmarksFile();
+    // NOTE: Because the path of the bookmarks file may be changed by saveBookmarksFile(),
+    // it should be saved only after that.
+    Properties::Instance()->bookmarksFile = bookmarksLineEdit->text();
+
+    Properties::Instance()->saveSettings();
 
     emit propertiesChanged();
 }
@@ -352,7 +441,7 @@ void PropertiesDialog::setFontSample(const QFont & f)
 
 void PropertiesDialog::changeFontButton_clicked()
 {
-    FontDialog dia(fontSampleLabel->font());
+    FontDialog dia(fontSampleLabel->font(), this);
     if (!dia.exec())
         return;
     QFont f = dia.getFont();
@@ -364,14 +453,19 @@ void PropertiesDialog::chooseBackgroundImageButton_clicked()
 {
     QString filename = QFileDialog::getOpenFileName(
                             this, tr("Choose a background image"),
-                            QString(), tr("Images (*.bmp *.png *.xpm *.jpg)"));
+                            QString(), tr("Images (*.bmp *.jpg *.png *.svg *.xpm)"));
     if (!filename.isNull())
         backgroundImageLineEdit->setText(filename);
 }
 
-void PropertiesDialog::saveShortcuts()
+void PropertiesDialog::applyShortcuts()
 {
-    QMap<QString, QAction*> actions = QTerminalApp::Instance()->getWindowList()[0]->leaseActions();
+    auto winList = QTerminalApp::Instance()->getWindowList();
+    if (winList.isEmpty())
+    {
+        return;
+    }
+    QMap<QString, QAction*> actions = winList.at(0)->leaseActions();
     QList< QString > shortcutKeys = actions.keys();
     int shortcutCount = shortcutKeys.count();
 
@@ -379,25 +473,39 @@ void PropertiesDialog::saveShortcuts()
 
     for( int x=0; x < shortcutCount; x++ )
     {
-        QString keyValue = shortcutKeys.at(x);
+        const QString& keyValue = shortcutKeys.at(x);
         QAction *keyAction = actions[keyValue];
 
-        QTableWidgetItem *item = shortcutsWidget->item(x, 1);
-        QKeySequence sequence = QKeySequence(item->text());
-        QString sequenceString = sequence.toString();
+        QTableWidgetItem *item = nullptr;
+        QString txt = keyAction->text();
+        Properties::removeAccelerator(txt);
+        auto items = shortcutsWidget->findItems(txt, Qt::MatchExactly);
+        if (!items.isEmpty())
+            item = shortcutsWidget->item(shortcutsWidget->row(items.at(0)), 1);
+        if (item == nullptr)
+            continue;
 
         QList<QKeySequence> shortcuts;
         const auto sequences = item->text().split(QLatin1Char('|'));
-        for (const QKeySequence& sequenceString : sequences)
-            shortcuts.append(QKeySequence(sequenceString));
+        for (const QString& sequenceString : sequences)
+            shortcuts.append(QKeySequence(sequenceString, QKeySequence::NativeText));
         keyAction->setShortcuts(shortcuts);
     }
-    Properties::Instance()->saveSettings();
 }
 
 void PropertiesDialog::setupShortcuts()
 {
-    QMap<QString, QAction*> actions = QTerminalApp::Instance()->getWindowList()[0]->leaseActions();
+    auto winList = QTerminalApp::Instance()->getWindowList();
+    if (winList.isEmpty())
+    {
+        return;
+    }
+    // shortcuts may have changed by another running instance
+    winList.at(0)->rebuildActions();
+
+    shortcutsWidget->setSortingEnabled(false);
+
+    QMap<QString, QAction*> actions = winList.at(0)->leaseActions();
     QList< QString > shortcutKeys = actions.keys();
     int shortcutCount = shortcutKeys.count();
 
@@ -405,15 +513,17 @@ void PropertiesDialog::setupShortcuts()
 
     for( int x=0; x < shortcutCount; x++ )
     {
-        QString keyValue = shortcutKeys.at(x);
+        const QString& keyValue = shortcutKeys.at(x);
         QAction *keyAction = actions[keyValue];
         QStringList sequenceStrings;
 
         const auto shortcuts = keyAction->shortcuts();
         for (const QKeySequence &shortcut : shortcuts)
-            sequenceStrings.append(shortcut.toString());
+            sequenceStrings.append(shortcut.toString(QKeySequence::NativeText));
 
-        QTableWidgetItem *itemName = new QTableWidgetItem( tr(keyValue.toStdString().c_str()) );
+        QString txt = keyAction->text();
+        Properties::removeAccelerator(txt);
+        QTableWidgetItem *itemName = new QTableWidgetItem(txt);
         QTableWidgetItem *itemShortcut = new QTableWidgetItem( sequenceStrings.join(QLatin1Char('|')) );
 
         itemName->setFlags( itemName->flags() & ~Qt::ItemIsEditable & ~Qt::ItemIsSelectable );
@@ -424,95 +534,226 @@ void PropertiesDialog::setupShortcuts()
 
     shortcutsWidget->resizeColumnsToContents();
 
+    shortcutsWidget->setSortingEnabled(true);
+
     // No shortcut validation is needed with QKeySequenceEdit.
+}
+
+void PropertiesDialog::bookmarksPathEdited()
+{
+    if(!bookmarksLineEdit->isModified()) {
+        return;
+    }
+    auto fname = bookmarksLineEdit->text();
+    if (!fname.isEmpty()) {
+        QFileInfo fInfo(fname);
+        if (fInfo.isFile() && fInfo.isReadable()) {
+            openBookmarksFile();
+        }
+    }
 }
 
 void PropertiesDialog::bookmarksButton_clicked()
 {
-    QFileDialog dia(this, tr("Open or create bookmarks file"));
-    dia.setOption(QFileDialog::DontConfirmOverwrite, true);
-    dia.setFileMode(QFileDialog::AnyFile);
-    if (!dia.exec())
+    QFileDialog dia(this, tr("Open bookmarks file"));
+    dia.setFileMode(QFileDialog::ExistingFile);
+    QString xmlStr = tr("XML files (*.xml)");
+    QString allStr = tr("All files (*)");
+    dia.setNameFilters(QStringList() << xmlStr << allStr);
+
+    bool openAppDir(QObject::sender() != bookmarksButton);
+    if (!openAppDir) {
+        // if the path exists, select it; otherwise, open the app directory
+        auto path = bookmarksLineEdit->text();
+        if (!path.isEmpty() && QFile::exists(path)) {
+            if (!path.endsWith(QLatin1String(".xml"))) {
+                dia.selectNameFilter(allStr);
+            }
+            dia.selectFile(path);
+        }
+        else {
+            openAppDir = true;
+        }
+    }
+#ifdef APP_DIR
+    if (openAppDir) {
+        auto appDirStr = QString::fromUtf8(APP_DIR);
+        if (!appDirStr.isEmpty()) {
+            QDir appDir(appDirStr);
+            if (appDir.exists()) {
+                dia.setDirectory(appDir);
+            }
+        }
+    }
+#endif
+
+    if (!dia.exec()) {
         return;
+    }
 
     QString fname = dia.selectedFiles().count() ? dia.selectedFiles().at(0) : QString();
-    if (fname.isNull())
+    if (fname.isNull()) {
         return;
+    }
 
     bookmarksLineEdit->setText(fname);
-    openBookmarksFile(bookmarksLineEdit->text());
+    openBookmarksFile();
 }
 
-void PropertiesDialog::openBookmarksFile(const QString &fname)
+void PropertiesDialog::openBookmarksFile()
 {
+    auto fname = bookmarksLineEdit->text();
+    if (fname.isEmpty()) {
+        return;
+    }
+
     QFile f(fname);
     QString content;
-    if (!f.open(QFile::ReadOnly))
-        content = QString::fromLatin1("<qterminal>\n  <group name=\"group1\">\n    <command name=\"cmd1\" value=\"cd $HOME\"/>\n  </group>\n</qterminal>");
-    else
+    if (!f.open(QFile::ReadOnly)) {
+        content = QString::fromLatin1("<qterminal>\n  <group name=\"Change Directory\">\n    <command name=\"Home\" value=\"cd $HOME\"/>\n  </group>\n  <group name=\"File Manager\">\n    <command name=\"Open here\" value=\"xdg-open $(pwd)\"/>\n  </group>\n</qterminal>\n");
+    }
+    else {
         content = QString::fromUtf8(f.readAll());
+    }
 
     bookmarkPlainEdit->setPlainText(content);
     bookmarkPlainEdit->document()->setModified(false);
 }
 
-void PropertiesDialog::saveBookmarksFile(const QString &fname)
+void PropertiesDialog::saveBookmarksFile()
 {
-    if (!bookmarkPlainEdit->document()->isModified())
+    auto fname = bookmarksLineEdit->text();
+    if (fname.isEmpty()) {
         return;
+    }
+
+    bool fromAppDir = false;
+#ifdef APP_DIR
+    // if the file is chosen from the app directory, save it to the config directory
+    auto appDirStr = QString::fromUtf8(APP_DIR);
+    if (!appDirStr.isEmpty()) {
+        QFileInfo fInfo(fname);
+        if (fInfo.exists() && fInfo.dir() == QDir(appDirStr)) {
+            QString configDir = Properties::Instance()->configDir();
+            if (!configDir.isEmpty()) {
+                fname = QDir(configDir).absoluteFilePath(fInfo.fileName());
+                fromAppDir = true;
+            }
+        }
+    }
+#endif
+
+    // don't proceed if the bookmarks file exists but isn't from the app directory
+    // and the editor isn't modified
+    if (!fromAppDir
+        && !bookmarkPlainEdit->document()->isModified()
+        && QFile::exists(fname)) {
+        return;
+    }
 
     QFile f(fname);
-    if (!f.open(QFile::WriteOnly|QFile::Truncate))
-        qDebug() << "Cannot write to file" << f.fileName();
-    else
+
+    // first show a prompt message if needed
+    if (f.exists()) {
+        QMessageBox::StandardButton btn = QMessageBox::Yes;
+        if (fromAppDir) {
+            btn = QMessageBox::question(this, tr("Question"), tr("Do you want to overwrite this bookmarks file?")
+                                                              + QLatin1String("\n%1").arg(fname));
+        }
+        else if (!fname.endsWith(QLatin1String(".xml"))) {
+            btn =  QMessageBox::question(this, tr("Question"), tr("The name of bookmarks file does not end with '.xml'.\nAre you sure that you want to overwrite it?"));
+        }
+        if (btn == QMessageBox::No) {
+            return;
+        }
+    }
+
+    if (!f.open(QFile::WriteOnly|QFile::Truncate)) {
+        QMessageBox::warning(this, tr("Warning"), tr("Cannot write bookmarks to this file:")
+                                                  + QLatin1String("\n%1").arg(fname));
+    }
+    else {
         f.write(bookmarkPlainEdit->toPlainText().toUtf8());
-}
-
-/*
-void PropertiesDialog::setupShortcuts()
-{
-    QList< QString > shortcutKeys = Properties::Instance()->shortcuts.keys();
-    int shortcutCount = shortcutKeys.count();
-
-    shortcutsWidget->setRowCount( shortcutCount );
-
-    for( int x=0; x < shortcutCount; x++ )
-    {
-        QString keyValue = shortcutKeys.at(x);
-
-        QLabel *lblShortcut = new QLabel( keyValue, this );
-        QPushButton *btnLaunch = new QPushButton( Properties::Instance()->shortcuts.value( keyValue ), this );
-
-        btnLaunch->setObjectName(keyValue);
-        connect( btnLaunch, SIGNAL(clicked()), this, SLOT(shortcutPrompt()) );
-
-        shortcutsWidget->setCellWidget( x, 0, lblShortcut );
-        shortcutsWidget->setCellWidget( x, 1, btnLaunch );
+        if (fromAppDir) {
+            bookmarksLineEdit->setText(fname); // update the bookmarks file path
+        }
+        bookmarkPlainEdit->document()->setModified(false); // the user may have clicked "Apply", not "OK"
     }
 }
 
-void PropertiesDialog::shortcutPrompt()
+bool PropertiesDialog::eventFilter(QObject *object, QEvent *event)
 {
-    QObject *objectSender = sender();
-
-    if( !objectSender )
-        return;
-
-    QString name = objectSender->objectName();
-    qDebug() << "shortcutPrompt(" << name << ")";
-
-    DialogShortcut *dlgShortcut = new DialogShortcut(this);
-    dlgShortcut->setTitle( tr("Select a key sequence for %1").arg(name) );
-
-    QString sequenceString = Properties::Instance()->shortcuts[name];
-    dlgShortcut->setKey(sequenceString);
-
-    int result = dlgShortcut->exec();
-    if( result == QDialog::Accepted )
-    {
-        sequenceString = dlgShortcut->getKey();
-        Properties::Instance()->shortcuts[name] = sequenceString;
-        Properties::Instance()->saveSettings();
+    if (object == dropShortCutEdit) {
+        if (event->type() == QEvent::KeyPress) {
+            QKeyEvent *ke = static_cast<QKeyEvent *>(event);
+            int k = ke->key();
+            // treat Tab and Backtab like other keys (instead of changing focus)
+            if (k == Qt::Key_Tab || k ==  Qt::Key_Backtab) {
+                dropShortCutEdit->pressKey(ke);
+                return true;
+            }
+            // apply with Enter/Return and cancel with Escape, like in other entries
+            if (ke->modifiers() == Qt::NoModifier || ke->modifiers() == Qt::KeypadModifier)
+            {
+                if (k == Qt::Key_Return || k == Qt::Key_Enter) {
+                    accept();
+                    return true;
+                }
+                if (k == Qt::Key_Escape) {
+                    reject();
+                    return true;
+                }
+            }
+        }
     }
+    return QDialog::eventFilter(object, event);
 }
-*/
+
+bool PropertiesDialog::event(QEvent *event)
+{
+    // This is needed for showing the font dialog (and, probably, other child dialogs) on the
+    // overlay layer and in front of the properties dialog under Wayland. See MainWindow::event.
+    if ((event->type() == QEvent::WindowBlocked || event->type() == QEvent::WindowUnblocked)
+        && QGuiApplication::platformName() == QStringLiteral("wayland")
+        && windowHandle())
+    {
+        if (auto layershell = LayerShellQt::Window::get(windowHandle()))
+        {
+            LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
+            if (layershell->anchors() == anchors)
+            {
+                if (event->type() == QEvent::WindowBlocked
+                    && layershell->layer() == LayerShellQt::Window::Layer::LayerOverlay)
+                {
+                    if (auto dialog = qobject_cast<QDialog*>(qApp->activeModalWidget()))
+                    {
+                        dialog->winId();
+                        if (QWindow *win = dialog->windowHandle())
+                        {
+                            if (auto dlgLayershell = LayerShellQt::Window::get(win))
+                            {
+                                dlgLayershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                                dlgLayershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
+                                dlgLayershell->setAnchors(anchors);
+                                dlgLayershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
+                                dlgLayershell->setScope(QStringLiteral("dialog"));
+                                if (auto fontDialog = qobject_cast<FontDialog*>(dialog))
+                                {
+                                    fontDialog->drawBorder();
+                                }
+                                layershell->setLayer(LayerShellQt::Window::Layer::LayerTop);
+                            }
+                        }
+                    }
+                }
+                else if (event->type() == QEvent::WindowUnblocked
+                         && layershell->layer() == LayerShellQt::Window::Layer::LayerTop)
+                {
+                    layershell->setLayer(LayerShellQt::Window::Layer::LayerOverlay);
+                }
+            }
+        }
+    }
+
+    return QDialog::event(event);
+}

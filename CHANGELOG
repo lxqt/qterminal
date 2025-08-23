@@ -1,3 +1,149 @@
+qterminal-2.2.1 / 2025-05-05
+=============================
+ * Removed the workaround for problems that some X11 WMs had with the drop-down mode because (1) it prevented exiting on closing and (2) didn't let the terminal be focused on showing.
+
+qterminal-2.2.0 / 2025-04-17
+=============================
+ * Prompt on closing with a running process.
+ * Added option for mouse cursor auto-hiding.
+ * Added option for blinking cursor.
+ * Added an option for focusing the sub-terminal on mouseover.
+ * Cleaner preferences dialog.
+ * Change sizeHint of spacer in Preferences → Behavior.
+ * Hide/disable some options on Wayland.
+ * Put the dropdown window on the active screen under Wayland.
+ * Added "scope" to the layer window on Wayland.
+ * Made modal dialogs stay in front of dropdown window on Wayland.
+ * Put font dialog in front of Preferences dialog on Wayland (and draw a border around it).
+ * Make font dialog remain in front of Preferences dialog on certain X11 WMs.
+ * Made the dropdown window a tool window under X11.
+ * Set the dropdown minimum size to 25%.
+ * Better wording for the current terminal section in preferences.
+ * Removed app transparency (terminal transparency exists).
+ * Changed "File" to "Session" on the menubar.
+ * Guarantee that tabs position is between 0 and 3.
+ * Removed a wrong style sheet from dropdown mode.
+ * Ignore presets (subterminal creation) with `-e` option.
+ * Improved desktop files.
+ * Fixed shortcuts for switching subterminals with presets.
+ * Fixed shortcut setting with a profile.
+
+qterminal-2.1.0 / 2024-11-05
+=============================
+ * Added a hint on drop-down shortcut under Wayland.
+ * Resolved the conflicts when settings were changed by multiple instances.
+ * Prevent ordinary main windows under dropdown process.
+ * User-friendly texts for split menu-items.
+ * Fixed adding new tab from preset and fixed the disabled state of the context menu's collapse action.
+
+qterminal-2.0.1 / 2024-06-27
+=============================
+ * Single instance for drop-down mode.
+ * Used layer shell for the drop-down mode under Wayland.
+ * Prevented a crash on entering `exit` when bookmark dock is shown.
+ * Fixed the window height in drop-down mode.
+ * Set `QTERMWIDGET_MINIMUM_VERSION`, which was missing after Qt6 port.
+
+qterminal-2.0.0 / 2024-05-17
+=============================
+ * Ported to Qt6.
+ * Initialized some variables.
+ * Initialized some members in constructors.
+ * Removed a duplicated `#include`.
+ * Removed nullity test before deleting a pointer.
+ * Used `default` to define trivial constructors.
+ * Added word characters option to preferences.
+ * Fixed inactive tab text with Qt6.
+ * Dropped `qAsConst`.
+ * Improved Qt translations loading.
+ * Removes unused libraries.
+ * Dropped `USE_QTERMWIDGET5/6`.
+ * Silenced Qt6 compilation warnings.
+
+qterminal-1.4.0 / 2023-11-05
+=============================
+ * Handled bell (BEL, '\a') via libcanberra, and added an "Audible bell" option.
+ * Use `qWarning().noquote()`.
+ * Ported away from deprecated Qt::MidButton.
+ * Let the latest QTermWidget library set TERM.
+ * Corrected tab order in settings dialog.
+ * Removed an unused non POD variable.
+ * Supported Putty-style mouse button swap.
+ * Avoided a case of null pointer dereference.
+
+qterminal-1.3.0 / 2023-04-15
+=============================
+ * Specified the parent of the main context menu for correct positioning under Wayland.
+ * Improve UX by opening new terminals in current directory by default.
+ * Fixed a crash in the dropdown mode under Wayland.
+ * Corrected typos.
+ * Corrected the license in the meta-info.
+
+qterminal-1.2.0 / 2022-11-05
+=============================
+ * Add CI using GitHub Actions.
+ * Fixed command parsing with the `-e` option.
+ * Avoid segfault when using global menus.
+ * Improved documentation for the `--profile` option.
+
+qterminal-1.1.0 / 2022-04-15
+=============================
+ * Updated README.md.
+ * Fixed max. value of drop-down width/height spin-box.
+ * Use explicit QFlags default constructor instead of nullptr.
+ * Changed the relation between unlimited history and history size (selecting unlimited history now disables the history size spinbox).
+ * Activate bookmarks according to platform click behavior.
+ * Enabled bookmark filtering.
+ * Cleaned up bookmarks tree.
+ * No hidden parent for dropdown window (fixes several old issues).
+ * Fixed closing of last tab with prompt.
+ * Never show close prompt when explicitly ending session from terminal.
+ * Don't toggle drop-down terminal if it has modal dialog.
+ * Added bookmarks examples.
+ * Added a shortcut entry for drop-down shortcut.
+ * Fixed a minor problem in full-screening in drop-down mode.
+ * Improved the Bookmarks page of QTerminal's settings dialog.
+ * Fixed focus change on showing/hiding bookmarks dock.
+ * Fixed updating of shortcuts on tab switching/removal/creation.
+ * Fixed right clicking of an empty area of tabbar.
+
+qterminal-1.0.0 / 2021-11-04
+=============================
+ * Bumped minimum required Qt version to 5.15.
+ * Respect preset splitting on opening new window and double clicking tab-bar.
+ * Trim shell strings.
+ * Added an option for keeping drop-down window open.
+ * Don't try to move window under Wayland (fixes menu positions).
+
+qterminal-0.17.0 / 2021-04-15
+=============================
+  * Some code cleanup and modernization.
+  * Removed two warnings that were shown when QTerminal was started.
+  * Added an option to disable bracketed paste mode.
+  * Moved the paste-related codes to qtermwidget.
+  * Made "Action after paste" clearer and default to "Scrolling to bottom".
+  * Added a tooltip about bracketed paste mode.
+  * Added modes for background image.
+
+qterminal-0.16.1 / 2020-11-14
+=============================
+  * Fixed a mistake in the layout of Terminal settings dialog.
+  * Fixed translation of shortcuts (in Terminal settings dialog).
+
+qterminal-0.16.0 / 2020-11-01
+=============================
+
+  * Made closing of tab on middle-clicking optional.
+  * Avoid loop variable copy.
+  * Emit signals with Q_EMIT.
+  * Use the default constructor of QFlags.
+  * Dropped qmake .pro file.
+  * Made the color scheme dirs comply with XDG Base Directory Specification.
+  * Added an optopn for opening the new tab to the right of the active tab.
+  * Added virtual destructor to a base class.
+  * Let QStandardPaths::locateAll() handle application name.
+  * Put drop-down QTerminal on screen with cursor.
+
 qterminal-0.15.0 / 2020-04-24
 =============================
 
@@ -54,7 +200,7 @@ qterminal-0.14.0 / 2019-01-25
     - Refactor STR_VERSION -> QTERMINAL_VERSION
   * Improved cmake scripting
     - Set cmake_minimum_required to 3.1.0
-    - Removed locale compile definitons
+    - Removed locale compile definitions
   * Moved translations from lxqt-l10n back to qterminal
    - Removed obsolete translation fuctionality
    - Added translation promo in README.md
@@ -308,7 +454,7 @@ qterminal-0.5.0 / 2014-05-27
   * fixed #51 Shortcuts broken after menu hiding
   * fixed #50 Bookmarks panel always shows, even if the bookmarks are disabled
   * fixed #49 Only show monospace fonts in the font picker
-  * save bookmars widget visibility; fix crash in some config circumstances
+  * save bookmarks widget visibility; fix crash in some config circumstances
   * Include QApplication where needed. Fixes #47
   * removed un-needed file
   * changes required for new qtermwidget build/structure; includes fixed for qtermwidget Qt5 port
@@ -339,7 +485,7 @@ qterminal-0.5.0 / 2014-05-27
   * fixed main window ui file (manually edited probably) to work with designr again. Use "Preferences..." instead of "Configure QTerminal"
   * compile also italian translations
   * added italian translations
-  * get rid of contraproductive Ctrl-W to close a tab. Replaced that   wieht Ctrl-Shift-W. Use nano in qterminal and try to search. You   will see, what i mean ... * it takes a horizontal ruler to tile a terminal vertically and   vice versa * make border of active terminal a litte bit thinner 3px -> 2px
+  * get rid of contraproductive Ctrl-W to close a tab. Replaced that   wieht Ctrl-Shift-W. Use nano in qterminal and try to search. You   will see, what i mean ... * it takes a horizontal ruler to tile a terminal vertically and   vice versa * make border of active terminal a little bit thinner 3px -> 2px
   * Added new action: "Paste Selection". Fixes #21
   * Handle migration "Paste Selection"->"Paste Clipboard" in settings
   * Rename PASTE_SELECTION to PASTE_CLIPBOARD which is what it does
@@ -367,7 +513,7 @@ qterminal-0.5.0 / 2014-05-27
   * yakuake mode compile fix for X11
   * build on mac
   * Switch to Qxt global shortcut
-  * "make lupdate" implemented; do ot delete ts files on "make clean"; fix translator loading
+  * "make lupdate" implemented; do not delete ts files on "make clean"; fix translator loading
   * DropDown mode
   * allow translations
   * tabs to spaces

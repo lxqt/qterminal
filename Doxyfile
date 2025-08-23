@@ -279,7 +279,7 @@ TYPEDEF_HIDES_STRUCT   = NO
 # For small to medium size projects (<1000 input files) the default value is
 # probably good enough. For larger projects a too small cache size can cause
 # doxygen to be busy swapping symbols to and from disk most of the time
-# causing a significant performance penality.
+# causing a significant performance penalty.
 # If the system has enough physical memory increasing the cache will improve the
 # performance by keeping more symbols in memory. Note that the value works on
 # a logarithmic scale so increasing the size by one will roughly double the
@@ -1050,7 +1050,7 @@ EXT_LINKS_IN_WINDOW    = NO
 
 FORMULA_FONTSIZE       = 10
 
-# Use the FORMULA_TRANPARENT tag to determine whether or not the images
+# Use the FORMULA_TRANSPARENT tag to determine whether or not the images
 # generated for formulas are transparent PNGs. Transparent PNGs are
 # not supported properly for IE 6.0, but are supported on all modern browsers.
 # Note that when changing this option you need to delete any form_*.png files

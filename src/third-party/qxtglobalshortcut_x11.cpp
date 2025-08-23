@@ -36,11 +36,13 @@
  *
  ****************************************************************************/
 
+#include <QGuiApplication>
 #include <QVector>
-#include <QtX11Extras/QX11Info>
 
 #include <xcb/xcb.h>
 #include <X11/Xlib.h>
+
+#include <utility>
 
 namespace {
 
@@ -94,12 +96,13 @@ class QxtX11Data {
 public:
     QxtX11Data()
     {
-        m_display = QX11Info::display();
+        auto *x11Application = qGuiApp->nativeInterface<QNativeInterface::QX11Application>();
+        m_display = x11Application ? x11Application->display() : nullptr;
     }
 
     bool isValid()
     {
-        return m_display != nullptr;
+        return QGuiApplication::platformName() == QStringLiteral("xcb") && m_display != nullptr;
     }
 
     Display *display()
@@ -134,7 +137,7 @@ public:
     {
         QxtX11ErrorHandler errorHandler;
 
-        for (const quint32& maskMods :  qAsConst(maskModifiers)) {
+        for (const quint32& maskMods :  std::as_const(maskModifiers)) {
             XUngrabKey(display(), keycode, modifiers | maskMods, window);
         }
 
@@ -148,7 +151,7 @@ private:
 } // namespace
 
 bool QxtGlobalShortcutPrivate::nativeEventFilter(const QByteArray & eventType,
-    void *message, long *result)
+    void *message, qintptr *result)
 {
     Q_UNUSED(result);
 

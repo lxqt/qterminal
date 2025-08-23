@@ -31,6 +31,9 @@
     #include "terminaladaptor.h"
 #endif
 
+#ifdef HAVE_LIBCANBERRA
+    #include <canberra.h>
+#endif
 
 #include "mainwindow.h"
 #include "termwidget.h"
@@ -43,6 +46,9 @@ static int TermWidgetCount = 0;
 
 TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     : QTermWidget(0, parent)
+#ifdef HAVE_LIBCANBERRA
+    , libcanberra_context(nullptr)
+#endif
 {
     TermWidgetCount++;
     QString name(QStringLiteral("TermWidget_%1"));
@@ -51,31 +57,52 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     setFlowControlEnabled(FLOW_CONTROL_ENABLED);
     setFlowControlWarningEnabled(FLOW_CONTROL_WARNING_ENABLED);
 
+    m_hasCommand = cfg.hasCommand();
+
     propertiesChanged();
 
     setWorkingDirectory(cfg.getWorkingDirectory());
 
-    QString shell = cfg.getShell();
+    QStringList shell = cfg.getShell();
     if (!shell.isEmpty())
     {
-        //qDebug() << "Shell program:" << shell;
-        QStringList parts = shell.split(QRegExp(QStringLiteral("\\s+")), QString::SkipEmptyParts);
-        //qDebug() << parts;
-        setShellProgram(parts.at(0));
-        parts.removeAt(0);
-        if (parts.count())
-            setArgs(parts);
+        setShellProgram(shell.at(0));
+        shell.removeAt(0);
+        if (!shell.isEmpty())
+            setArgs(shell);
     }
 
+    setEnvironment(QStringList(QStringLiteral("TERM=%1").arg(Properties::Instance()->term)));
+
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
+    disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
 
     setContextMenuPolicy(Qt::CustomContextMenu);
-    connect(this, &QWidget::customContextMenuRequested,
-            this, &TermWidgetImpl::customContextMenuCall);
+
+    if(Properties::Instance()->swapMouseButtons2and3)
+    {
+        connect(this, &QWidget::customContextMenuRequested,
+                this, &TermWidgetImpl::pasteSelection);
+    }
+    else
+    {
+        connect(this, &QWidget::customContextMenuRequested,
+                this, &TermWidgetImpl::customContextMenuCall);
+    }
 
     connect(this, &QTermWidget::urlActivated, this, &TermWidgetImpl::activateUrl);
+    connect(this, &QTermWidget::bell, this, &TermWidgetImpl::bell);
 
     startShellProgram();
+}
+
+TermWidgetImpl::~TermWidgetImpl()
+{
+#ifdef HAVE_LIBCANBERRA
+    if (libcanberra_context) {
+        ca_context_destroy (libcanberra_context);
+    }
+#endif
 }
 
 void TermWidgetImpl::propertiesChanged()
@@ -84,6 +111,11 @@ void TermWidgetImpl::propertiesChanged()
     setColorScheme(Properties::Instance()->colorScheme);
     setTerminalFont(Properties::Instance()->font);
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
+    disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
+    setConfirmMultilinePaste(Properties::Instance()->confirmMultilinePaste);
+    setWordCharacters(Properties::Instance()->wordCharacters);
+    autoHideMouseAfter(Properties::Instance()->mouseAutoHideDelay);
+    setTrimPastedTrailingNewlines(Properties::Instance()->trimPastedTrailingNewlines);
     setTerminalSizeHint(Properties::Instance()->showTerminalSizeHint);
 
     if (Properties::Instance()->historyLimited)
@@ -99,8 +131,10 @@ void TermWidgetImpl::propertiesChanged()
     setKeyBindings(Properties::Instance()->emulation);
     setTerminalOpacity(1.0 - Properties::Instance()->termTransparency/100.0);
     setTerminalBackgroundImage(Properties::Instance()->backgroundImage);
+    setTerminalBackgroundMode(Properties::Instance()->backgroundMode);
     setBidiEnabled(Properties::Instance()->enabledBidiSupport);
     setDrawLineChars(!Properties::Instance()->useFontBoxDrawingChars);
+    setBoldIntense(Properties::Instance()->boldIntense);
 
     /* be consequent with qtermwidget.h here */
     switch(Properties::Instance()->scrollBarPos) {
@@ -129,13 +163,20 @@ void TermWidgetImpl::propertiesChanged()
         break;
     }
 
+    setBlinkingCursor(Properties::Instance()->keyboardCursorBlink);
+
     update();
 }
 
 void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
 {
-    QMenu menu;
-    QMap<QString, QAction*> actions = findParent<MainWindow>(this)->leaseActions();
+    auto mainWindow = findParent<MainWindow>(this);
+    if (mainWindow == nullptr)
+    {
+        return;
+    }
+    QMenu menu(mainWindow);
+    QMap<QString, QAction*> actions = mainWindow->leaseActions();
 
     QList<QAction*> extraActions = filterActions(pos);
     for (auto& action : extraActions)
@@ -162,14 +203,20 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
     menu.addAction(actions[QStringLiteral(SUB_COLLAPSE)]);
     menu.addSeparator();
     menu.addAction(actions[QStringLiteral(TOGGLE_MENU)]);
+    menu.addAction(actions[QStringLiteral(TOGGLE_BOOKMARKS)]);
     menu.addAction(actions[QStringLiteral(HIDE_WINDOW_BORDERS)]);
     menu.addAction(actions[QStringLiteral(PREFERENCES)]);
+
+    // The disabled actions should be updated before showing the menu because
+    // the "Actions" menu of the main window may have not been shown yet.
+    mainWindow->updateDisabledActions();
+
     menu.exec(mapToGlobal(pos));
 }
 
 void TermWidgetImpl::zoomIn()
 {
-    emit QTermWidget::zoomIn();
+    QTermWidget::zoomIn();
 // note: do not save zoom here due the #74 Zoom reset option resets font back to Monospace
 //    Properties::Instance()->font = getTerminalFont();
 //    Properties::Instance()->saveSettings();
@@ -177,7 +224,7 @@ void TermWidgetImpl::zoomIn()
 
 void TermWidgetImpl::zoomOut()
 {
-    emit QTermWidget::zoomOut();
+    QTermWidget::zoomOut();
 // note: do not save zoom here due the #74 Zoom reset option resets font back to Monospace
 //    Properties::Instance()->font = getTerminalFont();
 //    Properties::Instance()->saveSettings();
@@ -197,61 +244,18 @@ void TermWidgetImpl::activateUrl(const QUrl & url, bool fromContextMenu) {
     }
 }
 
-void TermWidgetImpl::pasteSelection()
-{
-    paste(QClipboard::Selection);
-}
-
-void TermWidgetImpl::pasteClipboard()
-{
-    paste(QClipboard::Clipboard);
-}
-
-void TermWidgetImpl::paste(QClipboard::Mode mode)
-{
-    // Paste Clipboard by simulating keypress events
-    QString text = QApplication::clipboard()->text(mode);
-    if ( ! text.isEmpty() )
-    {
-        text.replace(QLatin1String("\r\n"), QLatin1String("\n"));
-        text.replace(QLatin1Char('\n'), QLatin1Char('\r'));
-        QString trimmedTrailingNl(text);
-        trimmedTrailingNl.replace(QRegExp(QStringLiteral("\\r+$")), QString());
-        bool isMultiline = trimmedTrailingNl.contains(QLatin1Char('\r'));
-        if (!isMultiline && Properties::Instance()->trimPastedTrailingNewlines)
-        {
-            text = trimmedTrailingNl;
+void TermWidgetImpl::bell() {
+    if (Properties::Instance()->audibleBell) {
+#ifdef HAVE_LIBCANBERRA
+        if (!libcanberra_context) {
+            ca_context_create (&libcanberra_context);
         }
-        if (Properties::Instance()->confirmMultilinePaste)
-        {
-            if (text.contains(QLatin1Char('\r')) && Properties::Instance()->confirmMultilinePaste)
-            {
-                QMessageBox confirmation(this);
-                confirmation.setWindowTitle(tr("Paste multiline text"));
-                confirmation.setText(tr("Are you sure you want to paste this text?"));
-                confirmation.setDetailedText(text);
-                confirmation.setStandardButtons(QMessageBox::Yes | QMessageBox::No);
-                // Click "Show details..." to show those by default
-                const auto buttons = confirmation.buttons();
-                for( QAbstractButton * btn : buttons )
-                {
-                    if (confirmation.buttonRole(btn) == QMessageBox::ActionRole && btn->text() == QMessageBox::tr("Show Details..."))
-                    {
-                        btn->clicked();
-                        break;
-                    }
-                }
-                confirmation.setDefaultButton(QMessageBox::Yes);
-                confirmation.exec();
-                if (confirmation.standardButton(confirmation.clickedButton()) != QMessageBox::Yes)
-                {
-                    return;
-                }
-            }
-        }
-
-        bracketText(text);
-        sendText(text);
+        ca_context_play (libcanberra_context, 0,
+                         CA_PROP_EVENT_ID, "bell-terminal",
+                         NULL);
+#else
+        qWarning() << "Bell! But QTerminal is not built with libcanberra, so there's no sound.";
+#endif
     }
 }
 
@@ -259,41 +263,58 @@ bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
 {
     if (ev->type() == QEvent::MouseButtonPress)
     {
-        QMouseEvent *mev = (QMouseEvent *)ev;
-        if ( mev->button() == Qt::MidButton )
+        QMouseEvent *mev = static_cast<QMouseEvent*>(ev);
+        if (mev->button() == Qt::MiddleButton)
         {
-            impl()->pasteSelection();
+            if(Properties::Instance()->swapMouseButtons2and3)
+            {
+                impl()->customContextMenuCall(mev->pos());
+            }
+            else
+            {
+                impl()->pasteSelection();
+            }
             return true;
         }
+    }
+    else if ((ev->type() == QEvent::MouseMove
+              || ev->type() == QEvent::Enter
+              || ev->type() == QEvent::HoverEnter)
+             && Properties::Instance()->focusOnMoueOver)
+    {
+        impl()->setFocus();
     }
     return false;
 }
 
-TermWidget::TermWidget(TerminalConfig &cfg, QWidget * parent)
-    : QWidget(parent),
-      DBusAddressable(QStringLiteral("/terminals"))
+TermWidget::TermWidget(TerminalConfig &cfg, QWidget *parent)
+    : QWidget(parent)
+    , DBusAddressable(QStringLiteral("/terminals"))
+    , m_term(new TermWidgetImpl(cfg, this))
+    , m_layout(new QVBoxLayout)
+    , m_border(palette().color(QPalette::Window))
 {
 
     #ifdef HAVE_QDBUS
     registerAdapter<TerminalAdaptor, TermWidget>(this);
     #endif
-    m_border = palette().color(QPalette::Window);
-    m_term = new TermWidgetImpl(cfg, this);
+
     setFocusProxy(m_term);
 
-    m_layout = new QVBoxLayout;
     setLayout(m_layout);
 
     m_layout->addWidget(m_term);
     const auto objs = m_term->children();
+
     for (QObject *o : objs)
     {
         // Find TerminalDisplay
         if (!o->isWidgetType() || qobject_cast<QWidget*>(o)->isHidden())
+        {
             continue;
+        }
         o->installEventFilter(this);
     }
-
 
     propertiesChanged();
 
@@ -368,7 +389,7 @@ void TermWidget::closeTerminal()
     holder->splitCollapse(this);
 }
 
-void TermWidget::sendText(const QString text)
+void TermWidget::sendText(const QString& text)
 {
     if (impl())
     {

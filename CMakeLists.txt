@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.18.0 FATAL_ERROR)
 # CMP0000: Call the cmake_minimum_required() command at the beginning of the top-level
 # CMakeLists.txt file even before calling the project() command.
 # The cmake_minimum_required(VERSION) command implicitly invokes the cmake_policy(VERSION)
@@ -9,9 +9,10 @@ project(qterminal)
 include(GNUInstallDirs)
 
 # qterminal version
-set(QTERMINAL_VERSION "0.15.0")
+set(QTERMINAL_VERSION "2.2.1")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
+option(BUILD_TESTS "Builds tests" ON)
 
 if(APPLE)
     option(APPLEBUNDLE "Build as qterminal.app bundle" ON)
@@ -20,31 +21,39 @@ endif()
 # we need qpa/qplatformnativeinterface.h for global shortcut
 
 # Minimum Versions
-set(LXQTBT_MINIMUM_VERSION "0.7.0")
-set(QTERMWIDGET_MINIMUM_VERSION "0.15.0")
-set(QT_MINIMUM_VERSION "5.10.0")
+set(LXQTBT_MINIMUM_VERSION "2.2.0")
+set(QTERMWIDGET_MINIMUM_VERSION "2.2.0")
+set(QT_MINIMUM_VERSION "6.6.0")
+set(QT_MAJOR_VERSION "6")
+set(SHELLQT_MINIMUM_VERSION "6.0.0")
 
-find_package(Qt5Gui ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(Qt5Widgets ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6Core ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6Gui ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
+find_package(LayerShellQt ${SHELLQT_MINIMUM_VERSION} REQUIRED)
 if(UNIX)
-    find_package(Qt5DBus ${QT_MINIMUM_VERSION} REQUIRED)
-    if (NOT APPLE)
-        find_package(Qt5X11Extras ${QT_MINIMUM_VERSION} REQUIRED)
-    endif (NOT APPLE)
+    find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
+    find_package(Qt6 COMPONENTS Core REQUIRED)
 endif()
-find_package(QTermWidget5 ${QTERMWIDGET_MINIMUM_VERSION} REQUIRED)
-find_package(lxqt-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+find_package(QTermWidget6 ${QTERMWIDGET_MINIMUM_VERSION} REQUIRED)
+find_package(lxqt2-build-tools ${LXQTBT_MINIMUM_VERSION} REQUIRED)
+
+if (BUILD_TESTS)
+    find_package(Qt6 ${QT_MINIMUM_VERSION} CONFIG REQUIRED Test)
+endif()
 
 include(LXQtPreventInSourceBuilds)
+include(FindPkgConfig)
+pkg_check_modules(LIBCANBERRA libcanberra)
 include(LXQtTranslateTs)
+include(LXQtTranslateDesktop)
 include(LXQtCompilerSettings NO_POLICY_SCOPE)
-message(STATUS "Qt version: ${Qt5Core_VERSION}")
+message(STATUS "Qt version: ${Qt6Core_VERSION}")
 
 # TODO remove Qxt
 message(STATUS "Using bundled Qxt...")
 set(QXT_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/src/third-party")
-
 
 if(APPLE)
    find_library(CARBON_LIBRARY Carbon REQUIRED)
@@ -74,6 +83,7 @@ set(QTERM_SRC
     src/fontdialog.cpp
     src/dbusaddressable.cpp
     src/tab-switcher.cpp
+    src/qterminalutils.cpp
 )
 
 set(QTERM_MOC_SRC
@@ -89,14 +99,15 @@ set(QTERM_MOC_SRC
     src/tab-switcher.h
 )
 
-if (Qt5DBus_FOUND)
+if (Qt6DBus_FOUND)
     add_definitions(-DHAVE_QDBUS)
-    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Window.xml mainwindow.h MainWindow)
-    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Tab.xml termwidgetholder.h TermWidgetHolder)
-    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Terminal.xml termwidget.h TermWidget)
-    QT5_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Process.xml qterminalapp.h QTerminalApp)
+    QT6_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Window.xml mainwindow.h MainWindow)
+    QT6_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Tab.xml termwidgetholder.h TermWidgetHolder)
+    QT6_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Terminal.xml termwidget.h TermWidget)
+    QT6_ADD_DBUS_ADAPTOR(QTERM_SRC src/org.lxqt.QTerminal.Process.xml qterminalapp.h QTerminalApp)
+
     set(QTERM_MOC_SRC ${QTERM_MOC_SRC} src/dbusaddressable.h)
-    message(STATUS "Building with Qt5DBus support")
+    message(STATUS "Building with Qt6DBus support")
 endif()
 
 if(NOT QXT_FOUND)
@@ -123,9 +134,10 @@ set(QTERM_RCC_SRC
     src/icons.qrc
 )
 
-qt5_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
-qt5_wrap_cpp( QTERM_MOC ${QTERM_MOC_SRC} )
-qt5_add_resources( QTERM_RCC ${QTERM_RCC_SRC} )
+qt6_wrap_ui( QTERM_UI ${QTERM_UI_SRC} )
+qt6_wrap_cpp( QTERM_MOC ${QTERM_MOC_SRC} )
+qt6_add_resources( QTERM_RCC ${QTERM_RCC_SRC} )
+
 lxqt_translate_ts(QTERM_QM
     UPDATE_TRANSLATIONS
         ${UPDATE_TRANSLATIONS}
@@ -134,6 +146,14 @@ lxqt_translate_ts(QTERM_QM
         ${QTERM_UI_SRC}
         ${QTERM_MOC_SRC}
     TRANSLATION_DIR "src/translations"
+)
+
+lxqt_translate_desktop(DESKTOP_FILES
+    SOURCES
+        qterminal.desktop.in
+        qterminal-drop.desktop.in
+    TRANSLATION_DIR "src/translations"
+    USE_YAML
 )
 
 include_directories(
@@ -181,41 +201,54 @@ add_executable(${EXE_NAME} ${GUI_TYPE}
     ${QTERM_RCC}
     ${APPLE_BUNDLE_SOURCES}
     ${QTERM_QM}
+    ${DESKTOP_FILES}
 )
 
 target_link_libraries(${EXE_NAME}
-    Qt5::Gui
-    qtermwidget5
-    util
+    Qt6::Core
+    Qt6::Gui
+    Qt6::Widgets
+    qtermwidget6
+    LayerShellQtInterface
 )
 if(QXT_FOUND)
     target_link_libraries(${EXE_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
 endif()
 
-if (Qt5DBus_FOUND)
-    target_link_libraries(${EXE_NAME} ${Qt5DBus_LIBRARIES})
+if (Qt6DBus_FOUND)
+    target_link_libraries(${EXE_NAME} ${Qt6DBus_LIBRARIES})
 endif()
 
 if(APPLE)
     target_link_libraries(${EXE_NAME} ${CARBON_LIBRARY})
-elseif(UNIX)
-    target_link_libraries(${EXE_NAME} Qt5::X11Extras)
 endif()
 
 if(X11_FOUND)
     target_link_libraries(${EXE_NAME} ${X11_X11_LIB})
 endif()
 
+if(LIBCANBERRA_FOUND)
+    add_definitions(-DHAVE_LIBCANBERRA)
+    include_directories(${LIBCANBERRA_INCLUDE_DIRS})
+    target_link_libraries(${EXE_NAME} ${LIBCANBERRA_LIBRARIES})
+endif()
+
+set(APP_DIR "${CMAKE_INSTALL_FULL_DATADIR}/qterminal")
+add_definitions(-DAPP_DIR=\"${APP_DIR}\")
 
 install(FILES
-    qterminal.desktop
-    qterminal_drop.desktop
+    ${DESKTOP_FILES}
     DESTINATION "${CMAKE_INSTALL_DATADIR}/applications"
 )
 
 install(FILES
-    qterminal.appdata.xml
-    DESTINATION "${CMAKE_INSTALL_DATADIR}/appdata"
+    qterminal.metainfo.xml
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/metainfo"
+)
+
+install(FILES
+    qterminal_bookmarks_example.xml
+    DESTINATION ${APP_DIR}
 )
 
 if(NOT APPLEBUNDLE)
@@ -248,4 +281,9 @@ else()
     add_custom_command(TARGET ${EXE_NAME} POST_BUILD
         COMMAND "${CMAKE_COMMAND}" -E touch "${CMAKE_CURRENT_BINARY_DIR}/${EXE_NAME}.app/Contents/Resources/empty.lproj"
         COMMENT "Creating Resources/empty.lproj")
+endif()
+
+if(BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(test)
 endif()

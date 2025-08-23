@@ -43,6 +43,7 @@ private:
 
 private slots:
     void handleCommand(const QModelIndex& index);
+    void filter(const QString& str);
 };
 
 
@@ -66,6 +67,8 @@ public:
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
     int columnCount(const QModelIndex &parent = QModelIndex()) const override;
+
+    QModelIndexList allChildRows(const QModelIndex& parent) const;
 
 private:
     AbstractBookmarkItem *getItem(const QModelIndex &index) const;

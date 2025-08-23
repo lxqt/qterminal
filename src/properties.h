@@ -22,6 +22,7 @@
 #include <QApplication>
 #include <QtCore>
 #include <QFont>
+#include <QFileSystemWatcher>
 
 typedef QString Session;
 
@@ -40,6 +41,11 @@ class Properties
         void saveSettings();
         void loadSettings();
         void migrate_settings();
+        QString getShortcut(const QString &name, const QString &defaultShortcut) const;
+        QString configDir() const;
+        QString profile() const;
+
+        static void removeAccelerator(QString& str);
 
         QSize mainWindowSize;
         QSize fixedWindowSize;
@@ -47,11 +53,12 @@ class Properties
         QPoint mainWindowPosition;
         QByteArray mainWindowState;
         //ShortcutMap shortcuts;
-        QString shell;
+        QStringList shell;
         QFont font;
         QString colorScheme;
         QString guiStyle;
         bool highlightCurrentTerminal;
+        bool focusOnMoueOver;
         bool showTerminalSizeHint;
 
         bool historyLimited;
@@ -62,20 +69,25 @@ class Properties
         Sessions sessions;
 
         int terminalMargin;
-        int appTransparency;
         int termTransparency;
         QString backgroundImage;
+        int backgroundMode;
 
         int scrollBarPos;
         int tabsPos;
         int keyboardCursorShape;
+        bool keyboardCursorBlink;
         bool hideTabBarWithOneTab;
         int m_motionAfterPaste;
+        bool m_disableBracketedPasteMode;
 
         bool fixedTabWidth;
         int fixedTabWidthValue;
 
         bool showCloseTabButton;
+        bool closeTabOnMiddleClick;
+
+        bool boldIntense;
 
         bool borderless;
         bool tabBarless;
@@ -86,8 +98,12 @@ class Properties
 
         bool saveSizeOnExit;
         bool savePosOnExit;
+        bool saveStateOnExit;
 
         bool useCWD;
+        bool m_openNewTabRightToActiveTab;
+
+        bool audibleBell;
 
         QString term;
 
@@ -102,7 +118,7 @@ class Properties
         QKeySequence dropShortCut;
         bool dropKeepOpen;
         bool dropShowOnStart;
-        int dropWidht;
+        int dropWidth;
         int dropHeight;
 
         bool changeWindowTitle;
@@ -111,11 +127,17 @@ class Properties
 
         bool confirmMultilinePaste;
         bool trimPastedTrailingNewlines;
+        QString wordCharacters;
 
         bool windowMaximized;
+        bool swapMouseButtons2and3;
+        int mouseAutoHideDelay;
 
         bool useFontBoxDrawingChars;
     private:
+
+        Properties(const Properties &) = delete;
+        Properties &operator=(const Properties &) = delete;
 
         int versionComparison(const QString &v1, const QString &v2);
 
@@ -124,10 +146,10 @@ class Properties
         QString filename;
 
         explicit Properties(const QString& filename);
-        Properties(const Properties &) {};
 
         QSettings *m_settings;
 
+        QFileSystemWatcher *m_watcher;
 };
 
 #endif
