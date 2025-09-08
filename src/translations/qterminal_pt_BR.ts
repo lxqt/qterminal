@@ -15,7 +15,7 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Selecione Fonte do Terminal</translation>
+        <translation>Selecionar fonte do terminal</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
@@ -726,7 +726,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvar estado ao fechar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
