@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de">
+<TS version="2.1" language="vi">
 <context>
     <name>BookmarksWidget</name>
     <message>
         <location filename="../forms/bookmarkswidget.ui" line="32"/>
         <source>Filter:</source>
-        <translation>Filter:</translation>
+        <translation>Lọc:</translation>
     </message>
 </context>
 <context>
@@ -15,22 +15,22 @@
         <location filename="../forms/fontdialog.ui" line="14"/>
         <location filename="../forms/fontdialog.ui" line="73"/>
         <source>Select Terminal Font</source>
-        <translation>Terminalschriftart wählen</translation>
+        <translation>Chọn phông chữ cửa sổ dòng lệnh</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="32"/>
         <source>Font:</source>
-        <translation>Schriftart:</translation>
+        <translation>Phông chữ:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="42"/>
         <source>Size:</source>
-        <translation>Größe:</translation>
+        <translation>Kích cỡ:</translation>
     </message>
     <message>
         <location filename="../forms/fontdialog.ui" line="59"/>
         <source>Preview</source>
-        <translation>Vorschau</translation>
+        <translation>Xem trước</translation>
     </message>
 </context>
 <context>
@@ -38,309 +38,309 @@
     <message>
         <location filename="../mainwindow.cpp" line="92"/>
         <source>Bookmarks</source>
-        <translation>Lesezeichen</translation>
+        <translation>Dấu trang</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="216"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
-        <translation>Drücken Sie &quot;%1&quot;, um das Terminal zu sehen.</translation>
+        <translation>Nhấn &quot;%1&quot; để xem cửa sổ dòng lệnh.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="262"/>
         <source>&amp;Next Tab</source>
-        <translation>&amp;Nächste Registerkarte</translation>
+        <translation>Thẻ Tiếp Theo (&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="265"/>
         <source>&amp;Previous Tab</source>
-        <translation>&amp;Vorherige Registerkarte</translation>
+        <translation>Thẻ Trước Đó (&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
         <source>Move Tab &amp;Left</source>
-        <translation>Registerkarte nach &amp;links verschieben</translation>
+        <translation>Di Chuyển Thẻ Sang Trái (&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="277"/>
         <source>Move Tab &amp;Right</source>
-        <translation>Registerkarte nach &amp;rechts verschieben</translation>
+        <translation>Di Chuyển Thẻ Sang Phải (&amp;R)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="255"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation>Aktives Terminal &amp;leeren</translation>
+        <translation>Xoá Cửa Sổ Dòng Lệnh Đang Hoạt Động (&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="197"/>
         <source>Keep window open when it loses focus</source>
-        <translation>Fenster geöffnet lassen, wenn es den Fokus verliert</translation>
+        <translation>Giữ cửa sổ mở khi mất tiêu điểm</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="268"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>&amp;Vorherige Registerkarte im Verlauf</translation>
+        <translation>Thẻ Trước Đó trong Lịch Sử (&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="271"/>
         <source>&amp;Next Tab in History</source>
-        <translation>&amp;Nächste Registerkarte im Verlauf</translation>
+        <translation>Thẻ Tiếp Theo trong Lịch Sử (%N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="282"/>
         <source>Tab</source>
-        <translation>Tab</translation>
+        <translation>Thẻ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="283"/>
         <source>Go to</source>
-        <translation>Gehe zu</translation>
+        <translation>Đi đến</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="296"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation>&amp;Ansicht teilen Oben-Unten</translation>
+        <translation>Chia Đôi Cửa Sổ Trên Dưới (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="299"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation>A&amp;nsicht teilen Links-Rechts</translation>
+        <translation>Chia Đôi Cửa Sổ Trái Phải (&amp;w)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
         <source>&amp;Close Subterminal</source>
-        <translation>Unterterminal s&amp;chließen</translation>
+        <translation>Đóng Cửa Sổ Dòng Lệnh Phụ (&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="307"/>
         <source>&amp;Top Subterminal</source>
-        <translation>&amp;Oberes Unterterminal</translation>
+        <translation>Cửa Sổ Dòng Lệnh Phụ Phía Trên (%T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="310"/>
         <source>&amp;Bottom Subterminal</source>
-        <translation>&amp;Unteres Unterterminal</translation>
+        <translation>Cửa Sổ Dòng Lệnh Phụ Phía Dưới (&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
         <source>L&amp;eft Subterminal</source>
-        <translation>&amp;Linkes Unterterminal</translation>
+        <translation>Cửa Sổ Dòng Lệnh Phụ Bên Trái (&amp;e)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="316"/>
         <source>R&amp;ight Subterminal</source>
-        <translation>&amp;Rechtes Unterterminal</translation>
+        <translation>Cửa Sổ Dòng Lệnh Phụ Bên Phải (&amp;i)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="323"/>
         <source>Copy &amp;Selection</source>
-        <translation>Au&amp;swahl kopieren</translation>
+        <translation>Sao Chép Lựa Chọn (&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="326"/>
         <source>Paste Clip&amp;board</source>
-        <translation>Zwischena&amp;blage einfügen</translation>
+        <translation>Dán Từ Bảng Nhớ Tạm (&amp;b)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="329"/>
         <source>Paste S&amp;election</source>
-        <translation>Auswahl &amp;einfügen</translation>
+        <translation>Dán Lựa Chọn (&amp;e)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="332"/>
         <source>Zoom &amp;in</source>
-        <translation>Ver&amp;größern</translation>
+        <translation>Phóng to (&amp;i)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="335"/>
         <source>Zoom &amp;out</source>
-        <translation>Ver&amp;kleinern</translation>
+        <translation>Thu nhỏ (&amp;o)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
         <source>Zoom rese&amp;t</source>
-        <translation>Zoom zurückse&amp;tzen</translation>
+        <translation>Đặt lại chế độ thu phóng (&amp;t)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="343"/>
         <source>&amp;Find...</source>
-        <translation>&amp;Suchen…</translation>
+        <translation>Tìm (&amp;F)…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="346"/>
         <source>Handle history...</source>
-        <translation>Verlauf bearbeiten...</translation>
+        <translation>Xử lí lịch sử...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="354"/>
         <source>&amp;Save Session</source>
-        <translation>&amp;Sitzung speichern</translation>
+        <translation>Lưu Phiên (&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="360"/>
         <source>&amp;Load Session</source>
-        <translation>Sitzung &amp;laden</translation>
+        <translation>Tải Phiên (&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="367"/>
         <source>&amp;Toggle Menu</source>
-        <translation>&amp;Menü ein-/ausblenden</translation>
+        <translation>Bật/Tắt Menu (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
         <source>Rename session</source>
-        <translation>Sitzung umbenennen</translation>
+        <translation>Đổi tên phiên</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="381"/>
         <source>&amp;New Tab</source>
-        <translation>&amp;Neue Registerkarte</translation>
+        <translation>Thẻ Mới (&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="385"/>
         <source>New Tab From &amp;Preset</source>
-        <translation>Neue Registerkarte aus &amp;Vorlagen</translation>
+        <translation>Thẻ Mới Từ Thiết Lập Sẵn (&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="386"/>
         <source>1 &amp;Terminal</source>
-        <translation>1 &amp;Terminal</translation>
+        <translation>1 Cửa Sổ Dòng Lệnh (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="390"/>
         <source>2 &amp;Horizontal Terminals</source>
-        <translation>2 &amp;horizontale Terminals</translation>
+        <translation>2 Cửa Sổ Dòng Lệnh Ngang (&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="392"/>
         <source>2 &amp;Vertical Terminals</source>
-        <translation>2 &amp;vertikale Terminals</translation>
+        <translation>2 Cửa Sổ Dòng Lệnh Dọc (&amp;V)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="394"/>
         <source>4 Terminal&amp;s</source>
-        <translation>4 Terminal&amp;s</translation>
+        <translation>4 Cửa Sổ Dòng Lệnh (&amp;s)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="400"/>
         <source>&amp;Close Tab</source>
-        <translation>Registerkarte s&amp;chließen</translation>
+        <translation>Đóng Thẻ (&amp;C)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="403"/>
         <source>&amp;New Window</source>
-        <translation>&amp;Neues Fenster</translation>
+        <translation>Cửa Sổ Mới (&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="408"/>
         <source>&amp;Preferences...</source>
-        <translation>&amp;Einstellungen...</translation>
+        <translation>Tùy chọn (&amp;P)…</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="412"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Beenden</translation>
+        <translation>Thoát (&amp;Q)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="418"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>Fensterrahmen &amp;ausblenden</translation>
+        <translation>Ẩn Viền Cửa Sổ (&amp;H)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="436"/>
         <source>&amp;Show Tab Bar</source>
-        <translation>Regi&amp;sterkartenleiste anzeigen</translation>
+        <translation>Hiển Thị Thanh Thẻ (&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="444"/>
         <source>Fullscreen</source>
-        <translation>Vollbild</translation>
+        <translation>Toàn Màn Hình</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="450"/>
         <source>Toggle Bookmarks</source>
-        <translation>Lesezeichen ein-/ausblenden</translation>
+        <translation>Bật/Tắt Dấu Trang</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="458"/>
         <source>&amp;Bottom</source>
-        <translation>&amp;Unten</translation>
+        <translation>Dưới (&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="459"/>
         <source>&amp;Top</source>
-        <translation>&amp;Oben</translation>
+        <translation>Trên (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="460"/>
         <location filename="../mainwindow.cpp" line="496"/>
         <source>&amp;Right</source>
-        <translation>&amp;Rechts</translation>
+        <translation>Phải (&amp;R)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="461"/>
         <location filename="../mainwindow.cpp" line="497"/>
         <source>&amp;Left</source>
-        <translation>&amp;Links</translation>
+        <translation>Trái (&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="479"/>
         <source>&amp;Tabs Layout</source>
-        <translation>&amp;Darstellung der Registerkarten</translation>
+        <translation>Bố Cục Thẻ (&amp;T)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="495"/>
         <source>&amp;None</source>
-        <translation>&amp;Keine</translation>
+        <translation>Không có (&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="513"/>
         <source>S&amp;crollbar Layout</source>
-        <translation>&amp;Darstellung der Bildlaufleiste</translation>
+        <translation>Bố Cục Thanh Cuộn (&amp;c)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="526"/>
         <source>&amp;BlockCursor</source>
-        <translation>&amp;Block</translation>
+        <translation>Con Trỏ Khối (&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="527"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>&amp;Unterstrich</translation>
+        <translation>Con Trỏ Gạch Chân (&amp;U)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="528"/>
         <source>&amp;IBeamCursor</source>
-        <translation>&amp;Senkrechter Strich</translation>
+        <translation>Con Trỏ I (&amp;I)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="545"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>&amp;Tastatur Cursor Form</translation>
+        <translation>Hình Dạng Con Trỏ Bàn Phím (&amp;K)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="633"/>
         <source>A process is running.</source>
-        <translation>Es läuft ein Prozess.</translation>
+        <translation>Một tiến trình đang chạy.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="652"/>
         <source>Exit QTerminal</source>
-        <translation>QTerminal beenden</translation>
+        <translation>Thoát khỏi QTerminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="652"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Möchten Sie das Programm wirklich beenden?</translation>
+        <translation>Bạn có chắc chắn muốn thoát không?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="689"/>
         <source>About</source>
-        <translation>Über</translation>
+        <translation>Thông Tin</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="691"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
-        <translation>Ein leichtgewichtiger und starker Multiplatform Terminal Emulator</translation>
+        <translation>Một trình giả lập cửa sổ đầu cuối nhẹ đa nền tảng và mạnh mẽ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="693"/>
@@ -355,126 +355,151 @@
     <message>
         <location filename="../mainwindow.cpp" line="695"/>
         <source>LXQt Project</source>
-        <translation>LXQt-Projekt</translation>
+        <translation>Dự án LxQt</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="697"/>
         <source>Development: </source>
-        <translation>Entwicklung: </translation>
+        <translation>Phát triển: </translation>
     </message>
 </context>
 <context>
     <name>PropertiesDialog</name>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="922"/>
-        <source>Emulation</source>
-        <translation>Emulation</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="47"/>
-        <source>Shortcuts</source>
-        <translation>Tastenkombinationen</translation>
-    </message>
-    <message>
         <location filename="../forms/propertiesdialog.ui" line="14"/>
         <source>Terminal settings</source>
-        <translation>Terminaleinstellungen</translation>
+        <translation>Cài đặt cửa sổ dòng lệnh</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="21"/>
         <source>Appearance</source>
-        <translation>Erscheinungsbild</translation>
+        <translation>Giao Diện</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="38"/>
         <location filename="../forms/propertiesdialog.ui" line="729"/>
         <source>Behavior</source>
-        <translation>Verhalten</translation>
+        <translation>Hành Vi</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="47"/>
+        <source>Shortcuts</source>
+        <translation>Phím Tắt</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="56"/>
         <source>Dropdown</source>
-        <translation>Aufklappen</translation>
+        <translation>Danh sách thả xuống</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="65"/>
+        <source>Bookmarks</source>
+        <translation>Dấu trang</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="556"/>
+        <source>Hide tab bar with only one tab</source>
+        <translation>Ẩn thanh thẻ chỉ với một thẻ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="181"/>
         <source>Color scheme</source>
-        <translation>Farbschema</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="194"/>
-        <source>Widget style</source>
-        <translation>Stil der Bedienelemente</translation>
+        <translation>Bảng màu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="207"/>
         <source>Scrollbar position</source>
-        <translation>Position der Bildlaufleiste</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="220"/>
-        <source>Tabs position</source>
-        <translation>Registerkartenposition</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="512"/>
-        <source>Show the menu bar</source>
-        <translation>Menüleiste anzeigen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="287"/>
-        <source>Terminal transparency</source>
-        <translation>Transparenz des Terminals</translation>
+        <translation>Vị trí thanh cuộn</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="370"/>
         <source>Start with preset:</source>
-        <translation>Starte mit Vorlage:</translation>
+        <translation>Bắt đầu với thiết lập sẵn:</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="287"/>
+        <source>Terminal transparency</source>
+        <translation>Độ trong suốt của cửa sổ dòng lệnh</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="381"/>
         <source>None (single terminal)</source>
-        <translation>Keine (einzelnes Terminal)</translation>
+        <translation>Không có (cửa sổ dòng lệnh đơn)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="386"/>
         <source>2 terminals horizontally</source>
-        <translation>2 horizontale Terminals</translation>
+        <translation>2 cửa sổ dòng lệnh nằm ngang</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="391"/>
         <source>2 terminals vertically</source>
-        <translation>2 vertikale Terminals</translation>
+        <translation>2 cửa sổ dòng lệnh theo chiều dọc</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="396"/>
         <source>4 terminals</source>
-        <translation>4 Terminals</translation>
+        <translation>4 cửa sổ dòng lệnh</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="297"/>
+        <source> %</source>
+        <translation> %</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="135"/>
         <source>Font</source>
-        <translation>Schriftart</translation>
+        <translation>Phông chữ</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="171"/>
+        <source>&amp;Change...</source>
+        <translation>Thay đổi (&amp;C)…</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="220"/>
+        <source>Tabs position</source>
+        <translation>Vị trí thẻ</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="194"/>
+        <source>Widget style</source>
+        <translation>Kiểu tiện ích</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="512"/>
+        <source>Show the menu bar</source>
+        <translation>Hiển thị thanh menu</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="233"/>
+        <source>Cursor shape</source>
+        <translation>Hình dạng con trỏ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="270"/>
         <source>Enable bi-directional text support</source>
-        <translation>Aktiviere bidirektionale Textunterstützung</translation>
+        <translation>Cho phép hỗ trợ văn bản hai chiều</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="313"/>
         <source>Background image:</source>
-        <translation>Hintergrundbild:</translation>
+        <translation>Ảnh nền:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="325"/>
         <source>Select</source>
-        <translation>Auswählen</translation>
+        <translation>Chọn</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="263"/>
         <source>Show terminal size on resize</source>
-        <translation>Terminalgröße beim Skalieren anzeigen</translation>
+        <translation>Hiển thị kích cỡ cửa sổ dòng lệnh khi thay đổi kích cỡ</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="563"/>
+        <source>Fixed tab width:</source>
+        <translation>Chiều rộng thẻ cố định:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="414"/>
@@ -485,142 +510,147 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="536"/>
         <source>Show close button on each tab</source>
-        <translation>Schaltfläche Schließen auf jeder Registerkarte anzeigen</translation>
+        <translation>Hiện thị nút đóng trên mỗi thẻ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="404"/>
         <source>Terminal margin</source>
-        <translation>Terminalrand</translation>
+        <translation>Khoảng cách lề cửa sổ dòng lệnh</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="280"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation>In der Schriftart enthaltene Zeichen für die Boxzeichnung verwenden</translation>
+        <translation>Sử dụng ký tự vẽ khung có trong phông chữ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="519"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
-        <translation>Beschleuniger werden mit Alt aktiviert und können das Terminal stören.</translation>
+        <translation>Bộ tăng tốc được kích hoạt bằng phím Alt và có thể gây nhiễu cho cửa sổ dòng lệnh.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="522"/>
         <source>No menu bar accelerator</source>
-        <translation>Kein Menüleisten-Beschleuniger</translation>
+        <translation>Không có tăng tốc thanh menu</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="922"/>
+        <source>Emulation</source>
+        <translation>Giả lập</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="762"/>
         <source>Action after paste</source>
-        <translation>Aktion nach dem Einfügen</translation>
+        <translation>Hành động sau khi dán</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="828"/>
         <source>Confirm multiline paste</source>
-        <translation>Einfügen mehrerer Zeilen bestätigen</translation>
+        <translation>Xác nhận dán nhiều dòng</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="835"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>Zeilenumbrüche am Ende des eingefügten Textes entfernen</translation>
+        <translation>Cắt bớt dòng mới ở cuối văn bản đã dán</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="849"/>
         <source>Open new terminals in current working directory</source>
-        <translation>Neues Terminal im aktuellen Verzeichnis öffnen</translation>
+        <translation>Mở cửa sổ dòng lệnh mới trong thư mục làm việc hiện tại</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="590"/>
         <source>Save Size when closing</source>
-        <translation>Fenstergröße beim Beenden speichern</translation>
+        <translation>Lưu Kích Cỡ khi đóng</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="583"/>
         <source>Save Position when closing</source>
-        <translation>Fensterposition beim Beenden speichern</translation>
+        <translation>Lưu Vị Trí khi đóng</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="755"/>
         <source>Unlimited history</source>
-        <translation>Unbegrenzter Verlauf</translation>
+        <translation>Lịch sử không giới hạn</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="735"/>
         <source>History size (in lines)</source>
-        <translation>Verlaufsgröße (in Zeilen)</translation>
+        <translation>Kích thước lịch sử (tính theo dòng)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="873"/>
         <source>Default $TERM</source>
-        <translation>Standard $TERM</translation>
+        <translation>$TERM mặc định</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="609"/>
         <source>Start with this size:</source>
-        <translation>Mit dieser Größe beginnen:</translation>
+        <translation>Bắt đầu với kích thước này:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="334"/>
         <source>Background mode:</source>
-        <translation>Hintergrund-Modus:</translation>
+        <translation>Chế độ chạy nền:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="342"/>
         <source>None</source>
-        <translation>Kein</translation>
+        <translation>Không có</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="347"/>
         <source>Stretch</source>
-        <translation>Strecken</translation>
+        <translation>Kéo dãn</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="352"/>
         <source>Zoom</source>
-        <translation>Vergrößerung</translation>
+        <translation>Phóng</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="357"/>
         <source>Fit</source>
-        <translation>Fit</translation>
+        <translation>Vừa khít</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="362"/>
         <source>Center</source>
-        <translation>Zentrieren</translation>
+        <translation>Trung tâm</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="277"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation>Gibt an, ob Rahmenzeichen von QTerminal intern oder von zugrunde liegenden Bibliotheken gezeichnet werden soll.</translation>
+        <translation>Chọn xem các ký tự vẽ khung sẽ do QTerminal tự vẽ hay để thư viện font bên dưới xử lý.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="253"/>
         <source>Toggles usage of bold font face for rendering intense colors</source>
-        <translation>Schaltet Verwendung fettgedruckter Schriftarten für intensive Farben um</translation>
+        <translation>Bật/Tắt việc sử dụng phông chữ đậm để hiển thị màu sắc đậm</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="256"/>
         <source>Use bold font face for intense colors</source>
-        <translation>Fettgedrucktes Schriftbild für intensive Farben verwenden</translation>
+        <translation>Sử dụng phông chữ đậm cho màu sắc đậm</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="529"/>
         <source>&amp;Hide Window Borders</source>
-        <translation>Fensterrahmen &amp;ausblenden</translation>
+        <translation>Ẩn Viền Cửa Sổ (&amp;H)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="931"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Welches Verhalten emuliert wird. Beachte, dass das nicht mit deinem Betriebssystem übereinstimmen muss.&lt;/p&gt;&lt;p&gt;Wenn du unsicher bist, nutze die &lt;span style=&quot; font-weight:600;&quot;&gt;Standard-Emulation&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hành vi nào sẽ được mô phỏng. Lưu ý rằng, điều này không nhất thiết phải phù hợp với hệ điều hành của bạn.&lt;/p&gt;&lt;p&gt;Nếu bạn không chắc chắn, hãy dùng mô phỏng &lt;span style=&quot; font-weight:600;&quot;&gt;mặc định&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>Dieser Befehl wird mit einem Argument ausgeführt, das den Dateinamen eines tempfiles enthält, welches die Scrollback-Historie enthält</translation>
+        <translation>Lệnh này sẽ được chạy với một tham số chứa tên tệp của một tệp tạm thời chứa lịch sử cuộn</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="912"/>
         <source>Handle history command</source>
-        <translation>Verlaufsbefehl bearbeiten</translation>
+        <translation>Xử lý lệnh lịch sử</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="616"/>
@@ -631,112 +661,112 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="637"/>
         <source>Get current size</source>
-        <translation>Aktuelle Größe ermitteln</translation>
+        <translation>Nhận kích cỡ hiện tại</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="859"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation>Neuen Tab rechts von aktivem Tab öffnen</translation>
+        <translation>Mở thẻ mới ở bên phải của thẻ đang hoạt động</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="856"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation>Falls deaktiviert, wird ein neuer Reiter ganz rechts geöffnet</translation>
+        <translation>Nếu bỏ chọn, thẻ mới sẽ mở dưới dạng thẻ ngoài cùng bên phải</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="546"/>
         <source>Close tab on middle-click</source>
-        <translation>Tab mit Mittelklick schließen</translation>
+        <translation>Đóng thẻ bằng cách nhấp chuột giữa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="821"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation>Das Beenden des Einfüge-Modus in Klammern erzwingen</translation>
+        <translation>Tắt chế độ dân trong ngoặc vuông một cách bắt buộc</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>Word selection characters</source>
-        <translation>Wortauswahlzeichen</translation>
+        <translation>Ký tự chọn từ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation>Fenster</translation>
+        <translation>Cửa sổ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation>Blinkender Cursor</translation>
+        <translation>Con trỏ nhấp nháy</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Current Terminal</source>
-        <translation>Aktuelles Terminal</translation>
+        <translation>Cửa sổ dòng lệnh hiện tại</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Draw a border</source>
-        <translation>Einen Rahmen zeichnen</translation>
+        <translation>Vẽ một đường viền</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
-        <translation>Das aktuelle Terminal beim Überfahren mit der Maus festlegen</translation>
+        <translation>Đặt cửa sổ dòng lệnh hiện tại khi di chuột</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
-        <translation>Fenstertitel auf Basis des Terminals ändern</translation>
+        <translation>Thay đổi tiêu đề dựa trên cửa sổ dòng lệnh</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
-        <translation>Fenstersymbol auf Basis des Terminals ändern</translation>
+        <translation>Thay đổi biểu tượng cửa sổ dựa trên cửa sổ dòng lệnh</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation>Status beim Schließen speichern</translation>
+        <translation>Lưu Trạng Thái khi đóng</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation>Wenn Sie Text wortweise auswählen werden diese zu den alphanumerischen Zeichen hinzu als Teil von Wörtern berücksichtigt</translation>
+        <translation>Khi chọn văn bản theo từ, coi những ký tự này là một phần của từ bên cạnh các chữ cái và số</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>:@-./_~</source>
-        <translation>:@-./_~</translation>
+        <translation>:@-/_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>Mouse cursor hiding delay</source>
-        <translation>Verzögerung beim Ausblenden des Mauszeigers</translation>
+        <translation>Độ trễ ẩn con trỏ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="799"/>
         <source>No hiding</source>
-        <translation>Kein Ausblenden</translation>
+        <translation>Không ẩn</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source> sec</source>
-        <translation> Sek.</translation>
+        <translation> giây</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="818"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation>Mit dem geklammerten Einfüge-Modus ist es möglich, längere Zeichenketten einzufügen.</translation>
+        <translation>Chế độ dáng trong ngoặc vuông hữu ích cho việc dán nhiều dòng chuỗi.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Prompt on closing with a running process</source>
-        <translation>Aufforderung zum Schließen eines laufenden Prozesses</translation>
+        <translation>Hỏi khi đóng một tiến trình đang chạy</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="866"/>
         <source>Audible bell</source>
-        <translation>Audiosignal</translation>
+        <translation>Chuông báo động</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="955"/>
@@ -746,27 +776,47 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation>Bearbeiten eines Tastenkürzels:
-1. Doppelklick auf die Zuweisung
-2. Drücken und Loslassen der neuen Tastenkombination
-3. Klcke auf das Tastenkürzel oder drücke Enter
+        <translation>Để chỉnh sửa một Phím tắt:
+1. Nháy đúp vào Phím của nó
+2. Nhấn tổ hợp phím mong muốn và thả ra
+3. Nhấn vào một phím tắt khác hoặc nhấn Enter
 
-Zum entfernen/deaktivieren eines Tastenkürzel, bei Schritt 2 nur eine Modifier-Taste (z. B. Shift)</translation>
+Để xóa / vô hiệu hóa phím tắt, tại bước 2 chỉ nhấn một phím modifier (ví dụ Shift)</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="985"/>
+        <source>Shortcut</source>
+        <translation>Phím tắt</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="990"/>
+        <source>Key</source>
+        <translation>Phím</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="1002"/>
+        <source>Show on start</source>
+        <translation>Hiển thị khi bắt đầu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1009"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation>Auf der horizontalen Registerkartenleiste wird eine Sperrschaltfläche angezeigt</translation>
+        <translation>Một nút khóa được hiển thị trên thanh thẻ ngang</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1012"/>
         <source>Keep window open when it loses focus</source>
-        <translation>Fenster geöffnet lassen, wenn es den Fokus verliert</translation>
+        <translation>Giữ cửa sổ mở khi mất tiêu điểm</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="1019"/>
+        <source>Size</source>
+        <translation>Kích cỡ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1030"/>
         <source>Height</source>
-        <translation>Höhe</translation>
+        <translation>Chiều cao</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1040"/>
@@ -777,213 +827,163 @@ Zum entfernen/deaktivieren eines Tastenkürzel, bei Schritt 2 nur eine Modifier-
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1053"/>
         <source>Width</source>
-        <translation>Breite</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="1092"/>
-        <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation>Hinweis: Unter Wayland muss das Tastenkürzel in den Kompositor-Einstellungen für &apos;qterminal -d&apos; hinzugefügt werden.</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="1160"/>
-        <source>Edit bookmark file contents</source>
-        <translation>Inhalt der Lesezeichendatei bearbeiten</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="1119"/>
-        <source>Enable bookmarks</source>
-        <translation>Lesezeichen aktivieren</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="1128"/>
-        <source>Bookmark file</source>
-        <translation>Lesezeichendatei</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="297"/>
-        <source> %</source>
-        <translation> %</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="985"/>
-        <source>Shortcut</source>
-        <translation>Tastenkürzel</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="990"/>
-        <source>Key</source>
-        <translation>Taste</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="65"/>
-        <source>Bookmarks</source>
-        <translation>Lesezeichen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="556"/>
-        <source>Hide tab bar with only one tab</source>
-        <translation>Registerkartenleiste bei einer Registerkarte ausblenden</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="171"/>
-        <source>&amp;Change...</source>
-        <translation>&amp;Ändern...</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="233"/>
-        <source>Cursor shape</source>
-        <translation>Schreibmarkenform</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="563"/>
-        <source>Fixed tab width:</source>
-        <translation>Feste Registerkartenbreite:</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="1002"/>
-        <source>Show on start</source>
-        <translation>Beim Start anzeigen</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="1019"/>
-        <source>Size</source>
-        <translation>Größe</translation>
+        <translation>Chiều rộng</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1083"/>
         <source>Shortcut:</source>
-        <translation>Tastenkürzel:</translation>
+        <translation>Phím tắt:</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="1092"/>
+        <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
+        <translation>Lưu ý: Trên Wayland, phím tắt phải được thêm vào cài đặt bộ ghép cửa sổ cho &apos;qterminal-d&apos;.</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="1160"/>
+        <source>Edit bookmark file contents</source>
+        <translation>Chỉnh sửa nội dung tệp dấu trang</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="1119"/>
+        <source>Enable bookmarks</source>
+        <translation>Bật dấu trang</translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="1128"/>
+        <source>Bookmark file</source>
+        <translation>Đánh dấu tệp</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1141"/>
         <source>Find...</source>
-        <translation>Suchen...</translation>
+        <translation>Tìm…</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1150"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>Sie können Ihre eigene Lesezeichendatei angeben. Dies erlaubt einfachen Austausch mit Werkzeugen wie OwnCloud oder DropBox.</translation>
+        <translation>Bạn có thể chỉ định vị trí lưu trữ dấu trang của riêng mình. Tính năng này cho phép chia sẻ dấu trang dễ dàng với các công cụ như OwnCloud hoặc Dropbox.</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="167"/>
         <source>No scrollbar</source>
-        <translation>Keine Bildlaufleiste</translation>
+        <translation>Không thanh cuộn</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="167"/>
         <location filename="../propertiesdialog.cpp" line="173"/>
         <source>Left</source>
-        <translation>Links</translation>
+        <translation>Bên trái</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="167"/>
         <location filename="../propertiesdialog.cpp" line="173"/>
         <source>Right</source>
-        <translation>Rechts</translation>
+        <translation>Bên phải</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="173"/>
         <source>Top</source>
-        <translation>Oben</translation>
+        <translation>Phía trên</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="173"/>
         <source>Bottom</source>
-        <translation>Unten</translation>
+        <translation>Phía dưới</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>BlockCursor</source>
-        <translation>Block</translation>
+        <translation>ConTrỏKhối</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>UnderlineCursor</source>
-        <translation>Unterstrich</translation>
+        <translation>ConTrỏGạchChân</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>IBeamCursor</source>
-        <translation>Senkrechter Strich</translation>
+        <translation>ConTrỏI</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>No move</source>
-        <translation>Kein Verschieben</translation>
+        <translation>Không di chuyển</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>Scrolling to top</source>
-        <translation>Nach oben rollen</translation>
+        <translation>Cuộn lên đầu trang</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>Scrolling to bottom</source>
-        <translation>Nach unten rollen</translation>
+        <translation>Cuộn xuống dưới cùng</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="289"/>
         <source>Examples</source>
-        <translation>Beispiele</translation>
+        <translation>Ví dụ</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="456"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation>Bilder (*.bmp *.jpg *.png *.svg *.xpm)</translation>
+        <translation>Hình ảnh (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="558"/>
         <source>Open bookmarks file</source>
-        <translation>Lesezeichendatei öffnen</translation>
+        <translation>Mở tệp dấu trang</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="560"/>
         <source>XML files (*.xml)</source>
-        <translation>XML-Dateien (*.xml)</translation>
+        <translation>Tệp XML (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="561"/>
         <source>All files (*)</source>
-        <translation>Alle Dateien (*)</translation>
+        <translation>Tất cả tệp (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="660"/>
         <location filename="../propertiesdialog.cpp" line="664"/>
         <source>Question</source>
-        <translation>Frage</translation>
+        <translation>Câu hỏi</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="660"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation>Möchten Sie diese Lesezeichendatei überschreiben?</translation>
+        <translation>Bạn có muốn ghi đè lên tệp dấu trang này không?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="664"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation>Der Name der Lesezeichendatei endet nicht auf &quot;.xml&quot;
-Sind Sie sicher, dass Sie sie überschreiben wollen?</translation>
+        <translation>Tên của tệp dấu trang không kết thúc bằng &apos;.xml&apos;.
+Bạn có chắc chắn muốn ghi đè lên không?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="672"/>
         <source>Warning</source>
-        <translation>Warnung</translation>
+        <translation>Cảnh báo</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="672"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation>Es können keine Lesezeichen in diese Datei geschrieben werden:</translation>
+        <translation>Không thể ghi dấu trang vào tệp này:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="225"/>
         <location filename="../propertiesdialog.cpp" line="342"/>
         <source>System Default</source>
-        <translation>Systemstandard</translation>
+        <translation>Mặc Định Hệ Thống</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="455"/>
         <source>Choose a background image</source>
-        <translation>Wähle ein Hintergrundbild</translation>
+        <translation>Chọn hình nền</translation>
     </message>
 </context>
 <context>
@@ -991,7 +991,7 @@ Sind Sie sicher, dass Sie sie überschreiben wollen?</translation>
     <message>
         <location filename="../bookmarkswidget.cpp" line="114"/>
         <source>Synchronized Bookmarks</source>
-        <translation>Synchronisierte Lesezeichen</translation>
+        <translation>Dấu trang được đồng bộ hoá</translation>
     </message>
 </context>
 <context>
@@ -1000,52 +1000,52 @@ Sind Sie sicher, dass Sie sie überschreiben wollen?</translation>
         <location filename="../tabwidget.cpp" line="85"/>
         <location filename="../tabwidget.cpp" line="254"/>
         <source>Shell No. %1</source>
-        <translation>Shell Nr. %1</translation>
+        <translation>Shell số %1</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Close Subterminal</source>
-        <translation>Unterterminal schließen</translation>
+        <translation>Đóng cửa sổ dòng lệnh phụ</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation>Sind Sie sicher, dass Sie dieses Unterterminal schließen möchten?</translation>
+        <translation>Bản có chắc chắn muốn đóng cửa sổ dòng lệnh phụ này không?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="222"/>
         <source>Tab name</source>
-        <translation>Registerkartenname</translation>
+        <translation>Tên thẻ</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="223"/>
         <source>New tab name:</source>
-        <translation>Neuer Registerkartenname:</translation>
+        <translation>Tên thẻ mới:</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="243"/>
         <source>Select new tab title color</source>
-        <translation>Farbe des neuen Registerkartentitels auswählen</translation>
+        <translation>Chọn màu tiêu đề thẻ mới</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="272"/>
         <source>Close session</source>
-        <translation>Sitzung schließen</translation>
+        <translation>Đóng phiên</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="274"/>
         <source>Change title color</source>
-        <translation>Titelfarbe ändern</translation>
+        <translation>Đổi màu tiêu đề</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
         <source>Close tab</source>
-        <translation>Registerkarte schließen</translation>
+        <translation>Đóng thẻ</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation>Sind Sie sicher, dass Sie diese Registerkarte schließen möchten?</translation>
+        <translation>Bạn có chắc chắn muốn đóng thẻ này không?</translation>
     </message>
 </context>
 <context>
@@ -1053,55 +1053,55 @@ Sind Sie sicher, dass Sie sie überschreiben wollen?</translation>
     <message>
         <location filename="../termwidgetholder.cpp" line="77"/>
         <source>Load Session</source>
-        <translation>Sitzung laden</translation>
+        <translation>Tải phiên</translation>
     </message>
     <message>
         <location filename="../termwidgetholder.cpp" line="78"/>
         <source>List of saved sessions:</source>
-        <translation>Liste gespeicherter Sitzungen:</translation>
+        <translation>Danh sách các phiên đã lưu:</translation>
     </message>
 </context>
 <context>
     <name>mainWindow</name>
     <message>
+        <location filename="../forms/qterminal.ui" line="14"/>
+        <source>MainWindow</source>
+        <translation>CửaSổChính</translation>
+    </message>
+    <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation>&amp;Sitzung</translation>
+        <translation>Phiên (&amp;S)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
         <source>&amp;Actions</source>
-        <translation>&amp;Aktionen</translation>
+        <translation>Hành động (&amp;A)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="72"/>
         <source>&amp;Help</source>
-        <translation>&amp;Hilfe</translation>
+        <translation>Hỗ trợ (&amp;H)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="79"/>
         <source>&amp;View</source>
-        <translation>&amp;Ansicht</translation>
+        <translation>Xem (&amp;V)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="84"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Bearbeiten</translation>
+        <translation>Chỉnh sửa (&amp;E)</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="100"/>
         <source>&amp;About...</source>
-        <translation>&amp;Über...</translation>
+        <translation>Thông tin (&amp;A)…</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="105"/>
         <source>About &amp;Qt...</source>
-        <translation>Über &amp;Qt...</translation>
-    </message>
-    <message>
-        <location filename="../forms/qterminal.ui" line="14"/>
-        <source>MainWindow</source>
-        <translation>Hauptfenster</translation>
+        <translation>Giới thiệu về &amp;Qt…</translation>
     </message>
 </context>
 </TS>
