@@ -98,12 +98,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="296"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Rozdělit zobrazení horní-dolní</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="299"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Rozdělení zobrazení pra&amp;vé-levé</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="307"/>
@@ -310,12 +310,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="545"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>Tvar textového &amp;ukazatele</translation>
+        <translation>Tvar textového u&amp;kazatele</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="633"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Proces je spuštěný.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="652"/>
@@ -325,7 +325,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Zavřít dílčí terminál</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="652"/>
@@ -605,7 +605,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="277"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation>Určete, zda mají být znaky pro kreslení rámečku kresleny QTerminalem vnitřně nebo ponechány na podkladových knihovnách vykreslování písem.</translation>
+        <translation>Určete, zda mají být znaky pro vytváření rámečku vykreslovány interně v QTerminal nebo ponechány na podkladových knihovnách vykreslování písem.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="253"/>
@@ -630,12 +630,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>Tento příkaz bude spuštěn s argumentem obsahujícím název souboru dočasného souboru obsahujícího historii posouvání</translation>
+        <translation>Tento příkaz bude spuštěn s argumentem obsahujícím název dočasného souboru obsahujícího historii posouvání</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="912"/>
         <source>Handle history command</source>
-        <translation>Zpracovat příkaz pro historii</translation>
+        <translation>Příkaz pro zpracovávání historie</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="616"/>
@@ -656,97 +656,97 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="856"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation>Pokud není zaškrtnuto, nová karta se otevře jako karta zcela vpravo</translation>
+        <translation>Pokud není zaškrtnuto, nová karta bude otevřena jako karta zcela vpravo</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="546"/>
         <source>Close tab on middle-click</source>
-        <translation>Zavřít kartu klepnutím prostředním tlačítkem myši</translation>
+        <translation>Zavřít kartu kliknutím prostředním tlačítkem myši</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="821"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation>Nuceně zakázat závorkový režim vkládání</translation>
+        <translation>Vynutit zakázání závorkového režimu vkládání</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Znaky výběru slova</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Okno</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Blikající kurzor</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Stávající terminál</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Vykreslit ohraničení</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Při najetí myší nastavit stávající terminál</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Změnit nadpis okna na základě terminálu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Změnit ikonu okna na základě terminálu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Při zavírání uložit stav</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Při vybírání textu po slovech považovat krom písmen a číslic za součást slov i tyto znaky</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="785"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Prodleva skrytí ukazatele myši</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="799"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Neskrývat</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sek</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="818"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation>Závorkový režim vkládání je užitečný na vkládání víceřádkových řetězců.</translation>
+        <translation>Závorkový režim vkládání je užitečný pro vkládání víceřádkových řetězců.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Dotázat se při zavírání spuštěného procesu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="866"/>
@@ -762,9 +762,9 @@
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
         <translation>Pokud chcete zkratku upravit:
-1. Dvojklepnutí na její klávesu
+1. Proveďte dvojklik na její klávesu
 2. Stiskněte požadovanou kombinaci a uvolněte ji
-3. Klepněte na zástupce nebo stiskněte klávesu Enter
+3. Klikněte na zástupce nebo stiskněte klávesu Enter
 
 Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifikátor (například Shift)</translation>
     </message>
@@ -797,7 +797,7 @@ Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifik
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1092"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pozn.: Na Wayland je třeba, aby zástupce byl přidán do nastavení kompozitoru pro „qterminal -d“.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1160"/>
@@ -1005,12 +1005,12 @@ Opravdu ho chcete přepsat?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřít dílčí terminál</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Opravdu chcete tento dílčí terminál zavřít?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="222"/>
@@ -1040,12 +1040,12 @@ Opravdu ho chcete přepsat?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Zavřít panel</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Opravdu chcete tento panel zavřít?</translation>
     </message>
 </context>
 <context>
@@ -1071,7 +1071,7 @@ Opravdu ho chcete přepsat?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sezení</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
