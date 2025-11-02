@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="304"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulje jaettu näkymä</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="307"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="633"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Prosessi käynnissä.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="652"/>
@@ -691,42 +691,42 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ikkuna</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="246"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Vilkkuva kursori</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="421"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Nykyinen pääte</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="427"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Piirrä reunus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="434"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktiivinen pääte seuraa hiirtä</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="441"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda ikkunan otsikko päätteen mukaan</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="448"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaihda ikkunan kuvake päätteen mukaan</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="597"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Tallenna tila suljettaessa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="782"/>
@@ -741,17 +741,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="792"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Hiiren piilotuksen aikaraja</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="799"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei piilotusta</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="818"/>
@@ -761,7 +761,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Kysy suljettaessa, kun prosessi on käynnissä</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="866"/>
@@ -1005,12 +1005,12 @@ Haluatko varmasti korvata sen?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulje jaettu pääte</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletko varma, että haluat sulkea tämän päätteen?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="222"/>
@@ -1040,12 +1040,12 @@ Haluatko varmasti korvata sen?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Sulje välilehti</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="356"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Oletko varma, että haluat sulkea tämän välilehden?</translation>
     </message>
 </context>
 <context>
@@ -1071,7 +1071,7 @@ Haluatko varmasti korvata sen?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="59"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>Istunto</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="67"/>
