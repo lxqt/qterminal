@@ -1069,37 +1069,37 @@ Are you sure that you want to overwrite it?</source>
         <translation>기본 창</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="59"/>
+        <location filename="../forms/qterminal.ui" line="62"/>
         <source>&amp;Session</source>
         <translation>세션(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="67"/>
+        <location filename="../forms/qterminal.ui" line="70"/>
         <source>&amp;Actions</source>
         <translation>동작(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="72"/>
+        <location filename="../forms/qterminal.ui" line="75"/>
         <source>&amp;Help</source>
         <translation>도움말(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="79"/>
+        <location filename="../forms/qterminal.ui" line="82"/>
         <source>&amp;View</source>
         <translation>보기(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="84"/>
+        <location filename="../forms/qterminal.ui" line="87"/>
         <source>&amp;Edit</source>
         <translation>편집하기(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="100"/>
+        <location filename="../forms/qterminal.ui" line="103"/>
         <source>&amp;About...</source>
         <translation>프로그램 정보(&amp;A)...</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="105"/>
+        <location filename="../forms/qterminal.ui" line="108"/>
         <source>About &amp;Qt...</source>
         <translation>Qt 정보(&amp;Q)...</translation>
     </message>

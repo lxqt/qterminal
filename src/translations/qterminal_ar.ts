@@ -1069,37 +1069,37 @@ Are you sure that you want to overwrite it?</source>
         <translation>النافذة الرئيسية</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="59"/>
+        <location filename="../forms/qterminal.ui" line="62"/>
         <source>&amp;Session</source>
         <translation>&amp;حصة</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="67"/>
+        <location filename="../forms/qterminal.ui" line="70"/>
         <source>&amp;Actions</source>
         <translation>إ&amp;جراءات</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="72"/>
+        <location filename="../forms/qterminal.ui" line="75"/>
         <source>&amp;Help</source>
         <translation>م&amp;ساعدة</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="79"/>
+        <location filename="../forms/qterminal.ui" line="82"/>
         <source>&amp;View</source>
         <translation>من&amp;ظور</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="84"/>
+        <location filename="../forms/qterminal.ui" line="87"/>
         <source>&amp;Edit</source>
         <translation>ت&amp;حرير</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="100"/>
+        <location filename="../forms/qterminal.ui" line="103"/>
         <source>&amp;About...</source>
         <translation>&amp;عن…</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="105"/>
+        <location filename="../forms/qterminal.ui" line="108"/>
         <source>About &amp;Qt...</source>
         <translation>&amp;عن Qt...</translation>
     </message>

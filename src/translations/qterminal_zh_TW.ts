@@ -1069,37 +1069,37 @@ Are you sure that you want to overwrite it?</source>
         <translation>主視窗</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="59"/>
+        <location filename="../forms/qterminal.ui" line="62"/>
         <source>&amp;Session</source>
         <translation>工作階段(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="67"/>
+        <location filename="../forms/qterminal.ui" line="70"/>
         <source>&amp;Actions</source>
         <translation>動作(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="72"/>
+        <location filename="../forms/qterminal.ui" line="75"/>
         <source>&amp;Help</source>
         <translation>說明(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="79"/>
+        <location filename="../forms/qterminal.ui" line="82"/>
         <source>&amp;View</source>
         <translation>檢視(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="84"/>
+        <location filename="../forms/qterminal.ui" line="87"/>
         <source>&amp;Edit</source>
         <translation>編輯(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="100"/>
+        <location filename="../forms/qterminal.ui" line="103"/>
         <source>&amp;About...</source>
         <translation>關於(&amp;A)...</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="105"/>
+        <location filename="../forms/qterminal.ui" line="108"/>
         <source>About &amp;Qt...</source>
         <translation>關於 &amp;Qt…</translation>
     </message>
