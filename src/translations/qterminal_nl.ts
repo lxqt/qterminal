@@ -1069,37 +1069,37 @@ Weet u zeker dat u het wilt overschrijven?</translation>
         <translation>Hoofdvenster</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="59"/>
+        <location filename="../forms/qterminal.ui" line="62"/>
         <source>&amp;Session</source>
         <translation>&amp;Sessie</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="67"/>
+        <location filename="../forms/qterminal.ui" line="70"/>
         <source>&amp;Actions</source>
         <translation>&amp;Acties</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="72"/>
+        <location filename="../forms/qterminal.ui" line="75"/>
         <source>&amp;Help</source>
         <translation>&amp;Hulp</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="79"/>
+        <location filename="../forms/qterminal.ui" line="82"/>
         <source>&amp;View</source>
         <translation>&amp;Beeld</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="84"/>
+        <location filename="../forms/qterminal.ui" line="87"/>
         <source>&amp;Edit</source>
         <translation>B&amp;ewerken</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="100"/>
+        <location filename="../forms/qterminal.ui" line="103"/>
         <source>&amp;About...</source>
         <translation>&amp;Over…</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="105"/>
+        <location filename="../forms/qterminal.ui" line="108"/>
         <source>About &amp;Qt...</source>
         <translation>Over &amp;Qt…</translation>
     </message>

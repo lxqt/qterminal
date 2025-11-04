@@ -1097,37 +1097,37 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
         <translation>Ddirisa ery&apos;ennono</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="59"/>
+        <location filename="../forms/qterminal.ui" line="62"/>
         <source>&amp;Session</source>
         <translation>&amp;Lutuula</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="67"/>
+        <location filename="../forms/qterminal.ui" line="70"/>
         <source>&amp;Actions</source>
         <translation>&amp;Ebikolwa</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="72"/>
+        <location filename="../forms/qterminal.ui" line="75"/>
         <source>&amp;Help</source>
         <translation>&amp;Nyamba</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="79"/>
+        <location filename="../forms/qterminal.ui" line="82"/>
         <source>&amp;View</source>
         <translation>&amp;Endabika</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="84"/>
+        <location filename="../forms/qterminal.ui" line="87"/>
         <source>&amp;Edit</source>
         <translation>&amp;Kyusa</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="100"/>
+        <location filename="../forms/qterminal.ui" line="103"/>
         <source>&amp;About...</source>
         <translation>E&amp;bifa ku puloguramu eno...</translation>
     </message>
     <message>
-        <location filename="../forms/qterminal.ui" line="105"/>
+        <location filename="../forms/qterminal.ui" line="108"/>
         <source>About &amp;Qt...</source>
         <translation>Ebifa ku &amp;Qt...</translation>
     </message>
