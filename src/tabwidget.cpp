@@ -226,10 +226,9 @@ void TabWidget::renameSession(int index)
     QString previous_text = tabText(index);
     QString text = QInputDialog::getText(this, tr("Tab name"),
                                         tr("New tab name:"), QLineEdit::Normal,
-                                        previous_text, &ok);
+                                        previous_text, &ok).simplified();
     if(ok)
     {
-        setTabIcon(index, QIcon{});
         const QVariant system_title = widget(index)->property(TAB_SYSTEM_TITLE_PROPERTY);
         if (system_title.isValid()) /* Do we already have a custom title ? */
         {
@@ -237,6 +236,7 @@ void TabWidget::renameSession(int index)
             if (text.isEmpty() || text==system_title.toString())
             {
                 /* Restore the stored title */
+                setTabIcon(index, QIcon{});
                 setTabText(index, system_title.toString());
                 /* Reset the stored title memory */
                 widget(index)->setProperty(TAB_SYSTEM_TITLE_PROPERTY, QVariant());
@@ -244,6 +244,7 @@ void TabWidget::renameSession(int index)
             else
             {
                 /* Set the custom text */
+                setTabIcon(index, QIcon{});
                 setTabText(index, text);
             }
         }
@@ -255,6 +256,7 @@ void TabWidget::renameSession(int index)
                 /* Store the title before we set the first custom value */
                 widget(index)->setProperty(TAB_SYSTEM_TITLE_PROPERTY, previous_text);
                 /* Set the custom text */
+                setTabIcon(index, QIcon{});
                 setTabText(index, text);
             }
             /* else... no need to change the title */
