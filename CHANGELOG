@@ -1,3 +1,10 @@
+qterminal-2.3.0 / 2025-11-05
+=============================
+ * Respect geometry and state options on closing with prompt.
+ * Removed "Do not ask again" from prompt dialog.
+ * Added bookmarks action to view context menu.
+ * Silenced Clang warnings.
+
 qterminal-2.2.1 / 2025-05-05
 =============================
  * Removed the workaround for problems that some X11 WMs had with the drop-down mode because (1) it prevented exiting on closing and (2) didn't let the terminal be focused on showing.
