@@ -26,6 +26,7 @@
 
 Properties * Properties::m_instance = nullptr;
 
+using namespace Qt::Literals::StringLiterals;
 
 Properties * Properties::Instance(const QString& filename)
 {
@@ -416,7 +417,8 @@ void Properties::migrate_settings()
 void Properties::removeAccelerator(QString& str)
 {
     // Chinese, Japanese,...
-    str.remove(QRegularExpression(QStringLiteral("\\s*\\(&[a-zA-Z0-9]\\)\\s*")));
+    static const QRegularExpression regexp{u"\\s*\\(&[a-zA-Z0-9]\\)\\s*"_s};
+    str.remove(regexp);
     // other languages
     str.remove(QLatin1Char('&'));
 }

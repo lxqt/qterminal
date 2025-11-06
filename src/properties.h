@@ -23,6 +23,7 @@
 #include <QtCore>
 #include <QFont>
 #include <QFileSystemWatcher>
+#include <QString>
 
 typedef QString Session;
 

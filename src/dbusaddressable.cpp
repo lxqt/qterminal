@@ -1,6 +1,8 @@
-
-
 #include "dbusaddressable.h"
+
+#include <QRegularExpression>
+
+using namespace Qt::Literals::StringLiterals;
 
 #ifdef HAVE_QDBUS
 Q_DECLARE_METATYPE(QList<QDBusObjectPath>)
@@ -20,6 +22,7 @@ DBusAddressable::DBusAddressable(const QString& prefix)
 {
     #ifdef HAVE_QDBUS
     QString uuidString = QUuid::createUuid().toString();
-    m_path = prefix + QLatin1Char('/') + uuidString.replace(QRegularExpression(QStringLiteral("[\\{\\}\\-]")), QString());
+    static const QRegularExpression regExp{u"[\\{\\}\\-]"_s};
+    m_path = prefix + QLatin1Char('/') + uuidString.replace(regExp, QString());
     #endif
 }

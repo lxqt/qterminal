@@ -19,12 +19,14 @@
 
 #include "qterminalutils.h"
 
+using namespace Qt::Literals::StringLiterals;
+
 QStringList parse_command(const QString& str)
 {
-    const QRegularExpression separator(QString::fromLatin1(R"('|(?<!\\)(\\{2})*(\s|")|\z)"));
-    const QRegularExpression doubleQuote(QString::fromLatin1(R"((?<!\\)(\\{2})*")"));
-    const QRegularExpression escapedSpace(QString::fromLatin1(R"(\\(\\{2})*\s)"));
-    const QRegularExpression singleQuote(QStringLiteral("'"));
+    static const QRegularExpression separator(R"('|(?<!\\)(\\{2})*(\s|")|\z)"_L1);
+    static const QRegularExpression doubleQuote(R"((?<!\\)(\\{2})*")"_L1);
+    static const QRegularExpression escapedSpace(R"(\\(\\{2})*\s)"_L1);
+    static const QRegularExpression singleQuote(u"'"_s);
 
     QStringList list;
     QRegularExpressionMatch match;
