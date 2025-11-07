@@ -46,14 +46,6 @@
    </layout>
   </widget>
   <widget class="QMenuBar" name="m_menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>600</width>
-     <height>26</height>
-    </rect>
-   </property>
    <property name="contextMenuPolicy">
     <enum>Qt::PreventContextMenu</enum>
    </property>
