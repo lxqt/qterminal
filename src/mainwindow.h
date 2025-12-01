@@ -96,6 +96,7 @@ private:
     QxtGlobalShortcut m_dropShortcut;
     void realign();
     void setDropShortcut(const QKeySequence& dropShortCut);
+    void setDropLockShortCut(const QKeySequence& dropLockShortCut);
 
     bool hasMultipleTabs(QAction *);
     bool hasMultipleSubterminals(QAction *);

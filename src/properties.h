@@ -117,6 +117,7 @@ class Properties
         int terminalsPreset;
 
         QKeySequence dropShortCut;
+        QKeySequence dropLockShortCut;
         bool dropKeepOpen;
         bool dropShowOnStart;
         int dropWidth;

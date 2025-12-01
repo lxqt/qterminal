@@ -277,6 +277,11 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     dropShortCutEdit->installEventFilter(this);
     dropShortCutEdit->setKeySequence(Properties::Instance()->dropShortCut);
 
+    lockShortCutEdit = new KeySequenceEdit();
+    lockShortCutFormLayout->setWidget(0, QFormLayout::FieldRole, lockShortCutEdit);
+    lockShortCutEdit->installEventFilter(this);
+    lockShortCutEdit->setKeySequence(Properties::Instance()->dropLockShortCut);
+
     useBookmarksCheckBox->setChecked(Properties::Instance()->useBookmarks);
     bookmarksLineEdit->setText(Properties::Instance()->bookmarksFile); // also needed by openBookmarksFile()
     connect(bookmarksLineEdit, &QLineEdit::editingFinished,
@@ -397,6 +402,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->dropHeight = dropHeightSpinBox->value();
     Properties::Instance()->dropWidth = dropWidthSpinBox->value();
     Properties::Instance()->dropShortCut = dropShortCutEdit->keySequence();
+    Properties::Instance()->dropLockShortCut = lockShortCutEdit->keySequence();
 
     Properties::Instance()->useBookmarks = useBookmarksCheckBox->isChecked();
 
@@ -683,13 +689,18 @@ void PropertiesDialog::saveBookmarksFile()
 
 bool PropertiesDialog::eventFilter(QObject *object, QEvent *event)
 {
-    if (object == dropShortCutEdit) {
+    if (object == dropShortCutEdit || object == lockShortCutEdit) {
         if (event->type() == QEvent::KeyPress) {
             QKeyEvent *ke = static_cast<QKeyEvent *>(event);
             int k = ke->key();
             // treat Tab and Backtab like other keys (instead of changing focus)
             if (k == Qt::Key_Tab || k ==  Qt::Key_Backtab) {
-                dropShortCutEdit->pressKey(ke);
+                if (object == dropShortCutEdit) {
+                    dropShortCutEdit->pressKey(ke);
+                }
+                else {
+                    lockShortCutEdit->pressKey(ke);
+                }
                 return true;
             }
             // apply with Enter/Return and cancel with Escape, like in other entries

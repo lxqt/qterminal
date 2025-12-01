@@ -74,6 +74,7 @@ class PropertiesDialog : public QDialog, Ui::PropertiesDialog
         void saveBookmarksFile();
 
         KeySequenceEdit *dropShortCutEdit;
+        KeySequenceEdit *lockShortCutEdit;
         QPushButton *exampleBookmarksButton;
 
     private slots:
