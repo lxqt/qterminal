@@ -165,6 +165,7 @@ void Properties::loadSettings()
 
     m_settings->beginGroup(QLatin1String("DropMode"));
     dropShortCut = QKeySequence(m_settings->value(QLatin1String("ShortCut"), QLatin1String("F12")).toString());
+    dropLockShortCut = QKeySequence(m_settings->value(QLatin1String("KeepOpenShortCut")).toString());
     dropKeepOpen = m_settings->value(QLatin1String("KeepOpen"), false).toBool();
     dropShowOnStart = m_settings->value(QLatin1String("ShowOnStart"), true).toBool();
     dropWidth = qBound(25, m_settings->value(QLatin1String("Width"), 70).toInt(), 100);
@@ -290,6 +291,7 @@ void Properties::saveSettings()
 
     m_settings->beginGroup(QLatin1String("DropMode"));
     m_settings->setValue(QLatin1String("ShortCut"), dropShortCut.toString());
+    m_settings->setValue(QLatin1String("KeepOpenShortCut"), dropLockShortCut.toString());
     m_settings->setValue(QLatin1String("KeepOpen"), dropKeepOpen);
     m_settings->setValue(QLatin1String("ShowOnStart"), dropShowOnStart);
     m_settings->setValue(QLatin1String("Width"), dropWidth);

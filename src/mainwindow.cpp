@@ -202,6 +202,7 @@ void MainWindow::enableDropMode()
     m_dropLockButton->setAutoRaise(true);
 
     setDropShortcut(Properties::Instance()->dropShortCut);
+    setDropLockShortCut(Properties::Instance()->dropLockShortCut);
     realign();
 }
 
@@ -214,6 +215,14 @@ void MainWindow::setDropShortcut(const QKeySequence& dropShortCut)
     {
         m_dropShortcut.setShortcut(dropShortCut);
         qWarning().noquote() << tr("Press \"%1\" to see the terminal.").arg(dropShortCut.toString());
+    }
+}
+
+void MainWindow::setDropLockShortCut(const QKeySequence& dropLockShortCut)
+{
+    if (m_dropLockButton)
+    {
+        m_dropLockButton->setShortcut(dropLockShortCut);
     }
 }
 
@@ -713,6 +722,7 @@ void MainWindow::propertiesChanged()
     consoleTabulator->setTabPosition((QTabWidget::TabPosition)Properties::Instance()->tabsPos);
     consoleTabulator->propertiesChanged();
     setDropShortcut(Properties::Instance()->dropShortCut);
+    setDropLockShortCut(Properties::Instance()->dropLockShortCut);
 
 
     const auto menuBarActions = m_menuBar->actions();
