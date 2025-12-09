@@ -41,7 +41,7 @@ assignees: ''
 ##### System Information
 <!--- Include as many relevant details about the system you experienced    --->
 <!--- the bug in                                                           --->
-* QTerminal version:
+* QTerminal Version:
 * Distribution & Version:
 * Kernel:
 * Qt Version:
