@@ -7,16 +7,16 @@ assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
+##### Relevant Problems
 <!-- A clear and concise description of what the problem is.                -->
 <!-- Example: I'm always frustrated when [...]                              -->
 
-**Describe the solution you'd like**
+##### The Solution You'd Like
 <!-- A clear and concise description of what you want to happen, tell us    -->
 <!-- how it should work, explain the difference from current behavior.      -->
 <!-- A screenshot might help.                                               -->
 
-**Describe eventual alternatives you've considered**
+##### Eventual Alternatives You've Considered
 <!-- A clear and concise description of any alternative solutions or        -->
 <!-- features you've considered.                                            -->
 
