@@ -13,6 +13,7 @@ set(QTERMINAL_VERSION "2.3.0")
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 option(BUILD_TESTS "Builds tests" ON)
+option(ENABLE_WAYLAND "Enable additional support code for the Wayland display server" ON)
 
 if(APPLE)
     option(APPLEBUNDLE "Build as qterminal.app bundle" ON)
@@ -31,7 +32,9 @@ find_package(Qt6Core ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6Gui ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6LinguistTools ${QT_MINIMUM_VERSION} REQUIRED)
 find_package(Qt6Widgets ${QT_MINIMUM_VERSION} REQUIRED)
-find_package(LayerShellQt ${SHELLQT_MINIMUM_VERSION} REQUIRED)
+if(ENABLE_WAYLAND)
+    find_package(LayerShellQt ${SHELLQT_MINIMUM_VERSION} REQUIRED)
+endif()
 if(UNIX)
     find_package(Qt6DBus ${QT_MINIMUM_VERSION} REQUIRED)
     find_package(Qt6 COMPONENTS Core REQUIRED)
@@ -209,8 +212,11 @@ target_link_libraries(${EXE_NAME}
     Qt6::Gui
     Qt6::Widgets
     qtermwidget6
-    LayerShellQtInterface
 )
+if(ENABLE_WAYLAND)
+    add_definitions(-DHAVE_LAYERSHELLQT)
+    target_link_libraries(${EXE_NAME} LayerShellQtInterface)
+endif()
 if(QXT_FOUND)
     target_link_libraries(${EXE_NAME} ${QXT_CORE_LIB} ${QXT_GUI_LIB})
 endif()

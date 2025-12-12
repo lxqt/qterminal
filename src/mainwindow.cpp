@@ -44,8 +44,10 @@
 #include "qterminalapp.h"
 #include "dbusaddressable.h"
 
+#ifdef HAVE_LAYERSHELLQT
 #include <LayerShellQt/Shell>
 #include <LayerShellQt/Window>
+#endif
 
 typedef std::function<bool(MainWindow&, QAction *)> checkfn;
 Q_DECLARE_METATYPE(checkfn)
@@ -172,6 +174,7 @@ void MainWindow::enableDropMode()
 {
     if (QGuiApplication::platformName() == QStringLiteral("wayland"))
     {
+#ifdef HAVE_LAYERSHELLQT
         winId();
         if (QWindow *win = windowHandle())
         {
@@ -189,6 +192,7 @@ void MainWindow::enableDropMode()
                 m_layerWindow->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
             }
         }
+#endif
     }
 
     setWindowFlags(Qt::Dialog | Qt::WindowStaysOnTopHint | Qt::CustomizeWindowHint);
