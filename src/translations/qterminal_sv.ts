@@ -842,7 +842,7 @@ För att ta bort/deaktivera kortkommandon: Redigera ett kortkommando, men tryck 
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lås genväg:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
