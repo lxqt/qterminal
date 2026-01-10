@@ -963,7 +963,7 @@ Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Scorciatoia per bloccare:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
