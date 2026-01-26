@@ -53,12 +53,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
         <source>&amp;Previous Tab</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Previous Tab</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="283"/>
         <source>Move Tab &amp;Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Move Tab &amp;Left</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>

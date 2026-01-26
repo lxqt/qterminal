@@ -781,7 +781,7 @@ Sneltoets wissen: druk bij stap 2 op een samensteltoets (bijv. Shift)</translati
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vergrendelsneltoets:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
