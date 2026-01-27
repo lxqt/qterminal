@@ -842,7 +842,7 @@ Za uklanjanje/deaktiviranje prečaca, u točki 2 pritisni samo modifikatorsku ti
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Zaključaj prečac:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>

@@ -802,7 +802,7 @@ Pokud chcete zkratku odebrat/vypnout zkratky, v bodě 2 stiskněte pouze modifik
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzamknout zkratku:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>

@@ -781,7 +781,7 @@ Para remover/desativar um atalho, no ponto 2, prima apenas um modificador (como 
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Atalho de bloqueio:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>

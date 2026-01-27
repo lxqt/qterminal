@@ -98,17 +98,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="305"/>
         <source>Split &amp;View Top-Bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Pisah &amp;Tampilan Atas-Bawah</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="308"/>
         <source>Split Vie&amp;w Left-Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Pisah Tampila&amp;n Kiri-Kanan</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Tutup Subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="316"/>
@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="355"/>
         <source>Handle history...</source>
-        <translation>Menangani histori...</translation>
+        <translation>Tangani riwayat...</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="363"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="642"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Sebuah proses sedang berjalan.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -630,7 +630,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Use bold font face for intense colors</source>
-        <translation>Gunakan font tebal untuk warna yang intens</translation>
+        <translation>Gunakan tampilan font tebal untuk warna yang intens</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="513"/>
@@ -640,23 +640,23 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="907"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Perilaku mana yang akan diemulasikan. Perhatikan bahwa ini tidak harus sama dengan sistem operasi Anda.&lt;/p&gt;&lt;p&gt;Jika Anda tidak yakin, gunakan emulasi &lt;span style=&quot; font-weight:600;&quot;&gt;bawaan&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="885"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation type="unfinished"></translation>
+        <translation>Perintah ini akan dijalankan dengan sebuah argumen yang berisi nama berkas dari sebuah berkas sementara yang berisi riwayat scrollback</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="888"/>
         <source>Handle history command</source>
-        <translation type="unfinished"></translation>
+        <translation>Perintah penanganan riwayat</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="600"/>
         <location filename="../forms/propertiesdialog.ui" line="614"/>
         <source> px</source>
-        <translation> px</translation>
+        <translation>px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="621"/>
@@ -666,107 +666,107 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="835"/>
         <source>Open new tab to the right of the active tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka tab baru di sebelah kanan tab aktif</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="832"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Jika tidak dicentang, tab baru akan dibuka sebagai tab paling kanan</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="530"/>
         <source>Close tab on middle-click</source>
-        <translation type="unfinished"></translation>
+        <translation>Tutup tab dengan klik tengah</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="797"/>
         <source>Forcefully disable bracketed paste mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Nonaktifkan mode tempel berkurung secara paksa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="751"/>
         <source>Word selection characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Karakter pemilihan kata</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Jendela</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Kursor berkedip</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="413"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal Saat Ini</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="419"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Gambar sebuah batas</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="426"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Atur terminal saat ini ketika mouseover</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="433"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Ubah judul jendela berdasarkan terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Ubah ikon jendela berdasarkan terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Simpan Status saat menutup</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="758"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation type="unfinished"></translation>
+        <translation>Saat memilih teks berdasarkan kata, anggap karakter-karakter ini sebagai bagian dari kata selain karakter alfanumerik</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="768"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Tunda penyembunyian kursor mouse</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Tanpa penyembunyian</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="778"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation>det</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mode tempel berkurung berguna untuk menempelkan string multi-baris.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="818"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Tampilkan prompt saat menutup ketika ada proses yang berjalan</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Bel yang terdengar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="931"/>
@@ -776,7 +776,12 @@
 3. Click on a Shortcut or press Enter
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
-        <translation type="unfinished"></translation>
+        <translation>Untuk mengedit Pintasan:
+1. Klik ganda Tombolnya
+2. Tekan kombinasi yang diinginkan lalu lepaskan
+3. Klik sebuah Pintasan atau tekan Enter
+
+Untuk menghapus/menonaktifkan sebuah Pintasan, pada langkah 2 tekan hanya tombol pengubah (seperti Shift)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="961"/>
@@ -796,7 +801,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="985"/>
         <source>A lock button is shown on horizontal tab bar</source>
-        <translation>Tombol kunci ditampilkan pada tab bar horizontal</translation>
+        <translation>Sebuah tombol kunci ditampilkan pada bilah tab horizontal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="988"/>
@@ -832,12 +837,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1068"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Catatan: Di Wayland, pintasan harus ditambahkan di pengaturan kompositor untuk &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Pintasan kunci:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
@@ -914,64 +919,65 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>Scrolling to top</source>
-        <translation type="unfinished"></translation>
+        <translation>Menggulir ke atas</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>Scrolling to bottom</source>
-        <translation type="unfinished"></translation>
+        <translation>Menggulir ke bawah</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="294"/>
         <source>Examples</source>
-        <translation type="unfinished"></translation>
+        <translation>Contoh</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="462"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
-        <translation type="unfinished"></translation>
+        <translation>Gambar (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="564"/>
         <source>Open bookmarks file</source>
-        <translation type="unfinished"></translation>
+        <translation>Buka berkas bookmark</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="566"/>
         <source>XML files (*.xml)</source>
-        <translation type="unfinished"></translation>
+        <translation>Berkas XML (*.xml)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="567"/>
         <source>All files (*)</source>
-        <translation type="unfinished"></translation>
+        <translation>Semua berkas (*)</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="666"/>
         <location filename="../propertiesdialog.cpp" line="670"/>
         <source>Question</source>
-        <translation type="unfinished"></translation>
+        <translation>Pertanyaan</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="666"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation type="unfinished"></translation>
+        <translation>Apakah Anda ingin menimpa berkas bookmark ini?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="670"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
-        <translation type="unfinished"></translation>
+        <translation>Nama berkas bookmark tidak diakhiri dengan &apos;.xml&apos;.
+Apakah Anda yakin ingin menimpanya?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="678"/>
         <source>Warning</source>
-        <translation type="unfinished"></translation>
+        <translation>Peringatan</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="678"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Tidak dapat menulis bookmark ke berkas ini:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="225"/>
@@ -1004,12 +1010,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Tutup Subterminal</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Apakah Anda yakin ingin menutup subterminal ini?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="227"/>
@@ -1039,12 +1045,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="390"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Tutup tab</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="390"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Apakah Anda yakin ingin menutup tab ini?</translation>
     </message>
 </context>
 <context>
@@ -1070,7 +1076,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="54"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sesi</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="62"/>
