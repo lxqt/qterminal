@@ -2,6 +2,8 @@
 
 ## Overview
 
+![Screenshot of QTerminal with bookmarks pane and 3 tabs open](qterminal.png)
+
 QTerminal is a lightweight Qt terminal emulator based on [QTermWidget](https://github.com/lxqt/qtermwidget).
 
 It is maintained by the LXQt project but can be used independently from this desktop environment. The only bonds are [lxqt-build-tools](https://github.com/lxqt/lxqt-build-tools) representing a build dependency.
@@ -24,7 +26,6 @@ To build run `make`, to install `make install` which accepts variable `DESTDIR` 
 
 Official binary packages are provided by all major Linux and BSD distributions.
 Just use your package manager to search for string `qterminal`.
-
 
 ### Translation
 
