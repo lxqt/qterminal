@@ -159,7 +159,7 @@ void Properties::loadSettings()
     useBookmarks = m_settings->value(QLatin1String("UseBookmarks"), false).toBool();
     bookmarksVisible = m_settings->value(QLatin1String("BookmarksVisible"), true).toBool();
     QString s;
-    auto fInfo = QFileInfo(m_settings->fileName());
+    QFileInfo fInfo(m_settings->fileName());
     if (fInfo.exists())
     {
         s = fInfo.canonicalPath() + QString::fromLatin1("/qterminal_bookmarks.xml");
