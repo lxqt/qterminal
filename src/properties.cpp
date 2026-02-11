@@ -158,7 +158,16 @@ void Properties::loadSettings()
     // bookmarks
     useBookmarks = m_settings->value(QLatin1String("UseBookmarks"), false).toBool();
     bookmarksVisible = m_settings->value(QLatin1String("BookmarksVisible"), true).toBool();
-    const QString s = QFileInfo(m_settings->fileName()).canonicalPath() + QString::fromLatin1("/qterminal_bookmarks.xml");
+    QString s;
+    QFileInfo fInfo(m_settings->fileName());
+    if (fInfo.exists())
+    {
+        s = fInfo.canonicalPath() + QString::fromLatin1("/qterminal_bookmarks.xml");
+    }
+    else
+    { // fInfo.canonicalPath() gives "."
+        s = m_settings->fileName().section(QLatin1String("/"), 0, -2) + QString::fromLatin1("/qterminal_bookmarks.xml");
+    }
     bookmarksFile = m_settings->value(QLatin1String("BookmarksFile"), s).toString();
 
     terminalsPreset = m_settings->value(QLatin1String("TerminalsPreset"), 0).toInt();
