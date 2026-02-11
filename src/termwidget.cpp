@@ -321,7 +321,16 @@ TermWidget::TermWidget(TerminalConfig &cfg, QWidget *parent)
     connect(m_term, &QTermWidget::finished, this, &TermWidget::finished);
     connect(m_term, &QTermWidget::termGetFocus, this, &TermWidget::term_termGetFocus);
     connect(m_term, &QTermWidget::termLostFocus, this, &TermWidget::term_termLostFocus);
-    connect(m_term, &QTermWidget::titleChanged, this, [this] { emit termTitleChanged(m_term->title(), m_term->icon()); });
+    connect(m_term, &QTermWidget::titleChanged, this, [this] {
+        // Only propagate the title if the shell has explicitly set one via an
+        // escape sequence (OSC 0/1/2). Other session-attribute changes (e.g.
+        // OSC 7 working-directory updates) also emit titleChanged, but the
+        // title itself has not been set, so propagating it would overwrite the
+        // tab label with the default "QTermWidget" name.
+        if (m_term->isTitleChanged()) {
+            emit termTitleChanged(m_term->title(), m_term->icon());
+        }
+    });
 }
 
 void TermWidget::propertiesChanged()
