@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="642"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>En prosess kjører.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -691,17 +691,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Vindu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Blinkende markør</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="413"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Gjeldende terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="419"/>
@@ -716,17 +716,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="433"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Endre vindustittel basert på terminalen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Endre vindusikon basert på terminalen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Lagre tilstand ved lukking</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="758"/>
@@ -751,7 +751,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="778"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sek</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
@@ -1045,12 +1045,12 @@ Vil du overskrive den?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="390"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Lukk fane</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="390"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Er du sikker på at du vil lukke denne fanen?</translation>
     </message>
 </context>
 <context>

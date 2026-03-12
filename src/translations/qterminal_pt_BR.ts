@@ -766,7 +766,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Audible bell</source>
-        <translation>Sinal audível</translation>
+        <translation>Sinal sonoro</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="931"/>
@@ -777,7 +777,7 @@
 
 To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</source>
         <translation>Para editar um atalho:
-1. Clique duas vezes em sua chave
+1. Clique duas vezes em sua Tecla
 2. Pressione a combinação desejada e solte-a
 3. Clique em um atalho ou pressione Enter
 
@@ -796,7 +796,7 @@ Para remover/desativar um atalho, no ponto 2, pressione apenas um modificador (c
     <message>
         <location filename="../forms/propertiesdialog.ui" line="978"/>
         <source>Show on start</source>
-        <translation>Mostrar no inicio</translation>
+        <translation>Mostrar ao iniciar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="985"/>
@@ -842,7 +842,7 @@ Para remover/desativar um atalho, no ponto 2, pressione apenas um modificador (c
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Atalho para trava:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
