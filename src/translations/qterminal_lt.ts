@@ -842,7 +842,7 @@ Norėdami pašalinti/išjungti spartųjį klavišą, 2-ame punkte paspauskite ti
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Užrakto spartusis klavišas:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>

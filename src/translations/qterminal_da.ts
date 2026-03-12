@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">%Luk Underterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="316"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="642"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>En proces kører.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -691,22 +691,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Vindue</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Blinkende markør</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="413"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuværende Terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="419"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegn en kant</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="426"/>
@@ -716,17 +716,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="433"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Skift vinduets titel baseret på terminalen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Skift vinduesikon baseret på terminalen</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Gem tilstand ved lukning</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="758"/>
@@ -741,17 +741,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="768"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjul musemarkør med forsinkelse</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Skjul ikke</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="778"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sek</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
@@ -761,7 +761,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="818"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Spørg ved lukning med en kørende proces</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
@@ -842,7 +842,7 @@ Fjern/deaktivér en genvej, i punkt 2, ved kun at trykke på en ændringstast (s
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Lås genvej:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
@@ -1010,12 +1010,12 @@ Er du sikker på du vil overskrive den?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Luk Underterminal</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Er du sikker på at du vil lukke denne underterminal?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="227"/>
@@ -1045,12 +1045,12 @@ Er du sikker på du vil overskrive den?</translation>
     <message>
         <location filename="../tabwidget.cpp" line="390"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Luk faneblad</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="390"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Er du sikker på at du vil lukke dette faneblad?</translation>
     </message>
 </context>
 <context>
@@ -1076,7 +1076,7 @@ Er du sikker på du vil overskrive den?</translation>
     <message>
         <location filename="../forms/qterminal.ui" line="54"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">&amp;Session</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="62"/>
