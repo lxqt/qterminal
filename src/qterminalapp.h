@@ -33,6 +33,7 @@ public:
     bool toggleDropdown();
     void requestDropDown();
     bool isPrimaryInstance();
+    void setColorScheme(const QString &scheme);
     #endif
 
     static void cleanup();

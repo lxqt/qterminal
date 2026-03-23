@@ -40,6 +40,7 @@ class Properties
         QFont defaultFont();
         void saveSettings();
         void loadSettings();
+        void blockWatcher(bool block) { m_watcherBlocked = block; }
         void migrate_settings();
         QString getShortcut(const QString &name, const QString &defaultShortcut) const;
         QString configDir() const;
@@ -149,6 +150,7 @@ class Properties
         QSettings *m_settings;
 
         QFileSystemWatcher *m_watcher;
+        bool m_watcherBlocked = false;
 };
 
 #endif

@@ -18,6 +18,9 @@
     <method name="toggleDropdown">
       <arg name="success" type="b" direction="out"/>
     </method>
+    <method name="setColorScheme">
+      <arg name="scheme" type="s" direction="in"/>
+    </method>
   </interface>
 </node>
 

@@ -46,12 +46,16 @@ Properties::Properties(const QString& filename)
     m_watcher = new QFileSystemWatcher();
     m_watcher->addPath(m_settings->fileName());
     QObject::connect(m_watcher, &QFileSystemWatcher::fileChanged, [this](const QString &path) {
-        if (m_settings)
+        if (m_settings && !m_watcherBlocked)
         {
             m_settings->sync();
             loadSettings();
             if (!m_watcher->files().contains(path))
                 m_watcher->addPath(path);
+        }
+        else if (m_settings && !m_watcher->files().contains(path))
+        {
+            m_watcher->addPath(path);
         }
     });
 }
