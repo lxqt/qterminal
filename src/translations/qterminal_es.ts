@@ -315,7 +315,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="642"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Se está ejecutando un proceso.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -325,7 +325,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Cerrar Subterminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -676,22 +676,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Ventana</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Cursor parpadeante</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="413"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal activa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="419"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Dibujar un borde</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="426"/>
@@ -701,7 +701,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="433"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambiar el título de la ventana según la terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="440"/>
@@ -711,7 +711,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="581"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Guardar estado al cerrar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="758"/>
@@ -721,7 +721,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="761"/>
         <source>:@-./_~</source>
-        <translation type="unfinished"></translation>
+        <translation>:@-./_~</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="768"/>
@@ -731,12 +731,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="775"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>No ocultar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="778"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> sec</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="794"/>
@@ -746,7 +746,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="818"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Preguntar al cerrar mientras un proceso está ejecutándose</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
@@ -802,7 +802,7 @@ Para eliminar / deshabilitar un acceso directo, en el punto 2 presione solo un m
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Atajo de bloqueo:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
@@ -1010,12 +1010,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cerrar subterminal</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">¿Estás seguro de que quieres cerrar esta subterminal?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="227"/>
@@ -1045,12 +1045,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="390"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerrar pestaña</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="390"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>¿Estás seguro de que quieres cerrar esta pestaña?</translation>
     </message>
 </context>
 <context>
@@ -1076,7 +1076,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="54"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sesión</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="62"/>
