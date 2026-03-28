@@ -63,12 +63,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
         <source>Move Tab &amp;Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Move Tab &amp;Right</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="264"/>
         <source>&amp;Clear Active Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Clear Active Terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="197"/>
