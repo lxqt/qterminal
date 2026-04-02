@@ -17,6 +17,7 @@
  ***************************************************************************/
 
 #include <QApplication>
+#include <QTimer>
 #include <QtGlobal>
 
 #include <cassert>
@@ -393,6 +394,27 @@ bool QTerminalApp::isPrimaryInstance() {
   return m_isPrimaryInstance;
 }
 
+void QTerminalApp::setColorScheme(const QString &scheme)
+{
+    Properties *props = Properties::Instance();
+
+    // Block the file watcher to prevent loadSettings() from reverting
+    // the in-memory change when saveSettings() writes to disk.
+    props->blockWatcher(true);
+    props->colorScheme = scheme;
+    props->saveSettings();
+
+    for (MainWindow *wnd : std::as_const(m_windowList))
+    {
+        QMetaObject::invokeMethod(wnd, "propertiesChanged");
+    }
+
+    // Re-enable the file watcher after pending filesystem events are delivered,
+    // so that external config edits are still picked up going forward.
+    QTimer::singleShot(500, []() {
+        Properties::Instance()->blockWatcher(false);
+    });
+}
 
 #endif
 
