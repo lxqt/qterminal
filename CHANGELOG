@@ -1,3 +1,13 @@
+qterminal-2.4.0 / 2026-04-20
+=============================
+ * Improved custom tab name behaviour.
+ * Use static QRegularExpressions
+ * Support shortcut for lock button of dropdown mode.
+ * Issue template updates; added screenshot to the README.
+ * Fixed creation of bookmarks file with new profile.
+ * ui file cleanup.
+ * Updated translations.
+
 qterminal-2.3.0 / 2025-11-05
 =============================
  * Respect geometry and state options on closing with prompt.
