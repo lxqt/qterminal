@@ -90,11 +90,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
             this, &PropertiesDialog::chooseBackgroundImageButton_clicked);
 
     // fixed size
-#if (QT_VERSION >= QT_VERSION_CHECK(6,7,0))
     connect(saveSizeOnExitCheckBox, &QCheckBox::checkStateChanged, [this] (int state)
-#else
-    connect(saveSizeOnExitCheckBox, &QCheckBox::stateChanged, [this] (int state)
-#endif
     {
         fixedSizeLabel->setEnabled(state == Qt::Unchecked);
         xLabel->setEnabled(state == Qt::Unchecked);
