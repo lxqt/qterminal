@@ -696,7 +696,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="426"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Fareyle üzerine gelindiğinde geçerli uçbirimi ayarla</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="433"/>
@@ -802,7 +802,7 @@ Bir Kısayolu kaldırmak/devre dışı bırakmak için, 2. noktada yalnızca bir
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kısayolu kilitle:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
