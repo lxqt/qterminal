@@ -305,7 +305,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;UnderlineCursor</source>
-        <translation>&amp;Нижнее подчеркивание</translation>
+        <translation>&amp;Нижнее подчёркивание</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
@@ -1076,7 +1076,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="54"/>
         <source>&amp;Session</source>
-        <translation>&amp;Сессия</translation>
+        <translation>&amp;Сеанс</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="62"/>

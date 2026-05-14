@@ -731,7 +731,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="818"/>
         <source>Prompt on closing with a running process</source>
-        <translation>実行中のプロセスを閉じるときにプロンプトを表示する</translation>
+        <translation>実行中のプロセスを閉じるときに警告メッセージを表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
