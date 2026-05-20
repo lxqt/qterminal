@@ -128,12 +128,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="332"/>
         <source>Copy &amp;Selection</source>
-        <translation>選択範囲のコピー(&amp;S)</translation>
+        <translation>コピー(選択範囲)(&amp;S)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="338"/>
         <source>Paste S&amp;election</source>
-        <translation>選択範囲の貼り付け(&amp;E)</translation>
+        <translation>貼り付け(選択範囲)(&amp;E)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="355"/>
@@ -310,7 +310,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="335"/>
         <source>Paste Clip&amp;board</source>
-        <translation>クリップボードの貼り付け(&amp;B)</translation>
+        <translation>貼り付け(クリップボード)(&amp;B)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="341"/>
@@ -510,7 +510,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="738"/>
         <source>Action after paste</source>
-        <translation>テキスト貼り付け後の動作</translation>
+        <translation>貼り付け後の動作</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="804"/>
@@ -736,7 +736,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="842"/>
         <source>Audible bell</source>
-        <translation>ベルを聞こえるようにする</translation>
+        <translation>ベルを鳴らす</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="931"/>
@@ -792,12 +792,12 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
         <source>Edit bookmark file contents</source>
-        <translation>ブックマークファイルの内容を編集して下さい</translation>
+        <translation>ブックマークファイルのコンテンツを編集</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1122"/>
         <source>Enable bookmarks</source>
-        <translation>ブックマークを利用可能にする</translation>
+        <translation>ブックマークを有効にする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1131"/>
@@ -867,7 +867,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1153"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
-        <translation>ブックマークファイルの場所を指定します。OwnCloud や Dropbox のようなツールとブックマークを簡単に共有できます。</translation>
+        <translation>ブックマークファイルの場所を指定できます。OwnCloud や Dropbox などのツールでブックマークを簡単に共有できます。</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="167"/>
