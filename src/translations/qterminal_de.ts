@@ -787,7 +787,7 @@ Zum entfernen/deaktivieren eines Tastenkürzel, bei Schritt 2 nur eine Modifier-
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Verknüpfung zum Sperren:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
