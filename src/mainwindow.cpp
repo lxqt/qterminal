@@ -186,7 +186,7 @@ void MainWindow::enableDropMode()
                                                          | LayerShellQt::Window::AnchorRight};
                 m_layerWindow->setAnchors(anchors);
                 m_layerWindow->setScope(QStringLiteral("dropdown_terminal"));
-                m_layerWindow->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
+                m_layerWindow->setWantsToBeOnActiveScreen(true);
             }
         }
     }
@@ -905,7 +905,7 @@ bool MainWindow::event(QEvent *event)
                     layershell->setKeyboardInteractivity(LayerShellQt::Window::KeyboardInteractivityOnDemand);
                     LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
                     layershell->setAnchors(anchors);
-                    layershell->setScreenConfiguration(LayerShellQt::Window::ScreenConfiguration::ScreenFromCompositor);
+                    layershell->setWantsToBeOnActiveScreen(true);
                     layershell->setScope(QStringLiteral("dialog"));
                     // For preventing the dialog from going behind the dropdown window if
                     // the latter is clicked, the window is set on the top layer temporarily.
