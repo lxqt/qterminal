@@ -53,7 +53,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="197"/>
         <source>Keep window open when it loses focus</source>
-        <translation>フォーカスを失った時にウィンドウを開いたままにする</translation>
+        <translation>フォーカスが外れてもウィンドウを開いたままにする</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
@@ -459,7 +459,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="262"/>
         <source>Enable bi-directional text support</source>
-        <translation>双方向テキスト(右横書き・左横書き)のサポートを有効にする</translation>
+        <translation>双方向テキストサポートを有効にする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="305"/>
@@ -485,7 +485,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="520"/>
         <source>Show close button on each tab</source>
-        <translation>各タブに [閉じる] ボタンを表示する</translation>
+        <translation>各タブに「閉じる」ボタンを表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="396"/>
@@ -495,7 +495,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="272"/>
         <source>Use box drawing characters contained in the font</source>
-        <translation>フォントに含まれる罫線(Box-drawing characters)を使用する</translation>
+        <translation>フォントに含まれる罫線文字を使用する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="503"/>
@@ -600,7 +600,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="248"/>
         <source>Use bold font face for intense colors</source>
-        <translation>強調色のために太字フォントを使用する</translation>
+        <translation>鮮やかな色には太字フォントを使用する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="513"/>
@@ -847,7 +847,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="978"/>
         <source>Show on start</source>
-        <translation>ドロップダウン起動時に表示する</translation>
+        <translation>開始時に表示</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="995"/>
