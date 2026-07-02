@@ -439,17 +439,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>2 terminals horizontally</source>
-        <translation>上下２分割</translation>
+        <translation>2分割 (上下)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="383"/>
         <source>2 terminals vertically</source>
-        <translation>左右２分割</translation>
+        <translation>2分割 (左右)</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="388"/>
         <source>4 terminals</source>
-        <translation>４分割</translation>
+        <translation>4分割</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="127"/>
@@ -515,17 +515,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="804"/>
         <source>Confirm multiline paste</source>
-        <translation>複数行テキストの貼り付け時に確認する</translation>
+        <translation>複数行の貼り付け時に確認する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="811"/>
         <source>Trim trailing newlines in pasted text</source>
-        <translation>１行のテキストの貼り付け時に改行を取り除く</translation>
+        <translation>テキスト末尾の改行を貼り付け時に削除する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="825"/>
         <source>Open new terminals in current working directory</source>
-        <translation>新しいターミナルは、現在作業中のディレクトリを開く</translation>
+        <translation>現在の作業ディレクトリで新しいターミナルを開く</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="574"/>
@@ -550,7 +550,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="849"/>
         <source>Default $TERM</source>
-        <translation>$TERM の既定値</translation>
+        <translation>デフォルトの $TERM</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="593"/>
@@ -656,7 +656,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="751"/>
         <source>Word selection characters</source>
-        <translation>単語文字選択</translation>
+        <translation>単語選択文字</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
@@ -701,7 +701,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="758"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
-        <translation>単語ごとにテキストを選択する場合は、英数字だけでなく、これらの文字も単語の一部として考慮します</translation>
+        <translation>単語単位でテキストを選択する際は、英数字に加えてこれらの文字も単語の一部として考慮する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="761"/>
@@ -982,7 +982,7 @@ Are you sure that you want to overwrite it?</source>
         <location filename="../propertiesdialog.cpp" line="225"/>
         <location filename="../propertiesdialog.cpp" line="347"/>
         <source>System Default</source>
-        <translation>システムの既定値</translation>
+        <translation>システムのデフォルト</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>

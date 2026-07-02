@@ -53,7 +53,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="197"/>
         <source>Keep window open when it loses focus</source>
-        <translation>焦点失去时保持窗口开启</translation>
+        <translation>失去焦点时，保持窗口打开</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="274"/>
@@ -63,27 +63,27 @@
     <message>
         <location filename="../mainwindow.cpp" line="277"/>
         <source>&amp;Previous Tab in History</source>
-        <translation>历史中的前一个选项卡(&amp;P)</translation>
+        <translation>历史中的前一个标签页(&amp;P)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="280"/>
         <source>&amp;Next Tab in History</source>
-        <translation>历史中的下一个选项卡(&amp;N)</translation>
+        <translation>历史中的下一个标签页(&amp;N)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="283"/>
         <source>Move Tab &amp;Left</source>
-        <translation>往左边移动标签页(&amp;L)</translation>
+        <translation>向左移动标签页(&amp;L)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="286"/>
         <source>Move Tab &amp;Right</source>
-        <translation>往右边移动标签页(&amp;R)</translation>
+        <translation>向右移动标签页(&amp;R)</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="291"/>
         <source>Tab</source>
-        <translation>标签</translation>
+        <translation>标签页</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="292"/>
@@ -255,7 +255,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="642"/>
         <source>A process is running.</source>
-        <translation>进程运行中</translation>
+        <translation>一个进程正在运行。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -788,7 +788,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>锁定快捷键：</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1163"/>
