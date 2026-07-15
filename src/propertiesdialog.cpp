@@ -355,7 +355,7 @@ void PropertiesDialog::apply()
     Properties::Instance()->focusOnMoueOver = focusOnMoueOverCheckBox->isChecked();
     Properties::Instance()->showTerminalSizeHint = showTerminalSizeHintCheckBox->isChecked();
     Properties::Instance()->backgroundImage = backgroundImageLineEdit->text();
-    Properties::Instance()->backgroundMode = qBound(0, backgroundModecomboBox->currentIndex(), 4);
+    Properties::Instance()->backgroundMode = qBound(0, backgroundModecomboBox->currentIndex(), 5);
 
     Properties::Instance()->askOnExit = askOnExitCheckBox->isChecked();
 

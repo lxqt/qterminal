@@ -354,6 +354,11 @@
                <string>Center</string>
               </property>
              </item>
+             <item>
+              <property name="text">
+               <string>Fill</string>
+              </property>
+             </item>
             </widget>
            </item>
            <item row="15" column="0">

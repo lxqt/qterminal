@@ -118,7 +118,7 @@ void Properties::loadSettings()
 
     termTransparency = m_settings->value(QLatin1String("TerminalTransparency"), 0).toInt();
     backgroundImage = m_settings->value(QLatin1String("TerminalBackgroundImage"), QString()).toString();
-    backgroundMode = qBound(0, m_settings->value(QLatin1String("TerminalBackgroundMode"), 0).toInt(), 4);
+    backgroundMode = qBound(0, m_settings->value(QLatin1String("TerminalBackgroundMode"), 0).toInt(), 5);
 
     /* default to Right. see qtermwidget.h */
     scrollBarPos = m_settings->value(QLatin1String("ScrollbarPosition"), 2).toInt();
