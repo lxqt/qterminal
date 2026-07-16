@@ -377,7 +377,7 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="38"/>
-        <location filename="../forms/propertiesdialog.ui" line="705"/>
+        <location filename="../forms/propertiesdialog.ui" line="710"/>
         <source>Behavior</source>
         <translation>התנהגות</translation>
     </message>
@@ -397,7 +397,7 @@
         <translation>סימניות</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="540"/>
+        <location filename="../forms/propertiesdialog.ui" line="545"/>
         <source>Hide tab bar with only one tab</source>
         <translation>הסתרת סרגל הלשוניות כשיש לשונית אחת בלבד</translation>
     </message>
@@ -412,7 +412,7 @@
         <translation>מיקום סרגל הגלילה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="362"/>
+        <location filename="../forms/propertiesdialog.ui" line="367"/>
         <source>Start with preset:</source>
         <translation>התחלה עם ערכה מוגדרת:</translation>
     </message>
@@ -422,22 +422,22 @@
         <translation>שקיפות מסוף</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="373"/>
+        <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>None (single terminal)</source>
         <translation>ללא (מסוף בודד)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="378"/>
+        <location filename="../forms/propertiesdialog.ui" line="383"/>
         <source>2 terminals horizontally</source>
         <translation>2 מסופים אופקית</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="383"/>
+        <location filename="../forms/propertiesdialog.ui" line="388"/>
         <source>2 terminals vertically</source>
         <translation>2 מסופים אנכית</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="388"/>
+        <location filename="../forms/propertiesdialog.ui" line="393"/>
         <source>4 terminals</source>
         <translation>4 מסופים</translation>
     </message>
@@ -467,7 +467,7 @@
         <translation>סגנון וידג׳ט</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="496"/>
+        <location filename="../forms/propertiesdialog.ui" line="501"/>
         <source>Show the menu bar</source>
         <translation>הצגת סרגל התפריטים</translation>
     </message>
@@ -497,23 +497,23 @@
         <translation>הצגת גודל המסוף עם שינוי הגודל</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="547"/>
+        <location filename="../forms/propertiesdialog.ui" line="552"/>
         <source>Fixed tab width:</source>
         <translation>רוחב לשונית קבוע:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="406"/>
-        <location filename="../forms/propertiesdialog.ui" line="557"/>
+        <location filename="../forms/propertiesdialog.ui" line="411"/>
+        <location filename="../forms/propertiesdialog.ui" line="562"/>
         <source>px</source>
         <translation>פיקסלים</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="520"/>
+        <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>Show close button on each tab</source>
         <translation>הצגת כפתור סגירה על כל לשונית</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="396"/>
+        <location filename="../forms/propertiesdialog.ui" line="401"/>
         <source>Terminal margin</source>
         <translation>גבול מסוף</translation>
     </message>
@@ -523,67 +523,67 @@
         <translation>להשתמש בתווי תיבה שנכללים בגופן</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="503"/>
+        <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>מקשי האצה מופעלים עם Alt ויכולים לשבש את פעילות המסוף.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="506"/>
+        <location filename="../forms/propertiesdialog.ui" line="511"/>
         <source>No menu bar accelerator</source>
         <translation>אין מאיץ לסרגל התפריטים</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="903"/>
         <source>Emulation</source>
         <translation>הדמיה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="738"/>
+        <location filename="../forms/propertiesdialog.ui" line="743"/>
         <source>Action after paste</source>
         <translation>פעולה לאחר הדבקה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="804"/>
+        <location filename="../forms/propertiesdialog.ui" line="809"/>
         <source>Confirm multiline paste</source>
         <translation>בקשת אישור להדבקה של מספר שורות</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="811"/>
+        <location filename="../forms/propertiesdialog.ui" line="816"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>חיתוך שורות חדשות מקדימות בטקסט שמודבק</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="825"/>
+        <location filename="../forms/propertiesdialog.ui" line="830"/>
         <source>Open new terminals in current working directory</source>
         <translation>פתיחת מסופים חדשים בתיקיית העבודה הנוכחית</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="574"/>
+        <location filename="../forms/propertiesdialog.ui" line="579"/>
         <source>Save Size when closing</source>
         <translation>שמירת הגודל עם הסגירה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="567"/>
+        <location filename="../forms/propertiesdialog.ui" line="572"/>
         <source>Save Position when closing</source>
         <translation>שמירת המיקום בעת הסגירה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="731"/>
+        <location filename="../forms/propertiesdialog.ui" line="736"/>
         <source>Unlimited history</source>
         <translation>היסטוריה בלתי מוגבלת</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="711"/>
+        <location filename="../forms/propertiesdialog.ui" line="716"/>
         <source>History size (in lines)</source>
         <translation>גודל ההיסטוריה (בשורות)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="849"/>
+        <location filename="../forms/propertiesdialog.ui" line="854"/>
         <source>Default $TERM</source>
         <translation>$TERM כבררת מחדל</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="593"/>
+        <location filename="../forms/propertiesdialog.ui" line="598"/>
         <source>Start with this size:</source>
         <translation>התחלה עם הגודל הזה:</translation>
     </message>
@@ -633,58 +633,58 @@
         <translation>להשתמש בגוף גופן מודגש לצבעים חזקים</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="513"/>
+        <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>&amp;Hide Window Borders</source>
         <translation>ה&amp;סתרת גבולות החלון</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="907"/>
+        <location filename="../forms/propertiesdialog.ui" line="912"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;איזו התנהגות לדמות. נא לשים לב שזה לא חייבת להיות מערכת ההפעלה שלך.&lt;/p&gt;&lt;p&gt;במקרה של ספק, עדיף להשתמש בהדמיית &lt;span style=&quot; font-weight:600;&quot;&gt;בררת המחדל&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="885"/>
+        <location filename="../forms/propertiesdialog.ui" line="890"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>הפקודה הזאת תופעל עם ארגומנט שכולל את שם קובץ התבנית שמכילה את היסטוריית הגלילה לאחור</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="888"/>
+        <location filename="../forms/propertiesdialog.ui" line="893"/>
         <source>Handle history command</source>
         <translation>טיפול בפקודה history</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="600"/>
-        <location filename="../forms/propertiesdialog.ui" line="614"/>
+        <location filename="../forms/propertiesdialog.ui" line="605"/>
+        <location filename="../forms/propertiesdialog.ui" line="619"/>
         <source> px</source>
         <translation> פיקסלים</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="621"/>
+        <location filename="../forms/propertiesdialog.ui" line="626"/>
         <source>Get current size</source>
         <translation>קבלת הגודל הנוכחי</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="835"/>
+        <location filename="../forms/propertiesdialog.ui" line="840"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>פתיחת לשונית חדשה משמאל ללשונית הפעילה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="832"/>
+        <location filename="../forms/propertiesdialog.ui" line="837"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>אם לא סומן אז הלשונית החדשה תיפתח כלשונית השמאלית ביותר</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="530"/>
+        <location filename="../forms/propertiesdialog.ui" line="535"/>
         <source>Close tab on middle-click</source>
         <translation>סגירת לשונית בלחיצה על הלחצן האמצעי</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="797"/>
+        <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>אילוץ השבתת מצב הדבקה בסוגריים</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="751"/>
+        <location filename="../forms/propertiesdialog.ui" line="756"/>
         <source>Word selection characters</source>
         <translation>תווי בחירת מילים</translation>
     </message>
@@ -699,77 +699,82 @@
         <translation>סמן מהבהב</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="413"/>
+        <location filename="../forms/propertiesdialog.ui" line="359"/>
+        <source>Fill</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Current Terminal</source>
         <translation>מסוף נוכחי</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="419"/>
+        <location filename="../forms/propertiesdialog.ui" line="424"/>
         <source>Draw a border</source>
         <translation>ציור מסגרת</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="426"/>
+        <location filename="../forms/propertiesdialog.ui" line="431"/>
         <source>Set the current terminal on mouseover</source>
         <translation>הגדרת המסוף הנוכחי עם מעבר העכבר מעליו</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="433"/>
+        <location filename="../forms/propertiesdialog.ui" line="438"/>
         <source>Change window title based on the terminal</source>
         <translation>החלפת כותרת החלון לפי המסוף</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="440"/>
+        <location filename="../forms/propertiesdialog.ui" line="445"/>
         <source>Change window icon based on the terminal</source>
         <translation>החלפת סמל החלון לפי המסוף</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="581"/>
+        <location filename="../forms/propertiesdialog.ui" line="586"/>
         <source>Save State when closing</source>
         <translation>שמירת המצב הנוכחי בעת הסגירה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="758"/>
+        <location filename="../forms/propertiesdialog.ui" line="763"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
         <translation>בעת בחירת טקסט לפי מילים, להתייחס לתווים האלה כחלק ממילים בנוסף לתווים והספרות הרגילים</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="761"/>
+        <location filename="../forms/propertiesdialog.ui" line="766"/>
         <source>:@-./_~</source>
         <translation>:@-./_~</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="768"/>
+        <location filename="../forms/propertiesdialog.ui" line="773"/>
         <source>Mouse cursor hiding delay</source>
         <translation>השהיית הסתרת סמן עכבר</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="775"/>
+        <location filename="../forms/propertiesdialog.ui" line="780"/>
         <source>No hiding</source>
         <translation>ללא הסתרה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="778"/>
+        <location filename="../forms/propertiesdialog.ui" line="783"/>
         <source> sec</source>
         <translation> שנ׳</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="794"/>
+        <location filename="../forms/propertiesdialog.ui" line="799"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>מצב הדבקה בסוגריים שימוש להדבקת מחרוזות עם כמה שורות.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="818"/>
+        <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Prompt on closing with a running process</source>
         <translation>להציג בקשה בנוגע להרצת תהליך שרץ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="842"/>
+        <location filename="../forms/propertiesdialog.ui" line="847"/>
         <source>Audible bell</source>
         <translation>צלצול פעמון</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="931"/>
+        <location filename="../forms/propertiesdialog.ui" line="936"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -784,88 +789,88 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 כדי להסיר/להשבית קיצור דרך, בנקודה 2 ללחוץ על מקש החלפה בלבד (כגון Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="961"/>
+        <location filename="../forms/propertiesdialog.ui" line="966"/>
         <source>Shortcut</source>
         <translation>קיצור דרך</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="966"/>
+        <location filename="../forms/propertiesdialog.ui" line="971"/>
         <source>Key</source>
         <translation>מקש</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="978"/>
+        <location filename="../forms/propertiesdialog.ui" line="983"/>
         <source>Show on start</source>
         <translation>הצגה בהתחלה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="985"/>
+        <location filename="../forms/propertiesdialog.ui" line="990"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>כפתור נעילה מופיע בסרגל לשוניות אופקי</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <location filename="../forms/propertiesdialog.ui" line="993"/>
         <source>Keep window open when it loses focus</source>
         <translation>לשמור על החלון פתוח בעת אובדן מיקוד</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="995"/>
+        <location filename="../forms/propertiesdialog.ui" line="1000"/>
         <source>Size</source>
         <translation>גודל</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1006"/>
+        <location filename="../forms/propertiesdialog.ui" line="1011"/>
         <source>Height</source>
         <translation>גובה</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1016"/>
-        <location filename="../forms/propertiesdialog.ui" line="1039"/>
+        <location filename="../forms/propertiesdialog.ui" line="1021"/>
+        <location filename="../forms/propertiesdialog.ui" line="1044"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1029"/>
+        <location filename="../forms/propertiesdialog.ui" line="1034"/>
         <source>Width</source>
         <translation>רוחב</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1059"/>
+        <location filename="../forms/propertiesdialog.ui" line="1064"/>
         <source>Shortcut:</source>
         <translation>קיצור דרך:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1068"/>
+        <location filename="../forms/propertiesdialog.ui" line="1073"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
         <translation>לתשומת ליבך: ב־Wayland קיצור הדרך נוסף להגדרות המנהל החלונאי ל־‚qterminal -d’.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1096"/>
+        <location filename="../forms/propertiesdialog.ui" line="1101"/>
         <source>Lock shortcut:</source>
         <translation>קיצור דרך לנעילה:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1163"/>
+        <location filename="../forms/propertiesdialog.ui" line="1168"/>
         <source>Edit bookmark file contents</source>
         <translation>עריכת תוכן קובץ הסימניות</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1122"/>
+        <location filename="../forms/propertiesdialog.ui" line="1127"/>
         <source>Enable bookmarks</source>
         <translation>הפעלת סימניות</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1131"/>
+        <location filename="../forms/propertiesdialog.ui" line="1136"/>
         <source>Bookmark file</source>
         <translation>הוספת סימנייה לקובץ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1144"/>
+        <location filename="../forms/propertiesdialog.ui" line="1149"/>
         <source>Find...</source>
         <translation>חיפוש…</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1153"/>
+        <location filename="../forms/propertiesdialog.ui" line="1158"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>באפשרותך לציין מיקום משלך לקובץ סימניות. הגדרה זו מאפשרת לך לשתף סימניות בקלות עם כלים כגון OwnCloud או Dropbox.</translation>
     </message>

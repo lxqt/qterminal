@@ -498,7 +498,7 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="38"/>
-        <location filename="../forms/propertiesdialog.ui" line="705"/>
+        <location filename="../forms/propertiesdialog.ui" line="710"/>
         <source>Behavior</source>
         <translation>Comportamento</translation>
     </message>
@@ -543,12 +543,12 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <translation>Posizione delle schede</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="496"/>
+        <location filename="../forms/propertiesdialog.ui" line="501"/>
         <source>Show the menu bar</source>
         <translation>Mostra barra del menu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="540"/>
+        <location filename="../forms/propertiesdialog.ui" line="545"/>
         <source>Hide tab bar with only one tab</source>
         <translation>Nascondi barra con una scheda sola</translation>
     </message>
@@ -563,27 +563,27 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="362"/>
+        <location filename="../forms/propertiesdialog.ui" line="367"/>
         <source>Start with preset:</source>
         <translation>Avvia con preconfigurazione:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="373"/>
+        <location filename="../forms/propertiesdialog.ui" line="378"/>
         <source>None (single terminal)</source>
         <translation>Nessuna (terminale singolo)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="378"/>
+        <location filename="../forms/propertiesdialog.ui" line="383"/>
         <source>2 terminals horizontally</source>
         <translation>2 terminali orizzontalmente</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="383"/>
+        <location filename="../forms/propertiesdialog.ui" line="388"/>
         <source>2 terminals vertically</source>
         <translation>2 terminali verticalmente</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="388"/>
+        <location filename="../forms/propertiesdialog.ui" line="393"/>
         <source>4 terminals</source>
         <translation>4 terminali</translation>
     </message>
@@ -618,23 +618,23 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <translation>Mostra dimensione terminale durante il ridimensionamento</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="547"/>
+        <location filename="../forms/propertiesdialog.ui" line="552"/>
         <source>Fixed tab width:</source>
         <translation>Larghezza scheda fissa:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="406"/>
-        <location filename="../forms/propertiesdialog.ui" line="557"/>
+        <location filename="../forms/propertiesdialog.ui" line="411"/>
+        <location filename="../forms/propertiesdialog.ui" line="562"/>
         <source>px</source>
         <translation>px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="520"/>
+        <location filename="../forms/propertiesdialog.ui" line="525"/>
         <source>Show close button on each tab</source>
         <translation>Mostra pulsante chiusura su ogni tab</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="396"/>
+        <location filename="../forms/propertiesdialog.ui" line="401"/>
         <source>Terminal margin</source>
         <translation>Margine del terminale</translation>
     </message>
@@ -644,67 +644,67 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <translation>Usa i caratteri di disegno del box contenuti nei caratteri</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="503"/>
+        <location filename="../forms/propertiesdialog.ui" line="508"/>
         <source>Accelerators are activated by Alt and can interfere with the terminal.</source>
         <translation>Acceleratori sono attivati con Alt e possono interferire con il terminale.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="506"/>
+        <location filename="../forms/propertiesdialog.ui" line="511"/>
         <source>No menu bar accelerator</source>
         <translation>Nessun acceleratore nella barra del menu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="898"/>
+        <location filename="../forms/propertiesdialog.ui" line="903"/>
         <source>Emulation</source>
         <translation>Emulazione</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="738"/>
+        <location filename="../forms/propertiesdialog.ui" line="743"/>
         <source>Action after paste</source>
         <translation>Azione dopo incolla</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="804"/>
+        <location filename="../forms/propertiesdialog.ui" line="809"/>
         <source>Confirm multiline paste</source>
         <translation>Chiedi conferma per incollare testo con più righe</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="811"/>
+        <location filename="../forms/propertiesdialog.ui" line="816"/>
         <source>Trim trailing newlines in pasted text</source>
         <translation>Elimina fine riga nel testo incollato</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="825"/>
+        <location filename="../forms/propertiesdialog.ui" line="830"/>
         <source>Open new terminals in current working directory</source>
         <translation>Apri terminali nuovi nella directory attuale</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="574"/>
+        <location filename="../forms/propertiesdialog.ui" line="579"/>
         <source>Save Size when closing</source>
         <translation>Salva dimensioni alla chiusura</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="567"/>
+        <location filename="../forms/propertiesdialog.ui" line="572"/>
         <source>Save Position when closing</source>
         <translation>Salva posizione alla chiusura</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="731"/>
+        <location filename="../forms/propertiesdialog.ui" line="736"/>
         <source>Unlimited history</source>
         <translation>Cronologia illimitata</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="711"/>
+        <location filename="../forms/propertiesdialog.ui" line="716"/>
         <source>History size (in lines)</source>
         <translation>Dimensione cronologia (linee)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="849"/>
+        <location filename="../forms/propertiesdialog.ui" line="854"/>
         <source>Default $TERM</source>
         <translation>$TERM di default</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="593"/>
+        <location filename="../forms/propertiesdialog.ui" line="598"/>
         <source>Start with this size:</source>
         <translation>Avvia con questa dimensione:</translation>
     </message>
@@ -754,58 +754,58 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <translation>Visualizza i colori intensi in grassetto</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="513"/>
+        <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>&amp;Hide Window Borders</source>
         <translation>&amp;Nascondi decorazione della finestra</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="907"/>
+        <location filename="../forms/propertiesdialog.ui" line="912"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quale comportamento da emulare. Questo non deve corrispondere al sistema operativo in uso.&lt;/p&gt;&lt;p&gt;Se si è insicuri usare l&apos;emulazione &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="885"/>
+        <location filename="../forms/propertiesdialog.ui" line="890"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
         <translation>Questo comando sarà eseguito con un argomento contenente il nome del file temporaneo contenente la cronologia scrollback</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="888"/>
+        <location filename="../forms/propertiesdialog.ui" line="893"/>
         <source>Handle history command</source>
         <translation>Gestisci il comando per la cronologia</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="600"/>
-        <location filename="../forms/propertiesdialog.ui" line="614"/>
+        <location filename="../forms/propertiesdialog.ui" line="605"/>
+        <location filename="../forms/propertiesdialog.ui" line="619"/>
         <source> px</source>
         <translation> px</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="621"/>
+        <location filename="../forms/propertiesdialog.ui" line="626"/>
         <source>Get current size</source>
         <translation>Determina dimensione attuale</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="835"/>
+        <location filename="../forms/propertiesdialog.ui" line="840"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>Apri schede nuove a destro della scheda attuale</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="832"/>
+        <location filename="../forms/propertiesdialog.ui" line="837"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>Se non è spuntato la scheda nuova si apre ultima sulla destra</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="530"/>
+        <location filename="../forms/propertiesdialog.ui" line="535"/>
         <source>Close tab on middle-click</source>
         <translation>Chiudi scheda con tasto centrale</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="797"/>
+        <location filename="../forms/propertiesdialog.ui" line="802"/>
         <source>Forcefully disable bracketed paste mode</source>
         <translation>Disabilita modalità incolla tra parentesi</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="751"/>
+        <location filename="../forms/propertiesdialog.ui" line="756"/>
         <source>Word selection characters</source>
         <translation>Caratteri di selezione delle parole</translation>
     </message>
@@ -820,77 +820,82 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <translation>Cursore lampeggiante</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="413"/>
+        <location filename="../forms/propertiesdialog.ui" line="359"/>
+        <source>Fill</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Current Terminal</source>
         <translation>Terminale corrente</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="419"/>
+        <location filename="../forms/propertiesdialog.ui" line="424"/>
         <source>Draw a border</source>
         <translation>Mostra un bordo</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="426"/>
+        <location filename="../forms/propertiesdialog.ui" line="431"/>
         <source>Set the current terminal on mouseover</source>
         <translation>Attiva terminale corrente al passaggio del mouse</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="433"/>
+        <location filename="../forms/propertiesdialog.ui" line="438"/>
         <source>Change window title based on the terminal</source>
         <translation>Cambia titolo della finestra in base al terminale</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="440"/>
+        <location filename="../forms/propertiesdialog.ui" line="445"/>
         <source>Change window icon based on the terminal</source>
         <translation>Cambia icona della finestra in base al terminale</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="581"/>
+        <location filename="../forms/propertiesdialog.ui" line="586"/>
         <source>Save State when closing</source>
         <translation>Salva lo stato alla chiusura</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="758"/>
+        <location filename="../forms/propertiesdialog.ui" line="763"/>
         <source>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</source>
         <translation>Quando si seleziona il testo per parola, considerare questi caratteri come parte delle parole oltre ai caratteri alfanumerici</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="761"/>
+        <location filename="../forms/propertiesdialog.ui" line="766"/>
         <source>:@-./_~</source>
         <translation>:@-./_~%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="768"/>
+        <location filename="../forms/propertiesdialog.ui" line="773"/>
         <source>Mouse cursor hiding delay</source>
         <translation>Ritardo di nascondimento del cursore</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="775"/>
+        <location filename="../forms/propertiesdialog.ui" line="780"/>
         <source>No hiding</source>
         <translation>Non nascondere</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="778"/>
+        <location filename="../forms/propertiesdialog.ui" line="783"/>
         <source> sec</source>
         <translation> sec</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="794"/>
+        <location filename="../forms/propertiesdialog.ui" line="799"/>
         <source>Bracketed paste mode is useful for pasting multiline strings.</source>
         <translation>La modalità incolla tra parentesi può essere utile per stringe multi-righe.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="818"/>
+        <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Prompt on closing with a running process</source>
         <translation>Chiedi una conferma per chiudere quando un processo è in esecuzione</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="842"/>
+        <location filename="../forms/propertiesdialog.ui" line="847"/>
         <source>Audible bell</source>
         <translation>Campanella udibile</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="931"/>
+        <location filename="../forms/propertiesdialog.ui" line="936"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -905,88 +910,88 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="961"/>
+        <location filename="../forms/propertiesdialog.ui" line="966"/>
         <source>Shortcut</source>
         <translation>Scorciatoia</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="966"/>
+        <location filename="../forms/propertiesdialog.ui" line="971"/>
         <source>Key</source>
         <translation>Chiave</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="978"/>
+        <location filename="../forms/propertiesdialog.ui" line="983"/>
         <source>Show on start</source>
         <translation>Mostra all&apos;avvio</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="985"/>
+        <location filename="../forms/propertiesdialog.ui" line="990"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>Un lucchetto verrà mostrato sulla barra orizzontale dei tab</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="988"/>
+        <location filename="../forms/propertiesdialog.ui" line="993"/>
         <source>Keep window open when it loses focus</source>
         <translation>Tieni finestra aperta se perde il focus</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="995"/>
+        <location filename="../forms/propertiesdialog.ui" line="1000"/>
         <source>Size</source>
         <translation>Dimensione</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1006"/>
+        <location filename="../forms/propertiesdialog.ui" line="1011"/>
         <source>Height</source>
         <translation>Altezza</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1016"/>
-        <location filename="../forms/propertiesdialog.ui" line="1039"/>
+        <location filename="../forms/propertiesdialog.ui" line="1021"/>
+        <location filename="../forms/propertiesdialog.ui" line="1044"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1029"/>
+        <location filename="../forms/propertiesdialog.ui" line="1034"/>
         <source>Width</source>
         <translation>Larghezza</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1059"/>
+        <location filename="../forms/propertiesdialog.ui" line="1064"/>
         <source>Shortcut:</source>
         <translation>Scorciatoia:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1068"/>
+        <location filename="../forms/propertiesdialog.ui" line="1073"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
         <translation>Nota: Sotto wayland la scorciatoia per &apos;qterminal -d&apos; deve essere aggiunta nelle impostazioni del compositor.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1096"/>
+        <location filename="../forms/propertiesdialog.ui" line="1101"/>
         <source>Lock shortcut:</source>
         <translation>Scorciatoia per bloccare:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1163"/>
+        <location filename="../forms/propertiesdialog.ui" line="1168"/>
         <source>Edit bookmark file contents</source>
         <translation>Modifica contenuto file segnalibro</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1122"/>
+        <location filename="../forms/propertiesdialog.ui" line="1127"/>
         <source>Enable bookmarks</source>
         <translation>Attiva segnalibri</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1131"/>
+        <location filename="../forms/propertiesdialog.ui" line="1136"/>
         <source>Bookmark file</source>
         <translation>File segnalibro</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1144"/>
+        <location filename="../forms/propertiesdialog.ui" line="1149"/>
         <source>Find...</source>
         <translation>Cerca...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1153"/>
+        <location filename="../forms/propertiesdialog.ui" line="1158"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Si può specificare la posizione personalizzata per i segnalibri. Permette una condivisione facile usando servizi come OwnCloud o Dropbox.</translation>
     </message>
