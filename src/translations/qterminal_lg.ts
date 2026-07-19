@@ -725,7 +725,7 @@ obutatabulwatabulwa nga kibikolako.</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="359"/>
         <source>Fill</source>
-        <translation type="unfinished"></translation>
+        <translation>Bwaliriro</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
@@ -874,7 +874,7 @@ enkola ya gannaago (okugeza erya Shift)</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1101"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Mapeesa agasibirawo akatimbe:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1168"/>
