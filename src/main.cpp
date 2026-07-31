@@ -180,9 +180,12 @@ int main(int argc, char *argv[])
     if (customStyle.isFile() && customStyle.isReadable())
     {
         QFile style(customStyle.canonicalFilePath());
-        style.open(QFile::ReadOnly);
-        QString styleString = QLatin1String(style.readAll());
-        app->setStyleSheet(styleString);
+        if (style.open(QFile::ReadOnly)) {
+            QString styleString = QLatin1String(style.readAll());
+            app->setStyleSheet(styleString);
+        } else {
+            qWarning() << "Failed to open stylesheet";
+        }
     }
 
     // icons
