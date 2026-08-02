@@ -73,7 +73,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="197"/>
         <source>Keep window open when it loses focus</source>
-        <translation>Biarkan jendela tetap terbuka saat kehilangan fokus</translation>
+        <translation>Tetap buka jendela saat kehilangan fokus</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="277"/>
@@ -620,7 +620,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="269"/>
         <source>Specify whether box drawing characters should be drawn by QTerminal internally or left to underlying font rendering libraries.</source>
-        <translation type="unfinished">Tentukan apakah karakter gambar kotak harus diolah dengan QTerminal atau menggunakan library perender font.</translation>
+        <translation>Tentukan apakah karakter gambar kotak harus digambar oleh QTerminal secara internal atau diserahkan ke perpustakaan perenderan font yang mendasarinya.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="245"/>
@@ -635,7 +635,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="518"/>
         <source>&amp;Hide Window Borders</source>
-        <translation type="unfinished">Sembunyikan Garis Jendela</translation>
+        <translation>Sembunyikan &amp;Garis Jendela</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="912"/>
@@ -656,12 +656,12 @@
         <location filename="../forms/propertiesdialog.ui" line="605"/>
         <location filename="../forms/propertiesdialog.ui" line="619"/>
         <source> px</source>
-        <translation>px</translation>
+        <translation> px</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="626"/>
         <source>Get current size</source>
-        <translation type="unfinished">Pakai ukuran sekarang</translation>
+        <translation>Lihat ukuran sekarang</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="840"/>
@@ -701,7 +701,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="359"/>
         <source>Fill</source>
-        <translation type="unfinished"></translation>
+        <translation>Isi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
@@ -756,7 +756,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="783"/>
         <source> sec</source>
-        <translation>det</translation>
+        <translation> det</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="799"/>
@@ -811,7 +811,7 @@ Untuk menghapus/menonaktifkan sebuah Pintasan, pada langkah 2 tekan hanya tombol
     <message>
         <location filename="../forms/propertiesdialog.ui" line="993"/>
         <source>Keep window open when it loses focus</source>
-        <translation type="unfinished">Biarkan jendela tetap terbuka saat kehilangan fokus</translation>
+        <translation>Biarkan jendela tetap terbuka saat jendela tersebut kehilangan fokus</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1000"/>

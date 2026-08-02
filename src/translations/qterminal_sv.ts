@@ -701,7 +701,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="359"/>
         <source>Fill</source>
-        <translation type="unfinished"></translation>
+        <translation>Fyll</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>

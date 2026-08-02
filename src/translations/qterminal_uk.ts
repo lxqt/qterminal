@@ -701,7 +701,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="359"/>
         <source>Fill</source>
-        <translation type="unfinished"></translation>
+        <translation>Заповнити</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
@@ -847,7 +847,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1101"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Замкнути скорочення:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1168"/>
