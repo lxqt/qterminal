@@ -666,12 +666,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Blinking cursor</source>
-        <translation>カーソルの点滅</translation>
+        <translation>カーソルを点滅させる</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="359"/>
         <source>Fill</source>
-        <translation type="unfinished"></translation>
+        <translation>塗りつぶす</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
