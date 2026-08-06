@@ -532,9 +532,9 @@ void MainWindow::setup_ViewMenu_Actions()
     /* Keyboard cursor shape */
     if (keyboardCursorShape == nullptr) {
         keyboardCursorShape = new QActionGroup(this);
-        QAction *block = new QAction(tr("&BlockCursor"), this);
-        QAction *underline = new QAction(tr("&UnderlineCursor"), this);
-        QAction *ibeam = new QAction(tr("&IBeamCursor"), this);
+        QAction *block = new QAction(tr("&Block"), this);
+        QAction *underline = new QAction(tr("&Underline"), this);
+        QAction *ibeam = new QAction(tr("&I-Beam"), this);
 
         /* order of insertion is dep. on QTermWidget::KeyboardCursorShape enum */
         keyboardCursorShape->addAction(block);

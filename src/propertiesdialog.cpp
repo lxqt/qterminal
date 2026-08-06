@@ -183,7 +183,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     /* keyboard cursor shape */
     QStringList keyboardCursorShapeList;
-    keyboardCursorShapeList << tr("BlockCursor") << tr("UnderlineCursor") << tr("IBeamCursor");
+    keyboardCursorShapeList << tr("Block") << tr("Underline") << tr("I-Beam");
     keybCursorShape_comboBox->addItems(keyboardCursorShapeList);
     keybCursorShape_comboBox->setCurrentIndex(Properties::Instance()->keyboardCursorShape);
 
