@@ -299,18 +299,18 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
-        <source>&amp;BlockCursor</source>
-        <translation>&amp;Cursor de Bloco</translation>
+        <source>&amp;Block</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
-        <source>&amp;UnderlineCursor</source>
-        <translation>&amp;Cursor Sublinhado</translation>
+        <source>&amp;Underline</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
-        <source>&amp;IBeamCursor</source>
-        <translation>&amp;Cursor Padrão</translation>
+        <source>&amp;I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -902,21 +902,6 @@ Para remover/desativar um atalho, no ponto 2, pressione apenas um modificador (c
         <translation>Fundo</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>BlockCursor</source>
-        <translation>Cursor de Bloco</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>UnderlineCursor</source>
-        <translation>Cursor Sublinhado</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>IBeamCursor</source>
-        <translation>Cursor Padrão</translation>
-    </message>
-    <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>No move</source>
         <translation>Não mover</translation>
@@ -989,6 +974,21 @@ Você tem certeza que quer o sobrescrever?</translation>
         <location filename="../propertiesdialog.cpp" line="347"/>
         <source>System Default</source>
         <translation>Padrão do sistema</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Underline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>

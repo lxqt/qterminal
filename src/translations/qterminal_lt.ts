@@ -299,18 +299,18 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
-        <source>&amp;BlockCursor</source>
-        <translation>&amp;Blokas</translation>
+        <source>&amp;Block</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
-        <source>&amp;UnderlineCursor</source>
-        <translation>Pabra&amp;ukimas</translation>
+        <source>&amp;Underline</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
-        <source>&amp;IBeamCursor</source>
-        <translation>&amp;Dvitėjinė sija</translation>
+        <source>&amp;I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -902,21 +902,6 @@ Norėdami pašalinti/išjungti spartųjį klavišą, 2-ame punkte paspauskite ti
         <translation>Apačioje</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>BlockCursor</source>
-        <translation>Blokas</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>UnderlineCursor</source>
-        <translation>Pabraukimas</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>IBeamCursor</source>
-        <translation>Dvitėjinė sija</translation>
-    </message>
-    <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>No move</source>
         <translation>Nejudėti</translation>
@@ -989,6 +974,21 @@ Ar tikrai norite jį perrašyti?</translation>
         <location filename="../propertiesdialog.cpp" line="347"/>
         <source>System Default</source>
         <translation>Sistemos numatytasis</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Underline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>

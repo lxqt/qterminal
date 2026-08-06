@@ -299,17 +299,17 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
-        <source>&amp;BlockCursor</source>
+        <source>&amp;Block</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
-        <source>&amp;UnderlineCursor</source>
+        <source>&amp;Underline</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
-        <source>&amp;IBeamCursor</source>
+        <source>&amp;I-Beam</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -897,21 +897,6 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>BlockCursor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>UnderlineCursor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>IBeamCursor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>No move</source>
         <translation type="unfinished"></translation>
@@ -982,6 +967,21 @@ Are you sure that you want to overwrite it?</source>
         <location filename="../propertiesdialog.cpp" line="225"/>
         <location filename="../propertiesdialog.cpp" line="347"/>
         <source>System Default</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Underline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>I-Beam</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

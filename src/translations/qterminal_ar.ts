@@ -299,18 +299,18 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
-        <source>&amp;BlockCursor</source>
-        <translation>&amp;مؤشر كتلة</translation>
+        <source>&amp;Block</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
-        <source>&amp;UnderlineCursor</source>
-        <translation>&amp;مؤشر تحتي</translation>
+        <source>&amp;Underline</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
-        <source>&amp;IBeamCursor</source>
-        <translation>&amp;مؤشر عمودي</translation>
+        <source>&amp;I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -902,21 +902,6 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>أسفل</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>BlockCursor</source>
-        <translation>كتلة المؤشر</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>UnderlineCursor</source>
-        <translation>تسطير المؤشر</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>IBeamCursor</source>
-        <translation>مؤشر عمودي</translation>
-    </message>
-    <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>No move</source>
         <translation>لا حركة</translation>
@@ -989,6 +974,21 @@ Are you sure that you want to overwrite it?</source>
         <location filename="../propertiesdialog.cpp" line="347"/>
         <source>System Default</source>
         <translation>مبدئيات النظام</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Underline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>

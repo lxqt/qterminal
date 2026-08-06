@@ -299,18 +299,18 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
-        <source>&amp;BlockCursor</source>
-        <translation>블럭(&amp;B)</translation>
+        <source>&amp;Block</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
-        <source>&amp;UnderlineCursor</source>
-        <translation>밑줄(&amp;U)</translation>
+        <source>&amp;Underline</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
-        <source>&amp;IBeamCursor</source>
-        <translation>I-빔(&amp;I)</translation>
+        <source>&amp;I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -902,21 +902,6 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>하단</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>BlockCursor</source>
-        <translation>블록커서</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>UnderlineCursor</source>
-        <translation>밑줄커서</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>IBeamCursor</source>
-        <translation>아이빔커서</translation>
-    </message>
-    <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>No move</source>
         <translation>이동 없음</translation>
@@ -989,6 +974,21 @@ Are you sure that you want to overwrite it?</source>
         <location filename="../propertiesdialog.cpp" line="347"/>
         <source>System Default</source>
         <translation>시스템 기본값</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Underline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>

@@ -293,21 +293,6 @@
         <translation>&amp;Posizione barra di scorrimento</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="535"/>
-        <source>&amp;BlockCursor</source>
-        <translation>&amp;Blocco verticale</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="536"/>
-        <source>&amp;UnderlineCursor</source>
-        <translation>&amp;Sottolineatura</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="537"/>
-        <source>&amp;IBeamCursor</source>
-        <translation>Barra &amp;verticale</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="554"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Tipo di cursore</translation>
@@ -326,6 +311,21 @@
         <location filename="../mainwindow.cpp" line="313"/>
         <source>&amp;Close Subterminal</source>
         <translation>&amp;Chiudi sottoterminale</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="535"/>
+        <source>&amp;Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="536"/>
+        <source>&amp;Underline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="537"/>
+        <source>&amp;I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -391,21 +391,6 @@
         <location filename="../propertiesdialog.cpp" line="173"/>
         <source>Bottom</source>
         <translation>Basso</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>BlockCursor</source>
-        <translation>Blocco</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>UnderlineCursor</source>
-        <translation>Sottolineatura</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>IBeamCursor</source>
-        <translation>Barra verticale</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
@@ -480,6 +465,21 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <location filename="../propertiesdialog.cpp" line="347"/>
         <source>System Default</source>
         <translation>Predefinito dal sistema</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Underline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>

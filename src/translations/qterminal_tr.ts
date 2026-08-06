@@ -293,21 +293,6 @@
         <translation>&amp;Kaydırma Çubuğu Düzeni</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="535"/>
-        <source>&amp;BlockCursor</source>
-        <translation>&amp;Blok İmleç</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="536"/>
-        <source>&amp;UnderlineCursor</source>
-        <translation>Alt Çiz&amp;gi İmleç</translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="537"/>
-        <source>&amp;IBeamCursor</source>
-        <translation>&amp;Işın İmleç</translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="554"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;Klavye İmleç Şekli</translation>
@@ -326,6 +311,21 @@
         <location filename="../mainwindow.cpp" line="313"/>
         <source>&amp;Close Subterminal</source>
         <translation>&amp;Alt Terminali Kapat</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="535"/>
+        <source>&amp;Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="536"/>
+        <source>&amp;Underline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="537"/>
+        <source>&amp;I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -902,21 +902,6 @@ Bir Kısayolu kaldırmak/devre dışı bırakmak için, 2. noktada yalnızca bir
         <translation>En Aşağı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>BlockCursor</source>
-        <translation>Blok İmleç</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>UnderlineCursor</source>
-        <translation>Alt Çizgi İmleç</translation>
-    </message>
-    <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
-        <source>IBeamCursor</source>
-        <translation>Işın İmleç</translation>
-    </message>
-    <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
         <source>No move</source>
         <translation>Taşıma yok</translation>
@@ -989,6 +974,21 @@ Are you sure that you want to overwrite it?</source>
         <location filename="../propertiesdialog.cpp" line="347"/>
         <source>System Default</source>
         <translation>Sistem Varsayılanı</translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Block</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>Underline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../propertiesdialog.cpp" line="186"/>
+        <source>I-Beam</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>
