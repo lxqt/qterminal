@@ -190,6 +190,10 @@ void Properties::loadSettings()
     trimPastedTrailingNewlines = m_settings->value(QLatin1String("TrimPastedTrailingNewlines"), false).toBool();
     wordCharacters = m_settings->value(QLatin1String("WordCharacters"), QLatin1String(":@-./_~")).toString();
 
+    enableOsc8Hyperlinks = m_settings->value(QLatin1String("EnableOsc8Hyperlinks"), true).toBool();
+    showLinkTooltips = m_settings->value(QLatin1String("ShowLinkTooltips"), true).toBool();
+    openLinksByCtrlClick = m_settings->value(QLatin1String("OpenLinksByCtrlClick"), true).toBool();
+
     windowMaximized = m_settings->value(QLatin1String("LastWindowMaximized"), false).toBool();
 
     swapMouseButtons2and3 = m_settings->value(QLatin1String("SwapMouseButtons2and3"), false).toBool();
@@ -315,6 +319,10 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("ConfirmMultilinePaste"), confirmMultilinePaste);
     m_settings->setValue(QLatin1String("TrimPastedTrailingNewlines"), trimPastedTrailingNewlines);
     m_settings->setValue(QLatin1String("WordCharacters"), wordCharacters);
+
+    m_settings->setValue(QLatin1String("EnableOsc8Hyperlinks"), enableOsc8Hyperlinks);
+    m_settings->setValue(QLatin1String("ShowLinkTooltips"), showLinkTooltips);
+    m_settings->setValue(QLatin1String("OpenLinksByCtrlClick"), openLinksByCtrlClick);
 
     m_settings->setValue(QLatin1String("LastWindowMaximized"), windowMaximized);
     m_settings->setValue(QLatin1String("SwapMouseButtons2and3"), swapMouseButtons2and3);
