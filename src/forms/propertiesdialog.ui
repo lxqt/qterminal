@@ -818,20 +818,50 @@
                </widget>
               </item>
               <item row="8" column="0" colspan="2">
+               <widget class="QCheckBox" name="enableOsc8HyperlinksCheckBox">
+                <property name="toolTip">
+                 <string>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</string>
+                </property>
+                <property name="text">
+                 <string>Enable OSC-8 hyperlinks</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="0" colspan="2">
+               <widget class="QCheckBox" name="showLinkTooltipsCheckBox">
+                <property name="toolTip">
+                 <string>Show the destination URL when hovering over a link</string>
+                </property>
+                <property name="text">
+                 <string>Show link destination on hover</string>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="0" colspan="2">
+               <widget class="QCheckBox" name="openLinksByCtrlClickCheckBox">
+                <property name="toolTip">
+                 <string>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</string>
+                </property>
+                <property name="text">
+                 <string>Open links with Ctrl+Click</string>
+                </property>
+               </widget>
+              </item>
+              <item row="11" column="0" colspan="2">
                <widget class="QCheckBox" name="askOnExitCheckBox">
                 <property name="text">
                  <string>Prompt on closing with a running process</string>
                 </property>
                </widget>
               </item>
-              <item row="9" column="0" colspan="2">
+              <item row="12" column="0" colspan="2">
                <widget class="QCheckBox" name="useCwdCheckBox">
                 <property name="text">
                  <string>Open new terminals in current working directory</string>
                 </property>
                </widget>
               </item>
-              <item row="10" column="0" colspan="2">
+              <item row="13" column="0" colspan="2">
                <widget class="QCheckBox" name="openNewTabRightToActiveTabCheckBox">
                 <property name="toolTip">
                  <string>If unchecked the new tab will be opened as the rightmost tab</string>
@@ -841,21 +871,21 @@
                 </property>
                </widget>
               </item>
-              <item row="11" column="0">
+              <item row="14" column="0">
                <widget class="QCheckBox" name="audibleBellCheckBox">
                 <property name="text">
                  <string>Audible bell</string>
                 </property>
                </widget>
               </item>
-              <item row="12" column="0">
+              <item row="15" column="0">
                <widget class="QLabel" name="label_14">
                 <property name="text">
                  <string>Default $TERM</string>
                 </property>
                </widget>
               </item>
-              <item row="12" column="1">
+              <item row="15" column="1">
                <widget class="QComboBox" name="termComboBox">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -881,10 +911,10 @@
                 </item>
                </widget>
               </item>
-              <item row="13" column="1">
+              <item row="16" column="1">
                <widget class="QLineEdit" name="handleHistoryLineEdit"/>
               </item>
-              <item row="13" column="0">
+              <item row="16" column="0">
                <widget class="QLabel" name="label_17">
                 <property name="toolTip">
                  <string>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</string>

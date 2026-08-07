@@ -117,6 +117,8 @@ void TermWidgetImpl::propertiesChanged()
     autoHideMouseAfter(Properties::Instance()->mouseAutoHideDelay);
     setTrimPastedTrailingNewlines(Properties::Instance()->trimPastedTrailingNewlines);
     setTerminalSizeHint(Properties::Instance()->showTerminalSizeHint);
+    setOsc8HyperlinksEnabled(Properties::Instance()->enableOsc8Hyperlinks);
+    setLinkTooltipsEnabled(Properties::Instance()->showLinkTooltips);
 
     if (Properties::Instance()->historyLimited)
     {
@@ -239,7 +241,9 @@ void TermWidgetImpl::zoomReset()
 }
 
 void TermWidgetImpl::activateUrl(const QUrl & url, bool fromContextMenu) {
-    if (QApplication::keyboardModifiers() & Qt::ControlModifier || fromContextMenu) {
+    if (fromContextMenu
+        || !Properties::Instance()->openLinksByCtrlClick
+        || (QApplication::keyboardModifiers() & Qt::ControlModifier)) {
         QDesktopServices::openUrl(url);
     }
 }
