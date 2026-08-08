@@ -300,17 +300,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Ka&amp;tafaali</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>M&amp;usittale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
         <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Kawagi</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -1006,17 +1006,17 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Katafaali</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>Musittale</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>Kawagi</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>

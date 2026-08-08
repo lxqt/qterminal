@@ -315,17 +315,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Blocco</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Sottolineato</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
         <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Barra verticale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -469,17 +469,17 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocco</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>Sottolineato</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>Barra verticale</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>
