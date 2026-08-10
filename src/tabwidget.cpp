@@ -66,6 +66,7 @@ TabWidget::TabWidget(QWidget* parent) : QTabWidget(parent), tabNumerator(0), mTa
     connect(this, &TabWidget::tabTitleColorChangeRequested, this, &TabWidget::setTitleColor);
     connect(mSwitcher.data(), &TabSwitcher::activateTab, this, &TabWidget::switchTab);
     connect(this, &TabWidget::currentChanged, this, &TabWidget::onCurrentChanged);
+    connect(this, &QTabWidget::currentChanged, this, &TabWidget::currentTitleChanged);
 }
 
 TabWidget::~TabWidget()
@@ -93,7 +94,6 @@ int TabWidget::addNewTab(TerminalConfig config)
     connect(console, &TermWidgetHolder::finished, this, &TabWidget::removeFinished);
     connect(console, &TermWidgetHolder::lastTerminalClosed, this, &TabWidget::removeFinished);
     connect(console, &TermWidgetHolder::termTitleChanged, this, &TabWidget::onTermTitleChanged);
-    connect(this, &QTabWidget::currentChanged, this, &TabWidget::currentTitleChanged);
 
     const int newIndex = (Properties::Instance()->m_openNewTabRightToActiveTab ? currentIndex() + 1 : count());
     const int index = insertTab(newIndex, console, label);
