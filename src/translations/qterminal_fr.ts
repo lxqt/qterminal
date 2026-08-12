@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="313"/>
         <source>&amp;Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Fermer le sous‑terminal</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="316"/>
@@ -300,17 +300,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Bloquer</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Souligner</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
         <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Curseur en I‑Beam</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="642"/>
         <source>A process is running.</source>
-        <translation type="unfinished"></translation>
+        <translation>Un processus est en cours d’exécution.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
@@ -360,7 +360,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="706"/>
         <source>Development: </source>
-        <translation>Développement&#xa0;: </translation>
+        <translation>Développement : </translation>
     </message>
 </context>
 <context>
@@ -691,47 +691,47 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="30"/>
         <source>Window</source>
-        <translation type="unfinished"></translation>
+        <translation>Fenètre</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="238"/>
         <source>Blinking cursor</source>
-        <translation type="unfinished"></translation>
+        <translation>Curseur clignotant</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="359"/>
         <source>Fill</source>
-        <translation type="unfinished"></translation>
+        <translation>Curseur plein</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
         <source>Current Terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Terminal actuel</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="424"/>
         <source>Draw a border</source>
-        <translation type="unfinished"></translation>
+        <translation>Afficher une bordure</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="431"/>
         <source>Set the current terminal on mouseover</source>
-        <translation type="unfinished"></translation>
+        <translation>Activer le terminal au survol</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="438"/>
         <source>Change window title based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifier le titre de la fenêtre selon le terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="445"/>
         <source>Change window icon based on the terminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Modifier l’icône de la fenêtre selon le terminal</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="586"/>
         <source>Save State when closing</source>
-        <translation type="unfinished"></translation>
+        <translation>Enregistrer l’état à la fermeture</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="763"/>
@@ -746,17 +746,17 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="773"/>
         <source>Mouse cursor hiding delay</source>
-        <translation type="unfinished"></translation>
+        <translation>Délai de masquage du curseur de la souris</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="780"/>
         <source>No hiding</source>
-        <translation type="unfinished"></translation>
+        <translation>Ne pas masquer</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="783"/>
         <source> sec</source>
-        <translation type="unfinished"></translation>
+        <translation> s</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="799"/>
@@ -766,7 +766,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Prompt on closing with a running process</source>
-        <translation type="unfinished"></translation>
+        <translation>Confirmer la fermeture si un processus est en cours</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="847"/>
@@ -847,7 +847,7 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1101"/>
         <source>Lock shortcut:</source>
-        <translation type="unfinished"></translation>
+        <translation>Raccourci de verrouillage :</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1168"/>
@@ -904,17 +904,17 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Bloquer</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>Souligner</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>I-Beam</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="208"/>
@@ -976,14 +976,14 @@ Pour supprimer / désactiver un raccourci, au point 2, appuyez uniquement sur un
     <message>
         <location filename="../propertiesdialog.cpp" line="666"/>
         <source>Do you want to overwrite this bookmarks file?</source>
-        <translation>Voulez-vous écraser ce fichier de signets&#xa0;?</translation>
+        <translation>Voulez-vous écraser ce fichier de signets ?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="670"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Le nom du fichier de signets ne se termine pas par &apos;.xml&apos;.
-Êtes-vous sûr de vouloir l&apos;écraser&#xa0;?</translation>
+Êtes-vous sûr de vouloir l&apos;écraser ?</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="678"/>
@@ -993,7 +993,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="678"/>
         <source>Cannot write bookmarks to this file:</source>
-        <translation>Impossible d&apos;écrire des signets dans ce fichier&#xa0;:</translation>
+        <translation>Impossible d&apos;écrire des signets dans ce fichier :</translation>
     </message>
 </context>
 <context>
@@ -1015,12 +1015,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Close Subterminal</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer le sous‑terminal</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="150"/>
         <source>Are you sure you want to close this subterminal?</source>
-        <translation type="unfinished"></translation>
+        <translation>Voulez‑vous vraiment fermer ce sous‑terminal ?</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="227"/>
@@ -1050,12 +1050,12 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../tabwidget.cpp" line="390"/>
         <source>Close tab</source>
-        <translation type="unfinished"></translation>
+        <translation>Fermer l&apos;onglet</translation>
     </message>
     <message>
         <location filename="../tabwidget.cpp" line="390"/>
         <source>Are you sure you want to close this tab?</source>
-        <translation type="unfinished"></translation>
+        <translation>Voulez‑vous vraiment fermer cet onglet ?</translation>
     </message>
 </context>
 <context>
@@ -1081,7 +1081,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../forms/qterminal.ui" line="54"/>
         <source>&amp;Session</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Session</translation>
     </message>
     <message>
         <location filename="../forms/qterminal.ui" line="62"/>
