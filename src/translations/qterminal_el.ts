@@ -300,17 +300,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Ορθογώνιο</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Υπογράμμιση</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
         <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Δρομέας σχήματος δοκού Ι</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -701,7 +701,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="359"/>
         <source>Fill</source>
-        <translation type="unfinished"></translation>
+        <translation>Γέμισμα</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="418"/>
@@ -978,17 +978,17 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Ορθογώνιο</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>Υπογράμμιση</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>Δρομέας σχήματος δοκού Ι</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>
