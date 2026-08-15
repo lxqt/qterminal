@@ -91,6 +91,8 @@ class TermWidget : public QWidget, public DBusAddressable
         QDBusObjectPath getTab();
         void sendText(const QString& text);
         void closeTerminal();
+        void setColorScheme(const QString& scheme);
+        void setBackgroundImage(const QString &image, const int mode);
         #endif
 
         bool eventFilter(QObject * obj, QEvent * evt) override;

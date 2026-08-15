@@ -397,4 +397,24 @@ void TermWidget::sendText(const QString& text)
     }
 }
 
+void TermWidget::setColorScheme(const QString& scheme)
+{
+    if (impl())
+    {
+        impl()->setColorScheme(scheme);
+    }
+}
+
+void TermWidget::setBackgroundImage(const QString& image, const int mode)
+{
+    if (impl())
+    {
+        if (!image.isEmpty())
+            impl()->setTerminalBackgroundImage(image);
+        if (mode > -1)
+            impl()->setTerminalBackgroundMode(mode);
+        impl()->update();
+    }
+}
+
 #endif

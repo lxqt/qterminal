@@ -19,6 +19,13 @@
         <arg name="text" type="s" direction="in"/>
     </method>
     <method name="closeTerminal"/>
+    <method name="setColorScheme">
+      <arg name="text" type="s" direction="in"/>
+    </method>
+    <method name="setBackgroundImage">
+      <arg name="file" type="s" direction="in"/>
+      <arg name="mode" type="i" direction="in"/>
+    </method>
   </interface>
 </node>
 
