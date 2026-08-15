@@ -18,7 +18,7 @@ class DBusAddressable
         QDBusObjectPath getDbusPath();
         QString getDbusPathString();
     #endif
-        DBusAddressable(const QString& prefix);
+        DBusAddressable(const QString& prefix, const QString &name = QString());
 };
 
 #ifdef HAVE_QDBUS
