@@ -15,6 +15,7 @@
     </method>
     <method name="closeWindow"/>
     <method name="activateWindow"/>
+    <method name="activateOrHide"/>
   </interface>
 </node>
 

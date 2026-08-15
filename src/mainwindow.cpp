@@ -1085,4 +1085,18 @@ void MainWindow::closeWindow()
     close();
 }
 
+void MainWindow::activateOrHide()
+{
+    if (isActiveWindow())
+    {
+        hide();
+    }
+    else
+    {
+        show();
+        activateWindow();
+        raise();
+    }
+}
+
 #endif

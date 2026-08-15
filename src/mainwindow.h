@@ -56,6 +56,7 @@ public:
     QList<QDBusObjectPath> getTabs();
     QDBusObjectPath newTab(const QHash<QString,QVariant> &termArgs);
     void closeWindow();
+    void activateOrHide();
     #endif
 
 protected:
