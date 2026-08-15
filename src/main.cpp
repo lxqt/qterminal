@@ -227,7 +227,7 @@ int main(int argc, char *argv[])
     }
 
     TerminalConfig initConfig = TerminalConfig(workdir, shell_command);
-    app->newWindow(dropMode, initConfig);
+    app->newWindow(dropMode, initConfig, dbus_id);
 
     int ret = app->exec();
     delete Properties::Instance();
@@ -236,7 +236,7 @@ int main(int argc, char *argv[])
     return ret;
 }
 
-MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
+MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg, const QString &dbus_id)
 {
     MainWindow *window = nullptr;
     if (dropMode)
@@ -247,7 +247,7 @@ MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
     }
     else
     {
-        window = new MainWindow(cfg, dropMode);
+        window = new MainWindow(cfg, dropMode, dbus_id);
         if (Properties::Instance()->saveSizeOnExit
             && Properties::Instance()->windowMaximized)
         {
@@ -349,6 +349,14 @@ QList<QDBusObjectPath> QTerminalApp::getWindows()
         windows.push_back(wnd->getDbusPath());
     }
     return windows;
+}
+
+QDBusObjectPath QTerminalApp::newWindow(const QString &dbus_id, const QString &shell_command, const QString& workdir)
+{
+    TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? m_workDir : workdir, parse_command(shell_command));
+    MainWindow *wnd = newWindow(false, cfg, dbus_id);
+    assert(wnd != nullptr);
+    return wnd->getDbusPath();
 }
 
 QDBusObjectPath QTerminalApp::newWindow(const QHash<QString,QVariant> &termArgs)

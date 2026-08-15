@@ -15,7 +15,7 @@ class QTerminalApp : public QApplication
 Q_OBJECT
 
 public:
-    MainWindow *newWindow(bool dropMode, TerminalConfig &cfg);
+    MainWindow *newWindow(bool dropMode, TerminalConfig &cfg, const QString &dbus_id = QString());
     QList<MainWindow*> getWindowList();
     void addWindow(MainWindow *window);
     void removeWindow(MainWindow *window);
@@ -27,6 +27,7 @@ public:
     #ifdef HAVE_QDBUS
     void registerOnDbus(bool dropDown, const QString dbus_id);
     QList<QDBusObjectPath> getWindows();
+    QDBusObjectPath newWindow(const QString &dbus_id, const QString &shell_command, const QString& workdir);
     QDBusObjectPath newWindow(const QHash<QString,QVariant> &termArgs);
     QDBusObjectPath getActiveWindow();
     bool isDropMode();

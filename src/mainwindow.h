@@ -40,7 +40,7 @@ class MainWindow : public QMainWindow, private Ui::mainWindow, public DBusAddres
 
 public:
     MainWindow(TerminalConfig& cfg,
-               bool dropMode,
+               bool dropMode, const QString &dbus_id = QString(),
                QWidget * parent = nullptr, Qt::WindowFlags f = Qt::WindowFlags());
     ~MainWindow() override;
 

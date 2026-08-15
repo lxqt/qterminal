@@ -52,10 +52,11 @@ Q_DECLARE_METATYPE(checkfn)
 
 MainWindow::MainWindow(TerminalConfig &cfg,
                        bool dropMode,
+                       const QString &dbus_id,
                        QWidget * parent,
                        Qt::WindowFlags f)
     : QMainWindow(parent,f),
-      DBusAddressable(QStringLiteral("/windows")),
+      DBusAddressable(QStringLiteral("/windows"), dbus_id),
       tabPosition(nullptr),
       scrollBarPosition(nullptr),
       keyboardCursorShape(nullptr),
