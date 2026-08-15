@@ -39,7 +39,7 @@
 
 #define out
 
-const char* const short_options = "vhw:e:dp:";
+const char* const short_options = "vhw:e:dp:i:";
 
 static const char* serviceName = "org.lxqt.QTerminal";
 static const char* ifaceName = "org.lxqt.QTerminal.Process";
@@ -51,6 +51,7 @@ const struct option long_options[] = {
     {"execute", 1, nullptr, 'e'},
     {"drop",    0, nullptr, 'd'},
     {"profile", 1, nullptr, 'p'},
+    {"dbus_id", 1, nullptr, 'i'},
     {nullptr,   0, nullptr,  0}
 };
 
@@ -63,6 +64,7 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     puts("  -d,  --drop               Start in \"dropdown mode\" (like Yakuake or Tilda)");
     puts("  -e,  --execute <command>  Execute command instead of shell");
     puts("  -h,  --help               Print this help");
+    puts("  -i,  --dbus_id <name>     Register with predetermined dbus interface, org.lxqt.QTerminal-<id>");
     puts("  -p,  --profile <name>     Load profile from ~/.config/<name>.conf");
     puts("  -v,  --version            Prints application version and exits");
     puts("  -w,  --workdir <dir>      Start session with specified work directory");
@@ -77,7 +79,7 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     exit(code);
 }
 
-void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode)
+void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode, QString &dbus_id)
 {
     int next_option = 0;
     dropMode = false;
@@ -106,6 +108,9 @@ void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_co
                 break;
             case 'p':
                 Properties::Instance(QString::fromLocal8Bit(optarg));
+                break;
+            case 'i':
+                dbus_id = QString::fromLocal8Bit(optarg);
                 break;
             case '?':
                 print_usage_and_exit(1);
@@ -153,10 +158,11 @@ int main(int argc, char *argv[])
     QString workdir;
     QStringList shell_command;
     bool dropMode = false;
-    parse_args(argc, argv, workdir, shell_command, dropMode);
+    QString dbus_id;
+    parse_args(argc, argv, workdir, shell_command, dropMode, dbus_id);
 
     #ifdef HAVE_QDBUS
-        app->registerOnDbus(dropMode);
+        app->registerOnDbus(dropMode, dbus_id);
     #endif
 
     if (!app->isPrimaryInstance())
@@ -302,7 +308,7 @@ QList<MainWindow *> QTerminalApp::getWindowList()
 }
 
 #ifdef HAVE_QDBUS
-void QTerminalApp::registerOnDbus(bool dropDown)
+void QTerminalApp::registerOnDbus(bool dropDown, QString dbus_id)
 {
     if (!QDBusConnection::sessionBus().isConnected())
     {
@@ -324,8 +330,8 @@ void QTerminalApp::registerOnDbus(bool dropDown)
     }
     else
     {
-        if (!QDBusConnection::sessionBus().registerService(QLatin1String(serviceName)
-                                                           + QStringLiteral("-%1").arg(getpid())))
+        const QString suffix = dbus_id.isEmpty() ? QStringLiteral("-%1").arg(getpid()) : QStringLiteral("-%1").arg(dbus_id);
+        if (!QDBusConnection::sessionBus().registerService(QLatin1String(serviceName) + suffix))
         {
             fprintf(stderr, "%s\n", qPrintable(QDBusConnection::sessionBus().lastError().message()));
             return;

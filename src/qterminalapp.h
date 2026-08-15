@@ -25,7 +25,7 @@ public:
     void setWorkingDirectory(const QString &wd);
 
     #ifdef HAVE_QDBUS
-    void registerOnDbus(bool dropDown);
+    void registerOnDbus(bool dropDown, const QString dbus_id);
     QList<QDBusObjectPath> getWindows();
     QDBusObjectPath newWindow(const QHash<QString,QVariant> &termArgs);
     QDBusObjectPath getActiveWindow();
