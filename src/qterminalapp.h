@@ -26,6 +26,7 @@ public:
 
     #ifdef HAVE_QDBUS
     void registerOnDbus(bool dropDown, const QString dbus_id);
+    QString getDbusService() const { return m_dbusService; }
     QList<QDBusObjectPath> getWindows();
     QDBusObjectPath newWindow(const QString &dbus_id, const QString &shell_command, const QString& workdir);
     QDBusObjectPath newWindow(const QHash<QString,QVariant> &termArgs);
@@ -43,6 +44,9 @@ private:
     QList<MainWindow *> m_windowList;
     static QTerminalApp *m_instance;
     bool m_isPrimaryInstance = true;
+#ifdef HAVE_QDBUS
+    QString m_dbusService;
+#endif
     QTerminalApp(int &argc, char **argv);
     ~QTerminalApp() override{};
 };

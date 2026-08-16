@@ -325,6 +325,7 @@ void QTerminalApp::registerOnDbus(bool dropDown, QString dbus_id)
             m_isPrimaryInstance = false;
             return;
         }
+        m_dbusService = QLatin1String(serviceName);
         new ProcessAdaptor(this);
         QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
     }
@@ -336,6 +337,7 @@ void QTerminalApp::registerOnDbus(bool dropDown, QString dbus_id)
             fprintf(stderr, "%s\n", qPrintable(QDBusConnection::sessionBus().lastError().message()));
             return;
         }
+        m_dbusService = QLatin1String(serviceName) + suffix;
         new ProcessAdaptor(this);
         QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
     }

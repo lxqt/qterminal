@@ -72,7 +72,18 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
             setArgs(shell);
     }
 
-    setEnvironment(QStringList(QStringLiteral("TERM=%1").arg(Properties::Instance()->term)));
+    QStringList env = QStringList() << QStringLiteral("TERM=%1").arg(Properties::Instance()->term);
+#ifdef HAVE_QDBUS
+    if (TermWidget *tw = qobject_cast<TermWidget*>(parent))
+    {
+        // this is extremely convenient for cool zsh kids who can just "qdbus ${(z)QTERM_DBUS} whatever"
+        env << QStringLiteral("QTERM_DBUS=%1 %2").arg(QTerminalApp::Instance()->getDbusService()).arg(tw->getDbusPathString())
+        // but sucks for bash lusers, so be kind and set the parts into separate variables as well
+            << QStringLiteral("QTERM_DBUS_SERVICE=%1").arg(QTerminalApp::Instance()->getDbusService())
+            << QStringLiteral("QTERM_DBUS_OBJECT=%1").arg(tw->getDbusPathString());
+    }
+#endif
+    setEnvironment(env);
 
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
     disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
