@@ -94,6 +94,7 @@ class TermWidget : public QWidget, public DBusAddressable
         void setColorScheme(const QString& scheme);
         void setBackgroundImage(const QString &image, const int mode);
         void setFont(const QString& font, const int pointSize);
+        void setSize(int cloumns, int lines);
         #endif
 
         bool eventFilter(QObject * obj, QEvent * evt) override;

@@ -436,4 +436,32 @@ void TermWidget::setFont(const QString& font, const int pointSize)
     }
 }
 
+void TermWidget::setSize(int columns, int lines)
+{
+    if (impl())
+    {
+        // https://github.com/lxqt/qtermwidget/issues/656
+        const QWidget *terminalDisplay = nullptr;
+        for (const QWidget *kid : impl()->findChildren<QWidget*>())
+        {
+            if (kid->inherits("Konsole::TerminalDisplay"))
+            {
+                terminalDisplay = kid;
+                break;
+            }
+        }
+        if (!terminalDisplay) // not supposed, but we could not correctly control the size
+            return;
+
+        if (columns < 1)
+            columns = impl()->screenColumnsCount();
+        if (lines < 1)
+            lines = impl()->screenLinesCount();
+        impl()->setSize(QSize(columns, lines));
+
+        QSize sh = terminalDisplay->sizeHint();
+        window()->resize(window()->size() - size() + sh);
+    }
+}
+
 #endif

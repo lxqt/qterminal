@@ -30,6 +30,10 @@
       <arg name="text" type="s" direction="in"/>
       <arg name="text" type="i" direction="in"/>
     </method>
+    <method name="setSize">
+      <arg name="columns" type="i" direction="in"/>
+      <arg name="lines" type="i" direction="in"/>
+    </method>
   </interface>
 </node>
 
