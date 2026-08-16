@@ -97,7 +97,7 @@ class TermWidgetHolder : public QWidget
         TermWidget * m_currentTerm;
 
         void split(TermWidget * term, Qt::Orientation orientation);
-        TermWidget * newTerm(TerminalConfig &cfg);
+        TermWidget * newTerm(TerminalConfig &cfg, const QString &dbus_id = QString());
 
     private slots:
         void setCurrentTerminal(TermWidget* term);

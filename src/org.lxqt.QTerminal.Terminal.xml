@@ -26,6 +26,10 @@
       <arg name="file" type="s" direction="in"/>
       <arg name="mode" type="i" direction="in"/>
     </method>
+    <method name="setFont">
+      <arg name="text" type="s" direction="in"/>
+      <arg name="text" type="i" direction="in"/>
+    </method>
   </interface>
 </node>
 

@@ -53,7 +53,7 @@ TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, QWidget * parent)
 
     QSplitter *s = new QSplitter(this);
     s->setFocusPolicy(Qt::NoFocus);
-    TermWidget *w = newTerm(config);
+    TermWidget *w = newTerm(config, dbus_id);
     s->addWidget(w);
     lay->addWidget(s);
     m_currentTerm = w;
@@ -355,9 +355,9 @@ TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientati
     return w;
 }
 
-TermWidget *TermWidgetHolder::newTerm(TerminalConfig &cfg)
+TermWidget *TermWidgetHolder::newTerm(TerminalConfig &cfg, const QString &dbus_id)
 {
-    TermWidget *w = new TermWidget(cfg, this);
+    TermWidget *w = new TermWidget(cfg, dbus_id, this);
     // proxy signals
     connect(w, &TermWidget::renameSession, this, &TermWidgetHolder::renameSession);
     connect(w, &TermWidget::removeCurrentSession, this, &TermWidgetHolder::lastTerminalClosed);

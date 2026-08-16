@@ -287,9 +287,9 @@ bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
     return false;
 }
 
-TermWidget::TermWidget(TerminalConfig &cfg, QWidget *parent)
+TermWidget::TermWidget(TerminalConfig &cfg, const QString &dbus_id, QWidget *parent)
     : QWidget(parent)
-    , DBusAddressable(QStringLiteral("/terminals"))
+    , DBusAddressable(QStringLiteral("/terminals"), dbus_id)
     , m_term(new TermWidgetImpl(cfg, this))
     , m_layout(new QVBoxLayout)
     , m_border(palette().color(QPalette::Window))
@@ -414,6 +414,14 @@ void TermWidget::setBackgroundImage(const QString& image, const int mode)
         if (mode > -1)
             impl()->setTerminalBackgroundMode(mode);
         impl()->update();
+    }
+}
+
+void TermWidget::setFont(const QString& font, const int pointSize)
+{
+    if (impl())
+    {
+        impl()->setTerminalFont(QFont(font, pointSize < 0 ? impl()->getTerminalFont().pointSize() : pointSize));
     }
 }
 

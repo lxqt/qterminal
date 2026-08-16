@@ -78,7 +78,7 @@ class TermWidget : public QWidget, public DBusAddressable
     QColor m_border;
 
     public:
-        TermWidget(TerminalConfig &cfg, QWidget * parent=nullptr);
+        TermWidget(TerminalConfig &cfg, const QString &dbus_id = QString(), QWidget * parent=nullptr);
 
         void propertiesChanged();
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }
@@ -93,6 +93,7 @@ class TermWidget : public QWidget, public DBusAddressable
         void closeTerminal();
         void setColorScheme(const QString& scheme);
         void setBackgroundImage(const QString &image, const int mode);
+        void setFont(const QString& font, const int pointSize);
         #endif
 
         bool eventFilter(QObject * obj, QEvent * evt) override;
