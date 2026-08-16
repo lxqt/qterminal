@@ -52,7 +52,7 @@ public:
     bool hasRunningProcess() const;
 
 public slots:
-    int addNewTab(TerminalConfig cfg);
+    int addNewTab(TerminalConfig cfg, const QString &dbus_id = QString());
     void removeTab(int index, bool prompt = false);
     void switchTab(int);
     void onAction();

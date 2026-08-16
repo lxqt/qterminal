@@ -80,7 +80,7 @@ TermWidgetHolder * TabWidget::terminalHolder()
 }
 
 
-int TabWidget::addNewTab(TerminalConfig config)
+int TabWidget::addNewTab(TerminalConfig config, const QString &dbus_id)
 {
     tabNumerator++;
     QString label = QString(tr("Shell No. %1")).arg(tabNumerator);
@@ -89,7 +89,7 @@ int TabWidget::addNewTab(TerminalConfig config)
     if (ch)
         config.provideCurrentDirectory(ch->currentTerminal()->impl()->workingDirectory());
 
-    TermWidgetHolder *console = new TermWidgetHolder(config, this);
+    TermWidgetHolder *console = new TermWidgetHolder(config, dbus_id, this);
     console->setWindowTitle(label);
     connect(console, &TermWidgetHolder::finished, this, &TabWidget::removeFinished);
     connect(console, &TermWidgetHolder::lastTerminalClosed, this, &TabWidget::removeFinished);

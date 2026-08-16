@@ -51,7 +51,7 @@ class TermWidgetHolder : public QWidget
     Q_OBJECT
 
     public:
-        TermWidgetHolder(TerminalConfig &cfg, QWidget * parent=nullptr);
+        TermWidgetHolder(TerminalConfig &cfg, const QString &dbus_id = QString(), QWidget * parent=nullptr);
         ~TermWidgetHolder() override;
 
         void propertiesChanged();

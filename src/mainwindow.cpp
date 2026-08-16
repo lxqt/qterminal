@@ -43,6 +43,7 @@
 #include "bookmarkswidget.h"
 #include "qterminalapp.h"
 #include "dbusaddressable.h"
+#include "qterminalutils.h"
 
 #include <LayerShellQt/Shell>
 #include <LayerShellQt/Window>
@@ -149,7 +150,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     /* The tab should be added after all changes are made to
        the main window; otherwise, the initial prompt might
        get jumbled because of changes in internal geometry. */
-    addNewTab(m_config);
+    addNewTab(m_config, dbus_id);
 }
 
 void MainWindow::rebuildActions()
@@ -985,12 +986,12 @@ void MainWindow::bookmarksDock_visibilityChanged(bool visible)
     }
 }
 
-void MainWindow::addNewTab(TerminalConfig cfg)
+void MainWindow::addNewTab(TerminalConfig cfg, const QString &dbus_id)
 {
     if (cfg.hasCommand())
     {
         // do not create subterminals if there is a command (-e option)
-        consoleTabulator->addNewTab(cfg);
+        consoleTabulator->addNewTab(cfg, dbus_id);
         return;
     }
 
@@ -1001,7 +1002,7 @@ void MainWindow::addNewTab(TerminalConfig cfg)
     else if (Properties::Instance()->terminalsPreset == 1)
         consoleTabulator->preset2Horizontal();
     else
-        consoleTabulator->addNewTab(cfg);
+        consoleTabulator->addNewTab(cfg, dbus_id);
     // disabled actions are updated by TabWidget::onCurrentChanged()
 }
 
@@ -1080,6 +1081,14 @@ QDBusObjectPath MainWindow::newTab(const QHash<QString,QVariant> &termArgs)
     int idx = consoleTabulator->addNewTab(cfg);
     return qobject_cast<TermWidgetHolder*>(consoleTabulator->widget(idx))->getDbusPath();
 }
+
+QDBusObjectPath MainWindow::newTab(const QString &dbus_id, const QString &shell_command, const QString& workdir)
+{
+    TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? QTerminalApp::Instance()->getWorkingDirectory() : workdir, parse_command(shell_command));
+    int idx = consoleTabulator->addNewTab(cfg, dbus_id);
+    return qobject_cast<TermWidgetHolder*>(consoleTabulator->widget(idx))->getDbusPath();
+}
+
 
 void MainWindow::closeWindow()
 {

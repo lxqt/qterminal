@@ -13,6 +13,12 @@
       <arg name="termArgs" type="a{sv}" direction="in"/>
       <arg name="newTerminal" type="o" direction="out"/>
     </method>
+    <method name="newTab">
+      <arg name="dbus_id" type="s" direction="in"/>
+      <arg name="shell_command" type="s" direction="in"/>
+      <arg name="workdir" type="s" direction="in"/>
+      <arg name="newTerminal" type="o" direction="out"/>
+    </method>
     <method name="closeWindow"/>
     <method name="activateWindow"/>
     <method name="activateOrHide"/>

@@ -36,10 +36,10 @@
 #include <utility>
 
 
-TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, QWidget * parent)
+TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, const QString &dbus_id, QWidget * parent)
     : QWidget(parent)
       #ifdef HAVE_QDBUS
-      , DBusAddressable(QStringLiteral("/tabs"))
+      , DBusAddressable(QStringLiteral("/tabs"), dbus_id)
       #endif
 {
     #ifdef HAVE_QDBUS

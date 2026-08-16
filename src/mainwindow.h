@@ -55,6 +55,7 @@ public:
     QDBusObjectPath getActiveTab();
     QList<QDBusObjectPath> getTabs();
     QDBusObjectPath newTab(const QHash<QString,QVariant> &termArgs);
+    QDBusObjectPath newTab(const QString &dbus_id, const QString &shell_command, const QString& workdir);
     void closeWindow();
     void activateOrHide();
     #endif
@@ -126,7 +127,7 @@ private slots:
     void bookmarksWidget_callCommand(const QString&);
     void bookmarksDock_visibilityChanged(bool visible);
 
-    void addNewTab(TerminalConfig cfg = TerminalConfig());
+    void addNewTab(TerminalConfig cfg = TerminalConfig(), const QString &dbus_id = QString());
     void onCurrentTitleChanged(int index);
 
     void handleHistory();
