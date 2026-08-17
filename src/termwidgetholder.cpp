@@ -460,5 +460,13 @@ void TermWidgetHolder::closeTab()
     Q_EMIT parent->tabCloseRequested(idx);
 }
 
+void TermWidgetHolder::setLabel(const QString &label)
+{
+    TabWidget *parent = findParent<TabWidget>(this);
+    int idx = parent->indexOf(this);
+    assert(idx != -1);
+    parent->setLabel(idx, label);
+}
+
 #endif
 

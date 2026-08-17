@@ -72,6 +72,7 @@ class TermWidgetHolder : public QWidget
         QList<QDBusObjectPath> getTerminals();
         QDBusObjectPath getWindow();
         void closeTab();
+        void setLabel(const QString &label);
         #endif
 
 

@@ -12,6 +12,9 @@
       <arg name="window" type="o" direction="out"/>
     </method>
     <method name="closeTab"/>
+    <method name="setLabel">
+      <arg name="label" type="s" direction="in"/>
+    </method>
   </interface>
 </node>
 

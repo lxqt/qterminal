@@ -50,6 +50,7 @@ public:
     const QList<QWidget*>& history() const;
 
     bool hasRunningProcess() const;
+    void setLabel(int, const QString&);
 
 public slots:
     int addNewTab(TerminalConfig cfg, const QString &dbus_id = QString());
