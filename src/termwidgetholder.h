@@ -63,7 +63,7 @@ class TermWidgetHolder : public QWidget
         void zoomOut(uint step);
 
         TermWidget* currentTerminal();
-        TermWidget* split(TermWidget * term, Qt::Orientation orientation, TerminalConfig cfg);
+        TermWidget* split(TermWidget * term, Qt::Orientation orientation, TerminalConfig cfg, const QString &dbus_id = QString(), int newPercent = 50);
 
         bool hasRunningProcess() const;
 

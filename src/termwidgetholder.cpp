@@ -327,7 +327,7 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
         emit finished();
 }
 
-TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientation, TerminalConfig cfg)
+TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientation, TerminalConfig cfg, const QString &dbus_id, int newPercent)
 {
     QSplitter *parent = qobject_cast<QSplitter *>(term->parent());
     assert(parent);
@@ -336,7 +336,7 @@ TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientati
     QList<int> parentSizes = parent->sizes();
 
     QList<int> sizes;
-    sizes << 1 << 1;
+    sizes << 100 - newPercent << newPercent;
 
     QSplitter *s = new QSplitter(orientation, this);
     s->setFocusPolicy(Qt::NoFocus);
@@ -344,7 +344,7 @@ TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientati
 
     cfg.provideCurrentDirectory(term->impl()->workingDirectory());
 
-    TermWidget * w = newTerm(cfg);
+    TermWidget * w = newTerm(cfg, dbus_id);
     s->insertWidget(1, w);
     s->setSizes(sizes);
 

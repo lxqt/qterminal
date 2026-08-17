@@ -40,6 +40,7 @@
 #include "config.h"
 #include "properties.h"
 #include "qterminalapp.h"
+#include "qterminalutils.h"
 
 static int TermWidgetCount = 0;
 
@@ -381,12 +382,29 @@ QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termA
     return holder->split(this, Qt::Horizontal, cfg)->getDbusPath();
 }
 
+QDBusObjectPath TermWidget::splitHorizontal(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
+{
+    TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
+    assert(holder != nullptr);
+    TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? QTerminalApp::Instance()->getWorkingDirectory() : workdir, parse_command(shell_command));
+    return holder->split(this, Qt::Horizontal, cfg, dbus_id, newPercent)->getDbusPath();
+}
+
 QDBusObjectPath TermWidget::splitVertical(const QHash<QString,QVariant> &termArgs)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
     assert(holder != nullptr);
     TerminalConfig cfg = TerminalConfig::fromDbus(termArgs, this);
     return holder->split(this, Qt::Vertical, cfg)->getDbusPath();
+}
+
+
+QDBusObjectPath TermWidget::splitVertical(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
+{
+    TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
+    assert(holder != nullptr);
+    TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? QTerminalApp::Instance()->getWorkingDirectory() : workdir, parse_command(shell_command));
+    return holder->split(this, Qt::Vertical, cfg, dbus_id,  newPercent)->getDbusPath();
 }
 
 QDBusObjectPath TermWidget::getTab()
