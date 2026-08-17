@@ -51,6 +51,8 @@ public:
 
     bool closePrompt(const QString &title, const QString &text);
 
+    void setInitialSize(QSize size) { m_initialSize = size; }
+
     #ifdef HAVE_QDBUS
     QDBusObjectPath getActiveTab();
     QList<QDBusObjectPath> getTabs();
@@ -74,6 +76,7 @@ private:
 
     QMenu *presetsMenu;
     TerminalConfig m_config;
+    QSize m_initialSize;
 
     QDockWidget *m_bookmarksDock;
 

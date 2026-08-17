@@ -935,6 +935,15 @@ void MainWindow::showEvent(QShowEvent* event)
         int vMargin = desktop.height() * (100 - Properties::Instance()->dropHeight) / 100;
         m_layerWindow->setMargins(QMargins(hMargin, 0, hMargin, vMargin));
     }
+
+    if (m_initialSize.isValid())
+    {
+        QList<TermWidget*> twl = findChildren<TermWidget*>();
+        if (twl.size() > 0)
+            twl.at(0)->setSize(m_initialSize.width(), m_initialSize.height());
+        m_initialSize = QSize();
+    }
+
     QMainWindow::showEvent(event);
 }
 

@@ -28,7 +28,7 @@ public:
     void registerOnDbus(bool dropDown, const QString dbus_id);
     QString getDbusService() const { return m_dbusService; }
     QList<QDBusObjectPath> getWindows();
-    QDBusObjectPath newWindow(const QString &dbus_id, const QString &shell_command, const QString& workdir);
+    QDBusObjectPath newWindow(const QString &dbus_id, const QString &shell_command, const QString &workdir, int columns, int lines);
     QDBusObjectPath newWindow(const QHash<QString,QVariant> &termArgs);
     QDBusObjectPath getActiveWindow();
     bool isDropMode();
