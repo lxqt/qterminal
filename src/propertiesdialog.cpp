@@ -273,14 +273,16 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     dropWidthSpinBox->setValue(Properties::Instance()->dropWidth);
 
     dropShortCutEdit = new KeySequenceEdit();
-    dropShortCutFormLayout->setWidget(0, QFormLayout::FieldRole, dropShortCutEdit);
+    shortCutFormLayout->setWidget(0, QFormLayout::FieldRole, dropShortCutEdit);
     dropShortCutEdit->installEventFilter(this);
     dropShortCutEdit->setKeySequence(Properties::Instance()->dropShortCut);
+    dropShortCutEdit->setClearButtonEnabled(true);
 
     lockShortCutEdit = new KeySequenceEdit();
-    lockShortCutFormLayout->setWidget(0, QFormLayout::FieldRole, lockShortCutEdit);
+    shortCutFormLayout->setWidget(1, QFormLayout::FieldRole, lockShortCutEdit);
     lockShortCutEdit->installEventFilter(this);
     lockShortCutEdit->setKeySequence(Properties::Instance()->dropLockShortCut);
+    lockShortCutEdit->setClearButtonEnabled(true);
 
     useBookmarksCheckBox->setChecked(Properties::Instance()->useBookmarks);
     bookmarksLineEdit->setText(Properties::Instance()->bookmarksFile); // also needed by openBookmarksFile()
@@ -319,6 +321,8 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     waylandLabel->setVisible(onWayland);
     dropShortCutLabel->setEnabled(!onWayland);
     dropShortCutEdit->setEnabled(!onWayland);
+    lockShortCutLabel->setEnabled(!onWayland);
+    lockShortCutEdit->setEnabled(!onWayland);
 
     // restore its size while fitting it into available desktop geometry
     QSize s;
