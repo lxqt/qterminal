@@ -18,11 +18,16 @@ QDBusObjectPath DBusAddressable::getDbusPath()
 }
 #endif
 
-DBusAddressable::DBusAddressable(const QString& prefix)
+DBusAddressable::DBusAddressable(const QString& prefix, const QString& name)
 {
     #ifdef HAVE_QDBUS
-    QString uuidString = QUuid::createUuid().toString();
-    static const QRegularExpression regExp{u"[\\{\\}\\-]"_s};
-    m_path = prefix + QLatin1Char('/') + uuidString.replace(regExp, QString());
+    QString suffix = name;
+    if (suffix.isEmpty())
+    {
+        QString uuidString = QUuid::createUuid().toString();
+        static const QRegularExpression regExp{u"[\\{\\}\\-]"_s};
+        suffix = uuidString.replace(regExp, QString());
+    }
+    m_path = prefix + QLatin1Char('/') + suffix;
     #endif
 }

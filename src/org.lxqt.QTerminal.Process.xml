@@ -9,6 +9,13 @@
       <annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="QHash&lt;QString,QVariant&gt;"/>
       <arg name="termArgs" type="a{sv}" direction="in"/>
     </method>
+    <method name="newWindow">
+      <arg name="dbus_id" type="s" direction="in"/>
+      <arg name="shell_command" type="s" direction="in"/>
+      <arg name="workdir" type="s" direction="in"/>
+      <arg name="columns" type="i" direction="in"/>
+      <arg name="lines" type="i" direction="in"/>
+    </method>
     <method name="getActiveWindow">
       <arg name="window" type="o" direction="out"/>
     </method>

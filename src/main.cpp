@@ -36,10 +36,11 @@
 #include "qterminalapp.h"
 #include "qterminalutils.h"
 #include "terminalconfig.h"
+#include "termwidget.h"
 
 #define out
 
-const char* const short_options = "vhw:e:dp:";
+const char* const short_options = "vhw:e:dp:i:s:";
 
 static const char* serviceName = "org.lxqt.QTerminal";
 static const char* ifaceName = "org.lxqt.QTerminal.Process";
@@ -51,6 +52,8 @@ const struct option long_options[] = {
     {"execute", 1, nullptr, 'e'},
     {"drop",    0, nullptr, 'd'},
     {"profile", 1, nullptr, 'p'},
+    {"dbus_id", 1, nullptr, 'i'},
+    {"size",    1, nullptr, 's'},
     {nullptr,   0, nullptr,  0}
 };
 
@@ -63,7 +66,9 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     puts("  -d,  --drop               Start in \"dropdown mode\" (like Yakuake or Tilda)");
     puts("  -e,  --execute <command>  Execute command instead of shell");
     puts("  -h,  --help               Print this help");
+    puts("  -i,  --dbus_id <name>     Register with predetermined dbus interface, org.lxqt.QTerminal-<id>");
     puts("  -p,  --profile <name>     Load profile from ~/.config/<name>.conf");
+    puts("  -s,  --size    <CxL>      Set initial size in columns and lines");
     puts("  -v,  --version            Prints application version and exits");
     puts("  -w,  --workdir <dir>      Start session with specified work directory");
     puts("\nHomepage: <https://github.com/lxqt/qterminal>");
@@ -77,7 +82,7 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     exit(code);
 }
 
-void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode)
+void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode, QString &dbus_id, QSize &size)
 {
     int next_option = 0;
     dropMode = false;
@@ -107,6 +112,21 @@ void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_co
             case 'p':
                 Properties::Instance(QString::fromLocal8Bit(optarg));
                 break;
+            case 'i':
+                dbus_id = QString::fromLocal8Bit(optarg);
+                break;
+            case 's':
+            {
+                QStringList values = QString::fromLocal8Bit(optarg).split(QStringLiteral("x"));
+                if (values.size() == 2)
+                {
+                    int cols = values.at(0).toInt();
+                    int lines = values.at(1).toInt();
+                    if (cols > 0 && lines > 0)
+                        size = QSize(cols, lines);
+                }
+                break;
+            }
             case '?':
                 print_usage_and_exit(1);
                 break;
@@ -153,10 +173,12 @@ int main(int argc, char *argv[])
     QString workdir;
     QStringList shell_command;
     bool dropMode = false;
-    parse_args(argc, argv, workdir, shell_command, dropMode);
+    QString dbus_id;
+    QSize size;
+    parse_args(argc, argv, workdir, shell_command, dropMode, dbus_id, size);
 
     #ifdef HAVE_QDBUS
-        app->registerOnDbus(dropMode);
+        app->registerOnDbus(dropMode, dbus_id);
     #endif
 
     if (!app->isPrimaryInstance())
@@ -221,7 +243,8 @@ int main(int argc, char *argv[])
     }
 
     TerminalConfig initConfig = TerminalConfig(workdir, shell_command);
-    app->newWindow(dropMode, initConfig);
+    if (MainWindow *wnd = app->newWindow(dropMode, initConfig, dbus_id))
+        wnd->setInitialSize(size);
 
     int ret = app->exec();
     delete Properties::Instance();
@@ -230,7 +253,7 @@ int main(int argc, char *argv[])
     return ret;
 }
 
-MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
+MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg, const QString &dbus_id)
 {
     MainWindow *window = nullptr;
     if (dropMode)
@@ -241,13 +264,14 @@ MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg)
     }
     else
     {
-        window = new MainWindow(cfg, dropMode);
+        window = new MainWindow(cfg, dropMode, dbus_id);
         if (Properties::Instance()->saveSizeOnExit
             && Properties::Instance()->windowMaximized)
         {
             window->setWindowState(Qt::WindowMaximized);
         }
-        window->show();
+        // this gives us time to resize the window on user control
+        QMetaObject::invokeMethod(window, "show", Qt::QueuedConnection);
     }
     return window;
 }
@@ -302,7 +326,7 @@ QList<MainWindow *> QTerminalApp::getWindowList()
 }
 
 #ifdef HAVE_QDBUS
-void QTerminalApp::registerOnDbus(bool dropDown)
+void QTerminalApp::registerOnDbus(bool dropDown, QString dbus_id)
 {
     if (!QDBusConnection::sessionBus().isConnected())
     {
@@ -319,17 +343,19 @@ void QTerminalApp::registerOnDbus(bool dropDown)
             m_isPrimaryInstance = false;
             return;
         }
+        m_dbusService = QLatin1String(serviceName);
         new ProcessAdaptor(this);
         QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
     }
     else
     {
-        if (!QDBusConnection::sessionBus().registerService(QLatin1String(serviceName)
-                                                           + QStringLiteral("-%1").arg(getpid())))
+        const QString suffix = dbus_id.isEmpty() ? QStringLiteral("-%1").arg(getpid()) : QStringLiteral("-%1").arg(dbus_id);
+        if (!QDBusConnection::sessionBus().registerService(QLatin1String(serviceName) + suffix))
         {
             fprintf(stderr, "%s\n", qPrintable(QDBusConnection::sessionBus().lastError().message()));
             return;
         }
+        m_dbusService = QLatin1String(serviceName) + suffix;
         new ProcessAdaptor(this);
         QDBusConnection::sessionBus().registerObject(QStringLiteral("/"), this);
     }
@@ -343,6 +369,16 @@ QList<QDBusObjectPath> QTerminalApp::getWindows()
         windows.push_back(wnd->getDbusPath());
     }
     return windows;
+}
+
+QDBusObjectPath QTerminalApp::newWindow(const QString &dbus_id, const QString &shell_command, const QString& workdir, int columns, int lines)
+{
+    TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? m_workDir : workdir, parse_command(shell_command));
+    MainWindow *wnd = newWindow(false, cfg, dbus_id);
+    assert(wnd != nullptr);
+    if (columns > 0 || lines > 0)
+        wnd->setInitialSize(QSize(columns, lines));
+    return wnd->getDbusPath();
 }
 
 QDBusObjectPath QTerminalApp::newWindow(const QHash<QString,QVariant> &termArgs)

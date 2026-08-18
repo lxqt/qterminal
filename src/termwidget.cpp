@@ -40,6 +40,7 @@
 #include "config.h"
 #include "properties.h"
 #include "qterminalapp.h"
+#include "qterminalutils.h"
 
 static int TermWidgetCount = 0;
 
@@ -72,7 +73,18 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
             setArgs(shell);
     }
 
-    setEnvironment(QStringList(QStringLiteral("TERM=%1").arg(Properties::Instance()->term)));
+    QStringList env = QStringList() << QStringLiteral("TERM=%1").arg(Properties::Instance()->term);
+#ifdef HAVE_QDBUS
+    if (TermWidget *tw = qobject_cast<TermWidget*>(parent))
+    {
+        // this is extremely convenient for cool zsh kids who can just "qdbus ${(z)QTERM_DBUS} whatever"
+        env << QStringLiteral("QTERM_DBUS=%1 %2").arg(QTerminalApp::Instance()->getDbusService()).arg(tw->getDbusPathString())
+        // but sucks for bash lusers, so be kind and set the parts into separate variables as well
+            << QStringLiteral("QTERM_DBUS_SERVICE=%1").arg(QTerminalApp::Instance()->getDbusService())
+            << QStringLiteral("QTERM_DBUS_OBJECT=%1").arg(tw->getDbusPathString());
+    }
+#endif
+    setEnvironment(env);
 
     setMotionAfterPasting(Properties::Instance()->m_motionAfterPaste);
     disableBracketedPasteMode(Properties::Instance()->m_disableBracketedPasteMode);
@@ -287,9 +299,9 @@ bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
     return false;
 }
 
-TermWidget::TermWidget(TerminalConfig &cfg, QWidget *parent)
+TermWidget::TermWidget(TerminalConfig &cfg, const QString &dbus_id, QWidget *parent)
     : QWidget(parent)
-    , DBusAddressable(QStringLiteral("/terminals"))
+    , DBusAddressable(QStringLiteral("/terminals"), dbus_id)
     , m_term(new TermWidgetImpl(cfg, this))
     , m_layout(new QVBoxLayout)
     , m_border(palette().color(QPalette::Window))
@@ -370,12 +382,29 @@ QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termA
     return holder->split(this, Qt::Horizontal, cfg)->getDbusPath();
 }
 
+QDBusObjectPath TermWidget::splitHorizontal(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
+{
+    TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
+    assert(holder != nullptr);
+    TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? QTerminalApp::Instance()->getWorkingDirectory() : workdir, parse_command(shell_command));
+    return holder->split(this, Qt::Horizontal, cfg, dbus_id, newPercent)->getDbusPath();
+}
+
 QDBusObjectPath TermWidget::splitVertical(const QHash<QString,QVariant> &termArgs)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
     assert(holder != nullptr);
     TerminalConfig cfg = TerminalConfig::fromDbus(termArgs, this);
     return holder->split(this, Qt::Vertical, cfg)->getDbusPath();
+}
+
+
+QDBusObjectPath TermWidget::splitVertical(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
+{
+    TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
+    assert(holder != nullptr);
+    TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? QTerminalApp::Instance()->getWorkingDirectory() : workdir, parse_command(shell_command));
+    return holder->split(this, Qt::Vertical, cfg, dbus_id,  newPercent)->getDbusPath();
 }
 
 QDBusObjectPath TermWidget::getTab()
@@ -394,6 +423,62 @@ void TermWidget::sendText(const QString& text)
     if (impl())
     {
         impl()->sendText(text);
+    }
+}
+
+void TermWidget::setColorScheme(const QString& scheme)
+{
+    if (impl())
+    {
+        impl()->setColorScheme(scheme);
+    }
+}
+
+void TermWidget::setBackgroundImage(const QString& image, const int mode)
+{
+    if (impl())
+    {
+        if (!image.isEmpty())
+            impl()->setTerminalBackgroundImage(image);
+        if (mode > -1)
+            impl()->setTerminalBackgroundMode(mode);
+        impl()->update();
+    }
+}
+
+void TermWidget::setFont(const QString& font, const int pointSize)
+{
+    if (impl())
+    {
+        impl()->setTerminalFont(QFont(font, pointSize < 0 ? impl()->getTerminalFont().pointSize() : pointSize));
+    }
+}
+
+void TermWidget::setSize(int columns, int lines)
+{
+    if (impl())
+    {
+        // https://github.com/lxqt/qtermwidget/issues/656
+        const QWidget *terminalDisplay = nullptr;
+        for (const QWidget *kid : impl()->findChildren<QWidget*>())
+        {
+            if (kid->inherits("Konsole::TerminalDisplay"))
+            {
+                terminalDisplay = kid;
+                break;
+            }
+        }
+        if (!terminalDisplay) // not supposed, but we could not correctly control the size
+            return;
+
+        if (columns < 1)
+            columns = impl()->screenColumnsCount();
+        if (lines < 1)
+            lines = impl()->screenLinesCount();
+        impl()->setSize(QSize(columns, lines));
+
+        QSize sh = terminalDisplay->sizeHint();
+        window()->resize(window()->size() - size() + sh);
     }
 }
 

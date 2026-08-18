@@ -36,10 +36,10 @@
 #include <utility>
 
 
-TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, QWidget * parent)
+TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, const QString &dbus_id, QWidget * parent)
     : QWidget(parent)
       #ifdef HAVE_QDBUS
-      , DBusAddressable(QStringLiteral("/tabs"))
+      , DBusAddressable(QStringLiteral("/tabs"), dbus_id)
       #endif
 {
     #ifdef HAVE_QDBUS
@@ -53,7 +53,7 @@ TermWidgetHolder::TermWidgetHolder(TerminalConfig &config, QWidget * parent)
 
     QSplitter *s = new QSplitter(this);
     s->setFocusPolicy(Qt::NoFocus);
-    TermWidget *w = newTerm(config);
+    TermWidget *w = newTerm(config, dbus_id);
     s->addWidget(w);
     lay->addWidget(s);
     m_currentTerm = w;
@@ -327,7 +327,7 @@ void TermWidgetHolder::splitCollapse(TermWidget * term)
         emit finished();
 }
 
-TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientation, TerminalConfig cfg)
+TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientation, TerminalConfig cfg, const QString &dbus_id, int newPercent)
 {
     QSplitter *parent = qobject_cast<QSplitter *>(term->parent());
     assert(parent);
@@ -336,7 +336,7 @@ TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientati
     QList<int> parentSizes = parent->sizes();
 
     QList<int> sizes;
-    sizes << 1 << 1;
+    sizes << 100 - newPercent << newPercent;
 
     QSplitter *s = new QSplitter(orientation, this);
     s->setFocusPolicy(Qt::NoFocus);
@@ -344,7 +344,7 @@ TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientati
 
     cfg.provideCurrentDirectory(term->impl()->workingDirectory());
 
-    TermWidget * w = newTerm(cfg);
+    TermWidget * w = newTerm(cfg, dbus_id);
     s->insertWidget(1, w);
     s->setSizes(sizes);
 
@@ -355,9 +355,9 @@ TermWidget * TermWidgetHolder::split(TermWidget *term, Qt::Orientation orientati
     return w;
 }
 
-TermWidget *TermWidgetHolder::newTerm(TerminalConfig &cfg)
+TermWidget *TermWidgetHolder::newTerm(TerminalConfig &cfg, const QString &dbus_id)
 {
-    TermWidget *w = new TermWidget(cfg, this);
+    TermWidget *w = new TermWidget(cfg, dbus_id, this);
     // proxy signals
     connect(w, &TermWidget::renameSession, this, &TermWidgetHolder::renameSession);
     connect(w, &TermWidget::removeCurrentSession, this, &TermWidgetHolder::lastTerminalClosed);
@@ -458,6 +458,14 @@ void TermWidgetHolder::closeTab()
     int idx = parent->indexOf(this);
     assert(idx != -1);
     Q_EMIT parent->tabCloseRequested(idx);
+}
+
+void TermWidgetHolder::setLabel(const QString &label)
+{
+    TabWidget *parent = findParent<TabWidget>(this);
+    int idx = parent->indexOf(this);
+    assert(idx != -1);
+    parent->setLabel(idx, label);
 }
 
 #endif

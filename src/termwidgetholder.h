@@ -51,7 +51,7 @@ class TermWidgetHolder : public QWidget
     Q_OBJECT
 
     public:
-        TermWidgetHolder(TerminalConfig &cfg, QWidget * parent=nullptr);
+        TermWidgetHolder(TerminalConfig &cfg, const QString &dbus_id = QString(), QWidget * parent=nullptr);
         ~TermWidgetHolder() override;
 
         void propertiesChanged();
@@ -63,7 +63,7 @@ class TermWidgetHolder : public QWidget
         void zoomOut(uint step);
 
         TermWidget* currentTerminal();
-        TermWidget* split(TermWidget * term, Qt::Orientation orientation, TerminalConfig cfg);
+        TermWidget* split(TermWidget * term, Qt::Orientation orientation, TerminalConfig cfg, const QString &dbus_id = QString(), int newPercent = 50);
 
         bool hasRunningProcess() const;
 
@@ -72,6 +72,7 @@ class TermWidgetHolder : public QWidget
         QList<QDBusObjectPath> getTerminals();
         QDBusObjectPath getWindow();
         void closeTab();
+        void setLabel(const QString &label);
         #endif
 
 
@@ -97,7 +98,7 @@ class TermWidgetHolder : public QWidget
         TermWidget * m_currentTerm;
 
         void split(TermWidget * term, Qt::Orientation orientation);
-        TermWidget * newTerm(TerminalConfig &cfg);
+        TermWidget * newTerm(TerminalConfig &cfg, const QString &dbus_id = QString());
 
     private slots:
         void setCurrentTerminal(TermWidget* term);

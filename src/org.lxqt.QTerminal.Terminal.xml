@@ -7,9 +7,23 @@
         <arg name="termArgs" type="a{sv}" direction="in"/>
         <arg name="newTerminal" type="o" direction="out"/>
     </method>
+    <method name="splitVertical">
+        <arg name="dbus_id" type="s" direction="in"/>
+        <arg name="shell_command" type="s" direction="in"/>
+        <arg name="workdir" type="s" direction="in"/>
+        <arg name="newPercent" type="i" direction="in"/>
+        <arg name="newTerminal" type="o" direction="out"/>
+    </method>
     <method name="splitHorizontal">
         <annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="QHash&lt;QString,QVariant&gt;"/>
         <arg name="termArgs" type="a{sv}" direction="in"/>
+        <arg name="newTerminal" type="o" direction="out"/>
+    </method>
+    <method name="splitHorizontal">
+        <arg name="dbus_id" type="s" direction="in"/>
+        <arg name="shell_command" type="s" direction="in"/>
+        <arg name="workdir" type="s" direction="in"/>
+        <arg name="newPercent" type="i" direction="in"/>
         <arg name="newTerminal" type="o" direction="out"/>
     </method>
     <method name="getTab">
@@ -19,6 +33,21 @@
         <arg name="text" type="s" direction="in"/>
     </method>
     <method name="closeTerminal"/>
+    <method name="setColorScheme">
+      <arg name="text" type="s" direction="in"/>
+    </method>
+    <method name="setBackgroundImage">
+      <arg name="file" type="s" direction="in"/>
+      <arg name="mode" type="i" direction="in"/>
+    </method>
+    <method name="setFont">
+      <arg name="text" type="s" direction="in"/>
+      <arg name="text" type="i" direction="in"/>
+    </method>
+    <method name="setSize">
+      <arg name="columns" type="i" direction="in"/>
+      <arg name="lines" type="i" direction="in"/>
+    </method>
   </interface>
 </node>
 

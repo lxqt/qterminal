@@ -80,7 +80,7 @@ TermWidgetHolder * TabWidget::terminalHolder()
 }
 
 
-int TabWidget::addNewTab(TerminalConfig config)
+int TabWidget::addNewTab(TerminalConfig config, const QString &dbus_id)
 {
     tabNumerator++;
     QString label = QString(tr("Shell No. %1")).arg(tabNumerator);
@@ -89,7 +89,7 @@ int TabWidget::addNewTab(TerminalConfig config)
     if (ch)
         config.provideCurrentDirectory(ch->currentTerminal()->impl()->workingDirectory());
 
-    TermWidgetHolder *console = new TermWidgetHolder(config, this);
+    TermWidgetHolder *console = new TermWidgetHolder(config, dbus_id, this);
     console->setWindowTitle(label);
     connect(console, &TermWidgetHolder::finished, this, &TabWidget::removeFinished);
     connect(console, &TermWidgetHolder::lastTerminalClosed, this, &TabWidget::removeFinished);
@@ -220,50 +220,53 @@ void TabWidget::onTermTitleChanged(const QString& title, const QString& icon)
     }
 }
 
-void TabWidget::renameSession(int index)
+void TabWidget::setLabel(int index, const QString &text)
 {
-    bool ok = false;
     QString previous_text = tabText(index);
-    QString text = QInputDialog::getText(this, tr("Tab name"),
-                                        tr("New tab name:"), QLineEdit::Normal,
-                                        previous_text, &ok).simplified();
-    if(ok)
+    const QVariant system_title = widget(index)->property(TAB_SYSTEM_TITLE_PROPERTY);
+    if (system_title.isValid()) /* Do we already have a custom title ? */
     {
-        const QVariant system_title = widget(index)->property(TAB_SYSTEM_TITLE_PROPERTY);
-        if (system_title.isValid()) /* Do we already have a custom title ? */
+        /* Stop custom title when text is empty or match the default system value */
+        if (text.isEmpty() || text==system_title.toString())
         {
-            /* Stop custom title when text is empty or match the default system value */
-            if (text.isEmpty() || text==system_title.toString())
-            {
-                /* Restore the stored title */
-                setTabIcon(index, QIcon{});
-                setTabText(index, system_title.toString());
-                /* Reset the stored title memory */
-                widget(index)->setProperty(TAB_SYSTEM_TITLE_PROPERTY, QVariant());
-            }
-            else
-            {
-                /* Set the custom text */
-                setTabIcon(index, QIcon{});
-                setTabText(index, text);
-            }
+            /* Restore the stored title */
+            setTabIcon(index, QIcon{});
+            setTabText(index, system_title.toString());
+            /* Reset the stored title memory */
+            widget(index)->setProperty(TAB_SYSTEM_TITLE_PROPERTY, QVariant());
         }
         else
         {
-            /* Start custom title when text is no more the default value */
-            if (!text.isEmpty() && text!=previous_text)
-            {
-                /* Store the title before we set the first custom value */
-                widget(index)->setProperty(TAB_SYSTEM_TITLE_PROPERTY, previous_text);
-                /* Set the custom text */
-                setTabIcon(index, QIcon{});
-                setTabText(index, text);
-            }
-            /* else... no need to change the title */
+            /* Set the custom text */
+            setTabIcon(index, QIcon{});
+            setTabText(index, text);
         }
-        if (currentIndex() == index)
-            emit currentTitleChanged(index);
     }
+    else
+    {
+        /* Start custom title when text is no more the default value */
+        if (!text.isEmpty() && text!=previous_text)
+        {
+            /* Store the title before we set the first custom value */
+            widget(index)->setProperty(TAB_SYSTEM_TITLE_PROPERTY, previous_text);
+            /* Set the custom text */
+            setTabIcon(index, QIcon{});
+            setTabText(index, text);
+        }
+        /* else... no need to change the title */
+    }
+    if (currentIndex() == index)
+        emit currentTitleChanged(index);
+}
+
+void TabWidget::renameSession(int index)
+{
+    bool ok = false;
+    QString text = QInputDialog::getText(this, tr("Tab name"),
+                                        tr("New tab name:"), QLineEdit::Normal,
+                                        tabText(index), &ok).simplified();
+    if(ok)
+        setLabel(index, text);
 }
 
 void TabWidget::renameCurrentSession()
