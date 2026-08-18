@@ -352,7 +352,7 @@ void MainWindow::setup_ActionsMenu_Actions()
     setup_Action(FIND, new QAction(QIcon::fromTheme(QStringLiteral("edit-find")), tr("&Find..."), settingOwner),
                  FIND_SHORTCUT, this, SLOT(find()), menu_Actions);
 
-    setup_Action(HANDLE_HISTORY, new QAction(QIcon::fromTheme(QStringLiteral("handle-history")), tr("Handle history..."), settingOwner),
+    setup_Action(HANDLE_HISTORY, new QAction(QIcon::fromTheme(QStringLiteral("handle-history")), tr("View history in editor"), settingOwner),
                  NULL, this, SLOT(handleHistory()), menu_Actions);
 
 #if 0
@@ -851,7 +851,20 @@ void MainWindow::find()
 
 void MainWindow::handleHistory()
 {
-    const QString dir = QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
+    QStringList args = Properties::Instance()->handleHistoryCommand.split(QLatin1Char(' '), Qt::SkipEmptyParts);
+    if (args.isEmpty())
+        args =  qEnvironmentVariable("VISUAL").split(QLatin1Char(' '), Qt::SkipEmptyParts);
+    if (args.isEmpty())
+    {
+        QMessageBox::information(this, tr("No editor available"),
+                        QStringLiteral("<h1>:(</h1>")
+                        + tr("Please either set the $VISUAL environment or configure an editor command in the preferences."));
+        return;
+    }
+
+    QString dir = QStandardPaths::writableLocation(QStandardPaths::RuntimeLocation);
+    if (dir.isEmpty())
+        dir = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
     QDir().mkpath(dir);
     const QString fn = dir + QLatin1String("/qterminal.history.") + QString::number(QCoreApplication::applicationPid());
     QFile file(fn);
@@ -862,17 +875,13 @@ void MainWindow::handleHistory()
     TermWidgetImpl *impl = consoleTabulator->terminalHolder()->currentTerminal()->impl();
     impl->saveHistory(&file);
     file.close();
-    QStringList args = Properties::Instance()->handleHistoryCommand.split(QLatin1Char(' '), Qt::SkipEmptyParts);
-    if (args.isEmpty())
-        return;
 
-    QString command = args[0];
-    args.removeFirst();
+    QString command = args.takeFirst();
     args << fn;
     if (!QProcess::startDetached(command, args)) {
         qDebug() << "Failed to start command" << command << args;
     }
-
+    QTimer::singleShot(10000, nullptr, [=](){QFile::remove(fn);});
 }
 
 bool MainWindow::event(QEvent *event)
