@@ -1065,20 +1065,20 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
            </property>
           </widget>
          </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="lockShortCutLabel">
-           <property name="text">
-            <string>Lock shortcut:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0" colspan="2">
+         <item row="1" column="0" colspan="2">
           <widget class="QLabel" name="waylandLabel">
            <property name="text">
-            <string>Note: On Wayland, the shortcuts have to be added in the compositor settings, for e.g. "qterminal -d".</string>
+            <string>Note: On Wayland, the shortcut has to be added in the compositor settings for 'qterminal -d'.</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="lockShortCutLabel">
+           <property name="text">
+            <string>Lock shortcut:</string>
            </property>
           </widget>
          </item>

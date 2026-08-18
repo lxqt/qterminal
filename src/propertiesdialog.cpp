@@ -279,7 +279,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     dropShortCutEdit->setClearButtonEnabled(true);
 
     lockShortCutEdit = new KeySequenceEdit();
-    shortCutFormLayout->setWidget(1, QFormLayout::FieldRole, lockShortCutEdit);
+    shortCutFormLayout->setWidget(2, QFormLayout::FieldRole, lockShortCutEdit);
     lockShortCutEdit->installEventFilter(this);
     lockShortCutEdit->setKeySequence(Properties::Instance()->dropLockShortCut);
     lockShortCutEdit->setClearButtonEnabled(true);
@@ -321,8 +321,6 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     waylandLabel->setVisible(onWayland);
     dropShortCutLabel->setEnabled(!onWayland);
     dropShortCutEdit->setEnabled(!onWayland);
-    lockShortCutLabel->setEnabled(!onWayland);
-    lockShortCutEdit->setEnabled(!onWayland);
 
     // restore its size while fitting it into available desktop geometry
     QSize s;
