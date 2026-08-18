@@ -688,6 +688,14 @@ void MainWindow::closeEvent(QCloseEvent *ev)
             consoleTabulator->removeTab(i - 1);
         }
         ev->accept();
+        // closing hidden windows does not trigger "quitOnLastWindowClosed : bool", as documented
+        //      If this property is true, the application will attempt to quit when the last **visible** primary
+        //      window (i.e. top level window with no transient parent) is closed.
+        // This can frequently happen for the dropMode or when windows are hidden using the dbus tristate interface
+        // So we provide that here
+        QWindowList wins = QGuiApplication::allWindows();
+        if (wins.isEmpty() || (wins.size() == 1 && wins.at(0) == windowHandle()))
+            QMetaObject::invokeMethod(QGuiApplication::instance(), "quit", Qt::QueuedConnection);
     }
     else
     {
