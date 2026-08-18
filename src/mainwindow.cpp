@@ -1129,6 +1129,8 @@ void MainWindow::activateOrHide()
     }
     else
     {
+        if (QWindow *win = windowHandle())
+            win->setWindowStates(win->windowStates() & ~Qt::WindowMinimized);
         show();
         activateWindow();
         raise();
