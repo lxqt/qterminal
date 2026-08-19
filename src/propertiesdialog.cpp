@@ -258,6 +258,12 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     audibleBellCheckBox->setEnabled(false);
 #endif
 
+#ifdef HAVE_QDBUS
+    notifySilenceCheckBox->setChecked(Properties::Instance()->notifySilence);
+#else
+    notifySilenceCheckBox->setEnabled(false);
+#endif
+
     termComboBox->setCurrentText(Properties::Instance()->term);
 
     handleHistoryLineEdit->setText(Properties::Instance()->handleHistoryCommand);
@@ -374,6 +380,12 @@ void PropertiesDialog::apply()
     Properties::Instance()->audibleBell = audibleBellCheckBox->isChecked();
 #else
     Properties::Instance()->audibleBell = false;
+#endif
+
+#ifdef HAVE_QDBUS
+    Properties::Instance()->notifySilence = notifySilenceCheckBox->isChecked();
+#else
+    Properties::Instance()->notifySilence = false;
 #endif
 
     Properties::Instance()->term = termComboBox->currentText();
