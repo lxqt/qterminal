@@ -82,6 +82,9 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     setAttribute(Qt::WA_NoSystemBackground, false);
     setAttribute(Qt::WA_DeleteOnClose);
 
+    // see ::showEvent()
+    setProperty("terminal_size_pending", true);
+
     setupUi(this);
 
     // Allow insane small sizes - reason:
@@ -960,6 +963,10 @@ void MainWindow::showEvent(QShowEvent* event)
             twl.at(0)->setSize(m_initialSize.width(), m_initialSize.height());
         m_initialSize = QSize();
     }
+
+    // unconditionally here. QTabWidget lays out lazily and the (initial) terminal
+    // must know when this is done - ideally after the user specified size is set above
+    setProperty("terminal_size_pending", false);
 
     QMainWindow::showEvent(event);
 }
