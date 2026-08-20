@@ -266,6 +266,72 @@ void TermWidgetHolder::propertiesChanged()
         w->propertiesChanged();
 }
 
+class EventKiller : public QObject
+{
+    protected:
+        bool eventFilter(QObject *, QEvent *) { return true; }
+};
+
+void TermWidgetHolder::maximize(TermWidget *term)
+{
+    QList<TermWidget*> all = findChildren<TermWidget*>();
+    const bool reset = !all.contains(term); // nullptr is ok, "maximize nothing"
+
+    // We need to pull a little magic trick here and we do that with a
+    static EventKiller eventKiller;
+    // Hiding the TermWidget will make the splitter collapse it, meaning resize it 0x0
+    // It will be properly resized with the show event BUT the Konsole::TerminalDisplay
+    // does not respond well to that - it's update optimizations somehow™ respond to the
+    // shrinking but not the growing event, ie. it will look mostly empty until the
+    // content updates, in doubt because of a focus event
+    // It therefore must not notice any of this…
+
+    QWidgetList hibernates;
+    for (TermWidget *other : all)
+    {
+        bool willBeVisible = reset || other == term;
+        if (willBeVisible == other->isVisibleTo(this))
+            continue;
+
+        // … find the "Konsole::TerminalDisplay" - one more time and TermWidget needs a function for that ;)
+        QWidget *terminalDisplay = nullptr;
+        for (QWidget *kid : other->findChildren<QWidget*>())
+        {
+            if (kid->inherits("Konsole::TerminalDisplay"))
+            {
+                terminalDisplay = kid;
+                break;
+            }
+        }
+        // If we're hiding this, we put it in hibernation first
+        if (terminalDisplay && !willBeVisible)
+            terminalDisplay->installEventFilter(&eventKiller);
+        // Without the need for magic, this is the actual business
+        other->setVisible(willBeVisible);
+        // If we're showing this, enlist it to wake up from hibernation - LATER!
+        if (terminalDisplay && willBeVisible)
+            hibernates << terminalDisplay;
+    }
+    // After the layout has been updated, immediately refresh the splitters, ie. resize all widgets
+    for (QSplitter *splitter : findChildren<QSplitter*>())
+        splitter->refresh();
+    // …and now we wake up the displays out of hibernation.
+    for (QWidget *terminalDisplay : hibernates)
+        terminalDisplay->removeEventFilter(&eventKiller);
+    // TADAA :)
+}
+
+void TermWidgetHolder::toggleMaximized(TermWidget *term)
+{
+    assert(term);
+    if (!term->isVisibleTo(this))
+        return maximize(term);
+    for (TermWidget *other : findChildren<TermWidget*>())
+        if (other != term && other->isVisibleTo(this))
+            return maximize(term); // we're currently not maximized
+    maximize(nullptr); // we're maximized, back to regular tiles
+}
+
 void TermWidgetHolder::splitHorizontal(TermWidget * term)
 {
     TerminalConfig defaultConfig;
