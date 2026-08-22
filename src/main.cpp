@@ -371,8 +371,28 @@ QList<QDBusObjectPath> QTerminalApp::getWindows()
     return windows;
 }
 
+static QDBusObjectPath spawnNewProcess(const QString &dbus_id, const QString &shell_command, const QString& workdir, int columns, int lines)
+{
+    QStringList args;
+    args <<  QStringLiteral("-i") << dbus_id;
+    if (columns > 0 && lines > 0)
+        args <<  QStringLiteral("-s") << QStringLiteral("%1x%2").arg(columns).arg(lines);
+    args <<  QStringLiteral("-w") << workdir;
+    QString profile = Properties::Instance()->profile();
+    if (!profile.isEmpty())
+        args << QStringLiteral("-p") << profile;
+    args <<  QStringLiteral("-e") << shell_command;
+    QProcess::startDetached(QCoreApplication::applicationFilePath(), args);
+    return QDBusObjectPath();
+}
+
 QDBusObjectPath QTerminalApp::newWindow(const QString &dbus_id, const QString &shell_command, const QString& workdir, int columns, int lines)
 {
+    // dropDown can have only one window
+    for (MainWindow *wnd : m_windowList)
+        if (wnd->dropMode())
+            return spawnNewProcess(dbus_id, shell_command, workdir.isEmpty() ? m_workDir : workdir, columns, lines);
+
     TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? m_workDir : workdir, parse_command(shell_command));
     MainWindow *wnd = newWindow(false, cfg, dbus_id);
     assert(wnd != nullptr);
@@ -384,6 +404,11 @@ QDBusObjectPath QTerminalApp::newWindow(const QString &dbus_id, const QString &s
 QDBusObjectPath QTerminalApp::newWindow(const QHash<QString,QVariant> &termArgs)
 {
     TerminalConfig cfg = TerminalConfig::fromDbus(termArgs);
+
+    for (MainWindow *wnd : m_windowList)
+        if (wnd->dropMode())
+            return spawnNewProcess(QString(), cfg.getShell().join(QStringLiteral(" ")), cfg.getWorkingDirectory(), 0, 0);
+
     MainWindow *wnd = newWindow(false, cfg);
     assert(wnd != nullptr);
     return wnd->getDbusPath();
