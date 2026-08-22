@@ -109,23 +109,27 @@ MainWindow::MainWindow(TerminalConfig &cfg,
     connect(&m_dropShortcut, &QxtGlobalShortcut::activated, this, &MainWindow::showHide);
 
     setContentsMargins(0, 0, 0, 0);
-    if (m_dropMode) {
+    if (m_dropMode)
+    {
         this->enableDropMode();
     }
     else {
-        if (Properties::Instance()->saveSizeOnExit) {
+        if (Properties::Instance()->saveSizeOnExit)
+        {
             if (Properties::Instance()->mainWindowSize.isValid())
                 resize(Properties::Instance()->mainWindowSize);
         }
-        else if (Properties::Instance()->fixedWindowSize.isValid()) {
+        else if (Properties::Instance()->fixedWindowSize.isValid())
+        {
             resize(Properties::Instance()->fixedWindowSize);
         }
         if (Properties::Instance()->savePosOnExit && !Properties::Instance()->mainWindowPosition.isNull()
-            && QGuiApplication::platformName() != QStringLiteral("wayland")
-            ) {
+            && QGuiApplication::platformName() != QStringLiteral("wayland"))
+        {
             move(Properties::Instance()->mainWindowPosition);
         }
-        if (Properties::Instance()->saveStateOnExit) {
+        if (Properties::Instance()->saveStateOnExit)
+        {
             restoreState(Properties::Instance()->mainWindowState);
         }
     }
@@ -392,7 +396,8 @@ void MainWindow::setup_FileMenu_Actions()
     setup_Action(ADD_TAB, new QAction(QIcon::fromTheme(QStringLiteral("list-add")), tr("&New Tab"), settingOwner),
                  ADD_TAB_SHORTCUT, this, SLOT(addNewTab()), menu_File);
 
-    if (presetsMenu == nullptr) {
+    if (presetsMenu == nullptr)
+    {
         presetsMenu = new QMenu(tr("New Tab From &Preset"), this);
         auto a = presetsMenu->addAction(QIcon(), tr("1 &Terminal"));
         connect(a, &QAction::triggered, consoleTabulator, [this]() {
@@ -464,7 +469,8 @@ void MainWindow::setup_ViewMenu_Actions()
     menu_Window->addSeparator();
 
     /* tabs position */
-    if (tabPosition == nullptr) {
+    if (tabPosition == nullptr)
+    {
         tabPosition = new QActionGroup(this);
         QAction *tabBottom = new QAction(tr("&Bottom"), this);
         QAction *tabTop = new QAction(tr("&Top"), this);
@@ -486,11 +492,13 @@ void MainWindow::setup_ViewMenu_Actions()
     connect(tabPosition, &QActionGroup::triggered,
             consoleTabulator, &TabWidget::changeTabPosition);
 
-    if (tabPosMenu == nullptr) {
+    if (tabPosMenu == nullptr)
+    {
         tabPosMenu = new QMenu(tr("&Tabs Layout"), menu_Window);
         tabPosMenu->setObjectName(QStringLiteral("tabPosMenu"));
 
-        for(int i=0; i < tabPosition->actions().size(); ++i) {
+        for(int i=0; i < tabPosition->actions().size(); ++i)
+        {
             tabPosMenu->addAction(tabPosition->actions().at(i));
         }
 
@@ -501,7 +509,8 @@ void MainWindow::setup_ViewMenu_Actions()
     /* */
 
     /* Scrollbar */
-    if (scrollBarPosition == nullptr) {
+    if (scrollBarPosition == nullptr)
+    {
         scrollBarPosition = new QActionGroup(this);
         QAction *scrollNone = new QAction(tr("&None"), this);
         QAction *scrollRight = new QAction(tr("&Right"), this);
@@ -520,11 +529,13 @@ void MainWindow::setup_ViewMenu_Actions()
                 consoleTabulator, &TabWidget::changeScrollPosition);
 
     }
-    if (scrollPosMenu == nullptr) {
+    if (scrollPosMenu == nullptr)
+    {
         scrollPosMenu = new QMenu(tr("S&crollbar Layout"), menu_Window);
         scrollPosMenu->setObjectName(QStringLiteral("scrollPosMenu"));
 
-        for(int i=0; i < scrollBarPosition->actions().size(); ++i) {
+        for(int i=0; i < scrollBarPosition->actions().size(); ++i)
+        {
             scrollPosMenu->addAction(scrollBarPosition->actions().at(i));
         }
     }
@@ -532,7 +543,8 @@ void MainWindow::setup_ViewMenu_Actions()
     menu_Window->addMenu(scrollPosMenu);
 
     /* Keyboard cursor shape */
-    if (keyboardCursorShape == nullptr) {
+    if (keyboardCursorShape == nullptr)
+    {
         keyboardCursorShape = new QActionGroup(this);
         QAction *block = new QAction(tr("&Block"), this);
         QAction *underline = new QAction(tr("&Underline"), this);
@@ -552,11 +564,13 @@ void MainWindow::setup_ViewMenu_Actions()
                 consoleTabulator, &TabWidget::changeKeyboardCursorShape);
     }
 
-    if (keyboardCursorShapeMenu == nullptr) {
+    if (keyboardCursorShapeMenu == nullptr)
+    {
         keyboardCursorShapeMenu = new QMenu(tr("&Keyboard Cursor Shape"), menu_Window);
         keyboardCursorShapeMenu->setObjectName(QStringLiteral("keyboardCursorShapeMenu"));
 
-        for(int i=0; i < keyboardCursorShape->actions().size(); ++i) {
+        for(int i=0; i < keyboardCursorShape->actions().size(); ++i)
+        {
             keyboardCursorShapeMenu->addAction(keyboardCursorShape->actions().at(i));
         }
     }
@@ -803,7 +817,8 @@ void MainWindow::realign()
 
 void MainWindow::updateActionGroup(QAction *a)
 {
-    if (a->parent()->objectName() == tabPosMenu->objectName()) {
+    if (a->parent()->objectName() == tabPosMenu->objectName())
+    {
         tabPosition->actions().at(Properties::Instance()->tabsPos)->setChecked(true);
     }
 }
@@ -865,7 +880,8 @@ void MainWindow::handleHistory()
     QDir().mkpath(dir);
     const QString fn = dir + QLatin1String("/qterminal.history.") + QString::number(QCoreApplication::applicationPid());
     QFile file(fn);
-    if (!file.open(QIODevice::WriteOnly)) {
+    if (!file.open(QIODevice::WriteOnly))
+    {
         qDebug() << "Failed to open" << file.fileName() << "for writing";
         return;
     }
@@ -879,7 +895,8 @@ void MainWindow::handleHistory()
     QString command = args[0];
     args.removeFirst();
     args << fn;
-    if (!QProcess::startDetached(command, args)) {
+    if (!QProcess::startDetached(command, args))
+    {
         qDebug() << "Failed to start command" << command << args;
     }
 
@@ -988,7 +1005,8 @@ void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
     }
     consoleTabulator->terminalHolder()->currentTerminal()->impl()->sendText(cmd);
     // the focus proxy (TermWidgetImpl) should be checked because it's nullptr with "exit"
-    if (consoleTabulator->terminalHolder()->currentTerminal()->focusProxy() != nullptr) {
+    if (consoleTabulator->terminalHolder()->currentTerminal()->focusProxy() != nullptr)
+    {
         consoleTabulator->terminalHolder()->currentTerminal()->setFocus();
     }
 }
@@ -1059,10 +1077,13 @@ void MainWindow::updateDisabledActions()
 {
     std::function<void(const QList<QAction *> &)> enableActions = [this, &enableActions](const QList<QAction *> &actions) {
         for (QAction *action : actions) {
-            if (!action->data().isNull()) {
+            if (!action->data().isNull())
+            {
                 const checkfn check = action->data().value<checkfn>();
                 action->setEnabled(check(*this, action));
-            } else if (QMenu *menu = action->menu()) {
+            }
+            else if (QMenu *menu = action->menu())
+            {
                 enableActions(menu->actions());
             }
         }

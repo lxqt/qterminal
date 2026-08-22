@@ -45,7 +45,8 @@ const char* const short_options = "vhw:e:dp:i:s:";
 static const char* serviceName = "org.lxqt.QTerminal";
 static const char* ifaceName = "org.lxqt.QTerminal.Process";
 
-const struct option long_options[] = {
+const struct option long_options[] =
+{
     {"version", 0, nullptr, 'v'},
     {"help",    0, nullptr, 'h'},
     {"workdir", 1, nullptr, 'w'},
@@ -147,11 +148,13 @@ void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_co
 
 int main(int argc, char *argv[])
 {
-    if (!qEnvironmentVariableIsEmpty("XPC_SERVICE_NAME")) {
+    if (!qEnvironmentVariableIsEmpty("XPC_SERVICE_NAME"))
+    {
         // On macOS, if qterminal.app is spawned by launchd (e.g., from Finder
         // or use `open qterminal.app`, $PWD is set to /. Workaround that by
         // go to $HOME first.
-        if (chdir(QDir::homePath().toLatin1().data())) {
+        if (chdir(QDir::homePath().toLatin1().data()))
+        {
             qDebug() << "Failed to chdir to $HOME" << QDir::homePath() << strerror(errno);
         }
 
@@ -231,7 +234,8 @@ int main(int argc, char *argv[])
 #ifdef APPLE_BUNDLE
     QDir translations_dir = QDir(QApplication::applicationDirPath());
     translations_dir.cdUp();
-    if (translations_dir.cd(QStringLiteral("Resources/translations"))) {
+    if (translations_dir.cd(QStringLiteral("Resources/translations")))
+    {
         installTr = translator.load(fname, translations_dir.path(), QStringLiteral("_"));
     } /*else {
         qWarning() << "Unable to find \"Resources/translations\" dir in" << translations_dir.path();
@@ -422,20 +426,25 @@ QDBusObjectPath QTerminalApp::getActiveWindow()
     return qobject_cast<MainWindow*>(aw)->getDbusPath();
 }
 
-bool QTerminalApp::isDropMode() {
-  if (m_windowList.count() == 0) {
+bool QTerminalApp::isDropMode()
+{
+  if (m_windowList.count() == 0)
+  {
     return false;
   }
   MainWindow *wnd = m_windowList.at(0);
   return wnd->dropMode();
 }
 
-bool QTerminalApp::toggleDropdown() {
-  if (m_windowList.count() == 0) {
+bool QTerminalApp::toggleDropdown()
+{
+  if (m_windowList.count() == 0)
+  {
     return false;
   }
   MainWindow *wnd = m_windowList.at(0);
-  if (!wnd->dropMode()) {
+  if (!wnd->dropMode())
+  {
     return false;
   }
   wnd->showHide();
@@ -450,7 +459,8 @@ void QTerminalApp::requestDropDown()
     iface.call(QStringLiteral("toggleDropdown"));
 }
 
-bool QTerminalApp::isPrimaryInstance() {
+bool QTerminalApp::isPrimaryInstance()
+{
   return m_isPrimaryInstance;
 }
 

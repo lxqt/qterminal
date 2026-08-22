@@ -547,13 +547,16 @@ void PropertiesDialog::setupShortcuts()
 
 void PropertiesDialog::bookmarksPathEdited()
 {
-    if(!bookmarksLineEdit->isModified()) {
+    if (!bookmarksLineEdit->isModified())
+    {
         return;
     }
     auto fname = bookmarksLineEdit->text();
-    if (!fname.isEmpty()) {
+    if (!fname.isEmpty())
+    {
         QFileInfo fInfo(fname);
-        if (fInfo.isFile() && fInfo.isReadable()) {
+        if (fInfo.isFile() && fInfo.isReadable())
+        {
             openBookmarksFile();
         }
     }
@@ -571,34 +574,41 @@ void PropertiesDialog::bookmarksButton_clicked()
     if (!openAppDir) {
         // if the path exists, select it; otherwise, open the app directory
         auto path = bookmarksLineEdit->text();
-        if (!path.isEmpty() && QFile::exists(path)) {
-            if (!path.endsWith(QLatin1String(".xml"))) {
+        if (!path.isEmpty() && QFile::exists(path))
+        {
+            if (!path.endsWith(QLatin1String(".xml")))
+            {
                 dia.selectNameFilter(allStr);
             }
             dia.selectFile(path);
         }
-        else {
+        else
+        {
             openAppDir = true;
         }
     }
 #ifdef APP_DIR
     if (openAppDir) {
         auto appDirStr = QString::fromUtf8(APP_DIR);
-        if (!appDirStr.isEmpty()) {
+        if (!appDirStr.isEmpty())
+        {
             QDir appDir(appDirStr);
-            if (appDir.exists()) {
+            if (appDir.exists())
+            {
                 dia.setDirectory(appDir);
             }
         }
     }
 #endif
 
-    if (!dia.exec()) {
+    if (!dia.exec())
+    {
         return;
     }
 
     QString fname = dia.selectedFiles().count() ? dia.selectedFiles().at(0) : QString();
-    if (fname.isNull()) {
+    if (fname.isNull())
+    {
         return;
     }
 
@@ -609,16 +619,19 @@ void PropertiesDialog::bookmarksButton_clicked()
 void PropertiesDialog::openBookmarksFile()
 {
     auto fname = bookmarksLineEdit->text();
-    if (fname.isEmpty()) {
+    if (fname.isEmpty())
+    {
         return;
     }
 
     QFile f(fname);
     QString content;
-    if (!f.open(QFile::ReadOnly)) {
+    if (!f.open(QFile::ReadOnly))
+    {
         content = QString::fromLatin1("<qterminal>\n  <group name=\"Change Directory\">\n    <command name=\"Home\" value=\"cd $HOME\"/>\n  </group>\n  <group name=\"File Manager\">\n    <command name=\"Open here\" value=\"xdg-open $(pwd)\"/>\n  </group>\n</qterminal>\n");
     }
-    else {
+    else
+    {
         content = QString::fromUtf8(f.readAll());
     }
 
@@ -629,7 +642,8 @@ void PropertiesDialog::openBookmarksFile()
 void PropertiesDialog::saveBookmarksFile()
 {
     auto fname = bookmarksLineEdit->text();
-    if (fname.isEmpty()) {
+    if (fname.isEmpty())
+    {
         return;
     }
 
@@ -637,11 +651,14 @@ void PropertiesDialog::saveBookmarksFile()
 #ifdef APP_DIR
     // if the file is chosen from the app directory, save it to the config directory
     auto appDirStr = QString::fromUtf8(APP_DIR);
-    if (!appDirStr.isEmpty()) {
+    if (!appDirStr.isEmpty())
+    {
         QFileInfo fInfo(fname);
-        if (fInfo.exists() && fInfo.dir() == QDir(appDirStr)) {
+        if (fInfo.exists() && fInfo.dir() == QDir(appDirStr))
+        {
             QString configDir = Properties::Instance()->configDir();
-            if (!configDir.isEmpty()) {
+            if (!configDir.isEmpty())
+            {
                 fname = QDir(configDir).absoluteFilePath(fInfo.fileName());
                 fromAppDir = true;
             }
@@ -653,34 +670,42 @@ void PropertiesDialog::saveBookmarksFile()
     // and the editor isn't modified
     if (!fromAppDir
         && !bookmarkPlainEdit->document()->isModified()
-        && QFile::exists(fname)) {
+        && QFile::exists(fname))
+    {
         return;
     }
 
     QFile f(fname);
 
     // first show a prompt message if needed
-    if (f.exists()) {
+    if (f.exists())
+    {
         QMessageBox::StandardButton btn = QMessageBox::Yes;
-        if (fromAppDir) {
+        if (fromAppDir)
+        {
             btn = QMessageBox::question(this, tr("Question"), tr("Do you want to overwrite this bookmarks file?")
                                                               + QLatin1String("\n%1").arg(fname));
         }
-        else if (!fname.endsWith(QLatin1String(".xml"))) {
+        else if (!fname.endsWith(QLatin1String(".xml")))
+        {
             btn =  QMessageBox::question(this, tr("Question"), tr("The name of bookmarks file does not end with '.xml'.\nAre you sure that you want to overwrite it?"));
         }
-        if (btn == QMessageBox::No) {
+        if (btn == QMessageBox::No)
+        {
             return;
         }
     }
 
-    if (!f.open(QFile::WriteOnly|QFile::Truncate)) {
+    if (!f.open(QFile::WriteOnly|QFile::Truncate))
+    {
         QMessageBox::warning(this, tr("Warning"), tr("Cannot write bookmarks to this file:")
                                                   + QLatin1String("\n%1").arg(fname));
     }
-    else {
+    else
+    {
         f.write(bookmarkPlainEdit->toPlainText().toUtf8());
-        if (fromAppDir) {
+        if (fromAppDir)
+        {
             bookmarksLineEdit->setText(fname); // update the bookmarks file path
         }
         bookmarkPlainEdit->document()->setModified(false); // the user may have clicked "Apply", not "OK"
@@ -689,16 +714,21 @@ void PropertiesDialog::saveBookmarksFile()
 
 bool PropertiesDialog::eventFilter(QObject *object, QEvent *event)
 {
-    if (object == dropShortCutEdit || object == lockShortCutEdit) {
-        if (event->type() == QEvent::KeyPress) {
+    if (object == dropShortCutEdit || object == lockShortCutEdit)
+    {
+        if (event->type() == QEvent::KeyPress)
+        {
             QKeyEvent *ke = static_cast<QKeyEvent *>(event);
             int k = ke->key();
             // treat Tab and Backtab like other keys (instead of changing focus)
-            if (k == Qt::Key_Tab || k ==  Qt::Key_Backtab) {
-                if (object == dropShortCutEdit) {
+            if (k == Qt::Key_Tab || k ==  Qt::Key_Backtab)
+            {
+                if (object == dropShortCutEdit)
+                {
                     dropShortCutEdit->pressKey(ke);
                 }
-                else {
+                else
+                {
                     lockShortCutEdit->pressKey(ke);
                 }
                 return true;
@@ -706,11 +736,13 @@ bool PropertiesDialog::eventFilter(QObject *object, QEvent *event)
             // apply with Enter/Return and cancel with Escape, like in other entries
             if (ke->modifiers() == Qt::NoModifier || ke->modifiers() == Qt::KeypadModifier)
             {
-                if (k == Qt::Key_Return || k == Qt::Key_Enter) {
+                if (k == Qt::Key_Return || k == Qt::Key_Enter)
+                {
                     accept();
                     return true;
                 }
-                if (k == Qt::Key_Escape) {
+                if (k == Qt::Key_Escape)
+                {
                     reject();
                     return true;
                 }
