@@ -177,7 +177,7 @@ void MainWindow::enableDropMode()
     if (QGuiApplication::platformName() == QStringLiteral("wayland"))
     {
         winId();
-         (QWindow *win = windowHandle())
+        if (QWindow *win = windowHandle())
         {
             m_layerWindow = LayerShellQt::Window::get(win);
             if (m_layerWindow)
@@ -498,9 +498,7 @@ void MainWindow::setup_ViewMenu_Actions()
         tabPosMenu->setObjectName(QStringLiteral("tabPosMenu"));
 
         for(int i=0; i < tabPosition->actions().size(); ++i)
-        {
             tabPosMenu->addAction(tabPosition->actions().at(i));
-        }
 
         connect(menu_Window, &QMenu::hovered,
                 this, &MainWindow::updateActionGroup);
@@ -535,9 +533,7 @@ void MainWindow::setup_ViewMenu_Actions()
         scrollPosMenu->setObjectName(QStringLiteral("scrollPosMenu"));
 
         for(int i=0; i < scrollBarPosition->actions().size(); ++i)
-        {
             scrollPosMenu->addAction(scrollBarPosition->actions().at(i));
-        }
     }
 
     menu_Window->addMenu(scrollPosMenu);
@@ -570,9 +566,7 @@ void MainWindow::setup_ViewMenu_Actions()
         keyboardCursorShapeMenu->setObjectName(QStringLiteral("keyboardCursorShapeMenu"));
 
         for(int i=0; i < keyboardCursorShape->actions().size(); ++i)
-        {
             keyboardCursorShapeMenu->addAction(keyboardCursorShape->actions().at(i));
-        }
     }
 
     menu_Window->addMenu(keyboardCursorShapeMenu);
@@ -634,9 +628,8 @@ void MainWindow::toggleBookmarks()
     if (m_bookmarksDock->isVisible())
     { // give the focus to the bookmarks dock
         if (m_bookmarksDock->isFloating())
-        {
             m_bookmarksDock->activateWindow();
-        }
+      
         m_bookmarksDock->widget()->setFocus();
     }
 }
@@ -682,25 +675,20 @@ void MainWindow::closeEvent(QCloseEvent *ev)
         if (!m_dropMode)
         {
             if (Properties::Instance()->savePosOnExit)
-            {
                 Properties::Instance()->mainWindowPosition = pos();
-            }
+          
             if (Properties::Instance()->saveSizeOnExit)
             {
                 Properties::Instance()->mainWindowSize = size();
                 Properties::Instance()->windowMaximized = isMaximized();
             }
             if (Properties::Instance()->saveStateOnExit)
-            {
                 Properties::Instance()->mainWindowState = saveState();
-            }
         }
         rebuildActions(); // shortcuts may have changed by another running instance
         Properties::Instance()->saveSettings();
         for (int i = consoleTabulator->count(); i > 0; --i)
-        {
             consoleTabulator->removeTab(i - 1);
-        }
         ev->accept();
         // closing hidden windows does not trigger "quitOnLastWindowClosed : bool", as documented
         //      If this property is true, the application will attempt to quit when the last **visible** primary
@@ -776,9 +764,7 @@ void MainWindow::propertiesChanged()
     actions[QLatin1String(TOGGLE_BOOKMARKS)]->setVisible(Properties::Instance()->useBookmarks);
 
     if (Properties::Instance()->useBookmarks)
-    {
         qobject_cast<BookmarksWidget*>(m_bookmarksDock->widget())->setup();
-    }
 
     onCurrentTitleChanged(consoleTabulator->currentIndex());
 
@@ -792,14 +778,12 @@ void MainWindow::realign()
     if (m_dropMode)
     {
         if (m_layerWindow)
-        {
             return; // done in showEvent
-        }
+      
         QScreen *appScreen = QGuiApplication::screenAt(QCursor::pos());
         if(appScreen == nullptr)
-        {
             appScreen = QGuiApplication::primaryScreen();
-        }
+      
         const QRect desktop = appScreen->availableGeometry();
         QRect g = QRect(desktop.x(),
                         desktop.y(),
@@ -809,18 +793,14 @@ void MainWindow::realign()
         // do not use 0 here - we need to calculate with potential panel on top
         g.moveTop(desktop.top());
         if (g != geometry())
-        {
             setGeometry(g);
-        }
     }
 }
 
 void MainWindow::updateActionGroup(QAction *a)
 {
     if (a->parent()->objectName() == tabPosMenu->objectName())
-    {
         tabPosition->actions().at(Properties::Instance()->tabsPos)->setChecked(true);
-    }
 }
 
 void MainWindow::showHide()
@@ -830,24 +810,18 @@ void MainWindow::showHide()
     for (const auto& dialog : dialogs)
     {
         if(dialog->isModal())
-        {
             return;
-        }
     }
 
     if (isVisible())
-    {
         hide();
-    }
     else
     {
         // The checked state of the fullscreen action should be reset; otherwise, its shortcut
         // might need to be pressed twice later to make the window fullscreen. We don't consult
         // "isFullScreen()" because it will return "false" if the window has been deactivated.
         if (auto a = actions.value(QLatin1String(FULLSCREEN)))
-        {
             a->setChecked(false);
-        }
         realign();
         show();
         activateWindow();
@@ -896,9 +870,7 @@ void MainWindow::handleHistory()
     args.removeFirst();
     args << fn;
     if (!QProcess::startDetached(command, args))
-    {
         qDebug() << "Failed to start command" << command << args;
-    }
 
 }
 
@@ -913,9 +885,7 @@ bool MainWindow::event(QEvent *event)
             // On Wayland and with a modal dialog, the dropdown window can be activated by
             // clicking inside it and then deactivated by clicking on another window (see below).
             if (!m_layerWindow || m_layerWindow->layer() == LayerShellQt::Window::Layer::LayerOverlay)
-            {
                 hide();
-            }
         }
     }
     // A workaround for the modal dialogs of the dropdown window on Wayland.
@@ -985,9 +955,7 @@ void MainWindow::newTerminalWindow()
         args <<  QStringLiteral("-w") << cfg.getWorkingDirectory();
         QString profile = Properties::Instance()->profile();
         if (!profile.isEmpty())
-        {
             args << QStringLiteral("-p") << profile;
-        }
         QProcess::startDetached(QStringLiteral("qterminal"), args);
     }
     else
@@ -1000,15 +968,12 @@ void MainWindow::newTerminalWindow()
 void MainWindow::bookmarksWidget_callCommand(const QString& cmd)
 {
     if (m_bookmarksDock->isFloating())
-    {
         activateWindow();
-    }
+  
     consoleTabulator->terminalHolder()->currentTerminal()->impl()->sendText(cmd);
     // the focus proxy (TermWidgetImpl) should be checked because it's nullptr with "exit"
     if (consoleTabulator->terminalHolder()->currentTerminal()->focusProxy() != nullptr)
-    {
         consoleTabulator->terminalHolder()->currentTerminal()->setFocus();
-    }
 }
 
 void MainWindow::bookmarksDock_visibilityChanged(bool visible)
