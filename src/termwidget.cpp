@@ -471,10 +471,14 @@ void TermWidget::setSize(int columns, int lines)
         if (!terminalDisplay) // not supposed, but we could not correctly control the size
             return;
 
+        QSize oldSize(impl()->screenColumnsCount(), impl()->screenLinesCount());
+        if (columns == oldSize.width() && lines == oldSize.height())
+            return; // inert and for some reason terminalDisplay's sizeHint is off when trying
+
         if (columns < 1)
-            columns = impl()->screenColumnsCount();
+            columns = oldSize.width();
         if (lines < 1)
-            lines = impl()->screenLinesCount();
+            lines = oldSize.height();
         impl()->setSize(QSize(columns, lines));
 
         QSize sh = terminalDisplay->sizeHint();
