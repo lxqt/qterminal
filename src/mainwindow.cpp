@@ -129,9 +129,7 @@ MainWindow::MainWindow(TerminalConfig &cfg,
             move(Properties::Instance()->mainWindowPosition);
         }
         if (Properties::Instance()->saveStateOnExit)
-        {
             restoreState(Properties::Instance()->mainWindowState);
-        }
     }
 
     consoleTabulator->setAutoFillBackground(true);
@@ -179,7 +177,7 @@ void MainWindow::enableDropMode()
     if (QGuiApplication::platformName() == QStringLiteral("wayland"))
     {
         winId();
-        if (QWindow *win = windowHandle())
+         (QWindow *win = windowHandle())
         {
             m_layerWindow = LayerShellQt::Window::get(win);
             if (m_layerWindow)
@@ -296,7 +294,8 @@ void MainWindow::setup_ActionsMenu_Actions()
 
     const QString textBase = tr("Tab");
     QMenu *menu_GoTo = new QMenu(tr("Go to"), menu_Actions);
-    for (int i=1; i<=10; ++i) {
+    for (int i=1; i<=10; ++i)
+    {
         QString num = QString::number(i);
         QAction *action = new QAction(textBase + QLatin1Char(' ') + num, settingOwner);
         action->setProperty("tab", i);
@@ -400,7 +399,8 @@ void MainWindow::setup_FileMenu_Actions()
     {
         presetsMenu = new QMenu(tr("New Tab From &Preset"), this);
         auto a = presetsMenu->addAction(QIcon(), tr("1 &Terminal"));
-        connect(a, &QAction::triggered, consoleTabulator, [this]() {
+        connect(a, &QAction::triggered, consoleTabulator, [this]()
+        {
             consoleTabulator->addNewTab(m_config);
         });
         presetsMenu->addAction(QIcon(), tr("2 &Horizontal Terminals"),
@@ -586,9 +586,9 @@ void MainWindow::setupCustomDirs()
 
     dirs.removeDuplicates(); // QStandardPaths::locateAll() produces duplicates
 
-    for (const QString& dir : std::as_const(dirs)) {
+    for (const QString& dir : std::as_const(dirs))
         TermWidgetImpl::addCustomColorSchemeDir(dir + QLatin1String("/color-schemes"));
-    }
+  
     // FIXME: To be deprecated and then removed
     const QSettings settings;
     const QString dir = QFileInfo(settings.fileName()).canonicalPath() + QLatin1String("/color-schemes");
@@ -1075,8 +1075,10 @@ bool MainWindow::hasIndexedTab(QAction *action)
 
 void MainWindow::updateDisabledActions()
 {
-    std::function<void(const QList<QAction *> &)> enableActions = [this, &enableActions](const QList<QAction *> &actions) {
-        for (QAction *action : actions) {
+    std::function<void(const QList<QAction *> &)> enableActions = [this, &enableActions](const QList<QAction *> &actions)
+    {
+        for (QAction *action : actions)
+        {
             if (!action->data().isNull())
             {
                 const checkfn check = action->data().value<checkfn>();
@@ -1092,7 +1094,8 @@ void MainWindow::updateDisabledActions()
     enableActions(menu_Actions->actions());
 }
 
-QMap< QString, QAction * >& MainWindow::leaseActions() {
+QMap< QString, QAction * >& MainWindow::leaseActions()
+{
     return actions;
 }
 #ifdef HAVE_QDBUS
