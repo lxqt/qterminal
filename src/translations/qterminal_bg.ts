@@ -300,17 +300,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Блок</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Подчертаване</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
         <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>I-образен</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -978,17 +978,17 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Блок</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>Подчертаване</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>I-образен</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>
