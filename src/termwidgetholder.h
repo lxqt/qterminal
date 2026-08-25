@@ -71,6 +71,7 @@ class TermWidgetHolder : public QWidget
         QDBusObjectPath getActiveTerminal();
         QList<QDBusObjectPath> getTerminals();
         QDBusObjectPath getWindow();
+        void activateTab();
         void closeTab();
         void setLabel(const QString &label);
         #endif

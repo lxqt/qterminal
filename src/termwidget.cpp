@@ -462,6 +462,13 @@ QDBusObjectPath TermWidget::getTab()
     return findParent<TermWidgetHolder>(this)->getDbusPath();
 }
 
+void TermWidget::activateTerminal()
+{
+    TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
+    holder->activateTab();
+    emit termGetFocus(this);
+}
+
 void TermWidget::closeTerminal()
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
