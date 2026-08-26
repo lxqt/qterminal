@@ -225,9 +225,7 @@ void MainWindow::setDropShortcut(const QKeySequence& dropShortCut)
 void MainWindow::setDropLockShortCut(const QKeySequence& dropLockShortCut)
 {
     if (m_dropLockButton)
-    {
         m_dropLockButton->setShortcut(dropLockShortCut);
-    }
 }
 
 void MainWindow::setup_Action(const char *name, QAction *action, const char *defaultShortcut, const QObject *receiver,
@@ -399,8 +397,7 @@ void MainWindow::setup_FileMenu_Actions()
     {
         presetsMenu = new QMenu(tr("New Tab From &Preset"), this);
         auto a = presetsMenu->addAction(QIcon(), tr("1 &Terminal"));
-        connect(a, &QAction::triggered, consoleTabulator, [this]()
-        {
+        connect(a, &QAction::triggered, consoleTabulator, [this] () {
             consoleTabulator->addNewTab(m_config);
         });
         presetsMenu->addAction(QIcon(), tr("2 &Horizontal Terminals"),

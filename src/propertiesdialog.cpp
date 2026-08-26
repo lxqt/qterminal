@@ -602,15 +602,11 @@ void PropertiesDialog::bookmarksButton_clicked()
 #endif
 
     if (!dia.exec())
-    {
         return;
-    }
 
     QString fname = dia.selectedFiles().count() ? dia.selectedFiles().at(0) : QString();
     if (fname.isNull())
-    {
         return;
-    }
 
     bookmarksLineEdit->setText(fname);
     openBookmarksFile();
@@ -620,20 +616,14 @@ void PropertiesDialog::openBookmarksFile()
 {
     auto fname = bookmarksLineEdit->text();
     if (fname.isEmpty())
-    {
         return;
-    }
 
     QFile f(fname);
     QString content;
     if (!f.open(QFile::ReadOnly))
-    {
         content = QString::fromLatin1("<qterminal>\n  <group name=\"Change Directory\">\n    <command name=\"Home\" value=\"cd $HOME\"/>\n  </group>\n  <group name=\"File Manager\">\n    <command name=\"Open here\" value=\"xdg-open $(pwd)\"/>\n  </group>\n</qterminal>\n");
-    }
     else
-    {
         content = QString::fromUtf8(f.readAll());
-    }
 
     bookmarkPlainEdit->setPlainText(content);
     bookmarkPlainEdit->document()->setModified(false);
@@ -643,9 +633,7 @@ void PropertiesDialog::saveBookmarksFile()
 {
     auto fname = bookmarksLineEdit->text();
     if (fname.isEmpty())
-    {
         return;
-    }
 
     bool fromAppDir = false;
 #ifdef APP_DIR

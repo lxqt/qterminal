@@ -45,8 +45,7 @@ const char* const short_options = "vhw:e:dp:i:s:";
 static const char* serviceName = "org.lxqt.QTerminal";
 static const char* ifaceName = "org.lxqt.QTerminal.Process";
 
-const struct option long_options[] =
-{
+const struct option long_options[] = {
     {"version", 0, nullptr, 'v'},
     {"help",    0, nullptr, 'h'},
     {"workdir", 1, nullptr, 'w'},
@@ -308,7 +307,8 @@ void QTerminalApp::setWorkingDirectory(const QString &wd)
     m_workDir = wd;
 }
 
-void QTerminalApp::cleanup() {
+void QTerminalApp::cleanup()
+{
     delete m_instance;
     m_instance = nullptr;
 }
