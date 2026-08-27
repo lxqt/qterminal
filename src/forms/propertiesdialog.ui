@@ -887,10 +887,12 @@
               <item row="13" column="0">
                <widget class="QLabel" name="label_17">
                 <property name="toolTip">
-                 <string>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</string>
+                 <string>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
+Defaults to $VISUAL
+                 </string>
                 </property>
                 <property name="text">
-                 <string>Handle history command</string>
+                 <string>History viewer command</string>
                 </property>
                </widget>
               </item>
