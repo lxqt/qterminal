@@ -1037,8 +1037,7 @@ bool MainWindow::hasIndexedTab(QAction *action)
 
 void MainWindow::updateDisabledActions()
 {
-    std::function<void(const QList<QAction *> &)> enableActions = [this, &enableActions](const QList<QAction *> &actions)
-    {
+    std::function<void(const QList<QAction *> &)> enableActions = [this, &enableActions](const QList<QAction *> &actions) {
         for (QAction *action : actions)
         {
             if (!action->data().isNull())
