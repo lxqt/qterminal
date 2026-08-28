@@ -24,6 +24,7 @@
 #include <QFont>
 #include <QFileSystemWatcher>
 #include <QString>
+#include <qkeysequence.h>
 
 typedef QString Session;
 
@@ -130,6 +131,13 @@ class Properties
         bool confirmMultilinePaste;
         bool trimPastedTrailingNewlines;
         QString wordCharacters;
+
+        /** Parse and expose OSC-8 hyperlinks from applications. */
+        bool enableOsc8Hyperlinks;
+        /** Show destination URL tooltip when hovering links. */
+        bool showLinkTooltips;
+        /** Open links only with Ctrl+Click (or context menu); if false, plain click opens. */
+        bool openLinksByCtrlClick;
 
         bool windowMaximized;
         bool swapMouseButtons2and3;
