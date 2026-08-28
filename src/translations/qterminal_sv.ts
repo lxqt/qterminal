@@ -300,17 +300,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Block</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Understruken</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
         <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;I-balk</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="554"/>
@@ -977,17 +977,17 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Block</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>Understruken</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>I-balk</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="461"/>

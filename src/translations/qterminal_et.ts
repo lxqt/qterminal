@@ -315,22 +315,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="535"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Plokk</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="536"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Alakriips</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
         <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;I-tala</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="661"/>
         <source>Are you sure you want to exit?</source>
-        <translation>Soovid sa tõesti väljuda?</translation>
+        <translation>Kas kindlasti soovid väljuda?</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="698"/>
