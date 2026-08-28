@@ -306,6 +306,9 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
 
     trimPastedTrailingNewlinesCheckBox->setChecked(Properties::Instance()->trimPastedTrailingNewlines);
     confirmMultilinePasteCheckBox->setChecked(Properties::Instance()->confirmMultilinePaste);
+    enableOsc8HyperlinksCheckBox->setChecked(Properties::Instance()->enableOsc8Hyperlinks);
+    showLinkTooltipsCheckBox->setChecked(Properties::Instance()->showLinkTooltips);
+    openLinksByCtrlClickCheckBox->setChecked(Properties::Instance()->openLinksByCtrlClick);
 
     // save the size on canceling too (it's saved on accepting by apply())
     connect(this, &QDialog::rejected, [this] {
@@ -416,6 +419,9 @@ void PropertiesDialog::apply()
     Properties::Instance()->trimPastedTrailingNewlines = trimPastedTrailingNewlinesCheckBox->isChecked();
     Properties::Instance()->confirmMultilinePaste = confirmMultilinePasteCheckBox->isChecked();
     Properties::Instance()->wordCharacters = wordCharactersLineEdit->text();
+    Properties::Instance()->enableOsc8Hyperlinks = enableOsc8HyperlinksCheckBox->isChecked();
+    Properties::Instance()->showLinkTooltips = showLinkTooltipsCheckBox->isChecked();
+    Properties::Instance()->openLinksByCtrlClick = openLinksByCtrlClickCheckBox->isChecked();
 
     int autoDelay = mouseAutoHideSpinBox->value();
     if (autoDelay > 0)

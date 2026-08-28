@@ -36,332 +36,342 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="92"/>
+        <location filename="../mainwindow.cpp" line="94"/>
         <source>Bookmarks</source>
         <translation>Obukwatakifo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="217"/>
+        <location filename="../mainwindow.cpp" line="219"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>Nyiga &quot;%1&quot; okulaba ekiwandikiro.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="271"/>
+        <location filename="../mainwindow.cpp" line="273"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;Genda ku katimbe akaddako</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;Ddayo katimbe kamu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="283"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>Move Tab &amp;Left</source>
         <translation>Akatimbe kazze ku &amp;kkono</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="286"/>
+        <location filename="../mainwindow.cpp" line="288"/>
         <source>Move Tab &amp;Right</source>
         <translation>Akatimbe kazze ku dd&amp;yo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="264"/>
+        <location filename="../mainwindow.cpp" line="266"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>Gy&amp;awo ebiri mu katimbe akakolerwamu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="199"/>
         <source>Keep window open when it loses focus</source>
         <translation>Eddirisa lisigalewo nga eddala lilobedwa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>&amp;Previous Tab in History</source>
         <translation>Genda ku mbeera y&apos;obutimbe eyak&amp;ulembera eriwo kati</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="280"/>
+        <location filename="../mainwindow.cpp" line="282"/>
         <source>&amp;Next Tab in History</source>
         <translation>Genda ku mbeera y&apos;obutimbe edda ku eriwo kaka&amp;ti</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="291"/>
+        <location filename="../mainwindow.cpp" line="293"/>
         <source>Tab</source>
         <translation>Katimbe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="292"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>Go to</source>
         <translation>Genda ku</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="307"/>
         <source>Split &amp;View Top-Bottom</source>
         <translation>Akatimbe Kawulemu Ekya Waggulu N&apos;ekya Wansi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="308"/>
+        <location filename="../mainwindow.cpp" line="310"/>
         <source>Split Vie&amp;w Left-Right</source>
         <translation>Akatimbe Kawulemu Kya &amp;Ddyo N&apos;ekya Kkono</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="315"/>
         <source>&amp;Close Subterminal</source>
         <translation>Akawandikiro Ka&amp;gyewo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="316"/>
+        <location filename="../mainwindow.cpp" line="318"/>
         <source>&amp;Top Subterminal</source>
         <translation>Genda ku katimbe ak&apos;awule aka wagg&amp;ulu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="319"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>Genda ku katimbe ak&apos;awule aka wan&amp;si</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>L&amp;eft Subterminal</source>
         <translation>Genda ku katimbe ak&apos;awule aka kk&amp;ono</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="325"/>
+        <location filename="../mainwindow.cpp" line="327"/>
         <source>R&amp;ight Subterminal</source>
         <translation>G&amp;enda ku katimbe ak&apos;awule aka ddyo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="332"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>Copy &amp;Selection</source>
         <translation>Kwata ebi&amp;tangaazidwa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="335"/>
+        <location filename="../mainwindow.cpp" line="337"/>
         <source>Paste Clip&amp;board</source>
         <translation>&amp;Paatiikawo ebiri mu ggwanika y&apos;ebikwatidwa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="338"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>Paste S&amp;election</source>
         <translation>P&amp;aatika wo ebitangaazidwa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="341"/>
+        <location filename="../mainwindow.cpp" line="343"/>
         <source>Zoom &amp;in</source>
         <translation>&amp;Zimbulukusa</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="344"/>
+        <location filename="../mainwindow.cpp" line="346"/>
         <source>Zoom &amp;out</source>
         <translation>K&amp;endeeza</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="347"/>
+        <location filename="../mainwindow.cpp" line="349"/>
         <source>Zoom rese&amp;t</source>
         <translation>&amp;Dda ku buzimbulukufu obwa bulijjo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="354"/>
         <source>&amp;Find...</source>
         <translation>&amp;Noonya...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="355"/>
-        <source>Handle history...</source>
-        <translation>Teekateeka eby&apos;olukalala lw&apos;ebikoledwa...</translation>
+        <location filename="../mainwindow.cpp" line="357"/>
+        <source>View history in editor</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>&amp;Save Session</source>
         <translation>&amp;Jukira olutuula luno</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="371"/>
         <source>&amp;Load Session</source>
         <translation>&amp;Komyawo olutuula</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="376"/>
+        <location filename="../mainwindow.cpp" line="378"/>
         <source>&amp;Toggle Menu</source>
         <translation>Kukisa n&apos;oku&amp;labisa menyu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="381"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>Rename session</source>
         <translation>Kyusa linnya lya katimbe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="392"/>
         <source>&amp;New Tab</source>
         <translation>Leeta katimbe kap&amp;ya</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="394"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>New Tab From &amp;Preset</source>
         <translation>Leeta katimbe ku bwate&amp;gekebwa edda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="395"/>
+        <location filename="../mainwindow.cpp" line="397"/>
         <source>1 &amp;Terminal</source>
         <translation>&amp;kiwandikiro 1</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="399"/>
+        <location filename="../mainwindow.cpp" line="401"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>Biwandikiro 2 ebiriraanaganye bu&amp;simba</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="403"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>Biwandikiro 2 ebiriraanaganye buga&amp;zi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="403"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source>4 Terminal&amp;s</source>
         <translation>Biwandikir&amp;o 4</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="409"/>
+        <location filename="../mainwindow.cpp" line="411"/>
         <source>&amp;Close Tab</source>
         <translation>&amp;Gyawo katimbe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>&amp;New Window</source>
         <translation>&amp;Leeta ddirisa Ppya</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="419"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;Enteekateeka...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="421"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>&amp;Quit</source>
         <translation>&amp;Mala</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="427"/>
+        <location filename="../mainwindow.cpp" line="429"/>
         <source>&amp;Hide Window Borders</source>
         <translation>Amadirisa ga&amp;leme okubaako nsalosalo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>&amp;Show Tab Bar</source>
         <translation>Obutimbe bubeeko &amp;obukonda</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>Fullscreen</source>
         <translation>Buna lutimbe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="459"/>
+        <location filename="../mainwindow.cpp" line="461"/>
         <source>Toggle Bookmarks</source>
         <translation>Okukisa n&apos;okulabisa obukwatakifo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="467"/>
+        <location filename="../mainwindow.cpp" line="469"/>
         <source>&amp;Bottom</source>
         <translation>Wa&amp;nsi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="468"/>
+        <location filename="../mainwindow.cpp" line="470"/>
         <source>&amp;Top</source>
         <translation>Wa&amp;ggulu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="469"/>
-        <location filename="../mainwindow.cpp" line="505"/>
+        <location filename="../mainwindow.cpp" line="471"/>
+        <location filename="../mainwindow.cpp" line="507"/>
         <source>&amp;Right</source>
         <translation>Ku &amp;ddyo</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="470"/>
-        <location filename="../mainwindow.cpp" line="506"/>
+        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="508"/>
         <source>&amp;Left</source>
         <translation>Ku &amp;kkono</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="488"/>
+        <location filename="../mainwindow.cpp" line="490"/>
         <source>&amp;Tabs Layout</source>
         <translation>O&amp;bukonda gye bulabikira</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="506"/>
         <source>&amp;None</source>
         <translation>&amp;Tewabe</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>S&amp;crollbar Layout</source>
         <translation>Ekigeran&amp;seesa gye kirabikira</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="535"/>
+        <location filename="../mainwindow.cpp" line="537"/>
         <source>&amp;Block</source>
         <translation>Ka&amp;tafaali</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="536"/>
+        <location filename="../mainwindow.cpp" line="538"/>
         <source>&amp;Underline</source>
         <translation>M&amp;usittale</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="537"/>
+        <location filename="../mainwindow.cpp" line="539"/>
         <source>&amp;I-Beam</source>
         <translation>&amp;Kawagi</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="554"/>
+        <location filename="../mainwindow.cpp" line="556"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>En&amp;kula y&apos;akasimbannukuta</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="642"/>
+        <location filename="../mainwindow.cpp" line="644"/>
         <source>A process is running.</source>
         <translation>Waliwo omulimu ogukyabumbujja.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="661"/>
+        <location filename="../mainwindow.cpp" line="663"/>
         <source>Exit QTerminal</source>
         <translation>Komya QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="661"/>
+        <location filename="../mainwindow.cpp" line="663"/>
         <source>Are you sure you want to exit?</source>
         <translation>Okakasa oyagala okumala?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="698"/>
+        <location filename="../mainwindow.cpp" line="708"/>
         <source>About</source>
         <translation>Ebifa ku ScreenGrab</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="700"/>
+        <location filename="../mainwindow.cpp" line="710"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>Puloguramu ey&apos;ekiwandikiro ekitanyunyunta kompyuta era
 ekikolera ku sisitemu ez&apos;ebika ebisukka mu kimu</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="702"/>
+        <location filename="../mainwindow.cpp" line="712"/>
         <source>Copyright (C) </source>
         <translation>Lukusa lwa kukoppolola (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="702"/>
+        <location filename="../mainwindow.cpp" line="712"/>
         <source>2013-2025</source>
         <translation>2013-2025</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="704"/>
+        <location filename="../mainwindow.cpp" line="714"/>
         <source>LXQt Project</source>
         <translation>Kawefube wa LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="706"/>
+        <location filename="../mainwindow.cpp" line="716"/>
         <source>Development: </source>
         <translation>Abaawandika: </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="869"/>
+        <source>No editor available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="871"/>
+        <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -540,7 +550,7 @@ Gasobola okutabulatabula enkola ya kiwandikiro.</translation>
         <translation>Menyu ereme okweyambisa mapeesa agagonz&apos;emirimu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="903"/>
+        <location filename="../forms/propertiesdialog.ui" line="935"/>
         <source>Emulation</source>
         <translation>Enkola ya kiwandikiro</translation>
     </message>
@@ -563,7 +573,7 @@ nnyiriri obulagira kutandika lupya bw&apos;ebeera esanze
 mu bintu ebipaatiikidwa</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="830"/>
+        <location filename="../forms/propertiesdialog.ui" line="860"/>
         <source>Open new terminals in current working directory</source>
         <translation>Ebiwandikiro ebipya bibeere nga
 bikolera mu tterekero eririwo</translation>
@@ -592,7 +602,7 @@ ku lukalala lw&apos;ebikoledwa</translation>
         <translation>Bungi bw&apos;ebikuumibwa ku lukalala lw&apos;ebikoledwa</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="854"/>
+        <location filename="../forms/propertiesdialog.ui" line="884"/>
         <source>Default $TERM</source>
         <translation>$TERM eya bulijjo</translation>
     </message>
@@ -654,20 +664,9 @@ era bijja kuwandikibwa n&apos;ennukuta nziggumivu</translation>
         <translation>Amadirisa ga&amp;leme okubaako nsalosalo</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="912"/>
+        <location filename="../forms/propertiesdialog.ui" line="944"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Kino kitegeka kika kya kiwandikiro ki QTerminal ky&apos;eba efaananya nkola. Ssi tteeka okufaanana ebika ebitera okusangibwa ku sisitemu entabaganyi nga gy&apos;olina.&lt;/p&gt;&lt;p&gt;Bw&apos;obanga tokakasa bwetaavu okyusa kino, teekawo &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="890"/>
-        <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>Ekiragiro ekiteekebwa wano QTerminal ejjakukiyisa nga ekikolebwako
-etaddewo fayiro ey&apos;ekiseera omuli olukalala lw&apos;ebikoldewa</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="893"/>
-        <source>Handle history command</source>
-        <translation>Tegeka ekiragiro ekikola ku lukalala lw&apos;ebikoledwa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="605"/>
@@ -681,13 +680,13 @@ etaddewo fayiro ey&apos;ekiseera omuli olukalala lw&apos;ebikoldewa</translation
         <translation>Kwata obunene bw&apos;eriko kakati</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="840"/>
+        <location filename="../forms/propertiesdialog.ui" line="870"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>Buli lwe wakolebwawo akatimbe akapya
 kalabikirenga ku ddyo w&apos;akakolebwamu</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="837"/>
+        <location filename="../forms/propertiesdialog.ui" line="867"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>Kano bwe kasigala keereere akatimbe akapya kajjanga
 kulabikira ku ddyo w&apos;akatimbe kaakano akasembayo</translation>
@@ -790,16 +789,58 @@ gye yalimu lwe yasemba okuggalibwa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
+        <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="826"/>
+        <source>Enable OSC-8 hyperlinks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="833"/>
+        <source>Show the destination URL when hovering over a link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="836"/>
+        <source>Show link destination on hover</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="843"/>
+        <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="846"/>
+        <source>Open links with Ctrl+Click</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="853"/>
         <source>Prompt on closing with a running process</source>
         <translation>Sooka okubuuza ekiwandikiro bwe kiba kigenda okuggalibwawo nga wakyaliwo omulimu ogubumbujja</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="847"/>
+        <location filename="../forms/propertiesdialog.ui" line="877"/>
         <source>Audible bell</source>
         <translation>Kade</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="920"/>
+        <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
+Defaults to $VISUAL
+                 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="925"/>
+        <source>History viewer command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="968"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -816,88 +857,88 @@ Okugyawo oba okusiba enkola y&apos;amapeesa agagonza emirimu kola
 enkola ya gannaago (okugeza erya Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="966"/>
+        <location filename="../forms/propertiesdialog.ui" line="998"/>
         <source>Shortcut</source>
         <translation>Kikolwa</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="971"/>
+        <location filename="../forms/propertiesdialog.ui" line="1003"/>
         <source>Key</source>
         <translation>Mapeesa</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="983"/>
+        <location filename="../forms/propertiesdialog.ui" line="1015"/>
         <source>Show on start</source>
         <translation>QTerminal olutandika nga ne menyu eboneka</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="990"/>
+        <location filename="../forms/propertiesdialog.ui" line="1022"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>Ku njegoyego ey&apos;akatimbe eya waggulu wajjawo eppeesa erikasibirawo</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="993"/>
+        <location filename="../forms/propertiesdialog.ui" line="1025"/>
         <source>Keep window open when it loses focus</source>
         <translation>Eddirisa lisigalewo nga eddala lilobedwa</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1000"/>
+        <location filename="../forms/propertiesdialog.ui" line="1032"/>
         <source>Size</source>
         <translation>Bunene bw&apos;ekiwandikiro ekiboneka</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1011"/>
+        <location filename="../forms/propertiesdialog.ui" line="1043"/>
         <source>Height</source>
         <translation>Mu busimba</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1021"/>
-        <location filename="../forms/propertiesdialog.ui" line="1044"/>
+        <location filename="../forms/propertiesdialog.ui" line="1053"/>
+        <location filename="../forms/propertiesdialog.ui" line="1076"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1034"/>
+        <location filename="../forms/propertiesdialog.ui" line="1066"/>
         <source>Width</source>
         <translation>Mu bugazi</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1064"/>
+        <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Shortcut:</source>
         <translation>Ppeesa erigonz&apos;emirimu:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1073"/>
+        <location filename="../forms/propertiesdialog.ui" line="1105"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
         <translation>Kutangaaza: Nga wayland y&apos;ekola, ekikolwa okitegeranga mu nteekateeka za puloguramu ekwanaganya ebirabikira awakolerwa ezikola ku &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1101"/>
+        <location filename="../forms/propertiesdialog.ui" line="1133"/>
         <source>Lock shortcut:</source>
         <translation>Mapeesa agasibirawo akatimbe:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1168"/>
+        <location filename="../forms/propertiesdialog.ui" line="1200"/>
         <source>Edit bookmark file contents</source>
         <translation>Kyusiza wano ebiri mu fayiro y&apos;obukwatakifo</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1127"/>
+        <location filename="../forms/propertiesdialog.ui" line="1159"/>
         <source>Enable bookmarks</source>
         <translation>QTerminal ebeeremu obukwatakifo</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1136"/>
+        <location filename="../forms/propertiesdialog.ui" line="1168"/>
         <source>Bookmark file</source>
         <translation>Fayiro ey&apos;obukwatakifo</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1149"/>
+        <location filename="../forms/propertiesdialog.ui" line="1181"/>
         <source>Find...</source>
         <translation>Noonya...</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1158"/>
+        <location filename="../forms/propertiesdialog.ui" line="1190"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>Osobola okwerondera fayiro ey&apos;obukwatakifo w&apos;enesangibwanga.
 Kino kyanguya okukwataganya QTerminal n&apos;ebiyamba ebirala nga OwnCloud oba Dropbox.</translation>
@@ -950,56 +991,56 @@ Kino kyanguya okukwataganya QTerminal n&apos;ebiyamba ebirala nga OwnCloud oba D
         <translation>Eby&apos;okulabirako</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="462"/>
+        <location filename="../propertiesdialog.cpp" line="468"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Bifaananyi (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="564"/>
+        <location filename="../propertiesdialog.cpp" line="570"/>
         <source>Open bookmarks file</source>
         <translation>Bikkula fayiro ey&apos;obukwatakifo</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="566"/>
+        <location filename="../propertiesdialog.cpp" line="572"/>
         <source>XML files (*.xml)</source>
         <translation>Fayiro ez&apos;ekika kya XML (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="567"/>
+        <location filename="../propertiesdialog.cpp" line="573"/>
         <source>All files (*)</source>
         <translation>Buli kika kya fayiro (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="666"/>
-        <location filename="../propertiesdialog.cpp" line="670"/>
+        <location filename="../propertiesdialog.cpp" line="672"/>
+        <location filename="../propertiesdialog.cpp" line="676"/>
         <source>Question</source>
         <translation>Kubuuza</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="666"/>
+        <location filename="../propertiesdialog.cpp" line="672"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Fayiro enooyagala okugigyawo waddewo empya?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="670"/>
+        <location filename="../propertiesdialog.cpp" line="676"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Erinnya lya fayiro ey&apos;obukwatakifo tefundikidwa ka &apos;.xml&apos;.
 Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="678"/>
+        <location filename="../propertiesdialog.cpp" line="684"/>
         <source>Warning</source>
         <translation>Kulabula</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="678"/>
+        <location filename="../propertiesdialog.cpp" line="684"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Sisobola okuwandika bukwatakifo mu fayiro:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="225"/>
-        <location filename="../propertiesdialog.cpp" line="347"/>
+        <location filename="../propertiesdialog.cpp" line="350"/>
         <source>System Default</source>
         <translation>Kozesa ekitegekedwa ku sisitemu</translation>
     </message>
@@ -1019,7 +1060,7 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
         <translation>Kawagi</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="461"/>
+        <location filename="../propertiesdialog.cpp" line="467"/>
         <source>Choose a background image</source>
         <translation>Londa ekifaananyi eky&apos;okubwaliriro</translation>
     </message>
@@ -1035,8 +1076,8 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="85"/>
-        <location filename="../tabwidget.cpp" line="288"/>
+        <location filename="../tabwidget.cpp" line="86"/>
+        <location filename="../tabwidget.cpp" line="291"/>
         <source>Shell No. %1</source>
         <translation>Kiwandikiro Na. %1</translation>
     </message>
@@ -1051,37 +1092,37 @@ Okukakasa esangidwawo oyagala okugigyawo waddewo empya?</translation>
         <translation>Ddala akawandikiro oyagala okukagyawo?</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="227"/>
+        <location filename="../tabwidget.cpp" line="265"/>
         <source>Tab name</source>
         <translation>Linnya lya katimbe</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="228"/>
+        <location filename="../tabwidget.cpp" line="266"/>
         <source>New tab name:</source>
         <translation>Erinnya ly&apos;akatimbe eppya:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="277"/>
+        <location filename="../tabwidget.cpp" line="280"/>
         <source>Select new tab title color</source>
         <translation>Londa langi empya ey&apos;erinnya ly&apos;akatimbe</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="306"/>
+        <location filename="../tabwidget.cpp" line="309"/>
         <source>Close session</source>
         <translation>Komya olutuula olw&apos;omu katimbe kano</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="308"/>
+        <location filename="../tabwidget.cpp" line="311"/>
         <source>Change title color</source>
         <translation>Kyusa langi y&apos;erinnya</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="390"/>
+        <location filename="../tabwidget.cpp" line="393"/>
         <source>Close tab</source>
         <translation>Gyawo katimbe</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="390"/>
+        <location filename="../tabwidget.cpp" line="393"/>
         <source>Are you sure you want to close this tab?</source>
         <translation>Ddala akatimbe kano oyagala okukagyawo?</translation>
     </message>

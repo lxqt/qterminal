@@ -36,331 +36,341 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="92"/>
+        <location filename="../mainwindow.cpp" line="94"/>
         <source>Bookmarks</source>
         <translation>書籤</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="217"/>
+        <location filename="../mainwindow.cpp" line="219"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>按下 &quot;%1&quot; 以查看終端機。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="271"/>
+        <location filename="../mainwindow.cpp" line="273"/>
         <source>&amp;Next Tab</source>
         <translation>下個分頁(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="274"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>&amp;Previous Tab</source>
         <translation>上個分頁(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="283"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>Move Tab &amp;Left</source>
         <translation>將分頁往左移動(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="286"/>
+        <location filename="../mainwindow.cpp" line="288"/>
         <source>Move Tab &amp;Right</source>
         <translation>將分頁往右移動(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="264"/>
+        <location filename="../mainwindow.cpp" line="266"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>清空作用中的終端機(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="197"/>
+        <location filename="../mainwindow.cpp" line="199"/>
         <source>Keep window open when it loses focus</source>
         <translation>當視窗不在焦點時仍保持開啟</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="277"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>&amp;Previous Tab in History</source>
         <translation>歷史記錄中上一個分頁(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="280"/>
+        <location filename="../mainwindow.cpp" line="282"/>
         <source>&amp;Next Tab in History</source>
         <translation>歷史記錄中下一個分頁(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="291"/>
+        <location filename="../mainwindow.cpp" line="293"/>
         <source>Tab</source>
         <translation>分頁</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="292"/>
+        <location filename="../mainwindow.cpp" line="294"/>
         <source>Go to</source>
         <translation>前往</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="305"/>
+        <location filename="../mainwindow.cpp" line="307"/>
         <source>Split &amp;View Top-Bottom</source>
         <translation>上下分隔檢視(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="308"/>
+        <location filename="../mainwindow.cpp" line="310"/>
         <source>Split Vie&amp;w Left-Right</source>
         <translation>左右分隔檢視(&amp;W)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="313"/>
+        <location filename="../mainwindow.cpp" line="315"/>
         <source>&amp;Close Subterminal</source>
         <translation>關閉分隔區終端機(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="316"/>
+        <location filename="../mainwindow.cpp" line="318"/>
         <source>&amp;Top Subterminal</source>
         <translation>上方分隔區終端機(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="319"/>
+        <location filename="../mainwindow.cpp" line="321"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>下方分隔區終端機(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="322"/>
+        <location filename="../mainwindow.cpp" line="324"/>
         <source>L&amp;eft Subterminal</source>
         <translation>左方分隔區終端機(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="325"/>
+        <location filename="../mainwindow.cpp" line="327"/>
         <source>R&amp;ight Subterminal</source>
         <translation>右方分隔區終端機(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="332"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>Copy &amp;Selection</source>
         <translation>複製選取內容(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="335"/>
+        <location filename="../mainwindow.cpp" line="337"/>
         <source>Paste Clip&amp;board</source>
         <translation>貼上剪貼簿內容(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="338"/>
+        <location filename="../mainwindow.cpp" line="340"/>
         <source>Paste S&amp;election</source>
         <translation>貼上選取區內容(&amp;E)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="341"/>
+        <location filename="../mainwindow.cpp" line="343"/>
         <source>Zoom &amp;in</source>
         <translation>放大(&amp;I)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="344"/>
+        <location filename="../mainwindow.cpp" line="346"/>
         <source>Zoom &amp;out</source>
         <translation>縮小(&amp;O)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="347"/>
+        <location filename="../mainwindow.cpp" line="349"/>
         <source>Zoom rese&amp;t</source>
         <translation>縮放重設(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="352"/>
+        <location filename="../mainwindow.cpp" line="354"/>
         <source>&amp;Find...</source>
         <translation>尋找(&amp;F)…</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="355"/>
-        <source>Handle history...</source>
-        <translation>處理歷史…</translation>
+        <location filename="../mainwindow.cpp" line="357"/>
+        <source>View history in editor</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="363"/>
+        <location filename="../mainwindow.cpp" line="365"/>
         <source>&amp;Save Session</source>
         <translation>儲存工作階段(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="369"/>
+        <location filename="../mainwindow.cpp" line="371"/>
         <source>&amp;Load Session</source>
         <translation>載入工作階段(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="376"/>
+        <location filename="../mainwindow.cpp" line="378"/>
         <source>&amp;Toggle Menu</source>
         <translation>切換功能表(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="381"/>
+        <location filename="../mainwindow.cpp" line="383"/>
         <source>Rename session</source>
         <translation>重新命名工作階段</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="390"/>
+        <location filename="../mainwindow.cpp" line="392"/>
         <source>&amp;New Tab</source>
         <translation>新建分頁(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="394"/>
+        <location filename="../mainwindow.cpp" line="396"/>
         <source>New Tab From &amp;Preset</source>
         <translation>由預先設定來新建分頁(&amp;P)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="395"/>
+        <location filename="../mainwindow.cpp" line="397"/>
         <source>1 &amp;Terminal</source>
         <translation>1 個終端機(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="399"/>
+        <location filename="../mainwindow.cpp" line="401"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 個水平終端機(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="403"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 個垂直終端機(&amp;V)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="403"/>
+        <location filename="../mainwindow.cpp" line="405"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 個終端機(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="409"/>
+        <location filename="../mainwindow.cpp" line="411"/>
         <source>&amp;Close Tab</source>
         <translation>關閉分頁(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="412"/>
+        <location filename="../mainwindow.cpp" line="414"/>
         <source>&amp;New Window</source>
         <translation>新建視窗(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="417"/>
+        <location filename="../mainwindow.cpp" line="419"/>
         <source>&amp;Preferences...</source>
         <translation>偏好設定(&amp;P)…</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="421"/>
+        <location filename="../mainwindow.cpp" line="423"/>
         <source>&amp;Quit</source>
         <translation>離開(&amp;Q)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="427"/>
+        <location filename="../mainwindow.cpp" line="429"/>
         <source>&amp;Hide Window Borders</source>
         <translation>隱藏視窗邊框(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="445"/>
+        <location filename="../mainwindow.cpp" line="447"/>
         <source>&amp;Show Tab Bar</source>
         <translation>顯示分頁列(&amp;S)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="453"/>
+        <location filename="../mainwindow.cpp" line="455"/>
         <source>Fullscreen</source>
         <translation>全螢幕</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="459"/>
+        <location filename="../mainwindow.cpp" line="461"/>
         <source>Toggle Bookmarks</source>
         <translation>切換書籤</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="467"/>
+        <location filename="../mainwindow.cpp" line="469"/>
         <source>&amp;Bottom</source>
         <translation>下(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="468"/>
+        <location filename="../mainwindow.cpp" line="470"/>
         <source>&amp;Top</source>
         <translation>上(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="469"/>
-        <location filename="../mainwindow.cpp" line="505"/>
+        <location filename="../mainwindow.cpp" line="471"/>
+        <location filename="../mainwindow.cpp" line="507"/>
         <source>&amp;Right</source>
         <translation>右(&amp;R)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="470"/>
-        <location filename="../mainwindow.cpp" line="506"/>
+        <location filename="../mainwindow.cpp" line="472"/>
+        <location filename="../mainwindow.cpp" line="508"/>
         <source>&amp;Left</source>
         <translation>左(&amp;L)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="488"/>
+        <location filename="../mainwindow.cpp" line="490"/>
         <source>&amp;Tabs Layout</source>
         <translation>分頁配置(&amp;T)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="504"/>
+        <location filename="../mainwindow.cpp" line="506"/>
         <source>&amp;None</source>
         <translation>無(&amp;N)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="522"/>
+        <location filename="../mainwindow.cpp" line="524"/>
         <source>S&amp;crollbar Layout</source>
         <translation>捲軸配置(&amp;C)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="535"/>
-        <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../mainwindow.cpp" line="536"/>
-        <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../mainwindow.cpp" line="537"/>
-        <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <source>&amp;Block</source>
+        <translation>區塊(&amp;B)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="554"/>
+        <location filename="../mainwindow.cpp" line="538"/>
+        <source>&amp;Underline</source>
+        <translation>底線(&amp;U)</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="539"/>
+        <source>&amp;I-Beam</source>
+        <translation>&amp;I型指標</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="556"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>鍵盤游標形狀(&amp;K)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="642"/>
+        <location filename="../mainwindow.cpp" line="644"/>
         <source>A process is running.</source>
         <translation>有程序正在運行中。</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="661"/>
+        <location filename="../mainwindow.cpp" line="663"/>
         <source>Exit QTerminal</source>
         <translation>離開 QTerminal</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="661"/>
+        <location filename="../mainwindow.cpp" line="663"/>
         <source>Are you sure you want to exit?</source>
         <translation>確定要離開嗎？</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="698"/>
+        <location filename="../mainwindow.cpp" line="708"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="700"/>
+        <location filename="../mainwindow.cpp" line="710"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>輕量且強大的多平台支援終端機模擬器</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="702"/>
+        <location filename="../mainwindow.cpp" line="712"/>
         <source>Copyright (C) </source>
         <translation>版權所有 (C) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="702"/>
+        <location filename="../mainwindow.cpp" line="712"/>
         <source>2013-2025</source>
         <translation>2013-2025</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="704"/>
+        <location filename="../mainwindow.cpp" line="714"/>
         <source>LXQt Project</source>
         <translation>LXQt 專案</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="706"/>
+        <location filename="../mainwindow.cpp" line="716"/>
         <source>Development: </source>
         <translation>開發： </translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="869"/>
+        <source>No editor available</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="871"/>
+        <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -533,7 +543,7 @@
         <translation>沒有選單列加速鍵</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="903"/>
+        <location filename="../forms/propertiesdialog.ui" line="935"/>
         <source>Emulation</source>
         <translation>模擬</translation>
     </message>
@@ -553,7 +563,7 @@
         <translation>刪除貼上文字後的換行字符</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="830"/>
+        <location filename="../forms/propertiesdialog.ui" line="860"/>
         <source>Open new terminals in current working directory</source>
         <translation>在目前作用的目錄開啟新的終端機</translation>
     </message>
@@ -578,7 +588,7 @@
         <translation>歷史紀錄大小(行)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="854"/>
+        <location filename="../forms/propertiesdialog.ui" line="884"/>
         <source>Default $TERM</source>
         <translation>預設 $TERM</translation>
     </message>
@@ -638,19 +648,9 @@
         <translation>隱藏視窗邊框(&amp;H)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="912"/>
+        <location filename="../forms/propertiesdialog.ui" line="944"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;模擬哪種行為。這並不需要與您的作業系統一致。&lt;/p&gt;&lt;p&gt;如果不確定的話，使用 &lt;span style=&quot; font-weight:600;&quot;&gt;預設&lt;/span&gt;的模擬。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="890"/>
-        <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history</source>
-        <translation>這個指令在執行時，會帶入含有終端機歷史內容的臨時檔案名稱作為參數</translation>
-    </message>
-    <message>
-        <location filename="../forms/propertiesdialog.ui" line="893"/>
-        <source>Handle history command</source>
-        <translation>歷史處理指令</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="605"/>
@@ -664,12 +664,12 @@
         <translation>取得目前的大小</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="840"/>
+        <location filename="../forms/propertiesdialog.ui" line="870"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>在作用分頁的右邊開啟新的分頁</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="837"/>
+        <location filename="../forms/propertiesdialog.ui" line="867"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>若未勾選，則新分頁開啟會在全部分頁的最右側</translation>
     </message>
@@ -765,16 +765,58 @@
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
+        <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="826"/>
+        <source>Enable OSC-8 hyperlinks</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="833"/>
+        <source>Show the destination URL when hovering over a link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="836"/>
+        <source>Show link destination on hover</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="843"/>
+        <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="846"/>
+        <source>Open links with Ctrl+Click</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="853"/>
         <source>Prompt on closing with a running process</source>
         <translation>正在運行的程序在關閉之時發出提示</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="847"/>
+        <location filename="../forms/propertiesdialog.ui" line="877"/>
         <source>Audible bell</source>
         <translation>聽到鈴聲</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="936"/>
+        <location filename="../forms/propertiesdialog.ui" line="920"/>
+        <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
+Defaults to $VISUAL
+                 </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="925"/>
+        <source>History viewer command</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="968"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -789,88 +831,88 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 如果要移除/停用快速鍵，在步驟2時只要按下修飾鍵 (像是 Shift 鍵)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="966"/>
+        <location filename="../forms/propertiesdialog.ui" line="998"/>
         <source>Shortcut</source>
         <translation>快速鍵</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="971"/>
+        <location filename="../forms/propertiesdialog.ui" line="1003"/>
         <source>Key</source>
         <translation>按鍵</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="983"/>
+        <location filename="../forms/propertiesdialog.ui" line="1015"/>
         <source>Show on start</source>
         <translation>在啟動時顯示</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="990"/>
+        <location filename="../forms/propertiesdialog.ui" line="1022"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>在分頁列上會顯示鎖定鈕</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="993"/>
+        <location filename="../forms/propertiesdialog.ui" line="1025"/>
         <source>Keep window open when it loses focus</source>
         <translation>當視窗不在焦點時仍保持開啟</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1000"/>
+        <location filename="../forms/propertiesdialog.ui" line="1032"/>
         <source>Size</source>
         <translation>大小</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1011"/>
+        <location filename="../forms/propertiesdialog.ui" line="1043"/>
         <source>Height</source>
         <translation>高度</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1021"/>
-        <location filename="../forms/propertiesdialog.ui" line="1044"/>
+        <location filename="../forms/propertiesdialog.ui" line="1053"/>
+        <location filename="../forms/propertiesdialog.ui" line="1076"/>
         <source>%</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1034"/>
+        <location filename="../forms/propertiesdialog.ui" line="1066"/>
         <source>Width</source>
         <translation>寬度</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1064"/>
+        <location filename="../forms/propertiesdialog.ui" line="1096"/>
         <source>Shortcut:</source>
         <translation>快速鍵：</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1073"/>
+        <location filename="../forms/propertiesdialog.ui" line="1105"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
         <translation>注意：在 Wayland 上，快速鍵必須加入在合成器設定中用於 &apos;qterminal -d&apos; 。</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1101"/>
+        <location filename="../forms/propertiesdialog.ui" line="1133"/>
         <source>Lock shortcut:</source>
         <translation>鎖定快速鍵：</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1168"/>
+        <location filename="../forms/propertiesdialog.ui" line="1200"/>
         <source>Edit bookmark file contents</source>
         <translation>編輯書籤檔案內容</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1127"/>
+        <location filename="../forms/propertiesdialog.ui" line="1159"/>
         <source>Enable bookmarks</source>
         <translation>啟用書籤</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1136"/>
+        <location filename="../forms/propertiesdialog.ui" line="1168"/>
         <source>Bookmark file</source>
         <translation>書籤檔案</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1149"/>
+        <location filename="../forms/propertiesdialog.ui" line="1181"/>
         <source>Find...</source>
         <translation>尋找…</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1158"/>
+        <location filename="../forms/propertiesdialog.ui" line="1190"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>可以特別指定自有書籤檔案位置。它可以容易地將書籤分享，利用像是 OwnCloud 或 Dropbox 工具。</translation>
     </message>
@@ -922,76 +964,76 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>範例</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="462"/>
+        <location filename="../propertiesdialog.cpp" line="468"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>圖片 (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="564"/>
+        <location filename="../propertiesdialog.cpp" line="570"/>
         <source>Open bookmarks file</source>
         <translation>開啟書籤檔案</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="566"/>
+        <location filename="../propertiesdialog.cpp" line="572"/>
         <source>XML files (*.xml)</source>
         <translation>XML 檔案 (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="567"/>
+        <location filename="../propertiesdialog.cpp" line="573"/>
         <source>All files (*)</source>
         <translation>全部檔案 (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="666"/>
-        <location filename="../propertiesdialog.cpp" line="670"/>
+        <location filename="../propertiesdialog.cpp" line="672"/>
+        <location filename="../propertiesdialog.cpp" line="676"/>
         <source>Question</source>
         <translation>問題</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="666"/>
+        <location filename="../propertiesdialog.cpp" line="672"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>確定要覆寫這個書籤檔案嗎？</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="670"/>
+        <location filename="../propertiesdialog.cpp" line="676"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>書籤檔案的檔名並不是以 &apos;.xml&apos; 結尾。
 確定要真的要覆寫它嗎？</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="678"/>
+        <location filename="../propertiesdialog.cpp" line="684"/>
         <source>Warning</source>
         <translation>警告</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="678"/>
+        <location filename="../propertiesdialog.cpp" line="684"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>無法將書籤寫入此檔案：</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="225"/>
-        <location filename="../propertiesdialog.cpp" line="347"/>
+        <location filename="../propertiesdialog.cpp" line="350"/>
         <source>System Default</source>
         <translation>系統預設</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>區塊</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>底線</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>I型指標</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="461"/>
+        <location filename="../propertiesdialog.cpp" line="467"/>
         <source>Choose a background image</source>
         <translation>選擇背景圖片</translation>
     </message>
@@ -1007,8 +1049,8 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>TabWidget</name>
     <message>
-        <location filename="../tabwidget.cpp" line="85"/>
-        <location filename="../tabwidget.cpp" line="288"/>
+        <location filename="../tabwidget.cpp" line="86"/>
+        <location filename="../tabwidget.cpp" line="291"/>
         <source>Shell No. %1</source>
         <translation>Shell 編號 %1</translation>
     </message>
@@ -1023,37 +1065,37 @@ Are you sure that you want to overwrite it?</source>
         <translation>確定要關閉此分隔區終端機？</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="227"/>
+        <location filename="../tabwidget.cpp" line="265"/>
         <source>Tab name</source>
         <translation>分頁名稱</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="228"/>
+        <location filename="../tabwidget.cpp" line="266"/>
         <source>New tab name:</source>
         <translation>新分頁名稱：</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="277"/>
+        <location filename="../tabwidget.cpp" line="280"/>
         <source>Select new tab title color</source>
         <translation>選擇新分頁標題顏色</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="306"/>
+        <location filename="../tabwidget.cpp" line="309"/>
         <source>Close session</source>
         <translation>關閉工作階段</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="308"/>
+        <location filename="../tabwidget.cpp" line="311"/>
         <source>Change title color</source>
         <translation>變更標題顏色</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="390"/>
+        <location filename="../tabwidget.cpp" line="393"/>
         <source>Close tab</source>
         <translation>關閉分頁</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="390"/>
+        <location filename="../tabwidget.cpp" line="393"/>
         <source>Are you sure you want to close this tab?</source>
         <translation>確定要關閉這個分頁？</translation>
     </message>
