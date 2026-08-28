@@ -76,6 +76,7 @@ public slots:
     void splitHorizontally();
     void splitVertically();
     void splitCollapse();
+    void toggleCurrentMaximized();
 
     void copySelection();
     void pasteClipboard();

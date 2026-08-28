@@ -214,6 +214,7 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
     menu.addAction(actions[QStringLiteral(SPLIT_HORIZONTAL)]);
     menu.addAction(actions[QStringLiteral(SPLIT_VERTICAL)]);
     // warning TODO/FIXME: disable the action when there is only one terminal
+    menu.addAction(actions[QStringLiteral(TOGGLE_TERMINAL_MAXIMIZED)]);
     menu.addAction(actions[QStringLiteral(SUB_COLLAPSE)]);
     menu.addSeparator();
     menu.addAction(actions[QStringLiteral(TOGGLE_MENU)]);

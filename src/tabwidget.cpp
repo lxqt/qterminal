@@ -126,6 +126,11 @@ void TabWidget::switchBottomSubterminal() {
     terminalHolder()->directionalNavigation(NavigationDirection::Bottom);
 }
 
+void TabWidget::toggleCurrentMaximized()
+{
+    terminalHolder()->toggleMaximized(terminalHolder()->currentTerminal());
+}
+
 void TabWidget::splitHorizontally()
 {
     terminalHolder()->splitHorizontal(terminalHolder()->currentTerminal());

@@ -37,6 +37,7 @@
 
 #define SPLIT_HORIZONTAL "Split View Top-Bottom"
 #define SPLIT_VERTICAL "Split View Left-Right"
+#define TOGGLE_TERMINAL_MAXIMIZED "Toggle current terminal maximized"
 
 #define SUB_COLLAPSE "Collapse Subterminal"
 #define SUB_LEFT "Left Subterminal"

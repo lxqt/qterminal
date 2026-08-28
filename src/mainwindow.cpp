@@ -310,6 +310,10 @@ void MainWindow::setup_ActionsMenu_Actions()
     setup_Action(SPLIT_VERTICAL, new QAction(tr("Split Vie&w Left-Right"), settingOwner),
                  nullptr, consoleTabulator, SLOT(splitVertically()), menu_Actions);
 
+    menu_Actions->addSeparator();
+    setup_Action(TOGGLE_TERMINAL_MAXIMIZED, new QAction(tr("Toggle current terminal &maximized"), settingOwner),
+                 nullptr, consoleTabulator, SLOT(toggleCurrentMaximized()), menu_Actions);
+
     data.setValue(checkSubterminals);
 
     setup_Action(SUB_COLLAPSE, new QAction(tr("&Close Subterminal"), settingOwner),
