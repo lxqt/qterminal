@@ -242,6 +242,13 @@ int main(int argc, char *argv[])
         app->installTranslator(&translator);
     }
 
+#ifndef HAVE_LAYERSHELLQT
+    if (QGuiApplication::platformName() == QStringLiteral("wayland"))
+    {
+        fprintf(stderr, "Running on Wayland, although Wayland support was disabled at compile-time. Expect errors.\n");
+    }
+#endif
+
     TerminalConfig initConfig = TerminalConfig(workdir, shell_command);
     if (MainWindow *wnd = app->newWindow(dropMode, initConfig, dbus_id))
         wnd->setInitialSize(size);
