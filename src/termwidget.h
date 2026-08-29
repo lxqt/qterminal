@@ -57,12 +57,16 @@ class TermWidgetImpl : public QTermWidget
         void zoomReset();
         void customContextMenuCall(const QPoint & pos);
 
+    protected:
+        void showEvent(QShowEvent *event);
+
     private slots:
         void activateUrl(const QUrl& url, bool fromContextMenu);
         void bell();
 
     private:
         bool m_hasCommand;
+        bool scheduledShellProgramStart;
 #ifdef HAVE_LIBCANBERRA
         ca_context* libcanberra_context;
 #endif
