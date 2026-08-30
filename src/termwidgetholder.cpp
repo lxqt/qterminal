@@ -425,6 +425,16 @@ bool TermWidgetHolder::hasRunningProcess() const
     return false;
 }
 
+QString TermWidgetHolder::label() const
+{
+    if (TabWidget *parent = findParent<TabWidget>(const_cast<TermWidgetHolder*>(this)))
+    {
+        int idx = parent->indexOf(this);
+        return idx > -1 ? parent->tabText(idx) : QString();
+    }
+    return QString();
+}
+
 #ifdef HAVE_QDBUS
 
 QDBusObjectPath TermWidgetHolder::getActiveTerminal()

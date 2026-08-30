@@ -106,6 +106,7 @@ class Properties
         bool m_openNewTabRightToActiveTab;
 
         bool audibleBell;
+        bool notifySilence;
 
         QString term;
 

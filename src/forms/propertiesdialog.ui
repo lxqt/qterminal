@@ -855,13 +855,20 @@
                </widget>
               </item>
               <item row="12" column="0" colspan="2">
+               <widget class="QCheckBox" name="notifySilenceCheckBox">
+                <property name="text">
+                 <string>Notify when output stops in minimized windows</string>
+                </property>
+               </widget>
+              </item>
+              <item row="13" column="0" colspan="2">
                <widget class="QCheckBox" name="useCwdCheckBox">
                 <property name="text">
                  <string>Open new terminals in current working directory</string>
                 </property>
                </widget>
               </item>
-              <item row="13" column="0" colspan="2">
+              <item row="14" column="0" colspan="2">
                <widget class="QCheckBox" name="openNewTabRightToActiveTabCheckBox">
                 <property name="toolTip">
                  <string>If unchecked the new tab will be opened as the rightmost tab</string>
@@ -871,21 +878,21 @@
                 </property>
                </widget>
               </item>
-              <item row="14" column="0">
+              <item row="15" column="0">
                <widget class="QCheckBox" name="audibleBellCheckBox">
                 <property name="text">
                  <string>Audible bell</string>
                 </property>
                </widget>
               </item>
-              <item row="15" column="0">
+              <item row="16" column="0">
                <widget class="QLabel" name="label_14">
                 <property name="text">
                  <string>Default $TERM</string>
                 </property>
                </widget>
               </item>
-              <item row="15" column="1">
+              <item row="16" column="1">
                <widget class="QComboBox" name="termComboBox">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -911,10 +918,10 @@
                 </item>
                </widget>
               </item>
-              <item row="16" column="1">
+              <item row="17" column="1">
                <widget class="QLineEdit" name="handleHistoryLineEdit"/>
               </item>
-              <item row="16" column="0">
+              <item row="17" column="0">
                <widget class="QLabel" name="label_17">
                 <property name="toolTip">
                  <string>This command will be run with an argument containing the file name of a tempfile containing the scrollback history

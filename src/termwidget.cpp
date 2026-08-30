@@ -26,6 +26,8 @@
 #include <cassert>
 
 #ifdef HAVE_QDBUS
+    #include <QTabWidget>
+    #include <QWindow>
     #include <QtDBus/QtDBus>
     #include "termwidgetholder.h"
     #include "terminaladaptor.h"
@@ -300,6 +302,10 @@ bool TermWidget::eventFilter(QObject * /*obj*/, QEvent * ev)
     {
         impl()->setFocus();
     }
+    else if (ev->type() == QEvent::KeyRelease)
+    {
+        m_activityClock.start();
+    }
     return false;
 }
 
@@ -309,6 +315,7 @@ TermWidget::TermWidget(TerminalConfig &cfg, const QString &dbus_id, QWidget *par
     , m_term(new TermWidgetImpl(cfg, this))
     , m_layout(new QVBoxLayout)
     , m_border(palette().color(QPalette::Window))
+    , m_silenceNotification(0)
 {
 
     #ifdef HAVE_QDBUS
@@ -347,11 +354,35 @@ void TermWidget::propertiesChanged()
     else
         m_layout->setContentsMargins(0, 0, 0, 0);
 
+    m_term->setMonitorActivity(Properties::Instance()->notifySilence);
+    if (Properties::Instance()->notifySilence)
+    {
+        connect(m_term, &QTermWidget::silence, this, &TermWidget::notifySilence, Qt::UniqueConnection);
+        // this is to limit the notification to events after prolonged activity and
+        // withdraw the notification if the terminal re-activates by itself
+        connect(m_term, &QTermWidget::activity, this, &TermWidget::notifyActiviy, Qt::UniqueConnection);
+    }
+    else
+    {
+        disconnect(m_term, &QTermWidget::silence, this, &TermWidget::notifySilence);
+        disconnect(m_term, &QTermWidget::activity, this, &TermWidget::notifyActiviy);
+    }
+
     m_term->propertiesChanged();
 }
 
+#define NOTIFICATION_INTERFACE QStringLiteral("org.freedesktop.Notifications"), QStringLiteral("/org/freedesktop/Notifications"), QStringLiteral("org.freedesktop.Notifications")
+
 void TermWidget::term_termGetFocus()
 {
+    if (m_silenceNotification)
+    {
+#ifdef HAVE_QDBUS
+        QDBusInterface notifications( NOTIFICATION_INTERFACE );
+        notifications.callWithArgumentList(QDBus::NoBlock, QStringLiteral("CloseNotification"), QList<QVariant>() << m_silenceNotification);
+#endif
+        m_silenceNotification = 0;
+    }
     m_border = palette().color(QPalette::Highlight);
     emit termGetFocus(this);
     update();
@@ -376,7 +407,101 @@ void TermWidget::paintEvent (QPaintEvent *)
     }
 }
 
-#if HAVE_QDBUS
+void TermWidget::notifySilence()
+{
+    if (m_activityClock.elapsed() < 45 * 1000)
+        return; // don't care about short term jobs
+    if (isActiveWindow())
+        return; //the user probably got that alright
+    bool visible = isVisible();
+    if (visible && window()->windowHandle())
+        visible = window()->windowHandle()->isExposed(); // for wayland and minimized windows
+
+    if (visible)
+    {
+        QApplication::alert(this);
+        return; // only notify for hidden windows
+    }
+
+#ifndef HAVE_QDBUS
+    // at least alert
+    QApplication::alert(this);
+#else
+    QList<QVariant> vl;
+    QVariantMap hints;
+    hints[QStringLiteral("transient")] = true; // don't log this notification
+    hints[QStringLiteral("urgency")] = 0; // low urgency
+
+    QImage screenshot(qMin(512,width()), qMin(256,height()), QImage::Format_RGB888);
+    QRect corner = screenshot.rect();
+    corner.moveBottomLeft(rect().bottomLeft());
+    render(&screenshot, QPoint(), corner);
+    QDBusArgument iiibiiay;
+    iiibiiay.beginStructure();
+    iiibiiay << screenshot.width();
+    iiibiiay << screenshot.height();
+    iiibiiay << screenshot.bytesPerLine();
+    iiibiiay << screenshot.hasAlphaChannel();
+    iiibiiay << 8; // bits per sample
+    iiibiiay << 3; // channels - RGB
+    iiibiiay << QByteArray(screenshot.constBits());
+    iiibiiay.endStructure();
+    hints[QStringLiteral("image-data")] = QVariant::fromValue(iiibiiay); // screenshot
+
+    QString body = window()->windowTitle();
+    if (TermWidgetHolder *holder = findParent<TermWidgetHolder>(this))
+        body = holder->label();
+    QStringList actions;
+    if (qApp->platformName() != QStringLiteral("wayland")) // wayland sucks™, https://github.com/lxqt/qterminal/pull/1359
+        actions << QStringLiteral("show") << QStringLiteral("Show Me!");
+    // vl <<  << summary << body << actions << hints << timeout;
+    vl  << QStringLiteral("QTerminal") << m_silenceNotification << QStringLiteral("qterminal") // appName << id << appIcon
+        << tr("Output ended") << body << actions << hints << 0 /*forever, until we close it*/;
+    QDBusInterface notifications( NOTIFICATION_INTERFACE );
+    QDBusReply<uint> reply = notifications.callWithArgumentList(QDBus::Block, QStringLiteral("Notify"), vl);
+    if (reply.isValid())
+    {
+        m_silenceNotification = reply.value();
+        QDBusConnection::sessionBus().connect(NOTIFICATION_INTERFACE, QStringLiteral("ActionInvoked"), this, SLOT(handleNotificationAction(uint, QString)));
+    }
+}
+
+void TermWidget::handleNotificationAction(uint id, QString action)
+{
+    if (id != m_silenceNotification)
+        return;
+    if (action == QStringLiteral("show"))
+    {
+        emit termGetFocus(this);
+        if (TermWidgetHolder *holder = findParent<TermWidgetHolder>(this))
+            if (QTabWidget *tabs = findParent<QTabWidget>(this))
+                tabs->setCurrentWidget(holder);
+        QWidget *win = window();
+        if (QWindow *handle = win->windowHandle())
+            handle->setWindowStates(handle->windowStates() & ~Qt::WindowMinimized);
+        win->show();
+        win->activateWindow();
+        win->raise();
+    }
+}
+
+#endif
+
+void TermWidget::notifyActiviy()
+{
+    m_activityClock.start();
+    if (m_silenceNotification)
+    {
+#ifdef HAVE_QDBUS
+        QDBusInterface notifications( NOTIFICATION_INTERFACE );
+        notifications.callWithArgumentList(QDBus::NoBlock, QStringLiteral("CloseNotification"), QList<QVariant>() << m_silenceNotification);
+#endif
+        m_silenceNotification = 0;
+    }
+    m_term->setMonitorSilence(true);
+}
+
+#ifdef HAVE_QDBUS
 
 QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termArgs)
 {
