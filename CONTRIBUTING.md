@@ -12,8 +12,9 @@ Please file qtermwidget-related bugs on the qtermwidget github tracker:
 For all code contributions, please open a pull request on Github:
   https://github.com/lxde/qterminal/
 
-Make sure your code is clean, devoid of debug statements and respects the style
-of the rest of the file (including line length and indentation).
+Make sure your code is clean and devoid of debug statements. We try to adhere
+to the Allman code style with this project, but beware that there are many instances
+of conflicting styles.
 
 Do not pollute the git history with unnecessary commits! Make sure each of your
 commits compiles to ensure ease of bisection and have clear separation of one
