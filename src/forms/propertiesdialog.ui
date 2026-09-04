@@ -1096,7 +1096,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
         </widget>
        </item>
        <item>
-        <layout class="QFormLayout" name="dropShortCutFormLayout">
+        <layout class="QFormLayout" name="shortCutFormLayout">
          <item row="0" column="0">
           <widget class="QLabel" name="dropShortCutLabel">
            <property name="text">
@@ -1104,37 +1104,17 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
            </property>
           </widget>
          </item>
-        </layout>
-       </item>
-       <item>
-        <widget class="QLabel" name="waylandLabel">
-         <property name="text">
-          <string>Note: On Wayland, the shortcut has to be added in the compositor settings for 'qterminal -d'.</string>
-         </property>
-         <property name="wordWrap">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Orientation::Vertical</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Policy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>10</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <layout class="QFormLayout" name="lockShortCutFormLayout">
-         <item row="0" column="0">
+         <item row="1" column="0" colspan="2">
+          <widget class="QLabel" name="waylandLabel">
+           <property name="text">
+            <string>Note: On Wayland, the shortcut has to be added in the compositor settings for 'qterminal -d'.</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
           <widget class="QLabel" name="lockShortCutLabel">
            <property name="text">
             <string>Lock shortcut:</string>
