@@ -305,12 +305,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Nessun editore disponibile</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Imposta l&apos;ambiente $VISUAL oppure configura un editor nelle preferenze.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="315"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Visualizza la cronologia nell&apos;editore</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
@@ -887,32 +887,32 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Consenti alle applicazioni di usare collegamenti ipertestuali cliccabili utilizzando la sequenza terminale OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Abilita OSC-8-hyprlinks</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra l&apos;URL di destinazione al passaggio del mouse su un collegamento</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="836"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostra destinazione del collegamento al passaggio del mouse</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Quando l&apos;opzione è attivata, i collegamenti si aprono solo con Ctrl+clic o dal menu contestuale. Quando è disattivata, il collegamento si apre con un semplice clic.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Apri link con Ctrl+Clic</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -929,12 +929,14 @@ Si è sicuro di volerlo sovrascrivere?</translation>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>Questo comando verrà eseguito con un argomento contenente il nome di un file temporaneo contenente la cronologia.
+Il valore predefinito è $VISUAL.
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="925"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Comando per il visualizzatore della cronologia</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="968"/>

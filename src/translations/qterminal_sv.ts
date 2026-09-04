@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa historik i redigerare</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -365,12 +365,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingen redigerare tillgänglig</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ställ antingen in $VISUAL-miljö eller konfigurera ett redigeringskommando i inställningarna.</translation>
     </message>
 </context>
 <context>
@@ -766,32 +766,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillåt program att bädda in klickbara hyperlänkar med hjälp av OSC-8-terminalsekvens</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivera OSC-8 hyperlänkar</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa mål-URL när du håller muspekaren över en länk</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="836"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa länkdestination när du håller muspekaren över en länk</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>När det är aktiverat öppnas länkar endast med Ctrl+klick eller från kontextmenyn. När det är inaktiverat öppnas länken med ett enkelt klick.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna länkar med Ctrl+Klick</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -808,12 +808,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>Det här kommandot körs med ett argument som innehåller filnamnet av en tempfil som innehåller scrollback-historiken
+Standardinställningen är $VISUAL
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="925"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Historikvisare kommando</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="968"/>
