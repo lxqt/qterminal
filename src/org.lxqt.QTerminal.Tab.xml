@@ -11,6 +11,7 @@
     <method name="getWindow">
       <arg name="window" type="o" direction="out"/>
     </method>
+    <method name="activateTab"/>
     <method name="closeTab"/>
     <method name="setLabel">
       <arg name="label" type="s" direction="in"/>

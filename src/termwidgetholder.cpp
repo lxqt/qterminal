@@ -452,6 +452,11 @@ QDBusObjectPath TermWidgetHolder::getWindow()
     return findParent<MainWindow>(this)->getDbusPath();
 }
 
+void TermWidgetHolder::activateTab()
+{
+    findParent<QTabWidget>(this)->setCurrentWidget(this);
+}
+
 void TermWidgetHolder::closeTab()
 {
     QTabWidget *parent = findParent<QTabWidget>(this);

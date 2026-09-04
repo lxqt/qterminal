@@ -32,21 +32,31 @@
     <method name="sendText">
         <arg name="text" type="s" direction="in"/>
     </method>
+    <method name="activateTerminal"/>
     <method name="closeTerminal"/>
     <method name="setColorScheme">
-      <arg name="text" type="s" direction="in"/>
+      <arg name="scheme_name" type="s" direction="in"/>
     </method>
     <method name="setBackgroundImage">
       <arg name="file" type="s" direction="in"/>
       <arg name="mode" type="i" direction="in"/>
     </method>
     <method name="setFont">
-      <arg name="text" type="s" direction="in"/>
-      <arg name="text" type="i" direction="in"/>
+      <arg name="font_name" type="s" direction="in"/>
+      <arg name="point_size" type="i" direction="in"/>
     </method>
     <method name="setSize">
       <arg name="columns" type="i" direction="in"/>
       <arg name="lines" type="i" direction="in"/>
+    </method>
+    <method name="hasFocus">
+      <arg name="terminal" type="b" direction="out"/>
+    </method>
+    <method name="isActiveWindow">
+      <arg name="terminal" type="b" direction="out"/>
+    </method>
+    <method name="isExposed">
+      <arg name="terminal" type="b" direction="out"/>
     </method>
   </interface>
 </node>

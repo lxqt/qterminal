@@ -24,6 +24,7 @@
 #include <QAbstractButton>
 #include <QMouseEvent>
 #include <QGraphicsEffect>
+#include <QWindow>
 #include <cassert>
 
 #ifdef HAVE_QDBUS
@@ -409,6 +410,14 @@ void TermWidget::term_termLostFocus()
     update();
 }
 
+bool TermWidget::isExposed() const
+{
+    bool visible = isVisible();
+    if (visible && window()->windowHandle())
+        visible = window()->windowHandle()->isExposed(); // for wayland and minimized windows
+    return visible;
+}
+
 void TermWidget::paintEvent (QPaintEvent *)
 {
   if (Properties::Instance()->highlightCurrentTerminal)
@@ -460,6 +469,13 @@ QDBusObjectPath TermWidget::splitVertical(const QString &dbus_id, const QString 
 QDBusObjectPath TermWidget::getTab()
 {
     return findParent<TermWidgetHolder>(this)->getDbusPath();
+}
+
+void TermWidget::activateTerminal()
+{
+    TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
+    holder->activateTab();
+    emit termGetFocus(this);
 }
 
 void TermWidget::closeTerminal()

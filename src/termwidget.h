@@ -84,6 +84,7 @@ class TermWidget : public QWidget, public DBusAddressable
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }
 
         TermWidgetImpl * impl() { return m_term; }
+        bool isExposed() const;
 
         #ifdef HAVE_QDBUS
         QDBusObjectPath splitHorizontal(const QHash<QString,QVariant> &termArgs);
@@ -92,6 +93,7 @@ class TermWidget : public QWidget, public DBusAddressable
         QDBusObjectPath splitVertical(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent);
         QDBusObjectPath getTab();
         void sendText(const QString& text);
+        void activateTerminal();
         void closeTerminal();
         void setColorScheme(const QString& scheme);
         void setBackgroundImage(const QString &image, const int mode);
