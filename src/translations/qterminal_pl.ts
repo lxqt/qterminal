@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Wyświetl historię w edytorze</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -365,12 +365,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Brak dostępnego edytora</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ustaw środowisko $VISUAL lub skonfiguruj polecenie edytora w preferencjach.</translation>
     </message>
 </context>
 <context>
@@ -766,32 +766,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Zezwalaj aplikacjom na osadzanie klikalnych hiperłączy za pomocą sekwencji terminala OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Włącz hiperłącza OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokaż docelowy adres URL po najechaniu kursorem na łącze</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="836"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokaż miejsce docelowe łącza po najechaniu kursorem</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Po włączeniu łącza otwierają się tylko za pomocą kombinacji klawiszy Ctrl i kliknięcia lub z menu kontekstowego. Po wyłączeniu, zwykłe kliknięcie otwiera łącze.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Otwieraj łącza za pomocą Ctrl+kliknięcie</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -808,12 +808,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>To polecenie zostanie uruchomione z argumentem zawierającym nazwę pliku tymczasowego zawierającego historię przewijania.
+Domyślnie: $VISUAL
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="925"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Polecenie przeglądarki historii</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="968"/>

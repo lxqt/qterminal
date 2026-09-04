@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Bikkulira olukalala lw&apos;ebiragiro ebiyisidwa mu puloguramu ey&apos;okuwandika</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -366,12 +366,12 @@ ekikolera ku sisitemu ez&apos;ebika ebisukka mu kimu</translation>
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Tewali puloguramu ekozeseka</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tegekayo puloguramu mu kigambo kya mu nviromenti $VISUAL oba mu menyu y&apos;enteekateeka.</translation>
     </message>
 </context>
 <context>
@@ -790,32 +790,32 @@ gye yalimu lwe yasemba okuggalibwa</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Puloguramu endala zisobolenga okukuteeramu enyunzi ez&apos;oku mutimbagano nga z&apos;eyambisa ekiragiro kya OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekiwandikiro kisobole okubeeramu enyunzi ez&apos;oku mutimbagano eziva ku kiragiro kya OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Kikulagenga endagiriro enyunzi kw&apos;egguka nga ogituuzizako akasonga</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="836"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Kikulagenga endagiriro enyunzi kw&apos;egguka nga ogituuzizako akasonga</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Kino bw&apos;okitegeka, enyunzi okubikkuka ogikoonako nga bw&apos;onyweza n&apos;erya Ctrl. Bw&apos;otakitegeka enyunzi ogikoonakobukoonyi n&apos;ebikkuka.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Enyunzi ebikkukenga nga ogikoonyeko nga bw&apos;onyweza n&apos;erya Ctrl</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -832,12 +832,15 @@ gye yalimu lwe yasemba okuggalibwa</translation>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>Ekiragiro ekiteekebwa wano QTerminal ejjakukiyisa nga ekikolebwako etaddewo fayiro ey&apos;ekiseera omuli olukalala lw&apos;ebikoledwa
+Bw&apos;olekawo wereere QTerminal ejja okukozesa ekikongojjedwa mu kigambo $VISUAL
+ ................
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="925"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Ekiragiro ekitandika puloguramu ekulaga olukalala lw&apos;ebikoledwa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="968"/>

@@ -295,12 +295,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>利用可能なエディターがありません</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>$VISUAL 変数を設定するか、設定でエディターのコマンドをカスタマイズしてください。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="94"/>
@@ -340,7 +340,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>エディターで履歴を表示</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="378"/>
@@ -736,32 +736,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>アプリケーションが OSC-8 ターミナルシーケンスを使用して、クリック可能なハイパーリンクを埋め込むことを許可する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>OSC-8 ハイパーリンクを有効にする</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>リンクにカーソルを合わせたときに、目的の URL を表示する</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="836"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>ホバー時にリンク先を表示</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>有効にすると、リンクは Ctrl キーを押しながらクリックするか、コンテキストメニューからのみ開きます。無効にすると、クリックするだけでリンクを開きます。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>リンクを Ctrl+クリック で開く</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -778,12 +778,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>このコマンドは、スクロールバック履歴を含んだ一時ファイルのファイル名を引数として実行されます。
+デフォルトは $VISUAL です。
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="925"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>履歴ビューアのコマンド</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="968"/>
