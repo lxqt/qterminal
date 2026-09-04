@@ -24,6 +24,7 @@
 #include <QAbstractButton>
 #include <QMouseEvent>
 #include <QGraphicsEffect>
+#include <QWindow>
 #include <cassert>
 
 #ifdef HAVE_QDBUS
@@ -407,6 +408,14 @@ void TermWidget::term_termLostFocus()
 {
     m_border = palette().color(QPalette::Window);
     update();
+}
+
+bool TermWidget::isExposed() const
+{
+    bool visible = isVisible();
+    if (visible && window()->windowHandle())
+        visible = window()->windowHandle()->isExposed(); // for wayland and minimized windows
+    return visible;
 }
 
 void TermWidget::paintEvent (QPaintEvent *)

@@ -49,6 +49,15 @@
       <arg name="columns" type="i" direction="in"/>
       <arg name="lines" type="i" direction="in"/>
     </method>
+    <method name="hasFocus">
+      <arg name="terminal" type="b" direction="out"/>
+    </method>
+    <method name="isActiveWindow">
+      <arg name="terminal" type="b" direction="out"/>
+    </method>
+    <method name="isExposed">
+      <arg name="terminal" type="b" direction="out"/>
+    </method>
   </interface>
 </node>
 

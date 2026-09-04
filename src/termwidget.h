@@ -84,6 +84,7 @@ class TermWidget : public QWidget, public DBusAddressable
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }
 
         TermWidgetImpl * impl() { return m_term; }
+        bool isExposed() const;
 
         #ifdef HAVE_QDBUS
         QDBusObjectPath splitHorizontal(const QHash<QString,QVariant> &termArgs);
