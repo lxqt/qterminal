@@ -252,6 +252,7 @@ PropertiesDialog::PropertiesDialog(QWidget *parent)
     useCwdCheckBox->setChecked(Properties::Instance()->useCWD);
     openNewTabRightToActiveTabCheckBox->setChecked(Properties::Instance()->m_openNewTabRightToActiveTab);
 
+    visualBellCheckBox->setChecked(Properties::Instance()->visualBell);
 #ifdef HAVE_LIBCANBERRA
     audibleBellCheckBox->setChecked(Properties::Instance()->audibleBell);
 #else
@@ -370,6 +371,7 @@ void PropertiesDialog::apply()
 
     Properties::Instance()->useCWD = useCwdCheckBox->isChecked();
     Properties::Instance()->m_openNewTabRightToActiveTab = openNewTabRightToActiveTabCheckBox->isChecked();
+    Properties::Instance()->visualBell = visualBellCheckBox->isChecked();
 #ifdef HAVE_LIBCANBERRA
     Properties::Instance()->audibleBell = audibleBellCheckBox->isChecked();
 #else

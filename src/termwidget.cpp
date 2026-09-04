@@ -23,6 +23,7 @@
 #include <QMessageBox>
 #include <QAbstractButton>
 #include <QMouseEvent>
+#include <QGraphicsEffect>
 #include <cassert>
 
 #ifdef HAVE_QDBUS
@@ -260,7 +261,52 @@ void TermWidgetImpl::activateUrl(const QUrl & url, bool fromContextMenu) {
     }
 }
 
+class BloodShot : public QGraphicsEffect
+{
+    public:
+        BloodShot(QObject *parent = nullptr) : QGraphicsEffect(parent) {}
+    protected:
+        virtual void draw(QPainter *painter) override
+        {
+            QPoint offset;
+            const QPixmap pixmap = sourcePixmap(Qt::DeviceCoordinates, &offset);
+            if (pixmap.isNull())
+                return;
+            QTransform restoreTransform = painter->worldTransform();
+            painter->setWorldTransform(QTransform());
+            painter->drawPixmap(offset, pixmap);
+            painter->setPen(Qt::NoPen);
+            QRectF rect = sourceBoundingRect(Qt::DeviceCoordinates);
+            rect.translate(offset);
+            QRadialGradient rg(rect.center(), qMax(rect.width(), rect.height())/2.0f);
+            QColor blood(Properties::Instance()->visualBellColor);
+            blood.setAlpha(0);
+            rg.setColorAt(0, blood);
+            blood.setAlpha(200);
+            rg.setColorAt(1, blood);
+            painter->fillRect(rect, rg);
+            painter->setWorldTransform(restoreTransform);
+        }
+};
+
 void TermWidgetImpl::bell() {
+    if (Properties::Instance()->visualBell) {
+        QWidget *terminalDisplay = nullptr;
+        for (QObject *kid : children())
+        {
+            if (kid->isWidgetType() && kid->inherits("Konsole::TerminalDisplay"))
+            {
+                terminalDisplay = qobject_cast<QWidget*>(kid);
+                break;
+            }
+        }
+        if (terminalDisplay)
+        {
+            BloodShot *bang = new BloodShot(terminalDisplay);
+            terminalDisplay->setGraphicsEffect(bang);
+            QTimer::singleShot(150, this, [=]() { delete bang; });
+        }
+    }
     if (Properties::Instance()->audibleBell) {
 #ifdef HAVE_LIBCANBERRA
         if (!libcanberra_context) {

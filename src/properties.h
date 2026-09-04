@@ -105,6 +105,8 @@ class Properties
         bool useCWD;
         bool m_openNewTabRightToActiveTab;
 
+        QRgb visualBellColor;
+        bool visualBell;
         bool audibleBell;
 
         QString term;
