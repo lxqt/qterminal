@@ -632,6 +632,7 @@ bool MainWindow::closePrompt(const QString &title, const QString &text)
     QDialog * dia = new QDialog(this);
     dia->setObjectName(QStringLiteral("exitDialog"));
     dia->setWindowTitle(title);
+    dia->setWindowModality(Qt::WindowModal);
 
     QDialogButtonBox * buttonBox = new QDialogButtonBox(QDialogButtonBox::Yes | QDialogButtonBox::No, Qt::Horizontal, dia);
     buttonBox->button(QDialogButtonBox::No)->setDefault(true);
