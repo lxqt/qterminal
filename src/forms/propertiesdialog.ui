@@ -359,6 +359,31 @@
                <string>Fill</string>
               </property>
              </item>
+             <item>
+              <property name="text">
+               <string>Tiled</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Top Left</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Top Right</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bottom Left</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Bottom Right</string>
+              </property>
+             </item>
             </widget>
            </item>
            <item row="15" column="0">

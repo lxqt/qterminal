@@ -24,7 +24,7 @@
 #include <QFont>
 #include <QFileSystemWatcher>
 #include <QString>
-#include <qkeysequence.h>
+#include <QKeySequence>
 
 typedef QString Session;
 
