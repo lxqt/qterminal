@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>檢視歷史紀錄於編輯器中</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -365,12 +365,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>無編輯器可用</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>請設定 $VISUAL 環境，或是在偏好設定中調設編輯器指令。</translation>
     </message>
 </context>
 <context>
@@ -766,32 +766,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>允許應用程式使用 OSC-8 終端序列進行嵌入可以點按的超連結</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>啟用 OSC-8 超連結</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>當游標停置在連結上時，顯示目的地的 URL</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="836"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>顯示連結的目的地於游標位置上</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>當啟用之時，連結開啟只能使用 Ctrl+Click ，或是從浮動選單。當停用之時，點按一下即可開啟連結。</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>開啟連結使用 Ctrl+Click</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -808,12 +808,15 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>此指命令將使用包含包含 scrollback 歷史記錄的 tempfile 檔名的參數進行執行
+預設至 $VISUAL
+.................
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="925"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>歷史記錄檢視器指令</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="968"/>

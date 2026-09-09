@@ -305,12 +305,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Er is geen bewerker beschikbaar</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Stel de omgevingsvariable $VISUAL in of kies een bewerkprogrammaopdracht in de instellingen.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="315"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschiedenis bekijken in bewerker</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
@@ -730,32 +730,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Sta programma&apos;s toe om aanklikbare hyperlinks op te nemen in de OSC-8-terminalsequentie</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>OSC-8-hyperlinks toestaan</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Toon de url na het aanwijzen van een link</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="836"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Url tonen na aanwijzen van link</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Schakel in om links alleen te openen met Ctrl+klik of het met behulp van het rechtermuisknopmenu. Schakel uit om links direct na aanklikken te openen.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Links openen met Ctrl+klik</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -772,12 +772,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>Deze opdracht zal worden uitgevoerd met behulp van een optie, waarin de bestands of een tijdelijk bestand met geschiedenis is opgenomen
+Standaard: $VISUAL
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="925"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Geschiedenisweergaveopdracht</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="968"/>

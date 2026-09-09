@@ -305,12 +305,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Není k dispozici žádný editor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Buď nastavte proměnnou prostředí $VISUAL nebo v předvolbách nastavte příkaz pro editor.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="315"/>
@@ -320,7 +320,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Zobrazit historii v editoru</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
@@ -751,32 +751,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Umožnit aplikacím zapouzdřovat klikatelné hypertextové odkazy pomocí terminálové sekvence OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Povolit OCS-8 hypertextové odkazy</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Při najetí ukazatelem na odkaz zobrazit cílovou URL</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="836"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Při najetí ukazatelem zobrazit cíl odkazu</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pokud zapnuto, odkazy se otevřou pouze při Ctrl+klik nebo z kontextové nabídky. Pokud vypnuto, odkaz otevře holé kliknutí.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Otevírat odkazy pomocí Ctrl+klik</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -793,12 +793,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>Tento příkaz bude spuštěn s argumentem obsahujícím název (dočasného) souboru obsahujícího historii rolování zpět
+Pokud nenastaveno, bude použito to z proměnné $VISUAL
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="925"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Příkaz pro prohlížeč historie</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="968"/>

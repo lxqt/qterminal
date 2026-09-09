@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Προβολή ιστορικού στον επεξεργαστή</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -365,12 +365,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Δεν υπάρχει διαθέσιμος επεξεργαστής κειμένου</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ορίστε τη μεταβλητή περιβάλλοντος $VISUAL ή ρυθμίστε μια εντολή επεξεργαστή κειμένου στις προτιμήσεις.</translation>
     </message>
 </context>
 <context>
@@ -766,32 +766,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Να επιτρέπεται στις εφαρμογές η ενσωμάτωση υπερσυνδέσμων με δυνατότητα κλικ μέσω της ακολουθίας τερματικού OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Ενεργοποίηση υπερσυνδέσμων OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση της διεύθυνσης URL προορισμού κατά το πέρασμα του δείκτη πάνω από έναν σύνδεσμο</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="836"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Εμφάνιση του προορισμού του συνδέσμου κατά το πέρασμα του δείκτη</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Όταν είναι ενεργοποιημένη, οι σύνδεσμοι ανοίγουν μόνο με Ctrl+κλικ ή μέσω του σχετικού μενού. Όταν είναι απενεργοποιημένη, οι σύνδεσμοι ανοίγουν με απλό κλικ.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Άνοιγμα συνδέσμων με Ctrl+κλικ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -808,12 +808,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>Αυτή η εντολή θα εκτελεστεί με ένα όρισμα που περιέχει το όνομα ενός προσωρινού αρχείου με το ιστορικό κύλισης
+Εξ ορισμού χρησιμοποιείται η τιμή της μεταβλητής $VISUAL
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="925"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Εντολή προβολής ιστορικού</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="968"/>

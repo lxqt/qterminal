@@ -776,7 +776,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava lingid Ctrl+Klõpsu abil</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -1020,17 +1020,17 @@ Kas sa oled kindel, et see on õige fail ja soovid seda asendada?</translation>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Plokk</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>Alakriips</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>I-tala</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="467"/>

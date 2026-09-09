@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Преглед на историята в редактор</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -365,12 +365,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Няма наличен редактор</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Моля, задайте средата $VISUAL или конфигурирайте команда за редактор в предпочитанията.</translation>
     </message>
 </context>
 <context>
@@ -766,32 +766,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="823"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Разрешете на приложенията да вграждат хипервръзки, върху които може да се кликне, като използват терминалната последователност OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="826"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Разрешаване на OSC-8 хипервръзки</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="833"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Показване на целевия URL адрес при задържане на курсора на мишката върху връзка</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="836"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Показване на местоназначението на връзката при задържане на курсора на мишката</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="843"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Когато е активирано, връзките се отварят само с Ctrl+Click или от контекстното меню. Когато е деактивирано, връзката се отваря с обикновено кликване.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="846"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Отваряне нба връзки с Ctrl+Кликване</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="853"/>
@@ -808,12 +808,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>Тази команда ще бъде изпълнена с аргумент, съдържащ името на временен файл, съдържащ историята на превъртане назад.
+По подразбиране е $VISUAL.
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="925"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда за показване на историята</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="968"/>
