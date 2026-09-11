@@ -371,7 +371,7 @@ QList<QDBusObjectPath> QTerminalApp::getWindows()
     return windows;
 }
 
-static QDBusObjectPath spawnNewProcess(const QString &dbus_id, const QString &shell_command, const QString& workdir, int columns, int lines)
+static void spawnNewProcess(const QString &dbus_id, const QString &shell_command, const QString& workdir, int columns, int lines)
 {
     QStringList args;
     args <<  QStringLiteral("-i") << dbus_id;
@@ -383,22 +383,25 @@ static QDBusObjectPath spawnNewProcess(const QString &dbus_id, const QString &sh
         args << QStringLiteral("-p") << profile;
     args <<  QStringLiteral("-e") << shell_command;
     QProcess::startDetached(QCoreApplication::applicationFilePath(), args);
-    return QDBusObjectPath();
 }
 
-QDBusObjectPath QTerminalApp::newWindow(const QString &dbus_id, const QString &shell_command, const QString& workdir, int columns, int lines)
+QString QTerminalApp::newWindow(const QString &dbus_id, const QString &shell_command, const QString& workdir, int columns, int lines)
 {
     // dropDown can have only one window
     for (MainWindow *wnd : m_windowList)
         if (wnd->dropMode())
-            return spawnNewProcess(dbus_id, shell_command, workdir.isEmpty() ? m_workDir : workdir, columns, lines);
+        {
+            spawnNewProcess(dbus_id, shell_command, workdir.isEmpty() ? m_workDir : workdir, columns, lines);
+            return QString();
+        }
 
     TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? m_workDir : workdir, parse_command(shell_command));
     MainWindow *wnd = newWindow(false, cfg, dbus_id);
     assert(wnd != nullptr);
     if (columns > 0 || lines > 0)
         wnd->setInitialSize(QSize(columns, lines));
-    return wnd->getDbusPath();
+    TermWidget *tw = wnd->findChild<TermWidget*>();
+    return tw ? tw->ptyPath() : QString();
 }
 
 QDBusObjectPath QTerminalApp::newWindow(const QHash<QString,QVariant> &termArgs)
@@ -407,7 +410,10 @@ QDBusObjectPath QTerminalApp::newWindow(const QHash<QString,QVariant> &termArgs)
 
     for (MainWindow *wnd : m_windowList)
         if (wnd->dropMode())
-            return spawnNewProcess(QString(), cfg.getShell().join(QStringLiteral(" ")), cfg.getWorkingDirectory(), 0, 0);
+        {
+            spawnNewProcess(QString(), cfg.getShell().join(QStringLiteral(" ")), cfg.getWorkingDirectory(), 0, 0);
+            return QDBusObjectPath();
+        }
 
     MainWindow *wnd = newWindow(false, cfg);
     assert(wnd != nullptr);

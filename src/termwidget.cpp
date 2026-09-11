@@ -453,6 +453,11 @@ void TermWidget::paintEvent (QPaintEvent *)
 
 #if HAVE_QDBUS
 
+QString TermWidget::ptyPath() const
+{
+    return impl()->getPtyName();
+}
+
 QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termArgs)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
@@ -461,12 +466,12 @@ QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termA
     return holder->split(this, Qt::Horizontal, cfg)->getDbusPath();
 }
 
-QDBusObjectPath TermWidget::splitHorizontal(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
+QString TermWidget::splitHorizontal(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
     assert(holder != nullptr);
     TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? QTerminalApp::Instance()->getWorkingDirectory() : workdir, parse_command(shell_command));
-    return holder->split(this, Qt::Horizontal, cfg, dbus_id, newPercent)->getDbusPath();
+    return holder->split(this, Qt::Horizontal, cfg, dbus_id, newPercent)->ptyPath();
 }
 
 QDBusObjectPath TermWidget::splitVertical(const QHash<QString,QVariant> &termArgs)
@@ -478,12 +483,12 @@ QDBusObjectPath TermWidget::splitVertical(const QHash<QString,QVariant> &termArg
 }
 
 
-QDBusObjectPath TermWidget::splitVertical(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
+QString TermWidget::splitVertical(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
     assert(holder != nullptr);
     TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? QTerminalApp::Instance()->getWorkingDirectory() : workdir, parse_command(shell_command));
-    return holder->split(this, Qt::Vertical, cfg, dbus_id,  newPercent)->getDbusPath();
+    return holder->split(this, Qt::Vertical, cfg, dbus_id,  newPercent)->ptyPath();
 }
 
 QDBusObjectPath TermWidget::getTab()

@@ -87,14 +87,14 @@ class TermWidget : public QWidget, public DBusAddressable
         void propertiesChanged();
         QStringList availableKeyBindings() { return m_term->availableKeyBindings(); }
 
-        TermWidgetImpl * impl() { return m_term; }
+        TermWidgetImpl * impl() const { return m_term; }
         bool isExposed() const;
 
         #ifdef HAVE_QDBUS
         QDBusObjectPath splitHorizontal(const QHash<QString,QVariant> &termArgs);
         QDBusObjectPath splitVertical(const QHash<QString,QVariant> &termArgs);
-        QDBusObjectPath splitHorizontal(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent);
-        QDBusObjectPath splitVertical(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent);
+        QString splitHorizontal(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent);
+        QString splitVertical(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent);
         QDBusObjectPath getTab();
         void sendText(const QString& text);
         void activateTerminal();
@@ -103,6 +103,7 @@ class TermWidget : public QWidget, public DBusAddressable
         void setBackgroundImage(const QString &image, const int mode);
         void setFont(const QString& font, const int pointSize);
         void setSize(int cloumns, int lines);
+        QString ptyPath() const;
         #endif
 
         bool eventFilter(QObject * obj, QEvent * evt) override;

@@ -12,7 +12,7 @@
         <arg name="shell_command" type="s" direction="in"/>
         <arg name="workdir" type="s" direction="in"/>
         <arg name="newPercent" type="i" direction="in"/>
-        <arg name="newTerminal" type="o" direction="out"/>
+        <arg name="newTerminalPty" type="s" direction="out"/>
     </method>
     <method name="splitHorizontal">
         <annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="QHash&lt;QString,QVariant&gt;"/>
@@ -24,7 +24,7 @@
         <arg name="shell_command" type="s" direction="in"/>
         <arg name="workdir" type="s" direction="in"/>
         <arg name="newPercent" type="i" direction="in"/>
-        <arg name="newTerminal" type="o" direction="out"/>
+        <arg name="newTerminalPty" type="s" direction="out"/>
     </method>
     <method name="getTab">
         <arg name="tab" type="o" direction="out"/>
