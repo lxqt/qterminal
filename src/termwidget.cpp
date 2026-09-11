@@ -50,6 +50,7 @@ static int TermWidgetCount = 0;
 TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     : QTermWidget(0, parent)
     , scheduledShellProgramStart(false)
+    , isPassive(false)
 #ifdef HAVE_LIBCANBERRA
     , libcanberra_context(nullptr)
 #endif
@@ -70,6 +71,11 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     QStringList shell = cfg.getShell();
     if (!shell.isEmpty())
     {
+        if (shell.at(0) == QStringLiteral("__qterm_canvas"))
+        {
+            setupPassiveTty();
+            return;
+        }
         setShellProgram(shell.at(0));
         shell.removeAt(0);
         if (!shell.isEmpty())
@@ -123,6 +129,16 @@ TermWidgetImpl::~TermWidgetImpl()
 #endif
 }
 
+void TermWidgetImpl::setupPassiveTty()
+{
+    isPassive = true;
+    setContextMenuPolicy(Qt::PreventContextMenu);
+    scheduledShellProgramStart = window()->property("terminal_size_pending").toBool();
+    if (!scheduledShellProgramStart) {
+        QTimer::singleShot(0, this, &TermWidgetImpl::startTerminalTeletype);
+    }
+}
+
 void TermWidgetImpl::showEvent(QShowEvent *se)
 {
     if (scheduledShellProgramStart)
@@ -131,7 +147,7 @@ void TermWidgetImpl::showEvent(QShowEvent *se)
         {
             scheduledShellProgramStart = window()->property("terminal_size_pending").toBool();
             if (!scheduledShellProgramStart) {
-                QTimer::singleShot(0, this, &TermWidgetImpl::startShellProgram);
+                QTimer::singleShot(0, this, isPassive ? &TermWidgetImpl::startTerminalTeletype : &TermWidgetImpl::startShellProgram);
             }
         });
     }

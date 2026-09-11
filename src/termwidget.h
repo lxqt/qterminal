@@ -42,6 +42,7 @@ class TermWidgetImpl : public QTermWidget
         TermWidgetImpl(TerminalConfig &cfg, QWidget * parent=nullptr);
         virtual ~TermWidgetImpl();
         void propertiesChanged();
+        void setupPassiveTty();
 
         bool hasCommand() const {
             return m_hasCommand;
@@ -67,6 +68,7 @@ class TermWidgetImpl : public QTermWidget
     private:
         bool m_hasCommand;
         bool scheduledShellProgramStart;
+        bool isPassive;
 #ifdef HAVE_LIBCANBERRA
         ca_context* libcanberra_context;
 #endif
