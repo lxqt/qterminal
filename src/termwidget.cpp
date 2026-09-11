@@ -474,6 +474,13 @@ QString TermWidget::ptyPath() const
     return impl()->getPtyName();
 }
 
+QString TermWidget::newTab(const QString &dbus_id, const QString &shell_command, const QString& workdir)
+{
+    if (auto mainWindow = findParent<MainWindow>(this))
+        return mainWindow->newTab(dbus_id, shell_command, workdir);
+    return QString();
+}
+
 QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termArgs)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);

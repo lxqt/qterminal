@@ -26,6 +26,12 @@
         <arg name="newPercent" type="i" direction="in"/>
         <arg name="newTerminalPty" type="s" direction="out"/>
     </method>
+    <method name="newTab">
+      <arg name="dbus_id" type="s" direction="in"/>
+      <arg name="shell_command" type="s" direction="in"/>
+      <arg name="workdir" type="s" direction="in"/>
+      <arg name="newTerminalPty" type="s" direction="out"/>
+    </method>
     <method name="getTab">
         <arg name="tab" type="o" direction="out"/>
     </method>

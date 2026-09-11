@@ -106,6 +106,7 @@ class TermWidget : public QWidget, public DBusAddressable
         void setFont(const QString& font, const int pointSize);
         void setSize(int cloumns, int lines);
         QString ptyPath() const;
+        QString newTab(const QString &dbus_id, const QString &shell_command, const QString& workdir); // forwarded to the MainWindow impl
         #endif
 
         bool eventFilter(QObject * obj, QEvent * evt) override;
