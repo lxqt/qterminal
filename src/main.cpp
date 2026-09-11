@@ -183,8 +183,6 @@ int main(int argc, char *argv[])
         if (style.open(QFile::ReadOnly)) {
             QString styleString = QLatin1String(style.readAll());
             app->setStyleSheet(styleString);
-        } else {
-            qWarning() << "Failed to open stylesheet";
         }
     }
 
