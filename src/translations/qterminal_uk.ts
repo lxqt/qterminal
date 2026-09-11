@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Переглянути історію в редакторі</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -300,22 +300,22 @@
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Блок</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="538"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Підкреслення</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="539"/>
         <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;I-подібний</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="556"/>
         <source>&amp;Keyboard Cursor Shape</source>
-        <translation>&amp;Форма курсору клавіатури</translation>
+        <translation>&amp;Форма курсора клавіатури</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="644"/>
@@ -365,12 +365,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактор недоступний</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Укажіть змінну середовища $VISUAL або сконфігуруйте команду редактора в налаштуваннях.</translation>
     </message>
 </context>
 <context>
@@ -706,27 +706,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <source>Tiled</source>
-        <translation type="unfinished"></translation>
+        <translation>Плиткою</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Top Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Угорі ліворуч</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>Top Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Угорі праворуч</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Унизу зіворуч</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Унизу праворуч</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="443"/>
@@ -791,32 +791,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="848"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Дозволити застосункам вбудовувати гіперпосилання, на які можна натискати, за допомогою послідовності команд терміналу OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="851"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Увімкнути гіперпосилання OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="858"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Показувати URL-адресу призначення під час наведення курсора на посилання</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="861"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Показувати адресу посилання під час наведення курсора</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="868"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Якщо ця опція увімкнена, посилання відкриваються лише за допомогою комбінації клавіш Ctrl+клацання або через контекстне меню. Якщо ця опція вимкнена, посилання відкривається простим клацанням.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="871"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкривати посилання за допомогою Ctrl+клацання</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="878"/>
@@ -826,7 +826,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="902"/>
         <source>Visual bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Візуальний дзвінок</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -838,12 +838,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>Ця команда буде виконана з аргументом, що містить назву тимчасового файлу з історією прокручування
+Усталено — $VISUAL
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="957"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда перегляду історії</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1000"/>
@@ -919,7 +921,7 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1165"/>
         <source>Lock shortcut:</source>
-        <translation>Замкнути скорочення:</translation>
+        <translation>Комбінація клавіш блокування:</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1232"/>
@@ -1050,17 +1052,17 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Блок</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>Підкреслення</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>І-подібний</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="469"/>

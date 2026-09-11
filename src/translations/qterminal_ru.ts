@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Просмотреть историю в редакторе</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -365,12 +365,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Нет доступного редактора</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Установите переменную окружения $VISUAL или настройте команду редактора в параметрах.</translation>
     </message>
 </context>
 <context>
@@ -681,27 +681,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <source>Tiled</source>
-        <translation type="unfinished"></translation>
+        <translation>Мозаичный</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Top Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Сверху слева</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>Top Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Сверху справа</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Снизу слева</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Снизу справа</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="443"/>
@@ -766,32 +766,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="848"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Разрешить приложениям вставлять кликабельные гиперссылки через терминальную последовательность OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="851"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>Включить OSC-8 гиперссылки</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="858"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Показывать URL назначения при наведении на ссылку</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="861"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Показывать адрес ссылки при наведении</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="868"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>При включении ссылки открываются только по Ctrl+Щелчок или из контекстного меню. При отключении ссылка открывается по обычному щелчку.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="871"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Открывать ссылки по Ctrl+Щелчок</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="878"/>
@@ -801,7 +801,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="902"/>
         <source>Visual bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Визуальный звонок</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -813,12 +813,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>Эта команда будет запущена с аргументом, содержащим имя временного файла с историей прокрутки
+По умолчанию используется $VISUAL
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="957"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Команда просмотра истории</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1000"/>

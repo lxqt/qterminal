@@ -801,7 +801,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>Audible bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Hörbare Glocke</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="952"/>

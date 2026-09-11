@@ -729,27 +729,27 @@ obutatabulwatabulwa nga kibikolako.</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <source>Tiled</source>
-        <translation type="unfinished"></translation>
+        <translation>Yongerawo koppi z&apos;ekifaananyi zimaleyo akatimbe</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Top Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Teeka ku nsonda eya waggulu ku kkono</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>Top Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Teeka ku nsonda eya waggulu ku ddyo</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Teeka ku nsonda eya wansi ku kkono</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Teeka ku nsonda eya wansi ku ddyo</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="443"/>
@@ -850,7 +850,7 @@ gye yalimu lwe yasemba okuggalibwa</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="902"/>
         <source>Visual bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Wabewo ekibagguliza ekirabwa</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
