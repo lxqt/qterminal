@@ -676,27 +676,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <source>Tiled</source>
-        <translation type="unfinished"></translation>
+        <translation>タイル状</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Top Left</source>
-        <translation type="unfinished"></translation>
+        <translation>左上</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>Top Right</source>
-        <translation type="unfinished"></translation>
+        <translation>右上</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"></translation>
+        <translation>左下</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"></translation>
+        <translation>右下</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="443"/>
@@ -796,7 +796,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="902"/>
         <source>Visual bell</source>
-        <translation type="unfinished"></translation>
+        <translation>視覚ベル</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
