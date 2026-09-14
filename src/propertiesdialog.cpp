@@ -485,9 +485,9 @@ void PropertiesDialog::chooseBackgroundImageButton_clicked()
                     QString filename;
                     if (res == QDialog::Accepted)
                         filename = dlg->selectedFiles().at(0);
-                    QTimer::singleShot (0, this, [this, filename] () {
-                    if (!filename.isNull())
-                        backgroundImageLineEdit->setText(filename);
+                    QTimer::singleShot(0, this, [this, filename] () {
+                        if (!filename.isNull())
+                            backgroundImageLineEdit->setText(filename);
                     });
                 });
                 return;
@@ -651,12 +651,12 @@ void PropertiesDialog::bookmarksButton_clicked()
                     QString fname;
                     if (res == QDialog::Accepted)
                         fname = dia->selectedFiles().at(0);
-                    QTimer::singleShot (0, this, [this, fname] () {
-                    if (!fname.isNull())
-                    {
-                        bookmarksLineEdit->setText(fname);
-                        openBookmarksFile();
-                    }
+                    QTimer::singleShot(0, this, [this, fname] () {
+                        if (!fname.isNull())
+                        {
+                            bookmarksLineEdit->setText(fname);
+                            openBookmarksFile();
+                        }
                     });
                 });
                 return;
