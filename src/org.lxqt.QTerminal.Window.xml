@@ -17,7 +17,7 @@
       <arg name="dbus_id" type="s" direction="in"/>
       <arg name="shell_command" type="s" direction="in"/>
       <arg name="workdir" type="s" direction="in"/>
-      <arg name="newTerminal" type="o" direction="out"/>
+      <arg name="newTerminalPty" type="s" direction="out"/>
     </method>
     <method name="closeWindow"/>
     <method name="activateWindow"/>

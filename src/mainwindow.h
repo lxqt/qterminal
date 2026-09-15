@@ -57,7 +57,7 @@ public:
     QDBusObjectPath getActiveTab();
     QList<QDBusObjectPath> getTabs();
     QDBusObjectPath newTab(const QHash<QString,QVariant> &termArgs);
-    QDBusObjectPath newTab(const QString &dbus_id, const QString &shell_command, const QString& workdir);
+    QString newTab(const QString &dbus_id, const QString &shell_command, const QString& workdir);
     void closeWindow();
     void activateOrHide();
     #endif

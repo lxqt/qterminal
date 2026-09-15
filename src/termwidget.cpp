@@ -50,6 +50,7 @@ static int TermWidgetCount = 0;
 TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     : QTermWidget(0, parent)
     , scheduledShellProgramStart(false)
+    , isPassive(false)
 #ifdef HAVE_LIBCANBERRA
     , libcanberra_context(nullptr)
 #endif
@@ -70,6 +71,11 @@ TermWidgetImpl::TermWidgetImpl(TerminalConfig &cfg, QWidget * parent)
     QStringList shell = cfg.getShell();
     if (!shell.isEmpty())
     {
+        if (shell.at(0) == QStringLiteral("__qterm_canvas"))
+        {
+            setupPassiveTty();
+            return;
+        }
         setShellProgram(shell.at(0));
         shell.removeAt(0);
         if (!shell.isEmpty())
@@ -123,6 +129,16 @@ TermWidgetImpl::~TermWidgetImpl()
 #endif
 }
 
+void TermWidgetImpl::setupPassiveTty()
+{
+    isPassive = true;
+    setContextMenuPolicy(Qt::PreventContextMenu);
+    scheduledShellProgramStart = window()->property("terminal_size_pending").toBool();
+    if (!scheduledShellProgramStart) {
+        QTimer::singleShot(0, this, &TermWidgetImpl::startTerminalTeletype);
+    }
+}
+
 void TermWidgetImpl::showEvent(QShowEvent *se)
 {
     if (scheduledShellProgramStart)
@@ -131,7 +147,7 @@ void TermWidgetImpl::showEvent(QShowEvent *se)
         {
             scheduledShellProgramStart = window()->property("terminal_size_pending").toBool();
             if (!scheduledShellProgramStart) {
-                QTimer::singleShot(0, this, &TermWidgetImpl::startShellProgram);
+                QTimer::singleShot(0, this, isPassive ? &TermWidgetImpl::startTerminalTeletype : &TermWidgetImpl::startShellProgram);
             }
         });
     }
@@ -453,6 +469,18 @@ void TermWidget::paintEvent (QPaintEvent *)
 
 #if HAVE_QDBUS
 
+QString TermWidget::ptyPath() const
+{
+    return impl()->getPtyName();
+}
+
+QString TermWidget::newTab(const QString &dbus_id, const QString &shell_command, const QString& workdir)
+{
+    if (auto mainWindow = findParent<MainWindow>(this))
+        return mainWindow->newTab(dbus_id, shell_command, workdir);
+    return QString();
+}
+
 QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termArgs)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
@@ -461,12 +489,12 @@ QDBusObjectPath TermWidget::splitHorizontal(const QHash<QString,QVariant> &termA
     return holder->split(this, Qt::Horizontal, cfg)->getDbusPath();
 }
 
-QDBusObjectPath TermWidget::splitHorizontal(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
+QString TermWidget::splitHorizontal(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
     assert(holder != nullptr);
     TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? QTerminalApp::Instance()->getWorkingDirectory() : workdir, parse_command(shell_command));
-    return holder->split(this, Qt::Horizontal, cfg, dbus_id, newPercent)->getDbusPath();
+    return holder->split(this, Qt::Horizontal, cfg, dbus_id, newPercent)->ptyPath();
 }
 
 QDBusObjectPath TermWidget::splitVertical(const QHash<QString,QVariant> &termArgs)
@@ -478,12 +506,12 @@ QDBusObjectPath TermWidget::splitVertical(const QHash<QString,QVariant> &termArg
 }
 
 
-QDBusObjectPath TermWidget::splitVertical(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
+QString TermWidget::splitVertical(const QString &dbus_id, const QString &shell_command, const QString &workdir, const int newPercent)
 {
     TermWidgetHolder *holder = findParent<TermWidgetHolder>(this);
     assert(holder != nullptr);
     TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? QTerminalApp::Instance()->getWorkingDirectory() : workdir, parse_command(shell_command));
-    return holder->split(this, Qt::Vertical, cfg, dbus_id,  newPercent)->getDbusPath();
+    return holder->split(this, Qt::Vertical, cfg, dbus_id,  newPercent)->ptyPath();
 }
 
 QDBusObjectPath TermWidget::getTab()

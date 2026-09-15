@@ -1120,11 +1120,11 @@ QDBusObjectPath MainWindow::newTab(const QHash<QString,QVariant> &termArgs)
     return qobject_cast<TermWidgetHolder*>(consoleTabulator->widget(idx))->getDbusPath();
 }
 
-QDBusObjectPath MainWindow::newTab(const QString &dbus_id, const QString &shell_command, const QString& workdir)
+QString MainWindow::newTab(const QString &dbus_id, const QString &shell_command, const QString& workdir)
 {
     TerminalConfig cfg = TerminalConfig(workdir.isEmpty() ? QTerminalApp::Instance()->getWorkingDirectory() : workdir, parse_command(shell_command));
     int idx = consoleTabulator->addNewTab(cfg, dbus_id);
-    return qobject_cast<TermWidgetHolder*>(consoleTabulator->widget(idx))->getDbusPath();
+    return qobject_cast<TermWidgetHolder*>(consoleTabulator->widget(idx))->currentTerminal()->ptyPath();
 }
 
 
