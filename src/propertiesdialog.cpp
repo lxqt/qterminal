@@ -465,35 +465,6 @@ void PropertiesDialog::changeFontButton_clicked()
 
 void PropertiesDialog::chooseBackgroundImageButton_clicked()
 {
-    // On Wayland and with the dropdown mode, a modal dialog may go behind the properties dialog
-    // and make it impossible to interact with anything. So we show it non-modal to let the user
-    // close the properties dialog in such a situation.
-    if (QGuiApplication::platformName() == QStringLiteral("wayland") && windowHandle())
-    {
-        if (auto layershell = LayerShellQt::Window::get(windowHandle()))
-        {
-            LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
-            if (layershell->anchors() == anchors)
-            {
-                if (findChild<QFileDialog*>(Qt::FindDirectChildrenOnly))
-                    return;
-                QFileDialog* dlg = new QFileDialog(this, tr("Choose a background image"));
-                dlg->setAttribute(Qt::WA_DeleteOnClose, true);
-                dlg->setNameFilter(tr("Images (*.bmp *.jpg *.png *.svg *.xpm)"));
-                dlg->show();
-                connect(dlg, &QDialog::finished, this, [this, dlg] (int res) {
-                    QString filename;
-                    if (res == QDialog::Accepted)
-                        filename = dlg->selectedFiles().at(0);
-                    QTimer::singleShot(0, this, [this, filename] () {
-                        if (!filename.isNull())
-                            backgroundImageLineEdit->setText(filename);
-                    });
-                });
-                return;
-            }
-        }
-    }
     QString filename = QFileDialog::getOpenFileName(
                             this, tr("Choose a background image"),
                             QString(), tr("Images (*.bmp *.jpg *.png *.svg *.xpm)"));
@@ -598,12 +569,11 @@ void PropertiesDialog::bookmarksPathEdited()
 
 void PropertiesDialog::bookmarksButton_clicked()
 {
-    QFileDialog* dia = new QFileDialog(this, tr("Open bookmarks file"));
-    dia->setAttribute(Qt::WA_DeleteOnClose, true);
-    dia->setFileMode(QFileDialog::ExistingFile);
+    QFileDialog dia(this, tr("Open bookmarks file"));
+    dia.setFileMode(QFileDialog::ExistingFile);
     QString xmlStr = tr("XML files (*.xml)");
     QString allStr = tr("All files (*)");
-    dia->setNameFilters(QStringList() << xmlStr << allStr);
+    dia.setNameFilters(QStringList() << xmlStr << allStr);
 
     bool openAppDir(QObject::sender() != bookmarksButton);
     if (!openAppDir) {
@@ -611,9 +581,9 @@ void PropertiesDialog::bookmarksButton_clicked()
         auto path = bookmarksLineEdit->text();
         if (!path.isEmpty() && QFile::exists(path)) {
             if (!path.endsWith(QLatin1String(".xml"))) {
-                dia->selectNameFilter(allStr);
+                dia.selectNameFilter(allStr);
             }
-            dia->selectFile(path);
+            dia.selectFile(path);
         }
         else {
             openAppDir = true;
@@ -625,49 +595,17 @@ void PropertiesDialog::bookmarksButton_clicked()
         if (!appDirStr.isEmpty()) {
             QDir appDir(appDirStr);
             if (appDir.exists()) {
-                dia->setDirectory(appDir);
+                dia.setDirectory(appDir);
             }
         }
     }
 #endif
 
-    // On Wayland and with the dropdown mode, a modal dialog may go behind the properties dialog
-    // and make it impossible to interact with anything. So we show it non-modal to let the user
-    // close the properties dialog in such a situation.
-    if (QGuiApplication::platformName() == QStringLiteral("wayland") && windowHandle())
-    {
-        if (auto layershell = LayerShellQt::Window::get(windowHandle()))
-        {
-            LayerShellQt::Window::Anchors anchors = {LayerShellQt::Window::AnchorTop};
-            if (layershell->anchors() == anchors)
-            {
-                if (findChildren<QFileDialog*>(Qt::FindDirectChildrenOnly).size() > 1)
-                {
-                    delete dia;
-                    return;
-                }
-                dia->show();
-                connect(dia, &QDialog::finished, this, [this, dia] (int res) {
-                    QString fname;
-                    if (res == QDialog::Accepted)
-                        fname = dia->selectedFiles().at(0);
-                    QTimer::singleShot(0, this, [this, fname] () {
-                        if (!fname.isNull())
-                        {
-                            bookmarksLineEdit->setText(fname);
-                            openBookmarksFile();
-                        }
-                    });
-                });
-                return;
-            }
-        }
-    }
-    if (!dia->exec()) {
+    if (!dia.exec()) {
         return;
     }
 
-    QString fname = dia->selectedFiles().count() ? dia->selectedFiles().at(0) : QString();
+    QString fname = dia.selectedFiles().count() ? dia.selectedFiles().at(0) : QString();
     if (fname.isNull()) {
         return;
     }
