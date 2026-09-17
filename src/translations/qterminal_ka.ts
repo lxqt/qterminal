@@ -168,7 +168,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="357"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>ისტორიის ნახვა რედაქტორში</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="365"/>
@@ -300,17 +300,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="537"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ბლოკი</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="538"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;ხაზგასმა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="539"/>
         <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;l-ის ფორმის</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="556"/>
@@ -365,12 +365,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="869"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>რედაქტორი ხელმისაწვდომი არაა</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="871"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>დააყენეთ ან გარემოს ცვლადი $VISUAL, ან მიუთითეთ რედაქტორის ბრძანება მორგების ფანჯარაში.</translation>
     </message>
 </context>
 <context>
@@ -706,27 +706,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <source>Tiled</source>
-        <translation type="unfinished"></translation>
+        <translation>მოზაიკა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Top Left</source>
-        <translation type="unfinished"></translation>
+        <translation>ზედა მარცხენა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>Top Right</source>
-        <translation type="unfinished"></translation>
+        <translation>ზედა მარჯვენა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"></translation>
+        <translation>ქვედა მარცხენა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"></translation>
+        <translation>ქვედა მარჯვენა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="443"/>
@@ -791,32 +791,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="848"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>აპლიკაციებისთვის OSC08 ტერმინალის მიმდევრობით დაწკაპუნებადი ჰიპერბმულების ჩაშენების უფლების მიცემა</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="851"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>OSC-8 ჰიპერბმულების დაშვება</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="858"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>სამიზნე ბმულის ჩვენება ბმულზე თაგუნას გაჩერებისას</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="861"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>ბმულის სამიზნის ჩვენება ზედ თაგუნას გაჩერებისას</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="868"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>როცა ჩართულია, ბმულები, მხოლოდ, Ctrl+წკაპით, ან კონტექსტური მენიუდან გაიხსნება. როცა გათიშულია, უბრალო დაწკაპუნება გახსნის ბმულს.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="871"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>ბმულების გახსნა Ctrl+წკაპით</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="878"/>
@@ -826,7 +826,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="902"/>
         <source>Visual bell</source>
-        <translation type="unfinished"></translation>
+        <translation>ვიზუალური ზარი</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -838,12 +838,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>ეს ბრძანება გეშვება არგუმენტით, რომელიც შეიცავს ფაილის სახელს დროებითი ფაილის, რომელიც გადახვევის ისტორიას შეიცავს
+ნაგულისხმევად გამოიყენება $VISUAL
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="957"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>ისტორიის ნახვის ბრძანება</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1000"/>
@@ -1050,17 +1052,17 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>ბლოკი</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>ხაზგასმა</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="186"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>l-ფორმის</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="469"/>
