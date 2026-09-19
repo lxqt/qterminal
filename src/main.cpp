@@ -20,9 +20,9 @@
 #include <QtGlobal>
 
 #include <cassert>
+#include <cstdlib>
 #include <cstdio>
 #include <getopt.h>
-#include <cstdlib>
 #include <unistd.h>
 #include <utility>
 
@@ -30,7 +30,6 @@
     #include <QtDBus/QtDBus>
     #include "processadaptor.h"
 #endif
-
 
 #include "mainwindow.h"
 #include "qterminalapp.h"
@@ -59,7 +58,7 @@ const struct option long_options[] = {
 
 QTerminalApp * QTerminalApp::m_instance = nullptr;
 
-[[ noreturn ]] void print_usage_and_exit(int code)
+[[noreturn]] void print_usage_and_exit(int code)
 {
     printf("QTerminal %s\n", QTERMINAL_VERSION);
     puts("Usage: qterminal [OPTION]...\n");
@@ -76,13 +75,13 @@ QTerminalApp * QTerminalApp::m_instance = nullptr;
     exit(code);
 }
 
-[[ noreturn ]] void print_version_and_exit(int code=0)
+[[noreturn]] void print_version_and_exit(int code = 0)
 {
     printf("%s\n", QTERMINAL_VERSION);
     exit(code);
 }
 
-void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_command, out bool& dropMode, QString &dbus_id, QSize &size)
+void parse_args(int argc, char* argv[], QString& workdir, QStringList& shell_command, out bool& dropMode, QString& dbus_id, QSize& size)
 {
     int next_option = 0;
     dropMode = false;
@@ -147,11 +146,13 @@ void parse_args(int argc, char* argv[], QString& workdir, QStringList & shell_co
 
 int main(int argc, char *argv[])
 {
-    if (!qEnvironmentVariableIsEmpty("XPC_SERVICE_NAME")) {
+    if (!qEnvironmentVariableIsEmpty("XPC_SERVICE_NAME"))
+    {
         // On macOS, if qterminal.app is spawned by launchd (e.g., from Finder
         // or use `open qterminal.app`, $PWD is set to /. Workaround that by
         // go to $HOME first.
-        if (chdir(QDir::homePath().toLatin1().data())) {
+        if (chdir(QDir::homePath().toLatin1().data()))
+        {
             qDebug() << "Failed to chdir to $HOME" << QDir::homePath() << strerror(errno);
         }
 
@@ -199,6 +200,7 @@ int main(int argc, char *argv[])
         QFileInfo(settings.fileName()).canonicalPath() +
         QStringLiteral("/style.qss")
     );
+
     if (customStyle.isFile() && customStyle.isReadable())
     {
         QFile style(customStyle.canonicalFilePath());
@@ -231,11 +233,12 @@ int main(int argc, char *argv[])
 #ifdef APPLE_BUNDLE
     QDir translations_dir = QDir(QApplication::applicationDirPath());
     translations_dir.cdUp();
-    if (translations_dir.cd(QStringLiteral("Resources/translations"))) {
+    if (translations_dir.cd(QStringLiteral("Resources/translations")))
+    {
         installTr = translator.load(fname, translations_dir.path(), QStringLiteral("_"));
-    } /*else {
+    } /* else {
         qWarning() << "Unable to find \"Resources/translations\" dir in" << translations_dir.path();
-    }*/
+    } */
 #endif
     if (installTr)
     {
@@ -253,7 +256,7 @@ int main(int argc, char *argv[])
     return ret;
 }
 
-MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg, const QString &dbus_id)
+MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig& cfg, const QString& dbus_id)
 {
     MainWindow *window = nullptr;
     if (dropMode)
@@ -265,8 +268,7 @@ MainWindow *QTerminalApp::newWindow(bool dropMode, TerminalConfig &cfg, const QS
     else
     {
         window = new MainWindow(cfg, dropMode, dbus_id);
-        if (Properties::Instance()->saveSizeOnExit
-            && Properties::Instance()->windowMaximized)
+        if (Properties::Instance()->saveSizeOnExit && Properties::Instance()->windowMaximized)
         {
             window->setWindowState(Qt::WindowMaximized);
         }
@@ -304,11 +306,11 @@ void QTerminalApp::setWorkingDirectory(const QString &wd)
     m_workDir = wd;
 }
 
-void QTerminalApp::cleanup() {
+void QTerminalApp::cleanup()
+{
     delete m_instance;
     m_instance = nullptr;
 }
-
 
 void QTerminalApp::addWindow(MainWindow *window)
 {
@@ -320,7 +322,7 @@ void QTerminalApp::removeWindow(MainWindow *window)
     m_windowList.removeOne(window);
 }
 
-QList<MainWindow *> QTerminalApp::getWindowList()
+QList<MainWindow*> QTerminalApp::getWindowList()
 {
     return m_windowList;
 }
@@ -428,24 +430,26 @@ QDBusObjectPath QTerminalApp::getActiveWindow()
     return qobject_cast<MainWindow*>(aw)->getDbusPath();
 }
 
-bool QTerminalApp::isDropMode() {
-  if (m_windowList.count() == 0) {
-    return false;
-  }
-  MainWindow *wnd = m_windowList.at(0);
-  return wnd->dropMode();
+bool QTerminalApp::isDropMode()
+{
+    if (m_windowList.count() == 0)
+        return false;
+
+    MainWindow *wnd = m_windowList.at(0);
+    return wnd->dropMode();
 }
 
-bool QTerminalApp::toggleDropdown() {
-  if (m_windowList.count() == 0) {
-    return false;
-  }
-  MainWindow *wnd = m_windowList.at(0);
-  if (!wnd->dropMode()) {
-    return false;
-  }
-  wnd->showHide();
-  return true;
+bool QTerminalApp::toggleDropdown()
+{
+    if (m_windowList.count() == 0)
+        return false;
+
+    MainWindow *wnd = m_windowList.at(0);
+    if (!wnd->dropMode())
+        return false;
+
+    wnd->showHide();
+    return true;
 }
 
 void QTerminalApp::requestDropDown()
@@ -456,10 +460,9 @@ void QTerminalApp::requestDropDown()
     iface.call(QStringLiteral("toggleDropdown"));
 }
 
-bool QTerminalApp::isPrimaryInstance() {
-  return m_isPrimaryInstance;
+bool QTerminalApp::isPrimaryInstance()
+{
+    return m_isPrimaryInstance;
 }
 
-
 #endif
-
