@@ -108,6 +108,7 @@ class Properties
         QRgb visualBellColor;
         bool visualBell;
         bool audibleBell;
+        bool notifySilence;
 
         QString term;
 

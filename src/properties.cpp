@@ -154,6 +154,7 @@ void Properties::loadSettings()
     visualBellColor = m_settings->value(QLatin1String("VisualBellColor"), QLatin1String("0x990000")).toString().toInt(nullptr, 16);
     visualBell = m_settings->value(QLatin1String("VisualBell"), false).toBool();
     audibleBell = m_settings->value(QLatin1String("AudibleBell"), false).toBool();
+    notifySilence = m_settings->value(QLatin1String("NotifySilence"), false).toBool();
     term = m_settings->value(QLatin1String("Term"), QLatin1String("xterm-256color")).toString();
     handleHistoryCommand = m_settings->value(QLatin1String("HandleHistory")).toString();
 
@@ -296,6 +297,7 @@ void Properties::saveSettings()
     m_settings->setValue(QLatin1String("VisualBellColor"), QString::number(visualBellColor,16));
     m_settings->setValue(QLatin1String("VisualBell"), visualBell);
     m_settings->setValue(QLatin1String("AudibleBell"), audibleBell);
+    m_settings->setValue(QLatin1String("NotifySilence"), notifySilence);
     m_settings->setValue(QLatin1String("Term"), term);
     m_settings->setValue(QLatin1String("HandleHistory"), handleHistoryCommand);
 

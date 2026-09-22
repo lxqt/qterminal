@@ -82,6 +82,8 @@ class TermWidget : public QWidget, public DBusAddressable
     TermWidgetImpl * m_term;
     QVBoxLayout * m_layout;
     QColor m_border;
+    QElapsedTimer m_activityClock;
+    uint m_silenceNotification;
 
     public:
         TermWidget(TerminalConfig &cfg, const QString &dbus_id = QString(), QWidget * parent=nullptr);
@@ -133,6 +135,11 @@ class TermWidget : public QWidget, public DBusAddressable
     private slots:
         void term_termGetFocus();
         void term_termLostFocus();
+        void notifySilence();
+        void notifyActiviy();
+        #ifdef HAVE_QDBUS
+        void handleNotificationAction(uint id, QString action);
+        #endif
 };
 
 #endif
