@@ -36,339 +36,344 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../mainwindow.cpp" line="94"/>
+        <location filename="../mainwindow.cpp" line="97"/>
         <source>Bookmarks</source>
         <translation>სანიშნეები</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="219"/>
+        <location filename="../mainwindow.cpp" line="222"/>
         <source>Press &quot;%1&quot; to see the terminal.</source>
         <translation>დააჭირეთ ღილაკს &quot;%1&quot; ტერმინალის დასანახად.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="273"/>
+        <location filename="../mainwindow.cpp" line="276"/>
         <source>&amp;Next Tab</source>
         <translation>&amp;შემდეგი ჩანართი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="276"/>
+        <location filename="../mainwindow.cpp" line="279"/>
         <source>&amp;Previous Tab</source>
         <translation>&amp;წინა ჩანართი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="285"/>
+        <location filename="../mainwindow.cpp" line="288"/>
         <source>Move Tab &amp;Left</source>
         <translation>ჩანართის &amp;მარცხნივ გადატანა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="288"/>
+        <location filename="../mainwindow.cpp" line="291"/>
         <source>Move Tab &amp;Right</source>
         <translation>ჩანართის მა&amp;რჯვნივ გადატანა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="266"/>
+        <location filename="../mainwindow.cpp" line="269"/>
         <source>&amp;Clear Active Terminal</source>
         <translation>ა&amp;ქტიური ტერმინალის გასუფთავება</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="199"/>
+        <location filename="../mainwindow.cpp" line="202"/>
         <source>Keep window open when it loses focus</source>
         <translation>ფანჯრის ღიად დატოვება მას შემდეგაც კი, რაც ის ფოკუსს დაკარგავს</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="279"/>
+        <location filename="../mainwindow.cpp" line="282"/>
         <source>&amp;Previous Tab in History</source>
         <translation>&amp;წინა ჩანართი ისტორიაში</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="282"/>
+        <location filename="../mainwindow.cpp" line="285"/>
         <source>&amp;Next Tab in History</source>
         <translation>&amp;შემდეგი ჩანართი ისტორიაში</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="293"/>
+        <location filename="../mainwindow.cpp" line="296"/>
         <source>Tab</source>
         <translation>ჩანართი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="294"/>
+        <location filename="../mainwindow.cpp" line="297"/>
         <source>Go to</source>
         <translation>გადასვლა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="307"/>
+        <location filename="../mainwindow.cpp" line="310"/>
         <source>Split &amp;View Top-Bottom</source>
         <translation>ხედის გაყოფა ზემოდან-ქ&amp;ვემოთ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="310"/>
+        <location filename="../mainwindow.cpp" line="313"/>
         <source>Split Vie&amp;w Left-Right</source>
         <translation>ხედის გაყოფა მარცხ&amp;ნიდან მარჯვნივ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="315"/>
+        <location filename="../mainwindow.cpp" line="320"/>
+        <source>Toggle Subterminal &amp;Maximized</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.cpp" line="322"/>
         <source>&amp;Close Subterminal</source>
         <translation>ქვეტერმინალის &amp;დახურვა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="318"/>
+        <location filename="../mainwindow.cpp" line="325"/>
         <source>&amp;Top Subterminal</source>
         <translation>&amp;ზედა ქვეტერმინალი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="321"/>
+        <location filename="../mainwindow.cpp" line="328"/>
         <source>&amp;Bottom Subterminal</source>
         <translation>&amp;ქვედა ქვეტერმინალი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="324"/>
+        <location filename="../mainwindow.cpp" line="331"/>
         <source>L&amp;eft Subterminal</source>
         <translation>&amp;მარცხენა ქვეტერმინალი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="327"/>
+        <location filename="../mainwindow.cpp" line="334"/>
         <source>R&amp;ight Subterminal</source>
         <translation>მარ&amp;ჯვენა ქვეტერმინალი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="334"/>
+        <location filename="../mainwindow.cpp" line="341"/>
         <source>Copy &amp;Selection</source>
         <translation>მონიშნულის &amp;კოპირება</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="337"/>
+        <location filename="../mainwindow.cpp" line="344"/>
         <source>Paste Clip&amp;board</source>
         <translation>&amp;ბუფერის ჩასმა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="340"/>
+        <location filename="../mainwindow.cpp" line="347"/>
         <source>Paste S&amp;election</source>
         <translation>მ&amp;ონიშნულის ჩასმა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="343"/>
+        <location filename="../mainwindow.cpp" line="350"/>
         <source>Zoom &amp;in</source>
         <translation>გად&amp;იდება</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="346"/>
+        <location filename="../mainwindow.cpp" line="353"/>
         <source>Zoom &amp;out</source>
         <translation>&amp;დაპატარავება</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="349"/>
+        <location filename="../mainwindow.cpp" line="356"/>
         <source>Zoom rese&amp;t</source>
         <translation>გადიდების ჩამო&amp;ყრა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="354"/>
+        <location filename="../mainwindow.cpp" line="361"/>
         <source>&amp;Find...</source>
         <translation>ძ&amp;ებნა...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="357"/>
+        <location filename="../mainwindow.cpp" line="364"/>
         <source>View history in editor</source>
         <translation>ისტორიის ნახვა რედაქტორში</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="365"/>
+        <location filename="../mainwindow.cpp" line="372"/>
         <source>&amp;Save Session</source>
         <translation>სესიის &amp;შენახვა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="371"/>
+        <location filename="../mainwindow.cpp" line="378"/>
         <source>&amp;Load Session</source>
         <translation>სესიის &amp;ჩატვირთვა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="378"/>
+        <location filename="../mainwindow.cpp" line="385"/>
         <source>&amp;Toggle Menu</source>
         <translation>მენიუს &amp;გადართვა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="383"/>
+        <location filename="../mainwindow.cpp" line="390"/>
         <source>Rename session</source>
         <translation>სესიის სახელის გადარქმევა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="392"/>
+        <location filename="../mainwindow.cpp" line="399"/>
         <source>&amp;New Tab</source>
         <translation>&amp;ახალი ჩანართი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="396"/>
+        <location filename="../mainwindow.cpp" line="403"/>
         <source>New Tab From &amp;Preset</source>
         <translation>ახალი ჩანართი &amp;პრესეტიდან</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="397"/>
+        <location filename="../mainwindow.cpp" line="404"/>
         <source>1 &amp;Terminal</source>
         <translation>1 &amp;ტერმინალი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="401"/>
+        <location filename="../mainwindow.cpp" line="408"/>
         <source>2 &amp;Horizontal Terminals</source>
         <translation>2 &amp;ჰორიზონტალური ტერმინალი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="403"/>
+        <location filename="../mainwindow.cpp" line="410"/>
         <source>2 &amp;Vertical Terminals</source>
         <translation>2 &amp;ვერტიკალური ტერმინალი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="405"/>
+        <location filename="../mainwindow.cpp" line="412"/>
         <source>4 Terminal&amp;s</source>
         <translation>4 ტერმ&amp;ინალი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="411"/>
+        <location filename="../mainwindow.cpp" line="418"/>
         <source>&amp;Close Tab</source>
         <translation>&amp;ჩანართის დახურვა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="414"/>
+        <location filename="../mainwindow.cpp" line="421"/>
         <source>&amp;New Window</source>
         <translation>&amp;ახალი ფანჯარა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="419"/>
+        <location filename="../mainwindow.cpp" line="426"/>
         <source>&amp;Preferences...</source>
         <translation>&amp;გამართვა...</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="423"/>
+        <location filename="../mainwindow.cpp" line="430"/>
         <source>&amp;Quit</source>
         <translation>გამოსვლა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="429"/>
+        <location filename="../mainwindow.cpp" line="436"/>
         <source>&amp;Hide Window Borders</source>
         <translation>ფანჯრის &amp;საზღვრების დამალვა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="447"/>
+        <location filename="../mainwindow.cpp" line="454"/>
         <source>&amp;Show Tab Bar</source>
         <translation>ჩანართების პანელი&amp;ს ჩვენება</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="455"/>
+        <location filename="../mainwindow.cpp" line="462"/>
         <source>Fullscreen</source>
         <translation>სრულ ეკრანზე</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="461"/>
+        <location filename="../mainwindow.cpp" line="468"/>
         <source>Toggle Bookmarks</source>
         <translation>სანიშნეების გადართვა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="469"/>
+        <location filename="../mainwindow.cpp" line="476"/>
         <source>&amp;Bottom</source>
         <translation>ქ&amp;ვედა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="470"/>
+        <location filename="../mainwindow.cpp" line="477"/>
         <source>&amp;Top</source>
         <translation>&amp;ზედა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="471"/>
-        <location filename="../mainwindow.cpp" line="507"/>
+        <location filename="../mainwindow.cpp" line="478"/>
+        <location filename="../mainwindow.cpp" line="514"/>
         <source>&amp;Right</source>
         <translation>მარჯვენა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="472"/>
-        <location filename="../mainwindow.cpp" line="508"/>
+        <location filename="../mainwindow.cpp" line="479"/>
+        <location filename="../mainwindow.cpp" line="515"/>
         <source>&amp;Left</source>
         <translation>მარ&amp;ცხნივ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="490"/>
+        <location filename="../mainwindow.cpp" line="497"/>
         <source>&amp;Tabs Layout</source>
         <translation>&amp;ჩანართების განლაგება</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="506"/>
+        <location filename="../mainwindow.cpp" line="513"/>
         <source>&amp;None</source>
         <translation>არაფერი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="524"/>
+        <location filename="../mainwindow.cpp" line="531"/>
         <source>S&amp;crollbar Layout</source>
         <translation>&amp;ჩოჩიის განლაგება</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="537"/>
+        <location filename="../mainwindow.cpp" line="544"/>
         <source>&amp;Block</source>
         <translation>&amp;ბლოკი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="538"/>
+        <location filename="../mainwindow.cpp" line="545"/>
         <source>&amp;Underline</source>
         <translation>&amp;ხაზგასმა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="539"/>
+        <location filename="../mainwindow.cpp" line="546"/>
         <source>&amp;I-Beam</source>
         <translation>&amp;l-ის ფორმის</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="556"/>
+        <location filename="../mainwindow.cpp" line="563"/>
         <source>&amp;Keyboard Cursor Shape</source>
         <translation>&amp;კლავიატურის კურსორის ფორმა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="644"/>
+        <location filename="../mainwindow.cpp" line="652"/>
         <source>A process is running.</source>
         <translation>პროცესი გაშვებულია.</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="663"/>
+        <location filename="../mainwindow.cpp" line="671"/>
         <source>Exit QTerminal</source>
         <translation>QTerminal--დან გასვლა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="663"/>
+        <location filename="../mainwindow.cpp" line="671"/>
         <source>Are you sure you want to exit?</source>
         <translation>დარწმუნებული ბრძანდებით, რომ გნებავთ, გახვიდეთ?</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="708"/>
+        <location filename="../mainwindow.cpp" line="716"/>
         <source>About</source>
         <translation>შესახებ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="710"/>
+        <location filename="../mainwindow.cpp" line="718"/>
         <source>A lightweight and powerful multiplatform terminal emulator</source>
         <translation>მსუბუქი და მძლავრი მრავალპლატფორმული ტერმინალის ემულატორი</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="712"/>
+        <location filename="../mainwindow.cpp" line="720"/>
         <source>Copyright (C) </source>
         <translation>საავტორო უფლებები დაცულია (c) </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="712"/>
+        <location filename="../mainwindow.cpp" line="720"/>
         <source>2013-2025</source>
         <translation>2013-2025</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="714"/>
+        <location filename="../mainwindow.cpp" line="722"/>
         <source>LXQt Project</source>
         <translation>პროექტი LXQt</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="716"/>
+        <location filename="../mainwindow.cpp" line="724"/>
         <source>Development: </source>
         <translation>პროგრამირება: </translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="869"/>
+        <location filename="../mainwindow.cpp" line="877"/>
         <source>No editor available</source>
         <translation>რედაქტორი ხელმისაწვდომი არაა</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="871"/>
+        <location filename="../mainwindow.cpp" line="879"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
         <translation>დააყენეთ ან გარემოს ცვლადი $VISUAL, ან მიუთითეთ რედაქტორის ბრძანება მორგების ფანჯარაში.</translation>
     </message>
@@ -543,7 +548,7 @@
         <translation>მენიუს ამაჩქრებლების გამორთვა</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="967"/>
+        <location filename="../forms/propertiesdialog.ui" line="974"/>
         <source>Emulation</source>
         <translation>ემულაცია</translation>
     </message>
@@ -563,7 +568,7 @@
         <translation>ბოლოში მოყოლილი ახალი ხაზების წაჭრა ჩასმულ ტექსტში</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="885"/>
+        <location filename="../forms/propertiesdialog.ui" line="892"/>
         <source>Open new terminals in current working directory</source>
         <translation>ახალი ტერმინალების გახსნა მიმდინარე სამუშაო საქაღალდეში</translation>
     </message>
@@ -588,7 +593,7 @@
         <translation>ისტორიის ზომა (ხაზებში)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="916"/>
+        <location filename="../forms/propertiesdialog.ui" line="923"/>
         <source>Default $TERM</source>
         <translation>ნაგულისხმევი $TERM</translation>
     </message>
@@ -648,7 +653,7 @@
         <translation>ფანჯრის &amp;საზღვრების დამალვა</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="976"/>
+        <location filename="../forms/propertiesdialog.ui" line="983"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the &lt;span style=&quot; font-weight:600;&quot;&gt;default&lt;/span&gt; emulation.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;რომელი ქცევის ემულაცია მოხდება. დაიმახსოვრეთ, რომ შეიძლება, ეს თქვენს ოპერაციულ სისტემისას არა ემთხვდეოდეს.&lt;/p&gt;&lt;p&gt;თუ დარწმუნებული არ ბრძანდებით, გამოიყენეთ &lt;span style=&quot; font-weight:600;&quot;&gt;ნაგულისხმევი&lt;/span&gt; ემულაცია.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -664,12 +669,12 @@
         <translation>მიმდინარე ზომის მიღება</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="895"/>
+        <location filename="../forms/propertiesdialog.ui" line="902"/>
         <source>Open new tab to the right of the active tab</source>
         <translation>ახალი ჩანართის გახსნა აქტიური ჩანართის მარჯვნივ</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="892"/>
+        <location filename="../forms/propertiesdialog.ui" line="899"/>
         <source>If unchecked the new tab will be opened as the rightmost tab</source>
         <translation>გამორთულია, ახალი ჩანართი ყველაზე მარვენა ჩანართად გაიხსნება</translation>
     </message>
@@ -824,17 +829,22 @@
         <translation>კითხვა გაშვებული პროცესით დახურვისას</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="902"/>
+        <location filename="../forms/propertiesdialog.ui" line="885"/>
+        <source>Notify when output stops in minimized windows</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>Visual bell</source>
         <translation>ვიზუალური ზარი</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="909"/>
+        <location filename="../forms/propertiesdialog.ui" line="916"/>
         <source>Audible bell</source>
         <translation>გასაგონი ზარი</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="952"/>
+        <location filename="../forms/propertiesdialog.ui" line="959"/>
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
@@ -843,12 +853,12 @@ Defaults to $VISUAL
                  </translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="957"/>
+        <location filename="../forms/propertiesdialog.ui" line="964"/>
         <source>History viewer command</source>
         <translation>ისტორიის ნახვის ბრძანება</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1000"/>
+        <location filename="../forms/propertiesdialog.ui" line="1007"/>
         <source>To edit a Shortcut:
 1. Double-click its Key
 2. Press the desired combination and release it
@@ -863,88 +873,88 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
 მალსახმობის წასაშლელად/გასათიშად მეორე პუნქტზე, უბრალოდ, მხოლოდ, მოდიფიკატორს დააჭირეთ (მაგ: Shift)</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1030"/>
+        <location filename="../forms/propertiesdialog.ui" line="1037"/>
         <source>Shortcut</source>
         <translation>მალმხმობი</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1035"/>
+        <location filename="../forms/propertiesdialog.ui" line="1042"/>
         <source>Key</source>
         <translation>გასაღები</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1047"/>
+        <location filename="../forms/propertiesdialog.ui" line="1054"/>
         <source>Show on start</source>
         <translation>ჩვენება გაშვებისას</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1054"/>
+        <location filename="../forms/propertiesdialog.ui" line="1061"/>
         <source>A lock button is shown on horizontal tab bar</source>
         <translation>ჩაკეტვის ღილაკი ნაჩვენებია ჰორიზონტალური ჩანართის ზოლზე</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1057"/>
+        <location filename="../forms/propertiesdialog.ui" line="1064"/>
         <source>Keep window open when it loses focus</source>
         <translation>ფანჯრის ღიად დატოვება მას შემდეგაც კი, რაც ის ფოკუსს დაკარგავს</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1064"/>
+        <location filename="../forms/propertiesdialog.ui" line="1071"/>
         <source>Size</source>
         <translation>ზომა</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1075"/>
+        <location filename="../forms/propertiesdialog.ui" line="1082"/>
         <source>Height</source>
         <translation>სიმაღლე</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1085"/>
-        <location filename="../forms/propertiesdialog.ui" line="1108"/>
+        <location filename="../forms/propertiesdialog.ui" line="1092"/>
+        <location filename="../forms/propertiesdialog.ui" line="1115"/>
         <source>%</source>
         <translation>%</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1098"/>
+        <location filename="../forms/propertiesdialog.ui" line="1105"/>
         <source>Width</source>
         <translation>სიგანე</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1128"/>
+        <location filename="../forms/propertiesdialog.ui" line="1135"/>
         <source>Shortcut:</source>
         <translation>მალსახმობი:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1137"/>
+        <location filename="../forms/propertiesdialog.ui" line="1144"/>
         <source>Note: On Wayland, the shortcut has to be added in the compositor settings for &apos;qterminal -d&apos;.</source>
         <translation>შენიშვნა: Wayland-ზე მალსახმობები კომპოზიტორის მორგების ფანჯრიდან უნდა შეცვალოთ ბრძანებისთვის &apos;qterminal -d&apos;.</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1165"/>
+        <location filename="../forms/propertiesdialog.ui" line="1172"/>
         <source>Lock shortcut:</source>
         <translation>დაბლოკვის მალსახმობი:</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1232"/>
+        <location filename="../forms/propertiesdialog.ui" line="1239"/>
         <source>Edit bookmark file contents</source>
         <translation>სანიშნების ფაილის შემცველობის ჩასწორება</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1191"/>
+        <location filename="../forms/propertiesdialog.ui" line="1198"/>
         <source>Enable bookmarks</source>
         <translation>სანიშნეების ჩართვა</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1200"/>
+        <location filename="../forms/propertiesdialog.ui" line="1207"/>
         <source>Bookmark file</source>
         <translation>სანიშნეს ფაილი</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1213"/>
+        <location filename="../forms/propertiesdialog.ui" line="1220"/>
         <source>Find...</source>
         <translation>მოძებნა…</translation>
     </message>
     <message>
-        <location filename="../forms/propertiesdialog.ui" line="1222"/>
+        <location filename="../forms/propertiesdialog.ui" line="1229"/>
         <source>You can specify your own bookmarks file location. It allows easy bookmark sharing with tools like OwnCloud or Dropbox.</source>
         <translation>შეგიძლიათ, საკუთარი სანიშნეების ფაილის მდებარეობა ხელით მიუთითოთ. ეს საშუალებას გაძლევთ სანიშნეები გააზიაროთ, მაგალითად, OwnCloud-ით ან Dropbox-ით.</translation>
     </message>
@@ -991,61 +1001,61 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>ბოლომდე გადახვევა</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="295"/>
+        <location filename="../propertiesdialog.cpp" line="301"/>
         <source>Examples</source>
         <translation>მაგალითები</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="470"/>
+        <location filename="../propertiesdialog.cpp" line="482"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>გამოსახულებები (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="572"/>
+        <location filename="../propertiesdialog.cpp" line="584"/>
         <source>Open bookmarks file</source>
         <translation>სანიშნეების ფაილის გახსნა</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="574"/>
+        <location filename="../propertiesdialog.cpp" line="586"/>
         <source>XML files (*.xml)</source>
         <translation>XML ფაილები (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="575"/>
+        <location filename="../propertiesdialog.cpp" line="587"/>
         <source>All files (*)</source>
         <translation>ყველა ფაილი (*)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="674"/>
-        <location filename="../propertiesdialog.cpp" line="678"/>
+        <location filename="../propertiesdialog.cpp" line="686"/>
+        <location filename="../propertiesdialog.cpp" line="690"/>
         <source>Question</source>
         <translation>კითხვა</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="674"/>
+        <location filename="../propertiesdialog.cpp" line="686"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>გნებავთ ამ სანიშნეების ფაილის თავზე გადაწერა?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="678"/>
+        <location filename="../propertiesdialog.cpp" line="690"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>სანიშნეების ფაილის სახელი არ მთავრდება სტრიქონით &apos;.xml&apos;.
 მართლა გნებავთ, თავზე გადააწეროთ?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="686"/>
+        <location filename="../propertiesdialog.cpp" line="698"/>
         <source>Warning</source>
         <translation>გაფრთხილება</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="686"/>
+        <location filename="../propertiesdialog.cpp" line="698"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>ამ ფაილში სანიშნეების ჩაწერა შეუძლებელია:</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="225"/>
-        <location filename="../propertiesdialog.cpp" line="351"/>
+        <location filename="../propertiesdialog.cpp" line="357"/>
         <source>System Default</source>
         <translation>სისტემის ნაგულისხმები</translation>
     </message>
@@ -1065,7 +1075,7 @@ Are you sure that you want to overwrite it?</source>
         <translation>l-ფორმის</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="469"/>
+        <location filename="../propertiesdialog.cpp" line="481"/>
         <source>Choose a background image</source>
         <translation>აირჩიეთ ფონის გამოსახულება</translation>
     </message>
@@ -1082,54 +1092,62 @@ Are you sure that you want to overwrite it?</source>
     <name>TabWidget</name>
     <message>
         <location filename="../tabwidget.cpp" line="86"/>
-        <location filename="../tabwidget.cpp" line="291"/>
+        <location filename="../tabwidget.cpp" line="296"/>
         <source>Shell No. %1</source>
         <translation>გარემო #%1</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="150"/>
+        <location filename="../tabwidget.cpp" line="155"/>
         <source>Close Subterminal</source>
         <translation>ქვეტერმინალის დახურვა</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="150"/>
+        <location filename="../tabwidget.cpp" line="155"/>
         <source>Are you sure you want to close this subterminal?</source>
         <translation>მართლა გნებავთ, დახუროთ ეს ქვეტერმინალი?</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="265"/>
+        <location filename="../tabwidget.cpp" line="270"/>
         <source>Tab name</source>
         <translation>ჩანართის სახელი</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="266"/>
+        <location filename="../tabwidget.cpp" line="271"/>
         <source>New tab name:</source>
         <translation>ახალი ჩანართის სახელი:</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="280"/>
+        <location filename="../tabwidget.cpp" line="285"/>
         <source>Select new tab title color</source>
         <translation>აირჩიეთ ახალი ჩანართის სათაურის ფერი</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="309"/>
+        <location filename="../tabwidget.cpp" line="314"/>
         <source>Close session</source>
         <translation>სესიის დახურვა</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="311"/>
+        <location filename="../tabwidget.cpp" line="316"/>
         <source>Change title color</source>
         <translation>სათაურის ფერის შეცვლა</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="393"/>
+        <location filename="../tabwidget.cpp" line="398"/>
         <source>Close tab</source>
         <translation>ჩანართის დახურვა</translation>
     </message>
     <message>
-        <location filename="../tabwidget.cpp" line="393"/>
+        <location filename="../tabwidget.cpp" line="398"/>
         <source>Are you sure you want to close this tab?</source>
         <translation>ნამდვილად გსურთ ამ ჩანართის დახურვა?</translation>
+    </message>
+</context>
+<context>
+    <name>TermWidget</name>
+    <message>
+        <location filename="../termwidget.cpp" line="550"/>
+        <source>Output ended</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
