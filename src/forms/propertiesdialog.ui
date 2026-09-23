@@ -686,8 +686,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>422</width>
-            <height>262</height>
+            <width>255</width>
+            <height>98</height>
            </rect>
           </property>
           <attribute name="label">
@@ -756,8 +756,8 @@ Defaults to $VISUAL
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>422</width>
-            <height>262</height>
+            <width>234</width>
+            <height>71</height>
            </rect>
           </property>
           <attribute name="label">
@@ -827,6 +827,14 @@ Defaults to $VISUAL
           </layout>
          </widget>
          <widget class="QWidget" name="page_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>322</width>
+            <height>125</height>
+           </rect>
+          </property>
           <attribute name="label">
            <string>Notifications</string>
           </attribute>
@@ -875,6 +883,14 @@ Defaults to $VISUAL
           </layout>
          </widget>
          <widget class="QWidget" name="page_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>280</width>
+            <height>156</height>
+           </rect>
+          </property>
           <attribute name="label">
            <string>Copy &amp;&amp; Paste</string>
           </attribute>
@@ -957,6 +973,14 @@ Defaults to $VISUAL
           </layout>
          </widget>
          <widget class="QWidget" name="page_5">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>223</width>
+            <height>98</height>
+           </rect>
+          </property>
           <attribute name="label">
            <string>Hyperlinks</string>
           </attribute>
@@ -1007,6 +1031,14 @@ Defaults to $VISUAL
           </layout>
          </widget>
          <widget class="QWidget" name="page_6">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>326</width>
+            <height>44</height>
+           </rect>
+          </property>
           <attribute name="label">
            <string>New Terminal</string>
           </attribute>
@@ -1322,6 +1354,21 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
    </item>
    <item row="0" column="0">
     <widget class="QListWidget" name="listWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
+     </property>
+     <property name="autoScroll">
+      <bool>true</bool>
+     </property>
      <item>
       <property name="text">
        <string>Appearance</string>
