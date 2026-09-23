@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>759</width>
+    <width>547</width>
     <height>618</height>
    </rect>
   </property>
@@ -14,73 +14,6 @@
    <string>Terminal settings</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_2">
-   <item row="0" column="0">
-    <widget class="QListWidget" name="listWidget">
-     <item>
-      <property name="text">
-       <string>Appearance</string>
-      </property>
-      <property name="icon">
-       <iconset theme="preferences-desktop-theme"/>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Window</string>
-      </property>
-      <property name="icon">
-       <iconset theme="preferences-system-windows"/>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Tabs</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Behavior</string>
-      </property>
-      <property name="icon">
-       <iconset theme="preferences-system"/>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Shortcuts</string>
-      </property>
-      <property name="icon">
-       <iconset theme="preferences-desktop-keyboard"/>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Dropdown</string>
-      </property>
-      <property name="icon">
-       <iconset theme="utilities-terminal"/>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>Bookmarks</string>
-      </property>
-      <property name="icon">
-       <iconset theme="bookmark-new"/>
-      </property>
-     </item>
-    </widget>
-   </item>
-   <item row="1" column="0" colspan="2">
-    <widget class="QDialogButtonBox" name="buttonBox">
-     <property name="orientation">
-      <enum>Qt::Orientation::Horizontal</enum>
-     </property>
-     <property name="standardButtons">
-      <set>QDialogButtonBox::StandardButton::Apply|QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="1">
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="frameShape">
@@ -742,334 +675,378 @@
       </layout>
      </widget>
      <widget class="QWidget" name="behaviorPage">
-      <layout class="QVBoxLayout" name="verticalLayout_5">
-       <property name="spacing">
-        <number>0</number>
-       </property>
-       <property name="leftMargin">
-        <number>0</number>
-       </property>
-       <property name="topMargin">
-        <number>0</number>
-       </property>
-       <property name="rightMargin">
-        <number>0</number>
-       </property>
-       <property name="bottomMargin">
-        <number>0</number>
-       </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5" stretch="3,1">
        <item>
-        <layout class="QGridLayout" name="gridLayout">
-         <item row="3" column="1">
-          <widget class="QGroupBox" name="groupBox_9">
-           <property name="title">
-            <string>Links</string>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_12">
-            <item>
-             <widget class="QCheckBox" name="enableOsc8HyperlinksCheckBox">
-              <property name="toolTip">
-               <string>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</string>
-              </property>
-              <property name="text">
-               <string>Enable OSC-8 hyperlinks</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="showLinkTooltipsCheckBox">
-              <property name="toolTip">
-               <string>Show the destination URL when hovering over a link</string>
-              </property>
-              <property name="text">
-               <string>Show link destination on hover</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="openLinksByCtrlClickCheckBox">
-              <property name="toolTip">
-               <string>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</string>
-              </property>
-              <property name="text">
-               <string>Open links with Ctrl+Click</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QGroupBox" name="groupBox_16">
-           <property name="title">
-            <string>New Terminal</string>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_17">
-            <item>
-             <widget class="QCheckBox" name="useCwdCheckBox">
-              <property name="text">
-               <string>Open new terminals in current working directory</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_8">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QGroupBox" name="groupBox_10">
-           <property name="title">
-            <string>Copy &amp;&amp; Paste</string>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_13">
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_9">
-              <item>
-               <widget class="QLabel" name="label_18">
-                <property name="text">
-                 <string>Word selection characters</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLineEdit" name="wordCharactersLineEdit">
-                <property name="toolTip">
-                 <string>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</string>
-                </property>
-                <property name="text">
-                 <string>:@-./_~</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="disableBracketedPasteModeCheckBox">
-              <property name="toolTip">
-               <string>Bracketed paste mode is useful for pasting multiline strings.</string>
-              </property>
-              <property name="text">
-               <string>Forcefully disable bracketed paste mode</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="confirmMultilinePasteCheckBox">
-              <property name="text">
-               <string>Confirm multiline paste</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="trimPastedTrailingNewlinesCheckBox">
-              <property name="text">
-               <string>Trim trailing newlines in pasted text</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_8">
-              <item>
-               <widget class="QLabel" name="label">
-                <property name="text">
-                 <string>Action after paste</string>
-                </property>
-                <property name="buddy">
-                 <cstring>motionAfterPasting_comboBox</cstring>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QComboBox" name="motionAfterPasting_comboBox"/>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QGroupBox" name="groupBox_4">
-           <property name="title">
-            <string>Emulation</string>
-           </property>
-           <layout class="QFormLayout" name="formLayout_10">
-            <item row="0" column="0">
-             <widget class="QLabel" name="label_14">
-              <property name="text">
-               <string>Default $TERM</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QComboBox" name="termComboBox">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="editable">
-               <bool>true</bool>
-              </property>
-              <property name="currentIndex">
-               <number>1</number>
-              </property>
-              <item>
-               <property name="text">
-                <string notr="true">xterm</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string notr="true">xterm-256color</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="label_2">
-              <property name="text">
-               <string>Input style</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QComboBox" name="emulationComboBox">
-              <property name="toolTip">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which input behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the default one.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QGroupBox" name="groupBox_11">
-           <property name="title">
-            <string>History</string>
-           </property>
-           <layout class="QFormLayout" name="formLayout_9">
-            <item row="0" column="0">
-             <widget class="QRadioButton" name="historyLimited">
-              <property name="text">
-               <string>History size (in lines)</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QSpinBox" name="historyLimitedTo">
-              <property name="minimum">
-               <number>100</number>
-              </property>
-              <property name="maximum">
-               <number>1000000</number>
-              </property>
-              <property name="value">
-               <number>1000</number>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="0" colspan="2">
-             <widget class="QRadioButton" name="historyUnlimited">
-              <property name="text">
-               <string>Unlimited history</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_17">
-              <property name="toolTip">
-               <string>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
+        <widget class="QToolBox" name="toolBox">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>422</width>
+            <height>262</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>History</string>
+          </attribute>
+          <layout class="QFormLayout" name="formLayout_5">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="historyLimited">
+             <property name="text">
+              <string>History size (in lines)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="historyLimitedTo">
+             <property name="minimum">
+              <number>100</number>
+             </property>
+             <property name="maximum">
+              <number>1000000</number>
+             </property>
+             <property name="value">
+              <number>1000</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="historyUnlimited">
+             <property name="text">
+              <string>Unlimited history</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_17">
+             <property name="toolTip">
+              <string>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </string>
-              </property>
+             </property>
+             <property name="text">
+              <string>History viewer command</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="handleHistoryLineEdit"/>
+           </item>
+           <item row="3" column="1">
+            <spacer name="verticalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>422</width>
+            <height>262</height>
+           </rect>
+          </property>
+          <attribute name="label">
+           <string>Emulation</string>
+          </attribute>
+          <layout class="QFormLayout" name="formLayout_7">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>Default $TERM</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="termComboBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="editable">
+              <bool>true</bool>
+             </property>
+             <property name="currentIndex">
+              <number>1</number>
+             </property>
+             <item>
               <property name="text">
-               <string>History viewer command</string>
+               <string notr="true">xterm</string>
               </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QLineEdit" name="handleHistoryLineEdit"/>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item row="6" column="0" colspan="2">
-          <spacer name="verticalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Orientation::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>13</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="2" column="0">
-          <widget class="QGroupBox" name="groupBox_12">
-           <property name="title">
-            <string>Notifications</string>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout_14">
-            <item>
-             <widget class="QCheckBox" name="askOnExitCheckBox">
+             </item>
+             <item>
               <property name="text">
-               <string>Prompt on closing with a running process</string>
+               <string notr="true">xterm-256color</string>
               </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="notifySilenceCheckBox">
-              <property name="text">
-               <string>Notify when output stops in minimized windows</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="visualBellCheckBox">
-              <property name="text">
-               <string>Visual bell</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="audibleBellCheckBox">
-              <property name="text">
-               <string>Audible bell</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <spacer name="verticalSpacer_7">
-              <property name="orientation">
-               <enum>Qt::Orientation::Vertical</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>20</width>
-                <height>40</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-          </widget>
-         </item>
-        </layout>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>Input style</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="emulationComboBox">
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Which input behavior to emulate. Note that this does not have to match your operating system.&lt;/p&gt;&lt;p&gt;If you are not sure, use the default one.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <spacer name="verticalSpacer_11">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_3">
+          <attribute name="label">
+           <string>Notifications</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_18">
+           <item>
+            <widget class="QCheckBox" name="askOnExitCheckBox">
+             <property name="text">
+              <string>Prompt on closing with a running process</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="notifySilenceCheckBox">
+             <property name="text">
+              <string>Notify when output stops in minimized windows</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="visualBellCheckBox">
+             <property name="text">
+              <string>Visual bell</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="audibleBellCheckBox">
+             <property name="text">
+              <string>Audible bell</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_4">
+          <attribute name="label">
+           <string>Copy &amp;&amp; Paste</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_9">
+             <item>
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>Word selection characters</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="wordCharactersLineEdit">
+               <property name="toolTip">
+                <string>When selecting text by word, consider these characters as part of words in addition to alphanumeric characters</string>
+               </property>
+               <property name="text">
+                <string>:@-./_~</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="disableBracketedPasteModeCheckBox">
+             <property name="toolTip">
+              <string>Bracketed paste mode is useful for pasting multiline strings.</string>
+             </property>
+             <property name="text">
+              <string>Forcefully disable bracketed paste mode</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="confirmMultilinePasteCheckBox">
+             <property name="text">
+              <string>Confirm multiline paste</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="trimPastedTrailingNewlinesCheckBox">
+             <property name="text">
+              <string>Trim trailing newlines in pasted text</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Action after paste</string>
+               </property>
+               <property name="buddy">
+                <cstring>motionAfterPasting_comboBox</cstring>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="motionAfterPasting_comboBox"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_5">
+          <attribute name="label">
+           <string>Hyperlinks</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_13">
+           <item>
+            <widget class="QCheckBox" name="enableOsc8HyperlinksCheckBox">
+             <property name="toolTip">
+              <string>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</string>
+             </property>
+             <property name="text">
+              <string>Enable OSC-8 hyperlinks</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="showLinkTooltipsCheckBox">
+             <property name="toolTip">
+              <string>Show the destination URL when hovering over a link</string>
+             </property>
+             <property name="text">
+              <string>Show link destination on hover</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="openLinksByCtrlClickCheckBox">
+             <property name="toolTip">
+              <string>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</string>
+             </property>
+             <property name="text">
+              <string>Open links with Ctrl+Click</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_6">
+          <attribute name="label">
+           <string>New Terminal</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_19">
+           <item>
+            <widget class="QCheckBox" name="useCwdCheckBox">
+             <property name="text">
+              <string>Open new terminals in current working directory</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_12">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </widget>
@@ -1343,6 +1320,73 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
      </widget>
     </widget>
    </item>
+   <item row="0" column="0">
+    <widget class="QListWidget" name="listWidget">
+     <item>
+      <property name="text">
+       <string>Appearance</string>
+      </property>
+      <property name="icon">
+       <iconset theme="preferences-desktop-theme"/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Window</string>
+      </property>
+      <property name="icon">
+       <iconset theme="preferences-system-windows"/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Tabs</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Behavior</string>
+      </property>
+      <property name="icon">
+       <iconset theme="preferences-system"/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Shortcuts</string>
+      </property>
+      <property name="icon">
+       <iconset theme="preferences-desktop-keyboard"/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dropdown</string>
+      </property>
+      <property name="icon">
+       <iconset theme="utilities-terminal"/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bookmarks</string>
+      </property>
+      <property name="icon">
+       <iconset theme="bookmark-new"/>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::StandardButton::Apply|QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
+     </property>
+    </widget>
+   </item>
   </layout>
  </widget>
  <resources/>
@@ -1392,22 +1436,6 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</str
     <hint type="destinationlabel">
      <x>147</x>
      <y>24</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>historyUnlimited</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>historyLimitedTo</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>342</x>
-     <y>102</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>640</x>
-     <y>77</y>
     </hint>
    </hints>
   </connection>
