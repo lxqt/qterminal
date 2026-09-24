@@ -57,6 +57,7 @@ class TermWidgetImpl : public QTermWidget
         void zoomOut();
         void zoomReset();
         void customContextMenuCall(const QPoint & pos);
+        void setSize(const QSize &size) Q_DECL_OVERRIDE;
 
     protected:
         void showEvent(QShowEvent *event);

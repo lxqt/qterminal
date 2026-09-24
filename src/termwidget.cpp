@@ -300,6 +300,36 @@ void TermWidgetImpl::activateUrl(const QUrl & url, bool fromContextMenu) {
     }
 }
 
+void TermWidgetImpl::setSize(const QSize &sz)
+{
+    // https://github.com/lxqt/qtermwidget/issues/656
+    const QWidget *terminalDisplay = nullptr;
+    for (const QWidget *kid : findChildren<QWidget*>())
+    {
+        if (kid->inherits("Konsole::TerminalDisplay"))
+        {
+            terminalDisplay = kid;
+            break;
+        }
+    }
+    if (!terminalDisplay) // not supposed, but we could not correctly control the size
+        return;
+
+    int columns(sz.width()), lines(sz.height());
+    QSize oldSize(screenColumnsCount(), screenLinesCount());
+    if (columns == oldSize.width() && lines == oldSize.height())
+        return; // inert and for some reason terminalDisplay's sizeHint is off when trying
+
+    if (columns < 1)
+        columns = oldSize.width();
+    if (lines < 1)
+        lines = oldSize.height();
+    QTermWidget::setSize(QSize(columns, lines));
+
+    QSize sh = terminalDisplay->sizeHint();
+    window()->resize(window()->size() - size() + sh);
+}
+
 class BloodShot : public QGraphicsEffect
 {
     public:
@@ -696,33 +726,7 @@ void TermWidget::setFont(const QString& font, const int pointSize)
 void TermWidget::setSize(int columns, int lines)
 {
     if (impl())
-    {
-        // https://github.com/lxqt/qtermwidget/issues/656
-        const QWidget *terminalDisplay = nullptr;
-        for (const QWidget *kid : impl()->findChildren<QWidget*>())
-        {
-            if (kid->inherits("Konsole::TerminalDisplay"))
-            {
-                terminalDisplay = kid;
-                break;
-            }
-        }
-        if (!terminalDisplay) // not supposed, but we could not correctly control the size
-            return;
-
-        QSize oldSize(impl()->screenColumnsCount(), impl()->screenLinesCount());
-        if (columns == oldSize.width() && lines == oldSize.height())
-            return; // inert and for some reason terminalDisplay's sizeHint is off when trying
-
-        if (columns < 1)
-            columns = oldSize.width();
-        if (lines < 1)
-            lines = oldSize.height();
         impl()->setSize(QSize(columns, lines));
-
-        QSize sh = terminalDisplay->sizeHint();
-        window()->resize(window()->size() - size() + sh);
-    }
 }
 
 #endif
