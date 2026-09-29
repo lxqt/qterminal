@@ -113,7 +113,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>Toggle Subterminal &amp;Maximized</source>
-        <translation type="unfinished"></translation>
+        <translation>Massimizza/ripristina sottoterminale</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
@@ -952,7 +952,7 @@ Si è sicuro di volerlo sovrascrivere?</translation>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="885"/>
         <source>Notify when output stops in minimized windows</source>
-        <translation type="unfinished"></translation>
+        <translation>Notifica se l&apos;output termina in finestre minimizzate</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -1147,7 +1147,7 @@ Per rimuovere una scorciatoia al punto 2 premere maiusc, alt o win</translation>
     <message>
         <location filename="../termwidget.cpp" line="550"/>
         <source>Output ended</source>
-        <translation type="unfinished"></translation>
+        <translation>Output è terminato</translation>
     </message>
 </context>
 <context>

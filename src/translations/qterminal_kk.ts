@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>Toggle Subterminal &amp;Maximized</source>
-        <translation type="unfinished"></translation>
+        <translation>Ішкі терминалды &amp;максималды ету</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
@@ -173,7 +173,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Тарихты түзеткіште қарау</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
@@ -370,12 +370,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="877"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Қолжетімді түзеткіш жоқ</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="879"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>$VISUAL ортасын орнатыңыз немесе баптауларда түзеткіш командасын баптаңыз.</translation>
     </message>
 </context>
 <context>
@@ -711,27 +711,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <source>Tiled</source>
-        <translation type="unfinished"></translation>
+        <translation>Плитка</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Top Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Жоғарғы сол жақ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>Top Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Жоғарғы оң жақ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Төменгі сол жақ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Төменгі оң жақ</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="443"/>
@@ -796,32 +796,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="848"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>Қолданбаларға OSC-8 терминалдық тізбегін пайдаланып, шертілетін гиперсілтемелерді ендіруге рұқсат ету</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="851"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>OSC-8 гиперсілтемелерін іске қосу</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="858"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>Сілтеме үстіне апарған кезде мақсатты орынның URL адресін көрсету</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="861"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>Сілтеме үстіне апарғанда мақсатты орналасуды көрсету</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="868"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>Іске қосылған кезде сілтемелер тек Ctrl+шерту арқылы немесе контекст мәзірінен ашылады. Сөндірілген кезде жай шерту сілтемені ашады.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="871"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Сілтемелерді Ctrl+шерту арқылы ашу</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="878"/>
@@ -831,12 +831,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="885"/>
         <source>Notify when output stops in minimized windows</source>
-        <translation type="unfinished"></translation>
+        <translation>Қайырылған терезелерде шығыс тоқтаған кезде хабарлау</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>Visual bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Визуалды дабыл</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="916"/>
@@ -848,12 +848,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>Бұл команда айналдыру тарихын қамтитын уақытша файлдың аты көрсетілген аргументпен орындалады
+Әдепкі мәні: $VISUAL
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="964"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>Тарихты қарау командасы</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1007"/>
@@ -1145,7 +1147,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../termwidget.cpp" line="550"/>
         <source>Output ended</source>
-        <translation type="unfinished"></translation>
+        <translation>Шығыс аяқталды</translation>
     </message>
 </context>
 <context>

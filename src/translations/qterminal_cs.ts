@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>Toggle Subterminal &amp;Maximized</source>
-        <translation type="unfinished"></translation>
+        <translation>Vyp/zap. dílčí terminál &amp;maximalizováno</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
@@ -696,27 +696,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <source>Tiled</source>
-        <translation type="unfinished"></translation>
+        <translation>S dlaždicemi</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Top Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlevo nahoře</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>Top Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Vpravo nahoře</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"></translation>
+        <translation>Vlevo dole</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"></translation>
+        <translation>Vpravo dole</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="443"/>
@@ -816,12 +816,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="885"/>
         <source>Notify when output stops in minimized windows</source>
-        <translation type="unfinished"></translation>
+        <translation>Upozornit když se výstup v minimalizovaných oknech zastaví</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>Visual bell</source>
-        <translation type="unfinished"></translation>
+        <translation>Vizuální zvonek</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="916"/>
@@ -1147,7 +1147,7 @@ Opravdu ho chcete přepsat?</translation>
     <message>
         <location filename="../termwidget.cpp" line="550"/>
         <source>Output ended</source>
-        <translation type="unfinished"></translation>
+        <translation>Výstup skončil</translation>
     </message>
 </context>
 <context>
