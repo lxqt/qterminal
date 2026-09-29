@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>Toggle Subterminal &amp;Maximized</source>
-        <translation type="unfinished"></translation>
+        <translation>Переключить &amp;развернуть подтерминал</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
@@ -806,7 +806,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="885"/>
         <source>Notify when output stops in minimized windows</source>
-        <translation type="unfinished"></translation>
+        <translation>Уведомлять, когда вывод останавливается в свёрнутых окнах</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -1147,7 +1147,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../termwidget.cpp" line="550"/>
         <source>Output ended</source>
-        <translation type="unfinished"></translation>
+        <translation>Вывод завершён</translation>
     </message>
 </context>
 <context>
