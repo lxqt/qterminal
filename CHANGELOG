@@ -4,7 +4,7 @@ qterminal-2.5.0 / 2026-11-05
  * Enabled QTermWidget's new background image modes (filling, corners and tiles).
  * Implemented visual bell and added an option for it.
  * Added a feature for maximizing the current sub-terminal.
- * Show notification when a process completes ("silence notification").
+ * Optionally notify the user when the output stops in a minimized window ("silence notification").
  * Enhanced inter-process communication.
  * Fixed performance issues after opening and closing a lot of tabs.
  * Polished the "Handle history…" feature.
