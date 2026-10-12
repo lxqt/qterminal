@@ -1,3 +1,21 @@
+qterminal-2.5.0 / 2026-11-05
+=============================
+ * Added OSC-8 hyperlink settings to properties.
+ * Enabled QTermWidget's new background image modes (filling, corners and tiles).
+ * Implemented visual bell and added an option for it.
+ * Added a feature for maximizing the current sub-terminal.
+ * Show notification when a process completes ("silence notification").
+ * Enhanced inter-process communication.
+ * Fixed performance issues after opening and closing a lot of tabs.
+ * Polished the "Handle history…" feature.
+ * Delay `startShellProgram()` until the layout of QTabWidget and the initial terminal size are set.
+ * Made the exit dialog window-modal.
+ * Infrastructure changes to facilitate automatic stdout split à la cat9.
+ * Removed codes belonging to Qt < 6.7.
+ * Silenced layershell and QFile warnings.
+ * Removed translations CMake artifact.
+ * Re-implemented `QTermWidget::setSize` to allow `CSI;18t` (size request).
+
 qterminal-2.4.0 / 2026-04-20
 =============================
  * Improved custom tab name behaviour.
