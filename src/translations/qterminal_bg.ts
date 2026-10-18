@@ -959,123 +959,123 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>Можете да зададете собствено местоположение на файла с отметки. То позволява лесно споделяне на отметки с инструменти като OwnCloud или Dropbox.</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
         <source>No scrollbar</source>
         <translation>Без лента</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Left</source>
         <translation>Отляво</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Right</source>
         <translation>Отдясно</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Top</source>
         <translation>Отгоре</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Bottom</source>
         <translation>Отдолу</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>No move</source>
         <translation>Без преместване</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>Scrolling to top</source>
         <translation>Превъртане нагоре</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>Scrolling to bottom</source>
         <translation>Превъртане надолу</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="301"/>
+        <location filename="../propertiesdialog.cpp" line="297"/>
         <source>Examples</source>
         <translation>Примери</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="482"/>
+        <location filename="../propertiesdialog.cpp" line="478"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Изображения (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="584"/>
+        <location filename="../propertiesdialog.cpp" line="580"/>
         <source>Open bookmarks file</source>
         <translation>Отваряне на файла с отметките</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="586"/>
+        <location filename="../propertiesdialog.cpp" line="582"/>
         <source>XML files (*.xml)</source>
         <translation>XML файлове (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="587"/>
+        <location filename="../propertiesdialog.cpp" line="583"/>
         <source>All files (*)</source>
         <translation>Всички файлове (*)</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="682"/>
         <location filename="../propertiesdialog.cpp" line="686"/>
-        <location filename="../propertiesdialog.cpp" line="690"/>
         <source>Question</source>
         <translation>Запитване</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="686"/>
+        <location filename="../propertiesdialog.cpp" line="682"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Искате ли да презапишете този файл с отметки?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="690"/>
+        <location filename="../propertiesdialog.cpp" line="686"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Името на файла с отметки не завършва с &apos;.xml&apos;.
 Сигурни ли сте, че искате да го презапишете?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="698"/>
+        <location filename="../propertiesdialog.cpp" line="694"/>
         <source>Warning</source>
         <translation>Внимание</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="698"/>
+        <location filename="../propertiesdialog.cpp" line="694"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Не могат да бъдат записани отметки в този файл:</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="225"/>
-        <location filename="../propertiesdialog.cpp" line="357"/>
+        <location filename="../propertiesdialog.cpp" line="221"/>
+        <location filename="../propertiesdialog.cpp" line="353"/>
         <source>System Default</source>
         <translation>Системни настройки по подразбиране</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>Block</source>
         <translation>Блок</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>Underline</source>
         <translation>Подчертаване</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>I-Beam</source>
         <translation>I-образен</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="481"/>
+        <location filename="../propertiesdialog.cpp" line="477"/>
         <source>Choose a background image</source>
         <translation>Изберете фоново изображение</translation>
     </message>
@@ -1145,7 +1145,7 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>TermWidget</name>
     <message>
-        <location filename="../termwidget.cpp" line="550"/>
+        <location filename="../termwidget.cpp" line="580"/>
         <source>Output ended</source>
         <translation>Извеждането приключи</translation>
     </message>

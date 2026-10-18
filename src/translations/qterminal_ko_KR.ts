@@ -957,123 +957,123 @@ To remove/disable a Shortcut, at point 2 press only a modifier (like Shift)</sou
         <translation>자신의 바로찾기 파일 위치를 지정할 수 있습니다. OwnCloud 또는 Dropbox와 같은 도구를 사용하여 쉽게 바로찾기를 공유할 수 있습니다.</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
         <source>No scrollbar</source>
         <translation>스크롤바 없음</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Left</source>
         <translation>왼쪽</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Right</source>
         <translation>오른쪽</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Top</source>
         <translation>상단</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Bottom</source>
         <translation>하단</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>No move</source>
         <translation>이동 없음</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>Scrolling to top</source>
         <translation>맨 위로 스크롤</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>Scrolling to bottom</source>
         <translation>맨 아래로 스크롤</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="301"/>
+        <location filename="../propertiesdialog.cpp" line="297"/>
         <source>Examples</source>
         <translation>예시</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="482"/>
+        <location filename="../propertiesdialog.cpp" line="478"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>이미지 (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="584"/>
+        <location filename="../propertiesdialog.cpp" line="580"/>
         <source>Open bookmarks file</source>
         <translation>바로찾기 파일 열기</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="586"/>
+        <location filename="../propertiesdialog.cpp" line="582"/>
         <source>XML files (*.xml)</source>
         <translation>XML 파일 (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="587"/>
+        <location filename="../propertiesdialog.cpp" line="583"/>
         <source>All files (*)</source>
         <translation>모든 파일 (*)</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="682"/>
         <location filename="../propertiesdialog.cpp" line="686"/>
-        <location filename="../propertiesdialog.cpp" line="690"/>
         <source>Question</source>
         <translation>질문</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="686"/>
+        <location filename="../propertiesdialog.cpp" line="682"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>이 바로찾기 파일을 덮어쓰시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="690"/>
+        <location filename="../propertiesdialog.cpp" line="686"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>바로찾기 파일의 이름은 &apos;.xml&apos;로 끝나지 않습니다.
 덮어쓰시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="698"/>
+        <location filename="../propertiesdialog.cpp" line="694"/>
         <source>Warning</source>
         <translation>경고</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="698"/>
+        <location filename="../propertiesdialog.cpp" line="694"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>이 파일에 바로찾기를 기록할 수 없음:</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="225"/>
-        <location filename="../propertiesdialog.cpp" line="357"/>
+        <location filename="../propertiesdialog.cpp" line="221"/>
+        <location filename="../propertiesdialog.cpp" line="353"/>
         <source>System Default</source>
         <translation>시스템 기본값</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>Block</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>Underline</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>I-Beam</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="481"/>
+        <location filename="../propertiesdialog.cpp" line="477"/>
         <source>Choose a background image</source>
         <translation>배경 이미지 고르기</translation>
     </message>
@@ -1143,7 +1143,7 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>TermWidget</name>
     <message>
-        <location filename="../termwidget.cpp" line="550"/>
+        <location filename="../termwidget.cpp" line="580"/>
         <source>Output ended</source>
         <translation type="unfinished"></translation>
     </message>

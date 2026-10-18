@@ -957,123 +957,123 @@ Bir Kısayolu kaldırmak/devre dışı bırakmak için, 2. noktada yalnızca bir
         <translation>Anahtar</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
         <source>No scrollbar</source>
         <translation>Kaydırma çubuğu yok</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Left</source>
         <translation>Sol</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Right</source>
         <translation>Sağ</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Top</source>
         <translation>En Yukarı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Bottom</source>
         <translation>En Aşağı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>No move</source>
         <translation>Taşıma yok</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>Scrolling to top</source>
         <translation>En üste kaydırılıyor</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>Scrolling to bottom</source>
         <translation>En alta kaydırılıyor</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="301"/>
+        <location filename="../propertiesdialog.cpp" line="297"/>
         <source>Examples</source>
         <translation>Örnekler</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="482"/>
+        <location filename="../propertiesdialog.cpp" line="478"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Görüntüler (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="584"/>
+        <location filename="../propertiesdialog.cpp" line="580"/>
         <source>Open bookmarks file</source>
         <translation>Yer imleri dosyasını aç</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="586"/>
+        <location filename="../propertiesdialog.cpp" line="582"/>
         <source>XML files (*.xml)</source>
         <translation>XML dosyası (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="587"/>
+        <location filename="../propertiesdialog.cpp" line="583"/>
         <source>All files (*)</source>
         <translation>Tüm dosyalar (*)</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="682"/>
         <location filename="../propertiesdialog.cpp" line="686"/>
-        <location filename="../propertiesdialog.cpp" line="690"/>
         <source>Question</source>
         <translation>Soru</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="686"/>
+        <location filename="../propertiesdialog.cpp" line="682"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Bu yer imleri dosyasının üzerine yazmak istiyor musunuz?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="690"/>
+        <location filename="../propertiesdialog.cpp" line="686"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Yer imleri dosyasının adı &apos;.xml&apos; ile bitmiyor.
  Üzerine yazmak istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="698"/>
+        <location filename="../propertiesdialog.cpp" line="694"/>
         <source>Warning</source>
         <translation>Uyarı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="698"/>
+        <location filename="../propertiesdialog.cpp" line="694"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Bu dosyaya yer imleri yazılamıyor:</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="225"/>
-        <location filename="../propertiesdialog.cpp" line="357"/>
+        <location filename="../propertiesdialog.cpp" line="221"/>
+        <location filename="../propertiesdialog.cpp" line="353"/>
         <source>System Default</source>
         <translation>Sistem Varsayılanı</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>Block</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>Underline</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>I-Beam</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="481"/>
+        <location filename="../propertiesdialog.cpp" line="477"/>
         <source>Choose a background image</source>
         <translation>Bir arkaplan resmi seç</translation>
     </message>
@@ -1143,7 +1143,7 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>TermWidget</name>
     <message>
-        <location filename="../termwidget.cpp" line="550"/>
+        <location filename="../termwidget.cpp" line="580"/>
         <source>Output ended</source>
         <translation type="unfinished"></translation>
     </message>

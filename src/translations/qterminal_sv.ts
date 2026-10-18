@@ -959,122 +959,122 @@ För att ta bort/deaktivera kortkommandon: Redigera ett kortkommando, men tryck 
         <translation>Du kan ange en egen plats för bokmärkesfilen. Det gör det enkelt att dela bokmärken med verktyg som OwnCloud eller Dropbox.</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
         <source>No scrollbar</source>
         <translation>Ingen rullningslist</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Left</source>
         <translation>Vänster</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="167"/>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="163"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Right</source>
         <translation>Höger</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Top</source>
         <translation>Över</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="173"/>
+        <location filename="../propertiesdialog.cpp" line="169"/>
         <source>Bottom</source>
         <translation>Under</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>No move</source>
         <translation>Ingen flyttning</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>Scrolling to top</source>
         <translation>Rulla till toppen</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="208"/>
+        <location filename="../propertiesdialog.cpp" line="204"/>
         <source>Scrolling to bottom</source>
         <translation>Rulla till botten</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="301"/>
+        <location filename="../propertiesdialog.cpp" line="297"/>
         <source>Examples</source>
         <translation>Exempel</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="482"/>
+        <location filename="../propertiesdialog.cpp" line="478"/>
         <source>Images (*.bmp *.jpg *.png *.svg *.xpm)</source>
         <translation>Bilder (*.bmp *.jpg *.png *.svg *.xpm)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="584"/>
+        <location filename="../propertiesdialog.cpp" line="580"/>
         <source>Open bookmarks file</source>
         <translation>Öppna bokmärkesfil</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="586"/>
+        <location filename="../propertiesdialog.cpp" line="582"/>
         <source>XML files (*.xml)</source>
         <translation>XML-filer (*.xml)</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="587"/>
+        <location filename="../propertiesdialog.cpp" line="583"/>
         <source>All files (*)</source>
         <translation>Alla filer (*)</translation>
     </message>
     <message>
+        <location filename="../propertiesdialog.cpp" line="682"/>
         <location filename="../propertiesdialog.cpp" line="686"/>
-        <location filename="../propertiesdialog.cpp" line="690"/>
         <source>Question</source>
         <translation>Fråga</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="686"/>
+        <location filename="../propertiesdialog.cpp" line="682"/>
         <source>Do you want to overwrite this bookmarks file?</source>
         <translation>Vill du skriva över den här bokmärkesfilen?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="690"/>
+        <location filename="../propertiesdialog.cpp" line="686"/>
         <source>The name of bookmarks file does not end with &apos;.xml&apos;.
 Are you sure that you want to overwrite it?</source>
         <translation>Namnet på bokmärkesfilen slutar inte med &quot;.xml&quot; Är du säker på att du vill skriva över dem?</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="698"/>
+        <location filename="../propertiesdialog.cpp" line="694"/>
         <source>Warning</source>
         <translation>Varning</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="698"/>
+        <location filename="../propertiesdialog.cpp" line="694"/>
         <source>Cannot write bookmarks to this file:</source>
         <translation>Kan inte spara ner bokmärken i den här filen:</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="225"/>
-        <location filename="../propertiesdialog.cpp" line="357"/>
+        <location filename="../propertiesdialog.cpp" line="221"/>
+        <location filename="../propertiesdialog.cpp" line="353"/>
         <source>System Default</source>
         <translation>Systemstandard</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>Block</source>
         <translation>Block</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>Underline</source>
         <translation>Understruken</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="186"/>
+        <location filename="../propertiesdialog.cpp" line="182"/>
         <source>I-Beam</source>
         <translation>I-balk</translation>
     </message>
     <message>
-        <location filename="../propertiesdialog.cpp" line="481"/>
+        <location filename="../propertiesdialog.cpp" line="477"/>
         <source>Choose a background image</source>
         <translation>Välj en bakgrundsbild</translation>
     </message>
@@ -1144,7 +1144,7 @@ Are you sure that you want to overwrite it?</source>
 <context>
     <name>TermWidget</name>
     <message>
-        <location filename="../termwidget.cpp" line="550"/>
+        <location filename="../termwidget.cpp" line="580"/>
         <source>Output ended</source>
         <translation>Utdata avslutades</translation>
     </message>
