@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>Toggle Subterminal &amp;Maximized</source>
-        <translation type="unfinished"></translation>
+        <translation>Alternar entre Subterminal e &amp;Maximizado</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
@@ -795,7 +795,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="885"/>
         <source>Notify when output stops in minimized windows</source>
-        <translation type="unfinished"></translation>
+        <translation>Notificar quando a saída parar em janelas minimizadas</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
@@ -1147,7 +1147,7 @@ Tem a certeza de que o quer substituir?</translation>
     <message>
         <location filename="../termwidget.cpp" line="580"/>
         <source>Output ended</source>
-        <translation type="unfinished"></translation>
+        <translation>Fim da saída</translation>
     </message>
 </context>
 <context>
