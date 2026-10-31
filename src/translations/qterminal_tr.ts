@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>Toggle Subterminal &amp;Maximized</source>
-        <translation type="unfinished"></translation>
+        <translation>Alt Terminal ve Maksimize Edilmiş Durum Arasında Geçiş Yap</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="325"/>
@@ -310,12 +310,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="877"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullanılabilir düzenleyici yok</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="879"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lütfen ya $VISUAL ortam değişkenini ayarlayın ya da tercihler bölümünden bir düzenleyici komutu yapılandırın.</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
@@ -325,17 +325,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Düzenleyicide geçmişi görüntüle</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="544"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Engelle</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="545"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Altıçizili</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="546"/>
