@@ -103,7 +103,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>Toggle Subterminal &amp;Maximized</source>
-        <translation type="unfinished"></translation>
+        <translation>切换子终端并最大化</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
@@ -240,7 +240,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="545"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>下划线</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="546"/>
@@ -300,12 +300,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="877"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>无编辑器可用</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="879"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>请设置$VISUAL环境，或在偏好设置中配置编辑器命令。</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="97"/>
@@ -345,7 +345,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>在编辑器中查看历史记录</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="385"/>
@@ -677,32 +677,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="359"/>
         <source>Fill</source>
-        <translation type="unfinished"></translation>
+        <translation>填满</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <source>Tiled</source>
-        <translation type="unfinished"></translation>
+        <translation>平铺</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Top Left</source>
-        <translation type="unfinished"></translation>
+        <translation>左上</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>Top Right</source>
-        <translation type="unfinished"></translation>
+        <translation>右上</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"></translation>
+        <translation>左下</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"></translation>
+        <translation>右下</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="443"/>
@@ -767,22 +767,22 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="848"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>允许应用程序使用 OSC-8 序列来嵌入可点击的超链接</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="851"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>启用OSC-8超链接</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="858"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>当光标停在链接上时，显示目的地的 URL</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="861"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>当鼠标悬停时显示链接的目的地</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="868"/>
@@ -792,7 +792,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="871"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>使用Ctrl+Click打开链接</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="878"/>
