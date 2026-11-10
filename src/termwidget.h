@@ -60,7 +60,7 @@ class TermWidgetImpl : public QTermWidget
         void setSize(const QSize &size) Q_DECL_OVERRIDE;
 
     protected:
-        void showEvent(QShowEvent *event);
+        void showEvent(QShowEvent *event) override;
 
     private slots:
         void activateUrl(const QUrl& url, bool fromContextMenu);
