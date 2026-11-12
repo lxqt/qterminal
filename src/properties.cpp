@@ -227,7 +227,7 @@ void Properties::saveSettings()
     m_settings->remove(QLatin1String("font"));
 
     m_settings->beginGroup(QLatin1String("Shortcuts"));
-    MainWindow *mainWindow = QTerminalApp::Instance()->getWindowList()[0];
+    MainWindow *mainWindow = QTerminalApp::Instance()->getWindowList().at(0);
     assert(mainWindow != nullptr);
 
     QMapIterator< QString, QAction * > it(mainWindow->leaseActions());
