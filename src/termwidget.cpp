@@ -26,6 +26,7 @@
 #include <QGraphicsEffect>
 #include <QWindow>
 #include <cassert>
+#include <utility>
 
 #ifdef HAVE_QDBUS
     #include <QTabWidget>
@@ -232,7 +233,7 @@ void TermWidgetImpl::customContextMenuCall(const QPoint & pos)
     QMap<QString, QAction*> actions = mainWindow->leaseActions();
 
     QList<QAction*> extraActions = filterActions(pos);
-    for (auto& action : extraActions)
+    for (auto& action : std::as_const(extraActions))
     {
         menu.addAction(action);
     }
