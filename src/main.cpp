@@ -389,7 +389,7 @@ static void spawnNewProcess(const QString &dbus_id, const QString &shell_command
 QString QTerminalApp::newWindow(const QString &dbus_id, const QString &shell_command, const QString& workdir, int columns, int lines)
 {
     // dropDown can have only one window
-    for (MainWindow *wnd : m_windowList)
+    for (MainWindow *wnd : std::as_const(m_windowList))
         if (wnd->dropMode())
         {
             spawnNewProcess(dbus_id, shell_command, workdir.isEmpty() ? m_workDir : workdir, columns, lines);
@@ -409,7 +409,7 @@ QDBusObjectPath QTerminalApp::newWindow(const QHash<QString,QVariant> &termArgs)
 {
     TerminalConfig cfg = TerminalConfig::fromDbus(termArgs);
 
-    for (MainWindow *wnd : m_windowList)
+    for (MainWindow *wnd : std::as_const(m_windowList))
         if (wnd->dropMode())
         {
             spawnNewProcess(QString(), cfg.getShell().join(QStringLiteral(" ")), cfg.getWorkingDirectory(), 0, 0);

@@ -287,7 +287,7 @@ void TermWidgetHolder::maximize(TermWidget *term)
     // It therefore must not notice any of this…
 
     QWidgetList hibernates;
-    for (TermWidget *other : all)
+    for (TermWidget *other : std::as_const(all))
     {
         bool willBeVisible = reset || other == term;
         if (willBeVisible == other->isVisibleTo(this))
@@ -316,7 +316,7 @@ void TermWidgetHolder::maximize(TermWidget *term)
     for (QSplitter *splitter : findChildren<QSplitter*>())
         splitter->refresh();
     // …and now we wake up the displays out of hibernation.
-    for (QWidget *terminalDisplay : hibernates)
+    for (QWidget *terminalDisplay : std::as_const(hibernates))
         terminalDisplay->removeEventFilter(&eventKiller);
     // TADAA :)
 }
