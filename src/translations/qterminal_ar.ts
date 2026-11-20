@@ -108,7 +108,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="320"/>
         <source>Toggle Subterminal &amp;Maximized</source>
-        <translation type="unfinished"></translation>
+        <translation>تكبير/استعادة الطرفية الفرعية</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="322"/>
@@ -173,7 +173,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>فتح سجل الطرفية في المحرر</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
@@ -305,17 +305,17 @@
     <message>
         <location filename="../mainwindow.cpp" line="544"/>
         <source>&amp;Block</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;كتلة</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="545"/>
         <source>&amp;Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;خط سفلي</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="546"/>
         <source>&amp;I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;رأسي</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="563"/>
@@ -370,12 +370,12 @@
     <message>
         <location filename="../mainwindow.cpp" line="877"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>لا يوجد محرر متاح</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="879"/>
         <source>Please either set the $VISUAL environment or configure an editor command in the preferences.</source>
-        <translation type="unfinished"></translation>
+        <translation>يُرجى تعيين متغير البيئة $VISUAL أو تحديد أمر محرر النصوص في التفضيلات.</translation>
     </message>
 </context>
 <context>
@@ -711,27 +711,27 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="364"/>
         <source>Tiled</source>
-        <translation type="unfinished"></translation>
+        <translation>متكرّر</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="369"/>
         <source>Top Left</source>
-        <translation type="unfinished"></translation>
+        <translation>أعلى اليسار</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="374"/>
         <source>Top Right</source>
-        <translation type="unfinished"></translation>
+        <translation>أعلى اليمين</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="379"/>
         <source>Bottom Left</source>
-        <translation type="unfinished"></translation>
+        <translation>أسفل اليسار</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="384"/>
         <source>Bottom Right</source>
-        <translation type="unfinished"></translation>
+        <translation>أسفل اليمين</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="443"/>
@@ -796,32 +796,32 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="848"/>
         <source>Allow applications to embed clickable hyperlinks using the OSC-8 terminal sequence</source>
-        <translation type="unfinished"></translation>
+        <translation>السماح للتطبيقات بإضافة روابط قابلة للنقر باستخدام تسلسل التحكم OSC-8 في الطرفية.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="851"/>
         <source>Enable OSC-8 hyperlinks</source>
-        <translation type="unfinished"></translation>
+        <translation>تفعيل الروابط التشعبية OSC-8</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="858"/>
         <source>Show the destination URL when hovering over a link</source>
-        <translation type="unfinished"></translation>
+        <translation>يعرض عنوان الموقع الذي يؤدي إليه الرابط عند تمرير مؤشر الماوس فوقه</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="861"/>
         <source>Show link destination on hover</source>
-        <translation type="unfinished"></translation>
+        <translation>إظهار عنوان الرابط عند تمرير المؤشر فوقه</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="868"/>
         <source>When enabled, links open only with Ctrl+Click or from the context menu. When disabled, a plain click opens the link.</source>
-        <translation type="unfinished"></translation>
+        <translation>عند تفعيل هذا الخيار، لا تُفتح الروابط إلا بالضغط على Ctrl مع النقر عليها، أو من قائمة النقر بزر الماوس الأيمن. وعند تعطيله، تُفتح الروابط بمجرد النقر عليها.</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="871"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>فتح الروابط بالضغط على Ctrl أثناء النقر عليها</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="878"/>
@@ -831,12 +831,12 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="885"/>
         <source>Notify when output stops in minimized windows</source>
-        <translation type="unfinished"></translation>
+        <translation>إظهار إشعار عند توقف ظهور مخرجات جديدة أثناء تصغير نافذة الطرفية</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="909"/>
         <source>Visual bell</source>
-        <translation type="unfinished"></translation>
+        <translation>التنبيه المرئي</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="916"/>
@@ -848,12 +848,14 @@
         <source>This command will be run with an argument containing the file name of a tempfile containing the scrollback history
 Defaults to $VISUAL
                  </source>
-        <translation type="unfinished"></translation>
+        <translation>سيُشغَّل هذا الأمر مع تمرير اسم الملف المؤقت الذي يحتوي على سجل مخرجات الطرفية إليه.
+ويكون الأمر الافتراضي هو الأمر المحدد في متغير البيئة $VISUAL.
+                 </translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="964"/>
         <source>History viewer command</source>
-        <translation type="unfinished"></translation>
+        <translation>أمر عرض سجل الطرفية</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="1007"/>
@@ -1060,17 +1062,17 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../propertiesdialog.cpp" line="182"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>كتلة</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="182"/>
         <source>Underline</source>
-        <translation type="unfinished"></translation>
+        <translation>خط سفلي</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="182"/>
         <source>I-Beam</source>
-        <translation type="unfinished"></translation>
+        <translation>خط عمودي</translation>
     </message>
     <message>
         <location filename="../propertiesdialog.cpp" line="477"/>
@@ -1145,7 +1147,7 @@ Are you sure that you want to overwrite it?</source>
     <message>
         <location filename="../termwidget.cpp" line="580"/>
         <source>Output ended</source>
-        <translation type="unfinished"></translation>
+        <translation>توقفت المخرجات</translation>
     </message>
 </context>
 <context>

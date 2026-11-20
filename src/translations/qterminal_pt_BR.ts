@@ -173,7 +173,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="364"/>
         <source>View history in editor</source>
-        <translation type="unfinished"></translation>
+        <translation>Ver histórico no editor</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="372"/>
@@ -370,7 +370,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="877"/>
         <source>No editor available</source>
-        <translation type="unfinished"></translation>
+        <translation>Nenhum editor disponível</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="879"/>
@@ -821,7 +821,7 @@
     <message>
         <location filename="../forms/propertiesdialog.ui" line="871"/>
         <source>Open links with Ctrl+Click</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir links com Ctrl+clique</translation>
     </message>
     <message>
         <location filename="../forms/propertiesdialog.ui" line="878"/>
